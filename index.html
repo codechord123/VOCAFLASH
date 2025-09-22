@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 영단어 플래시카드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/papaparse/5.3.2/papaparse.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; overscroll-behavior: none; }
+        .flashcard-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; }
+        .flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+        .flashcard-front, .flashcard-back { position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1.5rem; border-radius: 1rem; background-color: white; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+        .flashcard-back { transform: rotateY(180deg); }
+        .progress-ring__circle { transition: stroke-dashoffset 0.35s; transform: rotate(-90deg); transform-origin: 50% 50%; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div id="app-container" class="max-w-5xl mx-auto p-4 md:p-6">
+        <header class="flex justify-between items-center mb-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl md:text-3xl font-bold text-slate-900">B2 영단어 학습</h1>
+            </div>
+            <button id="admin-btn" class="text-slate-500 hover:text-blue-500 transition-colors">
+                <i class="fas fa-cog text-2xl"></i>
+            </button>
+        </header>
+
+        <main id="main-content">
+            <div id="loading-view" class="flex flex-col items-center justify-center h-64">
+                <div class="loader"></div>
+                <p class="mt-4 text-slate-500">단어 데이터를 불러오는 중...</p>
+            </div>
+        
+            <div id="dashboard-view" class="hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                        <h2 class="font-bold text-lg mb-2 text-slate-700">오답 노트</h2>
+                        <p class="text-slate-500 mb-4">시험에서 틀린 단어를 다시 학습하세요.</p>
+                        <div class="flex items-center justify-between">
+                            <span id="incorrect-count" class="text-2xl font-bold text-blue-500">0개</span>
+                            <button id="start-incorrect-btn" class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors disabled:bg-slate-300 disabled:cursor-not-allowed">학습하기</button>
+                        </div>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                        <h2 class="font-bold text-lg mb-2 text-slate-700">주제별 시험</h2>
+                        <p class="text-slate-500 mb-4">5개 주제 단위로 실력을 점검하세요.</p>
+                        <select id="test-select" class="w-full bg-slate-100 border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+                    </div>
+                </div>
+                <h2 class="text-xl font-bold mb-4 text-slate-800">학습 주제</h2>
+                <div id="topic-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+            </div>
+
+            <div id="flashcard-view" class="hidden">
+                <div class="flex justify-between items-center mb-4">
+                    <button id="back-to-dashboard-btn" class="text-slate-500 hover:text-blue-500 transition-colors"><i class="fas fa-arrow-left mr-2"></i> 홈으로</button>
+                    <h2 id="flashcard-topic-title" class="text-xl font-bold text-center"></h2>
+                    <div class="w-20"></div>
+                </div>
+                <div id="flashcard-container" class="w-full max-w-lg mx-auto aspect-[3/4] perspective-[1000px]"></div>
+                <div id="flashcard-controls" class="flex justify-center gap-6 mt-6">
+                    <button id="know-btn" class="w-28 h-28 bg-green-500 text-white rounded-full flex flex-col items-center justify-center text-lg font-bold shadow-lg hover:bg-green-600 transition-transform transform hover:scale-105"><i class="fas fa-check text-3xl mb-1"></i> 외웠어요</button>
+                    <button id="dont-know-btn" class="w-28 h-28 bg-red-500 text-white rounded-full flex flex-col items-center justify-center text-lg font-bold shadow-lg hover:bg-red-600 transition-transform transform hover:scale-105"><i class="fas fa-times text-3xl mb-1"></i> 못 외웠어요</button>
+                </div>
+                <div id="completion-message" class="hidden text-center mt-8 bg-white p-8 rounded-xl shadow">
+                    <h3 class="text-2xl font-bold text-blue-500">학습 완료!</h3>
+                    <p class="text-slate-600 mt-2 mb-4">이 주제의 모든 단어를 학습했습니다.</p>
+                    <button id="restart-topic-btn" class="bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">다시 학습하기</button>
+                </div>
+            </div>
+
+            <div id="test-view" class="hidden">
+                 <div class="flex justify-between items-center mb-4">
+                    <button id="back-to-dashboard-from-test-btn" class="text-slate-500 hover:text-blue-500 transition-colors"><i class="fas fa-arrow-left mr-2"></i> 홈으로</button>
+                    <h2 id="test-title" class="text-xl font-bold text-center"></h2>
+                    <div id="test-progress" class="text-lg font-semibold">1 / 50</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg max-w-2xl mx-auto">
+                    <p id="question-type" class="text-sm text-slate-500 text-center mb-2"></p>
+                    <div id="question" class="text-2xl md:text-3xl font-bold text-center mb-8 h-16 flex items-center justify-center"></div>
+                    <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </div>
+            </div>
+
+            <div id="test-result-view" class="hidden text-center bg-white p-8 rounded-xl shadow-lg max-w-lg mx-auto">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">시험 결과</h2>
+                <div class="text-6xl font-bold text-blue-500 mb-2">
+                    <span id="score">0</span><span class="text-4xl text-slate-400"> / 50</span>
+                </div>
+                <p class="text-lg text-slate-600 mb-6">수고하셨습니다!</p>
+                <p id="incorrect-info" class="text-slate-500 mb-8"></p>
+                <button id="back-to-dashboard-from-result-btn" class="w-full bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors text-lg">홈으로 돌아가기</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="admin-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md p-6 relative">
+            <button id="close-admin-btn" class="absolute top-4 right-4 text-slate-500 hover:text-red-500 transition-colors"><i class="fas fa-times text-2xl"></i></button>
+            <h2 class="text-2xl font-bold mb-6 text-slate-800">데이터 관리</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-semibold mb-2">1. 데이터 관리</h3>
+                    <p class="text-sm text-slate-500 mb-2">단어 데이터는 GitHub 저장소의 `words.json` 파일을 직접 수정하여 관리하세요.</p>
+                </div>
+                <div class="border-t pt-4">
+                    <h3 class="font-semibold mb-2 text-red-600">2. 학습 기록 초기화</h3>
+                    <p class="text-sm text-slate-500 mb-2">현재 사용자의 학습 진행도와 오답 노트를 초기화합니다.</p>
+                    <button id="reset-data-btn" class="w-full bg-red-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-600 transition-colors"><i class="fas fa-exclamation-triangle mr-2"></i>학습 기록 초기화</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    // ▼▼▼ GitHub Pages에 올린 `words.json` 파일의 전체 URL을 아래에 붙여넣으세요 ▼▼▼
+    // 예: https://your-username.github.io/your-repo-name/words.json
+    const WORD_DATA_URL = 'https://github.com/codechord123/VOCAFLASH/blob/main/words.json';
+
+    const TOPICS = [ {id: 1, name: "Technology & Innovation"}, {id: 2, name: "Environment & Conservation"}, {id: 3, name: "Business & Economics"}, {id: 4, name: "Society & Culture"}, {id: 5, name: "Health & Wellness"}, {id: 6, name: "Politics & Government"}, {id: 7, name: "Education & Learning"}, {id: 8, name: "Travel & Tourism"}, {id: 9, name: "Arts & Literature"}, {id: 10, name: "Science & Research"}, {id: 11, name: "Media & Communication"}, {id: 12, name: "Law & Order"}, {id: 13, name: "Work & Careers"}, {id: 14, name: "History & Archaeology"}, {id: 15, name: "Food & Cuisine"}, {id: 16, name: "Sports & Fitness"}, {id: 17, name: "Psychology & Emotions"}, {id: 18, name: "Fashion & Design"}, {id: 19, name: "Personal Finance"}, {id: 20, name: "Relationships & Family"}, {id: 21, name: "Nature & Geography"}, {id: 22, name: "Housing & Architecture"}, {id: 23, name: "Entertainment & Pop Culture"}, {id: 24, name: "Ethics & Morality"}, {id: 25, name: "Global Issues"}, {id: 26, name: "Transportation & Infrastructure"}, {id: 27, name: "Conflict & Resolution"}, {id: 28, name: "Space & Astronomy"}, {id: 29, name: "Hobbies & Leisure"}, {id: 30, name: "Future & Predictions"} ];
+    let wordBank = [], progressData = {}, incorrectNotes = [], currentStudySession = {words:[],reviewQueue:[],reviewCounter:0,isIncorrectNotes:!1}, currentTest = {questions:[],currentQuestionIndex:0,score:0}, speechVoices = [];
+    const views = {loading:document.getElementById("loading-view"),dashboard:document.getElementById("dashboard-view"),flashcard:document.getElementById("flashcard-view"),test:document.getElementById("test-view"),testResult:document.getElementById("test-result-view")}, adminModal = document.getElementById("admin-modal");
+    
+    document.addEventListener("DOMContentLoaded", async () => await initApp());
+
+    async function initApp() {
+        showView("loading");
+        await loadWordBank();
+        // wordBank가 성공적으로 로드된 경우에만 나머지 초기화 진행
+        if (wordBank && wordBank.length > 0) {
+            loadUserDataFromLocalStorage();
+            setupSpeechSynthesis();
+            renderDashboard();
+            populateTestSelect();
+            setupEventListeners();
+            showView("dashboard");
+        }
+    }
+
+    async function loadWordBank() {
+        if (!WORD_DATA_URL) {
+            console.error("WORD_DATA_URL이 설정되지 않았습니다.");
+            const loadingView = document.getElementById('loading-view');
+            loadingView.innerHTML = `
+                <div class="text-center max-w-lg mx-auto">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">데이터베이스 주소 입력이 필요합니다.</h2>
+                    <p class="mb-4 text-slate-600">단어 데이터를 불러오려면 GitHub Pages의 URL을 입력해야 합니다.</p>
+                    <div class="text-sm text-slate-500 text-left bg-slate-100 p-4 rounded-lg">
+                        <p><strong>해결 방법:</strong></p>
+                        <ol class="list-decimal list-inside mt-2 space-y-1">
+                            <li>GitHub에 'words.json' 파일을 올리고 GitHub Pages를 통해 웹에 게시하세요.</li>
+                            <li>생성된 URL을 복사하세요 (예: <code>https://username.github.io/repo/words.json</code>)</li>
+                            <li><strong>index.html</strong> 파일 상단의 <code>WORD_DATA_URL</code> 변수에 복사한 주소를 붙여넣어주세요.</li>
+                        </ol>
+                    </div>
+                </div>
+            `;
+            return;
+        }
+
+        try {
+            const response = await fetch(WORD_DATA_URL);
+            if (!response.ok) {
+                throw new Error(`데이터를 불러오는 데 실패했습니다. (상태 코드: ${response.status})`);
+            }
+            wordBank = await response.json();
+        } catch (error) {
+            console.error("단어 데이터 로딩 중 오류 발생:", error);
+            const loadingView = document.getElementById('loading-view');
+            loadingView.innerHTML = `
+                <div class="text-center text-red-600">
+                    <h2 class="text-xl font-bold mb-2">데이터 로딩 실패</h2>
+                    <p>단어 데이터(${WORD_DATA_URL})를 불러올 수 없습니다.</p>
+                    <p class="mt-4 text-sm text-slate-600">
+                        - 인터넷 연결을 확인해주세요.<br>
+                        - GitHub Pages 설정 후 URL을 올바르게 입력했는지 확인해주세요.
+                    </p>
+                </div>
+            `;
+        }
+    }
+    
+    function loadUserDataFromLocalStorage(){try{const a=localStorage.getItem("progressData");progressData=a?JSON.parse(a):{};const b=localStorage.getItem("incorrectNotes");incorrectNotes=b?JSON.parse(b):[]}catch(a){console.error("사용자 데이터 로딩 중 오류:",a),progressData={},incorrectNotes=[]}}
+    function saveUserData(){try{localStorage.setItem("progressData",JSON.stringify(progressData)),localStorage.setItem("incorrectNotes",JSON.stringify(incorrectNotes))}catch(a){console.error("사용자 데이터 저장 중 오류:",a)}}
+    function showView(a){Object.values(views).forEach(b=>b.classList.add("hidden")),views[a]&&views[a].classList.remove("hidden")}
+    function setupEventListeners(){document.getElementById("admin-btn").addEventListener("click",()=>adminModal.classList.remove("hidden")),document.getElementById("close-admin-btn").addEventListener("click",()=>adminModal.classList.add("hidden")),document.getElementById("reset-data-btn").addEventListener("click",resetLearningData),document.getElementById("start-incorrect-btn").addEventListener("click",startIncorrectNotesSession),document.getElementById("test-select").addEventListener("change",a=>{if(a.target.value){const[b,c]=a.target.value.split("-").map(Number);startTest(b,c)}}),document.getElementById("back-to-dashboard-btn").addEventListener("click",()=>{showView("dashboard"),renderDashboard()}),document.getElementById("know-btn").addEventListener("click",()=>handleFlashcardAnswer(!0)),document.getElementById("dont-know-btn").addEventListener("click",()=>handleFlashcardAnswer(!1)),document.getElementById("restart-topic-btn").addEventListener("click",restartCurrentTopic),document.getElementById("back-to-dashboard-from-test-btn").addEventListener("click",()=>{showView("dashboard"),renderDashboard()}),document.getElementById("back-to-dashboard-from-result-btn").addEventListener("click",()=>{showView("dashboard"),renderDashboard()})}
+    function setupSpeechSynthesis(){"speechSynthesis"in window&&(speechVoices=window.speechSynthesis.getVoices(),0===speechVoices.length&&(window.speechSynthesis.onvoiceschanged=()=>{speechVoices=window.speechSynthesis.getVoices()}))}
+    function speak(a){if("speechSynthesis"in window){window.speechSynthesis.cancel();const b=new SpeechSynthesisUtterance(a);b.lang="en-US";const c=speechVoices.find(d=>d.lang.startsWith("en-")&&(d.name.includes("Google")||d.name.includes("Zira")));c&&(b.voice=c),b.rate=.9,window.speechSynthesis.speak(b)}}
+    function renderDashboard(){const a=document.getElementById("topic-grid");a.innerHTML="",TOPICS.forEach(b=>{const c=wordBank.filter(d=>d.Topic_ID==b.id),d=progressData[b.id]?progressData[b.id].length:0,e=c.length>0?d/c.length*100:0,f=document.createElement("div");f.className=`bg-white p-4 rounded-xl shadow-sm border border-slate-200  ${c.length>0?"cursor-pointer hover:shadow-md hover:-translate-y-1 transition-all":"opacity-50"}`,f.innerHTML=`<div class="flex flex-col items-center text-center"><div class="relative w-16 h-16 mb-2"><svg class="w-full h-full" viewBox="0 0 36 36"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e6e6e6" stroke-width="3" /><path class="progress-ring__circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="${100===e?"#10B981":"#3B82F6"}" stroke-width="3" stroke-dasharray="${e}, 100" stroke-linecap="round"/></svg><div class="absolute inset-0 flex items-center justify-center text-sm font-bold text-slate-600">${Math.round(e)}%</div></div><h3 class="font-semibold text-sm leading-tight">${b.name}</h3><p class="text-xs text-slate-500 mt-1">${d} / ${c.length}</p></div>`,c.length>0?f.addEventListener("click",()=>startStudySession(b.id)):f.title="이 주제에 대한 단어가 없습니다.",a.appendChild(f)}),document.getElementById("incorrect-count").textContent=`${incorrectNotes.length}개`,document.getElementById("start-incorrect-btn").disabled=0===incorrectNotes.length}
+    function populateTestSelect(){const a=document.getElementById("test-select");a.innerHTML='<option value="">시험 선택...</option>';for(let b=0;b<6;b++){const c=5*b+1,d=c+4,e=document.createElement("option");e.value=`${c}-${d}`,e.textContent=`TEST ${c}-${d}`,a.appendChild(e)}}
+    function startStudySession(a){const b=wordBank.filter(c=>c.Topic_ID==a),c=progressData[a]||[],d=b.filter(e=>!c.includes(e.Word));if(0===d.length&&b.length>0)return showView("flashcard"),document.getElementById("flashcard-topic-title").textContent=TOPICS.find(e=>e.id==a).name,document.getElementById("completion-message").classList.remove("hidden"),document.getElementById("flashcard-container").classList.add("hidden"),document.getElementById("flashcard-controls").classList.add("hidden"),void(currentStudySession.topicId=a);currentStudySession={topicId:a,words:shuffleArray(d),reviewQueue:[],reviewCounter:0,isIncorrectNotes:!1},document.getElementById("flashcard-topic-title").textContent=TOPICS.find(e=>e.id==a).name,document.getElementById("restart-topic-btn").style.display="block",showView("flashcard"),renderNextFlashcard()}
+    function startIncorrectNotesSession(){if(0===incorrectNotes.length)return;currentStudySession={words:shuffleArray([...incorrectNotes]),reviewQueue:[],reviewCounter:0,isIncorrectNotes:!0},document.getElementById("flashcard-topic-title").textContent="오답 노트 학습",document.getElementById("restart-topic-btn").style.display="none",showView("flashcard"),renderNextFlashcard()}
+    function renderNextFlashcard(){document.getElementById("completion-message").classList.add("hidden"),document.getElementById("flashcard-container").classList.remove("hidden"),document.getElementById("flashcard-controls").classList.remove("hidden");let a;currentStudySession.reviewQueue.length>0&&currentStudySession.reviewCounter>=3?(a=currentStudySession.reviewQueue.shift(),currentStudySession.reviewCounter=0):a=currentStudySession.words.shift(),a?createFlashcard(a):currentStudySession.reviewQueue.length>0?(currentStudySession.reviewCounter=3,renderNextFlashcard()):(document.getElementById("completion-message").classList.remove("hidden"),document.getElementById("flashcard-container").classList.add("hidden"),document.getElementById("flashcard-controls").classList.add("hidden"))}
+    function createFlashcard(a){const b=document.getElementById("flashcard-container");b.innerHTML="";const c=document.createElement("div");c.className="flashcard w-full h-full",c.dataset.word=a.Word;const d=[a.Synonym_1,a.Synonym_2,a.Synonym_3].filter(Boolean).join(", "),e=[a.Antonym_1,a.Antonym_2,a.Antonym_3].filter(Boolean).join(", ");c.innerHTML=`<div class="flashcard-inner"><div class="flashcard-front"><div class="flex items-center gap-4"><h2 class="text-4xl md:text-5xl font-bold">${a.Word}</h2><button class="speak-btn text-slate-400 hover:text-blue-500 transition-colors"><i class="fas fa-volume-up text-3xl"></i></button></div><p class="text-lg text-slate-500 mt-4 mb-8">${a.Phonetics||""}</p><p class="text-center text-slate-700 text-lg">\u201C${a.Example||""}\u201D</p></div><div class="flashcard-back text-center"><h2 class="text-3xl font-bold mb-4">${a.Meaning_KR||""}</h2><p class="text-slate-600 mb-6">${a.Example_KR||""}</p>${d?`<div class="mb-3"><strong class="text-green-600">유의어:</strong> ${d}</div>`:""}${e?`<div><strong class="text-red-600">반의어:</strong> ${e}</div>`:""}</div></div>`,c.addEventListener("click",()=>c.classList.toggle("flipped"));const f=c.querySelector(".speak-btn");f&&f.addEventListener("click",g=>{g.stopPropagation(),speak(a.Word)}),b.appendChild(c)}
+    function handleFlashcardAnswer(a){const b=document.querySelector(".flashcard");if(!b)return;const c=b.dataset.word,d=wordBank.find(e=>e.Word===c);a?(currentStudySession.isIncorrectNotes?incorrectNotes=incorrectNotes.filter(e=>e.Word!==c):(()=>{const e=currentStudySession.topicId;progressData[e]||(progressData[e]=[]),progressData[e].includes(c)||progressData[e].push(c)})(),saveUserData(),currentStudySession.reviewCounter++):currentStudySession.reviewQueue.push(d),renderNextFlashcard()}
+    function restartCurrentTopic(){const a=currentStudySession.topicId;a&&(progressData[a]=[],saveUserData(),startStudySession(a))}
+    function startTest(a,b){const c=wordBank.filter(d=>d.Topic_ID>=a&&d.Topic_ID<=b);if(c.length<4)return alert("시험을 보기에 단어 수가 부족합니다. (최소 4개 필요)"),void(document.getElementById("test-select").value="");const d=shuffleArray(c).slice(0,50);currentTest={questions:d.map(e=>createQuestion(e,c)),currentQuestionIndex:0,score:0},document.getElementById("test-title").textContent=`TEST ${a}-${b}`,document.getElementById("test-select").value="",showView("test"),renderTestQuestion()}
+    function createQuestion(a,b){const c=Math.random()<.5?"word_to_meaning":"meaning_to_word";let d,e;"word_to_meaning"===c?(d=a.Word,e=a.Meaning_KR):(d=a.Meaning_KR,e=a.Word);const f=shuffleArray(b.filter(g=>g.Word!==a.Word)).slice(0,3).map(g=>"word_to_meaning"===c?g.Meaning_KR:g.Word);return{question:d,questionType:"word_to_meaning"===c?"다음 단어의 뜻은?":"다음 뜻을 가진 단어는?",options:shuffleArray([e,...f]),answer:e,originalWord:a}}
+    function renderTestQuestion(){if(currentTest.currentQuestionIndex>=currentTest.questions.length)return void showTestResult();const a=currentTest.questions[currentTest.currentQuestionIndex];document.getElementById("question-type").textContent=a.questionType,document.getElementById("question").textContent=a.question,document.getElementById("test-progress").textContent=`${currentTest.currentQuestionIndex+1} / ${currentTest.questions.length}`;const b=document.getElementById("options-grid");b.innerHTML="",a.options.forEach(c=>{const d=document.createElement("button");d.className="w-full p-4 bg-slate-100 rounded-lg text-left text-lg hover:bg-slate-200 transition-colors",d.textContent=c,d.addEventListener("click",()=>handleTestAnswer(d,c===a.answer)),b.appendChild(d)})}
+    function handleTestAnswer(a,b){document.querySelectorAll("#options-grid button").forEach(c=>c.disabled=!0),b?(a.classList.remove("bg-slate-100","hover:bg-slate-200"),a.classList.add("bg-green-500","text-white"),currentTest.score++):(a.classList.remove("bg-slate-100","hover:bg-slate-200"),a.classList.add("bg-red-500","text-white"),(()=>{const c=currentTest.questions[currentTest.currentQuestionIndex];document.querySelectorAll("#options-grid button").forEach(d=>{d.textContent===c.answer&&(d.classList.remove("bg-slate-100","hover:bg-slate-200"),d.classList.add("bg-green-500","text-white"))})})(),(()=>{const c=currentTest.questions[currentTest.currentQuestionIndex].originalWord;incorrectNotes.some(d=>d.Word===c.Word)||incorrectNotes.push(c),saveUserData()})()),setTimeout(()=>{currentTest.currentQuestionIndex++,renderTestQuestion()},800)}
+    function showTestResult(){document.getElementById("score").textContent=currentTest.score;const a=currentTest.questions.length-currentTest.score;document.getElementById("incorrect-info").textContent=`${a}개의 틀린 단어가 오답노트에 추가되었습니다.`,showView("testResult")}
+    function resetLearningData(){confirm("정말로 모든 학습 기록과 오답 노트를 초기화하시겠습니까?")&&(progressData={},incorrectNotes=[],saveUserData(),renderDashboard(),alert("모든 학습 기록이 초기화되었습니다."),adminModal.classList.add("hidden"))}
+    function shuffleArray(a){for(let b=a.length-1;b>0;b--){const c=Math.floor(Math.random()*(b+1));[a[b],a[c]]=[a[c],a[b]]}return a}
+</script>
+</body>
+</html>
+
