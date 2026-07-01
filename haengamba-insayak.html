@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행감바 · 인사약 연습 프레젠테이션</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+        html, body { height: 100%; }
+        body { font-family: 'Noto Sans KR', sans-serif; overscroll-behavior: none; margin: 0; }
+        .slide {
+            display: none;
+            animation: fadeIn 0.45s ease;
+        }
+        .slide.active { display: flex; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .step-badge {
+            width: 3.5rem; height: 3.5rem;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 9999px; font-weight: 900; font-size: 1.5rem;
+        }
+        .kbd {
+            font-family: monospace; background: rgba(255,255,255,0.15);
+            padding: 0.1rem 0.5rem; border-radius: 0.35rem; font-size: 0.8rem;
+        }
+        .fill-line {
+            border-bottom: 2px dashed rgba(255,255,255,0.4);
+            min-height: 1.6rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white overflow-hidden">
+
+    <!-- Progress bar -->
+    <div class="fixed top-0 left-0 w-full h-1.5 bg-slate-800 z-50">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-400 to-emerald-400 transition-all duration-300" style="width:0%"></div>
+    </div>
+
+    <div id="deck" class="w-screen h-screen">
+
+        <!-- ============ SLIDE 1 : TITLE ============ -->
+        <section class="slide active flex-col items-center justify-center h-full text-center px-8">
+            <div class="inline-flex gap-3 mb-8">
+                <span class="px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-300 font-bold text-sm">행감바</span>
+                <span class="px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-sm">인사약</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                대화의 두 가지 무기<br>
+                <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">행감바 &amp; 인사약</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-300 max-w-2xl">
+                감정을 다치지 않게 <strong class="text-white">요청</strong>하고,<br class="md:hidden">
+                진심이 전해지도록 <strong class="text-white">사과</strong>하는 연습
+            </p>
+            <p class="mt-12 text-slate-400 text-sm">
+                <span class="kbd">→</span> 또는 <span class="kbd">Space</span> 로 시작하기
+            </p>
+        </section>
+
+        <!-- ============ SLIDE 2 : OVERVIEW ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <h2 class="text-3xl md:text-5xl font-black mb-12 text-center">오늘 연습할 두 가지 공식</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl w-full">
+                <div class="bg-blue-500/10 border border-blue-400/30 rounded-3xl p-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-comment-dots text-blue-300 text-3xl"></i>
+                        <h3 class="text-2xl font-black text-blue-300">행감바</h3>
+                    </div>
+                    <p class="text-slate-300 mb-4">불편함을 <strong>비난 없이</strong> 전하고 원하는 것을 요청할 때</p>
+                    <ul class="space-y-2 text-lg">
+                        <li><strong class="text-blue-300">행</strong>동 — 사실만 말한다</li>
+                        <li><strong class="text-blue-300">감</strong>정 — 내 느낌을 말한다</li>
+                        <li><strong class="text-blue-300">바</strong>람 — 원하는 것을 말한다</li>
+                    </ul>
+                </div>
+                <div class="bg-emerald-500/10 border border-emerald-400/30 rounded-3xl p-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-hand-holding-heart text-emerald-300 text-3xl"></i>
+                        <h3 class="text-2xl font-black text-emerald-300">인사약</h3>
+                    </div>
+                    <p class="text-slate-300 mb-4">잘못했을 때 <strong>진심</strong>이 전해지게 사과할 때</p>
+                    <ul class="space-y-2 text-lg">
+                        <li><strong class="text-emerald-300">인</strong>정 — 무엇을 잘못했는지 인정</li>
+                        <li><strong class="text-emerald-300">사</strong>과 — 진심으로 사과</li>
+                        <li><strong class="text-emerald-300">약</strong>속 — 앞으로 어떻게 할지 약속</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SLIDE 3 : 행감바 개념 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <span class="px-4 py-1 rounded-full bg-blue-500/20 text-blue-300 font-bold text-sm mb-4">PART 1 · 행감바</span>
+            <h2 class="text-3xl md:text-5xl font-black mb-12 text-center">행동 → 감정 → 바람</h2>
+            <div class="flex flex-col gap-5 max-w-3xl w-full">
+                <div class="flex items-center gap-5 bg-slate-800/60 rounded-2xl p-5">
+                    <span class="step-badge bg-blue-500 text-white shrink-0">행</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-300">행동 (사실)</h3>
+                        <p class="text-slate-300">평가·비난 없이 <strong>일어난 일</strong>만. "네가 항상~" (X) → "어제 3시에~" (O)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 bg-slate-800/60 rounded-2xl p-5">
+                    <span class="step-badge bg-blue-500 text-white shrink-0">감</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-300">감정 (나-전달법)</h3>
+                        <p class="text-slate-300">"너 때문에" (X) → <strong>"나는 ~하게 느꼈어"</strong> (O)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 bg-slate-800/60 rounded-2xl p-5">
+                    <span class="step-badge bg-blue-500 text-white shrink-0">바</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-300">바람 (구체적 요청)</h3>
+                        <p class="text-slate-300">막연한 불만 (X) → <strong>"앞으로 ~해주면 좋겠어"</strong> (O)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SLIDE 4 : 행감바 예시 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 text-center">행감바 예시</h2>
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl w-full items-stretch">
+                <div class="bg-red-500/10 border border-red-400/30 rounded-2xl p-6">
+                    <p class="text-red-300 font-bold mb-3"><i class="fas fa-xmark mr-2"></i>이렇게 말하면</p>
+                    <p class="text-lg text-slate-200">"너는 왜 맨날 연락도 없이 늦어? 진짜 나 무시하는 거야?"</p>
+                </div>
+                <div class="bg-emerald-500/10 border border-emerald-400/30 rounded-2xl p-6">
+                    <p class="text-emerald-300 font-bold mb-3"><i class="fas fa-check mr-2"></i>행감바로 바꾸면</p>
+                    <p class="text-lg text-slate-200 space-y-1">
+                        <span class="block"><strong class="text-blue-300">[행]</strong> 오늘 약속보다 30분 늦게 왔는데 연락이 없었어.</span>
+                        <span class="block"><strong class="text-blue-300">[감]</strong> 나는 기다리면서 좀 서운하고 걱정됐어.</span>
+                        <span class="block"><strong class="text-blue-300">[바]</strong> 다음엔 늦으면 미리 문자 한 통만 줄 수 있을까?</span>
+                    </p>
+                </div>
+            </div>
+            <p class="mt-8 text-slate-400 text-center max-w-2xl">핵심: <strong class="text-white">상대의 인격</strong>이 아니라 <strong class="text-white">상황과 내 감정</strong>에 대해 말한다.</p>
+        </section>
+
+        <!-- ============ SLIDE 5 : 행감바 연습 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <span class="px-4 py-1 rounded-full bg-blue-500/20 text-blue-300 font-bold text-sm mb-4"><i class="fas fa-dumbbell mr-2"></i>연습 시간</span>
+            <h2 class="text-2xl md:text-4xl font-black mb-4 text-center">직접 채워보세요</h2>
+            <p class="text-slate-300 mb-8 text-center max-w-2xl">상황: <strong class="text-white">"팀 프로젝트에서 동료가 자기 파트를 마감까지 안 냈다."</strong></p>
+            <div class="flex flex-col gap-6 max-w-3xl w-full bg-slate-800/60 rounded-2xl p-8">
+                <div class="flex gap-4 items-start">
+                    <span class="step-badge bg-blue-500 text-white shrink-0 text-lg">행</span>
+                    <div class="flex-1"><p class="text-blue-300 font-bold mb-1">행동 (사실만)</p><div class="fill-line"></div></div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="step-badge bg-blue-500 text-white shrink-0 text-lg">감</span>
+                    <div class="flex-1"><p class="text-blue-300 font-bold mb-1">감정 (나는 ~게 느꼈어)</p><div class="fill-line"></div></div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="step-badge bg-blue-500 text-white shrink-0 text-lg">바</span>
+                    <div class="flex-1"><p class="text-blue-300 font-bold mb-1">바람 (앞으로 ~해주면)</p><div class="fill-line"></div></div>
+                </div>
+            </div>
+            <p class="mt-6 text-slate-400 text-sm">소리 내어 말해본 뒤 다음 슬라이드에서 예시 답안을 확인하세요.</p>
+        </section>
+
+        <!-- ============ SLIDE 6 : 행감바 연습 예시답안 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <h2 class="text-2xl md:text-4xl font-black mb-8 text-center"><i class="fas fa-lightbulb text-yellow-300 mr-2"></i>예시 답안</h2>
+            <div class="max-w-3xl w-full bg-emerald-500/10 border border-emerald-400/30 rounded-2xl p-8 space-y-4 text-lg">
+                <p><strong class="text-blue-300">[행]</strong> 이번 발표 자료에서 네 파트가 마감일까지 올라오지 않았어.</p>
+                <p><strong class="text-blue-300">[감]</strong> 나는 마감을 못 맞출까 봐 많이 불안하고 부담됐어.</p>
+                <p><strong class="text-blue-300">[바]</strong> 다음부터는 어려우면 하루 전에라도 미리 알려주면 같이 조정할 수 있을 것 같아.</p>
+            </div>
+            <p class="mt-8 text-slate-400 text-center max-w-2xl">정답은 없습니다. <strong class="text-white">사실 → 내 감정 → 구체적 요청</strong> 순서만 지키면 성공!</p>
+        </section>
+
+        <!-- ============ SLIDE 7 : 인사약 개념 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <span class="px-4 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-sm mb-4">PART 2 · 인사약</span>
+            <h2 class="text-3xl md:text-5xl font-black mb-12 text-center">인정 → 사과 → 약속</h2>
+            <div class="flex flex-col gap-5 max-w-3xl w-full">
+                <div class="flex items-center gap-5 bg-slate-800/60 rounded-2xl p-5">
+                    <span class="step-badge bg-emerald-500 text-white shrink-0">인</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-300">인정</h3>
+                        <p class="text-slate-300">무엇을 잘못했는지 <strong>구체적으로</strong> 인정. "미안한데~" (X) → "내가 ~한 건 잘못이야" (O)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 bg-slate-800/60 rounded-2xl p-5">
+                    <span class="step-badge bg-emerald-500 text-white shrink-0">사</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-300">사과</h3>
+                        <p class="text-slate-300">변명·"하지만" 없이 <strong>진심으로</strong>. 상대의 감정을 헤아리며.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 bg-slate-800/60 rounded-2xl p-5">
+                    <span class="step-badge bg-emerald-500 text-white shrink-0">약</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-300">약속</h3>
+                        <p class="text-slate-300">앞으로 어떻게 다르게 행동할지 <strong>구체적 약속</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SLIDE 8 : 인사약 예시 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 text-center">인사약 예시</h2>
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl w-full items-stretch">
+                <div class="bg-red-500/10 border border-red-400/30 rounded-2xl p-6">
+                    <p class="text-red-300 font-bold mb-3"><i class="fas fa-xmark mr-2"></i>이런 사과는 역효과</p>
+                    <p class="text-lg text-slate-200">"미안, 근데 너도 그럴 만했잖아. 아무튼 미안하다고."</p>
+                </div>
+                <div class="bg-emerald-500/10 border border-emerald-400/30 rounded-2xl p-6">
+                    <p class="text-emerald-300 font-bold mb-3"><i class="fas fa-check mr-2"></i>인사약으로 바꾸면</p>
+                    <p class="text-lg text-slate-200">
+                        <span class="block"><strong class="text-emerald-300">[인]</strong> 내가 사람들 앞에서 네 실수를 지적한 건 잘못이었어.</span>
+                        <span class="block"><strong class="text-emerald-300">[사]</strong> 창피하고 속상하게 만들어서 정말 미안해.</span>
+                        <span class="block"><strong class="text-emerald-300">[약]</strong> 앞으로 할 말이 있으면 따로 조용히 말할게.</span>
+                    </p>
+                </div>
+            </div>
+            <p class="mt-8 text-slate-400 text-center max-w-2xl">금지어: <strong class="text-red-300">"하지만"</strong>, <strong class="text-red-300">"네가 ~했으니까"</strong> — 변명은 사과를 무효로 만든다.</p>
+        </section>
+
+        <!-- ============ SLIDE 9 : 인사약 연습 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <span class="px-4 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-sm mb-4"><i class="fas fa-dumbbell mr-2"></i>연습 시간</span>
+            <h2 class="text-2xl md:text-4xl font-black mb-4 text-center">직접 채워보세요</h2>
+            <p class="text-slate-300 mb-8 text-center max-w-2xl">상황: <strong class="text-white">"바빠서 친구의 중요한 부탁을 깜빡하고 못 들어줬다."</strong></p>
+            <div class="flex flex-col gap-6 max-w-3xl w-full bg-slate-800/60 rounded-2xl p-8">
+                <div class="flex gap-4 items-start">
+                    <span class="step-badge bg-emerald-500 text-white shrink-0 text-lg">인</span>
+                    <div class="flex-1"><p class="text-emerald-300 font-bold mb-1">인정 (내가 ~한 건 잘못이야)</p><div class="fill-line"></div></div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="step-badge bg-emerald-500 text-white shrink-0 text-lg">사</span>
+                    <div class="flex-1"><p class="text-emerald-300 font-bold mb-1">사과 (진심으로, 변명 없이)</p><div class="fill-line"></div></div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="step-badge bg-emerald-500 text-white shrink-0 text-lg">약</span>
+                    <div class="flex-1"><p class="text-emerald-300 font-bold mb-1">약속 (앞으로 ~할게)</p><div class="fill-line"></div></div>
+                </div>
+            </div>
+            <p class="mt-6 text-slate-400 text-sm">소리 내어 말해본 뒤 다음 슬라이드에서 예시 답안을 확인하세요.</p>
+        </section>
+
+        <!-- ============ SLIDE 10 : 인사약 예시답안 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <h2 class="text-2xl md:text-4xl font-black mb-8 text-center"><i class="fas fa-lightbulb text-yellow-300 mr-2"></i>예시 답안</h2>
+            <div class="max-w-3xl w-full bg-emerald-500/10 border border-emerald-400/30 rounded-2xl p-8 space-y-4 text-lg">
+                <p><strong class="text-emerald-300">[인]</strong> 네가 부탁한 걸 내가 깜빡하고 안 챙긴 건 명백히 내 잘못이야.</p>
+                <p><strong class="text-emerald-300">[사]</strong> 너한테 중요한 일이었는데 실망시켜서 진심으로 미안해.</p>
+                <p><strong class="text-emerald-300">[약]</strong> 앞으로 부탁받으면 바로 메모하고, 오늘 일은 지금 바로 도와줄게.</p>
+            </div>
+            <p class="mt-8 text-slate-400 text-center max-w-2xl">진심 어린 사과는 <strong class="text-white">변명 대신 책임</strong>, 말 대신 <strong class="text-white">행동</strong>으로 끝맺는다.</p>
+        </section>
+
+        <!-- ============ SLIDE 11 : 롤플레이 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8">
+            <span class="px-4 py-1 rounded-full bg-yellow-500/20 text-yellow-300 font-bold text-sm mb-4"><i class="fas fa-users mr-2"></i>롤플레이</span>
+            <h2 class="text-2xl md:text-4xl font-black mb-8 text-center">2인 1조 실전 연습</h2>
+            <div class="grid md:grid-cols-3 gap-5 max-w-5xl w-full">
+                <div class="bg-slate-800/60 rounded-2xl p-6">
+                    <div class="text-3xl mb-3">🕐</div>
+                    <p class="font-bold text-blue-300 mb-1">상황 카드 1</p>
+                    <p class="text-slate-300 text-sm">룸메이트가 설거지를 계속 안 한다. → <strong class="text-white">행감바</strong>로 말하기</p>
+                </div>
+                <div class="bg-slate-800/60 rounded-2xl p-6">
+                    <div class="text-3xl mb-3">📱</div>
+                    <p class="font-bold text-emerald-300 mb-1">상황 카드 2</p>
+                    <p class="text-slate-300 text-sm">약속을 잊고 상대를 바람맞혔다. → <strong class="text-white">인사약</strong>으로 사과하기</p>
+                </div>
+                <div class="bg-slate-800/60 rounded-2xl p-6">
+                    <div class="text-3xl mb-3">💬</div>
+                    <p class="font-bold text-yellow-300 mb-1">상황 카드 3</p>
+                    <p class="text-slate-300 text-sm">말다툼 후 화해. → <strong class="text-white">인사약</strong> 먼저, 이어서 <strong class="text-white">행감바</strong></p>
+                </div>
+            </div>
+            <p class="mt-8 text-slate-400 text-center max-w-2xl">한 명은 말하고, 한 명은 듣고 피드백. 각 30초씩 말한 뒤 역할을 바꿔보세요.</p>
+        </section>
+
+        <!-- ============ SLIDE 12 : 요약 ============ -->
+        <section class="slide flex-col items-center justify-center h-full px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-10">오늘의 정리</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl w-full mb-10">
+                <div class="bg-blue-500/10 border border-blue-400/30 rounded-3xl p-8">
+                    <h3 class="text-2xl font-black text-blue-300 mb-3">행감바 = 요청</h3>
+                    <p class="text-xl">행동 · 감정 · 바람</p>
+                    <p class="text-slate-400 text-sm mt-2">비난하지 않고 내 마음을 전한다</p>
+                </div>
+                <div class="bg-emerald-500/10 border border-emerald-400/30 rounded-3xl p-8">
+                    <h3 class="text-2xl font-black text-emerald-300 mb-3">인사약 = 사과</h3>
+                    <p class="text-xl">인정 · 사과 · 약속</p>
+                    <p class="text-slate-400 text-sm mt-2">변명하지 않고 관계를 회복한다</p>
+                </div>
+            </div>
+            <p class="text-lg md:text-2xl text-slate-200 max-w-3xl">
+                좋은 대화는 재능이 아니라 <strong class="text-white">연습</strong>입니다.<br>
+                오늘 배운 공식을 <strong class="text-white">이번 주 실제 대화</strong>에서 한 번 써보세요!
+            </p>
+            <p class="mt-12 text-slate-500 text-sm">감사합니다 🙌</p>
+        </section>
+
+    </div>
+
+    <!-- Navigation controls -->
+    <div class="fixed bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-4 bg-slate-800/80 backdrop-blur px-5 py-2.5 rounded-full z-50 border border-slate-700">
+        <button id="prev-btn" class="text-slate-300 hover:text-white transition-colors" aria-label="이전"><i class="fas fa-chevron-left text-lg"></i></button>
+        <span id="slide-indicator" class="text-sm font-semibold text-slate-300 tabular-nums">1 / 12</span>
+        <button id="next-btn" class="text-slate-300 hover:text-white transition-colors" aria-label="다음"><i class="fas fa-chevron-right text-lg"></i></button>
+    </div>
+
+<script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    let current = 0;
+    const progressBar = document.getElementById('progress-bar');
+    const indicator = document.getElementById('slide-indicator');
+
+    function render() {
+        slides.forEach((s, i) => s.classList.toggle('active', i === current));
+        progressBar.style.width = ((current + 1) / slides.length * 100) + '%';
+        indicator.textContent = (current + 1) + ' / ' + slides.length;
+    }
+    function go(delta) {
+        current = Math.min(slides.length - 1, Math.max(0, current + delta));
+        render();
+    }
+    document.getElementById('next-btn').addEventListener('click', () => go(1));
+    document.getElementById('prev-btn').addEventListener('click', () => go(-1));
+    document.addEventListener('keydown', (e) => {
+        if (['ArrowRight', ' ', 'PageDown'].includes(e.key)) { e.preventDefault(); go(1); }
+        else if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); go(-1); }
+        else if (e.key === 'Home') { current = 0; render(); }
+        else if (e.key === 'End') { current = slides.length - 1; render(); }
+    });
+    // Touch / swipe support
+    let touchX = null;
+    document.addEventListener('touchstart', e => touchX = e.changedTouches[0].clientX, { passive: true });
+    document.addEventListener('touchend', e => {
+        if (touchX === null) return;
+        const dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+        touchX = null;
+    });
+    render();
+</script>
+</body>
+</html>
