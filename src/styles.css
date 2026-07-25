@@ -1,0 +1,648 @@
+/* ===================================================================
+   디자인 토큰
+   레퍼런스: Readwise Reader(하이라이트→복습 모델), Linear(정보 밀도·다크)
+   액센트가 앰버인 이유: 노션에서 표현을 표시하던 오렌지 하이라이트를
+   그대로 앱의 강조색으로 이어받는다. 같은 것을 같은 색으로 본다.
+   =================================================================== */
+
+:root {
+  /* 표면 — 4단계면 충분하다. 더 늘리면 위계가 흐려진다 */
+  --bg: #0f1115;
+  --surface: #16181d;
+  --surface-2: #1c1f26;
+  --surface-hover: #22262e;
+  --border: #262a32;
+  --border-strong: #343945;
+
+  /* 텍스트 — 3단계. 본문/보조/희미 */
+  --text: #e7e9ee;
+  --text-dim: #9aa0ad;
+  --text-faint: #6b7280;
+
+  /* 액센트 = 노션 오렌지 하이라이트의 후신 */
+  --accent: #e8a33d;
+  --accent-soft: rgba(232, 163, 61, 0.14);
+  --accent-border: rgba(232, 163, 61, 0.35);
+
+  /* 복습 평가 3단계 */
+  --good: #4ade80;
+  --hard: #fbbf24;
+  --again: #f87171;
+  --good-soft: rgba(74, 222, 128, 0.12);
+  --hard-soft: rgba(251, 191, 36, 0.12);
+  --again-soft: rgba(248, 113, 113, 0.12);
+
+  /* 타이포 — 학습 자료는 세리프, UI는 산세리프.
+     읽는 것과 조작하는 것을 시각적으로 분리한다 */
+  --font-ui: ui-sans-serif, -apple-system, 'Pretendard', 'Apple SD Gothic Neo',
+    'Malgun Gothic', system-ui, sans-serif;
+  --font-read: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
+    'Apple SD Gothic Neo', serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* 8px 리듬 (4px는 아이콘 정렬용으로만) */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+
+  --r1: 6px;
+  --r2: 10px;
+  --r3: 14px;
+  --r4: 20px;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.24);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.44);
+
+  /* 모션 — 짧고 절제된 곡선. 카드 뒤집기만 조금 길게 */
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --fast: 120ms;
+  --base: 200ms;
+  --slow: 380ms;
+
+  --container: 720px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --surface-2: #f4f2ef;
+    --surface-hover: #ebe8e3;
+    --border: #e2ded8;
+    --border-strong: #cfc9c1;
+    --text: #1c1b19;
+    --text-dim: #5f5b55;
+    --text-faint: #8d8880;
+    --accent: #b3701a;
+    --accent-soft: rgba(179, 112, 26, 0.1);
+    --accent-border: rgba(179, 112, 26, 0.3);
+    --good: #15803d;
+    --hard: #a16207;
+    --again: #b91c1c;
+    --good-soft: rgba(21, 128, 61, 0.09);
+    --hard-soft: rgba(161, 98, 7, 0.09);
+    --again-soft: rgba(185, 28, 28, 0.09);
+    --shadow: 0 1px 2px rgba(60, 50, 40, 0.06), 0 4px 14px rgba(60, 50, 40, 0.06);
+    --shadow-lg: 0 8px 40px rgba(60, 50, 40, 0.14);
+  }
+}
+
+/* ── 기본 ────────────────────────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* 본문이 가로로 넘치지 않게. 표는 각자 스크롤 컨테이너를 갖는다 */
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 620;
+  letter-spacing: -0.012em;
+  line-height: 1.25;
+}
+h1 { font-size: 26px; }
+h2 { font-size: 20px; }
+h3 { font-size: 17px; }
+h4 { font-size: 15px; }
+
+p { margin: 0 0 var(--s3); }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* 포커스 링은 절대 지우지 않는다 — 키보드로 복습하는 게 주 사용 방식이다 */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r1);
+}
+:focus:not(:focus-visible) { outline: none; }
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+/* ── 레이아웃 ────────────────────────────────────────────────────── */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--s4);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  height: 56px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s2);
+  font-weight: 660;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.brand__mark { color: var(--accent); }
+.brand__sub {
+  font-size: 12px;
+  font-weight: 480;
+  color: var(--text-faint);
+}
+
+/* 탭 — 모바일에서 가로 스크롤되되 body는 안 밀린다 */
+.tabs {
+  display: flex;
+  gap: var(--s1);
+  margin-left: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 520;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--r1);
+  cursor: pointer;
+  white-space: nowrap;
+  /* 터치 타겟 44px 확보 */
+  min-height: 40px;
+  transition: color var(--fast) var(--ease), background var(--fast) var(--ease);
+}
+.tab:hover { color: var(--text); background: var(--surface-hover); }
+.tab[aria-selected='true'] {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.tab__badge {
+  display: inline-block;
+  margin-left: var(--s2);
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #1a1206;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: var(--s6) 0 var(--s8);
+}
+
+.stack { display: grid; gap: var(--s4); }
+.stack--tight { gap: var(--s2); }
+.stack--loose { gap: var(--s6); }
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  flex-wrap: wrap;
+}
+.row--between { justify-content: space-between; }
+.spacer { flex: 1; }
+
+/* ── 카드·패널 ───────────────────────────────────────────────────── */
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  padding: var(--s5);
+}
+.panel--flush { padding: 0; overflow: hidden; }
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  font-size: 12px;
+  font-weight: 640;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── 버튼 ────────────────────────────────────────────────────────── */
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  min-height: 40px;
+  padding: 0 var(--s4);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r2);
+  background: var(--surface-2);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: background var(--fast) var(--ease),
+    border-color var(--fast) var(--ease), transform var(--fast) var(--ease);
+}
+.btn:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: var(--accent-border);
+}
+.btn:active:not(:disabled) { transform: translateY(1px); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1206;
+  font-weight: 620;
+}
+.btn--primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 88%, white);
+  border-color: transparent;
+}
+
+.btn--ghost { background: transparent; border-color: transparent; }
+.btn--ghost:hover:not(:disabled) { background: var(--surface-hover); }
+
+.btn--sm { min-height: 30px; padding: 0 var(--s3); font-size: 13px; }
+.btn--block { width: 100%; }
+
+/* 복습 평가 버튼 — 터치 타겟 넉넉하게, 색으로 즉시 구분 */
+.grade-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s2);
+}
+.grade {
+  min-height: 56px;
+  flex-direction: column;
+  gap: 2px;
+  font-weight: 620;
+}
+.grade__key {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.grade--again { color: var(--again); background: var(--again-soft); border-color: transparent; }
+.grade--hard  { color: var(--hard);  background: var(--hard-soft);  border-color: transparent; }
+.grade--good  { color: var(--good);  background: var(--good-soft);  border-color: transparent; }
+.grade--again:hover:not(:disabled) { background: color-mix(in srgb, var(--again-soft) 60%, var(--again)); color: var(--text); }
+.grade--hard:hover:not(:disabled)  { background: color-mix(in srgb, var(--hard-soft) 60%, var(--hard));  color: var(--text); }
+.grade--good:hover:not(:disabled)  { background: color-mix(in srgb, var(--good-soft) 60%, var(--good));  color: var(--text); }
+
+/* ── 입력 ────────────────────────────────────────────────────────── */
+
+.field { display: grid; gap: var(--s2); }
+.label { font-size: 13px; font-weight: 560; color: var(--text-dim); }
+.hint { font-size: 12px; color: var(--text-faint); line-height: 1.5; }
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: var(--s3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r2);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  transition: border-color var(--fast) var(--ease);
+}
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+.textarea {
+  min-height: 200px;
+  resize: vertical;
+  font-family: var(--font-read);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.input--mono { font-family: var(--font-mono); font-size: 13px; }
+
+/* ── 학습 텍스트 ─────────────────────────────────────────────────── */
+
+.read {
+  font-family: var(--font-read);
+  font-size: 18px;
+  line-height: 1.75;
+}
+.read--lg { font-size: 24px; line-height: 1.6; }
+.read--xl { font-size: 30px; line-height: 1.45; letter-spacing: -0.015em; }
+
+/* 노션의 오렌지 하이라이트를 그대로 재현 */
+.hl {
+  background: var(--accent-soft);
+  border-bottom: 1.5px solid var(--accent-border);
+  border-radius: 2px;
+  padding: 0 2px;
+  cursor: pointer;
+  transition: background var(--fast) var(--ease);
+}
+.hl:hover { background: color-mix(in srgb, var(--accent-soft) 50%, var(--accent)); }
+
+.speaker {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 660;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
+.direction {
+  font-family: var(--font-read);
+  font-style: italic;
+  color: var(--text-faint);
+  font-size: 15px;
+}
+.ko { color: var(--text-dim); font-size: 15px; line-height: 1.7; }
+
+/* ── 플래시카드 ──────────────────────────────────────────────────── */
+
+.flashcard {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  padding: var(--s6) var(--s5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r4);
+  box-shadow: var(--shadow);
+  text-align: center;
+  cursor: pointer;
+  animation: card-in var(--base) var(--ease);
+}
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.995); }
+  to   { opacity: 1; transform: none; }
+}
+
+.flashcard__front { font-family: var(--font-read); font-size: 30px; line-height: 1.4; }
+.flashcard__divider {
+  width: 40px;
+  height: 1px;
+  background: var(--border-strong);
+  margin: var(--s5) auto;
+}
+.flashcard__back { animation: reveal var(--base) var(--ease); }
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.flashcard__context {
+  margin-top: var(--s4);
+  padding: var(--s3) var(--s4);
+  background: var(--surface-2);
+  border-radius: var(--r2);
+  font-family: var(--font-read);
+  font-size: 15px;
+  color: var(--text-dim);
+  text-align: left;
+}
+
+/* ── 진행 표시 ───────────────────────────────────────────────────── */
+
+.progress {
+  height: 3px;
+  background: var(--surface-2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress__bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width var(--base) var(--ease);
+}
+
+.meter-row { display: grid; gap: var(--s1); }
+.meter-row__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+/* ── 통계 타일 ───────────────────────────────────────────────────── */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--s3);
+}
+.tile {
+  padding: var(--s4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+}
+.tile__value {
+  font-size: 28px;
+  font-weight: 660;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.tile__label { font-size: 12px; color: var(--text-faint); margin-top: var(--s1); }
+.tile--accent .tile__value { color: var(--accent); }
+
+/* ── 목록 ────────────────────────────────────────────────────────── */
+
+.list { display: grid; }
+.list__item {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--fast) var(--ease);
+}
+.list__item:last-child { border-bottom: 0; }
+.list__item:hover { background: var(--surface-hover); }
+.list__main { min-width: 0; flex: 1; }
+.list__title {
+  font-weight: 540;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list__meta { font-size: 12px; color: var(--text-faint); }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  padding: 2px var(--s2);
+  border-radius: var(--r1);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 560;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.chip--accent {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+.chip--box { font-family: var(--font-mono); }
+
+/* ── 빈 상태 ─────────────────────────────────────────────────────── */
+/* 습관이 죽는 지점이라 공들인다. 항상 다음 행동 하나를 제시한다 */
+
+.empty {
+  display: grid;
+  gap: var(--s4);
+  place-items: center;
+  padding: var(--s8) var(--s5);
+  text-align: center;
+}
+.empty__icon { font-size: 40px; line-height: 1; opacity: 0.75; }
+.empty__title { font-size: 17px; font-weight: 620; }
+.empty__body { color: var(--text-dim); max-width: 42ch; }
+
+/* ── 알림 ────────────────────────────────────────────────────────── */
+
+.notice {
+  display: flex;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  border-radius: var(--r2);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.notice--warn {
+  border-color: var(--hard);
+  background: var(--hard-soft);
+}
+.notice--error {
+  border-color: var(--again);
+  background: var(--again-soft);
+}
+.notice__icon { flex-shrink: 0; }
+
+/* ── 스크롤 컨테이너 ─────────────────────────────────────────────── */
+/* 넓은 내용(표·코드)은 자기 안에서만 스크롤한다 */
+
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.spin {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-strong);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 640px) {
+  main { padding: var(--s5) 0 var(--s7); }
+  .panel { padding: var(--s4); }
+  .brand__sub { display: none; }
+  .flashcard { min-height: 220px; padding: var(--s5) var(--s4); }
+  .flashcard__front { font-size: 24px; }
+  .read--xl { font-size: 24px; }
+}
