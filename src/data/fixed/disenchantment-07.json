@@ -1,0 +1,922 @@
+{
+  "work": "disenchantment",
+  "number": 7,
+  "title": "7. 역병 순찰 — 1/1",
+  "lines": [
+    {
+      "index": 0,
+      "en": "That's okay, honey. I go down easy.",
+      "ko": "괜찮아, 아가씨. 나 목 넘김 부드러운 편이야."
+    },
+    {
+      "index": 1,
+      "en": "Man, if I was a dwarf, I'd run this town.",
+      "ko": "야, 내가 드워프였으면 이 동네를 내가 다 주물렀을 텐데."
+    },
+    {
+      "index": 2,
+      "en": "Guys, we should go home before we pass out in the street. Again.",
+      "ko": "얘들아, 우리 길바닥에서 뻗기 전에 집에 가자. 또 그러기 전에."
+    },
+    {
+      "index": 3,
+      "en": "So tragically young.",
+      "ko": "안타깝게도 너무 어리군."
+    },
+    {
+      "index": 4,
+      "en": "So tragically small.",
+      "ko": "안타깝게도 너무 작군."
+    },
+    {
+      "index": 5,
+      "en": "Eh, this thing had it coming.",
+      "ko": "쯧, 이건 그럴 만했지."
+    },
+    {
+      "index": 6,
+      "en": "Elfo, don't freak out. Just stay calm.",
+      "ko": "엘포, 당황하지 마. 그냥 침착해."
+    },
+    {
+      "index": 7,
+      "en": "- Are we in the plague pit? - You are!",
+      "ko": "- 우리 지금 역병 시체 구덩이에 있는 거야? - 맞아요!"
+    },
+    {
+      "index": 8,
+      "en": "Was she gonna say \"before they light it on fire\"?",
+      "ko": "'불붙이기 전에'라고 말하려던 걸까?"
+    },
+    {
+      "index": 9,
+      "en": "We only just met.",
+      "ko": "우리 만난 지 얼마 안 됐는데."
+    },
+    {
+      "index": 10,
+      "en": "There are so many things we could have done and then tried.",
+      "ko": "우리가 해보고 나서 시도해볼 수 있었던 게 얼마나 많은데."
+    },
+    {
+      "index": 11,
+      "en": "Why didn't we give in to our instincts?",
+      "ko": "왜 우리 본능에 굴복하지 않았을까?"
+    },
+    {
+      "index": 12,
+      "en": "It's too bad (that) we never experienced bliss together.",
+      "ko": "우리가 함께 황홀을 경험해보지 못한 게 너무 아쉬워."
+    },
+    {
+      "index": 13,
+      "en": "We can, Bean. There's nothing in our way, except this arm.",
+      "ko": "할 수 있어, 빈. 우리 사이를 막는 건 아무것도 없어. 이 팔 빼고는."
+    },
+    {
+      "index": 14,
+      "en": "You meant bliss the feeling.",
+      "ko": "네가 말한 황홀은 그 기분이었구나."
+    },
+    {
+      "index": 15,
+      "en": "There's another kind of bliss?",
+      "ko": "황홀에 다른 종류가 있어?"
+    },
+    {
+      "index": 16,
+      "en": "Yeah, it's a drug. It makes you hallucinate.",
+      "ko": "응, 마약 이름이야. 먹으면 환각을 봐."
+    },
+    {
+      "index": 17,
+      "en": "Well, good stuff. We should get you two outta here.",
+      "ko": "뭐, 좋은 물건이지. 너희 둘 여기서 빼내야겠다."
+    },
+    {
+      "index": 18,
+      "en": "You knew that was there the whole time?",
+      "ko": "너 저게 거기 있는 거 처음부터 알고 있었어?"
+    },
+    {
+      "index": 19,
+      "en": "Yeah, saw it on the way down.",
+      "ko": "응, 떨어질 때 봤어."
+    },
+    {
+      "index": 20,
+      "en": "Don't flatter yourself, Princess.",
+      "ko": "김칫국 마시지 마, 공주님."
+    },
+    {
+      "index": 21,
+      "en": "and I'm not just making it up on the spot.",
+      "ko": "그리고 나 지금 이 자리에서 막 지어내는 거 아니야."
+    },
+    {
+      "index": 22,
+      "en": "Speaking of the spot, isn't this the spot? Let's talk about the spot now.",
+      "ko": "이 자리 얘기가 나와서 말인데, 여기가 바로 그 자리 아니야? 이제 그 자리 얘기 하자."
+    },
+    {
+      "index": 23,
+      "en": "Get ready to have your minds blown.",
+      "ko": "정신이 나가버릴 준비 하라고."
+    },
+    {
+      "index": 24,
+      "en": "Just breathe in and try to mellow.",
+      "ko": "그냥 들이마시고 느긋해져 봐."
+    },
+    {
+      "index": 25,
+      "en": "Hmm, kinda took you a long time to bring her up, though.",
+      "ko": "흠, 그런데 그 여자 얘기 꺼내는 데 좀 오래 걸렸네."
+    },
+    {
+      "index": 26,
+      "en": "It sorta seems like you might be a liar.",
+      "ko": "어쩐지 너 거짓말쟁이인 것 같은데."
+    },
+    {
+      "index": 27,
+      "en": "Oh, that's the stickiest.",
+      "ko": "야, 그거 진짜 찐득한 말이네."
+    },
+    {
+      "index": 28,
+      "en": "That's just real sticky coming from a friend.",
+      "ko": "친구 입에서 나온 말치고는 진짜 찐득하다."
+    },
+    {
+      "index": 29,
+      "en": "So, why haven't we met your little bitty elf squeeze?",
+      "ko": "그럼 그 쪼끄만 엘프 애인은 왜 아직 우리한테 안 보여준 거야?"
+    },
+    {
+      "index": 30,
+      "en": "Okay, okay. So, what does this big love of yours look like?",
+      "ko": "알았어, 알았어. 그래서 그 '거대한' 사랑은 어떻게 생겼어?"
+    },
+    {
+      "index": 31,
+      "en": "I know what she looks like.",
+      "ko": "난 어떻게 생겼는지 알아."
+    },
+    {
+      "index": 32,
+      "en": "Well, now I'm really curious to meet her.",
+      "ko": "이제 진짜로 만나보고 싶어졌는데."
+    },
+    {
+      "index": 33,
+      "en": "Like, way up the country, past the Unpassable Mountains?",
+      "ko": "그, 나라 저 위쪽, 넘을 수 없는 산맥 너머 그런 데?"
+    },
+    {
+      "index": 34,
+      "en": "Then how did you two meet?",
+      "ko": "그럼 둘이 어떻게 만난 거야?"
+    },
+    {
+      "index": 35,
+      "en": "so you can't look 'em up or anything. Just, you know, natural causes.",
+      "ko": "그러니까 찾아볼 수도 없어. 그냥, 뭐, 자연사였어."
+    },
+    {
+      "index": 36,
+      "en": "So, super-hot one-eyed girl with a dead family. Sounds legit.",
+      "ko": "그러니까, 가족이 다 죽은 초섹시 애꾸눈 여자라. 완전 믿음직하네."
+    },
+    {
+      "index": 37,
+      "en": "Because she is legit and totally real and very special to me!",
+      "ko": "믿음직하고 완전 실제로 존재하고 나한테 엄청 소중한 사람이니까!"
+    },
+    {
+      "index": 38,
+      "en": "Now calm down. I'm starting to hallucinate.",
+      "ko": "좀 진정해. 나 환각 시작됐어."
+    },
+    {
+      "index": 39,
+      "en": "but at the same time, you're being looked at by me.",
+      "ko": "그런데 동시에, 너는 나에게 보여지고 있어."
+    },
+    {
+      "index": 40,
+      "en": "Elfo, I owe you an apology, man. I totally saw your girlfriend back there.",
+      "ko": "엘포, 내가 너한테 사과할게. 아까 네 여자친구 완전히 봤어."
+    },
+    {
+      "index": 41,
+      "en": "I think we're fully prepared to slay a dragon.",
+      "ko": "이제 용 한 마리 잡을 준비가 완전히 된 것 같군."
+    },
+    {
+      "index": 42,
+      "en": "It was fun stabbing all those iguanas in that box.",
+      "ko": "상자에 든 이구아나들 찔러대는 거 재밌었어요."
+    },
+    {
+      "index": 43,
+      "en": "Can't believe Elfo stuck to his story no matter how hard I laughed.",
+      "ko": "내가 그렇게 비웃었는데도 엘포가 끝까지 말을 안 바꾸다니, 놀랍네."
+    },
+    {
+      "index": 44,
+      "en": "Did you ever stop to think that's because it's true?",
+      "ko": "진짜라서 그런 거라는 생각은 한 번도 안 해봤어?"
+    },
+    {
+      "index": 45,
+      "en": "No, he gets crumbs everywhere.",
+      "ko": "아니, 걔는 부스러기를 온 데 흘려."
+    },
+    {
+      "index": 46,
+      "en": "-And by we, I mean them. -Ya!",
+      "ko": "- '우리'라고 했지만, 저 사람들 말이야. - 야!"
+    },
+    {
+      "index": 47,
+      "en": "Hey, hey, sorry to interrupt, but are you guys available for a quest?",
+      "ko": "저기, 저기, 방해해서 미안한데, 혹시 원정 하나 맡아줄 시간 있어요?"
+    },
+    {
+      "index": 48,
+      "en": "Remember: really tall, red hair and, again, just the one eye.",
+      "ko": "잊지 마세요. 엄청 크고, 빨간 머리에, 다시 말하지만, 눈은 딱 하나."
+    },
+    {
+      "index": 49,
+      "en": "You're gonna send these knights to die on a quest for a made-up girlfriend? Cool.",
+      "ko": "지어낸 여자친구 찾으라고 저 기사들을 죽으러 보내는 거야? 멋지네."
+    },
+    {
+      "index": 50,
+      "en": "This wasn't a stupid drug trip. This was a vision of the truth.",
+      "ko": "이건 그냥 멍청한 마약 환각이 아니었어. 진실의 계시였어."
+    },
+    {
+      "index": 51,
+      "en": "I crawled through a door and saw a rainbow, and I'd risk their lives on it.",
+      "ko": "문을 기어서 통과했더니 무지개가 보였어. 나 거기에 저 사람들 목숨 걸 수 있어."
+    },
+    {
+      "index": 52,
+      "en": "Is this quest optional?",
+      "ko": "이 원정, 선택 사항인가요?"
+    },
+    {
+      "index": 53,
+      "en": "Silence, Turbish. We'll have her to you in a fortnight.",
+      "ko": "조용히 해, 터비시. 보름 안에 그 여자를 데려다 드리겠습니다."
+    },
+    {
+      "index": 54,
+      "en": "and I am not letting him stand on my feet again.",
+      "ko": "그리고 얘가 또 내 발을 밟게 두진 않을 겁니다."
+    },
+    {
+      "index": 55,
+      "en": "And if we succeed, how shall I be rewarded?",
+      "ko": "그리고 성공하면, 저에게 무슨 보상을 주시겠습니까?"
+    },
+    {
+      "index": 56,
+      "en": "With the goddamn salary I pay you.",
+      "ko": "내가 네놈한테 주는 그 망할 월급으로 됐지."
+    },
+    {
+      "index": 57,
+      "en": "Now, will you shut up down there? I'm trying to sleep.",
+      "ko": "그러니까 아래에서 좀 조용히 해줄래? 자려는 중이야."
+    },
+    {
+      "index": 58,
+      "en": "I got the stinger on my dinger And now it's all inflamed",
+      "ko": "고추에 침이 박혀서 지금 잔뜩 부어올랐네"
+    },
+    {
+      "index": 59,
+      "en": "Sing a little softer We're in avalanche terrain",
+      "ko": "노래 좀 작게 불러 여긴 눈사태 나는 데야"
+    },
+    {
+      "index": 60,
+      "en": "Can we have one dinner where we're not watching Jester?",
+      "ko": "저녁 한 끼라도 광대 안 보면서 먹을 수 없어?"
+    },
+    {
+      "index": 61,
+      "en": "But, first, we go live to the courtyard for the return of the knights.",
+      "ko": "하지만 먼저, 기사들의 귀환을 안뜰에서 생중계로 연결하겠습니다."
+    },
+    {
+      "index": 62,
+      "en": "Elfo, have I got a surprise for you.",
+      "ko": "엘포, 너한테 줄 깜짝 선물이 있어."
+    },
+    {
+      "index": 63,
+      "en": "Is it my grandpa trying to open a jar?",
+      "ko": "우리 할아버지가 병뚜껑 열려고 낑낑대는 소리야?"
+    },
+    {
+      "index": 64,
+      "en": "I thought you were a liar, but it turns out you're a stud.",
+      "ko": "난 네가 거짓말쟁이인 줄 알았는데, 알고 보니 완전 선수였네."
+    },
+    {
+      "index": 65,
+      "en": "We ain't having no giant rampage in here.",
+      "ko": "여기서 거인이 난동 부리는 일은 없을 거다."
+    },
+    {
+      "index": 66,
+      "en": "Send her back up whatever beanstalk she rode in on.",
+      "ko": "타고 내려온 콩나무가 뭐든, 그거 타고 되돌려 보내."
+    },
+    {
+      "index": 67,
+      "en": "Come on, Dad. You can't stand in the way of true love.",
+      "ko": "아빠, 왜 이래요. 진정한 사랑을 가로막을 수는 없어요."
+    },
+    {
+      "index": 68,
+      "en": "It's gotta be so hard for them already.",
+      "ko": "저 둘은 지금도 충분히 힘들 거예요."
+    },
+    {
+      "index": 69,
+      "en": "I never wanna think that thought again.",
+      "ko": "그 생각은 두 번 다시 하고 싶지 않구나."
+    },
+    {
+      "index": 70,
+      "en": "All right. Stick her down there, and bring me a nice hunk of Gorgonzola.",
+      "ko": "좋아. 저 여자 저기 아래 처박아 두고, 고르곤졸라 큼직한 덩어리 하나 가져와."
+    },
+    {
+      "index": 71,
+      "en": "Why am I the only one defending your girlfriend?",
+      "ko": "왜 네 여자친구 편들어주는 사람이 나뿐이야?"
+    },
+    {
+      "index": 72,
+      "en": "What kind of boyfriend are you?",
+      "ko": "무슨 남자친구가 그래?"
+    },
+    {
+      "index": 73,
+      "en": "She did throw Turbish off a cliff and eat his horse.",
+      "ko": "저 여자가 터비시를 절벽에서 던지고 말을 먹어치운 건 사실입니다."
+    },
+    {
+      "index": 74,
+      "en": "Think you can make a bed outta(from) one of these cheeses?",
+      "ko": "이 치즈 중 하나로 침대를 만들 수 있을 것 같나?"
+    },
+    {
+      "index": 75,
+      "en": "Anything but the Pepper Jack.",
+      "ko": "페퍼잭 치즈만 아니면 뭐든지요."
+    },
+    {
+      "index": 76,
+      "en": "Okay, it's all set.",
+      "ko": "좋아, 다 준비됐어."
+    },
+    {
+      "index": 77,
+      "en": "Pendergast is gonna take her chains off so you can get on in there,",
+      "ko": "펜더게스트가 사슬을 풀어줄 거야. 그럼 네가 안으로 들이대면 돼,"
+    },
+    {
+      "index": 78,
+      "en": "I'm rooting for you.",
+      "ko": "내가 응원할게."
+    },
+    {
+      "index": 79,
+      "en": "Me, in a complex web of lies.",
+      "ko": "나는, 복잡한 거짓의 거미줄 속에."
+    },
+    {
+      "index": 80,
+      "en": "Ugh. Why has no one eaten him yet?",
+      "ko": "아, 왜 아직 아무도 저놈을 안 먹었지?"
+    },
+    {
+      "index": 81,
+      "en": "Cat-thing, I've always been my own man, never needed others for advice.",
+      "ko": "고양이 나부랭이야, 나는 늘 내 힘으로 살아왔고 남의 조언 따위 필요 없었다."
+    },
+    {
+      "index": 82,
+      "en": "But now I'm a pig, and my life's a mess.",
+      "ko": "하지만 이제 나는 돼지고, 내 삶은 엉망이야."
+    },
+    {
+      "index": 83,
+      "en": "Thing is, having been handsome, powerful and rich,",
+      "ko": "문제는, 잘생기고 힘 있고 부유했으니,"
+    },
+    {
+      "index": 84,
+      "en": "I never had to stoop to kindness or charm.",
+      "ko": "친절이나 매력 따위로 몸을 굽힐 필요가 없었다는 거지."
+    },
+    {
+      "index": 85,
+      "en": "But now those things are gone and so are the ladies.",
+      "ko": "그런데 이제 그게 다 사라졌고, 여인들도 사라졌어."
+    },
+    {
+      "index": 86,
+      "en": "So, tell me why the damsels flock to you, someone far more repulsive than yours porkly.",
+      "ko": "그러니 말해봐라. 어째서 이 돼지님보다 훨씬 더 역겨운 너에게 아가씨들이 몰려드는 것이냐?"
+    },
+    {
+      "index": 87,
+      "en": "but it will come at a great cost!",
+      "ko": "하지만 그 대가는 엄청날 것이다!"
+    },
+    {
+      "index": 88,
+      "en": "-I get to ride you like a horse. -I'll welcome the touch.",
+      "ko": "- 내가 널 말처럼 타는 거야. - 그 손길, 환영이다."
+    },
+    {
+      "index": 89,
+      "en": "Now we must get started at once.",
+      "ko": "그럼 당장 시작해야겠군."
+    },
+    {
+      "index": 90,
+      "en": "I need a date for the ball this Sunday.",
+      "ko": "이번 일요일 무도회에 같이 갈 파트너가 필요해."
+    },
+    {
+      "index": 91,
+      "en": "Okay, let's fire up the magic crystal and see if there's any attractive singles in our area waiting to talk to you.",
+      "ko": "좋아, 마법 수정을 켜서 이 근처에 너랑 대화하려고 기다리는 매력적인 싱글이 있는지 한번 보자고."
+    },
+    {
+      "index": 92,
+      "en": "Want me to ask if you're gonna die alone, or are we good?",
+      "ko": "네가 외롭게 혼자 죽을지 물어봐 줄까, 아니면 이쯤 하면 됐어?"
+    },
+    {
+      "index": 93,
+      "en": "Yeah, I don't want to brag, but, at one point, I got my head stuck in her eye socket.",
+      "ko": "그래, 자랑하려는 건 아닌데, 한번은 내 머리가 여친 눈구멍에 끼여서 안 빠졌어."
+    },
+    {
+      "index": 94,
+      "en": "Pardon my curiosity, but when you two are making love, is she aware?",
+      "ko": "호기심을 용서해다오만, 둘이 사랑을 나눌 때 그 여자는 알아차리기는 하나?"
+    },
+    {
+      "index": 95,
+      "en": "No flower could have a stench as beautiful as yours, honey.",
+      "ko": "어떤 꽃도 자기 악취만큼 아름다운 냄새는 못 낼 거야, 자기."
+    },
+    {
+      "index": 96,
+      "en": "Ugh! That was stuck in my throat for days! Oh, my mouth tastes like a barn.",
+      "ko": "으! 그거 며칠 동안 목에 걸려 있었어! 아, 입에서 외양간 맛이 나."
+    },
+    {
+      "index": 97,
+      "en": "The hell is wrong with you people? Get these things off me.",
+      "ko": "당신들 대체 왜 이러는 거야? 이것 좀 풀어줘."
+    },
+    {
+      "index": 98,
+      "en": "For God's sake, I'm a grad student.",
+      "ko": "제발 좀, 나 대학원생이야."
+    },
+    {
+      "index": 99,
+      "en": "I can't believe you all put me through this 'cause I'm his \"girlfriend.\"",
+      "ko": "내가 저 녀석 '여자친구'라는 이유로 이런 일을 당하게 하다니, 진짜 어이가 없네."
+    },
+    {
+      "index": 100,
+      "en": "Well, have I got news for you. This guy is a filthy--",
+      "ko": "그럼 내가 알려줄 소식이 있는데. 이 녀석은 더러운..."
+    },
+    {
+      "index": 101,
+      "en": "Lover! I'm a filthy lover. So nasty.",
+      "ko": "애인! 나 더러운 애인이야. 아주 야하지."
+    },
+    {
+      "index": 102,
+      "en": "My name is Tess. Ugh, I'm outta here.",
+      "ko": "내 이름은 테스야. 아, 나 갈래."
+    },
+    {
+      "index": 103,
+      "en": "Why would I do you any favors?",
+      "ko": "내가 왜 네 부탁을 들어줘야 하지?"
+    },
+    {
+      "index": 104,
+      "en": "You help me keep up the charade a bit longer.",
+      "ko": "이 연극을 조금만 더 같이 해줘."
+    },
+    {
+      "index": 105,
+      "en": "Then we will have you walking out of here with 20/20, my friend.",
+      "ko": "그럼 여기서 나갈 땐 시력 1.0으로 걸어 나가게 해줄게, 친구."
+    },
+    {
+      "index": 106,
+      "en": "I'll be able to see out of it?",
+      "ko": "그걸로 볼 수 있게 된다고?"
+    },
+    {
+      "index": 107,
+      "en": "I thought you were just gonna give me a hunk of glass.",
+      "ko": "그냥 유리 덩어리 하나 끼워줄 줄 알았는데."
+    },
+    {
+      "index": 108,
+      "en": "That would've been the easy way out, huh?",
+      "ko": "그게 쉽게 넘어가는 길이었겠지?"
+    },
+    {
+      "index": 109,
+      "en": "-Don't try to be my friend. -You betcha.",
+      "ko": "- 내 친구가 되려고 하지 마. - 알겠고말고."
+    },
+    {
+      "index": 110,
+      "en": "You're sad and hideous. Play it up.",
+      "ko": "넌 처량하고 흉측해. 그걸 더 부풀려 봐."
+    },
+    {
+      "index": 111,
+      "en": "Chicks love pathetic.",
+      "ko": "여자들은 불쌍한 걸 좋아해."
+    },
+    {
+      "index": 112,
+      "en": "Ew. Look at that gross, crying pig. I have no interest in it.",
+      "ko": "으, 저 징그럽게 울고 있는 돼지 좀 봐. 하나도 관심 없어."
+    },
+    {
+      "index": 113,
+      "en": "Me neither. Twinsies.",
+      "ko": "나도 하나도. 우리 찌찌뽕."
+    },
+    {
+      "index": 114,
+      "en": "Get outta here!",
+      "ko": "썩 꺼져!"
+    },
+    {
+      "index": 115,
+      "en": "What are you coming to me for? We don't got that kind of relationship.",
+      "ko": "왜 나한테 오는 거야? 우리 그런 사이 아니잖아."
+    },
+    {
+      "index": 116,
+      "en": "My knees are full of splinters.",
+      "ko": "무릎에 나무 가시가 잔뜩 박혔어."
+    },
+    {
+      "index": 117,
+      "en": "I've been messing with this for a couple days.",
+      "ko": "이거 며칠 동안 이리저리 만져봤는데,"
+    },
+    {
+      "index": 118,
+      "en": "-Might point you in the right direction. - Hi, I'm Elfo.",
+      "ko": "- 방향을 알려줄지도 모릅니다. - 안녕하세요, 저는 엘포예요."
+    },
+    {
+      "index": 119,
+      "en": "Is there anything around here I can use to replace a giant's eye?",
+      "ko": "이 근처에 거인 눈을 대신할 만한 물건이 있을까요?"
+    },
+    {
+      "index": 120,
+      "en": "Eh, we gave it a shot.",
+      "ko": "뭐, 시도는 해봤네."
+    },
+    {
+      "index": 121,
+      "en": "Now let's greet our hosts.",
+      "ko": "이제 오늘의 주최자를 맞이해 주십시오."
+    },
+    {
+      "index": 122,
+      "en": "She oozes grace and a shiny trail wherever she goes.",
+      "ko": "가시는 곳마다 우아함과 반짝이는 자취를 흘리고 다니시는 분,"
+    },
+    {
+      "index": 123,
+      "en": "He ate all the shrimp before you got here.",
+      "ko": "여러분이 오기 전에 새우를 다 먹어치운 분입니다."
+    },
+    {
+      "index": 124,
+      "en": "Make room on the dance floor, cause I'm full of shrimp and I need to lay down.",
+      "ko": "무대 좀 비켜라. 새우를 잔뜩 먹어서 좀 누워야겠다."
+    },
+    {
+      "index": 125,
+      "en": "Princess, now that we're courting--",
+      "ko": "공주, 이제 우리가 교제하는 사이가 되었으니..."
+    },
+    {
+      "index": 126,
+      "en": "Don't say courting. No one's courting. But you can bring me a drink.",
+      "ko": "교제라는 말 하지 마세요. 아무도 교제 안 해요. 그래도 술은 가져다줘도 돼요."
+    },
+    {
+      "index": 127,
+      "en": "You scoundrel.",
+      "ko": "이 파렴치한."
+    },
+    {
+      "index": 128,
+      "en": "You said to act pathetic to these women. Then you swept in and stole them.",
+      "ko": "이 여인들한테 불쌍하게 굴라고 했잖나. 그러고는 네가 끼어들어서 다 채갔어."
+    },
+    {
+      "index": 129,
+      "en": "I know. Some of my best work.",
+      "ko": "알아. 내 최고 작품 중 하나지."
+    },
+    {
+      "index": 130,
+      "en": "The Adventures of Cat and Pig. That's what I've been calling us.",
+      "ko": "'고양이와 돼지의 대모험.' 내가 우리를 그렇게 불러왔는데."
+    },
+    {
+      "index": 131,
+      "en": "All I wanted to do was dance in the arms of someone beautiful, and you took that away.",
+      "ko": "난 그저 아름다운 이의 품에 안겨 춤추고 싶었을 뿐인데, 네가 그걸 앗아갔어."
+    },
+    {
+      "index": 132,
+      "en": "This has been our last adventure.",
+      "ko": "이번이 우리의 마지막 모험이었다."
+    },
+    {
+      "index": 133,
+      "en": "And now, our guests of honor.",
+      "ko": "그리고 이제, 오늘의 주빈이십니다."
+    },
+    {
+      "index": 134,
+      "en": "Brace yourselves for the inevitable visualizations.",
+      "ko": "머릿속에 어쩔 수 없이 떠오를 그림에 대비하시길."
+    },
+    {
+      "index": 135,
+      "en": "Elfo and Tess!",
+      "ko": "엘포와 테스!"
+    },
+    {
+      "index": 136,
+      "en": "May not be seeing well, but it is looking good.",
+      "ko": "잘 보이진 않겠지만, 보기엔 좋아."
+    },
+    {
+      "index": 137,
+      "en": "Just gotta straighten it out here.",
+      "ko": "여기 방향만 좀 맞춰주고."
+    },
+    {
+      "index": 138,
+      "en": "I can see out of it. I can see everything.",
+      "ko": "이걸로 보여. 다 보여."
+    },
+    {
+      "index": 139,
+      "en": "More than everything. I see the truth.",
+      "ko": "다 보이는 것보다 더. 진실이 보여."
+    },
+    {
+      "index": 140,
+      "en": "He's sleeping with the chambermaid. And she's sleeping with the chambermaid.",
+      "ko": "저 남자는 하녀랑 자고 있어. 그리고 저 여자도 하녀랑 자고 있어."
+    },
+    {
+      "index": 141,
+      "en": "What can I say? I'm attracted to people who are good at their job.",
+      "ko": "어쩌겠어? 난 자기 일 잘하는 사람한테 끌리는데."
+    },
+    {
+      "index": 142,
+      "en": "And you, you're so kind, but you have a hidden rage inside you that no one else can see.",
+      "ko": "그리고 당신, 당신은 참 친절하지만, 아무도 못 보는 분노를 안에 숨기고 있어요."
+    },
+    {
+      "index": 143,
+      "en": "It's why I can't keep a dog alive.",
+      "ko": "그래서 제가 키우는 개를 살려두질 못하죠."
+    },
+    {
+      "index": 144,
+      "en": "You only keep Elfo around for his blood.",
+      "ko": "당신은 피 때문에만 엘포를 옆에 두고 있고요."
+    },
+    {
+      "index": 145,
+      "en": "You have got to be...",
+      "ko": "설마 이럴 리가..."
+    },
+    {
+      "index": 146,
+      "en": "Oh, you know what? I think I already knew that.",
+      "ko": "아, 근데 그거 알아? 그건 나 이미 알고 있었던 것 같아."
+    },
+    {
+      "index": 147,
+      "en": "And you. You're not at all what you seem. You're a prince.",
+      "ko": "그리고 당신. 당신은 보이는 것과 전혀 달라요. 당신은 왕자예요."
+    },
+    {
+      "index": 148,
+      "en": "Yes, I was the handsomest prince in all the land.",
+      "ko": "그렇소, 나는 이 땅에서 가장 잘생긴 왕자였소."
+    },
+    {
+      "index": 149,
+      "en": "Bean, I should've confessed this a long time ago, but I was too ashamed.",
+      "ko": "빈, 진작에 고백해야 했는데, 너무 부끄러웠어."
+    },
+    {
+      "index": 150,
+      "en": "Tess was never my girlfriend.",
+      "ko": "테스는 내 여자친구였던 적이 없어."
+    },
+    {
+      "index": 151,
+      "en": "I've been lying to you about that.",
+      "ko": "그거 계속 너한테 거짓말한 거야."
+    },
+    {
+      "index": 152,
+      "en": "Oh, um, well, I wasn't gonna say that at all. I mean, a deal's a deal. Yikes.",
+      "ko": "아, 음, 난 그 얘기 할 생각 전혀 없었는데. 뭐, 약속은 약속이니까. 어이쿠."
+    },
+    {
+      "index": 153,
+      "en": "You were lying? But my mystical vision.",
+      "ko": "거짓말이었어? 근데 내가 본 신비한 계시는?"
+    },
+    {
+      "index": 154,
+      "en": "I crawled through the hole, the giant lady popped out of the flower,",
+      "ko": "내가 구멍으로 기어 들어갔더니, 꽃에서 거인 여자가 튀어나왔고,"
+    },
+    {
+      "index": 155,
+      "en": "You don't think I'm nice. None of you do.",
+      "ko": "당신들은 내가 착하다고 생각 안 하죠. 여기 아무도 안 그러죠."
+    },
+    {
+      "index": 156,
+      "en": "You all think I'm a big scary monster who's gonna go on a rampage.",
+      "ko": "다들 내가 곧 난동이나 부릴 크고 무서운 괴물이라고 생각하죠."
+    },
+    {
+      "index": 157,
+      "en": "Well, newsflash.",
+      "ko": "그래요, 속보입니다."
+    },
+    {
+      "index": 158,
+      "en": "Giants haven't been on a rampage since the '80s.",
+      "ko": "거인들은 80년대 이후로 난동 부린 적 없어요."
+    },
+    {
+      "index": 159,
+      "en": "And even then, it was one guy.",
+      "ko": "그때도 딱 한 명이었어요."
+    },
+    {
+      "index": 160,
+      "en": "Maybe if you got to know us, you'd find out that we're all about peace and love and goddamn body positivity!",
+      "ko": "우리를 좀 알아보려고 했다면, 우리가 평화랑 사랑이랑 그 망할 '자기 몸 긍정주의'를 지향한다는 걸 알았을 텐데!"
+    },
+    {
+      "index": 161,
+      "en": "But I guess we'll just always be ugly beasts to you.",
+      "ko": "하지만 당신들한테 우린 그냥 영원히 못생긴 짐승이겠죠."
+    },
+    {
+      "index": 162,
+      "en": "Well, fine. Think I'm ugly all you want.",
+      "ko": "그래요, 좋아요. 얼마든지 내가 못생겼다고 생각하세요."
+    },
+    {
+      "index": 163,
+      "en": "At least I'm not ugly on the inside.",
+      "ko": "적어도 난 속까지 못나지는 않았으니까."
+    },
+    {
+      "index": 164,
+      "en": "I've come to slay the mean lady who threw me off a cliff and ate my horse.",
+      "ko": "나를 절벽에서 던지고 내 말을 먹어치운 못된 여자를 죽이러 왔다."
+    },
+    {
+      "index": 165,
+      "en": "Turbish, no! Your horse is still alive!",
+      "ko": "터비시, 안 돼! 네 말 아직 살아 있어!"
+    },
+    {
+      "index": 166,
+      "en": "Oh! Damn it. Let me get that. Hang on. No, wait.",
+      "ko": "아! 젠장. 그거 내가 치울게요. 잠깐만요. 아니, 잠깐."
+    },
+    {
+      "index": 167,
+      "en": "This validates my bigotry!",
+      "ko": "이게 바로 내 편견이 옳았다는 증거다!"
+    },
+    {
+      "index": 168,
+      "en": "She's been a burden on the pantry. Kill her.",
+      "ko": "저 여자 때문에 식료품 창고가 거덜났어. 죽여라."
+    },
+    {
+      "index": 169,
+      "en": "Monsters are afraid of fire. We've got her cornered.",
+      "ko": "괴물은 불을 무서워하죠. 완전히 몰아넣었습니다."
+    },
+    {
+      "index": 170,
+      "en": "Because sometimes I feel like a freak, too.",
+      "ko": "나도 가끔은 내가 별종처럼 느껴지니까."
+    },
+    {
+      "index": 171,
+      "en": "Never said I was a freak.",
+      "ko": "난 내가 별종이라고 한 적 없는데."
+    },
+    {
+      "index": 172,
+      "en": "Wow, you're trapped in a pretty sad life.",
+      "ko": "와, 너 참 딱한 인생에 갇혀 있네."
+    },
+    {
+      "index": 173,
+      "en": "Want me to go back and step on your dad?",
+      "ko": "내가 다시 돌아가서 너희 아빠 밟아줄까?"
+    },
+    {
+      "index": 174,
+      "en": "But I'm gonna need you to jump up and down. Like a monster.",
+      "ko": "대신 여기서 펄쩍펄쩍 좀 뛰어줘. 괴물처럼."
+    },
+    {
+      "index": 175,
+      "en": "That was implied, right?",
+      "ko": "그건 말 안 해도 알아들었지?"
+    },
+    {
+      "index": 176,
+      "en": "Take a deep breath and fire on the count of three.",
+      "ko": "심호흡하고, 셋 하면 쏴라."
+    },
+    {
+      "index": 177,
+      "en": "Well, you helped me out of here, so I guess it's cool.",
+      "ko": "뭐, 여기서 빼내주긴 했으니까, 없던 일로 해줄게."
+    },
+    {
+      "index": 178,
+      "en": "-It is? -No! You're a dick.",
+      "ko": "- 그래? - 아니! 너 완전 개자식이야."
+    },
+    {
+      "index": 179,
+      "en": "None of this would've happened if you'd just told the truth.",
+      "ko": "네가 그냥 사실대로 말했으면 이 중에 아무 일도 안 일어났어."
+    },
+    {
+      "index": 180,
+      "en": "Take me with you. These savages don't deserve us.",
+      "ko": "나를 데려가 주시오. 이 야만인들은 우리에게 어울리지 않소."
+    },
+    {
+      "index": 181,
+      "en": "What were you before you turned hideous?",
+      "ko": "당신은 이 흉측한 꼴이 되기 전엔 뭐였소?"
+    },
+    {
+      "index": 182,
+      "en": "I lied because I was too insecure to admit I tried to kiss you.",
+      "ko": "내가 거짓말한 건, 너한테 키스하려고 했다는 걸 인정할 자신이 없어서였어."
+    }
+  ]
+}
