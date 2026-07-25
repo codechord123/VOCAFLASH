@@ -99,3 +99,10 @@ export function filterByLevel(cards, { hideBasic = true } = {}) {
   if (!hideBasic) return cards
   return cards.filter((c) => !isBasicWord(c))
 }
+
+/** 문자열 토큰 하나가 기초 단어인가. 단어 레이어에서 쓴다. */
+export function isBasicToken(word) {
+  const w = (word ?? '').trim().toLowerCase().replace(/[’]/g, "'")
+  if (!w) return true
+  return BASIC.has(w) || BASIC.has(stripContraction(w))
+}
