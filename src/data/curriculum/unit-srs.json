@@ -1,0 +1,182 @@
+{
+  "unitId": "u-07",
+  "count": 15,
+  "note": "퀴즈 완료(screen: done) 후에만 SRS 덱에 투입할 것. anchor 카드는 SRS 박스에 넣지 않고 낭독 트랙(recitations)으로만 카운트.",
+  "cards": [
+    {
+      "cardId": "c-07-001",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0709",
+      "front": "refuge",
+      "back": {
+        "meaningKo": "보호소, 피난처, 안식처",
+        "nuance": "shelter보다 '도피처'의 정서가 강함. take refuge(피신하다)로도 자주.",
+        "context": "a refuge for stray cats — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-002",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0710",
+      "front": "stray",
+      "back": {
+        "meaningKo": "(동물이) 길 잃은, 주인 없는",
+        "nuance": "stray cats/dogs가 관용적 결합. 동사로는 '벗어나다'.",
+        "context": "a refuge for stray cats — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-003",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0711",
+      "front": "venture",
+      "back": {
+        "meaningKo": "(수익을 노린) 사업, 모험적 시도",
+        "nuance": "위험을 안고 해보는 일. 딸의 꿈을 venture로 번역해 버리는 아빠의 어휘.",
+        "context": "these practical, money-making ventures — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-004",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0713",
+      "front": "mundane",
+      "back": {
+        "meaningKo": "평범하고 따분한, 일상적인",
+        "nuance": "boring보다 격이 있는 어휘. '세속의' → '별것 아닌 일상'.",
+        "context": "All those mundane, boring things everybody has to do — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-005",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0721",
+      "front": "fanciful",
+      "back": {
+        "meaningKo": "공상적인, 현실성 없는",
+        "nuance": "fancy(공상)의 형용사. '허황되다'보다 애틋한 결.",
+        "context": "my fanciful ambition — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-006",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0722",
+      "front": "contradict",
+      "back": {
+        "meaningKo": "반박하다, 모순되다",
+        "nuance": "contra(반대)+dict(말하다). 사람이 목적어면 '그 사람 말을 정면 부정하다'.",
+        "context": "if your parents never really fully contradict you — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-007",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0723",
+      "front": "ambiguous",
+      "back": {
+        "meaningKo": "모호한, 여러 뜻으로 읽히는",
+        "nuance": "vague(흐릿함)와 달리 '해석이 갈리는' 모호함.",
+        "context": "how ambiguous everything was, even death — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-008",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0724",
+      "front": "be dead set on",
+      "back": {
+        "meaningKo": "~하기로 단단히 마음먹다",
+        "nuance": "dead가 강조 부사(완전히). on 뒤에 명사/동명사.",
+        "context": "I was dead set on ... doing just the opposite — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-009",
+      "unitId": "u-07",
+      "kind": "vocab",
+      "wordId": "w-0725",
+      "front": "passive-aggressive",
+      "back": {
+        "meaningKo": "겉으로는 안 그런 척 은근히 공격적인",
+        "nuance": "대놓고 반대하지 않으면서 사람을 지치게 하는 태도.",
+        "context": "it's this passive-aggressive shit — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-010",
+      "unitId": "u-07",
+      "kind": "pattern",
+      "front": "\"아빠한테 ~라고 하면, 아빠는 ~라고 하곤 했다\" — 반복의 리듬을 영어로?",
+      "back": {
+        "pattern": "I'd say ~, and he'd say ~",
+        "explanation": "과거 시점을 먼저 깔고, would('d) + 동사원형을 반복해 리듬을 만든다.",
+        "anchor": "I'd say to my dad, \"I want to be a writer.\" and he'd say, \"journalist.\" — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-07-011",
+      "unitId": "u-07",
+      "kind": "pattern",
+      "front": "\"여름마다 할머니는 뒷문을 열어 두시곤 했다\" — 과거의 반복을 영어로?",
+      "back": {
+        "pattern": "과거 시점 + would('d) + 동사원형",
+        "explanation": "Every summer my grandmother would leave the back door open.",
+        "anchor": "he'd shave the hair off his legs and arms — Céline, Ch 5"
+      }
+    },
+    {
+      "cardId": "c-07-012",
+      "unitId": "u-07",
+      "kind": "trap",
+      "front": "I would live in Paris as a child. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "live는 상태동사. would 반복 용법은 동작동사만 받는다. → I used to live in Paris as a child.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-07-013",
+      "unitId": "u-07",
+      "kind": "trap",
+      "front": "Did you would go there often? — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "의문·부정문에서는 used to를 쓴다. → Did you use to go there often?",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-07-014",
+      "unitId": "u-07",
+      "kind": "trap",
+      "front": "시점 표현 없이 I'd say no.라고만 하면 어떻게 들리나?",
+      "back": {
+        "verdict": false,
+        "reason": "가정(\"그렇다면 난 거절할 텐데\")으로 들린다. 과거 반복으로 쓰려면 시점을 먼저 깔 것 — Even as a little girl, I'd say...",
+        "relatedRuleId": "r2"
+      }
+    },
+    {
+      "cardId": "c-07-015",
+      "unitId": "u-07",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "어린 시절, 꿈을 말할 때마다 아빠가 직업으로 되돌려주던 그 장면 — 통으로 떠올려 보세요.",
+      "back": {
+        "en": "Even as a little girl, they wanted me to think of a future career. I'd say to my dad, \"I want to be a writer.\" and he'd say, \"journalist.\" I'd say I wanted to have a refuge for stray cats, and he'd say, \"veterinarian.\" I'd say I wanted to be an actress, and he'd say, \"TV newscaster.\" It was this constant conversion of my fanciful ambition into these practical, money-making ventures.",
+        "speaker": "Céline",
+        "chapter": 2
+      }
+    }
+  ]
+}

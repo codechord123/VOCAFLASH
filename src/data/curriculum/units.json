@@ -1,0 +1,93 @@
+{
+  "work": "before-sunrise",
+  "curriculum": "4막 13유닛",
+  "note": "빌드 순서 1단계: Unit 7(would)만 우선 제작. 나머지 12유닛은 화면 검증 후 생성.",
+  "units": [
+    {
+      "unitId": "u-07",
+      "act": 2,
+      "order": 7,
+      "title": "would의 반복 용법",
+      "tagline": "셀린이 아버지에게 세 번 좌절하는 리듬",
+      "anchors": [
+        {
+          "en": "Even as a little girl, they wanted me to think of a future career. I'd say to my dad, \"I want to be a writer.\" and he'd say, \"journalist.\" I'd say I wanted to have a refuge for stray cats, and he'd say, \"veterinarian.\" I'd say I wanted to be an actress, and he'd say, \"TV newscaster.\" It was this constant conversion of my fanciful ambition into these practical, money-making ventures.",
+          "ko": "어린 여자애일 때도 부모님은 내가 장래 '직업'을 생각하길 바랐다. 아빠한테 \"작가가 되고 싶어\"라고 하면 아빠는 \"기자\"라고 했다. 길 잃은 고양이들의 보호소를 만들고 싶다고 하면 \"수의사\", 배우가 되고 싶다고 하면 \"TV 앵커\". 내 공상 같은 꿈이 번번이 실용적인 돈벌이 사업으로 치환되는, 그 끝없는 변환이었다.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Céline",
+          "sceneNote": "기차 라운지 칸. 어린 시절 꿈이 매번 실용적 직업으로 치환되던 기억. I'd say ~ and he'd say ~가 3연속 반복되며 지긋지긋함이 리듬으로 전달된다. would가 과거의 반복을 그리는 가장 교과서적인 순간."
+        },
+        {
+          "en": "And to improve his times, he'd shave the hair off his legs and arms.",
+          "ko": "그리고 기록을 단축하려고, 그는 다리와 팔의 털을 밀곤 했다.",
+          "source": "before-sunrise",
+          "chapter": 5,
+          "speaker": "Céline",
+          "sceneNote": "전차 안. 셀린이 첫사랑(수영 선수)을 회상하는 장면. 반복 습관 하나(he'd shave)로 인물이 그려진다 — would 한 번이면 '늘 그랬다'가 전달된다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "would + 동사원형 = ~하곤 했다",
+          "body": "과거에 반복된 행동을 그린다. 구어에서는 거의 항상 'd로 축약된다(I'd say, he'd say). 축약을 못 들으면 문장 전체의 시제를 놓친다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "과거 시점이 먼저 깔려야 한다",
+          "body": "would는 스스로 과거를 만들지 못한다. 셀린도 \"Even as a little girl\"로 시점을 깐 뒤에야 I'd say를 시작한다. 시점 없이 I'd say no.라고만 하면 듣는 사람은 가정(\"그렇다면 난 거절할 텐데\")으로 받아들인다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "상태동사에는 못 쓴다 ★최다 실수",
+          "body": "live, know, love, be 같은 상태동사는 would 반복 용법을 받지 못한다. ❌ I would live in Paris → ⭕ I used to live in Paris. 반복되는 '동작'만 would를 받는다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "의문·부정문에서는 used to로",
+          "body": "의문문과 부정문에서는 would 반복 용법을 피하고 used to를 쓴다. Did you use to take the train? / I didn't use to like coffee.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "(확장) 가상의 반복",
+          "body": "일어나지 않은 일을 습관처럼 그릴 때도 would가 온다. Ch 19에서 제시가 \"우리가 늘 함께 있다면\" 뒤에 every time that we would have people over, I'd be insecure, and I'd get a little too drunk라고 말하는 것, Ch 21 셀린의 knowing the exact story he'd tell in a given situation이 이 용법. 형태는 r1과 같고, 깔린 시점이 과거냐 가정이냐만 다르다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "Every summer my grandmother would leave the back door open, and the cats would just walk in.",
+          "ko": "여름마다 할머니는 뒷문을 열어 두시곤 했고, 고양이들이 그냥 걸어 들어오곤 했다."
+        },
+        {
+          "en": "Back in college, we'd stay up all night talking about movies nobody else had seen.",
+          "ko": "대학 시절 우리는 아무도 안 본 영화 얘기를 하며 밤을 새우곤 했다."
+        },
+        {
+          "en": "Whenever the train passed a station, he'd look up from his book for a second, then go back to reading.",
+          "ko": "기차가 역을 지날 때마다 그는 잠깐 책에서 눈을 들었다가, 다시 읽던 데로 돌아가곤 했다."
+        },
+        {
+          "en": "My first boss would always say, \"Done is better than perfect.\"",
+          "ko": "첫 직장 상사는 늘 \"완벽보다 완성\"이라고 말하곤 했다."
+        },
+        {
+          "en": "As a kid, I'd spend whole afternoons drawing maps of places that didn't exist.",
+          "ko": "어릴 때 나는 존재하지 않는 곳의 지도를 그리며 오후를 통째로 보내곤 했다."
+        }
+      ],
+      "vocabIds": [
+        "w-0701", "w-0702", "w-0703", "w-0704", "w-0705", "w-0706", "w-0707",
+        "w-0708", "w-0709", "w-0710", "w-0711", "w-0712", "w-0713", "w-0714",
+        "w-0715", "w-0716", "w-0717", "w-0718", "w-0719", "w-0720", "w-0721",
+        "w-0722", "w-0723", "w-0724", "w-0725", "w-0726", "w-0727"
+      ],
+      "coverage": { "fromScript": 4, "generated": 5 }
+    }
+  ]
+}

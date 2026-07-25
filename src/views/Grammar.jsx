@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react'
-import Drill from './Drill.jsx'
 
 // 통합 문법 색인.
 //
@@ -10,8 +9,7 @@ import Drill from './Drill.jsx'
 // 챕터별 보기로는 안 보이는 것이 여기서 보인다 — 같은 구문이 2장,
 // 8장, 19장에 반복해서 나왔다는 사실 자체가 학습 정보다.
 
-export default function Grammar({ index, sentences, works, onOpenChapter }) {
-  const [sub, setSub] = useState('index')
+export default function Grammar({ index, onOpenChapter }) {
   const [query, setQuery] = useState('')
   const [openGroup, setOpenGroup] = useState(index?.groups?.[0]?.id ?? null)
 
@@ -53,25 +51,8 @@ export default function Grammar({ index, sentences, works, onOpenChapter }) {
   // 검색 중에는 결과를 다 펼친다 — 접힌 채로는 찾은 걸 못 본다.
   const searching = query.trim().length > 0
 
-  if (sub === 'drill') {
-    return (
-      <div className="stack stack--loose">
-        <SubTabs sub={sub} setSub={setSub} />
-        {sentences ? (
-          <Drill sentences={sentences} works={works} />
-        ) : (
-          <div className="empty">
-            <span className="spin" />
-            <div className="empty__title">문장을 불러오는 중</div>
-          </div>
-        )}
-      </div>
-    )
-  }
-
   return (
     <div className="stack stack--loose">
-      <SubTabs sub={sub} setSub={setSub} />
       <header className="stack stack--tight">
         <h1>{index.title}</h1>
         <p className="hint">{index.subtitle}</p>
@@ -182,28 +163,5 @@ export default function Grammar({ index, sentences, works, onOpenChapter }) {
         )
       })}
     </div>
-  )
-}
-
-function SubTabs({ sub, setSub }) {
-  return (
-    <nav className="subtabs" role="tablist" aria-label="구문독해 화면">
-      <button
-        role="tab"
-        aria-selected={sub === 'index'}
-        className="tab"
-        onClick={() => setSub('index')}
-      >
-        구문 색인
-      </button>
-      <button
-        role="tab"
-        aria-selected={sub === 'drill'}
-        className="tab"
-        onClick={() => setSub('drill')}
-      >
-        문장 연습
-      </button>
-    </nav>
   )
 }

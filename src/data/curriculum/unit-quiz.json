@@ -1,0 +1,230 @@
+{
+  "unitId": "u-07",
+  "count": 20,
+  "types": ["meaning", "blank", "truefalse", "arrange", "koToEn", "anchorRestore"],
+  "quizzes": [
+    {
+      "quizId": "q-07-001",
+      "unitId": "u-07",
+      "type": "meaning",
+      "prompt": "refuge — \"a refuge for stray cats\"",
+      "wordId": "w-0709",
+      "options": ["보호소, 안식처", "후회, 미련", "증거, 근거", "모험, 도박"],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-07-001"
+    },
+    {
+      "quizId": "q-07-002",
+      "unitId": "u-07",
+      "type": "meaning",
+      "prompt": "mundane — \"All those mundane, boring things everybody has to do every day\"",
+      "wordId": "w-0713",
+      "options": ["평범하고 따분한", "신성한", "화려하고 사치스러운", "지저분한"],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-07-004"
+    },
+    {
+      "quizId": "q-07-003",
+      "unitId": "u-07",
+      "type": "meaning",
+      "prompt": "fanciful — \"my fanciful ambition\"",
+      "wordId": "w-0721",
+      "options": ["공상적인, 현실성 없는", "화려한", "야심 찬", "까다로운"],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-07-005"
+    },
+    {
+      "quizId": "q-07-004",
+      "unitId": "u-07",
+      "type": "meaning",
+      "prompt": "be dead set on — \"I was dead set on listening to what everybody thought I should be doing... and doing just the opposite\"",
+      "wordId": "w-0724",
+      "options": ["~하기로 단단히 마음먹은", "~에 질려 버린", "~에 무관심한", "~을 몹시 두려워하는"],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-07-008"
+    },
+    {
+      "quizId": "q-07-005",
+      "unitId": "u-07",
+      "type": "meaning",
+      "prompt": "passive-aggressive — \"it's this passive-aggressive shit\"",
+      "wordId": "w-0725",
+      "options": [
+        "겉으로는 안 그런 척 은근히 공격적인",
+        "소극적이고 방어적인",
+        "충동적이고 폭력적인",
+        "무기력하고 우울한"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-07-009"
+    },
+    {
+      "quizId": "q-07-006",
+      "unitId": "u-07",
+      "type": "blank",
+      "prompt": "Even as a little girl... I ___ say to my dad, \"I want to be a writer.\"",
+      "options": ["'d", "'ll", "'m", "was"],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-007",
+      "unitId": "u-07",
+      "type": "blank",
+      "prompt": "To improve his times, he ___ shave the hair off his legs and arms.",
+      "options": ["would", "will", "is used to", "has"],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-008",
+      "unitId": "u-07",
+      "type": "blank",
+      "prompt": "I ___ in a small town when I was a kid.",
+      "options": ["used to live", "would live", "would have lived", "am living"],
+      "answerIndex": 0,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-009",
+      "unitId": "u-07",
+      "type": "blank",
+      "prompt": "___ , my mother would read to us before bed.",
+      "options": ["When we were little", "These days", "Tomorrow night", "Right now"],
+      "answerIndex": 0,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-010",
+      "unitId": "u-07",
+      "type": "truefalse",
+      "prompt": "'어릴 때 파리에 살았다'를 I would live in Paris as a child.로 말할 수 있다.",
+      "isCorrect": false,
+      "explanation": "live는 상태동사라 would 반복 용법을 받지 못한다. → I used to live in Paris as a child.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-07-012"
+    },
+    {
+      "quizId": "q-07-011",
+      "unitId": "u-07",
+      "type": "truefalse",
+      "prompt": "When I was in high school, I'd take the same bus every morning. — 자연스러운 문장이다.",
+      "isCorrect": true,
+      "explanation": "과거 시점(When I was in high school)이 먼저 깔렸고, take는 동작동사이므로 'd(would)가 정확히 맞는다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-012",
+      "unitId": "u-07",
+      "type": "truefalse",
+      "prompt": "Did you would go there often? — 맞는 의문문이다.",
+      "isCorrect": false,
+      "explanation": "의문문에서는 would 반복 용법을 쓰지 않는다. → Did you use to go there often?",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-07-013"
+    },
+    {
+      "quizId": "q-07-013",
+      "unitId": "u-07",
+      "type": "truefalse",
+      "prompt": "과거 시점 표현 없이 I'd say no.라고만 하면, 듣는 사람은 '(그렇다면) 난 거절할 텐데'라는 가정으로 받아들이기 쉽다.",
+      "isCorrect": true,
+      "explanation": "would는 스스로 과거를 만들지 못한다. 시점이 안 깔리면 기본 해석은 가정이다. 셀린도 Even as a little girl로 시점을 먼저 깔았다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-07-014"
+    },
+    {
+      "quizId": "q-07-014",
+      "unitId": "u-07",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": ["and he'd say,", "I'd say to my dad,", "\"journalist.\"", "\"I want to be a writer,\""],
+      "answer": [1, 3, 0, 2],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-07-010"
+    },
+    {
+      "quizId": "q-07-015",
+      "unitId": "u-07",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 5)",
+      "chunks": ["he'd shave", "To improve his times,", "off his legs and arms.", "the hair"],
+      "answer": [1, 0, 3, 2],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-016",
+      "unitId": "u-07",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "would leave",
+        "Every summer",
+        "the back door open,",
+        "my grandmother",
+        "and the cats",
+        "would just walk in."
+      ],
+      "answer": [1, 3, 0, 2, 4, 5],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-07-011"
+    },
+    {
+      "quizId": "q-07-017",
+      "unitId": "u-07",
+      "type": "koToEn",
+      "prompt": "대학 시절 우리는 밤을 새우며 영화 얘기를 하곤 했다.",
+      "chunks": ["we'd stay up", "Back in college,", "about movies.", "all night", "talking"],
+      "answer": [1, 0, 3, 4, 2],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-018",
+      "unitId": "u-07",
+      "type": "koToEn",
+      "prompt": "어릴 때 나는 지도를 그리면서 오후를 통째로 보내곤 했다.",
+      "chunks": ["I'd spend", "As a kid,", "whole afternoons", "drawing maps."],
+      "answer": [1, 0, 2, 3],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-019",
+      "unitId": "u-07",
+      "type": "koToEn",
+      "prompt": "예전에는 커피를 안 좋아했다.",
+      "chunks": ["like coffee.", "I", "use to", "didn't"],
+      "answer": [1, 3, 2, 0],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-07-020",
+      "unitId": "u-07",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "I __1__ say to my dad, \"I want to be a writer.\" and __2__ say, \"journalist.\" I'd say I wanted to have a __3__ for stray cats, and he'd say, \"veterinarian.\" It was this constant __4__ of my fanciful ambition into these practical, money-making ventures.",
+      "blanks": ["'d", "he'd", "refuge", "conversion"],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-07-015"
+    }
+  ]
+}

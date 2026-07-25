@@ -1,51 +1,28 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { store } from './lib/store.js'
 import { deckStats, selectDueCards } from './lib/srs.js'
-import {
-  cardsFromExpressions,
-  cardsFromVocabNotes,
-  cardsFromB2Words,
-} from './lib/deck.js'
+import { cardsFromExpressions } from './lib/deck.js'
 
 // 앱을 켜자마자 필요한 것만 정적으로 싣는다. 매일 여는 화면은
-// '오늘'이고, 거기에 필요한 건 카드(localStorage)와 뜻풀이뿐이다.
+// 복습이고, 거기에 필요한 건 카드(localStorage)와 뜻풀이뿐이다.
 import expressionData from './data/expressions.json'
 import meaningData from './data/meanings.json'
 
-// 원문 24챕터, 챕터 해설, 문법 색인은 읽기·문법 탭에서만 쓴다.
+// 원문 24챕터, 챕터 해설, 문법 색인은 읽기·구문독해 탭에서만 쓴다.
 const loadReadingData = () =>
   Promise.all([
     import('./data/before-sunrise.json'),
     import('./data/analysis.json'),
     import('./data/grammar-index.json'),
-    import('./data/sheet-scripts.json'),
-    import('./data/analysis-disenchantment.json'),
-    import('./data/analysis-before-sunset.json'),
-  ]).then(([s, a, g, sh, dis, bsu]) => ({
+  ]).then(([s, a, g]) => ({
     chapters: s.default.chapters,
     analysis: a.default,
     grammarIndex: g.default,
-    sheetWorks: sh.default.works,
-    // 작품 id -> 해설. 해설이 없는 챕터는 원문만 보인다.
-    sheetAnalysis: {
-      disenchantment: dis.default,
-      'before-sunset': bsu.default,
-    },
   }))
 
-// 문장 1,948개와 B2 단어 899개는 합쳐서 2MB에 가깝다. 첫 실행의 시드
-// 생성과 문장 연습 탭에서만 쓰이므로 필요할 때 가져온다. 매일 여는
-// 복습 화면이 이 무게를 지고 갈 이유가 없다.
-const loadBulkData = () =>
-  Promise.all([
-    import('./data/sentences.json'),
-    import('./data/b2-words.json'),
-  ]).then(([s, b]) => ({ sentences: s.default, b2Words: b.default }))
-
 import VocabPart from './views/VocabPart.jsx'
-import ReadPart from './views/ReadPart.jsx'
+import Read from './views/Read.jsx'
 import Grammar from './views/Grammar.jsx'
-import Drill from './views/Drill.jsx'
 import Settings from './views/Settings.jsx'
 
 // 학습 파트 3개. 5개 탭은 모바일에서 라벨이 잘려서 못 쓴다.
@@ -58,13 +35,12 @@ const TABS = [
 ]
 
 // 시드를 한 번만 넣기 위한 키. 시드 내용이 바뀌면 버전을 올린다.
-const SEED_ID = 'before-sunrise+sheet-vocab+b2.v2'
+// v3: 비포 선라이즈만 남긴다 — 시트 메모·B2 단어장 카드를 덱에서 뺀다.
+const SEED_ID = 'before-sunrise-only.v3'
 
 export default function App() {
   const [tab, setTab] = useState('vocab')
   const [state, setState] = useState(() => store.load())
-  const [bulk, setBulk] = useState(null)
-  const [bulkError, setBulkError] = useState(null)
   const [reading, setReading] = useState(null)
   const [readingError, setReadingError] = useState(null)
   // 문법 색인에서 챕터로 건너뛸 때 어느 장을 열지 전달한다.
@@ -82,49 +58,23 @@ export default function App() {
     return map
   }, [])
 
-  const ensureBulk = useCallback(async () => {
-    if (bulk) return bulk
-    try {
-      const loaded = await loadBulkData()
-      setBulk(loaded)
-      setBulkError(null)
-      return loaded
-    } catch (err) {
-      // 조용히 실패하면 문장 연습 탭이 영원히 빈 화면이 된다.
-      setBulkError(err)
-      throw err
-    }
-  }, [bulk])
-
-  // 첫 실행: 본인 자산을 덱에 심는다. 빈 화면으로 시작하지 않는 것이
-  // 이 앱의 핵심이라 여기서 실패하면 안 된다.
+  // 첫 실행(또는 시드 버전 변경): 비포 선라이즈 하이라이트만 덱에 심는다.
+  // 이미 있던 카드의 복습 진행(박스·예정일)은 id가 같으면 그대로 살리고,
+  // 삭제된 자료에서 온 카드(시트 메모·B2)만 걷어낸다. 사용자가 읽다가
+  // 직접 저장한 카드는 어느 덱이든 남긴다.
   useEffect(() => {
     if (store.hasSeed(SEED_ID)) return
-    let cancelled = false
-    ensureBulk()
-      .then(({ sentences, b2Words }) => {
-        if (cancelled) return
-        const sentenceById = new Map(sentences.sentences.map((s) => [s.id, s]))
-        const seeded = [
-          ...cardsFromExpressions(expressionData.expressions, meanings),
-          ...cardsFromVocabNotes(
-            sentences.vocabNotes,
-            sentences.chatVocab,
-            sentenceById
-          ),
-          ...cardsFromB2Words(b2Words),
-        ]
-        const next = store.update((s) => ({ ...s, cards: seeded }))
-        store.markSeed(SEED_ID, seeded.length)
-        setState({ ...next })
-      })
-      .catch(() => {
-        /* 화면에 이미 오류를 띄운다 */
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [ensureBulk, meanings])
+    const seeded = cardsFromExpressions(expressionData.expressions, meanings)
+    const next = store.update((s) => {
+      const kept = s.cards.filter(
+        (c) => c.origin !== 'learner-note' && c.origin !== 'curated'
+      )
+      const keptIds = new Set(kept.map((c) => c.id))
+      return { ...s, cards: [...kept, ...seeded.filter((c) => !keptIds.has(c.id))] }
+    })
+    store.markSeed(SEED_ID, next.cards.length)
+    setState({ ...next })
+  }, [meanings])
 
   const ensureReading = useCallback(async () => {
     if (reading) return reading
@@ -141,11 +91,10 @@ export default function App() {
 
   // 탭을 열면 그때 가져온다.
   useEffect(() => {
-    if (tab === 'syntax' && !bulk) ensureBulk().catch(() => {})
     if ((tab === 'read' || tab === 'syntax') && !reading) {
       ensureReading().catch(() => {})
     }
-  }, [tab, bulk, reading, ensureBulk, ensureReading])
+  }, [tab, reading, ensureReading])
 
   const cards = state.cards
   const activeDecks = state.settings.activeDecks ?? {}
@@ -176,7 +125,7 @@ export default function App() {
           <div className="brand">
             <span className="brand__mark">◆</span>
             <span>Script Study</span>
-            <span className="brand__sub">Before 3부작 · Disenchantment</span>
+            <span className="brand__sub">Before Sunrise</span>
           </div>
           <nav className="tabs" role="tablist" aria-label="화면 전환">
             {TABS.map((t) => (
@@ -219,12 +168,10 @@ export default function App() {
 
           {tab === 'read' &&
             (reading ? (
-              <ReadPart
+              <Read
                 key={jumpChapter ?? 'read'}
                 chapters={reading.chapters}
                 analysis={reading.analysis}
-                sheetWorks={reading.sheetWorks}
-                sheetAnalysis={reading.sheetAnalysis}
                 cards={cards}
                 initialChapter={jumpChapter}
               />
@@ -240,8 +187,6 @@ export default function App() {
             (reading ? (
               <Grammar
                 index={reading.grammarIndex}
-                sentences={bulk?.sentences?.sentences ?? null}
-                works={bulk?.sentences?.works ?? null}
                 onOpenChapter={(n) => {
                   setJumpChapter(n)
                   setTab('read')

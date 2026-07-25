@@ -3,9 +3,8 @@ import Vocab from './Vocab.jsx'
 import Swipe from './Swipe.jsx'
 import { selectDueCards, isDue, deckStats } from '../lib/srs.js'
 import { filterByLevel } from '../lib/level.js'
-import { TOPICS } from '../lib/topics.js'
 
-// 단어 파트. 복습 · 주제별 · 목록 세 화면.
+// 단어 파트. 복습 · 묶음 · 목록 세 화면.
 //
 // 복습은 스와이프 하나로 한다. 예전에는 버튼식 카드 화면이 아래에 같이
 // 있었는데, 같은 카드를 두 방식으로 보여주는 것은 선택을 강요할 뿐
@@ -13,7 +12,7 @@ import { TOPICS } from '../lib/topics.js'
 
 const SUB = [
   { id: 'review', label: '복습' },
-  { id: 'topic', label: '주제별' },
+  { id: 'topic', label: '묶음' },
   { id: 'list', label: '목록' },
 ]
 
@@ -95,11 +94,11 @@ function Review({ dueCards, stats, onStart, onGoTopic }) {
         <div className="empty__icon">✓</div>
         <div className="empty__title">오늘 볼 카드가 없습니다</div>
         <p className="empty__body">
-          예정된 복습을 다 끝냈습니다. 더 하고 싶으면 주제를 골라 넘겨
-          보세요 — 복습 예정일과 상관없이 그 주제 전체가 나옵니다.
+          예정된 복습을 다 끝냈습니다. 더 하고 싶으면 묶음을 골라 넘겨
+          보세요 — 복습 예정일과 상관없이 그 묶음 전체가 나옵니다.
         </p>
         <button className="btn btn--primary" onClick={onGoTopic}>
-          주제 고르기
+          묶음 고르기
         </button>
       </div>
     )
@@ -158,58 +157,32 @@ function Review({ dueCards, stats, onStart, onGoTopic }) {
 }
 
 /**
- * 주제별 선택.
- *
- * B2 단어장 899개는 30주제 × 30단어로 나뉘어 있다. 시트에 Topic_ID
- * 숫자만 있어서 이름을 붙였다(lib/topics.js). 작품에서 나온 카드는
- * 작품별로 묶는다.
+ * 묶음 선택. 카드를 덱(하이라이트/메모)별로 묶어 몰아서 넘긴다.
+ * 커리큘럼 유닛이 생기면 유닛별 묶음이 여기에 추가된다.
  */
 function TopicPicker({ cards, onStart }) {
   const groups = useMemo(() => {
-    const topic = new Map()
-    const work = new Map()
-
+    const byDeck = new Map()
     for (const c of cards) {
-      if (c.topicId && TOPICS[c.topicId]) {
-        const g = topic.get(c.topicId) ?? []
-        g.push(c)
-        topic.set(c.topicId, g)
-      } else {
-        const key = c.source?.work ?? '기타'
-        const g = work.get(key) ?? []
-        g.push(c)
-        work.set(key, g)
-      }
+      const key = c.deck === 'note' ? '내 메모' : c.source?.work ?? '기타'
+      const g = byDeck.get(key) ?? []
+      g.push(c)
+      byDeck.set(key, g)
     }
-
-    return {
-      topics: [...topic.entries()]
-        .sort((a, b) => a[0] - b[0])
-        .map(([id, list]) => ({ id, ...TOPICS[id], cards: list })),
-      works: [...work.entries()].map(([name, list]) => ({ name, cards: list })),
-    }
+    return [...byDeck.entries()].map(([name, list]) => ({ name, cards: list }))
   }, [cards])
 
   return (
     <div className="stack stack--loose">
       <p className="hint">
-        주제를 골라 그 안의 단어만 몰아서 넘깁니다. 복습 예정일과 상관없이
+        묶음을 골라 그 안의 단어만 몰아서 넘깁니다. 복습 예정일과 상관없이
         전부 나오고, 넘긴 결과는 복습 일정에 반영됩니다.
       </p>
 
-      {groups.works.length > 0 && (
-        <section className="stack">
-          <div className="section-title">작품에서 나온 표현</div>
-          {groups.works.map((g) => (
-            <GroupRow key={g.name} icon="◆" name={g.name} cards={g.cards} onStart={onStart} />
-          ))}
-        </section>
-      )}
-
       <section className="stack">
-        <div className="section-title">주제별 어휘</div>
-        {groups.topics.map((g) => (
-          <GroupRow key={g.id} icon={g.icon} name={g.name} cards={g.cards} onStart={onStart} />
+        <div className="section-title">묶음</div>
+        {groups.map((g) => (
+          <GroupRow key={g.name} icon="◆" name={g.name} cards={g.cards} onStart={onStart} />
         ))}
       </section>
     </div>
