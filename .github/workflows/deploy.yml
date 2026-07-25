@@ -1,0 +1,59 @@
+name: Deploy
+
+# 새 앱을 GitHub Pages로 배포한다.
+# 기존 B2 플래시카드(legacy/b2-flashcard.html)도 함께 올라가므로
+# 배포 후 /legacy/b2-flashcard.html 로 그대로 접근할 수 있다.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 배포 중에 새 푸시가 오면 진행 중인 것을 취소하지 않고 큐에 넣는다.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      # 기존 앱과 원본 단어 데이터를 산출물에 같이 넣는다.
+      # words.json은 legacy 앱이 절대 URL로 받지만, 함께 두면
+      # 저장소를 비공개로 바꿔도 배포본에서는 계속 열린다.
+      - name: Include legacy app
+        run: |
+          mkdir -p dist/legacy
+          cp legacy/b2-flashcard.html dist/legacy/
+          cp words.json dist/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
