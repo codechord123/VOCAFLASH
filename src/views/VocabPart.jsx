@@ -1,17 +1,15 @@
 import { useMemo, useState } from 'react'
-import Today from './Today.jsx'
 import Vocab from './Vocab.jsx'
 import Swipe from './Swipe.jsx'
-import { selectDueCards, isDue } from '../lib/srs.js'
+import { selectDueCards, isDue, deckStats } from '../lib/srs.js'
+import { filterByLevel } from '../lib/level.js'
 import { TOPICS } from '../lib/topics.js'
 
 // 단어 파트. 복습 · 주제별 · 목록 세 화면.
 //
-// 순서에 의도가 있다. 매일 여는 것은 '복습'(오늘 볼 카드)이고, '주제별'은
-// 특정 분야를 몰아서 볼 때, '목록'은 찾아볼 때 쓴다.
-//
-// 복습과 주제별 둘 다 스와이프로 넘긴다 — 카드를 세우는 방식만 다르고
-// 넘기는 경험은 같다.
+// 복습은 스와이프 하나로 한다. 예전에는 버튼식 카드 화면이 아래에 같이
+// 있었는데, 같은 카드를 두 방식으로 보여주는 것은 선택을 강요할 뿐
+// 도움이 안 된다. 넘기는 방식은 하나면 된다.
 
 const SUB = [
   { id: 'review', label: '복습' },
@@ -19,14 +17,28 @@ const SUB = [
   { id: 'list', label: '목록' },
 ]
 
-export default function VocabPart({ cards, reviewCards, stats, settings, commit }) {
+export default function VocabPart({ cards, reviewCards, settings, commit }) {
   const [sub, setSub] = useState('review')
-  const [swiping, setSwiping] = useState(null) // 스와이프할 카드 배열
+  const [swiping, setSwiping] = useState(null)
+
+  const hideBasic = settings.hideBasicWords !== false
+
+  // 기초 단어(have, been 같은 조동사 한 개짜리)는 카드에서 뺀다.
+  // 지우지 않고 가리는 것이라 설정에서 되돌릴 수 있다.
+  const studyCards = useMemo(
+    () => filterByLevel(cards, { hideBasic }),
+    [cards, hideBasic]
+  )
+  const studyReviewCards = useMemo(
+    () => filterByLevel(reviewCards, { hideBasic }),
+    [reviewCards, hideBasic]
+  )
 
   const dueCards = useMemo(
-    () => selectDueCards(reviewCards, { limit: settings.dailyLimit }),
-    [reviewCards, settings.dailyLimit]
+    () => selectDueCards(studyReviewCards, { limit: settings.dailyLimit }),
+    [studyReviewCards, settings.dailyLimit]
   )
+  const stats = useMemo(() => deckStats(studyReviewCards), [studyReviewCards])
 
   if (swiping) {
     return (
@@ -59,30 +71,88 @@ export default function VocabPart({ cards, reviewCards, stats, settings, commit 
       </nav>
 
       {sub === 'review' && (
-        <div className="stack stack--loose">
-          {dueCards.length > 0 && (
-            <button
-              className="btn btn--primary btn--block"
-              onClick={() => setSwiping(dueCards)}
-            >
-              스와이프로 {dueCards.length}개 넘기기
-            </button>
-          )}
-          <Today
-            cards={reviewCards}
-            stats={stats}
-            settings={settings}
-            commit={commit}
-            onGoTo={() => setSub('list')}
-          />
-        </div>
+        <Review
+          dueCards={dueCards}
+          stats={stats}
+          onStart={() => setSwiping(dueCards)}
+          onGoTopic={() => setSub('topic')}
+        />
       )}
 
       {sub === 'topic' && (
-        <TopicPicker cards={cards} onStart={(sel) => setSwiping(sel)} />
+        <TopicPicker cards={studyCards} onStart={(sel) => setSwiping(sel)} />
       )}
 
-      {sub === 'list' && <Vocab cards={cards} commit={commit} />}
+      {sub === 'list' && <Vocab cards={studyCards} commit={commit} />}
+    </div>
+  )
+}
+
+function Review({ dueCards, stats, onStart, onGoTopic }) {
+  if (dueCards.length === 0) {
+    return (
+      <div className="empty">
+        <div className="empty__icon">✓</div>
+        <div className="empty__title">오늘 볼 카드가 없습니다</div>
+        <p className="empty__body">
+          예정된 복습을 다 끝냈습니다. 더 하고 싶으면 주제를 골라 넘겨
+          보세요 — 복습 예정일과 상관없이 그 주제 전체가 나옵니다.
+        </p>
+        <button className="btn btn--primary" onClick={onGoTopic}>
+          주제 고르기
+        </button>
+      </div>
+    )
+  }
+
+  return (
+    <div className="stack stack--loose">
+      <button className="btn btn--primary btn--block" onClick={onStart}>
+        스와이프로 {dueCards.length}개 넘기기
+      </button>
+
+      <div className="tiles">
+        <div className="tile tile--accent">
+          <div className="tile__value">{dueCards.length}</div>
+          <div className="tile__label">오늘 볼 카드</div>
+        </div>
+        <div className="tile">
+          <div className="tile__value">{stats.fresh.toLocaleString('ko')}</div>
+          <div className="tile__label">아직 안 본 것</div>
+        </div>
+        <div className="tile">
+          <div className="tile__value">{stats.learned.toLocaleString('ko')}</div>
+          <div className="tile__label">익힘</div>
+        </div>
+        <div className="tile">
+          <div className="tile__value">{stats.total.toLocaleString('ko')}</div>
+          <div className="tile__label">전체</div>
+        </div>
+      </div>
+
+      <section className="stack stack--tight">
+        <div className="section-title">박스별 분포</div>
+        <p className="hint">
+          박스가 오를수록 다시 보는 간격이 길어집니다 — 1·3·7·14·30일.
+          틀리면 1번으로 돌아갑니다.
+        </p>
+        {stats.byBox.map((n, i) => (
+          <div className="meter-row" key={i}>
+            <div className="meter-row__label">
+              <span>박스 {i + 1}</span>
+              <span>{n.toLocaleString('ko')}</span>
+            </div>
+            <div className="progress">
+              <div
+                className="progress__bar"
+                style={{
+                  width: stats.total ? `${(n / stats.total) * 100}%` : '0%',
+                }}
+              />
+            </div>
+          </div>
+        ))}
+      </section>
     </div>
   )
 }
@@ -127,29 +197,19 @@ function TopicPicker({ cards, onStart }) {
         전부 나오고, 넘긴 결과는 복습 일정에 반영됩니다.
       </p>
 
-      <section className="stack">
-        <div className="section-title">작품에서 나온 표현</div>
-        {groups.works.map((g) => (
-          <GroupRow
-            key={g.name}
-            icon="◆"
-            name={g.name}
-            cards={g.cards}
-            onStart={onStart}
-          />
-        ))}
-      </section>
+      {groups.works.length > 0 && (
+        <section className="stack">
+          <div className="section-title">작품에서 나온 표현</div>
+          {groups.works.map((g) => (
+            <GroupRow key={g.name} icon="◆" name={g.name} cards={g.cards} onStart={onStart} />
+          ))}
+        </section>
+      )}
 
       <section className="stack">
         <div className="section-title">주제별 어휘</div>
         {groups.topics.map((g) => (
-          <GroupRow
-            key={g.id}
-            icon={g.icon}
-            name={g.name}
-            cards={g.cards}
-            onStart={onStart}
-          />
+          <GroupRow key={g.id} icon={g.icon} name={g.name} cards={g.cards} onStart={onStart} />
         ))}
       </section>
     </div>

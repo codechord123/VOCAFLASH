@@ -18,6 +18,7 @@ import { topicIcon, topicLabel } from '../lib/topics.js'
 
 const THRESHOLD = 90 // 이만큼 끌면 넘긴 것으로 본다
 const ROTATE = 0.045 // 끌린 거리에 비례한 기울기
+const CONTEXT_MAX = 140 // 이보다 긴 문맥은 카드에 싣지 않는다
 
 export default function Swipe({ cards, settings, commit, onExit }) {
   const [queue, setQueue] = useState(() => cards.map((c) => c.id))
@@ -32,7 +33,11 @@ export default function Swipe({ cards, settings, commit, onExit }) {
   const card = queue.length > 0 ? byId.get(queue[0]) : null
 
   const startX = useRef(null)
+  const startY = useRef(null)
   const dragging = useRef(false)
+  // 제스처의 방향을 한 번 정하면 끝까지 유지한다.
+  // null=미정, 'x'=넘기기, 'y'=스크롤(카드는 반응하지 않음)
+  const axis = useRef(null)
 
   /**
    * 카드 하나를 처리한다.
@@ -105,28 +110,50 @@ export default function Swipe({ cards, settings, commit, onExit }) {
   function onPointerDown(e) {
     if (leaving) return
     dragging.current = true
+    axis.current = null
     startX.current = e.clientX
-    e.currentTarget.setPointerCapture?.(e.pointerId)
+    startY.current = e.clientY
+    // 포인터를 잡아두면 세로 스크롤이 막힌다. 방향이 정해진 뒤에만 잡는다.
   }
 
   function onPointerMove(e) {
     if (!dragging.current || startX.current == null) return
-    setDrag(e.clientX - startX.current)
+    const dx = e.clientX - startX.current
+    const dy = e.clientY - startY.current
+
+    // 방향 결정: 먼저 10px을 넘긴 축이 이긴다. 세로면 카드는 가만히
+    // 있고 브라우저가 스크롤한다 — 스크롤하려다 카드가 뒤집히던 문제.
+    if (axis.current === null) {
+      if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return
+      axis.current = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y'
+      if (axis.current === 'x') e.currentTarget.setPointerCapture?.(e.pointerId)
+    }
+    if (axis.current !== 'x') return
+
+    setDrag(dx)
   }
 
-  function onPointerUp() {
+  function onPointerUp(e) {
     if (!dragging.current) return
     dragging.current = false
     const dx = drag
+    const movedY = Math.abs((e?.clientY ?? startY.current) - startY.current)
+    const wasScroll = axis.current === 'y'
     startX.current = null
+    startY.current = null
+    axis.current = null
 
+    if (wasScroll) {
+      setDrag(0)
+      return
+    }
     if (Math.abs(dx) >= THRESHOLD) {
       settle(dx > 0)
-    } else {
-      // 문턱을 못 넘겼으면 제자리로. 짧은 탭은 뒤집기로 본다.
-      if (Math.abs(dx) < 6) setFlipped((v) => !v)
-      setDrag(0)
+      return
     }
+    // 제자리 탭만 뒤집기로 본다. 세로로 조금이라도 끌었으면 스크롤 의도다.
+    if (Math.abs(dx) < 6 && movedY < 6) setFlipped((v) => !v)
+    setDrag(0)
   }
 
   // ── 회차 전환 ───────────────────────────────────────────────────
@@ -273,7 +300,10 @@ export default function Swipe({ cards, settings, commit, onExit }) {
                     ))}
                   </div>
                 )}
-                {card.context && (
+                {/* 문맥은 짧을 때만 보여준다. 하이라이트의 context는
+                    대사 한 줄이 아니라 독백 전체인 경우가 있어서, 그대로
+                    띄우면 카드가 원문 뭉치가 된다. */}
+                {card.context && card.context.length <= CONTEXT_MAX && (
                   <p className="flashcard__context">{card.context}</p>
                 )}
                 {card.exampleKo && <p className="ko">{card.exampleKo}</p>}

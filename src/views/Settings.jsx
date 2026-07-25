@@ -118,6 +118,26 @@ export default function Settings({ cards, settings, stats, commit, onReload }) {
       </section>
 
       <section className="stack">
+        <div className="section-title">단어 수준</div>
+        <label className="list__item" style={{ cursor: 'pointer' }}>
+          <input
+            type="checkbox"
+            checked={settings.hideBasicWords !== false}
+            onChange={(e) => set('hideBasicWords', e.target.checked)}
+            style={{ width: 18, height: 18, accentColor: 'var(--accent)' }}
+          />
+          <span className="list__main">
+            <span className="list__title">기초 단어 가리기</span>
+            <span className="list__meta">
+              have, been 같은 초등 수준 단어는 카드에 나오지 않습니다.
+              읽다가 구문이 걸려 표시한 자리라 단어 자체는 이미 아는
+              것들입니다. 자료에서 지우지는 않습니다.
+            </span>
+          </span>
+        </label>
+      </section>
+
+      <section className="stack">
         <div className="section-title">복습</div>
         <label className="field">
           <span className="label">하루 복습 상한</span>

@@ -19,6 +19,9 @@ const DEFAULTS = {
     // 복습에 포함할 덱. B2 단어장 899개는 기본으로 꺼둔다 — 첫날 천 개가
     // 밀리면 앱을 안 열게 된다. 단어장 탭에서는 꺼져 있어도 항상 보인다.
     activeDecks: { highlight: true, note: true, b2: false },
+    // have, been 같은 기초 단어는 카드에서 가린다. 읽다가 구문이 걸려
+    // 표시한 자리라 단어 자체는 이미 아는 것들이다. 지우지 않고 가린다.
+    hideBasicWords: true,
   },
   // 어떤 시드를 이미 가져왔는지. 같은 카드를 두 번 넣지 않기 위해.
   importedSeeds: {},

@@ -212,7 +212,6 @@ export default function App() {
             <VocabPart
               cards={cards}
               reviewCards={reviewCards}
-              stats={stats}
               settings={state.settings}
               commit={commit}
             />
