@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { store } from './lib/store.js'
 import { deckStats, selectDueCards } from './lib/srs.js'
 import {
@@ -7,11 +7,26 @@ import {
   cardsFromB2Words,
 } from './lib/deck.js'
 
-import scriptData from './data/before-sunrise.json'
-import sentenceData from './data/sentences.json'
+// 앱을 켜자마자 필요한 것만 정적으로 싣는다. 매일 여는 화면은
+// '오늘'이고, 거기에 필요한 건 카드(localStorage)와 뜻풀이뿐이다.
 import expressionData from './data/expressions.json'
 import meaningData from './data/meanings.json'
-import b2Words from './data/b2-words.json'
+
+// 원문 24챕터와 챕터 해설은 읽기 탭에서만 쓴다.
+const loadReadingData = () =>
+  Promise.all([
+    import('./data/before-sunrise.json'),
+    import('./data/analysis.json'),
+  ]).then(([s, a]) => ({ chapters: s.default.chapters, analysis: a.default }))
+
+// 문장 1,948개와 B2 단어 899개는 합쳐서 2MB에 가깝다. 첫 실행의 시드
+// 생성과 문장 연습 탭에서만 쓰이므로 필요할 때 가져온다. 매일 여는
+// 복습 화면이 이 무게를 지고 갈 이유가 없다.
+const loadBulkData = () =>
+  Promise.all([
+    import('./data/sentences.json'),
+    import('./data/b2-words.json'),
+  ]).then(([s, b]) => ({ sentences: s.default, b2Words: b.default }))
 
 import Today from './views/Today.jsx'
 import Read from './views/Read.jsx'
@@ -33,6 +48,10 @@ const SEED_ID = 'before-sunrise+sheet-vocab+b2.v2'
 export default function App() {
   const [tab, setTab] = useState('today')
   const [state, setState] = useState(() => store.load())
+  const [bulk, setBulk] = useState(null)
+  const [bulkError, setBulkError] = useState(null)
+  const [reading, setReading] = useState(null)
+  const [readingError, setReadingError] = useState(null)
 
   // 뜻풀이는 id 또는 표현 텍스트로 찾는다. 생성 산출물이 어느 쪽 키를
   // 쓰든 동작하게 두 방향 모두 색인한다.
@@ -45,28 +64,68 @@ export default function App() {
     return map
   }, [])
 
-  const sentenceById = useMemo(
-    () => new Map(sentenceData.sentences.map((s) => [s.id, s])),
-    []
-  )
+  const ensureBulk = useCallback(async () => {
+    if (bulk) return bulk
+    try {
+      const loaded = await loadBulkData()
+      setBulk(loaded)
+      setBulkError(null)
+      return loaded
+    } catch (err) {
+      // 조용히 실패하면 문장 연습 탭이 영원히 빈 화면이 된다.
+      setBulkError(err)
+      throw err
+    }
+  }, [bulk])
 
   // 첫 실행: 본인 자산을 덱에 심는다. 빈 화면으로 시작하지 않는 것이
   // 이 앱의 핵심이라 여기서 실패하면 안 된다.
   useEffect(() => {
     if (store.hasSeed(SEED_ID)) return
-    const seeded = [
-      ...cardsFromExpressions(expressionData.expressions, meanings),
-      ...cardsFromVocabNotes(
-        sentenceData.vocabNotes,
-        sentenceData.chatVocab,
-        sentenceById
-      ),
-      ...cardsFromB2Words(b2Words),
-    ]
-    const next = store.update((s) => ({ ...s, cards: seeded }))
-    store.markSeed(SEED_ID, seeded.length)
-    setState({ ...next })
-  }, [meanings, sentenceById])
+    let cancelled = false
+    ensureBulk()
+      .then(({ sentences, b2Words }) => {
+        if (cancelled) return
+        const sentenceById = new Map(sentences.sentences.map((s) => [s.id, s]))
+        const seeded = [
+          ...cardsFromExpressions(expressionData.expressions, meanings),
+          ...cardsFromVocabNotes(
+            sentences.vocabNotes,
+            sentences.chatVocab,
+            sentenceById
+          ),
+          ...cardsFromB2Words(b2Words),
+        ]
+        const next = store.update((s) => ({ ...s, cards: seeded }))
+        store.markSeed(SEED_ID, seeded.length)
+        setState({ ...next })
+      })
+      .catch(() => {
+        /* 화면에 이미 오류를 띄운다 */
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [ensureBulk, meanings])
+
+  const ensureReading = useCallback(async () => {
+    if (reading) return reading
+    try {
+      const loaded = await loadReadingData()
+      setReading(loaded)
+      setReadingError(null)
+      return loaded
+    } catch (err) {
+      setReadingError(err)
+      throw err
+    }
+  }, [reading])
+
+  // 탭을 열면 그때 가져온다.
+  useEffect(() => {
+    if (tab === 'drill' && !bulk) ensureBulk().catch(() => {})
+    if (tab === 'read' && !reading) ensureReading().catch(() => {})
+  }, [tab, bulk, reading, ensureBulk, ensureReading])
 
   const cards = state.cards
   const activeDecks = state.settings.activeDecks ?? {}
@@ -129,13 +188,33 @@ export default function App() {
               onGoTo={setTab}
             />
           )}
-          {tab === 'read' && (
-            <Read chapters={scriptData.chapters} cards={cards} />
-          )}
+          {tab === 'read' &&
+            (reading ? (
+              <Read
+                chapters={reading.chapters}
+                analysis={reading.analysis}
+                cards={cards}
+              />
+            ) : (
+              <BulkLoading
+                error={readingError}
+                label="원문과 해설을 불러오는 중"
+                onRetry={() => ensureReading().catch(() => {})}
+              />
+            ))}
           {tab === 'vocab' && <Vocab cards={cards} commit={commit} />}
-          {tab === 'drill' && (
-            <Drill sentences={sentenceData.sentences} works={sentenceData.works} />
-          )}
+          {tab === 'drill' &&
+            (bulk ? (
+              <Drill
+                sentences={bulk.sentences.sentences}
+                works={bulk.sentences.works}
+              />
+            ) : (
+              <BulkLoading
+                error={bulkError}
+                onRetry={() => ensureBulk().catch(() => {})}
+              />
+            ))}
           {tab === 'settings' && (
             <Settings
               cards={cards}
@@ -147,6 +226,28 @@ export default function App() {
           )}
         </div>
       </main>
+    </div>
+  )
+}
+
+function BulkLoading({ error, onRetry, label = '문장 데이터를 불러오는 중' }) {
+  if (error) {
+    return (
+      <div className="empty">
+        <div className="empty__icon">✕</div>
+        <div className="empty__title">데이터를 불러오지 못했습니다</div>
+        <p className="empty__body">네트워크 상태를 확인한 뒤 다시 시도해 주세요.</p>
+        <button className="btn btn--primary" onClick={onRetry}>
+          다시 시도
+        </button>
+      </div>
+    )
+  }
+  return (
+    <div className="empty">
+      <span className="spin" />
+      <div className="empty__title">{label}</div>
+      <p className="empty__body">처음 한 번만 내려받습니다.</p>
     </div>
   )
 }

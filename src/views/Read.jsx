@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react'
-import analysisData from '../data/analysis.json'
 import { COLOR_LABELS } from '../lib/deck.js'
 
 // 읽기 화면. 원문 + 본인 하이라이트 + 구문 정리를 한 화면에 둔다.
@@ -15,7 +14,7 @@ const SECTIONS = [
   { id: 'quiz', label: '이해도 확인' },
 ]
 
-export default function Read({ chapters, cards }) {
+export default function Read({ chapters, analysis: analysisData, cards }) {
   const [selected, setSelected] = useState(null)
   const [section, setSection] = useState('script')
 
