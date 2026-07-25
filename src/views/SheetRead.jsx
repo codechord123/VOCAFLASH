@@ -2,17 +2,15 @@ import { useState } from 'react'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
 //
-// Before Sunrise와 다르게 하이라이트도 챕터 해설도 없다 — 자막
-// 한영 대응만 있다. 그래서 화면도 다르다: 해설 탭을 만드는 대신
-// 번역을 가리는 기능을 넣었다.
+// Before Sunrise와 같은 방식으로 읽는다 — 원문과 번역을 나란히 둔다.
+// 이 두 편은 하이라이트도 챕터 해설도 없어서 섹션 탭이 없을 뿐이고,
+// 읽는 경험 자체는 기존 리더와 같게 유지한다.
 //
-// 번역 가리기가 이 화면의 핵심이다. 한영이 나란히 있으면 눈이
-// 한국어로 먼저 가서 영어를 읽지 않게 된다. 가려놓고 읽다가 막힐
-// 때만 열어보는 게 실제 독해 연습이다.
+// 번역 가리기는 원하면 켜는 선택 기능으로만 둔다(기본 꺼짐).
 
 export default function SheetRead({ work, onBack }) {
   const [selected, setSelected] = useState(null)
-  const [hideKo, setHideKo] = useState(true)
+  const [hideKo, setHideKo] = useState(false)
   const [revealed, setRevealed] = useState(() => new Set())
 
   if (selected == null) {
@@ -79,32 +77,21 @@ export default function SheetRead({ work, onBack }) {
         </button>
         <div className="row" style={{ gap: 'var(--s2)' }}>
           <button
-            className="btn btn--sm"
+            className="btn btn--ghost btn--sm"
             onClick={() => {
               setHideKo((v) => !v)
               setRevealed(new Set())
             }}
             aria-pressed={hideKo}
+            title="독해 연습용. 켜면 번역이 가려지고 줄마다 눌러서 확인합니다."
           >
-            {hideKo ? '번역 가림' : '번역 보임'}
+            {hideKo ? '번역 켜기' : '번역 가리기'}
           </button>
           <span className="chip">{chapter.lineCount}줄</span>
         </div>
       </div>
 
       <h3>{chapter.title}</h3>
-
-      {hideKo && (
-        <div className="notice">
-          <span className="notice__icon" aria-hidden="true">
-            ◆
-          </span>
-          <span>
-            번역이 가려져 있습니다. 막히는 줄만 눌러서 확인하세요 — 나란히
-            보면 눈이 한국어로 먼저 가서 영어를 읽지 않게 됩니다.
-          </span>
-        </div>
-      )}
 
       <section className="stack">
         {chapter.lines.map((line, i) => {

@@ -52,8 +52,8 @@ export default function ReadPart({
       <header className="stack stack--tight">
         <h1>읽기</h1>
         <p className="hint">
-          원문을 읽고, 막히는 곳을 확인합니다. Before Sunrise는 구문·문법
-          해설이 붙어 있고, 나머지 두 편은 번역을 가려 놓고 읽습니다.
+          원문과 번역을 나란히 읽습니다. Before Sunrise에는 구문 정리 ·
+          문법 · 배경지식 · 이해도 확인이 챕터마다 붙어 있습니다.
         </p>
       </header>
 
@@ -75,7 +75,7 @@ export default function ReadPart({
             title={w.title}
             subtitle={w.subtitle}
             meta={`${w.chapterCount}장 · ${w.lineCount.toLocaleString('ko')}줄`}
-            detail="한영 자막 대응. 번역을 가려 놓고 읽다가 막힐 때만 열어봅니다."
+            detail="원문과 번역을 나란히 읽습니다. 원하면 번역을 가릴 수 있습니다."
             onClick={() => setWorkId(w.id)}
           />
         ))}
