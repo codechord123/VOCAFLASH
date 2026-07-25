@@ -208,10 +208,17 @@ function Line({ line, highlights, cardedTexts }) {
   return (
     <div>
       {line.speaker && <div className="speaker">{line.speaker}</div>}
-      {line.direction && <span className="direction">({line.direction}) </span>}
-      <span className="read">
+      {/* 지시문은 대사와 같은 줄에 두지 않는다. 이어붙이면
+          "(Still looking in Celine's direction) Do you have any idea…"처럼
+          이탤릭과 본문이 한 문장으로 읽혀서 대사 시작점을 못 찾는다. */}
+      {line.direction && (
+        <div className="direction" style={{ marginBottom: 'var(--s1)' }}>
+          ({line.direction})
+        </div>
+      )}
+      <p className="read" style={{ margin: 0 }}>
         <Marked text={line.text} highlights={highlights} cardedTexts={cardedTexts} />
-      </span>
+      </p>
       {line.translation && <div className="ko">{line.translation}</div>}
     </div>
   )

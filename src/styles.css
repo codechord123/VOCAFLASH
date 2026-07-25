@@ -159,6 +159,18 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  /* 어떤 자식도 뷰포트를 넘겨 밀어내지 못하게 한다.
+     body의 overflow-x: hidden만으로는 내부 flex/grid가 계속 넘친다. */
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* flex/grid 자식은 기본 min-width가 auto라서 긴 내용이 있으면
+   컨테이너를 밀어낸다. 레이아웃 컨테이너 전반에 0을 준다. */
+.stack > *,
+.row > *,
+.list__main {
+  min-width: 0;
 }
 
 .container {
@@ -180,8 +192,11 @@ a:hover { text-decoration: underline; }
 .topbar__inner {
   display: flex;
   align-items: center;
-  gap: var(--s4);
+  gap: var(--s3);
   height: 56px;
+  /* 자식이 넘치면 flex 항목이 기본적으로 축소를 거부해 헤더가
+     화면보다 넓어진다. min-width: 0을 줘야 탭이 자기 안에서 스크롤한다. */
+  min-width: 0;
 }
 
 .brand {
@@ -191,6 +206,11 @@ a:hover { text-decoration: underline; }
   font-weight: 660;
   letter-spacing: -0.02em;
   white-space: nowrap;
+  /* 탭이 들어갈 자리를 위해 브랜드가 먼저 줄어든다 */
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 1;
 }
 .brand__mark { color: var(--accent); }
 .brand__sub {
@@ -206,6 +226,9 @@ a:hover { text-decoration: underline; }
   margin-left: auto;
   overflow-x: auto;
   scrollbar-width: none;
+  /* 넘칠 때 잘리지 않고 자기 안에서 스크롤하도록 */
+  min-width: 0;
+  flex-shrink: 0;
 }
 .tabs::-webkit-scrollbar { display: none; }
 
@@ -229,6 +252,35 @@ a:hover { text-decoration: underline; }
 .tab[aria-selected='true'] {
   color: var(--text);
   background: var(--surface-2);
+}
+
+.subtabs {
+  display: flex;
+  gap: var(--s1);
+  padding: var(--s1);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.subtabs::-webkit-scrollbar { display: none; }
+.subtabs .tab { flex: 1; justify-content: center; }
+
+.tab--icon {
+  flex-shrink: 0;
+  min-width: 40px;
+  padding: var(--s2);
+  font-size: 17px;
+  line-height: 1;
+}
+
+.tab__count {
+  margin-left: var(--s2);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
 }
 
 .tab__badge {
@@ -259,7 +311,12 @@ main {
   gap: var(--s3);
   flex-wrap: wrap;
 }
-.row--between { justify-content: space-between; }
+.row--between {
+  justify-content: space-between;
+  /* 좌우 요소가 길면 줄바꿈한다. nowrap이면 오른쪽 칩이 화면을 벗어난다. */
+  flex-wrap: wrap;
+  row-gap: var(--s2);
+}
 .spacer { flex: 1; }
 
 /* ── 카드·패널 ───────────────────────────────────────────────────── */
@@ -399,6 +456,8 @@ main {
   font-family: var(--font-read);
   font-size: 18px;
   line-height: 1.75;
+  /* 긴 단어가 컨테이너를 밀어내지 않게 */
+  overflow-wrap: break-word;
 }
 .read--lg { font-size: 24px; line-height: 1.6; }
 .read--xl { font-size: 30px; line-height: 1.45; letter-spacing: -0.015em; }
@@ -640,6 +699,9 @@ main {
 
 @media (max-width: 640px) {
   main { padding: var(--s5) 0 var(--s7); }
+  .topbar__inner { gap: var(--s2); }
+  .tab { padding: var(--s2); font-size: 13px; }
+  .brand { font-size: 14px; }
   .panel { padding: var(--s4); }
   .brand__sub { display: none; }
   .flashcard { min-height: 220px; padding: var(--s5) var(--s4); }

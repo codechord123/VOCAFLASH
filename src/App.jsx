@@ -35,27 +35,26 @@ const loadBulkData = () =>
     import('./data/b2-words.json'),
   ]).then(([s, b]) => ({ sentences: s.default, b2Words: b.default }))
 
-import Today from './views/Today.jsx'
+import VocabPart from './views/VocabPart.jsx'
 import ReadPart from './views/ReadPart.jsx'
 import Grammar from './views/Grammar.jsx'
-import Vocab from './views/Vocab.jsx'
 import Drill from './views/Drill.jsx'
 import Settings from './views/Settings.jsx'
 
+// 학습 파트 3개. 5개 탭은 모바일에서 라벨이 잘려서 못 쓴다.
+// 설정은 파트가 아니므로 헤더 톱니로 빼고, 문장 연습은 단어 파트가
+// 아니라 구문독해 파트에 속한다 — 문장을 만드는 훈련이니까.
 const TABS = [
-  { id: 'today', label: '오늘' },
+  { id: 'vocab', label: '단어' },
   { id: 'read', label: '읽기' },
-  { id: 'grammar', label: '문법' },
-  { id: 'vocab', label: '단어장' },
-  { id: 'drill', label: '문장 연습' },
-  { id: 'settings', label: '설정' },
+  { id: 'syntax', label: '구문독해' },
 ]
 
 // 시드를 한 번만 넣기 위한 키. 시드 내용이 바뀌면 버전을 올린다.
 const SEED_ID = 'before-sunrise+sheet-vocab+b2.v2'
 
 export default function App() {
-  const [tab, setTab] = useState('today')
+  const [tab, setTab] = useState('vocab')
   const [state, setState] = useState(() => store.load())
   const [bulk, setBulk] = useState(null)
   const [bulkError, setBulkError] = useState(null)
@@ -63,6 +62,7 @@ export default function App() {
   const [readingError, setReadingError] = useState(null)
   // 문법 색인에서 챕터로 건너뛸 때 어느 장을 열지 전달한다.
   const [jumpChapter, setJumpChapter] = useState(null)
+  const [showSettings, setShowSettings] = useState(false)
 
   // 뜻풀이는 id 또는 표현 텍스트로 찾는다. 생성 산출물이 어느 쪽 키를
   // 쓰든 동작하게 두 방향 모두 색인한다.
@@ -134,8 +134,8 @@ export default function App() {
 
   // 탭을 열면 그때 가져온다.
   useEffect(() => {
-    if (tab === 'drill' && !bulk) ensureBulk().catch(() => {})
-    if ((tab === 'read' || tab === 'grammar') && !reading) {
+    if (tab === 'syntax' && !bulk) ensureBulk().catch(() => {})
+    if ((tab === 'read' || tab === 'syntax') && !reading) {
       ensureReading().catch(() => {})
     }
   }, [tab, bulk, reading, ensureBulk, ensureReading])
@@ -181,26 +181,36 @@ export default function App() {
                 onClick={() => setTab(t.id)}
               >
                 {t.label}
-                {t.id === 'today' && dueCount > 0 && (
+                {t.id === 'vocab' && dueCount > 0 && (
                   <span className="tab__badge">{dueCount}</span>
                 )}
               </button>
             ))}
           </nav>
+          <button
+            className="tab tab--icon"
+            onClick={() => setShowSettings((v) => !v)}
+            aria-pressed={showSettings}
+            aria-label="설정"
+            title="설정"
+          >
+            ⚙
+          </button>
         </div>
       </header>
 
       <main>
         <div className="container">
-          {tab === 'today' && (
-            <Today
-              cards={reviewCards}
+          {tab === 'vocab' && (
+            <VocabPart
+              cards={cards}
+              reviewCards={reviewCards}
               stats={stats}
               settings={state.settings}
               commit={commit}
-              onGoTo={setTab}
             />
           )}
+
           {tab === 'read' &&
             (reading ? (
               <ReadPart
@@ -218,10 +228,13 @@ export default function App() {
                 onRetry={() => ensureReading().catch(() => {})}
               />
             ))}
-          {tab === 'grammar' &&
+
+          {tab === 'syntax' &&
             (reading ? (
               <Grammar
                 index={reading.grammarIndex}
+                sentences={bulk?.sentences?.sentences ?? null}
+                works={bulk?.sentences?.works ?? null}
                 onOpenChapter={(n) => {
                   setJumpChapter(n)
                   setTab('read')
@@ -230,24 +243,12 @@ export default function App() {
             ) : (
               <BulkLoading
                 error={readingError}
-                label="문법 색인을 불러오는 중"
+                label="구문 자료를 불러오는 중"
                 onRetry={() => ensureReading().catch(() => {})}
               />
             ))}
-          {tab === 'vocab' && <Vocab cards={cards} commit={commit} />}
-          {tab === 'drill' &&
-            (bulk ? (
-              <Drill
-                sentences={bulk.sentences.sentences}
-                works={bulk.sentences.works}
-              />
-            ) : (
-              <BulkLoading
-                error={bulkError}
-                onRetry={() => ensureBulk().catch(() => {})}
-              />
-            ))}
-          {tab === 'settings' && (
+
+          {showSettings && (
             <Settings
               cards={cards}
               settings={state.settings}
