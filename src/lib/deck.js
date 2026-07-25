@@ -39,6 +39,13 @@ export const DECKS = {
     defaultOn: true,
     priority: 0,
   },
+  unit: {
+    id: 'unit',
+    label: '커리큘럼 카드',
+    hint: '유닛 퀴즈를 마치면 추가되는 어휘·패턴·함정 카드',
+    defaultOn: true,
+    priority: 0,
+  },
 }
 
 /**

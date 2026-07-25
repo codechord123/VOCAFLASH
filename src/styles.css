@@ -591,7 +591,7 @@ main {
 }
 .list__item:last-child { border-bottom: 0; }
 .list__item:hover { background: var(--surface-hover); }
-.list__main { min-width: 0; flex: 1; }
+.list__main { min-width: 0; flex: 1; display: grid; gap: 2px; }
 .list__title {
   font-weight: 540;
   overflow: hidden;

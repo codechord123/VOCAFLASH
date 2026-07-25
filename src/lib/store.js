@@ -17,7 +17,7 @@ const DEFAULTS = {
     model: 'claude-sonnet-5',
     dailyLimit: 20,
     // 복습에 포함할 덱. 단어장 탭에서는 꺼져 있어도 항상 보인다.
-    activeDecks: { highlight: true, note: true },
+    activeDecks: { highlight: true, note: true, unit: true },
     // have, been 같은 기초 단어는 카드에서 가린다. 읽다가 구문이 걸려
     // 표시한 자리라 단어 자체는 이미 아는 것들이다. 지우지 않고 가린다.
     hideBasicWords: true,
@@ -25,6 +25,8 @@ const DEFAULTS = {
   // 어떤 시드를 이미 가져왔는지. 같은 카드를 두 번 넣지 않기 위해.
   importedSeeds: {},
   reviewLog: [], // { at, cardId, grade, boxBefore, boxAfter }
+  // 커리큘럼 진행. { unitProgress: { 'u-07': { screen, completedAt, quizScore } } }
+  curriculum: { unitProgress: {} },
 }
 
 function read() {

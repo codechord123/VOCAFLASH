@@ -8,21 +8,19 @@ import { cardsFromExpressions } from './lib/deck.js'
 import expressionData from './data/expressions.json'
 import meaningData from './data/meanings.json'
 
-// 원문 24챕터, 챕터 해설, 문법 색인은 읽기·구문독해 탭에서만 쓴다.
+// 원문 24챕터와 챕터 해설은 읽기 탭에서만 쓴다.
 const loadReadingData = () =>
   Promise.all([
     import('./data/before-sunrise.json'),
     import('./data/analysis.json'),
-    import('./data/grammar-index.json'),
-  ]).then(([s, a, g]) => ({
+  ]).then(([s, a]) => ({
     chapters: s.default.chapters,
     analysis: a.default,
-    grammarIndex: g.default,
   }))
 
 import VocabPart from './views/VocabPart.jsx'
 import Read from './views/Read.jsx'
-import Grammar from './views/Grammar.jsx'
+import Curriculum from './views/Curriculum.jsx'
 import Settings from './views/Settings.jsx'
 
 // 학습 파트 3개. 5개 탭은 모바일에서 라벨이 잘려서 못 쓴다.
@@ -43,8 +41,6 @@ export default function App() {
   const [state, setState] = useState(() => store.load())
   const [reading, setReading] = useState(null)
   const [readingError, setReadingError] = useState(null)
-  // 문법 색인에서 챕터로 건너뛸 때 어느 장을 열지 전달한다.
-  const [jumpChapter, setJumpChapter] = useState(null)
   const [showSettings, setShowSettings] = useState(false)
 
   // 뜻풀이는 id 또는 표현 텍스트로 찾는다. 생성 산출물이 어느 쪽 키를
@@ -89,9 +85,10 @@ export default function App() {
     }
   }, [reading])
 
-  // 탭을 열면 그때 가져온다.
+  // 탭을 열면 그때 가져온다. 구문독해(커리큘럼)는 자체 정적 데이터라
+  // 따로 불러올 것이 없다.
   useEffect(() => {
-    if ((tab === 'read' || tab === 'syntax') && !reading) {
+    if (tab === 'read' && !reading) {
       ensureReading().catch(() => {})
     }
   }, [tab, reading, ensureReading])
@@ -169,11 +166,9 @@ export default function App() {
           {tab === 'read' &&
             (reading ? (
               <Read
-                key={jumpChapter ?? 'read'}
                 chapters={reading.chapters}
                 analysis={reading.analysis}
                 cards={cards}
-                initialChapter={jumpChapter}
               />
             ) : (
               <BulkLoading
@@ -183,22 +178,9 @@ export default function App() {
               />
             ))}
 
-          {tab === 'syntax' &&
-            (reading ? (
-              <Grammar
-                index={reading.grammarIndex}
-                onOpenChapter={(n) => {
-                  setJumpChapter(n)
-                  setTab('read')
-                }}
-              />
-            ) : (
-              <BulkLoading
-                error={readingError}
-                label="구문 자료를 불러오는 중"
-                onRetry={() => ensureReading().catch(() => {})}
-              />
-            ))}
+          {tab === 'syntax' && (
+            <Curriculum commit={commit} curriculum={state.curriculum} />
+          )}
 
           {showSettings && (
             <Settings
