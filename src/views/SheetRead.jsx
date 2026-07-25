@@ -91,7 +91,14 @@ export default function SheetRead({ work, onBack }) {
         </div>
       </div>
 
-      <h3>{chapter.title}</h3>
+      <div>
+        <h3>{chapter.title}</h3>
+        {chapter.locationNote && (
+          <p className="hint" style={{ marginTop: 'var(--s2)' }}>
+            {chapter.locationNote}
+          </p>
+        )}
+      </div>
 
       <section className="stack">
         {chapter.lines.map((line, i) => {
