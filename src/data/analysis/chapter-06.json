@@ -1,0 +1,156 @@
+{
+  "number": 6,
+  "title": "Chapter 6 : There's a Wind That Blows In From the North - Record Store",
+  "chunks": [
+    {
+      "en": "Yeah, there's even a listening booth / over there.",
+      "ko": "응, 저쪽에 시청 부스까지 있어.",
+      "literal": "그래, 시청 부스도 하나 있어 / 저쪽에"
+    },
+    {
+      "en": "Have you ever heard of this singer? / I think she's American. / A friend of mine told me about her.",
+      "ko": "이 가수 들어본 적 있어? 미국 사람인 것 같은데. 친구가 알려줬어.",
+      "literal": "너는 이 가수에 대해 들어 본 적 있어? / 내 생각에 그녀는 미국인이야. / 내 친구 하나가 나에게 그녀에 대해 말해 줬어"
+    },
+    {
+      "en": "Do you want to go see / if that listening booth still works?",
+      "ko": "저 시청 부스 아직 되는지 가서 볼래?",
+      "literal": "너는 가서 보고 싶어? / 저 시청 부스가 아직 작동하는지"
+    },
+    {
+      "en": "As they listen to the song, / Jesse and Céline nervously steal glances at each other, / never once making eye contact for very long.",
+      "ko": "노래가 흐르는 동안 제시와 셀린은 긴장한 채 서로를 몰래 훔쳐본다. 눈이 마주쳐도 한 번도 오래 머무르지 못한다.",
+      "literal": "그들이 그 노래를 듣는 동안, / 제시와 셀린은 긴장한 채 서로에게서 시선을 훔친다, / 한 번도 아주 오래 눈을 맞추지는 않으면서"
+    },
+    {
+      "en": "There's a wind / that blows in from the north, / And it says / that loving takes its course.",
+      "ko": "북쪽에서 불어오는 바람이 있어. 그 바람이 말하지, 사랑은 흐르는 대로 간다고.",
+      "literal": "바람이 하나 있어 / 북쪽에서부터 불어 들어오는, / 그리고 그것이 말해 / 사랑함은 그것의 길을 따라간다고"
+    },
+    {
+      "en": "No I'm not impossible to touch, / I have never wanted you so much.",
+      "ko": "아니야, 나는 손댈 수 없는 사람이 아니야. 이렇게까지 너를 원한 적은 없었어.",
+      "literal": "아니 나는 만지기에 불가능한 사람이 아니야, / 나는 너를 이만큼 원해 본 적이 한 번도 없어"
+    },
+    {
+      "en": "If I never lay down by your side? / Baby, let's forget about this pride.",
+      "ko": "내가 끝까지 네 옆에 눕지 않는다면? 그러니까 이런 자존심은 잊어버리자.",
+      "literal": "만약 내가 결코 너의 옆에 눕지 않는다면? / 그대여, 이 자존심에 대해서는 잊어버리자"
+    },
+    {
+      "en": "Well, I'm in no hurry. / You don't have to run away this time.",
+      "ko": "나는 전혀 서두르지 않아. 이번엔 도망가지 않아도 돼.",
+      "literal": "음, 나는 전혀 서두르는 상태가 아니야. / 너는 이번에는 도망갈 필요가 없어"
+    },
+    {
+      "en": "I know that you're timid. / But it's gonna be all right this time.",
+      "ko": "네가 겁이 많다는 거 알아. 하지만 이번엔 괜찮을 거야.",
+      "literal": "나는 네가 소심하다는 것을 알아. / 하지만 이번에는 괜찮아질 거야"
+    },
+    {
+      "en": "Look at this. / This is beautiful.",
+      "ko": "이거 봐. 정말 아름답네.",
+      "literal": "이것을 봐. / 이것은 아름다워"
+    },
+    {
+      "en": "Quickly. / It's leaving.",
+      "ko": "빨리. 지금 떠나.",
+      "literal": "빨리. / 그것이 떠나고 있어"
+    },
+    {
+      "en": "Jesse and Céline stand on the tram, / exchanging small talk, / and laughing.",
+      "ko": "제시와 셀린이 전차에 서서 가벼운 잡담을 주고받으며 웃는다.",
+      "literal": "제시와 셀린은 전차 위에 서 있다, / 가벼운 대화를 주고받으면서, / 그리고 웃으면서"
+    }
+  ],
+  "grammar": [
+    {
+      "point": "go/come + 동사원형 (go see)",
+      "explanation": "미국 구어에서 go, come 뒤에는 to나 and 없이 동사원형이 바로 붙습니다. go and see, go to see의 축약이 굳어진 형태로, 오류가 아니라 표준 회화체입니다. 단 이 형태는 원형(go, come)일 때만 자연스럽고, goes seeing이나 went see처럼 활용형에는 쓰지 않습니다.",
+      "fromScript": "Do you want to go see if that listening booth still works?",
+      "example": "Let's go grab a coffee before the meeting starts."
+    },
+    {
+      "point": "hear of vs hear (사람에 대해 들어봤다)",
+      "explanation": "hear of somebody는 '그런 사람이 있다는 것을 알고 있다', hear somebody는 '그 사람의 소리를 직접 듣다'입니다. 무명 가수의 존재를 아는지 묻는 자리이므로 heard of가 맞고, 노래를 들어봤다면 heard her music이나 heard her sing이 됩니다. 셀린이 이어서 A friend of mine told me about her라고 덧붙이는 것도 존재만 전해 들었다는 뜻입니다.",
+      "fromScript": "Have you ever heard of this singer?",
+      "example": "I had never heard of the poet until my sister sent me his collection."
+    },
+    {
+      "point": "see if 절 (명사절 목적어로 쓰인 if)",
+      "explanation": "여기서 if는 '만약'이 아니라 '~인지 아닌지'라는 whether의 구어 대체어이고, see의 목적어로 들어간 명사절입니다. see, check, find out, ask 뒤에서 아주 흔합니다. still works의 현재시제는 '지금 여전히 작동하는가'라는 현재 상태 확인입니다.",
+      "fromScript": "go see if that listening booth still works",
+      "example": "Could you check if the printer in the staff room is fixed?"
+    },
+    {
+      "point": "부대상황 분사구문 + never once (steal glances ... never once making eye contact)",
+      "explanation": "steal glances at somebody는 '몰래 훔쳐보다'라는 관용 표현으로, steal의 목적어가 시선이라는 점이 핵심입니다. 뒤의 never once making eye contact는 주절과 동시에 벌어지는 일을 분사로 붙인 부대상황 구문이고, never once는 '단 한 번도'라는 강한 부정 강조입니다. 서술 지시문이라 접속사 없이 콤마로 이어 붙었습니다.",
+      "fromScript": "Jesse and Céline nervously steal glances at each other, never once making eye contact for very long",
+      "example": "He sat through the whole interview, never once looking up from his notes."
+    },
+    {
+      "point": "난이형용사 + to부정사 (impossible to touch)",
+      "explanation": "It is impossible to touch me와 I'm impossible to touch는 같은 뜻이지만, 후자는 문장의 목적어(me)를 주어 자리로 끌어올린 구문입니다. 이때 to touch 뒤에 목적어를 다시 쓰지 않는 것이 규칙이라, to touch me라고 하면 틀립니다. easy, hard, difficult, impossible 계열 형용사에서 나타납니다.",
+      "fromScript": "No I'm not impossible to touch",
+      "example": "That accent is hard to imitate, but not hard to understand."
+    },
+    {
+      "point": "무생물 주어 + take its course",
+      "explanation": "the wind says that...처럼 사물이 말한다고 쓰는 것은 노래 가사의 의인화입니다. take its course는 '인위적으로 막지 않고 제 갈 길을 가게 되다'라는 관용구로, 병이나 사건에 흔히 쓰입니다(let nature take its course). 여기서는 사랑도 억지로 조절할 수 없다는 뜻이고, 장면 속 두 사람이 서로 눈도 못 맞추는 상황에 정확히 겹칩니다.",
+      "fromScript": "it says that loving takes its course",
+      "example": "We stopped arguing and let the whole thing take its course."
+    },
+    {
+      "point": "in no hurry (no + 명사로 만드는 강한 부정)",
+      "explanation": "not in a hurry보다 in no hurry가 훨씬 강하게 '전혀 서두르지 않는다'는 뜻이 됩니다. 영어는 이렇게 명사 앞에 no를 놓아 부정을 강조하는 방식을 즐겨 씁니다(no idea, no chance, no way). 한국어로는 '~할 마음이 조금도 없다' 정도의 무게입니다.",
+      "fromScript": "Well, I'm in no hurry.",
+      "example": "She was in no mood to explain herself twice."
+    },
+    {
+      "point": "gonna와 노래 가사의 축약",
+      "explanation": "gonna는 going to의 발음 그대로의 표기이며, 노래와 회화에서 표준입니다. 단 '가려고 한다'는 실제 이동의 going to에는 쓰지 않습니다(I'm gonna the store는 불가). 가사에는 이 밖에도 관계사 that의 유지(a wind that blows), 주어 없는 명령형(Come here) 등 구어 리듬을 위한 선택이 섞여 있습니다.",
+      "fromScript": "But it's gonna be all right this time.",
+      "example": "I'm gonna read the whole trilogy before summer ends."
+    }
+  ],
+  "background": [
+    {
+      "topic": "토이흐틀러 알트 운트 노이 레코드점",
+      "detail": "빈 6구역 빈트뮐가세에 실제로 있는 중고 레코드 가게로, 마리아힐퍼 슈트라세 상점가 뒤편에 있습니다. 좁은 통로에 LP가 빼곡히 꽂혀 있고 뒤쪽에 시청 부스가 있는 구조가 영화에 그대로 나옵니다. 관광 코스가 아니라 동네 가게라는 점이, 두 사람이 관광객 동선을 벗어나고 있다는 신호입니다."
+    },
+    {
+      "topic": "시청 부스(listening booth)와 1995년",
+      "detail": "레코드점에서 구매 전에 음반을 들어 볼 수 있게 만든 작은 방입니다. LP 시대의 설비여서 1995년에는 이미 구식이었고, 그래서 제시가 still works(아직 되는지)라고 묻습니다. 좁은 부스에 둘이 들어가야 하고 노래가 끝날 때까지 나올 수 없는 이 공간이, 대화 없이 몸의 거리만으로 긴장을 만드는 장치가 됩니다."
+    },
+    {
+      "topic": "캐스 블룸의 Come Here",
+      "detail": "부스에서 나오는 곡은 미국 포크 가수 캐스 블룸이 1984년에 낸 Come Here입니다. 셀린의 대사 I think she's American, A friend of mine told me about her가 그대로 설명이 됩니다. 당시 거의 무명이었고, 이 영화에 쓰인 뒤 재발견되어 재발매되었습니다. 가사가 '겁내지 말고 이리 와'라고 말하는 동안 두 사람은 정반대로 굳어 있다는 대조가 이 장면의 전부입니다."
+    },
+    {
+      "topic": "마리아 테레지아 광장",
+      "detail": "레코드점 이후 짧게 지나가는 장면의 광장으로, 미술사박물관과 자연사박물관이 마주 보고 서 있는 사이 공간입니다. 두 건물은 거울처럼 똑같이 지어졌습니다. 대사 한 줄(Look at this. This is beautiful.)만 있는 이 컷들은 영화가 도시 산책의 시간 경과를 압축하는 방식입니다."
+    }
+  ],
+  "comprehension": [
+    {
+      "question": "셀린은 왜 하필 이 무명 가수의 음반을 골라 제시에게 보여 주는가?",
+      "answer": "친구에게서 이름만 전해 들었고 아직 들어 보지 못한 음반입니다. 즉 자기도 처음 듣는 것을 함께 듣자고 제안하는 것이어서, 취향을 자랑하는 행동이 아니라 같은 경험을 나눌 구실을 만드는 행동입니다. 무명 가수라 제시가 모른다고 답할 게 거의 확실하다는 점도 대화를 이어 가는 데 유리하게 작용합니다."
+    },
+    {
+      "question": "제시의 'Do you want to go see if that listening booth still works?'는 표면적으로 무엇을 묻고 실제로는 무엇을 제안하는가?",
+      "answer": "표면적으로는 부스 설비가 작동하는지 확인하자는 기술적인 제안입니다. 실제로는 둘이 좁은 방에 함께 들어가자는 제안입니다. 앞 장에서 키스를 말로 꺼내지 못하는 제시의 방식이 여기서도 반복되는데, 하고 싶은 말 대신 그것이 가능해지는 상황을 만들어 두는 식입니다."
+    },
+    {
+      "question": "부스 장면의 지시문 'never once making eye contact for very long'이 왜 중요한가?",
+      "answer": "이 장면에는 대사가 한 줄도 없고, 두 사람의 마음은 오직 시선의 움직임으로만 전달됩니다. 서로를 계속 훔쳐보지만 눈이 맞으면 곧 피한다는 것은, 상대가 자기를 보고 있다는 사실을 둘 다 알면서도 아직 인정할 준비가 안 됐다는 뜻입니다. 앞 장의 수다스러운 문답과 정반대의 방식으로 같은 내용을 말하는 대목입니다."
+    },
+    {
+      "question": "가사 'No I'm not impossible to touch'와 'You don't have to run away this time'이 화면과 어떻게 겹치는가?",
+      "answer": "가사는 '나는 다가갈 수 없는 사람이 아니다, 도망가지 않아도 된다'고 직접 말하는데, 화면의 두 사람은 그 반대로 시선을 피하며 굳어 있습니다. 노래가 두 사람이 아직 입으로 못 하는 말을 대신 해 주는 구조입니다. I'm in no hurry라는 구절은 이 영화의 남은 시간이 하루뿐이라는 사실과 대비되어 더 아프게 들립니다."
+    },
+    {
+      "question": "이 장이 대사 대신 노래와 짧은 컷들로 채워진 것은 영화 진행상 어떤 기능을 하는가?",
+      "answer": "전차 문답 장면에서 두 사람은 말로 서로를 탐색했습니다. 이 장은 말을 멈추고 같이 있는 시간 자체를 보여 줌으로써, 대화의 관계가 몸의 관계로 넘어가는 사이 단계를 만듭니다. 광장과 지하철, 전차의 짧은 컷들은 몇 시간의 경과를 압축하면서 다음 장인 묘지와 대관람차로 넘어갈 준비를 합니다."
+    }
+  ]
+}

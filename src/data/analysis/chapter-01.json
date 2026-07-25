@@ -1,0 +1,146 @@
+{
+  "number": 1,
+  "title": "Chapter 1 : what are you reading? -the train",
+  "chunks": [
+    {
+      "en": "Do you have any idea / what they were arguing about?",
+      "ko": "저 두 사람이 뭘 두고 싸우는지 혹시 아세요?",
+      "literal": "짐작 가는 거라도 있어요 / 그들이 무엇에 대해 다투고 있었는지"
+    },
+    {
+      "en": "Do you... / do you speak English?",
+      "ko": "혹시… 영어 하세요?",
+      "literal": "당신은… / 당신은 영어를 하나요?"
+    },
+    {
+      "en": "Yeah. / No, I'm sorry, / my German is not very good.",
+      "ko": "네. 아, 미안해요, 제가 독일어를 잘 못해서요.",
+      "literal": "네 / 아니요, 미안해요 / 제 독일어는 별로 좋지 않아요"
+    },
+    {
+      "en": "Have you ever heard / that as couples get older, / they lose their ability to hear each other?",
+      "ko": "커플이 나이 들면 서로의 말을 못 듣게 된다는 얘기, 들어본 적 있어요?",
+      "literal": "들어본 적 있어요 / 커플이 나이 들어감에 따라 / 서로를 들을 능력을 잃는다는 것을"
+    },
+    {
+      "en": "Well, supposedly, / men lose the ability to hear higher-pitched sounds, / and women eventually lose hearing in the low end.",
+      "ko": "그게, 남자는 높은 소리를 못 듣게 되고, 여자는 결국 낮은 음역대 청력을 잃는다고 하더라고요.",
+      "literal": "음, 듣자 하니 / 남자들은 더 높은 음의 소리를 들을 능력을 잃고 / 여자들은 결국 낮은 쪽 음역에서 청력을 잃는다고 해요"
+    },
+    {
+      "en": "I guess / they sort of nullify each other, / or something.",
+      "ko": "결국 서로를 상쇄해 버리는 셈인가 봐요, 뭐 그런 거죠.",
+      "literal": "제 짐작엔 / 그들은 어느 정도 서로를 무효화하는 것 같아요 / 아니면 뭐 그런 거"
+    },
+    {
+      "en": "I guess. / Nature's way of allowing couples / to grow old together / without killing each other.",
+      "ko": "그런가 보네요. 부부가 서로를 죽이지 않고 함께 늙어갈 수 있게 자연이 마련해 둔 방법이군요.",
+      "literal": "그렇겠네요 / 커플들에게 허락해 주는 자연의 방식이네요 / 함께 늙어가도록 / 서로를 죽이지 않고서"
+    },
+    {
+      "en": "What are you reading? / How bout you?",
+      "ko": "무슨 책 읽어요? — 그쪽은요?",
+      "literal": "당신은 무엇을 읽고 있어요? / 당신은 어때요?"
+    },
+    {
+      "en": "Couple returns to car, / still arguing, / albeit a lot calmer.",
+      "ko": "부부가 객차로 돌아온다. 여전히 다투고 있지만, 훨씬 차분해진 상태다.",
+      "literal": "부부가 객차로 돌아온다 / 여전히 다투면서 / 비록 훨씬 더 차분하긴 하지만"
+    },
+    {
+      "en": "Look, / I was thinking about going to the lounge car sometime soon. / Would you like to come with me?",
+      "ko": "저기, 조금 뒤에 라운지 칸에 가 볼까 하는데요. 같이 가실래요?",
+      "literal": "저기요 / 저는 곧 언제쯤 라운지 칸에 가는 걸 생각하고 있었어요 / 저와 함께 오시겠어요?"
+    }
+  ],
+  "grammar": [
+    {
+      "point": "as + 주어 + 동사 (비례)",
+      "explanation": "여기서 as는 '~할 때'가 아니라 '~함에 따라'로, 두 변화가 나란히 진행됨을 나타냅니다. 뒤에 비교급(older)이 오면 거의 항상 이 비례 용법입니다. 주절에 결과가 오는 구조라서 '나이 들수록 → 못 듣게 된다'로 읽으면 자연스럽습니다.",
+      "fromScript": "as couples get older, they lose their ability to hear each other",
+      "example": "As the semester went on, the students asked fewer and fewer questions."
+    },
+    {
+      "point": "Have you ever heard (that) ~? — 경험의 현재완료 + that절 생략",
+      "explanation": "'살면서 한 번이라도 ~라는 말을 들어본 적 있어요?'라는 경험 질문입니다. 구어에서는 Have you heard 뒤의 that을 자주 생략하지만, 셀린은 that을 살려 뒤에 긴 절을 붙였습니다. 여기서 heard의 목적어는 '단어'가 아니라 '정보 한 덩어리'라는 점이 핵심입니다.",
+      "fromScript": "Have you ever heard that as couples get older...",
+      "example": "Have you ever heard that left-handed people read maps differently?"
+    },
+    {
+      "point": "supposedly — 전언(轉言)을 표시하는 문장부사",
+      "explanation": "'~라고들 한다, ~라는 얘기가 있다'는 뜻으로, 화자가 그 정보의 진위에 책임지지 않겠다는 신호입니다. allegedly보다 가볍고 일상적이며, 문장 맨 앞이나 조동사 뒤에 놓입니다. C1 수준에서는 apparently, reportedly와의 온도 차를 함께 익혀두면 좋습니다.",
+      "fromScript": "Well, supposedly, men lose the ability to hear higher-pitched sounds",
+      "example": "Supposedly the café closes at midnight, but nobody has ever checked."
+    },
+    {
+      "point": "sort of / or something — 단정을 피하는 완화 표현",
+      "explanation": "sort of는 동사 앞에 붙어 '뭐랄까 좀 ~하는 셈이다'로 서술의 강도를 낮추고, 문장 끝의 or something은 '뭐 그런 거요'로 전체를 흐립니다. nullify(무효화하다, 상쇄시키다)라는 딱딱한 라틴계 동사를 쓰면서 앞뒤로 이런 완화 장치를 두른 것이라, 셀린은 어려운 말을 쓰면서도 잘난 척으로 들리지 않게 조절하고 있습니다.",
+      "fromScript": "I guess they sort of nullify each other, or something.",
+      "example": "He kind of apologized, or something like that, and then just left."
+    },
+    {
+      "point": "Nature's way of V-ing — 동사 없는 명사구 한 덩어리로 끝내는 문장",
+      "explanation": "원래는 It's nature's way of...인데 구어에서 It's를 통째로 날린 형태입니다. 앞사람의 말을 받아 '그거 결국 ~인 거네요'라고 규정할 때 영어는 이렇게 명사구만 던지는 일이 아주 흔합니다. way of 뒤에는 반드시 동명사가 오고, allow는 allow + 목적어 + to부정사 구조를 취합니다.",
+      "fromScript": "Nature's way of allowing couples to grow old together",
+      "example": "Just the body's way of telling you to stop working at three in the morning."
+    },
+    {
+      "point": "without + V-ing (동시적 부정)",
+      "explanation": "'~하지 않은 채로'라는 뜻으로, 주절의 동작과 동시에 일어나지 '않는' 일을 표시합니다. without 뒤에는 to부정사가 올 수 없고 반드시 동명사가 옵니다. 여기서는 grow old together와 killing each other가 같은 주어(couples)를 공유해 문장이 짧게 압축됐습니다.",
+      "fromScript": "to grow old together without killing each other",
+      "example": "She sat through the whole meeting without once looking at her phone."
+    },
+    {
+      "point": "was thinking about V-ing — 과거진행형으로 만드는 조심스러운 제안",
+      "explanation": "제시는 지금 가고 싶은 것인데도 과거진행형을 썼습니다. 영어에서 과거진행형은 화자의 의도를 '방금 떠오른 막연한 생각'처럼 만들어, 거절해도 부담이 없게 해 줍니다. 여기에 sometime soon('곧 언제쯤')이라는 일부러 흐릿한 시간 표현이 겹쳐, 제안 전체가 최대한 가볍게 들리도록 설계돼 있습니다. sometime(언젠가)과 some time(얼마간의 시간)은 다른 표현이니 구별하세요.",
+      "fromScript": "I was thinking about going to the lounge car sometime soon.",
+      "example": "I was thinking about grabbing a coffee after class, if you're free."
+    },
+    {
+      "point": "albeit + 형용사/부사 (절이 아닌 축약 양보)",
+      "explanation": "although의 문어체 사촌이지만, 뒤에 주어와 동사를 두지 않고 형용사구나 부사구만 붙인다는 점이 결정적으로 다릅니다. albeit a lot calmer = although they were a lot calmer. 지시문 같은 격식체나 서평, 리포트에서 자주 보이므로 C1에서는 읽기 어휘로 반드시 알아둘 표현입니다.",
+      "fromScript": "still arguing, albeit a lot calmer",
+      "example": "The plan finally worked, albeit two months later than promised."
+    }
+  ],
+  "background": [
+    {
+      "topic": "부다페스트 → 빈 국제열차",
+      "detail": "1995년 여름, 두 사람이 탄 열차는 헝가리 부다페스트에서 오스트리아 빈으로 가는 국제선입니다. 냉전이 끝난 직후라 서유럽 청년들이 동유럽까지 기차로 넘나드는 것이 막 유행하던 시기였고, 그래서 한 객차 안에 독일어·영어·프랑스어 화자가 뒤섞여 있는 상황이 자연스럽습니다."
+    },
+    {
+      "topic": "독일어로 싸우는 중년 부부",
+      "detail": "두 사람의 대화를 촉발한 부부는 독일어로 다투고 있습니다. 아내의 대사(Typisch! ... dass du sie dauernd anstarren musst?)는 '전형적이야! 왜 저 여자를 계속 쳐다봐야 하는데?'라는 질투의 추궁입니다. 즉 이 부부는 셀린 때문에 싸우는 중이고, 남편은 Vergiss es(잊어버려)로 대화를 닫아 버립니다. 제시가 내용을 알고 싶어 했던 그 싸움이 실은 '남자가 젊은 여자를 본다'는 문제였다는 점이, 바로 그 뒤 제시가 셀린에게 말을 거는 장면과 겹쳐 작은 농담이 됩니다."
+    },
+    {
+      "topic": "두 사람이 읽던 책",
+      "detail": "서로 책을 보여주는 짧은 장면에서 셀린이 든 책은 조르주 바타유의 소설(『하늘의 푸른빛』), 제시가 든 책은 독일 배우 클라우스 킨스키의 회고록으로 알려져 있습니다. 대사로 설명하지 않고 표지만 보여주고 웃는 연출이라, '취향이 서로 좀 민망하게 노출되는 순간'이라는 것만 알면 장면이 읽힙니다."
+    },
+    {
+      "topic": "lounge car (라운지 칸 / 식당 칸)",
+      "detail": "유럽 장거리 열차에는 좌석만 있는 coach car와, 테이블에 마주 앉아 음료를 주문할 수 있는 lounge car(또는 dining car)가 따로 붙어 있습니다. 제시의 마지막 제안이 결정적인 이유가 여기 있습니다. 좌석에서는 통로를 두고 남남처럼 앉아 있어야 하지만, 라운지 칸으로 옮기면 마주 앉아 몇 시간 대화하는 것이 자연스러워집니다."
+    }
+  ],
+  "comprehension": [
+    {
+      "question": "제시는 왜 셀린에게 말을 걸었나? 첫 질문의 내용과 그 질문을 고른 이유를 함께 설명해 보세요.",
+      "answer": "제시는 통로 건너에 앉은 셀린에게 관심이 있었지만 곧바로 말을 걸 명분이 없었습니다. 그래서 방금 독일어로 싸우다 나간 중년 부부를 화제로 삼아 '저 사람들 뭘 두고 싸우는지 아세요?'라고 물었습니다. 자기 얘기가 아니라 제3자에 대한 질문이라 부담이 없고, 상대가 무시해도 상처받지 않을 수 있는 안전한 접근이었습니다."
+    },
+    {
+      "question": "셀린의 첫 대답 Yeah. No, I'm sorry, my German is not very good.에서 Yeah와 No는 각각 무엇에 대한 답인가?",
+      "answer": "Yeah는 바로 앞의 Do you speak English?에 대한 답('네, 영어 해요')입니다. No는 그 앞 질문, 즉 '부부가 무슨 얘기로 싸웠는지 아느냐'에 대한 뒤늦은 답('아니요, 못 알아들었어요')입니다. 두 질문에 대한 답이 순서가 뒤집혀 붙어 나온 것으로, 실제 대화에서 아주 흔한 현상입니다."
+    },
+    {
+      "question": "셀린이 '늙어가는 부부의 청력' 얘기를 꺼낸 것은 어떤 의미의 행동인가?",
+      "answer": "제시가 한 번 퇴짜를 맞은 것처럼 몸을 뒤로 빼고 실망한 뒤, 잠깐 뜸을 들이고 셀린이 먼저 말을 이어붙인 대사입니다. 즉 대화를 끝내지 않겠다는 셀린 쪽의 신호입니다. 게다가 화제가 방금 싸운 부부와 연결되는 '오래된 커플'이라, 제시의 질문을 받아주면서 자기 지식으로 되돌려주는 세련된 응답이 됩니다."
+    },
+    {
+      "question": "제시의 Nature's way of allowing couples to grow old together without killing each other.라는 반응은 왜 대화의 전환점이 되는가?",
+      "answer": "셀린이 던진 과학적 잡지식을 제시가 농담으로 되받아 '자연이 부부가 서로 죽이지 않게 하려고 마련한 장치'라고 비틀었습니다. 정보를 주고받는 대화가 유머를 주고받는 대화로 바뀌는 지점이고, 실제로 셀린이 여기서 처음 웃습니다. 두 사람의 말투가 서로 잘 맞는다는 것이 이 한 문장으로 증명됩니다."
+    },
+    {
+      "question": "제시의 마지막 제안은 표현상 어떻게 '거절하기 쉽게' 설계되어 있는가?",
+      "answer": "I was thinking about going...이라고 과거진행형으로 말해 자기 의도를 확정된 계획이 아닌 막연한 생각처럼 낮췄고, sometime soon으로 시간을 일부러 흐렸으며, Do you want to가 아니라 Would you like to로 정중하게 물었습니다. 셋 다 상대가 거절해도 서로 민망해지지 않게 만드는 장치입니다. 결과적으로 셀린은 한 마디 Yeah로 응하고, 두 사람은 라운지 칸으로 옮겨 갑니다."
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "number": 18,
+  "title": "Chapter 18 : For the greatest night in your life - the wine bar",
+  "chunks": [
+    {
+      "en": "Walking down some stairs / into a bar.",
+      "ko": "계단을 내려가 술집 안으로 들어간다.",
+      "literal": "계단을 걸어 내려가며 / 술집 안으로"
+    },
+    {
+      "en": "Alright, so here's the plan, right. / You're gonna grab the glasses, / and I'm gonna get the wine.",
+      "ko": "좋아요, 자 계획은 이래요. 당신이 잔을 챙기고, 내가 와인을 구해 올게요.",
+      "literal": "좋아요, 그래서 여기 계획이 있어요, 그렇죠 / 당신은 잔들을 챙길 거고 / 나는 와인을 가져올 거예요"
+    },
+    {
+      "en": "Red wine. / Red wine. Right.",
+      "ko": "레드 와인으로요. — 레드 와인. 알겠어요.",
+      "literal": "레드 와인 / 레드 와인. 맞아요"
+    },
+    {
+      "en": "You think you can do that? / Noooo problem.",
+      "ko": "그거 할 수 있겠어요? — 문제 없죠오.",
+      "literal": "당신은 그것을 할 수 있다고 생각해요? / 문제 없어요오"
+    },
+    {
+      "en": "Wish me good luck. / Good luck.",
+      "ko": "(속삭이며) 행운을 빌어 줘요. — (속삭이며) 행운을 빌어요.",
+      "literal": "나에게 행운을 빌어 줘요 / 행운을"
+    },
+    {
+      "en": "Uh... Do you speak English? / Euh, a bit.",
+      "ko": "저… 영어 하세요? — 어, 조금요.",
+      "literal": "어… 당신은 영어를 하나요? / 어, 조금"
+    },
+    {
+      "en": "Yeah, a bit? / I'm having kind of an odd situation... / which is that... this is... / you see that girl over there?",
+      "ko": "네, 조금이요? 제가 지금 좀 묘한 상황에 놓여 있는데요… 그러니까 그게… 저기 저 여자분 보이시죠?",
+      "literal": "네, 조금이요? / 나는 좀 이상한 상황을 겪고 있어요 / 그건 이런 건데… 이건… / 저기 저 여자애 보이세요?"
+    },
+    {
+      "en": "Yeah, well, this is our only night together.",
+      "ko": "네, 그게, 오늘이 저희가 함께 보내는 유일한 밤이거든요.",
+      "literal": "네, 음, 이것은 함께하는 우리의 유일한 밤이에요"
+    },
+    {
+      "en": "Um, and she, ahh... here's the problem, / the problem is that she wants a bottle of red wine, / and I don't have any money.",
+      "ko": "음, 그런데 그 사람이… 아, 문제가 뭐냐면요, 그 사람은 레드 와인 한 병을 원하는데 제가 돈이 없어요.",
+      "literal": "음, 그리고 그녀는, 아… 여기 문제가 있어요 / 문제는 그녀가 레드 와인 한 병을 원한다는 것이고 / 그리고 나는 돈이 하나도 없어요"
+    },
+    {
+      "en": "But I was thinking / that you might want to... um, / give me the address of this bar.",
+      "ko": "그런데 제 생각엔… 혹시 이 가게 주소를 저한테 알려 주실 수도 있지 않을까 해서요.",
+      "literal": "그런데 나는 생각하고 있었어요 / 당신이 아마 …하고 싶을지도 모른다고, 음 / 나에게 이 술집의 주소를 주는 것을"
+    },
+    {
+      "en": "No I know, / and I would promise to send you the money, / and you'd be making our night complete.",
+      "ko": "아니, 저도 알아요. 돈은 꼭 부쳐 드리겠다고 약속할게요. 그러면 사장님이 저희 밤을 완성해 주시는 거예요.",
+      "literal": "아니 나도 알아요 / 그리고 나는 당신에게 그 돈을 보내겠다고 약속하겠어요 / 그리고 당신은 우리의 밤을 완전하게 만들어 주는 셈이 될 거예요"
+    },
+    {
+      "en": "You would send me the money? / Yes. / Your hand? / Okay.",
+      "ko": "정말 돈을 부쳐 준다고요? — 네. — 손 주시죠. — 좋습니다.",
+      "literal": "당신은 나에게 그 돈을 보낼 거라고요? / 네 / 당신의 손? / 좋아요"
+    },
+    {
+      "en": "Céline steals 2nd glass, / Jesse gives her an A-ok gesture.",
+      "ko": "셀린이 두 번째 잔을 슬쩍한다. 제시가 그녀에게 오케이 손짓을 보낸다.",
+      "literal": "셀린은 두 번째 잔을 훔친다 / 제시는 그녀에게 좋다는 손동작을 보낸다"
+    },
+    {
+      "en": "For the greatest night in your life. / Thank you very much.",
+      "ko": "당신 인생 최고의 밤을 위하여. — 정말 감사합니다.",
+      "literal": "당신 인생에서 가장 위대한 밤을 위하여 / 정말 고맙습니다"
+    }
+  ],
+  "grammar": [
+    {
+      "point": "I'm having kind of an odd situation — have의 진행형과 즉흥적인 말 고르기",
+      "explanation": "학습자가 표시한 문장입니다. 두 가지가 동시에 일어나고 있습니다. 첫째, have는 '가지고 있다'는 소유의 뜻일 때 진행형이 불가능하지만(I am having a car는 불가), '겪다, 보내다'라는 동작에 가까운 뜻일 때는 진행형이 자연스럽습니다(having a hard time, having trouble, having a party). 여기서는 '지금 이런 상황을 겪고 있다'는 뜻이라 문법적으로 허용됩니다. 둘째, 그럼에도 원어민의 가장 자연스러운 표현은 I'm in kind of an odd situation입니다. 제시는 낯선 사람에게 돈 없이 와인을 얻어 내려는 참이라 문장을 미리 짜 두지 못했고, 그래서 관용 표현에서 살짝 어긋난 조합이 나옵니다. 오류로 외우기보다, 긴장한 화자가 말을 고르며 만들어 내는 문장이라고 이해하면 됩니다. kind of an은 뒤의 명사구 전체를 흐리는 완충 장치로, 상황을 실제보다 가볍게 들리게 합니다.",
+      "fromScript": "Yeah, a bit? I'm having kind of an odd situation...which is that...this is...",
+      "example": "I'm having a bit of a strange week, so let me explain before you say no."
+    },
+    {
+      "point": "here's the plan / here's the problem — 화제를 여는 제시 표현",
+      "explanation": "here's + 명사는 눈앞에 무언가를 내려놓듯 화제를 여는 구어 상투구입니다. Here's the plan은 '자, 계획은 이래', Here's the problem은 '문제는 이거예요'라는 뜻으로, 뒤에 이어질 내용을 들을 준비를 시킵니다. 제시는 한 장면에서 이 형식을 두 번 씁니다. 그런데 두 번째에는 here's the problem이라고 해 놓고 곧바로 the problem is that ~로 다시 시작합니다. 앞말을 반복해 시간을 벌면서 문장을 다시 조립하는 것이고, 부탁을 꺼내기 직전의 망설임이 이 반복에 그대로 드러납니다.",
+      "fromScript": "Alright, so here's the plan, right. / here's the problem, the problem is that she wants a bottle of red wine",
+      "example": "Here's the problem: the copier is broken and forty worksheets are due at nine."
+    },
+    {
+      "point": "you might want to ~ — 가장 간접적인 요청 형식",
+      "explanation": "직역하면 '당신이 하고 싶을지도 모른다'이지만 실제 기능은 부탁이나 권유입니다. might로 가능성을 낮추고 want to로 결정권을 상대에게 넘겨, 요청을 상대의 자발적 의사인 것처럼 포장합니다. 여기에 I was thinking that까지 앞에 붙여 이중으로 완화했습니다. 과거진행형 I was thinking은 '지금 요구한다'가 아니라 '아까부터 막연히 그런 생각을 했다'는 뜻이라, 거절당해도 서로 민망하지 않게 만듭니다. 돈 한 푼 없이 와인 한 병을 얻어 내려는 상황에서 영어가 동원할 수 있는 가장 조심스러운 형식이 총동원된 셈입니다.",
+      "fromScript": "But I was thinking that you might want to...um, give me the address of this bar.",
+      "example": "I was thinking you might want to take a look at this before the meeting."
+    },
+    {
+      "point": "which is that ~ — 앞 문장 전체를 받는 계속적 관계절",
+      "explanation": "which가 앞의 명사 하나가 아니라 앞에서 말한 상황 전체를 받는 용법입니다. 여기서는 an odd situation을 받아 '그 상황인즉슨'이라고 내용을 풀어 놓으려는 참입니다. that절이 뒤따르는 이유는 situation의 내용을 동격절로 설명하려 했기 때문입니다. 다만 제시는 이 문장을 끝내지 못하고 this is...로 갈아탔다가 결국 손가락으로 셀린을 가리키며 you see that girl over there?라는 완전히 다른 전략으로 바꿉니다. 설명하려다 실패하고 보여 주기로 전환하는 것이며, 이런 중도 포기와 궤도 수정은 구어의 정상적인 일부입니다.",
+      "fromScript": "I'm having kind of an odd situation...which is that...this is...you see that girl over there?",
+      "example": "We ran into a small complication, which is that nobody remembered to book the room."
+    },
+    {
+      "point": "you'd be making our night complete — 조건의 결과를 나타내는 would + 진행형, 그리고 make + 목적어 + 형용사",
+      "explanation": "두 겹으로 봐야 합니다. 하나는 would + be -ing으로, 앞의 조건(주소를 알려 주고 와인을 내준다면)이 이루어졌을 때 '그렇게 하는 것이 곧 ~하는 셈이 된다'는 뜻입니다. 단순히 미래를 예측하는 것이 아니라 상대의 행위에 의미를 붙여 주는 화법이라, 부탁의 값을 올리는 효과가 있습니다. 다른 하나는 make + 목적어 + 형용사 구조입니다(우리 밤을 완전한 상태로 만들다). make our night to be complete가 아니라 형용사를 바로 붙인다는 점이 중요합니다.",
+      "fromScript": "and I would promise to send you the money, and you'd be making our night complete",
+      "example": "If you covered my class for one hour, you'd be saving my entire afternoon."
+    },
+    {
+      "point": "be gonna로 역할을 나누는 지시 화법",
+      "explanation": "You're gonna grab the glasses, and I'm gonna get the wine은 예측이 아니라 역할 분담 지시입니다. be gonna는 이미 정해진 계획이나 확정된 다음 순서를 말할 때 쓰여서, 명령문보다 부드러우면서도 will보다 확정적으로 들립니다. 그래서 팀을 짜거나 순서를 정할 때 영어권 구어에서 아주 흔합니다. 참고로 grab은 여기서 '움켜쥐다'가 아니라 '슬쩍 챙기다, 가볍게 가져오다'라는 뜻이고, 실제로 셀린은 잔을 가방에 넣어 훔칩니다.",
+      "fromScript": "You're gonna grab the glasses, and I'm gonna get the wine.",
+      "example": "Okay, you're gonna hand out the papers and I'm gonna set up the projector."
+    },
+    {
+      "point": "For the greatest night in your life — 전치사구 하나로 완성되는 축배 문구",
+      "explanation": "To ~ 또는 For ~ 뒤에 명사구만 붙이면 동사 없이도 축배의 말이 됩니다(앞 장에서 제시가 쓴 To our one and only night together와 같은 형식). 여기서 눈여겨볼 것은 전치사입니다. 영어의 관용은 the greatest night of your life인데, 바텐더는 in your life라고 말합니다. 오스트리아인이 배운 영어를 쓰는 중이고 스스로도 a bit이라고 했으니, 관용 전치사가 살짝 어긋난 것입니다. 뜻은 완벽하게 통하고 아무도 정정하지 않습니다. 이 장면에서 영어는 두 외국인 사이의 공용어로 쓰이고 있을 뿐이며, 정확성보다 거래 성사가 중요합니다.",
+      "fromScript": "For the greatest night in your life (Laugh.)",
+      "example": "To the class of this year, and the best summer of their lives."
+    }
+  ],
+  "background": [
+    {
+      "topic": "돈이 없다는 사실",
+      "detail": "제시는 다음 날 아침 비행기로 미국에 돌아가는 여행 마지막 날이고, 숙소도 잡지 않은 채 밤을 보내고 있습니다. 이미 앞선 장면들에서 두 사람은 값을 치러야 하는 일을 대체로 피해 왔습니다. 여기서 와인 한 병 값이 없다는 것은 과장이 아니라 실제 상황이고, 그래서 셀린은 잔을 훔치고 제시는 외상을 부탁합니다. 마지막 몇 시간을 위해 두 사람이 동원할 수 있는 자원이 거의 남지 않았다는 사실이, 남은 시간이 얼마 없다는 감각과 겹칩니다."
+    },
+    {
+      "topic": "빈의 바인슈투베(Weinstube)와 병 단위 판매",
+      "detail": "빈에는 잔이 아니라 병 단위로 와인을 파는 작은 술집이 흔합니다. 그래서 병 하나를 통째로 사서 밖으로 들고 나가 공원에서 마시는 일이 가능하고, 실제로 두 사람은 이 병을 들고 공원으로 갑니다. 셀린이 굳이 잔까지 챙기는 것도 병을 들고 나갈 것을 전제로 한 행동입니다. 이 한 병과 두 개의 잔이 다음 장면 전체의 소품이 됩니다."
+    },
+    {
+      "topic": "악수로 대신하는 계약",
+      "detail": "바텐더는 서류도 신분증도 요구하지 않고 Your hand?라고만 말한 뒤 손을 내밉니다. 악수가 곧 계약이라는 표시이며, 유럽에서 구두 약속을 확정하는 오래된 몸짓입니다. 제시가 정말 돈을 부쳤는지는 영화가 알려 주지 않습니다. 다만 낯선 사람의 말을 담보 없이 믿어 주는 이 장면이, 이 영화 전체가 기대고 있는 태도 즉 처음 본 사람과 하룻밤을 함께 보내기로 하는 결정과 같은 종류의 것이라는 점은 분명합니다."
+    },
+    {
+      "topic": "공용어로서의 영어",
+      "detail": "이 장면에서 영어를 모국어로 쓰는 사람은 제시뿐입니다. 바텐더는 오스트리아인이고 스스로 a bit이라고 말하며, 셀린은 프랑스인입니다. 세 사람 사이에서 영어는 완벽한 언어가 아니라 그저 가장 겹치는 부분이 많은 도구입니다. 바텐더의 in your life처럼 관용에서 벗어난 표현이 나와도 아무 문제가 되지 않는 이유가 여기 있습니다. 학습자 입장에서는, 이 영화의 영어가 모두 규범적인 것은 아니며 화자의 출신에 따라 결이 다르다는 점을 확인할 수 있는 장면입니다."
+    }
+  ],
+  "comprehension": [
+    {
+      "question": "제시가 바텐더에게 부탁을 꺼낼 때 사용한 완화 장치들을 짚어 보고, 왜 그렇게까지 조심스러워야 했는지 설명해 보세요.",
+      "answer": "kind of an odd situation으로 상황을 실제보다 가볍게 만들고, I was thinking으로 시제를 뒤로 물려 즉석 요구가 아닌 것처럼 만들고, you might want to로 결정권을 상대에게 넘깁니다. 게다가 처음에는 와인을 달라고 하지 않고 '가게 주소를 알려 달라'는 훨씬 작은 요구부터 꺼냅니다. 돈 없이 술을 얻어 내려는 것이므로 자칫 사기나 구걸로 보일 수 있고, 실제로 바텐더는 한 번 뒤로 물러나며 의심하는 눈으로 봅니다. 최대한의 완화 장치가 필요했던 이유입니다."
+    },
+    {
+      "question": "제시가 곧바로 와인 이야기를 꺼내지 않고 먼저 저기 저 여자가 보이느냐고 물은 것은 어떤 전략인가?",
+      "answer": "설명하려던 문장(which is that...)이 막히자 말 대신 눈으로 보여 주는 쪽으로 전략을 바꾼 것입니다. 바텐더가 셀린을 직접 보고 나면, 그 뒤에 나올 '오늘이 우리에게 유일한 밤'이라는 말이 추상적인 주장이 아니라 눈앞의 사실이 됩니다. 즉 부탁의 근거를 언어가 아니라 장면으로 제시한 것이고, 이 방식이 통해서 바텐더는 웃기 시작합니다."
+    },
+    {
+      "question": "바텐더가 결국 와인을 내주기로 한 결정적인 계기는 무엇인가?",
+      "answer": "제시가 돈을 반드시 부치겠다고 약속하면서, 그렇게 해 주면 사장님이 우리 밤을 완성해 주시는 것이라고 말한 대목입니다. 바텐더는 You would send me the money?라고 한 번 확인한 뒤, 계약서 대신 Your hand?라며 손을 내밉니다. 담보도 신분 확인도 없이 악수 하나로 거래가 성립하며, 그가 산 것은 사실상 와인값이 아니라 두 사람의 이야기입니다."
+    },
+    {
+      "question": "제시가 바텐더와 이야기하는 동안 셀린은 무엇을 하고 있으며, 두 사람의 관계에 대해 무엇을 보여 주는가?",
+      "answer": "셀린은 테이블로 가서 가방을 열고 잔을 집어넣습니다. 제시가 그쪽을 가리켰을 때 마침 잔을 넣던 중이라 동작을 멈추고 웃고, 나중에 두 번째 잔까지 훔치자 제시는 손짓으로 좋다는 신호를 보냅니다. 각자 맡은 몫을 말없이 수행하고 서로의 위반을 눈짓으로 승인하는 것이며, 처음 만난 지 하루도 안 된 두 사람이 이미 한 팀처럼 움직인다는 사실을 보여 줍니다."
+    },
+    {
+      "question": "바텐더의 마지막 말 For the greatest night in your life는 이 장면에서 어떤 역할을 하는가?",
+      "answer": "병을 건네며 던지는 축배의 말이자, 두 사람의 사정을 다 알아들었다는 표시입니다. 그는 웃으면서 말하는데, 이는 놀림이면서 동시에 진심 어린 축복이기도 합니다. 또 이 말은 앞 장면에서 제시가 손을 맞잡고 했던 To our one and only night together와 같은 형식이라, 두 사람이 자기들끼리 세운 다짐을 이제 바깥 사람이 확인해 주는 셈이 됩니다. 그 결과 두 사람만의 밤이라는 사실이 처음으로 제3자에게 인정받습니다."
+    }
+  ]
+}
