@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
+import { ChapterNav } from './SheetRead.jsx'
 
 // 읽기 화면. 원문 + 본인 하이라이트 + 구문 정리를 한 화면에 둔다.
 //
@@ -47,6 +48,8 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
 
   const chapter = chapters.find((c) => c.number === selected)
   const analysis = analysisByChapter.get(selected) ?? null
+  // 이동은 대사가 있는 챕터끼리만. 0장은 노션에서 빈 페이지라 건너뛴다.
+  const readable = chapters.filter((c) => c.lines?.length > 0)
 
   return (
     <div className="stack stack--loose">
@@ -96,6 +99,21 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
         ) : (
           <NotGenerated />
         ))}
+
+      <ChapterNav
+        chapters={readable}
+        current={selected}
+        onGo={(n) => {
+          setSelected(n)
+          // 다음 장으로 넘어갈 때 보던 섹션을 유지한다. 구문 정리를
+          // 연속으로 보는 중이었다면 매번 원문으로 되돌리면 방해가 된다.
+          window.scrollTo({ top: 0 })
+        }}
+        onList={() => {
+          setSelected(null)
+          window.scrollTo({ top: 0 })
+        }}
+      />
     </div>
   )
 }
