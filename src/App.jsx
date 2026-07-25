@@ -12,12 +12,19 @@ import {
 import expressionData from './data/expressions.json'
 import meaningData from './data/meanings.json'
 
-// 원문 24챕터와 챕터 해설은 읽기 탭에서만 쓴다.
+// 원문 24챕터, 챕터 해설, 문법 색인은 읽기·문법 탭에서만 쓴다.
 const loadReadingData = () =>
   Promise.all([
     import('./data/before-sunrise.json'),
     import('./data/analysis.json'),
-  ]).then(([s, a]) => ({ chapters: s.default.chapters, analysis: a.default }))
+    import('./data/grammar-index.json'),
+    import('./data/sheet-scripts.json'),
+  ]).then(([s, a, g, sh]) => ({
+    chapters: s.default.chapters,
+    analysis: a.default,
+    grammarIndex: g.default,
+    sheetWorks: sh.default.works,
+  }))
 
 // 문장 1,948개와 B2 단어 899개는 합쳐서 2MB에 가깝다. 첫 실행의 시드
 // 생성과 문장 연습 탭에서만 쓰이므로 필요할 때 가져온다. 매일 여는
@@ -29,7 +36,8 @@ const loadBulkData = () =>
   ]).then(([s, b]) => ({ sentences: s.default, b2Words: b.default }))
 
 import Today from './views/Today.jsx'
-import Read from './views/Read.jsx'
+import ReadPart from './views/ReadPart.jsx'
+import Grammar from './views/Grammar.jsx'
 import Vocab from './views/Vocab.jsx'
 import Drill from './views/Drill.jsx'
 import Settings from './views/Settings.jsx'
@@ -37,6 +45,7 @@ import Settings from './views/Settings.jsx'
 const TABS = [
   { id: 'today', label: '오늘' },
   { id: 'read', label: '읽기' },
+  { id: 'grammar', label: '문법' },
   { id: 'vocab', label: '단어장' },
   { id: 'drill', label: '문장 연습' },
   { id: 'settings', label: '설정' },
@@ -52,6 +61,8 @@ export default function App() {
   const [bulkError, setBulkError] = useState(null)
   const [reading, setReading] = useState(null)
   const [readingError, setReadingError] = useState(null)
+  // 문법 색인에서 챕터로 건너뛸 때 어느 장을 열지 전달한다.
+  const [jumpChapter, setJumpChapter] = useState(null)
 
   // 뜻풀이는 id 또는 표현 텍스트로 찾는다. 생성 산출물이 어느 쪽 키를
   // 쓰든 동작하게 두 방향 모두 색인한다.
@@ -124,7 +135,9 @@ export default function App() {
   // 탭을 열면 그때 가져온다.
   useEffect(() => {
     if (tab === 'drill' && !bulk) ensureBulk().catch(() => {})
-    if (tab === 'read' && !reading) ensureReading().catch(() => {})
+    if ((tab === 'read' || tab === 'grammar') && !reading) {
+      ensureReading().catch(() => {})
+    }
   }, [tab, bulk, reading, ensureBulk, ensureReading])
 
   const cards = state.cards
@@ -190,15 +203,34 @@ export default function App() {
           )}
           {tab === 'read' &&
             (reading ? (
-              <Read
+              <ReadPart
+                key={jumpChapter ?? 'read'}
                 chapters={reading.chapters}
                 analysis={reading.analysis}
+                sheetWorks={reading.sheetWorks}
                 cards={cards}
+                initialChapter={jumpChapter}
               />
             ) : (
               <BulkLoading
                 error={readingError}
                 label="원문과 해설을 불러오는 중"
+                onRetry={() => ensureReading().catch(() => {})}
+              />
+            ))}
+          {tab === 'grammar' &&
+            (reading ? (
+              <Grammar
+                index={reading.grammarIndex}
+                onOpenChapter={(n) => {
+                  setJumpChapter(n)
+                  setTab('read')
+                }}
+              />
+            ) : (
+              <BulkLoading
+                error={readingError}
+                label="문법 색인을 불러오는 중"
                 onRetry={() => ensureReading().catch(() => {})}
               />
             ))}

@@ -14,8 +14,9 @@ const SECTIONS = [
   { id: 'quiz', label: '이해도 확인' },
 ]
 
-export default function Read({ chapters, analysis: analysisData, cards }) {
-  const [selected, setSelected] = useState(null)
+export default function Read({ chapters, analysis: analysisData, cards, initialChapter = null }) {
+  // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
+  const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
 
   const analysisByChapter = useMemo(() => {
