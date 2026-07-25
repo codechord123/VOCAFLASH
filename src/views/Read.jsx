@@ -1,13 +1,13 @@
 import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
-import { ChapterNav } from './SheetRead.jsx'
+import ChapterNav from './ChapterNav.jsx'
 
 // 읽기 화면. 원문 + 본인 하이라이트 + 구문 정리를 한 화면에 둔다.
 //
 // 구문 정리를 별도 탭으로 빼지 않은 이유: 청크 분석은 원문과 나란히
 // 봐야 의미가 있다. 떼어놓으면 대조를 못 해서 죽은 자료가 된다.
 
-const SECTIONS = [
+export const SECTIONS = [
   { id: 'script', label: '원문' },
   { id: 'chunks', label: '구문 정리' },
   { id: 'grammar', label: '문법' },
@@ -273,7 +273,7 @@ function Marked({ text, highlights, cardedTexts }) {
   return out
 }
 
-function AnalysisSection({ section, analysis }) {
+export function AnalysisSection({ section, analysis }) {
   if (section === 'chunks') {
     return (
       <div className="stack">
@@ -346,7 +346,7 @@ function Quiz({ items }) {
   )
 }
 
-function NotGenerated() {
+export function NotGenerated() {
   return (
     <div className="empty">
       <div className="empty__icon">◇</div>

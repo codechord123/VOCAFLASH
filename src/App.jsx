@@ -19,11 +19,18 @@ const loadReadingData = () =>
     import('./data/analysis.json'),
     import('./data/grammar-index.json'),
     import('./data/sheet-scripts.json'),
-  ]).then(([s, a, g, sh]) => ({
+    import('./data/analysis-disenchantment.json'),
+    import('./data/analysis-before-sunset.json'),
+  ]).then(([s, a, g, sh, dis, bsu]) => ({
     chapters: s.default.chapters,
     analysis: a.default,
     grammarIndex: g.default,
     sheetWorks: sh.default.works,
+    // 작품 id -> 해설. 해설이 없는 챕터는 원문만 보인다.
+    sheetAnalysis: {
+      disenchantment: dis.default,
+      'before-sunset': bsu.default,
+    },
   }))
 
 // 문장 1,948개와 B2 단어 899개는 합쳐서 2MB에 가깝다. 첫 실행의 시드
@@ -218,6 +225,7 @@ export default function App() {
                 chapters={reading.chapters}
                 analysis={reading.analysis}
                 sheetWorks={reading.sheetWorks}
+                sheetAnalysis={reading.sheetAnalysis}
                 cards={cards}
                 initialChapter={jumpChapter}
               />

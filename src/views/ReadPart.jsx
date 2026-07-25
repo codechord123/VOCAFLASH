@@ -13,6 +13,7 @@ export default function ReadPart({
   chapters,
   analysis,
   sheetWorks,
+  sheetAnalysis = {},
   cards,
   initialChapter = null,
 }) {
@@ -44,7 +45,13 @@ export default function ReadPart({
 
   const sheetWork = sheetWorks.find((w) => w.id === workId)
   if (sheetWork) {
-    return <SheetRead work={sheetWork} onBack={() => setWorkId(null)} />
+    return (
+      <SheetRead
+        work={sheetWork}
+        analysis={sheetAnalysis[sheetWork.id] ?? null}
+        onBack={() => setWorkId(null)}
+      />
+    )
   }
 
   return (
@@ -75,7 +82,11 @@ export default function ReadPart({
             title={w.title}
             subtitle={w.subtitle}
             meta={`${w.chapterCount}장 · ${w.lineCount.toLocaleString('ko')}줄`}
-            detail="원문과 번역을 나란히 읽습니다. 원하면 번역을 가릴 수 있습니다."
+            detail={
+              (sheetAnalysis[w.id]?.chapterCount ?? 0) > 0
+                ? `구문 정리 · 문법 · 배경지식 · 이해도 확인이 ${w.chapterCount}장 중 ${sheetAnalysis[w.id].chapterCount}장에 붙어 있습니다.`
+                : '원문과 번역을 나란히 읽습니다.'
+            }
             onClick={() => setWorkId(w.id)}
           />
         ))}

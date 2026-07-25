@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
+import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
+import ChapterNav from './ChapterNav.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
 //
@@ -7,11 +9,22 @@ import { useState } from 'react'
 // 읽는 경험 자체는 기존 리더와 같게 유지한다.
 //
 // 번역 가리기는 원하면 켜는 선택 기능으로만 둔다(기본 꺼짐).
+//
+// 해설이 생성된 챕터에는 Before Sunrise와 같은 섹션 탭이 붙는다.
+// 아직 생성되지 않은 챕터는 '원문'만 보인다 — 탭을 띄워놓고 빈 화면을
+// 보여주는 것보다 낫다.
 
-export default function SheetRead({ work, onBack }) {
+export default function SheetRead({ work, analysis, onBack }) {
   const [selected, setSelected] = useState(null)
+  const [section, setSection] = useState('script')
   const [hideKo, setHideKo] = useState(false)
   const [revealed, setRevealed] = useState(() => new Set())
+
+  const analysisByChapter = useMemo(() => {
+    const map = new Map()
+    for (const a of analysis?.chapters ?? []) map.set(a.number, a)
+    return map
+  }, [analysis])
 
   if (selected == null) {
     return (
@@ -46,6 +59,7 @@ export default function SheetRead({ work, onBack }) {
                 }}
                 onClick={() => {
                   setSelected(c.number)
+                  setSection('script')
                   setRevealed(new Set())
                 }}
               >
@@ -53,6 +67,9 @@ export default function SheetRead({ work, onBack }) {
                   <span className="list__title">{c.title}</span>
                   <span className="list__meta">{c.lineCount}줄</span>
                 </span>
+                {analysisByChapter.has(c.number) && (
+                  <span className="chip chip--accent">해설</span>
+                )}
                 <span aria-hidden="true" style={{ color: 'var(--text-faint)' }}>
                   →
                 </span>
@@ -65,6 +82,7 @@ export default function SheetRead({ work, onBack }) {
   }
 
   const chapter = work.chapters.find((c) => c.number === selected)
+  const chapterAnalysis = analysisByChapter.get(selected) ?? null
 
   return (
     <div className="stack stack--loose">
@@ -76,6 +94,7 @@ export default function SheetRead({ work, onBack }) {
           ← {work.title}
         </button>
         <div className="row" style={{ gap: 'var(--s2)' }}>
+          {section === 'script' && (
           <button
             className="btn btn--ghost btn--sm"
             onClick={() => {
@@ -87,6 +106,7 @@ export default function SheetRead({ work, onBack }) {
           >
             {hideKo ? '번역 켜기' : '번역 가리기'}
           </button>
+          )}
           <span className="chip">{chapter.lineCount}줄</span>
         </div>
       </div>
@@ -100,6 +120,30 @@ export default function SheetRead({ work, onBack }) {
         )}
       </div>
 
+      {chapterAnalysis && (
+        <nav className="tabs" role="tablist" aria-label="챕터 내 화면">
+          {SECTIONS.map((sec) => (
+            <button
+              key={sec.id}
+              role="tab"
+              aria-selected={section === sec.id}
+              className="tab"
+              onClick={() => setSection(sec.id)}
+            >
+              {sec.label}
+            </button>
+          ))}
+        </nav>
+      )}
+
+      {section !== 'script' &&
+        (chapterAnalysis ? (
+          <AnalysisSection section={section} analysis={chapterAnalysis} />
+        ) : (
+          <NotGenerated />
+        ))}
+
+      {section === 'script' && (
       <section className="stack">
         {chapter.lines.map((line, i) => {
           const open = !hideKo || revealed.has(i)
@@ -142,6 +186,7 @@ export default function SheetRead({ work, onBack }) {
           )
         })}
       </section>
+      )}
 
       <ChapterNav
         chapters={work.chapters}
@@ -157,64 +202,5 @@ export default function SheetRead({ work, onBack }) {
         }}
       />
     </div>
-  )
-}
-
-/** 챕터 하단의 이전/다음 이동. 다 읽고 나서 목록으로 돌아가지 않아도
-    바로 다음 장으로 넘어갈 수 있어야 한다 — 목록을 거치게 만들면
-    거기서 흐름이 끊긴다. */
-export function ChapterNav({ chapters, current, onGo, onList }) {
-  const i = chapters.findIndex((c) => c.number === current)
-  const prev = i > 0 ? chapters[i - 1] : null
-  const next = i >= 0 && i < chapters.length - 1 ? chapters[i + 1] : null
-
-  return (
-    <nav
-      className="row"
-      style={{ gap: 'var(--s2)', alignItems: 'stretch' }}
-      aria-label="챕터 이동"
-    >
-      <button
-        className="btn"
-        style={{ flex: 1, justifyContent: 'flex-start', minWidth: 0 }}
-        disabled={!prev}
-        onClick={() => prev && onGo(prev.number)}
-        title={prev?.title ?? ''}
-      >
-        <span aria-hidden="true">←</span>
-        <span
-          style={{
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          {prev ? prev.title : '처음 장'}
-        </span>
-      </button>
-
-      <button className="btn btn--ghost" onClick={onList} title="챕터 목록">
-        목록
-      </button>
-
-      <button
-        className="btn btn--primary"
-        style={{ flex: 1, justifyContent: 'flex-end', minWidth: 0 }}
-        disabled={!next}
-        onClick={() => next && onGo(next.number)}
-        title={next?.title ?? ''}
-      >
-        <span
-          style={{
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          {next ? next.title : '마지막 장'}
-        </span>
-        <span aria-hidden="true">→</span>
-      </button>
-    </nav>
   )
 }

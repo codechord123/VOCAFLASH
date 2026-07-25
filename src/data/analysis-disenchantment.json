@@ -1,0 +1,2268 @@
+{
+  "work": "disenchantment",
+  "title": "Disenchantment",
+  "source": "generated",
+  "chapterCount": 10,
+  "chapters": [
+    {
+      "work": "disenchantment",
+      "number": 1,
+      "title": "1. 벤트우드의 결혼식",
+      "chunks": [
+        {
+          "en": "Anything's safer / than guarding that princess.",
+          "ko": "저 공주를 경호하는 것보다야 뭐든 안전하지.",
+          "literal": "무엇이든 더 안전해 / 저 공주를 경호하는 것보다는"
+        },
+        {
+          "en": "How's it hanging, / Princess?",
+          "ko": "요즘 어떻게 지내십니까, 공주님?",
+          "literal": "그게 어떻게 매달려 있나요 / 공주님?"
+        },
+        {
+          "en": "Anybody looks at her, / they get their head chopped off.",
+          "ko": "누구든 공주를 쳐다보면 그 자리에서 목이 잘린다.",
+          "literal": "누구든 그녀를 쳐다보면 / 그들은 자기 목이 잘리게 된다"
+        },
+        {
+          "en": "See? / It pushes all the mincemeat / to the top of the pie.",
+          "ko": "보이지? 다진 고기를 파이 위쪽으로 죄다 밀어 올려주는 거야.",
+          "literal": "봤지? / 그건 다진 고기를 전부 밀어 올려 / 파이의 맨 위쪽으로"
+        },
+        {
+          "en": "All this wedding hassle / for a stupid political alliance?",
+          "ko": "이 결혼식 난리를 고작 멍청한 정치적 동맹 때문에 치르는 거야?",
+          "literal": "이 모든 결혼식 소동이 / 멍청한 정치적 동맹 하나 때문에?"
+        },
+        {
+          "en": "I thought that I'd get married for true love, / or because I was wasted.",
+          "ko": "난 진정한 사랑으로 결혼하거나, 아니면 잔뜩 취해서 결혼할 줄 알았지.",
+          "literal": "나는 진정한 사랑을 위해 결혼할 거라 생각했어 / 아니면 내가 만취해 있었기 때문에"
+        },
+        {
+          "en": "Lots of reasons to get married, ma'am. / I got married for a goat.",
+          "ko": "결혼할 이유야 많죠, 아가씨. 저는 염소 한 마리 때문에 결혼했습니다.",
+          "literal": "결혼할 이유는 많습니다, 마님 / 저는 염소 한 마리를 위해 결혼했어요"
+        },
+        {
+          "en": "The prince will be here any minute / to marry you and, time permitting, / meet you.",
+          "ko": "왕자님이 곧 도착해서 결혼식을 올리실 거예요. 시간이 허락하면 인사도 나누시겠죠.",
+          "literal": "왕자님이 곧 여기 오실 거예요 / 당신과 결혼하기 위해, 그리고 시간이 허락하면 / 당신을 만나기 위해"
+        },
+        {
+          "en": "hero of the Battle Against That Bird / That Flew Into The Room One Time, / groom-to-be, Prince Guysbert of Bentwood.",
+          "ko": "'언젠가 방 안으로 날아들었던 그 새와의 전투'의 영웅이시며, 예비 신랑, 벤트우드의 가이스버트 왕자님이십니다.",
+          "literal": "그 새와의 전투의 영웅 / 언젠가 한 번 방 안으로 날아 들어온 그 새 / 예비 신랑, 벤트우드의 가이스버트 왕자"
+        },
+        {
+          "en": "- I hate this feeling. / - Sobriety, ma'am?",
+          "ko": "- 이 기분 진짜 싫어. / - 술이 깬 상태를 말씀하시는 거죠, 아가씨?",
+          "literal": "- 나는 이 느낌이 싫어 / - 맨정신 말씀입니까, 마님?"
+        },
+        {
+          "en": "Remember: / Whores rouge. / Ladies leech.",
+          "ko": "명심하세요. 창녀는 볼에 루주를 칠하고, 숙녀는 거머리를 붙입니다.",
+          "literal": "기억하세요 / 창녀는 루주를 칠합니다 / 숙녀는 거머리를 붙입니다"
+        },
+        {
+          "en": "You ever wish / you could live in a place / where people are really, truly happy?",
+          "ko": "사람들이 진짜로, 진심으로 행복한 곳에서 살아봤으면 좋겠다는 생각, 해본 적 있어?",
+          "literal": "너 바란 적 있어 / 어떤 곳에서 살 수 있으면 좋겠다고 / 사람들이 정말로, 진심으로 행복한 그런 곳에서"
+        },
+        {
+          "en": "We're as happy as we can be / Elfwood is the place we'll never flee",
+          "ko": "우린 더없이 행복해 / 엘프우드는 우리가 결코 떠나지 않을 곳",
+          "literal": "우리는 우리가 그럴 수 있는 만큼 행복해 / 엘프우드는 우리가 절대 도망치지 않을 곳이야"
+        },
+        {
+          "en": "singing while you work's not happiness. / It's mental illness.",
+          "ko": "일하면서 노래하는 건 행복이 아니에요. 정신병이죠.",
+          "literal": "일하는 동안 노래하는 것은 행복이 아니야 / 그건 정신 질환이야"
+        },
+        {
+          "en": "Just because I'm not jolly all the time / doesn't make me a weirdo.",
+          "ko": "내가 늘 명랑하지 않다는 이유만으로 내가 괴짜가 되는 건 아니잖아.",
+          "literal": "내가 항상 명랑하지는 않다는 것만으로 / 나를 괴짜로 만들지는 않아"
+        },
+        {
+          "en": "it all started / when I first laid eyes on your mother.",
+          "ko": "모든 건 내가 너희 어머니를 처음 봤을 때 시작됐지.",
+          "literal": "모든 게 시작됐어 / 내가 너희 어머니에게 처음 눈길을 두었을 때"
+        },
+        {
+          "en": "I told you / elves are too light to hang. / The last guy we hanged died of old age.",
+          "ko": "내가 말했잖아, 엘프는 너무 가벼워서 교수형이 안 된다고. 지난번에 매달았던 놈은 노환으로 죽었어.",
+          "literal": "내가 말했잖아 / 엘프는 매달기에는 너무 가볍다고 / 우리가 마지막으로 매단 놈은 노환으로 죽었어"
+        },
+        {
+          "en": "All will be forgiven / as long as you obey the Jolly Code.",
+          "ko": "명랑 규범만 지킨다면 모든 걸 용서받을 것이다.",
+          "literal": "모든 것이 용서될 것이다 / 네가 명랑 규범에 복종하는 한"
+        },
+        {
+          "en": "I want to take a big, meaty bite out of life / and dip it in mustard.",
+          "ko": "인생을 큼직하게, 살점째 한 입 베어 물고 겨자에 찍어 먹고 싶어.",
+          "literal": "나는 인생에서 크고 살점 많은 한 입을 베어 내고 싶어 / 그리고 그걸 겨자에 찍고 싶어"
+        },
+        {
+          "en": "I'd rather die a big death / than live a small life.",
+          "ko": "쪼그라든 삶을 사느니 크게 한번 죽는 편이 낫지.",
+          "literal": "나는 차라리 큰 죽음을 죽겠어 / 작은 삶을 사는 것보다는"
+        },
+        {
+          "en": "Shame you're a princess / and too dainty to do anything about it.",
+          "ko": "안타깝네. 공주님인데 몸이 너무 가녀려서 정작 아무것도 못 하다니.",
+          "literal": "안타깝네 네가 공주라는 게 / 그리고 너무 여려서 그것에 대해 아무것도 못 한다는 게"
+        },
+        {
+          "en": "Times when you really shouldn't / are exactly when you really should.",
+          "ko": "정말 하면 안 되는 때가 바로 정말 해야 하는 때야.",
+          "literal": "네가 정말로 하면 안 되는 때들이 / 바로 네가 정말로 해야 하는 때야"
+        },
+        {
+          "en": "I have theory. Maybe they go up. / I won't even dignify that / with an upward glance.",
+          "ko": "제게 이론이 있습니다. 어쩌면 위로 갔을지도요. / 그런 말엔 위를 한 번 쳐다봐 줄 가치조차 없다.",
+          "literal": "저는 이론이 있어요. 어쩌면 그들은 위로 갔을지도 / 나는 그것에 품위를 지켜주지도 않겠다 / 위쪽을 향한 눈길 한 번으로도"
+        },
+        {
+          "en": "You know what we say in Hell? / \"Hope's for dopes.\"",
+          "ko": "지옥에서 뭐라고 하는지 알아? '희망은 얼간이들 몫'이라고 해.",
+          "literal": "우리가 지옥에서 뭐라고 하는지 알아? / '희망은 얼간이들을 위한 것'"
+        },
+        {
+          "en": "Pardon my language, / but destiny is baloney!",
+          "ko": "거친 표현은 양해해 주십시오. 하지만 운명이란 건 헛소리입니다!",
+          "literal": "제 말버릇을 용서하십시오 / 하지만 운명은 헛소리입니다"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "문두 조동사·주어 생략 의문문 (Do you ~? / Would you ~? 의 탈락)",
+          "explanation": "You ever wish you could live in a place...?는 Do you ever wish...?에서 Do가 사라진 형태입니다. Care to try my new cure-all?은 Would you care to try...?에서 주어와 조동사가 통째로 빠진 것이고, Spiffy, right?는 It's spiffy, right?의 압축입니다. 오류가 아니라 빠른 구어의 정상적인 형태이고, 올라가는 억양만으로 의문문이 성립합니다. 다만 이 작품에서는 이런 캐주얼한 축약이 '공주님', '폐하' 같은 궁정 호칭과 한 문장 안에서 부딪히면서 웃음이 발생합니다. How's it hanging, Princess?가 대표적입니다.",
+          "fromScript": "You ever wish you could live in a place where people are really, truly happy?",
+          "example": "You ever get the feeling the kids understand more than we think?"
+        },
+        {
+          "point": "접속사 없는 조건절 + get + 목적어 + 과거분사 (피해·처분의 수동)",
+          "explanation": "Anybody looks at her, they get their head chopped off.에는 If가 없습니다. 구어에서는 '조건절 + 결과절'을 접속사 없이 쉼표로만 이어 붙이는 일이 흔합니다. 뒷부분 get their head chopped off는 'get + 목적어 + 과거분사' 구문으로, 주어가 원하지 않은 일을 당한다는 뜻입니다(= have their heads cut off). 또한 Anybody가 단수인데 뒤에서 they로 받는 것도 현대 영어의 표준적인 총칭 용법입니다. 참고로 head가 단수인 것도 의도된 것으로, 여러 사람이 각자 하나씩 가진 것은 영어에서 단수로 묶어 표현하는 일이 많습니다.",
+          "fromScript": "Anybody looks at her, they get their head chopped off.",
+          "example": "Someone touches my desk, they get a very long lecture from me."
+        },
+        {
+          "point": "Just because A doesn't mean/make B — '~라고 해서 ~인 것은 아니다'",
+          "explanation": "Just because I'm not jolly all the time doesn't make me a weirdo.는 Just because절 전체가 주어 자리를 차지한 구문입니다. 문법적으로는 The fact that I'm not jolly doesn't make me a weirdo가 되어야 맞지만, 구어에서는 Just because절을 그대로 주어로 쓰는 형태가 완전히 굳어졌습니다. 뒤에는 doesn't mean, doesn't make, doesn't give you the right 같은 술어가 붙습니다. 상대의 성급한 추론을 반박할 때 쓰는 대표 구문이므로 통째로 외워 두면 좋습니다.",
+          "fromScript": "Just because I'm not jolly all the time doesn't make me a weirdo.",
+          "example": "Just because a child is quiet in class doesn't mean he has nothing to say."
+        },
+        {
+          "point": "would rather A than B + 동족목적어(die a death)",
+          "explanation": "I'd rather die a big death than live a small life.에서 would rather 뒤와 than 뒤에는 to 없는 원형이 대칭으로 옵니다(die … live). 또 die a big death는 자동사 die에 그것과 어원이 같은 명사 death를 목적어로 붙인 '동족목적어(cognate object)' 구문으로, live a small life도 마찬가지입니다. dream a strange dream, smile a sad smile처럼 이 구문은 형용사를 끼워 넣어야 성립합니다. 여기서는 big death와 small life가 크기 형용사로 짝을 이루면서, 빈의 인생관을 한 문장에 압축합니다.",
+          "fromScript": "I'd rather die a big death than live a small life.",
+          "example": "She would rather fail loudly than sit quietly at the back of the room."
+        },
+        {
+          "point": "명사를 그대로 동사로 쓰기 (verbing) — royal up, whores rouge, ladies leech",
+          "explanation": "This one needs royaling up에서 royal은 원래 형용사인데 '왕실답게 꾸미다'라는 동사로 즉석에서 만들어 쓰였습니다. Whores rouge. Ladies leech.도 화장품 rouge와 동물 leech를 각각 '루주를 칠하다', '거머리를 붙이다'라는 동사로 전용한 것입니다. 영어는 품사 전환에 제약이 거의 없어 이런 즉석 조어가 자유롭고, 사전에 없어도 원어민은 즉시 이해합니다. 학습자는 직접 만들어 쓰기보다 '아, 명사를 동사로 굴린 것이구나'를 알아채는 독해 능력을 목표로 하면 됩니다.",
+          "fromScript": "Remember: Whores rouge. Ladies leech.",
+          "example": "He totally teachered at me until I admitted I had not read the book."
+        },
+        {
+          "point": "독립분사구문 time permitting — 삽입되어 문장을 비틀 때",
+          "explanation": "time permitting은 if time permits(시간이 허락한다면)를 분사로 줄인 독립분사구문입니다. weather permitting(날씨가 좋으면), all being well(별일 없으면)과 같은 계열의 격식 표현입니다. 여기서는 to marry you and, time permitting, meet you로 삽입되어 있는데, 웃음은 순서에서 나옵니다. 정상이라면 '만나고 나서 결혼'인데 '결혼하고, 시간이 되면 만난다'로 뒤집어 놓아, 정략혼에서 신부 본인은 마지막 고려 사항이라는 사실을 문장 순서 자체로 보여줍니다.",
+          "fromScript": "The prince will be here any minute to marry you and, time permitting, meet you.",
+          "example": "Time permitting, I will grade the last two essays before the meeting."
+        },
+        {
+          "point": "hang의 두 과거형 — hanged와 hung",
+          "explanation": "hang은 목적어가 사람의 처형일 때만 hanged로 활용하고, 물건을 걸 때는 hung을 씁니다. The last guy we hanged died of old age에서 hanged가 쓰인 것은 그것이 교수형이라는 뜻입니다. 앞줄 elves are too light to hang에서는 'too 형용사 to 부정사'가 쓰였고, 여기서 to hang은 능동형이지만 의미는 수동(매달려 죽기에는)입니다. 그리고 웃음은 morbid한 논리에서 나옵니다. 목을 매달았는데 몸이 가벼워 죽지 않았고, 그래서 밧줄에 매달린 채 늙어서 죽었다는 것입니다. 처형이 무능하다는 사실을 태연한 사무적 어조로 보고하는 것이 이 작품의 기본 유머 방식입니다.",
+          "fromScript": "The last guy we hanged died of old age.",
+          "example": "The portrait was hung too high, but nobody in the palace dared say so."
+        },
+        {
+          "point": "조동사 뒤 본동사 생략 (ellipsis) — should / shouldn't 만 남기기",
+          "explanation": "Times when you really shouldn't are exactly when you really should.에서 shouldn't과 should 뒤에는 아무것도 없습니다. 앞 문맥의 동사구(do it)가 반복을 피하려고 통째로 생략된 것입니다. 영어는 조동사만 남기고 뒤를 지우는 것을 매우 좋아합니다(I'd love to. / At least, I intend to. / Yes, you have!). 문장의 뼈대는 Times [when …] are [when …]이라는 '시간 = 시간' 등식이고, 이 대칭 구조 때문에 격언처럼 들립니다. 실제로는 '술 마시면 안 될 때가 마실 때'라는 취객의 자기 합리화입니다.",
+          "fromScript": "Times when you really shouldn't are exactly when you really should.",
+          "example": "I know I shouldn't call him this late, but I think tonight I really should."
+        }
+      ],
+      "background": [
+        {
+          "topic": "정략혼과 동맹 — 결혼식이 외교 문서인 세계",
+          "detail": "중세 유럽 왕가의 결혼은 애정의 문제가 아니라 국경과 병력을 확정하는 조약이었습니다. 신랑과 신부가 식장에서 처음 얼굴을 보는 일도 흔했습니다. 조그가 vs 빈의 갈등은 여기서 나옵니다. 조그에게 이 결혼은 벤트우드와의 alliance(동맹)를 문서화하는 절차이고, 빈에게는 자기 인생이 남의 서류에 서명당하는 일입니다. all this wedding hassle for a stupid political alliance라는 대사가 두 세계관의 충돌을 그대로 요약합니다. 이 대립은 시즌 전체의 축이 되므로 1화에서 잡아두면 이후가 훨씬 쉽습니다."
+        },
+        {
+          "topic": "디즈니 백설공주 패러디 — '일하면서 노래하기'",
+          "detail": "엘프우드에서 엘프들이 사탕을 만들며 합창하는 장면은 디즈니 '백설공주'의 난쟁이들과 그 유명한 '휘파람 불며 일하자(Whistle While You Work)'를 정면으로 겨냥한 것입니다. 미국 관객은 첫 화면에서 곧바로 알아봅니다. 그래서 엘포의 singing while you work's not happiness. It's mental illness.는 단순한 투정이 아니라, 디즈니가 70년간 '노동은 즐겁다'고 노래해 온 것에 대한 진단서입니다. 그로닝의 작품은 이렇게 동화의 표면을 그대로 빌려온 뒤 그 안쪽의 강제성을 지적하는 방식으로 웃깁니다. Jolly Code(명랑 규범)라는 이름의 규칙집이 존재한다는 설정도, 행복이 의무가 되면 감시가 된다는 농담입니다."
+        },
+        {
+          "topic": "중세 의학과 사혈 — 거머리, 만병통치약, 창백한 피부",
+          "detail": "Whores rouge. Ladies leech.는 두 줄의 계급 규범입니다. 창녀는 혈색을 만들려고 볼에 루주를 칠하지만, 귀부인은 거머리로 피를 뽑아 창백함을 유지한다는 뜻입니다. 실제로 유럽에서는 19세기까지 사혈(bloodletting)이 만능 치료법으로 쓰였고, 햇볕에 나가 일하지 않는다는 표시로 창백한 피부가 상류층의 미의 기준이었습니다. 소르세리오의 cure-all(만병통치약)과 It wards off deadly plague(역병을 막아준다)도 같은 계열의 농담입니다. 근거 없는 약을 자신만만하게 파는 중세 궁정 마법사는 현대의 건강보조식품 광고를 겹쳐 보게 만듭니다."
+        },
+        {
+          "topic": "미국식 코미디 어휘의 이디시어 뿌리 — bupkis, dope, chump, baloney",
+          "detail": "루시의 And now you got bupkis!에서 bupkis는 '아무것도 없음, 빈손'을 뜻하는 이디시어 유래 미국 속어입니다. 뉴욕 유대계 코미디언들의 어휘가 20세기 미국 방송 코미디에 대량 유입된 결과이고, 그로닝 계열 작품(심슨, 퓨처라마)에는 이 층이 특히 두껍게 깔려 있습니다. 같은 화의 dope(얼간이), chump(호구), baloney(허튼소리)도 모두 20세기 미국 구어입니다. 가짜 중세 왕국의 인물들이 이런 단어를 쓰는 순간, 관객은 '중세를 흉내 낸 지금 여기'를 보게 됩니다. 사전을 찾으면 뜻은 나오지만, '언제 어디 말투인가'를 함께 알아야 농담이 성립합니다."
+        },
+        {
+          "topic": "라임으로 만든 격언 — Hope's for dopes / destiny is baloney",
+          "detail": "영어 유머는 각운(rhyme)을 맞추면 근거가 없어도 격언처럼 들린다는 성질을 자주 이용합니다. Hope's for dopes는 hope와 dope의 각운으로 지옥의 사훈을 만들어낸 것이고, destiny is baloney도 -ny 소리를 맞추었습니다. 한국어 '가는 말이 고와야 오는 말이 곱다'처럼 리듬이 설득력을 대신하는 현상입니다. 학습자는 이런 문장을 만나면 논리를 따지기 전에 소리를 먼저 확인하면 좋습니다. 소리가 맞아떨어지면, 그 문장은 진지한 주장이 아니라 농담용 표어일 가능성이 높습니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "빈은 왜 자신의 결혼식을 피하려 하며, 아버지 조그와의 입장 차이는 무엇인가?",
+          "answer": "이 결혼은 벤트우드와의 정치적 동맹을 굳히기 위한 거래이고, 빈은 상대인 가이스버트 왕자를 만난 적조차 없습니다. 빈은 결혼이란 진정한 사랑 때문이거나 최소한 자기가 술에 취해 저지른 자기 선택이어야 한다고 생각합니다(I thought that I'd get married for true love, or because I was wasted). 조그에게 결혼식은 딸의 인생이 아니라 국가 간 문서 절차이므로, '평범한 옷 벗고 공주답게 차려입고 내려와라'는 명령만 합니다. 즉 갈등의 핵심은 신랑이 싫다는 것이 아니라, 자기 삶에 대한 결정권이 자기에게 없다는 것입니다."
+        },
+        {
+          "question": "엘포는 엘프우드에서 왜 이탈하는가? 그가 하는 말 중 어떤 대사가 그 이유를 가장 잘 보여주나?",
+          "answer": "엘프우드는 모두가 항상 명랑해야 하고 그것을 Jolly Code라는 규범으로 강제하는 사회입니다. 엘포는 늘 행복해야 하는 상태 자체에 지쳐 있고(I'm sick of being happy all the time), 노래하며 일하는 것을 행복이 아니라 정신 질환이라고 진단합니다. 결정적인 대사는 I want to take a big, meaty bite out of life and dip it in mustard입니다. 단맛만 있는 사탕 세계 대신 겨자처럼 자극적이고 짠 맛, 즉 위험과 경험이 있는 삶을 원한다는 선언이고, 사탕 공장이라는 배경 덕분에 이 비유가 그대로 그림이 됩니다."
+        },
+        {
+          "question": "루시는 무엇이며, 그가 빈에게 붙은 방식과 목적을 설명해 보라.",
+          "answer": "루시는 지옥에서 보내진 악마로, 저주의 형태로 빈에게 결박됩니다(you are stuck with me for all eternity / And so the demonic binding begins). 겉모습은 검은 고양이라서 주변 사람들은 빈이 이상한 고양이를 데리고 다닌다고만 여기고, 빈 자신도 처음에는 my new cat이라고 넘깁니다. 루시의 역할은 나쁜 조언을 속삭여 빈을 파괴적인 선택으로 밀어붙이는 것입니다. Times when you really shouldn't are exactly when you really should 같은 격언 형태의 부추김이 그 수법이고, 이 화 끝에서 결혼식이 무너지자 정체불명의 인물들이 '악마가 훌륭하게 연기하고 있다'며 만족하는 장면에서 루시가 누군가의 지시를 받는 파견 요원임이 드러납니다."
+        },
+        {
+          "question": "결혼식은 어떻게 파탄 나고, 조그는 그 파탄을 어떤 식으로 처리하려 하는가?",
+          "answer": "루시가 부추긴 소동 끝에 신랑 가이스버트가 왕좌의 뾰족한 장식에 꽂히는 사고를 당합니다. 조그와 오드발의 반응은 슬픔이 아니라 행정 처리입니다. 동맹을 살려야 한다며(We've got to save the alliance) 죽어가는 신랑의 부모와 상의한 뒤 신랑을 동생 머키머로 교체합니다. 신부의 감정은 논의 대상이 아니고, 신랑조차 교환 가능한 부품처럼 다뤄지는 이 장면이 정략혼 풍자의 정점입니다. 동시에 엘포의 존재가 알려지면서 조그의 관심은 결혼에서 엘프의 피, 즉 불멸의 가능성으로 옮겨 갑니다."
+        },
+        {
+          "question": "이 화의 마지막에 세탁부(마녀)가 하는 destiny is baloney / Your future is not foretold. It's what you make of it.는 작품 전체에서 어떤 기능을 하는가?",
+          "answer": "빈은 그 직전까지 체념 상태입니다. 자기는 결국 먼 왕국의 부유한 왕비 이상은 되지 못할 거라고 말하는데, 이것은 남들이 부러워할 조건을 오히려 감옥으로 여기는 역설적인 한탄입니다. 여기서 예언과 운명이라는 판타지 장르의 기본 장치를 정면으로 부정하는 대사가 나옵니다. baloney는 '허튼소리'라는 미국 구어이고, destiny와 baloney의 각운 때문에 진지한 선언이 아니라 농담처럼 들리도록 설계되어 있습니다. 그러나 내용은 시즌 전체의 주제 선언입니다. 즉 이 작품은 '선택된 자의 예언 성취' 서사가 아니라, 주인공이 스스로 망치고 스스로 고쳐 나가는 이야기가 될 것이라는 예고입니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 2,
+      "title": "2. 평화의 고원",
+      "chunks": [
+        {
+          "en": "Hey! Death is the easy way out! / Your cruddy life is worth living, Bean.",
+          "ko": "야! 죽는 건 쉽게 빠져나가는 거야! 네 형편없는 인생도 살아볼 만한 가치는 있어, 빈.",
+          "literal": "야! 죽음은 쉬운 탈출구야 / 너의 형편없는 삶은 살 만한 가치가 있어, 빈"
+        },
+        {
+          "en": "Now, by my reckoning, / the bodies should have landed right here.",
+          "ko": "내 계산대로라면 시체들이 바로 여기 떨어졌어야 하는데.",
+          "literal": "자, 내 계산에 따르면 / 그 시체들은 바로 여기에 떨어졌어야 했다"
+        },
+        {
+          "en": "it is with much heroism / that I now return Princess Bean, / along with this priceless sack of elf.",
+          "ko": "저는 크나큰 용맹을 발휘하여 빈 공주님을, 그리고 이 값을 매길 수 없는 엘프 한 자루를 함께 데려왔습니다.",
+          "literal": "그것은 많은 영웅적 행위와 함께입니다 / 제가 지금 빈 공주님을 돌려드리는 것은 / 이 값을 매길 수 없는 엘프 한 자루와 함께"
+        },
+        {
+          "en": "Dad, you can't just cage him. / Elves are jolly by nature. / They need to prance and dance.",
+          "ko": "아빠, 엘프를 그냥 우리에 넣어둘 순 없어요. 엘프는 천성이 명랑해서 깡충깡충 뛰고 춤을 춰야 해요.",
+          "literal": "아빠, 당신은 그를 그냥 우리에 넣을 수 없어요 / 엘프들은 본성상 명랑해요 / 그들은 깡충거리고 춤춰야 해요"
+        },
+        {
+          "en": "Lucky for you, / I'm a patron of the arts. / But all frolicking stays within castle walls.",
+          "ko": "너한텐 운이 좋은 일이지, 내가 예술 후원자거든. 단, 모든 뛰놀기는 성벽 안에서만이다.",
+          "literal": "너에게는 운이 좋게도 / 나는 예술의 후원자다 / 하지만 모든 뛰놀기는 성벽 안에 머문다"
+        },
+        {
+          "en": "Speaking of things getting poked, / we've got a wedding to plan.",
+          "ko": "뭔가에 찔리는 얘기가 나왔으니 말인데, 우리 결혼식을 준비해야지.",
+          "literal": "찔리는 것들에 관해 말하자면 / 우리는 준비해야 할 결혼식이 있다"
+        },
+        {
+          "en": "Ew. Dad, / think out the words / before they come out.",
+          "ko": "으윽. 아빠, 말을 입 밖에 내기 전에 머릿속에서 좀 굴려 봐요.",
+          "literal": "으윽. 아빠 / 그 말들을 끝까지 생각해 봐요 / 그것들이 밖으로 나오기 전에"
+        },
+        {
+          "en": "We'll scrub you right up, / as clean as a child on his funeral day.",
+          "ko": "깨끗하게 씻겨 드리겠습니다. 장례식 날의 아이만큼 깨끗하게요.",
+          "literal": "우리가 당신을 바로 문질러 씻겨 드릴게요 / 자기 장례식 날의 아이만큼 깨끗하게"
+        },
+        {
+          "en": "I don't mean to be insensitive / about your dead whatever.",
+          "ko": "돌아가신 그 누구든 그분 얘기에 무례하게 굴려던 건 아닙니다.",
+          "literal": "저는 무심하게 굴 의도는 아닙니다 / 당신의 죽은 뭐 그 사람에 대해서"
+        },
+        {
+          "en": "And after you kill him / we can hide the body. / And now you're never gonna un-know it.",
+          "ko": "그를 죽인 뒤엔 시체를 숨길 수 있어요. 자, 이제 넌 이 말을 들은 적 없는 상태로 돌아갈 수 없지.",
+          "literal": "그리고 당신이 그를 죽인 뒤에 / 우리는 시체를 숨길 수 있어요 / 그리고 이제 너는 절대 그것을 안-알게 될 수 없어"
+        },
+        {
+          "en": "This one causes slow, painful death. / This one kills you with kindness / and some belladonna.",
+          "ko": "이건 천천히 고통스럽게 죽입니다. 이건 친절과 벨라도나를 조금 섞어 죽여 드립니다.",
+          "literal": "이건 느리고 고통스러운 죽음을 일으킵니다 / 이건 친절로 당신을 죽입니다 / 그리고 약간의 벨라도나로"
+        },
+        {
+          "en": "Have you folks been helped? / We're still browsing.",
+          "ko": "손님, 안내는 받으셨습니까? / 아직 좀 둘러보는 중이에요.",
+          "literal": "여러분은 도움을 받으셨습니까? / 우리는 아직 둘러보는 중이에요"
+        },
+        {
+          "en": "What if I rub a sick chicken all over his face / and hope for the best?",
+          "ko": "병든 닭을 얼굴에 문질러 놓고 잘되기를 빌면 어떨까?",
+          "literal": "내가 병든 닭을 그의 얼굴 전체에 문지르면 어떨까 / 그리고 최선의 결과를 바라면?"
+        },
+        {
+          "en": "Now we hope / Merkimer's a big enough idiot / to fall for this mermaid plan.",
+          "ko": "이제 머키머가 이 인어 계획에 속아 넘어갈 만큼 충분히 멍청하기를 바랄 뿐이지.",
+          "literal": "이제 우리는 바란다 / 머키머가 충분히 큰 바보이기를 / 이 인어 계획에 속아 넘어갈 만큼"
+        },
+        {
+          "en": "But don't mermaids use their mesmo-songs / to lure men to their deaths? / Ah, only weak-minded men fall for that.",
+          "ko": "그런데 인어들은 최면 노래로 남자들을 죽음으로 꾀어내지 않나? / 아, 그런 데 넘어가는 건 정신이 약한 남자들뿐이지.",
+          "literal": "하지만 인어들은 그들의 최면-노래를 쓰지 않나 / 남자들을 그들의 죽음으로 꾀어내기 위해? / 아, 오직 정신이 약한 남자들만 그것에 넘어가지"
+        },
+        {
+          "en": "- Where there's a will, there's a way. / - There's not.",
+          "ko": "- 뜻이 있는 곳에 길이 있느니라. / - 없어.",
+          "literal": "- 의지가 있는 곳에, 길이 있다 / - 없어"
+        },
+        {
+          "en": "I'm an optimist. / I say the flask is half-full.",
+          "ko": "저는 낙관주의자입니다. 저 플라스크는 반이나 차 있다고 보죠.",
+          "literal": "나는 낙관주의자다 / 나는 그 플라스크가 반쯤 차 있다고 말한다"
+        },
+        {
+          "en": "To port, a sunset so beautiful / the rest of your life will seem anticlimactic.",
+          "ko": "좌현에는 너무나 아름다운 일몰이 있어, 남은 평생이 다 시들해 보일 정도지.",
+          "literal": "좌현에는, 너무나 아름다운 일몰 / 너의 남은 인생이 맥빠져 보일 만큼"
+        },
+        {
+          "en": "But the worst lies ahead! / For there lurk the twin shores / of Mermaid Island and Walrus Island.",
+          "ko": "하지만 최악은 아직 앞에 있다! 저 앞에 인어섬과 바다코끼리섬이라는 쌍둥이 해안이 숨어 있으니.",
+          "literal": "하지만 최악의 것이 앞에 놓여 있다 / 왜냐하면 거기 도사리고 있으니 그 쌍둥이 해안이 / 인어섬과 바다코끼리섬의"
+        },
+        {
+          "en": "God forbid you lose control / and jump overboard.",
+          "ko": "설마 자제력을 잃고 배 밖으로 뛰어들기라도 하면 큰일이니까요.",
+          "literal": "신이 금하기를, 당신이 자제력을 잃고 / 뱃전 밖으로 뛰어내리는 일을"
+        },
+        {
+          "en": "\"Ear wax\"? / Does it mean it's for ears / or from ears?",
+          "ko": "'귀지'라고? 귀에 넣는 거라는 뜻이야, 귀에서 나온 거라는 뜻이야?",
+          "literal": "'귀지'? / 그건 귀를 위한 것이라는 뜻인가 / 아니면 귀에서 나온 것이라는 뜻인가?"
+        },
+        {
+          "en": "Ladies, the legends do not do you justice. / Not one mention of your fuzzy muzzles.",
+          "ko": "숙녀분들, 전설이 여러분의 진가를 다 담아내지 못했군요. 그 털북숭이 주둥이 이야기는 한마디도 없었으니.",
+          "literal": "숙녀분들, 그 전설들은 당신들에게 정당함을 행하지 못하네요 / 당신들의 털북숭이 주둥이에 대한 언급은 하나도 없었어요"
+        },
+        {
+          "en": "They've spotted us. / Defend the barge / or risk losing your deposit.",
+          "ko": "적이 우릴 발견했다. 배를 지켜라, 아니면 보증금을 날릴 각오를 하라.",
+          "literal": "그들이 우리를 발견했다 / 그 바지선을 방어하라 / 아니면 너희 보증금을 잃는 위험을 감수하라"
+        },
+        {
+          "en": "Isn't there a point in everyone's life / where they need to, like, / go and figure out who they are?",
+          "ko": "누구나 살면서 한 번은 나가서 자기가 누군지 알아내야 하는 지점이 있지 않나요?",
+          "literal": "모든 사람의 인생에는 어떤 지점이 있지 않나요 / 그들이, 뭐랄까, 필요해지는 / 나가서 자신이 누구인지 알아내야 하는?"
+        },
+        {
+          "en": "If you're calling off the wedding, / I'm calling off the alliance!",
+          "ko": "결혼식을 취소하겠다면, 나도 동맹을 파기하겠소!",
+          "literal": "네가 그 결혼식을 취소하고 있다면 / 나는 그 동맹을 취소하고 있다"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "should have + 과거분사 — '했어야 했는데 (안 됐다)'",
+          "explanation": "the bodies should have landed right here는 '시체들이 바로 여기 떨어졌어야 하는데 없다'는 뜻입니다. should have p.p.는 과거 사실과 어긋난 기대·의무·추측을 나타내며, 여기서는 도덕적 의무가 아니라 '계산상 당연히 그랬어야 하는데'라는 추론의 어긋남입니다. 앞에 붙은 by my reckoning(내 계산으로는)은 by my calculation의 고풍스러운 표현으로, 이 작품은 이렇게 옛 어휘로 격식을 세운 다음 내용은 엉터리인 대비를 즐깁니다. 실제로 시체들은 그 자리에 없고, 펜더가스트는 끝까지 위쪽을 볼 생각을 하지 않습니다.",
+          "fromScript": "Now, by my reckoning, the bodies should have landed right here.",
+          "example": "By my count, the parcel should have arrived last Friday at the latest."
+        },
+        {
+          "point": "It is ~ that 강조구문의 과장된 사용",
+          "explanation": "it is with much heroism that I now return Princess Bean은 원래 I now return Princess Bean with much heroism에서 부사구를 It is ~ that 사이에 끌어올린 강조구문입니다. 격식 있는 연설이나 문서에서 쓰는 형식이라서, 자기 자랑을 이 틀에 넣으면 우스꽝스러워집니다. 게다가 강조된 부분이 '내 영웅적 행위'라는 자기 평가이고, 실제로 그는 굴러떨어진 사람을 자루에 담아 온 것뿐입니다. 뒤에 붙은 this priceless sack of elf도 웃음의 축인데, a sack of flour(밀가루 한 자루)처럼 elf를 셀 수 없는 물질처럼 취급해서 엘프를 사람이 아닌 원료로 강등시킵니다.",
+          "fromScript": "it is with much heroism that I now return Princess Bean, along with this priceless sack of elf.",
+          "example": "It was with great reluctance that I finally handed in my resignation."
+        },
+        {
+          "point": "un- 접두사의 창조적 사용 — un-know",
+          "explanation": "And now you're never gonna un-know it에서 un-know는 사전에 없는 단어입니다. 영어의 un-은 동사에 붙어 '그 동작을 되돌린다'는 뜻을 만드는데(undo, unlock, unsee), know는 되돌릴 수 없는 상태 동사이므로 원래 이 접두사를 붙일 수 없습니다. 바로 그 불가능성이 농담의 핵심입니다. 즉 '들은 것을 안 들은 상태로는 절대 못 돌아간다'는 말을, 존재하지 않는 동사를 만들어서 표현한 것입니다. 요즘 영어에서는 I can't unsee that이 같은 방식으로 널리 쓰입니다. 학습자는 이런 조어를 만나면 사전을 찾기보다 'un + 동사 = 되돌리기'로 즉시 해석하면 됩니다.",
+          "fromScript": "And now you're never gonna un-know it.",
+          "example": "I wish I could unread that message, but it is stuck in my head now."
+        },
+        {
+          "point": "관용구를 문자 그대로 비틀기 — kill with kindness, glass half full",
+          "explanation": "kill someone with kindness는 원래 '지나친 친절로 상대를 질리게 하다'라는 관용구인데, 독약 가게 주인이 This one kills you with kindness and some belladonna라고 말하는 순간 kill이 문자 그대로의 살해가 됩니다. 관용적 의미와 문자적 의미를 한 문장에 겹쳐 놓는 것이 이 작품의 대표적 농담 구조입니다. 같은 원리로 The glass is half-full(낙관주의자의 상징)이 I say the flask is half-full로 바뀌는데, 그 플라스크에 담긴 것은 엘포의 피이므로 낙관주의가 곧 착취의 언어가 됩니다. and some belladonna처럼 뒤에 덧붙는 짧은 구가 앞의 관용구를 문자적 의미로 끌어내리는 장치도 함께 익혀 두면 좋습니다.",
+          "fromScript": "This one kills you with kindness and some belladonna.",
+          "example": "My neighbour is killing me with kindness; she brings soup every single evening."
+        },
+        {
+          "point": "형용사 + enough + to부정사에서 enough의 위치",
+          "explanation": "Merkimer's a big enough idiot to fall for this mermaid plan에서 enough는 형용사 big의 뒤에 오지만, 명사 idiot의 앞에 옵니다. 즉 '형용사 + enough + 명사 + to부정사' 순서입니다(a big enough idiot). enough가 명사만 수식할 때는 앞에 오지만(enough time), 형용사가 함께 있으면 형용사 뒤에 붙는다는 규칙입니다. 함께 나오는 fall for는 '속아 넘어가다'라는 필수 구동사인데, 사랑에 빠지는 fall for와 형태가 같아서 문맥으로 구별해야 합니다. 이 화에서는 그 두 의미가 겹쳐 있습니다. 머키머는 인어에게 반한 동시에 계략에 속아 넘어가기 때문입니다.",
+          "fromScript": "Now we hope Merkimer's a big enough idiot to fall for this mermaid plan.",
+          "example": "He was not a good enough liar to convince his own mother."
+        },
+        {
+          "point": "so + 형용사 + (that) 절에서 that의 생략",
+          "explanation": "a sunset so beautiful the rest of your life will seem anticlimactic에는 that이 없습니다. 원래는 a sunset so beautiful that the rest of your life will seem anticlimactic이고, 구어와 문학적 문체 모두에서 이 that은 흔히 생략됩니다. 또 형용사 so beautiful이 명사 뒤에서 수식하는 후치 수식이라는 점도 눈에 익혀 두어야 합니다. anticlimactic은 climax의 반대로, 절정 뒤에 오는 김빠짐을 뜻하는 유용한 C1 어휘입니다. 선장의 대사가 웃긴 이유는 우현에 식인 상어, 좌현에 인생을 망칠 정도로 아름다운 일몰을 나란히 위험 목록으로 보고한다는 데 있습니다.",
+          "fromScript": "To port, a sunset so beautiful the rest of your life will seem anticlimactic.",
+          "example": "It was a silence so heavy that nobody in the room dared to move."
+        },
+        {
+          "point": "장소 부사구 도치 — For there lurk the twin shores",
+          "explanation": "정상 어순은 The twin shores of Mermaid Island and Walrus Island lurk there입니다. 장소를 나타내는 부사 there가 문두로 나가면 주어와 동사가 뒤바뀌어 there lurk + 주어가 되고, 동사는 뒤에 오는 진짜 주어 the twin shores에 맞춰 복수형 lurk가 됩니다. 문두의 For는 접속사 for(왜냐하면)이며, 성경과 옛 문학의 문체입니다. 선장은 이런 고풍스러운 도치와 함께 We be sailing, the dangers be all too real처럼 be동사를 활용하지 않는 가짜 뱃사람 방언도 섞어 씁니다. 두 가지 모두 '해적 말투' 연기이므로 표준 문법으로 교정할 대상이 아니라 하나의 캐릭터 장치로 읽어야 합니다.",
+          "fromScript": "For there lurk the twin shores of Mermaid Island and Walrus Island.",
+          "example": "Beyond the last hill stood the only inn we could reach before dark."
+        },
+        {
+          "point": "God forbid + (should) 원형 — 가정법 현재의 화석",
+          "explanation": "God forbid you lose control and jump overboard에서 lose는 you에 대해 loses가 아니라 원형입니다. God forbid (that) you should lose...에서 should가 생략된 가정법 현재이기 때문입니다. 뜻은 '제발 그런 일이 없기를'이고, 실제로는 말하는 사람이 그 일을 두려워한다는 뉘앙스를 담습니다. 그런데 이 장면에서는 정반대입니다. 빈과 루시는 머키머가 정확히 자제력을 잃고 바다에 뛰어들기를 바라면서 그것을 걱정하는 척하는 것이므로, God forbid가 반어법으로 쓰였습니다. 이렇게 형식은 걱정, 의도는 유도인 문장은 문법만으로는 절대 잡히지 않고 상황과 함께 읽어야 합니다.",
+          "fromScript": "God forbid you lose control and jump overboard.",
+          "example": "God forbid the projector break down again in the middle of my lesson."
+        }
+      ],
+      "background": [
+        {
+          "topic": "불멸의 영약(Elixir of Life)과 연금술",
+          "detail": "조그와 소르세리오가 엘포의 피로 만들려는 Elixir of Life는 유럽 연금술의 두 목표 중 하나였습니다. 나머지 하나는 값싼 금속을 금으로 바꾸는 일이었습니다. 연금술사는 왕의 후원을 받아 실험했고, 성과가 없으면 실패를 미래로 미루는 화법으로 연명했습니다. 소르세리오의 I suppose the life-giving magic may take a while(생명의 마법이 시간이 좀 걸리는 모양입니다)이 정확히 그 화법입니다. Our first experiment was inconclusive(결론이 나지 않았습니다), harnessing the blood's power has proven difficult(입증되었습니다)처럼 과학 논문투 어휘로 실패를 포장하는 것도 같은 농담입니다. 무능이 아니라 무능을 감추는 언어 자체가 풍자 대상입니다."
+        },
+        {
+          "topic": "인어의 노래와 오디세우스 — 돛대에 몸을 묶는 이유",
+          "detail": "선원들이 돛대에 묶이고 귀를 막는 장면은 호메로스 '오디세이아'의 세이렌 삽화를 그대로 가져온 것입니다. 오디세우스는 노래를 듣고 싶어 자기 몸을 돛대에 묶게 하고 부하들의 귀에는 밀랍을 채웠습니다. 그래서 엘포가 귀지 통을 보고 for ears or from ears?라고 묻는 농담이 성립합니다. 원전의 밀랍(wax)을 귀지(ear wax)로 바꿔치기한 것이고, 영어에서 wax 한 단어가 두 가지를 다 가리키기 때문에 가능한 말장난입니다. 고전을 아는 관객은 장엄한 장면의 패러디로 읽고, 모르는 관객도 귀지 농담으로는 웃을 수 있게 이중 설계되어 있습니다."
+        },
+        {
+          "topic": "현대 서비스업 화법의 아나크로니즘 — 독약 가게, 파티 바지선, 보증금",
+          "detail": "독약 가게 주인의 Have you folks been helped?는 미국 소매점 직원의 정형 문구입니다. 손님은 We're still browsing(아직 둘러보는 중이에요)이라고 답하는데, 이것도 서점이나 옷 가게의 표준 응답입니다. 살인 도구를 고르는 자리에 백화점 화법을 그대로 얹어 놓은 것이 농담의 전부입니다. 같은 계열로 파티 바지선의 So drink responsibly(책임감 있게 음주하십시오)는 미국 주류 광고 의무 문구이고, Defend the barge or risk losing your deposit(보증금을 날린다)은 대여 계약서의 언어입니다. 목숨이 걸린 순간에 계약과 광고의 언어가 튀어나오는 대비가 이 작품의 아나크로니즘 사용법입니다."
+        },
+        {
+          "topic": "속담을 즉시 부정하는 구조 — Where there's a will, there's a way",
+          "detail": "엘포가 뜻이 있는 곳에 길이 있다는 속담을 말하자 루시가 There's not이라고 한마디로 잘라 버립니다. 이 작품의 가장 자주 쓰이는 웃음 공식으로, 격언이 나오면 다음 대사에서 반드시 무너집니다. 여기서 There's not은 There isn't a way의 축약된 부정 응답입니다. 엘포(순진한 희망)와 루시(냉소)가 두 줄로 한 팀의 개그를 완성하는 구조는 미국 코미디의 straight man과 wise guy 역할 분담 그대로이고, 학습자에게는 속담의 원형과 그것을 받아치는 실전 회화 표현을 한 번에 보여주는 좋은 재료입니다."
+        },
+        {
+          "topic": "머키머라는 캐릭터 — 자기 확신이 곧 파멸이 되는 인물",
+          "detail": "머키머는 죽은 형 가이스버트를 대신해 신랑 자리에 앉은 인물로, 자기 자신을 향한 감탄이 언어 습관으로 굳어 있습니다. 인어의 유혹에 대해 only weak-minded men fall for that(정신이 약한 남자들만 속는다)고 말한 직후 가장 먼저 뛰어들고, 바다코끼리를 인어로 착각하면서도 the legends do not do you justice(전설이 그대들의 진가를 못 담았다)며 찬사를 바칩니다. 이 화의 crude한 후반부 농담들, 즉 I'm drained나 my poor, tuckered dong 같은 표현도 이 성격의 연장입니다. 성적 무용담을 궁정 어투로 보고하는 대비가 웃음의 원천이고, 표현 자체는 저속하지만 구조는 '격식체 + 저속한 내용'이라는 이 작품의 기본 공식이 가장 선명하게 드러나는 예입니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "이 화의 시작에서 빈과 엘포, 루시는 어떤 상황에 놓여 있고, 왜 살아남았는가?",
+          "answer": "전편에서 결혼식장에서 도망치던 세 사람은 절벽 아래로 굴러떨어졌습니다. 펜더가스트는 by my reckoning, the bodies should have landed right here라며 시체를 찾지만 아무것도 없고, 터비쉬가 위로 갔을지도 모른다고 말해도 아무도 위를 보지 않습니다. 세 사람은 아래가 아니라 위쪽 고원에 걸려 살아 있었던 것입니다. 이후 엘포는 값비싼 '엘프 한 자루'로 성에 회수되고, 조그의 관심은 결혼 동맹에서 엘프의 피로 옮겨 갑니다."
+        },
+        {
+          "question": "조그가 엘포를 죽이지 않고 성 안에 살려 두는 이유는 무엇인가?",
+          "answer": "표면적으로는 빈의 설득 때문입니다. 빈은 엘프는 천성이 명랑해서 뛰고 춤춰야 한다고 주장하고, 조그는 I'm a patron of the arts(나는 예술 후원자다)라며 허락하되 성벽 밖으로는 나가지 못하게 못 박습니다. 예술 후원이라는 르네상스 군주의 언어로 사실상의 감금을 포장한 것입니다. 실질적인 이유는 소르세리오가 고대 기록을 근거로 엘프의 피에 불멸의 비밀이 있을지 모른다고 보고했기 때문입니다. 엘포는 애완동물도 손님도 아니고, 반복해서 피를 뽑을 수 있는 살아 있는 원료로 관리되는 것입니다."
+        },
+        {
+          "question": "빈과 루시가 머키머를 없애려고 꾸민 계획은 무엇이며, 어디서 어긋났는가?",
+          "answer": "처음에는 독약을 검토했지만 티가 난다는 이유로 접고, 머키머의 허영심을 이용하는 쪽으로 바꿉니다. 인어섬으로 가는 파티 바지선을 띄우고, 인어의 노래에 홀려 스스로 바다에 뛰어들게 만드는 계획입니다. 그를 돛대에 묶는 척하면서 실제로는 풀리도록 조작해 두었습니다. 계획은 절반만 성공합니다. 머키머는 실제로 뛰어들었지만 그가 도착한 곳은 인어섬이 아니라 바다코끼리섬이었고, 며칠 뒤 살아 돌아옵니다. 죽지 않았으니 실패지만, 돌아온 그가 성적으로 완전히 소진된 상태라는 점이 마지막 농담이 됩니다."
+        },
+        {
+          "question": "선장이 승객들을 돛대에 묶는 장면은 어떤 고전을 패러디한 것이며, 엘포의 귀지 농담은 왜 성립하나?",
+          "answer": "호메로스 '오디세이아'에서 오디세우스가 세이렌의 노래를 듣기 위해 자신을 돛대에 묶고 부하들의 귀에는 밀랍을 채운 삽화를 그대로 옮긴 것입니다. 영어에서 밀랍은 wax이고 귀지는 ear wax이므로, 원전의 밀랍을 귀지로 바꿔치기하는 말장난이 가능해집니다. 엘포는 통에 적힌 Ear wax를 보고 Does it mean it's for ears or from ears?라고 묻습니다. 전치사 for와 from 하나 차이로 '귀에 넣는 것'과 '귀에서 나온 것'이 갈리는데, 영어 명사 결합은 이 관계를 표시하지 않기 때문에 실제로 두 해석이 모두 가능합니다. 즉 이 농담은 영어 복합명사의 구조적 모호함 위에 서 있습니다."
+        },
+        {
+          "question": "결혼식은 결국 어떻게 끝나며, 빈이 취소를 결심하게 만든 논리는 무엇인가?",
+          "answer": "빈은 어머니의 웨딩드레스를 입고 초상화를 보면서, 자기 차례가 되면 어머니처럼 행복할 줄 알았다고 말합니다. 그러나 자기 초상화는 그렇게 행복하지 않을 것 같다고 결론 내립니다. 결정적인 논리는 Isn't there a point in everyone's life where they need to go and figure out who they are?입니다. 누구나 한 번은 나가서 자기가 누구인지 알아내야 한다는 것이고, 지금이 그 순간이라고 판단합니다. 그래서 식장에서 결혼을 취소하고, 조그는 곧바로 If you're calling off the wedding, I'm calling off the alliance라며 동맹 파기로 응수합니다. 딸의 자기 결정과 국가 간 계약이 정면으로 충돌하는 장면이고, 이 대립이 다음 화들의 출발점이 됩니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 3,
+      "title": "3. 루시와의 계약",
+      "chunks": [
+        {
+          "en": "Actually, \"well\" is a bit of an overstatement. / \"Acceptable\" is more like it, / if you consider death, disease and rampant poverty acceptable.",
+          "ko": "사실 '평온'은 좀 과장된 표현이죠. '견딜 만함' 정도가 더 맞겠네요. 죽음과 질병과 만연한 빈곤을 견딜 만하다고 치신다면요.",
+          "literal": "사실, '평온'은 약간의 과장입니다 / '받아들일 만함'이 더 그것에 가깝죠 / 만약 당신이 죽음, 질병, 창궐하는 빈곤을 받아들일 만하다고 여긴다면"
+        },
+        {
+          "en": "I drank so much, / I can't even remember if I drank anything. / I might not have.",
+          "ko": "너무 많이 마셔서 내가 뭘 마셨는지도 기억이 안 나. 안 마셨을지도 몰라.",
+          "literal": "나는 너무 많이 마셔서 / 내가 뭐라도 마셨는지조차 기억할 수 없어 / 나는 안 마셨을지도 몰라"
+        },
+        {
+          "en": "May I interest you in a joyride? / Is that like a jolly trolley / or a fun run or a tingle mingle?",
+          "ko": "질주 한 판 어떠십니까? / 그게 유람 마차나 자선 달리기, 아니면 몸 비비기 같은 거야?",
+          "literal": "제가 당신에게 질주에 흥미를 갖게 해드릴까요? / 그건 명랑 전차 같은 거야 / 아니면 재미 달리기나 짜릿 뒤섞기?"
+        },
+        {
+          "en": "We got a 619 in progress. / Suspects headed west on the royal highway.",
+          "ko": "619 발생, 진행 중. 용의자들은 왕실 대로를 따라 서쪽으로 향했다.",
+          "literal": "우리는 진행 중인 619를 잡았다 / 용의자들은 왕실 고속도로에서 서쪽으로 향했다"
+        },
+        {
+          "en": "You know they prey on the weak in prison? / - At least, I intend to.",
+          "ko": "감옥에선 약한 사람을 노린다는 거 알지? / 적어도 난 그럴 작정이야.",
+          "literal": "너 그들이 감옥에서 약한 자들을 먹잇감으로 삼는 걸 알아? / 적어도, 나는 그럴 의도야"
+        },
+        {
+          "en": "Some might say / her cries for help were a cry for help, / but I think she was just being an attention hog.",
+          "ko": "누군가는 그 여자의 도와달라는 비명이 정말 도움을 청하는 신호였다고 하겠지만, 난 그냥 관심에 목말랐던 거라고 봐.",
+          "literal": "어떤 이들은 말할지도 모르지 / 그녀의 도움을 청하는 외침들이 도움을 청하는 외침이었다고 / 하지만 나는 그녀가 그냥 관심 독차지하는 사람으로 굴고 있었다고 생각해"
+        },
+        {
+          "en": "Okay, the trick to not getting swept over the waterfall / is swimming upstream.",
+          "ko": "좋아, 폭포로 휩쓸려 가지 않는 비결은 상류로 헤엄치는 거야.",
+          "literal": "좋아, 폭포 위로 휩쓸려 가지 않는 것의 비결은 / 상류로 헤엄치는 것이다"
+        },
+        {
+          "en": "It was so nice of that swarm of crabs / to drag me ashore.",
+          "ko": "저 게 떼가 날 뭍으로 끌어다 줘서 참 고마웠어.",
+          "literal": "저 게 떼가 참 친절했어 / 나를 물가로 끌어다 준 것이"
+        },
+        {
+          "en": "It's a super-rare fruit / the knights brought back from their crusades.",
+          "ko": "기사들이 성전에서 가져온 초희귀 과일이야.",
+          "literal": "그건 초희귀 과일이야 / 기사들이 자기들의 십자군 원정에서 가져온"
+        },
+        {
+          "en": "Sometimes he just stares at it longingly / while he drinks vodka sodas.",
+          "ko": "가끔 아빠는 보드카 소다를 마시면서 그걸 애타게 바라만 보셔.",
+          "literal": "가끔 그는 그것을 그저 애타게 바라봐 / 그가 보드카 소다를 마시는 동안"
+        },
+        {
+          "en": "Carousing, taking her clothes off / every chance she gets. / Doing God knows what with that elf.",
+          "ko": "술판을 벌이고, 기회만 생기면 옷을 벗어 던지고, 저 엘프와는 뭘 하는지 알 수도 없죠.",
+          "literal": "흥청망청 마시고, 자기 옷을 벗어 던지고 / 그녀가 얻는 모든 기회마다 / 저 엘프와 신만이 아는 무언가를 하고"
+        },
+        {
+          "en": "You use your curtains to escape one time / and your dad's all like, / \"No more curtains.\"",
+          "ko": "탈출하려고 커튼을 딱 한 번 썼더니 아빠가 '커튼은 이제 없다'는 식으로 나오는 거야.",
+          "literal": "너는 탈출하려고 커튼을 한 번 쓰지 / 그러면 네 아빠는 완전 이런 식이야 / '더 이상 커튼은 없다'"
+        },
+        {
+          "en": "Word 'round the gutter is / you're a right proper villain. / Crime is male-dominated, innit?",
+          "ko": "밑바닥에 소문이 돌더라, 네가 제대로 된 악당이라고. 범죄계는 남자들 판이잖아, 안 그래?",
+          "literal": "시궁창 주변의 소문은 / 네가 아주 제대로 된 악당이라는 거야 / 범죄는 남성 지배적이잖아, 그렇지?"
+        },
+        {
+          "en": "So our crime, yeah, is one for the ages. / A real legendary caper. / We could use your help.",
+          "ko": "그래서 우리 범죄는 말이지, 역사에 남을 거야. 진짜 전설이 될 한 건이지. 네 도움이 좀 필요해.",
+          "literal": "그래서 우리 범죄는, 그래, 시대를 위한 것이야 / 진짜 전설적인 한 건 / 우리는 너의 도움을 쓸 수 있겠어"
+        },
+        {
+          "en": "So this is where I'll end up one day. / Buried. Forgotten. Worm food.",
+          "ko": "그러니까 나도 언젠가 여기서 끝나는 거네. 묻히고, 잊히고, 구더기 밥이 되고.",
+          "literal": "그래서 여기가 내가 어느 날 결국 있게 될 곳이구나 / 묻히고. 잊히고. 벌레 먹이"
+        },
+        {
+          "en": "I know I went a tad wild, / but what do you expect from someone / who's got no control over her own destiny?",
+          "ko": "제가 좀 과하게 놀았다는 건 알아요. 하지만 자기 운명을 하나도 스스로 정할 수 없는 사람에게 뭘 기대하시는데요?",
+          "literal": "제가 조금 거칠게 굴었다는 건 알아요 / 하지만 당신은 어떤 사람에게서 무엇을 기대하나요 / 자기 운명에 대한 통제권이 전혀 없는 사람에게서?"
+        },
+        {
+          "en": "She's like a one-man wrecking woman.",
+          "ko": "그 애는 혼자서 다 부수고 다니는 1인 철거반이야.",
+          "literal": "그녀는 1인 파괴 여성 같아"
+        },
+        {
+          "en": "The sheer defiance of reason and decorum / leads me to believe / that Tiabeanie is what they now call a teenager.",
+          "ko": "이성과 예법을 이토록 노골적으로 무시하는 것으로 보아, 티아비니는 요즘 사람들이 '십대'라고 부르는 것이라 판단됩니다.",
+          "literal": "이성과 예법에 대한 순전한 항거가 / 나를 믿게 만듭니다 / 티아비니가 그들이 지금 십대라고 부르는 것이라고"
+        },
+        {
+          "en": "I am acquainted with the world's foremost exorcist. / But I must warn you. / He creeps even me out.",
+          "ko": "저는 세계 최고의 퇴마사와 아는 사이입니다. 다만 경고는 드려야겠습니다. 그자는 저조차 소름 돋게 합니다.",
+          "literal": "저는 세계 최고의 퇴마사와 안면이 있습니다 / 하지만 저는 당신에게 경고해야 합니다 / 그는 저조차도 소름 돋게 합니다"
+        },
+        {
+          "en": "You have been exorcised. / Don't forget to take it easy today / and drink plenty of water.",
+          "ko": "퇴마가 완료되었습니다. 오늘은 무리하지 마시고 물을 충분히 드시는 것을 잊지 마세요.",
+          "literal": "당신은 퇴마되었습니다 / 오늘 무리하지 않는 것을 잊지 마세요 / 그리고 물을 충분히 마시는 것도"
+        },
+        {
+          "en": "The pressure, / it just got to me.",
+          "ko": "그 압박감이 그냥 나를 무너뜨렸어.",
+          "literal": "그 압박감, / 그게 그냥 나에게 와 닿았어"
+        },
+        {
+          "en": "So there I am, possessing the Duchess / and she has the nerve to drop dead.",
+          "ko": "그래서 내가 공작부인한테 들어가 있었는데, 이 여자가 뻔뻔하게 그냥 툭 죽어버린 거야.",
+          "literal": "그래서 거기 내가 있어, 공작부인에게 빙의한 채로 / 그런데 그녀가 뻔뻔하게 툭 죽어버려"
+        },
+        {
+          "en": "Highwaypeople. / We're a gender neutral kleptocracy.",
+          "ko": "노상강도단이라고 해. 우리는 성 중립적 도둑 정치 체제야.",
+          "literal": "노상강도인들 / 우리는 성 중립적인 도둑 지배 체제야"
+        },
+        {
+          "en": "Prepare to be put out of your misery. / You won't be needing him anymore. / Your appeal has been denied!",
+          "ko": "고통에서 벗어날 준비를 하라. 이제 이 녀석은 필요 없을 것이다. 네 항소는 기각되었다!",
+          "literal": "당신의 고통에서 벗어나게 될 준비를 하라 / 당신은 더 이상 그를 필요로 하고 있지 않을 것이다 / 당신의 항소는 기각되었다"
+        },
+        {
+          "en": "She risked her own life to save the demon. / She's come along faster / than we ever dared dream.",
+          "ko": "제 목숨을 걸고 악마를 구했어. 우리가 감히 꿈꿨던 것보다 훨씬 빠르게 자라고 있군.",
+          "literal": "그녀는 그 악마를 구하려고 자기 목숨을 걸었다 / 그녀는 더 빠르게 발전해 왔다 / 우리가 감히 꿈꾸었던 것보다"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "the trick to + 동명사, 그리고 부정·수동이 붙은 동명사",
+          "explanation": "the trick to not getting swept over the waterfall is swimming upstream에서 to는 부정사의 to가 아니라 전치사입니다. the trick to, the key to, the secret to, look forward to 뒤에는 반드시 동명사가 옵니다. 여기서는 그 동명사에 부정어와 수동태가 동시에 붙어 not getting swept라는 3중 구조가 되었습니다. 동명사의 부정은 앞에 not을 놓고, 수동은 getting p.p.로 만드는 것이 구어의 기본 방식입니다(being swept보다 getting swept가 더 회화적입니다). 참고로 이 문장은 조언 형식만 그럴듯하고 실제로는 통하지 않는데, 다음 컷에서 빈이 그대로 폭포에 휩쓸려 떨어지기 때문입니다.",
+          "fromScript": "Okay, the trick to not getting swept over the waterfall is swimming upstream.",
+          "example": "The trick to not losing your temper in class is deciding what you will ignore."
+        },
+        {
+          "point": "It is + 형용사 + of + 사람 + to부정사 (사람에 대한 평가)",
+          "explanation": "It was so nice of that swarm of crabs to drag me ashore에서 of 뒤의 명사는 to부정사의 의미상 주어이면서 nice라는 평가의 대상입니다. 즉 게 떼가 친절했다는 뜻입니다. 형용사가 사람의 성질을 나타내면 of를 쓰고(kind of you, silly of me), 사람이 아니라 상황의 난이도를 나타내면 for를 씁니다(hard for me to say). 이 문장의 웃음은 게 떼가 엘포를 구조하려던 것이 아니라 먹으려고 끌고 갔다는 데 있습니다. 감사의 형식으로 위험을 오해하는 것이 엘포라는 인물의 기본 반응 방식입니다.",
+          "fromScript": "It was so nice of that swarm of crabs to drag me ashore.",
+          "example": "It was thoughtful of my students to leave a note on my desk."
+        },
+        {
+          "point": "인용 표시 be all like — 남의 말투를 흉내 낼 때",
+          "explanation": "your dad's all like, \"No more curtains.\"에서 be all like는 said의 자리를 대신하는 구어 인용 표지입니다. 정확한 인용이 아니라 '이런 식으로 나오더라'는 태도의 재연이므로, 억양과 표정이 함께 따라옵니다. and I'm like…, and she was all like… 형태로 서사 중간에 계속 등장합니다. 또 앞부분 You use your curtains to escape one time에서 you는 상대방이 아니라 '사람이란'을 뜻하는 총칭의 you이고, one time은 '딱 한 번 그랬을 뿐인데'라는 억울함을 담습니다. 두 장치가 합쳐져 '한 번 실수했더니 세상이 과잉 반응한다'는 전형적인 십대 불평 문형이 완성됩니다.",
+          "fromScript": "You use your curtains to escape one time and your dad's all like, \"No more curtains.\"",
+          "example": "You forget one deadline and everyone is all like, \"Can we really trust him?\""
+        },
+        {
+          "point": "격식체 명사구 주어 + lead me to believe — 관료의 문체",
+          "explanation": "The sheer defiance of reason and decorum leads me to believe that…는 추상명사구를 주어로 세우고 lead + 목적어 + to부정사로 결론을 도출하는, 보고서와 법정의 문체입니다. sheer는 '순전한, 완전한'이라는 강조 형용사이고, decorum은 예법을 뜻하는 격식 어휘입니다. 이렇게 무겁게 쌓아 올린 문장이 도달하는 결론이 what they now call a teenager, 즉 '요즘 십대라고 부르는 것'이라는 데 웃음이 있습니다. teenager는 20세기 미국에서 생긴 개념어이므로 중세 왕궁에서 방금 발견한 신종 병명처럼 쓰이는 것이고, what they now call은 '남들이 요즘 그렇게 부르는' 새 용어에 거리를 두는 표현입니다.",
+          "fromScript": "The sheer defiance of reason and decorum leads me to believe that Tiabeanie is what they now call a teenager.",
+          "example": "The sheer number of complaints leads me to believe the new schedule has failed."
+        },
+        {
+          "point": "have the nerve to + 원형 — '뻔뻔하게도 ~하다'",
+          "explanation": "she has the nerve to drop dead에서 have the nerve to는 상대의 행동을 무례하다고 비난할 때 쓰는 관용구입니다(= have the audacity to). 같은 nerve가 4화에서는 drink till you have the nerve to go for it처럼 '용기'라는 긍정적 뜻으로도 쓰이므로 문맥으로 구별해야 합니다. drop dead는 '갑자기 죽다'라는 구어입니다. 웃음은 도덕적 뒤집기에서 나옵니다. 남의 몸에 무단으로 들어가 있던 악마가, 그 몸의 주인이 죽은 것을 자기에 대한 무례로 규탄하는 것입니다. 이어지는 Now where am I gonna live? Rude.도 같은 논리의 연장입니다.",
+          "fromScript": "So there I am, possessing the Duchess and she has the nerve to drop dead.",
+          "example": "He arrived an hour late and then had the nerve to ask why we started without him."
+        },
+        {
+          "point": "좌측 전위(left dislocation) — The pressure, it just got to me",
+          "explanation": "The pressure, it just got to me는 문법적으로는 주어가 중복된 형태입니다. 화제를 먼저 던져 놓고 쉼표 뒤에서 대명사로 다시 받는 구어의 어순으로, My mother, she never learned to drive처럼 흔히 쓰입니다. 문장 앞에 화제를 세우는 방식은 한국어의 '그 압박감 말이야, 그게…'와 거의 같아서 한국인 학습자에게는 오히려 자연스럽게 느껴질 수 있습니다. get to somebody는 '~를 괴롭히다, 신경을 긁다'라는 뜻입니다. 여기서 the pressure의 실체는 데이지 화환을 만들다가 민들레를 잘못 끼워 넣은 것이므로, 거대한 감정 어휘와 사소한 사건의 낙차가 농담입니다.",
+          "fromScript": "The pressure, it just got to me.",
+          "example": "That last week of term, it really got to me."
+        },
+        {
+          "point": "조동사 뒤 대부정사(to)와 부정 축약형 — I intend to / I might not have",
+          "explanation": "At least, I intend to.는 I intend to prey on the weak에서 뒤의 동사구를 지운 대부정사 용법입니다. I'd love to, I'm trying to처럼 to만 남기는 것이 영어의 기본 절약 방식입니다. I might not have.도 같은 원리로, 뒤에 drunk anything이 생략된 형태이며 '안 마셨을 가능성도 있다'는 뜻입니다. 이 두 문장은 모두 앞 문장의 동사구를 알고 있어야 해석되므로, 대화의 앞줄을 놓치면 통째로 이해가 막힙니다. 듣기 훈련에서 특히 중요한 지점이고, 원어민의 실제 대화는 이런 생략으로 촘촘히 짜여 있습니다.",
+          "fromScript": "You know they prey on the weak in prison? -At least, I intend to.",
+          "example": "Nobody wanted to tell her the truth, but I fully intend to."
+        },
+        {
+          "point": "형용사가 명사구 앞에 겹쳐 쓰이는 강조 — a right proper villain, innit",
+          "explanation": "Word 'round the gutter is you're a right proper villain에서 right proper는 영국 노동계급 구어의 이중 강조로, '아주 제대로 된'이라는 뜻입니다. right가 부사로 형용사 proper를 강조하고, 그 proper가 다시 명사 villain을 강조합니다. 문두 Word 'round the gutter is 뒤에는 that이 생략되었고, word is that…은 '소문에 따르면'입니다. 뒤 문장의 innit은 isn't it이 굳어진 만능 부가의문문으로, 주어와 동사가 무엇이든 상관없이 붙습니다. 즉 이 강도단은 런던 코크니 말투로 설정되어 있고, 이것은 문법 오류가 아니라 계급과 지역을 표시하는 장치입니다.",
+          "fromScript": "Word 'round the gutter is you're a right proper villain. Crime is male-dominated, innit?",
+          "example": "That was a right proper mess, and nobody wanted to clean it up, innit?"
+        }
+      ],
+      "background": [
+        {
+          "topic": "미국 경찰 무전 코드의 아나크로니즘 — 619 in progress",
+          "detail": "We got a 619 in progress. Suspects headed west on the royal highway.는 미국 경찰 드라마의 무전 대사를 통째로 옮겨 놓은 것입니다. 실제 미국 경찰은 사건 종류를 숫자 코드로 부르고(예: 187은 살인), in progress는 '현재 진행 중'을 뜻합니다. 중세 기사들이 마차를 추격하면서 이런 말을 쓰는 순간, 마차 추격은 자동차 추격전 장면으로 번역됩니다. 같은 화의 joyride(차를 훔쳐 몰고 다니는 것), careful driver, royal highway도 모두 자동차 문화의 어휘입니다. 이 작품의 아나크로니즘은 소품이 아니라 어휘로 이루어지므로, 단어의 시대를 함께 읽어야 농담이 보입니다."
+        },
+        {
+          "topic": "십자군에서 가져온 초희귀 과일 — 레몬 하나의 무게",
+          "detail": "빈이 보물처럼 소개하는 super-rare fruit는 레몬입니다. crusades(십자군 원정)는 11세기부터 유럽 기사들이 중동으로 향한 대규모 전쟁이었고, 그 부산물로 감귤류, 설탕, 향신료가 유럽에 들어왔습니다. 즉 역사적으로는 정확한 설정입니다. 웃음은 규모의 대비에서 나옵니다. 루시가 Civilizations were decimated. History rewritten. Maps redrawn.이라고 문명의 붕괴를 낭독한 뒤 밝혀지는 결과물이 레몬 한 개이고, 조그는 그것을 먹지도 않고 보드카 소다를 마시며 애타게 바라보기만 합니다. 참고로 vodka soda 역시 20세기 칵테일이므로, 한 문장 안에 십자군과 현대 술이 공존합니다."
+        },
+        {
+          "topic": "퇴마 의식과 그 패러디 — 자철석, 흔들기, 그리고 사후 안내",
+          "detail": "이 화의 후반부는 서양 공포 영화의 퇴마 장면을 차례로 흉내 냅니다. 해부대에 결박하기, 라틴어풍 기도문, 악마의 이름 부르기 같은 절차가 나오는데, 수단만 우스꽝스럽습니다. 자철석으로 악마를 끌어낸다는 magnetraction은 magnet과 traction을 붙여 만든 가짜 학술어이고, 다음 시도는 그냥 몸을 격렬하게 흔드는 것입니다. 결정타는 퇴마 직후의 대사입니다. Don't forget to take it easy today and drink plenty of water는 현대 병원에서 시술 후에 건네는 정형 안내인데, 이것이 붙는 순간 퇴마가 통원 치료 항목이 됩니다. 종교 의식을 의료 서비스의 언어로 번역해 웃기는 방식입니다."
+        },
+        {
+          "topic": "관용구를 성별·정치적 올바름 쪽으로 비틀기 — one-man wrecking woman, Highwaypeople",
+          "detail": "a one-man wrecking crew는 '혼자서 다 부수고 다니는 사람'을 뜻하는 미국 관용구입니다. 조그는 이것을 딸에게 쓰다가 crew를 woman으로 바꾸는데, one-man은 그대로 남겨서 결과적으로 앞뒤가 어긋난 a one-man wrecking woman이 됩니다. 성 중립적으로 고치려다 절반만 고친 상태를 그대로 발화하는 농담입니다. 같은 원리가 강도단의 자기 소개에도 쓰입니다. highwayman(노상강도)을 Highwaypeople로 바꾸고 We're a gender neutral kleptocracy라고 선언하는데, kleptocracy는 원래 '도둑 정치', 즉 지배층이 국고를 훔치는 체제를 뜻하는 정치학 용어입니다. 강도단이 자기 조직을 정치 체제 용어로 소개하면서 성 평등까지 내세우는 이중의 어긋남이 웃음의 핵입니다."
+        },
+        {
+          "topic": "루시가 파견 요원이라는 사실 — 시즌의 숨은 줄기",
+          "detail": "이 화 중간과 끝에 정체불명의 두 인물이 등장해 Seems our little emissary Luci is successfully corrupting Tiabeanie's mind and soul(우리의 작은 밀사 루시가 티아비니의 정신과 영혼을 잘 타락시키고 있군)이라고 보고합니다. emissary는 밀사·특사를 뜻하는 격식 어휘로, 루시가 자발적 악마가 아니라 누군가에게 고용된 하수인임을 알려줍니다. 마지막에 빈이 목숨을 걸어 루시를 구하자 그들은 She's come along faster than we ever dared dream이라며 오히려 만족하는데, 여기서 come along은 '실력이 늘다, 잘 자라다'라는 뜻입니다. 즉 이들이 원하는 것은 단순한 타락이 아니라 빈이 악마를 위해 위험을 감수하는 관계 자체입니다. 코미디 에피소드처럼 보이는 이 화가 시즌 전체의 음모 줄기를 심어 놓는 지점입니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "빈과 루시, 엘포의 밤샘 유흥은 어떤 순서로 범죄가 되어 가는가?",
+          "answer": "처음은 과음입니다. 빈은 자기가 무엇을 마셨는지도 기억하지 못하는 상태이고, 그런데도 밤이 끝나기를 원하지 않습니다. 다음이 마차를 훔쳐 몰고 다니는 joyride이고, 이때 빈은 '취했을 때 오히려 조심해서 운전한다'는 취객의 전형적인 자기 확신을 보입니다. 근위병들이 무전 대사로 추격에 나서고, 루시는 벌써 다음 주에는 방화를 해보자고 예고합니다. 마지막 단계가 왕실 묘지 도굴입니다. 즉 음주에서 절도, 방화 예고, 조상 무덤 도굴로 수위가 계단식으로 올라가고, 각 단계마다 루시가 한 발씩 밀어줍니다."
+        },
+        {
+          "question": "빈이 강도단의 도굴 계획에 가담하게 된 심리적 계기는 무엇이며, 묘지에서 그의 기분은 왜 바뀌는가?",
+          "answer": "빈은 왕실 법정에서 스스로 이유를 밝힙니다. 자기 운명에 대한 통제권이 전혀 없는 사람에게 뭘 기대하느냐는 것입니다(what do you expect from someone who's got no control over her own destiny?). 결혼도 신분도 자기가 정할 수 없으니, 통제할 수 있는 유일한 영역이 자기 파괴적 행동이 됩니다. 게다가 강도단은 그를 '제대로 된 악당'으로 대접하는데, 이것은 궁정에서 한 번도 받지 못한 인정입니다. 그러나 목표가 자기 가족의 묘지라는 것을 알게 되자 흔들립니다. 자기도 언젠가 묻히고 잊히고 구더기 밥이 될 자리를 눈앞에서 본 것이고, 그 순간 술기운이 내려가면서(coming down off of that high) 죽음의 실감이 밀려옵니다."
+        },
+        {
+          "question": "조그는 빈의 일탈을 어떻게 설명하려 하는가? 오드발과 소르세리오가 내놓은 두 가지 진단을 비교해 보라.",
+          "answer": "조그 본인은 어머니의 죽음 이후 딸이 달라졌다고 봅니다(Bean hasn't been the same since she lost her mom). 신하들의 진단은 다릅니다. 오드발은 이성과 예법에 대한 노골적 항거로 보아 티아비니가 '요즘 십대라고 부르는 것'이라고 판정합니다. 즉 병이 아니라 나이라는 설명이며, 십대라는 개념 자체가 중세에 존재하지 않으므로 이것이 아나크로니즘 농담입니다. 소르세리오는 그것을 말도 안 되는 가설로 치부하고 '과학이 더 논리적인 설명을 제시한다'며 악마 빙의를 제안합니다. 십대라는 사회학적 설명과 빙의라는 초자연적 설명을 나란히 놓고, 후자를 '과학'이라고 부르는 데 웃음이 있습니다."
+        },
+        {
+          "question": "퇴마 시도는 몇 단계로 진행되며, 마지막에 등장하는 퇴마사는 왜 위협적인가?",
+          "answer": "먼저 소르세리오가 자철석으로 악마를 끌어당기는 방법을 시도하고, 다음에는 해부대에 묶은 빈을 격렬하게 흔들어 악마를 뱉어내게 하려 합니다. 루시는 그 과정을 오히려 즐기며 더 세게 돌리라고 응원합니다. 실패가 이어지자 오드발이 세계 최고의 퇴마사를 부르는데, 그는 자기조차 소름 돋게 하는 인물이라고 경고합니다(He creeps even me out). 이 인물은 진짜로 위험합니다. 정화의 논리를 극단까지 밀어붙여, 살을 태워 없애면 악마가 드러난다며 빈을 화형시키려 하고, 이어 루시를 처리한 뒤 악마와 어울린 자에게 저주를 선언합니다. 즉 이 화의 가장 큰 폭력은 악마가 아니라 악마를 없애려는 쪽에서 나옵니다."
+        },
+        {
+          "question": "이 화의 결말에서 빈은 무엇을 선택하며, 그 선택은 누구에게 어떤 의미로 해석되는가?",
+          "answer": "빈은 자기 목숨을 걸고 루시를 구합니다. 도덕적으로는 이상한 선택입니다. 루시는 빈을 파괴하려고 파견된 존재이고 빈 자신도 '몇 주만 더 같이 놀았으면 죽었을 것'이라고 인정합니다. 그런데도 자기 약점을 정확히 지적하고 가차 없이 놀리는 그 관계를 그리워합니다. 가족이 자기 친구를 없애는 방식에 대한 반발도 작용합니다. 마지막 장면에서 감시자들은 이 선택을 성공 보고로 처리합니다. 그들이 원한 것은 단순한 타락이 아니라 빈이 악마를 위해 목숨을 거는 유대였고, She's come along faster than we ever dared dream이라는 평가는 빈의 애정이 곧 그들의 계획이 진전된 증거라는 뜻입니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 4,
+      "title": "4. 비밀 결사",
+      "chunks": [
+        {
+          "en": "Our secret society meets tonight? / We won't convene the cookie club / until the asswipe leaves the castle.",
+          "ko": "우리 비밀 결사, 오늘 밤에 모이는 거죠? / 그 얼간이가 성을 떠날 때까지는 쿠키 클럽을 소집하지 않는다.",
+          "literal": "우리 비밀 결사가 오늘 밤 모이나요? / 우리는 그 쿠키 클럽을 소집하지 않을 것이다 / 그 얼간이가 성을 떠날 때까지는"
+        },
+        {
+          "en": "I couldn't help but overhear your secret conversation. / Mind if I join?",
+          "ko": "두 분의 비밀 대화를 어쩔 수 없이 엿듣게 됐네요. 저도 끼어도 될까요?",
+          "literal": "저는 당신들의 비밀 대화를 엿듣지 않을 수 없었습니다 / 제가 합류해도 마음에 걸리시나요?"
+        },
+        {
+          "en": "Hey, Sorcerio, / how's that elf blood comin' along? / I'm not getting any younger.",
+          "ko": "이봐 소르세리오, 그 엘프 피는 잘 진행되고 있나? 나도 더 젊어지지는 않는다고.",
+          "literal": "이봐, 소르세리오 / 그 엘프 피는 어떻게 진행되어 가고 있나? / 나는 조금도 더 젊어지고 있지 않다"
+        },
+        {
+          "en": "I know I don't hydrate as much as I should, / but is this what water's supposed to look like?",
+          "ko": "제가 수분 섭취를 해야 하는 만큼 못 한다는 건 알지만, 물이 원래 이렇게 생긴 건가요?",
+          "literal": "저는 제가 해야 하는 만큼 수분을 섭취하지 않는다는 걸 알아요 / 하지만 이게 물이 그렇게 보이기로 되어 있는 모습인가요?"
+        },
+        {
+          "en": "What's a rodeo? / What were we talking about?",
+          "ko": "로데오가 뭐야? 우리가 무슨 얘기 하고 있었지?",
+          "literal": "로데오가 무엇인가? / 우리는 무엇에 대해 이야기하고 있었지?"
+        },
+        {
+          "en": "Okay. / But there better not be any funny business / while I'm gone.",
+          "ko": "알았다. 하지만 내가 없는 동안 수상한 짓은 절대 없어야 한다.",
+          "literal": "좋다 / 하지만 어떤 수상한 일도 없는 게 좋을 것이다 / 내가 없는 동안에"
+        },
+        {
+          "en": "Hey, little guy, / if I find so much as a misplaced hair / when I get back,",
+          "ko": "이봐 꼬맹이, 내가 돌아왔을 때 머리카락 한 올이라도 엉뚱한 데 있으면 말이야,",
+          "literal": "이봐, 작은 녀석 / 만약 내가 잘못 놓인 머리카락 한 올만큼이라도 발견하면 / 내가 돌아왔을 때"
+        },
+        {
+          "en": "Oh, I've got to keep it together / until he's out of the gates, at least.",
+          "ko": "아, 최소한 아빠가 성문을 나갈 때까지는 표정 관리를 해야 해.",
+          "literal": "아, 나는 그것을 함께 붙들고 있어야 해 / 최소한 그가 문 밖으로 나갈 때까지는"
+        },
+        {
+          "en": "Dude, decide what you want, / drink till you have the nerve to go for it, / then keep drinking so the inevitable rejection doesn't hurt so bad.",
+          "ko": "야, 원하는 걸 먼저 정하고, 밀어붙일 배짱이 생길 때까지 마셔. 그리고 계속 마셔. 피할 수 없는 거절이 그렇게까지 아프지 않도록.",
+          "literal": "야, 네가 원하는 것을 정해 / 그것을 향해 갈 배짱이 생길 때까지 마셔 / 그다음엔 계속 마셔, 그 피할 수 없는 거절이 그렇게 심하게 아프지 않도록"
+        },
+        {
+          "en": "There shall be, tonight at the castle, a wicked rager, / open to any in the kingdom / who know how to rage wickedly.",
+          "ko": "오늘 밤 성에서 미친 광란의 파티가 열릴 것이다. 왕국 안에서 미치도록 놀 줄 아는 자라면 누구나 환영이다.",
+          "literal": "있을 것이다, 오늘 밤 성에서, 사악한 광란 파티가 / 왕국의 누구에게든 열려 있는 / 사악하게 광란할 줄 아는 자에게"
+        },
+        {
+          "en": "You're right. / I'm gonna march up to Bean / and say something I'll have figured out by the time I get there.",
+          "ko": "네 말이 맞아. 빈에게 성큼성큼 걸어가서, 도착할 때쯤엔 생각해 냈을 뭔가를 말하겠어.",
+          "literal": "네 말이 맞아 / 나는 빈에게로 행진해 갈 거야 / 그리고 내가 거기 도착할 때쯤엔 알아냈을 무언가를 말할 거야"
+        },
+        {
+          "en": "- I'm into big girls. - What? / Just hear me out.",
+          "ko": "- 난 덩치 큰 여자가 좋아. - 뭐라고? / 끝까지 좀 들어봐.",
+          "literal": "- 나는 큰 여자들에게 관심이 있어. - 뭐? / 그냥 내 말을 끝까지 들어"
+        },
+        {
+          "en": "Well, I have been drinking a lot tonight, / so it might just be the grog talking,",
+          "ko": "음, 오늘 밤 술을 꽤 마셨으니까 이건 그냥 술이 하는 말일지도 모르지만,",
+          "literal": "음, 나는 오늘 밤 많이 마셔 왔어 / 그래서 이건 그냥 술이 말하고 있는 것일지도 몰라"
+        },
+        {
+          "en": "You still seem tense. / Chazz is gonna take it down a notch, okay?",
+          "ko": "아직 긴장하신 것 같네요. 채즈가 강도를 한 단계 낮춰 드릴게요, 됐죠?",
+          "literal": "당신은 아직 긴장한 것처럼 보여요 / 채즈가 그것을 한 칸 아래로 내려줄 거예요, 알겠죠?"
+        },
+        {
+          "en": "and even though I knew I was destined for greatness, / the flab on my arms said different.",
+          "ko": "그리고 내가 위대해질 운명임을 알고 있었지만, 내 팔뚝의 처진 살은 다른 말을 하고 있었지.",
+          "literal": "그리고 비록 내가 위대함을 향해 운명 지어졌다는 것을 알았지만 / 내 팔의 처진 살은 다르게 말했어"
+        },
+        {
+          "en": "Uh, where's Bean? / I thought you were supposed to be chaperoning her.",
+          "ko": "어, 빈은 어디 있어? 네가 보호자로 붙어 있어야 하는 거 아니었어?",
+          "literal": "어, 빈은 어디 있어? / 나는 네가 그녀를 보호자로서 따라다니고 있어야 한다고 생각했는데"
+        },
+        {
+          "en": "I'll go back to being passive aggressive, / 'cause it worked so well.",
+          "ko": "다시 수동 공격적으로 나가야겠네. 그게 참 효과가 좋았으니까.",
+          "literal": "나는 수동 공격적으로 되는 것으로 돌아갈 거야 / 그게 아주 잘 통했으니까"
+        },
+        {
+          "en": "This is why you gotta make people RSVP.",
+          "ko": "그러니까 참석 여부를 미리 받아야 하는 거야.",
+          "literal": "이것이 네가 사람들에게 참석 회신을 하게 만들어야 하는 이유야"
+        },
+        {
+          "en": "I don't get why you'd want to take over this shoddy kingdom anyway.",
+          "ko": "애초에 이 허름한 왕국을 왜 차지하고 싶은 건지 이해가 안 되네.",
+          "literal": "나는 네가 애초에 왜 이 조잡한 왕국을 차지하고 싶어 할지 이해가 안 돼"
+        },
+        {
+          "en": "Called it. / Knew it by the pants.",
+          "ko": "내가 말했지. 바지 보고 알았어.",
+          "literal": "그것을 불렀어 / 바지로 그것을 알았어"
+        },
+        {
+          "en": "Wait a minute. / You named your pet squirrel Bloaty / before he died and got all bloated?",
+          "ko": "잠깐만. 애완 다람쥐가 죽어서 퉁퉁 부풀기도 전에 이름을 '부풀이'라고 지었다는 거야?",
+          "literal": "잠깐만 / 너는 네 애완 다람쥐를 부풀이라고 이름 지었어 / 그가 죽어서 완전히 부풀기 전에?"
+        },
+        {
+          "en": "Well, here's to seeing the sun rise another day.",
+          "ko": "자, 또 하루 해가 뜨는 걸 보게 된 것을 위하여.",
+          "literal": "자, 또 다른 하루의 해가 떠오르는 것을 보는 것을 위하여"
+        },
+        {
+          "en": "Elfo, you scrub the blood off the walls, / and I'll sweep up the crushed pretzels. / Stuff it up the chimney with these torsos.",
+          "ko": "엘포, 너는 벽에 묻은 피를 문질러 닦아. 나는 부서진 프레첼을 쓸게. 그건 이 몸통들과 함께 굴뚝에 밀어 넣어.",
+          "literal": "엘포, 너는 벽에서 그 피를 문질러 없애고 / 나는 부서진 프레첼을 쓸어 담을게 / 그것을 이 몸통들과 함께 굴뚝 위로 쑤셔 넣어"
+        },
+        {
+          "en": "Welcome back to your castle, Father, / where nothing unusual occurred. / Now I would like to sit on my throne and rule my kingdom, / which most certainly was not overthrown by barbarians.",
+          "ko": "성으로 돌아오신 것을 환영합니다, 아버님. 여기서는 이상한 일이 전혀 없었습니다. / 이제 나는 왕좌에 앉아 내 왕국을 다스리고 싶구나. 그 왕국은 결코 야만인들에게 전복되지 않았지.",
+          "literal": "당신의 성으로 돌아오신 것을 환영합니다, 아버님 / 여기서는 이상한 일이 아무것도 일어나지 않았습니다 / 이제 나는 내 왕좌에 앉아 내 왕국을 통치하고 싶다 / 그 왕국은 아주 확실히 야만인들에게 전복되지 않았다"
+        },
+        {
+          "en": "Maybe reality is the dream and dreams are reality. / You ever think about that? / I'm pretty high.",
+          "ko": "어쩌면 현실이 꿈이고 꿈이 현실일지도 몰라. 그런 생각 해본 적 있어? 나 지금 꽤 취했어.",
+          "literal": "어쩌면 현실이 그 꿈이고 꿈들이 현실일지도 몰라 / 너 그것에 대해 생각해 본 적 있어? / 나는 꽤 높아져 있어"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "couldn't help but + 원형 / couldn't help + 동명사",
+          "explanation": "I couldn't help but overhear your secret conversation은 '엿듣지 않을 수 없었다'는 뜻입니다. 같은 의미를 I couldn't help overhearing으로도 쓸 수 있는데, but 뒤에는 원형이 오고 help 바로 뒤에는 동명사가 온다는 형태 차이를 정확히 구별해야 합니다. 또 overhear는 '우연히 듣다'이고 eavesdrop은 '몰래 엿듣다'라는 의도적 행위입니다. 루시는 overhear를 골라서 우연이었다고 주장하지만, 상대가 비밀 대화를 하는 것을 알고 있었고 곧바로 Mind if I join?이라며 끼어들기 때문에 우연이 아닙니다. 즉 단어 선택 자체가 뻔뻔한 변명이라는 점이 농담입니다.",
+          "fromScript": "I couldn't help but overhear your secret conversation. Mind if I join?",
+          "example": "I couldn't help but notice that half the class had the same answer."
+        },
+        {
+          "point": "there better not be — had better의 축약과 부정 어순",
+          "explanation": "There better not be any funny business while I'm gone은 There had better not be…에서 had가 탈락한 구어 형태입니다. had better는 '~하는 게 좋을 것이다'라는 경고이고, 부정은 반드시 better not 순서입니다(not better가 아닙니다). 뒤에는 to 없는 원형이 옵니다. 축약형은 you better, we better처럼 쓰이며 위협의 어조를 강하게 만듭니다. funny business는 '수상한 짓, 부정한 장난'을 뜻하는 관용구로, funny의 '우습다'는 뜻이 아니라 '이상하다'는 쪽입니다. 조그가 나가면서 이 말을 남긴 직후 성이 파티로 무너지므로, 이 문장은 극적 아이러니의 신호탄입니다.",
+          "fromScript": "But there better not be any funny business while I'm gone.",
+          "example": "You better not tell your brother what I bought him for his birthday."
+        },
+        {
+          "point": "미래완료 + by the time절",
+          "explanation": "I'm gonna march up to Bean and say something I'll have figured out by the time I get there는 관계절 안에 미래완료가 들어 있는 문장입니다. by the time절 안에서는 미래를 현재시제로 씁니다(get there). 그리고 주절의 will have figured out은 '그 시점까지는 이미 알아냈을 것'이라는 뜻입니다. figure out은 '알아내다'라는 필수 구동사입니다. 웃음은 논리의 순서에 있습니다. 무슨 말을 할지 정하지 않은 채 걸어가기 시작하고, 걷는 동안 알아내겠다는 계획이므로, 미래완료 시제 자체가 엘포의 무계획을 문법으로 드러냅니다.",
+          "fromScript": "I'm gonna march up to Bean and say something I'll have figured out by the time I get there.",
+          "example": "By the time the bell rings, I will have marked every single worksheet."
+        },
+        {
+          "point": "it's the X talking — '그건 X가 하는 말이다'",
+          "explanation": "it might just be the grog talking은 '이건 술이 하는 말일지도 모른다'는 뜻으로, 자기 발언의 책임을 일시적 상태에 넘길 때 쓰는 정형 표현입니다. That's the exhaustion talking, that's just the fear talking처럼 명사만 바꿔 쓸 수 있습니다. 구조상 the grog talking은 동명사구가 아니라 '명사 + 현재분사'로 보어 자리에 온 것이며, 원인이 사람처럼 말한다고 표현하는 의인화입니다. grog는 물에 희석한 럼주를 뜻하는 뱃사람 어휘여서 중세 배경과 잘 맞습니다. 취기를 방패로 삼아 위험한 고백을 시도하는 화법이므로, 앞뒤에 항상 고백이 따라옵니다.",
+          "fromScript": "Well, I have been drinking a lot tonight, so it might just be the grog talking,",
+          "example": "Ignore what I said last night; that was the exhaustion talking."
+        },
+        {
+          "point": "3인칭으로 자기를 지칭하기(illeism)와 take it down a notch",
+          "explanation": "채즈는 자기 이름을 주어로 써서 Chazz is gonna take it down a notch, Poor Chazz처럼 말합니다. 이것을 illeism이라고 하며, 영어권에서는 자기 도취적이거나 우스꽝스러운 인물의 표시로 쓰입니다. 문법적으로는 완전히 정상이지만 사회적으로는 이상하게 들리는 것이 핵심입니다. take it down a notch는 '강도를 한 단계 낮추다'라는 관용구로, notch는 눈금 한 칸을 뜻합니다. 지금은 마사지사가 힘을 조절한다는 뜻이지만, 흥분한 사람에게 '좀 진정해'라고 할 때도 그대로 씁니다. 자기 이야기를 늘어놓으며 손님을 불편하게 만드는 마사지사라는 설정 자체가 현대 서비스업 경험의 패러디입니다.",
+          "fromScript": "You still seem tense. Chazz is gonna take it down a notch, okay?",
+          "example": "Could everyone take it down a notch before the guests arrive?"
+        },
+        {
+          "point": "형용사를 부사 자리에 쓰는 구어 — said different, hurt so bad",
+          "explanation": "the flab on my arms said different에서 표준 문법은 said differently이고, doesn't hurt so bad도 원칙적으로는 so badly입니다. 그러나 미국 구어에서는 이렇게 형용사형을 부사 자리에 쓰는 것이 매우 흔하며, 특히 bad, different, real, slow, quick에서 자주 나타납니다(real quick, drive slow). 이것은 오류로 배우기보다 계층과 말투를 표시하는 문체 선택으로 이해해야 합니다. 문어에서는 쓰지 않고, 듣고 이해하면 되는 항목입니다. 참고로 said different는 '다른 말을 했다'로, 앞 절의 자기 확신과 몸의 현실이 어긋난다는 뜻입니다.",
+          "fromScript": "and even though I knew I was destined for greatness, the flab on my arms said different.",
+          "example": "He promised he would arrive early, but the empty seat said otherwise."
+        },
+        {
+          "point": "관계절을 이용한 과잉 부인(over-denial) — where nothing unusual occurred",
+          "explanation": "Welcome back to your castle, Father, where nothing unusual occurred는 관계부사 where가 이끄는 계속적 용법의 관계절입니다. 뒤 문장의 which most certainly was not overthrown by barbarians도 같은 구조로, 앞 명사에 설명을 덧붙입니다. 문법은 정확하지만, 아무도 묻지 않은 것을 미리 부인한다는 점에서 자백이 됩니다. 이런 과잉 부인은 영어 코미디의 상투적인 장치입니다. 정보 구조상 관계절은 '이미 서로 아는 배경'을 담는 자리인데, 여기에 감추고 싶은 사건을 넣어 버렸기 때문에 우스꽝스러워지는 것입니다.",
+          "fromScript": "Welcome back to your castle, Father, where nothing unusual occurred.",
+          "example": "This is my desk, which absolutely nobody has been eating lunch at."
+        },
+        {
+          "point": "주어 생략 구어 — Called it. Knew it by the pants.",
+          "explanation": "Called it.과 Knew it by the pants.는 둘 다 주어 I가 생략된 형태입니다. 일기, 메모, 그리고 빠른 대화에서는 문두의 주어와 조동사를 통째로 지우는 일이 흔합니다(Got it. Sounds good. Told you.). call it은 여기서 '미리 맞히다, 예측을 적중시키다'라는 관용구로, 스포츠 중계와 일상 대화에서 자주 쓰입니다. 뒤 문장의 by는 '~를 근거로'라는 판단의 수단을 나타냅니다. 즉 '바지를 보고 알았다'는 뜻입니다. 이렇게 두 단어짜리 문장으로 승리를 선언하는 방식은 미국 구어의 리듬을 익히기 좋은 재료입니다.",
+          "fromScript": "Called it. Knew it by the pants.",
+          "example": "Called it. I knew she would forget her umbrella again."
+        }
+      ],
+      "background": [
+        {
+          "topic": "비밀 결사 패러디 — 오드발과 소르세리오의 '쿠키 클럽'",
+          "detail": "후드를 쓴 인물들이 촛불 아래 모여 왕을 논하는 장면은 프리메이슨과 일루미나티 같은 서구 비밀 결사 서사의 정석입니다. 판타지와 음모 서사에서는 이런 조직이 왕 위에서 나라를 실제로 움직입니다. 그런데 이들이 자기 모임을 부르는 이름은 the cookie club(쿠키 클럽)이고, 왕을 가리키는 말은 the asswipe라는 저속한 욕입니다. 즉 구조는 진짜 음모 조직이지만 어휘는 초등학교 방과후 동아리와 화장실 욕설로 이루어져 있습니다. 이 작품은 이렇게 장르 장치는 그대로 두고 등록만 무너뜨려서 웃깁니다. 참고로 여기서 convene(소집하다)은 회의체에 쓰는 격식 동사이므로, cookie club과 붙었을 때 낙차가 더 커집니다."
+        },
+        {
+          "topic": "현대 의료 드라마와 웰니스 어휘의 아나크로니즘",
+          "detail": "소르세리오의 We'll give him a sedative(진정제를 투여하겠습니다)와 Hand me ten ccs of brick은 미국 의료 드라마의 정형 대사입니다. 수술실에서 의사가 Ten ccs of morphine!처럼 외치는 장면을 그대로 옮긴 뒤, 약물 이름 자리에 벽돌을 넣어 마취를 둔기 타격으로 바꾼 것입니다. cc는 부피 단위이므로 벽돌에는 애초에 쓸 수 없는 단위라는 점까지 계산된 농담입니다. 같은 계열로 엘포의 I don't hydrate as much as I should에서 hydrate는 21세기 건강 담론의 유행어입니다. 피를 다 뽑힌 엘프가 수분 섭취 부족을 반성하는 대비가 웃음의 축이고, 동시에 그가 마시라고 받은 것이 물이 아니라 자기 피였다는 사실이 뒤에서 드러납니다."
+        },
+        {
+          "topic": "This ain't my first rodeo — 완성되지 않은 관용구 농담",
+          "detail": "조그가 What's a rodeo?라고 묻는 장면은 앞에서 누군가 This isn't my first rodeo라고 말했기 때문에 성립합니다. 이 표현은 '이런 일은 처음이 아니다, 나도 경험이 있다'는 미국 관용구로, 로데오 경기가 있는 미국 서부 문화에서 나왔습니다. 중세 유럽풍 왕국에는 로데오가 존재할 수 없으므로 조그의 질문은 지극히 합리적이고, 바로 그 합리성이 관용구를 무너뜨립니다. 아나크로니즘을 지적하는 역할을 등장인물 본인에게 맡기는 방식이며, 그로닝 계열 작품이 즐겨 쓰는 자기 언급적(self-aware) 농담입니다. 게다가 조그는 곧 자기가 무슨 얘기를 하고 있었는지도 잊어버려, 질문마저 흐지부지 끝납니다."
+        },
+        {
+          "topic": "미국 파티 문화 어휘 — rager, RSVP, wicked",
+          "detail": "포고문에서 선포되는 a wicked rager는 미국 대학생 문화의 어휘입니다. rager는 통제 불가능한 대규모 파티, wicked는 뉴잉글랜드 지역에서 '아주, 지독히'라는 강조 부사로 쓰이는 속어입니다. 여기서는 wicked가 원래 뜻인 '사악한'과 겹치기 때문에, who know how to rage wickedly라는 뒷부분이 '사악하게 광란할 줄 아는 자'라는 이중 의미로 읽힙니다. 포고문 형식(There shall be…)은 궁정 문서체인데 내용은 대학 기숙사 파티 초대입니다. 뒤에 나오는 RSVP는 프랑스어 répondez s'il vous plaît의 약자로 초대장에 쓰는 '참석 회신 부탁' 표기인데, 야만인의 무단 침입을 겪은 뒤 이 단어가 나오는 순서가 농담의 완성입니다."
+        },
+        {
+          "topic": "high의 두 가지 의미와 마지막 대사",
+          "detail": "이 화의 마지막 대사는 Maybe reality is the dream and dreams are reality. You ever think about that? I'm pretty high입니다. high는 '높은'이라는 기본 뜻 외에 '약이나 술에 취해 기분이 들뜬 상태'를 뜻하는 미국 구어입니다. 즉 심오한 철학적 질문을 던진 직후 그 질문의 출처가 취기임을 스스로 밝히는 구조이고, 미국 코미디에서 이른바 '기숙사 철학'을 조롱하는 정형 패턴입니다. 이 화 전체가 부모가 집을 비운 사이 벌어지는 하룻밤 소동, 즉 미국 하이틴 파티 영화의 구조를 따르고 있으므로, 마지막에 일출을 보며 나누는 이 대화도 그 장르의 결말 장면을 그대로 흉내 낸 것입니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "오드발과 소르세리오의 '비밀 결사'는 무엇을 노리고 있으며, 그 이름과 말투는 어떤 효과를 내는가?",
+          "answer": "이들은 후드를 쓰고 촛불 아래 모여, 조그가 성을 떠나는 시점을 기다립니다. 왕을 the asswipe라고 부르고, 왕이 죽으면 왕관을 이따금 걸치고 다니며 아직 살아 있는 것처럼 보이게 하자는 계획까지 이야기합니다. 즉 실질적으로는 왕권을 대체하려는 조직입니다. 그런데 조직의 이름은 the cookie club이고, 모임을 여는 동작에는 convene이라는 회의체 격식 동사를 씁니다. 음모 서사의 형식과 유아적 이름, 저속한 욕설이 한 장면에 섞이면서, 이들이 위험하면서도 동시에 우스꽝스러운 존재로 그려집니다."
+        },
+        {
+          "question": "조그가 성을 떠나는 이유는 무엇이며, 떠나기 전에 남긴 지시는 이후 사건과 어떻게 대비되는가?",
+          "answer": "조그는 장례식과 조문 일정 때문에 성을 비웁니다. 떠나기 전에 오드발을 책임자로 지명하고, 빈과 그 이상한 친구들을 감시하라고 명령하며, 자기가 없는 동안 수상한 짓은 없어야 한다고 경고합니다(there better not be any funny business while I'm gone). 엘포에게는 머리카락 한 올이라도 제자리에 없으면 가만두지 않겠다고 위협합니다. 그 직후 벌어지는 일은 왕국 전체에 개방된 광란의 파티, 야만인의 침입, 그리고 시체와 피를 치우는 뒷정리입니다. 즉 경고 대사 하나하나가 뒤에 벌어질 사건의 정확한 반대 예고로 기능합니다."
+        },
+        {
+          "question": "엘포가 빈에게 마음을 고백하려다 실패하는 과정을 루시의 조언과 함께 설명해 보라.",
+          "answer": "루시의 조언은 세 단계입니다. 원하는 것을 정하고, 밀어붙일 배짱이 생길 때까지 마시고, 그다음엔 거절의 아픔이 덜하도록 계속 마시라는 것입니다. 즉 성공을 위한 조언이 아니라 실패를 전제한 조언입니다. 엘포는 그 말을 따라 술기운을 얻고, 무슨 말을 할지 정하지도 않은 채 걸어가면서 도착할 때쯤엔 알아냈을 무언가를 말하겠다고 다짐합니다. 실제로 나온 말은 I'm into big girls였고, 빈은 What?이라고 되묻습니다. 엘포는 이어서 it might just be the grog talking이라며 취기를 방패로 삼지만, 결국 빈은 파티에서 다른 남자와 사라집니다."
+        },
+        {
+          "question": "파티는 어떻게 통제를 벗어나며, 빈과 루시, 엘포는 아침까지 무엇을 하는가?",
+          "answer": "왕국 전체에 개방된 파티라는 포고문 때문에 성문이 사실상 열려 있게 되고, 초대받지 않은 야만인들이 들어와 왕국을 접수하려 듭니다. 루시는 이 상황을 두고 그래서 참석 회신을 받아야 하는 거라고 논평하고, 빈은 이 허름한 왕국을 왜 차지하고 싶어 하는지 모르겠다며 응수합니다. 조그의 귀환이 임박했다는 전령의 외침이 들리자 세 사람은 증거 인멸에 들어갑니다. 벽에 묻은 피를 닦고, 부서진 프레첼을 쓸고, 시체의 몸통을 굴뚝에 밀어 넣습니다. 그런 다음 아무 일도 없었다는 얼굴로 아버지를 맞이하고, 세 사람은 성벽에서 일출을 봅니다."
+        },
+        {
+          "question": "빈이 아버지에게 하는 인사말과 조그의 대답은 왜 웃긴가? 두 사람의 문장 구조를 근거로 설명해 보라.",
+          "answer": "빈은 Welcome back to your castle, Father, where nothing unusual occurred라고 인사합니다. 관계부사 where가 이끄는 절에 '이상한 일은 전혀 없었다'는 부인을 담았는데, 아무도 묻지 않은 것을 미리 부인하는 순간 그것이 곧 자백이 됩니다. 조그도 같은 형식으로 응수합니다. 왕좌에 앉아 왕국을 다스리겠다고 말하면서, 관계대명사 which로 '그 왕국은 결코 야만인들에게 전복되지 않았다'를 덧붙입니다. 두 사람 모두 관계절이라는 '이미 아는 배경'의 자리에 감추려는 사건을 집어넣었고, 그 결과 서로가 서로의 거짓말을 알고 있다는 것까지 드러납니다. 문법은 완벽하지만 정보 구조가 무너져서 웃긴 문장의 좋은 예입니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 5,
+      "title": "5. 수녀원",
+      "chunks": [
+        {
+          "en": "I didn't get a lot of sleep / on account of my bed being a granite slab.",
+          "ko": "잠을 많이 못 잤어요. 침대가 화강암 판이라서요.",
+          "literal": "저는 잠을 많이 얻지 못했어요 / 제 침대가 화강암 판인 것 때문에"
+        },
+        {
+          "en": "You have got to learn / to read a room.",
+          "ko": "너 분위기 파악하는 법 좀 배워야겠다.",
+          "literal": "너는 배워야만 해 / 방을 읽는 것을"
+        },
+        {
+          "en": "why not just melt this God guy down / and pass him out like coins? / Cut out the middle-man, right, guys?",
+          "ko": "그냥 이 신상을 녹여서 동전처럼 나눠주면 되잖아요? 중간 유통 단계를 없애는 거죠, 안 그래요?",
+          "literal": "그냥 이 신 양반을 녹여서 / 그를 동전처럼 나눠주는 게 어때요? / 중간 상인을 잘라내는 거죠, 그렇죠, 여러분?"
+        },
+        {
+          "en": "I've had Sorcerio work up a special effect / so smoke comes out my ears when I yell.",
+          "ko": "소르세리오한테 특수 효과를 하나 만들게 했다. 내가 소리칠 때 귀에서 연기가 나오게 말이지.",
+          "literal": "나는 소르세리오에게 특수 효과를 하나 만들어 내게 했다 / 그래서 내가 소리칠 때 연기가 내 귀에서 나오도록"
+        },
+        {
+          "en": "You screwed up as a princess. / You screwed up as a nun. / Those are the only two girl things I know.",
+          "ko": "너는 공주로서도 망쳤고, 수녀로서도 망쳤다. 내가 아는 여자 일이라곤 그 둘뿐인데.",
+          "literal": "너는 공주로서 망쳤다 / 너는 수녀로서 망쳤다 / 그것들이 내가 아는 유일한 두 가지 여자 일이다"
+        },
+        {
+          "en": "You're a screwup, too. / What about that tax on yelling that you had? / It came back to haunt me!",
+          "ko": "아빠도 망친 사람이잖아요. 그 고함세는 어떻게 됐어요? / 그게 결국 나를 물고 늘어졌지!",
+          "literal": "당신도 망친 사람이에요 / 당신이 매겼던 그 고함에 대한 세금은 어떻게 됐어요? / 그것이 나를 괴롭히러 돌아왔다"
+        },
+        {
+          "en": "- This ain't about my impulse control. / - Or lack thereof, tubby.",
+          "ko": "- 이건 내 충동 조절 문제가 아니다. / - 아니면 그게 없는 문제죠, 뚱보님.",
+          "literal": "- 이건 내 충동 조절에 관한 게 아니다 / - 아니면 그것의 부재에 관한 것이죠, 뚱뚱보"
+        },
+        {
+          "en": "You're a good-for-nothing / and you're good at nothing.",
+          "ko": "너는 아무 쓸모도 없는 인간이고, 잘하는 것도 아무것도 없어.",
+          "literal": "너는 아무것에도 좋지 않은 자이고 / 그리고 너는 아무것도 잘하지 못한다"
+        },
+        {
+          "en": "- He didn't say that. / - Doesn't make it any less true.",
+          "ko": "- 아빠가 그런 말은 안 했어. / - 그렇다고 그게 덜 사실이 되는 건 아니지.",
+          "literal": "- 그는 그것을 말하지 않았어 / - 그것이 그걸 조금이라도 덜 사실로 만들지는 않아"
+        },
+        {
+          "en": "You know, in Hell, / I was a communications major.",
+          "ko": "그러니까, 나 지옥에 있을 때 커뮤니케이션 전공이었어.",
+          "literal": "그러니까, 지옥에서 / 나는 커뮤니케이션 전공자였어"
+        },
+        {
+          "en": "I've captured the witch who abducted those people in the woods, / way back to the Hansel and Gretel cold case.",
+          "ko": "숲에서 사람들을 납치한 마녀를 체포했습니다. 저 옛날 헨젤과 그레텔 미제 사건까지 거슬러 올라가는 자입니다.",
+          "literal": "저는 숲에서 그 사람들을 납치한 그 마녀를 붙잡았습니다 / 저 멀리 헨젤과 그레텔 미해결 사건까지 거슬러서"
+        },
+        {
+          "en": "Good work bringing her in alive and unharmed. / We'll chop her head off this afternoon.",
+          "ko": "산 채로, 상처 하나 없이 데려온 것 훌륭하네요. 오늘 오후에 목을 자를 겁니다.",
+          "literal": "그녀를 살아 있고 다치지 않은 상태로 데려온 것 잘했어요 / 우리는 오늘 오후에 그녀의 목을 자를 겁니다"
+        },
+        {
+          "en": "Oh, nothing a few days on the rack won't cure.",
+          "ko": "아, 고문대에서 며칠 지내면 못 나을 게 없죠.",
+          "literal": "오, 고문대에서의 며칠이 낫게 하지 못할 것은 아무것도 없죠"
+        },
+        {
+          "en": "Bean, you're a natural. / And I've seen you torture.",
+          "ko": "빈, 당신은 타고났어요. 고문하시는 것도 제가 봤고요.",
+          "literal": "빈, 당신은 타고난 사람이에요 / 그리고 저는 당신이 고문하는 것을 봤어요"
+        },
+        {
+          "en": "At least give us something to remember you by. / What is wrong with you? / It's like you want me to chop your head off.",
+          "ko": "최소한 당신을 기억할 만한 거라도 남겨주세요. / 왜 이러세요? 꼭 제가 목을 잘라주기를 바라는 사람 같잖아요.",
+          "literal": "최소한 우리에게 당신을 기억할 무언가를 주세요 / 당신에게 무엇이 잘못된 거예요? / 마치 당신이 내가 당신 목을 자르기를 원하는 것 같아요"
+        },
+        {
+          "en": "You can do it, Bean. / Just use the force. Centrifugal force.",
+          "ko": "할 수 있어요, 빈. 그냥 포스를 쓰세요. 원심력이라는 포스요.",
+          "literal": "당신은 할 수 있어요, 빈 / 그냥 그 힘을 쓰세요. 원심력을요"
+        },
+        {
+          "en": "Failure slash quitter slash loser. / The triple-threat.",
+          "ko": "실패자 겸 포기자 겸 찌질이. 3종 세트죠.",
+          "literal": "실패자 사선 포기자 사선 패배자 / 그 삼중 위협"
+        },
+        {
+          "en": "Every time that girl gets a little responsibility, / somebody winds up alive.",
+          "ko": "저 애한테 조금이라도 책임을 맡기면, 꼭 누군가가 살아남고 만다니까.",
+          "literal": "저 여자애가 조금의 책임을 얻을 때마다 / 누군가가 결국 살아 있게 된다"
+        },
+        {
+          "en": "Maybe I'm just not cut out / for the high-pressure lifestyle of the big city.",
+          "ko": "어쩌면 나는 대도시의 고압적인 삶에 맞는 사람이 아닌지도 몰라.",
+          "literal": "어쩌면 나는 그냥 재단되어 있지 않아 / 대도시의 고압적인 생활 방식에는"
+        },
+        {
+          "en": "He might as well just pour butter on himself. / He is!",
+          "ko": "저러다 자기 몸에 직접 버터를 부어도 이상할 게 없겠네. / 진짜 붓고 있어!",
+          "literal": "그는 그냥 자기 자신에게 버터를 붓는 게 나을 지경이야 / 그가 그러고 있어"
+        },
+        {
+          "en": "Und none of them are dusted / mit sleeping powder.",
+          "ko": "그리고 그중 어느 것에도 수면 가루는 뿌려져 있지 않아.",
+          "literal": "그리고 그것들 중 어느 것도 뿌려져 있지 않아 / 수면 가루가"
+        },
+        {
+          "en": "Never send a princess / to do a demon's job.",
+          "ko": "악마가 할 일을 공주에게 보내는 게 아니지.",
+          "literal": "절대 공주를 보내지 마라 / 악마의 일을 하도록"
+        },
+        {
+          "en": "As rewarding as it is to kill people, / nothing feels better / than sparing the life of one innocent person.",
+          "ko": "사람을 죽이는 일도 보람차긴 하지만, 무고한 한 사람의 목숨을 살려주는 것만큼 기분 좋은 일은 없죠.",
+          "literal": "사람들을 죽이는 것이 보람찬 만큼이나 / 어떤 것도 더 좋게 느껴지지는 않아요 / 무고한 한 사람의 목숨을 살려주는 것보다"
+        },
+        {
+          "en": "But my one solace is knowing / I can return to my beautiful candy home. / And spend my remaining years tending to my twin sister who lives in the attic.",
+          "ko": "그래도 내 하나뿐인 위안은 아름다운 사탕 집으로 돌아갈 수 있다는 걸 안다는 거야. 그리고 다락방에 사는 쌍둥이 자매를 돌보며 남은 세월을 보내는 거지.",
+          "literal": "하지만 나의 하나뿐인 위안은 아는 것이야 / 내가 나의 아름다운 사탕 집으로 돌아갈 수 있다는 것을 / 그리고 다락방에 사는 내 쌍둥이 자매를 돌보며 남은 세월을 보내는 것을"
+        },
+        {
+          "en": "I hereby award myself this medal / for the extraordinary parenting / that turned you from a worthless, bucktoothed degenerate to a ruthless executioner with a beautiful smile.",
+          "ko": "나는 이로써 나 자신에게 이 훈장을 수여한다. 쓸모없고 뻐드렁니 난 망종이던 너를, 아름다운 미소를 가진 무자비한 사형 집행인으로 바꿔놓은 그 탁월한 양육에 대하여.",
+          "literal": "나는 이로써 나 자신에게 이 훈장을 수여한다 / 그 탁월한 양육에 대하여 / 쓸모없고 뻐드렁니 난 타락자였던 너를 아름다운 미소를 가진 무자비한 사형 집행인으로 바꿔놓은"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "on account of + 동명사와 그 의미상 주어",
+          "explanation": "on account of my bed being a granite slab은 because my bed was a granite slab과 같은 뜻입니다. on account of는 because of와 같은 전치사구이므로 뒤에는 절이 아니라 명사나 동명사가 와야 합니다. 여기서 동명사 being의 의미상 주어가 소유격 my bed로 앞에 붙어 있습니다(구어에서는 my bed being처럼 목적격·기본형을 그대로 쓰는 것이 더 흔합니다). 이렇게 '명사 + 동명사'로 절 하나를 명사구로 압축하는 기술은 C1 수준의 핵심 문형이며, 격식체 문서와 회화 모두에서 자주 쓰입니다.",
+          "fromScript": "I didn't get a lot of sleep on account of my bed being a granite slab.",
+          "example": "The trip was cancelled on account of the roads being closed all week."
+        },
+        {
+          "point": "have + 목적어 + 원형 (사역) — I've had Sorcerio work up ~",
+          "explanation": "I've had Sorcerio work up a special effect에서 have는 '~에게 …하게 시켰다'는 사역동사이므로 뒤에 목적격 + 원형이 옵니다(work가 아니라 to work가 아님에 주의). 사람에게 시킬 때는 have나 get을 쓰고(I got him to fix it은 to부정사), 사물이 당하는 경우에는 have + 목적어 + 과거분사가 됩니다(I had my hair cut). work up은 '공들여 만들어 내다'라는 구동사입니다. 뒤의 so smoke comes out my ears는 목적을 나타내는 so (that)절이고, out 뒤의 of가 생략된 come out my ears도 구어에서 자연스러운 형태입니다.",
+          "fromScript": "I've had Sorcerio work up a special effect so smoke comes out my ears when I yell.",
+          "example": "I had my students write their questions on cards before the discussion."
+        },
+        {
+          "point": "어근 반복으로 만드는 모욕 — a good-for-nothing / good at nothing",
+          "explanation": "You're a good-for-nothing and you're good at nothing.은 같은 재료로 두 번 때리는 문장입니다. 앞의 good-for-nothing은 하이픈으로 묶인 명사로 '아무 쓸모 없는 인간'을 뜻하고, 뒤의 good at nothing은 형용사구로 '어떤 것도 잘하지 못한다'는 뜻입니다. 전치사 for와 at의 차이가 명사와 형용사구를 갈라놓습니다. be good for(~에 유용하다)와 be good at(~을 잘한다)의 구별은 학습자가 자주 틀리는 지점이므로, 이 한 문장으로 두 용법을 동시에 정리할 수 있습니다. 참고로 앞 대사의 screwup(명사)과 screw up(동사구)도 하이픈 없이 붙여 쓰면 명사가 된다는 같은 원리입니다.",
+          "fromScript": "You're a good-for-nothing and you're good at nothing.",
+          "example": "He is not good at planning, but he is very good for morale."
+        },
+        {
+          "point": "주어 생략 + not any less — Doesn't make it any less true",
+          "explanation": "완전한 문장은 That doesn't make it any less true입니다. 구어에서는 앞 발언 전체를 가리키는 주어 That이 자주 생략됩니다. make + 목적어 + 형용사 구문에 비교급 less true가 들어가고, any는 비교급을 강조하는 부사로 부정문에서만 쓰입니다(any better, any worse). 뜻은 '그래도 사실인 건 마찬가지야'입니다. 상대가 사실 관계를 정정했을 때 '그건 인정하지만 결론은 안 바뀐다'고 받아치는 매우 유용한 회화 표현이고, 여기서는 조그가 실제로 하지 않은 말을 루시가 요약해 준 뒤 쓰는 것이라 더 잔인하게 들립니다.",
+          "fromScript": "-He didn't say that. -Doesn't make it any less true.",
+          "example": "You did not say it out loud, but that doesn't make it any less obvious."
+        },
+        {
+          "point": "관계절 안의 부정으로 만든 이중부정 관용 — nothing ~ won't cure",
+          "explanation": "Oh, nothing a few days on the rack won't cure.는 nothing (that) a few days on the rack won't cure에서 관계대명사가 생략된 명사구입니다. 직역하면 '고문대에서 며칠이 낫게 하지 못할 것은 아무것도 없다'이고, 결국 '그 정도면 다 낫는다'는 강한 긍정이 됩니다. 원래 형태는 It's nothing a good night's sleep won't cure처럼 It's가 앞에 붙는 정형 위로 표현입니다. 여기서는 위로의 관용구에 고문 도구를 대입해서, 형식은 다정하고 내용은 잔혹한 문장을 만들었습니다. 이중부정 관용구는 문자 그대로 계산하면 반대로 읽히기 쉬우므로 통째로 익혀 두는 편이 안전합니다.",
+          "fromScript": "Oh, nothing a few days on the rack won't cure.",
+          "example": "It is nothing a strong cup of coffee and a quiet hour won't cure."
+        },
+        {
+          "point": "As + 형용사 + as it is ~ — 양보 구문",
+          "explanation": "As rewarding as it is to kill people, nothing feels better than…은 Although it is very rewarding to kill people과 같은 양보 구문입니다. 형태는 'As + 형용사/부사 + as + 주어 + 동사'이며, 미국 영어에서는 앞의 as를 그대로 두고, 영국 영어에서는 Rewarding as it is처럼 첫 as를 생략하는 형태도 씁니다. 뒤에는 반드시 대조되는 주절이 옵니다. 이 문장은 격식 있는 연설의 문형인데, 그 안에 채워진 내용이 '사람을 죽이는 것도 보람차지만'이라는 전제입니다. 즉 살인이 보람차다는 것을 이미 합의된 사실로 깔아 놓고 그보다 더 좋은 것을 이야기하는 구조여서, 문형이 격식일수록 내용의 끔찍함이 도드라집니다.",
+          "fromScript": "As rewarding as it is to kill people, nothing feels better than sparing the life of one innocent person.",
+          "example": "As tiring as it is to teach all day, nothing beats a class that finally understands."
+        },
+        {
+          "point": "be cut out for / wind up + 형용사 — 적성과 결말을 말하는 구동사",
+          "explanation": "I'm just not cut out for the high-pressure lifestyle of the big city에서 be cut out for는 '~에 적합한 사람이다'라는 뜻으로, 옷감을 몸에 맞게 재단한다는 비유에서 왔습니다. 주로 부정문에서 쓰입니다. wind up은 '결국 ~하게 되다'로, 뒤에 형용사나 동명사가 옵니다(wound up alive, wound up paying twice). 조그의 somebody winds up alive는 이 구문의 좋은 예이면서 동시에 가치 전도의 농담입니다. 보통 wind up dead(결국 죽고 만다)가 관용적 짝인데, dead 자리에 alive를 넣어 '살아남는 것이 문제'라는 세계관을 한 단어로 뒤집었습니다.",
+          "fromScript": "Every time that girl gets a little responsibility, somebody winds up alive.",
+          "example": "I am not cut out for early mornings, so I always wind up late in winter."
+        },
+        {
+          "point": "hereby와 turn A from B to C — 공문서의 문체",
+          "explanation": "I hereby award myself this medal에서 hereby는 '이 문서·이 발언으로써'를 뜻하는 법률·공문서 부사로, 선언 자체가 효력을 발생시키는 수행문(performative)에 붙습니다(I hereby declare…). 뒤의 turned you from a worthless, bucktoothed degenerate to a ruthless executioner는 turn A from B to C(A를 B에서 C로 바꾸다) 구문이고, from 뒤와 to 뒤에 같은 종류의 명사구가 대칭으로 놓입니다. 웃음은 세 겹입니다. 첫째, 훈장을 남이 아니라 자기가 자기에게 줍니다. 둘째, 딸의 성취를 자기 양육 공로로 가져갑니다. 셋째, '개선'의 도착점이 무자비한 사형 집행인입니다.",
+          "fromScript": "I hereby award myself this medal for the extraordinary parenting that turned you from a worthless, bucktoothed degenerate to a ruthless executioner with a beautiful smile.",
+          "example": "I hereby declare this the last meeting we will hold about meetings."
+        }
+      ],
+      "background": [
+        {
+          "topic": "수녀원과 서약 — 딸을 보내는 곳으로서의 수도원",
+          "detail": "중세 유럽에서 결혼시킬 수 없거나 다루기 힘든 귀족 여성을 수도원에 보내는 것은 흔한 처분이었습니다. 빈이 수녀원에 들어가는 것도 형벌이자 보관입니다. 화강암 침대, 새벽 기도, 묽은 수프 같은 소품은 실제 수도 생활의 금욕을 과장한 것이고, 자매들이 부르는 찬가는 '인간은 구제할 길이 없다'는 식으로 인간 혐오를 노래하는 가짜 성가입니다. 노래는 각운 때문에 어순과 문법이 다소 뒤틀리는데, 이는 실제 찬송가 번안에서도 흔한 현상입니다. 빈이 쫓겨나는 이유가 신앙심 부족이 아니라 논리라는 점이 이 장면의 핵입니다."
+        },
+        {
+          "topic": "금 성상을 녹여 나눠주자는 제안 — 종교 비판의 고전적 논법",
+          "detail": "빈은 가난한 이를 위해 기도하는 자매들에게, 그 금 성상을 녹여 동전처럼 나눠주면 되지 않느냐고 묻습니다. 이것은 종교 기관의 부에 대한 오래된 비판을 아주 짧게 압축한 것입니다. 결정타는 Cut out the middle-man입니다. 유통 단계를 없애 원가를 낮춘다는 상거래 표현인데, 여기서 중간 상인 자리에 놓인 것이 신이기 때문에 신성 모독이 됩니다. 원장 수녀의 반응도 정확히 대칭입니다. How dare you bring logic into God's house?, 즉 문제는 무례가 아니라 논리를 가져왔다는 것입니다. 신앙과 논리를 양립 불가능한 것으로 못 박는 이 대사가 장면 전체의 요약입니다."
+        },
+        {
+          "topic": "헨젤과 그레텔 — 원작을 미제 사건으로 다시 읽기",
+          "detail": "이 화 후반은 그림 형제의 '헨젤과 그레텔'을 배경 삼습니다. 원작은 사탕 집으로 아이들을 유인해 잡아먹으려는 마녀를 아이들이 화덕에 밀어 넣고 살아나는 이야기입니다. 작품은 여기에 두 가지를 덧입힙니다. 첫째, 사건을 the Hansel and Gretel cold case, 즉 오래된 미제 사건으로 부릅니다. cold case는 미국 수사 드라마의 용어이고, 동화를 형사 사건 기록으로 바꿔 읽는 순간 마녀는 연쇄 납치범이 됩니다. 둘째, 구출되어야 할 아이들이 실은 마녀를 만나기 전부터 이미 미쳐 있었다고 밝혀집니다. 즉 피해자와 가해자의 위치를 뒤집는 방식으로 동화를 다시 씁니다. 마지막에 마녀가 다락방의 쌍둥이 자매를 언급하는 것도 서양 고딕 소설의 상투적 장치를 한 줄로 인용한 농담입니다."
+        },
+        {
+          "topic": "구직과 직업 정체성 — 현대 노동 어휘로 채워진 중세",
+          "detail": "빈이 처음으로 자기 힘으로 일자리를 구하는 이 화는 미국 코미디의 '첫 직장' 에피소드 구조를 그대로 씁니다. 조수를 구하는 사람은 My apprentice has gone missing under mysterious circumstances처럼 채용 공고 화법으로 결원 사유를 알리고, I hope you don't mind wearing a uniform이라며 근무 조건을 확인합니다. 사형 집행인 조수라는 직업만 빼면 완전히 현대의 아르바이트 면접입니다. 루시의 in Hell, I was a communications major도 같은 계열로, communications는 미국 대학에서 취업이 애매한 전공을 대표하는 농담 소재입니다. 여기서 웃음은 직업의 종류와 그것을 말하는 어휘의 시대 차이에서 나옵니다."
+        },
+        {
+          "topic": "스타워즈 패러디 — use the force의 두 얼굴",
+          "detail": "처형대에서 조수가 Just use the force. Centrifugal force.라고 말합니다. Use the Force는 '스타워즈'에서 스승이 제자에게 우주의 힘을 믿으라고 할 때 쓰는 유명한 대사입니다. 관객이 그 신화적 순간을 떠올린 직후 뒤에 centrifugal(원심의)이 붙으면서, 신비한 힘은 도끼를 크게 휘두를 때 작용하는 물리학으로 강등됩니다. 영어에서 force가 '초자연적 힘'과 '물리학의 힘'을 동시에 뜻하기 때문에 성립하는 말장난이고, 앞말을 뒤에서 정정해 웃음을 만드는 이 구조는 이 작품이 가장 자주 쓰는 농담 형식입니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "빈은 왜 수녀원에서 쫓겨나며, 그 결정적인 대사는 무엇인가?",
+          "answer": "빈은 신앙심이 없어서가 아니라 논리를 들이댔기 때문에 쫓겨납니다. 자매들이 가난한 이를 도와달라고 기도하는 것을 보고, 저 금 성상을 녹여 동전처럼 나눠주면 되지 않느냐고 제안하고, 유통 단계를 줄인다는 뜻의 Cut out the middle-man을 덧붙입니다. 그 중간 단계가 신이라는 점에서 신성 모독이 되고, 원장 수녀는 How dare you bring logic into God's house?라고 응수합니다. 빈은 마차에서 내던져지면서 '내 발로 내리려고 했다'고 말하는데, 이것이 이 화 내내 반복되는 빈의 방식입니다. 쫓겨난 뒤에 자기 의지였다고 주장하는 것입니다."
+        },
+        {
+          "question": "조그와 빈의 말다툼에서 서로가 상대의 무엇을 지적하는지, 그리고 조그의 마지막 조건은 무엇인가?",
+          "answer": "조그는 빈이 공주로서도, 수녀로서도 실패했다고 말하고, 자기가 아는 여자의 일은 그 둘뿐이라고 덧붙입니다. 즉 딸의 진로를 두 가지로만 상상할 수 있다는 자기 한계를 스스로 드러냅니다. 빈은 아버지도 실패자라며 '고함에 매기는 세금'을 예로 들고, 조그는 그 세금이 결국 자기에게 돌아와 자기를 물고 늘어졌다고 인정합니다(It came back to haunt me). 루시는 충동 조절이 문제가 아니라는 조그의 말에 Or lack thereof, tubby라고 끼어들어 '조절 능력이 없는 것이 문제'라고 정정합니다. 조그는 결국 빈을 성에서 내보내고, 자기가 소리치는 데 쏟아부은 돈의 소중함을 깨닫기 전에는 돌아오지 말라는 조건을 붙입니다."
+        },
+        {
+          "question": "빈이 결국 얻은 직업은 무엇이며, 그 일에 실패한 이유와 성공하게 된 계기는 무엇인가?",
+          "answer": "빈은 여러 일자리를 시도하다 실패하고, 조수가 사라진 자리를 채워 사형 집행인의 견습이 됩니다. 고문 기술은 오히려 재능을 보이지만(Bean, you're a natural), 처형은 못 합니다. 마녀와 이야기를 나누다가 그가 원해서 마녀가 된 것이 아닐 수도 있다는 데 생각이 미치고, 자기 역시 남들이 기대하는 공주 역할을 강요당한다는 점에서 서로를 겹쳐 보게 됩니다. 결국 마녀를 살려 보내고, 그래서 아버지에게 '실패자 겸 포기자 겸 찌질이'라는 평가를 받습니다. 성공 계기는 후반의 사탕 집 사건입니다. 헨젤과 그레텔에게 엘포가 잡아먹힐 위기에 놓이자 빈이 두 사람을 죽이고, 이 일로 조그는 딸이 마침내 쓸모 있는 인간이 되었다고 판단합니다."
+        },
+        {
+          "question": "헨젤과 그레텔 이야기는 원작에서 어떻게 뒤집혀 있는가?",
+          "answer": "원작에서는 마녀가 사탕 집으로 아이들을 유인해 잡아먹으려 하고, 아이들이 마녀를 화덕에 밀어 넣어 탈출합니다. 이 화에서는 세 가지가 뒤집힙니다. 첫째, 마녀는 이미 체포되어 처형을 기다리는 미제 사건의 용의자로 등장하며, 빈에게 목숨을 구걸하는 쪽입니다. 둘째, 사탕 집을 운영하며 손님을 살찌워 잡아먹는 쪽은 헨젤과 그레텔 남매입니다. 셋째, 남매는 마녀에게 감금당해 미친 것이 아니라 만나기 전부터 이미 미쳐 있었다고 스스로 밝힙니다(we were crazy long before we met the witch). 즉 이 화는 동화의 도덕 구도, 즉 순진한 아이와 사악한 어른이라는 배치를 통째로 무너뜨립니다."
+        },
+        {
+          "question": "마지막에 조그가 자기 자신에게 훈장을 수여하는 장면은 이 화의 주제와 어떻게 이어지는가?",
+          "answer": "이 화는 빈이 처음으로 자기 힘으로 일자리를 구하고 자기 판단으로 사람을 살리는 이야기입니다. 그런데 마지막 장면에서 조그는 그 모든 성과를 자기 공로로 회수합니다. 훈장의 수여 대상은 빈이 아니라 자기 자신이고, 명목은 '탁월한 양육'이며, 그 양육의 결과로 딸이 쓸모없는 존재에서 무자비한 사형 집행인이 되었다고 기술합니다. hereby(이로써)라는 공문서 부사와 turn A from B to C라는 격식 구문 때문에 형식은 완벽하게 엄숙하지만, 내용은 자기 표창이고 도착점은 처형 기술의 습득입니다. 빈이 실제로 배운 것은 살려주는 결정이었으므로, 아버지가 상을 주는 이유와 딸이 실제로 성장한 지점은 어긋나 있습니다. 이 어긋남이 시즌 전체에서 반복되는 부녀 관계의 구조입니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 6,
+      "title": "6. 수확제와 댕크마이어 대사",
+      "chunks": [
+        {
+          "en": "Next to present their bountiful harvest, / for His Majesty's blessing and immediate confiscation,",
+          "ko": "다음은 풍성한 수확물을 바칠 차례입니다. 국왕 폐하의 축복과 즉각적인 몰수를 받으시겠습니다.",
+          "literal": "다음으로 그들의 풍성한 수확물을 바칠 차례입니다 / 폐하의 축복과 즉각적인 몰수를 위하여"
+        },
+        {
+          "en": "Ah, I'm just screwing with you, / liven things up a little.",
+          "ko": "아, 그냥 놀려 본 거야. 분위기 좀 띄우려고.",
+          "literal": "아, 나는 그냥 너를 가지고 장난치는 거야 / 분위기를 좀 활기차게 만들려고"
+        },
+        {
+          "en": "I made you the biggest, itchiest wool sweater I could, / but if it's too snug, / you can give it to your fat, wimpy son.",
+          "ko": "제가 만들 수 있는 가장 크고 가장 따끔거리는 양털 스웨터를 지어 왔습니다. 너무 조이면 그 뚱뚱하고 겁 많은 아들놈에게 주셔도 됩니다.",
+          "literal": "저는 제가 할 수 있는 가장 크고 가장 따끔거리는 양털 스웨터를 당신께 만들어 드렸습니다 / 하지만 그것이 너무 꽉 낀다면 / 당신은 그것을 당신의 뚱뚱하고 겁 많은 아들에게 줄 수 있습니다"
+        },
+        {
+          "en": "Bean, thank this nice creep / so he'll move along.",
+          "ko": "빈, 이 친절한 변태한테 고맙다고 해. 그래야 저리 가.",
+          "literal": "빈, 이 착한 소름 끼치는 놈에게 감사해라 / 그래서 그가 지나가 버리도록"
+        },
+        {
+          "en": "I only ask that girl to do two things: / Sit here and stay sober. / And she never does neither.",
+          "ko": "내가 저 애한테 바라는 건 딱 두 가지야. 여기 앉아 있기, 그리고 술 안 마시기. 그런데 둘 다 한 번도 안 지켜.",
+          "literal": "나는 저 여자애에게 오직 두 가지를 하라고 요구한다 / 여기 앉아 있기 그리고 술 취하지 않은 상태로 있기 / 그리고 그녀는 절대 둘 중 어느 것도 하지 않는다"
+        },
+        {
+          "en": "The guy with the goofy shoes, / reeks of flop sweat and licorice...",
+          "ko": "그 우스꽝스러운 신발 신고, 무대 망친 식은땀과 감초 냄새가 진동하는 놈…",
+          "literal": "그 우스꽝스러운 신발을 신은 그 남자 / 무대 망친 식은땀과 감초 냄새가 진동하는"
+        },
+        {
+          "en": "So, now you're telling me your tail has a mind of its own? / Cause before, you said it was prehensile. / So, just saying.",
+          "ko": "그러니까 이제는 네 꼬리가 제멋대로 움직인다는 거야? 전에는 물건을 붙잡을 수 있다고 했잖아. 아니, 그냥 그렇다고.",
+          "literal": "그래서, 이제 너는 나에게 네 꼬리가 그것 자신의 생각을 가지고 있다고 말하는 거야? / 왜냐하면 전에 너는 그것이 붙잡을 수 있는 것이라고 말했으니까 / 그래서, 그냥 말해 보는 거야"
+        },
+        {
+          "en": "You barely noticed / when I traded places with that pauper for a year.",
+          "ko": "내가 그 거지랑 1년이나 신분을 바꿔 살았을 때도 아빠는 거의 눈치도 못 챘잖아.",
+          "literal": "아빠는 거의 알아채지 못했어 / 내가 저 빈민과 1년 동안 자리를 바꿨을 때"
+        },
+        {
+          "en": "I don't see problem. / Your daughter feel useless / because she is useless.",
+          "ko": "문제 없다고 봐. 당신 딸이 쓸모없다고 느끼는 건 실제로 쓸모없기 때문이지.",
+          "literal": "나는 문제를 보지 않는다 / 당신의 딸은 쓸모없다고 느낀다 / 왜냐하면 그녀는 쓸모없기 때문이다"
+        },
+        {
+          "en": "I don't want Bean to be unhappy. / Can't we throw her a bone?",
+          "ko": "빈이 불행한 건 싫어. 뭐라도 하나 던져 주면 안 되나?",
+          "literal": "나는 빈이 불행해지기를 원하지 않는다 / 우리가 그녀에게 뼈 하나를 던져 줄 수 없을까?"
+        },
+        {
+          "en": "Give her some phony-baloney job / with a fancy title and a sash.",
+          "ko": "거창한 직함하고 어깨띠나 하나 딸린 허울뿐인 자리를 줘 버려.",
+          "literal": "그녀에게 어떤 가짜 엉터리 일자리를 줘라 / 화려한 직함과 어깨띠가 딸린"
+        },
+        {
+          "en": "Aren't ambassadorships usually just given to rich chumps / to make them feel important?",
+          "ko": "대사 자리라는 건 원래 돈 많은 얼간이들 기분 좋게 해 주려고 주는 거 아니었어요?",
+          "literal": "대사직은 보통 그냥 돈 많은 얼간이들에게 주어지는 것 아닌가요 / 그들이 자신을 중요하다고 느끼게 만들기 위해서?"
+        },
+        {
+          "en": "I'm so excited, / my skin is breaking out in sprinkles.",
+          "ko": "너무 신나서 피부에 색색깔 알사탕이 돋아나고 있어.",
+          "literal": "나는 너무 흥분했다 / 내 피부가 알사탕 가루로 돋아나고 있다"
+        },
+        {
+          "en": "\"Warm refers to the sweltering temperature, / not the notoriously grim locals.\"",
+          "ko": "\"'따뜻하다'는 것은 푹푹 찌는 기온을 가리키는 말이며, 악명 높게 음침한 현지인들을 가리키는 말이 아니다.\"",
+          "literal": "\"따뜻하다는 말은 푹푹 찌는 기온을 가리킨다 / 악명 높게 음침한 현지인들이 아니라\""
+        },
+        {
+          "en": "\"They consider it rude / to bow without bowing first.\"",
+          "ko": "\"그들은 먼저 절하지 않은 상태로 절하는 것을 무례하다고 여긴다.\"",
+          "literal": "\"그들은 그것을 무례하다고 여긴다 / 먼저 절하지 않고 절하는 것을\""
+        },
+        {
+          "en": "Mr. Chancellor, we are at your disposal / and keen to experience more of your local culture.",
+          "ko": "총리님, 저희는 분부만 내려 주시면 언제든 따르겠고, 이곳 문화를 더 많이 경험하고 싶습니다.",
+          "literal": "총리님, 저희는 당신의 처분에 맡겨져 있습니다 / 그리고 당신들의 지역 문화를 더 경험하기를 열망합니다"
+        },
+        {
+          "en": "It's taken centuries, but / our civilization has literally risen out of the muck / to have one of the finest community playhouses around.",
+          "ko": "수백 년이 걸렸지만, 우리 문명은 말 그대로 진흙탕에서 일어나 이 근방에서 가장 훌륭한 주민 극장 중 하나를 갖게 되었습니다.",
+          "literal": "수백 년이 걸렸지만 / 우리 문명은 문자 그대로 진흙에서 일어섰습니다 / 이 근방에서 가장 훌륭한 주민 극장 중 하나를 갖기에 이르도록"
+        },
+        {
+          "en": "This thing better not be a musical. / No, but it is one of those plays / where the actors come out into the audience and bother people.",
+          "ko": "이거 뮤지컬이면 진짜 안 돼. — 아니야. 대신 배우들이 객석까지 내려와서 관객을 귀찮게 하는 그런 종류의 연극이야.",
+          "literal": "이것은 뮤지컬이 아닌 것이 좋을 거야 / 아니야, 하지만 그것은 그런 연극들 중 하나야 / 배우들이 관객석으로 나와서 사람들을 괴롭히는"
+        },
+        {
+          "en": "Who's that fat kid with the crown / supposed to be?",
+          "ko": "왕관 쓴 저 뚱뚱한 애는 누구를 나타내는 거야?",
+          "literal": "왕관을 쓴 저 뚱뚱한 아이는 누구 / 인 것으로 되어 있는 거야?"
+        },
+        {
+          "en": "That husky kid's / a real tour de force.",
+          "ko": "그 덩치 좋은 아이, 연기가 정말 압도적이네요.",
+          "literal": "저 다부진 아이는 / 진짜 대가의 솜씨예요"
+        },
+        {
+          "en": "as long as you remember / our entire flimsy alliance depends on it going perfect.",
+          "ko": "우리 이 허술한 동맹 전체가 그 연설이 완벽하게 되느냐에 달려 있다는 것만 기억하면 돼.",
+          "literal": "네가 기억하는 한 / 우리의 전체 허술한 동맹이 그것이 완벽하게 되는 것에 달려 있다는 것을"
+        },
+        {
+          "en": "And the one surefire way to unleash your creative juice / is with creative juice.",
+          "ko": "그리고 창작의 샘을 터뜨리는 확실한 방법은 딱 하나, 바로 창작의 술이지.",
+          "literal": "그리고 너의 창작의 즙을 풀어놓는 확실한 한 가지 방법은 / 창작의 즙으로 하는 것이다"
+        },
+        {
+          "en": "Considering that twerp is heir apparent to the throne / on whom the future of our kingdom already rests, / yeah.",
+          "ko": "저 쪼끄만 놈이 이미 우리 왕국의 미래가 걸려 있는 왕위 계승 서열 1위라는 점을 생각하면, 네, 그렇습니다.",
+          "literal": "저 하찮은 놈이 왕좌의 확정 상속자라는 점을 고려한다면 / 그에게 우리 왕국의 미래가 이미 놓여 있는 / 네"
+        },
+        {
+          "en": "Go on now. Down the hatch. / Just butter 'em up with a nice toast.",
+          "ko": "자, 어서. 쭉 들이켜. 그리고 그럴듯한 건배사로 저 사람들 기분 좀 살살 풀어 줘.",
+          "literal": "자 이제 계속해. 뚜껑문 아래로 / 그냥 멋진 건배로 그들에게 버터를 발라라"
+        },
+        {
+          "en": "Pay no attention / to the naked ambassador on the chandelier.",
+          "ko": "샹들리에에 매달린 벌거벗은 대사에게는 신경 쓰지 마십시오.",
+          "literal": "전혀 주의를 기울이지 마십시오 / 샹들리에 위의 벌거벗은 대사에게는"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "이중부정 never ... neither — 비표준 강조",
+          "explanation": "표준 문법으로는 And she never does either 또는 And she does neither가 맞습니다. 조그는 never와 neither를 겹쳐 써서 부정을 두 번 얹었는데, 이것은 오류가 아니라 미국 구어에서 부정을 강조하는 오래된 방식입니다. I don't know nothing, We ain't got no money도 같은 원리로, 두 부정이 서로 상쇄되어 긍정이 되는 것이 아니라 누적되어 '전혀 …아니다'가 됩니다. 이 화법은 사회적으로 표시가 강해서, 교육 수준이 낮거나 거친 인물을 그리는 장치로 쓰입니다. 왕관을 쓴 사람이 이 말투를 쓴다는 것 자체가 이 작품의 기본 농담입니다. 읽을 때는 알아보아야 하지만 직접 쓸 문형은 아닙니다.",
+          "fromScript": "And she never does neither.",
+          "example": "He never told nobody where he hid the key, and now nobody can get in."
+        },
+        {
+          "point": "get + 과거분사 — 구어체 수동태와 구동사의 전치사 잔류",
+          "explanation": "be동사 수동태가 상태에 가깝다면 get 수동태는 '사건이 벌어졌다', 특히 '당했다'는 느낌을 줍니다. Bean got yelled at은 야단을 맞는 사건이 지금 진행되고 있다는 생생한 표현이고, 여기서는 getting yelled at으로 진행형까지 겹쳤습니다. 중요한 포인트는 yell at처럼 전치사가 붙은 구동사를 수동으로 만들면 그 전치사가 동사 뒤에 그대로 남는다는 것입니다(yelled at by her dad). laughed at, looked after, taken care of도 같습니다. 한국어 학습자는 at을 빠뜨리기 쉬우니 '구동사는 통째로 하나의 동사'라고 외우는 편이 낫습니다.",
+          "fromScript": "Bean's getting yelled at by her dad.",
+          "example": "My bicycle got stolen while I was standing in line for coffee."
+        },
+        {
+          "point": "최상급 + 관계절 안의 동사 생략 (the biggest ... I could)",
+          "explanation": "I made you the biggest, itchiest wool sweater I could에서 I could 뒤에는 make (you)가 생략되어 있습니다. 최상급 뒤에 I could, I could find, I could afford 같은 꼬리를 붙여 '내 능력 범위에서 최대한'을 표현하는 아주 흔한 틀이며, as big as I could와 같은 계열입니다. 또 the biggest, itchiest처럼 최상급 형용사를 쉼표로 이어 붙일 수 있는데, 여기서 농담은 두 번째 형용사입니다. 크게 만든 것은 선물이지만 '가장 따끔거리게' 만든 것은 자랑거리가 아닙니다. 농부는 자기가 최선을 다했다는 말투로 사실은 왕에게 고문 도구를 바치고 있습니다.",
+          "fromScript": "I made you the biggest, itchiest wool sweater I could.",
+          "example": "She gave me the longest, dullest explanation she could, just to make me stop asking."
+        },
+        {
+          "point": "be supposed to be — 의무가 아니라 '설정상 무엇인가'",
+          "explanation": "be supposed to에는 두 갈래가 있습니다. 하나는 의무·기대(You're supposed to knock, 노크해야 하는데), 다른 하나는 '~인 것으로 되어 있다'는 설정·통념(This is supposed to be the best bakery in town)입니다. 여기서는 두 번째입니다. 조그는 연극 무대 위의 배역을 보고 '저건 누구를 나타내기로 한 인물이냐'고 묻고 있습니다. 이 문형은 의문사가 문장 앞으로 나가고 be동사가 그 뒤에 오며 supposed to be가 남는 어순(Who is X supposed to be?)이 통째로 굳어 있습니다. 농담은 그가 자기 자신을 못 알아본다는 것입니다. 무대 위의 뚱뚱한 왕관 쓴 아이는 조그입니다.",
+          "fromScript": "Who's that fat kid with the crown supposed to be?",
+          "example": "What exactly is this grey lump on my plate supposed to be?"
+        },
+        {
+          "point": "동명사의 의미상 주어, 그리고 형용사를 부사 자리에 쓰는 구어",
+          "explanation": "depend on은 전치사 on으로 끝나므로 뒤에 that절을 붙일 수 없고 명사나 동명사가 와야 합니다. 그래서 '그것이 완벽하게 진행되는 것'을 it going으로 압축했습니다. it이 동명사 going의 의미상 주어이고, 격식체라면 its going이 되지만 구어에서는 목적격이나 기본형이 정상입니다. 두 번째 포인트는 going perfect입니다. 표준 문법은 going perfectly인데, 미국 구어는 형용사를 부사 자리에 그대로 쓰는 일이 아주 많습니다(drive slow, real good, come quick). 오류로 표시하지 말고 '입말 표시'로 읽으십시오. 여기서는 격식을 갖춰 대사에게 지시하는 장면에서 문장 끝만 입말로 풀어지는 대비가 웃음을 만듭니다.",
+          "fromScript": "our entire flimsy alliance depends on it going perfect",
+          "example": "The whole trip depended on the ferry leaving on time."
+        },
+        {
+          "point": "전치사 + 관계대명사 whom, 그리고 선행사가 멀어질 때",
+          "explanation": "rest on은 '~에 달려 있다'입니다. 이것을 관계절로 만들면 전치사가 관계대명사 앞으로 끌려 나와 on whom the future ... rests가 됩니다. 구어라면 who the future rests on이 되고 격식체는 on whom 쪽입니다. 여기서 진짜 어려운 점은 선행사의 위치입니다. 어순상 on whom은 바로 앞의 throne에 붙어 있는 것처럼 보이지만, whom은 사람에게만 쓰므로 실제 선행사는 저 앞의 that twerp입니다. 이런 애매성은 격식체 영어에서 흔히 나타나며, 사람인지 사물인지로 who/which를 갈라 읽는 훈련이 필요합니다. 덧붙여 heir apparent는 명사 뒤에 형용사가 오는 라틴계 어순의 굳은 표현으로 '법적으로 확정된 왕위 계승자'라는 뜻입니다.",
+          "fromScript": "Considering that twerp is heir apparent to the throne on whom the future of our kingdom already rests, yeah.",
+          "example": "He is the only editor on whom the entire publication schedule now depends."
+        },
+        {
+          "point": "had better의 축약과 부정 위치 (better not be)",
+          "explanation": "had better는 구어에서 had가 완전히 사라져 You better go, This better work처럼 쓰입니다. 부정은 not을 better 바로 뒤에 넣습니다(better not be). don't better나 better don't는 없습니다. 의미는 단순한 충고가 아니라 '그렇지 않으면 나쁜 일이 생긴다'는 경고나 협박에 가깝습니다. 여기서 조그는 뮤지컬을 볼 위험 앞에서 위협을 하고 있는데, 위협 대상이 자기 딸을 대사로 앉힌 나라의 지역 극단 공연이라는 점이 우스운 부분입니다. 시제는 항상 이 형태 그대로이고 과거형이 없다는 점도 기억하십시오.",
+          "fromScript": "This thing better not be a musical.",
+          "example": "You better not tell your mother that I let you skip your piano lesson."
+        },
+        {
+          "point": "consider + 가목적어 it + 형용사 + to부정사",
+          "explanation": "consider, think, find, make 같은 동사는 목적어와 보어를 함께 취하는데, 목적어가 to부정사구처럼 길면 자리에 it을 먼저 놓고 진짜 목적어를 뒤로 보냅니다. They consider it rude to bow ...가 그 형태이고, consider to bow rude라고는 하지 않습니다. 뒤의 without bowing first에서는 전치사 without 다음에 동명사가 온 것도 확인하십시오. 내용은 논리적으로 성립하지 않습니다. 먼저 절하지 않고 절하면 무례하다는 규칙은 끝없이 뒤로 물러나는 무한 후퇴이므로 아무도 절을 시작할 수 없습니다. 여행 안내서가 현지 예절을 설명할 때의 진지한 문체를 그대로 유지한 채 내용만 불가능하게 만든 농담입니다.",
+          "fromScript": "They consider it rude to bow without bowing first.",
+          "example": "Most of my colleagues consider it pointless to argue with the principal about the schedule."
+        }
+      ],
+      "background": [
+        {
+          "topic": "수확제와 십일조 — 축복 다음에 곧바로 몰수",
+          "detail": "중세 유럽의 농민은 수확물의 일부를 영주와 교회에 바쳤고, 그 자리는 늘 종교 의식의 외형을 갖추었습니다. 사제가 축복하고 영주가 받는 구조입니다. 이 장면의 사회자는 그 의식용 문구를 그대로 읽다가 for His Majesty's blessing and immediate confiscation이라고 두 단어를 병렬합니다. 축복과 몰수를 and로 묶어 같은 무게로 놓았기 때문에, 의식이 실제로 무슨 일을 하는 절차인지가 한 줄에 드러납니다. 이 작품이 반복해서 쓰는 기법이 이것입니다. 격식체 문장의 형태는 건드리지 않고 명사 하나만 정직한 단어로 바꿔 넣는 것입니다. 이어지는 Blessings to you, from your greasy hair to your filthy, ripped-up shoes도 같은 방식으로, 축복의 관용 틀 from ... to ...에 모욕만 채워 넣었습니다."
+        },
+        {
+          "topic": "phony-baloney 대사직 — 미국의 정치적 대사 임명 풍자",
+          "detail": "루시의 Aren't ambassadorships usually just given to rich chumps to make them feel important?은 판타지 농담이 아니라 미국 정치에 대한 직설적인 언급입니다. 미국은 선거 자금을 많이 낸 후원자에게 실무 부담이 적은 나라의 대사직을 주는 관행이 오래되었고, 이 때문에 외교 경험이 없는 인물이 대사가 되는 일이 반복적으로 비판받습니다. 오드발이 제안하는 조건도 정확히 그것입니다. phony-baloney job with a fancy title and a sash, 즉 실권 없이 직함과 어깨띠만 있는 자리입니다. phony-baloney는 phony(가짜)에 무의미한 운을 붙인 미국식 반복 조어로, 상대를 우습게 만드는 어린애 같은 말맛이 있습니다. 왕궁 회의에서 재상이 이런 단어를 쓴다는 것도 등록 충돌입니다."
+        },
+        {
+          "topic": "댕크마이어 운하와 100년 전쟁",
+          "detail": "드림랜드가 댕크마이어에 운하를 강제로 건설시켰고 그 소유권을 두고 100년간 전쟁을 했다는 설정은 두 개의 실제 역사를 겹친 것입니다. 하나는 영국과 프랑스의 백년전쟁이고, 다른 하나는 미국이 파나마 지역에 개입해 운하를 확보하고 오랫동안 관할권을 유지한 역사입니다. 그래서 이 화의 갈등 구조는 '강대국이 만든 인프라를 약소국 땅에 두고 생긴 원한'이라는 현대 국제정치의 틀을 그대로 가져옵니다. 댕크마이어인이 프로토콜에 집착하고 드림랜드인이 그것을 지루해하는 대비, 그리고 오나가 이 나라 출신이라는 설정(정략결혼으로 동맹을 봉합한 결과)도 여기서 나옵니다. 빈의 연설이 실패하는 순간 동맹이 즉시 깨지는 것은 이 동맹이 애초에 flimsy, 즉 종이처럼 얇았기 때문입니다."
+        },
+        {
+          "topic": "community playhouse와 관객 참여형 연극 — 미국 지역 문화 조롱",
+          "detail": "community playhouse는 미국 소도시의 아마추어 주민 극단입니다. 지역 자랑거리로 언급되지만 실제로는 연기와 무대가 어설프기로 유명해서, 미국 코미디에서 '별것 아닌 것을 대단한 문화적 성취로 내세우는' 상징으로 자주 쓰입니다. 총리가 우리 문명이 진흙탕에서 일어나 이룩한 것이 바로 이 극장이라고 말할 때, 문명의 도달점이 동네 극단이라는 낙차가 농담입니다. 여기에 하나가 더 얹힙니다. 배우가 객석으로 내려와 관객에게 말을 거는 몰입형 연극은 미국에서 가장 널리 미움받는 공연 관습이고, 조그는 그 앞에서 This thing better not be a musical이라고 미리 위협합니다. 마지막으로 husky kid와 tour de force는 둘 다 완곡어입니다. husky는 아동복 치수에서 온 말로 '뚱뚱하다'를 피해 가는 표현이고, tour de force는 프랑스어에서 온 예술 비평 용어라 동네 연극에는 지나치게 거창합니다."
+        },
+        {
+          "topic": "미국 문헌·영화 인용 두 개 — 독립선언문과 오즈의 마법사",
+          "detail": "연설문 앞에서 빈이 내뱉는 When in the course of human events... No, that's stupid는 미국 독립선언문의 첫 구절을 그대로 가져온 것입니다. 미국인은 학교에서 이 문장을 외우기 때문에 즉시 알아듣고, 빈이 그것을 stupid라고 버리는 순간이 웃음이 됩니다. 남의 나라에 사과하러 온 사람이 하필 독립선언문을 꺼내려 한 것도 어긋납니다. 만찬이 파탄 난 뒤 나오는 Pay no attention to the naked ambassador on the chandelier는 영화 오즈의 마법사의 유명한 대사 Pay no attention to the man behind the curtain을 비튼 것으로, '보이는 사실을 없는 척하라'는 뜻으로 쓰입니다. 마지막에 엘포가 그리워하는 tuffet도 인용입니다. 영어권 동요 Little Miss Muffet에 나오는 낮은 방석으로, 그 단어는 사실상 이 동요 안에서만 살아 있습니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "빈은 어떻게 댕크마이어 대사가 되며, 그 임명의 진짜 동기는 무엇인가?",
+          "answer": "수확제에서 빈이 술에 취해 늦게 나타나 자리를 지키지 못한 뒤, 조그는 딸이 쓸모없다고 느낀다는 문제를 두고 신하들과 상의합니다. 오나는 그 느낌이 사실이라고 잘라 말하고, 딸의 용도는 왕국을 잇기 위해 시집보내는 것과 자식을 낳는 것뿐이라고 정리합니다. 조그가 뭐라도 하나 던져 주자(throw her a bone)고 하자 오드발이 곧 있을 댕크마이어 방문을 꺼내고, 조그는 거창한 직함과 어깨띠만 있는 허울뿐인 자리를 주라고 지시합니다. 즉 임명은 능력에 대한 신뢰가 아니라 딸의 기분을 달래기 위한 장식이며, 루시가 지적한 대로 실제 대사직이 돈 많은 얼간이에게 주어지는 명예직이라는 점을 그대로 따릅니다."
+        },
+        {
+          "question": "여행 안내서가 알려 주는 댕크마이어 정보와 실제 상황은 어떻게 어긋나는가?",
+          "answer": "안내서는 격식체 문체를 유지하면서 정작 쓸모없는 정보만 줍니다. 이 나라가 warm하다는 서술에는 따뜻하다는 말이 기온을 가리키는 것이고 악명 높게 음침한 현지인들을 가리키는 것이 아니라는 주석이 붙습니다. 즉 사람은 전혀 따뜻하지 않다는 뜻을 완곡하게 전달합니다. 예절 항목은 더 심합니다. 먼저 절하지 않고 절하면 무례하다는 규칙은 논리적으로 실행이 불가능한 무한 후퇴이므로, 아무리 성실히 준비해도 예의를 갖출 방법이 없습니다. 결국 드림랜드 일행은 규칙을 지킬 수 없는 상태로 들어가고, 조그는 무대 위의 자기 자신도 못 알아보며, 빈은 취한 채 연설 자리에 서게 됩니다."
+        },
+        {
+          "question": "빈은 왜 연설을 하지 못하게 되고, 결국 누가 하며 그 논리는 무엇인가?",
+          "answer": "빈은 처음에 진지하게 연설문을 쓰려 했지만 문장이 나오지 않아 자기 검열만 반복합니다. 그때 웨이터 차즈가 창작의 샘을 터뜨리는 확실한 방법은 창작의 술이라며 술을 권합니다. 이 말장난은 creative juices flowing(창작력이 샘솟는다)이라는 비유 표현의 juice를 액체 술이라는 문자 뜻으로 되돌려 놓은 것입니다. 그 결과 빈은 예복을 뒤집어 입고 나타나고, 조그는 연설할 상태가 아니라며 데릭에게 넘깁니다. 근거는 데릭이 절반은 댕크마이어 혈통이어서 적어도 누군가에게는 호감을 준다는 것입니다. 빈이 저런 쪼끄만 놈에게 왕국의 미래를 맡기느냐고 항의하면, 그 쪼끄만 놈이 이미 왕위 계승자이므로 왕국의 미래는 원래 그에게 달려 있다는 답이 돌아옵니다."
+        },
+        {
+          "question": "만찬은 어떻게 파탄 나고, 댕크마이어 측은 그 사건에서 무엇을 읽어 내는가?",
+          "answer": "조그는 빈에게 술을 마시고 그럴듯한 건배사로 상대의 기분을 풀어 주라고 시킵니다. butter someone up은 아첨한다는 뜻이고 toast는 건배사인데, 이 두 단어를 나란히 놓으면 버터 바른 토스트가 되어 조그의 조언 자체가 말장난이 됩니다. 빈의 건배사는 오래 전쟁해서 미안하다는 말에 that sucked 같은 입말을 섞다가 무너지고, 사태는 벌거벗은 대사가 샹들리에에 매달리는 데까지 갑니다. 총리는 이것을 개인의 실수로 보지 않고 외교적 신호로 읽습니다. 티아비니를 대사로 임명한 것 자체가 이 동맹을 어떻게 생각하는지 다 말해 준다는 것입니다. 임명이 모욕이었다는 해석이 사실 정확했기 때문에 반박할 수도 없습니다."
+        },
+        {
+          "question": "늪으로 도망친 뒤 엘포와 루시가 주고받는 말다툼은 무엇을 드러내는가?",
+          "answer": "빈이 자기가 다 망쳤다며 대사가 될 수 있다고 생각한 것 자체가 미친 짓이었다고 말하면, 루시는 그래서 시도하지 말라고 늘 이야기하는 것이라고 받습니다. 즉 실패가 루시의 논리를 강화해 줍니다. 이어 엘포는 루시에게 뾰족한 꼬리 끝부터 뾰족한 귀 끝까지 속까지 썩었다고 하는데, through and through와 from the tip of ... to the tips of ... 같은 강조 틀을 쓰면서 정작 그 안에 pointy ears를 넣은 것이 실수입니다. 루시가 뾰족한 귀로 자기에게 시비를 거느냐, 거울은 본 적 있느냐고 되받자 엘포는 스스로 I'm a freak이라고 인정하게 됩니다. 세 사람 모두 자기가 어디에도 속하지 못한다는 감각을 공유한다는 점이 이 장면에서 드러나고, 마지막 대사인 통나무가 딱딱해서 방석이 그립다는 말은 그 감정을 곧바로 사소한 불만으로 눌러 버립니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 7,
+      "title": "7. 역병 순찰",
+      "chunks": [
+        {
+          "en": "That's okay, honey. / I go down easy.",
+          "ko": "괜찮아, 아가씨. 난 잘 넘어가.",
+          "literal": "그건 괜찮아, 아가씨 / 나는 쉽게 내려간다"
+        },
+        {
+          "en": "Eh, this thing / had it coming.",
+          "ko": "에이, 이건 당해도 싼 놈이었어.",
+          "literal": "에이, 이 물건은 / 그것이 오는 것을 자기가 불렀다"
+        },
+        {
+          "en": "- Are we in the plague pit? / - You are!",
+          "ko": "우리 지금 역병 구덩이에 있는 거야? — 너희만!",
+          "literal": "우리가 역병 구덩이 안에 있는 거야? / 너희가 그렇지!"
+        },
+        {
+          "en": "You meant bliss the feeling. / There's another kind of bliss?",
+          "ko": "너 지금 감정으로서의 '희열'을 말한 거였구나. — 희열에 다른 종류가 있어?",
+          "literal": "너는 희열, 그 감정을 의미했구나 / 다른 종류의 희열이 있어?"
+        },
+        {
+          "en": "Don't flatter yourself, / Princess.",
+          "ko": "착각하지 마, 공주님.",
+          "literal": "너 자신을 치켜세우지 마 / 공주님"
+        },
+        {
+          "en": "and I'm not just making it up on the spot. / Speaking of the spot, isn't this the spot? / Let's talk about the spot now.",
+          "ko": "그리고 이건 지금 즉석에서 꾸며내는 얘기가 아니야. 즉석 얘기가 나왔으니까, 여기가 바로 그 자리 아니야? 이제 그 자리에 대해 얘기해 보자.",
+          "literal": "그리고 나는 그것을 그 자리에서 그냥 지어내고 있는 게 아니야 / 그 자리 얘기가 나왔으니, 이곳이 바로 그 자리 아니야? / 이제 그 자리에 대해 얘기하자"
+        },
+        {
+          "en": "So, why haven't we met / your little bitty elf squeeze?",
+          "ko": "그래서 우리는 왜 아직 네 쪼그만 엘프 애인을 못 만나 본 거야?",
+          "literal": "그래서, 우리는 왜 아직 만나지 못했지 / 너의 쪼끄맣고 조그만 엘프 애인을?"
+        },
+        {
+          "en": "So, super-hot one-eyed girl with a dead family. / Sounds legit.",
+          "ko": "그러니까 가족이 다 죽은 엄청난 미인인데 눈은 하나라고. 참 믿음이 가네.",
+          "literal": "그래서, 가족이 죽은 엄청 매력적인 외눈 여자라 / 진짜인 것처럼 들리네"
+        },
+        {
+          "en": "but at the same time, / you're being looked at by me.",
+          "ko": "근데 동시에 너는 지금 나한테 보여지고 있어.",
+          "literal": "하지만 동시에 / 너는 나에 의해 보여지고 있는 중이야"
+        },
+        {
+          "en": "Can't believe Elfo stuck to his story / no matter how hard I laughed.",
+          "ko": "내가 아무리 크게 웃어도 엘포가 자기 얘기를 끝까지 안 바꾸더라니까.",
+          "literal": "믿을 수 없어, 엘포가 자기 이야기를 고수했다는 걸 / 내가 아무리 심하게 웃어도"
+        },
+        {
+          "en": "You're gonna send these knights to die / on a quest for a made-up girlfriend? / Cool.",
+          "ko": "지어낸 여자친구를 찾는 원정에 저 기사들을 죽으라고 보낼 거야? 좋네.",
+          "literal": "너는 이 기사들을 죽으라고 보낼 거야 / 지어낸 여자친구를 찾는 원정에? / 멋지네"
+        },
+        {
+          "en": "May not be seeing well, / but it is looking good.",
+          "ko": "잘 보이지는 않을지 몰라도, 보기에는 아주 좋네.",
+          "literal": "잘 보고 있지 않을지도 모르지 / 하지만 그것은 좋아 보인다"
+        },
+        {
+          "en": "I got the stinger on my dinger / And now it's all inflamed / Sing a little softer / We're in avalanche terrain",
+          "ko": "거기에 벌침을 쏘였네 / 지금은 온통 부어올랐지 / 노래는 좀 작게 불러 / 여기는 눈사태 나는 산이야",
+          "literal": "나는 내 그것에 벌침을 맞았다 / 그리고 지금 그것은 온통 염증이 생겼다 / 조금 더 부드럽게 노래해라 / 우리는 눈사태 지형에 있다"
+        },
+        {
+          "en": "Elfo, / have I got a surprise for you.",
+          "ko": "엘포, 내가 너한테 줄 깜짝 소식이 있어.",
+          "literal": "엘포 / 내가 너를 위한 놀랄 일을 가지고 있단 말이야"
+        },
+        {
+          "en": "We ain't having no giant rampage in here. / Send her back up whatever beanstalk she rode in on.",
+          "ko": "여기서 거인이 난동 피우는 일은 절대 없다. 타고 올라온 콩나무가 뭐든 그거 타고 돌려보내.",
+          "literal": "우리는 여기서 어떤 거인 난동도 벌이지 않을 것이다 / 그녀가 타고 들어온 어떤 콩나무든 그것으로 그녀를 다시 올려 보내라"
+        },
+        {
+          "en": "Thing is, having been handsome, powerful and rich, / I never had to stoop to kindness or charm.",
+          "ko": "문제는 이런 거야. 잘생기고 힘 있고 부자였으니까, 나는 친절이나 매력 같은 데까지 몸을 굽힐 필요가 없었지.",
+          "literal": "문제는 이거야, 잘생기고 힘 있고 부유했었기 때문에 / 나는 친절이나 매력으로 몸을 낮출 필요가 전혀 없었다"
+        },
+        {
+          "en": "So, tell me why the damsels flock to you, / someone far more repulsive than yours porkly.",
+          "ko": "그러니 말해 봐라. 왜 처녀들이 나, 이 돼지 몸의 소생보다 훨씬 더 혐오스러운 너에게 몰려드는지.",
+          "literal": "그래서, 나에게 말해라 왜 처녀들이 너에게 떼로 몰려드는지 / 이 돼지 된 소생보다 훨씬 더 역겨운 자에게"
+        },
+        {
+          "en": "let's fire up the magic crystal / and see if there's any attractive singles in our area / waiting to talk to you.",
+          "ko": "자, 마법 수정구를 켜서 우리 지역에 너랑 얘기하고 싶어 기다리는 매력적인 싱글이 있는지 보자고.",
+          "literal": "마법 수정을 켜 보자 / 그리고 우리 지역에 매력적인 싱글들이 있는지 보자 / 너와 이야기하기를 기다리는"
+        },
+        {
+          "en": "No flower could have a stench / as beautiful as yours, honey.",
+          "ko": "어떤 꽃도 그대의 악취만큼 아름다운 냄새는 못 낼 겁니다, 그대.",
+          "literal": "어떤 꽃도 악취를 가질 수 없을 거예요 / 당신의 것만큼 아름다운"
+        },
+        {
+          "en": "For God's sake, / I'm a grad student.",
+          "ko": "아니 진짜, 나 대학원생이야.",
+          "literal": "제발, 하느님을 위해서라도 / 나는 대학원생이다"
+        },
+        {
+          "en": "Well, have I got news for you. / This guy is a filthy-- / Lover! I'm a filthy lover. So nasty.",
+          "ko": "그래, 내가 너희한테 알려 줄 게 있어. 이 녀석은 더러운… — 애인! 나는 더러운 애인이야. 아주 야하지.",
+          "literal": "그래, 내가 너희를 위한 소식을 가지고 있단 말이야 / 이 녀석은 더러운 / 애인! 나는 더러운 애인이야. 아주 지저분해"
+        },
+        {
+          "en": "Then we will have you walking out of here / with 20/20, my friend.",
+          "ko": "그러면 자네를 시력 1.0으로 여기서 걸어 나가게 해 주겠네, 친구.",
+          "literal": "그러면 우리는 너를 여기서 걸어 나가게 만들 것이다 / 20 대 20의 시력으로, 내 친구여"
+        },
+        {
+          "en": "You're sad and hideous. Play it up. / Chicks love pathetic.",
+          "ko": "너는 불쌍하고 흉하잖아. 그걸 더 부풀려. 여자들은 딱한 걸 좋아해.",
+          "literal": "너는 슬프고 끔찍하다. 그것을 더 크게 연출해라 / 여자애들은 딱한 것을 사랑한다"
+        },
+        {
+          "en": "Well, newsflash. / Giants haven't been on a rampage since the '80s.",
+          "ko": "자, 속보 하나 알려 줄까. 거인들은 80년대 이후로 난동 피운 적 없어.",
+          "literal": "그래, 속보 / 거인들은 80년대 이후로 난동을 부린 적이 없다"
+        },
+        {
+          "en": "Maybe if you got to know us, / you'd find out that we're all about peace and love / and goddamn body positivity!",
+          "ko": "우리를 알아 갈 생각이 있었다면, 우리가 평화와 사랑과 빌어먹을 신체 긍정주의를 추구하는 존재라는 걸 알게 됐을지도 몰라!",
+          "literal": "아마 너희가 우리를 알게 된다면 / 너희는 우리가 온통 평화와 사랑에 관한 존재라는 걸 알아낼 것이다 / 그리고 빌어먹을 신체 긍정성에 관한"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "완료분사구문 having been + 보어 — 이유와 시간차를 한 번에",
+          "explanation": "having been handsome, powerful and rich는 because I had been handsome, powerful and rich를 압축한 것입니다. 분사구문이 having + 과거분사 형태가 되면 주절보다 앞선 시점을 나타내고, 여기서는 그 앞선 상태가 뒤에 오는 결과의 원인이 됩니다. 즉 '예전에 잘생기고 힘 있고 부자였기 때문에 지금 이 지경이 되었다'는 인과가 문법 형태 하나에 들어 있습니다. 격식체 글에서 자주 보이는 구조인데, 머키머는 이 격식체를 쓰면서 정작 고백하는 내용은 인격이 형성될 기회가 없었다는 것입니다. 뒤에 이어지는 stoop to kindness도 같은 농담입니다. stoop to는 보통 stoop to lying처럼 비열한 짓으로 몸을 굽힐 때 쓰므로, 친절과 매력이 그 자리에 들어가면 친절이 곧 굴욕이라는 세계관이 드러납니다.",
+          "fromScript": "Thing is, having been handsome, powerful and rich, I never had to stoop to kindness or charm.",
+          "example": "Having taught the same grade for ten years, she could predict every question before it was asked."
+        },
+        {
+          "point": "구동사의 수동 진행형 — you're being looked at by me",
+          "explanation": "look at처럼 전치사를 포함한 구동사도 수동태를 만들 수 있고, 이때 전치사는 동사 뒤에 그대로 남습니다(be looked at). 여기에 진행형까지 겹치면 be동사 + being + 과거분사가 되어 you are being looked at이 됩니다. 이 형태는 문법적으로는 완전하지만 실제 회화에서는 거의 쓰이지 않을 만큼 무겁습니다. 그래서 이 대사는 웃깁니다. 마약에 취한 루시가 '내가 너를 보고 있다'는 아주 단순한 사실을 가장 복잡한 문법으로 뒤집어 말하고 있기 때문입니다. 약에 취한 사람의 과장된 자기 관찰을 문법 형태만으로 표현한 사례로 기억하면 좋습니다.",
+          "fromScript": "but at the same time, you're being looked at by me.",
+          "example": "The new teacher quickly realised she was being watched by every parent in the hallway."
+        },
+        {
+          "point": "ain't + 이중부정, 그리고 현재진행형으로 금지를 말하기",
+          "explanation": "We ain't having no giant rampage in here에는 세 가지가 겹쳐 있습니다. 첫째 ain't는 am not, is not, are not, has not, have not을 모두 대신하는 비표준 축약이고, 둘째 ain't와 no가 함께 쓰인 이중부정으로 부정이 강화됩니다(표준형은 We aren't having any ...). 셋째, 현재진행형이 미래의 금지를 나타냅니다. 진행형은 확정된 예정을 뜻할 수 있으므로 '그런 일은 여기서 일어나지 않는 것으로 이미 정해져 있다'는 통보가 됩니다. You're not staying out past ten, We're not doing that today도 같은 용법이며, 부모나 상급자가 아랫사람에게 쓰는 전형적인 어조입니다.",
+          "fromScript": "We ain't having no giant rampage in here.",
+          "example": "We aren't having any shouting in this classroom, and that goes for me too."
+        },
+        {
+          "point": "도치로 감탄을 만드는 Have I got ~ 구문",
+          "explanation": "Have I got news for you와 have I got a surprise for you는 의문문처럼 조동사가 앞에 나와 있지만 질문이 아닙니다. I have got some news for you를 감탄·강조로 뒤집은 관용 구문으로, '내가 지금 전할 소식이 굉장한 것이다'라는 뜻입니다. 억양은 내려가고 문장 끝에는 마침표가 붙습니다. Boy, do I have a story for you, Man, did she look angry처럼 조동사 도치로 감탄을 만드는 미국 구어의 같은 계열이며, 뒤에 나올 내용을 극적으로 예고하는 기능을 합니다. 여기서 빈이 예고하는 굉장한 소식은 엘포가 거짓말로 만들어 낸 여자친구가 실제로 성에 도착했다는 것이므로, 예고의 크기와 결과의 재앙 사이의 낙차가 농담이 됩니다.",
+          "fromScript": "Well, have I got news for you.",
+          "example": "Boy, do I have a complaint about the way that meeting was run."
+        },
+        {
+          "point": "no matter how + 형용사/부사 + 주어 + 동사",
+          "explanation": "no matter how hard I laughed는 however hard I laughed와 같고, '내가 아무리 심하게 웃어도'라는 양보를 나타냅니다. 어순이 중요합니다. how 뒤에 형용사나 부사가 바로 붙고 그다음에 주어와 동사가 옵니다(no matter how hard I laughed, 그리고 no matter how I laughed hard가 아님). no matter 계열은 who, what, where, when과도 결합합니다. 또 여기서 hard는 형용사가 아니라 부사로 쓰였고, hardly는 '거의 …않다'라는 전혀 다른 뜻이므로 절대 바꿔 쓸 수 없습니다. 앞의 stick to one's story는 '주변에서 뭐라 해도 진술을 바꾸지 않는다'는 관용구로, 심문이나 알리바이 이야기에서 자주 나옵니다.",
+          "fromScript": "Can't believe Elfo stuck to his story no matter how hard I laughed.",
+          "example": "No matter how loudly the children shouted, the puppet kept smiling."
+        },
+        {
+          "point": "have + 목적어 + 과거분사와 have + 목적어 + 현재분사의 차이",
+          "explanation": "두 구조는 형태가 비슷하지만 방향이 다릅니다. have your minds blown은 have + 목적어 + 과거분사이므로 목적어가 그 동작을 당합니다(정신이 날아가 버리는 상태를 겪게 된다). blow someone's mind는 '충격적으로 놀라게 하다'라는 구어 관용구입니다. 반면 we will have you walking out of here는 have + 목적어 + 현재분사여서 목적어가 그 동작을 능동적으로 하게 만든다는 뜻입니다. 즉 '너를 걸어 나가게 해 주겠다'입니다. 앞의 것은 피해나 경험, 뒤의 것은 진행되는 능동 동작이라고 정리하면 헷갈리지 않습니다. 참고로 20/20은 미국식 시력 표기법으로 정상 시력을 뜻합니다. 중세 배경에 검안 용어가 등장하는 것 자체가 아나크로니즘 농담입니다.",
+          "fromScript": "Then we will have you walking out of here with 20/20, my friend.",
+          "example": "One more rehearsal and I will have the whole class singing this in tune."
+        },
+        {
+          "point": "whatever + 명사 + 관계절, 그리고 문장 끝에 남는 전치사",
+          "explanation": "whatever beanstalk she rode in on은 '그녀가 타고 올라온 콩나무가 무엇이든 그것'이라는 뜻으로, whatever가 명사를 직접 수식하는 한정사 용법입니다. 뒤의 she rode in on은 그 명사를 수식하는 관계절이고, ride in on ~에서 전치사 두 개가 문장 끝에 그대로 남았습니다. 관계대명사가 생략되어 있어 어순만 보면 문장이 끝나지 않은 것처럼 느껴지지만, 영어에서는 이렇게 전치사를 끝에 남기는 것이 오히려 자연스럽습니다. whatever에는 '무엇이든 상관없다'는 무관심의 어감이 담기므로, 조그는 그 거인이 어떻게 왔는지 알고 싶지도 않다는 태도를 문법 하나로 표현하고 있습니다.",
+          "fromScript": "Send her back up whatever beanstalk she rode in on.",
+          "example": "Put the folder back in whatever drawer you pulled it out of."
+        },
+        {
+          "point": "2종 가정법 if + 과거 → would, 그리고 get to know",
+          "explanation": "Maybe if you got to know us, you'd find out ...은 현재 사실과 반대되거나 실현 가능성이 낮은 상황을 말하는 가정법 과거입니다. if절에는 과거형, 주절에는 would가 옵니다. 여기서 got은 과거 사건이 아니라 가정을 표시하는 장치이므로 '알게 되었다면'이 아니라 '알아 갈 마음이 있다면'으로 읽어야 합니다. get to know는 know와 다릅니다. know는 이미 아는 상태이고 get to know는 시간을 들여 알아 가는 과정입니다. get to + 동사원형에는 '~할 기회를 얻다'라는 뜻도 있어(I got to meet her) 문맥으로 구별합니다. 테스가 이 가정법을 쓰는 이유는 명확합니다. 아무도 실제로 그렇게 해 주지 않았기 때문입니다.",
+          "fromScript": "Maybe if you got to know us, you'd find out that we're all about peace and love and goddamn body positivity!",
+          "example": "If you got to know my quietest student, you would find out that she writes better than anyone."
+        }
+      ],
+      "background": [
+        {
+          "topic": "역병 수레와 페스트 구덩이 — 몬티 파이선이 만든 관습",
+          "detail": "흑사병 시기 유럽에서는 수레가 마을을 돌며 시체를 모아 도시 밖의 큰 구덩이(plague pit)에 한꺼번에 묻었습니다. 영어권 코미디에서 이 장면은 거의 항상 영화 몬티 파이선과 성배의 Bring out your dead 장면을 경유합니다. 아직 죽지 않은 사람을 수레에 던지고, 당사자가 I'm not dead yet이라고 항의하는 그 대목입니다. 여기서도 빈과 엘포가 아직 살아 있는데 구덩이에 던져지고, Are we in the plague pit?이라는 질문에 You are!라는 답이 돌아옵니다. we로 물었는데 you로 답한 것이 이 대사의 핵입니다. 화자는 자기를 그 we에서 빼내며, 동시에 저 위의 사람들이 곧 구덩이에 불을 붙일 것이라는 사실도 알려 줍니다. 시체 하나에 대고 this thing had it coming, 즉 당해도 싸다고 말하는 것도 애도의 문법에 무례한 내용을 넣는 이 작품의 상투적 수법입니다."
+        },
+        {
+          "topic": "bliss — 감정 이름이자 마약 이름이라는 이중 의미",
+          "detail": "bliss는 '지극한 행복, 희열'을 뜻하는 다소 문학적인 단어입니다. 죽기 직전이라고 믿은 엘포가 We never experienced bliss together라고 말할 때, 그는 '함께 행복을 누려 보지 못했다'는 낭만적인 고백을 하고 있습니다. 그런데 이 세계에는 bliss라는 이름의 환각제가 있고, 빈은 그 뜻으로 알아들었습니다. 그래서 You meant bliss the feeling(감정 쪽의 bliss를 말한 거였구나)이라는 정정이 나옵니다. X the Y 형태로 동명이의를 구별하는 방식(Jack the person, not Jack the dog)도 함께 익힐 만합니다. 이 오해가 이 화 전체를 굴러가게 합니다. 세 사람이 실제로 bliss를 복용하고, 그 환각 속에서 엘포가 무지개와 꽃에서 나온 거인 여자를 보았다고 주장하며, 그 헛소리가 기사들의 원정과 실제 거인의 방문으로 이어집니다. 환각 시퀀스에서 인물들이 sticky처럼 아무 단어를 즉석에서 형용사로 쓰거나 on the spot 같은 표현에 집착하며 같은 단어를 반복하는 것도 미국 코미디가 약에 취한 대화를 그리는 정해진 방식입니다."
+        },
+        {
+          "topic": "잭과 콩나무 + the horse you rode in on",
+          "detail": "Send her back up whatever beanstalk she rode in on은 두 개의 표현을 겹쳐 놓은 농담입니다. 하나는 영어권 동화 잭과 콩나무입니다. 하늘까지 자란 콩나무 위에는 거인이 살고, 잭이 그것을 타고 올라갑니다. 그래서 거인이 등장하면 자동으로 beanstalk이 연상됩니다. 다른 하나는 미국 구어의 거친 관용구입니다. 상대를 쫓아낼 때 쓰는 ...and the horse you rode in on이라는 표현이 있는데, 원래는 '너와 네가 타고 온 말까지 다 꺼져라'라는 뜻의 모욕입니다. 조그는 그 관용구의 말 자리에 콩나무를 끼워 넣어 판타지 세계 버전으로 만들었습니다. 이런 식으로 익숙한 관용구의 한 단어만 그 세계의 사물로 바꾸는 것이 이 작품이 가장 자주 쓰는 개그 공식입니다."
+        },
+        {
+          "topic": "any attractive singles in our area — 미국 심야 광고 문구",
+          "detail": "루시가 마법 수정구를 켜면서 하는 see if there's any attractive singles in our area waiting to talk to you는 미국 텔레비전 심야 시간대와 인터넷 배너에 넘쳐났던 유료 채팅·데이팅 광고의 정형 문구입니다. 원문은 대체로 Hot singles in your area are waiting to talk to you 같은 형태이며, 실제로는 사람이 아니라 자동 응답인 경우가 많아 사기의 상징으로 통합니다. 그러니 이 대사는 수정구를 데이팅 앱처럼 취급하는 아나크로니즘이면서, 동시에 그 서비스가 애초에 가짜라는 암시입니다. 이어지는 Want me to ask if you're gonna die alone, or are we good?도 같은 결입니다. 점을 봐 주겠다는 제안의 형식을 유지한 채 내용만 잔인하게 바꿔 놓았습니다. fire up도 원래 기계를 시동하는 말이라 수정구에는 어울리지 않는 현대어입니다."
+        },
+        {
+          "topic": "중세 배경에 박아 넣은 현대어 목록",
+          "detail": "이 화는 등록 충돌을 아주 촘촘하게 씁니다. 테스는 자기가 grad student, 즉 대학원생이라고 항변하고(중세 판타지에 대학원 제도가 있습니다), 새 눈을 얻을 때는 시력 표기 20/20이 등장하고, 분노의 연설에서는 body positivity라는 2010년대 담론 용어가 나오며, 거인들이 난동을 부린 것은 the '80s 이후 없었다고 연도까지 밝힙니다. 루시와 상대가 동시에 같은 말을 하며 붙이는 Twinsies도 미국 아이들의 놀이터 말이고, newsflash는 원래 방송 속보를 뜻하지만 구어에서는 '정신 차려라'라는 뜻의 비꼬는 서두로 쓰입니다. 반대 방향의 농담도 있습니다. 머키머는 궁정풍 아첨체를 유지하는데 그 안에 든 단어만 어긋납니다. 악취(stench)를 아름답다고 칭찬하고, 상대가 흘리는 점액 자국을 우아함과 나란히 놓아 She oozes grace and a shiny trail이라고 말하며, 겸양 표현 yours truly를 yours porkly로 바꿔 자기가 돼지가 되었다는 사실을 격식체 안에 밀어 넣습니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "엘포의 여자친구 이야기는 어떻게 시작되고 어디까지 커지는가?",
+          "answer": "환각제 bliss에 취한 상태에서 루시가 엘포에게 왜 그 엘프 애인을 아직 만나 본 적이 없느냐고 캐묻습니다. 엘포는 몰아붙임을 당하며 즉석에서 설정을 늘려 갑니다. 아주 키가 크고, 머리가 붉고, 눈은 하나이며, 가족은 모두 자연사해서 찾아볼 수도 없다는 것입니다. 루시는 가족이 다 죽은 엄청난 미인인데 눈이 하나라니 참 믿음이 간다고 비꼬지만(Sounds legit은 정반대의 뜻으로 쓰는 상투적 반어입니다), 엘포는 끝까지 진술을 바꾸지 않습니다. 문제는 빈이 그 거짓말을 사실로 믿고 왕의 기사들을 실제 원정에 보낸다는 것입니다. 그 결과 기사들은 진짜 거인 테스를 데려오고, 엘포는 자기가 만든 거짓말과 결혼 직전까지 몰립니다."
+        },
+        {
+          "question": "bliss를 둘러싼 오해는 어떤 언어적 구조로 성립하며 어떤 결과를 낳는가?",
+          "answer": "구덩이에서 죽는다고 생각한 엘포가 함께 bliss를 경험해 보지 못했다고 말할 때 그는 '희열'이라는 감정을 뜻했지만, 빈은 같은 이름의 환각제로 받아들입니다. 그래서 빈은 감정 쪽의 bliss를 말한 것이냐고 정정하고, 엘포는 반대로 다른 종류의 bliss가 있느냐고 되묻습니다. 즉 한 단어가 추상 명사이면서 고유한 약물명이라는 이중 의미가 대화 전체를 어긋나게 만듭니다. 결과적으로 셋은 실제로 그 약을 복용하고, 엘포는 문을 기어 통과해 무지개와 꽃에서 나온 거인 여자를 보았다고 믿게 됩니다. 나중에 그 환각이 사실은 그때 본 것을 그대로 재현한 것이었음이 드러나면서, 거짓말과 환각과 진실이 뒤섞인 상태가 이 화의 결말까지 이어집니다."
+        },
+        {
+          "question": "머키머와 루시의 동맹은 어떤 거래로 시작되고 왜 깨지는가?",
+          "answer": "돼지 몸이 된 머키머는 자기가 잘생기고 힘 있고 부자였기 때문에 친절이나 매력에 의지할 필요가 없었다고 고백하며, 자기보다 훨씬 혐오스러운 루시에게 왜 여자들이 몰려드는지 알려 달라고 청합니다. 루시가 제시한 대가는 자기를 말처럼 타게 해 달라는 것이고, 머키머는 그 접촉조차 반갑다고 답합니다. 루시의 전략은 단순합니다. 불쌍하고 흉한 상태를 더 부풀려 연출하라는 것, 여자들은 딱한 것을 좋아한다는 것입니다. 그런데 루시는 그 연출로 여자들을 끌어모은 다음 자기가 가로챕니다. 머키머가 그것을 알아채고 항의하자 루시는 자기 최고의 작품 중 하나라고 인정하며, 결국 이 동맹은 끝납니다. 머키머가 원한 것은 여자를 얻는 것이 아니라 아름다운 누군가의 품에서 춤을 한 번 추는 것이었다고 말하는 대목이 이 관계의 결말입니다."
+        },
+        {
+          "question": "테스가 새 눈으로 보게 되면서 폭로하는 내용은 이야기 안에서 어떤 기능을 하는가?",
+          "answer": "테스는 잃어버린 눈을 대신할 것을 얻으면 엘포의 거짓 연애를 조금 더 연기해 주겠다고 거래합니다. 그런데 새로 얻은 눈으로는 보통보다 더 많은 것이 보입니다. 테스는 누가 누구와 자고 있는지, 겉으로 친절한 사람의 안에 어떤 분노가 숨어 있는지, 그리고 빈이 엘포를 곁에 두는 이유가 그 피 때문이라는 것까지 차례로 말해 버립니다. 즉 이 장면은 진실이 한꺼번에 터져 나오는 장치이고, 그 진실 목록의 마지막이 엘포에게 가장 아픈 항목이라는 점이 중요합니다. 빈이 이미 알고 있었던 것 같다고 넘어가는 반응이 오히려 상황을 더 차갑게 만듭니다. 결국 엘포도 스스로 거짓말을 고백하는데, 하필 테스가 계약을 지키려고 연기를 하려던 순간과 겹쳐 두 사람의 말이 어긋납니다."
+        },
+        {
+          "question": "테스의 분노는 무엇을 겨누며, 상황은 어떻게 마무리되는가?",
+          "answer": "테스는 아무도 자기를 착하다고 생각하지 않고 모두가 곧 난동을 부릴 무서운 괴물로만 본다고 말합니다. 그리고 거인들이 난동을 부린 것은 80년대 이후 없었고 그때도 한 명이 한 일이었다고 반박하며, 알아 갈 마음이 있었다면 우리가 평화와 사랑과 신체 긍정주의를 추구한다는 것을 알았을 거라고 합니다. 즉 겨냥하는 대상은 외모에 근거한 편견입니다. 그러나 곧 터비시가 자기를 절벽에서 던지고 말을 먹은 그 못된 여자를 처단하러 왔다고 난입하고, 소동이 벌어지자 구경꾼 중 하나는 This validates my bigotry, 즉 이것으로 내 편견이 정당화된다고 외칩니다. 자기 편견을 스스로 그 이름으로 부르는 대사이기 때문에 웃기면서 동시에 이 장면의 요점을 정리해 줍니다. 결국 엘포는 자기도 가끔 괴물처럼 느껴진다고 말해 테스를 도와 내보내고, 마지막에 자기가 거짓말한 진짜 이유를 인정합니다. 키스를 시도했다는 사실을 인정할 자신이 없었기 때문입니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 8,
+      "title": "8. 조그와 불멸의 영약 (1부)",
+      "chunks": [
+        {
+          "en": "If only I was caressing your warm, soft hand / instead of this cold, stone foot.",
+          "ko": "이 차갑고 딱딱한 돌 발이 아니라 당신의 따뜻하고 부드러운 손을 쓰다듬고 있었다면 좋았을 텐데.",
+          "literal": "내가 당신의 따뜻하고 부드러운 손을 쓰다듬고 있기만 하다면 / 이 차갑고 돌로 된 발 대신에"
+        },
+        {
+          "en": "You know how hard it is / being a father without a mother doing all the work?",
+          "ko": "엄마가 그 일을 다 해 주지 않는 상태에서 아버지 노릇을 하는 게 얼마나 힘든지 알아?",
+          "literal": "당신은 그것이 얼마나 힘든지 아나 / 그 모든 일을 해 주는 어머니 없이 아버지로 있는 것이"
+        },
+        {
+          "en": "Aw, he's like a coconut. / Hard on the outside, but on the inside...",
+          "ko": "아, 저분은 코코넛 같으셔. 겉은 딱딱하지만 안은…",
+          "literal": "아, 그는 코코넛 같아 / 바깥쪽은 딱딱하지만, 안쪽은…"
+        },
+        {
+          "en": "Eye of newt, tail of newt, / rest of newt and blood of elf.",
+          "ko": "도롱뇽의 눈, 도롱뇽의 꼬리, 도롱뇽의 나머지, 그리고 엘프의 피.",
+          "literal": "도롱뇽의 눈, 도롱뇽의 꼬리 / 도롱뇽의 나머지, 그리고 엘프의 피"
+        },
+        {
+          "en": "I wish it were elixir of death, you fat sack. / Oops!",
+          "ko": "이게 죽음의 영약이었으면 좋겠네, 이 뚱뚱한 자루 같은 자여. — 어이쿠!",
+          "literal": "나는 그것이 죽음의 영약이기를 바란다, 너 뚱뚱한 자루야 / 어이쿠!"
+        },
+        {
+          "en": "I seem to have accidentally invented a truth serum, / you gravy-swilling blowhard!",
+          "ko": "제가 실수로 자백약을 발명해 버린 것 같습니다, 이 그레이비나 퍼먹는 허풍선이 같은 분!",
+          "literal": "저는 우연히 진실 자백약을 발명해 버린 것으로 보입니다 / 당신 그레이비를 퍼마시는 허풍쟁이여!"
+        },
+        {
+          "en": "You've had elf blood for weeks / and what do you got to show for it?",
+          "ko": "엘프 피를 몇 주나 갖고 있었는데, 그래서 내놓을 만한 결과가 뭐가 있나?",
+          "literal": "너는 엘프 피를 몇 주 동안 가지고 있었다 / 그래서 그것에 대해 보여 줄 무엇을 가지고 있는가?"
+        },
+        {
+          "en": "So, I hope our drugged-out kiss / isn't making things awkward.",
+          "ko": "그, 약에 취해서 한 키스 때문에 사이가 어색해진 건 아니었으면 좋겠어.",
+          "literal": "그래서, 나는 우리의 약에 취한 키스가 / 상황을 어색하게 만들고 있지 않기를 바란다"
+        },
+        {
+          "en": "now we're in this weird limbo place and we don't know what we're doing. / I know exactly what we're doing. We're shopping for turnips.",
+          "ko": "이제 우리는 이 어정쩡한 상태에 갇혀서 우리가 뭘 하고 있는 건지도 모르는 거잖아. — 나는 우리가 뭘 하는지 정확히 알아. 순무 사고 있잖아.",
+          "literal": "이제 우리는 이 이상한 중간 지대에 있고 우리는 우리가 무엇을 하고 있는지 모른다 / 나는 우리가 무엇을 하고 있는지 정확히 안다. 우리는 순무를 사러 나온 것이다"
+        },
+        {
+          "en": "Entertainment is just a tool that pacifies the masses / and leads to the decay and ultimate collapse of civilization. / Let's clap along.",
+          "ko": "오락이란 대중을 잠재우고 문명의 쇠퇴와 최종적 붕괴로 이어지는 도구일 뿐이야. 자, 같이 박수 치자.",
+          "literal": "오락은 대중을 진정시키는 도구일 뿐이다 / 그리고 문명의 쇠퇴와 최종적 붕괴로 이어지는 / 같이 박수를 치자"
+        },
+        {
+          "en": "Do I have an audience with the king / this morning?",
+          "ko": "오늘 아침에 국왕 폐하와의 접견이 있습니까?",
+          "literal": "제가 왕과의 접견을 가지고 있습니까 / 오늘 아침에?"
+        },
+        {
+          "en": "I can't crack the Elixir of Life / no matter how much I abracazab and alakazoo.",
+          "ko": "아무리 아브라카잡 알라카주를 해 봐도 생명의 영약을 못 풀어내겠어.",
+          "literal": "나는 생명의 영약을 깨뜨릴 수 없다 / 내가 아무리 많이 아브라카잡하고 알라카주해도"
+        },
+        {
+          "en": "I'm a fraud! / I am, aren't I?",
+          "ko": "나는 사기꾼이야! … 그렇지, 내가 사기꾼이지?",
+          "literal": "나는 사기꾼이다! / 나는 그렇다, 그렇지 않은가?"
+        },
+        {
+          "en": "That's gonna need / more than a fresh coat of frosting.",
+          "ko": "저건 설탕 옷 한 겹 새로 입히는 걸로는 어림도 없겠는데.",
+          "literal": "그것은 필요할 것이다 / 새 설탕 크림 한 겹보다 더 많은 것을"
+        },
+        {
+          "en": "The ancient book of spells and easy Sunday dinners / of which only two copies are known to exist!",
+          "ko": "주문과 간편한 일요일 저녁 요리법이 담긴 고대의 서적, 현존하는 사본이 단 두 부뿐이라고 알려진 그 책!",
+          "literal": "주문과 손쉬운 일요일 저녁 식사의 고대 책 / 그것의 오직 두 부만이 존재한다고 알려진!"
+        },
+        {
+          "en": "The other belongs to Collecticus / and is still sealed in its original box.",
+          "ko": "나머지 한 부는 콜렉티쿠스의 소유이고, 아직 원래 상자에 밀봉된 채로 있습니다.",
+          "literal": "다른 하나는 콜렉티쿠스에게 속해 있습니다 / 그리고 여전히 그것의 원래 상자 안에 밀봉되어 있습니다"
+        },
+        {
+          "en": "\"Elixir Vitae con Arroz.\" / Elixir of Life with Rice!",
+          "ko": "\"엘릭시르 비타에 콘 아로스.\" — 밥을 곁들인 생명의 영약!",
+          "literal": "\"생명의 영약, 쌀과 함께.\" / 쌀을 곁들인 생명의 영약!"
+        },
+        {
+          "en": "Fellow knights, my lady, / and Mertz's mother, who insisted on coming. / You won't even know I'm here. Don't slouch, peanut.",
+          "ko": "동료 기사들이여, 공주님, 그리고 굳이 따라오겠다고 우기신 머츠의 어머님. — 제가 여기 있는 줄도 모르실 거예요. 얘, 등 좀 펴라.",
+          "literal": "동료 기사들이여, 나의 숙녀여 / 그리고 오겠다고 고집한 머츠의 어머니여 / 당신들은 내가 여기 있다는 것조차 모를 거예요. 구부정하게 서지 마라, 우리 콩알아"
+        },
+        {
+          "en": "You look like / you're in his league.",
+          "ko": "자네는 저 사람 급에 맞아 보이는군.",
+          "literal": "너는 보인다 / 네가 그의 급에 들어 있는 것처럼"
+        },
+        {
+          "en": "When their gingerbread house blew up, / she and her sister downsized to a candy condo.",
+          "ko": "과자집이 폭발한 뒤에 그 여자와 언니는 규모를 줄여 사탕 아파트로 옮겼습니다.",
+          "literal": "그들의 생강빵 집이 폭발했을 때 / 그녀와 그녀의 자매는 규모를 줄여 사탕 아파트로 옮겼다"
+        },
+        {
+          "en": "Would you care for / some lightly cursed cookies?",
+          "ko": "살짝만 저주 걸린 쿠키 좀 드시겠어요?",
+          "literal": "당신은 원하시겠어요 / 약간 저주 걸린 쿠키 좀?"
+        },
+        {
+          "en": "Ooh, I love it when people talk smack about their exes. / Dish, girl!",
+          "ko": "오, 나는 사람들이 전 애인 욕하는 거 정말 좋아하거든. 다 털어놔 봐!",
+          "literal": "오, 나는 사람들이 자기 전 애인들에 대해 험담할 때 그것을 사랑한다 / 다 쏟아내라, 아가씨!"
+        },
+        {
+          "en": "And once he found the Eternity Pendant, / things went south.",
+          "ko": "그리고 그가 영원의 펜던트를 찾은 순간부터 일이 틀어지기 시작했지.",
+          "literal": "그리고 그가 영원의 펜던트를 찾은 후로 / 일들이 남쪽으로 갔다"
+        },
+        {
+          "en": "Very well. / They don't call me Mortimer the Expendable for nothing.",
+          "ko": "좋습니다. 사람들이 저를 '소모품 모티머'라고 부르는 데는 이유가 있으니까요.",
+          "literal": "아주 좋습니다 / 그들이 나를 소모품 모티머라고 부르는 것은 아무 이유 없이가 아닙니다"
+        },
+        {
+          "en": "Okay, now that the two-part single trap has been triggered, / the cave is even safer to enter.",
+          "ko": "좋아요. 이제 2단 구성의 단일 함정이 발동됐으니, 동굴에 들어가는 게 한층 더 안전해졌습니다.",
+          "literal": "좋아요, 이제 2부로 된 단일 함정이 작동되었으니 / 그 동굴은 들어가기에 훨씬 더 안전합니다"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "If only + 과거형 — 이룰 수 없는 소망, 그리고 was/were 선택",
+          "explanation": "If only는 뒤에 과거형을 붙여 현재 사실과 반대되는 아쉬움을 나타냅니다. If only I was caressing your hand는 '지금 당신의 손을 쓰다듬고 있었다면 좋으련만, 실제로는 아니다'라는 뜻입니다. 주절 없이 이 절만으로 문장이 끝나는 것도 특징이며, 감탄에 가깝기 때문에 뒤에 결과절을 붙일 필요가 없습니다. 규범 문법은 1인칭 단수에서도 were를 요구하지만(If only I were), 실제 회화에서는 was가 압도적으로 많고 조그처럼 격식과 거리가 먼 인물에게는 was가 더 자연스럽습니다. 진행형을 쓴 이유도 중요합니다. 지금 이 순간 실제로 하고 있는 동작(차가운 돌 발을 만지는 것)과 대비되기 때문입니다.",
+          "fromScript": "If only I was caressing your warm, soft hand instead of this cold, stone foot.",
+          "example": "If only I was sitting on a beach right now instead of grading these worksheets."
+        },
+        {
+          "point": "I wish + were — 가정법 과거의 be동사",
+          "explanation": "wish 뒤에 오는 절은 현재의 반대 상황을 말할 때 과거형을 쓰고, be동사는 인칭에 상관없이 were를 쓰는 것이 정석입니다(I wish it were, I wish I were). 여기서 소서리오가 I wish it were elixir of death라고 한 것은 규범형을 정확히 지킨 형태인데, 이 인물이 학자 흉내를 내는 궁정 마법사라는 점과 맞아떨어집니다. 뜻은 '이게 죽음의 영약이면 좋겠는데 실제로는 아니다'입니다. 그리고 이 대사는 자백약이 우연히 만들어져 본인 입에서 진심이 튀어나오는 장면이므로, 문법적으로는 정중한 가정법인데 내용은 왕을 죽이고 싶다는 고백이라는 어긋남이 웃음을 만듭니다. 뒤이어 나오는 Oops!가 그 사실을 확인해 줍니다.",
+          "fromScript": "I wish it were elixir of death, you fat sack.",
+          "example": "I wish today were Friday, because I have nothing left to give this class."
+        },
+        {
+          "point": "seem to have + 과거분사 — 완료부정사로 시점을 앞으로 밀기",
+          "explanation": "seem to invent는 지금 발명하는 것처럼 보인다는 뜻이지만, seem to have invented는 이미 발명이 끝난 상태로 보인다는 뜻입니다. to have + 과거분사(완료부정사)는 주절 동사보다 앞선 시점을 나타내며, It seems that I have invented ...를 한 문장으로 줄인 형태입니다. 여기에 accidentally가 끼어들어 '의도 없이 해 버렸다'는 뜻을 더합니다. 이 문형은 조심스럽게 책임을 흐릴 때 아주 유용합니다. 내가 했다고 단정하지 않고 '그렇게 된 것 같다'고 말하기 때문입니다. 그런데 정작 그 조심스러운 문장 뒤에 gravy-swilling blowhard라는 모욕이 붙습니다. swill은 돼지 먹이를 뜻하는 명사이자 짐승처럼 들이켠다는 동사이고, blowhard는 허풍선이입니다. 자백약이 문장의 앞부분은 손대지 못하고 뒷부분만 진실로 바꿔 놓은 셈입니다.",
+          "fromScript": "I seem to have accidentally invented a truth serum, you gravy-swilling blowhard!",
+          "example": "I seem to have left my umbrella on the bus again."
+        },
+        {
+          "point": "what do you got — have의 자리를 got이 차지하는 구어",
+          "explanation": "표준형은 what have you got 또는 what do you have입니다. 조그의 what do you got은 이 둘이 뒤섞인 비표준형으로, do 조동사를 쓰면서 본동사 자리에 got을 그대로 남겼습니다. 미국 구어에서는 아주 흔하며(What do you got there?, I got two brothers), 특히 거친 말투로 코드화됩니다. have got to show for it의 show for는 별도로 익힐 관용구입니다. have nothing to show for it은 '들인 노력에 비해 내놓을 결과가 없다'는 뜻이고, 여기서는 의문사와 결합해 '그래서 성과가 뭐냐'는 추궁이 됩니다. 왕이 몇 주째 엘프의 피를 쥐고 있으면서 아무 성과가 없는 마법사를 몰아붙이는 장면입니다.",
+          "fromScript": "You've had elf blood for weeks and what do you got to show for it?",
+          "example": "She worked six months on that report and had nothing to show for it but a headache."
+        },
+        {
+          "point": "of which + 명사 — 사물의 소유·부분을 나타내는 격식체 관계절",
+          "explanation": "of which only two copies are known to exist는 '그 책의 사본이 두 부만 존재한다고 알려져 있다'는 뜻입니다. 사람이면 whose를 쓰지만 사물에는 of which를 쓰는 것이 격식체이며, 어순은 of which + 명사 + 동사입니다(whose only two copies로 쓰기도 하지만 격식이 떨어집니다). are known to exist는 수동태에 부정사를 결합해 출처를 밝히지 않고 '알려져 있다'고만 말하는 학술적 표현입니다. 그러니 이 문장은 형태만 보면 희귀 고서를 소개하는 도서 해설입니다. 농담은 그 책의 내용 설명에 있습니다. 주문서인데 easy Sunday dinners, 즉 손쉬운 일요일 저녁 요리법도 실려 있다는 것입니다. 마법서와 미국식 가정 요리책을 한 명사구 안에 붙여 놓았습니다.",
+          "fromScript": "The ancient book of spells and easy Sunday dinners of which only two copies are known to exist!",
+          "example": "It is a treaty of which only one signed original is known to survive."
+        },
+        {
+          "point": "aren't I? — 불규칙한 부가의문문과 자기 확인 용법",
+          "explanation": "I am의 부가의문문은 논리적으로는 am I not?이지만 회화에서는 aren't I?를 씁니다. amn't라는 형태가 영어에 없기 때문에 생긴 예외이며, am I not?은 지나치게 격식적으로 들립니다. 여기서 더 흥미로운 것은 기능입니다. I'm a fraud라고 스스로 외친 뒤 상대가 위로해 주자 I am, aren't I?라고 되묻는데, 이것은 정보를 구하는 질문이 아니라 이미 내린 판단을 상대에게 확인받으려는 말입니다. 상대가 위로하려고 한 말을 자기 비하의 근거로 되돌려 받는 흐름이므로, 한국어로는 '그렇지, 내가 그렇지?' 정도의 자기 확인 어투가 가깝습니다.",
+          "fromScript": "I am, aren't I?",
+          "example": "I'm the only one who remembered the deadline, aren't I?"
+        },
+        {
+          "point": "now that + 절, 그리고 현재완료 수동태",
+          "explanation": "now that은 두 단어로 된 접속사로 '이제 ~이 되었으니'라는 새로운 상황을 근거로 삼습니다. now와 달리 뒤에 완전한 절이 오고, because보다 '방금 상황이 바뀌었다'는 느낌이 강합니다. 뒤에 붙은 has been triggered는 현재완료 수동태로, 함정이 발동된 그 결과가 지금도 유효하다는 것을 나타냅니다. 함정을 발동시킨 주체는 밝히지 않는데, 사실 그 주체는 방금 죽은 기사이므로 수동태가 시체를 문장에서 지워 버린 셈입니다. 논리 농담도 함께 봅시다. 단일 함정이 이미 발동되었으니 이제 안전하다는 추론은 그럴듯하지만, 다음 사람이 또 죽자 이번에는 '2부로 된 단일 함정'이라고 이름을 고쳐 붙이고 even safer, 즉 더욱 안전해졌다고 결론짓습니다. 전제를 고치는 대신 이름을 고쳐 결론을 지키는, 자기 합리화의 구조를 아주 짧게 보여 줍니다.",
+          "fromScript": "Okay, now that the two-part single trap has been triggered, the cave is even safer to enter.",
+          "example": "Now that the heating has been fixed, the children can take their coats off indoors."
+        },
+        {
+          "point": "how hard it is + 동명사, 그리고 without + 명사 + 동명사",
+          "explanation": "이 문장에는 두 개의 압축이 겹쳐 있습니다. 첫째 how hard it is being a father에서 it은 가주어이고 진주어는 동명사 being a father입니다. 격식체라면 how hard it is to be a father가 더 자연스럽지만, 동명사를 쓰면 '지금 실제로 그 상태에 있다'는 체험의 느낌이 강해집니다. 둘째 without a mother doing all the work에서는 전치사 without 다음에 명사 a mother와 동명사 doing이 이어집니다. 이때 a mother는 doing의 의미상 주어이므로 '어머니가 그 모든 일을 해 주지 않는 상태에서'라는 절 하나가 전치사구로 접혀 들어간 것입니다. 이 압축 능력이 C1의 핵심 기술입니다. 그리고 내용을 보십시오. 조그는 아버지 노릇의 고생을 호소하려다가, 원래 그 일 전부를 어머니가 했다고 스스로 실토합니다. 문장 하나에서 호소가 자백으로 바뀝니다.",
+          "fromScript": "You know how hard it is being a father without a mother doing all the work?",
+          "example": "You have no idea how exhausting it is running a classroom without another adult helping."
+        }
+      ],
+      "background": [
+        {
+          "topic": "Eye of newt — 맥베스의 마녀 주문",
+          "detail": "소서리오가 읊는 Eye of newt, tail of newt는 셰익스피어 맥베스 4막에서 마녀들이 가마솥에 재료를 넣으며 부르는 구절 Eye of newt and toe of frog에서 왔습니다. 영어권 독자에게 이 어구는 '마법 주문'의 소리 자체이며, 그래서 만화와 코미디에서 마법사를 등장시킬 때 거의 자동으로 인용됩니다. 이 작품의 농담은 인용을 하다가 힘이 빠지는 데 있습니다. 눈, 꼬리까지는 원문의 운율을 따라가지만 세 번째에서 rest of newt, 즉 '도롱뇽의 나머지'로 뭉개 버립니다. 정확한 부위를 고르는 정성이 사라진 것이고, 이것이 곧 이 인물이 사기꾼이라는 사실을 미리 알려 줍니다. 실제로 그는 곧 I'm a fraud!라고 자백하며, abracazab, alakazoo처럼 마법 주문을 아예 동사로 활용해 쓰는 대사에서도 그 아마추어리즘이 드러납니다."
+        },
+        {
+          "topic": "오락은 대중을 잠재운다 — 빵과 서커스, 그리고 즉시 무너지는 비판",
+          "detail": "광대 공연을 보며 루시가 하는 Entertainment is just a tool that pacifies the masses and leads to the decay and ultimate collapse of civilization은 두 개의 유명한 담론을 압축한 것입니다. 하나는 고대 로마의 '빵과 서커스'로, 권력이 값싼 먹거리와 오락으로 시민의 정치적 불만을 마비시킨다는 비판입니다. 다른 하나는 20세기 문화산업 비판으로, 대중 오락이 사고를 마취시켜 문명을 쇠퇴시킨다는 주장입니다. 문장 자체가 pacify, decay, ultimate collapse 같은 라틴계 추상 명사로 이루어진 논문 문체입니다. 그런데 바로 다음 대사가 Let's clap along, 즉 같이 박수 치자입니다. 비판의 주체가 두 줄 만에 비판 대상에 흡수되는 것이며, 이 작품이 냉소를 다루는 전형적인 방식입니다. 냉소적인 인물이 가장 먼저 항복합니다."
+        },
+        {
+          "topic": "헨젤과 그레텔의 과자집, 그리고 미국식 부동산 용어",
+          "detail": "마녀의 새 집을 설명하는 When their gingerbread house blew up, she and her sister downsized to a candy condo는 동화와 현대 생활 어휘를 한 문장에 겹쳐 놓았습니다. 앞부분은 헨젤과 그레텔입니다. 숲속의 생강빵 집과 아이를 잡아먹는 마녀는 영어권에서 설명이 필요 없는 배경입니다. 뒷부분은 완전히 현대 미국의 말입니다. downsize는 회사가 인원을 줄이거나 가정이 더 작은 집으로 옮기는 것을 뜻하는 경제 용어이고, condo는 분양 아파트입니다. 즉 이 마녀는 화재를 계기로 주택 규모를 줄여 아파트로 이사한 은퇴자처럼 묘사됩니다. 그 집이 사탕으로 되어 있다는 사실만 그대로 남아, 벽을 손보려면 설탕 크림을 한 겹 새로 입혀야 한다는 대사(a fresh coat of frosting)로 이어집니다. 원래 관용구는 a fresh coat of paint이며 여기서 페인트만 크림으로 바뀌었습니다. 손님 접대에서도 같은 기법이 쓰입니다. lightly cursed cookies는 lightly salted, lightly toasted처럼 식품 표시에 쓰는 형식을 저주에 적용한 것으로, 저주가 강도 조절 가능한 옵션처럼 들립니다."
+        },
+        {
+          "topic": "Elixir Vitae con Arroz와 미개봉 박스 수집 — 마법서를 소비재로 다루기",
+          "detail": "오므니콘에서 찾아낸 항목 이름 Elixir Vitae con Arroz는 언어가 두 개 섞여 있습니다. Elixir Vitae는 '생명의 영약'을 뜻하는 라틴어이고, con arroz는 '쌀을 곁들인'이라는 스페인어입니다. 스페인어권 식당 메뉴에서 arroz con pollo(치킨 라이스)처럼 흔히 쓰이는 형식이라, 영어권 시청자에게는 고대 마법서 항목이 갑자기 식당 메뉴처럼 읽히는 순간이 됩니다. 두 사람이 동시에 Elixir of Life with Rice!라고 번역해 외치는 것도 그 낙차를 확인해 주는 연출입니다. 같은 방향의 농담이 하나 더 있습니다. 이 책의 나머지 한 부는 콜렉티쿠스라는 자가 가지고 있으며 아직 원래 상자에 밀봉된 채라는 설명입니다. 미국 수집가 문화에서 mint in box, 즉 미개봉 상태는 가치를 크게 높이므로 수집가는 물건을 절대 꺼내지 않습니다. 세상에 두 권뿐인 마법서가 그렇게 봉인되어 있다는 설정은 수집 취미에 대한 조롱이면서, 지식이 쓰이지 않고 자산으로만 보관되는 상황에 대한 농담입니다."
+        },
+        {
+          "topic": "소모품 모티머와 단일 함정의 동굴 — 죽는 것이 역할인 인물",
+          "detail": "Mortimer the Expendable이라는 이름은 여러 층으로 되어 있습니다. expendable은 '소모해도 되는, 없어져도 무방한'이라는 뜻이고, 미국 대중문화에서는 원정대에 합류했다가 곧 죽는 이름 없는 인물을 가리키는 관습이 있습니다. 스타트렉에서 붉은 셔츠를 입은 대원이 상륙 즉시 죽는 관례에서 나온 redshirt라는 말이 그것입니다. 게다가 Mortimer의 첫 음절 mort는 라틴어로 죽음입니다. 그래서 They don't call me Mortimer the Expendable for nothing이라는 대사는 자랑처럼 들리지만 실제로는 자기 사망 예고입니다. not ... for nothing은 이중부정으로 '이유가 있다'는 뜻입니다. 동굴 이름도 같은 구조입니다. Cave of the Single Trap이라는 이름은 함정이 하나뿐이라는 정보를 주지만, 그 하나가 발동된 뒤 또 한 명이 죽으면 이름이 the two-part single trap으로 수정되고, 결론은 여전히 '더 안전해졌다'입니다. 참고로 이 화의 궁정 장면에는 항해와 군대의 명령어체가 섞입니다. 매질을 계속하라는 on with the whacking과 그것을 중지시키는 Belay the whacking에서 belay는 원래 배의 밧줄을 고정하라는 명령어이며, 이런 단어가 궁정의 처벌 절차에 붙으면서 등록 충돌이 일어납니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "조그가 다그마의 석상 앞에서 하는 독백은 왜 자기 폭로가 되는가?",
+          "answer": "조그는 예전에 몰래 교회에 들어와 이 자리에서 입을 맞추던 시절을 회상하며, 차가운 돌 발이 아니라 따뜻한 손을 쓰다듬고 있으면 좋겠다고 말합니다. 애도의 문장 형식은 유지되지만 그가 실제로 만지고 있는 것은 석상의 발이므로, 그리움이 곧바로 우스꽝스러운 그림이 됩니다. 그다음 문장이 핵심입니다. 어머니가 그 모든 일을 다 해 주지 않는 상태에서 아버지 노릇을 하는 게 얼마나 힘든지 아느냐고 묻는데, 이 말은 육아의 고생을 호소하려는 의도였지만 결과적으로 원래 그 일을 전부 아내가 했다는 사실을 스스로 인정합니다. 곧 뒤이어 Oh, who am I kidding?이라고 자기 말을 스스로 취소하는 것도 같은 방향입니다. 이어서 그를 코코넛에 비유하는 말은 겉은 딱딱하지만 속은 부드럽다는 상투구를 예상하게 만든 뒤 그 뒷부분을 끝내지 않고 흐려 버립니다."
+        },
+        {
+          "question": "자백약 장면에서 실제로 무슨 일이 일어났고, 그 대사들은 어떻게 작동하는가?",
+          "answer": "소서리오는 엘프의 피로 생명의 영약을 만들려 했지만 실패하고, 대신 우연히 진실을 말하게 하는 약을 만들어 버립니다. 그 사실은 그의 입에서 진심이 튀어나오면서 드러납니다. 이게 죽음의 영약이면 좋겠다고 왕 앞에서 말해 버리고, 곧 자기 실수를 알아채고 Oops!라고 덧붙입니다. 그다음 문장은 더 흥미롭습니다. 실수로 자백약을 발명한 것 같다는 조심스러운 완료부정사 구문으로 시작해 놓고, 문장 끝에서는 왕을 그레이비나 퍼먹는 허풍선이라고 부릅니다. 즉 약은 문장의 형식은 건드리지 못하고 어휘만 정직하게 바꿔 놓습니다. 조그의 반응은 이 실패를 문제 삼는 것이 아니라 몇 주째 엘프 피를 갖고 있으면서 성과가 뭐냐고 다그치는 것입니다."
+        },
+        {
+          "question": "오므니콘에서 무엇이 밝혀지고, 그래도 남는 문제는 무엇인가?",
+          "answer": "소서리오는 자기가 사기꾼이라고 자백한 뒤 오드발에게서 이곳이 예전에 마녀의 은거지였다는 사실을 듣고, 그 방에서 오므니콘을 찾아냅니다. 세상에 두 부만 존재한다고 알려진 고대의 주문서인데, 주문과 함께 손쉬운 일요일 저녁 요리법까지 실려 있고 나머지 한 부는 수집가가 미개봉 상자째로 보관하고 있다는 설명이 붙습니다. 여기서 찾아낸 항목이 라틴어와 스페인어가 섞인 Elixir Vitae con Arroz이며, 두 사람은 그것을 밥을 곁들인 생명의 영약이라고 번역합니다. 즉 제조법은 확인됩니다. 문제는 조건입니다. 피를 특별한 병에서 증류해야 하는데 그 병은 지금 없고 가장 최근의 소재만 알려져 있으며, 무엇보다 그 순간 엘프가 납치됩니다. 그래서 원정의 목표가 병 찾기와 엘포 찾기로 하나가 됩니다."
+        },
+        {
+          "question": "엘포가 납치된 사건이 왕궁의 우선순위를 어떻게 바꾸는가?",
+          "answer": "엘포는 수확제 때 만들어진 짚 인간 차림의 인물에게 잡혀갑니다. 그 인물은 자기가 줄곧 엘포를 노리고 있었는데 오히려 엘포가 제 발로 왔다고 말하고, 곁에서는 목줄을 채워 두었어야 했다는 말이 나옵니다. 처음에 조그는 매질을 계속하라고 할 정도로 이 소식에 관심이 없지만, 엘포를 실어 간 수레에 그려져 있던 문양이 병과 연결된다는 것이 확인되자 태도가 바뀝니다. 납치범도 영약을 노리고 있다는 뜻이기 때문입니다. 그래서 결론은 병을 찾으면 엘포도 찾는다는 것으로 정리되고, 왕은 모든 기사를 병을 찾는 원정에 보내라고 명령합니다. 이때 유일한 신을 찾는 일은 내년으로 미루겠다는 대사가 붙는데, 신앙보다 불멸이 먼저라는 이 왕국의 우선순위를 한 줄로 보여 줍니다."
+        },
+        {
+          "question": "마녀 방문과 동굴 진입 장면은 어떤 정보를 주고 어떤 방식으로 웃기는가?",
+          "answer": "원정대는 예전에 은거지의 주인이었던 마녀를 찾아갑니다. 과자집이 폭발한 뒤 규모를 줄여 사탕 아파트로 옮긴 그 마녀는 살짝 저주 걸린 쿠키를 권하고, 루시는 사람들이 전 애인 험담하는 것을 좋아한다며 다 털어놓으라고 부추깁니다. 여기서 얻는 정보는 말푸스라는 인물이 생명의 영약에 집착했고, 영원의 펜던트를 손에 넣은 순간부터 일이 틀어져서 세상에서 가장 높은 산 위로 떠났다는 것입니다. 산으로 가면 단일 함정의 동굴이 나옵니다. 웃음은 여기서 논리를 통해 만들어집니다. 함정이 하나라면 그것이 한 번 발동된 뒤에는 안전하다는 추론이 성립하는데, 실제로는 사람이 계속 죽습니다. 그런데도 결론을 고치는 대신 함정의 이름을 2부로 된 단일 함정으로 고쳐 부르고 더 안전해졌다고 선언합니다. 죽는 사람의 이름이 모티머 더 익스펜더블, 즉 소모품이라는 점에서 이 장면은 처음부터 결말을 알려 주고 시작합니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 9,
+      "title": "8. 조그와 불멸의 영약 (2부)",
+      "chunks": [
+        {
+          "en": "You put on metal clothes, / I'm supposed to stop worrying about you?",
+          "ko": "쇠붙이 옷 하나 걸쳤다고 엄마가 걱정을 그만두는 게 맞다는 거니?",
+          "literal": "네가 금속 옷을 입는다고 / 내가 너에 대한 걱정을 그만두어야 한다는 거야?"
+        },
+        {
+          "en": "I'd rather die than listen to this. / I'm going in.",
+          "ko": "이런 소리 듣고 있는 것보다는 죽는 게 낫겠어. 내가 들어갈게.",
+          "literal": "나는 이것을 듣는 것보다 오히려 죽겠다 / 나는 들어간다"
+        },
+        {
+          "en": "I'm hidden in the deepest, darkest part of the cave. / You shall never find me! / There you are!",
+          "ko": "나는 이 동굴의 가장 깊고 가장 어두운 곳에 숨어 있다. 너희는 결코 나를 찾지 못할 것이다! — 아, 여기 있네요!",
+          "literal": "나는 동굴의 가장 깊고 가장 어두운 부분에 숨겨져 있다 / 너희는 결코 나를 찾지 못할 것이다! / 거기 계시네요!"
+        },
+        {
+          "en": "And who are you, / that you passed through the Single Trap with Two Parts?",
+          "ko": "그런데 2부로 된 단일 함정을 통과한 너희는 대체 누구냐?",
+          "literal": "그런데 너희는 누구냐 / 2부로 된 단일 함정을 통과했다는 그런 자들이?"
+        },
+        {
+          "en": "Parties of three or more? / Yes, I must do something about that.",
+          "ko": "세 명 이상 단체 손님이라니. 그래, 그 부분은 내가 손을 좀 봐야겠군.",
+          "literal": "세 명 이상의 일행? / 그래, 나는 그것에 대해 무언가를 해야만 하겠다"
+        },
+        {
+          "en": "Have you availed yourself of it / and been blessed with immortality?",
+          "ko": "그것을 활용하셔서 불멸의 축복을 받으셨습니까?",
+          "literal": "당신은 그것을 이용하셨습니까 / 그리고 불멸로 축복받으셨습니까?"
+        },
+        {
+          "en": "The monotony, / the repetition.",
+          "ko": "단조로움. 그리고 반복.",
+          "literal": "그 단조로움 / 그 반복"
+        },
+        {
+          "en": "And after all that, / we fell for each other, hard.",
+          "ko": "그 모든 일을 겪은 뒤에 우리는 서로에게 깊이 빠졌지.",
+          "literal": "그리고 그 모든 것 뒤에 / 우리는 서로에게 빠졌다, 세게"
+        },
+        {
+          "en": "All it took was / one drop of elf blood.",
+          "ko": "필요한 건 엘프의 피 한 방울뿐이었어.",
+          "literal": "그것이 요구한 모든 것은 / 엘프 피 한 방울이었다"
+        },
+        {
+          "en": "We'd already been married for 90 years / and weren't sure our 17th dog was going to solve our problems.",
+          "ko": "우리는 이미 90년을 함께 살았고, 열일곱 번째 개가 우리 문제를 해결해 줄지도 확신할 수 없었어.",
+          "literal": "우리는 이미 90년 동안 결혼한 상태였다 / 그리고 우리의 열일곱 번째 개가 우리 문제를 해결해 줄 것인지 확신하지 못했다"
+        },
+        {
+          "en": "It did, for a while. / But then it didn't, so we split.",
+          "ko": "한동안은 해결이 됐어. 그런데 어느 순간부터 안 되더군. 그래서 갈라섰지.",
+          "literal": "그것은 그랬다, 한동안은 / 하지만 그다음엔 그러지 않았고, 그래서 우리는 갈라섰다"
+        },
+        {
+          "en": "I came here, / but not before I got rid of that infernal vial!",
+          "ko": "나는 이곳으로 왔지. 그 지긋지긋한 병을 없애 버린 다음에야 왔어!",
+          "literal": "나는 이곳에 왔다 / 하지만 내가 그 지옥 같은 병을 없애기 전에는 아니었다!"
+        },
+        {
+          "en": "There's such a place? / Just up Cherrywood Road. Take a right at the dance academy.",
+          "ko": "그런 곳이 실제로 있어요? — 체리우드 로드로 쭉 올라가서 무용 학원에서 우회전하면 돼.",
+          "literal": "그런 장소가 있어요? / 체리우드 로드를 따라 조금만 올라가서. 무용 학원에서 오른쪽으로 꺾어라"
+        },
+        {
+          "en": "And maybe on the way, / yourselves.",
+          "ko": "그리고 어쩌면 가는 길에 너희 자신도 잃겠지.",
+          "literal": "그리고 어쩌면 그 도중에 / 너희 자신들도"
+        },
+        {
+          "en": "It's less a book / and more a letter to my father.",
+          "ko": "그건 책이라기보다는 아버지에게 쓴 편지에 가깝다네.",
+          "literal": "그것은 책이라기보다 덜하고 / 내 아버지에게 보내는 편지에 더 가깝다"
+        },
+        {
+          "en": "What need have I / for a horse?",
+          "ko": "내게 말이 무슨 소용이 있겠나?",
+          "literal": "무슨 필요를 내가 가지고 있겠나 / 말에 대해서?"
+        },
+        {
+          "en": "They call it an edge, / but it's really more of a gentle slope!",
+          "ko": "사람들은 여기를 절벽 끝이라고 부르지만, 사실은 완만한 경사에 가까워요!",
+          "literal": "그들은 그것을 끝이라고 부른다 / 하지만 그것은 실제로 완만한 경사에 더 가깝다!"
+        },
+        {
+          "en": "Well, mostly people / throw stuff they don't want back.",
+          "ko": "글쎄요, 대개는 되돌려 받고 싶지 않은 물건을 던지죠.",
+          "literal": "글쎄요, 대부분 사람들은 / 그들이 돌려받고 싶지 않은 물건을 던집니다"
+        },
+        {
+          "en": "For a shilling I can engrave it / with the name of an unloved one.",
+          "ko": "1실링만 주시면 사랑하지 않는 사람의 이름을 새겨 드립니다.",
+          "literal": "1실링에 저는 그것을 새겨 드릴 수 있습니다 / 사랑받지 못하는 사람의 이름으로"
+        },
+        {
+          "en": "What part of \"no, thanks\" do you not understand? / The \"no\" part.",
+          "ko": "\"괜찮다, 사양한다\"에서 어느 부분을 이해하지 못하는 거죠? — \"아니\"라는 부분요.",
+          "literal": "\"아니요, 감사합니다\"의 어느 부분을 당신은 이해하지 못하는 겁니까? / \"아니요\" 부분요"
+        },
+        {
+          "en": "I didn't save you / so much as you fell on me.",
+          "ko": "내가 너를 구했다기보다는 네가 내 위로 떨어진 거지.",
+          "literal": "나는 너를 구한 것이 아니다 / 네가 내 위로 떨어진 것만큼은"
+        },
+        {
+          "en": "No. / That's gonna be a hard nope.",
+          "ko": "아니요. 그건 절대 사양하겠습니다.",
+          "literal": "아니요 / 그것은 강한 거절이 될 것입니다"
+        },
+        {
+          "en": "I'm a griffin. / Half-man, half-bird, half-lion.",
+          "ko": "나는 그리핀이야. 반은 사람, 반은 새, 반은 사자지.",
+          "literal": "나는 그리핀이다 / 반은 사람, 반은 새, 반은 사자"
+        },
+        {
+          "en": "These days, most men prefer to fornicate / with something other than a giant bird.",
+          "ko": "요즘 남자들은 거대한 새가 아닌 다른 것과 관계 맺는 걸 선호하더라고.",
+          "literal": "요즘 대부분의 남자들은 성관계를 갖는 것을 선호한다 / 거대한 새가 아닌 다른 어떤 것과"
+        },
+        {
+          "en": "Unlike other villains, / I shan't be telling you my plan.",
+          "ko": "다른 악당들과 달리 나는 내 계획을 너희에게 말해 주지 않겠다.",
+          "literal": "다른 악당들과 달리 / 나는 너희에게 내 계획을 말하고 있지 않을 것이다"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "접속사 없는 조건절 + 수사의문문",
+          "explanation": "You put on metal clothes, I'm supposed to stop worrying about you?는 형태만 보면 두 개의 평서문이 쉼표로 붙어 있지만, 앞부분은 조건절이고 뒷부분은 반박입니다. 완전한 형태로 쓰면 Just because you put on metal clothes, am I supposed to stop worrying about you?가 됩니다. 회화에서는 이렇게 접속사를 아예 빼고 억양만으로 '앞은 상대의 논리, 뒤는 그 논리의 부당한 결론'을 표시하는 일이 아주 흔합니다. 뒷부분은 의문문 어순이 아닌데도 끝을 올려 의문으로 만들었고, 답을 구하는 것이 아니라 그럴 리 없다는 뜻이므로 수사의문문입니다. am I supposed to는 '내가 그래야 하는 것으로 되어 있다는 거냐'는 항의의 굳은 틀입니다. 갑옷을 metal clothes라고 부르는 것도 이 어머니가 기사 세계의 어휘를 인정하지 않는다는 표시입니다.",
+          "fromScript": "You put on metal clothes, I'm supposed to stop worrying about you?",
+          "example": "You send one email at midnight, everyone is supposed to drop their plans?"
+        },
+        {
+          "point": "would rather A than B — 원형 두 개의 병렬",
+          "explanation": "would rather 다음에는 to 없는 동사원형이 오고, than 다음에도 원형이 옵니다(I'd rather die than listen). to die나 than to listen이라고 쓰지 않는 것이 핵심입니다. 축약형 I'd rather는 I had rather의 흔적이지만 오늘날 의미는 would이며, 부정은 I'd rather not처럼 rather 뒤에 not을 붙입니다. 다른 사람의 행동을 바랄 때는 뒤에 과거형 절이 오는 별개의 용법도 있습니다(I'd rather you didn't smoke). 여기서는 과장법으로 쓰였습니다. 지루한 대화를 듣는 것보다 죽는 게 낫다는 말은 문자 그대로의 선택이 아니라 지루함의 정도를 표현하는 상투적 강조입니다. 그런데 바로 다음에 실제로 죽을 수 있는 함정 동굴로 들어가겠다고 말하므로, 과장이 문자 그대로 실행될 위험과 나란히 놓입니다.",
+          "fromScript": "I'd rather die than listen to this.",
+          "example": "I would rather mark a hundred essays than sit through another two-hour meeting."
+        },
+        {
+          "point": "not before + 절 — 순서를 뒤집어 읽어야 하는 표현",
+          "explanation": "I came here, but not before I got rid of that vial는 초급 학습자가 거의 반드시 틀리는 구조입니다. 직역하면 '병을 없애기 전에는 오지 않았다'인데, 이것은 결국 '병을 먼저 없애고 나서 왔다'는 뜻입니다. 즉 not before는 두 사건의 순서를 지정하며, before의 뜻을 뒤집어 읽어야 합니다. 이 표현이 강조하는 것은 그 일을 반드시 먼저 처리했다는 점입니다. 비슷한 틀로 but not until, not without 등이 있고, 모두 '~하고 나서야 비로소'로 옮기면 자연스럽습니다. 이 대사가 중요한 이유는 이야기 정보 때문입니다. 말푸스는 산으로 은거하기 전에 병을 세계의 끝으로 던져 버렸고, 그래서 원정의 방향이 여기서 완전히 바뀝니다.",
+          "fromScript": "I came here, but not before I got rid of that infernal vial!",
+          "example": "She finally moved abroad, but not before she had sold every piece of furniture she owned."
+        },
+        {
+          "point": "대동사 do — 앞 문장을 통째로 대신하기",
+          "explanation": "It did, for a while. But then it didn't에서 did와 didn't는 앞에 나온 solve our problems 전체를 대신합니다. 영어는 같은 동사구를 반복하는 대신 do, does, did, don't 같은 대동사만 남기는데(A: Did you finish? B: I did), 이 대사는 그 기법으로 90년의 결혼 생활을 두 문장에 압축했습니다. 문법을 알아도 뜻이 안 잡히는 이유는 대동사가 무엇을 가리키는지 앞으로 되돌아가 찾아야 하기 때문이므로, 대동사를 만나면 곧바로 앞의 동사구를 확인하는 습관을 들이는 것이 좋습니다. 그리고 이 짧은 두 문장이 웃긴 이유는 앞 대사에 있습니다. 열일곱 번째 개가 문제를 해결해 줄지 확신할 수 없었다는 말은, 부부가 관계의 문제를 아이나 반려동물로 덮는다는 흔한 농담을 열일곱 번 반복한 상태로 만든 것입니다.",
+          "fromScript": "It did, for a while. But then it didn't, so we split.",
+          "example": "I thought the new schedule would help, and it did, until the exams started."
+        },
+        {
+          "point": "not ... so much as — 'A라기보다는 B다'",
+          "explanation": "I didn't save you so much as you fell on me는 두 설명을 견주어 뒤쪽이 더 정확하다고 정정하는 구문입니다. not so much A as B(A라기보다는 B)의 변형이며, 회화에서는 이렇게 절을 뒤에 붙이는 형태도 자연스럽습니다. 핵심은 앞을 완전히 부정하는 것이 아니라 '그렇게 부를 만한 일은 아니다'라고 무게를 조정한다는 점입니다. 비슷한 기능의 표현으로 rather than, if anything, or rather가 있습니다. 이 대사가 하는 일은 감사의 상황을 해체하는 것입니다. 구조된 쪽이 고맙다고 하려는 순간, 구조자가 스스로 '구한 게 아니라 네가 내 위로 떨어진 것'이라고 정정해 버리므로 감사할 대상이 사라집니다. 이 작품은 감정이 무르익는 순간을 이렇게 사실 확인으로 끊는 일이 많습니다.",
+          "fromScript": "I didn't save you so much as you fell on me.",
+          "example": "He didn't apologise so much as explain why the whole thing was my fault."
+        },
+        {
+          "point": "less A and more B / more of a B — 명사를 비교급으로 재정의하기",
+          "explanation": "영어는 형용사가 아니라 명사에도 비교급 틀을 씌워 정체를 다시 규정합니다. It's less a book and more a letter to my father는 '책이라기보다 편지에 가깝다'는 뜻이고, less of a book and more of a letter처럼 of a를 넣는 형태도 흔합니다. 같은 장면의 It's really more of a gentle slope도 같은 구조로, '완만한 경사라고 하는 편이 맞다'는 뜻입니다. 이 틀은 명사 자체를 부정하지 않으면서 분류를 옮기기 때문에 실제 대화에서 대단히 유용합니다. 여기서는 두 번 다 실망을 만드는 데 쓰였습니다. 불멸자가 남긴 지혜의 책은 아버지에게 쓴 편지에 불과하고, 세계의 끝이라는 신화적 장소는 실제로는 완만한 내리막입니다.",
+          "fromScript": "It's less a book and more a letter to my father.",
+          "example": "What I run is less a book club and more an excuse to eat cake on Thursdays."
+        },
+        {
+          "point": "고어체 의문 도치와 shall / shan't",
+          "explanation": "What need have I for a horse?는 현대 영어라면 What need do I have ...?나 Why would I need a horse?가 됩니다. 조동사 do 없이 본동사 have를 주어 앞으로 도치하는 것은 근대 영어까지 쓰였던 방식이고, 지금은 성경 번역과 셰익스피어, 그리고 그것을 흉내 내는 판타지 대사에만 남아 있습니다. 같은 화의 You shall never find me와 I shan't be telling you my plan도 그 계열입니다. shall은 현대 미국 영어에서 거의 사라졌고 shan't(shall not의 축약)는 더욱 그렇기 때문에, 이 단어들이 나오면 곧 '옛말투로 무게를 잡는 인물'이라는 신호로 읽으면 됩니다. 재미는 그 무게가 배신당하는 데 있습니다. 결코 찾지 못할 것이라고 선언한 은자는 다음 순간 곧바로 발견되고, 계획을 말하지 않겠다고 선언한 악당은 그 선언 자체로 계획이 있다는 사실을 알려 줍니다.",
+          "fromScript": "What need have I for a horse?",
+          "example": "What need have we of a printer when nobody in this office prints anything?"
+        },
+        {
+          "point": "과거완료 + for + 기간 — 어느 과거 시점까지 이어진 상태",
+          "explanation": "We'd already been married for 90 years는 이야기 속의 어느 과거 시점을 기준으로 그때까지 90년째 결혼 상태였음을 나타냅니다. 현재완료 We've been married for 90 years가 지금까지의 누적이라면, 과거완료는 기준점 자체가 과거로 옮겨 간 것입니다. 과거 시점의 회상 안에서 그보다 더 이전을 말할 때 반드시 필요한 시제이며, already가 함께 오면 '그 시점에 이미'라는 뜻이 분명해집니다. 뒤에 이어지는 weren't sure ... was going to solve에서도 시제 일치가 일어납니다. 과거 시점에서 본 미래이므로 will이 아니라 was going to가 쓰였습니다. 이렇게 과거 안의 과거와 과거 안의 미래를 함께 다루는 것이 서술문의 핵심 기술입니다.",
+          "fromScript": "We'd already been married for 90 years and weren't sure our 17th dog was going to solve our problems.",
+          "example": "By the time I transferred schools, I had already been teaching the same textbook for eleven years."
+        }
+      ],
+      "background": [
+        {
+          "topic": "산꼭대기의 은자 현자 — 관습을 세운 뒤 곧바로 부수기",
+          "detail": "가장 높은 산의 동굴에 사는 늙은 현자에게 물음을 구하러 올라간다는 설정은 서양 판타지와 만화에서 대단히 낡은 관습입니다. 영어권 독자는 이 장면을 보면 바로 '산 위의 현자에게 인생의 의미를 묻는' 신문 만화 컷을 떠올립니다. 이 작품은 그 관습의 형식은 그대로 세워 두고 내용만 무너뜨립니다. 말푸스는 자기가 가장 깊고 어두운 곳에 숨어 있어 결코 찾을 수 없다고 선언한 직후 곧바로 발견되고, 방문객이 세 명 이상이라는 사실에는 식당 예약 담당자처럼 반응합니다(Parties of three or more?는 미국 식당과 극장에서 단체 인원을 가리키는 표현입니다). 지혜의 책이라고 내세운 것은 아버지에게 쓴 편지에 가깝고, 마지막에 방문객을 붙잡아 두려던 말은 결국 나는 몹시 외롭지만 그래도 너희는 가는 게 좋겠다는 자기 부정으로 끝납니다."
+        },
+        {
+          "topic": "불멸의 저주, 그리고 열일곱 번째 개",
+          "detail": "불멸을 얻은 인물이 그것을 후회한다는 것은 서양 문학의 오래된 주제입니다. 지겨움과 반복만 남고 사랑하는 사람은 모두 먼저 떠나기 때문입니다. 말푸스가 불멸의 대가로 꼽는 것도 웅장한 비극이 아니라 단조로움과 반복이라는 두 단어이고, 이 두 단어가 거의 같은 뜻이어서 그 자체로 반복을 실연합니다. 조언으로 던지는 Be careful what you wish for도 영어권의 상투구로, 소원이 그대로 이루어지는 것이 가장 무섭다는 뜻입니다. 그웬과의 이야기에서 가장 미국적인 농담은 열일곱 번째 개입니다. 관계가 식은 부부가 아이나 반려동물을 들여 문제를 덮으려 한다는 오래된 농담이 있고, 그것을 90년의 결혼 생활에 곱해 열일곱 마리로 만든 것입니다. 그 뒤의 It did, for a while. But then it didn't은 결혼 상담의 결론을 두 문장으로 압축한 문장이며, split은 커플이 갈라선다는 뜻의 일상어입니다."
+        },
+        {
+          "topic": "세계의 끝 — 평평한 지구 신화와 미국식 관광지",
+          "detail": "the Edge of the World는 지구가 평평해서 어딘가에 끝이 있고 그 아래로 떨어진다는 옛 세계상에서 온 표현입니다. 이 작품은 그 신화적 장소를 미국의 도로변 관광지로 바꿔 놓습니다. 위치를 묻자 체리우드 로드로 올라가 무용 학원에서 우회전하라는, 교외 주택가 길 안내가 돌아옵니다. 도착하면 실제로는 절벽이 아니라 완만한 경사이고, 무엇보다 기념품 가게가 있습니다. 미국의 관광 명소에는 반드시 gift shop이 있고 이름을 새겨 주는 서비스가 붙는데, 여기서는 그 서비스가 the name of an unloved one으로 뒤틀립니다. 사랑하는 사람을 뜻하는 loved one은 특히 장례와 추모의 자리에서 쓰이는 정해진 표현이므로, 접두사 un 하나로 그 정반대의 상품이 만들어집니다. 점원의 don't want back이라는 표현도 중의적입니다. '되돌려 받고 싶지 않은 물건'과 '원하지 않는 물건을 되돌려 던진다' 두 가지로 읽히며, 물건을 버리는 곳이자 반품 창구라는 두 그림이 겹칩니다."
+        },
+        {
+          "topic": "그리핀, 세 개의 반쪽, 그리고 현대 담론의 삽입",
+          "detail": "그리핀은 독수리의 머리와 날개에 사자의 몸을 가진 신화의 짐승으로, 유럽 문장에서 용맹과 수호의 상징으로 쓰였습니다. 그러니 자기 소개를 Half-man, half-bird, half-lion이라고 하는 순간 산수가 무너집니다. 반쪽이 셋이면 전체가 하나가 될 수 없습니다. 반인반마처럼 half를 두 번 쓰는 관용적 소개 형식을 그대로 흉내 내다가 하나를 더 붙인, 아주 짧고 정확한 농담입니다. 여기에 현대의 어휘가 겹쳐집니다. 상대가 여성인지 묻자 Gender is a spectrum이라고 답하고, 깃털과 부리를 두고 cultural appropriation, 즉 문화 도용이 아니냐는 걱정이 나오며, 제안을 거절할 때는 a hard nope라는 인터넷 말투가 등장합니다. 반대로 종족 소멸을 설명하는 문장에서는 fornicate라는 성서적이고 딱딱한 라틴계 동사를 골라 씁니다. 아주 저속한 내용을 가장 격식 있는 단어로 말하는 이 대비가 이 작품의 상투적 수법입니다."
+        },
+        {
+          "topic": "Birdman, activate!와 계획을 설명하지 않는 악당",
+          "detail": "그리핀을 타고 추격하며 외치는 Birdman, activate!는 미국 텔레비전 만화의 관습을 그대로 가져온 것입니다. 1960년대 한나바베라의 슈퍼히어로 Birdman이 있었고, 같은 시대 만화들은 변신이나 합체를 할 때 이름 뒤에 activate 같은 명령어를 외치는 구호를 반드시 붙였습니다(Wonder Twins의 Form of...가 대표적입니다). 그래서 이 구호는 영어권 시청자에게 '어린이 만화의 진지한 척하는 순간'으로 즉시 인식되고, 정작 그 뒤에 벌어지는 일은 알을 하나 떨어뜨리는 것과 20분과 우유 한 잔이 필요하다는 대답입니다. 클로이드의 사자가 남기는 Unlike other villains, I shan't be telling you my plan도 장르 자기 인식입니다. 악당이 승리를 확신하고 계획을 길게 설명하다가 그 시간에 주인공이 탈출한다는 것이 오래된 관습인데, 이 인물은 그 관습을 이름 붙여 거부합니다. 그런데 거부를 선언하는 행위 자체가 계획의 존재를 알려 주므로 결국 정보를 흘리게 됩니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "말푸스는 불멸에 대해 무엇을 증언하며, 그웬 이야기의 요점은 무엇인가?",
+          "answer": "말푸스는 자기가 실제로 불멸을 얻었다고 확인해 주지만, 그 대가로 남은 것은 단조로움과 반복이라고 말합니다. 두 단어가 사실상 같은 뜻이라는 점에서 대사 자체가 반복을 연기합니다. 그웬과는 모험을 함께하며 깊이 사랑했고 영원한 사랑을 맹세했는데, 그는 그 맹세를 문자 그대로 실현하려 했습니다. 필요한 것은 엘프의 피 한 방울뿐이었고, 자기는 마셨지만 그웬은 거절했습니다. 그리고 그웬이 현명한 쪽이었다고 인정합니다. 이미 90년을 함께 산 부부였고 열일곱 번째 개가 문제를 해결해 줄지도 알 수 없었다는 설명, 한동안은 되다가 결국 안 되어서 갈라섰다는 두 문장이 이 이야기의 결론입니다. 요점은 영원한 사랑을 문자 그대로 만들려는 시도가 사랑을 끝냈다는 것입니다."
+        },
+        {
+          "question": "영원의 펜던트가 담긴 병은 지금 어디에 있으며 어떻게 추적되는가?",
+          "answer": "말푸스는 산으로 은거하기 전에 그 병을 세계의 끝 밖으로 던져 버렸다고 밝힙니다. not before라는 표현 때문에 순서를 뒤집어 읽어야 하는데, 병을 먼저 없애고 나서 이곳으로 왔다는 뜻입니다. 세계의 끝은 신화적 장소처럼 들리지만 실제로는 교외 도로 안내로 찾아갈 수 있는 관광지이고, 절벽 끝이라기보다 완만한 경사입니다. 원정대는 그 아래 절벽에 매달린 그리핀의 둥지에서 단서를 얻습니다. 떨어진 물건으로 둥지를 꾸민 그리핀은 그와 똑같은 물건이 아니라 바로 그 물건이 떨어졌었다고 확인해 주는데, 다만 이미 몇 년 전에 뱀 왕관을 쓴 왕에게 넘겼다고 말합니다. 그 정보가 마루와 클로이드로 이어지고, 엘포를 데려간 세력과 같은 방향임이 드러납니다."
+        },
+        {
+          "question": "세계의 끝 기념품 가게 장면에서 대럴의 말들은 어떤 언어적 농담으로 되어 있는가?",
+          "answer": "세 개의 농담이 연달아 나옵니다. 첫째는 중의성입니다. mostly people throw stuff they don't want back은 '되돌려 받고 싶지 않은 물건을 던진다'로도, '원하지 않는 물건을 다시 던져 버린다'로도 읽히므로, 이곳이 쓰레기장인지 반품 창구인지 모호해집니다. 둘째는 접두사 하나로 만든 농담입니다. 추모와 장례의 정해진 표현인 loved one(사랑하는 사람)에 un을 붙여 an unloved one으로 만들고, 그 이름을 새겨 주는 유료 서비스로 팝니다. 셋째는 상투적 반문에 문자 그대로 답하는 것입니다. What part of \"no, thanks\" do you not understand?는 원래 답을 기대하지 않는 짜증의 표현인데, 대럴은 성실하게 The \"no\" part라고 대답해 버립니다. 이 유형의 농담은 이 작품 전체에서 반복되며, 관용구를 문자 뜻으로 되돌리는 방식입니다."
+        },
+        {
+          "question": "그리핀은 어떤 인물로 그려지며, 그 장면에서 정보는 누구에게 넘어가는가?",
+          "answer": "그리핀은 자기가 반은 사람, 반은 새, 반은 사자라고 소개해 반쪽이 셋이 되는 산수 오류를 만들고, 자기 종족의 마지막 암컷이라고 밝힙니다. 성별을 확인하려는 질문에는 성별은 스펙트럼이라고 답하고, 종족이 사라지는 이유로는 요즘 남자들이 거대한 새가 아닌 다른 상대를 선호한다는 것을 듭니다. 손님 접대로 되씹어 낸 연어를 권하는 대목까지 포함해, 신화적 위엄과 생활의 초라함이 계속 부딪힙니다. 그리고 둥지에 떨어진 물건들 중에 문제의 병이 있었다는 사실이 확인되는데, 이미 뱀 왕관을 쓴 왕에게 넘긴 뒤였습니다. 문제는 그 대화를 클로이드 쪽의 사자가 옆에서 다 듣고 있었다는 것입니다. 그는 정보를 챈 뒤 다른 악당들과 달리 자기 계획은 말하지 않겠다고 선언하고 일행을 묶어 두고 떠납니다."
+        },
+        {
+          "question": "이 원정에서 기사들은 왜 계속 죽고, 빈과 펜더개스트의 관심은 어떻게 갈라지는가?",
+          "answer": "동굴의 함정은 하나뿐이라는 이름 때문에 기사들은 앞사람이 죽으면 이제 안전하다고 판단하고 차례로 들어갑니다. 함정이 또 발동하면 이름을 2부로 된 단일 함정으로 고쳐 부르고 더 안전해졌다고 결론 내리므로, 전제는 검증되지 않고 인원만 줄어듭니다. 소모품 모티머라는 이름을 스스로 자랑처럼 말하는 인물이 그 구조를 요약합니다. 이 손실을 두 사람은 전혀 다르게 셉니다. 빈은 이 방식으로는 엘포를 절대 찾지 못한다고 걱정하고, 펜더개스트는 가장 훌륭한 갑옷 세 벌을 잃었다고 말한 뒤에야 그 안에 든 것들도 잃었다고 덧붙입니다. 사람을 갑옷의 내용물로 세는 어순이 이 군대의 가치 순서를 그대로 보여 줍니다. 머츠의 어머니가 아들의 안전만 붙들고 늘어지는 것도 같은 대비 안에 있습니다."
+        }
+      ]
+    },
+    {
+      "work": "disenchantment",
+      "number": 10,
+      "title": "8. 조그와 불멸의 영약 (3부)",
+      "chunks": [
+        {
+          "en": "-I meant, I don't see you. / - I'm in a sack.",
+          "ko": "내 말은, 네가 안 보인다고. — 나 자루 안에 있어.",
+          "literal": "내 말은, 나는 너를 보지 못한다는 뜻이었어 / 나는 자루 안에 있어"
+        },
+        {
+          "en": "Porky and Big Jo / have a really toxic relationship.",
+          "ko": "포키하고 빅 조는 관계가 진짜 해로워.",
+          "literal": "포키와 빅 조는 / 정말로 유해한 관계를 가지고 있다"
+        },
+        {
+          "en": "Behold! The Lost City of Cremorrah! / Eh, I've beheld better.",
+          "ko": "보라! 잃어버린 도시 크레모라다! — 에이, 더 볼 만한 것도 봤는데.",
+          "literal": "보라! 잃어버린 도시 크레모라! / 에이, 나는 더 나은 것들을 보아 왔다"
+        },
+        {
+          "en": "Legend has it, / the Eternity Pendant is awakened by proximity to an elf.",
+          "ko": "전설에 따르면 영원의 펜던트는 엘프가 가까이 오면 깨어난다고 합니다.",
+          "literal": "전설이 그것을 가지고 있다 / 영원의 펜던트는 엘프와의 근접에 의해 깨워진다고"
+        },
+        {
+          "en": "As Elfo nears it, / the vial will give off a tone.",
+          "ko": "엘포가 가까이 갈수록 그 병이 소리를 낼 겁니다.",
+          "literal": "엘포가 그것에 가까워짐에 따라 / 그 병은 소리를 내보낼 것이다"
+        },
+        {
+          "en": "You expect me to crawl around this overheated hellscape / until I hear a beep? / No, Mr. Elfo, I expect you to fry.",
+          "ko": "삐 소리가 들릴 때까지 이 뜨거워 죽을 지옥 같은 땅을 기어 다니라는 거예요? — 아니다, 엘포 군. 나는 네가 타 죽기를 기대한다.",
+          "literal": "너는 내가 이 과열된 지옥 풍경을 기어 돌아다니기를 기대하는가 / 내가 삐 소리를 들을 때까지? / 아니다, 엘포 씨. 나는 네가 튀겨지기를 기대한다"
+        },
+        {
+          "en": "I have no idea what that means. / I'm just really short of breath.",
+          "ko": "그게 무슨 뜻인지 저도 모르겠어요. 그냥 숨이 너무 차서요.",
+          "literal": "나는 그것이 무엇을 의미하는지 전혀 모른다 / 나는 그냥 정말로 숨이 짧다"
+        },
+        {
+          "en": "Cremorrah was a kingdom of unimaginable wealth... / of snakes.",
+          "ko": "크레모라는 상상할 수 없는 부를 지닌 왕국이었습니다… 뱀의 부를요.",
+          "literal": "크레모라는 상상할 수 없는 부의 왕국이었다 / 뱀의"
+        },
+        {
+          "en": "Their thriving snake-based economy / was the envy of the known world.",
+          "ko": "번영하는 뱀 기반 경제는 알려진 세계 전체의 부러움을 샀습니다.",
+          "literal": "그들의 번창하는 뱀에 기반한 경제는 / 알려진 세계의 부러움이었다"
+        },
+        {
+          "en": "People became so wealthy, / their pockets were bursting with snakes.",
+          "ko": "사람들이 너무 부유해져서 주머니가 뱀으로 터질 지경이었습니다.",
+          "literal": "사람들은 너무 부유해졌다 / 그들의 주머니가 뱀으로 터지고 있을 정도로"
+        },
+        {
+          "en": "The neighboring kingdom of Maru, with its mouse-based economy, / was both jealous and in constant peril.",
+          "ko": "쥐 기반 경제를 가진 이웃 왕국 마루는 질투에 시달리는 동시에 늘 위험에 처해 있었습니다.",
+          "literal": "쥐에 기반한 경제를 가진 이웃 왕국 마루는 / 질투하는 상태이면서 동시에 끊임없는 위험 속에 있었다"
+        },
+        {
+          "en": "Clearly, his people had a wild wingding / while he was away.",
+          "ko": "왕이 없는 동안 백성들이 요란한 잔치를 벌인 게 분명하군요.",
+          "literal": "분명히, 그의 백성들은 거친 난장 잔치를 벌였다 / 그가 떨어져 있는 동안에"
+        },
+        {
+          "en": "Can you imagine such disrespect? / I cannot imagine. Such disrespect.",
+          "ko": "그런 무례를 상상할 수 있겠나? — 상상이 안 되네요. 그런 무례가.",
+          "literal": "너는 그런 무례를 상상할 수 있는가? / 나는 상상할 수 없습니다. 그런 무례라니"
+        },
+        {
+          "en": "Find the king, / find the vial.",
+          "ko": "왕을 찾으면 병도 찾는다.",
+          "literal": "왕을 찾아라 / 병을 찾아라"
+        },
+        {
+          "en": "Remember the solemn moment / we first laid eyes on King Doris.",
+          "ko": "우리가 도리스 왕을 처음 눈에 담았던 그 엄숙한 순간을 기억하도록.",
+          "literal": "그 엄숙한 순간을 기억하라 / 우리가 처음으로 도리스 왕에게 눈을 얹었던"
+        },
+        {
+          "en": "Wow, one day you're an amazing civilization, / the next you're a creepy spook-house.",
+          "ko": "와, 어느 날은 대단한 문명이었다가 그다음 날은 으스스한 귀신의 집이 되네.",
+          "literal": "와, 어느 날 너는 놀라운 문명이다 / 그다음 날 너는 소름 끼치는 귀신 집이다"
+        },
+        {
+          "en": "And what is your charge? / To protect the Eternity Pendant! / And to answer all questions!",
+          "ko": "그러면 네 임무는 무엇이냐? — 영원의 펜던트를 지키는 것! 그리고 모든 질문에 답하는 것!",
+          "literal": "그리고 너의 임무는 무엇인가? / 영원의 펜던트를 보호하는 것! / 그리고 모든 질문에 답하는 것!"
+        },
+        {
+          "en": "Let's slip out / under cover of all the clanking.",
+          "ko": "저 쇠 부딪히는 소리를 틈타서 빠져나가자.",
+          "literal": "빠져나가자 / 그 모든 쇠 부딪히는 소리의 엄호 아래에서"
+        },
+        {
+          "en": "If we come home without the vial, / your dad will pop a blood vessel. / Probably one of yours.",
+          "ko": "병 없이 돌아가면 네 아버지 혈관 하나 터질 텐데. 아마 네 혈관이겠지.",
+          "literal": "만약 우리가 병 없이 집에 돌아가면 / 네 아빠는 혈관 하나를 터뜨릴 것이다 / 아마 네 것 중 하나를"
+        },
+        {
+          "en": "And now you shall lose a foot, / as I take this boot and all that's within it.",
+          "ko": "그리고 이제 너는 한 발을 잃게 될 것이다. 내가 이 부츠와 그 안에 든 모든 것을 가져가니까.",
+          "literal": "그리고 이제 너는 한 발을 잃을 것이다 / 내가 이 부츠와 그 안에 있는 모든 것을 가져가면서"
+        },
+        {
+          "en": "Weren't you told not to let anyone take it? / Not anyone, just you. My job is done.",
+          "ko": "아무도 그걸 가져가게 하지 말라는 명령을 받은 거 아니었어? — 아무나가 아니라 당신만이었소. 내 임무는 끝났습니다.",
+          "literal": "너는 누구도 그것을 가져가게 하지 말라는 말을 듣지 않았느냐? / 누구든이 아니라, 오직 당신만. 내 일은 끝났다"
+        },
+        {
+          "en": "Let's see / how you like getting bottled up.",
+          "ko": "너도 병 속에 갇혀 보는 게 어떤 기분인지 좀 알아봐라.",
+          "literal": "어디 보자 / 네가 병에 담기는 것을 어떻게 좋아하는지"
+        },
+        {
+          "en": "Our plan / is even closer to fruition.",
+          "ko": "우리 계획이 한층 더 결실에 가까워졌어.",
+          "literal": "우리의 계획은 / 결실에 훨씬 더 가까워졌다"
+        },
+        {
+          "en": "While I question their evil motives, / it is nice to see them happy.",
+          "ko": "저들의 악한 동기에는 의문이 들지만, 저렇게 행복해하는 모습을 보는 건 좋군요.",
+          "literal": "내가 그들의 악한 동기에 의문을 제기하는 동안에도 / 그들이 행복한 것을 보는 것은 좋다"
+        },
+        {
+          "en": "That we may live each day and say... / You know, I'm profoundly lonely, but I think you should leave.",
+          "ko": "우리가 하루하루를 살아가며 이렇게 말할 수 있기를… — 그러니까, 나는 몹시 외롭지만 그래도 너희는 가는 게 좋겠구나.",
+          "literal": "우리가 매일을 살아가고 말할 수 있기를 / 그러니까, 나는 깊이 외롭지만, 나는 너희가 떠나야 한다고 생각한다"
+        }
+      ],
+      "grammar": [
+        {
+          "point": "Legend has it (that) ~ — 출처를 밝히지 않는 전달 구문",
+          "explanation": "Legend has it that ...은 '전설에 따르면 ~라고 한다'는 뜻의 굳은 표현입니다. 여기서 have는 '가지고 있다'가 아니라 '(그런 내용을) 담고 있다'는 뜻이고, it은 뒤에 오는 that절을 미리 받는 형식 목적어입니다. 실제 회화와 자막에서는 이 대사처럼 that을 생략하고 쉼표만 남기는 경우가 많습니다. 같은 계열로 Rumor has it, The story goes, They say가 있고, 모두 화자가 책임을 지지 않고 정보를 전달하는 장치입니다. 학술적인 문맥에서는 It is said that ~이 같은 기능을 합니다. 뒤에 이어지는 is awakened by proximity to an elf도 주목할 만합니다. 주체를 밝히지 않는 수동태에 라틴계 추상 명사 proximity가 붙어, 마법을 물리학 설명처럼 들리게 만듭니다.",
+          "fromScript": "Legend has it, the Eternity Pendant is awakened by proximity to an elf.",
+          "example": "Legend has it that the school bell has not been rung since the last headmaster died."
+        },
+        {
+          "point": "so + 형용사 + (that) 생략 — 결과절을 쉼표로만 잇기",
+          "explanation": "People became so wealthy, their pockets were bursting with snakes는 원래 so wealthy that their pockets were bursting입니다. 회화와 서술에서는 that을 생략하고 쉼표만 남기는 것이 아주 흔하며, 이때 뒤 절은 앞의 정도를 설명하는 결과가 됩니다. so ~ that과 such ~ that을 구별하는 것도 함께 익히십시오. so 뒤에는 형용사나 부사, such 뒤에는 명사구가 옵니다(such disrespect, so disrespectful). 여기서는 결과절의 내용이 농담을 만듭니다. 부의 표시로 흔히 쓰는 '주머니가 터질 정도'라는 상투구를 그대로 쓰면서 그 안을 뱀으로 채웠기 때문에, 부의 증거가 그대로 재난의 그림이 됩니다.",
+          "fromScript": "People became so wealthy, their pockets were bursting with snakes.",
+          "example": "The hall got so crowded, the children could not find their own shoes."
+        },
+        {
+          "point": "both A and B — 문법 범주가 다른 것을 병렬할 때",
+          "explanation": "both A and B는 원칙적으로 A와 B가 같은 문법 범주여야 합니다. 그런데 이 문장은 both jealous and in constant peril로, 형용사 하나와 전치사구 하나를 묶었습니다. 규범 문법이 지적하는 비대칭 병렬이지만, 두 요소가 모두 was의 보어 자리에 들어갈 수 있으므로 영어 화자에게는 문제없이 들립니다. 이런 느슨한 병렬은 실제 문헌에 매우 흔하므로 읽을 때 당황하지 않는 것이 중요합니다. 내용의 농담도 이 비대칭에서 나옵니다. 질투는 감정이고 상시적 위험은 처지인데, 이웃 나라의 경제가 쥐 기반이고 상대 나라의 경제가 뱀 기반이라는 점을 생각하면 두 항목은 사실 같은 원인에서 나옵니다. 뱀은 쥐를 먹기 때문에 질투와 위험이 한 문장으로 붙는 것입니다.",
+          "fromScript": "The neighboring kingdom of Maru, with its mouse-based economy, was both jealous and in constant peril.",
+          "example": "The new principal was both admired and under constant suspicion."
+        },
+        {
+          "point": "명령문 두 개의 병치로 조건을 표현하기",
+          "explanation": "Find the king, find the vial은 두 개의 명령문이지만 실제 의미는 조건입니다. If you find the king, you will find the vial과 같습니다. 영어에는 명령문 + and + 절로 조건을 만드는 오래된 방식이 있고(Touch that and you're dead), 여기서는 and마저 빼고 쉼표만 남겨 표어처럼 만들었습니다. 두 절의 구조가 완전히 같기 때문에 리듬이 생겨 기억하기 쉬운 문장이 되며, 광고 문구와 군대의 지침, 그리고 탐정물의 결정적 대사에서 자주 보입니다. 참고로 이 병치는 명령문 + or의 형태로 협박을 만들 수도 있습니다(Move, or I shoot). 명령문의 형태만 보고 명령으로 읽으면 뜻을 놓치므로, 두 개가 붙어 있으면 조건 관계를 의심하는 것이 좋습니다.",
+          "fromScript": "Find the king, find the vial.",
+          "example": "Fix the timetable, fix half the complaints in this school."
+        },
+        {
+          "point": "one day ~, the next ~ — 반복되는 말의 생략",
+          "explanation": "one day you're an amazing civilization, the next you're a creepy spook-house에서 the next 뒤에는 day가 생략되어 있습니다. 앞에서 이미 day가 나왔기 때문에 되풀이하지 않는 것입니다. 이 틀은 급격한 변화나 변덕을 말할 때 쓰는 정형화된 대비이며(One minute she's laughing, the next she's in tears), 시제는 과거 일이라도 현재형으로 쓰는 것이 보통입니다. 이 현재형은 지금 눈앞에서 벌어지는 것처럼 만들어 주는 장치이고, 여기에 you를 쓴 것도 특정한 상대가 아니라 일반적인 '누구든'을 가리키는 총칭 용법입니다. 즉 이 문장은 문명 전체를 향해 반말로 인생의 무상함을 요약하는 셈이며, spook-house는 미국 놀이공원의 유령의 집을 뜻하는 구어라 문명 몰락에는 지나치게 가벼운 단어입니다.",
+          "fromScript": "Wow, one day you're an amazing civilization, the next you're a creepy spook-house.",
+          "example": "One week the class loves the seating plan, the next they act as if I invented it to punish them."
+        },
+        {
+          "point": "That we may ~ — 기원과 목적을 나타내는 옛 문체",
+          "explanation": "That we may live each day and say ...는 현대 회화라면 So that we can live each day ...가 되어야 합니다. so가 없는 That으로 문장을 시작하고 조동사 may를 쓰는 이 형태는 기도문과 축문의 문체이며, 영어권에서는 성서 번역과 예배문을 통해 익숙해진 어투입니다. may는 여기서 허가나 추측이 아니라 소망을 나타냅니다(May you live long처럼 도치하면 더 분명해집니다). 그러니 말푸스는 마지막 교훈을 설교의 형식에 담고 있는 것입니다. 그런데 문장이 and say...로 끝나 뒤에 무슨 말을 해야 하는지는 채워지지 않고, 그 자리에 들어오는 것이 나는 몹시 외롭지만 너희는 가는 게 좋겠다는 말입니다. 형식은 기도문인데 내용은 방문객을 내보내는 말이라는 어긋남이 이 화의 마지막 농담입니다.",
+          "fromScript": "That we may live each day and say...",
+          "example": "That we may finish this term with our patience intact is all I ask."
+        },
+        {
+          "point": "양보의 while + 가주어 it — 두 가지 태도를 한 문장에",
+          "explanation": "while에는 '~하는 동안'이라는 시간의 뜻과 '~이지만'이라는 양보의 뜻이 모두 있습니다. While I question their evil motives, it is nice to see them happy는 두 번째 용법으로, although와 같습니다. 문장 앞에 오면 양보로 읽힐 가능성이 훨씬 높아지므로 위치가 좋은 단서가 됩니다. 뒤의 it is nice to see them happy는 가주어 it과 진주어 to부정사 구조이며, see + 목적어 + 형용사(them happy)는 지각동사가 목적어의 상태를 함께 받는 형태입니다. 이 문장이 웃긴 것은 화자의 태도입니다. 상대의 목적이 악하다는 판단과 상대가 행복해 보여 흐뭇하다는 감상이 한 문장에 공존하며, while 하나로 그 모순이 봉합됩니다.",
+          "fromScript": "While I question their evil motives, it is nice to see them happy.",
+          "example": "While I doubt the plan will work, it is nice to see the staff excited about something."
+        },
+        {
+          "point": "how you like + 동명사의 수동형 (getting bottled up)",
+          "explanation": "Let's see how you like getting bottled up에는 두 가지 포인트가 있습니다. 첫째 See how you like ~는 '너도 당해 보라'는 뜻의 굳은 위협 표현이며, 뒤에는 동명사나 it이 옵니다(See how you like it). 둘째 getting bottled up은 동명사의 수동형입니다. being bottled up도 가능하지만 get 수동은 '그 일을 당하게 되는 사건'을 강조하므로 이 문맥에 더 맞습니다. 그리고 bottle up은 이중 의미입니다. 원래 관용적으로는 감정을 병에 담아 막듯 억누른다는 뜻으로 bottle up your anger처럼 쓰지만, 여기서는 상대를 실제로 병 안에 가둡니다. 비유로만 쓰이던 표현이 문자 그대로 실행되는 이 작품의 전형적인 농담이며, 앞에 나온 pop a blood vessel도 같은 방식으로 처리됩니다. 원래 '몹시 화를 낸다'는 관용구인데 뒤에 '아마 네 혈관이겠지'가 붙는 순간 문자 뜻으로 되돌아갑니다.",
+          "fromScript": "Let's see how you like getting bottled up.",
+          "example": "Let's see how you like being interrupted every time you try to explain something."
+        }
+      ],
+      "background": [
+        {
+          "topic": "No, Mr. Elfo, I expect you to fry — 007 골드핑거 인용",
+          "detail": "빅 조가 엘포에게 던지는 No, Mr. Elfo, I expect you to fry는 영화 골드핑거의 가장 유명한 대사를 그대로 가져온 것입니다. 원본에서 본드가 레이저에 묶인 채 Do you expect me to talk?이라고 묻고, 악당이 No, Mr. Bond, I expect you to die라고 답합니다. 영어권에서는 이 두 줄이 '악당의 여유'를 뜻하는 관용구처럼 쓰입니다. 이 작품은 구조를 정확히 복제합니다. 앞 대사가 You expect me to ...?로 시작하고 답이 No, Mr. + 이름, I expect you to + 동사로 이어집니다. 바뀐 것은 마지막 동사 하나뿐이고, die 대신 fry가 들어갔습니다. fry는 기름에 튀긴다는 뜻이자 뜨거운 햇볕에 타 죽는다는 구어여서 사막 배경에 맞고, 동시에 die와 달리 우스꽝스럽게 들리기 때문에 인용의 무게가 곧바로 무너집니다."
+        },
+        {
+          "topic": "돌로 변한 도시 크레모라 — 소돔과 폼페이",
+          "detail": "주민 전체가 그 자리에서 돌로 굳어 버린 도시라는 설정은 두 개의 유명한 재난을 겹친 것입니다. 하나는 성서의 소돔과 고모라입니다. 심판을 받은 도시이며, 뒤를 돌아본 롯의 아내가 소금 기둥이 됩니다. Cremorrah라는 이름의 소리도 Gomorrah와 겹칩니다. 다른 하나는 폼페이입니다. 화산재에 덮여 죽은 순간의 자세가 그대로 남은 유적이며, 관광객이 그 형상을 보러 가는 곳입니다. 그래서 이 화의 도시는 심판받은 죄악의 도시이면서 동시에 관광 유적처럼 취급됩니다. 인물들이 굳어 버린 주민들의 자세를 보고 왕이 없는 동안 요란한 잔치를 벌인 게 분명하다고 해석하는 대목이 그 결합입니다. wingding은 미국 구어로 흥청망청한 파티를 뜻합니다. 대재앙의 흔적을 무단 파티의 증거로 읽어 내는 순간, 사람들이 죽었다는 사실은 아예 화제에서 빠집니다."
+        },
+        {
+          "topic": "뱀 기반 경제와 쥐 기반 경제 — 현대 경제 용어의 아나크로니즘",
+          "detail": "X-based economy는 현대 경제 기사의 정형 표현입니다. oil-based economy, service-based economy, knowledge-based economy처럼 한 나라의 기간산업을 지목할 때 씁니다. 여기에 뱀과 쥐를 넣으면 형식은 그대로인데 내용이 무너집니다. thriving(번창하는), the envy of the known world(세계의 부러움), in constant peril(끊임없는 위기) 같은 표현도 모두 경제 해설과 역사 교과서의 정형구입니다. 이 어휘를 유지하는 것이 농담의 조건입니다. 문체가 진지할수록 뱀이 주머니에서 넘친다는 그림이 우스워집니다. 게다가 두 경제의 관계는 실제로 먹이사슬입니다. 뱀은 쥐를 먹기 때문에 마루가 질투와 공포를 동시에 느끼는 것이고, 군대가 없어 마법에 의지했다는 설명은 국력 격차를 설명하는 정치사의 문법 그대로입니다."
+        },
+        {
+          "topic": "도리스 왕과 치료 상담 어휘 — 이름과 등록으로 만드는 농담",
+          "detail": "이 화에는 이름 자체가 농담인 대목이 있습니다. 크레모라의 마지막 왕은 King Doris입니다. Doris는 영어권에서 나이 든 여성의 이름으로 강하게 굳어 있어서, 왕의 이름으로는 전혀 어울리지 않습니다. 그 이름을 두고 처음 눈에 담았던 엄숙한 순간을 기억하라는 격식체 문장을 붙이면 대비가 완성됩니다. 반대 방향의 농담도 있습니다. 루시는 포키와 빅 조의 관계를 두고 a really toxic relationship이라고 말합니다. toxic relationship은 21세기 심리 상담과 자기계발 담론의 핵심 어휘로, 서로를 해치는 관계를 가리킵니다. 중세 배경의 인물이 이 말을 쓰는 것 자체가 시대착오이며, 판단 대상이 인간이 아니라 마법으로 돼지가 된 왕자와 강신술사라는 점에서 한 번 더 어긋납니다. Noice처럼 nice를 일부러 늘려 쓰는 표기도 인터넷 말투를 문자 그대로 옮긴 것입니다."
+        },
+        {
+          "topic": "교훈을 말한 뒤 즉시 부수는 마무리 구조",
+          "detail": "이 화의 마지막은 형식상 완전한 도덕 결론입니다. 불멸은 어리석은 짓이고, 그것을 갈망하는 자는 눈앞에 있는 소중한 것, 곧 우리의 일상을 보지 못한다는 것입니다. folly, those who desire it, precious and right before them 같은 표현은 설교와 잠언의 어휘이고, 마지막 문장은 That we may ...로 시작하는 기도문의 형식을 취합니다. 미국 시트콤은 마지막에 교훈을 배치하는 전통이 있는데, 심슨 가족 계열의 작품은 그 교훈을 말한 직후 반드시 무너뜨립니다. 여기서도 기도문의 뒷부분이 채워지지 않고, 대신 나는 몹시 외롭지만 그래도 너희는 가는 게 좋겠다는 말이 들어옵니다. profoundly lonely는 아주 격식 있는 표현이고 I think you should leave는 완곡하지만 분명한 축출입니다. 즉 일상의 소중함을 설교한 인물이 자기 일상에 사람을 들이지 못한다는 사실이 마지막에 드러나며, 교훈은 취소되지 않은 채로 무력해집니다."
+        }
+      ],
+      "comprehension": [
+        {
+          "question": "크레모라에서 엘포가 반드시 필요한 이유는 무엇인가?",
+          "answer": "전설에 따르면 영원의 펜던트는 엘프가 가까이 있을 때 깨어나고, 엘포가 다가갈수록 병이 소리를 낸다고 합니다. 즉 엘포는 인간 탐지기로 쓰입니다. 문제는 도시가 사막에 파묻혀 입구조차 찾기 어렵다는 것이고, 엘포는 삐 소리가 들릴 때까지 이 뜨거운 지옥 같은 땅을 기어 다니라는 거냐고 항의합니다. 그 항의에 대한 답이 골드핑거를 인용한 아니다, 엘포 군, 나는 네가 타 죽기를 기대한다입니다. 이 장면은 엘포의 처지를 정확히 요약합니다. 이 화의 어느 편에서도 그는 목적이 아니라 도구이며, 드림랜드에서도 그의 가치는 피였고 여기서도 몸이 감지기입니다. 결국 그가 찾아낸 것은 병이 아니라 도시로 들어가는 구멍이었고, 그것마저 숨이 차서 알아낸 것이었습니다."
+        },
+        {
+          "question": "크레모라와 마루의 역사는 어떻게 요약되며, 주민들은 왜 돌이 되었는가?",
+          "answer": "크레모라는 뱀 기반 경제로 번영해 알려진 세계의 부러움을 샀고, 사람들이 너무 부유해져 주머니가 뱀으로 터질 지경이었습니다. 이웃 왕국 마루는 쥐 기반 경제였기 때문에 질투와 상시적 위험을 동시에 겪었습니다. 뱀이 쥐를 먹기 때문입니다. 마루는 크레모라를 공격하기로 했지만 군대가 없어 마법에 의존해야 했고, 칼 한 자루 없이 왕국 하나를 무너뜨릴 수 있는 물약을 만들어 도시에 퍼부었습니다. 그 결과 주민들은 그 자리에서 즉시 돌로 변했습니다. 다만 왕은 그때 자리에 없었고, 돌아와서 굳어 버린 백성들을 발견합니다. 인물들이 그 자세를 보고 왕이 없는 동안 요란한 잔치를 벌인 게 분명하다고 해석하는 것은, 재난의 흔적을 무단 파티의 증거로 읽는 농담입니다."
+        },
+        {
+          "question": "마루의 암살자는 어떤 모순 때문에 스스로 무너지는가?",
+          "answer": "돌로 굳은 경비병 하나가 실제로는 살아 있는 암살자였습니다. 정체를 묻자 그는 마루에서 온 암살자이며 클로이드 황제를 섬긴다고 순순히 밝힙니다. 임무가 무엇이냐는 물음에는 영원의 펜던트를 지키는 것이라고 답하고, 곧바로 그리고 모든 질문에 답하는 것이라고 덧붙입니다. 즉 그의 임무 목록 두 번째 항목이 첫 번째 항목을 무력화합니다. 비밀을 지켜야 하는 자가 질문에 답할 의무까지 지고 있으므로 심문에 아무 저항을 할 수 없습니다. 뒤에 빅 조가 병을 빼앗기고 아무에게도 넘기지 말라는 명령을 받지 않았느냐고 따질 때도 같은 구조가 반복됩니다. 그의 답은 아무나가 아니라 오직 당신에게만 넘기지 말라는 것이었으므로 내 임무는 끝났다는 것입니다. 명령의 문구를 문자 그대로 따르면 명령의 목적이 무너진다는 농담입니다."
+        },
+        {
+          "question": "빅 조는 결국 어떻게 되며, 병은 누구의 손에 들어가는가?",
+          "answer": "빅 조는 굳어 버린 왕에게서 병을 찾지 못하다가, 빈이 가지고 있던 부츠 안에 그것이 있음을 알아냅니다. 그리고 화산에서 손 하나를 잃은 대가로 이번에는 발 하나를 가져가겠다며 부츠와 그 안의 모든 것을 챙기려 합니다. lose a foot이라는 표현이 신체의 발과 부츠 속의 내용물 두 가지로 겹치는 위협입니다. 그러나 곧바로 반격을 당해 자기가 병 속에 갇히고, 위에서 모래가 쏟아져 들어옵니다. 이때 던지는 대사가 너도 병에 갇혀 보는 게 어떤 기분인지 알아보라는 말인데, 감정을 억누른다는 뜻의 관용구 bottle up이 문자 그대로 실행되는 장면입니다. 그리고 정작 이야기의 승자는 그 자리에 없습니다. 마지막에 클로이드와 베키가 계획이 한층 더 결실에 가까워졌다며 드림랜드의 종말에 건배하는 것으로 이 편이 끝납니다."
+        },
+        {
+          "question": "말푸스의 마지막 교훈은 무엇이며, 그 마무리는 어떤 방식으로 뒤집히는가?",
+          "answer": "말푸스는 불멸이 어리석은 짓이며 그것을 갈망하는 자는 눈앞에 있는 소중한 것, 곧 일상을 보지 못하게 된다고 말합니다. 문장의 어휘와 리듬은 잠언과 설교의 것이고, 마지막은 우리가 하루하루를 살아가며 이렇게 말할 수 있기를이라는 기도문 형식으로 시작됩니다. 그런데 그 뒤에 들어와야 할 아름다운 말 대신 나는 몹시 외롭지만 그래도 너희는 가는 게 좋겠다는 말이 옵니다. 즉 일상의 소중함을 설교한 인물이 자기 일상에 다른 사람을 들일 수 없다는 사실이 드러납니다. 미국 시트콤이 마지막에 교훈을 배치하는 관습을 따르되, 심슨 가족 계열의 작품답게 그 교훈을 말한 직후에 스스로 무너뜨리는 구조입니다. 교훈이 틀렸다고 부정하지 않고 실천 불가능하다는 것만 보여 준다는 점이 이 마무리의 특징입니다."
+        }
+      ]
+    }
+  ]
+}
