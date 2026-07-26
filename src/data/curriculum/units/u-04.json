@@ -1,0 +1,1122 @@
+{
+  "unit": {
+    "unitId": "u-04",
+    "act": 2,
+    "order": 4,
+    "title": "현재완료 경험·계속",
+    "tagline": "제시가 네 번 연속 '나에게서 도망친 적이 없다'고 증명하는 문장",
+    "anchors": [
+      {
+        "en": "I have never been anywhere that I haven't been. I've never had a kiss when I wasn't one of the kissers. You know, I've never, um, gone to the movies, when I wasn't there in the audience. I've never been out bowling, if I wasn't there, making some stupid joke.",
+        "ko": "나는 내가 없던 곳에 가 본 적이 없어. 내가 키스한 사람 중 하나가 아닌 채로 키스를 받아 본 적도 없고. 그러니까, 내가 객석에 없는 채로 영화를 보러 간 적도 없어. 내가 거기서 시시한 농담을 던지고 있지 않은 채로 볼링을 치러 나가 본 적도 없고.",
+        "source": "before-sunrise",
+        "chapter": 19,
+        "speaker": "Jesse",
+        "sceneNote": "새벽 공원 잔디밭에 누워 와인을 마시는 장면. 셀린이 '늘 다른 사람과 함께였으면 했다'고 고백하자, 제시는 자기가 벗어나고 싶은 건 남이 아니라 자기 자신이라고 받아친다. I've never ~ 부정 경험이 네 번 연달아 쌓이면서, '태어나서 지금까지 단 한 번도 나에게서 빠져나간 적이 없다'는 사실이 문장의 형태 그 자체로 증명된다. 현재완료가 '지금까지의 인생 전체'를 한 번에 훑는 시제라는 걸 이보다 잘 보여주는 대사는 없다."
+      },
+      {
+        "en": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
+        "ko": "우리 서로 안 지 이제 좀 됐고, 어차피 붙어 있게 됐으니까, 서로한테 좀, 어, 대놓고 묻는 질문을 몇 개 하자.",
+        "source": "before-sunrise",
+        "chapter": 5,
+        "speaker": "Jesse",
+        "sceneNote": "빈 순환선 전차 안. 만난 지 겨우 두어 시간인데 제시는 We've known each other로 둘 사이에 이미 '이어져 온 시간'이 있다고 선언해 버린다. 그 한마디로 낯선 사람이 아는 사이가 되고, 그래서 사적인 질문을 해도 되는 관계가 만들어진다. 문장 끝의 now가 '지금 이 순간까지'를 찍어 주는 계속 용법의 표지."
+      },
+      {
+        "en": "Have you ever heard of this singer?",
+        "ko": "이 가수 들어 본 적 있어요?",
+        "source": "before-sunrise",
+        "chapter": 6,
+        "speaker": "Céline",
+        "sceneNote": "중고 레코드 가게. 셀린이 앨범 한 장을 집어 들어 보이며 던지는 질문. ever 하나로 '살면서 한 번이라도'라는 시간 전체가 열리고, 제시가 고개를 젓는 순간 둘은 좁은 청음 부스 안으로 같이 들어가게 된다. 경험을 묻는 현재완료가 관계를 한 칸 앞으로 밀어 주는 장면."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "have/has + p.p. = 지금까지의 경험",
+        "body": "태어나서 지금까지를 한 덩어리로 훑어 '있다/없다'를 말한다. ever(한 번이라도), never(한 번도 안), before(전에)가 짝꿍이다. 제시의 I've never been out bowling은 '어제 안 갔다'가 아니라 '평생 그런 적이 없다'다. 셀린의 Have you ever heard of this singer?도 '방금'이 아니라 '살면서 한 번이라도'를 묻는다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "계속 용법 — 과거에 시작해 지금도 이어진다",
+        "body": "for(기간) 또는 since(출발 시점)와 함께 쓰면 '그때부터 지금까지 죽 ~해 왔다'가 된다. 제시의 We've known each other a little while now가 정확히 이것 — 문장 끝의 now가 '지금 이 순간까지'라는 끝점을 찍어 준다. 과거형 We knew each other로 바꾸면 '지금은 아니다'가 되어 관계가 끊긴다.",
+        "isTrap": false
+      },
+      {
+        "id": "r3",
+        "title": "특정 과거 시점과 같이 못 쓴다 ★최다 실수",
+        "body": "yesterday, last year, in 1993, three days ago, 그리고 의문사 when은 현재완료와 함께 올 수 없다. 현재완료는 '지금'에 발을 딛고 있는 시제라, 과거의 한 점에 못을 박는 말과 충돌한다. ❌ When have you been to Vienna? → ⭕ When did you go to Vienna? '언제?'가 나오는 순간 단순과거다.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "have been to(갔다 왔다) vs have gone to(가서 없다)",
+        "body": "have been to는 경험 — 갔다가 지금 여기 돌아와 있다. have gone to는 결과 — 가 버려서 지금 여기 없다. 제시가 I have never been anywhere라고 말한 것도 '가 본 적'을 세는 be동사 쪽이다. She has gone to Paris.를 '파리에 가 본 적 있다'로 읽으면 정반대 뜻이 된다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "for는 기간, since는 출발점",
+        "body": "for 뒤에는 얼마나 길었는지(for six years, for a little while), since 뒤에는 언제부터인지(since 2020, since we met, since this morning). 한국어로는 둘 다 '~째'로 뭉뚱그려져 헷갈린다. ❌ I have known her for 2020 → ⭕ since 2020. 반대로 ❌ since six years → ⭕ for six years.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "never의 자리와 안 들리는 've",
+        "body": "never는 have와 과거분사 사이에 낀다 — I've never been. haven't never처럼 이중부정을 쓰지 않는다. 그리고 구어에서 have는 've/'s로 뭉개져 거의 안 들린다. 제시도 첫 문장만 I have never로 또박또박 말하고 뒤 세 문장은 전부 I've never로 흘려 버린다. 이 축약을 못 들으면 경험 시제를 통째로 놓친다.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "I've been to Vienna twice, but I've never gotten off the train at that station.",
+        "ko": "빈에는 두 번 가 봤지만, 그 역에서 내려 본 적은 한 번도 없다."
+      },
+      {
+        "en": "We've lived in this apartment since the year our daughter was born.",
+        "ko": "우리는 딸이 태어난 해부터 이 아파트에 살고 있다."
+      },
+      {
+        "en": "Have you ever stayed up all night just talking to someone?",
+        "ko": "누군가와 그냥 이야기만 하면서 밤을 새워 본 적 있어?"
+      },
+      {
+        "en": "She's taught at the same school for eleven years, and she still gets nervous on the first day.",
+        "ko": "그녀는 같은 학교에서 11년째 가르치고 있는데, 아직도 첫날이면 긴장한다."
+      },
+      {
+        "en": "He's gone to the record store, so you won't find him at home.",
+        "ko": "그는 레코드 가게에 가 버려서, 집에 가도 없을 거야."
+      }
+    ],
+    "coverage": {
+      "fromScript": 6,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0401",
+      "lemma": "audience",
+      "level": "L1",
+      "meaningKo": "관객, 청중",
+      "definitionEn": "the group of people watching or listening to a performance",
+      "nuance": "무리 전체를 하나로 세는 집합명사. 여기서는 '객석에 앉아 있는 나 자신'을 가리킨다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "when I wasn't there in the audience",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0402",
+      "lemma": "rational",
+      "level": "L1",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "reasonable('말이 되는')과 달리 '감정을 배제한'이 핵심. 새벽 공원에서 이 단어를 꺼내는 것 자체가 이미 감정이 이겼다는 신호다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0403",
+      "lemma": "complicated",
+      "level": "L1",
+      "meaningKo": "복잡한, 얽히고설킨",
+      "definitionEn": "made up of many connected parts and hard to deal with",
+      "nuance": "complex가 '구조가 정교하다'라면 complicated는 '괜히 꼬였다'는 불평의 결이 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "Why do we make everything so complicated?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0404",
+      "lemma": "media",
+      "level": "L1",
+      "meaningKo": "언론, 매체",
+      "definitionEn": "the organizations that provide news and information to the public",
+      "nuance": "medium의 복수형이지만 실제로는 the media로 묶어 쓴다. 셀린은 뒤에 they를 붙여 사람 무리처럼 취급한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I hate that the media, you know, they are trying to control our minds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0405",
+      "lemma": "improve",
+      "level": "L1",
+      "meaningKo": "(기록·실력을) 끌어올리다, 나아지게 하다",
+      "definitionEn": "to make something better than before",
+      "nuance": "수영 맥락의 times는 '시간'이 아니라 '기록'. improve one's times는 기록 단축을 뜻한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "And to improve his times, he'd shave the hair off his legs and arms.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0406",
+      "lemma": "mannerism",
+      "level": "L2",
+      "meaningKo": "몸에 밴 말버릇·몸짓 버릇",
+      "definitionEn": "a habitual gesture or way of speaking peculiar to a person",
+      "nuance": "예의를 뜻하는 manners와 완전히 다른 단어다. 보통 복수형으로, 본인은 못 느끼지만 남 눈에는 반복이 보이는 습관을 가리킨다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "then you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0407",
+      "lemma": "insecure",
+      "level": "L2",
+      "meaningKo": "(자신이 없어) 불안한, 주눅 든",
+      "definitionEn": "not confident about yourself or your relationships",
+      "nuance": "'위험하다'가 아니라 '자존감이 흔들린다'는 심리 형용사. anxious가 상황에 대한 불안이라면 insecure는 자기 자신에 대한 불안이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over...I'd be insecure",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0408",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "서약, (지키기로 한) 엄숙한 약속",
+      "definitionEn": "a serious promise to do or not do something",
+      "nuance": "promise보다 무겁다 — marriage vows가 대표 용례. 두 사람이 '다시는 안 만난다'고 정한 것을 셀린은 굳이 vow라 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0409",
+      "lemma": "fantasy",
+      "level": "L2",
+      "meaningKo": "환상, (현실이 아닌) 상상 시나리오",
+      "definitionEn": "an imagined situation that one wishes were true",
+      "nuance": "장르명(판타지)보다 '머릿속에서만 굴리는 각본'의 뜻이 먼저다. 셀린은 이 밤이 남자의 각본 한 편으로 소비되는 걸 거부한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "No, then it‘s like some male fantasy.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0410",
+      "lemma": "gorgeous",
+      "level": "L2",
+      "meaningKo": "눈부시게 아름다운, 근사한",
+      "definitionEn": "extremely beautiful or attractive",
+      "nuance": "beautiful보다 감탄이 실린 구어. 사람에게도 풍경에게도 쓴다. 셀린은 첫사랑을 gorgeous dolphin이라 부른다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Oh, no. He was like this gorgeous dolphin.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0411",
+      "lemma": "disgusting",
+      "level": "L2",
+      "meaningKo": "역겨운, 정떨어지는",
+      "definitionEn": "extremely unpleasant, causing a feeling of revulsion",
+      "nuance": "생리적 거부감이 핵심. 실제 대화에서는 여기 제시처럼 반농담으로 툭 던지는 경우가 더 많다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "That's disgusting.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0412",
+      "lemma": "obsessive",
+      "level": "L2",
+      "meaningKo": "집착적인, 강박적인",
+      "definitionEn": "thinking about something too much and unable to stop",
+      "nuance": "obsess의 형용사. 애정이 지나쳐 통제가 안 되는 상태를 가리키며, 자조적으로 자기 얘기를 할 때 자주 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "it started with an obsessive relationship with Miss July 1978",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0413",
+      "lemma": "subtle",
+      "level": "L2",
+      "meaningKo": "미묘한, 티 안 나는",
+      "definitionEn": "not obvious; difficult to notice unless you pay attention",
+      "nuance": "b는 발음하지 않는다(서틀). 여기서는 '교묘해서 알아채기 어렵다'는 부정적 결로 쓰였다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "You know it‘s very subtle, but you know, it‘s a new form of fascism.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0414",
+      "lemma": "scattered",
+      "level": "L2",
+      "meaningKo": "흩어진, (정신이) 산만한",
+      "definitionEn": "spread out in different directions; lacking focus",
+      "nuance": "물건이 흩어진 것과 생각이 흩어진 것에 모두 쓴다. 제시는 영혼이 잘게 쪼개져서 우리가 산만한 게 아니냐고 농담한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I mean, is that why we're all so scattered?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0415",
+      "lemma": "booth",
+      "level": "L2",
+      "meaningKo": "부스, 칸막이로 막은 작은 공간",
+      "definitionEn": "a small enclosed space for one purpose, such as listening or voting",
+      "nuance": "listening booth(청음 부스), phone booth, voting booth처럼 앞말과 붙어 다닌다. 두 사람을 처음으로 좁은 공간에 가두는 장치.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 6,
+          "context": "Yeah, there's even a listening booth over there.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0416",
+      "lemma": "opportune",
+      "level": "L3",
+      "meaningKo": "때마침 딱 알맞은",
+      "definitionEn": "happening at a time that is convenient or suitable",
+      "nuance": "타이밍만을 가리키는 형용사. opportunity의 형용사지만 '기회주의적인'인 opportunistic과는 뜻이 다르니 헷갈리지 말 것.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I think this is the opportune time to tell you that I happen to be a fantastic swimmer",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0417",
+      "lemma": "eternal",
+      "level": "L3",
+      "meaningKo": "영원한, 끝나지 않는",
+      "definitionEn": "lasting forever, without beginning or end",
+      "nuance": "permanent가 '(당분간) 계속되는'이라면 eternal은 시간 밖에 있다는 종교적·철학적 어감.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "people have some kind of notion of an eternal soul",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0418",
+      "lemma": "notion",
+      "level": "L3",
+      "meaningKo": "막연한 관념, 어렴풋한 생각",
+      "definitionEn": "a belief or idea, often a vague one",
+      "nuance": "idea보다 흐릿하고 검증되지 않은 느낌이라, '~라는 관념'을 살짝 깎아내릴 때 쓴다. have no notion = 전혀 모른다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "people have some kind of notion of an eternal soul",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0419",
+      "lemma": "fascism",
+      "level": "L3",
+      "meaningKo": "파시즘, 전체주의적 지배",
+      "definitionEn": "an authoritarian system that suppresses opposition and controls people",
+      "nuance": "발음은 '패시즘'. 셀린은 언론의 여론 통제를 총과 군화 없이 굴러가는 새로운 파시즘이라고 부른다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "it‘s very subtle, but you know, it‘s a new form of fascism",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0420",
+      "lemma": "fraction",
+      "level": "L3",
+      "meaningKo": "일부분, 아주 작은 조각",
+      "definitionEn": "a small part of a whole; a numerical portion",
+      "nuance": "수학의 '분수'가 원뜻이라 '전체를 나눈 몫'이라는 감각이 남아 있다. a fraction of the cost = 비용의 몇 분의 일.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Are modern souls only a fraction of the original souls?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0421",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지적인 척하는, 사이비 지성의",
+      "definitionEn": "pretending to be more intelligent or cultured than one really is",
+      "nuance": "pseudo-(가짜)를 붙여 만드는 조어. 제시가 자기 이야기 습관을 스스로 이렇게 부르는 것이 이 대사의 자조 포인트다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0422",
+      "lemma": "be sick to death of",
+      "level": "L4",
+      "meaningKo": "~이라면 이제 지긋지긋하다",
+      "definitionEn": "to be extremely tired of or annoyed by something",
+      "nuance": "be sick of의 최상급 버전. to death가 '죽을 만큼'이라는 과장을 얹는다. 실제로 아픈 것과는 무관하다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "they are sick to death of being around themselves",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0423",
+      "lemma": "get away from",
+      "level": "L4",
+      "meaningKo": "~에게서 벗어나다, 빠져나가다",
+      "definitionEn": "to escape from someone or something",
+      "nuance": "물리적 도주와 심리적 회피에 다 쓴다. 제시가 도망치고 싶다고 말하는 대상이 자기 자신이라는 게 이 유닛 전체의 핵심.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "usually, it‘s myself that I wish I could get away from",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0424",
+      "lemma": "have a crush on",
+      "level": "L4",
+      "meaningKo": "~에게 홀딱 반해 있다",
+      "definitionEn": "to have a strong but usually short-lived romantic attraction to someone",
+      "nuance": "짝사랑에 가까운 가벼운 설렘. be in love with의 무게와 다르다. big을 넣어 강도를 올린다 — a big crush on him.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "And my friend Emma had a big, big crush on him.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0425",
+      "lemma": "piss someone off",
+      "level": "L4",
+      "meaningKo": "~을 열받게 하다, 짜증나게 하다",
+      "definitionEn": "to make someone very annoyed or angry",
+      "nuance": "비속어에 가까운 구어라 업무 자리에서는 피한다. 목적어는 반드시 piss와 off 사이에 낀다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Tell me something that really pisses you off, really drives you crazy.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0426",
+      "lemma": "lose one's temper",
+      "level": "L4",
+      "meaningKo": "화를 참지 못하고 폭발하다",
+      "definitionEn": "to suddenly become very angry and stop controlling yourself",
+      "nuance": "temper는 '평정심'. 그걸 잃는다는 그림이다. 반대로 keep one's temper는 화를 눌러 참는 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Each time I wear black, or like, lose my temper, or say anything about anything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0427",
+      "lemma": "can't stand",
+      "level": "L4",
+      "meaningKo": "도저히 못 참겠다, 질색이다",
+      "definitionEn": "to be completely unable to tolerate someone or something",
+      "nuance": "don't like보다 훨씬 세다. 뒤에는 명사나 동명사가 온다 — I can't stand waiting.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I hate that. I can't stand that, really.",
+          "speaker": "Céline"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-04-001",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "mannerism — \"then you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-0406",
+      "options": [
+        "예의범절, 매너",
+        "기분의 급격한 변화",
+        "몸에 밴 말버릇·몸짓 버릇",
+        "연기를 지도하는 방식"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-001"
+    },
+    {
+      "quizId": "q-04-002",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "be sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-0422",
+      "options": [
+        "~ 때문에 몸져눕다",
+        "~이 이제 지긋지긋하다",
+        "~을 몹시 그리워하다",
+        "~에 유난히 서툴다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-007"
+    },
+    {
+      "quizId": "q-04-003",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "opportune — \"I think this is the opportune time to tell you...\"",
+      "wordId": "w-0416",
+      "options": [
+        "기회만 노리는, 잇속만 챙기는",
+        "형식적이고 의례적인",
+        "마지못해 억지로 하는",
+        "때마침 딱 알맞은"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-004"
+    },
+    {
+      "quizId": "q-04-004",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "vow — \"I don't want you to break our vow\"",
+      "wordId": "w-0408",
+      "options": [
+        "서약, 엄숙한 약속",
+        "투표, 표결",
+        "목소리의 높낮이",
+        "보증금, 계약금"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-003"
+    },
+    {
+      "quizId": "q-04-005",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "get away from — \"it's myself that I wish I could get away from\"",
+      "wordId": "w-0423",
+      "options": [
+        "~에게 슬며시 다가가다",
+        "~을 완전히 없애 버리다",
+        "~에게서 벗어나다, 빠져나가다",
+        "~을 그냥 눈감아 주다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-008"
+    },
+    {
+      "quizId": "q-04-006",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "Seriously, think about this. I ___ never been anywhere that I haven't been. (Jesse, Ch 19)",
+      "options": [
+        "have",
+        "had",
+        "am",
+        "was"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-007",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "We ___ each other a little while now, we're stuck together. (Jesse, Ch 5)",
+      "options": [
+        "knew",
+        "know",
+        "'ve known",
+        "are knowing"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-008",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "They have known each other ___ they got off the train.",
+      "options": [
+        "for",
+        "since",
+        "during",
+        "from"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-009",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "Céline ___ to Budapest three days ago.",
+      "options": [
+        "has gone",
+        "has been",
+        "went",
+        "has been going"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-010",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "제시처럼 '한 번도 ~한 적 없다'를 말할 때 never는 have와 과거분사 사이에 온다. (I've never been out bowling.)",
+      "isCorrect": true,
+      "explanation": "맞다. have + never + p.p.가 기본 자리다. haven't never처럼 이중부정으로 쓰지 않는다.",
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-011",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "When have you been to Vienna? — 맞는 질문이다.",
+      "isCorrect": false,
+      "explanation": "현재완료는 '언제?'라는 특정 과거 시점을 묻는 말과 함께 쓰지 못한다. → When did you go to Vienna?",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-04-012"
+    },
+    {
+      "quizId": "q-04-012",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "She has gone to Paris.는 '그녀는 파리에 가 본 적이 있다'는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "has gone to는 '가 버려서 지금 여기 없다'는 결과다. 경험은 has been to. → She has been to Paris.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-04-013"
+    },
+    {
+      "quizId": "q-04-013",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "I have known her for 2020. — 자연스러운 문장이다.",
+      "isCorrect": false,
+      "explanation": "for 뒤에는 기간, since 뒤에는 출발 시점이 온다. → I have known her since 2020. 또는 for six years.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-04-014"
+    },
+    {
+      "quizId": "q-04-014",
+      "unitId": "u-04",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "one of the kissers.",
+        "if I wasn't there,",
+        "I've never had a kiss",
+        "making some stupid joke.",
+        "when I wasn't",
+        "I've never been out bowling,"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-04-010"
+    },
+    {
+      "quizId": "q-04-015",
+      "unitId": "u-04",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 5)",
+      "chunks": [
+        "a little while now,",
+        "We've known",
+        "so we're going to ask each other",
+        "each other",
+        "we're stuck together,",
+        "a few direct questions."
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2,
+        5
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-04-011"
+    },
+    {
+      "quizId": "q-04-016",
+      "unitId": "u-04",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "but I've never gotten off the train",
+        "I've been to Vienna twice,",
+        "at that station.",
+        "on the way back"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-017",
+      "unitId": "u-04",
+      "type": "koToEn",
+      "prompt": "이 가수 들어 본 적 있어요?",
+      "chunks": [
+        "heard of",
+        "Have you",
+        "this singer?",
+        "ever"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-018",
+      "unitId": "u-04",
+      "type": "koToEn",
+      "prompt": "나는 그를 6년 동안 알고 지냈다.",
+      "chunks": [
+        "for six years.",
+        "I have",
+        "him",
+        "known"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-019",
+      "unitId": "u-04",
+      "type": "koToEn",
+      "prompt": "빈에는 가 본 적 있지만, 부다페스트에는 한 번도 가 본 적이 없어요.",
+      "chunks": [
+        "but I have never been",
+        "I have been",
+        "to Vienna,",
+        "to Budapest."
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-020",
+      "unitId": "u-04",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개) — Jesse, Ch 19",
+      "text": "I have __1__ been anywhere that I haven't been. I've never had a kiss when I wasn't one of the __2__. You know, I've never, um, __3__ to the movies, when I wasn't there in the __4__.",
+      "blanks": [
+        "never",
+        "kissers",
+        "gone",
+        "audience"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-04-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-04-001",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0406",
+      "front": "mannerism",
+      "back": {
+        "meaningKo": "몸에 밴 말버릇·몸짓 버릇",
+        "nuance": "예의를 뜻하는 manners와 전혀 다른 단어. 본인은 못 느끼는데 남 눈에는 반복이 보이는 습관.",
+        "context": "then you'd start to hate a lot of my mannerisms — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-04-002",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0407",
+      "front": "insecure",
+      "back": {
+        "meaningKo": "(자신이 없어) 불안한, 주눅 든",
+        "nuance": "anxious가 상황에 대한 불안이라면 insecure는 자기 자신에 대한 불안.",
+        "context": "every time that we would have people over...I'd be insecure — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-04-003",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0408",
+      "front": "vow",
+      "back": {
+        "meaningKo": "서약, 엄숙한 약속",
+        "nuance": "promise보다 무겁다. marriage vows가 대표 용례. '다시는 안 만난다'는 약속을 셀린은 굳이 vow라 부른다.",
+        "context": "I don't want you to break our vow — Céline, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-04-004",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0416",
+      "front": "opportune",
+      "back": {
+        "meaningKo": "때마침 딱 알맞은",
+        "nuance": "타이밍만 가리킨다. '기회주의적인' opportunistic과 혼동 금지.",
+        "context": "I think this is the opportune time to tell you — Jesse, Ch 5"
+      }
+    },
+    {
+      "cardId": "c-04-005",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0418",
+      "front": "notion",
+      "back": {
+        "meaningKo": "막연한 관념, 어렴풋한 생각",
+        "nuance": "idea보다 흐릿하고 검증되지 않은 느낌. have no notion = 전혀 모른다.",
+        "context": "people have some kind of notion of an eternal soul — Jesse, Ch 5"
+      }
+    },
+    {
+      "cardId": "c-04-006",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0414",
+      "front": "scattered",
+      "back": {
+        "meaningKo": "흩어진, (정신이) 산만한",
+        "nuance": "물건에도 생각에도 쓴다. 영혼이 잘게 쪼개져서 우리가 산만한 거 아니냐는 제시의 농담.",
+        "context": "is that why we're all so scattered? — Jesse, Ch 5"
+      }
+    },
+    {
+      "cardId": "c-04-007",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0422",
+      "front": "be sick to death of",
+      "back": {
+        "meaningKo": "~이라면 이제 지긋지긋하다",
+        "nuance": "be sick of의 최상급. to death가 '죽을 만큼'이라는 과장을 얹는다.",
+        "context": "they are sick to death of being around themselves — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-04-008",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0423",
+      "front": "get away from",
+      "back": {
+        "meaningKo": "~에게서 벗어나다, 빠져나가다",
+        "nuance": "물리적 도주와 심리적 회피에 모두 쓴다. 도망칠 대상이 자기 자신이라는 게 이 장면의 핵심.",
+        "context": "it's myself that I wish I could get away from — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-04-009",
+      "unitId": "u-04",
+      "kind": "vocab",
+      "wordId": "w-0424",
+      "front": "have a crush on",
+      "back": {
+        "meaningKo": "~에게 홀딱 반해 있다",
+        "nuance": "짝사랑에 가까운 가벼운 설렘. be in love with의 무게와는 다르다.",
+        "context": "my friend Emma had a big, big crush on him — Céline, Ch 5"
+      }
+    },
+    {
+      "cardId": "c-04-010",
+      "unitId": "u-04",
+      "kind": "pattern",
+      "front": "\"나 그거 한 번도 해 본 적 없어\" — 평생의 경험 없음을 영어로?",
+      "back": {
+        "pattern": "I've never + p.p. ~",
+        "explanation": "have와 과거분사 사이에 never를 끼워 '태어나서 지금까지 0번'을 말한다. 구어에서 have는 've로 뭉개진다.",
+        "anchor": "I've never been out bowling, if I wasn't there, making some stupid joke. — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-04-011",
+      "unitId": "u-04",
+      "kind": "pattern",
+      "front": "\"우리 알고 지낸 지 이제 좀 됐잖아\" — 지금까지 이어진 기간을 영어로?",
+      "back": {
+        "pattern": "주어 + have/has + p.p. + for(기간) / since(시점) ~ now",
+        "explanation": "과거에 시작해 지금도 유효한 상태를 그린다. 문장 끝의 now가 '지금 이 순간까지'라는 끝점을 찍어 준다.",
+        "anchor": "We've known each other a little while now, we're stuck together — Jesse, Ch 5"
+      }
+    },
+    {
+      "cardId": "c-04-012",
+      "unitId": "u-04",
+      "kind": "trap",
+      "front": "When have you been to Vienna? — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "현재완료는 '언제?'처럼 과거의 한 점을 찍는 말과 함께 못 쓴다. yesterday, last year, in 1993도 마찬가지. → When did you go to Vienna?",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-04-013",
+      "unitId": "u-04",
+      "kind": "trap",
+      "front": "She has gone to Paris. = '그녀는 파리에 가 본 적이 있다' — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "has gone to는 가 버려서 지금 여기 없다는 결과다. 경험을 말하려면 been. → She has been to Paris.",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-04-014",
+      "unitId": "u-04",
+      "kind": "trap",
+      "front": "I have known her for 2020. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "for 뒤에는 얼마나 길었는지, since 뒤에는 언제부터인지가 온다. → I have known her since 2020. / I have known her for six years.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-04-015",
+      "unitId": "u-04",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "새벽 공원 잔디에 누워, 제시가 '정작 내가 도망치고 싶은 건 나 자신'이라고 말하던 순간 — 네 문장을 통으로 떠올려 보세요.",
+      "back": {
+        "en": "I have never been anywhere that I haven't been. I've never had a kiss when I wasn't one of the kissers. You know, I've never, um, gone to the movies, when I wasn't there in the audience. I've never been out bowling, if I wasn't there, making some stupid joke.",
+        "speaker": "Jesse",
+        "chapter": 19
+      }
+    }
+  ]
+}

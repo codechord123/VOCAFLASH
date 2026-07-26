@@ -1,5 +1,5 @@
 {
-  "count": 27,
+  "count": 353,
   "levels": {
     "L1": "생활",
     "L2": "뉘앙스",
@@ -7,6 +7,3103 @@
     "L4": "관용"
   },
   "words": [
+    {
+      "wordId": "w-0101",
+      "lemma": "argue",
+      "level": "L1",
+      "meaningKo": "말다툼하다; 주장하다",
+      "definitionEn": "to disagree with someone, often angrily",
+      "nuance": "argue about + 주제 / argue with + 사람. 영화의 첫 대사가 이 단어다 — 낯선 두 사람을 이어 준 것이 남의 부부싸움이었다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Do you have any idea what they were arguing about?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0102",
+      "lemma": "ability",
+      "level": "L1",
+      "meaningKo": "능력, (할 수 있는) 힘",
+      "definitionEn": "the power or skill to do something",
+      "nuance": "the ability to + 동사원형이 기본 골격. 재능(talent)이 아니라 '기능적으로 가능한가'를 말한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "as couples get older, they lose their ability to hear each other",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0103",
+      "lemma": "eventually",
+      "level": "L1",
+      "meaningKo": "결국에는, 시간이 지나면",
+      "definitionEn": "in the end, especially after a long time",
+      "nuance": "finally가 '드디어'라면 eventually는 '오래 걸려 결국'. 한국인이 자주 헷갈리는 짝이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "women eventually lose hearing in the low end",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0104",
+      "lemma": "holiday",
+      "level": "L1",
+      "meaningKo": "휴가; 공휴일",
+      "definitionEn": "a period of time away from work for rest or travel",
+      "nuance": "영국식으로 '휴가'는 on holiday, 미국식은 on vacation. 유럽에 있는 셀린이 미국인 제시에게 던지는 단어라는 점이 재미있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You on holiday?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0105",
+      "lemma": "complain",
+      "level": "L1",
+      "meaningKo": "불평하다, 문제를 제기하다",
+      "definitionEn": "to say that you are unhappy or dissatisfied with something",
+      "nuance": "complain about + 대상, complain to + 상대. 여기서는 '부모에게 정식으로 항의한다'는 결.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0106",
+      "lemma": "attitude",
+      "level": "L1",
+      "meaningKo": "태도, (무엇을 대하는) 자세",
+      "definitionEn": "the way you think and feel about something",
+      "nuance": "attitude toward(s) + 대상이 기본 결합. 단독으로 have an attitude라고 하면 '건방지다'는 뜻이 되니 주의.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You're really lucky you can have this attitude towards death.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0107",
+      "lemma": "mean",
+      "level": "L1",
+      "meaningKo": "(형용사) 못되게 구는, 심술궂은",
+      "definitionEn": "unkind or cruel to other people",
+      "nuance": "'의미하다'의 mean과 철자만 같은 형용사. 셀린도 Ch 11에서 \"That's mean, no?\"라고 쓴다 — 이 유닛의 no? 용법과 같은 자리다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "No one was ever mean about it.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0108",
+      "lemma": "supposedly",
+      "level": "L2",
+      "meaningKo": "(확인은 안 됐지만) 그렇다고들 하는데",
+      "definitionEn": "according to what people say, though it may not be true",
+      "nuance": "말하는 사람이 책임을 반쯤 내려놓는 장치. 셀린은 이 한 단어로 자기 지식의 출처를 흐리면서 대화를 이어 간다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Well, supposedly, men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0109",
+      "lemma": "high-pitched",
+      "level": "L2",
+      "meaningKo": "음이 높은, 고음의",
+      "definitionEn": "having a high sound or tone",
+      "nuance": "pitch(음높이)가 어원. 반대는 low-pitched. 소리의 '크기'는 loud, '높이'는 pitch로 갈린다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0110",
+      "lemma": "ordinarily",
+      "level": "L2",
+      "meaningKo": "평소 같으면, 보통은",
+      "definitionEn": "usually; under normal circumstances",
+      "nuance": "뒤에 '그런데 지금은 다르다'가 따라온다는 신호. usually보다 대비의 힘이 세다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0111",
+      "lemma": "straight",
+      "level": "L2",
+      "meaningKo": "(기간 뒤에서) 내리, 쉬지 않고",
+      "definitionEn": "continuously, without a break",
+      "nuance": "for a year straight, three days straight처럼 기간 명사 뒤에 붙는다. '똑바로'의 straight와 같은 단어지만 위치가 다르다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "twenty-four hours a day for a year straight",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0112",
+      "lemma": "capture",
+      "level": "L2",
+      "meaningKo": "(장면·느낌을) 담아내다; 포획하다",
+      "definitionEn": "to succeed in recording or expressing something",
+      "nuance": "붙잡아 가둔다는 원뜻이 카메라로 옮겨 온 말. record(그냥 기록)와 달리 '놓치기 쉬운 것을 붙들었다'는 성취감이 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "capturing life as it's lived",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0113",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without stopping or being interrupted",
+      "nuance": "continual은 '끊겼다 이어졌다 반복', continuous는 '한 번도 안 끊김'. 제시의 기획이 성립하려면 후자여야 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0114",
+      "lemma": "officially",
+      "level": "L2",
+      "meaningKo": "공식적으로, 대놓고 정식으로",
+      "definitionEn": "in a formal and public way",
+      "nuance": "여기서는 '속으로는 불만이어도 밖으로 꺼낼 명분이 없다'는 뜻으로 쓰였다. 셀린이 부모를 원망하지 못하는 이유를 이 부사 하나가 요약한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0115",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "옅은 안개, (물)안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 투명하다. 여기서는 호스로 만든 물보라 — 그 너머로 죽은 증조할머니를 본다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0116",
+      "lemma": "suck",
+      "level": "L2",
+      "meaningKo": "형편없다, 최악이다",
+      "definitionEn": "to be very bad or unpleasant",
+      "nuance": "미국 구어의 대표 표현. 주어가 사물이면 '별로다', 사람이면 '못한다'. 제시가 좋았다고 말하려다 말을 뒤집는 순간에 튀어나온다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Yeah, sure, yeah, it's been, umm...it sucked.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0117",
+      "lemma": "nullify",
+      "level": "L3",
+      "meaningKo": "무효로 만들다, 서로 상쇄하다",
+      "definitionEn": "to cancel something out or make it have no effect",
+      "nuance": "null(영, 없음)에서 온 말. 법률에서는 '무효화하다'지만 여기서는 두 힘이 맞부딪혀 0이 된다는 뜻 — 남편은 못 듣고 아내도 못 듣게 되어 결국 싸움이 사라진다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0118",
+      "lemma": "possibility",
+      "level": "L3",
+      "meaningKo": "가능성, 있을 법한 일",
+      "definitionEn": "something that might happen or be true",
+      "nuance": "the possibility of + 동명사 골격. chance가 '확률'이라면 possibility는 '그런 일이 있을 수 있다는 사실' 자체.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "my parents have never really spoken of the possibility of my falling in love",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0119",
+      "lemma": "service-oriented",
+      "level": "L3",
+      "meaningKo": "손님 응대에 신경 쓰는, 서비스 중심의",
+      "definitionEn": "focused on giving good service to customers",
+      "nuance": "-oriented는 '~을 중심에 둔'을 만드는 접미사(result-oriented, family-oriented). 웨이터가 말없이 메뉴만 던지고 가자 제시가 유럽을 한 문장으로 정리하는 말.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You know what? Not service-oriented.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0120",
+      "lemma": "poetry",
+      "level": "L3",
+      "meaningKo": "시(詩); (비유) 시적인 아름다움",
+      "definitionEn": "poems as a form of literature; a quality of beauty and feeling",
+      "nuance": "the poetry of ~는 '~에 깃든 시적인 것'. 셀린이 mundane, boring이라 부른 것을 제시는 같은 말로 poetry라 부른다 — 이 영화의 두 시선이 한 문장에서 갈린다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I was going to say the poetry of day to day life",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0121",
+      "lemma": "be headed",
+      "level": "L4",
+      "meaningKo": "~로 향하다, ~로 가는 길이다",
+      "definitionEn": "to be going in a particular direction",
+      "nuance": "Where are you headed?는 여행지에서 가장 흔한 인사. Where are you going?보다 가볍고 캐주얼하다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "So, where are you headed?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0122",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "머릿속이 하얘지다",
+      "definitionEn": "to suddenly be unable to remember or think of anything",
+      "nuance": "blank는 '아무것도 안 쓰인 빈칸'. my mind went blank가 관용 골격이다. 4년 배운 프랑스어가 창구 앞에서 통째로 날아가는 순간.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0123",
+      "lemma": "stand in line",
+      "level": "L4",
+      "meaningKo": "줄을 서다",
+      "definitionEn": "to wait in a queue",
+      "nuance": "미국식은 stand/wait in line, 영국식은 queue (up). 한국어 '줄 서다'를 stand a line처럼 쓰지 않도록 전치사 in을 통째로 외울 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "When I first got to Paris, I stood in line at the metro station.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0124",
+      "lemma": "on one's own",
+      "level": "L4",
+      "meaningKo": "혼자서, 혼자 힘으로",
+      "definitionEn": "alone, or without help from anyone",
+      "nuance": "alone이 상태의 서술이라면 on your own은 '스스로 택해서 혼자'라는 결. 셀린은 이 표현으로 제시가 혼자인지를 에둘러 확인한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You were visiting friends, or just on your own?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0125",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "어쩔 수가 없다, 나도 나를 못 말린다",
+      "definitionEn": "to be unable to stop or control something you do",
+      "nuance": "여기서 help는 '돕다'가 아니라 '피하다'. 뒤에 동사를 붙이면 can't help -ing(~하지 않을 수 없다). 셀린이 두 번 연속 내뱉는 자기 변호.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't help it. I can't help it.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0126",
+      "lemma": "How about you?",
+      "level": "L4",
+      "meaningKo": "그쪽은요?",
+      "definitionEn": "used to turn the same question back to the other person",
+      "nuance": "구어에서는 about이 뭉개져 How bout you?로 들린다. 셀린이 제시에게 처음으로 되묻는 말 — 질문을 되돌려주는 이 한마디가 대화를 대화로 만든다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "How bout you?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0127",
+      "lemma": "grow old together",
+      "level": "L4",
+      "meaningKo": "함께 늙어 가다",
+      "definitionEn": "to spend the rest of your lives together as you age",
+      "nuance": "get old가 그냥 '나이 들다'라면 grow old together는 결혼 서약의 관용구. 제시가 농담으로 던지지만, 이 영화가 20년에 걸쳐 실제로 다루게 될 주제이기도 하다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Nature's way of allowing couples to grow old together without killing each other.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0201",
+      "lemma": "you know",
+      "level": "L4",
+      "meaningKo": "있잖아, 그러니까 (말을 고르며 상대를 붙드는 표지)",
+      "definitionEn": "used in speech to fill a pause and keep the listener's attention",
+      "nuance": "'너 알잖아'로 직역하면 무너진다. 뜻이 아니라 리듬이다. 제시는 한 문장에 두 번 넣는다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "sitting, you know, for weeks on end",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0202",
+      "lemma": "I mean",
+      "level": "L4",
+      "meaningKo": "그러니까, 내 말은 (방금 한 말을 고쳐/풀어 말할 때)",
+      "definitionEn": "used to correct, clarify, or expand what you have just said",
+      "nuance": "you know가 상대를 향한다면 I mean은 자기 말을 향한다. 상대 말에 공감할 때는 I know 쪽이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I mean, getting these tapes from town to town",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0203",
+      "lemma": "you know what I mean",
+      "level": "L4",
+      "meaningKo": "무슨 말인지 알지 (문장을 못 맺고 이해를 넘길 때)",
+      "definitionEn": "used to check that the listener understands something you can't fully put into words",
+      "nuance": "말이 막힌 자리에 놓는 손짓. 셀린이 부모 얘기를 하다 문장을 끝내지 못하고 내미는 말.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "passive-aggressive shit, you know what I mean",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0204",
+      "lemma": "dunno",
+      "level": "L4",
+      "meaningKo": "몰라, 글쎄 (I don't know의 구어 축약)",
+      "definitionEn": "spoken contraction of 'I don't know'",
+      "nuance": "정말 모른다기보다 말을 시작하기 전 뜸 들이는 소리로도 쓴다. 글에는 절대 쓰지 않는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Umm, I dunno...Anybody can produce a show real cheap",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0205",
+      "lemma": "‘cause",
+      "level": "L2",
+      "meaningKo": "왜냐면 (because의 구어 축약)",
+      "definitionEn": "spoken contraction of 'because'",
+      "nuance": "말이 빨라질 때 be-가 통째로 떨어진다. 듣기에서 'cause를 놓치면 인과관계 자체를 놓친다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous, ‘cause it would have to play all the time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0206",
+      "lemma": "kinda",
+      "level": "L2",
+      "meaningKo": "좀, 약간 (kind of의 구어 축약)",
+      "definitionEn": "spoken contraction of 'kind of'; somewhat",
+      "nuance": "단정을 깎아 내리는 완충어. kinda great은 '아주 좋다'가 아니라 '꽤 좋았어' 정도의 조심스러운 인정.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "looking out the window has actually been kinda great",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0207",
+      "lemma": "gonna",
+      "level": "L2",
+      "meaningKo": "~할 거야 (going to의 구어 축약)",
+      "definitionEn": "spoken contraction of 'going to'",
+      "nuance": "be동사가 반드시 앞에 있어야 한다. I gonna는 존재하지 않는 형태.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "those few seconds of consciousness before you're gonna die",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0208",
+      "lemma": "wanna",
+      "level": "L2",
+      "meaningKo": "~하고 싶다 (want to의 구어 축약)",
+      "definitionEn": "spoken contraction of 'want to'",
+      "nuance": "3인칭 단수에는 못 붙는다(He wanna ❌). 셀린이 밤이 깊어 진심을 꺼낼 때 쓰는 형태.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don’t wanna be a great story",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0209",
+      "lemma": "anyway",
+      "level": "L2",
+      "meaningKo": "아무튼, 그건 그렇고",
+      "definitionEn": "used to return to the main point after a digression",
+      "nuance": "샛길로 샜다가 본론으로 돌아온다는 신호. 문장 끝에 붙는 anyway는 '어차피'라는 다른 뜻.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you know, so anyway",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0210",
+      "lemma": "whatever",
+      "level": "L4",
+      "meaningKo": "됐고, 뭐 어때 (상대의 정정을 가볍게 넘길 때)",
+      "definitionEn": "used to dismiss something as unimportant",
+      "nuance": "셀린이 UN billet이라고 고쳐 주자 제시가 던지는 한마디. 상대에 따라 무례하게 들리니 자리를 가린다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Un. Whatever. Un, Un.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0211",
+      "lemma": "kind of",
+      "level": "L4",
+      "meaningKo": "좀, 어느 정도 (단정을 누그러뜨리는 완충어)",
+      "definitionEn": "somewhat; to a small degree",
+      "nuance": "관사 없이 동사·형용사 앞에 오면 '좀'. a kind of로 명사 앞에 오면 '일종의'. 관사 하나가 뜻을 가른다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the thing that kind of haunts me is the distribution",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0212",
+      "lemma": "ya",
+      "level": "L2",
+      "meaningKo": "너, 당신 (you의 구어 축약)",
+      "definitionEn": "spoken contraction of 'you'",
+      "nuance": "I'll tell ya, see ya, gotcha처럼 굳어진 자리에 주로 붙는다. 문어에서는 쓰지 않는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Well, I'll tell ya, you know",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0213",
+      "lemma": "real",
+      "level": "L4",
+      "meaningKo": "아주, 엄청 (구어에서 really 대신 쓰는 부사)",
+      "definitionEn": "very (informal adverbial use of the adjective 'real')",
+      "nuance": "형용사를 그대로 부사 자리에 쓰는 미국 구어. 시험에서는 오답이지만 대사에서는 흔하다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Anybody can produce a show real cheap",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0214",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "(머릿속이) 하얘지다",
+      "definitionEn": "to suddenly be unable to remember or think of anything",
+      "nuance": "긴장으로 기억이 통째로 날아가는 순간. 파리 지하철 창구 앞 제시가 딱 그 상태다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0215",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "어쩔 수 없다, 나도 모르게 그렇게 된다",
+      "definitionEn": "to be unable to control or stop something about yourself",
+      "nuance": "can't help ~ing(~하지 않을 수 없다)와 뿌리가 같다. 여기서 it은 '이 성향 자체'를 가리킨다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't help it. I can't help it.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0216",
+      "lemma": "bullshit detector",
+      "level": "L4",
+      "meaningKo": "허튼소리 감지기 (거짓을 알아채는 감각)",
+      "definitionEn": "an instinct for recognizing when someone is lying or talking nonsense",
+      "nuance": "실제 기계가 아니라 사람의 촉을 가리키는 농담 섞인 표현. 어른 말의 거짓을 알아채던 어린 제시.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I always had a pretty good bullshit detector when I was a kid",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0217",
+      "lemma": "be headed",
+      "level": "L4",
+      "meaningKo": "~로 향하다, 가는 중이다",
+      "definitionEn": "to be going in a particular direction",
+      "nuance": "Where are you going?보다 캐주얼하고 덜 캐묻는 느낌. 여행자끼리의 인사에 가깝다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "So, where are you headed?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0218",
+      "lemma": "on holiday",
+      "level": "L4",
+      "meaningKo": "휴가 중인",
+      "definitionEn": "away from work or school for a period of rest",
+      "nuance": "영국식 표현. 미국은 on vacation. 런던에서 영어를 배운 셀린의 이력이 이 한 마디에 묻어난다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You on holiday?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0219",
+      "lemma": "suck",
+      "level": "L2",
+      "meaningKo": "형편없다, 최악이다",
+      "definitionEn": "to be very bad or unpleasant",
+      "nuance": "주어가 사물이면 '별로다'. 꽤 강한 구어라 제시도 뱉자마자 Well로 주워 담는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "it's been, umm...it sucked",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0220",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without any interruption or gap",
+      "nuance": "continual(간격을 두고 되풀이되는)과 다르다. continuous에는 틈이 없다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0221",
+      "lemma": "ordinarily",
+      "level": "L3",
+      "meaningKo": "평소 같으면, 보통은",
+      "definitionEn": "usually; in normal circumstances",
+      "nuance": "usually와 달리 '평소라면 그랬을 텐데 지금은 다르다'는 대조를 품는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0222",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "물안개, 옅은 안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 곱다. 호스 물줄기가 만든 이 mist 너머로 증조할머니가 서 있었다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0223",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "(호스·분무기의) 물 나오는 주둥이",
+      "definitionEn": "the narrow end of a pipe or hose that controls the flow of liquid",
+      "nuance": "이 단어 하나에 장면 전체가 걸려 있다. 손을 놓는 순간 무지개도 할머니도 사라진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I let go of the nozzle",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0224",
+      "lemma": "officially",
+      "level": "L2",
+      "meaningKo": "공식적으로, 떳떳하게 내놓고",
+      "definitionEn": "in a formal or publicly acknowledged way",
+      "nuance": "여기서는 '남들 앞에 명분을 세워서'의 결. 불평할 근거 자체가 없다는 말이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0225",
+      "lemma": "complain",
+      "level": "L1",
+      "meaningKo": "불평하다, 항의하다",
+      "definitionEn": "to say that you are annoyed or unhappy about something",
+      "nuance": "complain about + 대상 / complain to + 사람. 전치사를 바꾸면 향하는 곳이 달라진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0226",
+      "lemma": "attitude",
+      "level": "L1",
+      "meaningKo": "태도, 자세",
+      "definitionEn": "the way you think and feel about something",
+      "nuance": "attitude toward(s) + 대상이 기본형. 목적어 없이 have an attitude만 쓰면 '싸가지 없다'는 뜻이 된다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You're really lucky you can have this attitude towards death",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0227",
+      "lemma": "possibility",
+      "level": "L3",
+      "meaningKo": "가능성, 있을 수 있는 일",
+      "definitionEn": "something that may happen or be true",
+      "nuance": "possibility of + 명사/동명사. chance보다 중립적이고 추상적이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "never really spoken of the possibility of my falling in love",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0301",
+      "lemma": "argue",
+      "level": "L1",
+      "meaningKo": "말다툼하다, 언쟁하다",
+      "definitionEn": "to disagree with someone, often in an angry way",
+      "nuance": "'논증하다'보다 이 장면에서는 부부의 티격태격. argue about + 다투는 주제.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Do you have any idea what they were arguing about?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0302",
+      "lemma": "glance",
+      "level": "L1",
+      "meaningKo": "흘깃 보다, 눈길을 들다",
+      "definitionEn": "to look at something quickly",
+      "nuance": "stare(빤히 응시)의 반대편. 셀린이 책에서 눈을 들어 올리는 이 한 동작이 영화의 출발점.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Glances up at him, looks over",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0303",
+      "lemma": "explosion",
+      "level": "L1",
+      "meaningKo": "폭발",
+      "definitionEn": "a sudden violent bursting with noise",
+      "nuance": "explode의 명사형. 비행기 공포를 말하며 셀린이 '보인다'고 하는 그 장면의 이미지.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "When I'm in a plane, I can see it. I can see the explosion",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0304",
+      "lemma": "magical",
+      "level": "L1",
+      "meaningKo": "마법 같은, 홀린 듯 아름다운",
+      "definitionEn": "wonderful and exciting in a way that seems unreal",
+      "nuance": "magic의 형용사. 사실 서술이 아니라 '그때가 신비롭게 좋았다'는 회상의 어휘.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0305",
+      "lemma": "supposedly",
+      "level": "L2",
+      "meaningKo": "듣기로는, 그렇다고들 하는데",
+      "definitionEn": "according to what people say, though it may not be true",
+      "nuance": "부사 하나로 '내 주장이 아니라 들은 얘기'라고 선을 긋는다. 셀린이 청력 이야기 맨 앞에 깔아 둔 첫 완충재.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Well, supposedly, men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0306",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 시간이 지나면",
+      "definitionEn": "in the end, especially after a long time",
+      "nuance": "finally(드디어)와 달리 '오랜 시간이 흐른 뒤 언젠가'의 결. 노화를 말하는 데 딱 맞는 부사.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "women eventually lose hearing in the low end",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0307",
+      "lemma": "higher-pitched",
+      "level": "L2",
+      "meaningKo": "음이 더 높은, 고음의",
+      "definitionEn": "having a higher sound frequency",
+      "nuance": "pitch가 소리의 높낮이. high-pitched voice(새된 목소리)로 자주 결합한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0308",
+      "lemma": "ordinarily",
+      "level": "L2",
+      "meaningKo": "평소 같으면, 보통은",
+      "definitionEn": "usually; under normal circumstances",
+      "nuance": "뒤에 반드시 '그런데 지금은 아니다'가 따라온다. 제시도 '평소라면 안 했을 생각'이라는 뜻으로 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0309",
+      "lemma": "straight",
+      "level": "L2",
+      "meaningKo": "연속으로, 내리",
+      "definitionEn": "continuously, without a break",
+      "nuance": "시간 표현 뒤에 붙여 '쉬지 않고'. for a year straight = 1년 내내. '똑바로'와 같은 단어다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "twenty-four hours a day for a year straight",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0310",
+      "lemma": "capture",
+      "level": "L2",
+      "meaningKo": "(카메라·글로) 담아내다, 포착하다",
+      "definitionEn": "to succeed in showing or recording something",
+      "nuance": "'붙잡다'에서 확장된 뜻. capture the moment / capture a feeling이 흔한 결합.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "twenty-four hour documents of real time, right, capturing life as it's lived",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0311",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않는, 연속적인",
+      "definitionEn": "happening or existing without stopping",
+      "nuance": "continual(끊겼다 이어지는 반복)과 다르다. continuous는 중간이 비지 않는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0312",
+      "lemma": "mean",
+      "level": "L2",
+      "meaningKo": "심술궂은, 못되게 구는",
+      "definitionEn": "unkind or cruel to other people",
+      "nuance": "'의미하다'만 알고 있으면 이 문장을 통째로 놓친다. be mean about/to someone = ~에게 못되게 굴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "No one was ever mean about it.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0313",
+      "lemma": "officially",
+      "level": "L2",
+      "meaningKo": "공식적으로, 대놓고",
+      "definitionEn": "in a formal or publicly acknowledged way",
+      "nuance": "여기서는 '떳떳하게, 명분을 갖고'. 부모가 다정하면 대놓고 불평할 명분이 없다는 셀린의 논리.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0314",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "옅은 안개, 물안개",
+      "definitionEn": "a thin cloud of tiny drops of water in the air",
+      "nuance": "fog보다 옅다. 여기서는 정원 호스에서 뿜어져 나온 물보라.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0315",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "(호스·분무기의) 노즐, 물 나오는 주둥이",
+      "definitionEn": "the narrow end of a pipe or hose where liquid comes out",
+      "nuance": "손을 놓는 순간 물줄기가 끊기고 할머니가 사라진다 — 이 단어가 장면 전체의 스위치다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I let go of the nozzle, you know, and then I dropped the hose",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0316",
+      "lemma": "suck",
+      "level": "L2",
+      "meaningKo": "형편없다, 최악이다",
+      "definitionEn": "to be very bad or unpleasant",
+      "nuance": "It sucked. = 별로였어. 원뜻은 '빨다'. 격의 없는 사이에서만 쓴다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Yeah, sure, yeah, it's been, umm...it sucked.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0317",
+      "lemma": "nullify",
+      "level": "L3",
+      "meaningKo": "상쇄하다, 무효로 만들다",
+      "definitionEn": "to make something lose its effect or legal force",
+      "nuance": "null(무(無))에서 온 법률·과학 어휘. 그 딱딱한 단어를 노부부 얘기에 끌어다 쓰니 농담이 된다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0318",
+      "lemma": "service-oriented",
+      "level": "L3",
+      "meaningKo": "손님 응대에 신경 쓰는, 서비스 중심의",
+      "definitionEn": "focused on providing good service to customers",
+      "nuance": "-oriented = ~지향의(result-oriented, family-oriented). 웨이터가 메뉴만 던지고 가자 제시가 흘리듯 내놓는 유럽 관찰.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You know what? Not service-oriented.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0319",
+      "lemma": "I guess",
+      "level": "L4",
+      "meaningKo": "~인 것 같아, 뭐 아마도",
+      "definitionEn": "used to show that you are not completely certain about what you say",
+      "nuance": "실제로 추측한다기보다 단정을 피하려고 문두에 붙인다. 미국 구어에서 I think보다 가볍고 책임이 덜하다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0320",
+      "lemma": "sort of",
+      "level": "L4",
+      "meaningKo": "좀, 약간, 어느 정도",
+      "definitionEn": "to some extent; not exactly",
+      "nuance": "kind of와 거의 같은 말. 반드시 꾸밀 말 '앞'에 놓는다(sort of weird). 뒤에 붙이면 문장이 무너진다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "they sort of nullify each other",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0321",
+      "lemma": "or something",
+      "level": "L4",
+      "meaningKo": "~인가 뭔가, 그런 거지",
+      "definitionEn": "used at the end of a statement to show you are not being exact",
+      "nuance": "문장 끝에 붙여 말을 닫지 않고 열어 둔다. 명사 뒤에는 or something like that으로 길게 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0322",
+      "lemma": "kind of",
+      "level": "L4",
+      "meaningKo": "좀, 약간",
+      "definitionEn": "to some degree; rather",
+      "nuance": "구어 발음은 kinda. 동사 앞(kind of haunts me)에도, 형용사 앞(kind of weird)에도, 명사구 앞(kind of a psycho)에도 온다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the thing that kind of haunts me is the distribution",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0323",
+      "lemma": "I don't know",
+      "level": "L4",
+      "meaningKo": "글쎄, 뭐랄까 (말을 무르는 삽입구)",
+      "definitionEn": "used in the middle of a sentence to soften what you are saying",
+      "nuance": "문장 중간에 오면 '모른다'가 아니라 '내 말이 절대적이진 않다'는 신호. 축약형은 I dunno.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I don't know, an observation about Europe",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0324",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "머릿속이 하얘지다",
+      "definitionEn": "to suddenly become unable to remember or think of anything",
+      "nuance": "my mind went blank가 통째로 묶인 결합. 발표·시험에서 쓰는 바로 그 표현이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0325",
+      "lemma": "be headed",
+      "level": "L4",
+      "meaningKo": "~로 향하다, ~로 가는 길이다",
+      "definitionEn": "to be going in a particular direction",
+      "nuance": "Where are you headed?는 '어디 가세요?'의 가장 흔한 구어. head to/for + 장소로도 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "So, where are you headed?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0326",
+      "lemma": "on one's own",
+      "level": "L4",
+      "meaningKo": "혼자서, 혼자 힘으로",
+      "definitionEn": "alone, without other people",
+      "nuance": "alone보다 '스스로 택한 혼자'의 결이 있다. by oneself와 거의 같은 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You were visiting friends, or just on your own?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0327",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "나도 어쩔 수가 없다",
+      "definitionEn": "to be unable to stop or control something",
+      "nuance": "여기서 help는 '돕다'가 아니라 '막다'. can't help ~ing(~하지 않을 수 없다)와 한 뿌리.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't help it. I can't help it. I know the statistics say na-na-na",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0328",
+      "lemma": "bullshit detector",
+      "level": "L4",
+      "meaningKo": "허풍 감지기 (거짓말을 알아채는 감각)",
+      "definitionEn": "an instinct for sensing when someone is lying or exaggerating",
+      "nuance": "bullshit은 거친 말이라 자리를 가려야 한다. detector를 붙여 '내 안의 센서'처럼 농담조로 쓴다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I always had a pretty good bullshit detector when I was a kid",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0401",
+      "lemma": "audience",
+      "level": "L1",
+      "meaningKo": "관객, 청중",
+      "definitionEn": "the group of people watching or listening to a performance",
+      "nuance": "무리 전체를 하나로 세는 집합명사. 여기서는 '객석에 앉아 있는 나 자신'을 가리킨다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "when I wasn't there in the audience",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0402",
+      "lemma": "rational",
+      "level": "L1",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "reasonable('말이 되는')과 달리 '감정을 배제한'이 핵심. 새벽 공원에서 이 단어를 꺼내는 것 자체가 이미 감정이 이겼다는 신호다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0403",
+      "lemma": "complicated",
+      "level": "L1",
+      "meaningKo": "복잡한, 얽히고설킨",
+      "definitionEn": "made up of many connected parts and hard to deal with",
+      "nuance": "complex가 '구조가 정교하다'라면 complicated는 '괜히 꼬였다'는 불평의 결이 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "Why do we make everything so complicated?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0404",
+      "lemma": "media",
+      "level": "L1",
+      "meaningKo": "언론, 매체",
+      "definitionEn": "the organizations that provide news and information to the public",
+      "nuance": "medium의 복수형이지만 실제로는 the media로 묶어 쓴다. 셀린은 뒤에 they를 붙여 사람 무리처럼 취급한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I hate that the media, you know, they are trying to control our minds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0405",
+      "lemma": "improve",
+      "level": "L1",
+      "meaningKo": "(기록·실력을) 끌어올리다, 나아지게 하다",
+      "definitionEn": "to make something better than before",
+      "nuance": "수영 맥락의 times는 '시간'이 아니라 '기록'. improve one's times는 기록 단축을 뜻한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "And to improve his times, he'd shave the hair off his legs and arms.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0406",
+      "lemma": "mannerism",
+      "level": "L2",
+      "meaningKo": "몸에 밴 말버릇·몸짓 버릇",
+      "definitionEn": "a habitual gesture or way of speaking peculiar to a person",
+      "nuance": "예의를 뜻하는 manners와 완전히 다른 단어다. 보통 복수형으로, 본인은 못 느끼지만 남 눈에는 반복이 보이는 습관을 가리킨다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "then you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0407",
+      "lemma": "insecure",
+      "level": "L2",
+      "meaningKo": "(자신이 없어) 불안한, 주눅 든",
+      "definitionEn": "not confident about yourself or your relationships",
+      "nuance": "'위험하다'가 아니라 '자존감이 흔들린다'는 심리 형용사. anxious가 상황에 대한 불안이라면 insecure는 자기 자신에 대한 불안이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over...I'd be insecure",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0408",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "서약, (지키기로 한) 엄숙한 약속",
+      "definitionEn": "a serious promise to do or not do something",
+      "nuance": "promise보다 무겁다 — marriage vows가 대표 용례. 두 사람이 '다시는 안 만난다'고 정한 것을 셀린은 굳이 vow라 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0409",
+      "lemma": "fantasy",
+      "level": "L2",
+      "meaningKo": "환상, (현실이 아닌) 상상 시나리오",
+      "definitionEn": "an imagined situation that one wishes were true",
+      "nuance": "장르명(판타지)보다 '머릿속에서만 굴리는 각본'의 뜻이 먼저다. 셀린은 이 밤이 남자의 각본 한 편으로 소비되는 걸 거부한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "No, then it‘s like some male fantasy.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0410",
+      "lemma": "gorgeous",
+      "level": "L2",
+      "meaningKo": "눈부시게 아름다운, 근사한",
+      "definitionEn": "extremely beautiful or attractive",
+      "nuance": "beautiful보다 감탄이 실린 구어. 사람에게도 풍경에게도 쓴다. 셀린은 첫사랑을 gorgeous dolphin이라 부른다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Oh, no. He was like this gorgeous dolphin.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0411",
+      "lemma": "disgusting",
+      "level": "L2",
+      "meaningKo": "역겨운, 정떨어지는",
+      "definitionEn": "extremely unpleasant, causing a feeling of revulsion",
+      "nuance": "생리적 거부감이 핵심. 실제 대화에서는 여기 제시처럼 반농담으로 툭 던지는 경우가 더 많다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "That's disgusting.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0412",
+      "lemma": "obsessive",
+      "level": "L2",
+      "meaningKo": "집착적인, 강박적인",
+      "definitionEn": "thinking about something too much and unable to stop",
+      "nuance": "obsess의 형용사. 애정이 지나쳐 통제가 안 되는 상태를 가리키며, 자조적으로 자기 얘기를 할 때 자주 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "it started with an obsessive relationship with Miss July 1978",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0413",
+      "lemma": "subtle",
+      "level": "L2",
+      "meaningKo": "미묘한, 티 안 나는",
+      "definitionEn": "not obvious; difficult to notice unless you pay attention",
+      "nuance": "b는 발음하지 않는다(서틀). 여기서는 '교묘해서 알아채기 어렵다'는 부정적 결로 쓰였다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "You know it‘s very subtle, but you know, it‘s a new form of fascism.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0414",
+      "lemma": "scattered",
+      "level": "L2",
+      "meaningKo": "흩어진, (정신이) 산만한",
+      "definitionEn": "spread out in different directions; lacking focus",
+      "nuance": "물건이 흩어진 것과 생각이 흩어진 것에 모두 쓴다. 제시는 영혼이 잘게 쪼개져서 우리가 산만한 게 아니냐고 농담한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I mean, is that why we're all so scattered?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0415",
+      "lemma": "booth",
+      "level": "L2",
+      "meaningKo": "부스, 칸막이로 막은 작은 공간",
+      "definitionEn": "a small enclosed space for one purpose, such as listening or voting",
+      "nuance": "listening booth(청음 부스), phone booth, voting booth처럼 앞말과 붙어 다닌다. 두 사람을 처음으로 좁은 공간에 가두는 장치.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 6,
+          "context": "Yeah, there's even a listening booth over there.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0416",
+      "lemma": "opportune",
+      "level": "L3",
+      "meaningKo": "때마침 딱 알맞은",
+      "definitionEn": "happening at a time that is convenient or suitable",
+      "nuance": "타이밍만을 가리키는 형용사. opportunity의 형용사지만 '기회주의적인'인 opportunistic과는 뜻이 다르니 헷갈리지 말 것.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I think this is the opportune time to tell you that I happen to be a fantastic swimmer",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0417",
+      "lemma": "eternal",
+      "level": "L3",
+      "meaningKo": "영원한, 끝나지 않는",
+      "definitionEn": "lasting forever, without beginning or end",
+      "nuance": "permanent가 '(당분간) 계속되는'이라면 eternal은 시간 밖에 있다는 종교적·철학적 어감.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "people have some kind of notion of an eternal soul",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0418",
+      "lemma": "notion",
+      "level": "L3",
+      "meaningKo": "막연한 관념, 어렴풋한 생각",
+      "definitionEn": "a belief or idea, often a vague one",
+      "nuance": "idea보다 흐릿하고 검증되지 않은 느낌이라, '~라는 관념'을 살짝 깎아내릴 때 쓴다. have no notion = 전혀 모른다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "people have some kind of notion of an eternal soul",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0419",
+      "lemma": "fascism",
+      "level": "L3",
+      "meaningKo": "파시즘, 전체주의적 지배",
+      "definitionEn": "an authoritarian system that suppresses opposition and controls people",
+      "nuance": "발음은 '패시즘'. 셀린은 언론의 여론 통제를 총과 군화 없이 굴러가는 새로운 파시즘이라고 부른다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "it‘s very subtle, but you know, it‘s a new form of fascism",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0420",
+      "lemma": "fraction",
+      "level": "L3",
+      "meaningKo": "일부분, 아주 작은 조각",
+      "definitionEn": "a small part of a whole; a numerical portion",
+      "nuance": "수학의 '분수'가 원뜻이라 '전체를 나눈 몫'이라는 감각이 남아 있다. a fraction of the cost = 비용의 몇 분의 일.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Are modern souls only a fraction of the original souls?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0421",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지적인 척하는, 사이비 지성의",
+      "definitionEn": "pretending to be more intelligent or cultured than one really is",
+      "nuance": "pseudo-(가짜)를 붙여 만드는 조어. 제시가 자기 이야기 습관을 스스로 이렇게 부르는 것이 이 대사의 자조 포인트다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0422",
+      "lemma": "be sick to death of",
+      "level": "L4",
+      "meaningKo": "~이라면 이제 지긋지긋하다",
+      "definitionEn": "to be extremely tired of or annoyed by something",
+      "nuance": "be sick of의 최상급 버전. to death가 '죽을 만큼'이라는 과장을 얹는다. 실제로 아픈 것과는 무관하다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "they are sick to death of being around themselves",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0423",
+      "lemma": "get away from",
+      "level": "L4",
+      "meaningKo": "~에게서 벗어나다, 빠져나가다",
+      "definitionEn": "to escape from someone or something",
+      "nuance": "물리적 도주와 심리적 회피에 다 쓴다. 제시가 도망치고 싶다고 말하는 대상이 자기 자신이라는 게 이 유닛 전체의 핵심.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "usually, it‘s myself that I wish I could get away from",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0424",
+      "lemma": "have a crush on",
+      "level": "L4",
+      "meaningKo": "~에게 홀딱 반해 있다",
+      "definitionEn": "to have a strong but usually short-lived romantic attraction to someone",
+      "nuance": "짝사랑에 가까운 가벼운 설렘. be in love with의 무게와 다르다. big을 넣어 강도를 올린다 — a big crush on him.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "And my friend Emma had a big, big crush on him.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0425",
+      "lemma": "piss someone off",
+      "level": "L4",
+      "meaningKo": "~을 열받게 하다, 짜증나게 하다",
+      "definitionEn": "to make someone very annoyed or angry",
+      "nuance": "비속어에 가까운 구어라 업무 자리에서는 피한다. 목적어는 반드시 piss와 off 사이에 낀다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Tell me something that really pisses you off, really drives you crazy.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0426",
+      "lemma": "lose one's temper",
+      "level": "L4",
+      "meaningKo": "화를 참지 못하고 폭발하다",
+      "definitionEn": "to suddenly become very angry and stop controlling yourself",
+      "nuance": "temper는 '평정심'. 그걸 잃는다는 그림이다. 반대로 keep one's temper는 화를 눌러 참는 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "Each time I wear black, or like, lose my temper, or say anything about anything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0427",
+      "lemma": "can't stand",
+      "level": "L4",
+      "meaningKo": "도저히 못 참겠다, 질색이다",
+      "definitionEn": "to be completely unable to tolerate someone or something",
+      "nuance": "don't like보다 훨씬 세다. 뒤에는 명사나 동명사가 온다 — I can't stand waiting.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-04",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 5,
+          "context": "I hate that. I can't stand that, really.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0501",
+      "lemma": "gorgeous",
+      "level": "L1",
+      "meaningKo": "눈부시게 아름다운, 멋진",
+      "definitionEn": "extremely beautiful or pleasant",
+      "nuance": "beautiful보다 감탄이 앞선 구어 표현. 풍경에도 사람에도 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "This is gorgeous.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0502",
+      "lemma": "generation",
+      "level": "L1",
+      "meaningKo": "세대",
+      "definitionEn": "all the people born and living at about the same time",
+      "nuance": "be born into a generation처럼 '어느 세대로 태어나다'라는 결합이 자연스럽다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I don't think it really matters what generation you are born into.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0503",
+      "lemma": "architect",
+      "level": "L1",
+      "meaningKo": "건축가",
+      "definitionEn": "a person who designs buildings",
+      "nuance": "ch는 /k/ 소리. 비유로 '설계자'(the architect of the plan)로도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "my father went on to become this successful architect",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0504",
+      "lemma": "enemy",
+      "level": "L1",
+      "meaningKo": "적, 맞서 싸울 대상",
+      "definitionEn": "a person or force that opposes you",
+      "nuance": "이 장면에서는 사람이 아니라 '싸울 대상 자체가 뭔지 모르겠다'는 뜻의 추상적 적.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "we can't really know who, or you know, what the enemy is",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0505",
+      "lemma": "disappoint",
+      "level": "L1",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to fail to satisfy someone's hopes",
+      "nuance": "주어가 '실망시키는 쪽'이다. 내가 실망한 것은 I was disappointed.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0506",
+      "lemma": "conservative",
+      "level": "L2",
+      "meaningKo": "보수적인",
+      "definitionEn": "preferring traditional ways and opposing change",
+      "nuance": "정치 성향뿐 아니라 '조심스러운, 안전하게 잡은'(a conservative estimate)에도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "their conservative catholic backgrounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0507",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "털어놓다, 고백하다",
+      "definitionEn": "to admit something you have kept hidden",
+      "nuance": "admit보다 무게가 있다 — 숨겨 온 것을 꺼내는 결. 할머니가 평생 감춘 사랑을 confess한 것이 이 장면.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0508",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, 정해진 결말",
+      "definitionEn": "the things that happen to someone, seen as decided in advance",
+      "nuance": "destiny가 '이끌려 가는 좋은 운명'이라면 fate는 받아들일 수밖에 없는 쪽. accept one's fate로 굳어져 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0509",
+      "lemma": "guarantee",
+      "level": "L2",
+      "meaningKo": "장담하다, 보장하다",
+      "definitionEn": "to promise firmly that something is true or will happen",
+      "nuance": "I guarantee you는 구어에서 '내가 장담하는데'라는 삽입구처럼 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0510",
+      "lemma": "well-being",
+      "level": "L2",
+      "meaningKo": "안녕, (심신의) 행복과 건강",
+      "definitionEn": "the state of being comfortable, healthy, and happy",
+      "nuance": "happiness보다 넓다 — 몸·마음·형편이 두루 괜찮은 상태. 제시가 격식체를 흉내 내며 비꼬는 단어.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck together for a while ... for the well-being of my sister and I",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0511",
+      "lemma": "shape",
+      "level": "L2",
+      "meaningKo": "(생각·성격을) 형성하다, 빚어내다",
+      "definitionEn": "to influence something so that it develops in a particular way",
+      "nuance": "명사 '모양'이 아니라 동사로 쓰인 경우. 주어가 사람의 사고방식을 조각하듯 만든다는 이미지.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I think that really shaped the way I think",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0512",
+      "lemma": "uncomplicated",
+      "level": "L2",
+      "meaningKo": "복잡할 것 없는, 단순한",
+      "definitionEn": "simple and not difficult to understand or deal with",
+      "nuance": "simple이 '쉽다'라면 uncomplicated는 '얽힌 게 없다'. 실은 얽혀 있었다는 반전이 곧 이어진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I always thought she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0513",
+      "lemma": "ordinarily",
+      "level": "L2",
+      "meaningKo": "평소 같으면, 보통 때는",
+      "definitionEn": "in the way that usually happens",
+      "nuance": "usually와 달리 '평소라면 안 그런데 지금은 다르다'는 대비를 깐다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0514",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without a break or interruption",
+      "nuance": "continual(간격을 두고 반복)과 구분. 현재완료'진행'을 영어 문법 용어로 present perfect continuous라 부르는 그 continuous다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "getting these tapes from town to town, city to city, so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0515",
+      "lemma": "straight",
+      "level": "L2",
+      "meaningKo": "내리, 쉬지 않고 연달아",
+      "definitionEn": "continuously, one after another without a break",
+      "nuance": "기간 표현 뒤에 붙는 부사 용법. for a year straight, three days straight. '똑바로'와는 다른 얼굴이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "this show that would last twenty-four hours a day for a year straight",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0516",
+      "lemma": "breed",
+      "level": "L2",
+      "meaningKo": "(동물의) 품종, 종류",
+      "definitionEn": "a particular type within a species of animal",
+      "nuance": "species(종)보다 좁은 단위. 동사로는 '번식하다, 사육하다'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "there's these breeds of monkeys, right, and all they do is have sex",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0517",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(자기 감정의) 투사, 덧씌운 환상",
+      "definitionEn": "the act of attributing your own feelings or ideas to someone else",
+      "nuance": "영사기가 스크린에 상을 쏘듯, 상대에게 내 감정을 쏘아 붙이는 심리학 용어. 할머니의 사랑을 두고 제시가 꺼내는 반박.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections [they put on everything.}",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0518",
+      "lemma": "paranoid",
+      "level": "L3",
+      "meaningKo": "피해망상적인, 누가 꾸민 일이라 의심하는",
+      "definitionEn": "wrongly believing that other people are trying to harm or deceive you",
+      "nuance": "임상 용어지만 구어에서는 '나 좀 예민한 생각인데'처럼 자기 검열용으로 가볍게 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "I have this awful paranoid thought, that feminism was mostly invented by men",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0519",
+      "lemma": "justify",
+      "level": "L3",
+      "meaningKo": "정당화하다, 그럴듯한 이유를 대다",
+      "definitionEn": "to give a good reason for something that others might criticize",
+      "nuance": "'정당하다'가 아니라 '정당해 보이게 만들다'. 셀린이 남자들의 논리를 깎아내릴 때 쓰는 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "this perfect, you know, male argument to justify them fooling around",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0520",
+      "lemma": "feminism",
+      "level": "L3",
+      "meaningKo": "페미니즘, 여성주의",
+      "definitionEn": "the belief that women should have the same rights as men",
+      "nuance": "-ism은 사상, feminist는 사람·형용사. 셀린은 이 단어를 신봉이 아니라 의심의 대상으로 꺼낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "feminism was mostly invented by men, so they could, like, fool around a little more",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0521",
+      "lemma": "rebel against",
+      "level": "L4",
+      "meaningKo": "~에 반항하다, 대들다",
+      "definitionEn": "to refuse to accept the authority or rules of something",
+      "nuance": "동사 rebel은 뒤 음절 강세(리벨), 명사 rebel은 앞 음절(레블). 뒤에는 사람·제도·관습이 온다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I just think it's a healthy process to rebel against everything that came before",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0522",
+      "lemma": "stick around",
+      "level": "L4",
+      "meaningKo": "떠나지 않고 남아 있다, 곁에 머물다",
+      "definitionEn": "to stay in a place instead of leaving",
+      "nuance": "'끝까지 붙어 있다'는 뉘앙스라 stick together(함께 버티다)와 짝을 이룬다. 이 장면에서는 떠나지 않은 것이 오히려 상처가 된다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They either left them, or you know, they stuck around and taught 'em the wrong things.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0523",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스럽게 여기다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정이라면 take pride in은 '그렇게 여기기로 했다'는 태도에 가깝다. 상처를 자부심으로 바꿔 버리는 제시의 방식.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it. You know, like my life was my own doing",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0524",
+      "lemma": "be pissed off",
+      "level": "L4",
+      "meaningKo": "몹시 열받다, 화가 잔뜩 나다",
+      "definitionEn": "to be very annoyed or angry",
+      "nuance": "angry보다 훨씬 거칠다. 공적인 자리에서는 쓰지 않는다. 미국식은 pissed off, 영국식 pissed는 '취한'이라는 뜻도 된다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0525",
+      "lemma": "come up with",
+      "level": "L4",
+      "meaningKo": "(답·아이디어를) 생각해 내다, 내놓다",
+      "definitionEn": "to think of an idea, plan, or answer",
+      "nuance": "머리를 짜내 없던 것을 만들어 내는 쪽. 우연히 마주치는 come across와 헷갈리지 말 것.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "And nobody's come up with anything.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0526",
+      "lemma": "fool around",
+      "level": "L4",
+      "meaningKo": "바람피우다, 놀아나다; 빈둥거리다",
+      "definitionEn": "to have casual sexual relationships; to waste time playing",
+      "nuance": "문맥이 뜻을 가른다 — 연애 이야기 속에서는 '바람피우다', 일 이야기 속에서는 '농땡이 피우다'. 이 장면은 전자.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "so I mean, maybe fooling around is not so bad",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0527",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "머릿속이 하얘지다, 아무 생각도 안 나다",
+      "definitionEn": "to suddenly be unable to remember or think of anything",
+      "nuance": "blank는 '빈칸'. 준비해 둔 말이 통째로 지워지는 순간을 그린다. My mind went blank.가 통째 표현.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0528",
+      "lemma": "like a skipping record",
+      "level": "L4",
+      "meaningKo": "고장 난 레코드처럼 같은 데서 계속 맴도는",
+      "definitionEn": "repeating the same thing over and over without moving on",
+      "nuance": "LP 바늘이 튀어 같은 소절을 무한 반복하는 이미지. 바로 다음 문장의 현재완료진행(Every couple's been having...)과 짝을 이룬다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "It's like a skipping record, you know?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0601",
+      "lemma": "childhood",
+      "level": "L1",
+      "meaningKo": "어린 시절, 유년기",
+      "definitionEn": "the period of your life when you are a child",
+      "nuance": "child + hood(시기). 셀린이 부모 이야기로 지친 뒤, 제시가 자기 유년을 'magical'이라 부르며 화제를 돌리는 지점.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0602",
+      "lemma": "magical",
+      "level": "L1",
+      "meaningKo": "마법 같은, 꿈결 같은",
+      "definitionEn": "wonderful and exciting, as if made by magic",
+      "nuance": "magic(마법)의 형용사. 실제로 마법이라는 뜻이 아니라 '설명이 안 될 만큼 좋았다'는 정서어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0603",
+      "lemma": "backyard",
+      "level": "L1",
+      "meaningKo": "뒷마당",
+      "definitionEn": "the area of land behind a house",
+      "nuance": "미국식 주택의 뒤뜰. 영국은 back garden 쪽을 더 쓴다. 이 장면 전체가 벌어지는 무대.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I was in the backyard, playing",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0604",
+      "lemma": "spray",
+      "level": "L1",
+      "meaningKo": "(물을) 뿌리다, 분사하다",
+      "definitionEn": "to send out liquid in very small drops",
+      "nuance": "물줄기가 아니라 잘게 흩어지는 물방울. 그래서 다음 문장의 mist(물안개)와 rainbow로 이어진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you could spray it into the sun, and you could make a rainbow",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0605",
+      "lemma": "disappear",
+      "level": "L1",
+      "meaningKo": "사라지다, 자취를 감추다",
+      "definitionEn": "to go out of sight; to stop existing",
+      "nuance": "vanish보다 중립적. 여기서는 호스를 놓자 물안개가 걷히면서 그 모습이 사라진다 — 마법이 풀리는 한 박자.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I dropped the hose, and she disappeared",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0606",
+      "lemma": "attitude",
+      "level": "L1",
+      "meaningKo": "태도, (무엇을 대하는) 자세",
+      "definitionEn": "the way you think and feel about something",
+      "nuance": "attitude towards/to + 명사. 셀린은 죽음을 대하는 제시의 '태도'를 부러워한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You're really lucky you can have this attitude towards death",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0607",
+      "lemma": "generation",
+      "level": "L1",
+      "meaningKo": "세대",
+      "definitionEn": "all the people born at about the same time",
+      "nuance": "'~세대로 태어나다'는 be born into a generation. 셀린이 68세대 부모와 자기를 견주는 대목의 첫 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I don't think it really matters what generation you are born into",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0608",
+      "lemma": "freedom",
+      "level": "L1",
+      "meaningKo": "자유",
+      "definitionEn": "the state of being able to act without being controlled",
+      "nuance": "liberty가 제도·권리 쪽이라면 freedom은 실제로 누리는 상태. 셀린에게 자유는 물려받은 것 — 싸운 사람은 따로 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I have been raised with all the freedom they had fought for",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0609",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "(공중에 떠 있는) 물안개, 옅은 안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 가볍다. 여기서는 호스에서 튄 물방울이 만든 막 — 그 막 너머로 증조할머니가 보였다는 게 이 장면 전체의 이미지다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0610",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "노즐, (호스 끝의) 분사구",
+      "definitionEn": "the narrow end of a pipe or hose that controls the flow",
+      "nuance": "let go of the nozzle = 손잡이를 놓다. 이 동작 하나로 물안개가 걷히고 환영이 끝난다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I let go of the nozzle",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0611",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 언젠가는",
+      "definitionEn": "in the end, especially after a long time",
+      "nuance": "'뜻밖에'가 아니다. 시간이 흐른 끝에 그렇게 된다는 뜻. finally가 안도라면 eventually는 담담한 예측.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0612",
+      "lemma": "shape",
+      "level": "L2",
+      "meaningKo": "(생각·성격을) 형성하다, 빚어내다",
+      "definitionEn": "to influence the way something develops",
+      "nuance": "명사 '모양'이 아니라 동사. 진흙을 빚듯 사람의 사고방식을 만든다는 뉘앙스 — 제시가 자기 세계관의 출처를 한 문장으로 정리하는 말.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "And I think that really shaped the way I think",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0613",
+      "lemma": "revolt",
+      "level": "L2",
+      "meaningKo": "반란을 일으키다, 들고일어나다",
+      "definitionEn": "to rise up against authority",
+      "nuance": "rebel보다 규모가 크고 정치적. 68년 파리를 그리는 단어라 무게가 다르다. revolt against ~ 형태로 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They were these angry, young, May '68 people, revolting against everything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0614",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "털어놓다, 고백하다",
+      "definitionEn": "to admit something you feel ashamed or uneasy about",
+      "nuance": "admit보다 무겁다 — 숨겨 온 것을 드디어 꺼내는 결. 평생 감춰 온 사랑을 손녀에게 말하는 순간에 딱 맞는 동사.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0615",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, (정해진) 몫",
+      "definitionEn": "the power that decides what happens, or what happens to someone",
+      "nuance": "destiny가 나아갈 미래라면 fate는 어쩔 수 없이 받아들이는 쪽. accept one's fate는 체념에 가깝다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate. It's so sad.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0616",
+      "lemma": "guarantee",
+      "level": "L2",
+      "meaningKo": "장담하다, 보장하다",
+      "definitionEn": "to promise that something is true or will happen",
+      "nuance": "I guarantee you는 '내가 장담하는데' — 근거 없이 확신을 밀어붙일 때 쓰는 구어. 제시가 남의 할머니 인생을 단정하는 순간이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0617",
+      "lemma": "disappoint",
+      "level": "L2",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to make someone feel unhappy by failing to meet their hopes",
+      "nuance": "주어가 실망을 '주는' 쪽. 내가 실망하면 I was disappointed. 한국인이 가장 자주 뒤집는 동사 중 하나.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0618",
+      "lemma": "pregnant",
+      "level": "L2",
+      "meaningKo": "임신한",
+      "definitionEn": "having a baby developing inside the body",
+      "nuance": "be pregnant with + 아이. 제시가 자기 존재의 시작을 '실수'로 들었다고 말하는 대목의 사실 진술어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0619",
+      "lemma": "conservative",
+      "level": "L3",
+      "meaningKo": "보수적인, 전통을 지키려는",
+      "definitionEn": "preferring traditional ways and opposing change",
+      "nuance": "정치 성향뿐 아니라 옷차림·태도에도 쓴다. 여기서는 68세대가 등지고 나온 가톨릭 집안의 분위기.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "the government, their conservative catholic backgrounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0620",
+      "lemma": "uncomplicated",
+      "level": "L3",
+      "meaningKo": "복잡할 것 없는, 단순한",
+      "definitionEn": "simple and easy to understand; without difficulties",
+      "nuance": "simple이 '단순함'이라면 uncomplicated는 '얽힌 데가 없음'. 뒤집힐 전제를 깔아 두는 단어라 다음 문장의 반전이 세진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I always thought she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0621",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(심리) 투사 — 제 감정을 상대에게 덧씌우는 것",
+      "definitionEn": "the act of putting your own feelings onto someone else",
+      "nuance": "영사기가 빈 스크린에 상을 쏘는 그 project. 상대를 보는 게 아니라 자기 환상을 비추고 있다는 뜻이라 꽤 냉소적인 말이다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0622",
+      "lemma": "well-being",
+      "level": "L3",
+      "meaningKo": "안녕, (몸과 마음의) 행복",
+      "definitionEn": "the state of being healthy and happy",
+      "nuance": "한국어 '웰빙'(건강한 라이프스타일)과 다르다. 여기서는 '애들을 위해서'라는 명분 — 제시가 비꼬는 말투로 흉내 내는 대목.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck together for a while ... for the well-being of my sister and I",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0623",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스럽게 여기다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정이라면 take pride in은 태도에 가깝다. 원치 않은 아이였다는 사실마저 자기 것으로 만들어 버리는 제시의 방식.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0624",
+      "lemma": "rebel against",
+      "level": "L4",
+      "meaningKo": "~에 반항하다, 맞서 거스르다",
+      "definitionEn": "to refuse to accept authority or the established way",
+      "nuance": "revolt against가 정치적 봉기라면 rebel against는 개인의 반항까지 아우른다. 셀린은 이걸 'healthy process'라고 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "a healthy process to rebel against everything that came before",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0625",
+      "lemma": "stick together",
+      "level": "L4",
+      "meaningKo": "(헤어지지 않고) 붙어 있다, 뭉치다",
+      "definitionEn": "to stay together and support each other",
+      "nuance": "원래는 '서로 편들며 뭉치다'라는 따뜻한 말인데, 여기서는 이혼을 미룬 채 버틴 부부에게 쓰여 씁쓸하게 뒤집힌다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They should have done it a lot sooner, but they stuck together for a while",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0626",
+      "lemma": "be pissed off",
+      "level": "L4",
+      "meaningKo": "몹시 화가 난, 열받은",
+      "definitionEn": "to be very annoyed or angry",
+      "nuance": "angry의 거친 구어판. 공적인 자리에서는 못 쓴다. 아버지의 반응을 이 단어로 옮기는 순간 그 집 분위기가 그려진다.",
+      "register": "vulgar",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
     {
       "wordId": "w-0701",
       "lemma": "career",
@@ -516,6 +3613,3103 @@
           "work": "before-sunrise",
           "chapter": 2,
           "context": "sitting, you know, for weeks on end, looking out the window",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0801",
+      "lemma": "cemetery",
+      "level": "L1",
+      "meaningKo": "묘지, 공동묘지",
+      "definitionEn": "an area of ground where dead people are buried",
+      "nuance": "교회에 딸린 묘지는 graveyard, 교회와 무관한 독립 묘지가 cemetery. 이 장면의 '무명자 묘지'가 후자다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "It's called the cemetery of the no-name",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0802",
+      "lemma": "impression",
+      "level": "L1",
+      "meaningKo": "(마음에 남는) 인상, 느낌",
+      "definitionEn": "an effect or feeling that stays in your mind",
+      "nuance": "leave an impression on 사람 = ~에게 인상을 남기다. 이 유닛의 앵커가 통째로 이 연어 위에 서 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "it left a bigger impression on me at that time",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0803",
+      "lemma": "century",
+      "level": "L1",
+      "meaningKo": "세기, 100년",
+      "definitionEn": "a period of one hundred years",
+      "nuance": "the century라고만 하면 문맥상 '지난 세기'를 가리킨다. 여기서는 1900년 무렵이라는 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "Around the beginning of the century or so",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0804",
+      "lemma": "tiny",
+      "level": "L1",
+      "meaningKo": "아주 작은",
+      "definitionEn": "extremely small",
+      "nuance": "small보다 감정이 실린다. 비교급은 tinier — -y로 끝나는 2음절이라 more가 아니라 -er을 받는 대표 사례.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "Yeah? It's tiny.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0805",
+      "lemma": "connection",
+      "level": "L1",
+      "meaningKo": "(사람 사이의) 통하는 느낌, 유대",
+      "definitionEn": "a feeling of understanding and closeness between people",
+      "nuance": "전선·교통의 '연결'과 같은 단어지만, have a connection with는 '말이 통한다'는 감정어. 제시가 기차에서 승부수를 던지며 고른 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I feel like we have some kind of uh, connection",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0806",
+      "lemma": "favor",
+      "level": "L1",
+      "meaningKo": "호의, 부탁",
+      "definitionEn": "a kind act that you do for someone",
+      "nuance": "do someone a favor(부탁을 들어주다)가 기본형. 여기서는 '내가 너희 부부에게 베푸는 엄청난 호의'라는 뻔뻔한 농담.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "a gigantic favor to both you and your future husband",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0807",
+      "lemma": "divorce",
+      "level": "L1",
+      "meaningKo": "이혼하다; 이혼",
+      "definitionEn": "to legally end a marriage",
+      "nuance": "동사와 명사가 같은 형태. get divorced(이혼하다)가 구어에서 더 흔하다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "Did your parents divorce?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0808",
+      "lemma": "complain",
+      "level": "L1",
+      "meaningKo": "불평하다, 항의하다",
+      "definitionEn": "to say that you are unhappy or dissatisfied with something",
+      "nuance": "complain about(~에 대해)와 complain to(~에게)를 구분한다. 셀린이 '부모가 착해서 오히려 항의하기 더 어렵다'고 할 때의 그 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0809",
+      "lemma": "groundskeeper",
+      "level": "L2",
+      "meaningKo": "(묘지·공원 등의) 관리인",
+      "definitionEn": "a person who takes care of the grounds of a place",
+      "nuance": "grounds(부지) + keeper(지키는 사람). 이 묘지의 사연을 아는 유일한 사람이자, 셀린 기억의 출처.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "He was the groundskeeper.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0810",
+      "lemma": "bank",
+      "level": "L2",
+      "meaningKo": "(강의) 둑, 기슭",
+      "definitionEn": "the land along the side of a river",
+      "nuance": "'은행'과 철자가 같지만 완전히 다른 뜻. the bank of the Danube는 도나우 강가. 바닷가는 shore, 모래사장은 beach.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "that washed up on the bank of the Danube",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0811",
+      "lemma": "suicide",
+      "level": "L2",
+      "meaningKo": "자살; 자살한 사람",
+      "definitionEn": "the act of killing yourself",
+      "nuance": "commit suicide가 전통적 표현이지만 죄(commit)의 함의 때문에 요즘은 die by suicide를 더 쓴다. 여기서는 '자살한 사람들'을 가리키는 가산명사 용법.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "most of them were suicides that jumped in the river",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0812",
+      "lemma": "bury",
+      "level": "L2",
+      "meaningKo": "묻다, 매장하다",
+      "definitionEn": "to put a dead body into the ground",
+      "nuance": "발음이 [베리]로 berry와 같다는 점이 함정. 수동태 be buried로 훨씬 자주 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "most of the people are buried here",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0813",
+      "lemma": "well-being",
+      "level": "L2",
+      "meaningKo": "행복, (몸과 마음의) 안녕",
+      "definitionEn": "the state of being healthy, happy, and comfortable",
+      "nuance": "한국어 '웰빙'처럼 건강식 뉘앙스가 아니라 '잘 지내는 상태' 전반. 제시가 이 단어를 상류층 말투로 흉내 내며 비꼬는 대목.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck together for a while ... for the well-being of my sister and I",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0814",
+      "lemma": "loser",
+      "level": "L2",
+      "meaningKo": "루저, 별 볼 일 없는 사람",
+      "definitionEn": "someone who is unsuccessful or fails at things",
+      "nuance": "경기의 '패자'라는 중립적 뜻도 있지만 사람에게 쓰면 강한 비하. 제시는 그 칼끝을 자기에게 돌려 농담으로 만든다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I'm just as big a loser as he is",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0815",
+      "lemma": "unmotivated",
+      "level": "L2",
+      "meaningKo": "의욕 없는, 동기가 없는",
+      "definitionEn": "having no enthusiasm or desire to do things",
+      "nuance": "lazy(게으른)가 성격 비난이라면 unmotivated는 '동력이 없는' 상태 묘사라 조금 덜 아프다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "totally unmotivated, totally boring",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0816",
+      "lemma": "insane",
+      "level": "L2",
+      "meaningKo": "미친, 말도 안 되는",
+      "definitionEn": "extremely unreasonable or crazy",
+      "nuance": "구어에서는 '터무니없다'는 강조어로 자주 쓴다. 제시는 자기 제안을 먼저 insane이라 부르며 방어선을 친다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I have an admittedly insane idea",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0817",
+      "lemma": "gigantic",
+      "level": "L2",
+      "meaningKo": "거대한, 어마어마한",
+      "definitionEn": "extremely large",
+      "nuance": "huge보다 과장이 세다. 3음절이라 비교급은 반드시 more gigantic — ❌ giganticer.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "what this really could be is a gigantic favor",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0818",
+      "lemma": "harmless",
+      "level": "L2",
+      "meaningKo": "해가 없는, 순한",
+      "definitionEn": "not able or likely to cause damage or harm",
+      "nuance": "harm + -less. 셀린이 가짜 통화에서 I'm the most harmless person이라며 최상급으로 자신을 변호하는 장면의 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 15,
+          "context": "you know me, I'm the most harmless person",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0819",
+      "lemma": "psycho",
+      "level": "L2",
+      "meaningKo": "정신 나간 사람, 위험한 놈",
+      "definitionEn": "a person who behaves in a violent or dangerous way",
+      "nuance": "psychopath의 구어 축약. 진지하게 쓰면 무겁지만, 여기서는 '내가 이상한 놈이면 다음 기차 타면 돼'라는 농담의 재료.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "if I turn out to be some kind of psycho",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0820",
+      "lemma": "adorable",
+      "level": "L2",
+      "meaningKo": "사랑스러운, 너무 귀여운",
+      "definitionEn": "very attractive and easy to love",
+      "nuance": "cute보다 애정이 짙다. 4음절이라 비교급은 more adorable.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 15,
+          "context": "Yeah, we kissed. It was so adorable.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0821",
+      "lemma": "admittedly",
+      "level": "L3",
+      "meaningKo": "인정하건대, 솔직히 말해",
+      "definitionEn": "used to admit that something is true before you argue against it",
+      "nuance": "약점을 먼저 내주고 설득을 시작하는 신호어. 제시가 an admittedly insane idea라고 말머리를 여는 이유가 바로 이것.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I have an admittedly insane idea",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0822",
+      "lemma": "transitory",
+      "level": "L3",
+      "meaningKo": "덧없는, 잠깐 머물다 가는",
+      "definitionEn": "lasting for only a short time",
+      "nuance": "temporary가 '기간이 짧다'는 사실이라면 transitory는 '스쳐 지나간다'는 정서. 셀린이 쇠라의 인물들을 두고 고른 말이고, 두 사람의 하룻밤을 요약하는 단어이기도 하다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 10,
+          "context": "His human figures are always so transitory.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0823",
+      "lemma": "manipulative",
+      "level": "L3",
+      "meaningKo": "사람을 교묘히 조종하는",
+      "definitionEn": "controlling or influencing people in a clever and unfair way",
+      "nuance": "manipulate의 형용사. 상대를 자기 뜻대로 움직인다는 비난어라 관계에서 가장 아픈 단어 중 하나.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 15,
+          "context": "He must be thinking I'm this manipulative, mean woman.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0824",
+      "lemma": "wash up",
+      "level": "L4",
+      "meaningKo": "(물살에 떠밀려) 물가에 밀려오다",
+      "definitionEn": "to be carried onto land by moving water",
+      "nuance": "영국식으로는 '설거지하다'라는 전혀 다른 뜻도 된다. 이 장면에서는 도나우 강이 시신을 강가로 밀어 올렸다는 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "most of the people are buried here that washed up on the bank of the Danube",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0825",
+      "lemma": "miss out on",
+      "level": "L4",
+      "meaningKo": "(좋은 기회를) 놓치다",
+      "definitionEn": "to lose a chance to do or have something enjoyable",
+      "nuance": "그냥 miss(놓치다)와 달리 '나만 못 누렸다'는 아쉬움이 붙는다. 제시의 설득 전체가 이 아쉬움을 만들어 내는 작업이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "to find out what you're missing out on",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0826",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스러워하다, 자부심을 갖다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정 상태라면 take pride in은 '자부심을 스스로 택한다'는 능동. 제시는 '원치 않은 아이'라는 사실마저 자기 것으로 삼는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0901",
+      "lemma": "journey",
+      "level": "L1",
+      "meaningKo": "여정, (과정으로서의) 여행",
+      "definitionEn": "an act of travelling from one place to another",
+      "nuance": "trip이 '다녀오는 일'이라면 journey는 그 과정 자체. 집시는 셀린의 기차 여행을 인생의 여정으로 바꿔 읽는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "you have been on a journey, and you are stranger to this place",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0902",
+      "lemma": "adventure",
+      "level": "L1",
+      "meaningKo": "모험",
+      "definitionEn": "an unusual and exciting experience, often with some risk",
+      "nuance": "집시는 곧바로 An adventure in your mind로 고쳐 말한다 — 밖이 아니라 안에서 벌어지는 모험.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "An adventure in your mind.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0903",
+      "lemma": "stranger",
+      "level": "L1",
+      "meaningKo": "낯선 사람; (그곳에) 처음인 사람",
+      "definitionEn": "someone you do not know, or a person in an unfamiliar place",
+      "nuance": "두 결이 있다. 집시는 처음에 '이곳이 낯선 사람'으로 썼다가, 곧 제시를 가리키며 '모르는 사람'의 뜻으로 되묻는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "you are stranger to this place",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0904",
+      "lemma": "connection",
+      "level": "L1",
+      "meaningKo": "(사람 사이의) 교감, 통함",
+      "definitionEn": "a relationship in which people understand each other",
+      "nuance": "인터넷 '연결'과 같은 단어지만, true connection은 '진짜로 통하는 사이'를 뜻한다. 이 유닛 앵커 문장의 착지점.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "will you find true connection with others",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0905",
+      "lemma": "confession",
+      "level": "L1",
+      "meaningKo": "고백, 털어놓는 말",
+      "definitionEn": "a statement admitting something you feel guilty or shy about",
+      "nuance": "I have a confession to make.는 무거운 고백뿐 아니라 장난스러운 도입으로도 쓴다 — 제시가 수사들 흉내를 내며 딱 그렇게 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Hey Hans, I have a confession to make.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0906",
+      "lemma": "frighten",
+      "level": "L1",
+      "meaningKo": "겁주다, 무섭게 하다",
+      "definitionEn": "to make someone feel afraid",
+      "nuance": "scare보다 살짝 격식 있다. 주어가 '무섭게 하는 쪽'이라는 점에 주의 — Does that frighten you?",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Does that frighten you?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0907",
+      "lemma": "rational",
+      "level": "L1",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "emotional의 반대. 새벽에 두 사람이 '어른답게' 내린 결정을 셀린이 이 단어로 되묻는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0908",
+      "lemma": "insecure",
+      "level": "L1",
+      "meaningKo": "자신 없는, 불안한",
+      "definitionEn": "not confident about yourself",
+      "nuance": "'안전하지 않은'이 아니다. 사람에게 쓰면 거의 항상 '스스로에 대한 확신이 없는'이라는 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I'd be insecure, and I'd get a little too drunk",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0909",
+      "lemma": "stardust",
+      "level": "L2",
+      "meaningKo": "별먼지",
+      "definitionEn": "the dust that stars are made of; a magical quality",
+      "nuance": "집시가 돈을 받아 들고 돌아서서 남기는 마지막 말. 과학적 사실이자 축복으로 쓰인다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Everything we know, is stardust.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0910",
+      "lemma": "horoscope",
+      "level": "L2",
+      "meaningKo": "별자리 운세",
+      "definitionEn": "a forecast of someone's future based on the position of the stars",
+      "nuance": "신문 한 귀퉁이의 그 운세란. 제시가 집시의 말을 깎아내리려고 끌어온 비유다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "some horoscope in a daily syndicated newspaper",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0911",
+      "lemma": "wise",
+      "level": "L2",
+      "meaningKo": "지혜로운",
+      "definitionEn": "having good judgment based on experience",
+      "nuance": "smart(머리가 좋은)와 다르다 — 살아 본 사람의 판단력. 셀린이 집시를 이 말로 옹호한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "She was, she was really wise, and intense, no?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0912",
+      "lemma": "intense",
+      "level": "L2",
+      "meaningKo": "강렬한, 밀도 있는",
+      "definitionEn": "very strong, extreme, or deeply serious",
+      "nuance": "사람에게 쓰면 '눈빛이 살아 있고 진지한'. 칭찬일 수도, 부담스럽다는 말일 수도 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "she was really wise, and intense",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0913",
+      "lemma": "tedious",
+      "level": "L2",
+      "meaningKo": "지루하게 늘어지는",
+      "definitionEn": "boring and continuing for too long",
+      "nuance": "boring이 '재미없다'라면 tedious는 '끝없이 이어져 진이 빠진다'. a tedious collection of hours — 시간을 쌓아 놓은 지루한 더미.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "all your remaining days will be exactly like today--a tedious collection of hours",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0914",
+      "lemma": "seedy",
+      "level": "L2",
+      "meaningKo": "허름하고 지저분한, 우범의",
+      "definitionEn": "dirty, run-down, and possibly connected with crime",
+      "nuance": "동네·술집·호텔에 쓴다. 제시가 비꼬며 '빈의 뒷골목'을 들먹이는 대목.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "maybe there's a seedy section of Vienna",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0915",
+      "lemma": "mannerism",
+      "level": "L2",
+      "meaningKo": "(그 사람 특유의) 버릇, 몸짓",
+      "definitionEn": "a habitual gesture or way of speaking peculiar to one person",
+      "nuance": "한국어 '매너'와 무관하다. 반복되다 결국 거슬리게 되는, 그 사람만의 습관.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "then you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0916",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "맹세, 서약",
+      "definitionEn": "a serious promise",
+      "nuance": "결혼 서약(wedding vows)의 그 vow. break a vow는 '약속을 어기다'보다 훨씬 무겁다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0917",
+      "lemma": "palm-reader",
+      "level": "L2",
+      "meaningKo": "손금쟁이",
+      "definitionEn": "someone who claims to tell your future by reading your hand",
+      "nuance": "palm은 손바닥. read someone's palm = 손금을 봐 주다. 이 유닛 앵커를 말하는 사람이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Look at this palm-reader. She's interesting-looking, no?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0918",
+      "lemma": "explode",
+      "level": "L2",
+      "meaningKo": "폭발하다, 터지다",
+      "definitionEn": "to burst violently, releasing energy",
+      "nuance": "별이 터진 그 폭발. 명사는 explosion. 감정이 터질 때도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "the stars exploded billions of years ago",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0919",
+      "lemma": "awkwardness",
+      "level": "L3",
+      "meaningKo": "어색함, 뜻대로 굴러가지 않는 껄끄러움",
+      "definitionEn": "the quality of being uncomfortable, clumsy, or hard to handle",
+      "nuance": "'실수해서 민망함'만이 아니라 '삶이 매끄럽게 굴러가지 않는다'는 뜻까지 품는다. 집시의 처방은 그걸 고치라는 게 아니라 받아들이라는 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0920",
+      "lemma": "condescending",
+      "level": "L3",
+      "meaningKo": "잘난 척하며 깔보는",
+      "definitionEn": "behaving as if you are better or smarter than other people",
+      "nuance": "겉으론 친절한데 상대를 아래에 두는 태도. 제시는 '그는 배우는 중'이라는 집시의 한마디에서 이걸 읽어 낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "But what was that “I am learning” bullshit? I mean, that's WAY condescending.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0921",
+      "lemma": "opportunist",
+      "level": "L3",
+      "meaningKo": "기회를 이용해 먹는 사람",
+      "definitionEn": "someone who takes advantage of situations to gain something, regardless of principle",
+      "nuance": "opportunity에서 왔지만 뜻은 부정적이다. '수완가'가 아니라 '얌체'에 가깝다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "if opportunists like that, ever had to tell the real truth",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0922",
+      "lemma": "syndicated",
+      "level": "L3",
+      "meaningKo": "여러 매체에 동시 배급되는",
+      "definitionEn": "(of an article or show) sold to many newspapers or stations at once",
+      "nuance": "칼럼·연재만화가 전국 신문에 똑같이 실리는 그 방식. '어디서나 똑같이 찍어낸'이라는 냉소가 붙는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "some horoscope in a daily syndicated newspaper",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0923",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지식인인 척하는",
+      "definitionEn": "pretending to be more intelligent or educated than one really is",
+      "nuance": "pseudo-는 '사이비'. 제시가 자기 이야기 습관을 스스로 깎아내리며 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0924",
+      "lemma": "resign oneself to",
+      "level": "L4",
+      "meaningKo": "~을 어쩔 수 없다고 받아들이다, 체념하고 순응하다",
+      "definitionEn": "to accept something unpleasant that you cannot change",
+      "nuance": "사표를 내는 resign과 같은 단어지만, 재귀대명사 + to가 붙으면 뜻이 달라진다. to는 전치사라 뒤에 명사나 동명사가 온다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0925",
+      "lemma": "be sick to death of",
+      "level": "L4",
+      "meaningKo": "~에 이골이 나다, 진저리가 나다",
+      "definitionEn": "to be extremely tired of something",
+      "nuance": "be sick of의 최상급. 제시가 '사람들이 자기 자신을 미워하는 이유'로 드는 말이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "It’s just they are sick to death of being around themselves.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0926",
+      "lemma": "get away from",
+      "level": "L4",
+      "meaningKo": "~에게서 벗어나다, ~을 떠나다",
+      "definitionEn": "to escape from someone or something",
+      "nuance": "get away from it all이 '다 잊고 떠나다'인데, 제시는 그 대상을 자기 자신으로 뒤집어 버린다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "it‘s myself that I wish I could get away from.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0927",
+      "lemma": "have people over",
+      "level": "L4",
+      "meaningKo": "집에 사람들을 부르다",
+      "definitionEn": "to invite guests to your home",
+      "nuance": "over가 '우리 집 쪽으로'. have someone over for dinner처럼 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0928",
+      "lemma": "put ~ out of business",
+      "level": "L4",
+      "meaningKo": "~를 망하게 하다, 문 닫게 만들다",
+      "definitionEn": "to force a company or person to stop operating",
+      "nuance": "go out of business(망하다)의 사역형. 점쟁이들이 진실을 말하면 죄다 망할 거라는 제시의 독설.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "it would put their ASSES out of business",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1001",
+      "lemma": "generation",
+      "level": "L1",
+      "meaningKo": "세대",
+      "definitionEn": "all the people born and living at about the same time",
+      "nuance": "'한 세대'는 보통 25~30년. what generation you are born into는 '어느 시대의 사람으로 태어나느냐'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I don't think it really matters what generation you are born into",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1002",
+      "lemma": "architect",
+      "level": "L1",
+      "meaningKo": "건축가",
+      "definitionEn": "a person who designs buildings",
+      "nuance": "건물을 '짓는' 사람(builder)이 아니라 '설계하는' 사람. 비유로 the architect of the plan(계획을 설계한 사람)도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "my father went on to become this successful architect",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1003",
+      "lemma": "enemy",
+      "level": "L1",
+      "meaningKo": "적, 맞서 싸울 대상",
+      "definitionEn": "a person or force that opposes and tries to harm you",
+      "nuance": "셀린은 사람이 아니라 '무엇이 적인지조차 알 수 없는' 상태를 말한다 — who, or what the enemy is.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "we can't really know who, or you know, what the enemy is",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1004",
+      "lemma": "episode",
+      "level": "L1",
+      "meaningKo": "(연속물의) 한 회, 한 편",
+      "definitionEn": "one program in a series on television or radio",
+      "nuance": "series가 전체 시리즈, episode가 그중 한 회. '인생의 한 사건'이라는 뜻으로도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "that would be a GREAT episode",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1005",
+      "lemma": "magical",
+      "level": "L1",
+      "meaningKo": "마법 같은, 홀린 듯 아름다운",
+      "definitionEn": "wonderful and exciting in a way that seems unreal",
+      "nuance": "magic(마법)의 형용사지만 실제 마술보다 '설명이 안 되게 좋았던' 느낌에 훨씬 자주 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1006",
+      "lemma": "raise",
+      "level": "L1",
+      "meaningKo": "(아이를) 키우다, 기르다",
+      "definitionEn": "to look after a child until it is grown up",
+      "nuance": "be raised with/in ~ 형태로 '어떤 환경에서 자랐다'를 말한다. grow up이 자동사(내가 자라다)라면 raise는 타동사(누가 나를 키우다).",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I have been raised with all the freedom they had fought for",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1007",
+      "lemma": "revolt",
+      "level": "L2",
+      "meaningKo": "(체제에) 들고일어나다, 반란을 일으키다",
+      "definitionEn": "to rise up against authority or a government",
+      "nuance": "rebel보다 규모가 크고 집단적이다. revolt against ~로 대상을 밝힌다. 68혁명 세대를 묘사하는 셀린의 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "these angry, young, May '68 people, revolting against everything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1008",
+      "lemma": "conservative",
+      "level": "L2",
+      "meaningKo": "보수적인, 변화를 꺼리는",
+      "definitionEn": "preferring traditional ways and opposed to change",
+      "nuance": "정치 성향만이 아니라 취향·태도에도 쓴다(a conservative estimate = 보수적으로 잡은 추정).",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "the government, their conservative catholic backgrounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1009",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "(숨겨 온 것을) 털어놓다, 고백하다",
+      "definitionEn": "to admit something you feel guilty or embarrassed about",
+      "nuance": "admit보다 무겁다 — 감춰 온 것을 드러내는 결. confess to somebody that ~ 로 that절을 받는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1010",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, (피할 수 없는) 정해진 몫",
+      "definitionEn": "the power believed to control what happens in the future",
+      "nuance": "destiny가 '이루러 가는 운명'이라면 fate는 '받아들여야 하는 운명'. accept one's fate가 관용적 결합.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate. It's so sad.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1011",
+      "lemma": "guarantee",
+      "level": "L2",
+      "meaningKo": "장담하다, 보증하다",
+      "definitionEn": "to promise that something will certainly happen or be true",
+      "nuance": "I guarantee you ~는 구어에서 '내가 장담하는데'. 뒤에 that절이 통째로 온다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1012",
+      "lemma": "disappoint",
+      "level": "L2",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to make someone feel sad by failing to be as good as they hoped",
+      "nuance": "주어가 '실망시키는 쪽'이다. '내가 실망했다'는 I was disappointed. 능동/수동을 뒤집기 쉬운 대표 동사.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1013",
+      "lemma": "shape",
+      "level": "L2",
+      "meaningKo": "(성격·생각을) 만들어 놓다, 형성하다",
+      "definitionEn": "to have an important influence on how something develops",
+      "nuance": "명사 '모양'보다 동사 용법이 훨씬 자주 나온다. shaped the way I think = 생각하는 방식 자체를 빚어 놓았다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I think that really shaped the way I think",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1014",
+      "lemma": "capture",
+      "level": "L2",
+      "meaningKo": "(순간·느낌을) 담아내다, 포착하다",
+      "definitionEn": "to succeed in recording or expressing something accurately",
+      "nuance": "'붙잡다'가 원뜻이지만 사진·글에 쓰면 '놓치지 않고 담다'. record가 기록이라면 capture는 그 결까지 담는 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "capturing life as it's lived",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1015",
+      "lemma": "document",
+      "level": "L2",
+      "meaningKo": "기록물; 기록하다",
+      "definitionEn": "a record of something, or to make such a record",
+      "nuance": "명사는 '문서', 동사는 '기록으로 남기다'. 제시가 말하는 documents of real time은 '실시간 기록물'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "these twenty-four hour documents of real time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1016",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without stopping or a break",
+      "nuance": "continual(간격을 두고 반복)과 다르다 — continuous는 아예 끊기지 않는 것. 제시의 프로그램이 성립하려면 재생이 continuous여야 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1017",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "옅은 안개, 물안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅다. 여기서는 호스로 뿜은 물보라 — 그 사이로 증조할머니가 보였다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1018",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "(호스·관 끝의) 노즐, 분사구",
+      "definitionEn": "the narrow end of a hose or pipe that controls the spray",
+      "nuance": "손잡이를 놓으면 물이 멎는 그 부분. 제시가 이걸 놓는 순간 무지개도 할머니도 사라진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "then finally, I let go of the nozzle",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1019",
+      "lemma": "uncomplicated",
+      "level": "L2",
+      "meaningKo": "복잡할 것 없는, 단순한",
+      "definitionEn": "simple and easy to understand or deal with",
+      "nuance": "simple이 '단순함' 자체라면 uncomplicated는 '얽힌 데가 없음' — 셀린이 할머니의 삶을 그렇게 믿고 있었다는 게 반전의 밑돌.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I always thought she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1020",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 시간이 지나면",
+      "definitionEn": "in the end, after a long time or much delay",
+      "nuance": "finally가 '드디어'의 안도라면 eventually는 '어차피 그렇게 됐을 것'이라는 체념의 결. 'eventual(최종의)'과 달리 '언젠가는'의 시간이 깔려 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1021",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(자기 감정을 남에게) 투사한 것, 멋대로 씌운 상",
+      "definitionEn": "the act of attributing your own feelings or ideas to someone else",
+      "nuance": "심리학 용어가 일상어로 내려온 경우. 제시는 romantic projections를 '현실에 근거가 없는, 각자가 씌운 환상'이라는 뜻으로 쓴다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1022",
+      "lemma": "rebel against",
+      "level": "L4",
+      "meaningKo": "~에 반항하다, 거스르다",
+      "definitionEn": "to refuse to accept the authority of something or someone",
+      "nuance": "명사 rebel(반항아)은 앞에, 동사 rebel(반항하다)은 뒤에 강세가 온다. 셀린은 이걸 '건강한 과정'이라 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "a healthy process to rebel against everything that came before",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1023",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 오히려 자랑으로 삼다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정 상태라면 take pride in은 '스스로 자부심을 만들어 붙이는' 능동적 행위. 제시는 '원치 않은 아이'였다는 사실을 여기에 얹는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1024",
+      "lemma": "stick around",
+      "level": "L4",
+      "meaningKo": "(떠나지 않고) 곁에 남아 있다, 버티고 있다",
+      "definitionEn": "to stay in a place instead of leaving",
+      "nuance": "stay보다 훨씬 구어적이고, '떠날 수도 있었는데 남았다'는 뉘앙스가 깔린다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck around and taught 'em the wrong things",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1025",
+      "lemma": "let go of",
+      "level": "L4",
+      "meaningKo": "(쥐고 있던 것을) 놓다, 놓아 주다",
+      "definitionEn": "to stop holding something",
+      "nuance": "물리적으로 손을 놓는 것과 '집착을 놓다'가 같은 표현. 제시가 노즐을 놓자 무지개도 할머니도 사라진다 — 두 뜻이 겹치는 순간.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "then finally, I let go of the nozzle",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1026",
+      "lemma": "deal with",
+      "level": "L4",
+      "meaningKo": "(문제를) 감당하다, 처리하다",
+      "definitionEn": "to take action in order to handle a problem or situation",
+      "nuance": "handle과 거의 같지만 '피할 수 없어서 상대해야 한다'는 체념이 섞이기 쉽다. 셀린의 deal with the same old shit이 딱 그 결.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "We still have to deal with the same old shit",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1027",
+      "lemma": "pissed off",
+      "level": "L4",
+      "meaningKo": "잔뜩 열받은, 단단히 화가 난",
+      "definitionEn": "very annoyed or angry",
+      "nuance": "angry의 비속한 구어판. 가족·친구 사이에서는 흔하지만 업무 자리에서는 쓰지 않는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-10",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1101",
+      "lemma": "aisle",
+      "level": "L1",
+      "meaningKo": "(좌석 사이의) 통로",
+      "definitionEn": "a passage between rows of seats",
+      "nuance": "s는 발음하지 않는다(/aɪl/). 기내·극장·기차의 통로, 마트의 진열대 사이 통로도 aisle.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Celine is sitting across the aisle from them, reading a book.",
+          "speaker": "지문"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1102",
+      "lemma": "explosion",
+      "level": "L1",
+      "meaningKo": "폭발",
+      "definitionEn": "a violent bursting apart with noise and force",
+      "nuance": "explode의 명사형. 셀린이 머릿속 필름에서 제일 먼저 보는 장면이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "When I'm in a plane, I can see it. I can see the explosion,",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1103",
+      "lemma": "mist",
+      "level": "L1",
+      "meaningKo": "옅은 안개, 물안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 낭만적인 결. 여기서는 호스에서 뿜어져 나온 물보라다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother. And she was just standing there, smiling at me.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1104",
+      "lemma": "tribe",
+      "level": "L1",
+      "meaningKo": "부족, (같은 무리의) 집단",
+      "definitionEn": "a group of people sharing customs and ancestry",
+      "nuance": "요즘 구어에서는 '내 사람들, 내 무리'라는 비유로도 쓴다 — my tribe.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "The woman in labor enters a tent, and the women of her tribe surround her, and dance",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1105",
+      "lemma": "laughter",
+      "level": "L1",
+      "meaningKo": "웃음소리",
+      "definitionEn": "the sound or act of laughing",
+      "nuance": "laugh(한 번의 웃음, 셀 수 있음)와 달리 laughter는 불가산 — 공간을 채우는 웃음소리 전체.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "looking in the direction where they hear some laughter",
+          "speaker": "지문"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1106",
+      "lemma": "palm",
+      "level": "L1",
+      "meaningKo": "손바닥",
+      "definitionEn": "the inner surface of the hand",
+      "nuance": "야자수(palm tree)와 같은 철자. read someone's palm = 손금을 봐 주다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "seeing a gypsy as she finishes reading somebody's palm",
+          "speaker": "지문"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1107",
+      "lemma": "celebration",
+      "level": "L1",
+      "meaningKo": "축하, 기념 행사",
+      "definitionEn": "an occasion of special enjoyment marking an event",
+      "nuance": "in celebration = 축하의 뜻으로. 파티 자체를 뜻하기도 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "When the baby is born, they all dance in celebration.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1108",
+      "lemma": "profound",
+      "level": "L2",
+      "meaningKo": "깊디깊은, 심오한",
+      "definitionEn": "very great, deep, or intense",
+      "nuance": "deep의 격식 있는 사촌. 감정·의미·변화에 붙으면 '뿌리까지 닿는'이라는 결이 된다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "at that profound moment of birth",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1109",
+      "lemma": "finite",
+      "level": "L2",
+      "meaningKo": "유한한, 끝이 있는",
+      "definitionEn": "having limits or an end",
+      "nuance": "infinite의 반대. 제시가 오늘 밤이 소중한 이유를 한 단어로 요약한 말이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "everything is so finite",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1110",
+      "lemma": "otherworldly",
+      "level": "L2",
+      "meaningKo": "이 세상 것 같지 않은, 비현실적인",
+      "definitionEn": "seeming to belong to another, unreal world",
+      "nuance": "unreal이 '가짜 같다'라면 otherworldly는 '너무 아름다워서 현실이 아닌 것 같다'.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 16,
+          "context": "Maybe that's why this feels so otherworldly.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1111",
+      "lemma": "labor",
+      "level": "L2",
+      "meaningKo": "(출산의) 진통, 분만; 노동",
+      "definitionEn": "the process of giving birth; hard work",
+      "nuance": "in labor면 무조건 '진통 중'이다. 영국식 철자는 labour.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "The woman in labor enters a tent",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1112",
+      "lemma": "surround",
+      "level": "L2",
+      "meaningKo": "둘러싸다, 에워싸다",
+      "definitionEn": "to be all around something or someone",
+      "nuance": "포위의 위협일 수도, 보호의 원일 수도 있다. 여기서는 명백히 후자.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "the women of her tribe surround her, and dance",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1113",
+      "lemma": "mating",
+      "level": "L2",
+      "meaningKo": "짝짓기(의)",
+      "definitionEn": "the act of animals coming together to breed",
+      "nuance": "동물에게 쓰는 말이라, 사람 이야기에 갖다 붙이면 농담이 된다. 제시가 노린 것이 정확히 그 효과.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "Looked a little bit like a mating dance to me.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1114",
+      "lemma": "spiritual",
+      "level": "L2",
+      "meaningKo": "영적인, 정신적인",
+      "definitionEn": "relating to the soul rather than physical things",
+      "nuance": "religious(제도 종교)와 구별해서 쓴다 — spiritual but not religious가 관용 표현.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "When the women are dancing, and being all spiritual, and stuff",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1115",
+      "lemma": "awkwardness",
+      "level": "L2",
+      "meaningKo": "어색함, 껄끄러움",
+      "definitionEn": "the quality of being uncomfortable or difficult to handle",
+      "nuance": "점쟁이는 삶 자체가 원래 매끄럽지 않다는 뜻으로 쓴다 — 실수나 민망함이 아니라 '삶의 뻑뻑함'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1116",
+      "lemma": "intense",
+      "level": "L2",
+      "meaningKo": "강렬한, (사람이) 진지하고 밀도 높은",
+      "definitionEn": "very strong or extreme; deeply serious",
+      "nuance": "사람에게 쓰면 '기가 세다'가 아니라 '농도가 진하다'. 칭찬으로도 부담으로도 읽힌다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "She was, she was really wise, and intense, no?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1117",
+      "lemma": "commitment",
+      "level": "L2",
+      "meaningKo": "(관계·일에 대한) 헌신, 매어 있기로 하는 약속",
+      "definitionEn": "a promise or decision to be dedicated to something",
+      "nuance": "fear of commitment는 연애에서 굳어진 표현 — '얽매이는 게 무서운 것'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "it‘s not just a uh, a fear of commitment",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1118",
+      "lemma": "condescending",
+      "level": "L3",
+      "meaningKo": "잘난 척 내려다보는, 가르치려 드는",
+      "definitionEn": "showing that you think you are better than others",
+      "nuance": "친절한 말투 속에 '너는 아직 멀었어'가 들어 있을 때 쓴다. 제시가 점쟁이에게 화난 지점이 바로 그 톤.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "But what was that “I am learning” bullshit? I mean, that's WAY condescending.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1119",
+      "lemma": "opportunist",
+      "level": "L3",
+      "meaningKo": "기회주의자, 남의 틈을 파고드는 사람",
+      "definitionEn": "someone who uses situations to gain an advantage, ignoring principles",
+      "nuance": "언제나 비난이다. opportunity(기회)와 달리 중립적으로 쓸 수 없는 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "if opportunists like that, ever had to tell the real truth",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1120",
+      "lemma": "tedious",
+      "level": "L3",
+      "meaningKo": "지루하게 길고 따분한",
+      "definitionEn": "boring because it goes on too long",
+      "nuance": "boring이 '재미없다'라면 tedious는 '끝나지를 않는다'. 제시가 상상하는 잔인한 점괘의 핵심 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "all your remaining days will be exactly like today--a tedious collection of hours",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1121",
+      "lemma": "incapable",
+      "level": "L3",
+      "meaningKo": "~할 능력이 없는",
+      "definitionEn": "not able to do something",
+      "nuance": "뒤에는 반드시 of + 명사/동명사. ❌ incapable to love → ⭕ incapable of loving.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "or that I'm incapable of caring, or loving, because I can",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1122",
+      "lemma": "excel",
+      "level": "L3",
+      "meaningKo": "탁월하다, 남달리 잘하다",
+      "definitionEn": "to be exceptionally good at something",
+      "nuance": "excel at/in + 분야. 제시가 '따뜻한 관계'보다 갖고 싶다고 고백하는 것이 이 단어다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "that I was really good at something, that I had excelled in some way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1123",
+      "lemma": "strike",
+      "level": "L3",
+      "meaningKo": "(생각이) 문득 떠오르다, 와닿다",
+      "definitionEn": "(of a thought) to come suddenly into someone's mind",
+      "nuance": "it struck him that ~ 형태로 굳어져 쓴다. 때린다는 원뜻이 남아 '갑작스럽게 꽂히는' 느낌.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "he was fifty-two and it suddenly struck him that he had never really given anything of himself",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1124",
+      "lemma": "shake off",
+      "level": "L4",
+      "meaningKo": "떨쳐 내다, 털어 버리다",
+      "definitionEn": "to get rid of something unwanted by shaking or effort",
+      "nuance": "감기·기분·추격자 모두 shake off한다. 몸을 흔들어 떼어 낸다는 그림이 그대로 살아 있다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "They're trying to shake off their genitals, and become angels.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1125",
+      "lemma": "so as to",
+      "level": "L4",
+      "meaningKo": "~하기 위해서 (목적)",
+      "definitionEn": "in order to; with the purpose of",
+      "nuance": "to부정사보다 목적임을 또렷하게 못 박는다. 부정은 so as not to + 동사원형.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "they encourage the birthing woman to dance with them as...so as to make the birth less painful",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1126",
+      "lemma": "fizzle out",
+      "level": "L4",
+      "meaningKo": "흐지부지 끝나다, 김빠지듯 사그라들다",
+      "definitionEn": "to end weakly after a promising start",
+      "nuance": "탄산이 빠지는 소리(fizz)에서 왔다. 싸우고 헤어지는 게 아니라 그냥 연락이 뜸해지는 결말.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "Right. Fizzles out. Yeah, I mean, I don't want that. I hate that.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1127",
+      "lemma": "get something out of one's head",
+      "level": "L4",
+      "meaningKo": "(생각을) 머릿속에서 지우다",
+      "definitionEn": "to stop thinking about something",
+      "nuance": "보통 can't와 함께 부정으로 쓴다 — 지워지지 않아서 괴로울 때의 말.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "He just couldn't get it out of his head.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1128",
+      "lemma": "resign oneself to",
+      "level": "L4",
+      "meaningKo": "체념하고 받아들이다",
+      "definitionEn": "to accept something unpleasant that cannot be changed",
+      "nuance": "to 뒤에는 명사나 동명사가 온다. '사임하다'의 resign과 같은 단어지만 뜻은 전혀 다르다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1201",
+      "lemma": "guarantee",
+      "level": "L1",
+      "meaningKo": "장담하다, 보장하다",
+      "definitionEn": "to promise with certainty that something is true or will happen",
+      "nuance": "I guarantee you는 '내가 장담하는데' — 근거보다 확신을 앞세우는 구어 표현. 제시가 자기 냉소를 밀어붙일 때 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1202",
+      "lemma": "disappoint",
+      "level": "L1",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to fail to satisfy someone's hopes or expectations",
+      "nuance": "주어가 '실망시키는 쪽'이다. 한국어 '실망하다'로 옮기려면 be disappointed로 뒤집어야 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1203",
+      "lemma": "criticism",
+      "level": "L1",
+      "meaningKo": "비판, (남이 하는) 지적",
+      "definitionEn": "the expression of disapproval of someone's faults or mistakes",
+      "nuance": "handle criticism well/badly가 통째로 쓰이는 결합. 학문적 '비평'도 같은 단어다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "just don't think you handle criticism too well",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1204",
+      "lemma": "conflict",
+      "level": "L1",
+      "meaningKo": "갈등, 충돌",
+      "definitionEn": "a serious disagreement between people or ideas",
+      "nuance": "명사는 CON-flict, 동사는 con-FLICT로 강세가 옮겨간다. 셀린은 첫 다툼 직후 conflict를 오히려 옹호한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "Why does everyone think conflict is so bad?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1205",
+      "lemma": "bland",
+      "level": "L2",
+      "meaningKo": "밋밋한, 특징 없는",
+      "definitionEn": "lacking strong flavor, interest, or character",
+      "nuance": "원래 음식의 '싱거움'. 사람·삶에 쓰면 '심심하고 개성 없다'는 은근한 모욕이 된다. 제시가 자기를 셀린의 밋밋한 캔버스를 잠깐 장식하는 무늬로 자조하는 대목.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "momentarily decorating your bland canvas",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1206",
+      "lemma": "seduce",
+      "level": "L2",
+      "meaningKo": "유혹하다, 꾀어내다",
+      "definitionEn": "to persuade someone to do something, especially to have sex",
+      "nuance": "attract가 끌림이라면 seduce는 '의도를 가지고 무너뜨리는' 쪽. 셀린이 연애를 전략으로 묘사하는 문장 안에서 무기 목록처럼 놓인다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "knowing his weak points, what would hurt him, seduce him",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1207",
+      "lemma": "whine",
+      "level": "L2",
+      "meaningKo": "칭얼거리다, 징징대다",
+      "definitionEn": "to complain in an annoying, high-pitched way",
+      "nuance": "complain보다 유치하고 듣기 싫은 결. 셀린이 제시를 '어린애 같다'고 찌를 때 고른 동사다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "a little boy whining because all the attention wasn't focused on him",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1208",
+      "lemma": "competitiveness",
+      "level": "L2",
+      "meaningKo": "경쟁심",
+      "definitionEn": "a strong desire to be more successful than others",
+      "nuance": "제품의 '경쟁력'도 같은 단어지만 여기서는 사람 안에 심어진 이기고 싶은 충동.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "we've all had such competitiveness engrained in us",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1209",
+      "lemma": "bum",
+      "level": "L2",
+      "meaningKo": "부랑자, 빈둥거리는 사람",
+      "definitionEn": "a homeless person or someone who avoids work",
+      "nuance": "미국식 구어로 다소 무례하다. 제시는 시로 돈을 버는 노인을 'a Viennese variation of a bum'이라 부르며 반쯤 감탄한다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "I like this Viennese variation of a bum",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1210",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "털어놓다, 고백하다",
+      "definitionEn": "to admit something you have kept hidden, often with reluctance",
+      "nuance": "죄의 자백과 마음의 고백을 다 덮는다. 사랑 고백은 confess가 아니라 tell someone how you feel 쪽이 자연스럽다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1211",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, (정해진) 팔자",
+      "definitionEn": "the power believed to decide what will happen, or what happens as a result",
+      "nuance": "destiny가 '나아갈 길'이라면 fate는 '피할 수 없이 주어진 것'. 할머니가 accept her fate했다는 말이 이 장면 전체를 슬프게 만든다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1212",
+      "lemma": "uncomplicated",
+      "level": "L2",
+      "meaningKo": "단순한, 복잡할 것 없는",
+      "definitionEn": "simple and easy to understand or deal with",
+      "nuance": "simple이 '단순함'이라면 uncomplicated는 '얽힌 게 없음'. 뒤집힐 것을 아는 채로 쓰인 복선 같은 형용사다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1213",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 언젠가는",
+      "definitionEn": "in the end, especially after a long time or delay",
+      "nuance": "'혹시나'가 아니라 '시간이 지나면 반드시'. 제시가 he would have disappointed her eventually라고 할 때 이 단어가 냉소의 무게를 다 짊어진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1214",
+      "lemma": "revolt",
+      "level": "L2",
+      "meaningKo": "반항하다, 들고일어나다",
+      "definitionEn": "to rise up against authority or refuse to accept it",
+      "nuance": "rebel과 거의 같지만 revolt 쪽이 집단적·정치적 색이 짙다. 셀린의 부모는 68혁명 세대였다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They were these angry, young, May '68 people, revolting against everything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1215",
+      "lemma": "insecure",
+      "level": "L2",
+      "meaningKo": "불안한, 자신 없는",
+      "definitionEn": "lacking confidence and worried about how others see you",
+      "nuance": "'보안이 취약한'이라는 뜻도 같은 단어. 사람에게 쓰면 '스스로에 대한 확신이 없는'이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over...I'd be insecure",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1216",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "약속, 맹세",
+      "definitionEn": "a solemn promise",
+      "nuance": "promise보다 무겁고 격식 있다. 결혼 서약이 wedding vows — 다시 안 만나기로 한 두 사람의 약속에 이 단어를 쓴 것이 아프다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1217",
+      "lemma": "rational",
+      "level": "L2",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "reasonable(타당한)과 달리 '감정을 배제한'이 핵심. 셀린이 our rational, adult decision이라 부를 때 이미 비꼼이 섞여 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1218",
+      "lemma": "delusion",
+      "level": "L3",
+      "meaningKo": "망상, 착각",
+      "definitionEn": "a false belief held firmly despite evidence against it",
+      "nuance": "illusion(눈에 속는 것)과 달리 delusion은 '믿음이 어긋난 것'. 시인의 첫 두 줄 Daydream delusion이 이 유닛의 정서를 요약한다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "Daydream delusion.",
+          "speaker": "Poet"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1219",
+      "lemma": "maneuvering",
+      "level": "L3",
+      "meaningKo": "책략, 수싸움",
+      "definitionEn": "clever or skillful moves made to gain an advantage",
+      "nuance": "원래 군대의 '기동'. 셀린이 연애를 군사 작전처럼 그리는 비유 안에서 strategy와 짝을 이룬다. 영국식 철자는 manoeuvring.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "plotting my strategy and maneuverings",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1220",
+      "lemma": "engrained",
+      "level": "L3",
+      "meaningKo": "깊이 박힌, 몸에 밴",
+      "definitionEn": "firmly fixed in someone's mind or habits",
+      "nuance": "ingrained가 표준 철자이고 engrained는 그 변형. 나뭇결(grain) 속까지 스며든 이미지 — 지우려 해도 안 지워지는 것에 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "we've all had such competitiveness engrained in us",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1221",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(심리) 투사 — 내 감정을 상대에게 덧씌우는 것",
+      "definitionEn": "the act of attributing your own feelings or ideas to someone else",
+      "nuance": "영화의 '영사', 통계의 '전망'도 같은 단어. 제시는 사랑을 romantic projections, 즉 상대가 아니라 내가 만든 상을 보는 일로 규정한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1222",
+      "lemma": "mannerism",
+      "level": "L3",
+      "meaningKo": "(버릇처럼 반복되는) 말투·몸짓",
+      "definitionEn": "a habitual gesture or way of speaking that is characteristic of a person",
+      "nuance": "manner(태도)와 다르다 — mannerism은 '그 사람 특유의, 반복돼서 눈에 띄는 버릇'. 오래 붙어 있으면 미워질 것들의 이름.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1223",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지식인인 척하는, 겉멋 든",
+      "definitionEn": "pretending to be more intelligent or cultured than one really is",
+      "nuance": "pseudo-(가짜)는 어디에나 붙는 접두사. 제시가 자기 이야기 습관에 스스로 붙이는 라벨이라 자조가 진해진다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1224",
+      "lemma": "drive someone mad",
+      "level": "L4",
+      "meaningKo": "~를 미치게 하다, 돌아버리게 만들다",
+      "definitionEn": "to annoy someone extremely",
+      "nuance": "drive는 '몰아간다'는 뜻. 미국식으로는 drive someone crazy/nuts가 더 흔하다. 셀린은 '오래 같이 있으면 뭐가 제일 거슬릴까'를 이 표현으로 묻는다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "what do you think would be the first thing about me that would drive you mad?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1225",
+      "lemma": "fly into a rage",
+      "level": "L4",
+      "meaningKo": "버럭 화를 내다, 길길이 날뛰다",
+      "definitionEn": "to suddenly become extremely angry",
+      "nuance": "get angry와 달리 '순식간에 폭발한다'는 속도가 핵심. 과거형은 flew into a rage.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "She flew into a rage, and broke up with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1226",
+      "lemma": "rob someone blind",
+      "level": "L4",
+      "meaningKo": "탈탈 털어먹다, 바가지를 씌우다",
+      "definitionEn": "to cheat or overcharge someone badly",
+      "nuance": "blind는 '눈뜨고 당하게'라는 강조. 손금쟁이에게 돈을 뜯겼다고 분해하는 제시의 한마디다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "listen, this woman robs you blind, okay?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1227",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스러워하다, ~에 자부심을 갖다",
+      "definitionEn": "to feel proud of something you do or are",
+      "nuance": "be proud of가 상태라면 take pride in은 '스스로 그렇게 여기기로 했다'는 능동. 제시가 '원래 태어나지 말았어야 할 아이'라는 사실마저 자기 것으로 삼는 대목.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1228",
+      "lemma": "be sick to death of",
+      "level": "L4",
+      "meaningKo": "지긋지긋하다, 넌더리가 나다",
+      "definitionEn": "to be completely fed up with something",
+      "nuance": "be sick of의 최상급. to death가 강조. 제시가 사람들이 자기 자신에게 질려 있다고 말할 때의 표현.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "they are sick to death of being around themselves",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1301",
+      "lemma": "confession",
+      "level": "L2",
+      "meaningKo": "고백, 털어놓기",
+      "definitionEn": "an admission that you have done something wrong or kept something secret",
+      "nuance": "죄의 자백에도, 숨긴 사실을 털어놓는 데에도 쓴다. 제시는 '큰 고백'이라며 헤어진 여자친구 얘기를 꺼낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "Um, big confession, you know. I should have told you this earlier, Céline",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1302",
+      "lemma": "reunite",
+      "level": "L2",
+      "meaningKo": "다시 만나다, 재회하다",
+      "definitionEn": "to come together again after a period of separation",
+      "nuance": "re(다시)+unite(합치다). 설레는 단어인데, 제시의 재회는 도착하자마자 파국이 된다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "now we're reunited, at long last",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1303",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "약속, 맹세",
+      "definitionEn": "a serious promise to do or not do something",
+      "nuance": "promise보다 무겁다 — 결혼 서약(marriage vows)의 그 vow. 셀린은 '다시는 안 만나기로 한 약속'을 vow라고 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow, just so you can get LAID",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1304",
+      "lemma": "mannerism",
+      "level": "L2",
+      "meaningKo": "몸에 밴 말버릇·몸짓",
+      "definitionEn": "a habitual gesture or way of speaking that is typical of a person",
+      "nuance": "한국어 '매너리즘'(타성)과 뜻이 다르다. 한 사람을 알아보게 하는, 반복되는 사소한 버릇.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "then you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1305",
+      "lemma": "insecure",
+      "level": "L2",
+      "meaningKo": "자신 없는, 마음이 불안한",
+      "definitionEn": "lacking confidence in yourself",
+      "nuance": "'보안이 취약한'도 같은 단어. 사람에게 쓰면 자존감이 흔들리는 상태를 가리킨다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over...I'd be insecure",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1306",
+      "lemma": "rational",
+      "level": "L2",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "emotional의 반대. 다시는 안 만나기로 한 합의를 굳이 이 단어로 부르는 순간, 이미 그 결정은 흔들리고 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1307",
+      "lemma": "depressing",
+      "level": "L2",
+      "meaningKo": "우울하게 만드는, 서글픈",
+      "definitionEn": "making you feel sad and without hope",
+      "nuance": "-ing는 원인, -ed는 상태(I'm depressed). 전화도 편지도 하지 말자는 합의에 제시가 붙이는 한마디.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "And we won't call...or write or... / It's depressing.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1308",
+      "lemma": "fantasy",
+      "level": "L2",
+      "meaningKo": "환상, (혼자 그리는) 각본",
+      "definitionEn": "a pleasant situation that you imagine but that is not real",
+      "nuance": "'프랑스 여자를 만나 자고, 다시는 안 보고, 무용담으로 남긴다'는 각본을 셀린은 male fantasy라 부르며 거절한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "No, then it's like some male fantasy",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1309",
+      "lemma": "sunrise",
+      "level": "L1",
+      "meaningKo": "일출, 해가 뜨는 시각",
+      "definitionEn": "the time in the morning when the sun first appears",
+      "nuance": "이 영화의 제목이 걸려 있는 단어. before sunrise는 곧 '헤어지기 전까지'라는 뜻이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "staying up all night and watching the sunrise",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1310",
+      "lemma": "complicated",
+      "level": "L1",
+      "meaningKo": "복잡한, (감정이) 꼬인",
+      "definitionEn": "difficult to understand or deal with because of many parts",
+      "nuance": "구조가 복잡한 complex와 달리, 사람 사이가 '꼬여 있다'는 결로 자주 쓴다. It's complicated이 연애 상태를 가리키는 관용 표현인 것도 그래서다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "Why do we make everything so complicated?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1311",
+      "lemma": "awful",
+      "level": "L1",
+      "meaningKo": "끔찍한, 못 견딜 만큼 나쁜",
+      "definitionEn": "very bad or unpleasant",
+      "nuance": "terrible과 거의 같은 강도. 5년 뒤에 만나자는 제안에 셀린이 즉각 붙이는 반응이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "It's awful. It's like a sociological experiment.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1312",
+      "lemma": "freezing",
+      "level": "L1",
+      "meaningKo": "얼어붙을 듯이 추운",
+      "definitionEn": "extremely cold",
+      "nuance": "cold의 강조형으로 쓰는 구어. 6개월 뒤면 12월이라는 걸 셀린이 이 한 단어로 짚는다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "It's gonna be freezing.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1313",
+      "lemma": "asinine",
+      "level": "L3",
+      "meaningKo": "멍청하기 짝이 없는",
+      "definitionEn": "extremely stupid or foolish",
+      "nuance": "ass(당나귀)에서 온 말. 어려운 단어라 점잖아 보이지만 stupid보다 훨씬 신랄하다 — 전 여자친구의 프로그램을 깎아내리는 데 쓴다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "who has been on this asinine art history program for the last year",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1314",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지식인인 척하는, 아는 척하는",
+      "definitionEn": "pretending to be more intelligent or learned than one really is",
+      "nuance": "pseudo-는 '가짜'. 남을 비난하는 말인데, 제시는 자기 이야기 습관에 스스로 이 이름을 붙인다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1315",
+      "lemma": "sociological",
+      "level": "L3",
+      "meaningKo": "사회학적인",
+      "definitionEn": "relating to the study of society and human behavior",
+      "nuance": "sociology의 형용사. 두 사람의 재회를 '사회학 실험'이라 부르는 셀린의 냉소가 이 단어 하나에 담긴다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "It's awful. It's like a sociological experiment.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1316",
+      "lemma": "be sick of",
+      "level": "L4",
+      "meaningKo": "~에 질리다, 넌더리가 나다",
+      "definitionEn": "to be tired of and annoyed by something",
+      "nuance": "sick(아픈)이 아니라 '질렸다'. of 뒤에는 명사나 동명사가 온다 — sick of waiting.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "So of course I'm sick of myself.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1317",
+      "lemma": "sick to death of",
+      "level": "L4",
+      "meaningKo": "죽을 만큼 지긋지긋하다",
+      "definitionEn": "to be extremely tired of and irritated by something",
+      "nuance": "be sick of의 최상급. to death가 강조 장치일 뿐 죽음과는 상관없다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "they are sick to death of being around themselves",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1318",
+      "lemma": "have people over",
+      "level": "L4",
+      "meaningKo": "집에 사람들을 초대하다",
+      "definitionEn": "to invite guests to your home",
+      "nuance": "over가 '우리 집 쪽으로'. have someone over / come over가 한 세트로 움직인다. invite보다 훨씬 일상적이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way every time that we would have people over",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1319",
+      "lemma": "get away from",
+      "level": "L4",
+      "meaningKo": "~에서 벗어나다, 빠져나오다",
+      "definitionEn": "to escape from someone or something",
+      "nuance": "escape보다 일상적이고 물리적 거리감이 옅다. 제시는 벗어나고 싶은 대상이 자기 자신이라고 말한다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "it's myself that I wish I could get away from",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1320",
+      "lemma": "sink in",
+      "level": "L4",
+      "meaningKo": "(사실이) 서서히 실감되다",
+      "definitionEn": "(of information) to become fully understood or felt over time",
+      "nuance": "물이 스며들듯 사실이 마음에 스며드는 이미지. let it sink in은 '실감이 날 때까지 그대로 둔다'는 뜻이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "just to kind of let it really sink in that she wished I hadn't come",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1321",
+      "lemma": "stick around",
+      "level": "L4",
+      "meaningKo": "떠나지 않고 좀 더 머무르다",
+      "definitionEn": "to stay in a place for a while longer",
+      "nuance": "떠날 수도 있었는데 남아 있었다는 결. 마드리드에서 제시가 며칠을 버틴 그 시간이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "and I stuck around for a while",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1322",
+      "lemma": "at long last",
+      "level": "L4",
+      "meaningKo": "드디어, 그 오랜 기다림 끝에",
+      "definitionEn": "finally, after a long period of waiting",
+      "nuance": "finally보다 기다림의 길이가 강조된다. 제시는 이걸 비꼬듯 얹어서, 재회가 얼마나 시시했는지를 드러낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "now we're reunited, at long last",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1323",
+      "lemma": "break up with",
+      "level": "L4",
+      "meaningKo": "~와 헤어지다",
+      "definitionEn": "to end a romantic relationship with someone",
+      "nuance": "with 없이 break up만 쓰면 '(둘이) 갈라서다'. 차인 쪽은 somebody breaking up with you로 표현한다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "when you remember how little you thought about the people you broke up with",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1324",
+      "lemma": "save up",
+      "level": "L4",
+      "meaningKo": "(목적을 두고) 돈을 모으다",
+      "definitionEn": "to keep money over time in order to buy or do something",
+      "nuance": "save가 '저축'이라면 save up은 목표가 붙은 저축. 봄 내내 모은 돈이 며칠 만에 물거품이 된다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "I saved up my money all spring to uh, fly to Madrid",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1325",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "어쩔 수 없다, 나도 모르게 그렇게 된다",
+      "definitionEn": "to be unable to control or stop oneself",
+      "nuance": "여기서 help는 '돕다'가 아니라 '막다'. can't help -ing(~하지 않을 수 없다)와 같은 뿌리다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "It's not very adult. Maybe it's a female thing. I can't help it.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1326",
+      "lemma": "lose yourself",
+      "level": "L4",
+      "meaningKo": "자기 자신을 잊다, 푹 빠져들다",
+      "definitionEn": "to become so absorbed in something that you forget yourself",
+      "nuance": "'길을 잃다'가 아니라 자의식에서 놓여나는 해방. 제시는 그게 춤·술·약, 그리고 이 밤이라고 말한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the only other way to lose yourself like that is...you know, dancing",
           "speaker": "Jesse"
         }
       ]

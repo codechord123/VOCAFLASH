@@ -1,0 +1,1133 @@
+{
+  "unit": {
+    "unitId": "u-09",
+    "act": 3,
+    "order": 9,
+    "title": "강조·도치",
+    "tagline": "말하고 싶은 것을 문장 맨 앞으로 끌어낸 대가로, 어순이 흔들린다",
+    "anchors": [
+      {
+        "en": "You need to resign yourself to the awkwardness of life. Only if you find peace within yourself, will you find true connection with others.",
+        "ko": "당신은 삶의 껄끄러움을 받아들여야 해요. 자기 안에서 평화를 찾아야만, 비로소 남들과 진짜로 통하게 됩니다.",
+        "source": "before-sunrise",
+        "chapter": 9,
+        "speaker": "Gypsy",
+        "sceneNote": "클라인스 카페 테라스. 손금을 봐 준 집시가 셀린에게 남기는 마지막 처방이다. 삶의 껄끄러움을 받아들이라고 한 뒤 Only를 앞세워 조건을 못 박는데, 그 순간 you will find가 will you find로 뒤집히며 문장이 예언처럼 굳는다. 앞자리를 내준 대가로 어순이 흔들리는, 도치의 가장 선명한 표본."
+      },
+      {
+        "en": "It‘s just, usually, it‘s myself that I wish I could get away from.",
+        "ko": "그냥, 보통은 말이야, 내가 벗어나고 싶은 건 다름 아닌 나 자신이야.",
+        "source": "before-sunrise",
+        "chapter": 19,
+        "speaker": "Jesse",
+        "sceneNote": "새벽 공원. 셀린이 '누군가 곁에 없었으면 싶었던 순간들'을 털어놓자, 제시가 그 대상을 자기 자신으로 뒤집는다. myself를 It is와 that 사이에 끼워 넣는 순간 문장의 무게가 통째로 '나 자신'에 얹힌다. 강조구문이 감정의 초점을 잡아 주는 장면."
+      },
+      {
+        "en": "I got one of those Eurail passes, is what I did.",
+        "ko": "그 유레일 패스 있잖아, 그거 하나 끊었어 — 그게 내가 한 일이야.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "기차 라운지 칸, 처음 나누는 대화. 어쩌다 유럽을 떠돌게 됐는지 설명하던 제시가 결론을 먼저 던져 놓고 is what I did를 꼬리처럼 붙인다. 문법책에는 없는 구어 강조 — 말해 놓고 '그게 내가 한 일이야'라고 스스로 되짚는 리듬이다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "부정어·only가 문두에 오면 주어와 동사가 뒤집힌다",
+        "body": "Only if you find peace within yourself, will you find true connection with others. — 평서문이라면 you will find인데, 문두에 Only가 서는 순간 will you find로 뒤집힌다. never, rarely, hardly, seldom, not until, little, only if/when/after가 문장 맨 앞에 오면 예외 없이 이 도치가 따라온다. 맨 앞자리는 강조의 자리라서, 그 자리를 내준 대가로 어순이 흔들리는 것이다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "도치는 종속절이 아니라 주절에서 일어난다 ★",
+        "body": "집시의 문장에서 Only if you find peace within yourself까지는 어순이 멀쩡하다(you find). 뒤집히는 것은 그다음 주절 will you find뿐이다. Only if 절 안을 뒤집어 ❌Only if do you find peace within yourself, you will find...로 쓰는 것이 가장 흔한 실수다. 앞으로 나온 덩어리는 신호일 뿐, 손대는 곳은 언제나 그 뒤 주절이다.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "도치문은 의문문이 아니다 ★",
+        "body": "will you find, did I realize처럼 조동사가 주어 앞에 서면 반사적으로 의문문으로 읽게 된다. 하지만 집시의 문장은 물음표가 아니라 마침표로 끝난다. 문두의 Only/Never/Not until과 문장 끝 부호, 이 둘로 판단한다. 뜻도 질문이 아니라 단언이다 — '~해야만 비로소 ~한다'.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "앞으로 나오는 것은 조동사다 — 없으면 do/does/did를 꺼낸다 ★",
+        "body": "will, have, can처럼 조동사가 이미 있으면 그것만 주어 앞으로 간다(will you find). 일반동사밖에 없으면 do/does/did를 새로 꺼내고 본동사는 원형으로 남긴다: Not until she left the room did I realize what had happened. ❌Never I have been / ❌Not until she left did I realized는 둘 다 이 지점에서 무너진 것이다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "It is ~ that 강조구문과 가주어 It is ~ that의 구분 ★",
+        "body": "제시의 it's myself that I wish I could get away from에서 It is와 that을 지우면 I wish I could get away from myself가 온전히 복원된다 — 이러면 강조구문이다. 반대로 It is clear that he lied.는 It is와 that을 지우면 clear he lied라는 파편만 남는다 — 이쪽은 가주어. 복원되면 강조, 부서지면 가주어. 강조된 자리에 사람이 오면 that 대신 who도 쓴다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "구어는 앞뒤로 민다 — Why is it that ~? / ~, is what I did",
+        "body": "Why is it that ~?는 강조구문을 의문문으로 돌린 것이다. 제시의 Why is it, that a dog, you know, sleeping in the sun, is so beautiful?처럼 '왜'라는 물음 자체를 무겁게 얹는다. 이때 that 뒤는 평서문 어순 그대로 간다(❌Why is it that is a dog beautiful?). 반대로 뒤로 미는 방식도 있다: I got one of those Eurail passes, is what I did. — 내용을 먼저 던지고 (that) is what I did를 꼬리로 붙여 되짚는 구어 강조다.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "Only after the last guest left did the apartment feel like ours again.",
+        "ko": "마지막 손님이 떠나고 나서야 그 집은 다시 우리 집처럼 느껴졌다."
+      },
+      {
+        "en": "It wasn't the noise that kept me awake — it was everything I hadn't said.",
+        "ko": "나를 못 자게 한 건 소음이 아니라, 내가 하지 못한 말들이었다."
+      },
+      {
+        "en": "Why is it that the best conversations always start when someone has to leave?",
+        "ko": "왜 가장 좋은 대화는 늘 누군가 떠나야 할 때쯤 시작되는 걸까?"
+      },
+      {
+        "en": "Never have I regretted a night I spent talking until sunrise.",
+        "ko": "해 뜰 때까지 이야기하며 보낸 밤을 후회해 본 적은 한 번도 없다."
+      },
+      {
+        "en": "I just walked out in the middle of it, is what I did.",
+        "ko": "그냥 도중에 걸어 나와 버렸어 — 그게 내가 한 일이야."
+      }
+    ],
+    "coverage": {
+      "fromScript": 4,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0901",
+      "lemma": "journey",
+      "level": "L1",
+      "meaningKo": "여정, (과정으로서의) 여행",
+      "definitionEn": "an act of travelling from one place to another",
+      "nuance": "trip이 '다녀오는 일'이라면 journey는 그 과정 자체. 집시는 셀린의 기차 여행을 인생의 여정으로 바꿔 읽는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "you have been on a journey, and you are stranger to this place",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0902",
+      "lemma": "adventure",
+      "level": "L1",
+      "meaningKo": "모험",
+      "definitionEn": "an unusual and exciting experience, often with some risk",
+      "nuance": "집시는 곧바로 An adventure in your mind로 고쳐 말한다 — 밖이 아니라 안에서 벌어지는 모험.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "An adventure in your mind.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0903",
+      "lemma": "stranger",
+      "level": "L1",
+      "meaningKo": "낯선 사람; (그곳에) 처음인 사람",
+      "definitionEn": "someone you do not know, or a person in an unfamiliar place",
+      "nuance": "두 결이 있다. 집시는 처음에 '이곳이 낯선 사람'으로 썼다가, 곧 제시를 가리키며 '모르는 사람'의 뜻으로 되묻는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "you are stranger to this place",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0904",
+      "lemma": "connection",
+      "level": "L1",
+      "meaningKo": "(사람 사이의) 교감, 통함",
+      "definitionEn": "a relationship in which people understand each other",
+      "nuance": "인터넷 '연결'과 같은 단어지만, true connection은 '진짜로 통하는 사이'를 뜻한다. 이 유닛 앵커 문장의 착지점.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "will you find true connection with others",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0905",
+      "lemma": "confession",
+      "level": "L1",
+      "meaningKo": "고백, 털어놓는 말",
+      "definitionEn": "a statement admitting something you feel guilty or shy about",
+      "nuance": "I have a confession to make.는 무거운 고백뿐 아니라 장난스러운 도입으로도 쓴다 — 제시가 수사들 흉내를 내며 딱 그렇게 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Hey Hans, I have a confession to make.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0906",
+      "lemma": "frighten",
+      "level": "L1",
+      "meaningKo": "겁주다, 무섭게 하다",
+      "definitionEn": "to make someone feel afraid",
+      "nuance": "scare보다 살짝 격식 있다. 주어가 '무섭게 하는 쪽'이라는 점에 주의 — Does that frighten you?",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Does that frighten you?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0907",
+      "lemma": "rational",
+      "level": "L1",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "emotional의 반대. 새벽에 두 사람이 '어른답게' 내린 결정을 셀린이 이 단어로 되묻는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0908",
+      "lemma": "insecure",
+      "level": "L1",
+      "meaningKo": "자신 없는, 불안한",
+      "definitionEn": "not confident about yourself",
+      "nuance": "'안전하지 않은'이 아니다. 사람에게 쓰면 거의 항상 '스스로에 대한 확신이 없는'이라는 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I'd be insecure, and I'd get a little too drunk",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0909",
+      "lemma": "stardust",
+      "level": "L2",
+      "meaningKo": "별먼지",
+      "definitionEn": "the dust that stars are made of; a magical quality",
+      "nuance": "집시가 돈을 받아 들고 돌아서서 남기는 마지막 말. 과학적 사실이자 축복으로 쓰인다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Everything we know, is stardust.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0910",
+      "lemma": "horoscope",
+      "level": "L2",
+      "meaningKo": "별자리 운세",
+      "definitionEn": "a forecast of someone's future based on the position of the stars",
+      "nuance": "신문 한 귀퉁이의 그 운세란. 제시가 집시의 말을 깎아내리려고 끌어온 비유다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "some horoscope in a daily syndicated newspaper",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0911",
+      "lemma": "wise",
+      "level": "L2",
+      "meaningKo": "지혜로운",
+      "definitionEn": "having good judgment based on experience",
+      "nuance": "smart(머리가 좋은)와 다르다 — 살아 본 사람의 판단력. 셀린이 집시를 이 말로 옹호한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "She was, she was really wise, and intense, no?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0912",
+      "lemma": "intense",
+      "level": "L2",
+      "meaningKo": "강렬한, 밀도 있는",
+      "definitionEn": "very strong, extreme, or deeply serious",
+      "nuance": "사람에게 쓰면 '눈빛이 살아 있고 진지한'. 칭찬일 수도, 부담스럽다는 말일 수도 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "she was really wise, and intense",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0913",
+      "lemma": "tedious",
+      "level": "L2",
+      "meaningKo": "지루하게 늘어지는",
+      "definitionEn": "boring and continuing for too long",
+      "nuance": "boring이 '재미없다'라면 tedious는 '끝없이 이어져 진이 빠진다'. a tedious collection of hours — 시간을 쌓아 놓은 지루한 더미.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "all your remaining days will be exactly like today--a tedious collection of hours",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0914",
+      "lemma": "seedy",
+      "level": "L2",
+      "meaningKo": "허름하고 지저분한, 우범의",
+      "definitionEn": "dirty, run-down, and possibly connected with crime",
+      "nuance": "동네·술집·호텔에 쓴다. 제시가 비꼬며 '빈의 뒷골목'을 들먹이는 대목.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "maybe there's a seedy section of Vienna",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0915",
+      "lemma": "mannerism",
+      "level": "L2",
+      "meaningKo": "(그 사람 특유의) 버릇, 몸짓",
+      "definitionEn": "a habitual gesture or way of speaking peculiar to one person",
+      "nuance": "한국어 '매너'와 무관하다. 반복되다 결국 거슬리게 되는, 그 사람만의 습관.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "then you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0916",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "맹세, 서약",
+      "definitionEn": "a serious promise",
+      "nuance": "결혼 서약(wedding vows)의 그 vow. break a vow는 '약속을 어기다'보다 훨씬 무겁다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0917",
+      "lemma": "palm-reader",
+      "level": "L2",
+      "meaningKo": "손금쟁이",
+      "definitionEn": "someone who claims to tell your future by reading your hand",
+      "nuance": "palm은 손바닥. read someone's palm = 손금을 봐 주다. 이 유닛 앵커를 말하는 사람이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "Look at this palm-reader. She's interesting-looking, no?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0918",
+      "lemma": "explode",
+      "level": "L2",
+      "meaningKo": "폭발하다, 터지다",
+      "definitionEn": "to burst violently, releasing energy",
+      "nuance": "별이 터진 그 폭발. 명사는 explosion. 감정이 터질 때도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "the stars exploded billions of years ago",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0919",
+      "lemma": "awkwardness",
+      "level": "L3",
+      "meaningKo": "어색함, 뜻대로 굴러가지 않는 껄끄러움",
+      "definitionEn": "the quality of being uncomfortable, clumsy, or hard to handle",
+      "nuance": "'실수해서 민망함'만이 아니라 '삶이 매끄럽게 굴러가지 않는다'는 뜻까지 품는다. 집시의 처방은 그걸 고치라는 게 아니라 받아들이라는 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0920",
+      "lemma": "condescending",
+      "level": "L3",
+      "meaningKo": "잘난 척하며 깔보는",
+      "definitionEn": "behaving as if you are better or smarter than other people",
+      "nuance": "겉으론 친절한데 상대를 아래에 두는 태도. 제시는 '그는 배우는 중'이라는 집시의 한마디에서 이걸 읽어 낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "But what was that “I am learning” bullshit? I mean, that's WAY condescending.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0921",
+      "lemma": "opportunist",
+      "level": "L3",
+      "meaningKo": "기회를 이용해 먹는 사람",
+      "definitionEn": "someone who takes advantage of situations to gain something, regardless of principle",
+      "nuance": "opportunity에서 왔지만 뜻은 부정적이다. '수완가'가 아니라 '얌체'에 가깝다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "if opportunists like that, ever had to tell the real truth",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0922",
+      "lemma": "syndicated",
+      "level": "L3",
+      "meaningKo": "여러 매체에 동시 배급되는",
+      "definitionEn": "(of an article or show) sold to many newspapers or stations at once",
+      "nuance": "칼럼·연재만화가 전국 신문에 똑같이 실리는 그 방식. '어디서나 똑같이 찍어낸'이라는 냉소가 붙는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "some horoscope in a daily syndicated newspaper",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0923",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지식인인 척하는",
+      "definitionEn": "pretending to be more intelligent or educated than one really is",
+      "nuance": "pseudo-는 '사이비'. 제시가 자기 이야기 습관을 스스로 깎아내리며 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0924",
+      "lemma": "resign oneself to",
+      "level": "L4",
+      "meaningKo": "~을 어쩔 수 없다고 받아들이다, 체념하고 순응하다",
+      "definitionEn": "to accept something unpleasant that you cannot change",
+      "nuance": "사표를 내는 resign과 같은 단어지만, 재귀대명사 + to가 붙으면 뜻이 달라진다. to는 전치사라 뒤에 명사나 동명사가 온다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0925",
+      "lemma": "be sick to death of",
+      "level": "L4",
+      "meaningKo": "~에 이골이 나다, 진저리가 나다",
+      "definitionEn": "to be extremely tired of something",
+      "nuance": "be sick of의 최상급. 제시가 '사람들이 자기 자신을 미워하는 이유'로 드는 말이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "It’s just they are sick to death of being around themselves.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0926",
+      "lemma": "get away from",
+      "level": "L4",
+      "meaningKo": "~에게서 벗어나다, ~을 떠나다",
+      "definitionEn": "to escape from someone or something",
+      "nuance": "get away from it all이 '다 잊고 떠나다'인데, 제시는 그 대상을 자기 자신으로 뒤집어 버린다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "it‘s myself that I wish I could get away from.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0927",
+      "lemma": "have people over",
+      "level": "L4",
+      "meaningKo": "집에 사람들을 부르다",
+      "definitionEn": "to invite guests to your home",
+      "nuance": "over가 '우리 집 쪽으로'. have someone over for dinner처럼 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0928",
+      "lemma": "put ~ out of business",
+      "level": "L4",
+      "meaningKo": "~를 망하게 하다, 문 닫게 만들다",
+      "definitionEn": "to force a company or person to stop operating",
+      "nuance": "go out of business(망하다)의 사역형. 점쟁이들이 진실을 말하면 죄다 망할 거라는 제시의 독설.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-09",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "it would put their ASSES out of business",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-09-001",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "awkwardness — \"You need to resign yourself to the awkwardness of life.\"",
+      "wordId": "w-0919",
+      "options": [
+        "예의 바름",
+        "서투른 손놀림",
+        "(삶이 뜻대로 안 되는) 어색함·껄끄러움",
+        "고요함"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-001"
+    },
+    {
+      "quizId": "q-09-002",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "condescending — \"that's WAY condescending\"",
+      "wordId": "w-0920",
+      "options": [
+        "잘난 척하며 깔보는",
+        "지나치게 겸손한",
+        "조건을 까다롭게 다는",
+        "동정심이 많은"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-002"
+    },
+    {
+      "quizId": "q-09-003",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "tedious — \"all your remaining days will be exactly like today--a tedious collection of hours\"",
+      "wordId": "w-0913",
+      "options": [
+        "팽팽하게 긴장된",
+        "꼼꼼하고 세심한",
+        "값비싼",
+        "지루하게 한없이 늘어지는"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-003"
+    },
+    {
+      "quizId": "q-09-004",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "mannerism — \"you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-0915",
+      "options": [
+        "예의범절",
+        "(그 사람 특유의) 버릇·몸짓",
+        "말투를 고치는 훈련",
+        "연기 유파"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-005"
+    },
+    {
+      "quizId": "q-09-005",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "be sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-0925",
+      "options": [
+        "~때문에 앓아눕다",
+        "~을 몹시 그리워하다",
+        "~에 진저리가 나다",
+        "~을 죽도록 아끼다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-008"
+    },
+    {
+      "quizId": "q-09-006",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "Only if you find peace within yourself, ___ true connection with others. (Gypsy, Ch 9)",
+      "options": [
+        "you will find",
+        "will you find",
+        "do you find",
+        "you found"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-007",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "Not until she left the room ___ what had happened.",
+      "options": [
+        "I realized",
+        "did I realize",
+        "did I realized",
+        "I did realize"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-008",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "It's not the noise ___ kept me awake — it's everything I hadn't said.",
+      "options": [
+        "what",
+        "which one",
+        "that",
+        "it"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-009",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "___ that we always make everything so complicated?",
+      "options": [
+        "Why it is",
+        "Why is",
+        "Why does it",
+        "Why is it"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-010",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "Only if you find peace within yourself, will you find true connection with others. — will이 주어 앞에 있으니 이 문장은 의문문이다.",
+      "isCorrect": false,
+      "explanation": "물음표가 없고 문두에 Only가 서 있다. 부정어·only 도치이지 의문문이 아니다. 뜻은 질문이 아니라 단언 — '자기 안에서 평화를 찾아야만 비로소 남들과 진짜로 통한다'.",
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-011",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "Only if로 시작하면 그 절 안이 뒤집힌다. 즉 Only if do you find peace within yourself, you will find...가 맞다.",
+      "isCorrect": false,
+      "explanation": "종속절은 건드리지 않는다. 집시의 문장도 Only if you find...까지는 평서문 어순이고, 뒤집히는 것은 주절 will you find뿐이다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-09-012"
+    },
+    {
+      "quizId": "q-09-012",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "It is patience that this job requires. — 강조구문이고, 강조된 것은 requires의 목적어다.",
+      "isCorrect": true,
+      "explanation": "It is와 that을 지우면 This job requires patience.가 온전히 복원된다. 복원되면 강조구문, 파편만 남으면 가주어다.",
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-013",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "I got one of those Eurail passes, is what I did. — 문법이 깨진 문장이라 원어민은 이렇게 말하지 않는다.",
+      "isCorrect": false,
+      "explanation": "제시가 실제로 쓴 구어 강조다. 내용을 먼저 던지고 (that) is what I did를 꼬리로 붙여 되짚는 방식. 격식 있는 글에서는 피하지만 회화에서는 자연스럽다.",
+      "relatedRuleId": "r6",
+      "srsCardId": "c-09-014"
+    },
+    {
+      "quizId": "q-09-014",
+      "unitId": "u-09",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Gypsy, Ch 9)",
+      "chunks": [
+        "will you find",
+        "Only if you find peace",
+        "true connection with others.",
+        "within yourself,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-09-010"
+    },
+    {
+      "quizId": "q-09-015",
+      "unitId": "u-09",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "it‘s myself",
+        "It‘s just, usually,",
+        "that I wish",
+        "I could get away from."
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-09-011"
+    },
+    {
+      "quizId": "q-09-016",
+      "unitId": "u-09",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "did I realize",
+        "Not until",
+        "what had happened.",
+        "she left the room"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": "c-09-013"
+    },
+    {
+      "quizId": "q-09-017",
+      "unitId": "u-09",
+      "type": "koToEn",
+      "prompt": "그냥, 보통은 말이야, 내가 벗어나고 싶은 건 다름 아닌 나 자신이야.",
+      "chunks": [
+        "that I wish",
+        "it's myself",
+        "I could get away from.",
+        "It's just, usually,"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-018",
+      "unitId": "u-09",
+      "type": "koToEn",
+      "prompt": "왜 우리는 늘 모든 걸 이렇게 복잡하게 만드는 걸까?",
+      "chunks": [
+        "that we always make",
+        "Why is it",
+        "so complicated?",
+        "everything"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-019",
+      "unitId": "u-09",
+      "type": "koToEn",
+      "prompt": "그가 문을 열고 나서야 비로소 우리는 그 냄새를 맡았다.",
+      "chunks": [
+        "did we smell it.",
+        "Only after",
+        "the door",
+        "he opened"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-020",
+      "unitId": "u-09",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "You need to __1__ yourself to the awkwardness of life. __2__ if you find __3__ within yourself, __4__ you find true connection with others.",
+      "blanks": [
+        "resign",
+        "Only",
+        "peace",
+        "will"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-09-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-09-001",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0919",
+      "front": "awkwardness",
+      "back": {
+        "meaningKo": "어색함, 뜻대로 굴러가지 않는 껄끄러움",
+        "nuance": "'민망함'을 넘어 '삶이 매끄럽지 않다'까지 품는 말. 고치라는 게 아니라 받아들이라는 것이 집시의 처방.",
+        "context": "You need to resign yourself to the awkwardness of life. — Gypsy, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-002",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0920",
+      "front": "condescending",
+      "back": {
+        "meaningKo": "잘난 척하며 깔보는",
+        "nuance": "겉으론 친절한데 상대를 아래에 두는 태도. '그는 배우는 중'이라는 한마디에서 제시가 읽어 낸 것.",
+        "context": "that's WAY condescending — Jesse, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-003",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0913",
+      "front": "tedious",
+      "back": {
+        "meaningKo": "지루하게 한없이 늘어지는",
+        "nuance": "boring이 '재미없다'라면 tedious는 '끝없이 이어져 진이 빠진다'.",
+        "context": "a tedious collection of hours — Jesse, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-004",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0921",
+      "front": "opportunist",
+      "back": {
+        "meaningKo": "기회를 이용해 먹는 사람",
+        "nuance": "opportunity에서 왔지만 뜻은 부정적. '수완가'가 아니라 '얌체'에 가깝다.",
+        "context": "if opportunists like that, ever had to tell the real truth — Jesse, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-005",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0915",
+      "front": "mannerism",
+      "back": {
+        "meaningKo": "(그 사람 특유의) 버릇, 몸짓",
+        "nuance": "한국어 '매너'와 무관. 반복되다 결국 거슬리게 되는 그 사람만의 습관.",
+        "context": "you'd start to hate a lot of my mannerisms — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-09-006",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0909",
+      "front": "stardust",
+      "back": {
+        "meaningKo": "별먼지",
+        "nuance": "집시가 돈을 받아 들고 돌아서서 남기는 마지막 말. 사실이자 축복.",
+        "context": "Everything we know, is stardust. — Gypsy, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-007",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0924",
+      "front": "resign oneself to",
+      "back": {
+        "meaningKo": "~을 어쩔 수 없다고 받아들이다, 체념하고 순응하다",
+        "nuance": "사표의 resign과 같은 단어지만 재귀대명사 + to가 붙으면 뜻이 바뀐다. to 뒤는 명사·동명사.",
+        "context": "resign yourself to the awkwardness of life — Gypsy, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-008",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0925",
+      "front": "be sick to death of",
+      "back": {
+        "meaningKo": "~에 이골이 나다, 진저리가 나다",
+        "nuance": "be sick of의 최상급. 사람들이 자기 자신을 미워하는 이유로 제시가 드는 말.",
+        "context": "they are sick to death of being around themselves — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-09-009",
+      "unitId": "u-09",
+      "kind": "vocab",
+      "wordId": "w-0926",
+      "front": "get away from",
+      "back": {
+        "meaningKo": "~에게서 벗어나다, ~을 떠나다",
+        "nuance": "get away from it all이 '다 잊고 떠나다'인데, 제시는 그 대상을 자기 자신으로 뒤집는다.",
+        "context": "it‘s myself that I wish I could get away from. — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-09-010",
+      "unitId": "u-09",
+      "kind": "pattern",
+      "front": "\"자기 안에서 평화를 찾아야만, 비로소 남들과 진짜로 통한다\" — 영어로?",
+      "back": {
+        "pattern": "Only if/when/after + 주어 + 동사 ~, + 조동사 + 주어 + 동사원형",
+        "explanation": "Only가 문두에 서면 뒤따르는 주절이 뒤집힌다. 종속절(you find)은 손대지 않는 것이 핵심.",
+        "anchor": "Only if you find peace within yourself, will you find true connection with others. — Gypsy, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-09-011",
+      "unitId": "u-09",
+      "kind": "pattern",
+      "front": "\"내가 정말 벗어나고 싶은 건 다름 아닌 나 자신이야\" — 영어로?",
+      "back": {
+        "pattern": "It is + 강조할 말 + that + 나머지",
+        "explanation": "It is와 that을 지웠을 때 원래 문장이 온전히 복원되면 강조구문이다. 부서지면 가주어.",
+        "anchor": "It‘s just, usually, it‘s myself that I wish I could get away from. — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-09-012",
+      "unitId": "u-09",
+      "kind": "trap",
+      "front": "Only if you find peace within yourself, you will find true connection with others. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "문두 Only에 대한 도치가 빠졌다. 뒤집을 곳은 주절이다 → ..., will you find true connection with others. (종속절 you find는 그대로 둔다.)",
+        "relatedRuleId": "r2"
+      }
+    },
+    {
+      "cardId": "c-09-013",
+      "unitId": "u-09",
+      "kind": "trap",
+      "front": "Never I have been anywhere that I haven't been. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "문두 부정어 뒤에는 조동사가 주어 앞으로 나온다 → Never have I been anywhere that I haven't been. 조동사가 없으면 do/does/did를 꺼낸다.",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-09-014",
+      "unitId": "u-09",
+      "kind": "trap",
+      "front": "Why is it that are you always so late? — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "의문의 어순은 Why is it까지에서 이미 끝났다. that 뒤는 평서문 그대로 → Why is it that you are always so late?",
+        "relatedRuleId": "r6"
+      }
+    },
+    {
+      "cardId": "c-09-015",
+      "unitId": "u-09",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "카페 테라스, 손금을 봐 준 집시가 셀린에게 남기고 간 처방 — 통으로 떠올려 보세요.",
+      "back": {
+        "en": "You need to resign yourself to the awkwardness of life. Only if you find peace within yourself, will you find true connection with others.",
+        "speaker": "Gypsy",
+        "chapter": 9
+      }
+    }
+  ]
+}

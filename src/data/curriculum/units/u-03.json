@@ -1,0 +1,1135 @@
+{
+  "unit": {
+    "unitId": "u-03",
+    "act": 1,
+    "order": 3,
+    "title": "얼버무림·완충",
+    "tagline": "말을 걸기 전에 먼저 말을 부드럽게 만드는, 셀린의 세 겹 방어막",
+    "anchors": [
+      {
+        "en": "Well, supposedly, men lose the ability to hear higher-pitched sounds, and women eventually lose hearing in the low end. I guess they sort of nullify each other, or something.",
+        "ko": "그게, 듣기로는 남자는 높은 소리를 못 듣게 되고, 여자는 결국 낮은 소리를 못 듣게 된대. 뭐, 서로 상쇄되는 셈인가 봐, 뭐 그런 거지.",
+        "source": "before-sunrise",
+        "chapter": 1,
+        "speaker": "Céline",
+        "sceneNote": "부다페스트발 빈행 기차. 앞자리 노부부가 싸우는 걸 계기로 낯선 남자와 처음 말을 섞는 순간. 셀린은 자기 지식을 자랑하는 대신 supposedly로 출처를 흐리고, I guess로 문두를, sort of로 동사를, or something으로 말끝을 감싼다. 한 문장에 완충재가 세 겹 — 확신이 없어서가 아니라, 처음 보는 사람 앞에서 단정하지 않으려는 예의다."
+      },
+      {
+        "en": "I guess. Nature's way of allowing couples to grow old together without killing each other.",
+        "ko": "그러게. 부부가 서로 안 죽이고 같이 늙어 갈 수 있게 하는 자연의 방식인가 보네.",
+        "source": "before-sunrise",
+        "chapter": 1,
+        "speaker": "Jesse",
+        "sceneNote": "셀린의 말을 받는 제시의 첫 응답. I guess. 한 마디만 던져 놓고 농담을 잇는다. 완충어는 상대의 얼버무림에 같은 톤으로 맞춰 주는 장치이기도 하다 — 여기서 두 사람의 말투가 처음으로 포개진다."
+      },
+      {
+        "en": "But, I don't know. It just kind of let me know how ambiguous everything was, you know, even death.",
+        "ko": "근데, 뭐랄까. 그냥 모든 게 얼마나 모호한 건지 알게 해 준 것 같아. 죽음까지도.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "라운지 칸. 세 살 때 죽은 증조할머니를 물안개 속에서 봤다는 긴 이야기의 마지막 문장. 영화에서 제시가 내놓는 가장 큰 결론인데도 I don't know와 just kind of로 눌러 놓는다. 무거운 말일수록 완충재를 더 두껍게 대는 것 — 이게 영어 구어의 기본 예의다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "완충 3종 세트: I guess / sort of / or something",
+        "body": "영어는 단정을 피할 때 문장의 앞·중간·끝을 각각 다른 장치로 감싼다. 문두 I guess(~인 것 같아), 동사·형용사 앞 sort of(좀), 문미 or something(뭐 그런 거). 셀린의 \"I guess they sort of nullify each other, or something.\"이 셋을 한 문장에 다 쓴 교과서다. 셋 다 뜻을 바꾸지 않는다 — 문장의 세기만 낮춘다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "sort of / kind of는 꾸밀 말 '앞'에 온다 ★최다 실수",
+        "body": "한국어 '좀'은 어디든 붙지만 영어는 자리가 고정이다. 형용사 앞(It's kind of weird.), 동사 앞(it kind of haunts me), 명사구 앞(kind of a big deal). ❌ It's weird kind of. / ❌ I like it sort of. 는 무너진 문장이다. 구어 발음은 kinda / sorta.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "문장 중간의 I don't know는 '모른다'가 아니다",
+        "body": "It's just, I don't know, an observation about Europe. 여기서 제시는 모르지 않는다. 문장 중간에 낀 I don't know(구어로 I dunno)는 '내 말이 절대적이진 않다'는 완충 신호다. 이걸 '나는 모른다'로 읽으면 문장 전체가 앞뒤가 안 맞게 된다. 진짜 모를 때는 I have no idea.나 I don't know + 의문사절로 온다.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "or something은 말끝을 닫지 않는 마감재",
+        "body": "문장 끝에 붙여 '정확히는 이게 아닐 수도 있다'며 여지를 남긴다. 명사 뒤에는 or something like that(as an interior designer, or a lawyer, or something like that — Céline, Ch 2), 문장 뒤에는 짧게 or something. 항상 맨 끝에만 온다 — 문장 중간에 끼울 수 없다.",
+        "isTrap": false
+      },
+      {
+        "id": "r5",
+        "title": "I think의 부정은 앞으로 당긴다 ★최다 실수",
+        "body": "한국어는 '아닌 것 같아'로 뒤를 부정하지만 영어는 부정을 주절로 끌어올린다. ⭕ I don't think it's a good idea. / ❌ I think it's not a good idea. 후자는 문법은 되지만 '아니라고 나는 생각한다'는 단정으로 들려 완충 효과가 사라진다. I don't suppose / I don't believe도 같은 규칙.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "maybe·probably·a little의 자리와 세기",
+        "body": "maybe는 문두(Maybe we should meet here in five years — Céline, Ch 22), probably는 be동사 뒤·일반동사 앞(I'd probably be hanging around the airport — Jesse, Ch 12). 세기는 maybe(50%) < probably(80%). ❌ I probably would say no.보다 ⭕ I'd probably say no.가 자연스럽다. a little은 형용사·부사 앞에서 '좀'(I feel a little awkward — Jesse, Ch 4).",
+        "isTrap": true
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "I guess it's kind of my fault, or something.",
+        "ko": "뭐, 내 잘못인 것 같기도 하고, 그런 거지."
+      },
+      {
+        "en": "I don't think that's a good idea — I mean, I don't know, maybe I'm wrong.",
+        "ko": "그건 좋은 생각 같지 않은데 — 뭐, 잘은 모르겠지만, 내가 틀렸을 수도 있고."
+      },
+      {
+        "en": "She was sort of upset, I think, but she didn't really say anything.",
+        "ko": "걔가 좀 속상했던 것 같기도 한데, 딱히 아무 말은 안 했어."
+      },
+      {
+        "en": "It's a little late to call him, isn't it? I'd probably just send a text.",
+        "ko": "지금 전화하기엔 좀 늦었지 않아? 나 같으면 그냥 문자 보낼 것 같아."
+      },
+      {
+        "en": "In a way, we more or less agreed on everything, I guess.",
+        "ko": "어떻게 보면 우리 대체로 다 동의한 셈이지, 아마도."
+      }
+    ],
+    "coverage": {
+      "fromScript": 6,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0301",
+      "lemma": "argue",
+      "level": "L1",
+      "meaningKo": "말다툼하다, 언쟁하다",
+      "definitionEn": "to disagree with someone, often in an angry way",
+      "nuance": "'논증하다'보다 이 장면에서는 부부의 티격태격. argue about + 다투는 주제.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Do you have any idea what they were arguing about?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0302",
+      "lemma": "glance",
+      "level": "L1",
+      "meaningKo": "흘깃 보다, 눈길을 들다",
+      "definitionEn": "to look at something quickly",
+      "nuance": "stare(빤히 응시)의 반대편. 셀린이 책에서 눈을 들어 올리는 이 한 동작이 영화의 출발점.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Glances up at him, looks over",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0303",
+      "lemma": "explosion",
+      "level": "L1",
+      "meaningKo": "폭발",
+      "definitionEn": "a sudden violent bursting with noise",
+      "nuance": "explode의 명사형. 비행기 공포를 말하며 셀린이 '보인다'고 하는 그 장면의 이미지.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "When I'm in a plane, I can see it. I can see the explosion",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0304",
+      "lemma": "magical",
+      "level": "L1",
+      "meaningKo": "마법 같은, 홀린 듯 아름다운",
+      "definitionEn": "wonderful and exciting in a way that seems unreal",
+      "nuance": "magic의 형용사. 사실 서술이 아니라 '그때가 신비롭게 좋았다'는 회상의 어휘.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0305",
+      "lemma": "supposedly",
+      "level": "L2",
+      "meaningKo": "듣기로는, 그렇다고들 하는데",
+      "definitionEn": "according to what people say, though it may not be true",
+      "nuance": "부사 하나로 '내 주장이 아니라 들은 얘기'라고 선을 긋는다. 셀린이 청력 이야기 맨 앞에 깔아 둔 첫 완충재.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Well, supposedly, men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0306",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 시간이 지나면",
+      "definitionEn": "in the end, especially after a long time",
+      "nuance": "finally(드디어)와 달리 '오랜 시간이 흐른 뒤 언젠가'의 결. 노화를 말하는 데 딱 맞는 부사.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "women eventually lose hearing in the low end",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0307",
+      "lemma": "higher-pitched",
+      "level": "L2",
+      "meaningKo": "음이 더 높은, 고음의",
+      "definitionEn": "having a higher sound frequency",
+      "nuance": "pitch가 소리의 높낮이. high-pitched voice(새된 목소리)로 자주 결합한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0308",
+      "lemma": "ordinarily",
+      "level": "L2",
+      "meaningKo": "평소 같으면, 보통은",
+      "definitionEn": "usually; under normal circumstances",
+      "nuance": "뒤에 반드시 '그런데 지금은 아니다'가 따라온다. 제시도 '평소라면 안 했을 생각'이라는 뜻으로 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0309",
+      "lemma": "straight",
+      "level": "L2",
+      "meaningKo": "연속으로, 내리",
+      "definitionEn": "continuously, without a break",
+      "nuance": "시간 표현 뒤에 붙여 '쉬지 않고'. for a year straight = 1년 내내. '똑바로'와 같은 단어다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "twenty-four hours a day for a year straight",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0310",
+      "lemma": "capture",
+      "level": "L2",
+      "meaningKo": "(카메라·글로) 담아내다, 포착하다",
+      "definitionEn": "to succeed in showing or recording something",
+      "nuance": "'붙잡다'에서 확장된 뜻. capture the moment / capture a feeling이 흔한 결합.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "twenty-four hour documents of real time, right, capturing life as it's lived",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0311",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않는, 연속적인",
+      "definitionEn": "happening or existing without stopping",
+      "nuance": "continual(끊겼다 이어지는 반복)과 다르다. continuous는 중간이 비지 않는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0312",
+      "lemma": "mean",
+      "level": "L2",
+      "meaningKo": "심술궂은, 못되게 구는",
+      "definitionEn": "unkind or cruel to other people",
+      "nuance": "'의미하다'만 알고 있으면 이 문장을 통째로 놓친다. be mean about/to someone = ~에게 못되게 굴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "No one was ever mean about it.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0313",
+      "lemma": "officially",
+      "level": "L2",
+      "meaningKo": "공식적으로, 대놓고",
+      "definitionEn": "in a formal or publicly acknowledged way",
+      "nuance": "여기서는 '떳떳하게, 명분을 갖고'. 부모가 다정하면 대놓고 불평할 명분이 없다는 셀린의 논리.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0314",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "옅은 안개, 물안개",
+      "definitionEn": "a thin cloud of tiny drops of water in the air",
+      "nuance": "fog보다 옅다. 여기서는 정원 호스에서 뿜어져 나온 물보라.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0315",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "(호스·분무기의) 노즐, 물 나오는 주둥이",
+      "definitionEn": "the narrow end of a pipe or hose where liquid comes out",
+      "nuance": "손을 놓는 순간 물줄기가 끊기고 할머니가 사라진다 — 이 단어가 장면 전체의 스위치다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I let go of the nozzle, you know, and then I dropped the hose",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0316",
+      "lemma": "suck",
+      "level": "L2",
+      "meaningKo": "형편없다, 최악이다",
+      "definitionEn": "to be very bad or unpleasant",
+      "nuance": "It sucked. = 별로였어. 원뜻은 '빨다'. 격의 없는 사이에서만 쓴다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Yeah, sure, yeah, it's been, umm...it sucked.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0317",
+      "lemma": "nullify",
+      "level": "L3",
+      "meaningKo": "상쇄하다, 무효로 만들다",
+      "definitionEn": "to make something lose its effect or legal force",
+      "nuance": "null(무(無))에서 온 법률·과학 어휘. 그 딱딱한 단어를 노부부 얘기에 끌어다 쓰니 농담이 된다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0318",
+      "lemma": "service-oriented",
+      "level": "L3",
+      "meaningKo": "손님 응대에 신경 쓰는, 서비스 중심의",
+      "definitionEn": "focused on providing good service to customers",
+      "nuance": "-oriented = ~지향의(result-oriented, family-oriented). 웨이터가 메뉴만 던지고 가자 제시가 흘리듯 내놓는 유럽 관찰.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You know what? Not service-oriented.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0319",
+      "lemma": "I guess",
+      "level": "L4",
+      "meaningKo": "~인 것 같아, 뭐 아마도",
+      "definitionEn": "used to show that you are not completely certain about what you say",
+      "nuance": "실제로 추측한다기보다 단정을 피하려고 문두에 붙인다. 미국 구어에서 I think보다 가볍고 책임이 덜하다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0320",
+      "lemma": "sort of",
+      "level": "L4",
+      "meaningKo": "좀, 약간, 어느 정도",
+      "definitionEn": "to some extent; not exactly",
+      "nuance": "kind of와 거의 같은 말. 반드시 꾸밀 말 '앞'에 놓는다(sort of weird). 뒤에 붙이면 문장이 무너진다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "they sort of nullify each other",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0321",
+      "lemma": "or something",
+      "level": "L4",
+      "meaningKo": "~인가 뭔가, 그런 거지",
+      "definitionEn": "used at the end of a statement to show you are not being exact",
+      "nuance": "문장 끝에 붙여 말을 닫지 않고 열어 둔다. 명사 뒤에는 or something like that으로 길게 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0322",
+      "lemma": "kind of",
+      "level": "L4",
+      "meaningKo": "좀, 약간",
+      "definitionEn": "to some degree; rather",
+      "nuance": "구어 발음은 kinda. 동사 앞(kind of haunts me)에도, 형용사 앞(kind of weird)에도, 명사구 앞(kind of a psycho)에도 온다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the thing that kind of haunts me is the distribution",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0323",
+      "lemma": "I don't know",
+      "level": "L4",
+      "meaningKo": "글쎄, 뭐랄까 (말을 무르는 삽입구)",
+      "definitionEn": "used in the middle of a sentence to soften what you are saying",
+      "nuance": "문장 중간에 오면 '모른다'가 아니라 '내 말이 절대적이진 않다'는 신호. 축약형은 I dunno.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I don't know, an observation about Europe",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0324",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "머릿속이 하얘지다",
+      "definitionEn": "to suddenly become unable to remember or think of anything",
+      "nuance": "my mind went blank가 통째로 묶인 결합. 발표·시험에서 쓰는 바로 그 표현이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0325",
+      "lemma": "be headed",
+      "level": "L4",
+      "meaningKo": "~로 향하다, ~로 가는 길이다",
+      "definitionEn": "to be going in a particular direction",
+      "nuance": "Where are you headed?는 '어디 가세요?'의 가장 흔한 구어. head to/for + 장소로도 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "So, where are you headed?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0326",
+      "lemma": "on one's own",
+      "level": "L4",
+      "meaningKo": "혼자서, 혼자 힘으로",
+      "definitionEn": "alone, without other people",
+      "nuance": "alone보다 '스스로 택한 혼자'의 결이 있다. by oneself와 거의 같은 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You were visiting friends, or just on your own?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0327",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "나도 어쩔 수가 없다",
+      "definitionEn": "to be unable to stop or control something",
+      "nuance": "여기서 help는 '돕다'가 아니라 '막다'. can't help ~ing(~하지 않을 수 없다)와 한 뿌리.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't help it. I can't help it. I know the statistics say na-na-na",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0328",
+      "lemma": "bullshit detector",
+      "level": "L4",
+      "meaningKo": "허풍 감지기 (거짓말을 알아채는 감각)",
+      "definitionEn": "an instinct for sensing when someone is lying or exaggerating",
+      "nuance": "bullshit은 거친 말이라 자리를 가려야 한다. detector를 붙여 '내 안의 센서'처럼 농담조로 쓴다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-03",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I always had a pretty good bullshit detector when I was a kid",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-03-001",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "nullify — \"I guess they sort of nullify each other, or something.\"",
+      "wordId": "w-0317",
+      "options": [
+        "서로를 상쇄하다, 무효로 만들다",
+        "서로를 흉내 내다",
+        "서로를 더 강하게 만들다",
+        "서로를 못 본 척하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-007"
+    },
+    {
+      "quizId": "q-03-002",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "supposedly — \"Well, supposedly, men lose the ability to hear higher-pitched sounds\"",
+      "wordId": "w-0305",
+      "options": [
+        "확실히, 틀림없이",
+        "어쩔 수 없이",
+        "듣기로는, 그렇다고들 하는데",
+        "완전히, 남김없이"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-006"
+    },
+    {
+      "quizId": "q-03-003",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "or something — \"I guess they sort of nullify each other, or something.\"",
+      "wordId": "w-0321",
+      "options": [
+        "다른 걸 골라야 한다는 뜻",
+        "~인가 뭔가, 그런 거지 (단정을 피하는 마감)",
+        "특별한 무언가가 있다는 뜻",
+        "그 밖에는 아무것도 없다는 뜻"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-003"
+    },
+    {
+      "quizId": "q-03-004",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "go blank — \"I look at this woman, and my mind goes completely blank\"",
+      "wordId": "w-0324",
+      "options": [
+        "머릿속이 또렷해지다",
+        "화가 치밀어 오르다",
+        "말문이 트이다",
+        "머릿속이 하얘지다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-008"
+    },
+    {
+      "quizId": "q-03-005",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "can't help it — \"I can't help it. I know the statistics say na-na-na, it's safer\"",
+      "wordId": "w-0327",
+      "options": [
+        "그건 도와줄 수가 없다",
+        "도와줄 사람이 아무도 없다",
+        "나도 어쩔 수가 없다",
+        "도움 따위는 필요 없다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-009"
+    },
+    {
+      "quizId": "q-03-006",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "I guess they ___ nullify each other, or something. (Céline, Ch 1)",
+      "options": [
+        "sort of",
+        "of sort",
+        "sorts of",
+        "sort"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-007",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "'이거 좀 이상하다' — 자연스러운 것은? This is ___.",
+      "options": [
+        "weird kind of",
+        "kind weird of",
+        "kind of weird",
+        "weird of kind"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-008",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "'그건 좋은 생각이 아닌 것 같아' — 가장 영어다운 것은?",
+      "options": [
+        "I think it's not a good idea.",
+        "I don't think it's a good idea.",
+        "I think that is not a good idea, no?",
+        "It's not a good idea, I think so."
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-009",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "'아마 공항에서 어슬렁대고 있었겠지' — I'd ___ hanging around the airport.",
+      "options": [
+        "be probably",
+        "probably being",
+        "maybe being",
+        "probably be"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-010",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "\"I guess they sort of nullify each other, or something.\"에는 완충 장치가 세 개 겹쳐 있다.",
+      "isCorrect": true,
+      "explanation": "문두 I guess, 동사 앞 sort of, 문미 or something — 앞·중간·끝을 각각 다른 장치로 감쌌다. 셋 다 뜻은 그대로 두고 문장의 세기만 낮춘다.",
+      "relatedRuleId": "r1",
+      "srsCardId": "c-03-001"
+    },
+    {
+      "quizId": "q-03-011",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "\"It's just, I don't know, an observation about Europe.\"에서 I don't know는 '나는 모른다'는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "제시는 모르지 않는다. 문장 중간에 낀 I don't know는 '내 말이 절대적이진 않다'는 완충 신호다. 진짜 모를 때는 I have no idea.나 I don't know + 의문사절로 온다.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-03-013"
+    },
+    {
+      "quizId": "q-03-012",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "'좀 어색해'를 It's awkward kind of.라고 말할 수 있다.",
+      "isCorrect": false,
+      "explanation": "kind of는 꾸밀 말 앞에만 온다. → It's kind of awkward. 한국어 '좀'처럼 뒤에 붙이면 문장이 무너진다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-03-012"
+    },
+    {
+      "quizId": "q-03-013",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "I think it's not right.보다 I don't think it's right.가 영어답다.",
+      "isCorrect": true,
+      "explanation": "영어는 부정을 주절로 끌어올린다. I think it's not right.는 문법은 되지만 '아니라고 나는 생각한다'는 단정으로 들려 완충 효과가 사라진다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-03-014"
+    },
+    {
+      "quizId": "q-03-014",
+      "unitId": "u-03",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 1)",
+      "chunks": [
+        "nullify each other,",
+        "I guess",
+        "or something.",
+        "they sort of"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-03-010"
+    },
+    {
+      "quizId": "q-03-015",
+      "unitId": "u-03",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "how ambiguous everything was,",
+        "It just kind of let me know",
+        "even death.",
+        "But, I don't know.",
+        "you know,"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-016",
+      "unitId": "u-03",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "I guess.",
+        "I'd probably",
+        "the same thing,",
+        "say"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-017",
+      "unitId": "u-03",
+      "type": "koToEn",
+      "prompt": "그건 좀 이상한 것 같아.",
+      "chunks": [
+        "kind of",
+        "I think",
+        "strange.",
+        "it's"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-018",
+      "unitId": "u-03",
+      "type": "koToEn",
+      "prompt": "그게 그렇게 좋은 생각인 것 같지는 않아.",
+      "chunks": [
+        "a good idea.",
+        "I don't think",
+        "that's",
+        "really"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-019",
+      "unitId": "u-03",
+      "type": "koToEn",
+      "prompt": "글쎄, 뭐 나 좀 피곤한 것 같아.",
+      "chunks": [
+        "tired.",
+        "I guess",
+        "I don't know,",
+        "I'm kind of"
+      ],
+      "answer": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-020",
+      "unitId": "u-03",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "Well, supposedly, men lose the ability to hear higher-pitched sounds, and women eventually lose hearing in the low end. __1__ they __2__ __3__ each other, __4__.",
+      "blanks": [
+        "I guess",
+        "sort of",
+        "nullify",
+        "or something"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-03-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-03-001",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0319",
+      "front": "I guess",
+      "back": {
+        "meaningKo": "~인 것 같아, 뭐 아마도",
+        "nuance": "단정을 피하려고 문두에 붙인다. I think보다 가볍고 책임이 덜하다.",
+        "context": "I guess they sort of nullify each other, or something. — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-03-002",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0320",
+      "front": "sort of",
+      "back": {
+        "meaningKo": "좀, 약간, 어느 정도",
+        "nuance": "반드시 꾸밀 말 앞에 놓는다(sort of weird). 뒤에 붙이면 문장이 무너진다.",
+        "context": "they sort of nullify each other — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-03-003",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0321",
+      "front": "or something",
+      "back": {
+        "meaningKo": "~인가 뭔가, 그런 거지",
+        "nuance": "문장 맨 끝에만 온다. 말을 닫지 않고 여지를 남기는 마감재.",
+        "context": "I guess they sort of nullify each other, or something. — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-03-004",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0322",
+      "front": "kind of",
+      "back": {
+        "meaningKo": "좀, 약간",
+        "nuance": "구어 발음 kinda. 동사 앞·형용사 앞·명사구 앞 모두 가능하지만 뒤에는 못 붙인다.",
+        "context": "the thing that kind of haunts me is the distribution — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-03-005",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0323",
+      "front": "I don't know (문장 중간)",
+      "back": {
+        "meaningKo": "글쎄, 뭐랄까",
+        "nuance": "'모른다'가 아니라 '내 말이 절대적이진 않다'는 신호. 축약형 I dunno.",
+        "context": "It's just, I don't know, an observation about Europe. — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-03-006",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0305",
+      "front": "supposedly",
+      "back": {
+        "meaningKo": "듣기로는, 그렇다고들 하는데",
+        "nuance": "부사 하나로 '내 주장이 아니라 들은 얘기'라고 선을 긋는다.",
+        "context": "Well, supposedly, men lose the ability to hear higher-pitched sounds — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-03-007",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0317",
+      "front": "nullify",
+      "back": {
+        "meaningKo": "상쇄하다, 무효로 만들다",
+        "nuance": "법률·과학 어휘. 노부부 얘기에 끌어다 쓰니 농담이 된다.",
+        "context": "I guess they sort of nullify each other — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-03-008",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0324",
+      "front": "go blank",
+      "back": {
+        "meaningKo": "머릿속이 하얘지다",
+        "nuance": "my mind went blank가 통째 결합. 발표·시험에서 쓰는 그 표현.",
+        "context": "my mind goes completely blank — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-03-009",
+      "unitId": "u-03",
+      "kind": "vocab",
+      "wordId": "w-0327",
+      "front": "can't help it",
+      "back": {
+        "meaningKo": "나도 어쩔 수가 없다",
+        "nuance": "help는 '돕다'가 아니라 '막다'. can't help ~ing와 한 뿌리.",
+        "context": "I can't help it. I can't help it. — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-03-010",
+      "unitId": "u-03",
+      "kind": "pattern",
+      "front": "\"뭐, 서로 상쇄되는 셈인가 봐, 그런 거지\" — 단정하지 않고 영어로?",
+      "back": {
+        "pattern": "I guess + 주어 + sort of + 동사 ~, or something.",
+        "explanation": "문두·중간·문미를 각각 다른 완충어로 감싼다. 셋을 겹칠수록 주장의 무게가 가벼워진다.",
+        "anchor": "I guess they sort of nullify each other, or something. — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-03-011",
+      "unitId": "u-03",
+      "kind": "pattern",
+      "front": "\"그게 좀 계속 마음에 걸려\" — 동사를 눌러 말하려면?",
+      "back": {
+        "pattern": "주어 + kind of + 동사 (형용사면 It's kind of + 형용사)",
+        "explanation": "kind of는 늘 꾸밀 말 앞. 동사 앞에 두면 동작의 세기가, 형용사 앞에 두면 상태의 세기가 낮아진다.",
+        "anchor": "the thing that kind of haunts me is the distribution — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-03-012",
+      "unitId": "u-03",
+      "kind": "trap",
+      "front": "It's awkward kind of. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "kind of / sort of는 꾸밀 말 앞에만 온다. → It's kind of awkward. 한국어 '좀'처럼 뒤에 붙일 수 없다.",
+        "relatedRuleId": "r2"
+      }
+    },
+    {
+      "cardId": "c-03-013",
+      "unitId": "u-03",
+      "kind": "trap",
+      "front": "\"It's just, I don't know, an observation about Europe.\"의 I don't know를 '나는 모른다'로 읽어도 되나?",
+      "back": {
+        "verdict": false,
+        "reason": "문장 중간의 I don't know는 완충재다. '내 말이 절대적이진 않다'는 신호일 뿐 지식의 부재가 아니다. 진짜 모를 때는 I have no idea.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-03-014",
+      "unitId": "u-03",
+      "kind": "trap",
+      "front": "I think it's not a good idea. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "영어는 부정을 주절로 당긴다. → I don't think it's a good idea. 원문장은 '아니라고 나는 생각한다'는 단정으로 들려 완충이 사라진다.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-03-015",
+      "unitId": "u-03",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "기차에서 처음 말을 섞던 순간, 셀린이 자기 설명을 세 겹으로 감싸던 그 문장 — 통으로 떠올려 보세요.",
+      "back": {
+        "en": "Well, supposedly, men lose the ability to hear higher-pitched sounds, and women eventually lose hearing in the low end. I guess they sort of nullify each other, or something.",
+        "speaker": "Céline",
+        "chapter": 1
+      }
+    }
+  ]
+}

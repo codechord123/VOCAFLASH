@@ -1,0 +1,1097 @@
+{
+  "unit": {
+    "unitId": "u-13",
+    "act": 4,
+    "order": 13,
+    "title": "wish + 과거완료 / 후회",
+    "tagline": "다시 만날 수 없을지도 모르는 밤 — 아쉬움이 시제를 한 칸씩 뒤로 미는 소리",
+    "anchors": [
+      {
+        "en": "I wish I had met you earlier, you know, I really like talking to you.",
+        "ko": "더 일찍 만났더라면 좋았을 텐데요. 저, 당신하고 얘기하는 게 정말 좋아요.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "빈에 도착해 제시가 내려야 하는 순간. 몇 시간 떠들다가 이제 끝인가 싶을 때, 처음으로 아쉬움이 새어 나온다. 이미 지나간 시간을 되돌릴 수 없으니 had met — 이 영화 전체가 이 한 문장의 아쉬움에서 시작해 '그럼 지금 같이 내리자'는 제안으로 이어진다."
+      },
+      {
+        "en": "So often in my life I've been with people and shared beautiful moments like travelling, or staying up all night and watching the sunrise, and I knew those were special moments. But something was always wrong. I wished I'd been with someone else.",
+        "ko": "살면서 참 자주, 누군가와 함께 아름다운 순간들을 보냈어요. 여행이라든가, 밤을 새워 해 뜨는 걸 본다든가. 특별한 순간인 줄도 알았고요. 그런데 늘 뭔가가 어긋나 있었어요. 그때마다 나는, 옆에 있는 사람이 이 사람이 아니었으면 했어요.",
+        "source": "before-sunrise",
+        "chapter": 19,
+        "speaker": "Céline",
+        "sceneNote": "새벽 공원에 나란히 누워 와인을 마시며. 셀린은 지금의 아쉬움이 아니라 '그때 그 순간에 품었던 아쉬움'을 말한다. 그래서 wish가 아니라 wished, been이 아니라 I'd been — 시제가 한 겹 더 들어간다. 그리고 곧바로 But I'm happy to be with you로 뒤집는다."
+      },
+      {
+        "en": "I know what you mean about wishing somebody wasn't there though, It's just, usually, it's myself that I wish I could get away from.",
+        "ko": "누가 옆에 없었으면 싶은 그 마음, 무슨 말인지 알아요. 다만 내 경우엔 대개, 벗어나고 싶은 게 나 자신이라서요.",
+        "source": "before-sunrise",
+        "chapter": 19,
+        "speaker": "Jesse",
+        "sceneNote": "셀린의 고백을 받아 제시가 자기 얘기로 되돌린다. 지금도 여전히 벗어나지 못하고 있으니 could — I wish + 과거형이 '현재의 불가능'을 가리키는 가장 선명한 예. 뒤이어 But being with you...it's made me feel like I was somebody else로 이어지며, 이 밤이 왜 특별한지가 문법 하나로 설명된다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "I wish + 과거형 = 지금 그렇지 않아서 아쉽다",
+        "body": "wish 뒤가 과거형이면 아쉬움의 시점은 '지금'이다. 제시의 it's myself that I wish I could get away from은 지금도 자기 자신에게서 못 벗어나고 있다는 뜻이지, 과거 얘기가 아니다. I wish I could는 '할 수 있으면 좋겠는데 못 한다', I wish you were here는 '지금 네가 여기 없다'.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "I wish + had p.p. = 그때 그러지 못해서 아쉽다",
+        "body": "이미 끝난 일은 되돌릴 수 없으므로 한 칸 더 뒤로 민다. 제시의 I wish I had met you earlier는 '지금 만나서 좋다'가 아니라 '더 일찍 만나지 못한 게 아쉽다'이다. 아쉬워하는 시점은 여전히 지금(wish), 아쉬워하는 대상만 과거(had met)라는 점이 핵심.",
+        "isTrap": false
+      },
+      {
+        "id": "r3",
+        "title": "wish 뒤에서는 시제를 반드시 한 칸 뒤로 ★최다 실수",
+        "body": "한국어 '~하면 좋겠다'를 그대로 옮겨 현재형을 쓰는 것이 가장 흔한 실수다. ❌ I wish I can speak French → ⭕ I wish I could speak French. ❌ I wish I meet you earlier → ⭕ I wish I had met you earlier. be동사는 격식체에서 인칭과 무관하게 were를 쓴다(I wish I were taller). 구어에서는 I wish I was도 널리 쓰이지만, 시험·격식 글에서는 were가 안전하다.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "I wish는 안 될 일, I hope는 될 일",
+        "body": "wish는 '사실이 아니다'를 전제로 깔고, hope는 가능성을 열어 둔다. 그래서 여행 잘 다녀오라는 인사는 ⭕ I hope you have a good trip이고, ❌ I wish you have a good trip이라고 하면 '못 갈 것 같아 안됐다'는 결이 된다. 반대로 I wish you came는 '너 안 오잖아'라는 아쉬움이다. 예외는 관용구 — I wish you luck, I wish you a happy birthday처럼 '명사 두 개'를 주는 형태에서는 wish가 정상이다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "I wished I'd been ~ — 과거 그 시점의 아쉬움엔 한 겹 더",
+        "body": "아쉬워한 시점 자체가 과거면 wish도 과거로 민다. 셀린의 I wished I'd been with someone else는 '지금 아쉽다'가 아니라 '그 순간순간마다 아쉬웠다'이다. Ch 13에서 제시가 let it really sink in that she wished I hadn't come이라고 말하는 것도 같은 구조 — 주절이 과거라 wish도 wished가 된다. 한국인 학습자는 여기서 wish/was로 한 겹을 빠뜨린다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "(확장) 같은 아쉬움의 다른 얼굴들",
+        "body": "if only는 wish보다 감정이 세다 — If only we had exchanged numbers. should have p.p.는 '그랬어야 했는데 안 했다'는 자책으로, Ch 13에서 제시가 I should have told you this earlier, Céline이라고 운을 뗀다. regret -ing는 이미 한 일을, regret to say는 지금부터 할 말을 가리킨다. wish + would는 결이 다르다 — I wish you would stop checking your phone처럼 남의 습관에 대한 불평이라, 주어가 나 자신이면 성립하지 않는다(❌ I wish I would...).",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "I wish I had said something at the station instead of just watching the train pull away.",
+        "ko": "역에서 기차가 떠나는 걸 보고만 있지 말고 뭐라도 말했더라면 좋았을 텐데."
+      },
+      {
+        "en": "If only we had exchanged numbers — six months is a long time to wonder.",
+        "ko": "번호라도 주고받았더라면. 6개월은 궁금해하기에 너무 긴 시간이다."
+      },
+      {
+        "en": "I wish I were the kind of person who says goodbye well, but I never have been.",
+        "ko": "나도 작별 인사를 잘하는 사람이면 좋겠는데, 한 번도 그랬던 적이 없다."
+      },
+      {
+        "en": "She regretted not telling him how she felt while there was still time.",
+        "ko": "그녀는 아직 시간이 있을 때 마음을 말하지 않은 것을 후회했다."
+      },
+      {
+        "en": "I hope you have a great life — and I wish I could be there to see it.",
+        "ko": "네 인생이 멋지길 바라. 그리고 그걸 옆에서 볼 수 있으면 좋겠어."
+      }
+    ],
+    "coverage": {
+      "fromScript": 5,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-1301",
+      "lemma": "confession",
+      "level": "L2",
+      "meaningKo": "고백, 털어놓기",
+      "definitionEn": "an admission that you have done something wrong or kept something secret",
+      "nuance": "죄의 자백에도, 숨긴 사실을 털어놓는 데에도 쓴다. 제시는 '큰 고백'이라며 헤어진 여자친구 얘기를 꺼낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "Um, big confession, you know. I should have told you this earlier, Céline",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1302",
+      "lemma": "reunite",
+      "level": "L2",
+      "meaningKo": "다시 만나다, 재회하다",
+      "definitionEn": "to come together again after a period of separation",
+      "nuance": "re(다시)+unite(합치다). 설레는 단어인데, 제시의 재회는 도착하자마자 파국이 된다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "now we're reunited, at long last",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1303",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "약속, 맹세",
+      "definitionEn": "a serious promise to do or not do something",
+      "nuance": "promise보다 무겁다 — 결혼 서약(marriage vows)의 그 vow. 셀린은 '다시는 안 만나기로 한 약속'을 vow라고 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow, just so you can get LAID",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1304",
+      "lemma": "mannerism",
+      "level": "L2",
+      "meaningKo": "몸에 밴 말버릇·몸짓",
+      "definitionEn": "a habitual gesture or way of speaking that is typical of a person",
+      "nuance": "한국어 '매너리즘'(타성)과 뜻이 다르다. 한 사람을 알아보게 하는, 반복되는 사소한 버릇.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "then you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1305",
+      "lemma": "insecure",
+      "level": "L2",
+      "meaningKo": "자신 없는, 마음이 불안한",
+      "definitionEn": "lacking confidence in yourself",
+      "nuance": "'보안이 취약한'도 같은 단어. 사람에게 쓰면 자존감이 흔들리는 상태를 가리킨다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over...I'd be insecure",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1306",
+      "lemma": "rational",
+      "level": "L2",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "emotional의 반대. 다시는 안 만나기로 한 합의를 굳이 이 단어로 부르는 순간, 이미 그 결정은 흔들리고 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1307",
+      "lemma": "depressing",
+      "level": "L2",
+      "meaningKo": "우울하게 만드는, 서글픈",
+      "definitionEn": "making you feel sad and without hope",
+      "nuance": "-ing는 원인, -ed는 상태(I'm depressed). 전화도 편지도 하지 말자는 합의에 제시가 붙이는 한마디.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "And we won't call...or write or... / It's depressing.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1308",
+      "lemma": "fantasy",
+      "level": "L2",
+      "meaningKo": "환상, (혼자 그리는) 각본",
+      "definitionEn": "a pleasant situation that you imagine but that is not real",
+      "nuance": "'프랑스 여자를 만나 자고, 다시는 안 보고, 무용담으로 남긴다'는 각본을 셀린은 male fantasy라 부르며 거절한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "No, then it's like some male fantasy",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1309",
+      "lemma": "sunrise",
+      "level": "L1",
+      "meaningKo": "일출, 해가 뜨는 시각",
+      "definitionEn": "the time in the morning when the sun first appears",
+      "nuance": "이 영화의 제목이 걸려 있는 단어. before sunrise는 곧 '헤어지기 전까지'라는 뜻이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "staying up all night and watching the sunrise",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1310",
+      "lemma": "complicated",
+      "level": "L1",
+      "meaningKo": "복잡한, (감정이) 꼬인",
+      "definitionEn": "difficult to understand or deal with because of many parts",
+      "nuance": "구조가 복잡한 complex와 달리, 사람 사이가 '꼬여 있다'는 결로 자주 쓴다. It's complicated이 연애 상태를 가리키는 관용 표현인 것도 그래서다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "Why do we make everything so complicated?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1311",
+      "lemma": "awful",
+      "level": "L1",
+      "meaningKo": "끔찍한, 못 견딜 만큼 나쁜",
+      "definitionEn": "very bad or unpleasant",
+      "nuance": "terrible과 거의 같은 강도. 5년 뒤에 만나자는 제안에 셀린이 즉각 붙이는 반응이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "It's awful. It's like a sociological experiment.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1312",
+      "lemma": "freezing",
+      "level": "L1",
+      "meaningKo": "얼어붙을 듯이 추운",
+      "definitionEn": "extremely cold",
+      "nuance": "cold의 강조형으로 쓰는 구어. 6개월 뒤면 12월이라는 걸 셀린이 이 한 단어로 짚는다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "It's gonna be freezing.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1313",
+      "lemma": "asinine",
+      "level": "L3",
+      "meaningKo": "멍청하기 짝이 없는",
+      "definitionEn": "extremely stupid or foolish",
+      "nuance": "ass(당나귀)에서 온 말. 어려운 단어라 점잖아 보이지만 stupid보다 훨씬 신랄하다 — 전 여자친구의 프로그램을 깎아내리는 데 쓴다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "who has been on this asinine art history program for the last year",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1314",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지식인인 척하는, 아는 척하는",
+      "definitionEn": "pretending to be more intelligent or learned than one really is",
+      "nuance": "pseudo-는 '가짜'. 남을 비난하는 말인데, 제시는 자기 이야기 습관에 스스로 이 이름을 붙인다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1315",
+      "lemma": "sociological",
+      "level": "L3",
+      "meaningKo": "사회학적인",
+      "definitionEn": "relating to the study of society and human behavior",
+      "nuance": "sociology의 형용사. 두 사람의 재회를 '사회학 실험'이라 부르는 셀린의 냉소가 이 단어 하나에 담긴다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 22,
+          "context": "It's awful. It's like a sociological experiment.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1316",
+      "lemma": "be sick of",
+      "level": "L4",
+      "meaningKo": "~에 질리다, 넌더리가 나다",
+      "definitionEn": "to be tired of and annoyed by something",
+      "nuance": "sick(아픈)이 아니라 '질렸다'. of 뒤에는 명사나 동명사가 온다 — sick of waiting.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "So of course I'm sick of myself.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1317",
+      "lemma": "sick to death of",
+      "level": "L4",
+      "meaningKo": "죽을 만큼 지긋지긋하다",
+      "definitionEn": "to be extremely tired of and irritated by something",
+      "nuance": "be sick of의 최상급. to death가 강조 장치일 뿐 죽음과는 상관없다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "they are sick to death of being around themselves",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1318",
+      "lemma": "have people over",
+      "level": "L4",
+      "meaningKo": "집에 사람들을 초대하다",
+      "definitionEn": "to invite guests to your home",
+      "nuance": "over가 '우리 집 쪽으로'. have someone over / come over가 한 세트로 움직인다. invite보다 훨씬 일상적이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way every time that we would have people over",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1319",
+      "lemma": "get away from",
+      "level": "L4",
+      "meaningKo": "~에서 벗어나다, 빠져나오다",
+      "definitionEn": "to escape from someone or something",
+      "nuance": "escape보다 일상적이고 물리적 거리감이 옅다. 제시는 벗어나고 싶은 대상이 자기 자신이라고 말한다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "it's myself that I wish I could get away from",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1320",
+      "lemma": "sink in",
+      "level": "L4",
+      "meaningKo": "(사실이) 서서히 실감되다",
+      "definitionEn": "(of information) to become fully understood or felt over time",
+      "nuance": "물이 스며들듯 사실이 마음에 스며드는 이미지. let it sink in은 '실감이 날 때까지 그대로 둔다'는 뜻이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "just to kind of let it really sink in that she wished I hadn't come",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1321",
+      "lemma": "stick around",
+      "level": "L4",
+      "meaningKo": "떠나지 않고 좀 더 머무르다",
+      "definitionEn": "to stay in a place for a while longer",
+      "nuance": "떠날 수도 있었는데 남아 있었다는 결. 마드리드에서 제시가 며칠을 버틴 그 시간이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "and I stuck around for a while",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1322",
+      "lemma": "at long last",
+      "level": "L4",
+      "meaningKo": "드디어, 그 오랜 기다림 끝에",
+      "definitionEn": "finally, after a long period of waiting",
+      "nuance": "finally보다 기다림의 길이가 강조된다. 제시는 이걸 비꼬듯 얹어서, 재회가 얼마나 시시했는지를 드러낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "now we're reunited, at long last",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1323",
+      "lemma": "break up with",
+      "level": "L4",
+      "meaningKo": "~와 헤어지다",
+      "definitionEn": "to end a romantic relationship with someone",
+      "nuance": "with 없이 break up만 쓰면 '(둘이) 갈라서다'. 차인 쪽은 somebody breaking up with you로 표현한다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "when you remember how little you thought about the people you broke up with",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1324",
+      "lemma": "save up",
+      "level": "L4",
+      "meaningKo": "(목적을 두고) 돈을 모으다",
+      "definitionEn": "to keep money over time in order to buy or do something",
+      "nuance": "save가 '저축'이라면 save up은 목표가 붙은 저축. 봄 내내 모은 돈이 며칠 만에 물거품이 된다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 13,
+          "context": "I saved up my money all spring to uh, fly to Madrid",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1325",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "어쩔 수 없다, 나도 모르게 그렇게 된다",
+      "definitionEn": "to be unable to control or stop oneself",
+      "nuance": "여기서 help는 '돕다'가 아니라 '막다'. can't help -ing(~하지 않을 수 없다)와 같은 뿌리다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "It's not very adult. Maybe it's a female thing. I can't help it.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1326",
+      "lemma": "lose yourself",
+      "level": "L4",
+      "meaningKo": "자기 자신을 잊다, 푹 빠져들다",
+      "definitionEn": "to become so absorbed in something that you forget yourself",
+      "nuance": "'길을 잃다'가 아니라 자의식에서 놓여나는 해방. 제시는 그게 춤·술·약, 그리고 이 밤이라고 말한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-13",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the only other way to lose yourself like that is...you know, dancing",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-13-001",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "vow — \"I don't want you to break our vow\"",
+      "wordId": "w-1303",
+      "options": [
+        "집착, 미련",
+        "약속, 맹세",
+        "변명, 핑계",
+        "허풍, 과장"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-001"
+    },
+    {
+      "quizId": "q-13-002",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "mannerism — \"then you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-1304",
+      "options": [
+        "타성에 빠져 굳어 버린 상태",
+        "무례하고 거친 태도",
+        "몸에 밴 말버릇·몸짓",
+        "지켜야 할 예의범절"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-002"
+    },
+    {
+      "quizId": "q-13-003",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "asinine — \"this asinine art history program\"",
+      "wordId": "w-1313",
+      "options": [
+        "학구적이고 깊이 있는",
+        "멍청하기 짝이 없는",
+        "고집스럽고 완고한",
+        "값비싸고 사치스러운"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-004"
+    },
+    {
+      "quizId": "q-13-004",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "sink in — \"just to kind of let it really sink in that she wished I hadn't come\"",
+      "wordId": "w-1320",
+      "options": [
+        "가라앉아 사라지다",
+        "몰래 숨어들다",
+        "돈을 쏟아붓다",
+        "(사실이) 서서히 실감되다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-006"
+    },
+    {
+      "quizId": "q-13-005",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-1317",
+      "options": [
+        "죽을 만큼 지긋지긋하다",
+        "병이 나서 몸져눕다",
+        "죽도록 그리워하다",
+        "몹시 걱정하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-008"
+    },
+    {
+      "quizId": "q-13-006",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "(Jesse, Ch 2) I wish I ___ you earlier, you know, I really like talking to you.",
+      "options": [
+        "meet",
+        "had met",
+        "have met",
+        "will meet"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-007",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "(Jesse, Ch 19) It's just, usually, it's myself that I wish I ___ get away from.",
+      "options": [
+        "can",
+        "could",
+        "will",
+        "would have"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-008",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "플랫폼에서 건네는 작별 인사 — ___ you have a great life.",
+      "options": [
+        "I wish",
+        "I hope",
+        "I wished",
+        "I am wishing"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-009",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "(Jesse, Ch 13) I stuck around for a while, just to kind of let it really sink in that she ___ I hadn't come.",
+      "options": [
+        "wishes",
+        "wish",
+        "wished",
+        "will wish"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": "c-13-014"
+    },
+    {
+      "quizId": "q-13-010",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "'지금 프랑스어를 못 하는 게 아쉽다'를 I wish I can speak French.라고 말할 수 있다.",
+      "isCorrect": false,
+      "explanation": "wish 뒤에서는 시제를 한 칸 뒤로 민다. 현재의 아쉬움이어도 과거형이 온다. → I wish I could speak French.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-13-012"
+    },
+    {
+      "quizId": "q-13-011",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "여행 잘 다녀오라는 인사로 I wish you have a good trip.이라고 하면 된다.",
+      "isCorrect": false,
+      "explanation": "wish는 '그렇게 안 될 것'을 전제로 깔기 때문에 안됐다는 결이 된다. 실현 가능한 바람은 hope. → I hope you have a good trip.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-13-013"
+    },
+    {
+      "quizId": "q-13-012",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "제시의 I wish I had met you earlier.는 '지금이라도 만나서 다행'이 아니라 '더 일찍 만나지 못한 게 아쉽다'는 뜻이다.",
+      "isCorrect": true,
+      "explanation": "had met은 되돌릴 수 없는 과거를 가리킨다. 아쉬워하는 시점은 지금(wish), 아쉬움의 대상만 과거다. 그래서 이 문장 다음에 '그럼 지금 같이 내리자'는 제안이 이어질 수 있었다.",
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-013",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "I wish you would stop checking your phone.은 상대의 습관에 대한 불평의 결을 띤다.",
+      "isCorrect": true,
+      "explanation": "wish + would는 '남이 좀 안 그랬으면 좋겠다'는 불평 전용이다. 그래서 주어가 나 자신이면 성립하지 않는다(❌ I wish I would stop...).",
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-014",
+      "unitId": "u-13",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2 — 빈에서 내려야 하는 순간)",
+      "chunks": [
+        "you know,",
+        "I really like talking to you.",
+        "I wish",
+        "I had met you earlier,"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-13-010"
+    },
+    {
+      "quizId": "q-13-015",
+      "unitId": "u-13",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 19 — 새벽 공원)",
+      "chunks": [
+        "I wished",
+        "But something",
+        "with someone else.",
+        "was always wrong.",
+        "I'd been"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-13-011"
+    },
+    {
+      "quizId": "q-13-016",
+      "unitId": "u-13",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "that I wish",
+        "It's just, usually,",
+        "I could get away from.",
+        "it's myself"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-017",
+      "unitId": "u-13",
+      "type": "koToEn",
+      "prompt": "그 말은 그녀에게 하지 말았어야 했다.",
+      "chunks": [
+        "said that",
+        "I should",
+        "to her.",
+        "never have"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-018",
+      "unitId": "u-13",
+      "type": "koToEn",
+      "prompt": "지금 네가 여기 있으면 좋을 텐데.",
+      "chunks": [
+        "you were",
+        "right now.",
+        "I wish",
+        "here"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-019",
+      "unitId": "u-13",
+      "type": "koToEn",
+      "prompt": "그날 밤 작별 인사를 하지 않았더라면 좋았을 텐데.",
+      "chunks": [
+        "I hadn't",
+        "said goodbye",
+        "that night.",
+        "I wish"
+      ],
+      "answer": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-020",
+      "unitId": "u-13",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (Jesse, Ch 2 — 빈칸 4개)",
+      "text": "I wish I __1__ __2__ you earlier, you know, I really __3__ __4__ to you.",
+      "blanks": [
+        "had",
+        "met",
+        "like",
+        "talking"
+      ],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-13-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-13-001",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1303",
+      "front": "vow",
+      "back": {
+        "meaningKo": "약속, 맹세",
+        "nuance": "promise보다 무겁다 — 결혼 서약(marriage vows)의 그 vow.",
+        "context": "I don't want you to break our vow — Céline, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-002",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1304",
+      "front": "mannerism",
+      "back": {
+        "meaningKo": "몸에 밴 말버릇·몸짓",
+        "nuance": "한국어 '매너리즘'(타성)과 다르다. 그 사람을 알아보게 하는 반복 버릇.",
+        "context": "then you'd start to hate a lot of my mannerisms — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-003",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1305",
+      "front": "insecure",
+      "back": {
+        "meaningKo": "자신 없는, 마음이 불안한",
+        "nuance": "'보안이 취약한'도 같은 단어. 사람에게 쓰면 흔들리는 자존감.",
+        "context": "every time that we would have people over...I'd be insecure — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-004",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1313",
+      "front": "asinine",
+      "back": {
+        "meaningKo": "멍청하기 짝이 없는",
+        "nuance": "ass(당나귀)에서 온 말. 어려워 보이지만 stupid보다 신랄하다.",
+        "context": "this asinine art history program — Jesse, Ch 13"
+      }
+    },
+    {
+      "cardId": "c-13-005",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1314",
+      "front": "pseudo-intellectual",
+      "back": {
+        "meaningKo": "지식인인 척하는, 아는 척하는",
+        "nuance": "pseudo-는 '가짜'. 제시는 이 말을 자기 자신에게 붙인다.",
+        "context": "the same stupid pseudo-intellectual story again, and again — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-006",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1320",
+      "front": "sink in",
+      "back": {
+        "meaningKo": "(사실이) 서서히 실감되다",
+        "nuance": "물이 스며들듯 사실이 마음에 스며든다. let it sink in = 실감 날 때까지 두다.",
+        "context": "let it really sink in that she wished I hadn't come — Jesse, Ch 13"
+      }
+    },
+    {
+      "cardId": "c-13-007",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1321",
+      "front": "stick around",
+      "back": {
+        "meaningKo": "떠나지 않고 좀 더 머무르다",
+        "nuance": "떠날 수도 있었는데 남아 있었다는 결.",
+        "context": "and I stuck around for a while — Jesse, Ch 13"
+      }
+    },
+    {
+      "cardId": "c-13-008",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1317",
+      "front": "sick to death of",
+      "back": {
+        "meaningKo": "죽을 만큼 지긋지긋하다",
+        "nuance": "be sick of의 최상급. to death는 강조 장치일 뿐이다.",
+        "context": "they are sick to death of being around themselves — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-009",
+      "unitId": "u-13",
+      "kind": "vocab",
+      "wordId": "w-1319",
+      "front": "get away from",
+      "back": {
+        "meaningKo": "~에서 벗어나다, 빠져나오다",
+        "nuance": "escape보다 일상적. 제시가 벗어나고 싶은 대상은 자기 자신이다.",
+        "context": "it's myself that I wish I could get away from — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-010",
+      "unitId": "u-13",
+      "kind": "pattern",
+      "front": "\"그때 더 일찍 만났더라면\" — 되돌릴 수 없는 일에 대한 아쉬움을 영어로?",
+      "back": {
+        "pattern": "I wish + 주어 + had p.p.",
+        "explanation": "아쉬워하는 시점은 지금(wish), 아쉬움의 대상만 과거(had p.p.)로 민다.",
+        "anchor": "I wish I had met you earlier, you know, I really like talking to you. — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-13-011",
+      "unitId": "u-13",
+      "kind": "pattern",
+      "front": "\"그 순간마다, 옆에 있는 사람이 이 사람이 아니었으면 했다\" — 과거 그 시점의 아쉬움을 영어로?",
+      "back": {
+        "pattern": "I wished + 주어 + had p.p. ('d been)",
+        "explanation": "아쉬워한 시점 자체가 과거이므로 wish도 wished로 민다. 시제가 한 겹 더 들어간다.",
+        "anchor": "But something was always wrong. I wished I'd been with someone else. — Céline, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-13-012",
+      "unitId": "u-13",
+      "kind": "trap",
+      "front": "I wish I can speak French. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "wish 뒤에서는 시제를 한 칸 뒤로 민다. 지금의 아쉬움에도 과거형이 온다. → I wish I could speak French.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-13-013",
+      "unitId": "u-13",
+      "kind": "trap",
+      "front": "I wish you have a good trip. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "wish는 '그렇게 안 될 것'을 전제로 깐다. 실현 가능한 바람은 hope. → I hope you have a good trip. (단 I wish you luck처럼 명사 두 개를 주는 형태는 정상)",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-13-014",
+      "unitId": "u-13",
+      "kind": "trap",
+      "front": "과거의 그 순간들을 회상하며 \"I wish I was with someone else.\" — 셀린의 뜻을 옮긴 문장으로 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "그 문장은 '지금 다른 사람과 있었으면'이라는 뜻이 된다. 아쉬워한 시점이 과거이므로 한 겹 더 밀어야 한다. → I wished I'd been with someone else.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-13-015",
+      "unitId": "u-13",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "기차가 빈에 서고, 이제 내려야 하는 순간 — 제시가 처음으로 아쉬움을 흘리던 그 한마디를 떠올려 보세요.",
+      "back": {
+        "en": "I wish I had met you earlier, you know, I really like talking to you.",
+        "speaker": "Jesse",
+        "chapter": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,1137 @@
+{
+  "unit": {
+    "unitId": "u-11",
+    "act": 3,
+    "order": 11,
+    "title": "지각동사 + -ing",
+    "tagline": "셀린의 머릿속에서 지금도 재생 중인 추락 장면",
+    "anchors": [
+      {
+        "en": "I can see me falling through the clouds, and I'm so scared of those few seconds of consciousness before you're gonna die, you know, when you know for sure you're gonna die.",
+        "ko": "구름을 뚫고 떨어지는 내가 보여. 죽기 직전의, 아직 정신이 붙어 있는 그 몇 초가 너무 무서워. 이제 확실히 죽는구나, 하고 아는 그 순간 말이야.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Céline",
+        "sceneNote": "기차 라운지 칸. 비행기가 무섭다는 말을 통계로 반박당한 뒤, 셀린은 '무섭다'고 다시 말하는 대신 자기 머릿속에서 돌아가는 필름을 그대로 틀어 보인다. see me falling — 떨어지는 '중간'이 정지되지 않고 계속 돌아간다. fall이었다면 추락은 이미 끝났을 텐데, -ing라서 그녀는 영원히 떨어지는 중이다. 문법이 곧 공포의 생생함이다."
+      },
+      {
+        "en": "he was watching this child, experiencing life for the first time, I mean, trying to take its first breath...all he could think about was that he was looking at something that was gonna die someday.",
+        "ko": "그 친구는 그 아기를 지켜보고 있었대. 난생처음 삶을 겪고 있는, 그러니까 첫 숨을 쉬려고 애쓰고 있는 아기를. 그런데 머릿속에 떠오른 건 오직 하나, 자기가 지금 언젠가 죽을 무언가를 보고 있다는 거였대.",
+        "source": "before-sunrise",
+        "chapter": 17,
+        "speaker": "Jesse",
+        "sceneNote": "다뉴브 유람선. 오늘 밤이 마지막이라는 걸 꺼내기 직전, 제시가 친구의 출산 이야기를 한다. watching this child 뒤에 experiencing과 trying이 연달아 붙으며 아기가 하는 일이 실시간으로 겹쳐 쌓인다. -ing가 끝나지 않기 때문에 '탄생의 한가운데'가 그대로 멈춰 서고, 그 위에 죽음이 포개진다."
+      },
+      {
+        "en": "I heard about this old guy, who was watching some young people dance.",
+        "ko": "어떤 노인 얘기를 들었어. 젊은 애들이 춤추는 걸 보고 있었다는데.",
+        "source": "before-sunrise",
+        "chapter": 14,
+        "speaker": "Jesse",
+        "sceneNote": "밸리댄서를 함께 구경하고 난 뒤 골목길. 여기서는 watching 뒤에 dance(원형)가 온다. 노인은 춤의 한 토막이 아니라 춤이 시작되고 끝나는 것을 통째로 본 사람이고, 그래서 '천사가 되려고 몸을 털어 내는 중'이라는 총평이 나올 수 있다. -ing와 원형의 차이가 그대로 시선의 길이 차이다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "지각동사 + 목적어 + -ing = 진행 중인 한 토막",
+        "body": "see, hear, watch, feel, notice, listen to는 목적어 뒤에 -ing를 받아 '~가 …하고 있는 것을' 본다/듣는다가 된다. 셀린의 I can see me falling through the clouds는 추락의 시작도 끝도 아닌 '떨어지는 중'만 잘라 보여 준다. 영화 첫 장면의 지문도 같은 구조다 — We see a middle-aged couple sitting in the front of the coach car.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "to부정사는 절대 오지 않는다 ★최다 실수",
+        "body": "지각동사 뒤 목적격보어에는 -ing나 원형부정사만 온다. ❌ I saw him to run. → ⭕ I saw him run. / I saw him running. 한국어 '그가 뛰는 것을 봤다'의 '것'이 to부정사를 부르는 착각을 일으키는데, 대본 어디에도 see/watch/hear 뒤의 to는 없다. 셀린도 see me to fall이라고 하지 않는다.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "-ing는 장면의 한 토막, 원형은 처음부터 끝까지",
+        "body": "같은 watch인데 Ch 17은 was watching this child, experiencing life(진행의 한가운데), Ch 14는 was watching some young people dance(춤 전체)다. -ing는 카메라가 도중에 들어갔다 나오는 것이고, 원형부정사는 시작부터 끝까지 다 본 것이다. I saw her cross the street(다 건너는 걸 봤다) vs I saw her crossing the street(건너던 중을 봤다)의 차이가 정확히 이것.",
+        "isTrap": false
+      },
+      {
+        "id": "r4",
+        "title": "수동태로 바뀌면 사라졌던 to가 되살아난다",
+        "body": "능동에서는 원형이지만 수동에서는 to가 붙는다. I saw him run. → He was seen to run. (❌ He was seen run.) -ing 쪽은 그대로다 — I saw him running. → He was seen running. 원형부정사만 to를 되찾는다는 점이 시험과 격식체 글에서 계속 나온다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "목적격보어 -ing와 분사구문 -ing를 섞지 말 것",
+        "body": "We see Celine sitting alone, looking out the window.에서 sitting은 Celine의 목적격보어(무엇을 보는가)지만, looking은 문장 뒤에 덧붙은 분사구문(그러면서 어떤 상태인가)이다. 앞의 -ing는 지각동사가 요구한 자리라 뺄 수 없고, 뒤의 -ing는 빼도 문장이 성립한다. Ch 9 지문 They pause, looking in the direction where they hear some laughter, seeing a gypsy...도 뒤쪽 두 -ing가 전부 분사구문이다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "(확장) with + 명사 + -ing = 동시에 벌어지는 배경",
+        "body": "지각동사가 없어도 -ing로 '~한 채로'를 붙일 수 있다. Ch 9의 With the money in her hands, gypsy turns back to Jesse and Céline, raising her arms.가 그 자리 — with 뒤가 전치사구면 그대로, 동작이면 -ing를 쓴다(with the rain pouring down). 주의: with 뒤 명사와 -ing는 능동 관계여야 한다. 수동이면 과거분사다 — with her eyes closed.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "I heard someone crying in the next room, but by the time I opened the door it had stopped.",
+        "ko": "옆방에서 누가 울고 있는 소리가 들렸는데, 문을 열었을 땐 이미 그쳐 있었다."
+      },
+      {
+        "en": "She watched the last train leave, and only then did she start walking home.",
+        "ko": "그녀는 마지막 기차가 떠나는 걸 끝까지 지켜보고 나서야 집으로 걷기 시작했다."
+      },
+      {
+        "en": "He was seen to enter the building shortly after midnight.",
+        "ko": "그는 자정 직후에 건물로 들어가는 것이 목격되었다."
+      },
+      {
+        "en": "I could feel the whole platform shaking as the express went past.",
+        "ko": "급행이 지나가는 동안 승강장 전체가 흔들리는 게 느껴졌다."
+      },
+      {
+        "en": "She stood at the doorway with the rain pouring down behind her, not saying anything.",
+        "ko": "그녀는 뒤로 비가 쏟아지는 채로 문간에 서서, 아무 말도 하지 않았다."
+      }
+    ],
+    "coverage": {
+      "fromScript": 8,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-1101",
+      "lemma": "aisle",
+      "level": "L1",
+      "meaningKo": "(좌석 사이의) 통로",
+      "definitionEn": "a passage between rows of seats",
+      "nuance": "s는 발음하지 않는다(/aɪl/). 기내·극장·기차의 통로, 마트의 진열대 사이 통로도 aisle.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Celine is sitting across the aisle from them, reading a book.",
+          "speaker": "지문"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1102",
+      "lemma": "explosion",
+      "level": "L1",
+      "meaningKo": "폭발",
+      "definitionEn": "a violent bursting apart with noise and force",
+      "nuance": "explode의 명사형. 셀린이 머릿속 필름에서 제일 먼저 보는 장면이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "When I'm in a plane, I can see it. I can see the explosion,",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1103",
+      "lemma": "mist",
+      "level": "L1",
+      "meaningKo": "옅은 안개, 물안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 낭만적인 결. 여기서는 호스에서 뿜어져 나온 물보라다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother. And she was just standing there, smiling at me.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1104",
+      "lemma": "tribe",
+      "level": "L1",
+      "meaningKo": "부족, (같은 무리의) 집단",
+      "definitionEn": "a group of people sharing customs and ancestry",
+      "nuance": "요즘 구어에서는 '내 사람들, 내 무리'라는 비유로도 쓴다 — my tribe.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "The woman in labor enters a tent, and the women of her tribe surround her, and dance",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1105",
+      "lemma": "laughter",
+      "level": "L1",
+      "meaningKo": "웃음소리",
+      "definitionEn": "the sound or act of laughing",
+      "nuance": "laugh(한 번의 웃음, 셀 수 있음)와 달리 laughter는 불가산 — 공간을 채우는 웃음소리 전체.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "looking in the direction where they hear some laughter",
+          "speaker": "지문"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1106",
+      "lemma": "palm",
+      "level": "L1",
+      "meaningKo": "손바닥",
+      "definitionEn": "the inner surface of the hand",
+      "nuance": "야자수(palm tree)와 같은 철자. read someone's palm = 손금을 봐 주다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "seeing a gypsy as she finishes reading somebody's palm",
+          "speaker": "지문"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1107",
+      "lemma": "celebration",
+      "level": "L1",
+      "meaningKo": "축하, 기념 행사",
+      "definitionEn": "an occasion of special enjoyment marking an event",
+      "nuance": "in celebration = 축하의 뜻으로. 파티 자체를 뜻하기도 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "When the baby is born, they all dance in celebration.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1108",
+      "lemma": "profound",
+      "level": "L2",
+      "meaningKo": "깊디깊은, 심오한",
+      "definitionEn": "very great, deep, or intense",
+      "nuance": "deep의 격식 있는 사촌. 감정·의미·변화에 붙으면 '뿌리까지 닿는'이라는 결이 된다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "at that profound moment of birth",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1109",
+      "lemma": "finite",
+      "level": "L2",
+      "meaningKo": "유한한, 끝이 있는",
+      "definitionEn": "having limits or an end",
+      "nuance": "infinite의 반대. 제시가 오늘 밤이 소중한 이유를 한 단어로 요약한 말이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "everything is so finite",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1110",
+      "lemma": "otherworldly",
+      "level": "L2",
+      "meaningKo": "이 세상 것 같지 않은, 비현실적인",
+      "definitionEn": "seeming to belong to another, unreal world",
+      "nuance": "unreal이 '가짜 같다'라면 otherworldly는 '너무 아름다워서 현실이 아닌 것 같다'.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 16,
+          "context": "Maybe that's why this feels so otherworldly.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1111",
+      "lemma": "labor",
+      "level": "L2",
+      "meaningKo": "(출산의) 진통, 분만; 노동",
+      "definitionEn": "the process of giving birth; hard work",
+      "nuance": "in labor면 무조건 '진통 중'이다. 영국식 철자는 labour.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "The woman in labor enters a tent",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1112",
+      "lemma": "surround",
+      "level": "L2",
+      "meaningKo": "둘러싸다, 에워싸다",
+      "definitionEn": "to be all around something or someone",
+      "nuance": "포위의 위협일 수도, 보호의 원일 수도 있다. 여기서는 명백히 후자.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "the women of her tribe surround her, and dance",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1113",
+      "lemma": "mating",
+      "level": "L2",
+      "meaningKo": "짝짓기(의)",
+      "definitionEn": "the act of animals coming together to breed",
+      "nuance": "동물에게 쓰는 말이라, 사람 이야기에 갖다 붙이면 농담이 된다. 제시가 노린 것이 정확히 그 효과.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "Looked a little bit like a mating dance to me.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1114",
+      "lemma": "spiritual",
+      "level": "L2",
+      "meaningKo": "영적인, 정신적인",
+      "definitionEn": "relating to the soul rather than physical things",
+      "nuance": "religious(제도 종교)와 구별해서 쓴다 — spiritual but not religious가 관용 표현.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "When the women are dancing, and being all spiritual, and stuff",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1115",
+      "lemma": "awkwardness",
+      "level": "L2",
+      "meaningKo": "어색함, 껄끄러움",
+      "definitionEn": "the quality of being uncomfortable or difficult to handle",
+      "nuance": "점쟁이는 삶 자체가 원래 매끄럽지 않다는 뜻으로 쓴다 — 실수나 민망함이 아니라 '삶의 뻑뻑함'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1116",
+      "lemma": "intense",
+      "level": "L2",
+      "meaningKo": "강렬한, (사람이) 진지하고 밀도 높은",
+      "definitionEn": "very strong or extreme; deeply serious",
+      "nuance": "사람에게 쓰면 '기가 세다'가 아니라 '농도가 진하다'. 칭찬으로도 부담으로도 읽힌다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "She was, she was really wise, and intense, no?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1117",
+      "lemma": "commitment",
+      "level": "L2",
+      "meaningKo": "(관계·일에 대한) 헌신, 매어 있기로 하는 약속",
+      "definitionEn": "a promise or decision to be dedicated to something",
+      "nuance": "fear of commitment는 연애에서 굳어진 표현 — '얽매이는 게 무서운 것'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "it‘s not just a uh, a fear of commitment",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1118",
+      "lemma": "condescending",
+      "level": "L3",
+      "meaningKo": "잘난 척 내려다보는, 가르치려 드는",
+      "definitionEn": "showing that you think you are better than others",
+      "nuance": "친절한 말투 속에 '너는 아직 멀었어'가 들어 있을 때 쓴다. 제시가 점쟁이에게 화난 지점이 바로 그 톤.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "But what was that “I am learning” bullshit? I mean, that's WAY condescending.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1119",
+      "lemma": "opportunist",
+      "level": "L3",
+      "meaningKo": "기회주의자, 남의 틈을 파고드는 사람",
+      "definitionEn": "someone who uses situations to gain an advantage, ignoring principles",
+      "nuance": "언제나 비난이다. opportunity(기회)와 달리 중립적으로 쓸 수 없는 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "if opportunists like that, ever had to tell the real truth",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1120",
+      "lemma": "tedious",
+      "level": "L3",
+      "meaningKo": "지루하게 길고 따분한",
+      "definitionEn": "boring because it goes on too long",
+      "nuance": "boring이 '재미없다'라면 tedious는 '끝나지를 않는다'. 제시가 상상하는 잔인한 점괘의 핵심 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "all your remaining days will be exactly like today--a tedious collection of hours",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1121",
+      "lemma": "incapable",
+      "level": "L3",
+      "meaningKo": "~할 능력이 없는",
+      "definitionEn": "not able to do something",
+      "nuance": "뒤에는 반드시 of + 명사/동명사. ❌ incapable to love → ⭕ incapable of loving.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "or that I'm incapable of caring, or loving, because I can",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1122",
+      "lemma": "excel",
+      "level": "L3",
+      "meaningKo": "탁월하다, 남달리 잘하다",
+      "definitionEn": "to be exceptionally good at something",
+      "nuance": "excel at/in + 분야. 제시가 '따뜻한 관계'보다 갖고 싶다고 고백하는 것이 이 단어다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "that I was really good at something, that I had excelled in some way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1123",
+      "lemma": "strike",
+      "level": "L3",
+      "meaningKo": "(생각이) 문득 떠오르다, 와닿다",
+      "definitionEn": "(of a thought) to come suddenly into someone's mind",
+      "nuance": "it struck him that ~ 형태로 굳어져 쓴다. 때린다는 원뜻이 남아 '갑작스럽게 꽂히는' 느낌.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "he was fifty-two and it suddenly struck him that he had never really given anything of himself",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1124",
+      "lemma": "shake off",
+      "level": "L4",
+      "meaningKo": "떨쳐 내다, 털어 버리다",
+      "definitionEn": "to get rid of something unwanted by shaking or effort",
+      "nuance": "감기·기분·추격자 모두 shake off한다. 몸을 흔들어 떼어 낸다는 그림이 그대로 살아 있다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "They're trying to shake off their genitals, and become angels.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1125",
+      "lemma": "so as to",
+      "level": "L4",
+      "meaningKo": "~하기 위해서 (목적)",
+      "definitionEn": "in order to; with the purpose of",
+      "nuance": "to부정사보다 목적임을 또렷하게 못 박는다. 부정은 so as not to + 동사원형.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "they encourage the birthing woman to dance with them as...so as to make the birth less painful",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1126",
+      "lemma": "fizzle out",
+      "level": "L4",
+      "meaningKo": "흐지부지 끝나다, 김빠지듯 사그라들다",
+      "definitionEn": "to end weakly after a promising start",
+      "nuance": "탄산이 빠지는 소리(fizz)에서 왔다. 싸우고 헤어지는 게 아니라 그냥 연락이 뜸해지는 결말.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "Right. Fizzles out. Yeah, I mean, I don't want that. I hate that.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1127",
+      "lemma": "get something out of one's head",
+      "level": "L4",
+      "meaningKo": "(생각을) 머릿속에서 지우다",
+      "definitionEn": "to stop thinking about something",
+      "nuance": "보통 can't와 함께 부정으로 쓴다 — 지워지지 않아서 괴로울 때의 말.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 17,
+          "context": "He just couldn't get it out of his head.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1128",
+      "lemma": "resign oneself to",
+      "level": "L4",
+      "meaningKo": "체념하고 받아들이다",
+      "definitionEn": "to accept something unpleasant that cannot be changed",
+      "nuance": "to 뒤에는 명사나 동명사가 온다. '사임하다'의 resign과 같은 단어지만 뜻은 전혀 다르다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-11",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 9,
+          "context": "You need to resign yourself to the awkwardness of life.",
+          "speaker": "Gypsy"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-11-001",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "profound — \"at that profound moment of birth\"",
+      "wordId": "w-1108",
+      "options": [
+        "형식적인, 겉치레의",
+        "짧고 순간적인",
+        "깊디깊은, 심오한",
+        "혼란스럽고 어지러운"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-001"
+    },
+    {
+      "quizId": "q-11-002",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "finite — \"everything is so finite\"",
+      "wordId": "w-1109",
+      "options": [
+        "완벽한, 흠 없는",
+        "유한한, 끝이 있는",
+        "미세한, 아주 작은",
+        "확정된, 최종적인"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-002"
+    },
+    {
+      "quizId": "q-11-003",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "tedious — \"a tedious collection of hours\"",
+      "wordId": "w-1120",
+      "options": [
+        "고통스럽고 격렬한",
+        "위태롭고 불안한",
+        "정교하고 세밀한",
+        "지루하게 길고 따분한"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-004"
+    },
+    {
+      "quizId": "q-11-004",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "condescending — \"that's WAY condescending\"",
+      "wordId": "w-1118",
+      "options": [
+        "잘난 척 내려다보는, 가르치려 드는",
+        "지나치게 감상적인",
+        "노골적으로 무례한",
+        "지나치게 겸손한"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-005"
+    },
+    {
+      "quizId": "q-11-005",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "resign yourself to — \"You need to resign yourself to the awkwardness of life.\"",
+      "wordId": "w-1128",
+      "options": [
+        "~에서 스스로 물러나다",
+        "~에 정면으로 맞서다",
+        "체념하고 받아들이다",
+        "~을 남에게 떠넘기다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-008"
+    },
+    {
+      "quizId": "q-11-006",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "I can see me ___ through the clouds, and I'm so scared of those few seconds of consciousness. (Céline, Ch 2 — 지금도 떨어지는 '중')",
+      "options": [
+        "falling",
+        "to fall",
+        "fell",
+        "to falling"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-007",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "I heard about this old guy, who was watching some young people ___. (Ch 14 — 춤을 처음부터 끝까지 다 봤다)",
+      "options": [
+        "to dance",
+        "dance",
+        "danced",
+        "to dancing"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-008",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "능동: Two witnesses saw him leave the bar. → 수동: He was seen ___ the bar.",
+      "options": [
+        "to leave",
+        "leave",
+        "left",
+        "leaves"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-009",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "She stood at the doorway with the rain ___ down behind her.",
+      "options": [
+        "pouring",
+        "to pour",
+        "poured",
+        "pours"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-010",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "'나는 그가 길을 뛰어 건너는 걸 봤다'를 I saw him to run across the street.로 쓸 수 있다.",
+      "isCorrect": false,
+      "explanation": "지각동사 뒤 목적격보어에는 to부정사가 오지 못한다. → I saw him run across the street. 또는 I saw him running across the street.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-11-012"
+    },
+    {
+      "quizId": "q-11-011",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "I can see me falling through the clouds에서 falling을 fall로 바꾸면, 추락을 처음부터 끝까지 다 본다는 쪽으로 뜻이 기운다.",
+      "isCorrect": true,
+      "explanation": "맞다. -ing는 진행 중인 한 토막을, 원형부정사는 행위 전체를 담는다. 셀린이 falling을 쓴 덕에 그 장면은 끝나지 않고 계속 재생된다.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-11-013"
+    },
+    {
+      "quizId": "q-11-012",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "I saw him run.을 수동태로 바꾸면 He was seen run.이 된다.",
+      "isCorrect": false,
+      "explanation": "능동에서 사라졌던 to가 수동에서 되살아난다. → He was seen to run. 반면 -ing는 그대로다 — He was seen running.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-11-014"
+    },
+    {
+      "quizId": "q-11-013",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "We see Celine sitting alone, looking out the window.에서 sitting과 looking은 문법적으로 똑같은 자리에 있다.",
+      "isCorrect": false,
+      "explanation": "sitting은 see가 요구한 목적격보어라 빼면 문장이 무너지고, looking은 뒤에 덧붙은 분사구문이라 빼도 문장이 성립한다. 형태만 같고 역할이 다르다.",
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-014",
+      "unitId": "u-11",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": [
+        "I can see me",
+        "through the clouds,",
+        "falling",
+        "and I'm so scared",
+        "of those few seconds of consciousness"
+      ],
+      "answer": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-11-015"
+    },
+    {
+      "quizId": "q-11-015",
+      "unitId": "u-11",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 14)",
+      "chunks": [
+        "this old guy,",
+        "I heard about",
+        "some young people dance.",
+        "who was watching"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-11-011"
+    },
+    {
+      "quizId": "q-11-016",
+      "unitId": "u-11",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (영화의 첫 지문, Ch 1)",
+      "chunks": [
+        "a middle-aged couple",
+        "sitting in the front",
+        "We see",
+        "of the coach car."
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-017",
+      "unitId": "u-11",
+      "type": "koToEn",
+      "prompt": "나는 그가 창밖을 내다보며 혼자 앉아 있는 걸 봤다.",
+      "chunks": [
+        "sitting alone,",
+        "I saw him",
+        "out the window.",
+        "looking"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-018",
+      "unitId": "u-11",
+      "type": "koToEn",
+      "prompt": "우리는 그 아기가 첫 숨을 쉬려고 애쓰는 걸 지켜보고 있었다.",
+      "chunks": [
+        "trying to take",
+        "watching this child,",
+        "its first breath.",
+        "We were"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-11-010"
+    },
+    {
+      "quizId": "q-11-019",
+      "unitId": "u-11",
+      "type": "koToEn",
+      "prompt": "그 노인은 젊은 사람들이 춤추는 것을 (처음부터 끝까지) 지켜보고 있었다.",
+      "chunks": [
+        "young people",
+        "was watching",
+        "dance.",
+        "The old man",
+        "some"
+      ],
+      "answer": [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-020",
+      "unitId": "u-11",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "I can see me __1__ through the clouds, and I'm so __2__ of those few seconds of __3__ before you're gonna __4__, you know, when you know for sure you're gonna die.",
+      "blanks": [
+        "falling",
+        "scared",
+        "consciousness",
+        "die"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-11-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-11-001",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1108",
+      "front": "profound",
+      "back": {
+        "meaningKo": "깊디깊은, 심오한",
+        "nuance": "deep의 격식 있는 사촌. 감정·의미·변화에 붙으면 '뿌리까지 닿는' 결.",
+        "context": "at that profound moment of birth — Jesse, Ch 17"
+      }
+    },
+    {
+      "cardId": "c-11-002",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1109",
+      "front": "finite",
+      "back": {
+        "meaningKo": "유한한, 끝이 있는",
+        "nuance": "infinite의 반대. 오늘 밤이 소중한 이유를 한 단어로 요약한 말.",
+        "context": "everything is so finite — Jesse, Ch 17"
+      }
+    },
+    {
+      "cardId": "c-11-003",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1110",
+      "front": "otherworldly",
+      "back": {
+        "meaningKo": "이 세상 것 같지 않은, 비현실적인",
+        "nuance": "unreal이 '가짜 같다'라면 otherworldly는 '너무 아름다워 현실 같지 않다'.",
+        "context": "Maybe that's why this feels so otherworldly — Céline, Ch 16"
+      }
+    },
+    {
+      "cardId": "c-11-004",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1120",
+      "front": "tedious",
+      "back": {
+        "meaningKo": "지루하게 길고 따분한",
+        "nuance": "boring이 '재미없다'라면 tedious는 '끝나지를 않는다'.",
+        "context": "a tedious collection of hours — Jesse, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-11-005",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1118",
+      "front": "condescending",
+      "back": {
+        "meaningKo": "잘난 척 내려다보는, 가르치려 드는",
+        "nuance": "친절한 말투 속에 '너는 아직 멀었어'가 들어 있을 때 쓴다.",
+        "context": "that's WAY condescending — Jesse, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-11-006",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1121",
+      "front": "incapable",
+      "back": {
+        "meaningKo": "~할 능력이 없는",
+        "nuance": "뒤에는 반드시 of + 명사/동명사. ❌ incapable to love → ⭕ incapable of loving.",
+        "context": "or that I'm incapable of caring, or loving — Jesse, Ch 14"
+      }
+    },
+    {
+      "cardId": "c-11-007",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1122",
+      "front": "excel",
+      "back": {
+        "meaningKo": "탁월하다, 남달리 잘하다",
+        "nuance": "excel at/in + 분야. 제시가 따뜻한 관계보다 갖고 싶다고 고백하는 것.",
+        "context": "that I had excelled in some way — Jesse, Ch 14"
+      }
+    },
+    {
+      "cardId": "c-11-008",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1128",
+      "front": "resign oneself to",
+      "back": {
+        "meaningKo": "체념하고 받아들이다",
+        "nuance": "to 뒤에는 명사나 동명사. '사임하다'의 resign과 철자는 같지만 뜻이 다르다.",
+        "context": "You need to resign yourself to the awkwardness of life — Gypsy, Ch 9"
+      }
+    },
+    {
+      "cardId": "c-11-009",
+      "unitId": "u-11",
+      "kind": "vocab",
+      "wordId": "w-1126",
+      "front": "fizzle out",
+      "back": {
+        "meaningKo": "흐지부지 끝나다, 김빠지듯 사그라들다",
+        "nuance": "탄산이 빠지는 소리(fizz)에서. 싸워서가 아니라 그냥 연락이 뜸해지는 결말.",
+        "context": "Right. Fizzles out. Yeah, I mean, I don't want that. — Jesse, Ch 17"
+      }
+    },
+    {
+      "cardId": "c-11-010",
+      "unitId": "u-11",
+      "kind": "pattern",
+      "front": "\"그 아기가 첫 숨을 쉬려 애쓰는 걸 지켜보고 있었다\" — 진행 중인 장면을 영어로?",
+      "back": {
+        "pattern": "watch/see/hear + 목적어 + -ing",
+        "explanation": "목적어 뒤에 -ing를 두면 그 장면의 '한가운데'만 잘라 보여 준다. 시작도 끝도 아닌, 지금 벌어지고 있는 중.",
+        "anchor": "he was watching this child, experiencing life for the first time, I mean, trying to take its first breath — Jesse, Ch 17"
+      }
+    },
+    {
+      "cardId": "c-11-011",
+      "unitId": "u-11",
+      "kind": "pattern",
+      "front": "\"젊은 애들이 춤추는 걸 (끝까지) 보고 있었다\" — 행위 전체를 영어로?",
+      "back": {
+        "pattern": "watch/see/hear + 목적어 + 동사원형",
+        "explanation": "원형부정사는 시작부터 끝까지 다 봤다는 신호. -ing를 쓰면 도중의 한 토막만 본 것이 된다.",
+        "anchor": "I heard about this old guy, who was watching some young people dance. — Jesse, Ch 14"
+      }
+    },
+    {
+      "cardId": "c-11-012",
+      "unitId": "u-11",
+      "kind": "trap",
+      "front": "I saw him to run across the street. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "지각동사 뒤 목적격보어에는 to부정사가 오지 못한다. → I saw him run across the street. / I saw him running across the street.",
+        "relatedRuleId": "r2"
+      }
+    },
+    {
+      "cardId": "c-11-013",
+      "unitId": "u-11",
+      "kind": "trap",
+      "front": "I saw her cross the street.와 I saw her crossing the street.는 같은 뜻인가?",
+      "back": {
+        "verdict": false,
+        "reason": "다르다. cross는 다 건너는 것을 끝까지 봤다는 뜻이고, crossing은 건너던 도중을 봤다는 뜻이다. 셀린이 falling을 고른 이유도 이것 — 추락이 끝나지 않는다.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-11-014",
+      "unitId": "u-11",
+      "kind": "trap",
+      "front": "I saw him run.의 수동태는 He was seen run.이다 — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "수동태에서는 숨어 있던 to가 되살아난다. → He was seen to run. (-ing는 그대로 — He was seen running.)",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-11-015",
+      "unitId": "u-11",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "비행기 안에서 눈을 감으면 매번 똑같이 재생되는 그 필름 — 셀린의 대사를 통으로 떠올려 보세요.",
+      "back": {
+        "en": "I can see me falling through the clouds, and I'm so scared of those few seconds of consciousness before you're gonna die, you know, when you know for sure you're gonna die.",
+        "speaker": "Céline",
+        "chapter": 2
+      }
+    }
+  ]
+}

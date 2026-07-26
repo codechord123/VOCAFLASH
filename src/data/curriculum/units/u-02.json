@@ -1,0 +1,1122 @@
+{
+  "unit": {
+    "unitId": "u-02",
+    "act": 1,
+    "order": 2,
+    "title": "담화표지와 축약",
+    "tagline": "제시의 you know — 말을 고르는 0.5초, 상대를 붙들어 두는 손",
+    "anchors": [
+      {
+        "en": "No, uh, it's had its, umm. Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
+        "ko": "아니, 그게, 음. 글쎄, 말하자면, 있잖아, 몇 주 내리 앉아서 창밖만 내다본 게, 사실 꽤 좋았어.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "라운지 칸. 유럽 여행이 좋았냐는 셀린의 질문에 제시는 얼떨결에 \"it sucked\"라고 뱉었다가 곧장 주워 담는 중이다. Well로 한 박자 물리고, you know 두 번으로 말 고를 시간을 벌고, kinda로 단정을 깎아낸다. 담화표지를 다 걷어내면 'Sitting for weeks on end looking out the window has been great.'라는, 이 사람이 결코 하지 않을 매끈한 문장만 남는다."
+      },
+      {
+        "en": "the thing that kind of haunts me is the distribution, you know. I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
+        "ko": "좀 신경 쓰이는 건 배급이야, 알지. 그러니까, 이 테이프들을 이 도시에서 저 도시로 옮겨서 방송이 끊기지 않게 하는 거. 왜냐면 계속 틀려야 하거든, 안 그러면 아예 성립이 안 돼.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "24시간 케이블 방송 아이디어를 신나게 늘어놓다가 문득 제 아이디어의 약점을 만난 순간. you know는 '너도 알지?'로 셀린을 대화에 붙들어 두고, I mean은 방금 던진 distribution이 뭔지 자기 말로 다시 풀어 준다. because를 삼킨 ‘cause에는, 자기 얘기에 완전히 빠진 사람의 말 속도가 그대로 남아 있다."
+      },
+      {
+        "en": "It makes it even harder to officially complain. You know, even when they're wrong, it‘s this, it‘s this passive-aggressive shit, you know what I mean, it‘s... I hate it, I really hate it.",
+        "ko": "그래서 대놓고 불평하기가 더 힘들어져. 있잖아, 부모가 틀렸을 때조차도, 이게, 이게 은근히 사람 잡는 거야, 무슨 말인지 알지, 이게... 나 이거 싫어, 정말 싫어.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Céline",
+        "sceneNote": "부모 이야기. 한 번도 정면으로 반대한 적 없는 좋은 부모라서 오히려 불평할 명분이 없다는 답답함. 셀린의 you know는 제시처럼 말버릇이 아니라, 이 감정을 문장으로 다 담지 못하겠다는 신호다. you know what I mean은 말을 맺지 못한 채 이해를 상대에게 떠넘기는 손짓이고, 곧바로 it‘s...에서 문장이 끊긴 뒤 I hate it이 터져 나온다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "you know는 '알잖아'가 아니라 쉼표다",
+        "body": "you know는 정보를 확인하는 질문이 아니다. 다음 말을 고르는 0.5초를 벌면서, 상대가 아직 듣고 있는지 붙들어 두는 장치다. 제시는 한 문장 안에서 두 번 쓴다 — sitting, you know, for weeks on end. 셀린이 전혀 모르는 자기 아이디어를 설명할 때도 쓴다. 뜻을 옮기려 하지 말고 쉼표처럼 들어라. 위치는 자유롭지만 늘 구(句)의 이음매에 온다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "you know와 I mean은 향하는 방향이 다르다 ★혼동 1위",
+        "body": "you know는 상대 쪽을 본다(듣고 있지?). I mean은 자기 말 쪽을 본다(방금 한 말을 고쳐/풀어 말한다). 앵커에서 제시는 the distribution, you know.로 셀린을 붙든 뒤, I mean, getting these tapes from town to town으로 distribution이 뭔지 자기 말로 다시 푼다. 둘을 바꿔 놓으면 어색해진다. 그리고 상대 말에 '내 말이 그 말'이라고 맞장구칠 때는 I mean이 아니라 I know / Exactly다.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "well / anyway / so anyway — 방향을 트는 표지",
+        "body": "well은 '그렇게 간단하진 않은데'라는 완충 신호다. 제시도 it sucked를 뒤집을 때 Well, I'll tell ya로 시작한다. anyway는 샛길로 샜다가 본론으로 돌아온다는 표시다(제시의 you know, so anyway, Ch 2). 질문에 Well 없이 곧장 No.만 던지면 영어에서는 무뚝뚝하다 못해 차갑게 들린다. 한국인 학습자의 말이 뚝뚝 끊겨 들리는 이유가 대개 여기다.",
+        "isTrap": false
+      },
+      {
+        "id": "r4",
+        "title": "gonna·wanna·dunno·‘cause·kinda는 '소리'지 '철자'가 아니다 ★최다 실수",
+        "body": "이것들은 발음을 받아 적은 것이라 말할 때와 사적인 메시지에서만 쓴다. 이메일·보고서·에세이에 gonna, kinda를 쓰면 한 줄로 격이 무너진다. 문어에서는 going to / want to / don't know / because / kind of. 형태 함정도 있다 — gonna는 be동사 없이 못 선다(❌ I gonna call her → ⭕ I'm gonna call her), wanna는 3인칭 단수를 못 받는다(❌ He wanna go → ⭕ He wants to go).",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "kind of / sort of는 '일종의'가 아니라 '좀'이다",
+        "body": "명사 앞의 a kind of는 '일종의 ~'가 맞지만, 형용사·동사 앞의 kind of(=kinda)는 단정을 깎아 내리는 완충어다. the thing that kind of haunts me는 '일종의 괴롭힘'이 아니라 '좀 신경 쓰이는 것'. 관사 a가 붙느냐가 갈림길이다. 한국인 학습자는 이 자리를 전부 a little로 처리하는데, a little은 양을 재고 kind of는 말투를 누그러뜨린다. I'm kind of tired = 좀 피곤해.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "like — 완충의 like와 인용의 like",
+        "body": "하나는 뒤에 오는 말을 대충 만드는 like다. It was like twenty minutes = 한 이십 분쯤. 셀린도 Like twenty-four boring hours, sorry, and like a three minute sex scene이라고 말한다(Ch 2). 다른 하나는 인용의 like — I was like, \"No way.\"는 '난 이랬지'로 말·표정·태도를 통째로 옮긴다. said가 말만 옮긴다면 was like는 그 순간을 재연한다. 둘 다 구어 전용이고, 격식 자리에서 남발하면 미숙하게 들린다.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "Well, I mean, it's not that I don't like the job — it's just, you know, I kind of expected something else.",
+        "ko": "글쎄, 그러니까, 그 일이 싫다는 게 아니라 — 그냥, 있잖아, 좀 다른 걸 기대했던 거지."
+      },
+      {
+        "en": "I dunno, it's kinda late, and I'm not gonna make it home anyway, so I might as well stay.",
+        "ko": "몰라, 좀 늦기도 했고, 어차피 집에 못 갈 것 같으니까, 그냥 있는 게 낫겠다."
+      },
+      {
+        "en": "She was like, \"I'm sorry,\" but you know what I mean, she didn't sound sorry at all.",
+        "ko": "걔가 \"미안해\" 이러긴 했는데, 무슨 말인지 알지, 하나도 미안한 목소리가 아니었어."
+      },
+      {
+        "en": "Anyway, where was I? Right — ‘cause the train was late, we missed the whole first act.",
+        "ko": "아무튼, 내가 어디까지 얘기했지? 맞다 — 기차가 늦어서 1막을 통째로 놓쳤어."
+      }
+    ],
+    "coverage": {
+      "fromScript": 3,
+      "generated": 4
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0201",
+      "lemma": "you know",
+      "level": "L4",
+      "meaningKo": "있잖아, 그러니까 (말을 고르며 상대를 붙드는 표지)",
+      "definitionEn": "used in speech to fill a pause and keep the listener's attention",
+      "nuance": "'너 알잖아'로 직역하면 무너진다. 뜻이 아니라 리듬이다. 제시는 한 문장에 두 번 넣는다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "sitting, you know, for weeks on end",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0202",
+      "lemma": "I mean",
+      "level": "L4",
+      "meaningKo": "그러니까, 내 말은 (방금 한 말을 고쳐/풀어 말할 때)",
+      "definitionEn": "used to correct, clarify, or expand what you have just said",
+      "nuance": "you know가 상대를 향한다면 I mean은 자기 말을 향한다. 상대 말에 공감할 때는 I know 쪽이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I mean, getting these tapes from town to town",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0203",
+      "lemma": "you know what I mean",
+      "level": "L4",
+      "meaningKo": "무슨 말인지 알지 (문장을 못 맺고 이해를 넘길 때)",
+      "definitionEn": "used to check that the listener understands something you can't fully put into words",
+      "nuance": "말이 막힌 자리에 놓는 손짓. 셀린이 부모 얘기를 하다 문장을 끝내지 못하고 내미는 말.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "passive-aggressive shit, you know what I mean",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0204",
+      "lemma": "dunno",
+      "level": "L4",
+      "meaningKo": "몰라, 글쎄 (I don't know의 구어 축약)",
+      "definitionEn": "spoken contraction of 'I don't know'",
+      "nuance": "정말 모른다기보다 말을 시작하기 전 뜸 들이는 소리로도 쓴다. 글에는 절대 쓰지 않는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Umm, I dunno...Anybody can produce a show real cheap",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0205",
+      "lemma": "‘cause",
+      "level": "L2",
+      "meaningKo": "왜냐면 (because의 구어 축약)",
+      "definitionEn": "spoken contraction of 'because'",
+      "nuance": "말이 빨라질 때 be-가 통째로 떨어진다. 듣기에서 'cause를 놓치면 인과관계 자체를 놓친다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous, ‘cause it would have to play all the time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0206",
+      "lemma": "kinda",
+      "level": "L2",
+      "meaningKo": "좀, 약간 (kind of의 구어 축약)",
+      "definitionEn": "spoken contraction of 'kind of'; somewhat",
+      "nuance": "단정을 깎아 내리는 완충어. kinda great은 '아주 좋다'가 아니라 '꽤 좋았어' 정도의 조심스러운 인정.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "looking out the window has actually been kinda great",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0207",
+      "lemma": "gonna",
+      "level": "L2",
+      "meaningKo": "~할 거야 (going to의 구어 축약)",
+      "definitionEn": "spoken contraction of 'going to'",
+      "nuance": "be동사가 반드시 앞에 있어야 한다. I gonna는 존재하지 않는 형태.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "those few seconds of consciousness before you're gonna die",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0208",
+      "lemma": "wanna",
+      "level": "L2",
+      "meaningKo": "~하고 싶다 (want to의 구어 축약)",
+      "definitionEn": "spoken contraction of 'want to'",
+      "nuance": "3인칭 단수에는 못 붙는다(He wanna ❌). 셀린이 밤이 깊어 진심을 꺼낼 때 쓰는 형태.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don’t wanna be a great story",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0209",
+      "lemma": "anyway",
+      "level": "L2",
+      "meaningKo": "아무튼, 그건 그렇고",
+      "definitionEn": "used to return to the main point after a digression",
+      "nuance": "샛길로 샜다가 본론으로 돌아온다는 신호. 문장 끝에 붙는 anyway는 '어차피'라는 다른 뜻.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you know, so anyway",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0210",
+      "lemma": "whatever",
+      "level": "L4",
+      "meaningKo": "됐고, 뭐 어때 (상대의 정정을 가볍게 넘길 때)",
+      "definitionEn": "used to dismiss something as unimportant",
+      "nuance": "셀린이 UN billet이라고 고쳐 주자 제시가 던지는 한마디. 상대에 따라 무례하게 들리니 자리를 가린다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Un. Whatever. Un, Un.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0211",
+      "lemma": "kind of",
+      "level": "L4",
+      "meaningKo": "좀, 어느 정도 (단정을 누그러뜨리는 완충어)",
+      "definitionEn": "somewhat; to a small degree",
+      "nuance": "관사 없이 동사·형용사 앞에 오면 '좀'. a kind of로 명사 앞에 오면 '일종의'. 관사 하나가 뜻을 가른다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the thing that kind of haunts me is the distribution",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0212",
+      "lemma": "ya",
+      "level": "L2",
+      "meaningKo": "너, 당신 (you의 구어 축약)",
+      "definitionEn": "spoken contraction of 'you'",
+      "nuance": "I'll tell ya, see ya, gotcha처럼 굳어진 자리에 주로 붙는다. 문어에서는 쓰지 않는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Well, I'll tell ya, you know",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0213",
+      "lemma": "real",
+      "level": "L4",
+      "meaningKo": "아주, 엄청 (구어에서 really 대신 쓰는 부사)",
+      "definitionEn": "very (informal adverbial use of the adjective 'real')",
+      "nuance": "형용사를 그대로 부사 자리에 쓰는 미국 구어. 시험에서는 오답이지만 대사에서는 흔하다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Anybody can produce a show real cheap",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0214",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "(머릿속이) 하얘지다",
+      "definitionEn": "to suddenly be unable to remember or think of anything",
+      "nuance": "긴장으로 기억이 통째로 날아가는 순간. 파리 지하철 창구 앞 제시가 딱 그 상태다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0215",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "어쩔 수 없다, 나도 모르게 그렇게 된다",
+      "definitionEn": "to be unable to control or stop something about yourself",
+      "nuance": "can't help ~ing(~하지 않을 수 없다)와 뿌리가 같다. 여기서 it은 '이 성향 자체'를 가리킨다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't help it. I can't help it.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0216",
+      "lemma": "bullshit detector",
+      "level": "L4",
+      "meaningKo": "허튼소리 감지기 (거짓을 알아채는 감각)",
+      "definitionEn": "an instinct for recognizing when someone is lying or talking nonsense",
+      "nuance": "실제 기계가 아니라 사람의 촉을 가리키는 농담 섞인 표현. 어른 말의 거짓을 알아채던 어린 제시.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I always had a pretty good bullshit detector when I was a kid",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0217",
+      "lemma": "be headed",
+      "level": "L4",
+      "meaningKo": "~로 향하다, 가는 중이다",
+      "definitionEn": "to be going in a particular direction",
+      "nuance": "Where are you going?보다 캐주얼하고 덜 캐묻는 느낌. 여행자끼리의 인사에 가깝다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "So, where are you headed?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0218",
+      "lemma": "on holiday",
+      "level": "L4",
+      "meaningKo": "휴가 중인",
+      "definitionEn": "away from work or school for a period of rest",
+      "nuance": "영국식 표현. 미국은 on vacation. 런던에서 영어를 배운 셀린의 이력이 이 한 마디에 묻어난다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You on holiday?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0219",
+      "lemma": "suck",
+      "level": "L2",
+      "meaningKo": "형편없다, 최악이다",
+      "definitionEn": "to be very bad or unpleasant",
+      "nuance": "주어가 사물이면 '별로다'. 꽤 강한 구어라 제시도 뱉자마자 Well로 주워 담는다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "it's been, umm...it sucked",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0220",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without any interruption or gap",
+      "nuance": "continual(간격을 두고 되풀이되는)과 다르다. continuous에는 틈이 없다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0221",
+      "lemma": "ordinarily",
+      "level": "L3",
+      "meaningKo": "평소 같으면, 보통은",
+      "definitionEn": "usually; in normal circumstances",
+      "nuance": "usually와 달리 '평소라면 그랬을 텐데 지금은 다르다'는 대조를 품는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0222",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "물안개, 옅은 안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 곱다. 호스 물줄기가 만든 이 mist 너머로 증조할머니가 서 있었다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0223",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "(호스·분무기의) 물 나오는 주둥이",
+      "definitionEn": "the narrow end of a pipe or hose that controls the flow of liquid",
+      "nuance": "이 단어 하나에 장면 전체가 걸려 있다. 손을 놓는 순간 무지개도 할머니도 사라진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I let go of the nozzle",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0224",
+      "lemma": "officially",
+      "level": "L2",
+      "meaningKo": "공식적으로, 떳떳하게 내놓고",
+      "definitionEn": "in a formal or publicly acknowledged way",
+      "nuance": "여기서는 '남들 앞에 명분을 세워서'의 결. 불평할 근거 자체가 없다는 말이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0225",
+      "lemma": "complain",
+      "level": "L1",
+      "meaningKo": "불평하다, 항의하다",
+      "definitionEn": "to say that you are annoyed or unhappy about something",
+      "nuance": "complain about + 대상 / complain to + 사람. 전치사를 바꾸면 향하는 곳이 달라진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0226",
+      "lemma": "attitude",
+      "level": "L1",
+      "meaningKo": "태도, 자세",
+      "definitionEn": "the way you think and feel about something",
+      "nuance": "attitude toward(s) + 대상이 기본형. 목적어 없이 have an attitude만 쓰면 '싸가지 없다'는 뜻이 된다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You're really lucky you can have this attitude towards death",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0227",
+      "lemma": "possibility",
+      "level": "L3",
+      "meaningKo": "가능성, 있을 수 있는 일",
+      "definitionEn": "something that may happen or be true",
+      "nuance": "possibility of + 명사/동명사. chance보다 중립적이고 추상적이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-02",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "never really spoken of the possibility of my falling in love",
+          "speaker": "Céline"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-02-001",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "kind of — \"the thing that kind of haunts me is the distribution\"",
+      "wordId": "w-0211",
+      "options": [
+        "일종의, ~의 한 종류",
+        "좀, 어느 정도 — 단정을 누그러뜨리는 말",
+        "친절하게, 상냥하게",
+        "결국, 마침내"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-006"
+    },
+    {
+      "quizId": "q-02-002",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "ordinarily — \"you have ideas that you ordinarily wouldn't have\"",
+      "wordId": "w-0221",
+      "options": [
+        "차례대로, 순서대로",
+        "특별히, 유난히",
+        "평소 같으면, 보통은",
+        "명령에 따라"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-007"
+    },
+    {
+      "quizId": "q-02-003",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "bullshit detector — \"I always had a pretty good bullshit detector when I was a kid\"",
+      "wordId": "w-0216",
+      "options": [
+        "허튼소리를 알아채는 감각",
+        "쓸데없이 참견하는 버릇",
+        "고장 난 화재 경보기",
+        "지독한 잔소리꾼"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-009"
+    },
+    {
+      "quizId": "q-02-004",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "dunno — \"Umm, I dunno...Anybody can produce a show real cheap\"",
+      "wordId": "w-0204",
+      "options": [
+        "아무래도 상관없어",
+        "됐어, 관두자",
+        "몰라, 글쎄 (I don't know의 구어 축약)",
+        "다 끝났어"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-004"
+    },
+    {
+      "quizId": "q-02-005",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "nozzle — \"I let go of the nozzle\"",
+      "wordId": "w-0223",
+      "options": [
+        "정원 울타리",
+        "호스 끝의 물 나오는 주둥이",
+        "수도 계량기",
+        "빗물받이 홈통"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-008"
+    },
+    {
+      "quizId": "q-02-006",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "the thing that kind of haunts me is the distribution, you know. ___ , getting these tapes from town to town, city to city.",
+      "options": [
+        "I mean",
+        "I know",
+        "You know",
+        "I guess"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-007",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "구어로 '오늘 밤 걔한테 전화할 거야' — ___ call her tonight.",
+      "options": [
+        "I gonna",
+        "I'm gonna",
+        "I gonna to",
+        "I'm going gonna"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-008",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "Q: So, has this trip around Europe been good for you? / A: ___ , I'll tell ya, sitting for weeks on end has actually been kinda great.",
+      "options": [
+        "Well",
+        "So",
+        "Instead",
+        "Therefore"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-009",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "'좀 피곤해'라는 뜻으로 — I'm ___ tired.",
+      "options": [
+        "a kind of",
+        "the kind of",
+        "kind of",
+        "kind"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-010",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "제시는 셀린이 전혀 모르는 자기 아이디어를 설명하면서도 you know를 반복해서 쓴다. you know가 '너도 알잖아'라는 정보 확인이 아니기 때문이다.",
+      "isCorrect": true,
+      "explanation": "맞다. you know는 확인 질문이 아니라 말 고를 시간을 벌고 상대를 대화에 붙들어 두는 장치다. 그래서 상대가 모르는 내용에도 자유롭게 붙는다.",
+      "relatedRuleId": "r1",
+      "srsCardId": "c-02-001"
+    },
+    {
+      "quizId": "q-02-011",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "제시의 \"I mean, getting these tapes from town to town\"은 방금 말한 distribution을 자기 말로 다시 풀어 주는 것이다.",
+      "isCorrect": true,
+      "explanation": "맞다. I mean은 자기가 한 말 쪽을 향한다 — 고쳐 말하거나 풀어 말할 때 쓴다. 상대 쪽을 향하는 you know와 방향이 반대다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-02-002"
+    },
+    {
+      "quizId": "q-02-012",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "친구에게 보내는 메시지든 회사 보고서든, gonna와 kinda는 똑같이 써도 된다.",
+      "isCorrect": false,
+      "explanation": "아니다. gonna·kinda·dunno는 발음을 받아 적은 것이라 말과 사적인 메시지 전용이다. 보고서·이메일에서는 going to / kind of(또는 somewhat)로 써야 격이 유지된다.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-02-013"
+    },
+    {
+      "quizId": "q-02-013",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "\"the thing that kind of haunts me\"에서 kind of는 '일종의'라는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "아니다. '일종의'는 명사 앞에 오는 a kind of다. 여기 kind of는 동사 haunts 앞에서 단정을 누그러뜨리는 완충어 — '좀 신경 쓰이는 것' 정도.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-02-014"
+    },
+    {
+      "quizId": "q-02-014",
+      "unitId": "u-02",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "you know,",
+        "Well, I'll tell ya,",
+        "has actually been kinda great.",
+        "sitting, you know, for weeks on end,",
+        "looking out the window"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-02-011"
+    },
+    {
+      "quizId": "q-02-015",
+      "unitId": "u-02",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "I mean, getting these tapes",
+        "the thing that kind of haunts me",
+        "‘cause it would have to play all the time,",
+        "is the distribution, you know.",
+        "so that the play is continuous,",
+        "from town to town, city to city,",
+        "or else it just wouldn't work."
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        5,
+        4,
+        2,
+        6
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-02-010"
+    },
+    {
+      "quizId": "q-02-016",
+      "unitId": "u-02",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": [
+        "You know, even when they're wrong,",
+        "it‘s this, it‘s this passive-aggressive shit,",
+        "It makes it even harder to officially complain.",
+        "you know what I mean,",
+        "it‘s... I hate it, I really hate it."
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        3,
+        4
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-02-003"
+    },
+    {
+      "quizId": "q-02-017",
+      "unitId": "u-02",
+      "type": "koToEn",
+      "prompt": "몰라, 좀 늦기도 했고, 어차피 집에 못 갈 것 같아.",
+      "chunks": [
+        "it's kinda late,",
+        "I dunno,",
+        "make it home anyway.",
+        "and I'm not gonna"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": "c-02-005"
+    },
+    {
+      "quizId": "q-02-018",
+      "unitId": "u-02",
+      "type": "koToEn",
+      "prompt": "걔가 \"미안해\" 이러긴 했는데, 무슨 말인지 알지, 하나도 미안한 목소리가 아니었어.",
+      "chunks": [
+        "but you know what I mean,",
+        "she didn't sound",
+        "She was like,",
+        "sorry at all.",
+        "\"I'm sorry,\""
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-019",
+      "unitId": "u-02",
+      "type": "koToEn",
+      "prompt": "아무튼, 기차가 늦어서 우리는 1막을 통째로 놓쳤어.",
+      "chunks": [
+        "we missed",
+        "Anyway,",
+        "the whole first act.",
+        "‘cause the train was late,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-020",
+      "unitId": "u-02",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개 — Jesse, Ch 2)",
+      "text": "No, uh, it's had its, umm. __1__, I'll tell __2__, you know, sitting, __3__, for weeks on end, looking out the window has actually been __4__ great.",
+      "blanks": [
+        "Well",
+        "ya",
+        "you know",
+        "kinda"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-02-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-02-001",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0201",
+      "front": "you know",
+      "back": {
+        "meaningKo": "있잖아, 그러니까 (말을 고르며 상대를 붙드는 표지)",
+        "nuance": "정보 확인이 아니라 리듬. 뜻을 옮기려 하지 말고 쉼표처럼 들어라.",
+        "context": "sitting, you know, for weeks on end — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-002",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0202",
+      "front": "I mean",
+      "back": {
+        "meaningKo": "그러니까, 내 말은 (방금 한 말을 고쳐/풀어 말할 때)",
+        "nuance": "you know는 상대 쪽, I mean은 자기 말 쪽. 맞장구는 I know.",
+        "context": "I mean, getting these tapes from town to town — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-003",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0203",
+      "front": "you know what I mean",
+      "back": {
+        "meaningKo": "무슨 말인지 알지 (문장을 못 맺고 이해를 넘길 때)",
+        "nuance": "말이 막힌 자리에 놓는 손짓. 셀린이 부모 얘기를 끝맺지 못하고 내미는 말.",
+        "context": "passive-aggressive shit, you know what I mean — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-004",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0204",
+      "front": "dunno",
+      "back": {
+        "meaningKo": "몰라, 글쎄 (I don't know의 구어 축약)",
+        "nuance": "뜸 들이는 소리로도 쓴다. 글에는 절대 쓰지 않는다.",
+        "context": "Umm, I dunno...Anybody can produce a show real cheap — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-005",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0206",
+      "front": "kinda",
+      "back": {
+        "meaningKo": "좀, 약간 (kind of의 구어 축약)",
+        "nuance": "kinda great은 '아주 좋다'가 아니라 조심스러운 인정. 문어 금지.",
+        "context": "looking out the window has actually been kinda great — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-006",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0211",
+      "front": "kind of",
+      "back": {
+        "meaningKo": "좀, 어느 정도 (단정을 누그러뜨리는 완충어)",
+        "nuance": "관사 없이 동사·형용사 앞이면 '좀', a kind of로 명사 앞이면 '일종의'.",
+        "context": "the thing that kind of haunts me is the distribution — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-007",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0221",
+      "front": "ordinarily",
+      "back": {
+        "meaningKo": "평소 같으면, 보통은",
+        "nuance": "usually와 달리 '평소라면 그랬을 텐데'라는 대조를 품는다.",
+        "context": "you have ideas that you ordinarily wouldn't have — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-008",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0223",
+      "front": "nozzle",
+      "back": {
+        "meaningKo": "(호스·분무기의) 물 나오는 주둥이",
+        "nuance": "손을 놓는 순간 무지개도 할머니도 사라진다 — 장면 전체가 걸린 단어.",
+        "context": "I let go of the nozzle — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-009",
+      "unitId": "u-02",
+      "kind": "vocab",
+      "wordId": "w-0216",
+      "front": "bullshit detector",
+      "back": {
+        "meaningKo": "허튼소리 감지기 (거짓을 알아채는 감각)",
+        "nuance": "기계가 아니라 사람의 촉. 어른 말의 거짓을 알아채던 어린 제시.",
+        "context": "I always had a pretty good bullshit detector when I was a kid — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-010",
+      "unitId": "u-02",
+      "kind": "pattern",
+      "front": "\"신경 쓰이는 게 있는데, 그러니까 말이야...\" — 상대를 붙들면서 자기 말을 다시 푸는 흐름을 영어로?",
+      "back": {
+        "pattern": "…, you know. I mean, …",
+        "explanation": "you know로 상대 쪽을 한 번 확인해 붙들어 두고, I mean으로 방금 던진 말을 자기 말로 다시 푼다. 두 표지의 방향이 반대라서 순서를 바꾸면 어색해진다.",
+        "anchor": "the thing that kind of haunts me is the distribution, you know. I mean, getting these tapes from town to town — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-011",
+      "unitId": "u-02",
+      "kind": "pattern",
+      "front": "곧바로 동의하지 않고 한 박자 물린 뒤 말을 뒤집을 때 — 영어로?",
+      "back": {
+        "pattern": "Well, + (앞말을 뒤집는 말)",
+        "explanation": "Well은 '그렇게 간단하진 않은데'라는 완충 신호. 질문에 Well 없이 곧장 답하면 무뚝뚝하게 들린다. 제시도 it sucked를 주워 담을 때 Well로 시작한다.",
+        "anchor": "Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great. — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-02-012",
+      "unitId": "u-02",
+      "kind": "trap",
+      "front": "I gonna call her tonight. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "gonna는 be going to의 소리라서 be동사 없이는 못 선다. → I'm gonna call her tonight. (글에서는 I'm going to call her.)",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-02-013",
+      "unitId": "u-02",
+      "kind": "trap",
+      "front": "보고서에 The results are kinda unclear.라고 썼다 — 괜찮나?",
+      "back": {
+        "verdict": false,
+        "reason": "kinda·gonna·dunno는 말소리를 적은 것이라 문어에서는 한 줄로 격이 무너진다. → The results are somewhat unclear.",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-02-014",
+      "unitId": "u-02",
+      "kind": "trap",
+      "front": "'좀 신경 쓰이는 게 있어'를 It's a kind of bothering me.라고 했다 — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "동사 앞의 완충어는 관사 없는 kind of다. a kind of는 명사 앞에서 '일종의 ~'. → It's kind of bothering me.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-02-015",
+      "unitId": "u-02",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "라운지 칸. 유럽 여행이 어땠냐는 질문에 얼떨결에 \"it sucked\"라고 뱉었다가 주워 담던 제시 — 그 문장을 통으로 떠올려 보세요.",
+      "back": {
+        "en": "No, uh, it's had its, umm. Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
+        "speaker": "Jesse",
+        "chapter": 2
+      }
+    }
+  ]
+}

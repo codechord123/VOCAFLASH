@@ -227,7 +227,11 @@ export default function App() {
             ))}
 
           {tab === 'syntax' && (
-            <Curriculum commit={commit} curriculum={state.curriculum} />
+            <Curriculum
+              cards={cards}
+              commit={commit}
+              curriculum={state.curriculum}
+            />
           )}
 
           {showSettings && (

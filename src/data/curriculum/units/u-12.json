@@ -1,0 +1,1133 @@
+{
+  "unit": {
+    "unitId": "u-12",
+    "act": 4,
+    "order": 12,
+    "title": "가정법 (과거 / 과거완료 / 혼합)",
+    "tagline": "지금 여기 함께 있다는 것이, 그러지 않았을 수도 있는 일이라는 자각",
+    "anchors": [
+      {
+        "en": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
+        "ko": "지금쯤 파리에 있었을까? 나랑 같이 기차에서 안 내렸으면.",
+        "source": "before-sunrise",
+        "chapter": 12,
+        "speaker": "Jesse",
+        "sceneNote": "도나우 강변을 걷다가 제시가 셀린의 손을 장난스레 깨문 직후 던지는 질문. 조건은 과거(hadn't gotten off), 결과는 지금(by now)이라 두 절의 시제가 어긋나는 혼합 가정법의 교과서적 문장이다. 문법 자체가 '우리가 지금 함께 있는 이 순간은 원래 없었을 수도 있다'는 말을 하고 있다."
+      },
+      {
+        "en": "I guarantee you, it was better that way. If she'd ever got to know him, you know, I'm sure he would have disappointed her eventually.",
+        "ko": "장담하는데, 그게 나은 거였어. 할머니가 그 남자를 정말 알게 됐더라면, 분명 언젠가는 실망시켰을 거야.",
+        "source": "before-sunrise",
+        "chapter": 8,
+        "speaker": "Jesse",
+        "sceneNote": "프라터 대관람차에서 내려온 뒤. 평생 다른 남자를 마음에 품고 산 셀린의 할머니 이야기에 제시가 냉소적으로 답한다. If + had p.p. / would have p.p. — 일어나지 않은 과거를 통째로 뒤집어 상상하는 가정법 과거완료. 로맨스를 믿지 않는 척하는 제시의 방어가 이 시제에 담겨 있다."
+      },
+      {
+        "en": "If somebody gave me the choice right now, of to never see you again or to marry you, alright, I would marry you",
+        "ko": "지금 당장 누가 나한테 널 다시는 못 보는 것과 너와 결혼하는 것 중에 고르라고 하면, 난 너랑 결혼할 거야.",
+        "source": "before-sunrise",
+        "chapter": 19,
+        "speaker": "Jesse",
+        "sceneNote": "새벽 공원에 누워 와인을 마시다가, 자자 말자 하는 대화 끝에 제시가 내미는 고백. right now(지금)인데 동사는 gave(과거형)다 — 실제로 아무도 그런 선택지를 주지 않기 때문. 현실이 아니라서 과거형으로 한 칸 물러선 자리에서만 할 수 있는 말이다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "가정법 과거 — 현재의 반사실",
+        "body": "If + 주어 + 과거형, 주어 + would/could/might + 동사원형. 지금 사실이 아닌 것을 상상한다. 제시의 If somebody gave me the choice right now ... I would marry you가 정확히 이 틀이다. right now인데 gave인 이유는 하나 — 실제로는 그런 선택지가 없기 때문. 셀린의 If we were around each other all the time, what ... would drive you mad?(Ch 12)도 같은 형태다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "가정법 과거완료 — 과거의 반사실",
+        "body": "If + 주어 + had p.p., 주어 + would have p.p. 이미 끝난 과거를 통째로 뒤집는다. If she'd ever got to know him, he would have disappointed her eventually(Jesse, Ch 8) — 할머니는 그를 알게 되지 '않았고', 그래서 실망하지도 '않았다'. 두 절 모두 한 칸씩 더 뒤로 밀려 있다.",
+        "isTrap": false
+      },
+      {
+        "id": "r3",
+        "title": "혼합 가정법 — 조건은 과거, 결과는 지금 ★두 절의 시제가 다르다",
+        "body": "If + had p.p. + 주어 + would + 동사원형. 과거의 선택이 지금까지 이어진 결과를 말할 때만 쓴다. Would you be in Paris by now, if you hadn't gotten off the train with me?(Jesse, Ch 12) — 기차에서 내린 건 과거, 파리에 있는지는 지금. would have been이 아니라 would be인 건 실수가 아니라 의미다. by now, now, still 같은 현재 표지가 붙어 있으면 혼합을 의심할 것.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "if절에는 would를 쓰지 않는다 ★최다 실수",
+        "body": "한국어 '~한다면'에 '~겠다'가 섞여 들어가 if절에 would를 붙이는 실수가 가장 흔하다. ❌ If I would have more time / ❌ If you wouldn't have gotten off the train → ⭕ If I had more time / ⭕ If you hadn't gotten off the train. would는 주절 담당이다. 셀린도 If it had to be something, if I had to think about it(Ch 12)이라고 하지 If it would have to be라고 하지 않는다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "would have p.p. vs should have p.p.",
+        "body": "would have p.p.는 '(그랬다면) ~했을 것이다' — 가정의 결과. should have p.p.는 '~했어야 했는데 안 했다' — 후회와 비난. They should have done it a lot sooner(Jesse, Ch 8, 부모의 이혼)와 I should have told you this earlier, Céline(Ch 13)이 둘 다 후자다. 형태가 비슷해 섞이지만, would have에는 if가 딸려 있고 should have에는 자책이 딸려 있다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "'d의 정체를 먼저 가려라 — had인가 would인가",
+        "body": "구어에서 가정법은 거의 다 'd로 뭉개진다. If she'd ever got to know him의 'd는 had(if절), I'd probably be hanging around the airport(Jesse, Ch 12)의 'd는 would(주절). 위치로 가른다 — if절 안의 'd는 had, 주절의 'd는 would. 이걸 못 가르면 과거완료 가정을 단순 과거로 잘못 듣는다.",
+        "isTrap": true
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "If I had taken that job in Berlin, I wouldn't be sitting here with you right now.",
+        "ko": "그때 베를린 그 일자리를 잡았더라면, 지금 여기 너랑 앉아 있지 않을 텐데."
+      },
+      {
+        "en": "If she hadn't missed the last train, she'd be home already.",
+        "ko": "막차를 놓치지 않았더라면, 그 애는 벌써 집에 있을 텐데."
+      },
+      {
+        "en": "If I knew his number, I would call him tonight.",
+        "ko": "그의 번호를 안다면, 오늘 밤 전화할 텐데."
+      },
+      {
+        "en": "We should have booked the tickets in August — now everything is sold out.",
+        "ko": "8월에 표를 예매했어야 했는데 — 이제 다 매진이다."
+      },
+      {
+        "en": "If you had told me you were in Vienna, I would have come to meet you.",
+        "ko": "빈에 있다고 말해 줬더라면, 내가 만나러 갔을 텐데."
+      }
+    ],
+    "coverage": {
+      "fromScript": 4,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-1201",
+      "lemma": "guarantee",
+      "level": "L1",
+      "meaningKo": "장담하다, 보장하다",
+      "definitionEn": "to promise with certainty that something is true or will happen",
+      "nuance": "I guarantee you는 '내가 장담하는데' — 근거보다 확신을 앞세우는 구어 표현. 제시가 자기 냉소를 밀어붙일 때 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1202",
+      "lemma": "disappoint",
+      "level": "L1",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to fail to satisfy someone's hopes or expectations",
+      "nuance": "주어가 '실망시키는 쪽'이다. 한국어 '실망하다'로 옮기려면 be disappointed로 뒤집어야 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1203",
+      "lemma": "criticism",
+      "level": "L1",
+      "meaningKo": "비판, (남이 하는) 지적",
+      "definitionEn": "the expression of disapproval of someone's faults or mistakes",
+      "nuance": "handle criticism well/badly가 통째로 쓰이는 결합. 학문적 '비평'도 같은 단어다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "just don't think you handle criticism too well",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1204",
+      "lemma": "conflict",
+      "level": "L1",
+      "meaningKo": "갈등, 충돌",
+      "definitionEn": "a serious disagreement between people or ideas",
+      "nuance": "명사는 CON-flict, 동사는 con-FLICT로 강세가 옮겨간다. 셀린은 첫 다툼 직후 conflict를 오히려 옹호한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "Why does everyone think conflict is so bad?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1205",
+      "lemma": "bland",
+      "level": "L2",
+      "meaningKo": "밋밋한, 특징 없는",
+      "definitionEn": "lacking strong flavor, interest, or character",
+      "nuance": "원래 음식의 '싱거움'. 사람·삶에 쓰면 '심심하고 개성 없다'는 은근한 모욕이 된다. 제시가 자기를 셀린의 밋밋한 캔버스를 잠깐 장식하는 무늬로 자조하는 대목.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "momentarily decorating your bland canvas",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1206",
+      "lemma": "seduce",
+      "level": "L2",
+      "meaningKo": "유혹하다, 꾀어내다",
+      "definitionEn": "to persuade someone to do something, especially to have sex",
+      "nuance": "attract가 끌림이라면 seduce는 '의도를 가지고 무너뜨리는' 쪽. 셀린이 연애를 전략으로 묘사하는 문장 안에서 무기 목록처럼 놓인다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "knowing his weak points, what would hurt him, seduce him",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1207",
+      "lemma": "whine",
+      "level": "L2",
+      "meaningKo": "칭얼거리다, 징징대다",
+      "definitionEn": "to complain in an annoying, high-pitched way",
+      "nuance": "complain보다 유치하고 듣기 싫은 결. 셀린이 제시를 '어린애 같다'고 찌를 때 고른 동사다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "a little boy whining because all the attention wasn't focused on him",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1208",
+      "lemma": "competitiveness",
+      "level": "L2",
+      "meaningKo": "경쟁심",
+      "definitionEn": "a strong desire to be more successful than others",
+      "nuance": "제품의 '경쟁력'도 같은 단어지만 여기서는 사람 안에 심어진 이기고 싶은 충동.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "we've all had such competitiveness engrained in us",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1209",
+      "lemma": "bum",
+      "level": "L2",
+      "meaningKo": "부랑자, 빈둥거리는 사람",
+      "definitionEn": "a homeless person or someone who avoids work",
+      "nuance": "미국식 구어로 다소 무례하다. 제시는 시로 돈을 버는 노인을 'a Viennese variation of a bum'이라 부르며 반쯤 감탄한다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "I like this Viennese variation of a bum",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1210",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "털어놓다, 고백하다",
+      "definitionEn": "to admit something you have kept hidden, often with reluctance",
+      "nuance": "죄의 자백과 마음의 고백을 다 덮는다. 사랑 고백은 confess가 아니라 tell someone how you feel 쪽이 자연스럽다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1211",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, (정해진) 팔자",
+      "definitionEn": "the power believed to decide what will happen, or what happens as a result",
+      "nuance": "destiny가 '나아갈 길'이라면 fate는 '피할 수 없이 주어진 것'. 할머니가 accept her fate했다는 말이 이 장면 전체를 슬프게 만든다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1212",
+      "lemma": "uncomplicated",
+      "level": "L2",
+      "meaningKo": "단순한, 복잡할 것 없는",
+      "definitionEn": "simple and easy to understand or deal with",
+      "nuance": "simple이 '단순함'이라면 uncomplicated는 '얽힌 게 없음'. 뒤집힐 것을 아는 채로 쓰인 복선 같은 형용사다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1213",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 언젠가는",
+      "definitionEn": "in the end, especially after a long time or delay",
+      "nuance": "'혹시나'가 아니라 '시간이 지나면 반드시'. 제시가 he would have disappointed her eventually라고 할 때 이 단어가 냉소의 무게를 다 짊어진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1214",
+      "lemma": "revolt",
+      "level": "L2",
+      "meaningKo": "반항하다, 들고일어나다",
+      "definitionEn": "to rise up against authority or refuse to accept it",
+      "nuance": "rebel과 거의 같지만 revolt 쪽이 집단적·정치적 색이 짙다. 셀린의 부모는 68혁명 세대였다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They were these angry, young, May '68 people, revolting against everything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1215",
+      "lemma": "insecure",
+      "level": "L2",
+      "meaningKo": "불안한, 자신 없는",
+      "definitionEn": "lacking confidence and worried about how others see you",
+      "nuance": "'보안이 취약한'이라는 뜻도 같은 단어. 사람에게 쓰면 '스스로에 대한 확신이 없는'이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "every time that we would have people over...I'd be insecure",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1216",
+      "lemma": "vow",
+      "level": "L2",
+      "meaningKo": "약속, 맹세",
+      "definitionEn": "a solemn promise",
+      "nuance": "promise보다 무겁고 격식 있다. 결혼 서약이 wedding vows — 다시 안 만나기로 한 두 사람의 약속에 이 단어를 쓴 것이 아프다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "I don't want you to break our vow",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1217",
+      "lemma": "rational",
+      "level": "L2",
+      "meaningKo": "이성적인, 합리적인",
+      "definitionEn": "based on reason rather than emotion",
+      "nuance": "reasonable(타당한)과 달리 '감정을 배제한'이 핵심. 셀린이 our rational, adult decision이라 부를 때 이미 비꼼이 섞여 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "What about our rational, adult decision?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1218",
+      "lemma": "delusion",
+      "level": "L3",
+      "meaningKo": "망상, 착각",
+      "definitionEn": "a false belief held firmly despite evidence against it",
+      "nuance": "illusion(눈에 속는 것)과 달리 delusion은 '믿음이 어긋난 것'. 시인의 첫 두 줄 Daydream delusion이 이 유닛의 정서를 요약한다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "Daydream delusion.",
+          "speaker": "Poet"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1219",
+      "lemma": "maneuvering",
+      "level": "L3",
+      "meaningKo": "책략, 수싸움",
+      "definitionEn": "clever or skillful moves made to gain an advantage",
+      "nuance": "원래 군대의 '기동'. 셀린이 연애를 군사 작전처럼 그리는 비유 안에서 strategy와 짝을 이룬다. 영국식 철자는 manoeuvring.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "plotting my strategy and maneuverings",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1220",
+      "lemma": "engrained",
+      "level": "L3",
+      "meaningKo": "깊이 박힌, 몸에 밴",
+      "definitionEn": "firmly fixed in someone's mind or habits",
+      "nuance": "ingrained가 표준 철자이고 engrained는 그 변형. 나뭇결(grain) 속까지 스며든 이미지 — 지우려 해도 안 지워지는 것에 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "we've all had such competitiveness engrained in us",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1221",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(심리) 투사 — 내 감정을 상대에게 덧씌우는 것",
+      "definitionEn": "the act of attributing your own feelings or ideas to someone else",
+      "nuance": "영화의 '영사', 통계의 '전망'도 같은 단어. 제시는 사랑을 romantic projections, 즉 상대가 아니라 내가 만든 상을 보는 일로 규정한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1222",
+      "lemma": "mannerism",
+      "level": "L3",
+      "meaningKo": "(버릇처럼 반복되는) 말투·몸짓",
+      "definitionEn": "a habitual gesture or way of speaking that is characteristic of a person",
+      "nuance": "manner(태도)와 다르다 — mannerism은 '그 사람 특유의, 반복돼서 눈에 띄는 버릇'. 오래 붙어 있으면 미워질 것들의 이름.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "you'd start to hate a lot of my mannerisms",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1223",
+      "lemma": "pseudo-intellectual",
+      "level": "L3",
+      "meaningKo": "지식인인 척하는, 겉멋 든",
+      "definitionEn": "pretending to be more intelligent or cultured than one really is",
+      "nuance": "pseudo-(가짜)는 어디에나 붙는 접두사. 제시가 자기 이야기 습관에 스스로 붙이는 라벨이라 자조가 진해진다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "the way I tell the same stupid pseudo-intellectual story again, and again",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1224",
+      "lemma": "drive someone mad",
+      "level": "L4",
+      "meaningKo": "~를 미치게 하다, 돌아버리게 만들다",
+      "definitionEn": "to annoy someone extremely",
+      "nuance": "drive는 '몰아간다'는 뜻. 미국식으로는 drive someone crazy/nuts가 더 흔하다. 셀린은 '오래 같이 있으면 뭐가 제일 거슬릴까'를 이 표현으로 묻는다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "what do you think would be the first thing about me that would drive you mad?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1225",
+      "lemma": "fly into a rage",
+      "level": "L4",
+      "meaningKo": "버럭 화를 내다, 길길이 날뛰다",
+      "definitionEn": "to suddenly become extremely angry",
+      "nuance": "get angry와 달리 '순식간에 폭발한다'는 속도가 핵심. 과거형은 flew into a rage.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "She flew into a rage, and broke up with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1226",
+      "lemma": "rob someone blind",
+      "level": "L4",
+      "meaningKo": "탈탈 털어먹다, 바가지를 씌우다",
+      "definitionEn": "to cheat or overcharge someone badly",
+      "nuance": "blind는 '눈뜨고 당하게'라는 강조. 손금쟁이에게 돈을 뜯겼다고 분해하는 제시의 한마디다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 12,
+          "context": "listen, this woman robs you blind, okay?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1227",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스러워하다, ~에 자부심을 갖다",
+      "definitionEn": "to feel proud of something you do or are",
+      "nuance": "be proud of가 상태라면 take pride in은 '스스로 그렇게 여기기로 했다'는 능동. 제시가 '원래 태어나지 말았어야 할 아이'라는 사실마저 자기 것으로 삼는 대목.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-1228",
+      "lemma": "be sick to death of",
+      "level": "L4",
+      "meaningKo": "지긋지긋하다, 넌더리가 나다",
+      "definitionEn": "to be completely fed up with something",
+      "nuance": "be sick of의 최상급. to death가 강조. 제시가 사람들이 자기 자신에게 질려 있다고 말할 때의 표현.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-12",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 19,
+          "context": "they are sick to death of being around themselves",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-12-001",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "bland — \"momentarily decorating your bland canvas\"",
+      "wordId": "w-1205",
+      "options": [
+        "화려하고 눈에 띄는",
+        "낡고 해진",
+        "밋밋하고 특징 없는",
+        "값비싸고 귀한"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-001"
+    },
+    {
+      "quizId": "q-12-002",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "delusion — \"Daydream delusion.\" (시인이 읊는 첫 행)",
+      "wordId": "w-1218",
+      "options": [
+        "환멸, 깨어남",
+        "망상, 착각",
+        "여운, 잔상",
+        "결심, 각오"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-002"
+    },
+    {
+      "quizId": "q-12-003",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "mannerism — \"you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-1222",
+      "options": [
+        "예의, 매너",
+        "속마음, 본심",
+        "취향, 기호",
+        "버릇처럼 반복되는 말투·몸짓"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-006"
+    },
+    {
+      "quizId": "q-12-004",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "be sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-1228",
+      "options": [
+        "지긋지긋하다, 넌더리가 나다",
+        "몹시 아프다",
+        "죽도록 그리워하다",
+        "겁이 나서 피하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-009"
+    },
+    {
+      "quizId": "q-12-005",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "rob someone blind — \"listen, this woman robs you blind, okay?\"",
+      "wordId": "w-1226",
+      "options": [
+        "~의 눈을 속여 길을 잃게 하다",
+        "~에게 사기 치는 법을 가르치다",
+        "~를 탈탈 털어먹다, 바가지를 씌우다",
+        "~를 못 본 척 지나치다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-008"
+    },
+    {
+      "quizId": "q-12-006",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "Would you be in Paris by now, if you ___ off the train with me? (Jesse, Ch 12)",
+      "options": [
+        "hadn't gotten",
+        "didn't get",
+        "wouldn't get",
+        "haven't gotten"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r3",
+      "srsCardId": "c-12-010"
+    },
+    {
+      "quizId": "q-12-007",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "If somebody ___ me the choice right now, of to never see you again or to marry you, I would marry you. (Jesse, Ch 19)",
+      "options": [
+        "gives",
+        "would give",
+        "gave",
+        "had given"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-008",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "If she'd ever got to know him, I'm sure he ___ her eventually. (Jesse, Ch 8)",
+      "options": [
+        "would disappoint",
+        "had disappointed",
+        "would have disappointed",
+        "will disappoint"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r2",
+      "srsCardId": "c-12-011"
+    },
+    {
+      "quizId": "q-12-009",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "제시의 부모는 결국 이혼했다. 그는 말한다: They ___ it a lot sooner. (더 일찍 했어야 했는데)",
+      "options": [
+        "would have done",
+        "should have done",
+        "should do",
+        "must have done"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": "c-12-013"
+    },
+    {
+      "quizId": "q-12-010",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "If I would have more time, I would learn Italian. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "if절에는 would를 쓰지 않는다. would는 주절 담당이다. → If I had more time, I would learn Italian.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-12-012"
+    },
+    {
+      "quizId": "q-12-011",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "혼합 가정법에서 if절(had p.p.)과 주절(would + 원형)의 시제가 어긋나는 것은 정상이다.",
+      "isCorrect": true,
+      "explanation": "조건은 과거, 결과는 지금이기 때문이다. Would you be in Paris by now, if you hadn't gotten off the train with me? — 내린 건 과거, 파리에 있는지는 지금. by now가 그 단서다.",
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-012",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "If she'd ever got to know him에서 'd는 would가 아니라 had의 축약이다.",
+      "isCorrect": true,
+      "explanation": "if절 안의 'd는 had, 주절의 'd는 would다. 같은 장면의 I'd probably be hanging around the airport(주절)의 'd는 would.",
+      "relatedRuleId": "r6",
+      "srsCardId": "c-12-014"
+    },
+    {
+      "quizId": "q-12-013",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "'더 일찍 말했어야 했는데 안 했다'는 후회는 I would have told you earlier.로 표현한다.",
+      "isCorrect": false,
+      "explanation": "would have p.p.는 '(그랬다면) 말했을 텐데'라는 가정의 결과다. 후회·자책은 should have p.p. → I should have told you this earlier.(Jesse, Ch 13)",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-12-013"
+    },
+    {
+      "quizId": "q-12-014",
+      "unitId": "u-12",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 12)",
+      "chunks": [
+        "off the train",
+        "Would you be in Paris by now,",
+        "with me?",
+        "if uh, you hadn't gotten"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-12-015"
+    },
+    {
+      "quizId": "q-12-015",
+      "unitId": "u-12",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 8)",
+      "chunks": [
+        "he would have disappointed her",
+        "eventually.",
+        "If she'd ever got to know him,",
+        "I'm sure"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-016",
+      "unitId": "u-12",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "or to marry you,",
+        "If somebody gave me the choice right now,",
+        "I would marry you.",
+        "of to never see you again"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-017",
+      "unitId": "u-12",
+      "type": "koToEn",
+      "prompt": "그때 베를린 그 일자리를 잡았더라면, 지금 여기 너랑 앉아 있지 않을 텐데.",
+      "chunks": [
+        "I wouldn't be sitting here",
+        "If I had taken",
+        "with you right now.",
+        "that job in Berlin,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-018",
+      "unitId": "u-12",
+      "type": "koToEn",
+      "prompt": "그의 번호를 안다면, 오늘 밤 그에게 전화할 텐데.",
+      "chunks": [
+        "his number,",
+        "I would call him",
+        "If I knew",
+        "tonight."
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-019",
+      "unitId": "u-12",
+      "type": "koToEn",
+      "prompt": "그들은 훨씬 더 일찍 그렇게 했어야 했다.",
+      "chunks": [
+        "a lot sooner.",
+        "They",
+        "done it",
+        "should have"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-020",
+      "unitId": "u-12",
+      "type": "anchorRestore",
+      "prompt": "앵커 장면을 복원하세요 — 도나우 강변, 제시와 셀린 (Ch 12, 빈칸 4개)",
+      "text": "Would you be in Paris __1__, if uh, you __2__ gotten off the train with me? — No, not yet. What __3__ you be doing? — I __4__ probably be hanging around the airport, reading old magazines.",
+      "blanks": [
+        "by now",
+        "hadn't",
+        "would",
+        "'d"
+      ],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-12-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-12-001",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1205",
+      "front": "bland",
+      "back": {
+        "meaningKo": "밋밋한, 특징 없는",
+        "nuance": "원래 음식의 '싱거움'. 사람·삶에 쓰면 '개성 없다'는 은근한 모욕.",
+        "context": "momentarily decorating your bland canvas — Jesse, Ch 12"
+      }
+    },
+    {
+      "cardId": "c-12-002",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1218",
+      "front": "delusion",
+      "back": {
+        "meaningKo": "망상, 착각",
+        "nuance": "illusion은 눈이 속는 것, delusion은 믿음이 어긋난 것.",
+        "context": "Daydream delusion. / Limousine Eyelash. — Poet, Ch 12"
+      }
+    },
+    {
+      "cardId": "c-12-003",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1219",
+      "front": "maneuvering",
+      "back": {
+        "meaningKo": "책략, 수싸움",
+        "nuance": "군대의 '기동'에서 온 말. 셀린은 연애를 작전처럼 그린다.",
+        "context": "plotting my strategy and maneuverings — Céline, Ch 12"
+      }
+    },
+    {
+      "cardId": "c-12-004",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1221",
+      "front": "projection",
+      "back": {
+        "meaningKo": "(심리) 투사 — 내 감정을 상대에게 덧씌우는 것",
+        "nuance": "제시는 사랑을 '상대가 아니라 내가 만든 상을 보는 일'로 규정한다.",
+        "context": "people have these romantic projections — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-12-005",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1211",
+      "front": "fate",
+      "back": {
+        "meaningKo": "운명, 정해진 팔자",
+        "nuance": "destiny가 '나아갈 길'이라면 fate는 '피할 수 없이 주어진 것'.",
+        "context": "She just accepted her fate. — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-12-006",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1222",
+      "front": "mannerism",
+      "back": {
+        "meaningKo": "버릇처럼 반복되는 말투·몸짓",
+        "nuance": "manner(태도)와 다르다. 오래 붙어 있으면 미워질 것들의 이름.",
+        "context": "you'd start to hate a lot of my mannerisms — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-12-007",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1225",
+      "front": "fly into a rage",
+      "back": {
+        "meaningKo": "버럭 화를 내다, 길길이 날뛰다",
+        "nuance": "get angry와 달리 '순식간에 폭발한다'는 속도가 핵심. 과거형 flew.",
+        "context": "She flew into a rage, and broke up with me — Jesse, Ch 12"
+      }
+    },
+    {
+      "cardId": "c-12-008",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1226",
+      "front": "rob someone blind",
+      "back": {
+        "meaningKo": "탈탈 털어먹다, 바가지를 씌우다",
+        "nuance": "blind는 '눈뜨고 당하게'라는 강조. 손금쟁이에게 당했다는 제시의 항변.",
+        "context": "this woman robs you blind, okay? — Jesse, Ch 12"
+      }
+    },
+    {
+      "cardId": "c-12-009",
+      "unitId": "u-12",
+      "kind": "vocab",
+      "wordId": "w-1228",
+      "front": "be sick to death of",
+      "back": {
+        "meaningKo": "지긋지긋하다, 넌더리가 나다",
+        "nuance": "be sick of의 최상급. to death가 강조.",
+        "context": "they are sick to death of being around themselves — Jesse, Ch 19"
+      }
+    },
+    {
+      "cardId": "c-12-010",
+      "unitId": "u-12",
+      "kind": "pattern",
+      "front": "\"그때 안 그랬더라면 지금 ~할 텐데\" — 과거의 선택이 지금에 닿는 말을 영어로?",
+      "back": {
+        "pattern": "If + 주어 + had p.p., 주어 + would + 동사원형 (+ by now / now / still)",
+        "explanation": "조건은 과거, 결과는 지금. 그래서 두 절의 시제가 일부러 어긋난다. 주절에 would have가 아니라 would가 오는 것이 핵심이다.",
+        "anchor": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me? — Jesse, Ch 12"
+      }
+    },
+    {
+      "cardId": "c-12-011",
+      "unitId": "u-12",
+      "kind": "pattern",
+      "front": "\"그랬더라면 ~했을 텐데\" — 끝난 과거를 통째로 뒤집는 말을 영어로?",
+      "back": {
+        "pattern": "If + 주어 + had p.p., 주어 + would have p.p.",
+        "explanation": "두 절 모두 한 칸씩 더 뒤로 민다. 실제로는 일어나지 않았다는 뜻을 시제 자체가 담는다.",
+        "anchor": "If she'd ever got to know him, you know, I'm sure he would have disappointed her eventually. — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-12-012",
+      "unitId": "u-12",
+      "kind": "trap",
+      "front": "If I would have more time, I would learn Italian. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "if절에는 would를 쓰지 않는다. would는 주절 담당. → If I had more time, I would learn Italian.",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-12-013",
+      "unitId": "u-12",
+      "kind": "trap",
+      "front": "'더 일찍 했어야 했는데'를 They would have done it a lot sooner.로 써도 되나?",
+      "back": {
+        "verdict": false,
+        "reason": "would have p.p.는 '(그랬다면) 했을 텐데'라는 가정의 결과다. 후회·비난은 should have p.p. → They should have done it a lot sooner.(Jesse, Ch 8)",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-12-014",
+      "unitId": "u-12",
+      "kind": "trap",
+      "front": "If she'd ever got to know him의 'd를 would로 알아들었다 — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "if절 안의 'd는 had다. 주절의 'd만 would. 이걸 못 가르면 과거완료 가정을 단순 과거로 잘못 듣는다. 비교: I'd probably be hanging around the airport(주절, would).",
+        "relatedRuleId": "r6"
+      }
+    },
+    {
+      "cardId": "c-12-015",
+      "unitId": "u-12",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "도나우 강변, 제시가 셀린의 손을 깨문 직후 — 지금 함께 있는 이 순간이 원래 없었을 수도 있다는 것을 문법으로 말하는 장면. 통으로 떠올려 보세요.",
+      "back": {
+        "en": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
+        "speaker": "Jesse",
+        "chapter": 12
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "count": 20,
+  "count": 260,
   "types": [
     "meaning",
     "blank",
@@ -9,6 +9,1958 @@
     "anchorRestore"
   ],
   "quizzes": [
+    {
+      "quizId": "q-01-001",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "nullify — \"I guess they sort of nullify each other, or something.\"",
+      "wordId": "w-0117",
+      "options": [
+        "증폭시키다",
+        "되풀이하다",
+        "서로 상쇄해 없던 일로 만들다",
+        "떠올리게 하다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-001"
+    },
+    {
+      "quizId": "q-01-002",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "supposedly — \"Well, supposedly, men lose the ability to hear higher-pitched sounds\"",
+      "wordId": "w-0108",
+      "options": [
+        "확실히, 틀림없이",
+        "(확인은 안 됐지만) 그렇다고들 하는데",
+        "전혀 뜻밖에도",
+        "마지못해"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-002"
+    },
+    {
+      "quizId": "q-01-003",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "ordinarily — \"you have ideas that you ordinarily wouldn't have\"",
+      "wordId": "w-0110",
+      "options": [
+        "기꺼이",
+        "즉시",
+        "어쩔 수 없이",
+        "평소 같으면, 보통은"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-003"
+    },
+    {
+      "quizId": "q-01-004",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "service-oriented — \"You know what? Not service-oriented.\"",
+      "wordId": "w-0119",
+      "options": [
+        "손님 응대에 신경 쓰는",
+        "시간 약속을 잘 지키는",
+        "가격이 합리적인",
+        "위생 관리가 철저한"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-005"
+    },
+    {
+      "quizId": "q-01-005",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "go blank — \"I look at this woman, and my mind goes completely blank\"",
+      "wordId": "w-0122",
+      "options": [
+        "말문이 트이다",
+        "화가 나서 눈앞이 캄캄해지다",
+        "머릿속이 하얘지다",
+        "깜빡 잠이 들다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-007"
+    },
+    {
+      "quizId": "q-01-006",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "셀린의 \"You on holiday?\"를 생략 없는 완전한 문장으로 되살리면: ___ you on holiday?",
+      "options": [
+        "Do",
+        "Are",
+        "Have",
+        "Will"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-007",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "셀린이 테이블을 가리키며 한 \"This fine here?\"의 완전한 형태는?",
+      "options": [
+        "Does this fine here?",
+        "This is fine here?",
+        "Is this fine here?",
+        "Are this fine here?"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-008",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "셀린의 \"You get off here, no?\"를 원어민이 쓰는 부가의문문으로 고치면: You get off here, ___?",
+      "options": [
+        "isn't it",
+        "don't you",
+        "no",
+        "aren't you"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-009",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "You're American, ___?",
+      "options": [
+        "isn't it",
+        "are you not",
+        "aren't you",
+        "don't you"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-010",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "\"This fine here?\"는 문법이 깨진 문장이라, 학습자가 따라 써서는 안 된다.",
+      "isCorrect": false,
+      "explanation": "깨진 문장이 아니라 구어의 정상적인 생략형이다. 문두의 Is가 사라지고 의문의 표시가 끝올림 억양으로 옮겨갔을 뿐. 격식 있는 자리에서만 Is this fine here?로 되살리면 된다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-011",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "셀린의 \"You get off here, no?\"에서 문미의 no?는 프랑스어 화자 특유의 말버릇이고, 원어민이라면 보통 right?나 don't you?를 쓴다.",
+      "isCorrect": true,
+      "explanation": "프랑스어 n'est-ce pas?를 그대로 옮긴 것이다. 셀린은 That's mean, no? / That's wonderful, no?처럼 영화 내내 이 형태를 쓰지만, 제시는 한 번도 쓰지 않고 right?만 쓴다.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-01-013"
+    },
+    {
+      "quizId": "q-01-012",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "\"You are American, isn't it?\"는 자연스러운 부가의문문이다.",
+      "isCorrect": false,
+      "explanation": "부가는 앞 문장의 주어·동사를 그대로 되받아야 한다. 주어가 you이고 동사가 are이므로 aren't you?가 맞는다. isn't it?은 앞 주어가 it일 때만 쓴다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-01-014"
+    },
+    {
+      "quizId": "q-01-013",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "면접 자리에서 \"You hiring right now?\"라고 물어도 격식상 문제가 없다.",
+      "isCorrect": false,
+      "explanation": "생략 의문문은 사적인 구어 전용이다. 면접·이메일·발표에서는 Are you hiring right now?로 되살려야 한다. 반대로 친구 사이에서까지 완전한 문장을 고집하면 딱딱하게 들린다.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-01-012"
+    },
+    {
+      "quizId": "q-01-014",
+      "unitId": "u-01",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": [
+        "any other language,",
+        "right?",
+        "And of course,",
+        "you don't speak"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-015",
+      "unitId": "u-01",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 1)",
+      "chunks": [
+        "they lose their ability",
+        "Have you ever heard that",
+        "to hear each other?",
+        "as couples get older,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-01-010"
+    },
+    {
+      "quizId": "q-01-016",
+      "unitId": "u-01",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "haven't you?",
+        "You've been",
+        "before,",
+        "to Vienna"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-01-011"
+    },
+    {
+      "quizId": "q-01-017",
+      "unitId": "u-01",
+      "type": "koToEn",
+      "prompt": "저기, 부다페스트에서 오시는 길이에요? (제시가 던진 생략형 그대로)",
+      "chunks": [
+        "Hey,",
+        "from Budapest?",
+        "you",
+        "coming"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-018",
+      "unitId": "u-01",
+      "type": "koToEn",
+      "prompt": "여기서 내리시죠, 그렇죠? (셀린의 no?를 원어민식 부가로 바꿔서)",
+      "chunks": [
+        "get off",
+        "don't you?",
+        "You",
+        "here,"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-019",
+      "unitId": "u-01",
+      "type": "koToEn",
+      "prompt": "이 기차 빈으로 가는 거 맞죠?",
+      "chunks": [
+        "goes",
+        "This train",
+        "right?",
+        "to Vienna,"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-020",
+      "unitId": "u-01",
+      "type": "anchorRestore",
+      "prompt": "말을 붙이고 헤어지기까지 — 앵커 세 문장을 복원하세요 (빈칸 4개)",
+      "text": "Céline: \"This __1__ here?\" / Jesse: \"Hey, you __2__ from __3__?\" / Céline: \"You get off here, __4__?\"",
+      "blanks": [
+        "fine",
+        "coming",
+        "Budapest",
+        "no"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-01-015"
+    },
+    {
+      "quizId": "q-02-001",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "kind of — \"the thing that kind of haunts me is the distribution\"",
+      "wordId": "w-0211",
+      "options": [
+        "일종의, ~의 한 종류",
+        "좀, 어느 정도 — 단정을 누그러뜨리는 말",
+        "친절하게, 상냥하게",
+        "결국, 마침내"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-006"
+    },
+    {
+      "quizId": "q-02-002",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "ordinarily — \"you have ideas that you ordinarily wouldn't have\"",
+      "wordId": "w-0221",
+      "options": [
+        "차례대로, 순서대로",
+        "특별히, 유난히",
+        "평소 같으면, 보통은",
+        "명령에 따라"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-007"
+    },
+    {
+      "quizId": "q-02-003",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "bullshit detector — \"I always had a pretty good bullshit detector when I was a kid\"",
+      "wordId": "w-0216",
+      "options": [
+        "허튼소리를 알아채는 감각",
+        "쓸데없이 참견하는 버릇",
+        "고장 난 화재 경보기",
+        "지독한 잔소리꾼"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-009"
+    },
+    {
+      "quizId": "q-02-004",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "dunno — \"Umm, I dunno...Anybody can produce a show real cheap\"",
+      "wordId": "w-0204",
+      "options": [
+        "아무래도 상관없어",
+        "됐어, 관두자",
+        "몰라, 글쎄 (I don't know의 구어 축약)",
+        "다 끝났어"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-004"
+    },
+    {
+      "quizId": "q-02-005",
+      "unitId": "u-02",
+      "type": "meaning",
+      "prompt": "nozzle — \"I let go of the nozzle\"",
+      "wordId": "w-0223",
+      "options": [
+        "정원 울타리",
+        "호스 끝의 물 나오는 주둥이",
+        "수도 계량기",
+        "빗물받이 홈통"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-02-008"
+    },
+    {
+      "quizId": "q-02-006",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "the thing that kind of haunts me is the distribution, you know. ___ , getting these tapes from town to town, city to city.",
+      "options": [
+        "I mean",
+        "I know",
+        "You know",
+        "I guess"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-007",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "구어로 '오늘 밤 걔한테 전화할 거야' — ___ call her tonight.",
+      "options": [
+        "I gonna",
+        "I'm gonna",
+        "I gonna to",
+        "I'm going gonna"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-008",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "Q: So, has this trip around Europe been good for you? / A: ___ , I'll tell ya, sitting for weeks on end has actually been kinda great.",
+      "options": [
+        "Well",
+        "So",
+        "Instead",
+        "Therefore"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-009",
+      "unitId": "u-02",
+      "type": "blank",
+      "prompt": "'좀 피곤해'라는 뜻으로 — I'm ___ tired.",
+      "options": [
+        "a kind of",
+        "the kind of",
+        "kind of",
+        "kind"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-010",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "제시는 셀린이 전혀 모르는 자기 아이디어를 설명하면서도 you know를 반복해서 쓴다. you know가 '너도 알잖아'라는 정보 확인이 아니기 때문이다.",
+      "isCorrect": true,
+      "explanation": "맞다. you know는 확인 질문이 아니라 말 고를 시간을 벌고 상대를 대화에 붙들어 두는 장치다. 그래서 상대가 모르는 내용에도 자유롭게 붙는다.",
+      "relatedRuleId": "r1",
+      "srsCardId": "c-02-001"
+    },
+    {
+      "quizId": "q-02-011",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "제시의 \"I mean, getting these tapes from town to town\"은 방금 말한 distribution을 자기 말로 다시 풀어 주는 것이다.",
+      "isCorrect": true,
+      "explanation": "맞다. I mean은 자기가 한 말 쪽을 향한다 — 고쳐 말하거나 풀어 말할 때 쓴다. 상대 쪽을 향하는 you know와 방향이 반대다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-02-002"
+    },
+    {
+      "quizId": "q-02-012",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "친구에게 보내는 메시지든 회사 보고서든, gonna와 kinda는 똑같이 써도 된다.",
+      "isCorrect": false,
+      "explanation": "아니다. gonna·kinda·dunno는 발음을 받아 적은 것이라 말과 사적인 메시지 전용이다. 보고서·이메일에서는 going to / kind of(또는 somewhat)로 써야 격이 유지된다.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-02-013"
+    },
+    {
+      "quizId": "q-02-013",
+      "unitId": "u-02",
+      "type": "truefalse",
+      "prompt": "\"the thing that kind of haunts me\"에서 kind of는 '일종의'라는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "아니다. '일종의'는 명사 앞에 오는 a kind of다. 여기 kind of는 동사 haunts 앞에서 단정을 누그러뜨리는 완충어 — '좀 신경 쓰이는 것' 정도.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-02-014"
+    },
+    {
+      "quizId": "q-02-014",
+      "unitId": "u-02",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "you know,",
+        "Well, I'll tell ya,",
+        "has actually been kinda great.",
+        "sitting, you know, for weeks on end,",
+        "looking out the window"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-02-011"
+    },
+    {
+      "quizId": "q-02-015",
+      "unitId": "u-02",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "I mean, getting these tapes",
+        "the thing that kind of haunts me",
+        "‘cause it would have to play all the time,",
+        "is the distribution, you know.",
+        "so that the play is continuous,",
+        "from town to town, city to city,",
+        "or else it just wouldn't work."
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        5,
+        4,
+        2,
+        6
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-02-010"
+    },
+    {
+      "quizId": "q-02-016",
+      "unitId": "u-02",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": [
+        "You know, even when they're wrong,",
+        "it‘s this, it‘s this passive-aggressive shit,",
+        "It makes it even harder to officially complain.",
+        "you know what I mean,",
+        "it‘s... I hate it, I really hate it."
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        3,
+        4
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-02-003"
+    },
+    {
+      "quizId": "q-02-017",
+      "unitId": "u-02",
+      "type": "koToEn",
+      "prompt": "몰라, 좀 늦기도 했고, 어차피 집에 못 갈 것 같아.",
+      "chunks": [
+        "it's kinda late,",
+        "I dunno,",
+        "make it home anyway.",
+        "and I'm not gonna"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": "c-02-005"
+    },
+    {
+      "quizId": "q-02-018",
+      "unitId": "u-02",
+      "type": "koToEn",
+      "prompt": "걔가 \"미안해\" 이러긴 했는데, 무슨 말인지 알지, 하나도 미안한 목소리가 아니었어.",
+      "chunks": [
+        "but you know what I mean,",
+        "she didn't sound",
+        "She was like,",
+        "sorry at all.",
+        "\"I'm sorry,\""
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-019",
+      "unitId": "u-02",
+      "type": "koToEn",
+      "prompt": "아무튼, 기차가 늦어서 우리는 1막을 통째로 놓쳤어.",
+      "chunks": [
+        "we missed",
+        "Anyway,",
+        "the whole first act.",
+        "‘cause the train was late,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-02-020",
+      "unitId": "u-02",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개 — Jesse, Ch 2)",
+      "text": "No, uh, it's had its, umm. __1__, I'll tell __2__, you know, sitting, __3__, for weeks on end, looking out the window has actually been __4__ great.",
+      "blanks": [
+        "Well",
+        "ya",
+        "you know",
+        "kinda"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-02-015"
+    },
+    {
+      "quizId": "q-03-001",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "nullify — \"I guess they sort of nullify each other, or something.\"",
+      "wordId": "w-0317",
+      "options": [
+        "서로를 상쇄하다, 무효로 만들다",
+        "서로를 흉내 내다",
+        "서로를 더 강하게 만들다",
+        "서로를 못 본 척하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-007"
+    },
+    {
+      "quizId": "q-03-002",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "supposedly — \"Well, supposedly, men lose the ability to hear higher-pitched sounds\"",
+      "wordId": "w-0305",
+      "options": [
+        "확실히, 틀림없이",
+        "어쩔 수 없이",
+        "듣기로는, 그렇다고들 하는데",
+        "완전히, 남김없이"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-006"
+    },
+    {
+      "quizId": "q-03-003",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "or something — \"I guess they sort of nullify each other, or something.\"",
+      "wordId": "w-0321",
+      "options": [
+        "다른 걸 골라야 한다는 뜻",
+        "~인가 뭔가, 그런 거지 (단정을 피하는 마감)",
+        "특별한 무언가가 있다는 뜻",
+        "그 밖에는 아무것도 없다는 뜻"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-003"
+    },
+    {
+      "quizId": "q-03-004",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "go blank — \"I look at this woman, and my mind goes completely blank\"",
+      "wordId": "w-0324",
+      "options": [
+        "머릿속이 또렷해지다",
+        "화가 치밀어 오르다",
+        "말문이 트이다",
+        "머릿속이 하얘지다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-008"
+    },
+    {
+      "quizId": "q-03-005",
+      "unitId": "u-03",
+      "type": "meaning",
+      "prompt": "can't help it — \"I can't help it. I know the statistics say na-na-na, it's safer\"",
+      "wordId": "w-0327",
+      "options": [
+        "그건 도와줄 수가 없다",
+        "도와줄 사람이 아무도 없다",
+        "나도 어쩔 수가 없다",
+        "도움 따위는 필요 없다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-03-009"
+    },
+    {
+      "quizId": "q-03-006",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "I guess they ___ nullify each other, or something. (Céline, Ch 1)",
+      "options": [
+        "sort of",
+        "of sort",
+        "sorts of",
+        "sort"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-007",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "'이거 좀 이상하다' — 자연스러운 것은? This is ___.",
+      "options": [
+        "weird kind of",
+        "kind weird of",
+        "kind of weird",
+        "weird of kind"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-008",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "'그건 좋은 생각이 아닌 것 같아' — 가장 영어다운 것은?",
+      "options": [
+        "I think it's not a good idea.",
+        "I don't think it's a good idea.",
+        "I think that is not a good idea, no?",
+        "It's not a good idea, I think so."
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-009",
+      "unitId": "u-03",
+      "type": "blank",
+      "prompt": "'아마 공항에서 어슬렁대고 있었겠지' — I'd ___ hanging around the airport.",
+      "options": [
+        "be probably",
+        "probably being",
+        "maybe being",
+        "probably be"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-010",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "\"I guess they sort of nullify each other, or something.\"에는 완충 장치가 세 개 겹쳐 있다.",
+      "isCorrect": true,
+      "explanation": "문두 I guess, 동사 앞 sort of, 문미 or something — 앞·중간·끝을 각각 다른 장치로 감쌌다. 셋 다 뜻은 그대로 두고 문장의 세기만 낮춘다.",
+      "relatedRuleId": "r1",
+      "srsCardId": "c-03-001"
+    },
+    {
+      "quizId": "q-03-011",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "\"It's just, I don't know, an observation about Europe.\"에서 I don't know는 '나는 모른다'는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "제시는 모르지 않는다. 문장 중간에 낀 I don't know는 '내 말이 절대적이진 않다'는 완충 신호다. 진짜 모를 때는 I have no idea.나 I don't know + 의문사절로 온다.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-03-013"
+    },
+    {
+      "quizId": "q-03-012",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "'좀 어색해'를 It's awkward kind of.라고 말할 수 있다.",
+      "isCorrect": false,
+      "explanation": "kind of는 꾸밀 말 앞에만 온다. → It's kind of awkward. 한국어 '좀'처럼 뒤에 붙이면 문장이 무너진다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-03-012"
+    },
+    {
+      "quizId": "q-03-013",
+      "unitId": "u-03",
+      "type": "truefalse",
+      "prompt": "I think it's not right.보다 I don't think it's right.가 영어답다.",
+      "isCorrect": true,
+      "explanation": "영어는 부정을 주절로 끌어올린다. I think it's not right.는 문법은 되지만 '아니라고 나는 생각한다'는 단정으로 들려 완충 효과가 사라진다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-03-014"
+    },
+    {
+      "quizId": "q-03-014",
+      "unitId": "u-03",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 1)",
+      "chunks": [
+        "nullify each other,",
+        "I guess",
+        "or something.",
+        "they sort of"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-03-010"
+    },
+    {
+      "quizId": "q-03-015",
+      "unitId": "u-03",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "how ambiguous everything was,",
+        "It just kind of let me know",
+        "even death.",
+        "But, I don't know.",
+        "you know,"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-016",
+      "unitId": "u-03",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "I guess.",
+        "I'd probably",
+        "the same thing,",
+        "say"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-017",
+      "unitId": "u-03",
+      "type": "koToEn",
+      "prompt": "그건 좀 이상한 것 같아.",
+      "chunks": [
+        "kind of",
+        "I think",
+        "strange.",
+        "it's"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-018",
+      "unitId": "u-03",
+      "type": "koToEn",
+      "prompt": "그게 그렇게 좋은 생각인 것 같지는 않아.",
+      "chunks": [
+        "a good idea.",
+        "I don't think",
+        "that's",
+        "really"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-019",
+      "unitId": "u-03",
+      "type": "koToEn",
+      "prompt": "글쎄, 뭐 나 좀 피곤한 것 같아.",
+      "chunks": [
+        "tired.",
+        "I guess",
+        "I don't know,",
+        "I'm kind of"
+      ],
+      "answer": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-03-020",
+      "unitId": "u-03",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "Well, supposedly, men lose the ability to hear higher-pitched sounds, and women eventually lose hearing in the low end. __1__ they __2__ __3__ each other, __4__.",
+      "blanks": [
+        "I guess",
+        "sort of",
+        "nullify",
+        "or something"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-03-015"
+    },
+    {
+      "quizId": "q-04-001",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "mannerism — \"then you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-0406",
+      "options": [
+        "예의범절, 매너",
+        "기분의 급격한 변화",
+        "몸에 밴 말버릇·몸짓 버릇",
+        "연기를 지도하는 방식"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-001"
+    },
+    {
+      "quizId": "q-04-002",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "be sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-0422",
+      "options": [
+        "~ 때문에 몸져눕다",
+        "~이 이제 지긋지긋하다",
+        "~을 몹시 그리워하다",
+        "~에 유난히 서툴다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-007"
+    },
+    {
+      "quizId": "q-04-003",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "opportune — \"I think this is the opportune time to tell you...\"",
+      "wordId": "w-0416",
+      "options": [
+        "기회만 노리는, 잇속만 챙기는",
+        "형식적이고 의례적인",
+        "마지못해 억지로 하는",
+        "때마침 딱 알맞은"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-004"
+    },
+    {
+      "quizId": "q-04-004",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "vow — \"I don't want you to break our vow\"",
+      "wordId": "w-0408",
+      "options": [
+        "서약, 엄숙한 약속",
+        "투표, 표결",
+        "목소리의 높낮이",
+        "보증금, 계약금"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-003"
+    },
+    {
+      "quizId": "q-04-005",
+      "unitId": "u-04",
+      "type": "meaning",
+      "prompt": "get away from — \"it's myself that I wish I could get away from\"",
+      "wordId": "w-0423",
+      "options": [
+        "~에게 슬며시 다가가다",
+        "~을 완전히 없애 버리다",
+        "~에게서 벗어나다, 빠져나가다",
+        "~을 그냥 눈감아 주다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-04-008"
+    },
+    {
+      "quizId": "q-04-006",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "Seriously, think about this. I ___ never been anywhere that I haven't been. (Jesse, Ch 19)",
+      "options": [
+        "have",
+        "had",
+        "am",
+        "was"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-007",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "We ___ each other a little while now, we're stuck together. (Jesse, Ch 5)",
+      "options": [
+        "knew",
+        "know",
+        "'ve known",
+        "are knowing"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-008",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "They have known each other ___ they got off the train.",
+      "options": [
+        "for",
+        "since",
+        "during",
+        "from"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-009",
+      "unitId": "u-04",
+      "type": "blank",
+      "prompt": "Céline ___ to Budapest three days ago.",
+      "options": [
+        "has gone",
+        "has been",
+        "went",
+        "has been going"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-010",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "제시처럼 '한 번도 ~한 적 없다'를 말할 때 never는 have와 과거분사 사이에 온다. (I've never been out bowling.)",
+      "isCorrect": true,
+      "explanation": "맞다. have + never + p.p.가 기본 자리다. haven't never처럼 이중부정으로 쓰지 않는다.",
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-011",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "When have you been to Vienna? — 맞는 질문이다.",
+      "isCorrect": false,
+      "explanation": "현재완료는 '언제?'라는 특정 과거 시점을 묻는 말과 함께 쓰지 못한다. → When did you go to Vienna?",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-04-012"
+    },
+    {
+      "quizId": "q-04-012",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "She has gone to Paris.는 '그녀는 파리에 가 본 적이 있다'는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "has gone to는 '가 버려서 지금 여기 없다'는 결과다. 경험은 has been to. → She has been to Paris.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-04-013"
+    },
+    {
+      "quizId": "q-04-013",
+      "unitId": "u-04",
+      "type": "truefalse",
+      "prompt": "I have known her for 2020. — 자연스러운 문장이다.",
+      "isCorrect": false,
+      "explanation": "for 뒤에는 기간, since 뒤에는 출발 시점이 온다. → I have known her since 2020. 또는 for six years.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-04-014"
+    },
+    {
+      "quizId": "q-04-014",
+      "unitId": "u-04",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "one of the kissers.",
+        "if I wasn't there,",
+        "I've never had a kiss",
+        "making some stupid joke.",
+        "when I wasn't",
+        "I've never been out bowling,"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-04-010"
+    },
+    {
+      "quizId": "q-04-015",
+      "unitId": "u-04",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 5)",
+      "chunks": [
+        "a little while now,",
+        "We've known",
+        "so we're going to ask each other",
+        "each other",
+        "we're stuck together,",
+        "a few direct questions."
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2,
+        5
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-04-011"
+    },
+    {
+      "quizId": "q-04-016",
+      "unitId": "u-04",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "but I've never gotten off the train",
+        "I've been to Vienna twice,",
+        "at that station.",
+        "on the way back"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-017",
+      "unitId": "u-04",
+      "type": "koToEn",
+      "prompt": "이 가수 들어 본 적 있어요?",
+      "chunks": [
+        "heard of",
+        "Have you",
+        "this singer?",
+        "ever"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-018",
+      "unitId": "u-04",
+      "type": "koToEn",
+      "prompt": "나는 그를 6년 동안 알고 지냈다.",
+      "chunks": [
+        "for six years.",
+        "I have",
+        "him",
+        "known"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-019",
+      "unitId": "u-04",
+      "type": "koToEn",
+      "prompt": "빈에는 가 본 적 있지만, 부다페스트에는 한 번도 가 본 적이 없어요.",
+      "chunks": [
+        "but I have never been",
+        "I have been",
+        "to Vienna,",
+        "to Budapest."
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-04-020",
+      "unitId": "u-04",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개) — Jesse, Ch 19",
+      "text": "I have __1__ been anywhere that I haven't been. I've never had a kiss when I wasn't one of the __2__. You know, I've never, um, __3__ to the movies, when I wasn't there in the __4__.",
+      "blanks": [
+        "never",
+        "kissers",
+        "gone",
+        "audience"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-04-015"
+    },
+    {
+      "quizId": "q-05-001",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "paranoid — \"I have this awful paranoid thought, that feminism was mostly invented by men\"",
+      "wordId": "w-0518",
+      "options": [
+        "느긋하고 태평한",
+        "감상적이고 눈물이 많은",
+        "피해망상적인, 누가 꾸민 일이라 의심하는",
+        "고집스럽고 완고한"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-005"
+    },
+    {
+      "quizId": "q-05-002",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "fate — \"She just accepted her fate.\"",
+      "wordId": "w-0508",
+      "options": [
+        "운명, 정해진 결말",
+        "잘못된 선택, 오판",
+        "행운, 뜻밖의 기회",
+        "의무, 떠맡은 책임"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-002"
+    },
+    {
+      "quizId": "q-05-003",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "uncomplicated — \"I always thought she had a very simple, uncomplicated love life\"",
+      "wordId": "w-0512",
+      "options": [
+        "불행하고 메마른",
+        "복잡할 것 없는, 얽힌 데 없는",
+        "남몰래 감춰 둔",
+        "격정적이고 위태로운"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-003"
+    },
+    {
+      "quizId": "q-05-004",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "take pride in — \"I eventually kind of took pride in it. You know, like my life was my own doing\"",
+      "wordId": "w-0523",
+      "options": [
+        "~을 부끄러워하다",
+        "~을 뒤늦게 후회하다",
+        "~을 자랑스럽게 여기다",
+        "~을 대수롭지 않게 넘기다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-007"
+    },
+    {
+      "quizId": "q-05-005",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "come up with — \"And nobody's come up with anything.\"",
+      "wordId": "w-0525",
+      "options": [
+        "~을 우연히 마주치다",
+        "~을 끝까지 참아 내다",
+        "~에 뒤늦게 합류하다",
+        "(답·아이디어를) 생각해 내다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-008"
+    },
+    {
+      "quizId": "q-05-006",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "I don't really know what I'm on. I'm just traveling around. I ___ the trains the past two, three weeks. (지금도 그 기차 안이다)",
+      "options": [
+        "'ve been riding",
+        "'m going to ride",
+        "rode",
+        "had ridden"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-007",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "You know, I ___ lately. Do you know anyone who's in a happy relationship? (얼마 전부터 지금까지 계속 마음에 걸려 있었다)",
+      "options": [
+        "wonder",
+        "'ve been wondering",
+        "was wondering",
+        "will wonder"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-008",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "대학 때부터 알고 지낸 사이다 — I ___ her since college.",
+      "options": [
+        "'ve been knowing",
+        "'m knowing",
+        "'ve known",
+        "was knowing"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-009",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "He's been riding the trains ___ three weeks.",
+      "options": [
+        "since",
+        "during",
+        "from",
+        "for"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-010",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "I've been reading the book.은 '그 책을 다 읽었다'는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "현재완료진행은 아직 읽는 중이라는 '과정'을 그린다. 다 읽어서 내용을 안다는 결과를 말하려면 I've read the book.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-05-012"
+    },
+    {
+      "quizId": "q-05-011",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "\"Every couple's been having this conversation forever.\"에서 couple's는 couple is의 축약이다.",
+      "isCorrect": false,
+      "explanation": "couple has의 축약이다. is 뒤에는 been이 올 수 없다 — 's been -ing를 보면 무조건 has been -ing로 읽는다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-05-013"
+    },
+    {
+      "quizId": "q-05-012",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "제시의 \"I've been riding the trains the past two, three weeks.\"는 지금 이 순간에도 그 상태가 이어지고 있다는 뜻을 담는다.",
+      "isCorrect": true,
+      "explanation": "have been -ing의 핵심은 '아직 안 끝났다'다. 그래서 셀린 앞에 앉은 제시가 여전히 아무 데도 도착하지 못한 사람으로 보인다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-013",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "I've been knowing her since college. — 자연스러운 문장이다.",
+      "isCorrect": false,
+      "explanation": "know는 상태동사라 진행형을 받지 못한다. → I've known her since college.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-05-014"
+    },
+    {
+      "quizId": "q-05-014",
+      "unitId": "u-05",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "the trains",
+        "I've just been.",
+        "the past two, three weeks.",
+        "I'm just traveling around.",
+        "I've been riding"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-05-010"
+    },
+    {
+      "quizId": "q-05-015",
+      "unitId": "u-05",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 8)",
+      "chunks": [
+        "who's in a happy relationship?",
+        "You know,",
+        "Do you know anyone",
+        "I've been wondering lately."
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": "c-05-011"
+    },
+    {
+      "quizId": "q-05-016",
+      "unitId": "u-05",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 14)",
+      "chunks": [
+        "this conversation",
+        "Every couple's",
+        "forever.",
+        "been having"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-017",
+      "unitId": "u-05",
+      "type": "koToEn",
+      "prompt": "나는 3주째 기차만 타고 다니고 있다.",
+      "chunks": [
+        "for three weeks",
+        "I've been riding",
+        "now.",
+        "the trains"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-018",
+      "unitId": "u-05",
+      "type": "koToEn",
+      "prompt": "요즘 그 생각을 많이 하고 있어.",
+      "chunks": [
+        "I've been thinking",
+        "about that",
+        "a lot",
+        "lately."
+      ],
+      "answer": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-019",
+      "unitId": "u-05",
+      "type": "koToEn",
+      "prompt": "그녀와는 대학 시절부터 알고 지냈다.",
+      "chunks": [
+        "I've known her",
+        "college.",
+        "since",
+        "we were in"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-020",
+      "unitId": "u-05",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "I've just been. I'm just __1__ around. I've __2__ __3__ the trains the __4__ two, three weeks.",
+      "blanks": [
+        "traveling",
+        "been",
+        "riding",
+        "past"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-05-015"
+    },
+    {
+      "quizId": "q-06-001",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "mist — \"through the mist, I could see my grandmother\"",
+      "wordId": "w-0609",
+      "options": [
+        "빗줄기, 소나기",
+        "그림자",
+        "물안개, 옅은 안개",
+        "유리창"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-001"
+    },
+    {
+      "quizId": "q-06-002",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "confess — \"she just confessed to me that she spent her whole life dreaming about another man\"",
+      "wordId": "w-0614",
+      "options": [
+        "부인하다",
+        "털어놓다, 고백하다",
+        "충고하다",
+        "짐작하다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-003"
+    },
+    {
+      "quizId": "q-06-003",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "fate — \"She just accepted her fate.\"",
+      "wordId": "w-0615",
+      "options": [
+        "명성",
+        "신념",
+        "실수",
+        "운명, 정해진 몫"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-004"
+    },
+    {
+      "quizId": "q-06-004",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "take pride in — \"I eventually kind of took pride in it\"",
+      "wordId": "w-0623",
+      "options": [
+        "~을 자랑스럽게 여기다",
+        "~을 부끄러워하다",
+        "~을 책임지다",
+        "~을 잊어버리다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-008"
+    },
+    {
+      "quizId": "q-06-005",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "projection — \"people have these romantic projections\"",
+      "wordId": "w-0621",
+      "options": [
+        "장기 계획",
+        "예산 추정치",
+        "(심리) 투사 — 제 감정을 상대에게 덧씌우는 것",
+        "공개 발표"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-005"
+    },
+    {
+      "quizId": "q-06-006",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "My great-grandmother ___ just died, and my whole family had just visited them in Florida. (Jesse, Ch 2)",
+      "options": [
+        "have",
+        "had",
+        "was",
+        "did"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-007",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "By the time the police arrived, the thief ___ through the back window.",
+      "options": [
+        "has escaped",
+        "escapes",
+        "had escaped",
+        "was escaping"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-008",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "\"But…I knew what I'd seen.\"에서 I'd는 무엇의 축약인가?",
+      "options": [
+        "I would",
+        "I had",
+        "I did",
+        "I should"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-009",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "제시가 빈에서 내리며: \"I ___ I had met you earlier.\"",
+      "options": [
+        "hope",
+        "expect",
+        "want",
+        "wish"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-010",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "'회사에 도착했을 때 회의는 이미 끝나 있었다'를 When I arrived at the office, the meeting already finished.라고 해도 순서가 제대로 전달된다.",
+      "isCorrect": false,
+      "explanation": "이렇게 말하면 도착 → 종료 순으로 들린다. 앞선 일에는 had를 박아야 한다. → the meeting had already finished.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-06-012"
+    },
+    {
+      "quizId": "q-06-011",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "셀린의 \"I'd say to my dad\"에서 I'd는 I had의 축약이다.",
+      "isCorrect": false,
+      "explanation": "뒤에 온 say는 동사원형이므로 would다(과거의 반복). 과거분사가 왔다면 had다 — I knew what I'd seen처럼.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-06-013"
+    },
+    {
+      "quizId": "q-06-012",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "제시의 \"I knew what I'd seen\"에서 I'd가 I had라고 판단하는 근거는, 바로 뒤 seen이 과거분사라는 점이다.",
+      "isCorrect": true,
+      "explanation": "귀로는 had와 would가 똑같이 'd로 들린다. 뒤 형태가 과거분사면 had, 동사원형이면 would — 이 한 가지로 가른다.",
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-013",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "She left after I called her.처럼 after가 순서를 이미 밝혀 주면, 과거완료를 쓰지 않아도 된다.",
+      "isCorrect": true,
+      "explanation": "과거완료의 일은 순서 표시다. before·after·then이 그 일을 대신하면 굳이 안 써도 자연스럽다. 배운 게 아까워 전부 had로 바꾸면 문장만 무거워진다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-06-014"
+    },
+    {
+      "quizId": "q-06-014",
+      "unitId": "u-06",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "had just visited them",
+        "My great-grandmother",
+        "in Florida.",
+        "had just died,",
+        "and my whole family"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-06-010"
+    },
+    {
+      "quizId": "q-06-015",
+      "unitId": "u-06",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 8)",
+      "chunks": [
+        "all the freedom",
+        "I have been raised",
+        "they had fought for.",
+        "with"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": "c-06-011"
+    },
+    {
+      "quizId": "q-06-016",
+      "unitId": "u-06",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2 — 부사 자리에 주의)",
+      "chunks": [
+        "had just taught me",
+        "my sister",
+        "the garden hose",
+        "how to take"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-017",
+      "unitId": "u-06",
+      "type": "koToEn",
+      "prompt": "경찰이 도착했을 무렵, 도둑은 이미 뒷창문으로 빠져나간 뒤였다.",
+      "chunks": [
+        "the thief had already escaped",
+        "through the back window.",
+        "By the time",
+        "the police arrived,"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-018",
+      "unitId": "u-06",
+      "type": "koToEn",
+      "prompt": "그녀를 만났을 때, 나는 그 영화를 이미 세 번 본 뒤였다.",
+      "chunks": [
+        "I had already seen",
+        "three times.",
+        "When I met her,",
+        "the movie"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-019",
+      "unitId": "u-06",
+      "type": "koToEn",
+      "prompt": "너를 더 일찍 만났더라면 좋았을 텐데. (제시가 빈에서 내리며 한 말)",
+      "chunks": [
+        "earlier.",
+        "I wish",
+        "you",
+        "I had met"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-020",
+      "unitId": "u-06",
+      "type": "anchorRestore",
+      "prompt": "앵커 장면을 복원하세요 (빈칸 4개)",
+      "text": "My great-grandmother __1__ just died, and my whole family had just visited them in Florida. ... my sister __2__ just __3__ me how to take the garden hose ... But…I knew what __4__ seen.",
+      "blanks": [
+        "had",
+        "had",
+        "taught",
+        "I'd"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-06-015"
+    },
     {
       "quizId": "q-07-001",
       "unitId": "u-07",
@@ -335,6 +2287,1946 @@
       ],
       "relatedRuleId": "r1",
       "srsCardId": "c-07-015"
+    },
+    {
+      "quizId": "q-08-001",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "impression — \"it left a bigger impression on me at that time\"",
+      "wordId": "w-0802",
+      "options": [
+        "압박, 부담",
+        "(마음에 남는) 인상",
+        "인쇄물, 판본",
+        "즉흥 연주"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-002"
+    },
+    {
+      "quizId": "q-08-002",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "groundskeeper — \"He was the groundskeeper.\"",
+      "wordId": "w-0809",
+      "options": [
+        "지하철 역무원",
+        "장의사",
+        "묘지·공원 관리인",
+        "토지 측량사"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-003"
+    },
+    {
+      "quizId": "q-08-003",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "transitory — \"His human figures are always so transitory.\"",
+      "wordId": "w-0822",
+      "options": [
+        "덧없는, 스쳐 지나가는",
+        "이동 중인, 환승하는",
+        "투명한, 비쳐 보이는",
+        "과도기의, 개혁적인"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-007"
+    },
+    {
+      "quizId": "q-08-004",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "wash up — \"most of the people are buried here that washed up on the bank of the Danube\"",
+      "wordId": "w-0824",
+      "options": [
+        "몸을 씻고 단장하다",
+        "물에 잠겨 사라지다",
+        "강물에 뛰어들다",
+        "물살에 떠밀려 물가로 올라오다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-008"
+    },
+    {
+      "quizId": "q-08-005",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "miss out on — \"to find out what you're missing out on\"",
+      "wordId": "w-0825",
+      "options": [
+        "~을 그리워하다",
+        "(좋은 기회를) 놓치다",
+        "~을 겨우 피하다",
+        "~에서 빠져나오다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-009"
+    },
+    {
+      "quizId": "q-08-006",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "I think it left a ___ impression on me at that time than any of the museums we went to. (Céline, Ch 7)",
+      "options": [
+        "biggest",
+        "bigger",
+        "more big",
+        "as big"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-007",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "I'm just ___ as he is, totally unmotivated, totally boring. (Jesse, Ch 3)",
+      "options": [
+        "as a big loser",
+        "so big a loser",
+        "as big a loser",
+        "big as a loser"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-008",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "이 판이 예전 판보다 훨씬 낫다 → This version is ___ better than the old one.",
+      "options": [
+        "very",
+        "so",
+        "too",
+        "much"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-009",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "Vienna left a bigger impression on her than ___ city she had visited.",
+      "options": [
+        "any other",
+        "any others",
+        "the others",
+        "some other"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-010",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "구어에서는 than 뒤에 목적격을 써서 She's ten years older than me.라고 해도 자연스럽다.",
+      "isCorrect": true,
+      "explanation": "구어의 표준은 than me다. 격식을 갖추려면 than I am처럼 be동사까지 붙인다. 정작 피할 것은 than I.에서 끊는 반쪽짜리 형태.",
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-011",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "He is much more tall than me. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "tall은 1음절이라 more가 아니라 -er을 받는다. → He is much taller than me. 강조어 much는 그대로 두면 된다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-012",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "Your idea is very better than mine. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "very는 원급만 강조한다. 비교급은 much / far / a lot / even / still로 강조한다. → Your idea is much better than mine.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-08-012"
+    },
+    {
+      "quizId": "q-08-013",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "It left a bigger impression on me than any other museums we went to. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "any other 뒤에는 단수명사만 온다. → than any other museum we went to. 셀린은 아예 다른 틀을 골라 than any of the museums we went to라고 말했다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-08-014"
+    },
+    {
+      "quizId": "q-08-014",
+      "unitId": "u-08",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 7)",
+      "chunks": [
+        "than any of the museums",
+        "at that time",
+        "I think it left",
+        "we went to.",
+        "a bigger impression on me"
+      ],
+      "answer": [
+        2,
+        4,
+        1,
+        0,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-08-011"
+    },
+    {
+      "quizId": "q-08-015",
+      "unitId": "u-08",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 3)",
+      "chunks": [
+        "as he is,",
+        "I'm just",
+        "as big a loser",
+        "totally unmotivated,",
+        "totally boring"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        3,
+        4
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-08-010"
+    },
+    {
+      "quizId": "q-08-016",
+      "unitId": "u-08",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 7)",
+      "chunks": [
+        "and she's still thirteen,",
+        "Now,",
+        "I guess.",
+        "I'm ten years older,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-017",
+      "unitId": "u-08",
+      "type": "koToEn",
+      "prompt": "그 영화는 내가 본 어떤 다큐멘터리보다 더 강한 인상을 남겼다.",
+      "chunks": [
+        "a stronger impression",
+        "The film left",
+        "I've ever seen.",
+        "than any documentary"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-018",
+      "unitId": "u-08",
+      "type": "koToEn",
+      "prompt": "그의 두 번째 앨범은 첫 번째보다 훨씬 낫다.",
+      "chunks": [
+        "than the first one.",
+        "His second album",
+        "much better",
+        "is"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-019",
+      "unitId": "u-08",
+      "type": "koToEn",
+      "prompt": "그녀는 나만큼이나 좋은 선생님이다.",
+      "chunks": [
+        "as good a teacher",
+        "She is",
+        "as I am.",
+        "just"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-08-013"
+    },
+    {
+      "quizId": "q-08-020",
+      "unitId": "u-08",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개, Céline, Ch 7)",
+      "text": "I visited this as a young teenager. I think it left a __1__ __2__ on me at that time __3__ any of the __4__ we went to.",
+      "blanks": [
+        "bigger",
+        "impression",
+        "than",
+        "museums"
+      ],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-08-015"
+    },
+    {
+      "quizId": "q-09-001",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "awkwardness — \"You need to resign yourself to the awkwardness of life.\"",
+      "wordId": "w-0919",
+      "options": [
+        "예의 바름",
+        "서투른 손놀림",
+        "(삶이 뜻대로 안 되는) 어색함·껄끄러움",
+        "고요함"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-001"
+    },
+    {
+      "quizId": "q-09-002",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "condescending — \"that's WAY condescending\"",
+      "wordId": "w-0920",
+      "options": [
+        "잘난 척하며 깔보는",
+        "지나치게 겸손한",
+        "조건을 까다롭게 다는",
+        "동정심이 많은"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-002"
+    },
+    {
+      "quizId": "q-09-003",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "tedious — \"all your remaining days will be exactly like today--a tedious collection of hours\"",
+      "wordId": "w-0913",
+      "options": [
+        "팽팽하게 긴장된",
+        "꼼꼼하고 세심한",
+        "값비싼",
+        "지루하게 한없이 늘어지는"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-003"
+    },
+    {
+      "quizId": "q-09-004",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "mannerism — \"you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-0915",
+      "options": [
+        "예의범절",
+        "(그 사람 특유의) 버릇·몸짓",
+        "말투를 고치는 훈련",
+        "연기 유파"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-005"
+    },
+    {
+      "quizId": "q-09-005",
+      "unitId": "u-09",
+      "type": "meaning",
+      "prompt": "be sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-0925",
+      "options": [
+        "~때문에 앓아눕다",
+        "~을 몹시 그리워하다",
+        "~에 진저리가 나다",
+        "~을 죽도록 아끼다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-09-008"
+    },
+    {
+      "quizId": "q-09-006",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "Only if you find peace within yourself, ___ true connection with others. (Gypsy, Ch 9)",
+      "options": [
+        "you will find",
+        "will you find",
+        "do you find",
+        "you found"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-007",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "Not until she left the room ___ what had happened.",
+      "options": [
+        "I realized",
+        "did I realize",
+        "did I realized",
+        "I did realize"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-008",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "It's not the noise ___ kept me awake — it's everything I hadn't said.",
+      "options": [
+        "what",
+        "which one",
+        "that",
+        "it"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-009",
+      "unitId": "u-09",
+      "type": "blank",
+      "prompt": "___ that we always make everything so complicated?",
+      "options": [
+        "Why it is",
+        "Why is",
+        "Why does it",
+        "Why is it"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-010",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "Only if you find peace within yourself, will you find true connection with others. — will이 주어 앞에 있으니 이 문장은 의문문이다.",
+      "isCorrect": false,
+      "explanation": "물음표가 없고 문두에 Only가 서 있다. 부정어·only 도치이지 의문문이 아니다. 뜻은 질문이 아니라 단언 — '자기 안에서 평화를 찾아야만 비로소 남들과 진짜로 통한다'.",
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-011",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "Only if로 시작하면 그 절 안이 뒤집힌다. 즉 Only if do you find peace within yourself, you will find...가 맞다.",
+      "isCorrect": false,
+      "explanation": "종속절은 건드리지 않는다. 집시의 문장도 Only if you find...까지는 평서문 어순이고, 뒤집히는 것은 주절 will you find뿐이다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-09-012"
+    },
+    {
+      "quizId": "q-09-012",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "It is patience that this job requires. — 강조구문이고, 강조된 것은 requires의 목적어다.",
+      "isCorrect": true,
+      "explanation": "It is와 that을 지우면 This job requires patience.가 온전히 복원된다. 복원되면 강조구문, 파편만 남으면 가주어다.",
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-013",
+      "unitId": "u-09",
+      "type": "truefalse",
+      "prompt": "I got one of those Eurail passes, is what I did. — 문법이 깨진 문장이라 원어민은 이렇게 말하지 않는다.",
+      "isCorrect": false,
+      "explanation": "제시가 실제로 쓴 구어 강조다. 내용을 먼저 던지고 (that) is what I did를 꼬리로 붙여 되짚는 방식. 격식 있는 글에서는 피하지만 회화에서는 자연스럽다.",
+      "relatedRuleId": "r6",
+      "srsCardId": "c-09-014"
+    },
+    {
+      "quizId": "q-09-014",
+      "unitId": "u-09",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Gypsy, Ch 9)",
+      "chunks": [
+        "will you find",
+        "Only if you find peace",
+        "true connection with others.",
+        "within yourself,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-09-010"
+    },
+    {
+      "quizId": "q-09-015",
+      "unitId": "u-09",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "it‘s myself",
+        "It‘s just, usually,",
+        "that I wish",
+        "I could get away from."
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-09-011"
+    },
+    {
+      "quizId": "q-09-016",
+      "unitId": "u-09",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "did I realize",
+        "Not until",
+        "what had happened.",
+        "she left the room"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": "c-09-013"
+    },
+    {
+      "quizId": "q-09-017",
+      "unitId": "u-09",
+      "type": "koToEn",
+      "prompt": "그냥, 보통은 말이야, 내가 벗어나고 싶은 건 다름 아닌 나 자신이야.",
+      "chunks": [
+        "that I wish",
+        "it's myself",
+        "I could get away from.",
+        "It's just, usually,"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-018",
+      "unitId": "u-09",
+      "type": "koToEn",
+      "prompt": "왜 우리는 늘 모든 걸 이렇게 복잡하게 만드는 걸까?",
+      "chunks": [
+        "that we always make",
+        "Why is it",
+        "so complicated?",
+        "everything"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-019",
+      "unitId": "u-09",
+      "type": "koToEn",
+      "prompt": "그가 문을 열고 나서야 비로소 우리는 그 냄새를 맡았다.",
+      "chunks": [
+        "did we smell it.",
+        "Only after",
+        "the door",
+        "he opened"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-09-020",
+      "unitId": "u-09",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "You need to __1__ yourself to the awkwardness of life. __2__ if you find __3__ within yourself, __4__ you find true connection with others.",
+      "blanks": [
+        "resign",
+        "Only",
+        "peace",
+        "will"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-09-015"
+    },
+    {
+      "quizId": "q-10-001",
+      "unitId": "u-10",
+      "type": "meaning",
+      "prompt": "fate — \"She just accepted her fate.\"",
+      "wordId": "w-1010",
+      "options": [
+        "명성, 평판",
+        "신념, 믿음",
+        "운명, 정해진 몫",
+        "실수, 잘못"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-10-001"
+    },
+    {
+      "quizId": "q-10-002",
+      "unitId": "u-10",
+      "type": "meaning",
+      "prompt": "revolt — \"these angry, young, May '68 people, revolting against everything\"",
+      "wordId": "w-1007",
+      "options": [
+        "되돌아보다, 회상하다",
+        "들고일어나다, 반란을 일으키다",
+        "선회하다, 빙빙 돌다",
+        "다시 투표하다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-10-002"
+    },
+    {
+      "quizId": "q-10-003",
+      "unitId": "u-10",
+      "type": "meaning",
+      "prompt": "projection — \"people have these romantic projections\"",
+      "wordId": "w-1021",
+      "options": [
+        "계획, 프로젝트",
+        "예상 수익, 전망치",
+        "영사기, 화면 투영 장치",
+        "자기 감정을 남에게 씌운 상"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-10-003"
+    },
+    {
+      "quizId": "q-10-004",
+      "unitId": "u-10",
+      "type": "meaning",
+      "prompt": "take pride in — \"I eventually kind of took pride in it\"",
+      "wordId": "w-1023",
+      "options": [
+        "~을 오히려 자랑으로 삼다",
+        "~을 부끄러워하다",
+        "~을 참고 견디다",
+        "~을 뒤늦게 후회하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-10-004"
+    },
+    {
+      "quizId": "q-10-005",
+      "unitId": "u-10",
+      "type": "meaning",
+      "prompt": "stick around — \"they stuck around and taught 'em the wrong things\"",
+      "wordId": "w-1024",
+      "options": [
+        "여기저기 옮겨 다니다",
+        "달라붙어 떨어지지 않다(물건이)",
+        "떠나지 않고 곁에 남아 있다",
+        "슬그머니 빠져나가다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-10-005"
+    },
+    {
+      "quizId": "q-10-006",
+      "unitId": "u-10",
+      "type": "blank",
+      "prompt": "It just kind of let me know how ___ , you know, even death. (Jesse, Ch 2)",
+      "options": [
+        "ambiguous was everything",
+        "ambiguous everything was",
+        "was everything ambiguous",
+        "everything ambiguous was"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-007",
+      "unitId": "u-10",
+      "type": "blank",
+      "prompt": "I don't think it really matters ___ you are born into. (Céline, Ch 8)",
+      "options": [
+        "that generation",
+        "what generation are",
+        "what generation",
+        "which generation do"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-008",
+      "unitId": "u-10",
+      "type": "blank",
+      "prompt": "I knew ___ I'd seen. (제시가 무지개 속에서 본 것을 두고 — Ch 2)",
+      "options": [
+        "that",
+        "which",
+        "who",
+        "what"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-009",
+      "unitId": "u-10",
+      "type": "blank",
+      "prompt": "'어느 세대에 태어나는지는 별로 중요하지 않다고 생각해.' → ___ it really matters what generation you are born into.",
+      "options": [
+        "I think not",
+        "I don't think",
+        "I think it doesn't",
+        "I'm not thinking"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-010",
+      "unitId": "u-10",
+      "type": "truefalse",
+      "prompt": "'그 사람들이 누구였는지 몰랐다'를 They didn't know who were these people.로 쓸 수 있다.",
+      "isCorrect": false,
+      "explanation": "의문사절은 평서문 어순이다. → They didn't know who these people were. 대본도 they often didn't know who these people were(Ch 7)로 말한다.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-10-012"
+    },
+    {
+      "quizId": "q-10-011",
+      "unitId": "u-10",
+      "type": "truefalse",
+      "prompt": "Everything we know is stardust. — Everything과 we 사이에 that이 생략되어 있다.",
+      "isCorrect": true,
+      "explanation": "목적격 관계대명사는 통째로 생략된다. Everything (that) we know가 주어이고, 그 뒤의 is stardust가 본동사다. 명사 뒤에 갑자기 주어가 또 나오면 '뒤에서 꾸미는 중'으로 읽어야 한다.",
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-012",
+      "unitId": "u-10",
+      "type": "truefalse",
+      "prompt": "the thing what haunts me is the distribution — 맞는 표현이다.",
+      "isCorrect": false,
+      "explanation": "what은 이미 '것'을 품고 있어 앞에 명사를 둘 수 없다. 앞에 the thing이 있으면 that/which를 쓴다. → the thing that kind of haunts me is the distribution (Jesse, Ch 2)",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-10-014"
+    },
+    {
+      "quizId": "q-10-013",
+      "unitId": "u-10",
+      "type": "truefalse",
+      "prompt": "that really shaped the way I think에서 the way 뒤에는 완전한 문장(I think)이 그대로 붙는다.",
+      "isCorrect": true,
+      "explanation": "the way / why / when 같은 관계부사는 뒤에 빠진 곳 없는 완전한 절을 끌고 와 앞 명사를 뒤에서 한정한다. capturing life as it's lived의 as절도 같은 일을 한다.",
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-014",
+      "unitId": "u-10",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 8)",
+      "chunks": [
+        "what generation",
+        "I don't think",
+        "you are born into.",
+        "it really matters"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-10-011"
+    },
+    {
+      "quizId": "q-10-015",
+      "unitId": "u-10",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "how ambiguous everything was,",
+        "even death.",
+        "It just kind of let me know",
+        "you know,"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-10-010"
+    },
+    {
+      "quizId": "q-10-016",
+      "unitId": "u-10",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "was something",
+        "had ever guessed.",
+        "What she confessed",
+        "nobody in the family",
+        "that night"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-10-006"
+    },
+    {
+      "quizId": "q-10-017",
+      "unitId": "u-10",
+      "type": "koToEn",
+      "prompt": "그때는 그가 얼마나 긴장했는지 전혀 몰랐다.",
+      "chunks": [
+        "he was",
+        "I had no idea",
+        "at the time.",
+        "how nervous"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-018",
+      "unitId": "u-10",
+      "type": "koToEn",
+      "prompt": "그날 그가 나에게 한 말을 나는 아직도 정확히 기억한다.",
+      "chunks": [
+        "what he said",
+        "I still remember",
+        "that day.",
+        "exactly",
+        "to me"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-019",
+      "unitId": "u-10",
+      "type": "koToEn",
+      "prompt": "그게 누구에게든 그렇게 중요하다고는 생각하지 않아.",
+      "chunks": [
+        "that much",
+        "I don't think",
+        "to anyone.",
+        "it really matters"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-10-020",
+      "unitId": "u-10",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "I knew __1__ I'd seen. And I was just glad __2__ I saw that. I mean, I've never seen anything like that since. But, I don't know. It just kind of let me know __3__ ambiguous everything __4__, you know, even death.",
+      "blanks": [
+        "what",
+        "that",
+        "how",
+        "was"
+      ],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-10-015"
+    },
+    {
+      "quizId": "q-11-001",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "profound — \"at that profound moment of birth\"",
+      "wordId": "w-1108",
+      "options": [
+        "형식적인, 겉치레의",
+        "짧고 순간적인",
+        "깊디깊은, 심오한",
+        "혼란스럽고 어지러운"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-001"
+    },
+    {
+      "quizId": "q-11-002",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "finite — \"everything is so finite\"",
+      "wordId": "w-1109",
+      "options": [
+        "완벽한, 흠 없는",
+        "유한한, 끝이 있는",
+        "미세한, 아주 작은",
+        "확정된, 최종적인"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-002"
+    },
+    {
+      "quizId": "q-11-003",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "tedious — \"a tedious collection of hours\"",
+      "wordId": "w-1120",
+      "options": [
+        "고통스럽고 격렬한",
+        "위태롭고 불안한",
+        "정교하고 세밀한",
+        "지루하게 길고 따분한"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-004"
+    },
+    {
+      "quizId": "q-11-004",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "condescending — \"that's WAY condescending\"",
+      "wordId": "w-1118",
+      "options": [
+        "잘난 척 내려다보는, 가르치려 드는",
+        "지나치게 감상적인",
+        "노골적으로 무례한",
+        "지나치게 겸손한"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-005"
+    },
+    {
+      "quizId": "q-11-005",
+      "unitId": "u-11",
+      "type": "meaning",
+      "prompt": "resign yourself to — \"You need to resign yourself to the awkwardness of life.\"",
+      "wordId": "w-1128",
+      "options": [
+        "~에서 스스로 물러나다",
+        "~에 정면으로 맞서다",
+        "체념하고 받아들이다",
+        "~을 남에게 떠넘기다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-11-008"
+    },
+    {
+      "quizId": "q-11-006",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "I can see me ___ through the clouds, and I'm so scared of those few seconds of consciousness. (Céline, Ch 2 — 지금도 떨어지는 '중')",
+      "options": [
+        "falling",
+        "to fall",
+        "fell",
+        "to falling"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-007",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "I heard about this old guy, who was watching some young people ___. (Ch 14 — 춤을 처음부터 끝까지 다 봤다)",
+      "options": [
+        "to dance",
+        "dance",
+        "danced",
+        "to dancing"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-008",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "능동: Two witnesses saw him leave the bar. → 수동: He was seen ___ the bar.",
+      "options": [
+        "to leave",
+        "leave",
+        "left",
+        "leaves"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-009",
+      "unitId": "u-11",
+      "type": "blank",
+      "prompt": "She stood at the doorway with the rain ___ down behind her.",
+      "options": [
+        "pouring",
+        "to pour",
+        "poured",
+        "pours"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-010",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "'나는 그가 길을 뛰어 건너는 걸 봤다'를 I saw him to run across the street.로 쓸 수 있다.",
+      "isCorrect": false,
+      "explanation": "지각동사 뒤 목적격보어에는 to부정사가 오지 못한다. → I saw him run across the street. 또는 I saw him running across the street.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-11-012"
+    },
+    {
+      "quizId": "q-11-011",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "I can see me falling through the clouds에서 falling을 fall로 바꾸면, 추락을 처음부터 끝까지 다 본다는 쪽으로 뜻이 기운다.",
+      "isCorrect": true,
+      "explanation": "맞다. -ing는 진행 중인 한 토막을, 원형부정사는 행위 전체를 담는다. 셀린이 falling을 쓴 덕에 그 장면은 끝나지 않고 계속 재생된다.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-11-013"
+    },
+    {
+      "quizId": "q-11-012",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "I saw him run.을 수동태로 바꾸면 He was seen run.이 된다.",
+      "isCorrect": false,
+      "explanation": "능동에서 사라졌던 to가 수동에서 되살아난다. → He was seen to run. 반면 -ing는 그대로다 — He was seen running.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-11-014"
+    },
+    {
+      "quizId": "q-11-013",
+      "unitId": "u-11",
+      "type": "truefalse",
+      "prompt": "We see Celine sitting alone, looking out the window.에서 sitting과 looking은 문법적으로 똑같은 자리에 있다.",
+      "isCorrect": false,
+      "explanation": "sitting은 see가 요구한 목적격보어라 빼면 문장이 무너지고, looking은 뒤에 덧붙은 분사구문이라 빼도 문장이 성립한다. 형태만 같고 역할이 다르다.",
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-014",
+      "unitId": "u-11",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": [
+        "I can see me",
+        "through the clouds,",
+        "falling",
+        "and I'm so scared",
+        "of those few seconds of consciousness"
+      ],
+      "answer": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-11-015"
+    },
+    {
+      "quizId": "q-11-015",
+      "unitId": "u-11",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 14)",
+      "chunks": [
+        "this old guy,",
+        "I heard about",
+        "some young people dance.",
+        "who was watching"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-11-011"
+    },
+    {
+      "quizId": "q-11-016",
+      "unitId": "u-11",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (영화의 첫 지문, Ch 1)",
+      "chunks": [
+        "a middle-aged couple",
+        "sitting in the front",
+        "We see",
+        "of the coach car."
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-017",
+      "unitId": "u-11",
+      "type": "koToEn",
+      "prompt": "나는 그가 창밖을 내다보며 혼자 앉아 있는 걸 봤다.",
+      "chunks": [
+        "sitting alone,",
+        "I saw him",
+        "out the window.",
+        "looking"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-018",
+      "unitId": "u-11",
+      "type": "koToEn",
+      "prompt": "우리는 그 아기가 첫 숨을 쉬려고 애쓰는 걸 지켜보고 있었다.",
+      "chunks": [
+        "trying to take",
+        "watching this child,",
+        "its first breath.",
+        "We were"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-11-010"
+    },
+    {
+      "quizId": "q-11-019",
+      "unitId": "u-11",
+      "type": "koToEn",
+      "prompt": "그 노인은 젊은 사람들이 춤추는 것을 (처음부터 끝까지) 지켜보고 있었다.",
+      "chunks": [
+        "young people",
+        "was watching",
+        "dance.",
+        "The old man",
+        "some"
+      ],
+      "answer": [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-11-020",
+      "unitId": "u-11",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "I can see me __1__ through the clouds, and I'm so __2__ of those few seconds of __3__ before you're gonna __4__, you know, when you know for sure you're gonna die.",
+      "blanks": [
+        "falling",
+        "scared",
+        "consciousness",
+        "die"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-11-015"
+    },
+    {
+      "quizId": "q-12-001",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "bland — \"momentarily decorating your bland canvas\"",
+      "wordId": "w-1205",
+      "options": [
+        "화려하고 눈에 띄는",
+        "낡고 해진",
+        "밋밋하고 특징 없는",
+        "값비싸고 귀한"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-001"
+    },
+    {
+      "quizId": "q-12-002",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "delusion — \"Daydream delusion.\" (시인이 읊는 첫 행)",
+      "wordId": "w-1218",
+      "options": [
+        "환멸, 깨어남",
+        "망상, 착각",
+        "여운, 잔상",
+        "결심, 각오"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-002"
+    },
+    {
+      "quizId": "q-12-003",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "mannerism — \"you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-1222",
+      "options": [
+        "예의, 매너",
+        "속마음, 본심",
+        "취향, 기호",
+        "버릇처럼 반복되는 말투·몸짓"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-006"
+    },
+    {
+      "quizId": "q-12-004",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "be sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-1228",
+      "options": [
+        "지긋지긋하다, 넌더리가 나다",
+        "몹시 아프다",
+        "죽도록 그리워하다",
+        "겁이 나서 피하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-009"
+    },
+    {
+      "quizId": "q-12-005",
+      "unitId": "u-12",
+      "type": "meaning",
+      "prompt": "rob someone blind — \"listen, this woman robs you blind, okay?\"",
+      "wordId": "w-1226",
+      "options": [
+        "~의 눈을 속여 길을 잃게 하다",
+        "~에게 사기 치는 법을 가르치다",
+        "~를 탈탈 털어먹다, 바가지를 씌우다",
+        "~를 못 본 척 지나치다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-12-008"
+    },
+    {
+      "quizId": "q-12-006",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "Would you be in Paris by now, if you ___ off the train with me? (Jesse, Ch 12)",
+      "options": [
+        "hadn't gotten",
+        "didn't get",
+        "wouldn't get",
+        "haven't gotten"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r3",
+      "srsCardId": "c-12-010"
+    },
+    {
+      "quizId": "q-12-007",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "If somebody ___ me the choice right now, of to never see you again or to marry you, I would marry you. (Jesse, Ch 19)",
+      "options": [
+        "gives",
+        "would give",
+        "gave",
+        "had given"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-008",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "If she'd ever got to know him, I'm sure he ___ her eventually. (Jesse, Ch 8)",
+      "options": [
+        "would disappoint",
+        "had disappointed",
+        "would have disappointed",
+        "will disappoint"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r2",
+      "srsCardId": "c-12-011"
+    },
+    {
+      "quizId": "q-12-009",
+      "unitId": "u-12",
+      "type": "blank",
+      "prompt": "제시의 부모는 결국 이혼했다. 그는 말한다: They ___ it a lot sooner. (더 일찍 했어야 했는데)",
+      "options": [
+        "would have done",
+        "should have done",
+        "should do",
+        "must have done"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r5",
+      "srsCardId": "c-12-013"
+    },
+    {
+      "quizId": "q-12-010",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "If I would have more time, I would learn Italian. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "if절에는 would를 쓰지 않는다. would는 주절 담당이다. → If I had more time, I would learn Italian.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-12-012"
+    },
+    {
+      "quizId": "q-12-011",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "혼합 가정법에서 if절(had p.p.)과 주절(would + 원형)의 시제가 어긋나는 것은 정상이다.",
+      "isCorrect": true,
+      "explanation": "조건은 과거, 결과는 지금이기 때문이다. Would you be in Paris by now, if you hadn't gotten off the train with me? — 내린 건 과거, 파리에 있는지는 지금. by now가 그 단서다.",
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-012",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "If she'd ever got to know him에서 'd는 would가 아니라 had의 축약이다.",
+      "isCorrect": true,
+      "explanation": "if절 안의 'd는 had, 주절의 'd는 would다. 같은 장면의 I'd probably be hanging around the airport(주절)의 'd는 would.",
+      "relatedRuleId": "r6",
+      "srsCardId": "c-12-014"
+    },
+    {
+      "quizId": "q-12-013",
+      "unitId": "u-12",
+      "type": "truefalse",
+      "prompt": "'더 일찍 말했어야 했는데 안 했다'는 후회는 I would have told you earlier.로 표현한다.",
+      "isCorrect": false,
+      "explanation": "would have p.p.는 '(그랬다면) 말했을 텐데'라는 가정의 결과다. 후회·자책은 should have p.p. → I should have told you this earlier.(Jesse, Ch 13)",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-12-013"
+    },
+    {
+      "quizId": "q-12-014",
+      "unitId": "u-12",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 12)",
+      "chunks": [
+        "off the train",
+        "Would you be in Paris by now,",
+        "with me?",
+        "if uh, you hadn't gotten"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-12-015"
+    },
+    {
+      "quizId": "q-12-015",
+      "unitId": "u-12",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 8)",
+      "chunks": [
+        "he would have disappointed her",
+        "eventually.",
+        "If she'd ever got to know him,",
+        "I'm sure"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-016",
+      "unitId": "u-12",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "or to marry you,",
+        "If somebody gave me the choice right now,",
+        "I would marry you.",
+        "of to never see you again"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-017",
+      "unitId": "u-12",
+      "type": "koToEn",
+      "prompt": "그때 베를린 그 일자리를 잡았더라면, 지금 여기 너랑 앉아 있지 않을 텐데.",
+      "chunks": [
+        "I wouldn't be sitting here",
+        "If I had taken",
+        "with you right now.",
+        "that job in Berlin,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-018",
+      "unitId": "u-12",
+      "type": "koToEn",
+      "prompt": "그의 번호를 안다면, 오늘 밤 그에게 전화할 텐데.",
+      "chunks": [
+        "his number,",
+        "I would call him",
+        "If I knew",
+        "tonight."
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-019",
+      "unitId": "u-12",
+      "type": "koToEn",
+      "prompt": "그들은 훨씬 더 일찍 그렇게 했어야 했다.",
+      "chunks": [
+        "a lot sooner.",
+        "They",
+        "done it",
+        "should have"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-12-020",
+      "unitId": "u-12",
+      "type": "anchorRestore",
+      "prompt": "앵커 장면을 복원하세요 — 도나우 강변, 제시와 셀린 (Ch 12, 빈칸 4개)",
+      "text": "Would you be in Paris __1__, if uh, you __2__ gotten off the train with me? — No, not yet. What __3__ you be doing? — I __4__ probably be hanging around the airport, reading old magazines.",
+      "blanks": [
+        "by now",
+        "hadn't",
+        "would",
+        "'d"
+      ],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-12-015"
+    },
+    {
+      "quizId": "q-13-001",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "vow — \"I don't want you to break our vow\"",
+      "wordId": "w-1303",
+      "options": [
+        "집착, 미련",
+        "약속, 맹세",
+        "변명, 핑계",
+        "허풍, 과장"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-001"
+    },
+    {
+      "quizId": "q-13-002",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "mannerism — \"then you'd start to hate a lot of my mannerisms\"",
+      "wordId": "w-1304",
+      "options": [
+        "타성에 빠져 굳어 버린 상태",
+        "무례하고 거친 태도",
+        "몸에 밴 말버릇·몸짓",
+        "지켜야 할 예의범절"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-002"
+    },
+    {
+      "quizId": "q-13-003",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "asinine — \"this asinine art history program\"",
+      "wordId": "w-1313",
+      "options": [
+        "학구적이고 깊이 있는",
+        "멍청하기 짝이 없는",
+        "고집스럽고 완고한",
+        "값비싸고 사치스러운"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-004"
+    },
+    {
+      "quizId": "q-13-004",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "sink in — \"just to kind of let it really sink in that she wished I hadn't come\"",
+      "wordId": "w-1320",
+      "options": [
+        "가라앉아 사라지다",
+        "몰래 숨어들다",
+        "돈을 쏟아붓다",
+        "(사실이) 서서히 실감되다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-006"
+    },
+    {
+      "quizId": "q-13-005",
+      "unitId": "u-13",
+      "type": "meaning",
+      "prompt": "sick to death of — \"they are sick to death of being around themselves\"",
+      "wordId": "w-1317",
+      "options": [
+        "죽을 만큼 지긋지긋하다",
+        "병이 나서 몸져눕다",
+        "죽도록 그리워하다",
+        "몹시 걱정하다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-13-008"
+    },
+    {
+      "quizId": "q-13-006",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "(Jesse, Ch 2) I wish I ___ you earlier, you know, I really like talking to you.",
+      "options": [
+        "meet",
+        "had met",
+        "have met",
+        "will meet"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-007",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "(Jesse, Ch 19) It's just, usually, it's myself that I wish I ___ get away from.",
+      "options": [
+        "can",
+        "could",
+        "will",
+        "would have"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-008",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "플랫폼에서 건네는 작별 인사 — ___ you have a great life.",
+      "options": [
+        "I wish",
+        "I hope",
+        "I wished",
+        "I am wishing"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-009",
+      "unitId": "u-13",
+      "type": "blank",
+      "prompt": "(Jesse, Ch 13) I stuck around for a while, just to kind of let it really sink in that she ___ I hadn't come.",
+      "options": [
+        "wishes",
+        "wish",
+        "wished",
+        "will wish"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": "c-13-014"
+    },
+    {
+      "quizId": "q-13-010",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "'지금 프랑스어를 못 하는 게 아쉽다'를 I wish I can speak French.라고 말할 수 있다.",
+      "isCorrect": false,
+      "explanation": "wish 뒤에서는 시제를 한 칸 뒤로 민다. 현재의 아쉬움이어도 과거형이 온다. → I wish I could speak French.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-13-012"
+    },
+    {
+      "quizId": "q-13-011",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "여행 잘 다녀오라는 인사로 I wish you have a good trip.이라고 하면 된다.",
+      "isCorrect": false,
+      "explanation": "wish는 '그렇게 안 될 것'을 전제로 깔기 때문에 안됐다는 결이 된다. 실현 가능한 바람은 hope. → I hope you have a good trip.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-13-013"
+    },
+    {
+      "quizId": "q-13-012",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "제시의 I wish I had met you earlier.는 '지금이라도 만나서 다행'이 아니라 '더 일찍 만나지 못한 게 아쉽다'는 뜻이다.",
+      "isCorrect": true,
+      "explanation": "had met은 되돌릴 수 없는 과거를 가리킨다. 아쉬워하는 시점은 지금(wish), 아쉬움의 대상만 과거다. 그래서 이 문장 다음에 '그럼 지금 같이 내리자'는 제안이 이어질 수 있었다.",
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-013",
+      "unitId": "u-13",
+      "type": "truefalse",
+      "prompt": "I wish you would stop checking your phone.은 상대의 습관에 대한 불평의 결을 띤다.",
+      "isCorrect": true,
+      "explanation": "wish + would는 '남이 좀 안 그랬으면 좋겠다'는 불평 전용이다. 그래서 주어가 나 자신이면 성립하지 않는다(❌ I wish I would stop...).",
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-014",
+      "unitId": "u-13",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2 — 빈에서 내려야 하는 순간)",
+      "chunks": [
+        "you know,",
+        "I really like talking to you.",
+        "I wish",
+        "I had met you earlier,"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-13-010"
+    },
+    {
+      "quizId": "q-13-015",
+      "unitId": "u-13",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 19 — 새벽 공원)",
+      "chunks": [
+        "I wished",
+        "But something",
+        "with someone else.",
+        "was always wrong.",
+        "I'd been"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-13-011"
+    },
+    {
+      "quizId": "q-13-016",
+      "unitId": "u-13",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
+      "chunks": [
+        "that I wish",
+        "It's just, usually,",
+        "I could get away from.",
+        "it's myself"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-017",
+      "unitId": "u-13",
+      "type": "koToEn",
+      "prompt": "그 말은 그녀에게 하지 말았어야 했다.",
+      "chunks": [
+        "said that",
+        "I should",
+        "to her.",
+        "never have"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-018",
+      "unitId": "u-13",
+      "type": "koToEn",
+      "prompt": "지금 네가 여기 있으면 좋을 텐데.",
+      "chunks": [
+        "you were",
+        "right now.",
+        "I wish",
+        "here"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-019",
+      "unitId": "u-13",
+      "type": "koToEn",
+      "prompt": "그날 밤 작별 인사를 하지 않았더라면 좋았을 텐데.",
+      "chunks": [
+        "I hadn't",
+        "said goodbye",
+        "that night.",
+        "I wish"
+      ],
+      "answer": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-13-020",
+      "unitId": "u-13",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (Jesse, Ch 2 — 빈칸 4개)",
+      "text": "I wish I __1__ __2__ you earlier, you know, I really __3__ __4__ to you.",
+      "blanks": [
+        "had",
+        "met",
+        "like",
+        "talking"
+      ],
+      "relatedRuleId": "r2",
+      "srsCardId": "c-13-015"
     }
   ]
 }

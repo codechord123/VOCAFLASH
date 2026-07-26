@@ -1,0 +1,1131 @@
+{
+  "unit": {
+    "unitId": "u-05",
+    "act": 2,
+    "order": 5,
+    "title": "현재완료진행",
+    "tagline": "목적지 없이 3주째 기차만 타고 있는 남자 — 시제 하나가 그 사람의 상태를 설명한다",
+    "anchors": [
+      {
+        "en": "I've just been. I'm just traveling around. I've been riding the trains the past two, three weeks.",
+        "ko": "그냥 있었어요. 그냥 여기저기 돌아다니는 중이에요. 지난 두세 주 동안 계속 기차만 타고 다녔어요.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "부다페스트발 빈행 기차 라운지 칸. 셀린이 \"휴가 중이냐\"고 묻자 제시는 \"내가 뭘 하는 중인지도 모르겠다\"고 답한 직후의 말. 여기서 have been -ing는 '기차를 탔다'는 경험이 아니라 지금 이 순간까지도 끝나지 않은 상태를 그린다. 만약 I rode the trains라고 했다면 그 여행은 이미 끝난 이야기가 되고, 지금 셀린 앞에 앉아 있는 이 남자의 정체는 설명되지 않는다. 시제 하나가 '아직 어디에도 도착하지 못한 사람'을 만든다."
+      },
+      {
+        "en": "You know, I've been wondering lately. Do you know anyone who's in a happy relationship?",
+        "ko": "있잖아, 나 요즘 계속 궁금했던 게 있어. 행복한 관계를 유지하는 사람, 너 아는 사람 있어?",
+        "source": "before-sunrise",
+        "chapter": 8,
+        "speaker": "Céline",
+        "sceneNote": "관람차에서 첫 키스를 하고 내려온 뒤, 부모와 세대에 대한 이야기를 주고받다가 셀린이 꺼내는 말. I wondered였다면 한 번 스쳐 간 생각이지만, I've been wondering lately는 얼마 전부터 지금까지 계속 마음에 걸려 있었다는 뜻이다. 방금 키스한 상대에게 '행복한 커플을 본 적 있냐'고 묻기 직전, 이 시제가 그 질문이 즉흥적인 게 아니라 오래 품고 있던 불안이라는 걸 알려 준다."
+      },
+      {
+        "en": "Every couple's been having this conversation forever.",
+        "ko": "세상 모든 커플이 이 대화를 영원히 반복하고 있는 거지.",
+        "source": "before-sunrise",
+        "chapter": 14,
+        "speaker": "Jesse",
+        "sceneNote": "골목길. 남녀에 대한 논쟁이 끝없이 겉돌자 제시가 \"고장 나서 튀는 레코드 같다\"고 말하고 이어 붙이는 한마디. couple's는 couple is가 아니라 couple has의 축약이다. 오래전에 시작해 지금도 끝나지 않은 대화 — 현재완료진행이 두 사람의 말싸움을 인류 전체의 무한 루프로 확대해 버리는 순간."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "have/has been + -ing = 시작했고, 아직 하는 중이다",
+        "body": "과거 어느 시점에 시작해 지금까지 이어지는 동작. 핵심은 '아직 안 끝났다'는 것. 제시의 I've been riding the trains the past two, three weeks.는 두세 주 전에 시작해 지금 이 기차에서도 계속되고 있다. 그래서 셀린 앞에 앉은 그가 아직 아무 데도 도착하지 못한 사람으로 보인다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "현재완료는 결과, 현재완료진행은 과정 ★결이 다르다",
+        "body": "I've read the book은 다 읽어서 지금 내용을 안다는 '결과'다. I've been reading the book은 아직 읽는 중이라는 '과정'이다. 제시가 I've ridden the trains라고 했다면 기차 여행은 끝난 과거의 이력이 되고, 지금 이 순간의 상태는 사라진다. 끝났느냐 아직이냐 — 그 하나로 문장이 뒤집힌다.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "상태동사는 진행형을 못 받는다 ★최다 실수",
+        "body": "know, like, love, believe, own, be처럼 '동작'이 아니라 '상태'인 동사는 진행형으로 늘리지 않는다. ❌ I've been knowing her since college → ⭕ I've known her since college. 셀린의 wondering은 머릿속에서 굴러가는 동작이라 진행이 되지만, 같은 장면의 I know happy couples는 절대 I'm knowing이 되지 않는다.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "for는 기간, since는 시작점",
+        "body": "for + 기간(for three weeks), since + 시점(since college, since 2023). ❌ since three weeks는 한국인이 가장 자주 쓰는 틀린 조합이다. 제시처럼 the past two, three weeks라고 전치사 없이 기간을 던지는 구어체도 있는데, 이건 for가 생략된 형태로 알아듣되 직접 쓸 때는 for를 붙이는 편이 안전하다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "축약된 's는 is일 수도 has일 수도 있다",
+        "body": "Every couple's been having this conversation forever.의 couple's는 couple has다. 판별법은 뒤따르는 been — is 뒤에는 been이 올 수 없다. 's been -ing를 보면 무조건 has been -ing다. 이 축약을 못 들으면 문장 전체의 시제를 통째로 놓친다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "(확장) lately·recently와 붙어 '요즘 계속'을 만든다",
+        "body": "최근 얼마간 반복되거나 이어져 온 일에 lately, recently를 얹으면 '요즘 계속 ~하고 있다'가 된다. Ch 8 셀린의 I've been wondering lately, Ch 15 제시의 I've been working on my English, recently가 둘 다 이 용법. 단순과거(I wondered)로 바꾸면 한 번 스친 생각이 되어 버린다.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "She's been waiting at that platform for almost an hour, and the train still hasn't come.",
+        "ko": "그녀는 거의 한 시간째 그 승강장에서 기다리고 있는데, 기차는 아직도 오지 않았다."
+      },
+      {
+        "en": "I've been meaning to call you since Tuesday, but something always came up.",
+        "ko": "화요일부터 계속 전화하려고 벼르고 있었는데, 매번 무슨 일이 생겼다."
+      },
+      {
+        "en": "We've been living out of suitcases ever since the move, and I've stopped unpacking.",
+        "ko": "이사한 뒤로 줄곧 가방째로 살고 있어서, 이제는 짐 푸는 것도 포기했다."
+      },
+      {
+        "en": "He's been teaching the same class for eleven years, and he still rewrites the notes every semester.",
+        "ko": "그는 11년째 같은 수업을 맡고 있으면서도, 여전히 학기마다 강의 노트를 새로 쓴다."
+      }
+    ],
+    "coverage": {
+      "fromScript": 6,
+      "generated": 4
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0501",
+      "lemma": "gorgeous",
+      "level": "L1",
+      "meaningKo": "눈부시게 아름다운, 멋진",
+      "definitionEn": "extremely beautiful or pleasant",
+      "nuance": "beautiful보다 감탄이 앞선 구어 표현. 풍경에도 사람에도 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "This is gorgeous.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0502",
+      "lemma": "generation",
+      "level": "L1",
+      "meaningKo": "세대",
+      "definitionEn": "all the people born and living at about the same time",
+      "nuance": "be born into a generation처럼 '어느 세대로 태어나다'라는 결합이 자연스럽다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I don't think it really matters what generation you are born into.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0503",
+      "lemma": "architect",
+      "level": "L1",
+      "meaningKo": "건축가",
+      "definitionEn": "a person who designs buildings",
+      "nuance": "ch는 /k/ 소리. 비유로 '설계자'(the architect of the plan)로도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "my father went on to become this successful architect",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0504",
+      "lemma": "enemy",
+      "level": "L1",
+      "meaningKo": "적, 맞서 싸울 대상",
+      "definitionEn": "a person or force that opposes you",
+      "nuance": "이 장면에서는 사람이 아니라 '싸울 대상 자체가 뭔지 모르겠다'는 뜻의 추상적 적.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "we can't really know who, or you know, what the enemy is",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0505",
+      "lemma": "disappoint",
+      "level": "L1",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to fail to satisfy someone's hopes",
+      "nuance": "주어가 '실망시키는 쪽'이다. 내가 실망한 것은 I was disappointed.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0506",
+      "lemma": "conservative",
+      "level": "L2",
+      "meaningKo": "보수적인",
+      "definitionEn": "preferring traditional ways and opposing change",
+      "nuance": "정치 성향뿐 아니라 '조심스러운, 안전하게 잡은'(a conservative estimate)에도 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "their conservative catholic backgrounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0507",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "털어놓다, 고백하다",
+      "definitionEn": "to admit something you have kept hidden",
+      "nuance": "admit보다 무게가 있다 — 숨겨 온 것을 꺼내는 결. 할머니가 평생 감춘 사랑을 confess한 것이 이 장면.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0508",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, 정해진 결말",
+      "definitionEn": "the things that happen to someone, seen as decided in advance",
+      "nuance": "destiny가 '이끌려 가는 좋은 운명'이라면 fate는 받아들일 수밖에 없는 쪽. accept one's fate로 굳어져 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0509",
+      "lemma": "guarantee",
+      "level": "L2",
+      "meaningKo": "장담하다, 보장하다",
+      "definitionEn": "to promise firmly that something is true or will happen",
+      "nuance": "I guarantee you는 구어에서 '내가 장담하는데'라는 삽입구처럼 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0510",
+      "lemma": "well-being",
+      "level": "L2",
+      "meaningKo": "안녕, (심신의) 행복과 건강",
+      "definitionEn": "the state of being comfortable, healthy, and happy",
+      "nuance": "happiness보다 넓다 — 몸·마음·형편이 두루 괜찮은 상태. 제시가 격식체를 흉내 내며 비꼬는 단어.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck together for a while ... for the well-being of my sister and I",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0511",
+      "lemma": "shape",
+      "level": "L2",
+      "meaningKo": "(생각·성격을) 형성하다, 빚어내다",
+      "definitionEn": "to influence something so that it develops in a particular way",
+      "nuance": "명사 '모양'이 아니라 동사로 쓰인 경우. 주어가 사람의 사고방식을 조각하듯 만든다는 이미지.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I think that really shaped the way I think",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0512",
+      "lemma": "uncomplicated",
+      "level": "L2",
+      "meaningKo": "복잡할 것 없는, 단순한",
+      "definitionEn": "simple and not difficult to understand or deal with",
+      "nuance": "simple이 '쉽다'라면 uncomplicated는 '얽힌 게 없다'. 실은 얽혀 있었다는 반전이 곧 이어진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I always thought she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0513",
+      "lemma": "ordinarily",
+      "level": "L2",
+      "meaningKo": "평소 같으면, 보통 때는",
+      "definitionEn": "in the way that usually happens",
+      "nuance": "usually와 달리 '평소라면 안 그런데 지금은 다르다'는 대비를 깐다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0514",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without a break or interruption",
+      "nuance": "continual(간격을 두고 반복)과 구분. 현재완료'진행'을 영어 문법 용어로 present perfect continuous라 부르는 그 continuous다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "getting these tapes from town to town, city to city, so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0515",
+      "lemma": "straight",
+      "level": "L2",
+      "meaningKo": "내리, 쉬지 않고 연달아",
+      "definitionEn": "continuously, one after another without a break",
+      "nuance": "기간 표현 뒤에 붙는 부사 용법. for a year straight, three days straight. '똑바로'와는 다른 얼굴이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "this show that would last twenty-four hours a day for a year straight",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0516",
+      "lemma": "breed",
+      "level": "L2",
+      "meaningKo": "(동물의) 품종, 종류",
+      "definitionEn": "a particular type within a species of animal",
+      "nuance": "species(종)보다 좁은 단위. 동사로는 '번식하다, 사육하다'.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "there's these breeds of monkeys, right, and all they do is have sex",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0517",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(자기 감정의) 투사, 덧씌운 환상",
+      "definitionEn": "the act of attributing your own feelings or ideas to someone else",
+      "nuance": "영사기가 스크린에 상을 쏘듯, 상대에게 내 감정을 쏘아 붙이는 심리학 용어. 할머니의 사랑을 두고 제시가 꺼내는 반박.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections [they put on everything.}",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0518",
+      "lemma": "paranoid",
+      "level": "L3",
+      "meaningKo": "피해망상적인, 누가 꾸민 일이라 의심하는",
+      "definitionEn": "wrongly believing that other people are trying to harm or deceive you",
+      "nuance": "임상 용어지만 구어에서는 '나 좀 예민한 생각인데'처럼 자기 검열용으로 가볍게 쓴다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "I have this awful paranoid thought, that feminism was mostly invented by men",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0519",
+      "lemma": "justify",
+      "level": "L3",
+      "meaningKo": "정당화하다, 그럴듯한 이유를 대다",
+      "definitionEn": "to give a good reason for something that others might criticize",
+      "nuance": "'정당하다'가 아니라 '정당해 보이게 만들다'. 셀린이 남자들의 논리를 깎아내릴 때 쓰는 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "this perfect, you know, male argument to justify them fooling around",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0520",
+      "lemma": "feminism",
+      "level": "L3",
+      "meaningKo": "페미니즘, 여성주의",
+      "definitionEn": "the belief that women should have the same rights as men",
+      "nuance": "-ism은 사상, feminist는 사람·형용사. 셀린은 이 단어를 신봉이 아니라 의심의 대상으로 꺼낸다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "feminism was mostly invented by men, so they could, like, fool around a little more",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0521",
+      "lemma": "rebel against",
+      "level": "L4",
+      "meaningKo": "~에 반항하다, 대들다",
+      "definitionEn": "to refuse to accept the authority or rules of something",
+      "nuance": "동사 rebel은 뒤 음절 강세(리벨), 명사 rebel은 앞 음절(레블). 뒤에는 사람·제도·관습이 온다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I just think it's a healthy process to rebel against everything that came before",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0522",
+      "lemma": "stick around",
+      "level": "L4",
+      "meaningKo": "떠나지 않고 남아 있다, 곁에 머물다",
+      "definitionEn": "to stay in a place instead of leaving",
+      "nuance": "'끝까지 붙어 있다'는 뉘앙스라 stick together(함께 버티다)와 짝을 이룬다. 이 장면에서는 떠나지 않은 것이 오히려 상처가 된다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They either left them, or you know, they stuck around and taught 'em the wrong things.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0523",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스럽게 여기다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정이라면 take pride in은 '그렇게 여기기로 했다'는 태도에 가깝다. 상처를 자부심으로 바꿔 버리는 제시의 방식.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it. You know, like my life was my own doing",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0524",
+      "lemma": "be pissed off",
+      "level": "L4",
+      "meaningKo": "몹시 열받다, 화가 잔뜩 나다",
+      "definitionEn": "to be very annoyed or angry",
+      "nuance": "angry보다 훨씬 거칠다. 공적인 자리에서는 쓰지 않는다. 미국식은 pissed off, 영국식 pissed는 '취한'이라는 뜻도 된다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0525",
+      "lemma": "come up with",
+      "level": "L4",
+      "meaningKo": "(답·아이디어를) 생각해 내다, 내놓다",
+      "definitionEn": "to think of an idea, plan, or answer",
+      "nuance": "머리를 짜내 없던 것을 만들어 내는 쪽. 우연히 마주치는 come across와 헷갈리지 말 것.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "And nobody's come up with anything.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0526",
+      "lemma": "fool around",
+      "level": "L4",
+      "meaningKo": "바람피우다, 놀아나다; 빈둥거리다",
+      "definitionEn": "to have casual sexual relationships; to waste time playing",
+      "nuance": "문맥이 뜻을 가른다 — 연애 이야기 속에서는 '바람피우다', 일 이야기 속에서는 '농땡이 피우다'. 이 장면은 전자.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "so I mean, maybe fooling around is not so bad",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0527",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "머릿속이 하얘지다, 아무 생각도 안 나다",
+      "definitionEn": "to suddenly be unable to remember or think of anything",
+      "nuance": "blank는 '빈칸'. 준비해 둔 말이 통째로 지워지는 순간을 그린다. My mind went blank.가 통째 표현.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0528",
+      "lemma": "like a skipping record",
+      "level": "L4",
+      "meaningKo": "고장 난 레코드처럼 같은 데서 계속 맴도는",
+      "definitionEn": "repeating the same thing over and over without moving on",
+      "nuance": "LP 바늘이 튀어 같은 소절을 무한 반복하는 이미지. 바로 다음 문장의 현재완료진행(Every couple's been having...)과 짝을 이룬다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-05",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 14,
+          "context": "It's like a skipping record, you know?",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-05-001",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "paranoid — \"I have this awful paranoid thought, that feminism was mostly invented by men\"",
+      "wordId": "w-0518",
+      "options": [
+        "느긋하고 태평한",
+        "감상적이고 눈물이 많은",
+        "피해망상적인, 누가 꾸민 일이라 의심하는",
+        "고집스럽고 완고한"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-005"
+    },
+    {
+      "quizId": "q-05-002",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "fate — \"She just accepted her fate.\"",
+      "wordId": "w-0508",
+      "options": [
+        "운명, 정해진 결말",
+        "잘못된 선택, 오판",
+        "행운, 뜻밖의 기회",
+        "의무, 떠맡은 책임"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-002"
+    },
+    {
+      "quizId": "q-05-003",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "uncomplicated — \"I always thought she had a very simple, uncomplicated love life\"",
+      "wordId": "w-0512",
+      "options": [
+        "불행하고 메마른",
+        "복잡할 것 없는, 얽힌 데 없는",
+        "남몰래 감춰 둔",
+        "격정적이고 위태로운"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-003"
+    },
+    {
+      "quizId": "q-05-004",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "take pride in — \"I eventually kind of took pride in it. You know, like my life was my own doing\"",
+      "wordId": "w-0523",
+      "options": [
+        "~을 부끄러워하다",
+        "~을 뒤늦게 후회하다",
+        "~을 자랑스럽게 여기다",
+        "~을 대수롭지 않게 넘기다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-007"
+    },
+    {
+      "quizId": "q-05-005",
+      "unitId": "u-05",
+      "type": "meaning",
+      "prompt": "come up with — \"And nobody's come up with anything.\"",
+      "wordId": "w-0525",
+      "options": [
+        "~을 우연히 마주치다",
+        "~을 끝까지 참아 내다",
+        "~에 뒤늦게 합류하다",
+        "(답·아이디어를) 생각해 내다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-05-008"
+    },
+    {
+      "quizId": "q-05-006",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "I don't really know what I'm on. I'm just traveling around. I ___ the trains the past two, three weeks. (지금도 그 기차 안이다)",
+      "options": [
+        "'ve been riding",
+        "'m going to ride",
+        "rode",
+        "had ridden"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-007",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "You know, I ___ lately. Do you know anyone who's in a happy relationship? (얼마 전부터 지금까지 계속 마음에 걸려 있었다)",
+      "options": [
+        "wonder",
+        "'ve been wondering",
+        "was wondering",
+        "will wonder"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-008",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "대학 때부터 알고 지낸 사이다 — I ___ her since college.",
+      "options": [
+        "'ve been knowing",
+        "'m knowing",
+        "'ve known",
+        "was knowing"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-009",
+      "unitId": "u-05",
+      "type": "blank",
+      "prompt": "He's been riding the trains ___ three weeks.",
+      "options": [
+        "since",
+        "during",
+        "from",
+        "for"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-010",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "I've been reading the book.은 '그 책을 다 읽었다'는 뜻이다.",
+      "isCorrect": false,
+      "explanation": "현재완료진행은 아직 읽는 중이라는 '과정'을 그린다. 다 읽어서 내용을 안다는 결과를 말하려면 I've read the book.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-05-012"
+    },
+    {
+      "quizId": "q-05-011",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "\"Every couple's been having this conversation forever.\"에서 couple's는 couple is의 축약이다.",
+      "isCorrect": false,
+      "explanation": "couple has의 축약이다. is 뒤에는 been이 올 수 없다 — 's been -ing를 보면 무조건 has been -ing로 읽는다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-05-013"
+    },
+    {
+      "quizId": "q-05-012",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "제시의 \"I've been riding the trains the past two, three weeks.\"는 지금 이 순간에도 그 상태가 이어지고 있다는 뜻을 담는다.",
+      "isCorrect": true,
+      "explanation": "have been -ing의 핵심은 '아직 안 끝났다'다. 그래서 셀린 앞에 앉은 제시가 여전히 아무 데도 도착하지 못한 사람으로 보인다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-013",
+      "unitId": "u-05",
+      "type": "truefalse",
+      "prompt": "I've been knowing her since college. — 자연스러운 문장이다.",
+      "isCorrect": false,
+      "explanation": "know는 상태동사라 진행형을 받지 못한다. → I've known her since college.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-05-014"
+    },
+    {
+      "quizId": "q-05-014",
+      "unitId": "u-05",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "the trains",
+        "I've just been.",
+        "the past two, three weeks.",
+        "I'm just traveling around.",
+        "I've been riding"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-05-010"
+    },
+    {
+      "quizId": "q-05-015",
+      "unitId": "u-05",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 8)",
+      "chunks": [
+        "who's in a happy relationship?",
+        "You know,",
+        "Do you know anyone",
+        "I've been wondering lately."
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": "c-05-011"
+    },
+    {
+      "quizId": "q-05-016",
+      "unitId": "u-05",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 14)",
+      "chunks": [
+        "this conversation",
+        "Every couple's",
+        "forever.",
+        "been having"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-017",
+      "unitId": "u-05",
+      "type": "koToEn",
+      "prompt": "나는 3주째 기차만 타고 다니고 있다.",
+      "chunks": [
+        "for three weeks",
+        "I've been riding",
+        "now.",
+        "the trains"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-018",
+      "unitId": "u-05",
+      "type": "koToEn",
+      "prompt": "요즘 그 생각을 많이 하고 있어.",
+      "chunks": [
+        "I've been thinking",
+        "about that",
+        "a lot",
+        "lately."
+      ],
+      "answer": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-019",
+      "unitId": "u-05",
+      "type": "koToEn",
+      "prompt": "그녀와는 대학 시절부터 알고 지냈다.",
+      "chunks": [
+        "I've known her",
+        "college.",
+        "since",
+        "we were in"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-05-020",
+      "unitId": "u-05",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
+      "text": "I've just been. I'm just __1__ around. I've __2__ __3__ the trains the __4__ two, three weeks.",
+      "blanks": [
+        "traveling",
+        "been",
+        "riding",
+        "past"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-05-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-05-001",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0507",
+      "front": "confess",
+      "back": {
+        "meaningKo": "털어놓다, 고백하다",
+        "nuance": "admit보다 무겁다 — 숨겨 온 것을 꺼내는 결.",
+        "context": "she just confessed to me that she spent her whole life dreaming about another man — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-002",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0508",
+      "front": "fate",
+      "back": {
+        "meaningKo": "운명, 정해진 결말",
+        "nuance": "destiny가 이끌려 가는 운명이라면 fate는 받아들일 수밖에 없는 쪽. accept one's fate.",
+        "context": "She just accepted her fate. — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-003",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0512",
+      "front": "uncomplicated",
+      "back": {
+        "meaningKo": "복잡할 것 없는, 단순한",
+        "nuance": "simple이 '쉽다'라면 uncomplicated는 '얽힌 게 없다'.",
+        "context": "a very simple, uncomplicated love life — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-004",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0517",
+      "front": "projection",
+      "back": {
+        "meaningKo": "(자기 감정의) 투사, 덧씌운 환상",
+        "nuance": "영사기가 상을 쏘듯 상대에게 내 감정을 쏘아 붙이는 것.",
+        "context": "people have these romantic projections — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-005",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0518",
+      "front": "paranoid",
+      "back": {
+        "meaningKo": "피해망상적인, 누가 꾸민 일이라 의심하는",
+        "nuance": "구어에서는 '나 좀 예민한 생각인데'처럼 자기 검열용으로 가볍게 쓴다.",
+        "context": "I have this awful paranoid thought — Céline, Ch 14"
+      }
+    },
+    {
+      "cardId": "c-05-006",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0521",
+      "front": "rebel against",
+      "back": {
+        "meaningKo": "~에 반항하다, 대들다",
+        "nuance": "동사는 뒤 음절 강세, 명사는 앞 음절. 뒤에 사람·제도·관습이 온다.",
+        "context": "a healthy process to rebel against everything that came before — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-007",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0523",
+      "front": "take pride in",
+      "back": {
+        "meaningKo": "~을 자랑스럽게 여기다",
+        "nuance": "be proud of가 감정이라면 take pride in은 '그렇게 여기기로 했다'는 태도.",
+        "context": "I eventually kind of took pride in it — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-008",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0525",
+      "front": "come up with",
+      "back": {
+        "meaningKo": "(답·아이디어를) 생각해 내다, 내놓다",
+        "nuance": "없던 것을 짜내는 쪽. 우연히 마주치는 come across와 구분.",
+        "context": "And nobody's come up with anything. — Céline, Ch 14"
+      }
+    },
+    {
+      "cardId": "c-05-009",
+      "unitId": "u-05",
+      "kind": "vocab",
+      "wordId": "w-0527",
+      "front": "go blank",
+      "back": {
+        "meaningKo": "머릿속이 하얘지다, 아무 생각도 안 나다",
+        "nuance": "준비해 둔 말이 통째로 지워지는 순간. My mind went blank.",
+        "context": "I look at this woman, and my mind goes completely blank — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-05-010",
+      "unitId": "u-05",
+      "kind": "pattern",
+      "front": "\"3주째 계속 기차만 타고 다니는 중이야\" — 아직 안 끝난 상태를 영어로?",
+      "back": {
+        "pattern": "have/has been + -ing (+ for 기간 / since 시점)",
+        "explanation": "과거 어느 시점에 시작해 지금까지 이어지는 동작. 단순과거로 바꾸면 이미 끝난 이야기가 된다.",
+        "anchor": "I've been riding the trains the past two, three weeks. — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-05-011",
+      "unitId": "u-05",
+      "kind": "pattern",
+      "front": "\"요즘 계속 궁금했던 게 있어\" — 최근부터 지금까지 이어지는 마음을 영어로?",
+      "back": {
+        "pattern": "I've been -ing lately / recently",
+        "explanation": "lately·recently를 얹으면 '요즘 계속 ~해 왔다'가 된다. I wondered로 바꾸면 한 번 스친 생각이 되어 버린다.",
+        "anchor": "You know, I've been wondering lately. — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-05-012",
+      "unitId": "u-05",
+      "kind": "trap",
+      "front": "I've been reading the book. = 그 책을 다 읽었다 — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "현재완료진행은 아직 읽는 중이라는 '과정'이다. 다 읽었다는 결과는 I've read the book. 끝났느냐 아직이냐로 문장이 뒤집힌다.",
+        "relatedRuleId": "r2"
+      }
+    },
+    {
+      "cardId": "c-05-013",
+      "unitId": "u-05",
+      "kind": "trap",
+      "front": "Every couple's been having this conversation forever.의 couple's = couple is — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "couple has의 축약이다. is 뒤에는 been이 올 수 없으므로, 's been -ing는 무조건 has been -ing로 읽는다.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-05-014",
+      "unitId": "u-05",
+      "kind": "trap",
+      "front": "I've been knowing her since college. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "know는 상태동사라 진행형을 받지 못한다. → I've known her since college. like, believe, own, be도 같다.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-05-015",
+      "unitId": "u-05",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "휴가냐고 묻는 셀린에게, 자기가 뭘 하는 중인지도 모르겠다던 남자가 이어서 한 말 — 통으로 떠올려 보세요.",
+      "back": {
+        "en": "I've just been. I'm just traveling around. I've been riding the trains the past two, three weeks.",
+        "speaker": "Jesse",
+        "chapter": 2
+      }
+    }
+  ]
+}

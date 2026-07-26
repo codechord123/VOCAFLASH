@@ -1,0 +1,1099 @@
+{
+  "unit": {
+    "unitId": "u-08",
+    "act": 2,
+    "order": 8,
+    "title": "비교 구문",
+    "tagline": "무명 묘지 앞에서, 셀린이 '가장'이라는 말 없이 가장 깊은 인상을 말하는 방식",
+    "anchors": [
+      {
+        "en": "I visited this as a young teenager. I think it left a bigger impression on me at that time than any of the museums we went to.",
+        "ko": "십대 초반에 여기 와 본 적 있어. 그때 나한테는 우리가 갔던 어떤 박물관보다 이 묘지가 더 깊은 인상을 남긴 것 같아.",
+        "source": "before-sunrise",
+        "chapter": 7,
+        "speaker": "Céline",
+        "sceneNote": "무명자 묘지. 토끼 한 마리를 보다 셀린이 오래된 기억을 꺼낸다. '제일 인상 깊었어'라고 최상급으로 말할 수도 있었지만, 셀린은 bigger ~ than any of ~로 돌려 말한다. 최상급이 단정하는 말이라면 이 비교급은 하나하나 견줘 본 끝에 나온 말이라, 목소리가 훨씬 조심스럽고 사적으로 들린다."
+      },
+      {
+        "en": "I'm just as big a loser as he is, totally unmotivated, totally boring",
+        "ko": "나도 그 사람이랑 똑같이 별 볼 일 없는 놈이야. 완전 의욕도 없고, 완전 지루하고.",
+        "source": "before-sunrise",
+        "chapter": 3,
+        "speaker": "Jesse",
+        "sceneNote": "빈 도착 직전, 제시가 셀린을 기차에서 내리게 하려고 늘어놓는 설득. 미래의 남편과 자신을 같은 저울에 올리며 '나도 똑같이 형편없다'고 말한다. as ~ as는 우열이 아니라 동급을 만드는 장치라, 여기서는 자기비하가 아니라 상대의 경계를 낮추는 농담으로 작동한다. big a loser라는 뒤집힌 어순이 이 유닛의 핵심 함정이다."
+      },
+      {
+        "en": "Now, I'm ten years older, and she's still thirteen, I guess.",
+        "ko": "이제 난 열 살이나 더 먹었는데, 이 애는 여전히 열세 살이네.",
+        "source": "before-sunrise",
+        "chapter": 7,
+        "speaker": "Céline",
+        "sceneNote": "열세 살에 죽은 엘리자베트의 묘비 앞. 자기가 처음 이 묘비를 봤을 때와 지금의 나이 차를 ten years older 한 마디로 재 버린다. 비교급 앞의 숫자 하나가 흘러간 십 년을 통째로 들어 올리는 순간이다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "-er냐 more냐는 음절 수가 정한다",
+        "body": "1음절 형용사와 -y로 끝나는 2음절 형용사는 -er을 붙인다(big → bigger, old → older, easy → easier). 그 밖의 2음절 이상은 more를 앞에 둔다(more peaceful, more harmless). 셀린은 a bigger impression이라 했고 같은 장면에서 자기 나이는 ten years older라 했다. ❌ more big, ❌ more tall처럼 짧은 형용사에 more를 붙이는 것이 한국인 학습자의 첫 번째 실수다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "than 뒤는 than me 또는 than I am, 둘 중 하나로 끝내라",
+        "body": "구어에서는 목적격 than me가 표준이고, 격식체나 또박또박 말할 때는 주격+동사 than I am을 쓴다. 문제는 그 중간 — than I.에서 멈추면 문어에서는 통과해도 말로는 어색하게 들린다. 제시가 as he is까지 be동사를 붙여 말하는 것이 이 완전형이다. She's ten years older than me. / She's ten years older than I am. 둘 다 맞고, ❌ than I.는 피하는 편이 안전하다.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "as ~ as 사이에 명사가 끼면 관사가 뒤로 밀린다 ★",
+        "body": "as와 as 사이에는 형용사만 오는 게 기본이다(as tall as, as cute as). 그런데 명사까지 함께 넣으려면 어순이 「as + 형용사 + a/an + 명사」로 뒤집힌다. 제시의 I'm just as big a loser as he is가 정확히 이 형태다. ❌ as a big loser as. 앞의 just는 '꼭 그만큼'이라는 동급 강조. so, too, how 뒤에서도 같은 뒤집힘이 일어난다 — so big a loser, too big a risk, how big a deal.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "비교급 강조에 very는 절대 못 쓴다 ★최다 실수",
+        "body": "❌ very bigger, ❌ very better. very는 원급 전용이다(very big). 비교급은 much / far / a lot / even / still로 강조한다. 대본이 전부 보여준다 — It makes it even harder to officially complain(셀린, Ch 2), They should have done it a lot sooner(제시, Ch 8), it would be a lot more fun if you came with me(제시, Ch 3). 차이의 크기를 숫자로 말할 때도 자리는 같다: ten years older, two hours longer.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "비교급으로 최상급을 말한다 — than any of / than any other",
+        "body": "셀린은 '그 묘지가 제일 인상 깊었다'를 최상급 없이 a bigger impression ... than any of the museums we went to로 말한다. 구분은 간단하다. than any of + 복수명사는 '그 집단 전부와 견줘서'(비교 대상이 나와 별개), than any other + 단수명사는 '나를 뺀 나머지 하나하나와 견줘서'(나도 그 집단에 속함). ❌ than any other museums처럼 other 뒤에 복수를 쓰면 안 되고, 자기가 속한 집단과 비교하면서 other를 빠뜨려도 안 된다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "(확장) 비교급을 두 번 겹치는 두 가지 틀",
+        "body": "두 변화가 맞물려 움직일 때는 「The 비교급 ~, the 비교급 ~」을 쓴다. The older I get, the less I explain myself. 한 방향으로 계속 커지기만 할 때는 「비교급 and 비교급」 — 셀린이 가짜 통화에서 I began to like him more and more(Ch 15)라고 하는 그것이다. get/become + 비교급도 같은 결의 '변해 가는' 비교급이다: as couples get older(셀린, Ch 1).",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "That fifteen-minute walk left a bigger impression on me than any of the tours I paid for.",
+        "ko": "그 15분짜리 산책이, 돈 주고 간 어떤 투어보다도 나한테 더 깊은 인상을 남겼다."
+      },
+      {
+        "en": "She is just as stubborn a negotiator as her father was.",
+        "ko": "그녀는 아버지가 그랬던 것과 꼭 그만큼 고집 센 협상가다."
+      },
+      {
+        "en": "The second draft is much clearer than the first, and it took far less time to write.",
+        "ko": "두 번째 원고가 첫 번째보다 훨씬 명료하고, 쓰는 데도 시간이 훨씬 덜 걸렸다."
+      },
+      {
+        "en": "The older I get, the less I need to be right.",
+        "ko": "나이를 먹을수록, 내가 옳아야 할 필요가 줄어든다."
+      },
+      {
+        "en": "Nobody in that room was more nervous than I was.",
+        "ko": "그 방에서 나보다 더 긴장한 사람은 없었다."
+      }
+    ],
+    "coverage": {
+      "fromScript": 4,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0801",
+      "lemma": "cemetery",
+      "level": "L1",
+      "meaningKo": "묘지, 공동묘지",
+      "definitionEn": "an area of ground where dead people are buried",
+      "nuance": "교회에 딸린 묘지는 graveyard, 교회와 무관한 독립 묘지가 cemetery. 이 장면의 '무명자 묘지'가 후자다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "It's called the cemetery of the no-name",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0802",
+      "lemma": "impression",
+      "level": "L1",
+      "meaningKo": "(마음에 남는) 인상, 느낌",
+      "definitionEn": "an effect or feeling that stays in your mind",
+      "nuance": "leave an impression on 사람 = ~에게 인상을 남기다. 이 유닛의 앵커가 통째로 이 연어 위에 서 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "it left a bigger impression on me at that time",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0803",
+      "lemma": "century",
+      "level": "L1",
+      "meaningKo": "세기, 100년",
+      "definitionEn": "a period of one hundred years",
+      "nuance": "the century라고만 하면 문맥상 '지난 세기'를 가리킨다. 여기서는 1900년 무렵이라는 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "Around the beginning of the century or so",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0804",
+      "lemma": "tiny",
+      "level": "L1",
+      "meaningKo": "아주 작은",
+      "definitionEn": "extremely small",
+      "nuance": "small보다 감정이 실린다. 비교급은 tinier — -y로 끝나는 2음절이라 more가 아니라 -er을 받는 대표 사례.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "Yeah? It's tiny.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0805",
+      "lemma": "connection",
+      "level": "L1",
+      "meaningKo": "(사람 사이의) 통하는 느낌, 유대",
+      "definitionEn": "a feeling of understanding and closeness between people",
+      "nuance": "전선·교통의 '연결'과 같은 단어지만, have a connection with는 '말이 통한다'는 감정어. 제시가 기차에서 승부수를 던지며 고른 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I feel like we have some kind of uh, connection",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0806",
+      "lemma": "favor",
+      "level": "L1",
+      "meaningKo": "호의, 부탁",
+      "definitionEn": "a kind act that you do for someone",
+      "nuance": "do someone a favor(부탁을 들어주다)가 기본형. 여기서는 '내가 너희 부부에게 베푸는 엄청난 호의'라는 뻔뻔한 농담.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "a gigantic favor to both you and your future husband",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0807",
+      "lemma": "divorce",
+      "level": "L1",
+      "meaningKo": "이혼하다; 이혼",
+      "definitionEn": "to legally end a marriage",
+      "nuance": "동사와 명사가 같은 형태. get divorced(이혼하다)가 구어에서 더 흔하다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "Did your parents divorce?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0808",
+      "lemma": "complain",
+      "level": "L1",
+      "meaningKo": "불평하다, 항의하다",
+      "definitionEn": "to say that you are unhappy or dissatisfied with something",
+      "nuance": "complain about(~에 대해)와 complain to(~에게)를 구분한다. 셀린이 '부모가 착해서 오히려 항의하기 더 어렵다'고 할 때의 그 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0809",
+      "lemma": "groundskeeper",
+      "level": "L2",
+      "meaningKo": "(묘지·공원 등의) 관리인",
+      "definitionEn": "a person who takes care of the grounds of a place",
+      "nuance": "grounds(부지) + keeper(지키는 사람). 이 묘지의 사연을 아는 유일한 사람이자, 셀린 기억의 출처.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "He was the groundskeeper.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0810",
+      "lemma": "bank",
+      "level": "L2",
+      "meaningKo": "(강의) 둑, 기슭",
+      "definitionEn": "the land along the side of a river",
+      "nuance": "'은행'과 철자가 같지만 완전히 다른 뜻. the bank of the Danube는 도나우 강가. 바닷가는 shore, 모래사장은 beach.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "that washed up on the bank of the Danube",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0811",
+      "lemma": "suicide",
+      "level": "L2",
+      "meaningKo": "자살; 자살한 사람",
+      "definitionEn": "the act of killing yourself",
+      "nuance": "commit suicide가 전통적 표현이지만 죄(commit)의 함의 때문에 요즘은 die by suicide를 더 쓴다. 여기서는 '자살한 사람들'을 가리키는 가산명사 용법.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "most of them were suicides that jumped in the river",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0812",
+      "lemma": "bury",
+      "level": "L2",
+      "meaningKo": "묻다, 매장하다",
+      "definitionEn": "to put a dead body into the ground",
+      "nuance": "발음이 [베리]로 berry와 같다는 점이 함정. 수동태 be buried로 훨씬 자주 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "most of the people are buried here",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0813",
+      "lemma": "well-being",
+      "level": "L2",
+      "meaningKo": "행복, (몸과 마음의) 안녕",
+      "definitionEn": "the state of being healthy, happy, and comfortable",
+      "nuance": "한국어 '웰빙'처럼 건강식 뉘앙스가 아니라 '잘 지내는 상태' 전반. 제시가 이 단어를 상류층 말투로 흉내 내며 비꼬는 대목.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck together for a while ... for the well-being of my sister and I",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0814",
+      "lemma": "loser",
+      "level": "L2",
+      "meaningKo": "루저, 별 볼 일 없는 사람",
+      "definitionEn": "someone who is unsuccessful or fails at things",
+      "nuance": "경기의 '패자'라는 중립적 뜻도 있지만 사람에게 쓰면 강한 비하. 제시는 그 칼끝을 자기에게 돌려 농담으로 만든다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I'm just as big a loser as he is",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0815",
+      "lemma": "unmotivated",
+      "level": "L2",
+      "meaningKo": "의욕 없는, 동기가 없는",
+      "definitionEn": "having no enthusiasm or desire to do things",
+      "nuance": "lazy(게으른)가 성격 비난이라면 unmotivated는 '동력이 없는' 상태 묘사라 조금 덜 아프다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "totally unmotivated, totally boring",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0816",
+      "lemma": "insane",
+      "level": "L2",
+      "meaningKo": "미친, 말도 안 되는",
+      "definitionEn": "extremely unreasonable or crazy",
+      "nuance": "구어에서는 '터무니없다'는 강조어로 자주 쓴다. 제시는 자기 제안을 먼저 insane이라 부르며 방어선을 친다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I have an admittedly insane idea",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0817",
+      "lemma": "gigantic",
+      "level": "L2",
+      "meaningKo": "거대한, 어마어마한",
+      "definitionEn": "extremely large",
+      "nuance": "huge보다 과장이 세다. 3음절이라 비교급은 반드시 more gigantic — ❌ giganticer.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "what this really could be is a gigantic favor",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0818",
+      "lemma": "harmless",
+      "level": "L2",
+      "meaningKo": "해가 없는, 순한",
+      "definitionEn": "not able or likely to cause damage or harm",
+      "nuance": "harm + -less. 셀린이 가짜 통화에서 I'm the most harmless person이라며 최상급으로 자신을 변호하는 장면의 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 15,
+          "context": "you know me, I'm the most harmless person",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0819",
+      "lemma": "psycho",
+      "level": "L2",
+      "meaningKo": "정신 나간 사람, 위험한 놈",
+      "definitionEn": "a person who behaves in a violent or dangerous way",
+      "nuance": "psychopath의 구어 축약. 진지하게 쓰면 무겁지만, 여기서는 '내가 이상한 놈이면 다음 기차 타면 돼'라는 농담의 재료.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "if I turn out to be some kind of psycho",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0820",
+      "lemma": "adorable",
+      "level": "L2",
+      "meaningKo": "사랑스러운, 너무 귀여운",
+      "definitionEn": "very attractive and easy to love",
+      "nuance": "cute보다 애정이 짙다. 4음절이라 비교급은 more adorable.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 15,
+          "context": "Yeah, we kissed. It was so adorable.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0821",
+      "lemma": "admittedly",
+      "level": "L3",
+      "meaningKo": "인정하건대, 솔직히 말해",
+      "definitionEn": "used to admit that something is true before you argue against it",
+      "nuance": "약점을 먼저 내주고 설득을 시작하는 신호어. 제시가 an admittedly insane idea라고 말머리를 여는 이유가 바로 이것.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "I have an admittedly insane idea",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0822",
+      "lemma": "transitory",
+      "level": "L3",
+      "meaningKo": "덧없는, 잠깐 머물다 가는",
+      "definitionEn": "lasting for only a short time",
+      "nuance": "temporary가 '기간이 짧다'는 사실이라면 transitory는 '스쳐 지나간다'는 정서. 셀린이 쇠라의 인물들을 두고 고른 말이고, 두 사람의 하룻밤을 요약하는 단어이기도 하다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 10,
+          "context": "His human figures are always so transitory.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0823",
+      "lemma": "manipulative",
+      "level": "L3",
+      "meaningKo": "사람을 교묘히 조종하는",
+      "definitionEn": "controlling or influencing people in a clever and unfair way",
+      "nuance": "manipulate의 형용사. 상대를 자기 뜻대로 움직인다는 비난어라 관계에서 가장 아픈 단어 중 하나.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 15,
+          "context": "He must be thinking I'm this manipulative, mean woman.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0824",
+      "lemma": "wash up",
+      "level": "L4",
+      "meaningKo": "(물살에 떠밀려) 물가에 밀려오다",
+      "definitionEn": "to be carried onto land by moving water",
+      "nuance": "영국식으로는 '설거지하다'라는 전혀 다른 뜻도 된다. 이 장면에서는 도나우 강이 시신을 강가로 밀어 올렸다는 뜻.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 7,
+          "context": "most of the people are buried here that washed up on the bank of the Danube",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0825",
+      "lemma": "miss out on",
+      "level": "L4",
+      "meaningKo": "(좋은 기회를) 놓치다",
+      "definitionEn": "to lose a chance to do or have something enjoyable",
+      "nuance": "그냥 miss(놓치다)와 달리 '나만 못 누렸다'는 아쉬움이 붙는다. 제시의 설득 전체가 이 아쉬움을 만들어 내는 작업이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 3,
+          "context": "to find out what you're missing out on",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0826",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스러워하다, 자부심을 갖다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정 상태라면 take pride in은 '자부심을 스스로 택한다'는 능동. 제시는 '원치 않은 아이'라는 사실마저 자기 것으로 삼는다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-08",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-08-001",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "impression — \"it left a bigger impression on me at that time\"",
+      "wordId": "w-0802",
+      "options": [
+        "압박, 부담",
+        "(마음에 남는) 인상",
+        "인쇄물, 판본",
+        "즉흥 연주"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-002"
+    },
+    {
+      "quizId": "q-08-002",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "groundskeeper — \"He was the groundskeeper.\"",
+      "wordId": "w-0809",
+      "options": [
+        "지하철 역무원",
+        "장의사",
+        "묘지·공원 관리인",
+        "토지 측량사"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-003"
+    },
+    {
+      "quizId": "q-08-003",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "transitory — \"His human figures are always so transitory.\"",
+      "wordId": "w-0822",
+      "options": [
+        "덧없는, 스쳐 지나가는",
+        "이동 중인, 환승하는",
+        "투명한, 비쳐 보이는",
+        "과도기의, 개혁적인"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-007"
+    },
+    {
+      "quizId": "q-08-004",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "wash up — \"most of the people are buried here that washed up on the bank of the Danube\"",
+      "wordId": "w-0824",
+      "options": [
+        "몸을 씻고 단장하다",
+        "물에 잠겨 사라지다",
+        "강물에 뛰어들다",
+        "물살에 떠밀려 물가로 올라오다"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-008"
+    },
+    {
+      "quizId": "q-08-005",
+      "unitId": "u-08",
+      "type": "meaning",
+      "prompt": "miss out on — \"to find out what you're missing out on\"",
+      "wordId": "w-0825",
+      "options": [
+        "~을 그리워하다",
+        "(좋은 기회를) 놓치다",
+        "~을 겨우 피하다",
+        "~에서 빠져나오다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-08-009"
+    },
+    {
+      "quizId": "q-08-006",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "I think it left a ___ impression on me at that time than any of the museums we went to. (Céline, Ch 7)",
+      "options": [
+        "biggest",
+        "bigger",
+        "more big",
+        "as big"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-007",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "I'm just ___ as he is, totally unmotivated, totally boring. (Jesse, Ch 3)",
+      "options": [
+        "as a big loser",
+        "so big a loser",
+        "as big a loser",
+        "big as a loser"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-008",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "이 판이 예전 판보다 훨씬 낫다 → This version is ___ better than the old one.",
+      "options": [
+        "very",
+        "so",
+        "too",
+        "much"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-009",
+      "unitId": "u-08",
+      "type": "blank",
+      "prompt": "Vienna left a bigger impression on her than ___ city she had visited.",
+      "options": [
+        "any other",
+        "any others",
+        "the others",
+        "some other"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-010",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "구어에서는 than 뒤에 목적격을 써서 She's ten years older than me.라고 해도 자연스럽다.",
+      "isCorrect": true,
+      "explanation": "구어의 표준은 than me다. 격식을 갖추려면 than I am처럼 be동사까지 붙인다. 정작 피할 것은 than I.에서 끊는 반쪽짜리 형태.",
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-011",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "He is much more tall than me. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "tall은 1음절이라 more가 아니라 -er을 받는다. → He is much taller than me. 강조어 much는 그대로 두면 된다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-012",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "Your idea is very better than mine. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "very는 원급만 강조한다. 비교급은 much / far / a lot / even / still로 강조한다. → Your idea is much better than mine.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-08-012"
+    },
+    {
+      "quizId": "q-08-013",
+      "unitId": "u-08",
+      "type": "truefalse",
+      "prompt": "It left a bigger impression on me than any other museums we went to. — 맞는 문장이다.",
+      "isCorrect": false,
+      "explanation": "any other 뒤에는 단수명사만 온다. → than any other museum we went to. 셀린은 아예 다른 틀을 골라 than any of the museums we went to라고 말했다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-08-014"
+    },
+    {
+      "quizId": "q-08-014",
+      "unitId": "u-08",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 7)",
+      "chunks": [
+        "than any of the museums",
+        "at that time",
+        "I think it left",
+        "we went to.",
+        "a bigger impression on me"
+      ],
+      "answer": [
+        2,
+        4,
+        1,
+        0,
+        3
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-08-011"
+    },
+    {
+      "quizId": "q-08-015",
+      "unitId": "u-08",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 3)",
+      "chunks": [
+        "as he is,",
+        "I'm just",
+        "as big a loser",
+        "totally unmotivated,",
+        "totally boring"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        3,
+        4
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-08-010"
+    },
+    {
+      "quizId": "q-08-016",
+      "unitId": "u-08",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 7)",
+      "chunks": [
+        "and she's still thirteen,",
+        "Now,",
+        "I guess.",
+        "I'm ten years older,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-017",
+      "unitId": "u-08",
+      "type": "koToEn",
+      "prompt": "그 영화는 내가 본 어떤 다큐멘터리보다 더 강한 인상을 남겼다.",
+      "chunks": [
+        "a stronger impression",
+        "The film left",
+        "I've ever seen.",
+        "than any documentary"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-018",
+      "unitId": "u-08",
+      "type": "koToEn",
+      "prompt": "그의 두 번째 앨범은 첫 번째보다 훨씬 낫다.",
+      "chunks": [
+        "than the first one.",
+        "His second album",
+        "much better",
+        "is"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-08-019",
+      "unitId": "u-08",
+      "type": "koToEn",
+      "prompt": "그녀는 나만큼이나 좋은 선생님이다.",
+      "chunks": [
+        "as good a teacher",
+        "She is",
+        "as I am.",
+        "just"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r3",
+      "srsCardId": "c-08-013"
+    },
+    {
+      "quizId": "q-08-020",
+      "unitId": "u-08",
+      "type": "anchorRestore",
+      "prompt": "앵커 문장을 복원하세요 (빈칸 4개, Céline, Ch 7)",
+      "text": "I visited this as a young teenager. I think it left a __1__ __2__ on me at that time __3__ any of the __4__ we went to.",
+      "blanks": [
+        "bigger",
+        "impression",
+        "than",
+        "museums"
+      ],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-08-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-08-001",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0801",
+      "front": "cemetery",
+      "back": {
+        "meaningKo": "묘지, 공동묘지",
+        "nuance": "교회 부속은 graveyard, 독립된 묘지가 cemetery.",
+        "context": "It's called the cemetery of the no-name — Céline, Ch 7"
+      }
+    },
+    {
+      "cardId": "c-08-002",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0802",
+      "front": "impression",
+      "back": {
+        "meaningKo": "(마음에 남는) 인상, 느낌",
+        "nuance": "leave an impression on 사람 — 이 유닛 앵커가 통째로 이 연어 위에 서 있다.",
+        "context": "it left a bigger impression on me at that time — Céline, Ch 7"
+      }
+    },
+    {
+      "cardId": "c-08-003",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0809",
+      "front": "groundskeeper",
+      "back": {
+        "meaningKo": "(묘지·공원의) 관리인",
+        "nuance": "grounds(부지) + keeper. 이 묘지의 사연을 아는 유일한 사람.",
+        "context": "He was the groundskeeper. — Céline, Ch 7"
+      }
+    },
+    {
+      "cardId": "c-08-004",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0810",
+      "front": "bank",
+      "back": {
+        "meaningKo": "(강의) 둑, 기슭",
+        "nuance": "'은행'과 같은 철자, 전혀 다른 뜻. 바닷가는 shore.",
+        "context": "that washed up on the bank of the Danube — Céline, Ch 7"
+      }
+    },
+    {
+      "cardId": "c-08-005",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0814",
+      "front": "loser",
+      "back": {
+        "meaningKo": "루저, 별 볼 일 없는 사람",
+        "nuance": "사람에게 쓰면 강한 비하. 제시는 그 칼끝을 자기에게 돌린다.",
+        "context": "I'm just as big a loser as he is — Jesse, Ch 3"
+      }
+    },
+    {
+      "cardId": "c-08-006",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0817",
+      "front": "gigantic",
+      "back": {
+        "meaningKo": "거대한, 어마어마한",
+        "nuance": "3음절이라 비교급은 more gigantic — ❌ giganticer.",
+        "context": "what this really could be is a gigantic favor — Jesse, Ch 3"
+      }
+    },
+    {
+      "cardId": "c-08-007",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0822",
+      "front": "transitory",
+      "back": {
+        "meaningKo": "덧없는, 잠깐 머물다 가는",
+        "nuance": "temporary가 기간의 사실이라면 transitory는 스쳐 지나가는 정서.",
+        "context": "His human figures are always so transitory. — Céline, Ch 10"
+      }
+    },
+    {
+      "cardId": "c-08-008",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0824",
+      "front": "wash up",
+      "back": {
+        "meaningKo": "(물살에 떠밀려) 물가에 밀려오다",
+        "nuance": "영국식으로는 '설거지하다'라는 전혀 다른 뜻도 된다.",
+        "context": "that washed up on the bank of the Danube — Céline, Ch 7"
+      }
+    },
+    {
+      "cardId": "c-08-009",
+      "unitId": "u-08",
+      "kind": "vocab",
+      "wordId": "w-0825",
+      "front": "miss out on",
+      "back": {
+        "meaningKo": "(좋은 기회를) 놓치다",
+        "nuance": "그냥 miss와 달리 '나만 못 누렸다'는 아쉬움이 붙는다.",
+        "context": "to find out what you're missing out on — Jesse, Ch 3"
+      }
+    },
+    {
+      "cardId": "c-08-010",
+      "unitId": "u-08",
+      "kind": "pattern",
+      "front": "\"나도 걔랑 똑같이 형편없는 놈이야\" — 동급 비교로 영어로?",
+      "back": {
+        "pattern": "just as + 형용사 + a/an + 명사 + as + 주어 + be동사",
+        "explanation": "as ~ as 사이에 명사가 끼면 관사가 형용사 뒤로 밀린다. 앞의 just는 '꼭 그만큼'이라는 동급 강조.",
+        "anchor": "I'm just as big a loser as he is — Jesse, Ch 3"
+      }
+    },
+    {
+      "cardId": "c-08-011",
+      "unitId": "u-08",
+      "kind": "pattern",
+      "front": "\"그게 다른 어떤 것보다 인상 깊었어\" — 최상급을 쓰지 않고 영어로?",
+      "back": {
+        "pattern": "비교급 + than any of the + 복수명사",
+        "explanation": "최상급이 단정하는 말이라면 이 틀은 하나하나 견줘 본 끝의 말이라 훨씬 조심스럽게 들린다. 자기가 그 집단에 속할 때는 than any other + 단수명사.",
+        "anchor": "it left a bigger impression on me at that time than any of the museums we went to — Céline, Ch 7"
+      }
+    },
+    {
+      "cardId": "c-08-012",
+      "unitId": "u-08",
+      "kind": "trap",
+      "front": "Your idea is very better than mine. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "very는 원급 전용이다. 비교급은 much / far / a lot / even / still로 강조한다. → Your idea is much better than mine.",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-08-013",
+      "unitId": "u-08",
+      "kind": "trap",
+      "front": "I'm just as a big loser as he is. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "as ~ as 사이에 명사가 들어가면 관사가 형용사 뒤로 밀린다. → I'm just as big a loser as he is. (제시, Ch 3) so/too/how 뒤에서도 같다 — so big a loser, too big a risk.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-08-014",
+      "unitId": "u-08",
+      "kind": "trap",
+      "front": "It left a bigger impression on me than any other museums we went to. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "any other 뒤에는 단수명사만 온다. → than any other museum we went to. 셀린이 실제로 쓴 다른 틀은 than any of the museums we went to.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-08-015",
+      "unitId": "u-08",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "무명자 묘지 앞, 토끼를 보다 말고 셀린이 오래된 기억을 꺼내는 장면 — 통으로 떠올려 보세요.",
+      "back": {
+        "en": "I visited this as a young teenager. I think it left a bigger impression on me at that time than any of the museums we went to.",
+        "speaker": "Céline",
+        "chapter": 7
+      }
+    }
+  ]
+}

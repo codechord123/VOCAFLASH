@@ -1,0 +1,1097 @@
+{
+  "unit": {
+    "unitId": "u-06",
+    "act": 2,
+    "order": 6,
+    "title": "과거완료",
+    "tagline": "세 살의 기억 속에서 한 발 더 뒤로 물러나는 시제 — 회상 속의 회상",
+    "anchors": [
+      {
+        "en": "My great-grandmother had just died, and my whole family had just visited them in Florida.",
+        "ko": "증조할머니가 막 돌아가신 참이었고, 우리 가족은 플로리다로 그분들을 보고 온 직후였다.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "기차 라운지 칸. 제시가 어머니에게서 죽음이라는 걸 처음 설명받던 세 살 무렵을 꺼낸다. 이야기의 기준 시점은 '어머니가 말해 주던 그때'이고, 증조할머니의 죽음과 플로리다 방문은 그보다 더 앞이다. had just가 두 번 연달아 나오면서 기억의 층이 한 겹 더 뒤로 밀린다."
+      },
+      {
+        "en": "But…I knew what I'd seen.",
+        "ko": "하지만… 나는 내가 본 게 뭔지 알고 있었다.",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "물안개 너머로 증조할머니를 본 세 살 아이에게 부모는 앉혀 놓고 '죽으면 다시 못 보는 거야, 네가 상상한 거야(how I'd imagined it)'라고 설명한다. 제시는 그 설명을 한 문장으로 밀어낸다. 안 것은 그때, 본 것은 그보다 앞 — 그래서 saw가 아니라 I'd seen이다. 이 한 줄에 과거완료의 존재 이유가 다 들어 있다."
+      },
+      {
+        "en": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
+        "ko": "부모님은 세상 무엇보다 나를 사랑하고, 나는 그들이 싸워서 얻어낸 자유를 다 누리며 자랐어.",
+        "source": "before-sunrise",
+        "chapter": 8,
+        "speaker": "Céline",
+        "sceneNote": "프라터에서 키스한 뒤, 회전목마 쪽으로 걸어가며 셀린이 68혁명 세대인 부모 이야기를 한다. 자유를 누린 건 자기 인생이지만, 그 자유를 위해 싸운 일은 자기가 태어나기도 전이다. 관계절 속 had fought 하나가 두 세대의 시간 차를 접어 넣는다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "had + 과거분사 = 과거의 그 시점보다 더 앞",
+        "body": "과거완료는 혼자 못 선다. 먼저 과거의 기준 시점이 깔려야 한다. 제시의 기준 시점은 '어머니가 죽음을 처음 설명해 주던 그때'이고, My great-grandmother had just died와 my whole family had just visited them in Florida는 그보다 앞선 일이라 had + p.p.가 됐다. 기준 시점이 없으면 그냥 과거를 쓴다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "그냥 과거로 말하면 순서가 무너진다 ★최다 실수",
+        "body": "한국어는 '~했었다'가 과거완료 표지 노릇을 제대로 못 한다. '도착했을 때 회의는 이미 끝났다'를 그대로 옮겨 When I arrived, the meeting already finished.라고 하면, 영어 화자는 도착 → 종료 순으로 듣는다. 앞선 일에는 had finished를 박아야 순서가 산다. 시간 부사 하나 없이도 had가 '이게 먼저'라고 말해 준다.",
+        "isTrap": true
+      },
+      {
+        "id": "r3",
+        "title": "'d가 had인지 would인지는 뒤를 보고 가른다 ★Unit 7과 한 쌍",
+        "body": "구어에서 had도 would도 똑같이 'd로 줄어든다. 가르는 건 바로 뒤에 오는 형태다. 과거분사면 had — I knew what I'd seen(제시, Ch 2). 동사원형이면 would — I'd say to my dad(셀린, Ch 2). 같은 챕터 안에 둘 다 나온다. 귀로는 구별되지 않으니 seen이냐 say냐로 판단하는 습관을 들여야 한다.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "just·already·never는 had와 과거분사 사이",
+        "body": "부사는 had 뒤, 과거분사 앞이 제자리다. my sister had just taught me(제시, Ch 2)이지 ❌ my sister just had taught me가 아니다. 마찬가지로 had already left, had never seen. had 앞으로 부사를 빼면 어색하거나 의미가 흔들린다.",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "before·after가 이미 순서를 밝히면 과거완료는 선택",
+        "body": "과거완료의 일은 '순서 표시'다. before, after, then처럼 순서를 대놓고 말해 주는 말이 있으면 굳이 안 써도 된다. She left after I called her.는 그대로 자연스럽다. 배운 문법을 아까워서 전부 had로 바꾸면 문장이 무거워진다. 순서가 헷갈릴 때만 쓰는 도구다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "(확장) 과거완료가 사는 다른 자리들",
+        "body": "① 관계절 배경 — all the freedom they had fought for(셀린, Ch 8): 지금 누리는 자유의 유래를 한 겹 뒤로 밀어 놓는다. ② 후회의 wish — I wish I had met you earlier(제시, Ch 2): 이미 지나가 버려 되돌릴 수 없는 일. ③ 가정법 if — If she'd ever got to know him(제시, Ch 8): 여기서도 she'd는 she had다. 셋 다 형태는 had + p.p. 하나로 같다.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "By the time the letter arrived, she had already changed her mind.",
+        "ko": "편지가 도착했을 무렵, 그녀는 이미 마음을 바꾼 뒤였다."
+      },
+      {
+        "en": "I didn't recognize the street — they had torn down the bakery I grew up next to.",
+        "ko": "그 거리를 못 알아봤다. 내가 옆에서 자란 빵집을 이미 헐어 버린 뒤였다."
+      },
+      {
+        "en": "He said he'd never been to Vienna, but his passport said otherwise.",
+        "ko": "그는 빈에 가 본 적이 없다고 했지만, 여권은 다른 말을 하고 있었다."
+      },
+      {
+        "en": "When I finally called her back, she had stopped waiting.",
+        "ko": "내가 마침내 다시 전화했을 때, 그녀는 이미 기다리기를 그만둔 뒤였다."
+      },
+      {
+        "en": "She wished she had asked for his number that night.",
+        "ko": "그녀는 그날 밤 그의 번호를 물어봤더라면 하고 아쉬워했다."
+      }
+    ],
+    "coverage": {
+      "fromScript": 4,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0601",
+      "lemma": "childhood",
+      "level": "L1",
+      "meaningKo": "어린 시절, 유년기",
+      "definitionEn": "the period of your life when you are a child",
+      "nuance": "child + hood(시기). 셀린이 부모 이야기로 지친 뒤, 제시가 자기 유년을 'magical'이라 부르며 화제를 돌리는 지점.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0602",
+      "lemma": "magical",
+      "level": "L1",
+      "meaningKo": "마법 같은, 꿈결 같은",
+      "definitionEn": "wonderful and exciting, as if made by magic",
+      "nuance": "magic(마법)의 형용사. 실제로 마법이라는 뜻이 아니라 '설명이 안 될 만큼 좋았다'는 정서어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I remember childhood as this, you know, this magical time",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0603",
+      "lemma": "backyard",
+      "level": "L1",
+      "meaningKo": "뒷마당",
+      "definitionEn": "the area of land behind a house",
+      "nuance": "미국식 주택의 뒤뜰. 영국은 back garden 쪽을 더 쓴다. 이 장면 전체가 벌어지는 무대.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I was in the backyard, playing",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0604",
+      "lemma": "spray",
+      "level": "L1",
+      "meaningKo": "(물을) 뿌리다, 분사하다",
+      "definitionEn": "to send out liquid in very small drops",
+      "nuance": "물줄기가 아니라 잘게 흩어지는 물방울. 그래서 다음 문장의 mist(물안개)와 rainbow로 이어진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you could spray it into the sun, and you could make a rainbow",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0605",
+      "lemma": "disappear",
+      "level": "L1",
+      "meaningKo": "사라지다, 자취를 감추다",
+      "definitionEn": "to go out of sight; to stop existing",
+      "nuance": "vanish보다 중립적. 여기서는 호스를 놓자 물안개가 걷히면서 그 모습이 사라진다 — 마법이 풀리는 한 박자.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I dropped the hose, and she disappeared",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0606",
+      "lemma": "attitude",
+      "level": "L1",
+      "meaningKo": "태도, (무엇을 대하는) 자세",
+      "definitionEn": "the way you think and feel about something",
+      "nuance": "attitude towards/to + 명사. 셀린은 죽음을 대하는 제시의 '태도'를 부러워한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You're really lucky you can have this attitude towards death",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0607",
+      "lemma": "generation",
+      "level": "L1",
+      "meaningKo": "세대",
+      "definitionEn": "all the people born at about the same time",
+      "nuance": "'~세대로 태어나다'는 be born into a generation. 셀린이 68세대 부모와 자기를 견주는 대목의 첫 단어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I don't think it really matters what generation you are born into",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0608",
+      "lemma": "freedom",
+      "level": "L1",
+      "meaningKo": "자유",
+      "definitionEn": "the state of being able to act without being controlled",
+      "nuance": "liberty가 제도·권리 쪽이라면 freedom은 실제로 누리는 상태. 셀린에게 자유는 물려받은 것 — 싸운 사람은 따로 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I have been raised with all the freedom they had fought for",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0609",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "(공중에 떠 있는) 물안개, 옅은 안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 가볍다. 여기서는 호스에서 튄 물방울이 만든 막 — 그 막 너머로 증조할머니가 보였다는 게 이 장면 전체의 이미지다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0610",
+      "lemma": "nozzle",
+      "level": "L2",
+      "meaningKo": "노즐, (호스 끝의) 분사구",
+      "definitionEn": "the narrow end of a pipe or hose that controls the flow",
+      "nuance": "let go of the nozzle = 손잡이를 놓다. 이 동작 하나로 물안개가 걷히고 환영이 끝난다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I let go of the nozzle",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0611",
+      "lemma": "eventually",
+      "level": "L2",
+      "meaningKo": "결국에는, 언젠가는",
+      "definitionEn": "in the end, especially after a long time",
+      "nuance": "'뜻밖에'가 아니다. 시간이 흐른 끝에 그렇게 된다는 뜻. finally가 안도라면 eventually는 담담한 예측.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0612",
+      "lemma": "shape",
+      "level": "L2",
+      "meaningKo": "(생각·성격을) 형성하다, 빚어내다",
+      "definitionEn": "to influence the way something develops",
+      "nuance": "명사 '모양'이 아니라 동사. 진흙을 빚듯 사람의 사고방식을 만든다는 뉘앙스 — 제시가 자기 세계관의 출처를 한 문장으로 정리하는 말.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "And I think that really shaped the way I think",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0613",
+      "lemma": "revolt",
+      "level": "L2",
+      "meaningKo": "반란을 일으키다, 들고일어나다",
+      "definitionEn": "to rise up against authority",
+      "nuance": "rebel보다 규모가 크고 정치적. 68년 파리를 그리는 단어라 무게가 다르다. revolt against ~ 형태로 쓴다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They were these angry, young, May '68 people, revolting against everything",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0614",
+      "lemma": "confess",
+      "level": "L2",
+      "meaningKo": "털어놓다, 고백하다",
+      "definitionEn": "to admit something you feel ashamed or uneasy about",
+      "nuance": "admit보다 무겁다 — 숨겨 온 것을 드디어 꺼내는 결. 평생 감춰 온 사랑을 손녀에게 말하는 순간에 딱 맞는 동사.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "she just confessed to me that she spent her whole life dreaming about another man",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0615",
+      "lemma": "fate",
+      "level": "L2",
+      "meaningKo": "운명, (정해진) 몫",
+      "definitionEn": "the power that decides what happens, or what happens to someone",
+      "nuance": "destiny가 나아갈 미래라면 fate는 어쩔 수 없이 받아들이는 쪽. accept one's fate는 체념에 가깝다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "She just accepted her fate. It's so sad.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0616",
+      "lemma": "guarantee",
+      "level": "L2",
+      "meaningKo": "장담하다, 보장하다",
+      "definitionEn": "to promise that something is true or will happen",
+      "nuance": "I guarantee you는 '내가 장담하는데' — 근거 없이 확신을 밀어붙일 때 쓰는 구어. 제시가 남의 할머니 인생을 단정하는 순간이다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I guarantee you, it was better that way",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0617",
+      "lemma": "disappoint",
+      "level": "L2",
+      "meaningKo": "실망시키다",
+      "definitionEn": "to make someone feel unhappy by failing to meet their hopes",
+      "nuance": "주어가 실망을 '주는' 쪽. 내가 실망하면 I was disappointed. 한국인이 가장 자주 뒤집는 동사 중 하나.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I'm sure he would have disappointed her eventually",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0618",
+      "lemma": "pregnant",
+      "level": "L2",
+      "meaningKo": "임신한",
+      "definitionEn": "having a baby developing inside the body",
+      "nuance": "be pregnant with + 아이. 제시가 자기 존재의 시작을 '실수'로 들었다고 말하는 대목의 사실 진술어.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0619",
+      "lemma": "conservative",
+      "level": "L3",
+      "meaningKo": "보수적인, 전통을 지키려는",
+      "definitionEn": "preferring traditional ways and opposing change",
+      "nuance": "정치 성향뿐 아니라 옷차림·태도에도 쓴다. 여기서는 68세대가 등지고 나온 가톨릭 집안의 분위기.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "the government, their conservative catholic backgrounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0620",
+      "lemma": "uncomplicated",
+      "level": "L3",
+      "meaningKo": "복잡할 것 없는, 단순한",
+      "definitionEn": "simple and easy to understand; without difficulties",
+      "nuance": "simple이 '단순함'이라면 uncomplicated는 '얽힌 데가 없음'. 뒤집힐 전제를 깔아 두는 단어라 다음 문장의 반전이 세진다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I always thought she had a very simple, uncomplicated love life",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0621",
+      "lemma": "projection",
+      "level": "L3",
+      "meaningKo": "(심리) 투사 — 제 감정을 상대에게 덧씌우는 것",
+      "definitionEn": "the act of putting your own feelings onto someone else",
+      "nuance": "영사기가 빈 스크린에 상을 쏘는 그 project. 상대를 보는 게 아니라 자기 환상을 비추고 있다는 뜻이라 꽤 냉소적인 말이다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "people have these romantic projections",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0622",
+      "lemma": "well-being",
+      "level": "L3",
+      "meaningKo": "안녕, (몸과 마음의) 행복",
+      "definitionEn": "the state of being healthy and happy",
+      "nuance": "한국어 '웰빙'(건강한 라이프스타일)과 다르다. 여기서는 '애들을 위해서'라는 명분 — 제시가 비꼬는 말투로 흉내 내는 대목.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "they stuck together for a while ... for the well-being of my sister and I",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0623",
+      "lemma": "take pride in",
+      "level": "L4",
+      "meaningKo": "~을 자랑스럽게 여기다",
+      "definitionEn": "to feel proud of something you have or do",
+      "nuance": "be proud of가 감정이라면 take pride in은 태도에 가깝다. 원치 않은 아이였다는 사실마저 자기 것으로 만들어 버리는 제시의 방식.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "I eventually kind of took pride in it",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0624",
+      "lemma": "rebel against",
+      "level": "L4",
+      "meaningKo": "~에 반항하다, 맞서 거스르다",
+      "definitionEn": "to refuse to accept authority or the established way",
+      "nuance": "revolt against가 정치적 봉기라면 rebel against는 개인의 반항까지 아우른다. 셀린은 이걸 'healthy process'라고 부른다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "a healthy process to rebel against everything that came before",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0625",
+      "lemma": "stick together",
+      "level": "L4",
+      "meaningKo": "(헤어지지 않고) 붙어 있다, 뭉치다",
+      "definitionEn": "to stay together and support each other",
+      "nuance": "원래는 '서로 편들며 뭉치다'라는 따뜻한 말인데, 여기서는 이혼을 미룬 채 버틴 부부에게 쓰여 씁쓸하게 뒤집힌다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "They should have done it a lot sooner, but they stuck together for a while",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0626",
+      "lemma": "be pissed off",
+      "level": "L4",
+      "meaningKo": "몹시 화가 난, 열받은",
+      "definitionEn": "to be very annoyed or angry",
+      "nuance": "angry의 거친 구어판. 공적인 자리에서는 못 쓴다. 아버지의 반응을 이 단어로 옮기는 순간 그 집 분위기가 그려진다.",
+      "register": "vulgar",
+      "domain": "general",
+      "unitId": "u-06",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 8,
+          "context": "he was really pissed off when he found out that she was pregnant with me",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-06-001",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "mist — \"through the mist, I could see my grandmother\"",
+      "wordId": "w-0609",
+      "options": [
+        "빗줄기, 소나기",
+        "그림자",
+        "물안개, 옅은 안개",
+        "유리창"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-001"
+    },
+    {
+      "quizId": "q-06-002",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "confess — \"she just confessed to me that she spent her whole life dreaming about another man\"",
+      "wordId": "w-0614",
+      "options": [
+        "부인하다",
+        "털어놓다, 고백하다",
+        "충고하다",
+        "짐작하다"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-003"
+    },
+    {
+      "quizId": "q-06-003",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "fate — \"She just accepted her fate.\"",
+      "wordId": "w-0615",
+      "options": [
+        "명성",
+        "신념",
+        "실수",
+        "운명, 정해진 몫"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-004"
+    },
+    {
+      "quizId": "q-06-004",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "take pride in — \"I eventually kind of took pride in it\"",
+      "wordId": "w-0623",
+      "options": [
+        "~을 자랑스럽게 여기다",
+        "~을 부끄러워하다",
+        "~을 책임지다",
+        "~을 잊어버리다"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-008"
+    },
+    {
+      "quizId": "q-06-005",
+      "unitId": "u-06",
+      "type": "meaning",
+      "prompt": "projection — \"people have these romantic projections\"",
+      "wordId": "w-0621",
+      "options": [
+        "장기 계획",
+        "예산 추정치",
+        "(심리) 투사 — 제 감정을 상대에게 덧씌우는 것",
+        "공개 발표"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-06-005"
+    },
+    {
+      "quizId": "q-06-006",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "My great-grandmother ___ just died, and my whole family had just visited them in Florida. (Jesse, Ch 2)",
+      "options": [
+        "have",
+        "had",
+        "was",
+        "did"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-007",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "By the time the police arrived, the thief ___ through the back window.",
+      "options": [
+        "has escaped",
+        "escapes",
+        "had escaped",
+        "was escaping"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-008",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "\"But…I knew what I'd seen.\"에서 I'd는 무엇의 축약인가?",
+      "options": [
+        "I would",
+        "I had",
+        "I did",
+        "I should"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-009",
+      "unitId": "u-06",
+      "type": "blank",
+      "prompt": "제시가 빈에서 내리며: \"I ___ I had met you earlier.\"",
+      "options": [
+        "hope",
+        "expect",
+        "want",
+        "wish"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-010",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "'회사에 도착했을 때 회의는 이미 끝나 있었다'를 When I arrived at the office, the meeting already finished.라고 해도 순서가 제대로 전달된다.",
+      "isCorrect": false,
+      "explanation": "이렇게 말하면 도착 → 종료 순으로 들린다. 앞선 일에는 had를 박아야 한다. → the meeting had already finished.",
+      "relatedRuleId": "r2",
+      "srsCardId": "c-06-012"
+    },
+    {
+      "quizId": "q-06-011",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "셀린의 \"I'd say to my dad\"에서 I'd는 I had의 축약이다.",
+      "isCorrect": false,
+      "explanation": "뒤에 온 say는 동사원형이므로 would다(과거의 반복). 과거분사가 왔다면 had다 — I knew what I'd seen처럼.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-06-013"
+    },
+    {
+      "quizId": "q-06-012",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "제시의 \"I knew what I'd seen\"에서 I'd가 I had라고 판단하는 근거는, 바로 뒤 seen이 과거분사라는 점이다.",
+      "isCorrect": true,
+      "explanation": "귀로는 had와 would가 똑같이 'd로 들린다. 뒤 형태가 과거분사면 had, 동사원형이면 would — 이 한 가지로 가른다.",
+      "relatedRuleId": "r3",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-013",
+      "unitId": "u-06",
+      "type": "truefalse",
+      "prompt": "She left after I called her.처럼 after가 순서를 이미 밝혀 주면, 과거완료를 쓰지 않아도 된다.",
+      "isCorrect": true,
+      "explanation": "과거완료의 일은 순서 표시다. before·after·then이 그 일을 대신하면 굳이 안 써도 자연스럽다. 배운 게 아까워 전부 had로 바꾸면 문장만 무거워진다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-06-014"
+    },
+    {
+      "quizId": "q-06-014",
+      "unitId": "u-06",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2)",
+      "chunks": [
+        "had just visited them",
+        "My great-grandmother",
+        "in Florida.",
+        "had just died,",
+        "and my whole family"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-06-010"
+    },
+    {
+      "quizId": "q-06-015",
+      "unitId": "u-06",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 8)",
+      "chunks": [
+        "all the freedom",
+        "I have been raised",
+        "they had fought for.",
+        "with"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": "c-06-011"
+    },
+    {
+      "quizId": "q-06-016",
+      "unitId": "u-06",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 2 — 부사 자리에 주의)",
+      "chunks": [
+        "had just taught me",
+        "my sister",
+        "the garden hose",
+        "how to take"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-017",
+      "unitId": "u-06",
+      "type": "koToEn",
+      "prompt": "경찰이 도착했을 무렵, 도둑은 이미 뒷창문으로 빠져나간 뒤였다.",
+      "chunks": [
+        "the thief had already escaped",
+        "through the back window.",
+        "By the time",
+        "the police arrived,"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-018",
+      "unitId": "u-06",
+      "type": "koToEn",
+      "prompt": "그녀를 만났을 때, 나는 그 영화를 이미 세 번 본 뒤였다.",
+      "chunks": [
+        "I had already seen",
+        "three times.",
+        "When I met her,",
+        "the movie"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-019",
+      "unitId": "u-06",
+      "type": "koToEn",
+      "prompt": "너를 더 일찍 만났더라면 좋았을 텐데. (제시가 빈에서 내리며 한 말)",
+      "chunks": [
+        "earlier.",
+        "I wish",
+        "you",
+        "I had met"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-06-020",
+      "unitId": "u-06",
+      "type": "anchorRestore",
+      "prompt": "앵커 장면을 복원하세요 (빈칸 4개)",
+      "text": "My great-grandmother __1__ just died, and my whole family had just visited them in Florida. ... my sister __2__ just __3__ me how to take the garden hose ... But…I knew what __4__ seen.",
+      "blanks": [
+        "had",
+        "had",
+        "taught",
+        "I'd"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-06-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-06-001",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0609",
+      "front": "mist",
+      "back": {
+        "meaningKo": "(공중에 떠 있는) 물안개, 옅은 안개",
+        "nuance": "fog보다 옅고 가볍다. 호스에서 튄 물방울이 만든 막 — 그 너머로 증조할머니가 보였다.",
+        "context": "through the mist, I could see my grandmother — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-06-002",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0610",
+      "front": "nozzle",
+      "back": {
+        "meaningKo": "노즐, (호스 끝의) 분사구",
+        "nuance": "let go of the nozzle = 손잡이를 놓다. 이 동작에 환영이 끝난다.",
+        "context": "I let go of the nozzle — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-06-003",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0614",
+      "front": "confess",
+      "back": {
+        "meaningKo": "털어놓다, 고백하다",
+        "nuance": "admit보다 무겁다 — 숨겨 온 것을 드디어 꺼내는 결.",
+        "context": "she just confessed to me that she spent her whole life dreaming about another man — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-004",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0615",
+      "front": "fate",
+      "back": {
+        "meaningKo": "운명, 정해진 몫",
+        "nuance": "destiny가 나아갈 미래라면 fate는 받아들이는 쪽. accept one's fate는 체념에 가깝다.",
+        "context": "She just accepted her fate. — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-005",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0621",
+      "front": "projection",
+      "back": {
+        "meaningKo": "(심리) 투사 — 제 감정을 상대에게 덧씌우는 것",
+        "nuance": "영사기가 빈 스크린에 상을 쏘는 그 project. 상대가 아니라 자기 환상을 보고 있다는 냉소.",
+        "context": "people have these romantic projections — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-006",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0620",
+      "front": "uncomplicated",
+      "back": {
+        "meaningKo": "복잡할 것 없는, 단순한",
+        "nuance": "'얽힌 데가 없음'. 뒤집힐 전제를 깔아 두는 단어라 다음 문장의 반전이 세진다.",
+        "context": "I always thought she had a very simple, uncomplicated love life — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-007",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0622",
+      "front": "well-being",
+      "back": {
+        "meaningKo": "안녕, 몸과 마음의 행복",
+        "nuance": "한국어 '웰빙'과 다르다. 여기서는 이혼을 미룬 부모의 명분 — 제시가 비꼬며 흉내 내는 말.",
+        "context": "they stuck together for a while ... for the well-being of my sister and I — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-008",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0623",
+      "front": "take pride in",
+      "back": {
+        "meaningKo": "~을 자랑스럽게 여기다",
+        "nuance": "be proud of가 감정이라면 take pride in은 태도. 원치 않은 아이였다는 사실마저 자기 것으로 만드는 방식.",
+        "context": "I eventually kind of took pride in it — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-009",
+      "unitId": "u-06",
+      "kind": "vocab",
+      "wordId": "w-0626",
+      "front": "be pissed off",
+      "back": {
+        "meaningKo": "몹시 화가 난, 열받은",
+        "nuance": "angry의 거친 구어판. 공적인 자리에서는 못 쓴다.",
+        "context": "he was really pissed off when he found out that she was pregnant with me — Jesse, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-010",
+      "unitId": "u-06",
+      "kind": "pattern",
+      "front": "\"그때는 증조할머니가 막 돌아가신 참이었다\" — 과거보다 더 앞선 일을 영어로?",
+      "back": {
+        "pattern": "과거 기준 시점 + had (just) + 과거분사",
+        "explanation": "이야기의 기준 시점을 과거로 깔아 놓고, 그보다 앞선 일에 had + p.p.를 얹는다. just는 had와 과거분사 사이.",
+        "anchor": "My great-grandmother had just died, and my whole family had just visited them in Florida. — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-06-011",
+      "unitId": "u-06",
+      "kind": "pattern",
+      "front": "\"나는 그들이 싸워서 얻어낸 자유를 누리며 자랐다\" — 두 세대의 시간 차를 영어로?",
+      "back": {
+        "pattern": "명사 + (that) 주어 had + 과거분사",
+        "explanation": "관계절 속 과거완료가 '그건 내가 태어나기도 전 일'이라는 배경을 한 마디로 접어 넣는다.",
+        "anchor": "I have been raised with all the freedom they had fought for — Céline, Ch 8"
+      }
+    },
+    {
+      "cardId": "c-06-012",
+      "unitId": "u-06",
+      "kind": "trap",
+      "front": "When I arrived at the office, the meeting already finished. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "이러면 도착 → 종료 순으로 들려 사건 순서가 뒤집힌다. 앞선 일에는 had를 박는다. → the meeting had already finished.",
+        "relatedRuleId": "r2"
+      }
+    },
+    {
+      "cardId": "c-06-013",
+      "unitId": "u-06",
+      "kind": "trap",
+      "front": "\"I'd say to my dad\"의 I'd는 I had다 — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "뒤에 동사원형 say가 왔으니 would(과거의 반복)다. had라면 뒤가 과거분사여야 한다 — I knew what I'd seen. 귀가 아니라 뒤 형태로 가른다.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-06-014",
+      "unitId": "u-06",
+      "kind": "trap",
+      "front": "I just had finished my homework when she called. — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "부사는 had와 과거분사 사이다. → I had just finished my homework when she called. 대본도 my sister had just taught me 어순이다.",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-06-015",
+      "unitId": "u-06",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "세 살 아이가 물안개 너머로 본 것을 부모가 '상상'이라 설명하던 장면 — 그 마지막 한 줄을 통으로 떠올려 보세요.",
+      "back": {
+        "en": "But…I knew what I'd seen.",
+        "speaker": "Jesse",
+        "chapter": 2
+      }
+    }
+  ]
+}

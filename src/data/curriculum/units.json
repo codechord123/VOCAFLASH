@@ -4,6 +4,755 @@
   "note": "유닛 = 앵커 장면 + 규칙 + 배정 어휘. 퀴즈를 마치면 카드가 복습 덱에 들어간다.",
   "units": [
     {
+      "unitId": "u-01",
+      "act": 1,
+      "order": 1,
+      "title": "생략 의문문 + 문미 부가",
+      "tagline": "낯선 사람에게 말을 붙이는 순간, 문장 앞머리가 통째로 사라진다",
+      "anchors": [
+        {
+          "en": "This fine here?",
+          "ko": "여기 괜찮아요?",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Céline",
+          "sceneNote": "라운지 칸에 막 들어선 참. 셀린이 테이블을 가리키며 던지는 첫마디다. Is this fine here?에서 Is가 통째로 날아갔다 — 앉을 자리를 정하는 1초짜리 질문에 완전한 문장을 쓰면 그 자체로 거리가 생긴다. 이 유닛 전체가 여기서 시작한다."
+        },
+        {
+          "en": "Hey, you coming from Budapest?",
+          "ko": "저기, 부다페스트에서 오시는 길이에요?",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "대화가 한 번 끊기고 어색한 정적이 흐른 뒤, 제시가 Hey를 앞에 붙여 다시 말을 건다. Are you coming~?의 Are가 사라진 자리를 Hey가 메운다. 격식을 갖춘 질문이 아니라 '계속 얘기하고 싶다'는 신호에 가깝다."
+        },
+        {
+          "en": "You get off here, no?",
+          "ko": "여기서 내리시죠, 그렇죠?",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Céline",
+          "sceneNote": "기차가 빈에 들어서며 속도를 줄이는 순간, 창밖을 보던 셀린이 묻는다. 답을 몰라서가 아니라 헤어짐을 먼저 입에 올리는 대사다. 문미의 no?는 프랑스어 n'est-ce pas?를 그대로 옮긴 셀린 특유의 말버릇 — 영어가 아직 완전히 자기 것이 아닌 사람이 가장 중요한 순간에 모국어의 리듬으로 말한다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "문두의 be동사·조동사가 통째로 사라진다",
+          "body": "구어에서 문장 첫머리의 약한 음절은 거의 들리지 않고, 결국 아예 없어진다. 셀린은 자리를 가리키며 Is this fine here?가 아니라 \"This fine here?\"라 하고, 제시는 Are you coming from Budapest?를 \"Hey, you coming from Budapest?\"로 던진다. 문법이 무너진 게 아니다 — 의문의 표시가 어순에서 억양(끝올림)으로 옮겨간 것이다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "지워지는 순서는 언제나 문장 맨 앞부터",
+          "body": "be동사 의문문은 be만 지워진다: (Are) you on holiday? / (Is) this fine here? 조동사 do 의문문은 do you까지 함께 지워진다: (Do you) want some coffee? 중간을 건너뛰고 지우는 일은 없다. 그래서 남은 조각만 보고도 원래 문장이 복원된다 — you + -ing가 남으면 Are, this/that + 형용사가 남으면 Is다.",
+          "isTrap": false
+        },
+        {
+          "id": "r3",
+          "title": "생략 의문문은 '거리 좁히기' 전용 ★역방향 함정",
+          "body": "처음 보는 사람에게도 쓰지만, 어디까지나 사적인 구어다. 면접·이메일·발표에서 You hiring right now?라고 하면 무례하게 들리고, Are you hiring right now?로 되살려야 한다. 다만 한국인 학습자는 반대쪽으로 더 자주 틀린다 — 편한 자리에서까지 Is this seat fine for you?처럼 꼬박꼬박 완전한 문장을 써서 딱딱하고 멀게 들리는 경우다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "셀린의 no?는 영어가 아니라 프랑스어다",
+          "body": "문장 끝에 붙는 no?는 프랑스어 n'est-ce pas?를 그대로 옮긴 것이다. 셀린은 영화 내내 이렇게 말한다 — \"You get off here, no?\", \"That's mean, no?\", \"That's wonderful, no?\". 뜻은 통하지만 원어민 영어는 아니다. 같은 자리에 right?를 쓰거나, 앞 문장에 맞춘 부가의문문(don't you?)을 쓴다. 제시는 실제로 no?를 한 번도 쓰지 않고 right?만 쓴다: \"you don't speak any other language, right?\"",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "부가의문문은 앞 문장의 주어·동사를 되받는다 ★최다 실수",
+          "body": "한국어는 '그렇죠?' 하나로 끝나지만 영어는 앞 문장의 주어와 동사를 그대로 되받고, 긍정이면 부정으로 뒤집는다. ⭕ You're American, aren't you? ❌ You are American, isn't it? / ⭕ You get off here, don't you? ❌ You get off here, isn't it? isn't it?는 앞 주어가 it일 때만 쓴다 — 제시의 \"this is kind of weird isn't it?\"가 그 경우다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "right?는 반전이 필요 없는 안전한 태그",
+          "body": "right?는 앞 문장의 동사·주어를 되받지 않으므로 극성 반전 실수가 아예 생기지 않는다. 제시가 계속 이걸 쓰는 이유다. 다만 '내 말 맞지?' 하고 동의를 요구하는 결이 있어서, 연달아 쓰면 상대를 다그치는 인상을 준다. 확인이 아니라 진짜 질문이라면 태그 없이 그냥 묻는 편이 낫다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "This seat taken?",
+          "ko": "이 자리 임자 있어요?"
+        },
+        {
+          "en": "You waiting for the 7:40 too?",
+          "ko": "혹시 7시 40분 열차 기다리시는 거예요?"
+        },
+        {
+          "en": "You from around here?",
+          "ko": "이 근처 사세요?"
+        },
+        {
+          "en": "You've been to Vienna before, haven't you?",
+          "ko": "빈에 와 보신 적 있으시죠?"
+        },
+        {
+          "en": "Long day, huh?",
+          "ko": "긴 하루였죠?"
+        }
+      ],
+      "coverage": {
+        "fromScript": 3,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-0101",
+        "w-0102",
+        "w-0103",
+        "w-0104",
+        "w-0105",
+        "w-0106",
+        "w-0107",
+        "w-0108",
+        "w-0109",
+        "w-0110",
+        "w-0111",
+        "w-0112",
+        "w-0113",
+        "w-0114",
+        "w-0115",
+        "w-0116",
+        "w-0117",
+        "w-0118",
+        "w-0119",
+        "w-0120",
+        "w-0121",
+        "w-0122",
+        "w-0123",
+        "w-0124",
+        "w-0125",
+        "w-0126",
+        "w-0127"
+      ]
+    },
+    {
+      "unitId": "u-02",
+      "act": 1,
+      "order": 2,
+      "title": "담화표지와 축약",
+      "tagline": "제시의 you know — 말을 고르는 0.5초, 상대를 붙들어 두는 손",
+      "anchors": [
+        {
+          "en": "No, uh, it's had its, umm. Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
+          "ko": "아니, 그게, 음. 글쎄, 말하자면, 있잖아, 몇 주 내리 앉아서 창밖만 내다본 게, 사실 꽤 좋았어.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "라운지 칸. 유럽 여행이 좋았냐는 셀린의 질문에 제시는 얼떨결에 \"it sucked\"라고 뱉었다가 곧장 주워 담는 중이다. Well로 한 박자 물리고, you know 두 번으로 말 고를 시간을 벌고, kinda로 단정을 깎아낸다. 담화표지를 다 걷어내면 'Sitting for weeks on end looking out the window has been great.'라는, 이 사람이 결코 하지 않을 매끈한 문장만 남는다."
+        },
+        {
+          "en": "the thing that kind of haunts me is the distribution, you know. I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
+          "ko": "좀 신경 쓰이는 건 배급이야, 알지. 그러니까, 이 테이프들을 이 도시에서 저 도시로 옮겨서 방송이 끊기지 않게 하는 거. 왜냐면 계속 틀려야 하거든, 안 그러면 아예 성립이 안 돼.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "24시간 케이블 방송 아이디어를 신나게 늘어놓다가 문득 제 아이디어의 약점을 만난 순간. you know는 '너도 알지?'로 셀린을 대화에 붙들어 두고, I mean은 방금 던진 distribution이 뭔지 자기 말로 다시 풀어 준다. because를 삼킨 ‘cause에는, 자기 얘기에 완전히 빠진 사람의 말 속도가 그대로 남아 있다."
+        },
+        {
+          "en": "It makes it even harder to officially complain. You know, even when they're wrong, it‘s this, it‘s this passive-aggressive shit, you know what I mean, it‘s... I hate it, I really hate it.",
+          "ko": "그래서 대놓고 불평하기가 더 힘들어져. 있잖아, 부모가 틀렸을 때조차도, 이게, 이게 은근히 사람 잡는 거야, 무슨 말인지 알지, 이게... 나 이거 싫어, 정말 싫어.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Céline",
+          "sceneNote": "부모 이야기. 한 번도 정면으로 반대한 적 없는 좋은 부모라서 오히려 불평할 명분이 없다는 답답함. 셀린의 you know는 제시처럼 말버릇이 아니라, 이 감정을 문장으로 다 담지 못하겠다는 신호다. you know what I mean은 말을 맺지 못한 채 이해를 상대에게 떠넘기는 손짓이고, 곧바로 it‘s...에서 문장이 끊긴 뒤 I hate it이 터져 나온다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "you know는 '알잖아'가 아니라 쉼표다",
+          "body": "you know는 정보를 확인하는 질문이 아니다. 다음 말을 고르는 0.5초를 벌면서, 상대가 아직 듣고 있는지 붙들어 두는 장치다. 제시는 한 문장 안에서 두 번 쓴다 — sitting, you know, for weeks on end. 셀린이 전혀 모르는 자기 아이디어를 설명할 때도 쓴다. 뜻을 옮기려 하지 말고 쉼표처럼 들어라. 위치는 자유롭지만 늘 구(句)의 이음매에 온다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "you know와 I mean은 향하는 방향이 다르다 ★혼동 1위",
+          "body": "you know는 상대 쪽을 본다(듣고 있지?). I mean은 자기 말 쪽을 본다(방금 한 말을 고쳐/풀어 말한다). 앵커에서 제시는 the distribution, you know.로 셀린을 붙든 뒤, I mean, getting these tapes from town to town으로 distribution이 뭔지 자기 말로 다시 푼다. 둘을 바꿔 놓으면 어색해진다. 그리고 상대 말에 '내 말이 그 말'이라고 맞장구칠 때는 I mean이 아니라 I know / Exactly다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "well / anyway / so anyway — 방향을 트는 표지",
+          "body": "well은 '그렇게 간단하진 않은데'라는 완충 신호다. 제시도 it sucked를 뒤집을 때 Well, I'll tell ya로 시작한다. anyway는 샛길로 샜다가 본론으로 돌아온다는 표시다(제시의 you know, so anyway, Ch 2). 질문에 Well 없이 곧장 No.만 던지면 영어에서는 무뚝뚝하다 못해 차갑게 들린다. 한국인 학습자의 말이 뚝뚝 끊겨 들리는 이유가 대개 여기다.",
+          "isTrap": false
+        },
+        {
+          "id": "r4",
+          "title": "gonna·wanna·dunno·‘cause·kinda는 '소리'지 '철자'가 아니다 ★최다 실수",
+          "body": "이것들은 발음을 받아 적은 것이라 말할 때와 사적인 메시지에서만 쓴다. 이메일·보고서·에세이에 gonna, kinda를 쓰면 한 줄로 격이 무너진다. 문어에서는 going to / want to / don't know / because / kind of. 형태 함정도 있다 — gonna는 be동사 없이 못 선다(❌ I gonna call her → ⭕ I'm gonna call her), wanna는 3인칭 단수를 못 받는다(❌ He wanna go → ⭕ He wants to go).",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "kind of / sort of는 '일종의'가 아니라 '좀'이다",
+          "body": "명사 앞의 a kind of는 '일종의 ~'가 맞지만, 형용사·동사 앞의 kind of(=kinda)는 단정을 깎아 내리는 완충어다. the thing that kind of haunts me는 '일종의 괴롭힘'이 아니라 '좀 신경 쓰이는 것'. 관사 a가 붙느냐가 갈림길이다. 한국인 학습자는 이 자리를 전부 a little로 처리하는데, a little은 양을 재고 kind of는 말투를 누그러뜨린다. I'm kind of tired = 좀 피곤해.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "like — 완충의 like와 인용의 like",
+          "body": "하나는 뒤에 오는 말을 대충 만드는 like다. It was like twenty minutes = 한 이십 분쯤. 셀린도 Like twenty-four boring hours, sorry, and like a three minute sex scene이라고 말한다(Ch 2). 다른 하나는 인용의 like — I was like, \"No way.\"는 '난 이랬지'로 말·표정·태도를 통째로 옮긴다. said가 말만 옮긴다면 was like는 그 순간을 재연한다. 둘 다 구어 전용이고, 격식 자리에서 남발하면 미숙하게 들린다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "Well, I mean, it's not that I don't like the job — it's just, you know, I kind of expected something else.",
+          "ko": "글쎄, 그러니까, 그 일이 싫다는 게 아니라 — 그냥, 있잖아, 좀 다른 걸 기대했던 거지."
+        },
+        {
+          "en": "I dunno, it's kinda late, and I'm not gonna make it home anyway, so I might as well stay.",
+          "ko": "몰라, 좀 늦기도 했고, 어차피 집에 못 갈 것 같으니까, 그냥 있는 게 낫겠다."
+        },
+        {
+          "en": "She was like, \"I'm sorry,\" but you know what I mean, she didn't sound sorry at all.",
+          "ko": "걔가 \"미안해\" 이러긴 했는데, 무슨 말인지 알지, 하나도 미안한 목소리가 아니었어."
+        },
+        {
+          "en": "Anyway, where was I? Right — ‘cause the train was late, we missed the whole first act.",
+          "ko": "아무튼, 내가 어디까지 얘기했지? 맞다 — 기차가 늦어서 1막을 통째로 놓쳤어."
+        }
+      ],
+      "coverage": {
+        "fromScript": 3,
+        "generated": 4
+      },
+      "vocabIds": [
+        "w-0201",
+        "w-0202",
+        "w-0203",
+        "w-0204",
+        "w-0205",
+        "w-0206",
+        "w-0207",
+        "w-0208",
+        "w-0209",
+        "w-0210",
+        "w-0211",
+        "w-0212",
+        "w-0213",
+        "w-0214",
+        "w-0215",
+        "w-0216",
+        "w-0217",
+        "w-0218",
+        "w-0219",
+        "w-0220",
+        "w-0221",
+        "w-0222",
+        "w-0223",
+        "w-0224",
+        "w-0225",
+        "w-0226",
+        "w-0227"
+      ]
+    },
+    {
+      "unitId": "u-03",
+      "act": 1,
+      "order": 3,
+      "title": "얼버무림·완충",
+      "tagline": "말을 걸기 전에 먼저 말을 부드럽게 만드는, 셀린의 세 겹 방어막",
+      "anchors": [
+        {
+          "en": "Well, supposedly, men lose the ability to hear higher-pitched sounds, and women eventually lose hearing in the low end. I guess they sort of nullify each other, or something.",
+          "ko": "그게, 듣기로는 남자는 높은 소리를 못 듣게 되고, 여자는 결국 낮은 소리를 못 듣게 된대. 뭐, 서로 상쇄되는 셈인가 봐, 뭐 그런 거지.",
+          "source": "before-sunrise",
+          "chapter": 1,
+          "speaker": "Céline",
+          "sceneNote": "부다페스트발 빈행 기차. 앞자리 노부부가 싸우는 걸 계기로 낯선 남자와 처음 말을 섞는 순간. 셀린은 자기 지식을 자랑하는 대신 supposedly로 출처를 흐리고, I guess로 문두를, sort of로 동사를, or something으로 말끝을 감싼다. 한 문장에 완충재가 세 겹 — 확신이 없어서가 아니라, 처음 보는 사람 앞에서 단정하지 않으려는 예의다."
+        },
+        {
+          "en": "I guess. Nature's way of allowing couples to grow old together without killing each other.",
+          "ko": "그러게. 부부가 서로 안 죽이고 같이 늙어 갈 수 있게 하는 자연의 방식인가 보네.",
+          "source": "before-sunrise",
+          "chapter": 1,
+          "speaker": "Jesse",
+          "sceneNote": "셀린의 말을 받는 제시의 첫 응답. I guess. 한 마디만 던져 놓고 농담을 잇는다. 완충어는 상대의 얼버무림에 같은 톤으로 맞춰 주는 장치이기도 하다 — 여기서 두 사람의 말투가 처음으로 포개진다."
+        },
+        {
+          "en": "But, I don't know. It just kind of let me know how ambiguous everything was, you know, even death.",
+          "ko": "근데, 뭐랄까. 그냥 모든 게 얼마나 모호한 건지 알게 해 준 것 같아. 죽음까지도.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "라운지 칸. 세 살 때 죽은 증조할머니를 물안개 속에서 봤다는 긴 이야기의 마지막 문장. 영화에서 제시가 내놓는 가장 큰 결론인데도 I don't know와 just kind of로 눌러 놓는다. 무거운 말일수록 완충재를 더 두껍게 대는 것 — 이게 영어 구어의 기본 예의다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "완충 3종 세트: I guess / sort of / or something",
+          "body": "영어는 단정을 피할 때 문장의 앞·중간·끝을 각각 다른 장치로 감싼다. 문두 I guess(~인 것 같아), 동사·형용사 앞 sort of(좀), 문미 or something(뭐 그런 거). 셀린의 \"I guess they sort of nullify each other, or something.\"이 셋을 한 문장에 다 쓴 교과서다. 셋 다 뜻을 바꾸지 않는다 — 문장의 세기만 낮춘다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "sort of / kind of는 꾸밀 말 '앞'에 온다 ★최다 실수",
+          "body": "한국어 '좀'은 어디든 붙지만 영어는 자리가 고정이다. 형용사 앞(It's kind of weird.), 동사 앞(it kind of haunts me), 명사구 앞(kind of a big deal). ❌ It's weird kind of. / ❌ I like it sort of. 는 무너진 문장이다. 구어 발음은 kinda / sorta.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "문장 중간의 I don't know는 '모른다'가 아니다",
+          "body": "It's just, I don't know, an observation about Europe. 여기서 제시는 모르지 않는다. 문장 중간에 낀 I don't know(구어로 I dunno)는 '내 말이 절대적이진 않다'는 완충 신호다. 이걸 '나는 모른다'로 읽으면 문장 전체가 앞뒤가 안 맞게 된다. 진짜 모를 때는 I have no idea.나 I don't know + 의문사절로 온다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "or something은 말끝을 닫지 않는 마감재",
+          "body": "문장 끝에 붙여 '정확히는 이게 아닐 수도 있다'며 여지를 남긴다. 명사 뒤에는 or something like that(as an interior designer, or a lawyer, or something like that — Céline, Ch 2), 문장 뒤에는 짧게 or something. 항상 맨 끝에만 온다 — 문장 중간에 끼울 수 없다.",
+          "isTrap": false
+        },
+        {
+          "id": "r5",
+          "title": "I think의 부정은 앞으로 당긴다 ★최다 실수",
+          "body": "한국어는 '아닌 것 같아'로 뒤를 부정하지만 영어는 부정을 주절로 끌어올린다. ⭕ I don't think it's a good idea. / ❌ I think it's not a good idea. 후자는 문법은 되지만 '아니라고 나는 생각한다'는 단정으로 들려 완충 효과가 사라진다. I don't suppose / I don't believe도 같은 규칙.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "maybe·probably·a little의 자리와 세기",
+          "body": "maybe는 문두(Maybe we should meet here in five years — Céline, Ch 22), probably는 be동사 뒤·일반동사 앞(I'd probably be hanging around the airport — Jesse, Ch 12). 세기는 maybe(50%) < probably(80%). ❌ I probably would say no.보다 ⭕ I'd probably say no.가 자연스럽다. a little은 형용사·부사 앞에서 '좀'(I feel a little awkward — Jesse, Ch 4).",
+          "isTrap": true
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "I guess it's kind of my fault, or something.",
+          "ko": "뭐, 내 잘못인 것 같기도 하고, 그런 거지."
+        },
+        {
+          "en": "I don't think that's a good idea — I mean, I don't know, maybe I'm wrong.",
+          "ko": "그건 좋은 생각 같지 않은데 — 뭐, 잘은 모르겠지만, 내가 틀렸을 수도 있고."
+        },
+        {
+          "en": "She was sort of upset, I think, but she didn't really say anything.",
+          "ko": "걔가 좀 속상했던 것 같기도 한데, 딱히 아무 말은 안 했어."
+        },
+        {
+          "en": "It's a little late to call him, isn't it? I'd probably just send a text.",
+          "ko": "지금 전화하기엔 좀 늦었지 않아? 나 같으면 그냥 문자 보낼 것 같아."
+        },
+        {
+          "en": "In a way, we more or less agreed on everything, I guess.",
+          "ko": "어떻게 보면 우리 대체로 다 동의한 셈이지, 아마도."
+        }
+      ],
+      "coverage": {
+        "fromScript": 6,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-0301",
+        "w-0302",
+        "w-0303",
+        "w-0304",
+        "w-0305",
+        "w-0306",
+        "w-0307",
+        "w-0308",
+        "w-0309",
+        "w-0310",
+        "w-0311",
+        "w-0312",
+        "w-0313",
+        "w-0314",
+        "w-0315",
+        "w-0316",
+        "w-0317",
+        "w-0318",
+        "w-0319",
+        "w-0320",
+        "w-0321",
+        "w-0322",
+        "w-0323",
+        "w-0324",
+        "w-0325",
+        "w-0326",
+        "w-0327",
+        "w-0328"
+      ]
+    },
+    {
+      "unitId": "u-04",
+      "act": 2,
+      "order": 4,
+      "title": "현재완료 경험·계속",
+      "tagline": "제시가 네 번 연속 '나에게서 도망친 적이 없다'고 증명하는 문장",
+      "anchors": [
+        {
+          "en": "I have never been anywhere that I haven't been. I've never had a kiss when I wasn't one of the kissers. You know, I've never, um, gone to the movies, when I wasn't there in the audience. I've never been out bowling, if I wasn't there, making some stupid joke.",
+          "ko": "나는 내가 없던 곳에 가 본 적이 없어. 내가 키스한 사람 중 하나가 아닌 채로 키스를 받아 본 적도 없고. 그러니까, 내가 객석에 없는 채로 영화를 보러 간 적도 없어. 내가 거기서 시시한 농담을 던지고 있지 않은 채로 볼링을 치러 나가 본 적도 없고.",
+          "source": "before-sunrise",
+          "chapter": 19,
+          "speaker": "Jesse",
+          "sceneNote": "새벽 공원 잔디밭에 누워 와인을 마시는 장면. 셀린이 '늘 다른 사람과 함께였으면 했다'고 고백하자, 제시는 자기가 벗어나고 싶은 건 남이 아니라 자기 자신이라고 받아친다. I've never ~ 부정 경험이 네 번 연달아 쌓이면서, '태어나서 지금까지 단 한 번도 나에게서 빠져나간 적이 없다'는 사실이 문장의 형태 그 자체로 증명된다. 현재완료가 '지금까지의 인생 전체'를 한 번에 훑는 시제라는 걸 이보다 잘 보여주는 대사는 없다."
+        },
+        {
+          "en": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
+          "ko": "우리 서로 안 지 이제 좀 됐고, 어차피 붙어 있게 됐으니까, 서로한테 좀, 어, 대놓고 묻는 질문을 몇 개 하자.",
+          "source": "before-sunrise",
+          "chapter": 5,
+          "speaker": "Jesse",
+          "sceneNote": "빈 순환선 전차 안. 만난 지 겨우 두어 시간인데 제시는 We've known each other로 둘 사이에 이미 '이어져 온 시간'이 있다고 선언해 버린다. 그 한마디로 낯선 사람이 아는 사이가 되고, 그래서 사적인 질문을 해도 되는 관계가 만들어진다. 문장 끝의 now가 '지금 이 순간까지'를 찍어 주는 계속 용법의 표지."
+        },
+        {
+          "en": "Have you ever heard of this singer?",
+          "ko": "이 가수 들어 본 적 있어요?",
+          "source": "before-sunrise",
+          "chapter": 6,
+          "speaker": "Céline",
+          "sceneNote": "중고 레코드 가게. 셀린이 앨범 한 장을 집어 들어 보이며 던지는 질문. ever 하나로 '살면서 한 번이라도'라는 시간 전체가 열리고, 제시가 고개를 젓는 순간 둘은 좁은 청음 부스 안으로 같이 들어가게 된다. 경험을 묻는 현재완료가 관계를 한 칸 앞으로 밀어 주는 장면."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "have/has + p.p. = 지금까지의 경험",
+          "body": "태어나서 지금까지를 한 덩어리로 훑어 '있다/없다'를 말한다. ever(한 번이라도), never(한 번도 안), before(전에)가 짝꿍이다. 제시의 I've never been out bowling은 '어제 안 갔다'가 아니라 '평생 그런 적이 없다'다. 셀린의 Have you ever heard of this singer?도 '방금'이 아니라 '살면서 한 번이라도'를 묻는다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "계속 용법 — 과거에 시작해 지금도 이어진다",
+          "body": "for(기간) 또는 since(출발 시점)와 함께 쓰면 '그때부터 지금까지 죽 ~해 왔다'가 된다. 제시의 We've known each other a little while now가 정확히 이것 — 문장 끝의 now가 '지금 이 순간까지'라는 끝점을 찍어 준다. 과거형 We knew each other로 바꾸면 '지금은 아니다'가 되어 관계가 끊긴다.",
+          "isTrap": false
+        },
+        {
+          "id": "r3",
+          "title": "특정 과거 시점과 같이 못 쓴다 ★최다 실수",
+          "body": "yesterday, last year, in 1993, three days ago, 그리고 의문사 when은 현재완료와 함께 올 수 없다. 현재완료는 '지금'에 발을 딛고 있는 시제라, 과거의 한 점에 못을 박는 말과 충돌한다. ❌ When have you been to Vienna? → ⭕ When did you go to Vienna? '언제?'가 나오는 순간 단순과거다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "have been to(갔다 왔다) vs have gone to(가서 없다)",
+          "body": "have been to는 경험 — 갔다가 지금 여기 돌아와 있다. have gone to는 결과 — 가 버려서 지금 여기 없다. 제시가 I have never been anywhere라고 말한 것도 '가 본 적'을 세는 be동사 쪽이다. She has gone to Paris.를 '파리에 가 본 적 있다'로 읽으면 정반대 뜻이 된다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "for는 기간, since는 출발점",
+          "body": "for 뒤에는 얼마나 길었는지(for six years, for a little while), since 뒤에는 언제부터인지(since 2020, since we met, since this morning). 한국어로는 둘 다 '~째'로 뭉뚱그려져 헷갈린다. ❌ I have known her for 2020 → ⭕ since 2020. 반대로 ❌ since six years → ⭕ for six years.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "never의 자리와 안 들리는 've",
+          "body": "never는 have와 과거분사 사이에 낀다 — I've never been. haven't never처럼 이중부정을 쓰지 않는다. 그리고 구어에서 have는 've/'s로 뭉개져 거의 안 들린다. 제시도 첫 문장만 I have never로 또박또박 말하고 뒤 세 문장은 전부 I've never로 흘려 버린다. 이 축약을 못 들으면 경험 시제를 통째로 놓친다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "I've been to Vienna twice, but I've never gotten off the train at that station.",
+          "ko": "빈에는 두 번 가 봤지만, 그 역에서 내려 본 적은 한 번도 없다."
+        },
+        {
+          "en": "We've lived in this apartment since the year our daughter was born.",
+          "ko": "우리는 딸이 태어난 해부터 이 아파트에 살고 있다."
+        },
+        {
+          "en": "Have you ever stayed up all night just talking to someone?",
+          "ko": "누군가와 그냥 이야기만 하면서 밤을 새워 본 적 있어?"
+        },
+        {
+          "en": "She's taught at the same school for eleven years, and she still gets nervous on the first day.",
+          "ko": "그녀는 같은 학교에서 11년째 가르치고 있는데, 아직도 첫날이면 긴장한다."
+        },
+        {
+          "en": "He's gone to the record store, so you won't find him at home.",
+          "ko": "그는 레코드 가게에 가 버려서, 집에 가도 없을 거야."
+        }
+      ],
+      "coverage": {
+        "fromScript": 6,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-0401",
+        "w-0402",
+        "w-0403",
+        "w-0404",
+        "w-0405",
+        "w-0406",
+        "w-0407",
+        "w-0408",
+        "w-0409",
+        "w-0410",
+        "w-0411",
+        "w-0412",
+        "w-0413",
+        "w-0414",
+        "w-0415",
+        "w-0416",
+        "w-0417",
+        "w-0418",
+        "w-0419",
+        "w-0420",
+        "w-0421",
+        "w-0422",
+        "w-0423",
+        "w-0424",
+        "w-0425",
+        "w-0426",
+        "w-0427"
+      ]
+    },
+    {
+      "unitId": "u-05",
+      "act": 2,
+      "order": 5,
+      "title": "현재완료진행",
+      "tagline": "목적지 없이 3주째 기차만 타고 있는 남자 — 시제 하나가 그 사람의 상태를 설명한다",
+      "anchors": [
+        {
+          "en": "I've just been. I'm just traveling around. I've been riding the trains the past two, three weeks.",
+          "ko": "그냥 있었어요. 그냥 여기저기 돌아다니는 중이에요. 지난 두세 주 동안 계속 기차만 타고 다녔어요.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "부다페스트발 빈행 기차 라운지 칸. 셀린이 \"휴가 중이냐\"고 묻자 제시는 \"내가 뭘 하는 중인지도 모르겠다\"고 답한 직후의 말. 여기서 have been -ing는 '기차를 탔다'는 경험이 아니라 지금 이 순간까지도 끝나지 않은 상태를 그린다. 만약 I rode the trains라고 했다면 그 여행은 이미 끝난 이야기가 되고, 지금 셀린 앞에 앉아 있는 이 남자의 정체는 설명되지 않는다. 시제 하나가 '아직 어디에도 도착하지 못한 사람'을 만든다."
+        },
+        {
+          "en": "You know, I've been wondering lately. Do you know anyone who's in a happy relationship?",
+          "ko": "있잖아, 나 요즘 계속 궁금했던 게 있어. 행복한 관계를 유지하는 사람, 너 아는 사람 있어?",
+          "source": "before-sunrise",
+          "chapter": 8,
+          "speaker": "Céline",
+          "sceneNote": "관람차에서 첫 키스를 하고 내려온 뒤, 부모와 세대에 대한 이야기를 주고받다가 셀린이 꺼내는 말. I wondered였다면 한 번 스쳐 간 생각이지만, I've been wondering lately는 얼마 전부터 지금까지 계속 마음에 걸려 있었다는 뜻이다. 방금 키스한 상대에게 '행복한 커플을 본 적 있냐'고 묻기 직전, 이 시제가 그 질문이 즉흥적인 게 아니라 오래 품고 있던 불안이라는 걸 알려 준다."
+        },
+        {
+          "en": "Every couple's been having this conversation forever.",
+          "ko": "세상 모든 커플이 이 대화를 영원히 반복하고 있는 거지.",
+          "source": "before-sunrise",
+          "chapter": 14,
+          "speaker": "Jesse",
+          "sceneNote": "골목길. 남녀에 대한 논쟁이 끝없이 겉돌자 제시가 \"고장 나서 튀는 레코드 같다\"고 말하고 이어 붙이는 한마디. couple's는 couple is가 아니라 couple has의 축약이다. 오래전에 시작해 지금도 끝나지 않은 대화 — 현재완료진행이 두 사람의 말싸움을 인류 전체의 무한 루프로 확대해 버리는 순간."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "have/has been + -ing = 시작했고, 아직 하는 중이다",
+          "body": "과거 어느 시점에 시작해 지금까지 이어지는 동작. 핵심은 '아직 안 끝났다'는 것. 제시의 I've been riding the trains the past two, three weeks.는 두세 주 전에 시작해 지금 이 기차에서도 계속되고 있다. 그래서 셀린 앞에 앉은 그가 아직 아무 데도 도착하지 못한 사람으로 보인다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "현재완료는 결과, 현재완료진행은 과정 ★결이 다르다",
+          "body": "I've read the book은 다 읽어서 지금 내용을 안다는 '결과'다. I've been reading the book은 아직 읽는 중이라는 '과정'이다. 제시가 I've ridden the trains라고 했다면 기차 여행은 끝난 과거의 이력이 되고, 지금 이 순간의 상태는 사라진다. 끝났느냐 아직이냐 — 그 하나로 문장이 뒤집힌다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "상태동사는 진행형을 못 받는다 ★최다 실수",
+          "body": "know, like, love, believe, own, be처럼 '동작'이 아니라 '상태'인 동사는 진행형으로 늘리지 않는다. ❌ I've been knowing her since college → ⭕ I've known her since college. 셀린의 wondering은 머릿속에서 굴러가는 동작이라 진행이 되지만, 같은 장면의 I know happy couples는 절대 I'm knowing이 되지 않는다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "for는 기간, since는 시작점",
+          "body": "for + 기간(for three weeks), since + 시점(since college, since 2023). ❌ since three weeks는 한국인이 가장 자주 쓰는 틀린 조합이다. 제시처럼 the past two, three weeks라고 전치사 없이 기간을 던지는 구어체도 있는데, 이건 for가 생략된 형태로 알아듣되 직접 쓸 때는 for를 붙이는 편이 안전하다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "축약된 's는 is일 수도 has일 수도 있다",
+          "body": "Every couple's been having this conversation forever.의 couple's는 couple has다. 판별법은 뒤따르는 been — is 뒤에는 been이 올 수 없다. 's been -ing를 보면 무조건 has been -ing다. 이 축약을 못 들으면 문장 전체의 시제를 통째로 놓친다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "(확장) lately·recently와 붙어 '요즘 계속'을 만든다",
+          "body": "최근 얼마간 반복되거나 이어져 온 일에 lately, recently를 얹으면 '요즘 계속 ~하고 있다'가 된다. Ch 8 셀린의 I've been wondering lately, Ch 15 제시의 I've been working on my English, recently가 둘 다 이 용법. 단순과거(I wondered)로 바꾸면 한 번 스친 생각이 되어 버린다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "She's been waiting at that platform for almost an hour, and the train still hasn't come.",
+          "ko": "그녀는 거의 한 시간째 그 승강장에서 기다리고 있는데, 기차는 아직도 오지 않았다."
+        },
+        {
+          "en": "I've been meaning to call you since Tuesday, but something always came up.",
+          "ko": "화요일부터 계속 전화하려고 벼르고 있었는데, 매번 무슨 일이 생겼다."
+        },
+        {
+          "en": "We've been living out of suitcases ever since the move, and I've stopped unpacking.",
+          "ko": "이사한 뒤로 줄곧 가방째로 살고 있어서, 이제는 짐 푸는 것도 포기했다."
+        },
+        {
+          "en": "He's been teaching the same class for eleven years, and he still rewrites the notes every semester.",
+          "ko": "그는 11년째 같은 수업을 맡고 있으면서도, 여전히 학기마다 강의 노트를 새로 쓴다."
+        }
+      ],
+      "coverage": {
+        "fromScript": 6,
+        "generated": 4
+      },
+      "vocabIds": [
+        "w-0501",
+        "w-0502",
+        "w-0503",
+        "w-0504",
+        "w-0505",
+        "w-0506",
+        "w-0507",
+        "w-0508",
+        "w-0509",
+        "w-0510",
+        "w-0511",
+        "w-0512",
+        "w-0513",
+        "w-0514",
+        "w-0515",
+        "w-0516",
+        "w-0517",
+        "w-0518",
+        "w-0519",
+        "w-0520",
+        "w-0521",
+        "w-0522",
+        "w-0523",
+        "w-0524",
+        "w-0525",
+        "w-0526",
+        "w-0527",
+        "w-0528"
+      ]
+    },
+    {
+      "unitId": "u-06",
+      "act": 2,
+      "order": 6,
+      "title": "과거완료",
+      "tagline": "세 살의 기억 속에서 한 발 더 뒤로 물러나는 시제 — 회상 속의 회상",
+      "anchors": [
+        {
+          "en": "My great-grandmother had just died, and my whole family had just visited them in Florida.",
+          "ko": "증조할머니가 막 돌아가신 참이었고, 우리 가족은 플로리다로 그분들을 보고 온 직후였다.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "기차 라운지 칸. 제시가 어머니에게서 죽음이라는 걸 처음 설명받던 세 살 무렵을 꺼낸다. 이야기의 기준 시점은 '어머니가 말해 주던 그때'이고, 증조할머니의 죽음과 플로리다 방문은 그보다 더 앞이다. had just가 두 번 연달아 나오면서 기억의 층이 한 겹 더 뒤로 밀린다."
+        },
+        {
+          "en": "But…I knew what I'd seen.",
+          "ko": "하지만… 나는 내가 본 게 뭔지 알고 있었다.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "물안개 너머로 증조할머니를 본 세 살 아이에게 부모는 앉혀 놓고 '죽으면 다시 못 보는 거야, 네가 상상한 거야(how I'd imagined it)'라고 설명한다. 제시는 그 설명을 한 문장으로 밀어낸다. 안 것은 그때, 본 것은 그보다 앞 — 그래서 saw가 아니라 I'd seen이다. 이 한 줄에 과거완료의 존재 이유가 다 들어 있다."
+        },
+        {
+          "en": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
+          "ko": "부모님은 세상 무엇보다 나를 사랑하고, 나는 그들이 싸워서 얻어낸 자유를 다 누리며 자랐어.",
+          "source": "before-sunrise",
+          "chapter": 8,
+          "speaker": "Céline",
+          "sceneNote": "프라터에서 키스한 뒤, 회전목마 쪽으로 걸어가며 셀린이 68혁명 세대인 부모 이야기를 한다. 자유를 누린 건 자기 인생이지만, 그 자유를 위해 싸운 일은 자기가 태어나기도 전이다. 관계절 속 had fought 하나가 두 세대의 시간 차를 접어 넣는다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "had + 과거분사 = 과거의 그 시점보다 더 앞",
+          "body": "과거완료는 혼자 못 선다. 먼저 과거의 기준 시점이 깔려야 한다. 제시의 기준 시점은 '어머니가 죽음을 처음 설명해 주던 그때'이고, My great-grandmother had just died와 my whole family had just visited them in Florida는 그보다 앞선 일이라 had + p.p.가 됐다. 기준 시점이 없으면 그냥 과거를 쓴다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "그냥 과거로 말하면 순서가 무너진다 ★최다 실수",
+          "body": "한국어는 '~했었다'가 과거완료 표지 노릇을 제대로 못 한다. '도착했을 때 회의는 이미 끝났다'를 그대로 옮겨 When I arrived, the meeting already finished.라고 하면, 영어 화자는 도착 → 종료 순으로 듣는다. 앞선 일에는 had finished를 박아야 순서가 산다. 시간 부사 하나 없이도 had가 '이게 먼저'라고 말해 준다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "'d가 had인지 would인지는 뒤를 보고 가른다 ★Unit 7과 한 쌍",
+          "body": "구어에서 had도 would도 똑같이 'd로 줄어든다. 가르는 건 바로 뒤에 오는 형태다. 과거분사면 had — I knew what I'd seen(제시, Ch 2). 동사원형이면 would — I'd say to my dad(셀린, Ch 2). 같은 챕터 안에 둘 다 나온다. 귀로는 구별되지 않으니 seen이냐 say냐로 판단하는 습관을 들여야 한다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "just·already·never는 had와 과거분사 사이",
+          "body": "부사는 had 뒤, 과거분사 앞이 제자리다. my sister had just taught me(제시, Ch 2)이지 ❌ my sister just had taught me가 아니다. 마찬가지로 had already left, had never seen. had 앞으로 부사를 빼면 어색하거나 의미가 흔들린다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "before·after가 이미 순서를 밝히면 과거완료는 선택",
+          "body": "과거완료의 일은 '순서 표시'다. before, after, then처럼 순서를 대놓고 말해 주는 말이 있으면 굳이 안 써도 된다. She left after I called her.는 그대로 자연스럽다. 배운 문법을 아까워서 전부 had로 바꾸면 문장이 무거워진다. 순서가 헷갈릴 때만 쓰는 도구다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "(확장) 과거완료가 사는 다른 자리들",
+          "body": "① 관계절 배경 — all the freedom they had fought for(셀린, Ch 8): 지금 누리는 자유의 유래를 한 겹 뒤로 밀어 놓는다. ② 후회의 wish — I wish I had met you earlier(제시, Ch 2): 이미 지나가 버려 되돌릴 수 없는 일. ③ 가정법 if — If she'd ever got to know him(제시, Ch 8): 여기서도 she'd는 she had다. 셋 다 형태는 had + p.p. 하나로 같다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "By the time the letter arrived, she had already changed her mind.",
+          "ko": "편지가 도착했을 무렵, 그녀는 이미 마음을 바꾼 뒤였다."
+        },
+        {
+          "en": "I didn't recognize the street — they had torn down the bakery I grew up next to.",
+          "ko": "그 거리를 못 알아봤다. 내가 옆에서 자란 빵집을 이미 헐어 버린 뒤였다."
+        },
+        {
+          "en": "He said he'd never been to Vienna, but his passport said otherwise.",
+          "ko": "그는 빈에 가 본 적이 없다고 했지만, 여권은 다른 말을 하고 있었다."
+        },
+        {
+          "en": "When I finally called her back, she had stopped waiting.",
+          "ko": "내가 마침내 다시 전화했을 때, 그녀는 이미 기다리기를 그만둔 뒤였다."
+        },
+        {
+          "en": "She wished she had asked for his number that night.",
+          "ko": "그녀는 그날 밤 그의 번호를 물어봤더라면 하고 아쉬워했다."
+        }
+      ],
+      "coverage": {
+        "fromScript": 4,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-0601",
+        "w-0602",
+        "w-0603",
+        "w-0604",
+        "w-0605",
+        "w-0606",
+        "w-0607",
+        "w-0608",
+        "w-0609",
+        "w-0610",
+        "w-0611",
+        "w-0612",
+        "w-0613",
+        "w-0614",
+        "w-0615",
+        "w-0616",
+        "w-0617",
+        "w-0618",
+        "w-0619",
+        "w-0620",
+        "w-0621",
+        "w-0622",
+        "w-0623",
+        "w-0624",
+        "w-0625",
+        "w-0626"
+      ]
+    },
+    {
       "unitId": "u-07",
       "act": 2,
       "order": 7,
@@ -113,6 +862,763 @@
         "w-0725",
         "w-0726",
         "w-0727"
+      ]
+    },
+    {
+      "unitId": "u-08",
+      "act": 2,
+      "order": 8,
+      "title": "비교 구문",
+      "tagline": "무명 묘지 앞에서, 셀린이 '가장'이라는 말 없이 가장 깊은 인상을 말하는 방식",
+      "anchors": [
+        {
+          "en": "I visited this as a young teenager. I think it left a bigger impression on me at that time than any of the museums we went to.",
+          "ko": "십대 초반에 여기 와 본 적 있어. 그때 나한테는 우리가 갔던 어떤 박물관보다 이 묘지가 더 깊은 인상을 남긴 것 같아.",
+          "source": "before-sunrise",
+          "chapter": 7,
+          "speaker": "Céline",
+          "sceneNote": "무명자 묘지. 토끼 한 마리를 보다 셀린이 오래된 기억을 꺼낸다. '제일 인상 깊었어'라고 최상급으로 말할 수도 있었지만, 셀린은 bigger ~ than any of ~로 돌려 말한다. 최상급이 단정하는 말이라면 이 비교급은 하나하나 견줘 본 끝에 나온 말이라, 목소리가 훨씬 조심스럽고 사적으로 들린다."
+        },
+        {
+          "en": "I'm just as big a loser as he is, totally unmotivated, totally boring",
+          "ko": "나도 그 사람이랑 똑같이 별 볼 일 없는 놈이야. 완전 의욕도 없고, 완전 지루하고.",
+          "source": "before-sunrise",
+          "chapter": 3,
+          "speaker": "Jesse",
+          "sceneNote": "빈 도착 직전, 제시가 셀린을 기차에서 내리게 하려고 늘어놓는 설득. 미래의 남편과 자신을 같은 저울에 올리며 '나도 똑같이 형편없다'고 말한다. as ~ as는 우열이 아니라 동급을 만드는 장치라, 여기서는 자기비하가 아니라 상대의 경계를 낮추는 농담으로 작동한다. big a loser라는 뒤집힌 어순이 이 유닛의 핵심 함정이다."
+        },
+        {
+          "en": "Now, I'm ten years older, and she's still thirteen, I guess.",
+          "ko": "이제 난 열 살이나 더 먹었는데, 이 애는 여전히 열세 살이네.",
+          "source": "before-sunrise",
+          "chapter": 7,
+          "speaker": "Céline",
+          "sceneNote": "열세 살에 죽은 엘리자베트의 묘비 앞. 자기가 처음 이 묘비를 봤을 때와 지금의 나이 차를 ten years older 한 마디로 재 버린다. 비교급 앞의 숫자 하나가 흘러간 십 년을 통째로 들어 올리는 순간이다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "-er냐 more냐는 음절 수가 정한다",
+          "body": "1음절 형용사와 -y로 끝나는 2음절 형용사는 -er을 붙인다(big → bigger, old → older, easy → easier). 그 밖의 2음절 이상은 more를 앞에 둔다(more peaceful, more harmless). 셀린은 a bigger impression이라 했고 같은 장면에서 자기 나이는 ten years older라 했다. ❌ more big, ❌ more tall처럼 짧은 형용사에 more를 붙이는 것이 한국인 학습자의 첫 번째 실수다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "than 뒤는 than me 또는 than I am, 둘 중 하나로 끝내라",
+          "body": "구어에서는 목적격 than me가 표준이고, 격식체나 또박또박 말할 때는 주격+동사 than I am을 쓴다. 문제는 그 중간 — than I.에서 멈추면 문어에서는 통과해도 말로는 어색하게 들린다. 제시가 as he is까지 be동사를 붙여 말하는 것이 이 완전형이다. She's ten years older than me. / She's ten years older than I am. 둘 다 맞고, ❌ than I.는 피하는 편이 안전하다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "as ~ as 사이에 명사가 끼면 관사가 뒤로 밀린다 ★",
+          "body": "as와 as 사이에는 형용사만 오는 게 기본이다(as tall as, as cute as). 그런데 명사까지 함께 넣으려면 어순이 「as + 형용사 + a/an + 명사」로 뒤집힌다. 제시의 I'm just as big a loser as he is가 정확히 이 형태다. ❌ as a big loser as. 앞의 just는 '꼭 그만큼'이라는 동급 강조. so, too, how 뒤에서도 같은 뒤집힘이 일어난다 — so big a loser, too big a risk, how big a deal.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "비교급 강조에 very는 절대 못 쓴다 ★최다 실수",
+          "body": "❌ very bigger, ❌ very better. very는 원급 전용이다(very big). 비교급은 much / far / a lot / even / still로 강조한다. 대본이 전부 보여준다 — It makes it even harder to officially complain(셀린, Ch 2), They should have done it a lot sooner(제시, Ch 8), it would be a lot more fun if you came with me(제시, Ch 3). 차이의 크기를 숫자로 말할 때도 자리는 같다: ten years older, two hours longer.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "비교급으로 최상급을 말한다 — than any of / than any other",
+          "body": "셀린은 '그 묘지가 제일 인상 깊었다'를 최상급 없이 a bigger impression ... than any of the museums we went to로 말한다. 구분은 간단하다. than any of + 복수명사는 '그 집단 전부와 견줘서'(비교 대상이 나와 별개), than any other + 단수명사는 '나를 뺀 나머지 하나하나와 견줘서'(나도 그 집단에 속함). ❌ than any other museums처럼 other 뒤에 복수를 쓰면 안 되고, 자기가 속한 집단과 비교하면서 other를 빠뜨려도 안 된다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "(확장) 비교급을 두 번 겹치는 두 가지 틀",
+          "body": "두 변화가 맞물려 움직일 때는 「The 비교급 ~, the 비교급 ~」을 쓴다. The older I get, the less I explain myself. 한 방향으로 계속 커지기만 할 때는 「비교급 and 비교급」 — 셀린이 가짜 통화에서 I began to like him more and more(Ch 15)라고 하는 그것이다. get/become + 비교급도 같은 결의 '변해 가는' 비교급이다: as couples get older(셀린, Ch 1).",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "That fifteen-minute walk left a bigger impression on me than any of the tours I paid for.",
+          "ko": "그 15분짜리 산책이, 돈 주고 간 어떤 투어보다도 나한테 더 깊은 인상을 남겼다."
+        },
+        {
+          "en": "She is just as stubborn a negotiator as her father was.",
+          "ko": "그녀는 아버지가 그랬던 것과 꼭 그만큼 고집 센 협상가다."
+        },
+        {
+          "en": "The second draft is much clearer than the first, and it took far less time to write.",
+          "ko": "두 번째 원고가 첫 번째보다 훨씬 명료하고, 쓰는 데도 시간이 훨씬 덜 걸렸다."
+        },
+        {
+          "en": "The older I get, the less I need to be right.",
+          "ko": "나이를 먹을수록, 내가 옳아야 할 필요가 줄어든다."
+        },
+        {
+          "en": "Nobody in that room was more nervous than I was.",
+          "ko": "그 방에서 나보다 더 긴장한 사람은 없었다."
+        }
+      ],
+      "coverage": {
+        "fromScript": 4,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-0801",
+        "w-0802",
+        "w-0803",
+        "w-0804",
+        "w-0805",
+        "w-0806",
+        "w-0807",
+        "w-0808",
+        "w-0809",
+        "w-0810",
+        "w-0811",
+        "w-0812",
+        "w-0813",
+        "w-0814",
+        "w-0815",
+        "w-0816",
+        "w-0817",
+        "w-0818",
+        "w-0819",
+        "w-0820",
+        "w-0821",
+        "w-0822",
+        "w-0823",
+        "w-0824",
+        "w-0825",
+        "w-0826"
+      ]
+    },
+    {
+      "unitId": "u-09",
+      "act": 3,
+      "order": 9,
+      "title": "강조·도치",
+      "tagline": "말하고 싶은 것을 문장 맨 앞으로 끌어낸 대가로, 어순이 흔들린다",
+      "anchors": [
+        {
+          "en": "You need to resign yourself to the awkwardness of life. Only if you find peace within yourself, will you find true connection with others.",
+          "ko": "당신은 삶의 껄끄러움을 받아들여야 해요. 자기 안에서 평화를 찾아야만, 비로소 남들과 진짜로 통하게 됩니다.",
+          "source": "before-sunrise",
+          "chapter": 9,
+          "speaker": "Gypsy",
+          "sceneNote": "클라인스 카페 테라스. 손금을 봐 준 집시가 셀린에게 남기는 마지막 처방이다. 삶의 껄끄러움을 받아들이라고 한 뒤 Only를 앞세워 조건을 못 박는데, 그 순간 you will find가 will you find로 뒤집히며 문장이 예언처럼 굳는다. 앞자리를 내준 대가로 어순이 흔들리는, 도치의 가장 선명한 표본."
+        },
+        {
+          "en": "It‘s just, usually, it‘s myself that I wish I could get away from.",
+          "ko": "그냥, 보통은 말이야, 내가 벗어나고 싶은 건 다름 아닌 나 자신이야.",
+          "source": "before-sunrise",
+          "chapter": 19,
+          "speaker": "Jesse",
+          "sceneNote": "새벽 공원. 셀린이 '누군가 곁에 없었으면 싶었던 순간들'을 털어놓자, 제시가 그 대상을 자기 자신으로 뒤집는다. myself를 It is와 that 사이에 끼워 넣는 순간 문장의 무게가 통째로 '나 자신'에 얹힌다. 강조구문이 감정의 초점을 잡아 주는 장면."
+        },
+        {
+          "en": "I got one of those Eurail passes, is what I did.",
+          "ko": "그 유레일 패스 있잖아, 그거 하나 끊었어 — 그게 내가 한 일이야.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "기차 라운지 칸, 처음 나누는 대화. 어쩌다 유럽을 떠돌게 됐는지 설명하던 제시가 결론을 먼저 던져 놓고 is what I did를 꼬리처럼 붙인다. 문법책에는 없는 구어 강조 — 말해 놓고 '그게 내가 한 일이야'라고 스스로 되짚는 리듬이다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "부정어·only가 문두에 오면 주어와 동사가 뒤집힌다",
+          "body": "Only if you find peace within yourself, will you find true connection with others. — 평서문이라면 you will find인데, 문두에 Only가 서는 순간 will you find로 뒤집힌다. never, rarely, hardly, seldom, not until, little, only if/when/after가 문장 맨 앞에 오면 예외 없이 이 도치가 따라온다. 맨 앞자리는 강조의 자리라서, 그 자리를 내준 대가로 어순이 흔들리는 것이다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "도치는 종속절이 아니라 주절에서 일어난다 ★",
+          "body": "집시의 문장에서 Only if you find peace within yourself까지는 어순이 멀쩡하다(you find). 뒤집히는 것은 그다음 주절 will you find뿐이다. Only if 절 안을 뒤집어 ❌Only if do you find peace within yourself, you will find...로 쓰는 것이 가장 흔한 실수다. 앞으로 나온 덩어리는 신호일 뿐, 손대는 곳은 언제나 그 뒤 주절이다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "도치문은 의문문이 아니다 ★",
+          "body": "will you find, did I realize처럼 조동사가 주어 앞에 서면 반사적으로 의문문으로 읽게 된다. 하지만 집시의 문장은 물음표가 아니라 마침표로 끝난다. 문두의 Only/Never/Not until과 문장 끝 부호, 이 둘로 판단한다. 뜻도 질문이 아니라 단언이다 — '~해야만 비로소 ~한다'.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "앞으로 나오는 것은 조동사다 — 없으면 do/does/did를 꺼낸다 ★",
+          "body": "will, have, can처럼 조동사가 이미 있으면 그것만 주어 앞으로 간다(will you find). 일반동사밖에 없으면 do/does/did를 새로 꺼내고 본동사는 원형으로 남긴다: Not until she left the room did I realize what had happened. ❌Never I have been / ❌Not until she left did I realized는 둘 다 이 지점에서 무너진 것이다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "It is ~ that 강조구문과 가주어 It is ~ that의 구분 ★",
+          "body": "제시의 it's myself that I wish I could get away from에서 It is와 that을 지우면 I wish I could get away from myself가 온전히 복원된다 — 이러면 강조구문이다. 반대로 It is clear that he lied.는 It is와 that을 지우면 clear he lied라는 파편만 남는다 — 이쪽은 가주어. 복원되면 강조, 부서지면 가주어. 강조된 자리에 사람이 오면 that 대신 who도 쓴다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "구어는 앞뒤로 민다 — Why is it that ~? / ~, is what I did",
+          "body": "Why is it that ~?는 강조구문을 의문문으로 돌린 것이다. 제시의 Why is it, that a dog, you know, sleeping in the sun, is so beautiful?처럼 '왜'라는 물음 자체를 무겁게 얹는다. 이때 that 뒤는 평서문 어순 그대로 간다(❌Why is it that is a dog beautiful?). 반대로 뒤로 미는 방식도 있다: I got one of those Eurail passes, is what I did. — 내용을 먼저 던지고 (that) is what I did를 꼬리로 붙여 되짚는 구어 강조다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "Only after the last guest left did the apartment feel like ours again.",
+          "ko": "마지막 손님이 떠나고 나서야 그 집은 다시 우리 집처럼 느껴졌다."
+        },
+        {
+          "en": "It wasn't the noise that kept me awake — it was everything I hadn't said.",
+          "ko": "나를 못 자게 한 건 소음이 아니라, 내가 하지 못한 말들이었다."
+        },
+        {
+          "en": "Why is it that the best conversations always start when someone has to leave?",
+          "ko": "왜 가장 좋은 대화는 늘 누군가 떠나야 할 때쯤 시작되는 걸까?"
+        },
+        {
+          "en": "Never have I regretted a night I spent talking until sunrise.",
+          "ko": "해 뜰 때까지 이야기하며 보낸 밤을 후회해 본 적은 한 번도 없다."
+        },
+        {
+          "en": "I just walked out in the middle of it, is what I did.",
+          "ko": "그냥 도중에 걸어 나와 버렸어 — 그게 내가 한 일이야."
+        }
+      ],
+      "coverage": {
+        "fromScript": 4,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-0901",
+        "w-0902",
+        "w-0903",
+        "w-0904",
+        "w-0905",
+        "w-0906",
+        "w-0907",
+        "w-0908",
+        "w-0909",
+        "w-0910",
+        "w-0911",
+        "w-0912",
+        "w-0913",
+        "w-0914",
+        "w-0915",
+        "w-0916",
+        "w-0917",
+        "w-0918",
+        "w-0919",
+        "w-0920",
+        "w-0921",
+        "w-0922",
+        "w-0923",
+        "w-0924",
+        "w-0925",
+        "w-0926",
+        "w-0927",
+        "w-0928"
+      ]
+    },
+    {
+      "unitId": "u-10",
+      "act": 3,
+      "order": 10,
+      "title": "명사절·관계사 확장",
+      "tagline": "문장 하나를 통째로 명사 자리에 밀어 넣는 순간, 생각이 끊기지 않는다",
+      "anchors": [
+        {
+          "en": "I knew what I'd seen. And I was just glad that I saw that. I mean, I've never seen anything like that since. But, I don't know. It just kind of let me know how ambiguous everything was, you know, even death.",
+          "ko": "나는 내가 본 것을 알고 있었다. 그리고 그걸 봤다는 게 그냥 기뻤다. 그 뒤로 그런 건 한 번도 못 봤지만. 모르겠다. 그 일이 그냥, 모든 게 얼마나 모호한지를 알게 해 줬다 — 죽음까지도.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "라운지 칸. 세 살 반의 제시가 정원 호스로 만든 무지개 속에서 죽은 증조할머니를 본 이야기의 마지막 대목. 부모는 상상이라 했고 제시는 아니라고 했다. 이 짧은 결론 안에 what절(내가 본 것) / that절(봤다는 사실) / how절(얼마나 모호한지)이 차례로 들어앉는다 — 형태가 다른 세 개의 절이 전부 '명사 하나' 자리를 차지하는, 이 유닛의 전체 그림이 한 호흡에 다 나온다."
+        },
+        {
+          "en": "And I have this idea for this show that would last twenty-four hours a day for a year straight, right? What you do, is you get three hundred and sixty-four people from cities all over the world, to do these twenty-four hour documents of real time, right, capturing life as it's lived.",
+          "ko": "그리고 나한테 아이디어가 하나 있는데, 하루 스물네 시간을 일 년 내내 이어 가는 프로그램이야. 어떻게 하냐면, 세계 각 도시에서 삼백육십사 명을 모아서 스물네 시간짜리 실시간 기록을 찍게 하는 거지 — 삶을, 살아지는 그대로 담는 거야.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "기차 라운지 칸, 처음으로 제시가 자기 머릿속을 통째로 꺼내 보이는 장면. 명사 뒤가 계속 늘어난다 — show that would last...(관계대명사), documents of real time(전치사구), life as it's lived(뒤에서 한정하는 as절). 아이디어가 커질수록 명사 꼬리가 길어지는 게 그대로 보인다. What you do, is...는 what절을 아예 문장 맨 앞 주어로 세운 구어체."
+        },
+        {
+          "en": "I don't think it really matters what generation you are born into.",
+          "ko": "어느 세대에 태어나느냐는 사실 별로 중요하지 않다고 생각해.",
+          "source": "before-sunrise",
+          "chapter": 8,
+          "speaker": "Céline",
+          "sceneNote": "프라터 관람차에서 첫 키스를 하고 내려와, 손을 잡고 걷다 셀린이 불쑥 꺼내는 말. 68세대 부모와 자기 세대를 비교하며 시작하는 긴 이야기의 첫 문장이다. matters의 주어가 what generation you are born into라는 문장 하나 통째이고, 그 앞에 I don't think가 붙어 부정이 앞으로 당겨져 있다 — 한국어 어순과 정확히 반대로 조립된 문장."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "문장 하나가 통째로 명사 자리에 들어간다",
+          "body": "that절·의문사절(what/how/who/why...)은 주어·목적어·보어 자리를 그대로 차지한다. 셀린의 it really matters what generation you are born into에서 진짜 주어는 what generation you are born into라는 문장 하나이고, 앞의 it은 자리만 잡아 주는 가주어다. 제시의 I was just glad that I saw that에서는 that절이 형용사 glad의 내용이 된다. '무엇이/무엇을'에 해당하는 것이 단어가 아니라 문장일 수 있다는 감각이 이 유닛의 출발점이다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "의문사절은 평서문 어순 ★최다 실수",
+          "body": "의문사 뒤는 '주어 + 동사' 순서다. 의문문 어순으로 뒤집지 않는다. ⭕ how ambiguous everything was / ❌ how was everything ambiguous. 대본 곳곳이 이 어순이다 — they often didn't know who these people were(Ch 7), we can't really know who, or what the enemy is(Ch 8), I don't really know what I'm on(Ch 2). 한국어는 '모든 게 얼마나 모호한지'처럼 어순이 안 바뀌니 감각이 없고, 학교에서 배운 의문문 어순이 튀어나와 뒤집어 버린다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "what은 선행사를 품고, that은 앞 명사를 받는다",
+          "body": "what = the thing(s) which. 이미 '것'을 안에 품고 있어서 앞에 명사가 오면 안 된다. I knew what I'd seen(내가 본 것)은 what 앞에 아무 명사도 없다. 반대로 앞에 명사가 있으면 that/which를 쓴다 — this show that would last twenty-four hours a day, the thing that kind of haunts me(Ch 2). ❌ the thing what haunts me, ❌ I knew that I'd seen(→ '봤다는 것을 알았다'가 되어 뜻 자체가 달라진다).",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "목적격 관계대명사는 통째로 사라진다 (접촉절)",
+          "body": "명사 바로 뒤에 '주어 + 동사'가 붙어 있으면 그 사이에 that/which가 생략된 것이다. Everything we know is stardust(Ch 9) = Everything that we know. all those bad things you've done(Ch 12), the people you broke up with(Ch 13)도 같다. 읽을 때 이 자리에서 문장이 끝난 줄 알고 멈추면 그다음 동사가 갈 곳을 잃는다 — Everything we know까지 읽고 끊으면 is stardust가 붕 뜬다. 명사 뒤에 갑자기 주어가 또 나오면 '아, 뒤에서 꾸미는구나'로 받아야 한다.",
+          "isTrap": false
+        },
+        {
+          "id": "r5",
+          "title": "부정은 주절로 앞당긴다 (I don't think ~)",
+          "body": "영어는 think/believe/suppose/expect 뒤의 부정을 앞의 주절로 끌어올린다. ⭕ I don't think it really matters ~ / ❌ I think it doesn't really matter ~. 셀린도 제시도 예외 없이 이렇게 말한다 — I don't think we should sleep together(Ch 19), I don't think my mom would've gone for that(Ch 14), I don't really know if there is an enemy(Ch 8). 한국어는 '중요하지 않다고 생각해'라서 부정이 뒤에 남고, 그대로 옮기면 영어에서는 유난히 딱딱하고 강한 부정으로 들린다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "명사는 뒤에서 계속 늘어난다 (관계부사·as절)",
+          "body": "the way / why / when은 절을 끌고 와 앞 명사나 문장을 뒤에서 한정한다 — that really shaped the way I think(Ch 8), That's why so many people hate themselves(Ch 19), knowing the exact story he'd tell in a given situation(Ch 21). as절도 같은 일을 한다: capturing life as it's lived는 life 뒤에 '살아지는 그대로'를 덧붙인 것이고, People can lead their life as a lie(Ch 8)도 같은 결이다. 한국어는 꾸미는 말이 전부 앞에 붙지만 영어는 뒤로 늘어난다 — 이 방향 전환이 안 되면 문장이 자꾸 짧게 끊긴다.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "What she confessed that night was something nobody in the family had ever guessed.",
+          "ko": "그날 밤 그녀가 털어놓은 말은 가족 중 누구도 짐작조차 못 한 것이었다."
+        },
+        {
+          "en": "I had no idea how nervous he was until I saw his hands shaking.",
+          "ko": "손이 떨리는 걸 보고서야 그가 얼마나 긴장했는지 알았다."
+        },
+        {
+          "en": "I don't think it matters much who says it first.",
+          "ko": "누가 먼저 말하느냐는 별로 중요하지 않다고 생각한다."
+        },
+        {
+          "en": "The one story she remembers is the one her grandmother never finished.",
+          "ko": "그녀가 기억하는 단 하나의 이야기는, 할머니가 끝내 맺지 못한 이야기다."
+        },
+        {
+          "en": "He wanted to film the city as it actually is, not as the postcards show it.",
+          "ko": "그는 엽서가 보여 주는 모습이 아니라, 도시를 있는 그대로 찍고 싶어 했다."
+        }
+      ],
+      "coverage": {
+        "fromScript": 8,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-1001",
+        "w-1002",
+        "w-1003",
+        "w-1004",
+        "w-1005",
+        "w-1006",
+        "w-1007",
+        "w-1008",
+        "w-1009",
+        "w-1010",
+        "w-1011",
+        "w-1012",
+        "w-1013",
+        "w-1014",
+        "w-1015",
+        "w-1016",
+        "w-1017",
+        "w-1018",
+        "w-1019",
+        "w-1020",
+        "w-1021",
+        "w-1022",
+        "w-1023",
+        "w-1024",
+        "w-1025",
+        "w-1026",
+        "w-1027"
+      ]
+    },
+    {
+      "unitId": "u-11",
+      "act": 3,
+      "order": 11,
+      "title": "지각동사 + -ing",
+      "tagline": "셀린의 머릿속에서 지금도 재생 중인 추락 장면",
+      "anchors": [
+        {
+          "en": "I can see me falling through the clouds, and I'm so scared of those few seconds of consciousness before you're gonna die, you know, when you know for sure you're gonna die.",
+          "ko": "구름을 뚫고 떨어지는 내가 보여. 죽기 직전의, 아직 정신이 붙어 있는 그 몇 초가 너무 무서워. 이제 확실히 죽는구나, 하고 아는 그 순간 말이야.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Céline",
+          "sceneNote": "기차 라운지 칸. 비행기가 무섭다는 말을 통계로 반박당한 뒤, 셀린은 '무섭다'고 다시 말하는 대신 자기 머릿속에서 돌아가는 필름을 그대로 틀어 보인다. see me falling — 떨어지는 '중간'이 정지되지 않고 계속 돌아간다. fall이었다면 추락은 이미 끝났을 텐데, -ing라서 그녀는 영원히 떨어지는 중이다. 문법이 곧 공포의 생생함이다."
+        },
+        {
+          "en": "he was watching this child, experiencing life for the first time, I mean, trying to take its first breath...all he could think about was that he was looking at something that was gonna die someday.",
+          "ko": "그 친구는 그 아기를 지켜보고 있었대. 난생처음 삶을 겪고 있는, 그러니까 첫 숨을 쉬려고 애쓰고 있는 아기를. 그런데 머릿속에 떠오른 건 오직 하나, 자기가 지금 언젠가 죽을 무언가를 보고 있다는 거였대.",
+          "source": "before-sunrise",
+          "chapter": 17,
+          "speaker": "Jesse",
+          "sceneNote": "다뉴브 유람선. 오늘 밤이 마지막이라는 걸 꺼내기 직전, 제시가 친구의 출산 이야기를 한다. watching this child 뒤에 experiencing과 trying이 연달아 붙으며 아기가 하는 일이 실시간으로 겹쳐 쌓인다. -ing가 끝나지 않기 때문에 '탄생의 한가운데'가 그대로 멈춰 서고, 그 위에 죽음이 포개진다."
+        },
+        {
+          "en": "I heard about this old guy, who was watching some young people dance.",
+          "ko": "어떤 노인 얘기를 들었어. 젊은 애들이 춤추는 걸 보고 있었다는데.",
+          "source": "before-sunrise",
+          "chapter": 14,
+          "speaker": "Jesse",
+          "sceneNote": "밸리댄서를 함께 구경하고 난 뒤 골목길. 여기서는 watching 뒤에 dance(원형)가 온다. 노인은 춤의 한 토막이 아니라 춤이 시작되고 끝나는 것을 통째로 본 사람이고, 그래서 '천사가 되려고 몸을 털어 내는 중'이라는 총평이 나올 수 있다. -ing와 원형의 차이가 그대로 시선의 길이 차이다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "지각동사 + 목적어 + -ing = 진행 중인 한 토막",
+          "body": "see, hear, watch, feel, notice, listen to는 목적어 뒤에 -ing를 받아 '~가 …하고 있는 것을' 본다/듣는다가 된다. 셀린의 I can see me falling through the clouds는 추락의 시작도 끝도 아닌 '떨어지는 중'만 잘라 보여 준다. 영화 첫 장면의 지문도 같은 구조다 — We see a middle-aged couple sitting in the front of the coach car.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "to부정사는 절대 오지 않는다 ★최다 실수",
+          "body": "지각동사 뒤 목적격보어에는 -ing나 원형부정사만 온다. ❌ I saw him to run. → ⭕ I saw him run. / I saw him running. 한국어 '그가 뛰는 것을 봤다'의 '것'이 to부정사를 부르는 착각을 일으키는데, 대본 어디에도 see/watch/hear 뒤의 to는 없다. 셀린도 see me to fall이라고 하지 않는다.",
+          "isTrap": true
+        },
+        {
+          "id": "r3",
+          "title": "-ing는 장면의 한 토막, 원형은 처음부터 끝까지",
+          "body": "같은 watch인데 Ch 17은 was watching this child, experiencing life(진행의 한가운데), Ch 14는 was watching some young people dance(춤 전체)다. -ing는 카메라가 도중에 들어갔다 나오는 것이고, 원형부정사는 시작부터 끝까지 다 본 것이다. I saw her cross the street(다 건너는 걸 봤다) vs I saw her crossing the street(건너던 중을 봤다)의 차이가 정확히 이것.",
+          "isTrap": false
+        },
+        {
+          "id": "r4",
+          "title": "수동태로 바뀌면 사라졌던 to가 되살아난다",
+          "body": "능동에서는 원형이지만 수동에서는 to가 붙는다. I saw him run. → He was seen to run. (❌ He was seen run.) -ing 쪽은 그대로다 — I saw him running. → He was seen running. 원형부정사만 to를 되찾는다는 점이 시험과 격식체 글에서 계속 나온다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "목적격보어 -ing와 분사구문 -ing를 섞지 말 것",
+          "body": "We see Celine sitting alone, looking out the window.에서 sitting은 Celine의 목적격보어(무엇을 보는가)지만, looking은 문장 뒤에 덧붙은 분사구문(그러면서 어떤 상태인가)이다. 앞의 -ing는 지각동사가 요구한 자리라 뺄 수 없고, 뒤의 -ing는 빼도 문장이 성립한다. Ch 9 지문 They pause, looking in the direction where they hear some laughter, seeing a gypsy...도 뒤쪽 두 -ing가 전부 분사구문이다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "(확장) with + 명사 + -ing = 동시에 벌어지는 배경",
+          "body": "지각동사가 없어도 -ing로 '~한 채로'를 붙일 수 있다. Ch 9의 With the money in her hands, gypsy turns back to Jesse and Céline, raising her arms.가 그 자리 — with 뒤가 전치사구면 그대로, 동작이면 -ing를 쓴다(with the rain pouring down). 주의: with 뒤 명사와 -ing는 능동 관계여야 한다. 수동이면 과거분사다 — with her eyes closed.",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "I heard someone crying in the next room, but by the time I opened the door it had stopped.",
+          "ko": "옆방에서 누가 울고 있는 소리가 들렸는데, 문을 열었을 땐 이미 그쳐 있었다."
+        },
+        {
+          "en": "She watched the last train leave, and only then did she start walking home.",
+          "ko": "그녀는 마지막 기차가 떠나는 걸 끝까지 지켜보고 나서야 집으로 걷기 시작했다."
+        },
+        {
+          "en": "He was seen to enter the building shortly after midnight.",
+          "ko": "그는 자정 직후에 건물로 들어가는 것이 목격되었다."
+        },
+        {
+          "en": "I could feel the whole platform shaking as the express went past.",
+          "ko": "급행이 지나가는 동안 승강장 전체가 흔들리는 게 느껴졌다."
+        },
+        {
+          "en": "She stood at the doorway with the rain pouring down behind her, not saying anything.",
+          "ko": "그녀는 뒤로 비가 쏟아지는 채로 문간에 서서, 아무 말도 하지 않았다."
+        }
+      ],
+      "coverage": {
+        "fromScript": 8,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-1101",
+        "w-1102",
+        "w-1103",
+        "w-1104",
+        "w-1105",
+        "w-1106",
+        "w-1107",
+        "w-1108",
+        "w-1109",
+        "w-1110",
+        "w-1111",
+        "w-1112",
+        "w-1113",
+        "w-1114",
+        "w-1115",
+        "w-1116",
+        "w-1117",
+        "w-1118",
+        "w-1119",
+        "w-1120",
+        "w-1121",
+        "w-1122",
+        "w-1123",
+        "w-1124",
+        "w-1125",
+        "w-1126",
+        "w-1127",
+        "w-1128"
+      ]
+    },
+    {
+      "unitId": "u-12",
+      "act": 4,
+      "order": 12,
+      "title": "가정법 (과거 / 과거완료 / 혼합)",
+      "tagline": "지금 여기 함께 있다는 것이, 그러지 않았을 수도 있는 일이라는 자각",
+      "anchors": [
+        {
+          "en": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
+          "ko": "지금쯤 파리에 있었을까? 나랑 같이 기차에서 안 내렸으면.",
+          "source": "before-sunrise",
+          "chapter": 12,
+          "speaker": "Jesse",
+          "sceneNote": "도나우 강변을 걷다가 제시가 셀린의 손을 장난스레 깨문 직후 던지는 질문. 조건은 과거(hadn't gotten off), 결과는 지금(by now)이라 두 절의 시제가 어긋나는 혼합 가정법의 교과서적 문장이다. 문법 자체가 '우리가 지금 함께 있는 이 순간은 원래 없었을 수도 있다'는 말을 하고 있다."
+        },
+        {
+          "en": "I guarantee you, it was better that way. If she'd ever got to know him, you know, I'm sure he would have disappointed her eventually.",
+          "ko": "장담하는데, 그게 나은 거였어. 할머니가 그 남자를 정말 알게 됐더라면, 분명 언젠가는 실망시켰을 거야.",
+          "source": "before-sunrise",
+          "chapter": 8,
+          "speaker": "Jesse",
+          "sceneNote": "프라터 대관람차에서 내려온 뒤. 평생 다른 남자를 마음에 품고 산 셀린의 할머니 이야기에 제시가 냉소적으로 답한다. If + had p.p. / would have p.p. — 일어나지 않은 과거를 통째로 뒤집어 상상하는 가정법 과거완료. 로맨스를 믿지 않는 척하는 제시의 방어가 이 시제에 담겨 있다."
+        },
+        {
+          "en": "If somebody gave me the choice right now, of to never see you again or to marry you, alright, I would marry you",
+          "ko": "지금 당장 누가 나한테 널 다시는 못 보는 것과 너와 결혼하는 것 중에 고르라고 하면, 난 너랑 결혼할 거야.",
+          "source": "before-sunrise",
+          "chapter": 19,
+          "speaker": "Jesse",
+          "sceneNote": "새벽 공원에 누워 와인을 마시다가, 자자 말자 하는 대화 끝에 제시가 내미는 고백. right now(지금)인데 동사는 gave(과거형)다 — 실제로 아무도 그런 선택지를 주지 않기 때문. 현실이 아니라서 과거형으로 한 칸 물러선 자리에서만 할 수 있는 말이다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "가정법 과거 — 현재의 반사실",
+          "body": "If + 주어 + 과거형, 주어 + would/could/might + 동사원형. 지금 사실이 아닌 것을 상상한다. 제시의 If somebody gave me the choice right now ... I would marry you가 정확히 이 틀이다. right now인데 gave인 이유는 하나 — 실제로는 그런 선택지가 없기 때문. 셀린의 If we were around each other all the time, what ... would drive you mad?(Ch 12)도 같은 형태다.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "가정법 과거완료 — 과거의 반사실",
+          "body": "If + 주어 + had p.p., 주어 + would have p.p. 이미 끝난 과거를 통째로 뒤집는다. If she'd ever got to know him, he would have disappointed her eventually(Jesse, Ch 8) — 할머니는 그를 알게 되지 '않았고', 그래서 실망하지도 '않았다'. 두 절 모두 한 칸씩 더 뒤로 밀려 있다.",
+          "isTrap": false
+        },
+        {
+          "id": "r3",
+          "title": "혼합 가정법 — 조건은 과거, 결과는 지금 ★두 절의 시제가 다르다",
+          "body": "If + had p.p. + 주어 + would + 동사원형. 과거의 선택이 지금까지 이어진 결과를 말할 때만 쓴다. Would you be in Paris by now, if you hadn't gotten off the train with me?(Jesse, Ch 12) — 기차에서 내린 건 과거, 파리에 있는지는 지금. would have been이 아니라 would be인 건 실수가 아니라 의미다. by now, now, still 같은 현재 표지가 붙어 있으면 혼합을 의심할 것.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "if절에는 would를 쓰지 않는다 ★최다 실수",
+          "body": "한국어 '~한다면'에 '~겠다'가 섞여 들어가 if절에 would를 붙이는 실수가 가장 흔하다. ❌ If I would have more time / ❌ If you wouldn't have gotten off the train → ⭕ If I had more time / ⭕ If you hadn't gotten off the train. would는 주절 담당이다. 셀린도 If it had to be something, if I had to think about it(Ch 12)이라고 하지 If it would have to be라고 하지 않는다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "would have p.p. vs should have p.p.",
+          "body": "would have p.p.는 '(그랬다면) ~했을 것이다' — 가정의 결과. should have p.p.는 '~했어야 했는데 안 했다' — 후회와 비난. They should have done it a lot sooner(Jesse, Ch 8, 부모의 이혼)와 I should have told you this earlier, Céline(Ch 13)이 둘 다 후자다. 형태가 비슷해 섞이지만, would have에는 if가 딸려 있고 should have에는 자책이 딸려 있다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "'d의 정체를 먼저 가려라 — had인가 would인가",
+          "body": "구어에서 가정법은 거의 다 'd로 뭉개진다. If she'd ever got to know him의 'd는 had(if절), I'd probably be hanging around the airport(Jesse, Ch 12)의 'd는 would(주절). 위치로 가른다 — if절 안의 'd는 had, 주절의 'd는 would. 이걸 못 가르면 과거완료 가정을 단순 과거로 잘못 듣는다.",
+          "isTrap": true
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "If I had taken that job in Berlin, I wouldn't be sitting here with you right now.",
+          "ko": "그때 베를린 그 일자리를 잡았더라면, 지금 여기 너랑 앉아 있지 않을 텐데."
+        },
+        {
+          "en": "If she hadn't missed the last train, she'd be home already.",
+          "ko": "막차를 놓치지 않았더라면, 그 애는 벌써 집에 있을 텐데."
+        },
+        {
+          "en": "If I knew his number, I would call him tonight.",
+          "ko": "그의 번호를 안다면, 오늘 밤 전화할 텐데."
+        },
+        {
+          "en": "We should have booked the tickets in August — now everything is sold out.",
+          "ko": "8월에 표를 예매했어야 했는데 — 이제 다 매진이다."
+        },
+        {
+          "en": "If you had told me you were in Vienna, I would have come to meet you.",
+          "ko": "빈에 있다고 말해 줬더라면, 내가 만나러 갔을 텐데."
+        }
+      ],
+      "coverage": {
+        "fromScript": 4,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-1201",
+        "w-1202",
+        "w-1203",
+        "w-1204",
+        "w-1205",
+        "w-1206",
+        "w-1207",
+        "w-1208",
+        "w-1209",
+        "w-1210",
+        "w-1211",
+        "w-1212",
+        "w-1213",
+        "w-1214",
+        "w-1215",
+        "w-1216",
+        "w-1217",
+        "w-1218",
+        "w-1219",
+        "w-1220",
+        "w-1221",
+        "w-1222",
+        "w-1223",
+        "w-1224",
+        "w-1225",
+        "w-1226",
+        "w-1227",
+        "w-1228"
+      ]
+    },
+    {
+      "unitId": "u-13",
+      "act": 4,
+      "order": 13,
+      "title": "wish + 과거완료 / 후회",
+      "tagline": "다시 만날 수 없을지도 모르는 밤 — 아쉬움이 시제를 한 칸씩 뒤로 미는 소리",
+      "anchors": [
+        {
+          "en": "I wish I had met you earlier, you know, I really like talking to you.",
+          "ko": "더 일찍 만났더라면 좋았을 텐데요. 저, 당신하고 얘기하는 게 정말 좋아요.",
+          "source": "before-sunrise",
+          "chapter": 2,
+          "speaker": "Jesse",
+          "sceneNote": "빈에 도착해 제시가 내려야 하는 순간. 몇 시간 떠들다가 이제 끝인가 싶을 때, 처음으로 아쉬움이 새어 나온다. 이미 지나간 시간을 되돌릴 수 없으니 had met — 이 영화 전체가 이 한 문장의 아쉬움에서 시작해 '그럼 지금 같이 내리자'는 제안으로 이어진다."
+        },
+        {
+          "en": "So often in my life I've been with people and shared beautiful moments like travelling, or staying up all night and watching the sunrise, and I knew those were special moments. But something was always wrong. I wished I'd been with someone else.",
+          "ko": "살면서 참 자주, 누군가와 함께 아름다운 순간들을 보냈어요. 여행이라든가, 밤을 새워 해 뜨는 걸 본다든가. 특별한 순간인 줄도 알았고요. 그런데 늘 뭔가가 어긋나 있었어요. 그때마다 나는, 옆에 있는 사람이 이 사람이 아니었으면 했어요.",
+          "source": "before-sunrise",
+          "chapter": 19,
+          "speaker": "Céline",
+          "sceneNote": "새벽 공원에 나란히 누워 와인을 마시며. 셀린은 지금의 아쉬움이 아니라 '그때 그 순간에 품었던 아쉬움'을 말한다. 그래서 wish가 아니라 wished, been이 아니라 I'd been — 시제가 한 겹 더 들어간다. 그리고 곧바로 But I'm happy to be with you로 뒤집는다."
+        },
+        {
+          "en": "I know what you mean about wishing somebody wasn't there though, It's just, usually, it's myself that I wish I could get away from.",
+          "ko": "누가 옆에 없었으면 싶은 그 마음, 무슨 말인지 알아요. 다만 내 경우엔 대개, 벗어나고 싶은 게 나 자신이라서요.",
+          "source": "before-sunrise",
+          "chapter": 19,
+          "speaker": "Jesse",
+          "sceneNote": "셀린의 고백을 받아 제시가 자기 얘기로 되돌린다. 지금도 여전히 벗어나지 못하고 있으니 could — I wish + 과거형이 '현재의 불가능'을 가리키는 가장 선명한 예. 뒤이어 But being with you...it's made me feel like I was somebody else로 이어지며, 이 밤이 왜 특별한지가 문법 하나로 설명된다."
+        }
+      ],
+      "rules": [
+        {
+          "id": "r1",
+          "title": "I wish + 과거형 = 지금 그렇지 않아서 아쉽다",
+          "body": "wish 뒤가 과거형이면 아쉬움의 시점은 '지금'이다. 제시의 it's myself that I wish I could get away from은 지금도 자기 자신에게서 못 벗어나고 있다는 뜻이지, 과거 얘기가 아니다. I wish I could는 '할 수 있으면 좋겠는데 못 한다', I wish you were here는 '지금 네가 여기 없다'.",
+          "isTrap": false
+        },
+        {
+          "id": "r2",
+          "title": "I wish + had p.p. = 그때 그러지 못해서 아쉽다",
+          "body": "이미 끝난 일은 되돌릴 수 없으므로 한 칸 더 뒤로 민다. 제시의 I wish I had met you earlier는 '지금 만나서 좋다'가 아니라 '더 일찍 만나지 못한 게 아쉽다'이다. 아쉬워하는 시점은 여전히 지금(wish), 아쉬워하는 대상만 과거(had met)라는 점이 핵심.",
+          "isTrap": false
+        },
+        {
+          "id": "r3",
+          "title": "wish 뒤에서는 시제를 반드시 한 칸 뒤로 ★최다 실수",
+          "body": "한국어 '~하면 좋겠다'를 그대로 옮겨 현재형을 쓰는 것이 가장 흔한 실수다. ❌ I wish I can speak French → ⭕ I wish I could speak French. ❌ I wish I meet you earlier → ⭕ I wish I had met you earlier. be동사는 격식체에서 인칭과 무관하게 were를 쓴다(I wish I were taller). 구어에서는 I wish I was도 널리 쓰이지만, 시험·격식 글에서는 were가 안전하다.",
+          "isTrap": true
+        },
+        {
+          "id": "r4",
+          "title": "I wish는 안 될 일, I hope는 될 일",
+          "body": "wish는 '사실이 아니다'를 전제로 깔고, hope는 가능성을 열어 둔다. 그래서 여행 잘 다녀오라는 인사는 ⭕ I hope you have a good trip이고, ❌ I wish you have a good trip이라고 하면 '못 갈 것 같아 안됐다'는 결이 된다. 반대로 I wish you came는 '너 안 오잖아'라는 아쉬움이다. 예외는 관용구 — I wish you luck, I wish you a happy birthday처럼 '명사 두 개'를 주는 형태에서는 wish가 정상이다.",
+          "isTrap": true
+        },
+        {
+          "id": "r5",
+          "title": "I wished I'd been ~ — 과거 그 시점의 아쉬움엔 한 겹 더",
+          "body": "아쉬워한 시점 자체가 과거면 wish도 과거로 민다. 셀린의 I wished I'd been with someone else는 '지금 아쉽다'가 아니라 '그 순간순간마다 아쉬웠다'이다. Ch 13에서 제시가 let it really sink in that she wished I hadn't come이라고 말하는 것도 같은 구조 — 주절이 과거라 wish도 wished가 된다. 한국인 학습자는 여기서 wish/was로 한 겹을 빠뜨린다.",
+          "isTrap": true
+        },
+        {
+          "id": "r6",
+          "title": "(확장) 같은 아쉬움의 다른 얼굴들",
+          "body": "if only는 wish보다 감정이 세다 — If only we had exchanged numbers. should have p.p.는 '그랬어야 했는데 안 했다'는 자책으로, Ch 13에서 제시가 I should have told you this earlier, Céline이라고 운을 뗀다. regret -ing는 이미 한 일을, regret to say는 지금부터 할 말을 가리킨다. wish + would는 결이 다르다 — I wish you would stop checking your phone처럼 남의 습관에 대한 불평이라, 주어가 나 자신이면 성립하지 않는다(❌ I wish I would...).",
+          "isTrap": false
+        }
+      ],
+      "generatedExamples": [
+        {
+          "en": "I wish I had said something at the station instead of just watching the train pull away.",
+          "ko": "역에서 기차가 떠나는 걸 보고만 있지 말고 뭐라도 말했더라면 좋았을 텐데."
+        },
+        {
+          "en": "If only we had exchanged numbers — six months is a long time to wonder.",
+          "ko": "번호라도 주고받았더라면. 6개월은 궁금해하기에 너무 긴 시간이다."
+        },
+        {
+          "en": "I wish I were the kind of person who says goodbye well, but I never have been.",
+          "ko": "나도 작별 인사를 잘하는 사람이면 좋겠는데, 한 번도 그랬던 적이 없다."
+        },
+        {
+          "en": "She regretted not telling him how she felt while there was still time.",
+          "ko": "그녀는 아직 시간이 있을 때 마음을 말하지 않은 것을 후회했다."
+        },
+        {
+          "en": "I hope you have a great life — and I wish I could be there to see it.",
+          "ko": "네 인생이 멋지길 바라. 그리고 그걸 옆에서 볼 수 있으면 좋겠어."
+        }
+      ],
+      "coverage": {
+        "fromScript": 5,
+        "generated": 5
+      },
+      "vocabIds": [
+        "w-1301",
+        "w-1302",
+        "w-1303",
+        "w-1304",
+        "w-1305",
+        "w-1306",
+        "w-1307",
+        "w-1308",
+        "w-1309",
+        "w-1310",
+        "w-1311",
+        "w-1312",
+        "w-1313",
+        "w-1314",
+        "w-1315",
+        "w-1316",
+        "w-1317",
+        "w-1318",
+        "w-1319",
+        "w-1320",
+        "w-1321",
+        "w-1322",
+        "w-1323",
+        "w-1324",
+        "w-1325",
+        "w-1326"
       ]
     }
   ]

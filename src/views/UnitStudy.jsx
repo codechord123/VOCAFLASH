@@ -6,13 +6,52 @@ import { useMemo, useState } from 'react'
 // 규칙을 먼저 주지 않는다 — 셀린의 대사를 먼저 읽고, 그 리듬에 이름을
 // 붙이는 쪽이 기억에 남는다.
 
-/** would/'d 부분을 강조해서 앵커의 패턴이 눈에 걸리게 한다. */
-function AnchorText({ text }) {
-  const parts = text.split(/(\b\w+['’]d\b|\bwould\b)/gi)
+/**
+ * 유닛마다 눈에 걸려야 할 자리가 다르다.
+ *
+ * 앵커에서 그 유닛이 가르치는 구조에만 밑줄이 가야 한다 — would 유닛에서
+ * would에 표시가 없으면 어디를 보라는 건지 알 수 없고, 반대로 상관없는
+ * 곳까지 칠하면 소음이 된다. 규칙이 다루는 표현을 유닛별로 적어 둔다.
+ */
+const MARKS = {
+  'u-01': ["no?", "right?", "This fine here?", "you coming", "You on holiday", "You get off"],
+  'u-02': ["you know", "I mean", "well", "anyway", "kinda", "gonna", "dunno", "'cause", "ya", "umm", "uh"],
+  'u-03': ["I guess", "sort of", "kind of", "or something", "I don't know", "supposedly", "maybe"],
+  'u-04': ["I have never", "I've never", "I've", "We've", "Have you ever", "haven't"],
+  'u-05': ["I've been", "been riding", "been wondering", "'s been", "been having"],
+  'u-06': ["had just", "had fought", "I'd seen", "I'd imagined", "had died", "had visited"],
+  'u-07': ["I'd say", "he'd say", "he'd shave", "would", "'d"],
+  'u-08': ["bigger", "than", "as big a", "just as", "more", "older"],
+  'u-09': ["Only if", "will you", "it's myself that", "is what I did", "Why is it"],
+  'u-10': ["what I'd seen", "how ambiguous", "what generation", "What you do", "that would last", "as it's lived", "I don't think"],
+  'u-11': ["see me falling", "watching", "experiencing", "trying to take", "looking at"],
+  'u-12': ["Would you be", "hadn't", "would have", "should have", "she'd", "gave me the choice", "I would marry"],
+  'u-13': ["I wish", "I wished", "I'd been", "had met", "wishing"],
+}
+
+function escapeRe(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+/** 이 유닛이 가르치는 표현에 표시를 남긴다. 긴 것부터 잡아야 겹치지 않는다. */
+function AnchorText({ text, unitId }) {
+  const marks = MARKS[unitId] ?? []
+  const parts = useMemo(() => {
+    if (marks.length === 0) return [text]
+    const re = new RegExp(
+      `(${[...marks].sort((a, b) => b.length - a.length).map(escapeRe).join('|')})`,
+      'gi'
+    )
+    return text.split(re)
+  }, [text, unitId])
+
+  const isMark = (p) =>
+    marks.some((m) => m.toLowerCase() === (p ?? '').toLowerCase())
+
   return (
     <p className="read" style={{ fontSize: 17, lineHeight: 1.75 }}>
       {parts.map((p, i) =>
-        /^(\w+['’]d|would)$/i.test(p) ? (
+        isMark(p) ? (
           <span className="hl" key={i}>
             {p}
           </span>
@@ -61,7 +100,7 @@ export default function UnitStudy({ unit, vocabById, progress, onBack, onStartQu
         <div className="section-title">앵커 장면</div>
         {unit.anchors.map((a, i) => (
           <article className="panel stack" key={i} style={{ gap: 'var(--s3)' }}>
-            <AnchorText text={a.en} />
+            <AnchorText text={a.en} unitId={unit.unitId} />
             <p style={{ color: 'var(--text-dim)', fontSize: 14, margin: 0 }}>{a.ko}</p>
             <div className="row row--between">
               <span className="chip">
@@ -101,7 +140,7 @@ export default function UnitStudy({ unit, vocabById, progress, onBack, onStartQu
         <div className="panel stack" style={{ gap: 'var(--s3)' }}>
           {unit.generatedExamples.map((ex, i) => (
             <div className="stack stack--tight" key={i}>
-              <AnchorText text={ex.en} />
+              <AnchorText text={ex.en} unitId={unit.unitId} />
               <p style={{ color: 'var(--text-faint)', fontSize: 13, margin: 0 }}>
                 {ex.ko}
               </p>

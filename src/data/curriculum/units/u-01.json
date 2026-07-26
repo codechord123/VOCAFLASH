@@ -1,0 +1,1114 @@
+{
+  "unit": {
+    "unitId": "u-01",
+    "act": 1,
+    "order": 1,
+    "title": "생략 의문문 + 문미 부가",
+    "tagline": "낯선 사람에게 말을 붙이는 순간, 문장 앞머리가 통째로 사라진다",
+    "anchors": [
+      {
+        "en": "This fine here?",
+        "ko": "여기 괜찮아요?",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Céline",
+        "sceneNote": "라운지 칸에 막 들어선 참. 셀린이 테이블을 가리키며 던지는 첫마디다. Is this fine here?에서 Is가 통째로 날아갔다 — 앉을 자리를 정하는 1초짜리 질문에 완전한 문장을 쓰면 그 자체로 거리가 생긴다. 이 유닛 전체가 여기서 시작한다."
+      },
+      {
+        "en": "Hey, you coming from Budapest?",
+        "ko": "저기, 부다페스트에서 오시는 길이에요?",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Jesse",
+        "sceneNote": "대화가 한 번 끊기고 어색한 정적이 흐른 뒤, 제시가 Hey를 앞에 붙여 다시 말을 건다. Are you coming~?의 Are가 사라진 자리를 Hey가 메운다. 격식을 갖춘 질문이 아니라 '계속 얘기하고 싶다'는 신호에 가깝다."
+      },
+      {
+        "en": "You get off here, no?",
+        "ko": "여기서 내리시죠, 그렇죠?",
+        "source": "before-sunrise",
+        "chapter": 2,
+        "speaker": "Céline",
+        "sceneNote": "기차가 빈에 들어서며 속도를 줄이는 순간, 창밖을 보던 셀린이 묻는다. 답을 몰라서가 아니라 헤어짐을 먼저 입에 올리는 대사다. 문미의 no?는 프랑스어 n'est-ce pas?를 그대로 옮긴 셀린 특유의 말버릇 — 영어가 아직 완전히 자기 것이 아닌 사람이 가장 중요한 순간에 모국어의 리듬으로 말한다."
+      }
+    ],
+    "rules": [
+      {
+        "id": "r1",
+        "title": "문두의 be동사·조동사가 통째로 사라진다",
+        "body": "구어에서 문장 첫머리의 약한 음절은 거의 들리지 않고, 결국 아예 없어진다. 셀린은 자리를 가리키며 Is this fine here?가 아니라 \"This fine here?\"라 하고, 제시는 Are you coming from Budapest?를 \"Hey, you coming from Budapest?\"로 던진다. 문법이 무너진 게 아니다 — 의문의 표시가 어순에서 억양(끝올림)으로 옮겨간 것이다.",
+        "isTrap": false
+      },
+      {
+        "id": "r2",
+        "title": "지워지는 순서는 언제나 문장 맨 앞부터",
+        "body": "be동사 의문문은 be만 지워진다: (Are) you on holiday? / (Is) this fine here? 조동사 do 의문문은 do you까지 함께 지워진다: (Do you) want some coffee? 중간을 건너뛰고 지우는 일은 없다. 그래서 남은 조각만 보고도 원래 문장이 복원된다 — you + -ing가 남으면 Are, this/that + 형용사가 남으면 Is다.",
+        "isTrap": false
+      },
+      {
+        "id": "r3",
+        "title": "생략 의문문은 '거리 좁히기' 전용 ★역방향 함정",
+        "body": "처음 보는 사람에게도 쓰지만, 어디까지나 사적인 구어다. 면접·이메일·발표에서 You hiring right now?라고 하면 무례하게 들리고, Are you hiring right now?로 되살려야 한다. 다만 한국인 학습자는 반대쪽으로 더 자주 틀린다 — 편한 자리에서까지 Is this seat fine for you?처럼 꼬박꼬박 완전한 문장을 써서 딱딱하고 멀게 들리는 경우다.",
+        "isTrap": true
+      },
+      {
+        "id": "r4",
+        "title": "셀린의 no?는 영어가 아니라 프랑스어다",
+        "body": "문장 끝에 붙는 no?는 프랑스어 n'est-ce pas?를 그대로 옮긴 것이다. 셀린은 영화 내내 이렇게 말한다 — \"You get off here, no?\", \"That's mean, no?\", \"That's wonderful, no?\". 뜻은 통하지만 원어민 영어는 아니다. 같은 자리에 right?를 쓰거나, 앞 문장에 맞춘 부가의문문(don't you?)을 쓴다. 제시는 실제로 no?를 한 번도 쓰지 않고 right?만 쓴다: \"you don't speak any other language, right?\"",
+        "isTrap": true
+      },
+      {
+        "id": "r5",
+        "title": "부가의문문은 앞 문장의 주어·동사를 되받는다 ★최다 실수",
+        "body": "한국어는 '그렇죠?' 하나로 끝나지만 영어는 앞 문장의 주어와 동사를 그대로 되받고, 긍정이면 부정으로 뒤집는다. ⭕ You're American, aren't you? ❌ You are American, isn't it? / ⭕ You get off here, don't you? ❌ You get off here, isn't it? isn't it?는 앞 주어가 it일 때만 쓴다 — 제시의 \"this is kind of weird isn't it?\"가 그 경우다.",
+        "isTrap": true
+      },
+      {
+        "id": "r6",
+        "title": "right?는 반전이 필요 없는 안전한 태그",
+        "body": "right?는 앞 문장의 동사·주어를 되받지 않으므로 극성 반전 실수가 아예 생기지 않는다. 제시가 계속 이걸 쓰는 이유다. 다만 '내 말 맞지?' 하고 동의를 요구하는 결이 있어서, 연달아 쓰면 상대를 다그치는 인상을 준다. 확인이 아니라 진짜 질문이라면 태그 없이 그냥 묻는 편이 낫다.",
+        "isTrap": false
+      }
+    ],
+    "generatedExamples": [
+      {
+        "en": "This seat taken?",
+        "ko": "이 자리 임자 있어요?"
+      },
+      {
+        "en": "You waiting for the 7:40 too?",
+        "ko": "혹시 7시 40분 열차 기다리시는 거예요?"
+      },
+      {
+        "en": "You from around here?",
+        "ko": "이 근처 사세요?"
+      },
+      {
+        "en": "You've been to Vienna before, haven't you?",
+        "ko": "빈에 와 보신 적 있으시죠?"
+      },
+      {
+        "en": "Long day, huh?",
+        "ko": "긴 하루였죠?"
+      }
+    ],
+    "coverage": {
+      "fromScript": 3,
+      "generated": 5
+    }
+  },
+  "vocab": [
+    {
+      "wordId": "w-0101",
+      "lemma": "argue",
+      "level": "L1",
+      "meaningKo": "말다툼하다; 주장하다",
+      "definitionEn": "to disagree with someone, often angrily",
+      "nuance": "argue about + 주제 / argue with + 사람. 영화의 첫 대사가 이 단어다 — 낯선 두 사람을 이어 준 것이 남의 부부싸움이었다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Do you have any idea what they were arguing about?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0102",
+      "lemma": "ability",
+      "level": "L1",
+      "meaningKo": "능력, (할 수 있는) 힘",
+      "definitionEn": "the power or skill to do something",
+      "nuance": "the ability to + 동사원형이 기본 골격. 재능(talent)이 아니라 '기능적으로 가능한가'를 말한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "as couples get older, they lose their ability to hear each other",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0103",
+      "lemma": "eventually",
+      "level": "L1",
+      "meaningKo": "결국에는, 시간이 지나면",
+      "definitionEn": "in the end, especially after a long time",
+      "nuance": "finally가 '드디어'라면 eventually는 '오래 걸려 결국'. 한국인이 자주 헷갈리는 짝이다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "women eventually lose hearing in the low end",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0104",
+      "lemma": "holiday",
+      "level": "L1",
+      "meaningKo": "휴가; 공휴일",
+      "definitionEn": "a period of time away from work for rest or travel",
+      "nuance": "영국식으로 '휴가'는 on holiday, 미국식은 on vacation. 유럽에 있는 셀린이 미국인 제시에게 던지는 단어라는 점이 재미있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You on holiday?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0105",
+      "lemma": "complain",
+      "level": "L1",
+      "meaningKo": "불평하다, 문제를 제기하다",
+      "definitionEn": "to say that you are unhappy or dissatisfied with something",
+      "nuance": "complain about + 대상, complain to + 상대. 여기서는 '부모에게 정식으로 항의한다'는 결.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0106",
+      "lemma": "attitude",
+      "level": "L1",
+      "meaningKo": "태도, (무엇을 대하는) 자세",
+      "definitionEn": "the way you think and feel about something",
+      "nuance": "attitude toward(s) + 대상이 기본 결합. 단독으로 have an attitude라고 하면 '건방지다'는 뜻이 되니 주의.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You're really lucky you can have this attitude towards death.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0107",
+      "lemma": "mean",
+      "level": "L1",
+      "meaningKo": "(형용사) 못되게 구는, 심술궂은",
+      "definitionEn": "unkind or cruel to other people",
+      "nuance": "'의미하다'의 mean과 철자만 같은 형용사. 셀린도 Ch 11에서 \"That's mean, no?\"라고 쓴다 — 이 유닛의 no? 용법과 같은 자리다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "No one was ever mean about it.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0108",
+      "lemma": "supposedly",
+      "level": "L2",
+      "meaningKo": "(확인은 안 됐지만) 그렇다고들 하는데",
+      "definitionEn": "according to what people say, though it may not be true",
+      "nuance": "말하는 사람이 책임을 반쯤 내려놓는 장치. 셀린은 이 한 단어로 자기 지식의 출처를 흐리면서 대화를 이어 간다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Well, supposedly, men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0109",
+      "lemma": "high-pitched",
+      "level": "L2",
+      "meaningKo": "음이 높은, 고음의",
+      "definitionEn": "having a high sound or tone",
+      "nuance": "pitch(음높이)가 어원. 반대는 low-pitched. 소리의 '크기'는 loud, '높이'는 pitch로 갈린다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "men lose the ability to hear higher-pitched sounds",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0110",
+      "lemma": "ordinarily",
+      "level": "L2",
+      "meaningKo": "평소 같으면, 보통은",
+      "definitionEn": "usually; under normal circumstances",
+      "nuance": "뒤에 '그런데 지금은 다르다'가 따라온다는 신호. usually보다 대비의 힘이 세다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "you have ideas that you ordinarily wouldn't have",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0111",
+      "lemma": "straight",
+      "level": "L2",
+      "meaningKo": "(기간 뒤에서) 내리, 쉬지 않고",
+      "definitionEn": "continuously, without a break",
+      "nuance": "for a year straight, three days straight처럼 기간 명사 뒤에 붙는다. '똑바로'의 straight와 같은 단어지만 위치가 다르다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "twenty-four hours a day for a year straight",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0112",
+      "lemma": "capture",
+      "level": "L2",
+      "meaningKo": "(장면·느낌을) 담아내다; 포획하다",
+      "definitionEn": "to succeed in recording or expressing something",
+      "nuance": "붙잡아 가둔다는 원뜻이 카메라로 옮겨 온 말. record(그냥 기록)와 달리 '놓치기 쉬운 것을 붙들었다'는 성취감이 있다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "capturing life as it's lived",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0113",
+      "lemma": "continuous",
+      "level": "L2",
+      "meaningKo": "끊기지 않고 이어지는",
+      "definitionEn": "happening without stopping or being interrupted",
+      "nuance": "continual은 '끊겼다 이어졌다 반복', continuous는 '한 번도 안 끊김'. 제시의 기획이 성립하려면 후자여야 한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "so that the play is continuous",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0114",
+      "lemma": "officially",
+      "level": "L2",
+      "meaningKo": "공식적으로, 대놓고 정식으로",
+      "definitionEn": "in a formal and public way",
+      "nuance": "여기서는 '속으로는 불만이어도 밖으로 꺼낼 명분이 없다'는 뜻으로 쓰였다. 셀린이 부모를 원망하지 못하는 이유를 이 부사 하나가 요약한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It makes it even harder to officially complain",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0115",
+      "lemma": "mist",
+      "level": "L2",
+      "meaningKo": "옅은 안개, (물)안개",
+      "definitionEn": "a thin cloud of tiny water drops in the air",
+      "nuance": "fog보다 옅고 투명하다. 여기서는 호스로 만든 물보라 — 그 너머로 죽은 증조할머니를 본다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "through the mist, I could see my grandmother",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0116",
+      "lemma": "suck",
+      "level": "L2",
+      "meaningKo": "형편없다, 최악이다",
+      "definitionEn": "to be very bad or unpleasant",
+      "nuance": "미국 구어의 대표 표현. 주어가 사물이면 '별로다', 사람이면 '못한다'. 제시가 좋았다고 말하려다 말을 뒤집는 순간에 튀어나온다.",
+      "register": "slang",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Yeah, sure, yeah, it's been, umm...it sucked.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0117",
+      "lemma": "nullify",
+      "level": "L3",
+      "meaningKo": "무효로 만들다, 서로 상쇄하다",
+      "definitionEn": "to cancel something out or make it have no effect",
+      "nuance": "null(영, 없음)에서 온 말. 법률에서는 '무효화하다'지만 여기서는 두 힘이 맞부딪혀 0이 된다는 뜻 — 남편은 못 듣고 아내도 못 듣게 되어 결국 싸움이 사라진다.",
+      "register": "formal",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "I guess they sort of nullify each other, or something.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0118",
+      "lemma": "possibility",
+      "level": "L3",
+      "meaningKo": "가능성, 있을 법한 일",
+      "definitionEn": "something that might happen or be true",
+      "nuance": "the possibility of + 동명사 골격. chance가 '확률'이라면 possibility는 '그런 일이 있을 수 있다는 사실' 자체.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "my parents have never really spoken of the possibility of my falling in love",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0119",
+      "lemma": "service-oriented",
+      "level": "L3",
+      "meaningKo": "손님 응대에 신경 쓰는, 서비스 중심의",
+      "definitionEn": "focused on giving good service to customers",
+      "nuance": "-oriented는 '~을 중심에 둔'을 만드는 접미사(result-oriented, family-oriented). 웨이터가 말없이 메뉴만 던지고 가자 제시가 유럽을 한 문장으로 정리하는 말.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You know what? Not service-oriented.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0120",
+      "lemma": "poetry",
+      "level": "L3",
+      "meaningKo": "시(詩); (비유) 시적인 아름다움",
+      "definitionEn": "poems as a form of literature; a quality of beauty and feeling",
+      "nuance": "the poetry of ~는 '~에 깃든 시적인 것'. 셀린이 mundane, boring이라 부른 것을 제시는 같은 말로 poetry라 부른다 — 이 영화의 두 시선이 한 문장에서 갈린다.",
+      "register": "literary",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I was going to say the poetry of day to day life",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0121",
+      "lemma": "be headed",
+      "level": "L4",
+      "meaningKo": "~로 향하다, ~로 가는 길이다",
+      "definitionEn": "to be going in a particular direction",
+      "nuance": "Where are you headed?는 여행지에서 가장 흔한 인사. Where are you going?보다 가볍고 캐주얼하다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "So, where are you headed?",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0122",
+      "lemma": "go blank",
+      "level": "L4",
+      "meaningKo": "머릿속이 하얘지다",
+      "definitionEn": "to suddenly be unable to remember or think of anything",
+      "nuance": "blank는 '아무것도 안 쓰인 빈칸'. my mind went blank가 관용 골격이다. 4년 배운 프랑스어가 창구 앞에서 통째로 날아가는 순간.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I look at this woman, and my mind goes completely blank",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0123",
+      "lemma": "stand in line",
+      "level": "L4",
+      "meaningKo": "줄을 서다",
+      "definitionEn": "to wait in a queue",
+      "nuance": "미국식은 stand/wait in line, 영국식은 queue (up). 한국어 '줄 서다'를 stand a line처럼 쓰지 않도록 전치사 in을 통째로 외울 것.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "When I first got to Paris, I stood in line at the metro station.",
+          "speaker": "Jesse"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0124",
+      "lemma": "on one's own",
+      "level": "L4",
+      "meaningKo": "혼자서, 혼자 힘으로",
+      "definitionEn": "alone, or without help from anyone",
+      "nuance": "alone이 상태의 서술이라면 on your own은 '스스로 택해서 혼자'라는 결. 셀린은 이 표현으로 제시가 혼자인지를 에둘러 확인한다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "You were visiting friends, or just on your own?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0125",
+      "lemma": "can't help it",
+      "level": "L4",
+      "meaningKo": "어쩔 수가 없다, 나도 나를 못 말린다",
+      "definitionEn": "to be unable to stop or control something you do",
+      "nuance": "여기서 help는 '돕다'가 아니라 '피하다'. 뒤에 동사를 붙이면 can't help -ing(~하지 않을 수 없다). 셀린이 두 번 연속 내뱉는 자기 변호.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't help it. I can't help it.",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0126",
+      "lemma": "How about you?",
+      "level": "L4",
+      "meaningKo": "그쪽은요?",
+      "definitionEn": "used to turn the same question back to the other person",
+      "nuance": "구어에서는 about이 뭉개져 How bout you?로 들린다. 셀린이 제시에게 처음으로 되묻는 말 — 질문을 되돌려주는 이 한마디가 대화를 대화로 만든다.",
+      "register": "casual",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "How bout you?",
+          "speaker": "Céline"
+        }
+      ]
+    },
+    {
+      "wordId": "w-0127",
+      "lemma": "grow old together",
+      "level": "L4",
+      "meaningKo": "함께 늙어 가다",
+      "definitionEn": "to spend the rest of your lives together as you age",
+      "nuance": "get old가 그냥 '나이 들다'라면 grow old together는 결혼 서약의 관용구. 제시가 농담으로 던지지만, 이 영화가 20년에 걸쳐 실제로 다루게 될 주제이기도 하다.",
+      "register": "neutral",
+      "domain": "general",
+      "unitId": "u-01",
+      "sources": [
+        {
+          "work": "before-sunrise",
+          "chapter": 1,
+          "context": "Nature's way of allowing couples to grow old together without killing each other.",
+          "speaker": "Jesse"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "quizId": "q-01-001",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "nullify — \"I guess they sort of nullify each other, or something.\"",
+      "wordId": "w-0117",
+      "options": [
+        "증폭시키다",
+        "되풀이하다",
+        "서로 상쇄해 없던 일로 만들다",
+        "떠올리게 하다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-001"
+    },
+    {
+      "quizId": "q-01-002",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "supposedly — \"Well, supposedly, men lose the ability to hear higher-pitched sounds\"",
+      "wordId": "w-0108",
+      "options": [
+        "확실히, 틀림없이",
+        "(확인은 안 됐지만) 그렇다고들 하는데",
+        "전혀 뜻밖에도",
+        "마지못해"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-002"
+    },
+    {
+      "quizId": "q-01-003",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "ordinarily — \"you have ideas that you ordinarily wouldn't have\"",
+      "wordId": "w-0110",
+      "options": [
+        "기꺼이",
+        "즉시",
+        "어쩔 수 없이",
+        "평소 같으면, 보통은"
+      ],
+      "answerIndex": 3,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-003"
+    },
+    {
+      "quizId": "q-01-004",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "service-oriented — \"You know what? Not service-oriented.\"",
+      "wordId": "w-0119",
+      "options": [
+        "손님 응대에 신경 쓰는",
+        "시간 약속을 잘 지키는",
+        "가격이 합리적인",
+        "위생 관리가 철저한"
+      ],
+      "answerIndex": 0,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-005"
+    },
+    {
+      "quizId": "q-01-005",
+      "unitId": "u-01",
+      "type": "meaning",
+      "prompt": "go blank — \"I look at this woman, and my mind goes completely blank\"",
+      "wordId": "w-0122",
+      "options": [
+        "말문이 트이다",
+        "화가 나서 눈앞이 캄캄해지다",
+        "머릿속이 하얘지다",
+        "깜빡 잠이 들다"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": null,
+      "srsCardId": "c-01-007"
+    },
+    {
+      "quizId": "q-01-006",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "셀린의 \"You on holiday?\"를 생략 없는 완전한 문장으로 되살리면: ___ you on holiday?",
+      "options": [
+        "Do",
+        "Are",
+        "Have",
+        "Will"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r2",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-007",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "셀린이 테이블을 가리키며 한 \"This fine here?\"의 완전한 형태는?",
+      "options": [
+        "Does this fine here?",
+        "This is fine here?",
+        "Is this fine here?",
+        "Are this fine here?"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-008",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "셀린의 \"You get off here, no?\"를 원어민이 쓰는 부가의문문으로 고치면: You get off here, ___?",
+      "options": [
+        "isn't it",
+        "don't you",
+        "no",
+        "aren't you"
+      ],
+      "answerIndex": 1,
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-009",
+      "unitId": "u-01",
+      "type": "blank",
+      "prompt": "You're American, ___?",
+      "options": [
+        "isn't it",
+        "are you not",
+        "aren't you",
+        "don't you"
+      ],
+      "answerIndex": 2,
+      "relatedRuleId": "r5",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-010",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "\"This fine here?\"는 문법이 깨진 문장이라, 학습자가 따라 써서는 안 된다.",
+      "isCorrect": false,
+      "explanation": "깨진 문장이 아니라 구어의 정상적인 생략형이다. 문두의 Is가 사라지고 의문의 표시가 끝올림 억양으로 옮겨갔을 뿐. 격식 있는 자리에서만 Is this fine here?로 되살리면 된다.",
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-011",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "셀린의 \"You get off here, no?\"에서 문미의 no?는 프랑스어 화자 특유의 말버릇이고, 원어민이라면 보통 right?나 don't you?를 쓴다.",
+      "isCorrect": true,
+      "explanation": "프랑스어 n'est-ce pas?를 그대로 옮긴 것이다. 셀린은 That's mean, no? / That's wonderful, no?처럼 영화 내내 이 형태를 쓰지만, 제시는 한 번도 쓰지 않고 right?만 쓴다.",
+      "relatedRuleId": "r4",
+      "srsCardId": "c-01-013"
+    },
+    {
+      "quizId": "q-01-012",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "\"You are American, isn't it?\"는 자연스러운 부가의문문이다.",
+      "isCorrect": false,
+      "explanation": "부가는 앞 문장의 주어·동사를 그대로 되받아야 한다. 주어가 you이고 동사가 are이므로 aren't you?가 맞는다. isn't it?은 앞 주어가 it일 때만 쓴다.",
+      "relatedRuleId": "r5",
+      "srsCardId": "c-01-014"
+    },
+    {
+      "quizId": "q-01-013",
+      "unitId": "u-01",
+      "type": "truefalse",
+      "prompt": "면접 자리에서 \"You hiring right now?\"라고 물어도 격식상 문제가 없다.",
+      "isCorrect": false,
+      "explanation": "생략 의문문은 사적인 구어 전용이다. 면접·이메일·발표에서는 Are you hiring right now?로 되살려야 한다. 반대로 친구 사이에서까지 완전한 문장을 고집하면 딱딱하게 들린다.",
+      "relatedRuleId": "r3",
+      "srsCardId": "c-01-012"
+    },
+    {
+      "quizId": "q-01-014",
+      "unitId": "u-01",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
+      "chunks": [
+        "any other language,",
+        "right?",
+        "And of course,",
+        "you don't speak"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-015",
+      "unitId": "u-01",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 1)",
+      "chunks": [
+        "they lose their ability",
+        "Have you ever heard that",
+        "to hear each other?",
+        "as couples get older,"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-01-010"
+    },
+    {
+      "quizId": "q-01-016",
+      "unitId": "u-01",
+      "type": "arrange",
+      "prompt": "조각을 순서대로 배열하세요",
+      "chunks": [
+        "haven't you?",
+        "You've been",
+        "before,",
+        "to Vienna"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r5",
+      "srsCardId": "c-01-011"
+    },
+    {
+      "quizId": "q-01-017",
+      "unitId": "u-01",
+      "type": "koToEn",
+      "prompt": "저기, 부다페스트에서 오시는 길이에요? (제시가 던진 생략형 그대로)",
+      "chunks": [
+        "Hey,",
+        "from Budapest?",
+        "you",
+        "coming"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r1",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-018",
+      "unitId": "u-01",
+      "type": "koToEn",
+      "prompt": "여기서 내리시죠, 그렇죠? (셀린의 no?를 원어민식 부가로 바꿔서)",
+      "chunks": [
+        "get off",
+        "don't you?",
+        "You",
+        "here,"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r4",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-019",
+      "unitId": "u-01",
+      "type": "koToEn",
+      "prompt": "이 기차 빈으로 가는 거 맞죠?",
+      "chunks": [
+        "goes",
+        "This train",
+        "right?",
+        "to Vienna,"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "altAnswers": [],
+      "relatedRuleId": "r6",
+      "srsCardId": null
+    },
+    {
+      "quizId": "q-01-020",
+      "unitId": "u-01",
+      "type": "anchorRestore",
+      "prompt": "말을 붙이고 헤어지기까지 — 앵커 세 문장을 복원하세요 (빈칸 4개)",
+      "text": "Céline: \"This __1__ here?\" / Jesse: \"Hey, you __2__ from __3__?\" / Céline: \"You get off here, __4__?\"",
+      "blanks": [
+        "fine",
+        "coming",
+        "Budapest",
+        "no"
+      ],
+      "relatedRuleId": "r1",
+      "srsCardId": "c-01-015"
+    }
+  ],
+  "srs": [
+    {
+      "cardId": "c-01-001",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0117",
+      "front": "nullify",
+      "back": {
+        "meaningKo": "무효로 만들다, 서로 상쇄하다",
+        "nuance": "null(영)에서 온 말. 두 힘이 맞부딪혀 0이 된다.",
+        "context": "I guess they sort of nullify each other — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-01-002",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0108",
+      "front": "supposedly",
+      "back": {
+        "meaningKo": "(확인은 안 됐지만) 그렇다고들 하는데",
+        "nuance": "말하는 사람이 출처의 책임을 반쯤 내려놓는 장치.",
+        "context": "Well, supposedly, men lose the ability to hear higher-pitched sounds — Céline, Ch 1"
+      }
+    },
+    {
+      "cardId": "c-01-003",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0110",
+      "front": "ordinarily",
+      "back": {
+        "meaningKo": "평소 같으면, 보통은",
+        "nuance": "뒤에 '그런데 지금은 다르다'가 따라온다는 신호. usually보다 대비가 세다.",
+        "context": "you have ideas that you ordinarily wouldn't have — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-004",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0113",
+      "front": "continuous",
+      "back": {
+        "meaningKo": "끊기지 않고 이어지는",
+        "nuance": "continual(끊겼다 이어졌다)과 달리 한 번도 안 끊긴다는 뜻.",
+        "context": "so that the play is continuous — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-005",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0119",
+      "front": "service-oriented",
+      "back": {
+        "meaningKo": "손님 응대에 신경 쓰는",
+        "nuance": "-oriented = '~을 중심에 둔'. 웨이터가 말없이 가버린 직후의 한마디.",
+        "context": "You know what? Not service-oriented. — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-006",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0121",
+      "front": "be headed",
+      "back": {
+        "meaningKo": "~로 향하다, ~로 가는 길이다",
+        "nuance": "Where are you headed?는 여행지에서 가장 흔한 인사. going보다 가볍다.",
+        "context": "So, where are you headed? — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-007",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0122",
+      "front": "go blank",
+      "back": {
+        "meaningKo": "머릿속이 하얘지다",
+        "nuance": "my mind went blank가 관용 골격. 4년 배운 프랑스어가 창구 앞에서 날아간다.",
+        "context": "I look at this woman, and my mind goes completely blank — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-008",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0124",
+      "front": "on one's own",
+      "back": {
+        "meaningKo": "혼자서, 혼자 힘으로",
+        "nuance": "alone이 상태 서술이라면 on your own은 '스스로 택해서 혼자'.",
+        "context": "You were visiting friends, or just on your own? — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-009",
+      "unitId": "u-01",
+      "kind": "vocab",
+      "wordId": "w-0125",
+      "front": "can't help it",
+      "back": {
+        "meaningKo": "어쩔 수가 없다, 나도 나를 못 말린다",
+        "nuance": "help는 '돕다'가 아니라 '피하다'. 뒤에 동사면 can't help -ing.",
+        "context": "I can't help it. I can't help it. — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-010",
+      "unitId": "u-01",
+      "kind": "pattern",
+      "front": "\"부다페스트에서 오시는 길이에요?\" — 낯선 사람에게 말 붙이듯 영어로?",
+      "back": {
+        "pattern": "(Are) you + -ing ...? — 문두 be동사를 지우고 끝을 올린다",
+        "explanation": "Are you coming from Budapest?에서 Are가 사라진 형태. 남은 조각이 you + -ing이면 지워진 것은 항상 be동사다.",
+        "anchor": "Hey, you coming from Budapest? — Jesse, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-011",
+      "unitId": "u-01",
+      "kind": "pattern",
+      "front": "\"여기 괜찮아요?\" — 자리를 가리키며 한마디로?",
+      "back": {
+        "pattern": "(Is) this + 형용사 ...? — 문두 Is를 지우고 끝을 올린다",
+        "explanation": "Is this fine here?에서 Is가 사라진 형태. this/that + 형용사만 남으면 지워진 것은 Is다.",
+        "anchor": "This fine here? — Céline, Ch 2"
+      }
+    },
+    {
+      "cardId": "c-01-012",
+      "unitId": "u-01",
+      "kind": "trap",
+      "front": "면접에서 \"You hiring right now?\" — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "생략 의문문은 사적인 구어 전용이다. 격식 있는 자리에서는 문두를 되살려 Are you hiring right now?로 물어야 한다.",
+        "relatedRuleId": "r3"
+      }
+    },
+    {
+      "cardId": "c-01-013",
+      "unitId": "u-01",
+      "kind": "trap",
+      "front": "\"You get off here, no?\" — 원어민 영어로 자연스러운가?",
+      "back": {
+        "verdict": false,
+        "reason": "프랑스어 n'est-ce pas?를 그대로 옮긴 셀린의 말버릇이다. 영어로는 You get off here, right? 또는 You get off here, don't you?",
+        "relatedRuleId": "r4"
+      }
+    },
+    {
+      "cardId": "c-01-014",
+      "unitId": "u-01",
+      "kind": "trap",
+      "front": "\"You are American, isn't it?\" — 맞나?",
+      "back": {
+        "verdict": false,
+        "reason": "부가는 앞 문장의 주어·동사를 되받아 뒤집는다. 주어 you, 동사 are이므로 → You're American, aren't you? isn't it?은 앞 주어가 it일 때만.",
+        "relatedRuleId": "r5"
+      }
+    },
+    {
+      "cardId": "c-01-015",
+      "unitId": "u-01",
+      "kind": "anchor",
+      "recitationOnly": true,
+      "front": "기차가 빈에 들어서며 속도를 줄이고, 셀린이 창밖을 보다 고개를 돌리는 순간 — 통으로 떠올려 보세요.",
+      "back": {
+        "en": "You get off here, no?",
+        "speaker": "Céline",
+        "chapter": 2
+      }
+    }
+  ]
+}
