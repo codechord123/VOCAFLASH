@@ -1,6 +1,6 @@
 {
  "note": "읽기 화면에서 한 덩어리로 잡는 표현. 키는 정규화한 소문자.",
- "count": 450,
+ "count": 529,
  "phrases": {
   "a bad liar": {
    "ko": "거짓말을 못하는 사람",
@@ -65,6 +65,15 @@
    "ch": 19,
    "from": "구문"
   },
+  "a few": {
+   "ko": "몇 개의 (적지만 있는)",
+   "en": "a small number of",
+   "nuance": "a가 붙으면 '적어도 몇은 있다'는 긍정이고 a를 떼면 '거의 없다'는 부정이 된다. 셀 수 있는 명사에만 쓰고 셀 수 없는 것에는 a little을 쓴다.",
+   "ctx": "I actually saw this one a few years ago in a museum.",
+   "who": "Céline",
+   "ch": 10,
+   "from": "문법"
+  },
   "a friend of mine": {
    "ko": "내 친구 중 한 명",
    "en": "one of my friends",
@@ -73,6 +82,15 @@
    "who": "Céline",
    "ch": 6,
    "from": "구문"
+  },
+  "a little bit": {
+   "ko": "조금, 약간",
+   "en": "slightly, somewhat",
+   "nuance": "정도를 낮추는 완충 표현이다. 명사를 붙이려면 a little bit of money처럼 of가 필요하다. a little은 셀 수 없는 명사에, a few는 셀 수 있는 명사에 쓴다.",
+   "ctx": "Oh, I understand a little bit, but he doesn't, I'm sorry.",
+   "who": "Céline",
+   "ch": 12,
+   "from": "문법"
   },
   "a little while": {
    "ko": "잠깐 동안",
@@ -92,6 +110,15 @@
    "ch": 3,
    "from": "구문"
   },
+  "a lot of": {
+   "ko": "많은",
+   "en": "many, much, plenty of",
+   "nuance": "셀 수 있는 명사와 없는 명사 모두에 쓸 수 있어 many/much를 고민하지 않아도 되는 만능 표현이다. many는 격식체나 부정문에서 더 자연스럽고 긍정 평서문에는 a lot of가 훨씬 구어답다. lots of는 더 캐주얼하다.",
+   "ctx": "There's a lot of good things coming out of conflict.",
+   "who": "Céline",
+   "ch": 12,
+   "from": "문법"
+  },
   "a lot sooner": {
    "ko": "훨씬 더 일찍",
    "en": "much earlier",
@@ -109,6 +136,24 @@
    "who": "Céline",
    "ch": 15,
    "from": "구문"
+  },
+  "able to": {
+   "ko": "~할 수 있다",
+   "en": "can, be capable of",
+   "nuance": "can은 미래형도 완료형도 만들 수 없어서 그 자리를 be able to가 대신한다. 여기서도 will be가 아니라 gonna be able to로 미래를 만들었다. 단순한 현재의 능력이라면 can이 훨씬 자연스럽고 be able to는 무겁게 들린다.",
+   "ctx": "I don't think I'm gonna be able to make it for lunch today, I'm sorry.",
+   "who": "Céline",
+   "ch": 15,
+   "from": "문법"
+  },
+  "about to": {
+   "ko": "막 ~하려는 참인",
+   "en": "on the point of",
+   "nuance": "be about to 뒤에는 동사원형이 오고 아주 임박한 순간을 가리킨다. 뒤에 명사가 오면 '~에 관하여'라는 전혀 다른 뜻이 되므로 품사로 구분해야 한다. 셀린은 죽음 바로 직전에 누워 있는 노파를 떠올린다.",
+   "ctx": "I always have this strange feeling that I am this very old woman laying down about to die.",
+   "who": "Céline",
+   "ch": 11,
+   "from": "문법"
   },
   "about to die": {
    "ko": "곧 죽으려는 참인",
@@ -191,6 +236,24 @@
    "ch": 14,
    "from": "구문"
   },
+  "all those": {
+   "ko": "그 많은 ~들",
+   "en": "all of those",
+   "nuance": "those가 거리를 두고 가리키면서 감정을 싣는다. 셀린이 말하는 all those unknown people에는 애틋함이 배어 있다. all of those도 되지만 명사가 바로 오면 of를 빼는 쪽이 자연스럽다.",
+   "ctx": "I always liked the idea of all those unknown people lost in the world.",
+   "who": "Céline",
+   "ch": 7,
+   "from": "문법"
+  },
+  "along with": {
+   "ko": "~에 딸려서, ~와 함께",
+   "en": "together with, accompanying",
+   "nuance": "주된 것에 부수적으로 따라온다는 뉘앙스라 이 대사에서는 좋은 유년기에 '덤으로 딸려 온' 헛소리를 가리킨다. along with가 주어를 이어도 동사는 앞 주어에만 맞춘다.",
+   "ctx": "Well, you know, despite all that kind of bullshit that comes along with it, I remember childhood as this, you know, this magical time.",
+   "who": "Jesse",
+   "ch": 2,
+   "from": "문법"
+  },
   "an hour or so": {
    "ko": "한 시간쯤",
    "en": "about an hour",
@@ -245,6 +308,24 @@
    "ch": 8,
    "from": "구문"
   },
+  "any kind of": {
+   "ko": "어떤 종류의 ~라도",
+   "en": "any sort of, any form of",
+   "nuance": "조건절이나 부정문에서 범위를 통째로 여는 표현이다. 긍정 평서문에 쓰면 '아무거나 상관없다'는 뜻이 된다. 셀린은 신의 존재 자체를 조건으로 걸면서 종류를 따지지 않겠다고 열어 둔다.",
+   "ctx": "You know, I believe if there's any kind of God, it wouldn't be in any of us.",
+   "who": "Céline",
+   "ch": 14,
+   "from": "문법"
+  },
+  "any more": {
+   "ko": "더 이상 (~않다)",
+   "en": "no longer",
+   "nuance": "부정문 끝에 붙어 '이제는 아니다'를 만든다. 시간 뜻으로 쓸 때는 미국식으로 anymore로 붙여 쓰는 일이 많고, 양을 뜻할 때는 any more money처럼 반드시 띄어 쓴다.",
+   "ctx": "But museums are not that funny any more these days, uh...",
+   "who": "Man with tie",
+   "ch": 4,
+   "from": "문법"
+  },
   "are you with anyone": {
    "ko": "누구 만나는 사람 있어?",
    "en": "are you seeing anyone",
@@ -290,6 +371,15 @@
    "ch": 5,
    "from": "구문"
   },
+  "as if": {
+   "ko": "마치 ~인 것처럼",
+   "en": "as though, like",
+   "nuance": "사실이 아닌 걸 빗댈 때는 뒤에 가정법을 써서 as if he were로 간다. 실제로 그럴 법한 추측이면 현재시제도 쓴다. 구어에서는 like로 대체되지만 글에서는 as if가 안전하다.",
+   "ctx": "I dunno, the key, the key (squints his eyes as if perplexed)...the thing that kind of haunts me is the distribution, you know.",
+   "who": "Jesse",
+   "ch": 2,
+   "from": "문법"
+  },
   "as long as": {
    "ko": "~하기만 하면",
    "en": "provided that",
@@ -298,6 +388,15 @@
    "who": "Céline",
    "ch": 14,
    "from": "구문"
+  },
+  "as much as": {
+   "ko": "~하는 만큼",
+   "en": "to the same extent that",
+   "nuance": "양이나 정도의 동등 비교다. 셀 수 있는 명사에는 as many as를 쓴다. 문장 앞에 오면 '~이긴 하지만'이라는 양보 뜻도 되니 위치를 보고 판단해야 한다.",
+   "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
+   "who": "Céline",
+   "ch": 14,
+   "from": "문법"
   },
   "as the night went on": {
    "ko": "밤이 깊어가면서",
@@ -325,6 +424,15 @@
    "who": "Céline",
    "ch": 5,
    "from": "구문"
+  },
+  "at all": {
+   "ko": "조금도 (부정 강조)",
+   "en": "in the slightest",
+   "nuance": "부정문, 의문문, 조건절에서만 쓰이고 평서문에서는 쓰지 않는다. nothing at all은 '정말 아무것도'라는 완전 부정이다. 감사 인사에 대한 Not at all은 '천만에요'라는 굳은 응답이다.",
+   "ctx": "Nothing, nothing at all.",
+   "who": "Céline",
+   "ch": 12,
+   "from": "문법"
   },
   "at arms length": {
    "ko": "팔 하나 거리에, 팔을 뻗은 만큼 떨어뜨려",
@@ -370,6 +478,24 @@
    "who": "Jesse",
    "ch": 13,
    "from": "구문"
+  },
+  "at that time": {
+   "ko": "그 당시에는",
+   "en": "then, back then",
+   "nuance": "과거의 특정 시점을 콕 집는다. 지금과 대비될 때 쓰기 때문에 이 대사에서도 '그때의 나'와 지금의 나가 갈린다. 습관적 과거를 뭉뚱그리는 in those days와는 결이 다르다.",
+   "ctx": "I think it left a bigger impression on me at that time than any of the museums we went to.",
+   "who": "Céline",
+   "ch": 7,
+   "from": "문법"
+  },
+  "at the end of": {
+   "ko": "~의 끝 무렵에",
+   "en": "at the close of",
+   "nuance": "구체적인 기간이나 사물의 끝을 가리킨다. '결국'이라는 뜻의 in the end와 혼동하기 쉬운데 그쪽은 뒤에 of가 붙지 않는다. 뒤에는 반드시 명사가 온다.",
+   "ctx": "You know we kind of wrote these little declarations of love to each other at the end of the summer, and you know, promised we would keep writing forever",
+   "who": "Céline",
+   "ch": 5,
+   "from": "문법"
   },
   "at work here": {
    "ko": "여기에 작용하고 있는",
@@ -632,6 +758,15 @@
    "ch": 5,
    "from": "구문"
   },
+  "capable of": {
+   "ko": "~할 능력이 있는",
+   "en": "able to, having the capacity for",
+   "nuance": "of가 전치사라 뒤에 반드시 동명사가 온다. be able to가 to부정사를 받는 것과 대조되니 짝으로 외우면 좋다. 사람뿐 아니라 사물의 성능에도 쓴다.",
+   "ctx": "men are destroying women, or are able...capable of destroying women, much more than women",
+   "who": "Céline",
+   "ch": 14,
+   "from": "문법"
+  },
   "check out the town": {
    "ko": "시내를 구경하다",
    "en": "have a look around town",
@@ -730,6 +865,15 @@
    "who": "Jesse",
    "ch": 9,
    "from": "구문"
+  },
+  "could have": {
+   "ko": "~할 수도 있었다 (하지만 안 했다)",
+   "en": "could have (unrealized possibility)",
+   "nuance": "능력이나 가능성은 있었는데 실현되지 않았다는 뜻이다. 셀린은 비행기를 탈 수 있었지만 무서워서 기차를 탔다. 뒤에 but이 따라붙는 일이 아주 많다.",
+   "ctx": "I could have flown to Paris, but I'm too scared.",
+   "who": "Céline",
+   "ch": 2,
+   "from": "문법"
   },
   "couldn't help it": {
    "ko": "어쩔 수 없었다",
@@ -830,6 +974,15 @@
    "ch": 10,
    "from": "구문"
   },
+  "don't have to": {
+   "ko": "~할 필요 없다",
+   "en": "need not, be not required to",
+   "nuance": "must not(절대 하면 안 된다)과 정반대다. don't have to는 '안 해도 된다'는 면제다. 셀린이 거절한 뒤 제시가 '안 해도 괜찮다'고 물러서는 장면이라 금지가 아니라 해제의 뜻이다.",
+   "ctx": "We don't have to have sex. It's not a big deal.",
+   "who": "Jesse",
+   "ch": 19,
+   "from": "문법"
+  },
   "don't mind": {
    "ko": "개의치 않다, 싫지 않다",
    "en": "aren't bothered by",
@@ -893,6 +1046,15 @@
    "ch": 11,
    "from": "구문"
   },
+  "each other": {
+   "ko": "서로",
+   "en": "one another",
+   "nuance": "목적어나 전치사 뒤에만 오고 주어 자리에는 절대 못 온다. We love each other는 되지만 Each other love us는 틀린다. 소유격은 each other's로 쓰고 뒤 명사는 대개 단수다.",
+   "ctx": "Have you ever heard that as couples get older, they lose their ability to hear each other?",
+   "who": "Céline",
+   "ch": 1,
+   "from": "문법"
+  },
   "each time": {
    "ko": "~할 때마다",
    "en": "every time",
@@ -911,6 +1073,15 @@
    "ch": 14,
    "from": "구문"
   },
+  "end up": {
+   "ko": "결국 ~하게 되다",
+   "en": "eventually come to, wind up",
+   "nuance": "의도하지 않은 결말을 말한다. 뒤에는 -ing나 형용사, 전치사구가 오고 to부정사는 오지 않는다. end up to write는 틀리고 end up writing이 맞다.",
+   "ctx": "People always exchange phone numbers, addresses, they end up writing once, calling each other once or twice...",
+   "who": "Céline",
+   "ch": 17,
+   "from": "문법"
+  },
   "end up writing": {
    "ko": "결국 편지나 쓰게 되다",
    "en": "wind up writing",
@@ -919,6 +1090,15 @@
    "who": "Céline",
    "ch": 17,
    "from": "구문"
+  },
+  "even as": {
+   "ko": "~였을 때조차, ~하는 바로 그때에도",
+   "en": "at the very time when, already when",
+   "nuance": "when에 even이 붙어 '그렇게 이른 시점에도 이미'라는 놀라움을 얹는다. 어린애였을 때부터 벌써 진로 이야기를 들었다는 뜻이다. even if(가정), even though(사실 양보)와 뜻이 완전히 다르다.",
+   "ctx": "Even as a little girl, they wanted me to think of a future career, as a, you know, as an interior designer, or a lawyer, or something like that.",
+   "who": "Céline",
+   "ch": 2,
+   "from": "문법"
   },
   "even if": {
    "ko": "설령 ~였다 해도",
@@ -937,6 +1117,15 @@
    "who": "Céline",
    "ch": 13,
    "from": "내 하이라이트"
+  },
+  "every time": {
+   "ko": "~할 때면 언제나",
+   "en": "whenever",
+   "nuance": "every time (that) 형태로 절을 이끄는 접속사다. 이 대사처럼 that을 붙여도 되고 빼도 된다. 시간 부사구라서 앞에 at이나 in을 쓰지 않는다.",
+   "ctx": "The way...the way every time that we would have people over...I'd be insecure, and I'd get a little too drunk.",
+   "who": "Jesse",
+   "ch": 19,
+   "from": "문법"
   },
   "fall in love": {
    "ko": "사랑에 빠지다",
@@ -1235,6 +1424,15 @@
    "ch": 3,
    "from": "구문"
   },
+  "get to": {
+   "ko": "~하게 되다 (좋은 기회로)",
+   "en": "have the chance to, be allowed to",
+   "nuance": "have to가 억지로 하는 것이라면 get to는 하고 싶던 걸 하게 되는 혜택이다. 돈을 냈으니 기분 좋은 말을 '들을 수 있게 된다'는 비꼼이 이 대사에 있다. 장소 앞에서는 그냥 '도착하다'라는 뜻이라 문맥으로 갈린다.",
+   "ctx": "You pay your money, you get to hear something that makes you feel good about yourself.",
+   "who": "Jesse",
+   "ch": 9,
+   "from": "문법"
+  },
   "get to hear": {
    "ko": "듣게 되다(그런 기회를 얻다)",
    "en": "be allowed or able to hear",
@@ -1324,6 +1522,15 @@
    "who": "Céline",
    "ch": 5,
    "from": "구문"
+  },
+  "going to": {
+   "ko": "~할 것이다 (이미 마음먹은 일)",
+   "en": "be about to, intend to",
+   "nuance": "will이 말하는 순간 정해지는 결정이라면 be going to는 이미 정해 둔 계획이나 눈앞의 조짐이다. 제시가 질문 놀이를 '하기로 정해 놓고' 꺼내는 대사라 will이 아니라 going to가 자연스럽다.",
+   "ctx": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
+   "who": "Jesse",
+   "ch": 5,
+   "from": "문법"
   },
   "gone for that": {
    "ko": "그런 걸 받아들였을",
@@ -1550,6 +1757,15 @@
    "ch": 5,
    "from": "구문"
   },
+  "has to": {
+   "ko": "~해야 한다 (3인칭 단수 주어)",
+   "en": "must (third person singular)",
+   "nuance": "everybody, everyone, nobody는 뜻이 복수처럼 느껴져도 문법상 단수라서 have to가 아니라 has to를 쓴다. 한국인 학습자가 가장 자주 놓치는 -s다.",
+   "ctx": "All those mundane, boring things everybody has to do every day of their fucking life?",
+   "who": "Céline",
+   "ch": 2,
+   "from": "문법"
+  },
   "has to say": {
    "ko": "(그 사람이) 하는 말",
    "en": "the opinion he/she expresses",
@@ -1622,6 +1838,15 @@
    "ch": 12,
    "from": "구문"
   },
+  "have never": {
+   "ko": "한 번도 ~한 적이 없다",
+   "en": "has at no time",
+   "nuance": "현재완료의 경험 부정이라 never는 have와 과거분사 사이에 들어간다. 이미 부정이므로 not을 또 쓰지 않는다. 과거의 특정 시점이 문장에 나오면 완료 대신 과거시제를 써야 한다.",
+   "ctx": "You know my parents have never really spoken of the possibility of my falling in love, or getting married, or having children.",
+   "who": "Céline",
+   "ch": 2,
+   "from": "문법"
+  },
   "have never really spoken of": {
    "ko": "한 번도 제대로 입에 올린 적이 없다",
    "en": "have never seriously mentioned or discussed",
@@ -1639,6 +1864,15 @@
    "who": "Jesse",
    "ch": 19,
    "from": "구문"
+  },
+  "have to": {
+   "ko": "~해야 한다 (사정상 어쩔 수 없이)",
+   "en": "must, be obliged to",
+   "nuance": "must가 말하는 사람의 판단이라면 have to는 바깥 사정이 시켜서 하는 것이다. 제시의 대사도 '테이프가 계속 돌아가야만 성립한다'는 조건이 시키는 의무다. must에는 과거형이 없어서 과거는 무조건 had to를 쓴다.",
+   "ctx": "'cause it would have to play all the time, or else it just wouldn't work.",
+   "who": "Jesse",
+   "ch": 2,
+   "from": "문법"
   },
   "have told somebody": {
    "ko": "누군가에게 (사랑한다고) 말한 적이 있다",
@@ -1793,6 +2027,15 @@
    "ch": 1,
    "from": "구문"
   },
+  "how to": {
+   "ko": "~하는 방법",
+   "en": "the way to, in what manner to",
+   "nuance": "의문사와 to부정사가 붙어 통째로 명사 노릇을 한다. 뒤에는 반드시 동사원형이 온다. how I could take으로 풀어 쓸 수 있고 주어가 문장 주어와 같을 때만 이 압축형을 쓴다.",
+   "ctx": "my sister had just taught me how to take the garden hose",
+   "who": "Jesse",
+   "ch": 2,
+   "from": "문법"
+  },
   "how you been": {
    "ko": "그동안 어떻게 지냈어",
    "en": "how have you been",
@@ -1837,6 +2080,15 @@
    "who": "Jesse",
    "ch": 19,
    "from": "내 하이라이트"
+  },
+  "i don't think": {
+   "ko": "~아닌 것 같다",
+   "en": "I think that ... not",
+   "nuance": "한국어는 '아니라고 생각한다'지만 영어는 부정을 앞 동사로 끌어올린다. I think it doesn't matter보다 I don't think it matters가 훨씬 자연스럽다. 부정 전이라고 부르는 이 습관을 한국인 학습자가 가장 자주 놓친다.",
+   "ctx": "I don't think it really matters what generation you are born into.",
+   "who": "Céline",
+   "ch": 8,
+   "from": "문법"
   },
   "i get it": {
    "ko": "무슨 말인지 알겠어",
@@ -2000,6 +2252,15 @@
    "ch": 15,
    "from": "구문"
   },
+  "i'm gonna": {
+   "ko": "나 ~할 거야",
+   "en": "I am going to",
+   "nuance": "going to의 구어 축약이다. 말할 때는 거의 gonna로 발음하지만 글에서는 쓰지 않는다. be동사를 빼고 'I gonna'라고 하면 틀린다. 뒤에는 반드시 동사원형이 오고 명사가 오는 going to(장소로 간다)와는 다르다.",
+   "ctx": "I'm gonna take your picture (puts her at arms length, and stares) so I never forget you...or...or all this.",
+   "who": "Jesse",
+   "ch": 20,
+   "from": "문법"
+  },
   "i'm telling you": {
    "ko": "진짜라니까",
    "en": "believe me",
@@ -2045,6 +2306,24 @@
    "ch": 21,
    "from": "구문"
   },
+  "in any way": {
+   "ko": "어떤 식으로든",
+   "en": "in any manner, at all",
+   "nuance": "조건절이나 부정문에서 범위를 열어 두는 표현이다. 한 단어 anyway(어쨌든)와 소리는 같지만 뜻이 전혀 다르니 띄어쓰기를 지켜야 한다.",
+   "ctx": "And if you like it, I mean, if you like my poem, and you feel it adds something to your life in any way, then you can pay me whatever you feel like.",
+   "who": "Poet",
+   "ch": 12,
+   "from": "문법"
+  },
+  "in front of": {
+   "ko": "~앞에서",
+   "en": "before, facing",
+   "nuance": "물리적으로 마주 보는 앞이다. the를 넣은 in the front of는 '그 안쪽의 앞부분'이라 뜻이 달라진다. 시간 순서의 '앞'은 before를 쓰고 in front of를 쓰지 않는다.",
+   "ctx": "What they do is the couple comes in and they kneel down in front of the whole congregation, and they just stare at each other",
+   "who": "Jesse",
+   "ch": 11,
+   "from": "문법"
+  },
   "in real time": {
    "ko": "현실의 시간 속으로",
    "en": "back in the real world",
@@ -2053,6 +2332,15 @@
    "who": "Jesse",
    "ch": 20,
    "from": "구문"
+  },
+  "in some way": {
+   "ko": "어떤 면에서인가",
+   "en": "somehow, in one respect or another",
+   "nuance": "구체적으로 어떻게인지는 밝히지 않고 두루뭉술하게 넘길 때 쓴다. 이 대사에서도 무엇을 잘했는지는 말하지 않고 '뭔가 하나는 탁월했다'는 식으로 흐린다. 복수형 in some ways는 '어떤 점들에서는'이라는 부분 인정이 된다.",
+   "ctx": "I think I'd rather die knowing that I was really good at something, that I had excelled in some way, you know, than that I had just been in a nice, caring relationship.",
+   "who": "Jesse",
+   "ch": 14,
+   "from": "문법"
   },
   "in such a way that": {
    "ko": "~하는 식으로, ~하도록 하는 방식으로",
@@ -2071,6 +2359,33 @@
    "who": "지문",
    "ch": 20,
    "from": "구문"
+  },
+  "in the same time": {
+   "ko": "동시에 (셀린식 표현)",
+   "en": "at the same time",
+   "nuance": "표준 영어는 at the same time이다. 프랑스어 en même temps를 그대로 옮긴 셀린의 비원어민식 표현이라 원어민 귀에는 살짝 어긋나게 들린다. in the same time을 쓰면 '같은 시간 안에'라는 소요 시간 뜻으로만 자연스럽다.",
+   "ctx": "And in the same time, I love the idea that she had all those emotions and feelings",
+   "who": "Céline",
+   "ch": 8,
+   "from": "문법"
+  },
+  "in the world": {
+   "ko": "세상에서 (최상급·비교 강조)",
+   "en": "on earth, of all",
+   "nuance": "비교급이나 최상급 뒤에 붙어 범위를 최대로 넓히는 장치다. more than anything in the world는 '세상 그 무엇보다'라는 강조다. 의문사 뒤에 붙으면 what in the world처럼 '도대체'가 된다.",
+   "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
+   "who": "Céline",
+   "ch": 8,
+   "from": "문법"
+  },
+  "instead of": {
+   "ko": "~하는 대신에",
+   "en": "rather than, in place of",
+   "nuance": "of가 전치사라 뒤에는 반드시 명사나 -ing가 온다. instead of to ask는 틀리고 instead of asking이 맞다. 부사 instead는 혼자 쓰여 문장 끝이나 앞에 온다.",
+   "ctx": "I mean, instead of just asking you for money, I will ask you for a word.",
+   "who": "Poet",
+   "ch": 12,
+   "from": "문법"
   },
   "is that all": {
    "ko": "그게 다야?",
@@ -2108,6 +2423,15 @@
    "ch": 3,
    "from": "구문"
   },
+  "just as": {
+   "ko": "꼭 그만큼 ~한",
+   "en": "equally as, no less than",
+   "nuance": "as ~ as 동등비교에 just를 붙여 '조금도 덜하지 않게'라고 못을 박는다. 이 대사의 as big a loser as처럼 as 뒤에 형용사가 오면 a가 명사 앞이 아니라 형용사 뒤로 밀린다. 시간 접속사 just as(막 ~하는 순간)와 헷갈리지 말 것.",
+   "ctx": "I'm just as big a loser as he is, totally unmotivated, totally boring, and, uh, you made the right choice, and you're really happy.",
+   "who": "Jesse",
+   "ch": 3,
+   "from": "문법"
+  },
   "just the opposite": {
    "ko": "정반대로",
    "en": "exactly the contrary",
@@ -2144,6 +2468,15 @@
    "ch": 12,
    "from": "구문"
   },
+  "kind of a": {
+   "ko": "일종의 ~같은 것",
+   "en": "sort of a, something of a",
+   "nuance": "kind of 뒤에 단수 가산명사가 오면 a가 필요하다. 격식체에서는 a kind of problem 어순이 정석이지만 구어에서는 이 대사처럼 kind of a problem이 훨씬 흔하다. 확언을 피하는 완충 장치다.",
+   "ctx": "I had a thought the other day that was kind of a--qualifies as a problem.",
+   "who": "Jesse",
+   "ch": 5,
+   "from": "문법"
+  },
   "kind of haunts me is": {
    "ko": "나를 계속 따라다니며 괴롭히는 것은 ~이다",
    "en": "keeps coming back into my mind and won't leave me alone",
@@ -2152,6 +2485,15 @@
    "who": "Jesse",
    "ch": 2,
    "from": "내 하이라이트"
+  },
+  "kind of like": {
+   "ko": "말하자면 ~같은 느낌",
+   "en": "sort of like, somewhat similar to",
+   "nuance": "kind of가 like를 한 번 더 흐려서 비유를 조심스럽게 던진다. 발음은 kinda like로 뭉개진다. 문장 앞에서 앞말을 이어 받아 비유를 덧붙이는 자리에 잘 온다.",
+   "ctx": "Kind of like I'm in a dress rehearsal for a Junior High play.",
+   "who": "Jesse",
+   "ch": 11,
+   "from": "문법"
   },
   "kneel down": {
    "ko": "무릎을 꿇다",
@@ -2207,6 +2549,15 @@
    "ch": 3,
    "from": "구문"
   },
+  "let's just": {
+   "ko": "그냥 ~하자",
+   "en": "why don't we simply",
+   "nuance": "let us의 축약에 just를 얹어 제안의 압박을 덜어 준다. 부정은 let's not이라고 하지 don't let's라고 하지 않는다. 뒤에는 동사원형이 온다.",
+   "ctx": "Now let's just be rational adults about this.",
+   "who": "Céline",
+   "ch": 17,
+   "from": "문법"
+  },
   "let's say": {
    "ko": "~라고 쳐 보자",
    "en": "suppose",
@@ -2224,6 +2575,15 @@
    "who": "Jesse",
    "ch": 14,
    "from": "유닛 어휘"
+  },
+  "like this": {
+   "ko": "이런 식으로",
+   "en": "in this way, thus",
+   "nuance": "like는 전치사라 뒤에 명사나 대명사가 온다. 방식을 뜻하는 절을 이끌려면 as를 쓰는 것이 격식이다. 이 대사의 Think of it like this는 '이렇게 생각해 봐'라며 관점을 제안하는 굳은 표현이다.",
+   "ctx": "Alright, alright. Think of it like this.",
+   "who": "Jesse",
+   "ch": 3,
+   "from": "문법"
   },
   "list a couple": {
    "ko": "두어 개만 대봐",
@@ -2360,6 +2720,15 @@
    "ch": 13,
    "from": "구문"
   },
+  "may i": {
+   "ko": "~해도 될까요",
+   "en": "would it be all right if I",
+   "nuance": "can I보다 격식 있고 조심스러운 허락 요청이다. 낯선 사람에게 말을 거는 시인이 고른 형태라 거리감이 느껴진다. 허가의 may는 사실상 이 1인칭 의문문에서만 살아남았다.",
+   "ctx": "Okay uh, so um, may I ask you a question?",
+   "who": "Poet",
+   "ch": 12,
+   "from": "문법"
+  },
   "meant something to me": {
    "ko": "나에게 의미가 있었다",
    "en": "resonated with me",
@@ -2377,6 +2746,15 @@
    "who": "Jesse",
    "ch": 8,
    "from": "구문"
+  },
+  "might have": {
+   "ko": "~했을지도 모른다",
+   "en": "may possibly have",
+   "nuance": "조동사에 완료를 붙여 과거를 추측한다. may have보다 확신이 낮고, 여기서는 가정법 귀결로 '그랬다면 무슨 일이 있었을까'라는 뜻이다. might of로 적으면 틀린다.",
+   "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
+   "who": "Jesse",
+   "ch": 3,
+   "from": "문법"
   },
   "might have happened": {
    "ko": "일어났을지도 모를 일",
@@ -2423,6 +2801,15 @@
    "ch": 15,
    "from": "구문"
   },
+  "more than": {
+   "ko": "~보다 더",
+   "en": "in excess of, over",
+   "nuance": "비교 대상을 than 뒤에 놓는다. 숫자 앞에서는 '~이상'이지만 그 숫자는 포함하지 않는다. more than anything처럼 대명사가 오면 '그 무엇보다'라는 최상급 강조가 된다.",
+   "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
+   "who": "Céline",
+   "ch": 8,
+   "from": "문법"
+  },
   "more than anything": {
    "ko": "무엇보다도",
    "en": "above all else",
@@ -2431,6 +2818,24 @@
    "who": "Céline",
    "ch": 8,
    "from": "구문"
+  },
+  "most of": {
+   "ko": "~의 대부분",
+   "en": "the majority of",
+   "nuance": "of 뒤에는 the, my, these처럼 한정사가 붙은 명사나 대명사만 온다. 일반적인 '대부분의 사람'은 most people이라고 하지 most of people이라고 하지 않는다. 이 차이를 한국인 학습자가 가장 많이 틀린다.",
+   "ctx": "He explained that most of the people are buried here that washed up on the bank of the Danube.",
+   "who": "Céline",
+   "ch": 7,
+   "from": "문법"
+  },
+  "much more": {
+   "ko": "훨씬 더",
+   "en": "far more, a lot more",
+   "nuance": "비교급을 강조할 때는 much, far, a lot, way를 쓰고 very는 쓸 수 없다. very more는 틀리고 much more가 맞다. 셀 수 있는 명사라면 many more가 된다.",
+   "ctx": "I'm sure even, you know, men are destroying women, or are able...capable of destroying women, much more than women...",
+   "who": "Céline",
+   "ch": 14,
+   "from": "문법"
   },
   "must have been": {
    "ko": "~였을 것이다",
@@ -2468,6 +2873,15 @@
    "ch": 1,
    "from": "구문"
   },
+  "next to": {
+   "ko": "~바로 옆에",
+   "en": "beside, adjacent to",
+   "nuance": "near보다 훨씬 가까워서 '붙어 있다'는 느낌이다. beside와 거의 같지만 next to가 훨씬 구어적이다. besides(게다가)와는 완전히 다른 말이다.",
+   "ctx": "Yeah, she was sitting next to this very weird couple who started fighting so she had to move.",
+   "who": "Jesse",
+   "ch": 15,
+   "from": "문법"
+  },
   "no big deal": {
    "ko": "별일 아니야",
    "en": "not important",
@@ -2485,6 +2899,15 @@
    "who": "Céline",
    "ch": 14,
    "from": "구문"
+  },
+  "no one": {
+   "ko": "아무도 ~않다",
+   "en": "nobody, not a single person",
+   "nuance": "그 자체가 부정이라 문장에 not을 또 넣으면 안 된다. 단수 취급이라 동사도 단수다. no one은 두 단어로 띄어 쓰고 noone이라고 붙여 쓰면 틀린다.",
+   "ctx": "No one was ever mean about it.",
+   "who": "Jesse",
+   "ch": 2,
+   "from": "문법"
   },
   "no problem": {
    "ko": "문제없어",
@@ -2504,6 +2927,24 @@
    "ch": 13,
    "from": "구문"
   },
+  "none of": {
+   "ko": "~중 아무도 ~않다",
+   "en": "not one of, not any of",
+   "nuance": "of 뒤에 한정된 집단이 온다. 격식체에서는 단수 동사를 쓰지만 구어에서는 복수 동사도 흔하다. 이미 부정이 들어 있으므로 문장에 not을 또 넣으면 안 된다.",
+   "ctx": "When I was a little girl, I thought that if none of your family or friends knew you were dead, then it's like not really being dead.",
+   "who": "Céline",
+   "ch": 7,
+   "from": "문법"
+  },
+  "not enough": {
+   "ko": "충분하지 않은, 모자란",
+   "en": "insufficient, too little",
+   "nuance": "enough는 명사 앞에는 붙지만 형용사나 부사 뒤에는 반드시 뒤에 온다. good enough는 맞고 enough good은 틀린다. 이 대사에서는 too much와 짝을 이뤄 과잉과 결핍을 대비시킨다.",
+   "ctx": "You know, rich kids' parents gave them too much, poor kids' not enough.",
+   "who": "Jesse",
+   "ch": 8,
+   "from": "문법"
+  },
   "not long after": {
    "ko": "얼마 지나지 않아",
    "en": "a short time later",
@@ -2512,6 +2953,15 @@
    "who": "Céline",
    "ch": 8,
    "from": "내 하이라이트"
+  },
+  "not really": {
+   "ko": "딱히 그렇진 않다",
+   "en": "not particularly",
+   "nuance": "not이 really를 부정해서 '전혀'가 아니라 '별로'가 된다. 어순을 뒤집은 really not은 반대로 강한 부정이다. 단독으로 답하면 거절을 부드럽게 눌러 주는 완충 장치다.",
+   "ctx": "Was it a beautiful thing? Not really, you know.",
+   "who": "Jesse",
+   "ch": 5,
+   "from": "문법"
   },
   "not service oriented": {
    "ko": "손님 응대에 별로 신경 안 쓴다, 서비스 중심이 아니다",
@@ -2531,6 +2981,15 @@
    "ch": 17,
    "from": "구문"
   },
+  "not that": {
+   "ko": "그렇게까지 ~하지는 않은",
+   "en": "not so, not particularly",
+   "nuance": "that이 형용사 앞에서 '그 정도로'라는 부사가 된다. 제시의 I'm not that sorry는 미안하긴 한데 그리 미안하진 않다는 농담이다. so와 바꿔 써도 되지만 that 쪽이 더 구어적이다.",
+   "ctx": "I'm sorry. I mean, I'm not that sorry. But, uh, tell me about it.",
+   "who": "Jesse",
+   "ch": 13,
+   "from": "문법"
+  },
   "not that funny": {
    "ko": "그렇게까지 재미있지는 않은",
    "en": "not very interesting",
@@ -2539,6 +2998,15 @@
    "who": "Man with tie",
    "ch": 4,
    "from": "구문"
+  },
+  "not yet": {
+   "ko": "아직은 아니다",
+   "en": "not so far",
+   "nuance": "yet은 부정문과 의문문에서 '아직'을 뜻하고 주로 완료 시제와 짝을 이룬다. 대답으로 Not yet만 던지면 '아직 안 했다'는 완전한 문장이 된다. 긍정문에서 '이미'는 already를 쓴다.",
+   "ctx": "No, not yet. What would you be doing?",
+   "who": "Céline",
+   "ch": 12,
+   "from": "문법"
   },
   "nothing at all": {
    "ko": "전혀 아무것도",
@@ -2566,6 +3034,24 @@
    "who": "Céline",
    "ch": 13,
    "from": "구문"
+  },
+  "of course": {
+   "ko": "물론, 당연하지",
+   "en": "naturally, certainly",
+   "nuance": "당연함을 표시하지만 상대의 무지를 전제하면 무례하게 들린다. 셀린의 이 대사도 미국인은 당연히 외국어를 못 한다는 비꼼이다. 부탁에 대한 대답으로 쓰면 흔쾌한 승낙이 된다.",
+   "ctx": "And of course, you don't speak any other language, right?",
+   "who": "Céline",
+   "ch": 2,
+   "from": "문법"
+  },
+  "of course not": {
+   "ko": "당연히 아니지",
+   "en": "certainly not",
+   "nuance": "of course의 부정형으로 통째로 굳은 대답이다. no라고만 하면 밋밋한데 of course not은 '물어볼 것도 없다'는 태도를 얹는다. 편지를 계속 썼냐는 질문에 대한 냉소적 답이다.",
+   "ctx": "Of course not.",
+   "who": "Céline",
+   "ch": 5,
+   "from": "문법"
   },
   "on end": {
    "ko": "(시간이) 내리, 연달아",
@@ -2657,6 +3143,15 @@
    "ch": 2,
    "from": "구문"
   },
+  "only if": {
+   "ko": "오직 ~할 때만",
+   "en": "solely on condition that",
+   "nuance": "only if가 문장 앞에 나가면 주절이 도치되어 will you find처럼 조동사가 주어 앞으로 온다. if only(~라면 좋을 텐데)와 단어 순서만 다르고 뜻은 전혀 다르다.",
+   "ctx": "Only if you find peace within yourself, will you find true connection with others.",
+   "who": "Gypsy",
+   "ch": 9,
+   "from": "문법"
+  },
   "or anything like that": {
    "ko": "뭐 그런 거라도",
    "en": "or something similar",
@@ -2702,6 +3197,15 @@
    "ch": 2,
    "from": "구문"
   },
+  "out of": {
+   "ko": "~에서 밖으로, ~에서 벗어난",
+   "en": "from inside, away from",
+   "nuance": "into의 반대로 안에서 밖으로 나오는 움직임이다. 출발지를 말할 때도 써서 이 대사의 flight out of Europe은 '유럽발 항공편'이다. out of business, out of her mind처럼 '정상 상태를 벗어남'이라는 비유로도 자주 굳는다.",
+   "ctx": "So I bought the cheapest flight out of Europe, this one leaving out of Vienna tomorrow, but it didn't leave for a couple of weeks.",
+   "who": "Jesse",
+   "ch": 13,
+   "from": "문법"
+  },
   "out of business": {
    "ko": "장사를 접게",
    "en": "no longer able to operate",
@@ -2737,6 +3241,15 @@
    "who": "Jesse",
    "ch": 2,
    "from": "내 하이라이트"
+  },
+  "over here": {
+   "ko": "이쪽으로",
+   "en": "to this spot, this way",
+   "nuance": "here가 지점이라면 over here는 그 지점까지 건너오는 이동감이 있다. come over here는 '이리 와'라는 굳은 짝이다. 방향 개념이 이미 있으므로 to를 덧붙이지 않는다.",
+   "ctx": "She's not coming over here.",
+   "who": "Jesse",
+   "ch": 9,
+   "from": "문법"
   },
   "over there": {
    "ko": "저쪽에",
@@ -2972,6 +3485,15 @@
    "ch": 8,
    "from": "구문"
   },
+  "right now": {
+   "ko": "지금 당장, 현재로선",
+   "en": "at this moment, currently",
+   "nuance": "right가 now를 강조해 '바로 지금'이 된다. 이 대사처럼 not right now가 되면 '지금은 아니다'라며 나중의 가능성을 남긴다. 명령문과 함께 쓰면 재촉이 된다.",
+   "ctx": "No, not right now.",
+   "who": "Céline",
+   "ch": 13,
+   "from": "문법"
+  },
   "rob someone blind": {
    "ko": "탈탈 털어먹다, 바가지를 씌우다",
    "en": "to cheat or overcharge someone badly",
@@ -3071,6 +3593,15 @@
    "ch": 14,
    "from": "구문"
   },
+  "seem to": {
+   "ko": "~인 것 같다, ~해 보이다",
+   "en": "appear to",
+   "nuance": "seem 뒤에 동사가 오면 to부정사, 명사가 오면 seem like다. seem like to be처럼 섞어 쓰면 틀린다. 단정을 피하는 완충 장치라 관찰을 조심스럽게 말할 때 쓴다.",
+   "ctx": "I love the way the people seem to be dissolving into the background.",
+   "who": "Céline",
+   "ch": 10,
+   "from": "문법"
+  },
   "service oriented": {
    "ko": "손님 응대에 신경 쓰는, 서비스 중심의",
    "en": "focused on giving good service to customers",
@@ -3133,6 +3664,15 @@
    "who": "Jesse",
    "ch": 12,
    "from": "구문"
+  },
+  "should have": {
+   "ko": "~했어야 했는데 (안 했다)",
+   "en": "ought to have, regrettably didn't",
+   "nuance": "후회나 비난이 섞인 표현이다. 부모가 진작 이혼했어야 했다는 원망이 담겨 있다. 내 일이면 후회, 남의 일이면 비난으로 들리니 상대에게 대놓고 쓰면 공격적이다.",
+   "ctx": "They should have done it a lot sooner, but they stuck together for a while",
+   "who": "Jesse",
+   "ch": 8,
+   "from": "문법"
   },
   "should have told you": {
    "ko": "진작 말했어야 했다",
@@ -3224,6 +3764,24 @@
    "ch": 14,
    "from": "구문"
   },
+  "so many": {
+   "ko": "그렇게나 많은",
+   "en": "such a large number of",
+   "nuance": "셀 수 있는 복수명사에만 붙는다. so many people은 되지만 so much people은 틀린다. 뒤에 that절이 오면 '너무 많아서 ~하다'라는 결과 구문이 된다.",
+   "ctx": "That's why so many people hate themselves.",
+   "who": "Jesse",
+   "ch": 19,
+   "from": "문법"
+  },
+  "so much": {
+   "ko": "너무나 많이, 그렇게까지",
+   "en": "to such a great degree",
+   "nuance": "셀 수 없는 양이나 정도를 강조한다. very much가 담담하다면 so much에는 감정이 실려서 이 대사처럼 고백조가 된다. 셀 수 있는 명사에는 so many를 써야 한다.",
+   "ctx": "But loving someone, and being loved means so much to me.",
+   "who": "Céline",
+   "ch": 14,
+   "from": "문법"
+  },
   "so that": {
    "ko": "~하도록, ~하기 위해서",
    "en": "in order that something can happen",
@@ -3241,6 +3799,24 @@
    "who": "Jesse",
    "ch": 3,
    "from": "구문"
+  },
+  "somebody else": {
+   "ko": "다른 사람",
+   "en": "some other person",
+   "nuance": "someone else와 뜻은 같지만 somebody 쪽이 더 구어적이고 말맛이 가볍다. 제시의 대사에서는 '내가 아닌 다른 사람이 된 기분'이라는 뜻이라 특정인이 아니라 딴사람을 가리킨다.",
+   "ctx": "But being with you...it's made me feel like I was somebody else.",
+   "who": "Jesse",
+   "ch": 19,
+   "from": "문법"
+  },
+  "someone else": {
+   "ko": "다른 누군가",
+   "en": "another person",
+   "nuance": "else는 반드시 someone 뒤에 붙는다. else someone이라고 못 쓴다. 소유격은 someone else's처럼 else에 아포스트로피를 붙이는 것이 규칙이다.",
+   "ctx": "I wished I'd been with someone else.",
+   "who": "Céline",
+   "ch": 19,
+   "from": "문법"
   },
   "something like that": {
    "ko": "뭐 그런 식이야",
@@ -3458,6 +4034,33 @@
    "ch": 13,
    "from": "구문"
   },
+  "than any of": {
+   "ko": "~중 어느 것보다도",
+   "en": "more than any one of",
+   "nuance": "비교급에 than any of를 붙이면 사실상 최상급이 된다. 같은 집단 안에서 비교할 때는 any other를 넣어야 논리가 맞는다. of 뒤에는 한정된 복수명사가 온다.",
+   "ctx": "I think it left a bigger impression on me at that time than any of the museums we went to.",
+   "who": "Céline",
+   "ch": 7,
+   "from": "문법"
+  },
+  "than that": {
+   "ko": "~라는 것보다는",
+   "en": "rather than the fact that",
+   "nuance": "than 뒤에 that절을 놓아 비교 대상을 문장째로 세운다. 앞의 knowing that ~ 과 형태를 맞춰야 병렬이 성립한다. 문어체에 가까운 정교한 비교다.",
+   "ctx": "I think I'd rather die knowing that I was really good at something, that I had excelled in some way, you know, than that I had just been in a nice, caring relationship.",
+   "who": "Jesse",
+   "ch": 14,
+   "from": "문법"
+  },
+  "thank you very much": {
+   "ko": "대단히 고맙군요 (빈정거림)",
+   "en": "thank you so much (often ironic)",
+   "nuance": "문장 끝에 툭 던지면 감사가 아니라 '됐거든?'이라는 비꼼이 된다. 제시가 상류층 말투를 흉내 내며 부모의 명분을 조롱하는 대목이라 정확히 이 반어 용법이다. 진짜 감사로 쓸 때는 문장 처음에 독립적으로 놓는다.",
+   "ctx": "for the well-being of my sister and I, thank you very much.",
+   "who": "Jesse",
+   "ch": 8,
+   "from": "문법"
+  },
   "that come here": {
    "ko": "여기 찾아오는 (사람들)",
    "en": "who come to this place",
@@ -3512,6 +4115,15 @@
    "ch": 5,
    "from": "구문"
   },
+  "that's why": {
+   "ko": "그래서 ~인 것이다",
+   "en": "for that reason",
+   "nuance": "앞말을 원인으로 받아 결과를 내놓는다. 원인을 뒤에 대는 that's because와 방향이 정반대라 자주 헷갈린다. 셀린은 비행기가 무섭다는 말을 받아 기차에 탄 이유를 댄다.",
+   "ctx": "I mean, that's why I'm in a train right now.",
+   "who": "Céline",
+   "ch": 2,
+   "from": "문법"
+  },
   "the best and the worst": {
    "ko": "가장 좋은 것과 가장 나쁜 것",
    "en": "the finest and the vilest",
@@ -3521,6 +4133,15 @@
    "ch": 7,
    "from": "구문"
   },
+  "the first thing": {
+   "ko": "가장 먼저 할 일",
+   "en": "the very first thing",
+   "nuance": "뒤에 오는 관계사 that이 거의 항상 생략된다. 서수와 최상급 뒤에서는 관계대명사가 that이 되고 which를 쓰지 않는다. first thing in the morning처럼 관사 없이 부사구로 굳기도 한다.",
+   "ctx": "What's the first thing you'll do when you get back to Paris?",
+   "who": "Jesse",
+   "ch": 20,
+   "from": "문법"
+  },
   "the most nothing thing": {
    "ko": "하나도 안 중요한 일, 아무것도 아닌 일",
    "en": "the most trivial, meaningless activity imaginable",
@@ -3529,6 +4150,15 @@
    "who": "Jesse",
    "ch": 12,
    "from": "내 하이라이트"
+  },
+  "the only way": {
+   "ko": "유일한 방법",
+   "en": "the sole way",
+   "nuance": "뒤에 to부정사나 that절이 붙어 방법을 구체화한다. only가 붙으면 관계대명사는 that을 쓰는 것이 자연스럽다. 셀린은 오늘 밤으로 끝내는 것 말고는 길이 없다고 못 박는 중이다.",
+   "ctx": "It's the only way, no?",
+   "who": "Céline",
+   "ch": 17,
+   "from": "문법"
   },
   "the other day": {
    "ko": "며칠 전에",
@@ -3556,6 +4186,15 @@
    "who": "Céline",
    "ch": 8,
    "from": "구문"
+  },
+  "the way": {
+   "ko": "~하는 방식",
+   "en": "how, the manner in which",
+   "nuance": "the way 뒤에는 that이나 in which를 넣어도 되고 다 빼도 되지만 the way how는 틀린다. how와 the way는 절대 같이 쓰지 않는다는 것이 핵심이다. 이 대사에서는 '내가 생각하는 방식'이라는 명사절 노릇을 한다.",
+   "ctx": "And I think that really shaped the way I think.",
+   "who": "Jesse",
+   "ch": 8,
+   "from": "문법"
   },
   "these days": {
    "ko": "요즘은",
@@ -3647,6 +4286,15 @@
    "ch": 15,
    "from": "구문"
   },
+  "too much": {
+   "ko": "지나치게 많이",
+   "en": "excessively, more than is good",
+   "nuance": "too는 '많다'가 아니라 '적정선을 넘었다'는 부정 평가다. very much는 칭찬이 되지만 too much는 문제 제기다. 이 대사에서도 부모가 준 것이 넘쳐서 아이를 망쳤다는 뜻이다.",
+   "ctx": "You know, rich kids' parents gave them too much, poor kids' not enough.",
+   "who": "Jesse",
+   "ch": 8,
+   "from": "문법"
+  },
   "took pride in": {
    "ko": "~을 자랑스러워하다",
    "en": "was proud of",
@@ -3718,6 +4366,42 @@
    "who": "Jesse",
    "ch": 15,
    "from": "구문"
+  },
+  "up there": {
+   "ko": "저 위에서",
+   "en": "up above, in that high place",
+   "nuance": "there 앞에 방향 부사를 붙여 높이를 더한다. 뒤에 in the Ferris wheel처럼 전치사구가 따라와 위치를 좁혀 준다. up there at, up there in처럼 이어 쓰지 there의 자리에 전치사를 넣지 않는다.",
+   "ctx": "Then, up there in the Ferris wheel, it was like this very old woman kissing this very young boy, right?",
+   "who": "Céline",
+   "ch": 11,
+   "from": "문법"
+  },
+  "up to": {
+   "ko": "~쪽으로 다가가, ~까지",
+   "en": "toward, as far as",
+   "nuance": "이 지문처럼 사람이나 장소에 가까이 다가가는 접근을 나타낸다. 숫자 앞에 오면 '최대 ~까지', It's up to you가 되면 '너에게 달렸다'로 뜻이 완전히 바뀌니 뒤에 무엇이 오는지를 봐야 한다.",
+   "ctx": "They get into the bar, Céline goes over to a table, and Jesse goes up to the bar.",
+   "who": "지문",
+   "ch": 18,
+   "from": "문법"
+  },
+  "used to": {
+   "ko": "예전에는 ~했다 (지금은 아니다)",
+   "en": "formerly did, no longer does",
+   "nuance": "'지금은 그렇지 않다'는 대조가 핵심이라 이 대사에서도 '예전의 그 에너지'가 사라졌다는 뜻이 된다. 반복 습관에는 would도 되지만 have, be, know 같은 상태동사에는 would를 못 쓰고 used to만 된다. be used to -ing(익숙하다)와 형태가 겹치니 주의.",
+   "ctx": "Only your marriage doesn't have that same energy that it used to have, you know.",
+   "who": "Jesse",
+   "ch": 3,
+   "from": "문법"
+  },
+  "used to always": {
+   "ko": "예전엔 늘 ~하곤 했다",
+   "en": "always used to",
+   "nuance": "빈도부사를 used와 to 사이에 끼워 넣은 구어 어순이다. 격식 있게 쓰려면 always used to ask로 앞에 빼는 편이 안전하다. 반복되던 과거 습관을 강조한다.",
+   "ctx": "I just, I dated this girl once who, who used to always ask me that question, \"What about me bugs you?\" you know.",
+   "who": "Jesse",
+   "ch": 12,
+   "from": "문법"
   },
   "used to have": {
    "ko": "예전엔 있었던",
@@ -3845,6 +4529,15 @@
    "ch": 2,
    "from": "구문"
   },
+  "what about": {
+   "ko": "~는 어떻게 하고?",
+   "en": "how about, what of",
+   "nuance": "how about이 제안 쪽이라면 what about은 빠뜨린 문제를 들이미는 쪽이다. 셀린은 어젯밤의 합리적 결정을 상기시키며 따지고 있다. 뒤에는 명사나 -ing가 온다.",
+   "ctx": "What about our rational, adult decision?",
+   "who": "Céline",
+   "ch": 19,
+   "from": "문법"
+  },
   "what are you talking about": {
    "ko": "무슨 소리야",
    "en": "I don't understand / I disagree",
@@ -3926,6 +4619,15 @@
    "ch": 3,
    "from": "내 하이라이트"
   },
+  "what to": {
+   "ko": "무엇을 ~해야 할지",
+   "en": "what one should",
+   "nuance": "의문사+to부정사가 목적어 자리에 통째로 들어간다. what to do about it은 '그것에 대해 뭘 해야 할지'다. 행동의 주체가 문장 주어와 같아야 이 형태가 성립한다.",
+   "ctx": "people are dying, and nobody knows what to do about it, or they don't give a shit",
+   "who": "Céline",
+   "ch": 5,
+   "from": "문법"
+  },
   "what's up": {
    "ko": "잘 지내? 무슨 일이야?",
    "en": "how are things",
@@ -3979,6 +4681,15 @@
    "who": "Jesse",
    "ch": 18,
    "from": "구문"
+  },
+  "would have": {
+   "ko": "~했을 텐데 (실제로는 안 했다)",
+   "en": "would have (counterfactual)",
+   "nuance": "가정법 과거완료의 귀결절이다. 실제로는 거짓말을 하지 않았다는 뜻이 자동으로 깔린다. 발음은 would've로 뭉개져서 'would of'로 잘못 적는 원어민도 많다.",
+   "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
+   "who": "Céline",
+   "ch": 5,
+   "from": "문법"
   },
   "would you like to": {
    "ko": "~하실래요?",
