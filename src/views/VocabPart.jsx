@@ -252,22 +252,17 @@ function TopicPicker({ cards, onStart }) {
   )
 
   const groups = useMemo(() => {
-    const topic = new Map()
+    // 주제 30개를 따로 세워 두면 목록이 서른 줄이 된다. 게다가 중복을
+    // 걷어내고 나니 주제마다 16~28개로 들쭉날쭉해서, 무엇부터 할지
+    // 고르는 데 시간이 더 걸린다. 주제 어휘는 한 묶음으로 합치고,
+    // 작품에서 나온 표현만 작품별로 남긴다.
     const work = new Map()
+    const topical = []
 
     for (const c of cards) {
-      // 한 단어가 여러 주제에 걸쳐 있으면 그 주제들 모두에 넣는다. 원본
-      // 목록이 주제마다 따로 만들어져서 infrastructure 같은 단어는 기술·
-      // 건축·국제 이슈에 다 나오는데, 그걸 한 주제로만 몰면 나머지 주제가
-      // 빈다. 대신 카드는 하나뿐이라 한 묶음 안에서 두 번 나오지는 않는다.
       const topicIds = c.topicIds?.length ? c.topicIds : c.topicId ? [c.topicId] : []
-      const known = topicIds.filter((t) => TOPICS[t])
-      if (known.length > 0) {
-        for (const t of known) {
-          const g = topic.get(t) ?? []
-          g.push(c)
-          topic.set(t, g)
-        }
+      if (topicIds.some((t) => TOPICS[t])) {
+        topical.push(c)
       } else {
         const key = c.source?.work ?? '기타'
         const g = work.get(key) ?? []
@@ -277,9 +272,7 @@ function TopicPicker({ cards, onStart }) {
     }
 
     return {
-      topics: [...topic.entries()]
-        .sort((a, b) => a[0] - b[0])
-        .map(([id, list]) => ({ id, ...TOPICS[id], cards: list })),
+      topical,
       works: [...work.entries()].map(([name, list]) => ({ name, cards: list })),
     }
   }, [cards])
@@ -342,12 +335,17 @@ function TopicPicker({ cards, onStart }) {
         </section>
       )}
 
-      <section className="stack">
-        <div className="section-title">주제별 어휘</div>
-        {groups.topics.map((g) => (
-          <GroupRow key={g.id} icon={g.icon} name={g.name} cards={g.cards} onStart={onStart} />
-        ))}
-      </section>
+      {groups.topical.length > 0 && (
+        <section className="stack">
+          <div className="section-title">주제별 어휘</div>
+          <GroupRow
+            icon="◇"
+            name="주제별 어휘"
+            cards={groups.topical}
+            onStart={onStart}
+          />
+        </section>
+      )}
     </div>
   )
 }

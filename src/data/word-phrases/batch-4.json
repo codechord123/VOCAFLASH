@@ -1,0 +1,852 @@
+[
+  {
+    "phrase": "i was thinking about",
+    "ko": "~할까 하고 있었는데",
+    "en": "I was considering",
+    "nuance": "지금 막 떠오른 척, 사실은 준비한 제안을 슬쩍 던지는 정형구. 과거진행형이라 거절당해도 물러설 여지가 남는다.",
+    "register": "casual",
+    "ctx": "Look, I was thinking about going to the lounge car sometime soon.",
+    "who": "Jesse",
+    "ch": 1
+  },
+  {
+    "phrase": "nature's way of",
+    "ko": "자연이 ~하는 방식",
+    "en": "how nature arranges for",
+    "nuance": "생물학적 현상을 운명처럼 포장하는 관용 틀. 근거를 대지 않고 '원래 그런 것'으로 넘길 때 쓴다.",
+    "register": "neutral",
+    "ctx": "Nature's way of allowing couples to grow old together without killing each other.",
+    "who": "Jesse",
+    "ch": 1
+  },
+  {
+    "phrase": "spent some time in",
+    "ko": "~에서 얼마간 지냈다",
+    "en": "lived there for a while",
+    "nuance": "lived in처럼 정착을 뜻하지 않고 체류 기간을 일부러 흐린다. 자기 이력을 가볍게 언급할 때 편한 표현.",
+    "register": "neutral",
+    "ctx": "Then I spent some time in London.",
+    "who": "Céline",
+    "ch": 2
+  },
+  {
+    "phrase": "i have no idea",
+    "ko": "전혀 모르겠어",
+    "en": "I really don't know",
+    "nuance": "I don't know보다 강한 '아는 바가 하나도 없다'. 여기선 빈에 뭐가 있는지도 모른 채 간다는 무계획을 드러낸다.",
+    "register": "casual",
+    "ctx": "Uh, I have no idea.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "flying out of",
+    "ko": "~에서 비행기로 떠나다",
+    "en": "departing by plane from",
+    "nuance": "fly out of는 그 도시를 출발지로 삼는다는 뜻. 도착이 아니라 유럽을 뜨는 지점이 빈이라는 정보를 준다.",
+    "register": "neutral",
+    "ctx": "I'm flying out of there tomorrow.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "one of those",
+    "ko": "흔히들 아는 그런 ~ 중 하나",
+    "en": "the well-known kind of",
+    "nuance": "상대도 알 법한 뻔한 부류라 설명을 생략하겠다는 신호. 살짝 시시하다는 자조가 묻는다.",
+    "register": "casual",
+    "ctx": "Yeah, I got one of those Eurail passes, is what I did.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "i'll tell ya",
+    "ko": "있잖아, 말해 줄게",
+    "en": "let me tell you",
+    "nuance": "I'll tell you의 구어 축약. 정보를 주겠다는 예고라기보다 다음 말에 무게를 싣고 주의를 끄는 말버릇.",
+    "register": "casual",
+    "ctx": "Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "you want to hear one",
+    "ko": "하나 들어 볼래?",
+    "en": "do you want to hear one?",
+    "nuance": "Do를 떨어뜨린 구어 의문문. 허락을 구하는 형식으로 상대를 이야기 속으로 끌어들이는 미끼.",
+    "register": "casual",
+    "ctx": "You want to hear one?",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "put it on",
+    "ko": "그걸 방송에 내보내다",
+    "en": "air it, broadcast it",
+    "nuance": "put on은 옷을 입다 말고 '무대나 방송에 올리다'로도 쓴다. 케이블 방송국은 아무 프로나 틀어 줘야 한다는 규정 설명.",
+    "register": "neutral",
+    "ctx": "(Céline shakes her head) Umm, I dunno...Anybody can produce a show real cheap, and they have to put it on.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "for a year straight",
+    "ko": "1년 내내 쉬지 않고",
+    "en": "for a whole year without a break",
+    "nuance": "명사 뒤의 straight는 '연속으로'. for a year와 달리 중간에 끊기지 않는다는 점을 강조한다.",
+    "register": "casual",
+    "ctx": "And I have this idea for this show that would last twenty-four hours a day for a year straight, right?",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "all over the world",
+    "ko": "전 세계 곳곳에서",
+    "en": "from everywhere in the world",
+    "nuance": "in the world가 범위를 가리킨다면 all over the world는 여기저기 흩어져 있음을 강조한다. 명사 뒤에 바로 붙는다.",
+    "register": "neutral",
+    "ctx": "What you do, is you get three hundred and sixty-four people from cities all over the world, to do these twenty-four hour documents of real time, right, capturing life as it‘s lived.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "i was going to say",
+    "ko": "~라고 말하려던 참이었는데",
+    "en": "I was about to say",
+    "nuance": "상대가 먼저 말해 버렸거나 내 표현이 밀렸을 때, 원래 하려던 말을 뒤늦게 꺼내며 한 발 무르는 정형구. 주장을 굽히지 않으면서도 충돌을 피한다.",
+    "register": "casual",
+    "ctx": "I was going to say the poetry of day to day life, but (Celine starts laughing) you know, you say the way you say it, I'll say it the way I say it...",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "from town to town",
+    "ko": "이 마을 저 마을로",
+    "en": "from one town to the next",
+    "nuance": "관사 없이 같은 명사를 반복하면 '차례차례 옮겨 다니는' 그림이 된다. 뒤의 city to city와 리듬을 맞춘 표현.",
+    "register": "neutral",
+    "ctx": "I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "or else",
+    "ko": "안 그러면",
+    "en": "otherwise",
+    "nuance": "if not을 한 단어처럼 뭉친 것. 조건이 안 지켜지면 전부 무너진다는 경고 톤이 실린다.",
+    "register": "casual",
+    "ctx": "I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "just the opposite",
+    "ko": "정반대로",
+    "en": "exactly the contrary",
+    "nuance": "the opposite에 just를 붙여 '딱 반대'. 어른들이 시키는 것과 거꾸로만 갔다는 청개구리 뉘앙스.",
+    "register": "casual",
+    "ctx": "By the time I was in high school, I was dead set on listening to what everybody thought I should be doing with my life, and just kind of (shakes head, shrugs shoulders) doing just the opposite.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "comes along with",
+    "ko": "~에 딸려 오다",
+    "en": "comes as part of",
+    "nuance": "원하지 않아도 세트로 따라오는 것. 어린 시절의 좋은 기억에 붙어 있던 헛소리들을 가리킨다.",
+    "register": "neutral",
+    "ctx": "Well, you know, despite all that kind of bullshit that comes along with it, I remember childhood as this, you know, this magical time.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "sit me down",
+    "ko": "나를 앉혀 놓고 (정색하고 말하다)",
+    "en": "sit me down for a serious talk",
+    "nuance": "단순히 앉히는 게 아니라 진지한 얘기를 하려고 자리를 잡게 만드는 장면. sit down과 달리 목적어가 사이에 들어간다.",
+    "register": "casual",
+    "ctx": "And they, uh, sit me down give me big rap on how [when people die] you never see them again, and how I'd imagined it.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "for sure",
+    "ko": "확실히, 틀림없이",
+    "en": "definitely, without doubt",
+    "nuance": "surely보다 훨씬 구어적이고 동사 뒤에 붙는다. know for sure는 '의심의 여지 없이 안다'로, 죽음을 직감하는 그 몇 초를 가리킨다.",
+    "register": "casual",
+    "ctx": "of those few seconds of consciousness before you're gonna die, you know, when you know for sure you're gonna die.",
+    "who": "Céline",
+    "ch": 2
+  },
+  {
+    "phrase": "i bet",
+    "ko": "그렇겠다, 진짜 그럴 것 같아",
+    "en": "I'm sure it is",
+    "nuance": "내기와는 무관하게 상대 말에 공감하며 맞장구치는 두 단어. 짧게 던져 대화를 이어 준다.",
+    "register": "casual",
+    "ctx": "Yeah, I bet.",
+    "who": "Jesse",
+    "ch": 2
+  },
+  {
+    "phrase": "keep talking",
+    "ko": "계속 이야기를 이어 가다",
+    "en": "go on talking",
+    "nuance": "keep + -ing은 '멈추지 않고'. 헤어지기 싫다는 말을 대화를 더 하고 싶다는 표현으로 돌려 말한 것.",
+    "register": "casual",
+    "ctx": "(Pauses, then sits down.) I want to keep talking to you, you know.",
+    "who": "Jesse",
+    "ch": 3
+  },
+  {
+    "phrase": "a lot more",
+    "ko": "훨씬 더",
+    "en": "much more",
+    "nuance": "비교급 앞의 much를 구어에서 a lot으로 바꾼 형태. 같이 가 달라는 부탁을 부담 없이 포장한다.",
+    "register": "casual",
+    "ctx": "so I was just going to walk around, and it would be a lot more fun if you came with me.",
+    "who": "Jesse",
+    "ch": 3
+  },
+  {
+    "phrase": "jump ahead",
+    "ko": "(시간을) 훌쩍 건너뛰다",
+    "en": "skip forward in time",
+    "nuance": "물리적 도약이 아니라 상상 속 시점 이동. 상대를 미래에 세워 두고 설득하는 제시의 장치.",
+    "register": "casual",
+    "ctx": "Umm-uh, jump ahead, ten, twenty years, okay, and you're married.",
+    "who": "Jesse",
+    "ch": 3
+  },
+  {
+    "phrase": "might have happened",
+    "ko": "일어났을지도 모를 일",
+    "en": "could have happened but didn't",
+    "nuance": "실현되지 않은 과거의 가능성. 후회와 미련을 얹어 상상할 때 쓰는 가정법 덩어리.",
+    "register": "neutral",
+    "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
+    "who": "Jesse",
+    "ch": 3
+  },
+  {
+    "phrase": "picked up with",
+    "ko": "(누군가와) 엮이다, 사귀게 되다",
+    "en": "taken up with, got involved with",
+    "nuance": "pick up(집어 들다)에 with가 붙으면 사람과 인연을 이어 간다는 뜻이 된다. 계획 없이 즉흥적으로 시작된 관계를 가리킨다.",
+    "register": "casual",
+    "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
+    "who": "Jesse",
+    "ch": 3
+  },
+  {
+    "phrase": "let me get",
+    "ko": "내가 ~ 가져올게",
+    "en": "I'll go get",
+    "nuance": "허락을 구하는 형식이지만 실제로는 결정 통보. 셀린의 승낙이 이 한마디로 전해진다.",
+    "register": "casual",
+    "ctx": "Let me get my bag.",
+    "who": "Céline",
+    "ch": 3
+  },
+  {
+    "phrase": "not that funny",
+    "ko": "그렇게까지 재미있지는 않은",
+    "en": "not very interesting",
+    "nuance": "여기서 that은 '그 정도로'라는 부사. not very보다 상대의 기대치를 콕 집어 깎아내리는 어감이다.",
+    "register": "casual",
+    "ctx": "But museums are not that funny ^ any more these days, uh...",
+    "who": "Man with tie",
+    "ch": 4
+  },
+  {
+    "phrase": "a little while",
+    "ko": "잠깐 동안",
+    "en": "a short time",
+    "nuance": "a while보다 짧게 느껴지는 시간. '만난 지 얼마 안 됐지만'이라는 전제를 깔아 다음 제안을 눙친다.",
+    "register": "casual",
+    "ctx": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
+    "who": "Jesse",
+    "ch": 5
+  },
+  {
+    "phrase": "why not",
+    "ko": "안 될 게 뭐 있어",
+    "en": "sure, go ahead",
+    "nuance": "이유를 묻는 질문이 아니라 흔쾌한 허락. Sure 뒤에 붙이면 '얼마든지'에 가깝다.",
+    "register": "casual",
+    "ctx": "Sure, why not?",
+    "who": "Jesse",
+    "ch": 5
+  },
+  {
+    "phrase": "went into",
+    "ko": "(이야기를) 깊이 파고들다",
+    "en": "went into detail about",
+    "nuance": "방에 들어가다가 아니라 화제를 자세히 다루다. go into detail 형태로 굳어 쓰인다.",
+    "register": "neutral",
+    "ctx": "After I went into such private details about my first sexual feelings.",
+    "who": "Céline",
+    "ch": 5
+  },
+  {
+    "phrase": "what if",
+    "ko": "만약 ~라면 어떡할 건데",
+    "en": "suppose that",
+    "nuance": "가정을 던져 상대를 몰아넣는 장치. 뒤에 과거형이 오면 실현 가능성이 낮다는 신호다.",
+    "register": "casual",
+    "ctx": "Well, what if I asked you about love?",
+    "who": "Jesse",
+    "ch": 5
+  },
+  {
+    "phrase": "at least",
+    "ko": "적어도, 그래도",
+    "en": "at any rate",
+    "nuance": "앞의 불리한 사실을 인정한 뒤 그나마 나은 점을 붙이는 말. 거짓말은 했겠지만 재미는 있었을 거라는 자기 변호.",
+    "register": "neutral",
+    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
+    "who": "Céline",
+    "ch": 5
+  },
+  {
+    "phrase": "feel better about",
+    "ko": "~에 대해 기분이 나아지다",
+    "en": "feel less bad about",
+    "nuance": "좋은 감정이 아니라 상태가 조금 나아지는 것. 남의 기분 보정용으로 웃음을 강요당하는 상황을 가리킨다.",
+    "register": "neutral",
+    "ctx": "I hate being told by a strange man, a strange man in the street, you know, like, to smile, like, to make them feel better about their boring life, um, what else?",
+    "who": "Céline",
+    "ch": 5
+  },
+  {
+    "phrase": "what else",
+    "ko": "또 뭐가 있더라",
+    "en": "what other things",
+    "nuance": "목록을 이어 갈 때 스스로에게 던지는 혼잣말. 문장을 끊지 않고 다음 항목으로 넘어가는 다리 역할을 한다.",
+    "register": "casual",
+    "ctx": "I hate being told by a strange man, a strange man in the street, you know, like, to smile, like, to make them feel better about their boring life, um, what else?",
+    "who": "Céline",
+    "ch": 5
+  },
+  {
+    "phrase": "going on",
+    "ko": "(전쟁 등이) 벌어지고 있는",
+    "en": "taking place",
+    "nuance": "there is ~ going on 형태로 지금 진행 중인 사태를 가리킨다. 명사 뒤에 붙어 현재성을 강조한다.",
+    "register": "neutral",
+    "ctx": "I hate, I hate that three hundred kilometers from here there's a war going on, you know, people are dying, and nobody knows what to do about it, or they don't give a shit, I don't know.",
+    "who": "Céline",
+    "ch": 5
+  },
+  {
+    "phrase": "each time",
+    "ko": "~할 때마다",
+    "en": "every time",
+    "nuance": "every time보다 사례를 하나하나 세는 느낌이라 반복에 대한 짜증이 더 잘 묻어난다.",
+    "register": "neutral",
+    "ctx": "Each time I wear black, or like, lose my temper, or say anything about anything, they always go 'oh, it‘s so french, it‘s so cute.' (She mimics vomiting.) I hate that.",
+    "who": "Céline",
+    "ch": 5
+  },
+  {
+    "phrase": "is that all",
+    "ko": "그게 다야?",
+    "en": "is that everything?",
+    "nuance": "양이 적다는 뉘앙스로 더 말해 보라고 부추기는 말. 맥락에 따라 실망으로도 들린다.",
+    "register": "casual",
+    "ctx": "Is that all?",
+    "who": "Jesse",
+    "ch": 5
+  },
+  {
+    "phrase": "come from",
+    "ko": "어디에서 생겨나다",
+    "en": "originate from",
+    "nuance": "출신을 묻는 기본 표현인데 여기서는 영혼이라는 추상적 대상의 출처에 그대로 썼다.",
+    "register": "neutral",
+    "ctx": "Now, if we all have our own, like, individual, unique soul, right, where do they all come from?",
+    "who": "Jesse",
+    "ch": 5
+  },
+  {
+    "phrase": "at best",
+    "ko": "기껏해야",
+    "en": "at the very most",
+    "nuance": "최선의 경우를 상정해도 이 정도라는 축소 표현. 뒤에는 반드시 실망스러운 결론이 온다.",
+    "register": "neutral",
+    "ctx": "You know, so, at best, we're like these tiny fractions of people, you know, walking...",
+    "who": "Jesse",
+    "ch": 5
+  },
+  {
+    "phrase": "that's funny",
+    "ko": "묘하네, 이상하네",
+    "en": "that's strange",
+    "nuance": "웃기다는 뜻이 아니라 '기묘하다'. strange를 부드럽게 대신하는 회화의 단골 표현이다.",
+    "register": "casual",
+    "ctx": "That's funny.",
+    "who": "Céline",
+    "ch": 7
+  },
+  {
+    "phrase": "you know what",
+    "ko": "있잖아, 그거 알아?",
+    "en": "guess what",
+    "nuance": "대답을 기대하지 않고 새 화제를 여는 신호. you know보다 상대의 주의를 강하게 끌어당긴다.",
+    "register": "casual",
+    "ctx": "But you know what?",
+    "who": "Céline",
+    "ch": 8
+  },
+  {
+    "phrase": "and yet",
+    "ko": "그런데도",
+    "en": "even so",
+    "nuance": "but보다 무게가 있고, 앞의 좋은 조건과 뒤의 불만 사이 낙차를 드러낸다.",
+    "register": "neutral",
+    "ctx": "And yet for me now, it‘s another type of fight.",
+    "who": "Céline",
+    "ch": 8
+  },
+  {
+    "phrase": "based on",
+    "ko": "~에 근거한",
+    "en": "grounded in",
+    "nuance": "무엇을 토대로 삼았는지 밝히는 고정 표현. 여기선 낭만적 환상이 현실에 뿌리를 두지 않았다는 비판.",
+    "register": "neutral",
+    "ctx": "That's not based on any kind of reality.",
+    "who": "Jesse",
+    "ch": 8
+  },
+  {
+    "phrase": "here she is",
+    "ko": "저기 오시네",
+    "en": "here she comes",
+    "nuance": "기다리던, 혹은 피하고 싶던 사람이 눈앞에 나타났을 때 쓰는 등장 신호. 위치를 알려 주는 말이 아니다.",
+    "register": "casual",
+    "ctx": "Here she is.",
+    "who": "Céline",
+    "ch": 9
+  },
+  {
+    "phrase": "that's so wild",
+    "ko": "완전 신기하다",
+    "en": "that's amazing",
+    "nuance": "wild가 '거칠다'가 아니라 '믿기 힘들 만큼 놀랍다'. crazy와 비슷하지만 감탄 쪽으로 기운다.",
+    "register": "casual",
+    "ctx": "That's so wild.",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "by now",
+    "ko": "지금쯤이면",
+    "en": "at this point already",
+    "nuance": "그때 그랬다면 이미 어떠했을 거라는 가정과 짝을 이룬다. now와 달리 '그 시점까지 누적된' 시간을 담는다.",
+    "register": "neutral",
+    "ctx": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "i see",
+    "ko": "아, 그렇군",
+    "en": "I understand",
+    "nuance": "보는 것이 아니라 이해했다는 신호. 여기선 삐친 티가 나는 비꼬는 톤으로 쓰였다.",
+    "register": "casual",
+    "ctx": "Oh, I see.",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "around each other",
+    "ko": "서로 곁에 붙어 지내는",
+    "en": "in each other's company",
+    "nuance": "be around someone은 일상을 공유하며 함께 있다는 뜻. 설렘이 아니라 생활의 밀착을 가리킨다.",
+    "register": "casual",
+    "ctx": "(They walk a bit.) If we were around each other all the time, what do you think would be the first thing about me that would drive you mad?",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "bugs you",
+    "ko": "너를 거슬리게 하다",
+    "en": "annoys you",
+    "nuance": "bug는 벌레지만 동사로는 신경을 긁는다는 뜻. annoy보다 사소하고 사적인 짜증에 쓴다.",
+    "register": "casual",
+    "ctx": "Something about me bugs you?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "nothing at all",
+    "ko": "전혀 아무것도",
+    "en": "absolutely nothing",
+    "nuance": "at all이 부정을 극대화한다. 딱 잘라 부인하지만 곧 하나를 꺼내 놓는 장면이라 반어적으로 들린다.",
+    "register": "casual",
+    "ctx": "Nothing, nothing at all.",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "has to say",
+    "ko": "(그 사람이) 하는 말",
+    "en": "the opinion he/she expresses",
+    "nuance": "의무의 have to와 전혀 다르다. what someone has to say는 '그 사람이 할 말, 하는 얘기'라는 뜻의 고정 틀.",
+    "register": "neutral",
+    "ctx": "I don't care what this woman has to say about anything.",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "what can i say",
+    "ko": "뭐 어쩌겠어",
+    "en": "what do you want me to say",
+    "nuance": "진짜 질문이 아니라 자기 취향이나 행동을 변명 없이 인정하는 관용구. 어깨를 으쓱하는 몸짓에 해당한다.",
+    "register": "casual",
+    "ctx": "What can I say?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "i was gonna say",
+    "ko": "~라고 말하려고 했는데",
+    "en": "I was about to say",
+    "nuance": "I was going to say의 구어 축약. 여기선 자기가 준비한 단어를 꺼내려다 상대의 선택에 양보하며 농담으로 넘긴다.",
+    "register": "casual",
+    "ctx": "Yeah, I was gonna say “rooster prick,” but great.",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "back there",
+    "ko": "아까 거기서",
+    "en": "a moment ago, back at that spot",
+    "nuance": "장소만이 아니라 '방금 지나온 그 상황'을 가리킨다. 조금 전 다툼을 되짚을 때 딱 맞는 말.",
+    "register": "casual",
+    "ctx": "So uh, were we having our first fight back there?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "even if",
+    "ko": "설령 ~였다 해도",
+    "en": "granting that",
+    "nuance": "사실을 전제하는 even though와 달리 사실 여부를 유보한 채 양보한다. 싸움이었음을 인정하지 않으면서 넘어가는 화법.",
+    "register": "neutral",
+    "ctx": "Well, even if we were a little bit, you know.",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "i guess so",
+    "ko": "뭐, 그런 것 같네",
+    "en": "I suppose so",
+    "nuance": "확신 없이 마지못해 동의하는 반응. yes보다 한 발 물러서 있어 대화를 더 끌고 가지 않겠다는 뜻도 된다.",
+    "register": "casual",
+    "ctx": "Yeah, I guess so.",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "shooting some pool",
+    "ko": "당구를 좀 치다",
+    "en": "playing pool",
+    "nuance": "play pool 대신 shoot pool을 쓰면 훨씬 미국 구어답다. some은 '적당히 좀'이라는 가벼움을 더한다.",
+    "register": "casual",
+    "ctx": "...you know, I could be doing the most nothing thing, you know, I could be uh, throwing some darts, or shooting some pool, and all of a sudden, I feel it come over me, “I have got to win.”",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "get caught",
+    "ko": "들켜서 붙잡히다",
+    "en": "be caught",
+    "nuance": "catch의 수동형이 한 덩어리로 굳어 '걸리다'가 됐다. 범행이 발각되는 맥락에서 특히 자주 쓴다.",
+    "register": "casual",
+    "ctx": "you know, with all the intricate details of, you know, how to do it, and not get caught, And...",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "that much",
+    "ko": "그렇게까지",
+    "en": "to that degree",
+    "nuance": "정도를 재는 that. like ... that much는 '그 정도로 좋아하지도 않는다'로 앞말을 깎아내린다.",
+    "register": "casual",
+    "ctx": "Why do you become obsessed with people you don't really like that much, you know, I mean…",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "are you with anyone",
+    "ko": "누구 만나는 사람 있어?",
+    "en": "are you seeing anyone",
+    "nuance": "be with someone이 '사귀는 중'을 뜻한다. dating보다 완곡해서 조심스럽게 물을 때 고른다.",
+    "register": "casual",
+    "ctx": "Are you with anyone?",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "managed to avoid",
+    "ko": "용케 피해 왔다",
+    "en": "succeeded in avoiding",
+    "nuance": "manage to는 어렵게 해냈다는 뜻이라, 화제를 피한 것이 우연이 아니라 서로 애쓴 결과임을 드러낸다.",
+    "register": "neutral",
+    "ctx": "Umm, it‘s funny how we managed to avoid this subject for so long, isn't it?",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "a couple of",
+    "ko": "두어 개의, 며칠의",
+    "en": "two or three",
+    "nuance": "정확히 둘이 아니라 '두세 개쯤'. some보다 적은 수를 가볍게 뭉뚱그린다.",
+    "register": "casual",
+    "ctx": "So I bought the cheapest flight out of Europe, this one leaving out of Vienna tomorrow, but it didn't leave for a couple of weeks.",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "you'd like to think",
+    "ko": "~라고 믿고 싶겠지만",
+    "en": "you want to believe",
+    "nuance": "뒤에 반전이 온다는 신호. 그건 자기 위안일 뿐이라는 냉소가 깔려 있다.",
+    "register": "neutral",
+    "ctx": "(Loses ball.) You know, you'd like to think that you're both in all this pain, but really, they're just, “Hey, I'm glad you're gone.“ (They switch.)",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "did it work",
+    "ko": "효과 있었어?",
+    "en": "was it effective",
+    "nuance": "work가 '일하다'가 아니라 '효과가 있다'. 치료나 방법이 통했는지 물을 때 쓰는 기본형.",
+    "register": "casual",
+    "ctx": "Yeah, well did it work?",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "all they do is",
+    "ko": "하는 거라곤 ~뿐이다",
+    "en": "the only thing they do is",
+    "nuance": "all + 주어 + do is + 동사원형. 그것 말고는 없다는 과장으로 웃음을 만드는 강조 구문.",
+    "register": "casual",
+    "ctx": "I mean, there's these breeds of monkeys, right, and all they do is have sex, like all the time, you know?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "i thought so",
+    "ko": "그럴 줄 알았어",
+    "en": "I suspected as much",
+    "nuance": "짐작이 맞았다는 확인. 여기선 정말 원숭이 얘기가 맞느냐는 어이없음이 섞여 있다.",
+    "register": "casual",
+    "ctx": "Ah, I thought so, yeah.",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "as long as",
+    "ko": "~하기만 하면",
+    "en": "provided that",
+    "nuance": "시간 길이가 아니라 조건을 말한다. 남자들의 속셈을 '이것만 보장되면'으로 요약하는 비꼬기.",
+    "register": "neutral",
+    "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "at work here",
+    "ko": "여기에 작용하고 있는",
+    "en": "in operation here",
+    "nuance": "at work는 직장이 아니라 무언가가 배후에서 작동 중이라는 뜻. 생물학적 요인이 깔려 있다는 주장이다.",
+    "register": "neutral",
+    "ctx": "But maybe, maybe there's some biological things at work here.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "something to that",
+    "ko": "일리가 있다",
+    "en": "there's some truth in that",
+    "nuance": "there's something to X는 전적으로 동의하지는 않지만 무시할 수 없다는 애매한 인정.",
+    "register": "casual",
+    "ctx": "See...see, I think there's something to that.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "don't mind",
+    "ko": "개의치 않다, 싫지 않다",
+    "en": "aren't bothered by",
+    "nuance": "적극적으로 좋아하는 게 아니라 거부감이 없다는 정도. 여기선 은근히 즐긴다는 도발로 들린다.",
+    "register": "neutral",
+    "ctx": "I think on some level, women don't mind the idea of destroying a man, you know.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "kick her ass",
+    "ko": "그 여자를 흠씬 패주다",
+    "en": "beat her up",
+    "nuance": "거친 몸싸움을 가리키는 속어. 시비는 여자친구가 걸었는데 맞을 사람은 자기라는 억울함을 담았다.",
+    "register": "vulgar",
+    "ctx": "They're not gonna come over here and kick her ass, you know what I mean?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "pushed to the front line",
+    "ko": "최전선으로 떠밀리다",
+    "en": "shoved into the firing line",
+    "nuance": "군사 비유를 그대로 가져와 남이 벌인 싸움의 총알받이가 된 처지를 한 컷으로 그린다.",
+    "register": "casual",
+    "ctx": "So who just got pushed to the front line on that one?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "if it suits them",
+    "ko": "자기들한테 유리하면",
+    "en": "if it's convenient for them",
+    "nuance": "suit는 옷이 아니라 형편에 맞는다는 뜻. 상황에 따라 말을 바꾸는 태도를 꼬집는다.",
+    "register": "neutral",
+    "ctx": "I mean, women say they hate it if you‘re all territorial and protective, but if it suits them, then they'll tell you you're being all unmanly, or wimpy, or uh…",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "no end to this",
+    "ko": "이건 끝이 없다",
+    "en": "this never ends",
+    "nuance": "there's no end to ~는 물리적 끝이 아니라 아무리 해도 결론이 안 난다는 말. 대화를 접자는 신호다.",
+    "register": "casual",
+    "ctx": "You know, men, women you know, it‘s, it‘s...there's no end to this, like, you know...",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "i'm telling you",
+    "ko": "진짜라니까",
+    "en": "believe me",
+    "nuance": "정보를 전달하려는 게 아니라 자기 말에 못을 박는 강조. 상대가 미심쩍어할 때 뒤에 덧붙인다.",
+    "register": "casual",
+    "ctx": "I'm telling you.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "revolving around",
+    "ko": "~를 중심으로 돌아가다",
+    "en": "centered on",
+    "nuance": "행성 비유가 그대로 인생에 쓰여, 한 남자에게 삶이 종속되는 그림을 만든다.",
+    "register": "neutral",
+    "ctx": "I mean,...I, I always feel this pressure of being a strong and independent icon of womanhood, and without making...making it look my...my whole life is revolving around some guy.",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "got a good feeling",
+    "ko": "느낌이 좋다",
+    "en": "have a good feeling",
+    "nuance": "근거 없이 잘될 것 같다는 직감. have got a good feeling about이 정식 형태인데 구어에서는 got만 남는다.",
+    "register": "casual",
+    "ctx": "I mean, I've known you a long time, and I got a good feeling.",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "hangs up",
+    "ko": "전화를 끊다",
+    "en": "ends the phone call",
+    "nuance": "수화기를 걸어 두던 시절의 동작이 그대로 굳었다. 앞 장면의 pick up the phone과 짝을 이룬다.",
+    "register": "neutral",
+    "ctx": "“Hangs up.”) Okay it‘s your turn.",
+    "who": "지문",
+    "ch": 15
+  },
+  {
+    "phrase": "i'll tell you why",
+    "ko": "이유를 말해 줄게",
+    "en": "here's the reason",
+    "nuance": "결론을 먼저 던져 궁금증을 만든 뒤 이어 가는 구조. because로 잇는 것보다 극적이고 대화를 넘겨받는 힘이 있다.",
+    "register": "casual",
+    "ctx": "And I'll tell you why.",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "i'd hate to",
+    "ko": "~하게 만들고 싶지는 않아",
+    "en": "I wouldn't want to",
+    "nuance": "싫다는 감정 표현이라기보다 상대를 배려하는 정중한 양보. 사실은 만나고 싶은 마음을 감추는 말이다.",
+    "register": "neutral",
+    "ctx": "I mean, I'd hate to make you fly.",
+    "who": "Jesse",
+    "ch": 17
+  },
+  {
+    "phrase": "not so bad",
+    "ko": "그렇게 나쁘진 않아",
+    "en": "not too bad",
+    "nuance": "긍정이 아니라 '견딜 만하다'. 스스로를 설득하는 말투라 오히려 아쉬움이 드러난다.",
+    "register": "casual",
+    "ctx": "I mean, it‘s not so bad if tonight is our only night, right?",
+    "who": "Céline",
+    "ch": 17
+  },
+  {
+    "phrase": "once or twice",
+    "ko": "한두 번",
+    "en": "a couple of times",
+    "nuance": "정확한 횟수가 아니라 '고작 몇 번'. 곧 연락이 끊긴다는 결론을 세는 방식으로 미리 보여 준다.",
+    "register": "neutral",
+    "ctx": "People always exchange phone numbers, addresses, they end up writing once, calling each other once or twice...",
+    "who": "Céline",
+    "ch": 17
+  },
+  {
+    "phrase": "one and only",
+    "ko": "단 하나뿐인",
+    "en": "sole and unique",
+    "nuance": "one만으로 충분한데 겹쳐 써서 유일함을 극적으로 만든다. 건배사에 어울리는 격을 준다.",
+    "register": "neutral",
+    "ctx": "To our one and only night together, and the hours that remain.",
+    "who": "Jesse",
+    "ch": 17
+  },
+  {
+    "phrase": "couldn't possibly",
+    "ko": "도저히 ~할 수 없다",
+    "en": "could never",
+    "nuance": "가능성 자체를 부정하는 강조. 상대를 탓하는 게 아니라 '네가 알 리 없는 사정'이라는 뜻으로 쓰였다.",
+    "register": "neutral",
+    "ctx": "You couldn't possibly know why a night like this is so important to my life right now, but it is...This is a great morning.",
+    "who": "Céline",
+    "ch": 19
+  },
+  {
+    "phrase": "let's say",
+    "ko": "~라고 쳐 보자",
+    "en": "suppose",
+    "nuance": "제안이 아니라 가정을 도입하는 장치. suppose보다 구어적이고 이야기를 굴려 가는 데 쓴다.",
+    "register": "casual",
+    "ctx": "Let‘s say that you and I were together all the time, then you'd start to hate a lot of my mannerisms.",
+    "who": "Jesse",
+    "ch": 19
+  },
+  {
+    "phrase": "a female thing",
+    "ko": "여자라서 그런 건지도",
+    "en": "a girl thing",
+    "nuance": "a + 명사 + thing은 '그 부류 특유의 것'. 설명하기 힘든 감정을 뭉뚱그려 넘기는 화법이다.",
+    "register": "casual",
+    "ctx": "Maybe it‘s a female thing.",
+    "who": "Céline",
+    "ch": 19
+  }
+]

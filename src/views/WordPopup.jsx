@@ -52,13 +52,17 @@ export default function WordPopup({
               {word}
             </div>
             <div className="row" style={{ gap: 'var(--s2)', marginTop: 4 }}>
-              {isPhrase && <span className="chip chip--accent">구문</span>}
+              {isPhrase && (
+                <span className="chip chip--accent">
+                  {entry?.from === '문법' ? '문법' : '구문'}
+                </span>
+              )}
               {level > 0 && (
                 <span className={`chip${level >= 3 ? ' chip--accent' : ''}`}>
                   {level}급 {LEVEL_LABELS[level]}
                 </span>
               )}
-              {entry?.from && <span className="chip">{entry.from}</span>}
+              {entry?.from && !isPhrase && <span className="chip">{entry.from}</span>}
               {entry?.ipa && (
                 <span className="hint" style={{ fontFamily: 'var(--font-mono)' }}>
                   {entry.ipa}

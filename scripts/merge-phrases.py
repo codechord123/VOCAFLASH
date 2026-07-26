@@ -31,13 +31,16 @@ def norm_key(phrase):
 
 
 def main():
-    files = sorted(SRC.glob("batch-*.json"))
+    files = sorted(SRC.glob("batch-*.json")) + sorted(SRC.glob("grammar-*.json"))
     if not files:
         sys.exit(f"구문 파일이 없습니다: {SRC}")
 
     table, problems, dropped = {}, [], []
 
     for f in files:
+        # 문법 덩어리(have to, or else)는 숙어와 성격이 달라 화면에서
+        # 구분해 보여준다 — 뜻보다 쓰임을 봐야 하는 것들이다.
+        source = "문법" if f.name.startswith("grammar") else "구문"
         try:
             batch = json.loads(f.read_text(encoding="utf-8"))
         except json.JSONDecodeError as err:
@@ -70,7 +73,7 @@ def main():
                 "ctx": p.get("ctx"),
                 "who": p.get("who"),
                 "ch": p.get("ch"),
-                "from": "구문",
+                "from": source,
             }
 
     # 이미 가진 자료에서도 구문을 끌어온다. 본인이 표시한 것이 먼저다.
