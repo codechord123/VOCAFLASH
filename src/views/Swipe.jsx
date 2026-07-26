@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { GRADES, applyGrade } from '../lib/srs.js'
+import { GRADES, applyGrade, progressOf } from '../lib/srs.js'
 import { topicIcon, topicLabel } from '../lib/topics.js'
 
 // 스와이프 플래시카드.
@@ -56,9 +56,14 @@ export default function Swipe({ cards, settings, commit, onExit }) {
           : GRADES.HARD
         : GRADES.AGAIN
 
+      // 진행만 저장한다. 카드 내용은 앱이 갖고 있으므로 다시 쓸 이유가 없고,
+      // 내용까지 통째로 저장하면 자료를 손볼 때 진행이 함께 흔들린다.
       commit((s) => ({
         ...s,
-        cards: s.cards.map((c) => (c.id === card.id ? applyGrade(c, grade) : c)),
+        progress: {
+          ...s.progress,
+          [card.id]: progressOf(applyGrade(card, grade)),
+        },
         reviewLog: [
           ...s.reviewLog,
           {

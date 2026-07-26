@@ -10,8 +10,13 @@
 const KEY = 'script-study.v1'
 
 const DEFAULTS = {
-  version: 1,
+  version: 2,
+  // 사용자가 만든 카드만 여기 있다 — 읽다가 담은 문장, 유닛을 마치고 열린
+  // 카드. 하이라이트·단어장 같은 고정 자료는 앱에 들어 있으므로 저장하지
+  // 않는다. 저장본이 가벼워지고, 자료를 손봐도 진행이 흔들리지 않는다.
   cards: [],
+  // 복습 진행. { [카드id]: { box, dueAt, reviewCount, lapseCount, lastReviewedAt } }
+  progress: {},
   settings: {
     apiKey: '',
     model: 'claude-sonnet-5',
@@ -30,11 +35,45 @@ const DEFAULTS = {
   curriculum: { unitProgress: {} },
 }
 
+/**
+ * v1 → v2 이행. 카드 안에 섞여 있던 진행을 진행 맵으로 옮기고, 고정
+ * 자료에서 온 카드는 저장본에서 뺀다(앱이 다시 만들어 낸다).
+ *
+ * 진행이 조금이라도 있는 카드만 옮긴다 — 한 번도 안 본 카드까지 옮기면
+ * 옮길 것도 없는 항목이 천 개 쌓인다.
+ */
+function migrate(parsed) {
+  if (parsed.version >= 2) return parsed
+
+  const progress = { ...(parsed.progress ?? {}) }
+  const kept = []
+
+  for (const card of parsed.cards ?? []) {
+    if ((card.reviewCount ?? 0) > 0 || (card.box ?? 1) !== 1) {
+      progress[card.id] = {
+        box: card.box ?? 1,
+        dueAt: card.dueAt ?? 0,
+        reviewCount: card.reviewCount ?? 0,
+        lapseCount: card.lapseCount ?? 0,
+        lastReviewedAt: card.lastReviewedAt ?? null,
+      }
+    }
+    // 앱이 다시 만들어 낼 수 없는 것만 남긴다
+    const userMade =
+      card.type === 'line' ||
+      card.origin === 'reader-bookmark' ||
+      card.origin === 'unit-srs'
+    if (userMade) kept.push(card)
+  }
+
+  return { ...parsed, version: 2, cards: kept, progress }
+}
+
 function read() {
   try {
     const raw = localStorage.getItem(KEY)
     if (!raw) return structuredClone(DEFAULTS)
-    const parsed = JSON.parse(raw)
+    const parsed = migrate(JSON.parse(raw))
     // 필드가 추가돼도 기존 저장본이 깨지지 않게 얕은 병합.
     return {
       ...structuredClone(DEFAULTS),
@@ -100,17 +139,25 @@ export const store = {
     }
 
     const state = read()
+    const incomingState = migrate(incoming)
     const byId = new Map(state.cards.map((c) => [c.id, c]))
     let added = 0
-    let updated = 0
 
-    for (const card of incoming.cards) {
-      const existing = byId.get(card.id)
-      if (!existing) {
+    for (const card of incomingState.cards) {
+      if (!byId.has(card.id)) {
         byId.set(card.id, card)
         added += 1
-      } else if ((card.reviewCount ?? 0) > (existing.reviewCount ?? 0)) {
-        byId.set(card.id, card)
+      }
+    }
+
+    // 진행은 더 많이 진행된 쪽을 남긴다. 백업을 불러왔다고 오늘까지
+    // 쌓은 복습이 뒤로 밀리면 안 된다.
+    const progress = { ...state.progress }
+    let updated = 0
+    for (const [id, p] of Object.entries(incomingState.progress ?? {})) {
+      const mine = progress[id]
+      if (!mine || (p.reviewCount ?? 0) > (mine.reviewCount ?? 0)) {
+        progress[id] = p
         updated += 1
       }
     }
@@ -118,6 +165,7 @@ export const store = {
     const next = {
       ...state,
       cards: [...byId.values()],
+      progress,
       reviewLog: [...state.reviewLog, ...(incoming.reviewLog ?? [])],
     }
     write(next)

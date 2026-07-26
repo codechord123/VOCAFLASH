@@ -1,0 +1,449 @@
+{
+  "source": "구글 시트 어휘 메모 + 채팅 블록",
+  "count": 54,
+  "notes": [
+    {
+      "id": "sheet-v001",
+      "term": "highness",
+      "gloss": "고귀한 분을 이르는 말",
+      "context": "Would Your Highness care to get in?",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v002",
+      "term": "ward off",
+      "gloss": "막아주다 물리치다.",
+      "context": "It wards off deadly plague.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v003",
+      "term": "frosting",
+      "gloss": "케이크나 빵위에 장식하는 크림이나 아이싱",
+      "context": "This one needs royaling up. More columns, more frosting.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v004",
+      "term": "delegation",
+      "gloss": "대표단 사절단",
+      "context": "Silence! The delegation from Bentwood arrives any moment.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v005",
+      "term": "hassle",
+      "gloss": "번거로움 수고, 혼잡",
+      "context": "All this wedding hassle for a stupid political alliance?",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v006",
+      "term": "or",
+      "gloss": "그렇지 않으면",
+      "context": "I thought that I'd get married for true love, or because I was wasted.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v007",
+      "term": "sobriety",
+      "gloss": "금주 명상 절제",
+      "context": "- I hate this feeling. -Sobriety, ma'am?",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v008",
+      "term": "tummy",
+      "gloss": "배",
+      "context": "Elfo! Kissy! No tummy touching!",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v009",
+      "term": "hereby",
+      "gloss": "이것에 의하며 결과로서",
+      "context": "you are hereby cursed from the deepest depths of the underworld!",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v010",
+      "term": "humping",
+      "gloss": "성적 행위, 구부리다, 뛰어오르다, 질주하다",
+      "context": "Kissy! What in humping heavens is going on?",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v011",
+      "term": "jolly",
+      "gloss": "즐거운 매우 몹시 기브게 해주다 조롱하다",
+      "context": "All will be forgiven as long as you obey the Jolly Code.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v012",
+      "term": "meaty",
+      "gloss": "고기가 많은 든든한 알찬, 풍부한",
+      "context": "I want to take a big, meaty bite out of life and dip it in mustard.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v013",
+      "term": "a big meaty bite of",
+      "gloss": "많은 부분을 얻다",
+      "context": "I want to take a big, meaty bite out of life and dip it in mustard.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v014",
+      "term": "bite out of",
+      "gloss": "베어 물다. -의 일부를 차지하다",
+      "context": "I want to take a big, meaty bite out of life and dip it in mustard.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v015",
+      "term": "raivings",
+      "gloss": "열광적인 극찬하는 광란하는",
+      "context": "Mustard, vinegar, anchovies? These are the ravings of fools.",
+      "work": "Disenchantment",
+      "possibleTypo": true
+    },
+    {
+      "id": "sheet-v016",
+      "term": "bidding",
+      "gloss": "입찰, 명령",
+      "context": "-So, you'll do my bidding? -Uh, no.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v017",
+      "term": "shame",
+      "gloss": "유감이다",
+      "context": "Shame you're a princess and too dainty to do anything about it.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v018",
+      "term": "dainty",
+      "gloss": "우아한 까다로운",
+      "context": "Shame you're a princess and too dainty to do anything about it.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v019",
+      "term": "latticework",
+      "gloss": "격자무늬",
+      "context": "Nice likeness. Competent latticework.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v020",
+      "term": "kick back",
+      "gloss": "편하게 쉬다, 느긋하게 보내다 뇌물로 주다.",
+      "context": "I'm just kicking back with my new cat.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v021",
+      "term": "make a out of b",
+      "gloss": "b를 a로 만들다.",
+      "context": "-Are you trying to make a jerk out of me? -Yes.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v022",
+      "term": "consultation",
+      "gloss": "합의 협의",
+      "context": "In consultation with Guysbert's grieving parents,",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v023",
+      "term": "exquisitely",
+      "gloss": "절묘하게",
+      "context": "The wedding is ruined. The demon is performing exquisitely.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v024",
+      "term": "far and wide",
+      "gloss": "도처에, 온 세상에 멀리 넓게.",
+      "context": "People far and wide seek me out to wash their clothes.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v025",
+      "term": "FARAWAY",
+      "gloss": "먼",
+      "context": "that I'll never be anything more than a wealthy queen of a fabulous faraway kingdom.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v026",
+      "term": "baloney",
+      "gloss": "말도 안되는 소리 허튼 소리",
+      "context": "Pardon my language, but destiny is baloney!",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v027",
+      "term": "WAY OUT",
+      "gloss": "해결책 출구",
+      "context": "Hey! Death is the easy way out!",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v028",
+      "term": "leech",
+      "gloss": "거머리, 빌붙어 사는 사람 off 착취하다. 빌붙어 살다",
+      "context": "I'm not gonna hurt this little guy. I'm gonna leech the magic out of him.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v029",
+      "term": "come along",
+      "gloss": "함께 가다 동행하다 진행되다 잘 되어 가다 나타나다 생기다 서둘러라",
+      "context": "I'm so glad you're coming along, Bean.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v030",
+      "term": "fuzzy",
+      "gloss": "털복숭이",
+      "context": "Not one mention of your fuzzy muzzles. Climb aboard.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v031",
+      "term": "Rampant",
+      "gloss": "만연하는 흉폭한 난폭한",
+      "context": "if you consider death, disease and rampant poverty acceptable.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v032",
+      "term": "filthy",
+      "gloss": "불결한",
+      "context": "Blessings to you, from your greasy hair to your filthy, ripped-up shoes.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v033",
+      "term": "sash",
+      "gloss": "허리띠",
+      "context": "Perfect. Give her some phony-baloney job with a fancy title and a sash.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v034",
+      "term": "sprinkles",
+      "gloss": "과자가루",
+      "context": "I'm so excited, my skin is breaking out in sprinkles.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v035",
+      "term": "sweltering",
+      "gloss": "무더위",
+      "context": "\"Warm refers to the sweltering temperature,",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v036",
+      "term": "grim",
+      "gloss": "엄한",
+      "context": "not the notoriously grim locals.\"",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v037",
+      "term": "surefire way",
+      "gloss": "확실한 방법",
+      "context": "And the one surefire way to unleash your creative juice is with creative juice.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v038",
+      "term": "entrust",
+      "gloss": "맡기다",
+      "context": "What? You're gonna entrust the future of our kingdom to that twerp?",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v039",
+      "term": "trudged through",
+      "gloss": "힘겹게 헤쳐나가다.",
+      "context": "And as we trudged through the swamp,",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v040",
+      "term": "mellow",
+      "gloss": "부드러운",
+      "context": "Just breathe in and try to mellow.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v041",
+      "term": "live",
+      "gloss": "생중계하다",
+      "context": "But, first, we go live to the courtyard for the return of the knights.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v042",
+      "term": "hunk",
+      "gloss": "큰 덩어리",
+      "context": "All right. Stick her down there, and bring me a nice hunk of Gorgonzola.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v043",
+      "term": "filthy",
+      "gloss": "불결한",
+      "context": "Well, have I got news for you. This guy is a filthy--",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "sheet-v044",
+      "term": "hideous",
+      "gloss": "흉측한",
+      "context": "You're sad and hideous. Play it up.",
+      "work": "Disenchantment",
+      "possibleTypo": false
+    },
+    {
+      "id": "chat-v001",
+      "term": "on account of",
+      "gloss": "~ 때문에 (because of와 같은 의미)",
+      "context": "I didn't get much sleep on account of my bed being a granite slab.",
+      "work": "Disenchantment",
+      "synonyms": []
+    },
+    {
+      "id": "chat-v002",
+      "term": "as much as",
+      "gloss": "~만큼이나 / 비록 ~일지라도",
+      "context": "If I find so much as a misplaced hair…",
+      "work": "Disenchantment",
+      "synonyms": []
+    },
+    {
+      "id": "chat-v003",
+      "term": "conclude",
+      "gloss": "끝내다, 마무리하다",
+      "context": "That concludes the warm-up entertainment.",
+      "work": "Disenchantment",
+      "synonyms": [
+        "wrap up",
+        "finish",
+        "bring to an end"
+      ]
+    },
+    {
+      "id": "chat-v004",
+      "term": "bottom of the barrel",
+      "gloss": "최악의 상태, 바닥",
+      "context": "I've hit the bottom of the barrel.",
+      "work": "Disenchantment",
+      "synonyms": [
+        "hit rock bottom",
+        "down in the dumps"
+      ]
+    },
+    {
+      "id": "chat-v005",
+      "term": "degenerate",
+      "gloss": "타락하다, 퇴보하다 (도덕·사회적 의미)",
+      "context": "He's a degenerate gambler.",
+      "work": "Disenchantment",
+      "synonyms": [
+        "corrupt",
+        "depraved",
+        "deteriorate"
+      ]
+    },
+    {
+      "id": "chat-v006",
+      "term": "ordeal",
+      "gloss": "시련, 고난, 끔찍한 경험",
+      "context": "It's been a horrible ordeal.",
+      "work": "Disenchantment",
+      "synonyms": []
+    },
+    {
+      "id": "chat-v007",
+      "term": "bring",
+      "gloss": "bring up (화제를 꺼내다), bring about (결과를 일으키다), bring along (데려오다), bring down (무너뜨리다/기분을 꺾다) 등 (다양한 쓰임)",
+      "context": "",
+      "work": "Disenchantment",
+      "synonyms": []
+    },
+    {
+      "id": "chat-v008",
+      "term": "rack",
+      "gloss": "문맥상 고문 도구",
+      "context": "Nothing a few days on the rack won't cure.",
+      "work": "Disenchantment",
+      "synonyms": []
+    },
+    {
+      "id": "chat-v009",
+      "term": "pampered / layabout",
+      "gloss": "pampered: 응석받이, 지나치게 잘 보살펴진; layabout: 게으름뱅이, 놀고먹는 사람",
+      "context": "You're a pampered, irresponsible layabout!",
+      "work": "Disenchantment",
+      "synonyms": []
+    },
+    {
+      "id": "chat-v010",
+      "term": "gore",
+      "gloss": "피투성이, 유혈 장면",
+      "context": "Now get out there and let's see some gore.",
+      "work": "Disenchantment",
+      "synonyms": []
+    }
+  ]
+}

@@ -144,48 +144,32 @@ export function cardsFromExpressions(expressions, meanings = {}) {
   })
 }
 
-/** 시트 어휘 메모(44개) + 채팅블록(10개)을 카드로. 이것도 본인 메모다. */
-export function cardsFromVocabNotes(vocabNotes, chatVocab, sentenceById) {
-  const fromSheet = vocabNotes.map((v, i) => {
-    const s = v.sentenceId ? sentenceById.get(v.sentenceId) : null
-    return createCard({
-      id: `card:sheet-v${String(i + 1).padStart(3, '0')}`,
-      type: 'expression',
-      front: v.term,
-      back: { meaningKo: v.gloss, definitionEn: null, nuance: '' },
-      context: s?.en ?? null,
-      source: { work: v.work === 'disenchantment' ? 'Disenchantment' : 'Before Sunset' },
-      extra: {
-        kind: v.term.trim().includes(' ') ? 'phrase' : 'word',
-        color: null,
-        origin: 'learner-note', // 시트에 직접 쓴 메모
-        possibleTypo: v.possibleTypo ?? false,
-        deck: 'note',
-        priority: DECKS.note.priority,
-      },
-    })
-  })
-
-  const fromChat = chatVocab.map((v, i) =>
+/**
+ * 시트에 직접 적어 둔 어휘 메모를 카드로. 이것도 본인 메모다.
+ *
+ * 문맥 문장은 빌드할 때 미리 붙여 둔다(scripts/build-vocab-notes.py).
+ * 예전에는 이 54개를 만들려고 1.3MB짜리 문장 파일을 통째로 받아왔다.
+ */
+export function cardsFromVocabNotes(notes) {
+  return notes.map((v) =>
     createCard({
-      id: `card:chat-v${String(i + 1).padStart(3, '0')}`,
+      id: `card:${v.id}`,
       type: 'expression',
       front: v.term,
       back: { meaningKo: v.gloss, definitionEn: null, nuance: '' },
-      context: v.example ?? null,
-      source: { work: 'Disenchantment' },
+      context: v.context ?? null,
+      source: { work: v.work },
       extra: {
         kind: v.term.trim().includes(' ') ? 'phrase' : 'word',
         color: null,
         origin: 'learner-note',
+        possibleTypo: v.possibleTypo ?? false,
         synonyms: v.synonyms ?? [],
         deck: 'note',
         priority: DECKS.note.priority,
       },
     })
   )
-
-  return [...fromSheet, ...fromChat]
 }
 
 /**

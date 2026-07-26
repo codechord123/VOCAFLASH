@@ -81,6 +81,29 @@ export function applyGrade(card, grade, now = new Date()) {
   }
 }
 
+/**
+ * 카드에서 복습 진행만 떼어낸다.
+ *
+ * 진행(박스·예정일·횟수)과 내용(단어·뜻·문맥)은 수명이 다르다. 내용은
+ * 앱과 함께 배포되는 고정 자료이고, 진행은 매일 바뀌는 사용자의 것이다.
+ * 한 덩어리로 저장하면 자료 구성을 바꿀 때마다 진행이 함께 흔들린다 —
+ * 실제로 덱을 정리하다가 복습 기록을 날린 적이 있다.
+ */
+export function progressOf(card) {
+  return {
+    box: card.box,
+    dueAt: card.dueAt,
+    reviewCount: card.reviewCount,
+    lapseCount: card.lapseCount,
+    lastReviewedAt: card.lastReviewedAt ?? null,
+  }
+}
+
+/** 저장된 진행을 카드에 입힌다. 없으면 새 카드 상태 그대로. */
+export function withProgress(card, progress) {
+  return progress ? { ...card, ...progress } : card
+}
+
 /** 오늘 복습 대상인가. */
 export function isDue(card, now = new Date()) {
   return card.dueAt <= dayKey(now)

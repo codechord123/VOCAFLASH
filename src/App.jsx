@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { store } from './lib/store.js'
-import { deckStats, selectDueCards } from './lib/srs.js'
+import { deckStats, selectDueCards, withProgress } from './lib/srs.js'
 import { filterByLevel } from './lib/level.js'
 import {
   cardsFromExpressions,
@@ -9,11 +9,12 @@ import {
   cardsFromWordCards,
 } from './lib/deck.js'
 
-// 앱을 켜자마자 필요한 것만 정적으로 싣는다. 매일 여는 화면은
-// 복습이고, 거기에 필요한 건 카드(localStorage)와 뜻풀이뿐이다.
+// 고정 자료는 앱에 들어 있다. 저장본에는 진행만 두고, 카드는 켤 때마다
+// 여기서 다시 만든다 — 자료를 손봐도 복습 기록이 흔들리지 않는다.
 import expressionData from './data/expressions.json'
 import meaningData from './data/meanings.json'
 import wordCardData from './data/word-cards.json'
+import vocabNoteData from './data/vocab-notes.json'
 
 // 원문과 챕터 해설(세 작품)은 읽기 탭에서만 쓴다.
 const loadReadingData = () =>
@@ -34,40 +35,28 @@ const loadReadingData = () =>
     },
   }))
 
-// 문장 1,948개와 B2 단어 899개는 무겁다. 첫 실행의 시드 생성에서만
-// 쓰이므로 필요할 때 가져온다.
-const loadBulkData = () =>
-  Promise.all([
-    import('./data/sentences.json'),
-    import('./data/b2-words.json'),
-  ]).then(([s, b]) => ({ sentences: s.default, b2Words: b.default }))
+// B2 단어장 899개는 300KB쯤 된다. 기본으로 꺼져 있는 덱이라 첫 화면을
+// 막을 이유가 없어서 뒤늦게 싣는다.
+const loadB2 = () => import('./data/b2-words.json').then((m) => m.default)
 
 import VocabPart from './views/VocabPart.jsx'
-import LinePart from './views/LinePart.jsx'
 import ReadPart from './views/ReadPart.jsx'
 import Curriculum from './views/Curriculum.jsx'
 import Settings from './views/Settings.jsx'
 
-// 학습 파트 4개. 라벨은 두 글자로 맞춘다 — 모바일 폭에서 긴 라벨이
+// 학습 파트 3개. 라벨은 두 글자로 맞춘다 — 모바일 폭에서 긴 라벨이
 // 있으면 탭이 잘린다. 설정은 파트가 아니므로 헤더 톱니로 뺐다.
-//
-// 단어와 문장을 나눈 이유는 외우는 방식이 달라서다. 단어는 1초에
-// 갈리지만 문장은 읽고 떠올리는 데 시간이 걸린다.
+// 담은 문장은 단어 파트 안의 한 칸이다.
 const TABS = [
   { id: 'vocab', label: '단어' },
-  { id: 'line', label: '문장' },
   { id: 'read', label: '읽기' },
   { id: 'syntax', label: '구문' },
 ]
 
-// 시드를 한 번만 넣기 위한 키. 시드 내용이 바뀌면 버전을 올린다.
-// v5: 구문 하이라이트에서 단어 단위로 재추출한 카드를 더한다. 이미 있는
-// 카드(id 기준)는 진행을 유지하고 없는 것만 추가한다.
-const SEED_ID = 'before-sunrise+word-cards+sheet-vocab+b2.v5'
-
 export default function App() {
   const [tab, setTab] = useState('vocab')
   const [state, setState] = useState(() => store.load())
+  const [b2Words, setB2Words] = useState(null)
   const [reading, setReading] = useState(null)
   const [readingError, setReadingError] = useState(null)
   const [showSettings, setShowSettings] = useState(false)
@@ -83,41 +72,41 @@ export default function App() {
     return map
   }, [])
 
-  // 첫 실행(또는 시드 버전 변경): 본인 자산을 덱에 심는다. 이미 있는
-  // 카드는 id 기준으로 건드리지 않는다 — 복습 진행(박스·예정일)과
-  // 유닛 카드, 읽다가 저장한 카드가 전부 그대로 남는다.
+  // B2 단어장은 뒤늦게. 실패해도 나머지 학습은 그대로 돌아간다.
   useEffect(() => {
-    if (store.hasSeed(SEED_ID)) return
     let cancelled = false
-    loadBulkData()
-      .then(({ sentences, b2Words }) => {
-        if (cancelled) return
-        const sentenceById = new Map(sentences.sentences.map((s) => [s.id, s]))
-        const seeded = [
-          ...cardsFromExpressions(expressionData.expressions, meanings),
-          ...cardsFromWordCards(wordCardData.words),
-          ...cardsFromVocabNotes(
-            sentences.vocabNotes,
-            sentences.chatVocab,
-            sentenceById
-          ),
-          ...cardsFromB2Words(b2Words),
-        ]
-        const next = store.update((s) => {
-          const existing = new Set(s.cards.map((c) => c.id))
-          return {
-            ...s,
-            cards: [...s.cards, ...seeded.filter((c) => !existing.has(c.id))],
-          }
-        })
-        store.markSeed(SEED_ID, next.cards.length)
-        setState({ ...next })
-      })
-      .catch((err) => console.error('시드 생성 실패', err))
+    loadB2()
+      .then((w) => !cancelled && setB2Words(w))
+      .catch((err) => console.error('B2 단어장을 불러오지 못했습니다', err))
     return () => {
       cancelled = true
     }
-  }, [meanings])
+  }, [])
+
+  // 고정 자료로 만든 카드. 저장본에 넣지 않으므로 자료를 손봐도
+  // 진행에 영향이 없다.
+  const staticCards = useMemo(
+    () => [
+      ...cardsFromExpressions(expressionData.expressions, meanings),
+      ...cardsFromWordCards(wordCardData.words),
+      ...cardsFromVocabNotes(vocabNoteData.notes),
+      ...(b2Words ? cardsFromB2Words(b2Words) : []),
+    ],
+    [meanings, b2Words]
+  )
+
+  // 화면이 쓰는 카드 = 고정 자료 + 사용자가 만든 것, 각각에 진행을 입힌 것.
+  const cards = useMemo(() => {
+    const progress = state.progress ?? {}
+    const seen = new Set()
+    const out = []
+    for (const c of [...staticCards, ...state.cards]) {
+      if (seen.has(c.id)) continue // 사용자 카드가 고정 자료와 겹칠 때
+      seen.add(c.id)
+      out.push(withProgress(c, progress[c.id]))
+    }
+    return out
+  }, [staticCards, state.cards, state.progress])
 
   const ensureReading = useCallback(async () => {
     if (reading) return reading
@@ -140,7 +129,6 @@ export default function App() {
     }
   }, [tab, reading, ensureReading])
 
-  const cards = state.cards
   const activeDecks = state.settings.activeDecks ?? {}
 
   // 복습 큐는 켜진 덱만. 단어장 탭은 꺼진 덱까지 전부 보여준다 —
@@ -164,20 +152,6 @@ export default function App() {
         { limit: state.settings.dailyLimit }
       ).length,
     [reviewCards, state.settings.dailyLimit, state.settings.hideBasicWords]
-  )
-
-  // 문장 파트도 같은 방식으로. 담은 줄과 단어가 아닌 하이라이트가 대상이다.
-  const lineDueCount = useMemo(
-    () =>
-      selectDueCards(
-        reviewCards.filter(
-          (c) =>
-            c.type === 'line' ||
-            (c.type === 'expression' && /\s/.test((c.front ?? '').trim()))
-        ),
-        { limit: state.settings.dailyLimit }
-      ).length,
-    [reviewCards, state.settings.dailyLimit]
   )
 
   /** 저장과 화면 상태를 함께 갱신한다. 한쪽만 바뀌면 새로고침에 사라진다. */
@@ -208,9 +182,6 @@ export default function App() {
                 {t.id === 'vocab' && dueCount > 0 && (
                   <span className="tab__badge">{dueCount}</span>
                 )}
-                {t.id === 'line' && lineDueCount > 0 && (
-                  <span className="tab__badge">{lineDueCount}</span>
-                )}
               </button>
             ))}
           </nav>
@@ -230,15 +201,6 @@ export default function App() {
         <div className="container">
           {tab === 'vocab' && (
             <VocabPart
-              cards={cards}
-              reviewCards={reviewCards}
-              settings={state.settings}
-              commit={commit}
-            />
-          )}
-
-          {tab === 'line' && (
-            <LinePart
               cards={cards}
               reviewCards={reviewCards}
               settings={state.settings}

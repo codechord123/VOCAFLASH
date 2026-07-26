@@ -2,32 +2,20 @@ import { useMemo, useState } from 'react'
 import Swipe from './Swipe.jsx'
 import { selectDueCards, isDue } from '../lib/srs.js'
 
-// 문장 파트.
+// 문장 화면 — 단어 파트 안의 한 칸.
 //
-// 단어와 나눈 이유는 외우는 방식이 달라서다. 단어는 1초에 알거나 모르거나가
-// 갈리지만, 문장은 읽고 뜻을 떠올리는 데 시간이 걸린다. 같은 덱에 섞으면
-// 스와이프의 리듬이 매번 끊긴다.
-//
-// 여기 들어오는 것은 두 종류다:
-//   담은 문장  — 읽다가 ☆로 담은 대사·자막
-//   내 하이라이트 — 노션에서 표시한 구문·문장 (단어가 아니라 여기 산다)
-
-const SUB = [
-  { id: 'review', label: '복습' },
-  { id: 'list', label: '목록' },
-]
+// 담은 것만 보여준다. 읽다가 ☆로 담은 대사·자막이 전부이고, 담지 않은
+// 것은 여기 들어오지 않는다 — 즐겨찾기는 '내가 고른 것만 있는 곳'이어야
+// 다시 열어 볼 마음이 생긴다.
 
 export default function LinePart({ cards, reviewCards, settings, commit }) {
-  const [sub, setSub] = useState('review')
   const [swiping, setSwiping] = useState(null)
 
-  // 문장 파트가 다루는 카드: 담은 줄 + 단어가 아닌 하이라이트(구문·문장).
-  const isLineish = (c) =>
-    c.type === 'line' || (c.type === 'expression' && /\s/.test((c.front ?? '').trim()))
-
-  const all = useMemo(() => cards.filter(isLineish), [cards])
-  const reviewable = useMemo(() => reviewCards.filter(isLineish), [reviewCards])
-  const saved = useMemo(() => all.filter((c) => c.type === 'line'), [all])
+  const saved = useMemo(() => cards.filter((c) => c.type === 'line'), [cards])
+  const reviewable = useMemo(
+    () => reviewCards.filter((c) => c.type === 'line'),
+    [reviewCards]
+  )
 
   const dueCards = useMemo(
     () => selectDueCards(reviewable, { limit: settings.dailyLimit }),
@@ -47,40 +35,18 @@ export default function LinePart({ cards, reviewCards, settings, commit }) {
 
   return (
     <div className="stack stack--loose">
-      <nav className="subtabs" role="tablist" aria-label="문장 파트 화면">
-        {SUB.map((s) => (
-          <button
-            key={s.id}
-            role="tab"
-            aria-selected={sub === s.id}
-            className="tab"
-            onClick={() => setSub(s.id)}
-          >
-            {s.label}
-            {s.id === 'review' && dueCards.length > 0 && (
-              <span className="tab__count">{dueCards.length}</span>
-            )}
-          </button>
-        ))}
-      </nav>
-
-      {sub === 'review' ? (
-        <Review
-          dueCards={dueCards}
-          all={all}
-          saved={saved}
-          onStart={(sel) => setSwiping(sel)}
-          onGoList={() => setSub('list')}
-        />
-      ) : (
-        <SavedList saved={saved} commit={commit} />
-      )}
+      <Review
+        dueCards={dueCards}
+        saved={saved}
+        onStart={(sel) => setSwiping(sel)}
+      />
+      {saved.length > 0 && <SavedList saved={saved} commit={commit} />}
     </div>
   )
 }
 
-function Review({ dueCards, all, saved, onStart, onGoList }) {
-  if (all.length === 0) {
+function Review({ dueCards, saved, onStart }) {
+  if (saved.length === 0) {
     return (
       <div className="empty">
         <div className="empty__icon">☆</div>
@@ -94,23 +60,18 @@ function Review({ dueCards, all, saved, onStart, onGoList }) {
     )
   }
 
-  const highlights = all.length - saved.length
+  const learned = saved.filter((c) => c.box === 5).length
 
   return (
-    <div className="stack stack--loose">
+    <div className="stack">
       {dueCards.length > 0 ? (
         <button className="btn btn--primary btn--block" onClick={() => onStart(dueCards)}>
           스와이프로 {dueCards.length}개 넘기기
         </button>
       ) : (
-        <div className="empty">
-          <div className="empty__icon">✓</div>
-          <div className="empty__title">오늘 볼 문장이 없습니다</div>
-          <p className="empty__body">
-            예정된 복습을 다 끝냈습니다. 그래도 더 보고 싶으면 아래에서
-            전체를 넘길 수 있습니다.
-          </p>
-        </div>
+        <button className="btn btn--block" onClick={() => onStart(saved)}>
+          오늘 볼 문장 없음 — 담은 {saved.length}개 전부 넘기기
+        </button>
       )}
 
       <div className="tiles">
@@ -123,23 +84,9 @@ function Review({ dueCards, all, saved, onStart, onGoList }) {
           <div className="tile__label">담은 문장</div>
         </div>
         <div className="tile">
-          <div className="tile__value">{highlights}</div>
-          <div className="tile__label">내 하이라이트</div>
+          <div className="tile__value">{learned}</div>
+          <div className="tile__label">익힘</div>
         </div>
-      </div>
-
-      <div className="row">
-        <button className="btn" onClick={() => onStart(all)}>
-          전체 {all.length}개 넘기기
-        </button>
-        {saved.length > 0 && (
-          <button className="btn" onClick={() => onStart(saved)}>
-            담은 것만 {saved.length}개
-          </button>
-        )}
-        <button className="btn btn--ghost" onClick={onGoList}>
-          목록 보기
-        </button>
       </div>
     </div>
   )
@@ -163,16 +110,6 @@ function SavedList({ saved, commit }) {
 
   function remove(id) {
     commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
-  }
-
-  if (saved.length === 0) {
-    return (
-      <div className="empty">
-        <div className="empty__icon">☆</div>
-        <div className="empty__title">담아 둔 문장이 없습니다</div>
-        <p className="empty__body">읽기 화면에서 ☆를 눌러 담아 보세요.</p>
-      </div>
-    )
   }
 
   return (

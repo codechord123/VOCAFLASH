@@ -194,9 +194,16 @@ function Row({ card, commit }) {
               onClick={() =>
                 commit((s) => ({
                   ...s,
-                  cards: s.cards.map((x) =>
-                    x.id === card.id ? { ...x, box: 1, dueAt: 0 } : x
-                  ),
+                  progress: {
+                    ...s.progress,
+                    [card.id]: {
+                      box: 1,
+                      dueAt: 0,
+                      reviewCount: card.reviewCount,
+                      lapseCount: card.lapseCount,
+                      lastReviewedAt: card.lastReviewedAt ?? null,
+                    },
+                  },
                 }))
               }
             >

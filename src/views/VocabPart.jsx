@@ -1,11 +1,16 @@
 import { useMemo, useState } from 'react'
 import Vocab from './Vocab.jsx'
 import Swipe from './Swipe.jsx'
+import LinePart from './LinePart.jsx'
 import { selectDueCards, isDue, deckStats } from '../lib/srs.js'
 import { filterByLevel } from '../lib/level.js'
 import { TOPICS } from '../lib/topics.js'
 
-// 단어 파트. 복습 · 주제별 · 목록 세 화면.
+// 외우는 것들이 모이는 파트. 복습 · 주제별 · 문장 · 목록.
+//
+// 단어와 문장은 화면을 나눠 두되 탭은 하나로 둔다 — 둘 다 '외운다'는
+// 같은 일이라 매번 최상단 탭을 오가게 할 이유가 없다. 대신 섞지는
+// 않는다. 단어는 1초에 갈리고 문장은 읽어야 해서 리듬이 다르다.
 //
 // 복습은 스와이프 하나로 한다. 예전에는 버튼식 카드 화면이 아래에 같이
 // 있었는데, 같은 카드를 두 방식으로 보여주는 것은 선택을 강요할 뿐
@@ -14,6 +19,7 @@ import { TOPICS } from '../lib/topics.js'
 const SUB = [
   { id: 'review', label: '복습' },
   { id: 'topic', label: '주제별' },
+  { id: 'line', label: '문장' },
   { id: 'list', label: '목록' },
 ]
 
@@ -42,6 +48,16 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
   )
   const stats = useMemo(() => deckStats(studyReviewCards), [studyReviewCards])
 
+  // 담은 문장 중 오늘 볼 것. 문장 칸에 숫자를 띄우기 위해서만 쓴다.
+  const lineDue = useMemo(
+    () =>
+      selectDueCards(
+        reviewCards.filter((c) => c.type === 'line'),
+        { limit: settings.dailyLimit }
+      ).length,
+    [reviewCards, settings.dailyLimit]
+  )
+
   if (swiping) {
     return (
       <Swipe
@@ -68,6 +84,9 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
             {s.id === 'review' && dueCards.length > 0 && (
               <span className="tab__count">{dueCards.length}</span>
             )}
+            {s.id === 'line' && lineDue > 0 && (
+              <span className="tab__count">{lineDue}</span>
+            )}
           </button>
         ))}
       </nav>
@@ -83,6 +102,15 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
 
       {sub === 'topic' && (
         <TopicPicker cards={studyCards} onStart={(sel) => setSwiping(sel)} />
+      )}
+
+      {sub === 'line' && (
+        <LinePart
+          cards={cards}
+          reviewCards={reviewCards}
+          settings={settings}
+          commit={commit}
+        />
       )}
 
       {sub === 'list' && <Vocab cards={studyCards} commit={commit} />}
