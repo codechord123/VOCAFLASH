@@ -17,6 +17,8 @@ export default function WordPopup({
   context,
   levels,
   dict,
+  entry: presetEntry = null,
+  isPhrase = false,
   status,
   isSaved,
   onSetStatus,
@@ -33,8 +35,10 @@ export default function WordPopup({
 
   if (!word) return null
 
-  const entry = lookupIn(dict, word)
-  const level = lookupIn(levels, word) ?? 0
+  // 구문은 이미 찾아서 넘겨준다(화면의 형태와 표의 키가 다를 수 있어서).
+  // 단어는 여기서 굴절을 벗겨 가며 찾는다.
+  const entry = presetEntry ?? lookupIn(dict, word)
+  const level = presetEntry ? 0 : lookupIn(levels, word) ?? 0
 
   return (
     <>
@@ -48,6 +52,7 @@ export default function WordPopup({
               {word}
             </div>
             <div className="row" style={{ gap: 'var(--s2)', marginTop: 4 }}>
+              {isPhrase && <span className="chip chip--accent">구문</span>}
               {level > 0 && (
                 <span className={`chip${level >= 3 ? ' chip--accent' : ''}`}>
                   {level}급 {LEVEL_LABELS[level]}
@@ -111,8 +116,8 @@ export default function WordPopup({
         ) : (
           <div className="stack stack--tight" style={{ marginTop: 'var(--s3)' }}>
             <p className="hint" style={{ textAlign: 'left' }}>
-              앱 사전에 이 단어의 뜻이 아직 없습니다. 단어장에 담아 두면
-              나중에 뜻을 채워 넣을 수 있습니다.
+              앱 사전에 {isPhrase ? '이 구문' : '이 단어'}의 뜻이 아직
+              없습니다. 단어장에 담아 두면 나중에 뜻을 채워 넣을 수 있습니다.
             </p>
             {context && <p className="flashcard__context">{context}</p>}
             <a

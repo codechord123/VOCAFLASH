@@ -1,7 +1,7 @@
 import { memo } from 'react'
-import { STATUS, lookupIn, normalize, sentenceAround, tokenize } from '../lib/words.js'
+import { STATUS, lookupIn, normalize, segment, sentenceAround } from '../lib/words.js'
 
-// 한 줄을 색이 입혀진 단어들로 그린다.
+// 한 줄을 색이 입혀진 단어·구문으로 그린다.
 //
 // 색의 규칙은 하나다: **읽다가 멈칫할 만한 곳에만 색이 있다.**
 //   3급 상급 · 4급 고급 — 앰버 (읽기 전에 눈에 걸려야 하는 것)
@@ -11,17 +11,48 @@ import { STATUS, lookupIn, normalize, sentenceAround, tokenize } from '../lib/wo
 // 그 위에 본인의 표시가 덮어쓴다. 안다고 표시한 단어는 등급이 몇이든
 // 색을 지우고, 모른다고 표시한 단어는 굵게 남는다 — 읽을수록 화면이
 // 조용해지는 것이 이 색칠의 목적이다.
+//
+// 구문(for instance, I was going to say)은 통째로 한 덩어리다. 단어가
+// 다 쉬워도 묶이면 새 뜻이 생기는 자리라, 밑줄로 하나임을 보여주고
+// 어디를 눌러도 구문 뜻이 뜬다.
 
-function WordTextImpl({ text, levels, dict, statusMap, onWord }) {
-  const tokens = tokenize(text)
+function WordTextImpl({ text, levels, dict, phrases, statusMap, onWord, onPhrase }) {
+  const parts = segment(text, phrases)
 
   return (
     <>
-      {tokens.map((tok, i) => {
-        if (!tok.w) return <span key={i}>{tok.t}</span>
+      {parts.map((part, i) => {
+        if (part.kind === 'gap') return <span key={i}>{part.text}</span>
 
-        const key = normalize(tok.t)
-        if (!key) return <span key={i}>{tok.t}</span>
+        if (part.kind === 'phrase') {
+          const status = statusMap[part.key] ?? null
+          let cls = 'w ph'
+          if (status === STATUS.KNOWN) cls += ' w--known'
+          else if (status === STATUS.LEARNING) cls += ' w--learning'
+          return (
+            <span
+              key={i}
+              className={cls}
+              role="button"
+              tabIndex={0}
+              onClick={(e) => {
+                e.stopPropagation()
+                onPhrase(part.key, part.text, sentenceAround(text, part.text))
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  onPhrase(part.key, part.text, sentenceAround(text, part.text))
+                }
+              }}
+            >
+              {part.text}
+            </span>
+          )
+        }
+
+        const key = normalize(part.text)
+        if (!key) return <span key={i}>{part.text}</span>
 
         const status = statusMap[key] ?? null
         const level = lookupIn(levels, key) ?? 0
@@ -42,16 +73,16 @@ function WordTextImpl({ text, levels, dict, statusMap, onWord }) {
             tabIndex={0}
             onClick={(e) => {
               e.stopPropagation()
-              onWord(tok.t, sentenceAround(text, tok.t))
+              onWord(part.text, sentenceAround(text, part.text))
             }}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault()
-                onWord(tok.t, sentenceAround(text, tok.t))
+                onWord(part.text, sentenceAround(text, part.text))
               }
             }}
           >
-            {tok.t}
+            {part.text}
           </span>
         )
       })}

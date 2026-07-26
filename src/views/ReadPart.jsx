@@ -16,6 +16,8 @@ export default function ReadPart({
   sheetAnalysis = {},
   levels,
   dict,
+  phrases,
+  reads,
   cards,
   commit,
   initialChapter = null,
@@ -41,6 +43,8 @@ export default function ReadPart({
           analysis={analysis}
           levels={levels}
           dict={dict}
+          phrases={phrases}
+          reads={reads}
           cards={cards}
           commit={commit}
           initialChapter={initialChapter}
@@ -57,6 +61,8 @@ export default function ReadPart({
         analysis={sheetAnalysis[sheetWork.id] ?? null}
         levels={levels}
         dict={dict}
+        phrases={phrases}
+        reads={reads}
         cards={cards}
         commit={commit}
         onBack={() => setWorkId(null)}

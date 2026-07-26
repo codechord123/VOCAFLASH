@@ -10,9 +10,10 @@ import { cardFieldsFor } from '../views/WordPopup.jsx'
 // 등급표와 사전은 읽기 자료와 함께 늦게 실려 오므로, 없을 때도 화면이
 // 깨지지 않게 빈 객체를 기본값으로 둔다.
 
-export function useWordLayer({ levels, dict, cards, commit }) {
+export function useWordLayer({ levels, dict, phrases, cards, commit }) {
   const [statusMap, setStatusMap] = useState(() => wordStore.all())
-  const [selected, setSelected] = useState(null) // { word, context }
+  // { word, context, entry, isPhrase } — 단어든 구문이든 같은 시트로 연다
+  const [selected, setSelected] = useState(null)
 
   const savedWords = useMemo(
     () =>
@@ -25,8 +26,20 @@ export function useWordLayer({ levels, dict, cards, commit }) {
   )
 
   const openWord = useCallback((word, context) => {
-    setSelected({ word, context: context ?? null })
+    setSelected({ word, context: context ?? null, entry: null, isPhrase: false })
   }, [])
+
+  /**
+   * 구문을 연다. 사전 조회를 여기서 끝내 두는 이유는, 화면에 보이는
+   * 형태(I was going to say)와 표에 있는 키가 다를 수 있어서다.
+   */
+  const openPhrase = useCallback(
+    (key, display, context) => {
+      const entry = phrases?.[key] ?? null
+      setSelected({ word: display, key, context: context ?? null, entry, isPhrase: true })
+    },
+    [phrases]
+  )
 
   const closeWord = useCallback(() => setSelected(null), [])
 
@@ -64,9 +77,11 @@ export function useWordLayer({ levels, dict, cards, commit }) {
   return {
     levels: levels ?? {},
     dict: dict ?? {},
+    phrases: phrases ?? {},
     statusMap,
     selected,
     openWord,
+    openPhrase,
     closeWord,
     setStatus,
     save,

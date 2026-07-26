@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
 import { cardFromLine, lineId } from '../lib/lines.js'
+import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
 import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
@@ -18,7 +19,7 @@ import ChapterNav from './ChapterNav.jsx'
 // 아직 생성되지 않은 챕터는 '원문'만 보인다 — 탭을 띄워놓고 빈 화면을
 // 보여주는 것보다 낫다.
 
-export default function SheetRead({ work, analysis, levels, dict, cards, commit, onBack }) {
+export default function SheetRead({ work, analysis, levels, dict, phrases, reads, cards, commit, onBack }) {
   const [selected, setSelected] = useState(null)
   const [section, setSection] = useState('script')
   const [hideKo, setHideKo] = useState(false)
@@ -30,7 +31,7 @@ export default function SheetRead({ work, analysis, levels, dict, cards, commit,
     return map
   }, [analysis])
 
-  const wl = useWordLayer({ levels, dict, cards, commit })
+  const wl = useWordLayer({ levels, dict, phrases, cards, commit })
 
   // 즐겨찾기한 줄. 이 두 작품은 자막이 이미 한 줄씩 나뉘어 있고 번역도
   // 있어서, 담으면 그대로 한↔영 복습 카드가 된다.
@@ -98,6 +99,7 @@ export default function SheetRead({ work, analysis, levels, dict, cards, commit,
                 <span className="list__main">
                   <span className="list__title">{c.title}</span>
                   <span className="list__meta">{c.lineCount}줄</span>
+                  <SheetReadMeter read={readOf(reads, work.id, c.number)} />
                 </span>
                 {analysisByChapter.has(c.number) && (
                   <span className="chip chip--accent">해설</span>
@@ -151,6 +153,12 @@ export default function SheetRead({ work, analysis, levels, dict, cards, commit,
           </p>
         )}
       </div>
+
+      <SheetReadTracker
+        read={readOf(reads, work.id, selected)}
+        onMark={() => commit((s) => markRead(s, work.id, selected))}
+        onUndo={() => commit((s) => undoRead(s, work.id, selected))}
+      />
 
       {chapterAnalysis && (
         <nav className="tabs" role="tablist" aria-label="챕터 내 화면">
@@ -221,8 +229,10 @@ export default function SheetRead({ work, analysis, levels, dict, cards, commit,
                   text={line.en}
                   levels={wl.levels}
                   dict={wl.dict}
+                  phrases={wl.phrases}
                   statusMap={wl.statusMap}
                   onWord={wl.openWord}
+                  onPhrase={wl.openPhrase}
                 />
                 {line.lyric && ' ♪'}
               </p>
@@ -255,9 +265,11 @@ export default function SheetRead({ work, analysis, levels, dict, cards, commit,
           context={wl.selected.context}
           levels={wl.levels}
           dict={wl.dict}
-          status={wl.statusOf(wl.selected.word)}
-          isSaved={wl.isSaved(wl.selected.word)}
-          onSetStatus={(st) => wl.setStatus(wl.selected.word, st)}
+          entry={wl.selected.entry}
+          isPhrase={wl.selected.isPhrase}
+          status={wl.statusOf(wl.selected.key ?? wl.selected.word)}
+          isSaved={wl.isSaved(wl.selected.key ?? wl.selected.word)}
+          onSetStatus={(st) => wl.setStatus(wl.selected.key ?? wl.selected.word, st)}
           onSave={wl.save}
           onClose={wl.closeWord}
         />
@@ -276,6 +288,67 @@ export default function SheetRead({ work, analysis, levels, dict, cards, commit,
           window.scrollTo({ top: 0 })
         }}
       />
+    </div>
+  )
+}
+
+/** 챕터 목록의 회독 한 줄. Read.jsx와 같은 규칙으로 그린다. */
+function SheetReadMeter({ read }) {
+  if (!read.count) return null
+  const label = lastReadLabel(read.lastAt)
+  return (
+    <span className="read-meter">
+      <span className="read-meter__bar">
+        <span
+          className="read-meter__fill"
+          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
+        />
+      </span>
+      <span className="read-meter__text">
+        {read.count}/{READ_GOAL}회독{label ? ` · ${label}` : ''}
+      </span>
+    </span>
+  )
+}
+
+function SheetReadTracker({ read, onMark, onUndo }) {
+  const label = lastReadLabel(read.lastAt)
+  const done = read.count >= READ_GOAL
+  return (
+    <div
+      className="panel"
+      style={{
+        padding: 'var(--s3) var(--s4)',
+        borderColor: done ? 'var(--accent-border)' : undefined,
+        background: done ? 'var(--accent-soft)' : undefined,
+      }}
+    >
+      <div className="row row--between">
+        <span className="list__main">
+          <span className="list__title">
+            {read.count}/{READ_GOAL}회독{done ? ' — 목표 달성' : ''}
+          </span>
+          <span className="list__meta">
+            {label ? `마지막으로 읽은 날 · ${label}` : '아직 읽음 표시를 하지 않았습니다'}
+          </span>
+        </span>
+        <div className="row" style={{ gap: 'var(--s1)' }}>
+          {read.count > 0 && (
+            <button className="btn btn--ghost btn--sm" onClick={onUndo} title="잘못 눌렀을 때">
+              −1
+            </button>
+          )}
+          <button className="btn btn--sm" onClick={onMark}>
+            읽음
+          </button>
+        </div>
+      </div>
+      <div className="progress" style={{ marginTop: 'var(--s2)' }}>
+        <div
+          className="progress__bar"
+          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
+        />
+      </div>
     </div>
   )
 }

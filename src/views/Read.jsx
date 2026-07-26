@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
 import { cardFromLine, findChunkKo, lineId } from '../lib/lines.js'
+import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
 import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
@@ -24,7 +25,7 @@ export const SECTIONS = [
   { id: 'background', label: '배경지식' },
 ]
 
-export default function Read({ chapters, analysis: analysisData, levels, dict, cards, commit, initialChapter = null }) {
+export default function Read({ chapters, analysis: analysisData, levels, dict, phrases, reads, cards, commit, initialChapter = null }) {
   // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
   const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
@@ -80,7 +81,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, c
     return [...fromHighlights, ...fromUnits]
   }, [cards, selected])
 
-  const wl = useWordLayer({ levels, dict, cards, commit })
+  const wl = useWordLayer({ levels, dict, phrases, cards, commit })
 
   // 즐겨찾기한 줄. id는 위치 기반이라 화면에서 바로 대조할 수 있다.
   const savedLines = useMemo(
@@ -119,6 +120,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, c
       <ChapterList
         chapters={chapters}
         analysisByChapter={analysisByChapter}
+        reads={reads}
         onSelect={(n) => {
           setSelected(n)
           setSection('script')
@@ -142,6 +144,12 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, c
           하이라이트 {chapter.highlights.length}개
         </span>
       </div>
+
+      <ReadTracker
+        read={readOf(reads, 'before-sunrise', selected)}
+        onMark={() => commit((s) => markRead(s, 'before-sunrise', selected))}
+        onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
+      />
 
       <div>
         <h2>{chapter.title}</h2>
@@ -196,9 +204,11 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, c
           context={wl.selected.context}
           levels={wl.levels}
           dict={wl.dict}
-          status={wl.statusOf(wl.selected.word)}
-          isSaved={wl.isSaved(wl.selected.word)}
-          onSetStatus={(st) => wl.setStatus(wl.selected.word, st)}
+          entry={wl.selected.entry}
+          isPhrase={wl.selected.isPhrase}
+          status={wl.statusOf(wl.selected.key ?? wl.selected.word)}
+          isSaved={wl.isSaved(wl.selected.key ?? wl.selected.word)}
+          onSetStatus={(st) => wl.setStatus(wl.selected.key ?? wl.selected.word, st)}
           onSave={wl.save}
           onClose={wl.closeWord}
         />
@@ -222,7 +232,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, c
   )
 }
 
-function ChapterList({ chapters, analysisByChapter, onSelect }) {
+function ChapterList({ chapters, analysisByChapter, reads, onSelect }) {
   const withDialogue = chapters.filter((c) => c.lines.length > 0)
   const empty = chapters.filter((c) => c.lines.length === 0)
 
@@ -252,6 +262,7 @@ function ChapterList({ chapters, analysisByChapter, onSelect }) {
                   {c.lines.length}줄 · 하이라이트 {c.highlights.length}개
                   {analysisByChapter.has(c.number) ? ' · 구문 정리 있음' : ''}
                 </span>
+                <ReadMeter read={readOf(reads, 'before-sunrise', c.number)} />
               </span>
               <span style={{ color: 'var(--text-faint)' }}>→</span>
             </button>
@@ -268,6 +279,73 @@ function ChapterList({ chapters, analysisByChapter, onSelect }) {
           </p>
         </div>
       )}
+    </div>
+  )
+}
+
+/**
+ * 챕터 목록의 회독 한 줄. 숫자만 있으면 스무 번이 멀어 보이므로 막대로
+ * 같이 보여준다. 한 번도 안 읽은 챕터는 아무것도 그리지 않는다 —
+ * 목록 전체가 빈 막대로 얼룩지면 어디까지 왔는지가 오히려 안 보인다.
+ */
+function ReadMeter({ read }) {
+  if (!read.count) return null
+  const label = lastReadLabel(read.lastAt)
+  return (
+    <span className="read-meter">
+      <span className="read-meter__bar">
+        <span
+          className="read-meter__fill"
+          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
+        />
+      </span>
+      <span className="read-meter__text">
+        {read.count}/{READ_GOAL}회독{label ? ` · ${label}` : ''}
+      </span>
+    </span>
+  )
+}
+
+/** 챕터 안에서 회독을 세는 자리. 다 읽고 직접 누른 것만 센다. */
+function ReadTracker({ read, onMark, onUndo }) {
+  const label = lastReadLabel(read.lastAt)
+  const done = read.count >= READ_GOAL
+
+  return (
+    <div
+      className="panel"
+      style={{
+        padding: 'var(--s3) var(--s4)',
+        borderColor: done ? 'var(--accent-border)' : undefined,
+        background: done ? 'var(--accent-soft)' : undefined,
+      }}
+    >
+      <div className="row row--between">
+        <span className="list__main">
+          <span className="list__title">
+            {read.count}/{READ_GOAL}회독{done ? ' — 목표 달성' : ''}
+          </span>
+          <span className="list__meta">
+            {label ? `마지막으로 읽은 날 · ${label}` : '아직 읽음 표시를 하지 않았습니다'}
+          </span>
+        </span>
+        <div className="row" style={{ gap: 'var(--s1)' }}>
+          {read.count > 0 && (
+            <button className="btn btn--ghost btn--sm" onClick={onUndo} title="잘못 눌렀을 때">
+              −1
+            </button>
+          )}
+          <button className="btn btn--sm" onClick={onMark}>
+            읽음
+          </button>
+        </div>
+      </div>
+      <div className="progress" style={{ marginTop: 'var(--s2)' }}>
+        <div
+          className="progress__bar"
+          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
+        />
+      </div>
     </div>
   )
 }
@@ -343,8 +421,10 @@ function Line({ line, highlights, cardedTexts, saved = false, onToggle = null, w
             text={line.text}
             levels={wl.levels}
             dict={wl.dict}
+            phrases={wl.phrases}
             statusMap={wl.statusMap}
             onWord={wl.openWord}
+            onPhrase={wl.openPhrase}
           />
         ) : (
           <Marked text={line.text} highlights={highlights} cardedTexts={cardedTexts} />

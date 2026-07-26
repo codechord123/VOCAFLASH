@@ -1,0 +1,862 @@
+[
+ {
+  "term": "dumb",
+  "ko": "멍청한, 바보 같은",
+  "en": "stupid; lacking intelligence",
+  "nuance": "제시가 셀린의 미국인 비판을 스스로 되받아 과장하는 대목. 원래 뜻은 '말을 못 하는'이지만 오늘날 회화에서는 거의 '멍청한'이고, stupid보다 가볍고 구어적이다.",
+  "register": "casual",
+  "ctx": "So I'm the crude, dumb, vulgar American who has no culture, right?",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "either",
+  "ko": "(부정문 끝에서) ~도 역시 (아니다); 둘 중 하나",
+  "en": "also (in negative sentences); one or the other of two",
+  "nuance": "긍정문의 too가 맡는 자리를 부정문에서는 either가 대신한다. 8장의 'they either left them, or...'는 either A or B 구문이라 쓰임이 전혀 다르니 문장 위치로 갈라 봐야 한다.",
+  "register": "neutral",
+  "ctx": "I don't want to do that either.",
+  "who": "Céline",
+  "ch": 22
+ },
+ {
+  "term": "enters",
+  "ko": "들어간다, 들어선다 (enter의 3인칭 단수형)",
+  "en": "goes into a place",
+  "nuance": "대본 지문에서 인물의 등장·입장을 알리는 현재형으로 반복해서 쓰인다. enter는 타동사라 enter into a room이 아니라 enters a compartment처럼 전치사 없이 목적어를 받는다.",
+  "register": "neutral",
+  "ctx": "We see Celine, alone as she enters a passenger compartment on the train.",
+  "who": null,
+  "ch": 23
+ },
+ {
+  "term": "exchange",
+  "ko": "주고받다, 나누다",
+  "en": "to give and receive something in return",
+  "nuance": "여기서는 명사가 아니라 동사. exchange words는 '몇 마디 나누다'로 굳어진 표현이고, 17장의 exchange phone numbers처럼 서로 맞바꾸는 행위 전반에 쓴다.",
+  "register": "neutral",
+  "ctx": "The two men exchange some words in German.",
+  "who": null,
+  "ch": 4
+ },
+ {
+  "term": "form",
+  "ko": "형태, 형식 (a form of ~: ~의 일종)",
+  "en": "a type or kind of something",
+  "nuance": "셀린이 대중매체를 '새로운 형태의 파시즘'이라 부르는 대목. a form of X는 '엄밀히 X는 아니지만 X의 일종'이라고 에둘러 규정할 때 쓴다. 9장의 to form은 '형성하다'라는 동사라 품사가 다르다.",
+  "register": "neutral",
+  "ctx": "You know it‘s very subtle, but you know, it‘s a new form of fascism.",
+  "who": "Céline",
+  "ch": 5
+ },
+ {
+  "term": "fortune",
+  "ko": "운세, 점; 운, 큰 재산",
+  "en": "luck or fate; also a large amount of money",
+  "nuance": "9장 점쟁이(fortune teller) 장면에 딸린 말로, 여기서는 '재산'이 아니라 '운세' 쪽이다. tell someone's fortune이면 '점을 봐 주다', make a fortune이면 '큰돈을 벌다'로 뜻이 갈린다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "horrible",
+  "ko": "끔찍한, 지독한",
+  "en": "very bad or unpleasant",
+  "nuance": "제시가 자기가 꺼낸 이야기를 스스로 깎아내리며 던지는 말. terrible과 세기는 비슷하지만 horrible이 감정적 혐오·역겨움 쪽으로 더 기운다.",
+  "register": "casual",
+  "ctx": "This is a horrible story.",
+  "who": "Jesse",
+  "ch": 11
+ },
+ {
+  "term": "invent",
+  "ko": "지어내다, 없는 이야기를 만들어내다",
+  "en": "to make up something that is not real",
+  "nuance": "'발명하다'가 아니라 make up에 가깝다. 죽은 사람에 대해 남들이 제멋대로 최고와 최악을 상상해 붙인다는 셀린의 말이라, 사실이 아닌 것을 꾸며낸다는 뜻이다.",
+  "register": "neutral",
+  "ctx": "People can invent the best and the worst for you.",
+  "who": "Céline",
+  "ch": 7
+ },
+ {
+  "term": "laid",
+  "ko": "(get laid로) 섹스하다, 한 번 자다",
+  "en": "to have sex (in the phrase 'get laid')",
+  "nuance": "lay(눕히다)의 과거분사지만 get laid는 통째로 굳어진 표현. 상당히 노골적이고 상스러운 축이라 진지한 자리나 손윗사람 앞에서는 절대 쓰지 않는다. 셀린이 대문자 LAID로 제시의 속셈을 깎아내리자 제시가 그건 아니라고 받아치는 흐름이다.",
+  "register": "slang",
+  "ctx": "I don't want to just get laid.",
+  "who": "Jesse",
+  "ch": 19
+ },
+ {
+  "term": "lie",
+  "ko": "거짓말하다; (명사) 거짓말",
+  "en": "to say something untrue; an untrue statement",
+  "nuance": "'눕다'의 lie와 철자가 같은 다른 단어다. 거짓말은 lie-lied-lied, 눕다는 lie-lay-lain으로 변화형이 달라 이 점으로 구분한다. 8장에서는 동사(lie to each other)와 명사(as a lie)로 둘 다 나온다.",
+  "register": "neutral",
+  "ctx": "But I think they lie to each other.",
+  "who": "Jesse",
+  "ch": 8
+ },
+ {
+  "term": "lied",
+  "ko": "거짓말했다 (lie의 과거·과거분사)",
+  "en": "past tense of 'lie', meaning to have told an untruth",
+  "nuance": "lied 형태가 보이면 무조건 '거짓말하다' 쪽이다. '눕다'의 과거는 lay이므로 이 형태로는 나올 수 없다. 셀린이 '거짓말이었겠지만 적어도 근사한 이야기를 지어냈을 것'이라고 말하는 대목.",
+  "register": "neutral",
+  "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
+  "who": "Céline",
+  "ch": 5
+ },
+ {
+  "term": "lies",
+  "ko": "눕는다 (lie down의 3인칭 단수형)",
+  "en": "gets into or is in a horizontal position",
+  "nuance": "이 두 용례는 '거짓말'이 아니라 모두 '눕다'다. lies down beside him, lies with her head on his lap처럼 지문에서 자세를 그릴 때 쓰였으니 문맥으로 갈라야 한다.",
+  "register": "neutral",
+  "ctx": "(She lies down beside him.) I know.",
+  "who": "Céline",
+  "ch": 19
+ },
+ {
+  "term": "lower",
+  "ko": "더 낮은, 아래쪽의 (low의 비교급)",
+  "en": "situated below something else",
+  "nuance": "비교급 형태지만 여기서는 '도시의 아래쪽 지역'이라는 위치 표현이다. 철자가 같은 동사 lower(내리다, 낮추다)와 헷갈리기 쉬우니 앞뒤 품사로 판단한다.",
+  "register": "neutral",
+  "ctx": "On a balcony, overlooking a lower part of the city.",
+  "who": null,
+  "ch": 16
+ },
+ {
+  "term": "lying",
+  "ko": "거짓말하는 (lie의 -ing형); 누워 있는",
+  "en": "telling untruths; also, being in a horizontal position",
+  "nuance": "서로 다른 두 개의 lie가 -ing형에서는 똑같이 lying이 되어 겹친다. 2장은 부모가 '거짓말하는' 것이고, 19장 지문의 lying down은 '누워 있는' 것이다.",
+  "register": "neutral",
+  "ctx": "I always knew when they were lying to me, you know?",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "managed",
+  "ko": "용케 해냈다, ~하는 데 성공했다",
+  "en": "succeeded in doing something, often with difficulty",
+  "nuance": "manage to + 동사원형은 '쉽지 않았는데 결국 해냈다'는 뉘앙스를 담는다. '관리했다'가 아니다. 여기서는 두 사람이 지금껏 이 화제를 용케 피해 왔다는 반쯤 농담.",
+  "register": "neutral",
+  "ctx": "Umm, it‘s funny how we managed to avoid this subject for so long, isn't it?",
+  "who": "Jesse",
+  "ch": 13
+ },
+ {
+  "term": "motion",
+  "ko": "동작, 몸짓",
+  "en": "a movement of the body or part of it",
+  "nuance": "지문의 makes a motion은 '~하는 시늉을 한다'는 뜻이다. movement가 이동·움직임 전반이라면 motion은 손짓처럼 한 동작을 가리키는 쪽에 가깝다.",
+  "register": "neutral",
+  "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
+  "who": "Céline",
+  "ch": 14
+ },
+ {
+  "term": "none",
+  "ko": "아무도 ~않다, 하나도 ~없다",
+  "en": "not any; not one",
+  "nuance": "보통 none of + 명사 꼴로 쓴다. no one이 사람만 가리키는 데 비해 none은 앞에 말한 무리 가운데 '하나도 없음'을 짚는다. 여기서는 가족도 친구도 아무도 모른다면, 이라는 조건.",
+  "register": "neutral",
+  "ctx": "When I was a little girl, I thought that if none of your family or friends knew ^ you were dead, then it‘s like not really being dead.",
+  "who": "Céline",
+  "ch": 7
+ },
+ {
+  "term": "offers",
+  "ko": "내민다, 건넨다 (offer의 3인칭 단수형)",
+  "en": "holds out or presents something to someone",
+  "nuance": "offer a hand는 '악수하려고 손을 내밀다'라는 동작. 9장에서 점쟁이가 똑같이 손을 내밀지만 그건 돈을 받으려는 것이어서, 같은 동작이 정반대 의미로 되풀이된다.",
+  "register": "neutral",
+  "ctx": "(Puts bag down and offers hand.)",
+  "who": "Jesse",
+  "ch": 3
+ },
+ {
+  "term": "pride",
+  "ko": "자부심, 긍지 (take pride in: ~을 자랑스러워하다)",
+  "en": "a feeling of satisfaction in what one has or does",
+  "nuance": "6장 노랫말의 pride가 굽히기 싫어하는 '고집·자존심'이라면, 여기 take pride in은 긍정적인 자부심이다. 같은 단어가 방향에 따라 미덕도 흠도 된다.",
+  "register": "neutral",
+  "ctx": "No, I mean, I eventually kind of took pride in it.",
+  "who": "Jesse",
+  "ch": 8
+ },
+ {
+  "term": "produce",
+  "ko": "꺼내 보이다, 내놓다; 제작하다",
+  "en": "to bring something out and show it",
+  "nuance": "신데렐라의 유리 구두를 꺼내 보일 차례라고 셀린이 농담하는 대목이라 '생산하다'가 아니라 '(품에서) 꺼내다'다. 2장의 produce a show는 '제작하다'로 뜻이 다르다.",
+  "register": "neutral",
+  "ctx": "(Pause.) But at this time, I think you're supposed to produce the glass slipper, and see if it fits.",
+  "who": "Céline",
+  "ch": 16
+ },
+ {
+  "term": "record",
+  "ko": "레코드판, LP",
+  "en": "a flat vinyl disc on which music is recorded",
+  "nuance": "명사 record는 앞 음절에 강세(RE-cord), 동사 '기록하다'는 뒤 음절(re-CORD)로 발음이 갈린다. 14장의 skipping record(바늘이 튀는 레코드판)는 같은 말이 계속 반복된다는 비유.",
+  "register": "neutral",
+  "ctx": "They go into the listening booth, and put the record on the turntable.",
+  "who": null,
+  "ch": 6
+ },
+ {
+  "term": "sheet",
+  "ko": "(종이) 한 장",
+  "en": "a single piece of paper",
+  "nuance": "시인이 즉석에서 시를 적어 책에서 찢어 건네는 종이 한 장이다. 침대 시트도 sheet지만 여기서는 a sheet of paper 쪽으로, 종이는 셀 수 없으니 장수를 셀 때 이 말을 쓴다.",
+  "register": "neutral",
+  "ctx": "(Hands the sheet to them.) Look at the poem.",
+  "who": "Poet",
+  "ch": 12
+ },
+ {
+  "term": "single",
+  "ko": "단 하나의, 단 한 곳의",
+  "en": "one and only one",
+  "nuance": "one을 강조한 말로 '겨우 하나뿐인데도'라는 놀라움이 실린다. 한 장소가 여러 세대의 고통과 행복을 다 품는다는 감탄이라, '독신의'라는 뜻과는 무관하다.",
+  "register": "neutral",
+  "ctx": "It fascinates me how a single place can join so much pain and happiness for so many generations",
+  "who": "Céline",
+  "ch": 11
+ },
+ {
+  "term": "sort",
+  "ko": "(sort of로) 어느 정도, 좀; 종류",
+  "en": "a kind or type; 'sort of' means somewhat",
+  "nuance": "sort of는 단정을 피하는 완충 표현으로 이 영화 대사에서 kind of와 함께 쉴 새 없이 등장한다. 말맛을 살리는 구어라 격식 있는 글에서는 쓰지 않는다.",
+  "register": "casual",
+  "ctx": "I guess they sort of nullify each other, or something.",
+  "who": "Céline",
+  "ch": 1
+ },
+ {
+  "term": "souls",
+  "ko": "영혼들 (soul의 복수형)",
+  "en": "plural of soul: the spiritual parts of people",
+  "nuance": "인구가 불어났으니 옛 영혼이 잘게 쪼개진 것 아니냐는 제시의 농담. 여기서 souls는 종교적 무게보다 사람 수를 세는 단위처럼 가볍게 쓰였다.",
+  "register": "neutral",
+  "ctx": "Are modern souls only a fraction of the original souls?.",
+  "who": "Jesse",
+  "ch": 5
+ },
+ {
+  "term": "specific",
+  "ko": "특정한, 콕 집은",
+  "en": "particular; clearly identified",
+  "nuance": "at specific moments는 '어느 특정 순간에'로, general(일반적인)의 반대다. 한국어 '구체적인'에 해당하는 말은 오히려 concrete인 경우가 많아 뭉뚱그려 외우면 어색해진다.",
+  "register": "neutral",
+  "ctx": "I mean, but, but don't you think that that's what um, makes our time, at specific moments, so important?",
+  "who": "Jesse",
+  "ch": 17
+ },
+ {
+  "term": "stared",
+  "ko": "빤히 쳐다봤다 (stare의 과거형)",
+  "en": "looked at something for a long time without moving the eyes",
+  "nuance": "look보다 훨씬 길고 집요한 응시다. stared, and stared라고 되풀이한 것은 눈을 떼지 못했다는 뜻. 다만 사람에게 하면 무례한 행동이라 영어권에서는 지적받는 행위다.",
+  "register": "neutral",
+  "ctx": "I stared, and stared at it.",
+  "who": "Céline",
+  "ch": 10
+ },
+ {
+  "term": "stares",
+  "ko": "빤히 쳐다본다 (stare의 3인칭 단수형)",
+  "en": "looks fixedly at someone or something",
+  "nuance": "stare는 거의 언제나 at과 짝을 이룬다. 여기는 헤어지기 직전 서로에게서 눈을 떼지 못하는 장면이라 무례함이 아니라 애틋함으로 읽힌다.",
+  "register": "neutral",
+  "ctx": "She stops and stares at him too.",
+  "who": null,
+  "ch": 20
+ },
+ {
+  "term": "succeed",
+  "ko": "성공하다, 잘 해내다",
+  "en": "to achieve what you are trying to do",
+  "nuance": "목적어를 받을 때는 succeed in -ing 꼴이다. '뒤를 잇다, 계승하다'라는 전혀 다른 뜻도 있지만 여기서는 남녀가 서로를 이해하는 일이 거의 불가능하다는 문맥이다.",
+  "register": "neutral",
+  "ctx": "(Sigh.) I know, it‘s almost impossible to succeed, but...who cares, really?",
+  "who": "Céline",
+  "ch": 14
+ },
+ {
+  "term": "suddenly",
+  "ko": "갑자기, 불쑥",
+  "en": "quickly and unexpectedly",
+  "nuance": "지문에서 동작이 예고 없이 끊기는 순간을 표시한다. all of a sudden이 더 구어적이라면 suddenly는 중립적이라 말과 글 모두에서 쓴다.",
+  "register": "neutral",
+  "ctx": "They dance a bit, until Jesse suddenly stops and elbows the",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "switch",
+  "ko": "(자리·차례를) 바꾸다, 교대하다",
+  "en": "to change places or take turns",
+  "nuance": "두 사람이 핀볼을 번갈아 치는 지문이라 '스위치(전원)'가 아니라 '차례를 바꾸다'다. they switch처럼 목적어 없이 써도 '둘이 교대한다'가 된다.",
+  "register": "casual",
+  "ctx": "She shrugs, they switch.) and became totally obsessed with him.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "teller",
+  "ko": "말해 주는 사람 (fortune teller: 점쟁이); 은행 창구 직원",
+  "en": "a person who tells something; also a bank cashier",
+  "nuance": "단독으로는 거의 쓰이지 않고 fortune teller, storyteller처럼 앞말과 붙어 다닌다. 9장에서 두 사람에게 다가와 손금을 봐 주는 집시 여인이 바로 fortune teller다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "towards",
+  "ko": "~에 대한, ~을 향한",
+  "en": "in the direction of; in relation to",
+  "nuance": "여기서는 물리적 방향이 아니라 attitude towards death처럼 '~을 대하는 태도'라는 추상적 대상 표시다. towards는 영국식, toward는 미국식 철자로 뜻 차이는 없다.",
+  "register": "neutral",
+  "ctx": "You're really lucky you can have this attitude towards death.",
+  "who": "Céline",
+  "ch": 2
+ },
+ {
+  "term": "tram",
+  "ko": "노면전차, 트램",
+  "en": "a passenger vehicle that runs on rails through city streets",
+  "nuance": "빈 시내를 달리는 전차로, 두 사람이 처음 도시를 도는 수단이다. 미국 영어에서는 보통 streetcar라 하는데 미국인 제시가 tram이라 부르는 건 현지 말을 따라 쓴 것.",
+  "register": "neutral",
+  "ctx": "Let's get off this damn tram.",
+  "who": "Jesse",
+  "ch": 5
+ },
+ {
+  "term": "within",
+  "ko": "~의 안에서, ~ 내부에",
+  "en": "inside; in the interior of",
+  "nuance": "in보다 격식 있고 '경계 안쪽'임을 또렷이 한다. within yourself는 마음속을 가리키는 말로, 점쟁이가 '네 안에서 평화를 찾아야 한다'고 훈계하는 대목이다.",
+  "register": "formal",
+  "ctx": "Only if you find peace within yourself, will you find true connection with others.",
+  "who": "Gypsy",
+  "ch": 9
+ },
+ {
+  "term": "wonder",
+  "ko": "궁금해하다, 혼자 이런저런 생각을 하다",
+  "en": "to want to know something; to think about it curiously",
+  "nuance": "상대에게 묻는 게 아니라 속으로 곱씹는 상태다. 헤어진 뒤 네가 누구와 있을지 자꾸 상상하게 될 거라는 셀린의 말이라 호기심보다 불안이 짙다.",
+  "register": "neutral",
+  "ctx": "I‘ll wonder who else you're with.",
+  "who": "Céline",
+  "ch": 19
+ },
+ {
+  "term": "accused",
+  "ko": "비난받는, 탓을 뒤집어쓰는 (accuse의 과거분사)",
+  "en": "blamed or charged with doing something wrong",
+  "nuance": "the one accused처럼 수동으로 쓰였다. accuse A of B가 기본 골격이고, blame보다 무거워 법적 고발까지 아우른다. 셀린이 멀리 떨어져 있어도 자기가 몰릴 거라 두려워하는 강박을 말한다.",
+  "register": "neutral",
+  "ctx": "But now I'm obsessed that he's gonna die from an accident, or you know, a thousand kilometers away, I'm gonna be the one accused.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "aged",
+  "ko": "나이 든 (middle-aged: 중년의)",
+  "en": "having lived for a specified length of time",
+  "nuance": "홀로 쓰인 게 아니라 middle-aged(중년의)라는 합성어의 일부다. aged를 사람에게 단독으로 쓰면 '고령의'라는 꽤 격식 있는 말이 되고, 이때는 두 음절로 발음한다.",
+  "register": "neutral",
+  "ctx": "We see a middle-aged couple sitting in the front of the coach car.",
+  "who": null,
+  "ch": 1
+ },
+ {
+  "term": "aggressive",
+  "ko": "공격적인 (passive-aggressive: 수동공격적인)",
+  "en": "behaving in an angry or forceful way",
+  "nuance": "셀린이 쓴 passive-aggressive는 대놓고 화내지 않으면서 삐딱하게 굴어 상대를 갉는 태도를 가리키는 심리 용어다. 그냥 aggressive와 정반대로 조용하고 은근한 공격성이라는 점이 핵심.",
+  "register": "neutral",
+  "ctx": "You know, even when they're wrong, it‘s this, it‘s this passive-aggressive shit, you know what I mean, it‘s...",
+  "who": "Céline",
+  "ch": 2
+ },
+ {
+  "term": "alcoholic",
+  "ko": "알코올 중독자; 술이 든",
+  "en": "a person addicted to alcohol; containing alcohol",
+  "nuance": "여기서는 명사로 '알코올 중독자'다. 술을 즐기는 사람(drinker)이 아니라 병으로서의 중독을 뜻하므로 사람에게 함부로 붙이면 몹시 모욕적인 말이 된다.",
+  "register": "neutral",
+  "ctx": "I mean he was very stupid, ugly, bad in bed, alcoholic, you know.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "allowing",
+  "ko": "~하게 해 주는 (allow의 -ing형)",
+  "en": "permitting or making something possible",
+  "nuance": "allow A to + 동사원형 구조다. 허락이라기보다 '가능하게 하는 장치'라는 뜻으로, 나이 들며 귀가 어두워지는 걸 자연의 배려라고 제시가 농담하는 대목이다.",
+  "register": "neutral",
+  "ctx": "Nature's way of allowing couples to grow old together without killing each other.",
+  "who": "Jesse",
+  "ch": 1
+ },
+ {
+  "term": "alternative",
+  "ko": "얼터너티브 (음악 장르); 대안의",
+  "en": "an option or substitute; (of music) outside the mainstream",
+  "nuance": "여기서는 '대안'이 아니라 90년대 인디 록을 가리키는 장르 이름 alternative music이다. 일반 명사로 쓰면 '다른 선택지'라는 뜻이 된다.",
+  "register": "neutral",
+  "ctx": "Live German alternative music is playing by a single musician with an acoustic guitar.",
+  "who": null,
+  "ch": 13
+ },
+ {
+  "term": "amused",
+  "ko": "재미있어하는, 우습다는 표정의",
+  "en": "finding something funny or entertaining",
+  "nuance": "크게 웃는 게 아니라 속으로 재미있어하는 정도다. 뒤의 unimpressed와 짝지어 '웃기긴 한데 넘어가진 않는다'는 셀린의 반응을 그린다. amusing은 대상이 웃긴 것, amused는 사람이 느끼는 쪽.",
+  "register": "neutral",
+  "ctx": "Céline seems amused, but unimpressed.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "announcement",
+  "ko": "안내 방송, 공지",
+  "en": "a public statement giving information",
+  "nuance": "역 구내 방송처럼 공식적으로 알리는 말이다. 이별 직전 알아들을 수 없는 방송이 흐르는 지문으로, 시간이 다 됐다는 신호 구실을 한다.",
+  "register": "neutral",
+  "ctx": "Voice over loudspeaker makes an inaudible announcement.",
+  "who": null,
+  "ch": 22
+ },
+ {
+  "term": "anonymous",
+  "ko": "익명의, 아무도 나를 모르는",
+  "en": "unknown by name; unidentified",
+  "nuance": "이름을 감춘다기보다 낯선 도시에서 '아무도 우리를 모른다'는 해방감을 말한다. 두 사람이 하룻밤 동안 누리는 자유의 조건이기도 하다.",
+  "register": "neutral",
+  "ctx": "Completely anonymous.",
+  "who": "Jesse",
+  "ch": 15
+ },
+ {
+  "term": "apart",
+  "ko": "떨어져서, 사이를 두고",
+  "en": "separated by a distance",
+  "nuance": "a few feet apart처럼 거리 표현 뒤에 붙어 쓴다. 물리적 거리를 말하지만 서로 다른 곳을 보며 몇 발짝 떨어져 선 자세로 두 사람 사이의 어색함을 드러내는 지문이다.",
+  "register": "neutral",
+  "ctx": "They are each gazing at the scenery below, but looking in opposite directions, and standing a few feet apart.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "apparently",
+  "ko": "보아하니, ~인 듯",
+  "en": "based on what seems to be true rather than what is certain",
+  "nuance": "확신이 없을 때 붙이는 유보 표현이다. 생김새가 비슷한 apparent(명백한) 때문에 '명백히'로 잘못 외우기 쉬운데, 실제로는 '겉보기엔 그런 것 같다'에 가깝다.",
+  "register": "neutral",
+  "ctx": "A pair of friars walk by, apparently in prayer.",
+  "who": null,
+  "ch": 9
+ },
+ {
+  "term": "approaching",
+  "ko": "다가가는, 가까워지는 (approach의 -ing형)",
+  "en": "coming nearer to something",
+  "nuance": "approach는 타동사라 approach to the stairs가 아니라 approaching the top of some stairs처럼 전치사 없이 목적어를 받는다. 한국어 '~에 다가가다'를 그대로 옮기면 틀리는 대표적인 자리.",
+  "register": "neutral",
+  "ctx": "We see them approaching the top of some stairs, then continuing down a quiet street.",
+  "who": null,
+  "ch": 14
+ },
+ {
+  "term": "appropriate",
+  "ko": "적절한, 이 자리에 맞는",
+  "en": "suitable for a particular situation",
+  "nuance": "좋다 나쁘다가 아니라 '지금 이 상황에 걸맞은가'를 따지는 말이다. 형용사일 때는 끝을 [-ət]으로 흘리고, 동사(유용하다, 전용하다)일 때는 [-eɪt]으로 또렷이 발음해 구분한다.",
+  "register": "neutral",
+  "ctx": "It‘s not the appropriate place to tell it, but...",
+  "who": "Jesse",
+  "ch": 11
+ },
+ {
+  "term": "artistic",
+  "ko": "예술적인, 예술가로서의",
+  "en": "relating to art or creative skill",
+  "nuance": "셀린이 옛 남자친구의 변명을 그대로 흉내 내며 비꼬는 대목이라, 진지한 칭찬이 아니라 우스꽝스러운 자기 포장으로 들리게 쓰였다.",
+  "register": "neutral",
+  "ctx": "(Laughs.) I was kind of giving him a favor, but he left me, saying I loved him too much, and, you know, I was blocking his artistic expression, or some shit like that, you know.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "automated",
+  "ko": "자동화된, 자동으로 여닫히는",
+  "en": "operated by machines with little or no human control",
+  "nuance": "자동문 장치를 주먹으로 툭 치고 들어가는 지문이다. automatic이 '자동인'이라는 성질을 말한다면 automated는 사람 손을 기계로 대체했다는 과정을 함축한다.",
+  "register": "neutral",
+  "ctx": "Jesse 'punches' the automated door mechanism as they enter the lounge car.",
+  "who": null,
+  "ch": 1
+ },
+ {
+  "term": "awaiting",
+  "ko": "기다리는 중인 (await의 -ing형)",
+  "en": "waiting for something",
+  "nuance": "await는 wait for와 달리 전치사 없이 바로 목적어를 받고 말투가 더 문어적이다. 지문에서 짧게 상황을 적기 좋아 자주 쓰이며, 여기서는 점쟁이가 손을 내민 채 돈을 기다리는 모습이다.",
+  "register": "formal",
+  "ctx": "(Offers hand, awaiting payment.)",
+  "who": "Gypsy",
+  "ch": 9
+ },
+ {
+  "term": "backgrounds",
+  "ko": "성장 배경, 출신 환경 (background의 복수형)",
+  "en": "the family, education, and social circumstances someone comes from",
+  "nuance": "사진이나 그림의 '배경'이 아니라 사람이 자라 온 환경이다. 부모 세대 각각의 보수적 가톨릭 환경을 가리키느라 복수형을 썼다.",
+  "register": "neutral",
+  "ctx": "You know, the government, their conservative catholic backgrounds, I mean.",
+  "who": "Céline",
+  "ch": 8
+ },
+ {
+  "term": "balcony",
+  "ko": "발코니, 노대",
+  "en": "a platform projecting from the wall of a building",
+  "nuance": "도시 아래쪽이 내려다보이는 자리로, 두 사람이 이야기를 이어 가는 장면의 배경이다. 극장 2층 객석도 balcony라 부른다.",
+  "register": "neutral",
+  "ctx": "On a balcony, overlooking a lower part of the city.",
+  "who": null,
+  "ch": 16
+ },
+ {
+  "term": "based",
+  "ko": "~에 근거한 (be based on)",
+  "en": "founded or grounded on something",
+  "nuance": "based on이 통째로 붙어 다닌다. 제시가 상대의 주장에 근거가 없다고 받아치는 말로, 사실 여부를 따지는 자리에 흔히 나오는 표현이다.",
+  "register": "neutral",
+  "ctx": "That's not based on any kind of reality.",
+  "who": "Jesse",
+  "ch": 8
+ },
+ {
+  "term": "basement",
+  "ko": "지하실, 지하층",
+  "en": "the floor of a building below ground level",
+  "nuance": "새벽에 지하 창문 너머로 하프시코드 치는 남자를 들여다보는 장면이다. cellar가 저장용 광이라면 basement는 사람이 지내는 지하층을 가리킨다.",
+  "register": "neutral",
+  "ctx": "They look into basement window, where there is a man playing a harpsichord.",
+  "who": null,
+  "ch": 20
+ },
+ {
+  "term": "basically",
+  "ko": "기본적으로, 뭐 대충 말하자면",
+  "en": "in the most essential respects; essentially",
+  "nuance": "엄밀한 요약이라기보다 말을 고르는 사이를 메우는 구어 완충어에 가깝다. 이 영화 대사에서 you know, kind of와 함께 말버릇처럼 붙는다.",
+  "register": "casual",
+  "ctx": "But you know what, if your parents never really fully contradict you about anything, and like are basically nice, and supportive...",
+  "who": "Céline",
+  "ch": 2
+ },
+ {
+  "term": "belly",
+  "ko": "배, 복부 (belly dancer: 밸리 댄서)",
+  "en": "the front part of the body below the chest",
+  "nuance": "stomach보다 구어적이고 몸의 겉면을 가리킨다. 여기서는 belly dancer라는 합성어의 일부로, 거리에서 춤추는 사람을 그리는 지문이다.",
+  "register": "casual",
+  "ctx": "The scene cuts to a belly dancer dancing to a percussionist, performing on a street corner as several people watch.",
+  "who": null,
+  "ch": 14
+ },
+ {
+  "term": "bet",
+  "ko": "장담하다, 틀림없다; (돈을) 걸다",
+  "en": "to feel sure that something is true; to wager money",
+  "nuance": "대화에서는 도박보다 I bet(내 장담하는데), You bet(그럼, 물론이지)처럼 확신과 맞장구를 나타내는 쪽으로 훨씬 자주 쓴다. 가볍고 친근한 말투다.",
+  "register": "casual",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "billion",
+  "ko": "10억",
+  "en": "one thousand million",
+  "nuance": "한국어 '억'과 자릿수가 어긋나 five and six billion은 50억~60억이다. 영어 숫자는 thousand-million-billion으로 세 자리씩 끊으므로 한국식으로 만 단위로 세면 계속 틀린다.",
+  "register": "neutral",
+  "ctx": "Now, there's between five and six billion people on the planet, right?",
+  "who": "Jesse",
+  "ch": 5
+ },
+ {
+  "term": "billions",
+  "ko": "수십억 (billion의 복수형)",
+  "en": "very large numbers, in the order of thousands of millions",
+  "nuance": "앞에 숫자가 붙으면 five billion처럼 단수형, 막연히 엄청나게 많다고 할 때는 billions of years처럼 복수형에 of를 붙인다. 이 구별을 놓치면 바로 어색해진다.",
+  "register": "neutral",
+  "ctx": "And the stars exploded billions of years ago, to form everything that is this world.",
+  "who": "Gypsy",
+  "ch": 9
+ },
+ {
+  "term": "biological",
+  "ko": "생물학적인, 타고난",
+  "en": "relating to biology or to living organisms",
+  "nuance": "남녀 차이가 문화가 아니라 몸에서 온 것일 수 있다는 제시의 반론이다. 학문으로서의 생물학이 아니라 '본능·생리 차원의'라는 뜻으로 쓰였다.",
+  "register": "neutral",
+  "ctx": "But maybe, maybe there's some biological things at work here.",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "blame",
+  "ko": "탓하다, ~의 잘못으로 돌리다",
+  "en": "to hold someone responsible for something bad",
+  "nuance": "blame A for B 구조로 쓴다. criticize가 잘못을 지적하는 것이라면 blame은 책임을 떠넘기는 쪽이다. 결혼 생활이 시들해진 원인을 남편에게 돌리게 된다는 제시의 가상 시나리오.",
+  "register": "neutral",
+  "ctx": "You start to blame your husband.",
+  "who": "Jesse",
+  "ch": 3
+ },
+ {
+  "term": "blank",
+  "ko": "(머릿속이) 하얘진, 텅 빈",
+  "en": "empty; showing no thought or expression",
+  "nuance": "mind goes blank는 '머리가 새하얘지다'라는 굳은 표현이다. 프랑스어 문장을 외워 갔다가 창구 앞에서 몽땅 날아갔다는 제시의 일화라 긴장으로 인한 정지 상태를 뜻한다.",
+  "register": "casual",
+  "ctx": "(Laughs) Un billet s'il vous plaît, un billet s'il vous plaît, you know, and I get up there, and, uh, I look at this woman, and my mind goes completely blank.",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "blind",
+  "ko": "(rob ... blind로) 탈탈 털어 가다; 눈먼",
+  "en": "unable to see; 'rob someone blind' means to cheat them completely",
+  "nuance": "형용사 blind가 결과를 나타내는 자리에 붙어 '아무것도 눈치채지 못하게 완전히 털어먹다'가 된다. 제시가 점쟁이를 사기꾼 취급하며 던지는 과장된 구어다.",
+  "register": "casual",
+  "ctx": "Alright, listen, this woman robs you blind, okay?",
+  "who": "Jesse",
+  "ch": 12
+ },
+ {
+  "term": "blocking",
+  "ko": "가로막는, 틀어막는 (block의 -ing형)",
+  "en": "preventing something from happening or passing",
+  "nuance": "길을 막는다는 물리적 뜻에서 창작을 '틀어막는다'는 비유로 넘어갔다. 셀린이 옛 남자친구의 변명을 그대로 옮기는 대목이라 진단이 아니라 비아냥으로 들려야 한다.",
+  "register": "neutral",
+  "ctx": "(Laughs.) I was kind of giving him a favor, but he left me, saying I loved him too much, and, you know, I was blocking his artistic expression, or some shit like that, you know.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "bowling",
+  "ko": "볼링 (치기)",
+  "en": "the game of rolling a ball to knock down pins",
+  "nuance": "go bowling, be out bowling처럼 -ing 형태로 여가 활동을 말한다. 어딜 가든 늘 자기 자신이 따라다닌다는 이야기를 하며 제시가 든 지극히 평범한 예다.",
+  "register": "casual",
+  "ctx": "I've never been out bowling, if I wasn't there, making some stupid joke.",
+  "who": "Jesse",
+  "ch": 19
+ },
+ {
+  "term": "branches",
+  "ko": "나뭇가지들 (branch의 복수형)",
+  "en": "the parts that grow out from the trunk of a tree",
+  "nuance": "시인이 즉석에서 지은 시 구절로, 강물에 떠내려가는 가지에 두 사람을 겹쳐 놓았다. 회사의 '지점'이나 학문의 '분야'도 branch지만 여기는 문자 그대로 나뭇가지다.",
+  "register": "literary",
+  "ctx": "Like branches in the river.",
+  "who": null,
+  "ch": 12
+ },
+ {
+  "term": "breath",
+  "ko": "숨, 호흡",
+  "en": "the air taken into and let out of the lungs",
+  "nuance": "명사 breath는 [브레스], 동사 breathe는 [브리드]로 철자와 발음이 함께 달라지니 짝지어 외운다. out of breath(숨이 차다), hold your breath(숨을 참다)로 자주 쓴다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "breaths",
+  "ko": "숨, 심호흡 (breath의 복수형)",
+  "en": "individual acts of breathing in and out",
+  "nuance": "역에서 제시가 말을 잇지 못하고 숨을 몇 번 고르는 지문이다. a couple of deep breaths는 북받치는 감정을 눌러 담을 때 쓰는 흔한 표현.",
+  "register": "neutral",
+  "ctx": "Um, I really, (A couple of deep breaths.) I, uh, I...",
+  "who": "Jesse",
+  "ch": 22
+ },
+ {
+  "term": "calmer",
+  "ko": "더 차분한, 좀 가라앉은 (calm의 비교급)",
+  "en": "more quiet and less agitated",
+  "nuance": "싸우던 부부가 여전히 다투되 아까보다는 누그러졌다는 뜻이다. calm은 l을 발음하지 않고 [카암]에 가깝게 소리 낸다.",
+  "register": "neutral",
+  "ctx": "Couple returns to car, still arguing, albeit a lot calmer.",
+  "who": null,
+  "ch": 1
+ },
+ {
+  "term": "capable",
+  "ko": "~할 수 있는, 그럴 능력이 있는 (be capable of)",
+  "en": "having the ability or potential to do something",
+  "nuance": "뒤에 of + 동명사가 온다. able to가 그때그때 할 수 있음이라면 capable of는 '그럴 소질·잠재력이 있다'는 쪽이라, 여기서는 남자도 여자를 파괴할 수 있는 존재라는 무거운 뜻이 된다.",
+  "register": "neutral",
+  "ctx": "I'm sure even, you know, men are destroying women, or are able...capable of destroying women, much more than women...Well, anyway, it‘s depressing, I mean you know what?",
+  "who": "Céline",
+  "ch": 14
+ },
+ {
+  "term": "catholic",
+  "ko": "가톨릭의, 천주교의",
+  "en": "relating to the Roman Catholic Church",
+  "nuance": "종교를 가리킬 때는 대문자 Catholic이 원칙이고 이 대본에서는 소문자로 적혔다. 소문자 catholic에는 '두루 아우르는, 폭넓은'이라는 전혀 다른 뜻이 따로 있다.",
+  "register": "neutral",
+  "ctx": "You know, the government, their conservative catholic backgrounds, I mean.",
+  "who": "Céline",
+  "ch": 8
+ },
+ {
+  "term": "clap",
+  "ko": "박수를 치다; 박수",
+  "en": "to strike your hands together, usually to applaud",
+  "nuance": "applaud가 격식 있는 말이라면 clap은 일상어이고 손뼉 소리 자체를 가리킨다. clap someone on the back이면 격려하며 등을 툭 치는 동작이 된다.",
+  "register": "casual",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "collapses",
+  "ko": "주저앉는다, 쓰러진다 (collapse의 3인칭 단수형)",
+  "en": "falls down suddenly, from exhaustion or defeat",
+  "nuance": "다쳐서 넘어지는 게 아니라 맥이 풀려 털썩 주저앉는 동작이다. 건물이 무너질 때도, 계획이 무산될 때도 같은 단어를 써서 '지탱하던 것이 꺾인다'는 그림을 공유한다.",
+  "register": "neutral",
+  "ctx": "Jesse sighs of frustration and collapses to the ground again.",
+  "who": null,
+  "ch": 19
+ },
+ {
+  "term": "complex",
+  "ko": "복잡한, 간단히 말할 수 없는",
+  "en": "made of many connected parts; not simple",
+  "nuance": "complicated가 '뒤엉켜 골치 아프다'는 불평에 가깝다면 complex는 '층이 여럿이다'라는 중립적 평가다. 사랑을 한마디로 정리할 수 없다는 제시의 말이라 후자가 어울린다.",
+  "register": "neutral",
+  "ctx": "I mean, love is a complex issue.",
+  "who": "Jesse",
+  "ch": 5
+ },
+ {
+  "term": "concentrate",
+  "ko": "집중하다 (concentrate on: ~에 집중하다)",
+  "en": "to focus your attention on one thing",
+  "nuance": "전치사 on과 붙어 다닌다. 상담사에게 '밝은 색깔에 집중하라'는 말을 들었다며 셀린이 어이없어하는 대목이라, 조언의 허술함을 드러내는 자리다.",
+  "register": "neutral",
+  "ctx": "I was paying her nine-hundred francs an hour, to hear that I was a homicidal maniac, and that I could eliminate my obsession if I would concentrate on bright colours.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "costume",
+  "ko": "분장복, 의상",
+  "en": "clothes worn to look like someone or something else",
+  "nuance": "배우나 가장무도회에서 입는 '분장용 옷'이지 평상복이 아니다. 기차에서 만난 남자가 소 분장을 한 배우 이야기를 꺼내는 장면.",
+  "register": "neutral",
+  "ctx": "It‘s an actor in a cow costume.",
+  "who": "Man with tie",
+  "ch": 4
+ },
+ {
+  "term": "crack",
+  "ko": "크랙 (흡연용 코카인); 금, 갈라진 틈",
+  "en": "a smokable, highly addictive form of cocaine",
+  "nuance": "a hit of crack이라 했으니 '금'이 아니라 마약이다. 밤새 뭘 할지 찾다가 제시가 던지는 농담이라 진심이 아니지만, crack은 함의가 무거운 말이라 가볍게 입에 올릴 단어는 아니다.",
+  "register": "slang",
+  "ctx": "If you want, maybe there's a seedy section of Vienna, we can go buy a hit of crack, you know.",
+  "who": "Jesse",
+  "ch": 9
+ },
+ {
+  "term": "crashing",
+  "ko": "(초대 없이) 불쑥 끼어드는 (crash a party)",
+  "en": "turning up at an event without being invited",
+  "nuance": "crash a party는 '초대장 없이 파티에 들이닥치다'라는 구어다. 세상이라는 큰 파티에 자기만 초대받지 못한 기분이었다는 제시의 비유이니 '충돌하다'로 읽으면 안 된다.",
+  "register": "casual",
+  "ctx": "You know, like I was crashing 'The Big Party.’",
+  "who": "Jesse",
+  "ch": 8
+ },
+ {
+  "term": "creation",
+  "ko": "창작물, 우리가 만들어낸 것",
+  "en": "something that has been made or invented",
+  "nuance": "지금 이 밤이 누가 정해 준 게 아니라 두 사람이 직접 지어낸 것이라는 말이다. 종교적 '천지창조'도 the Creation이지만 여기서는 소박한 '작품'에 가깝다.",
+  "register": "neutral",
+  "ctx": "It‘s our own creation.",
+  "who": "Céline",
+  "ch": 16
+ },
+ {
+  "term": "creativity",
+  "ko": "창조력, 창의성",
+  "en": "the ability to produce original ideas or things",
+  "nuance": "점쟁이가 셀린을 치켜세우며 여성의 힘·깊이와 나란히 놓는 말이라, 예술적 재능을 넘어 생명을 만들어내는 힘까지 은근히 겹쳐 놓았다. 추상 명사라 셀 수 없다.",
+  "register": "neutral",
+  "ctx": "You are interested in the power of the woman, in a woman's deep strength, and creativity?",
+  "who": "Gypsy",
+  "ch": 9
+ },
+ {
+  "term": "cross",
+  "ko": "건너다, 가로지르다",
+  "en": "to go from one side of something to the other",
+  "nuance": "타동사라 cross the street처럼 전치사 없이 쓴다. go across the street와 뜻은 같지만 지문에서는 짧은 cross를 택한다.",
+  "register": "neutral",
+  "ctx": "They cross the street to enter, as a car stops and honks at them.",
+  "who": null,
+  "ch": 11
+ },
+ {
+  "term": "cured",
+  "ko": "(병이) 나은, 다 치료된",
+  "en": "healed of an illness or problem",
+  "nuance": "상담 이야기를 듣고 제시가 비꼬듯 던지는 말이라 정말 다 나았다는 뜻이 아니다. cure는 병 자체를 없애는 것, treat는 치료 행위를 하는 것이라 결과와 과정으로 갈린다.",
+  "register": "casual",
+  "ctx": "Well, that's good, you're cured, then.",
+  "who": "Jesse",
+  "ch": 13
+ },
+ {
+  "term": "current",
+  "ko": "물살, 흐름",
+  "en": "the continuous flow of water in one direction",
+  "nuance": "시의 한 구절이라 형용사 '현재의'가 아니라 명사 '물살'이다. caught in the current는 흐름에 휩쓸려 어쩌지 못하는 상태를 뜻하며, 앞 행의 branches와 이어진다.",
+  "register": "literary",
+  "ctx": "Caught in the current.",
+  "who": null,
+  "ch": 12
+ },
+ {
+  "term": "dated",
+  "ko": "사귀었다, 만났다 (date의 과거형)",
+  "en": "went out with someone romantically",
+  "nuance": "미국식으로 date는 한 번 만나는 것부터 정식으로 사귀는 사이까지 두루 아우른다. 형용사로 쓰면 '한물간, 낡은'이라는 전혀 다른 뜻이 되니 문장 자리로 구분한다.",
+  "register": "casual",
+  "ctx": "I just, I dated this girl once who, who used to always ask me that question, “What about me bugs you?” you know.",
+  "who": "Jesse",
+  "ch": 12
+ }
+]

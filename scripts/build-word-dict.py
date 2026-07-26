@@ -69,7 +69,26 @@ def main():
             1,
         )
 
-    # 2) 노션 하이라이트 뜻풀이(단어짜리만)
+    # 2) 비포 선라이즈 대본에서 새로 생성한 뜻 (장면 문맥 포함)
+    bsr_dir = DATA / "word-dict-bsr"
+    if bsr_dir.is_dir():
+        for f in sorted(bsr_dir.glob("batch-*.json")):
+            for w in json.loads(f.read_text(encoding="utf-8")):
+                put(
+                    w["term"],
+                    {
+                        "ko": w["ko"],
+                        "en": w.get("en"),
+                        "nuance": w.get("nuance"),
+                        "ctx": trim(w.get("ctx")),
+                        "who": w.get("who"),
+                        "ch": w.get("ch"),
+                        "from": "대본",
+                    },
+                    2,
+                )
+
+    # 3) 노션 하이라이트 뜻풀이(단어짜리만)
     expr = {e["id"]: e for e in load("expressions.json")["expressions"]}
     for m in load("meanings.json")["meanings"]:
         e = expr.get(m["expressionId"], {})
@@ -87,7 +106,7 @@ def main():
             1,
         )
 
-    # 3) 커리큘럼 유닛 어휘
+    # 4) 커리큘럼 유닛 어휘
     for w in load("curriculum/unit-vocab.json")["words"]:
         src = (w.get("sources") or [{}])[0]
         put(
@@ -104,7 +123,7 @@ def main():
             2,
         )
 
-    # 4) 시트에 직접 적어 둔 메모
+    # 5) 시트에 직접 적어 둔 메모
     for n in load("vocab-notes.json")["notes"]:
         put(
             n["term"],
@@ -120,7 +139,7 @@ def main():
             3,
         )
 
-    # 5) B2 단어장 — 넓게 덮지만 장면 문맥이 없다
+    # 6) B2 단어장 — 넓게 덮지만 장면 문맥이 없다
     for w in load("b2-words.json"):
         put(
             w["word"],

@@ -33,6 +33,8 @@ const DEFAULTS = {
   reviewLog: [], // { at, cardId, grade, boxBefore, boxAfter }
   // 커리큘럼 진행. { unitProgress: { 'u-07': { screen, completedAt, quizScore } } }
   curriculum: { unitProgress: {} },
+  // 회독. { 'before-sunrise-c2': { count, lastAt } } — 목표 20회독
+  reads: {},
 }
 
 /**

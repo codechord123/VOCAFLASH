@@ -116,6 +116,75 @@ export function lookupIn(table, word) {
 }
 
 /**
+ * 문장에서 아는 구문을 찾아 한 덩어리로 묶는다.
+ *
+ * for instance는 for와 instance를 따로 봐서는 뜻이 안 나오고,
+ * I was going to say는 단어가 다 쉬운데도 묶이면 "그 말을 하려던 참이었다"는
+ * 새 뉘앙스가 생긴다. 그런 자리를 단어 하나씩 쪼개 놓으면 학습자는 영영
+ * 그 덩어리를 못 본다.
+ *
+ * 매칭은 긴 것 먼저(greedy). "going to say"와 "I was going to say"가 둘 다
+ * 있으면 긴 쪽이 이긴다 — 짧은 쪽을 먼저 잡으면 긴 표현이 영영 안 걸린다.
+ *
+ * @returns [{ kind:'phrase'|'word'|'gap', text, key? }]
+ */
+export function segment(text, phrases) {
+  const tokens = tokenize(text)
+  if (!phrases) return tokens.map((t) => ({ kind: t.w ? 'word' : 'gap', text: t.t }))
+
+  // 단어 토큰의 위치와 정규화형만 따로 모아 둔다
+  const idx = []
+  tokens.forEach((t, i) => t.w && idx.push({ i, key: normalize(t.t) }))
+
+  const out = []
+  let cursor = 0 // tokens 인덱스
+  let w = 0 // idx 인덱스
+
+  while (w < idx.length) {
+    let matched = null
+    // 최대 5단어까지 본다. 그 이상은 문장이지 구문이 아니다.
+    for (let n = Math.min(5, idx.length - w); n >= 2; n -= 1) {
+      const key = idx
+        .slice(w, w + n)
+        .map((x) => x.key)
+        .join(' ')
+      if (phrases[key] !== undefined) {
+        matched = { n, key }
+        break
+      }
+    }
+
+    if (!matched) {
+      w += 1
+      continue
+    }
+
+    const startTok = idx[w].i
+    const endTok = idx[w + matched.n - 1].i
+
+    // 구문 앞의 남은 조각을 먼저 흘려보낸다
+    for (; cursor < startTok; cursor += 1) {
+      out.push({ kind: tokens[cursor].w ? 'word' : 'gap', text: tokens[cursor].t })
+    }
+    out.push({
+      kind: 'phrase',
+      key: matched.key,
+      text: tokens
+        .slice(startTok, endTok + 1)
+        .map((t) => t.t)
+        .join(''),
+    })
+    cursor = endTok + 1
+    w += matched.n
+  }
+
+  for (; cursor < tokens.length; cursor += 1) {
+    out.push({ kind: tokens[cursor].w ? 'word' : 'gap', text: tokens[cursor].t })
+  }
+  return out
+}
+
+/**
  * 그 단어가 들어 있는 문장 하나만 잘라낸다.
  *
  * 대사 한 줄이 곧 한 문장인 것은 아니다. 제시의 케이블 방송 이야기처럼

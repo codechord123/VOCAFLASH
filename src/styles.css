@@ -422,6 +422,33 @@ main {
 .grade--hard:hover:not(:disabled)  { background: color-mix(in srgb, var(--hard-soft) 60%, var(--hard));  color: var(--text); }
 .grade--good:hover:not(:disabled)  { background: color-mix(in srgb, var(--good-soft) 60%, var(--good));  color: var(--text); }
 
+/* ── 회독 ─────────────────────────────────────────────────────────── */
+
+/* 목록에서 한 줄에 들어가는 회독 막대. 숫자만으로는 스무 번이 멀어 보인다. */
+.read-meter {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  margin-top: 3px;
+}
+.read-meter__bar {
+  flex: 1;
+  max-width: 90px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.read-meter__fill { display: block; height: 100%; background: var(--accent); }
+.read-meter__text { font-size: 11px; color: var(--text-faint); white-space: nowrap; }
+
+/* 구문은 한 덩어리라는 것이 보여야 한다. 밑줄이 그 표시다. */
+.ph {
+  border-bottom: 1px dashed var(--border-strong);
+  padding-bottom: 1px;
+}
+.ph:hover { border-bottom-color: var(--accent); }
+
 /* ── 하단 시트 ───────────────────────────────────────────────────── */
 
 /* 단어를 탭했을 때 아래에서 올라온다. 읽던 자리를 가리지 않도록 화면의
