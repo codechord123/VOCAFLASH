@@ -24,7 +24,9 @@ const loadReadingData = () =>
     import('./data/sheet-scripts.json'),
     import('./data/analysis-disenchantment.json'),
     import('./data/analysis-before-sunset.json'),
-  ]).then(([s, a, sh, dis, bsu]) => ({
+    import('./data/word-levels.json'),
+    import('./data/word-dict.json'),
+  ]).then(([s, a, sh, dis, bsu, lv, wd]) => ({
     chapters: s.default.chapters,
     analysis: a.default,
     sheetWorks: sh.default.works,
@@ -33,6 +35,9 @@ const loadReadingData = () =>
       disenchantment: dis.default,
       'before-sunset': bsu.default,
     },
+    // 단어 레이어: 등급 3,147개(색)와 사전 806개(팝업)
+    levels: lv.default.levels,
+    dict: wd.default.words,
   }))
 
 // B2 단어장 899개는 300KB쯤 된다. 기본으로 꺼져 있는 덱이라 첫 화면을
@@ -215,6 +220,8 @@ export default function App() {
                 analysis={reading.analysis}
                 sheetWorks={reading.sheetWorks}
                 sheetAnalysis={reading.sheetAnalysis}
+                levels={reading.levels}
+                dict={reading.dict}
                 cards={cards}
                 commit={commit}
               />

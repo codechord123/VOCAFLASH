@@ -1,22 +1,26 @@
 import { useEffect } from 'react'
-import { STATUS, dictUrl, lookup, normalize } from '../lib/words.js'
+import { STATUS, dictUrl, lookupIn, normalize } from '../lib/words.js'
 
 // 단어를 탭하면 뜨는 하단 시트.
 //
-// LingQ의 핵심 상호작용: 단어 하나에 대해 (1) 뜻을 보고 (2) 상태를 정하고
-// (3) 저장한다. 한 화면에서 다 되어야 읽는 흐름이 안 끊긴다.
+// 한 화면에서 세 가지가 다 되어야 읽는 흐름이 안 끊긴다:
+// (1) 뜻을 보고 (2) 안다/모른다를 정하고 (3) 단어장에 담는다.
 //
-// 자동 뜻은 우리가 가진 사전 안에서만 뜬다. 없으면 상태 표시·북마크·외부
-// 사전 링크를 준다 — 못 하는 척 숨기는 것보다 정직하게 대안을 준다.
+// 뜻은 앱이 가진 806개 안에서만 뜬다. 없으면 없다고 말하고 사전 링크와
+// 담기를 준다 — 못 하는 것을 숨기면 사용자는 앱이 고장 났다고 생각한다.
+// 담아 두면 나중에 뜻을 채워 넣을 수 있다.
+
+const LEVEL_LABELS = { 1: '기초', 2: '중급', 3: '상급', 4: '고급' }
 
 export default function WordPopup({
   word,
   context,
+  levels,
   dict,
   status,
+  isSaved,
   onSetStatus,
-  onBookmark,
-  isBookmarked,
+  onSave,
   onClose,
 }) {
   useEffect(() => {
@@ -28,8 +32,9 @@ export default function WordPopup({
   }, [onClose])
 
   if (!word) return null
-  const entry = lookup(dict, word)
-  const key = normalize(word)
+
+  const entry = lookupIn(dict, word)
+  const level = lookupIn(levels, word) ?? 0
 
   return (
     <>
@@ -42,11 +47,19 @@ export default function WordPopup({
             <div className="read" style={{ fontSize: 24 }}>
               {word}
             </div>
-            {entry?.phonetics && (
-              <div className="hint" style={{ fontFamily: 'var(--font-mono)' }}>
-                {entry.phonetics}
-              </div>
-            )}
+            <div className="row" style={{ gap: 'var(--s2)', marginTop: 4 }}>
+              {level > 0 && (
+                <span className={`chip${level >= 3 ? ' chip--accent' : ''}`}>
+                  {level}급 {LEVEL_LABELS[level]}
+                </span>
+              )}
+              {entry?.from && <span className="chip">{entry.from}</span>}
+              {entry?.ipa && (
+                <span className="hint" style={{ fontFamily: 'var(--font-mono)' }}>
+                  {entry.ipa}
+                </span>
+              )}
+            </div>
           </div>
           <button className="btn btn--ghost btn--sm" onClick={onClose}>
             닫기
@@ -56,31 +69,52 @@ export default function WordPopup({
         {entry ? (
           <div className="stack stack--tight" style={{ marginTop: 'var(--s3)' }}>
             <div className="read" style={{ fontSize: 18 }}>
-              {entry.meaningKo}
+              {entry.ko}
             </div>
-            {entry.definitionEn && <p className="hint">{entry.definitionEn}</p>}
+            {entry.en && <p className="hint">{entry.en}</p>}
             {entry.nuance && (
               <p className="hint" style={{ textAlign: 'left' }}>
                 뉘앙스 — {entry.nuance}
               </p>
             )}
-            {(entry.synonyms?.length > 0 || entry.antonyms?.length > 0) && (
-              <div className="row">
-                {entry.synonyms?.map((w) => (
-                  <span className="chip" key={`s-${w}`}>= {w}</span>
-                ))}
-                {entry.antonyms?.map((w) => (
-                  <span className="chip" key={`a-${w}`}>↔ {w}</span>
+            {entry.syn?.length > 0 && (
+              <div className="row" style={{ flexWrap: 'wrap' }}>
+                {entry.syn.map((s) => (
+                  <span className="chip" key={s}>
+                    = {s}
+                  </span>
                 ))}
               </div>
+            )}
+            {entry.phr?.length > 0 && (
+              <div className="stack stack--tight">
+                <div className="hint" style={{ textAlign: 'left' }}>
+                  이 단어가 들어간 표현
+                </div>
+                <div className="row" style={{ flexWrap: 'wrap' }}>
+                  {entry.phr.map((p) => (
+                    <span className="chip chip--box" key={p}>
+                      {p}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {entry.ctx && (
+              <p className="flashcard__context" style={{ marginTop: 'var(--s2)' }}>
+                {entry.ctx}
+                {entry.who && ` — ${entry.who}`}
+                {entry.ch ? `, Ch ${entry.ch}` : ''}
+              </p>
             )}
           </div>
         ) : (
           <div className="stack stack--tight" style={{ marginTop: 'var(--s3)' }}>
-            <p className="hint">
-              앱 사전에 이 단어의 뜻이 없습니다. 상태만 표시하거나,
-              외부 사전에서 찾아볼 수 있습니다.
+            <p className="hint" style={{ textAlign: 'left' }}>
+              앱 사전에 이 단어의 뜻이 아직 없습니다. 단어장에 담아 두면
+              나중에 뜻을 채워 넣을 수 있습니다.
             </p>
+            {context && <p className="flashcard__context">{context}</p>}
             <a
               className="btn btn--sm"
               style={{ justifySelf: 'start' }}
@@ -93,29 +127,22 @@ export default function WordPopup({
           </div>
         )}
 
-        {context && (
-          <p
-            className="flashcard__context"
-            style={{ marginTop: 'var(--s3)' }}
-          >
-            {context}
-          </p>
-        )}
-
-        {/* 상태: 세 단계. LingQ의 색 분류를 그대로 조작한다 */}
+        {/* 상태 — 색을 정하는 것은 결국 본인이다 */}
         <div className="grade-row" style={{ marginTop: 'var(--s4)' }}>
           <button
             className={`btn grade grade--again${status === STATUS.LEARNING ? ' is-active' : ''}`}
-            onClick={() => onSetStatus(status === STATUS.LEARNING ? null : STATUS.LEARNING)}
+            onClick={() =>
+              onSetStatus(status === STATUS.LEARNING ? null : STATUS.LEARNING)
+            }
           >
-            학습 중
-            <span className="grade__key">앰버로 표시</span>
+            모르는 단어
+            <span className="grade__key">굵게 표시</span>
           </button>
           <button
             className={`btn grade grade--good${status === STATUS.KNOWN ? ' is-active' : ''}`}
             onClick={() => onSetStatus(status === STATUS.KNOWN ? null : STATUS.KNOWN)}
           >
-            알아요
+            아는 단어
             <span className="grade__key">색 지움</span>
           </button>
         </div>
@@ -123,12 +150,29 @@ export default function WordPopup({
         <button
           className="btn btn--block"
           style={{ marginTop: 'var(--s2)' }}
-          disabled={isBookmarked}
-          onClick={() => onBookmark(word, context, entry)}
+          disabled={isSaved}
+          onClick={() => onSave(word, context, entry)}
         >
-          {isBookmarked ? '이미 단어장에 있음' : '★ 단어장에 저장'}
+          {isSaved ? '이미 단어장에 있음' : '★ 단어장에 담기'}
         </button>
       </div>
     </>
   )
+}
+
+/** 담은 단어를 카드로 만들 재료. 뜻이 없으면 비워 두되 문맥은 남긴다. */
+export function cardFieldsFor(word, context, entry) {
+  const key = normalize(word) || word
+  return {
+    id: `card:mark-${key}`,
+    front: key,
+    back: entry
+      ? {
+          meaningKo: entry.ko,
+          definitionEn: entry.en ?? null,
+          nuance: entry.nuance ?? '',
+        }
+      : null,
+    context: entry?.ctx ?? context ?? null,
+  }
 }

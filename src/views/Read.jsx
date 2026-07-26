@@ -2,6 +2,9 @@ import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
 import { cardFromLine, findChunkKo, lineId } from '../lib/lines.js'
+import { useWordLayer } from '../lib/useWordLayer.js'
+import { WordText } from './WordText.jsx'
+import WordPopup from './WordPopup.jsx'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
@@ -21,7 +24,7 @@ export const SECTIONS = [
   { id: 'background', label: '배경지식' },
 ]
 
-export default function Read({ chapters, analysis: analysisData, cards, commit, initialChapter = null }) {
+export default function Read({ chapters, analysis: analysisData, levels, dict, cards, commit, initialChapter = null }) {
   // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
   const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
@@ -76,6 +79,8 @@ export default function Read({ chapters, analysis: analysisData, cards, commit, 
       }))
     return [...fromHighlights, ...fromUnits]
   }, [cards, selected])
+
+  const wl = useWordLayer({ levels, dict, cards, commit })
 
   // 즐겨찾기한 줄. id는 위치 기반이라 화면에서 바로 대조할 수 있다.
   const savedLines = useMemo(
@@ -174,6 +179,7 @@ export default function Read({ chapters, analysis: analysisData, cards, commit, 
           cardedTexts={cardedTexts}
           savedLines={savedLines}
           onToggleLine={toggleLine}
+          wl={wl}
         />
       )}
       {section === 'vocab' && <VocabSection items={chapterVocab} />}
@@ -183,6 +189,20 @@ export default function Read({ chapters, analysis: analysisData, cards, commit, 
         ) : (
           <NotGenerated />
         ))}
+
+      {wl.selected && (
+        <WordPopup
+          word={wl.selected.word}
+          context={wl.selected.context}
+          levels={wl.levels}
+          dict={wl.dict}
+          status={wl.statusOf(wl.selected.word)}
+          isSaved={wl.isSaved(wl.selected.word)}
+          onSetStatus={(st) => wl.setStatus(wl.selected.word, st)}
+          onSave={wl.save}
+          onClose={wl.closeWord}
+        />
+      )}
 
       <ChapterNav
         chapters={readable}
@@ -252,7 +272,7 @@ function ChapterList({ chapters, analysisByChapter, onSelect }) {
   )
 }
 
-function Script({ chapter, cardedTexts, savedLines, onToggleLine }) {
+function Script({ chapter, cardedTexts, savedLines, onToggleLine, wl }) {
   // 같은 대사가 두 번 나오는 챕터가 있다(본인이 만든 청크 학습본).
   // 원문을 먼저 보여주고 학습본은 아래에 따로 묶는다.
   //
@@ -274,6 +294,7 @@ function Script({ chapter, cardedTexts, savedLines, onToggleLine }) {
               cardedTexts={cardedTexts}
               saved={savedLines?.has(lineId('before-sunrise', chapter.number, i))}
               onToggle={onToggleLine ? () => onToggleLine(i, line) : null}
+              wl={wl}
             />
           ))}
         </div>
@@ -295,7 +316,7 @@ function Script({ chapter, cardedTexts, savedLines, onToggleLine }) {
   )
 }
 
-function Line({ line, highlights, cardedTexts, saved = false, onToggle = null }) {
+function Line({ line, highlights, cardedTexts, saved = false, onToggle = null, wl = null }) {
   if (line.type === 'direction' || line.type === 'note') {
     return <p className="direction">{line.text}</p>
   }
@@ -317,7 +338,17 @@ function Line({ line, highlights, cardedTexts, saved = false, onToggle = null })
         </div>
       )}
       <p className="read" style={{ margin: 0 }}>
-        <Marked text={line.text} highlights={highlights} cardedTexts={cardedTexts} />
+        {wl ? (
+          <WordText
+            text={line.text}
+            levels={wl.levels}
+            dict={wl.dict}
+            statusMap={wl.statusMap}
+            onWord={wl.openWord}
+          />
+        ) : (
+          <Marked text={line.text} highlights={highlights} cardedTexts={cardedTexts} />
+        )}
       </p>
       {line.translation && <div className="ko">{line.translation}</div>}
     </div>

@@ -1,6 +1,9 @@
 import { useMemo, useState } from 'react'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
 import { cardFromLine, lineId } from '../lib/lines.js'
+import { useWordLayer } from '../lib/useWordLayer.js'
+import { WordText } from './WordText.jsx'
+import WordPopup from './WordPopup.jsx'
 import ChapterNav from './ChapterNav.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
@@ -15,7 +18,7 @@ import ChapterNav from './ChapterNav.jsx'
 // 아직 생성되지 않은 챕터는 '원문'만 보인다 — 탭을 띄워놓고 빈 화면을
 // 보여주는 것보다 낫다.
 
-export default function SheetRead({ work, analysis, cards, commit, onBack }) {
+export default function SheetRead({ work, analysis, levels, dict, cards, commit, onBack }) {
   const [selected, setSelected] = useState(null)
   const [section, setSection] = useState('script')
   const [hideKo, setHideKo] = useState(false)
@@ -26,6 +29,8 @@ export default function SheetRead({ work, analysis, cards, commit, onBack }) {
     for (const a of analysis?.chapters ?? []) map.set(a.number, a)
     return map
   }, [analysis])
+
+  const wl = useWordLayer({ levels, dict, cards, commit })
 
   // 즐겨찾기한 줄. 이 두 작품은 자막이 이미 한 줄씩 나뉘어 있고 번역도
   // 있어서, 담으면 그대로 한↔영 복습 카드가 된다.
@@ -211,7 +216,15 @@ export default function SheetRead({ work, analysis, cards, commit, onBack }) {
                 className={line.lyric ? 'read direction' : 'read'}
                 style={{ margin: 0 }}
               >
-                {line.lyric ? `♪ ${line.en} ♪` : line.en}
+                {line.lyric && '♪ '}
+                <WordText
+                  text={line.en}
+                  levels={wl.levels}
+                  dict={wl.dict}
+                  statusMap={wl.statusMap}
+                  onWord={wl.openWord}
+                />
+                {line.lyric && ' ♪'}
               </p>
 
               {hasKo &&
@@ -234,6 +247,20 @@ export default function SheetRead({ work, analysis, cards, commit, onBack }) {
           )
         })}
       </section>
+      )}
+
+      {wl.selected && (
+        <WordPopup
+          word={wl.selected.word}
+          context={wl.selected.context}
+          levels={wl.levels}
+          dict={wl.dict}
+          status={wl.statusOf(wl.selected.word)}
+          isSaved={wl.isSaved(wl.selected.word)}
+          onSetStatus={(st) => wl.setStatus(wl.selected.word, st)}
+          onSave={wl.save}
+          onClose={wl.closeWord}
+        />
       )}
 
       <ChapterNav

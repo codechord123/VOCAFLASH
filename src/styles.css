@@ -23,6 +23,8 @@
   --accent: #e8a33d;
   --accent-soft: rgba(232, 163, 61, 0.14);
   --accent-border: rgba(232, 163, 61, 0.35);
+  /* 중급 단어의 글자색. 앰버와 구별되되 본문보다 튀지 않는 파랑 */
+  --lv-mid: #7ba7d4;
 
   /* 복습 평가 3단계 */
   --good: #4ade80;
@@ -79,6 +81,7 @@
     --text-dim: #5f5b55;
     --text-faint: #8d8880;
     --accent: #b3701a;
+    --lv-mid: #3d6d99;
     --accent-soft: rgba(179, 112, 26, 0.1);
     --accent-border: rgba(179, 112, 26, 0.3);
     --good: #15803d;
@@ -418,6 +421,83 @@ main {
 .grade--again:hover:not(:disabled) { background: color-mix(in srgb, var(--again-soft) 60%, var(--again)); color: var(--text); }
 .grade--hard:hover:not(:disabled)  { background: color-mix(in srgb, var(--hard-soft) 60%, var(--hard));  color: var(--text); }
 .grade--good:hover:not(:disabled)  { background: color-mix(in srgb, var(--good-soft) 60%, var(--good));  color: var(--text); }
+
+/* ── 하단 시트 ───────────────────────────────────────────────────── */
+
+/* 단어를 탭했을 때 아래에서 올라온다. 읽던 자리를 가리지 않도록 화면의
+   절반을 넘지 않고, 넘치면 시트 안에서만 스크롤한다. */
+.sheet__scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 40;
+  animation: fade var(--fast) var(--ease);
+}
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 41;
+  max-height: 72vh;
+  overflow-y: auto;
+  padding: var(--s3) var(--s4) calc(var(--s5) + env(safe-area-inset-bottom));
+  background: var(--surface);
+  border-top: 1px solid var(--border-strong);
+  border-radius: var(--r4) var(--r4) 0 0;
+  box-shadow: var(--shadow-lg);
+  animation: sheet-up var(--base) var(--ease);
+}
+/* 화면이 넓으면 가운데로 모은다 — 본문과 같은 폭에서 읽히게 */
+@media (min-width: 640px) {
+  .sheet {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: min(var(--container), 100%);
+  }
+}
+.sheet__grip {
+  width: 36px;
+  height: 4px;
+  margin: 0 auto var(--s3);
+  border-radius: 2px;
+  background: var(--border-strong);
+}
+@keyframes sheet-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@media (min-width: 640px) {
+  @keyframes sheet-up {
+    from { transform: translate(-50%, 16px); opacity: 0; }
+    to { transform: translate(-50%, 0); opacity: 1; }
+  }
+}
+@keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+@media (prefers-reduced-motion: reduce) {
+  .sheet, .sheet__scrim { animation: none; }
+}
+
+/* ── 단어 레이어 ─────────────────────────────────────────────────── */
+
+/* 읽다가 멈칫할 만한 곳에만 색이 있다. 글자색만 바꾸고 배경은 건드리지
+   않는다 — 배경을 칠하면 문단이 얼룩덜룩해져 읽는 흐름이 끊긴다. */
+.w {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: color var(--fast) var(--ease), background var(--fast) var(--ease);
+}
+.w:hover { background: var(--accent-soft); }
+.w--mid { color: var(--lv-mid); }
+.w--hard { color: var(--accent); }
+/* 본인 표시가 등급을 이긴다. 읽을수록 화면이 조용해져야 한다. */
+.w--learning {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 1px solid var(--accent-border);
+}
+.w--known { color: inherit; font-weight: inherit; border-bottom: 0; }
 
 /* ── 문장 담기(즐겨찾기) ─────────────────────────────────────────── */
 
