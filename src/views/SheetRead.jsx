@@ -6,6 +6,8 @@ import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
 import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
+import ExplainSheet from './ExplainSheet.jsx'
+import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import ChapterNav from './ChapterNav.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
@@ -52,6 +54,27 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
   }, [analysis])
 
   const wl = useWordLayer({ levels, dict, phrases, cards, commit })
+
+  // 읽다 막힌 대목의 해설. 비포 선라이즈 리더와 같은 방식이다.
+  const [explain, setExplain] = useState(null) // { label, data }
+
+  const notedLines = useMemo(() => {
+    if (selected == null) return new Set()
+    const ch = work.chapters.find((c) => c.number === selected)
+    return linesWithExplanation(
+      ch?.lines ?? [],
+      analysisByChapter.get(selected) ?? null,
+      (l) => l.en
+    )
+  }, [selected, work, analysisByChapter])
+
+  function openExplain(text) {
+    setExplain({
+      label: shortLabel(text),
+      data: explainFor(text, analysisByChapter.get(selected) ?? null, phrases),
+    })
+    clear()
+  }
 
   const scriptRef = useRef(null)
   const { sel, clear } = useTextSelection(scriptRef)
@@ -237,6 +260,16 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
                 ) : (
                   <span />
                 )}
+                <div className="row" style={{ gap: 'var(--s2)' }}>
+                {notedLines.has(i) && (
+                  <button
+                    className="chip chip--accent chip--tap"
+                    onClick={() => openExplain(line.en)}
+                    title="이 대목의 구문 정리·문법 보기"
+                  >
+                    해설
+                  </button>
+                )}
                 <button
                   className={`star${
                     savedLines.has(lineId(work.id, chapter.number, i)) ? ' is-on' : ''
@@ -251,6 +284,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
                 >
                   {savedLines.has(lineId(work.id, chapter.number, i)) ? '★' : '☆'}
                 </button>
+                </div>
               </div>
 
               <p
@@ -302,8 +336,21 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
             : false
         }
         onSave={saveSelection}
+        onExplain={() => openExplain(sel.text)}
         onClose={clear}
       />
+
+      {explain && (
+        <ExplainSheet
+          label={explain.label}
+          explain={explain.data}
+          onClose={() => setExplain(null)}
+          onPhrase={(p) => {
+            setExplain(null)
+            wl.openPhrase(p.key, p.text, null)
+          }}
+        />
+      )}
 
       {wl.selected && (
         <WordPopup

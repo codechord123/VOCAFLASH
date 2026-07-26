@@ -67,7 +67,7 @@ export function useTextSelection(containerRef) {
  * 그은 글 근처에만 뜨므로, 우리 바를 화면 맨 아래로 내리면 자리가 아예
  * 안 겹친다. 서서 볼 때 엄지가 닿는 곳이기도 하다.
  */
-export default function SelectionSave({ sel, saved, onSave, onClose }) {
+export default function SelectionSave({ sel, saved, onSave, onExplain = null, onClose }) {
   const ref = useRef(null)
   if (!sel) return null
 
@@ -77,6 +77,13 @@ export default function SelectionSave({ sel, saved, onSave, onClose }) {
     <div ref={ref} className="sel-bar" role="dialog" aria-label="선택한 부분 담기">
       {/* 무엇을 담는지 보여준다 — 화면 아래에서는 그은 자리가 안 보일 수 있다 */}
       <span className="sel-bar__text">{sel.text}</span>
+      {/* 어려운 대목은 담기 전에 먼저 이해해야 한다. 챕터에 준비된
+          구문 정리·문법을 그은 자리에서 바로 꺼낸다. */}
+      {onExplain && (
+        <button className="btn btn--sm" onClick={() => onExplain(sel.text)}>
+          해설
+        </button>
+      )}
       <button className="btn btn--primary btn--sm" onClick={() => onSave(sel.text)} disabled={saved}>
         {saved ? '이미 담음' : `★ 담기 (${words}단어)`}
       </button>

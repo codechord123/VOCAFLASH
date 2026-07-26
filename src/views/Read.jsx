@@ -7,6 +7,8 @@ import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
 import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
+import ExplainSheet from './ExplainSheet.jsx'
+import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
@@ -112,6 +114,25 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
   }, [cards, selected])
 
   const wl = useWordLayer({ levels, dict, phrases, cards, commit })
+
+  // 읽다 막힌 대목의 해설. 구문 정리·문법은 이미 챕터마다 있는데,
+  // 탭을 갈아타 눈으로 찾아야 해서 읽는 흐름이 끊겼다.
+  const [explain, setExplain] = useState(null) // { label, data }
+
+  // 어느 줄에 준비된 해설이 있는지 미리 표시해 둔다.
+  const notedLines = useMemo(() => {
+    if (selected == null) return new Set()
+    const ch = chapters.find((c) => c.number === selected)
+    return linesWithExplanation(ch?.lines ?? [], analysisByChapter.get(selected) ?? null)
+  }, [selected, chapters, analysisByChapter])
+
+  function openExplain(text) {
+    setExplain({
+      label: shortLabel(text),
+      data: explainFor(text, analysisByChapter.get(selected) ?? null, phrases),
+    })
+    clear()
+  }
 
   // 드래그해서 담기. 원문 영역 안에서 그은 것만 받는다.
   const scriptRef = useRef(null)
@@ -235,6 +256,8 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
             cardedTexts={cardedTexts}
             savedLines={savedLines}
             onToggleLine={toggleLine}
+            onExplain={openExplain}
+            noted={notedLines}
             wl={wl}
           />
         </div>
@@ -257,8 +280,21 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
             : false
         }
         onSave={saveSelection}
+        onExplain={() => openExplain(sel.text)}
         onClose={clear}
       />
+
+      {explain && (
+        <ExplainSheet
+          label={explain.label}
+          explain={explain.data}
+          onClose={() => setExplain(null)}
+          onPhrase={(p) => {
+            setExplain(null)
+            wl.openPhrase(p.key, p.text, null)
+          }}
+        />
+      )}
 
       {wl.selected && (
         <WordPopup
@@ -420,7 +456,7 @@ function ReadTracker({ read, onMark, onUndo }) {
   )
 }
 
-function Script({ chapter, cardedTexts, savedLines, onToggleLine, wl }) {
+function Script({ chapter, cardedTexts, savedLines, onToggleLine, onExplain, noted, wl }) {
   // 같은 대사가 두 번 나오는 챕터가 있다(본인이 만든 청크 학습본).
   // 원문을 먼저 보여주고 학습본은 아래에 따로 묶는다.
   //
@@ -442,6 +478,7 @@ function Script({ chapter, cardedTexts, savedLines, onToggleLine, wl }) {
               cardedTexts={cardedTexts}
               saved={savedLines?.has(lineId('before-sunrise', chapter.number, i))}
               onToggle={onToggleLine ? () => onToggleLine(i, line) : null}
+              onExplain={noted?.has(i) && onExplain ? () => onExplain(line.text) : null}
               wl={wl}
             />
           ))}
@@ -464,17 +501,38 @@ function Script({ chapter, cardedTexts, savedLines, onToggleLine, wl }) {
   )
 }
 
-function Line({ line, highlights, cardedTexts, saved = false, onToggle = null, wl = null }) {
+function Line({
+  line,
+  highlights,
+  cardedTexts,
+  saved = false,
+  onToggle = null,
+  onExplain = null,
+  wl = null,
+}) {
   if (line.type === 'direction' || line.type === 'note') {
     return <p className="direction">{line.text}</p>
   }
 
   return (
     <div className="line">
-      {(line.speaker || onToggle) && (
+      {(line.speaker || onToggle || onExplain) && (
         <div className="row row--between">
           {line.speaker ? <div className="speaker">{line.speaker}</div> : <span />}
-          {onToggle && <StarButton saved={saved} onClick={onToggle} />}
+          <div className="row" style={{ gap: 'var(--s2)' }}>
+            {/* 준비된 해설이 있는 줄에만 붙는다. 어디에 설명이 있는지
+                보여야 그 줄에서 한 번 더 멈춘다. */}
+            {onExplain && (
+              <button
+                className="chip chip--accent chip--tap"
+                onClick={onExplain}
+                title="이 대목의 구문 정리·문법 보기"
+              >
+                해설
+              </button>
+            )}
+            {onToggle && <StarButton saved={saved} onClick={onToggle} />}
+          </div>
         </div>
       )}
       {/* 지시문은 대사와 같은 줄에 두지 않는다. 이어붙이면
