@@ -195,15 +195,23 @@ function Review({ dueCards, stats, onStart, onGoTopic }) {
  * 작품별로 묶는다.
  */
 function TopicPicker({ cards, onStart }) {
-  // 스와이프에서 왼쪽(모름)으로 넘긴 카드는 lapseCount가 쌓인다.
-  // "모르는 것만 다시 보고 싶다"는 건 세션 안에서만이 아니라 며칠 뒤에도
-  // 필요한 일이라, 따로 모아 둔다. 자주 틀린 것이 위로 온다.
+  // 아직 못 외운 단어 = 모름으로 넘긴 뒤 아직 다시 맞히지 못한 것.
+  //
+  // lapseCount는 '틀린 적 있음'의 누적 기록이라 한번 쌓이면 줄지 않는다.
+  // 그걸로 묶음을 만들면 이미 외운 단어까지 매번 같은 자리에서 다시
+  // 나와서, 넘겨도 넘겨도 61개가 그대로다. 그래서 '지금 1번 상자에
+  // 있으면서 틀린 적 있는 것'으로 잡는다 — 한 번 맞히면 상자가 올라가며
+  // 이 묶음에서 빠지고, 나중에 또 잊으면 다시 들어온다.
+  const everMissed = useMemo(
+    () => cards.filter((c) => (c.lapseCount ?? 0) > 0),
+    [cards]
+  )
   const unknown = useMemo(
     () =>
-      cards
-        .filter((c) => (c.lapseCount ?? 0) > 0)
-        .sort((a, b) => b.lapseCount - a.lapseCount || a.box - b.box),
-    [cards]
+      everMissed
+        .filter((c) => c.box === 1)
+        .sort((a, b) => b.lapseCount - a.lapseCount || a.dueAt - b.dueAt),
+    [everMissed]
   )
 
   const groups = useMemo(() => {
@@ -238,28 +246,43 @@ function TopicPicker({ cards, onStart }) {
         전부 나오고, 넘긴 결과는 복습 일정에 반영됩니다.
       </p>
 
-      {unknown.length > 0 && (
+      {everMissed.length > 0 && (
         <section className="stack">
-          <div className="section-title">모름으로 넘긴 단어</div>
+          <div className="section-title">아직 못 외운 단어</div>
           <div
             className="panel"
             style={{
               padding: 'var(--s3) var(--s4)',
-              borderColor: 'var(--accent-border)',
-              background: 'var(--accent-soft)',
+              borderColor: unknown.length > 0 ? 'var(--accent-border)' : undefined,
+              background: unknown.length > 0 ? 'var(--accent-soft)' : undefined,
             }}
           >
             <div className="row row--between">
               <span className="list__main">
-                <span className="list__title">← 로 넘긴 것 모아 보기</span>
+                <span className="list__title">
+                  ← 로 넘긴 뒤 아직 못 맞힌 것 {unknown.length}개
+                </span>
                 <span className="list__meta">
-                  {unknown.length}개 · 두 번 이상 틀린 것{' '}
-                  {unknown.filter((c) => c.lapseCount >= 2).length}개
+                  지금까지 모름으로 넘긴 단어 {everMissed.length}개 ·
+                  맞히면 이 묶음에서 빠집니다
                 </span>
               </span>
-              <button className="btn btn--sm" onClick={() => onStart(unknown)}>
+              <button
+                className="btn btn--sm"
+                disabled={unknown.length === 0}
+                onClick={() => onStart(unknown)}
+              >
                 넘기기
               </button>
+            </div>
+            {/* 얼마나 줄었는지 보여야 다시 열 마음이 생긴다 */}
+            <div className="progress" style={{ marginTop: 'var(--s2)' }}>
+              <div
+                className="progress__bar"
+                style={{
+                  width: `${((everMissed.length - unknown.length) / everMissed.length) * 100}%`,
+                }}
+              />
             </div>
           </div>
         </section>
