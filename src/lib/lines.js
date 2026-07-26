@@ -58,6 +58,37 @@ export function findChunkKo(chunks, text) {
   return null
 }
 
+/**
+ * 드래그해서 고른 토막을 카드로.
+ *
+ * id는 본문 그 자체로 만든다 — 위치로 만들면 같은 문장을 두 챕터에서
+ * 그었을 때 서로 다른 카드가 되고, 무엇보다 어디를 그었는지가 아니라
+ * 무엇을 그었는지가 중요하다.
+ */
+export function cardFromSelection({ work, workTitle, chapter, text, ko, speaker }) {
+  const key = text
+    .toLowerCase()
+    .replace(/[^a-z0-9' ]+/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .slice(0, 48)
+  return createCard({
+    id: `line:sel-${work}-${key}`,
+    type: 'line',
+    front: text,
+    back: { meaningKo: ko ?? '', definitionEn: null, nuance: '' },
+    context: null,
+    source: { work: workTitle, chapter, chapterTitle: null, speaker: speaker ?? null },
+    extra: {
+      kind: 'line',
+      origin: 'reader-selection',
+      deck: 'line',
+      priority: 0,
+      workId: work,
+    },
+  })
+}
+
 /** 줄 하나를 복습 카드로. 앞면 영어, 뒷면 번역(있으면). */
 export function cardFromLine({ work, workTitle, chapter, chapterTitle, index, en, ko, speaker }) {
   return createCard({

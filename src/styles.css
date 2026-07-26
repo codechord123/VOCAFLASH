@@ -422,6 +422,25 @@ main {
 .grade--hard:hover:not(:disabled)  { background: color-mix(in srgb, var(--hard-soft) 60%, var(--hard));  color: var(--text); }
 .grade--good:hover:not(:disabled)  { background: color-mix(in srgb, var(--good-soft) 60%, var(--good));  color: var(--text); }
 
+/* ── 드래그해서 담기 ─────────────────────────────────────────────── */
+
+/* 선택 영역 아래에 뜨는 작은 막대. 브라우저 기본 메뉴와 겹치지 않게
+   아래쪽에 붙이고, 자리가 없으면 위로 올린다. */
+.sel-bar {
+  position: fixed;
+  z-index: 42;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s2);
+  border-radius: var(--r3);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  animation: fade var(--fast) var(--ease);
+}
+.sel-bar .btn--primary { flex: 1; }
+
 /* ── 회독 ─────────────────────────────────────────────────────────── */
 
 /* 목록에서 한 줄에 들어가는 회독 막대. 숫자만으로는 스무 번이 멀어 보인다. */

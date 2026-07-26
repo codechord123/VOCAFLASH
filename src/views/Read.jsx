@@ -1,11 +1,12 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
-import { cardFromLine, findChunkKo, lineId } from '../lib/lines.js'
+import { cardFromLine, cardFromSelection, findChunkKo, lineId } from '../lib/lines.js'
 import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
 import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
+import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
@@ -83,6 +84,10 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
 
   const wl = useWordLayer({ levels, dict, phrases, cards, commit })
 
+  // 드래그해서 담기. 원문 영역 안에서 그은 것만 받는다.
+  const scriptRef = useRef(null)
+  const { sel, clear } = useTextSelection(scriptRef)
+
   // 즐겨찾기한 줄. id는 위치 기반이라 화면에서 바로 대조할 수 있다.
   const savedLines = useMemo(
     () => new Set(cards.filter((c) => c.type === 'line').map((c) => c.id)),
@@ -96,6 +101,24 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
    * 비포 선라이즈는 번역이 없어서, 담을 때 그 챕터 구문 정리에서 같은
    * 문장을 찾아 번역을 함께 저장한다.
    */
+  /** 그은 만큼만 담는다. 번역은 구문 정리에서 찾아지면 같이 넣는다. */
+  function saveSelection(text) {
+    const card = cardFromSelection({
+      work: 'before-sunrise',
+      workTitle: 'Before Sunrise',
+      chapter: selected,
+      text,
+      ko: findChunkKo(analysis?.chunks, text),
+      speaker: null,
+    })
+    commit((s) =>
+      s.cards.some((c) => c.id === card.id)
+        ? s
+        : { ...s, cards: [...s.cards, card] }
+    )
+    clear()
+  }
+
   function toggleLine(index, line) {
     const id = lineId('before-sunrise', selected, index)
     if (savedLines.has(id)) {
@@ -177,13 +200,15 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
       </nav>
 
       {section === 'script' && (
-        <Script
-          chapter={chapter}
-          cardedTexts={cardedTexts}
-          savedLines={savedLines}
-          onToggleLine={toggleLine}
-          wl={wl}
-        />
+        <div ref={scriptRef}>
+          <Script
+            chapter={chapter}
+            cardedTexts={cardedTexts}
+            savedLines={savedLines}
+            onToggleLine={toggleLine}
+            wl={wl}
+          />
+        </div>
       )}
       {section === 'vocab' && <VocabSection items={chapterVocab} />}
       {section !== 'script' && section !== 'vocab' &&
@@ -192,6 +217,19 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
         ) : (
           <NotGenerated />
         ))}
+
+      <SelectionSave
+        sel={sel}
+        saved={
+          sel
+            ? cards.some(
+                (c) => c.front?.trim().toLowerCase() === sel.text.trim().toLowerCase()
+              )
+            : false
+        }
+        onSave={saveSelection}
+        onClose={clear}
+      />
 
       {wl.selected && (
         <WordPopup

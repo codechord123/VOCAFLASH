@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
-import { cardFromLine, lineId } from '../lib/lines.js'
+import { cardFromLine, cardFromSelection, lineId } from '../lib/lines.js'
 import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
 import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
+import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
 import ChapterNav from './ChapterNav.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
@@ -33,12 +34,30 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
 
   const wl = useWordLayer({ levels, dict, phrases, cards, commit })
 
+  const scriptRef = useRef(null)
+  const { sel, clear } = useTextSelection(scriptRef)
+
   // 즐겨찾기한 줄. 이 두 작품은 자막이 이미 한 줄씩 나뉘어 있고 번역도
   // 있어서, 담으면 그대로 한↔영 복습 카드가 된다.
   const savedLines = useMemo(
     () => new Set((cards ?? []).filter((c) => c.type === 'line').map((c) => c.id)),
     [cards]
   )
+
+  function saveSelection(text) {
+    const card = cardFromSelection({
+      work: work.id,
+      workTitle: work.title,
+      chapter: selected,
+      text,
+      ko: null,
+      speaker: null,
+    })
+    commit((s) =>
+      s.cards.some((c) => c.id === card.id) ? s : { ...s, cards: [...s.cards, card] }
+    )
+    clear()
+  }
 
   function toggleLine(chapter, index, line) {
     const id = lineId(work.id, chapter.number, index)
@@ -180,7 +199,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
         ))}
 
       {section === 'script' && (
-      <section className="stack">
+      <section className="stack" ref={scriptRef}>
         {chapter.lines.map((line, i) => {
           const open = !hideKo || revealed.has(i)
           const hasKo = Boolean(line.ko || line.koFluent)
@@ -253,6 +272,19 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
         })}
       </section>
       )}
+
+      <SelectionSave
+        sel={sel}
+        saved={
+          sel
+            ? (cards ?? []).some(
+                (c) => c.front?.trim().toLowerCase() === sel.text.trim().toLowerCase()
+              )
+            : false
+        }
+        onSave={saveSelection}
+        onClose={clear}
+      />
 
       {wl.selected && (
         <WordPopup
