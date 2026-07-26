@@ -46,6 +46,32 @@ const loadReadingData = () =>
 // 막을 이유가 없어서 뒤늦게 싣는다.
 const loadB2 = () => import('./data/b2-words.json').then((m) => m.default)
 
+/**
+ * 새 배포 뒤 옛 화면이 없는 파일을 부르는 문제.
+ *
+ * 자원 이름에는 내용 해시가 붙어서 배포할 때마다 바뀐다. 브라우저가 예전
+ * index.html을 캐시에 들고 있으면 이미 사라진 이름을 부르게 되고, 화면은
+ * "불러오지 못했습니다"로 멈춘다. 사용자 잘못이 아니라 배포의 문제이므로
+ * 한 번은 조용히 새로고침해서 스스로 낫게 한다.
+ *
+ * 무한 새로고침을 막으려고 한 세션에 한 번만 시도한다 — 두 번째로 실패하면
+ * 진짜 문제이니 오류 화면을 보여주는 편이 낫다.
+ */
+const RELOAD_FLAG = 'script-study.chunk-reload'
+
+function recoverFromStaleChunk(err) {
+  const stale = /Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module/i
+  if (!stale.test(String(err?.message ?? err))) return false
+  try {
+    if (sessionStorage.getItem(RELOAD_FLAG)) return false
+    sessionStorage.setItem(RELOAD_FLAG, '1')
+  } catch {
+    return false
+  }
+  window.location.reload()
+  return true
+}
+
 import VocabPart from './views/VocabPart.jsx'
 import ReadPart from './views/ReadPart.jsx'
 import Curriculum from './views/Curriculum.jsx'
@@ -84,7 +110,10 @@ export default function App() {
     let cancelled = false
     loadB2()
       .then((w) => !cancelled && setB2Words(w))
-      .catch((err) => console.error('B2 단어장을 불러오지 못했습니다', err))
+      .catch((err) => {
+        if (recoverFromStaleChunk(err)) return
+        console.error('B2 단어장을 불러오지 못했습니다', err)
+      })
     return () => {
       cancelled = true
     }
@@ -123,6 +152,8 @@ export default function App() {
       setReadingError(null)
       return loaded
     } catch (err) {
+      // 배포가 바뀌어 자원 이름이 어긋난 것이면 한 번 새로고침하면 낫는다
+      if (recoverFromStaleChunk(err)) return null
       setReadingError(err)
       throw err
     }
@@ -267,9 +298,14 @@ function BulkLoading({ error, onRetry, label = '문장 데이터를 불러오는
         <div className="empty__icon">✕</div>
         <div className="empty__title">데이터를 불러오지 못했습니다</div>
         <p className="empty__body">네트워크 상태를 확인한 뒤 다시 시도해 주세요.</p>
-        <button className="btn btn--primary" onClick={onRetry}>
-          다시 시도
-        </button>
+        <div className="row" style={{ justifyContent: 'center' }}>
+          <button className="btn btn--primary" onClick={onRetry}>
+            다시 시도
+          </button>
+          <button className="btn" onClick={() => window.location.reload()}>
+            새로고침
+          </button>
+        </div>
       </div>
     )
   }
