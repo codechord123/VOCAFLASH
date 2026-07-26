@@ -20,6 +20,14 @@ const THRESHOLD = 90 // 이만큼 끌면 넘긴 것으로 본다
 const ROTATE = 0.045 // 끌린 거리에 비례한 기울기
 const CONTEXT_MAX = 140 // 이보다 긴 문맥은 카드에 싣지 않는다
 
+// 자동 넘기기 속도(초). 앞면을 보여주는 시간과 뒷면을 보여주는 시간.
+// 손을 못 쓰는 상황(지하철에서 서서, 걸으면서)을 위한 재생 모드다.
+const SPEEDS = [
+  { id: 'slow', label: '느리게', front: 4000, back: 4000 },
+  { id: 'normal', label: '보통', front: 2500, back: 3000 },
+  { id: 'fast', label: '빠르게', front: 1500, back: 2000 },
+]
+
 export default function Swipe({ cards, settings, commit, onExit }) {
   const [queue, setQueue] = useState(() => cards.map((c) => c.id))
   const [round, setRound] = useState(1)
@@ -28,6 +36,10 @@ export default function Swipe({ cards, settings, commit, onExit }) {
   const [flipped, setFlipped] = useState(false)
   const [drag, setDrag] = useState(0)
   const [leaving, setLeaving] = useState(null) // 'known' | 'unknown'
+  // 자동 넘기기. 켜면 앞면 → 뒷면 → 다음 카드로 저절로 흘러간다.
+  const [auto, setAuto] = useState(false)
+  const [speed, setSpeed] = useState('normal')
+  const [autoSeen, setAutoSeen] = useState(0)
 
   const byId = useMemo(() => new Map(cards.map((c) => [c.id, c])), [cards])
   const card = queue.length > 0 ? byId.get(queue[0]) : null
@@ -50,6 +62,7 @@ export default function Swipe({ cards, settings, commit, onExit }) {
   const settle = useCallback(
     (known) => {
       if (!card) return
+      setAuto(false) // 손으로 판정하는 순간 자동은 멈춘다
       const grade = known
         ? round === 1
           ? GRADES.GOOD
@@ -91,6 +104,29 @@ export default function Swipe({ cards, settings, commit, onExit }) {
     },
     [card, round, commit]
   )
+
+  /**
+   * 자동 넘기기.
+   *
+   * 판정(앎/모름)은 하지 않는다. 손을 못 쓰는 동안 눈으로 훑는 모드라,
+   * 자동으로 넘어간 것을 '알았다'로 기록하면 복습 일정이 거짓이 된다.
+   * 판정하고 싶으면 언제든 끌어서 넘기면 되고, 그러면 자동은 멈춘다.
+   */
+  useEffect(() => {
+    if (!auto || !card || leaving) return
+    const s = SPEEDS.find((x) => x.id === speed) ?? SPEEDS[1]
+
+    if (!flipped) {
+      const t = window.setTimeout(() => setFlipped(true), s.front)
+      return () => window.clearTimeout(t)
+    }
+    const t = window.setTimeout(() => {
+      setAutoSeen((n) => n + 1)
+      setQueue((q) => q.slice(1))
+      setFlipped(false)
+    }, s.back)
+    return () => window.clearTimeout(t)
+  }, [auto, card, flipped, leaving, speed])
 
   // 키보드: ← 모름, → 앎, 스페이스 뒤집기
   useEffect(() => {
@@ -187,16 +223,24 @@ export default function Swipe({ cards, settings, commit, onExit }) {
 
   if (roundDone) {
     const done = unknown.length === 0
+    // 자동으로만 흘려보낸 회차는 판정이 없다. '아는 것 0개'라고 쓰면
+    // 아무것도 못 한 것처럼 보이므로 훑은 장수를 대신 보여준다.
+    const onlyAuto = knownCount === 0 && unknown.length === 0 && autoSeen > 0
     return (
       <div className="stack stack--loose">
         <div className="empty">
           <div className="empty__icon">{done ? '✓' : '↻'}</div>
           <div className="empty__title">
-            {round}회차 끝 — 아는 것 {knownCount}개
-            {unknown.length > 0 && `, 모르는 것 ${unknown.length}개`}
+            {onlyAuto
+              ? `자동 넘기기 끝 — ${autoSeen}장 훑었습니다`
+              : `${round}회차 끝 — 아는 것 ${knownCount}개${
+                  unknown.length > 0 ? `, 모르는 것 ${unknown.length}개` : ''
+                }`}
           </div>
           <p className="empty__body">
-            {done
+            {onlyAuto
+              ? '자동으로 넘긴 카드는 복습 일정에 반영하지 않습니다 — 판정하려면 손으로 넘겨 주세요.'
+              : done
               ? '모두 아는 것으로 넘겼습니다. 오늘 몫은 끝났습니다.'
               : `모르는 것만 ${unknown.length}개 다시 돕니다. 아는 것으로 넘길 때까지 남습니다.`}
           </p>
@@ -238,6 +282,33 @@ export default function Swipe({ cards, settings, commit, onExit }) {
           className="progress__bar"
           style={{ width: `${((at - 1) / total) * 100}%` }}
         />
+      </div>
+
+      {/* 자동 넘기기 — 앞면 → 뒷면 → 다음 카드로 저절로 흘러간다.
+          손을 못 쓰는 상황을 위한 것이라 켜고 끄기가 한 번에 되어야 한다. */}
+      <div className="row row--between">
+        <button
+          className={`btn btn--sm${auto ? ' btn--primary' : ''}`}
+          onClick={() => setAuto((v) => !v)}
+          aria-pressed={auto}
+        >
+          {auto ? '⏸ 자동 멈춤' : '▶ 자동 넘기기'}
+        </button>
+        {auto && (
+          <div className="row" style={{ gap: 'var(--s1)' }}>
+            {SPEEDS.map((sp) => (
+              <button
+                key={sp.id}
+                className={`chip${speed === sp.id ? ' chip--accent' : ''}`}
+                style={{ cursor: 'pointer' }}
+                aria-pressed={speed === sp.id}
+                onClick={() => setSpeed(sp.id)}
+              >
+                {sp.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="swipe">

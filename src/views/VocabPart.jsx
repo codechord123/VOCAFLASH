@@ -312,6 +312,23 @@ function GroupRow({ icon, name, cards, onStart }) {
   const fresh = cards.filter((c) => c.reviewCount === 0).length
   const learned = cards.filter((c) => c.box === 5).length
 
+  /**
+   * 넘길 순서.
+   *
+   * 예전에는 배열 순서 그대로 넘겨서, 이미 5번 상자까지 올린 단어가 매번
+   * 1번 자리에 다시 나왔다 — "앎으로 표시했는데 또 처음부터 나온다"는 게
+   * 이것이다. 다 외운 것은 빼고, 남은 것도 덜 외운 순서로 준다.
+   */
+  const toStudy = useMemo(() => {
+    const rest = cards.filter((c) => c.box < 5)
+    const pool = rest.length > 0 ? rest : cards // 다 외웠으면 전체를 다시
+    return [...pool].sort(
+      (a, b) => a.box - b.box || a.dueAt - b.dueAt || b.lapseCount - a.lapseCount
+    )
+  }, [cards])
+
+  const allLearned = learned === cards.length
+
   return (
     <div className="panel" style={{ padding: 'var(--s3) var(--s4)' }}>
       <div className="row row--between">
@@ -327,8 +344,8 @@ function GroupRow({ icon, name, cards, onStart }) {
             {due > 0 && ` · 오늘 ${due}`}
           </span>
         </span>
-        <button className="btn btn--sm" onClick={() => onStart(cards)}>
-          넘기기
+        <button className="btn btn--sm" onClick={() => onStart(toStudy)}>
+          {allLearned ? `전체 ${cards.length}개` : `안 외운 ${toStudy.length}개`}
         </button>
       </div>
       {/* 진도를 한 줄로 — 어느 주제를 이미 했는지 보여야 다음 걸 고른다 */}
