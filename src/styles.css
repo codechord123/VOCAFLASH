@@ -844,6 +844,60 @@ main {
 }
 .chip--tap:hover { background: var(--accent-border); }
 
+/* ── 챕터 퀴즈 ───────────────────────────────────────────────────── */
+/* 전부 탭으로 푼다. 서서 보는 공부라 손가락이 닿는 크기가 먼저다. */
+
+.quiz__slot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  min-height: 52px;
+  align-items: center;
+  padding: var(--s2);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--r2);
+  background: var(--surface-2);
+}
+
+.quiz__bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+.quiz__piece {
+  appearance: none;
+  font: inherit;
+  font-size: 15px;
+  padding: var(--s2) var(--s3);
+  min-height: 40px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r2);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--fast) var(--ease), border-color var(--fast) var(--ease);
+}
+.quiz__piece:hover:not(:disabled) { background: var(--surface-hover); }
+.quiz__piece.is-picked { background: var(--accent-soft); border-color: var(--accent-border); }
+.quiz__piece.is-right { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.quiz__piece.is-wrong { background: var(--again-soft); border-color: var(--again); color: var(--again); }
+.quiz__piece:disabled { cursor: default; }
+
+.quiz__blank {
+  display: inline-block;
+  min-width: 84px;
+  padding: 0 var(--s2);
+  border-bottom: 2px solid var(--accent);
+  text-align: center;
+  color: var(--accent);
+}
+
+.quiz__verdict { font-size: 14px; font-weight: 600; }
+.quiz__verdict.is-right { color: var(--good); }
+.quiz__verdict.is-wrong { color: var(--again); }
+
 /* ── 빈 상태 ─────────────────────────────────────────────────────── */
 /* 습관이 죽는 지점이라 공들인다. 항상 다음 행동 하나를 제시한다 */
 

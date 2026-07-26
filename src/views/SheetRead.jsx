@@ -7,6 +7,7 @@ import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
 import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
 import ExplainSheet from './ExplainSheet.jsx'
+import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import ChapterNav from './ChapterNav.jsx'
 
@@ -374,6 +375,10 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
         onMark={() => commit((s) => markRead(s, work.id, selected))}
         onUndo={() => commit((s) => undoRead(s, work.id, selected))}
       />
+
+      {section === 'script' && (
+        <ChapterQuiz analysis={chapterAnalysis} levels={wl.levels} phrases={wl.phrases} />
+      )}
 
       <ChapterNav
         chapters={work.chapters}

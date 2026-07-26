@@ -8,6 +8,7 @@ import { WordText } from './WordText.jsx'
 import WordPopup from './WordPopup.jsx'
 import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
 import ExplainSheet from './ExplainSheet.jsx'
+import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
@@ -319,6 +320,11 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
         onMark={() => commit((s) => markRead(s, 'before-sunrise', selected))}
         onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
       />
+
+      {/* 퀴즈도 회독 표시와 같은 자리다 — 다 읽고 나서 하는 것 */}
+      {section === 'script' && (
+        <ChapterQuiz analysis={analysis} levels={wl.levels} phrases={wl.phrases} />
+      )}
 
       <ChapterNav
         chapters={readable}
