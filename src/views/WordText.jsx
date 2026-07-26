@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { STATUS, lookupIn, normalize, tokenize } from '../lib/words.js'
+import { STATUS, lookupIn, normalize, sentenceAround, tokenize } from '../lib/words.js'
 
 // 한 줄을 색이 입혀진 단어들로 그린다.
 //
@@ -42,12 +42,12 @@ function WordTextImpl({ text, levels, dict, statusMap, onWord }) {
             tabIndex={0}
             onClick={(e) => {
               e.stopPropagation()
-              onWord(tok.t, text)
+              onWord(tok.t, sentenceAround(text, tok.t))
             }}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault()
-                onWord(tok.t, text)
+                onWord(tok.t, sentenceAround(text, tok.t))
               }
             }}
           >

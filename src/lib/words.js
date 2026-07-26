@@ -115,6 +115,30 @@ export function lookupIn(table, word) {
   return null
 }
 
+/**
+ * 그 단어가 들어 있는 문장 하나만 잘라낸다.
+ *
+ * 대사 한 줄이 곧 한 문장인 것은 아니다. 제시의 케이블 방송 이야기처럼
+ * 한 줄이 열 문장짜리 독백일 때, 줄 전체를 문맥이라고 보여주면 단어는
+ * 안 보이고 벽만 보인다. 필요한 것은 그 단어가 선 자리 한 문장이다.
+ */
+export function sentenceAround(text, word) {
+  if (!text) return null
+  const key = normalize(word)
+  if (!key) return text
+
+  const sentences = text.split(/(?<=[.!?…])\s+/)
+  const re = new RegExp(`\\b${key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i')
+  const hit = sentences.find((s) => re.test(s))
+  const picked = (hit ?? sentences[0] ?? text).trim()
+
+  // 그래도 길면 앞뒤를 잘라 낸다. 문맥은 한 호흡이면 충분하다.
+  if (picked.length <= 180) return picked
+  const at = picked.search(re)
+  const from = Math.max(0, at - 70)
+  return (from > 0 ? '…' : '') + picked.slice(from, from + 180).trim() + '…'
+}
+
 /** 외부 사전 링크. 앱에 뜻이 없는 단어의 마지막 수단. */
 export function dictUrl(word) {
   return `https://en.dict.naver.com/#/search?query=${encodeURIComponent(normalize(word))}`
