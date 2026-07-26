@@ -10,6 +10,7 @@ import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
 import ExplainSheet from './ExplainSheet.jsx'
 import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
+import { quizRecord, recordQuiz } from '../lib/quizlog.js'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
@@ -29,7 +30,7 @@ export const SECTIONS = [
   { id: 'background', label: '배경지식' },
 ]
 
-export default function Read({ chapters, analysis: analysisData, levels, dict, phrases, reads, cards, commit, initialChapter = null }) {
+export default function Read({ chapters, analysis: analysisData, levels, dict, phrases, reads, quizLog, cards, commit, initialChapter = null }) {
   // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
   const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
@@ -331,6 +332,8 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
           analysis={analysis}
           levels={wl.levels}
           phrases={wl.phrases}
+          record={quizRecord(quizLog, 'before-sunrise', selected)}
+          onFinish={(r) => commit((s) => recordQuiz(s, 'before-sunrise', selected, r))}
         />
       )}
 

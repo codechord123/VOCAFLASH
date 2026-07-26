@@ -18,6 +18,7 @@ export default function ReadPart({
   dict,
   phrases,
   reads,
+  quizLog,
   cards,
   commit,
   initialChapter = null,
@@ -45,6 +46,7 @@ export default function ReadPart({
           dict={dict}
           phrases={phrases}
           reads={reads}
+          quizLog={quizLog}
           cards={cards}
           commit={commit}
           initialChapter={initialChapter}
@@ -63,6 +65,7 @@ export default function ReadPart({
         dict={dict}
         phrases={phrases}
         reads={reads}
+        quizLog={quizLog}
         cards={cards}
         commit={commit}
         onBack={() => setWorkId(null)}

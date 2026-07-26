@@ -9,6 +9,7 @@ import SelectionSave, { useTextSelection } from './SelectionSave.jsx'
 import ExplainSheet from './ExplainSheet.jsx'
 import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
+import { quizRecord, recordQuiz } from '../lib/quizlog.js'
 import ChapterNav from './ChapterNav.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
@@ -23,7 +24,7 @@ import ChapterNav from './ChapterNav.jsx'
 // 아직 생성되지 않은 챕터는 '원문'만 보인다 — 탭을 띄워놓고 빈 화면을
 // 보여주는 것보다 낫다.
 
-export default function SheetRead({ work, analysis, levels, dict, phrases, reads, cards, commit, onBack }) {
+export default function SheetRead({ work, analysis, levels, dict, phrases, reads, quizLog, cards, commit, onBack }) {
   const [selected, setSelected] = useState(null)
   const [section, setSection] = useState('script')
   const [hideKo, setHideKo] = useState(false)
@@ -383,6 +384,8 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
           analysis={chapterAnalysis}
           levels={wl.levels}
           phrases={wl.phrases}
+          record={quizRecord(quizLog, work.id, selected)}
+          onFinish={(r) => commit((s) => recordQuiz(s, work.id, selected, r))}
         />
       )}
 

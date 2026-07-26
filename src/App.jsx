@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import { store } from './lib/store.js'
 import { deckStats, selectDueCards, withProgress } from './lib/srs.js'
 import { filterByLevel } from './lib/level.js'
@@ -73,8 +73,14 @@ function recoverFromStaleChunk(err) {
 }
 
 import VocabPart from './views/VocabPart.jsx'
-import ReadPart from './views/ReadPart.jsx'
-import Curriculum from './views/Curriculum.jsx'
+// 읽기와 구문독해는 탭을 눌렀을 때 받는다.
+//
+// 커리큘럼 자료(유닛·어휘·퀴즈·SRS) 520KB와 유닛 어휘 224KB가 첫
+// 화면에 통째로 실려 있었다. 단어 탭만 보려고 앱을 열어도 다 받고
+// 나서야 첫 글자가 나온다 — 지하철에서 신호가 약할 때 그게 그대로
+// 기다림이 된다. 지금은 그 탭을 누른 사람만 받는다.
+const ReadPart = lazy(() => import('./views/ReadPart.jsx'))
+const Curriculum = lazy(() => import('./views/Curriculum.jsx'))
 import Settings from './views/Settings.jsx'
 
 // 학습 파트 3개. 라벨은 두 글자로 맞춘다 — 모바일 폭에서 긴 라벨이
@@ -237,6 +243,8 @@ export default function App() {
 
       <main>
         <div className="container">
+          <BackupNotice state={state} onOpenSettings={() => setShowSettings(true)} />
+
           {tab === 'vocab' && (
             <VocabPart
               cards={cards}
@@ -248,6 +256,7 @@ export default function App() {
 
           {tab === 'read' &&
             (reading ? (
+              <Suspense fallback={<BulkLoading label="읽기 화면을 불러오는 중" />}>
               <ReadPart
                 chapters={reading.chapters}
                 analysis={reading.analysis}
@@ -257,9 +266,11 @@ export default function App() {
                 dict={reading.dict}
                 phrases={reading.phrases}
                 reads={state.reads}
+                quizLog={state.quizLog}
                 cards={cards}
                 commit={commit}
               />
+              </Suspense>
             ) : (
               <BulkLoading
                 error={readingError}
@@ -269,11 +280,13 @@ export default function App() {
             ))}
 
           {tab === 'syntax' && (
-            <Curriculum
-              cards={cards}
-              commit={commit}
-              curriculum={state.curriculum}
-            />
+            <Suspense fallback={<BulkLoading label="구문독해 자료를 불러오는 중" />}>
+              <Curriculum
+                cards={cards}
+                commit={commit}
+                curriculum={state.curriculum}
+              />
+            </Suspense>
           )}
 
           {showSettings && (
@@ -287,6 +300,70 @@ export default function App() {
           )}
         </div>
       </main>
+    </div>
+  )
+}
+
+/**
+ * 백업이 오래됐다고 알리는 한 줄.
+ *
+ * 저장은 브라우저 안에만 있다. 사파리는 한동안 안 쓴 사이트의 저장
+ * 공간을 조용히 비우기도 하고, 방문 기록을 지우면 같이 날아간다.
+ * 내보내기가 유일한 대비책인데, 눌러야 한다는 걸 잊으면 없는 것과 같다.
+ *
+ * 잃을 것이 있을 때만 뜨고, 이번 실행에서 닫으면 다시 안 뜬다 — 매번
+ * 같은 자리에 있는 경고는 며칠 만에 배경이 된다.
+ */
+const BACKUP_STALE_DAYS = 14
+
+function BackupNotice({ state, onOpenSettings }) {
+  const [hidden, setHidden] = useState(
+    () => sessionStorage.getItem('backup-notice-hidden') === '1'
+  )
+  if (hidden) return null
+
+  const madeCards = state.cards?.length ?? 0
+  const graded = Object.keys(state.progress ?? {}).length
+  const read = Object.keys(state.reads ?? {}).length
+  if (madeCards + graded + read === 0) return null // 아직 잃을 것이 없다
+
+  const last = state.lastBackupAt ?? null
+  const days = last == null ? null : Math.floor((Date.now() - last) / 86400000)
+  if (days != null && days < BACKUP_STALE_DAYS) return null
+
+  return (
+    <div
+      className="panel row row--between"
+      style={{
+        marginBottom: 'var(--s4)',
+        borderColor: 'var(--accent-border)',
+        background: 'var(--accent-soft)',
+        gap: 'var(--s3)',
+      }}
+    >
+      <span className="list__main">
+        <span className="list__title">
+          {last == null ? '아직 백업한 적이 없습니다' : `백업이 ${days}일 지났습니다`}
+        </span>
+        <span className="list__meta">
+          진도는 이 브라우저 안에만 있습니다. 기록을 지우면 함께 사라집니다.
+        </span>
+      </span>
+      <div className="row" style={{ gap: 'var(--s2)' }}>
+        <button className="btn btn--sm" onClick={onOpenSettings}>
+          내보내기
+        </button>
+        <button
+          className="btn btn--ghost btn--sm"
+          onClick={() => {
+            sessionStorage.setItem('backup-notice-hidden', '1')
+            setHidden(true)
+          }}
+          aria-label="닫기"
+        >
+          ✕
+        </button>
+      </div>
     </div>
   )
 }

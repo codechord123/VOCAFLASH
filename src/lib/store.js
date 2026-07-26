@@ -75,6 +75,12 @@ const DEFAULTS = {
   curriculum: { unitProgress: {} },
   // 회독. { 'before-sunrise-c2': { count, lastAt } } — 목표 20회독
   reads: {},
+  // 챕터 퀴즈 기록. { 'before-sunrise-c4': { attempts, best, last, wrong } }
+  // 그때뿐인 점수는 약한 자리를 알려주지 못한다. 어디서 틀렸는지 남긴다.
+  quizLog: {},
+  // 마지막으로 내보내기를 누른 시각. localStorage는 브라우저가 조용히
+  // 비우기도 해서, 오래됐으면 앱이 먼저 알려줘야 한다.
+  lastBackupAt: null,
 }
 
 /**
@@ -163,8 +169,16 @@ export const store = {
    */
   exportAll() {
     const state = read()
+    const at = Date.now()
+    // 내보낸 시각을 남겨야 "언제 백업했는지"를 앱이 말해줄 수 있다.
+    write({ ...state, lastBackupAt: at })
     return JSON.stringify(
-      { ...state, wordStatus: readWordStatus(), exportedAt: new Date().toISOString() },
+      {
+        ...state,
+        lastBackupAt: at,
+        wordStatus: readWordStatus(),
+        exportedAt: new Date(at).toISOString(),
+      },
       null,
       2
     )
