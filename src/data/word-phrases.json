@@ -1,6 +1,6 @@
 {
  "note": "읽기 화면에서 한 덩어리로 잡는 표현. 키는 정규화한 소문자.",
- "count": 531,
+ "count": 534,
  "phrases": {
   "a bad liar": {
    "ko": "거짓말을 못하는 사람",
@@ -29,7 +29,7 @@
    "ctx": "We don't have to have sex. It's not a big deal.",
    "who": "Jesse",
    "ch": 19,
-   "alt": null,
+   "alt": "그대로면 '큰일'이지만, 툭 내뱉는 \"Big deal!\"은 '그게 뭐 대수냐'는 비꼼이다. make a big deal out of는 '별것 아닌 걸 크게 만들다'.",
    "from": "구문"
   },
   "a bit": {
@@ -39,7 +39,7 @@
    "ctx": "And the cow is a bit weird.",
    "who": "Man with tie",
    "ch": 4,
-   "alt": null,
+   "alt": "a bit은 '조금'인데 quite a bit은 정반대로 '꽤 많이'다. a bit of a liar처럼 명사 앞에 오면 '좀 ~한 편'으로 말을 누그러뜨린다.",
    "from": "구문"
   },
   "a confession to make": {
@@ -59,7 +59,7 @@
    "ctx": "So I bought the cheapest flight out of Europe, this one leaving out of Vienna tomorrow, but it didn't leave for a couple of weeks.",
    "who": "Jesse",
    "ch": 13,
-   "alt": null,
+   "alt": "사전은 '둘'이라고 하지만 회화에서는 '두어 개, 몇 개'로 헐겁게 쓴다. 정확히 둘을 말하고 싶으면 two라고 하지 a couple of라고 하지 않는다.",
    "from": "구문"
   },
   "a female thing": {
@@ -79,7 +79,7 @@
    "ctx": "I actually saw this one a few years ago in a museum.",
    "who": "Céline",
    "ch": 10,
-   "alt": null,
+   "alt": "a가 붙고 안 붙고로 뜻이 뒤집힌다. few는 '거의 없다'는 부정, a few는 '적지만 있다'는 긍정. quite a few는 또 '꽤 많이'다.",
    "from": "문법"
   },
   "a friend of mine": {
@@ -239,7 +239,7 @@
    "ctx": "you and I were together all the time, then you'd start to hate a lot of my mannerisms.",
    "who": "Jesse",
    "ch": 19,
-   "alt": null,
+   "alt": "'내내'(지속)와 '늘 그런다'(빈도) 둘 다 된다. I was there all the time은 그 시간 내내 있었다는 뜻이고, He does that all the time은 자주 그런다는 뜻이다.",
    "from": "구문"
   },
   "all the way here": {
@@ -349,7 +349,7 @@
    "ctx": "You know, I believe if there's any kind of God, it wouldn't be in any of us.",
    "who": "Céline",
    "ch": 14,
-   "alt": null,
+   "alt": "부정·의문에서는 '어떤 ~도'로 전면 부정을 만들고, 긍정문에서는 '어떤 종류든 상관없다'는 허용이 된다.",
    "from": "문법"
   },
   "any more": {
@@ -359,7 +359,7 @@
    "ctx": "But museums are not that funny any more these days, uh...",
    "who": "Man with tie",
    "ch": 4,
-   "alt": null,
+   "alt": "띄어 쓰면 수량 '더 이상의'(I don't want any more), 붙여 쓴 anymore는 시간 '이제는 안 한다'. 소리로는 같아서 문맥으로만 갈린다.",
    "from": "문법"
   },
   "are you with anyone": {
@@ -409,7 +409,7 @@
    "ctx": "But as far as sexual feelings go, I'll have you know it started with an obsessive relationship with Miss July 1978.",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "뒤에 생각·사람이 오면 범위 '~에 관한 한'(as far as I know), 장소가 오면 거리 '~까지'(as far as the station)다.",
    "from": "구문"
   },
   "as if": {
@@ -419,7 +419,7 @@
    "ctx": "I dunno, the key, the key (squints his eyes as if perplexed)...the thing that kind of haunts me is the distribution, you know.",
    "who": "Jesse",
    "ch": 2,
-   "alt": null,
+   "alt": "'마치 ~인 것처럼'이 기본이지만, 혼자 툭 던지는 \"As if!\"는 '웃기고 있네, 그럴 리가'라는 강한 부정이다.",
    "from": "문법"
   },
   "as long as": {
@@ -429,7 +429,7 @@
    "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
    "who": "Céline",
    "ch": 14,
-   "alt": null,
+   "alt": "뒤가 조건이면 '~하기만 하면'(As long as you're happy), 시간 길이면 '~하는 동안 내내'(as long as I live). 조건인지 기간인지로 갈린다.",
    "from": "구문"
   },
   "as much as": {
@@ -439,7 +439,7 @@
    "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
    "who": "Céline",
    "ch": 14,
-   "alt": null,
+   "alt": "양을 견주면 '~만큼'(as much as you do), 문장 앞에 홀로 서서 쉼표로 이어지면 양보 '아무리 ~해도'(As much as I love her, ...).",
    "from": "문법"
   },
   "as the night went on": {
@@ -479,7 +479,7 @@
    "ctx": "Nothing, nothing at all.",
    "who": "Céline",
    "ch": 12,
-   "alt": null,
+   "alt": "부정문에서는 '조금도'(not tired at all), 고맙다는 말에 대한 답으로 홀로 쓰면 '천만에요'(Not at all). 의문문에서는 '도대체, 조금이라도'.",
    "from": "문법"
   },
   "at arms length": {
@@ -489,7 +489,7 @@
    "ctx": "I'm gonna take your picture (puts her at arms length, and stares) so I never forget you...or...or all this.",
    "who": "지문",
    "ch": 20,
-   "alt": null,
+   "alt": "말 그대로 팔 하나 거리이기도 하고, keep someone at arm's length는 '적당히 거리를 두고 가까이 들이지 않다'는 관계의 거리다.",
    "from": "구문"
   },
   "at best": {
@@ -519,7 +519,7 @@
    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "숫자 앞이면 '최소한'(at least three), 문장에 얹히면 '그래도'라는 위안이다(At least we tried). 뒤에 수량이 붙었는지만 보면 된다.",
    "from": "구문"
   },
   "at long last": {
@@ -549,7 +549,7 @@
    "ctx": "You know we kind of wrote these little declarations of love to each other at the end of the summer, and you know, promised we would keep writing forever",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "그 시간·공간의 '끝 무렵'이다. in the end는 '결국'으로 다르고, at the end of the day는 통째로 '결국 중요한 건'이라는 관용구다.",
    "from": "문법"
   },
   "at work here": {
@@ -559,7 +559,7 @@
    "ctx": "But maybe, maybe there's some biological things at work here.",
    "who": "Jesse",
    "ch": 14,
-   "alt": null,
+   "alt": "여기서 work는 직장이 아니라 '작용하다'. Something else is at work here는 '여기엔 다른 힘이 작동하고 있다'는 말이다. at work가 '근무 중'인 자리와 구분해야 한다.",
    "from": "구문"
   },
   "back there": {
@@ -723,7 +723,7 @@
    "ctx": "Something about me bugs you?",
    "who": "Jesse",
    "ch": 12,
-   "alt": null,
+   "alt": "bug는 명사로 벌레·도청장치지만 동사로는 '거슬리게 하다'. What's bugging you?는 '뭐가 그렇게 신경 쓰이냐'는 뜻이다.",
    "from": "구문"
   },
   "bullshit detector": {
@@ -822,7 +822,7 @@
    "ctx": "I know. It's not very adult. Maybe it‘s a female thing. I can't help it.",
    "who": "Céline",
    "ch": 19,
-   "alt": null,
+   "alt": "여기서 help는 '돕다'가 아니라 '피하다'. can't help it은 '나도 어쩔 수 없다', can't help + -ing는 '~하지 않을 수 없다'. help yourself는 또 '마음껏 드세요'다.",
    "from": "구문"
   },
   "can't stand": {
@@ -832,7 +832,7 @@
    "ctx": "I can't stand that, really.",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "stand가 '서다'가 아니라 '견디다'. I can't stand him은 '꼴도 보기 싫다'. stand for는 '상징하다', stand by는 '편들다'로 또 다르다.",
    "from": "구문"
   },
   "capable of": {
@@ -862,7 +862,7 @@
    "ctx": "Check that out.",
    "who": "Jesse",
    "ch": 20,
-   "alt": null,
+   "alt": "'저것 좀 봐'와 '확인해봐' 둘 다 된다. 같은 check out이 호텔에서는 '나가다', 도서관에서는 '빌리다'가 되고, 사람에게 쓰면 '훑어본다'는 뉘앙스가 실린다.",
    "from": "구문"
   },
   "check these guys out": {
@@ -892,7 +892,7 @@
    "ctx": "Now, if we all have our own, like, individual, unique soul, right, where do they all come from?",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "사람이면 출신(Where do you come from?), 말이나 물건이면 유래(the word comes from Latin). I see where you're coming from은 장소가 아니라 '네가 왜 그러는지 알겠다'는 입장이다.",
    "from": "구문"
   },
   "come on": {
@@ -902,7 +902,7 @@
    "ctx": "Come on.",
    "who": "Jesse",
    "ch": 3,
-   "alt": null,
+   "alt": "어조가 뜻을 정한다. 재촉이면 '어서', 못 믿겠다는 투면 '에이 설마', 달래는 투면 '그러지 마'. come on to someone은 아예 다른 말로 '수작을 걸다'.",
    "from": "구문"
   },
   "come over me": {
@@ -912,7 +912,7 @@
    "ctx": "and all of a sudden, I feel it come over me, “I have got to win.”",
    "who": "Jesse",
    "ch": 12,
-   "alt": null,
+   "alt": "감정이 주어면 '나를 덮치다'(A strange feeling came over me). 목적어 없이 come over만 쓰면 '집에 들르다'로 완전히 다른 말이 된다.",
    "from": "구문"
   },
   "come up with": {
@@ -962,7 +962,7 @@
    "ctx": "I could have flown to Paris, but I'm too scared.",
    "who": "Céline",
    "ch": 2,
-   "alt": null,
+   "alt": "안 한 일을 되짚으면 '~할 수도 있었는데'(아쉬움·후회), 지난 일을 짐작하면 '~했을 수도 있다'(추측). 뒤에 but이 따라오면 대개 앞쪽이다.",
    "from": "문법"
   },
   "couldn't help it": {
@@ -1051,7 +1051,7 @@
    "ctx": "We still have to deal with the same old shit, but we can't really know who, or you know, what the enemy is.",
    "who": "Céline",
    "ch": 8,
-   "alt": null,
+   "alt": "목적어가 정한다. 문제면 '처리하다', 사람이면 '상대하다', 감정이면 '감당하다', 책·영화가 주어면 '다루다'.",
    "from": "구문"
   },
   "did it work": {
@@ -1210,7 +1210,7 @@
    "ctx": "Even as a little girl, they wanted me to think of a future career, as a, you know, as an interior designer, or a lawyer, or something like that.",
    "who": "Céline",
    "ch": 2,
-   "alt": null,
+   "alt": "두 절이 같은 시점을 가리키면 '~하는 바로 그때'(동시), 서로 어긋나면 '~인데도'(양보)다.",
    "from": "문법"
   },
   "even if": {
@@ -1220,7 +1220,7 @@
    "ctx": "Well, even if we were a little bit, you know.",
    "who": "Céline",
    "ch": 12,
-   "alt": null,
+   "alt": "even if는 아직 사실이 아닌 가정('설령 ~라 해도'), even though는 이미 사실인 것을 인정('~인데도'). 둘을 바꿔 쓰면 사실 여부가 통째로 뒤집힌다.",
    "from": "구문"
   },
   "even though": {
@@ -1230,7 +1230,8 @@
    "ctx": "Yeah. She was, merde! She was totally convinced I was really gonna do it, you know, even though I'd explained to her it was just some writing, you know. She said, looking deep into my eyes, \"The way y",
    "who": "Céline",
    "ch": 13,
-   "from": "내 하이라이트"
+   "from": "내 하이라이트",
+   "alt": "사실을 인정하고 '그런데도'라고 잇는 말. even if는 가정이라 사실이 아니어도 된다. though가 문장 끝에 홀로 오면 '그래도, 근데'라는 가벼운 뒤집기다."
   },
   "every time": {
    "ko": "~할 때면 언제나",
@@ -1289,7 +1290,7 @@
    "ctx": "then you can pay me whatever you feel like",
    "who": "Poet",
    "ch": 12,
-   "alt": null,
+   "alt": "뒤가 명사나 -ing면 '~하고 싶다'(I feel like a coffee), 절이 오면 '~인 것 같다'(I feel like I'm dreaming). 사람·사물이 오면 '~같은 기분·감촉'이다.",
    "from": "구문"
   },
   "feel that way about me": {
@@ -1377,7 +1378,8 @@
    "ctx": "so I mean, maybe fooling around is not so bad",
    "who": "Jesse",
    "ch": 14,
-   "from": "유닛 어휘"
+   "from": "유닛 어휘",
+   "alt": "관계 이야기 안에서는 '바람피우다·놀아나다', 그 밖에서는 '빈둥거리다·장난치다'. 같은 말이 자리에 따라 무겁게도 가볍게도 쓰인다."
   },
   "fooling around": {
    "ko": "바람 피우는 것, 놀아나는 것",
@@ -1506,7 +1508,7 @@
    "ctx": "I know what you mean about wishing somebody wasn't there though, It‘s just, usually, it‘s myself that I wish I could get away from.",
    "who": "Jesse",
    "ch": 19,
-   "alt": null,
+   "alt": "'벗어나다·도망치다'. get away만 쓰면 '여행 좀 다녀오다'가 되고, get away with는 '나쁜 짓을 하고도 무사히 넘어가다'로 아예 다른 말이다.",
    "from": "구문"
   },
   "get back to": {
@@ -1516,7 +1518,7 @@
    "ctx": "What's the first thing you'll do when you get back to Paris?",
    "who": "Jesse",
    "ch": 20,
-   "alt": null,
+   "alt": "뒤에 장소·일이 오면 '~로 돌아가다', 사람이 오면 '나중에 다시 연락하다'(I'll get back to you)다.",
    "from": "구문"
   },
   "get caught": {
@@ -1556,7 +1558,7 @@
    "ctx": "I should get on this one",
    "who": "Céline",
    "ch": 22,
-   "alt": null,
+   "alt": "탈것이면 '타다', 사람이면 '잘 지내다'(get on with someone), 일이면 '계속하다'(get on with it). 뒤에 무엇이 오는지가 갈림길이다.",
    "from": "구문"
   },
   "get on the next train": {
@@ -1576,7 +1578,7 @@
    "ctx": "You pay your money, you get to hear something that makes you feel good about yourself.",
    "who": "Jesse",
    "ch": 9,
-   "alt": null,
+   "alt": "동사가 오면 기회를 얻어 '~하게 되다'(I got to meet her), 장소가 오면 '도착하다', 사람이 목적어면 '신경을 긁다'(It's getting to me).",
    "from": "문법"
   },
   "get to hear": {
@@ -1675,7 +1677,7 @@
    "ctx": "I hate, I hate that three hundred kilometers from here there's a war going on, you know, people are dying, and nobody knows what to do about it, or they don't give a shit, I don't know.",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "What's going on?이면 '벌어지다', 나이 앞에 붙으면 '거의'(going on thirty), Go on!이면 '계속해', 배우가 주어면 '무대에 오르다'.",
    "from": "구문"
   },
   "going to": {
@@ -1685,7 +1687,7 @@
    "ctx": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "뒤에 동사원형이 오면 마음먹은 예정(I'm going to call her), 장소가 오면 실제로 그리로 가는 중(I'm going to Paris)이다. gonna로 줄면 언제나 예정 쪽이다.",
    "from": "문법"
   },
   "gone for that": {
@@ -1735,7 +1737,7 @@
    "ctx": "Actually...I think I decided I wanted to sleep with you when we got off the train.",
    "who": "Céline",
    "ch": 19,
-   "alt": null,
+   "alt": "탈것에서 '내렸다'가 기본. get off work는 '퇴근하다', Get off!는 '떨어져, 그만해'라는 거친 말이 된다.",
    "from": "구문"
   },
   "got over him": {
@@ -1745,7 +1747,7 @@
    "ctx": "I totally got over him, you know.",
    "who": "Céline",
    "ch": 13,
-   "alt": null,
+   "alt": "get over는 사람·일이면 '극복하다·잊다', 병이면 '회복하다', 장애물이면 '넘어가다'. Get over it은 '그만 좀 잊어라'는 퉁명한 말이다.",
    "from": "구문"
   },
   "got pregnant": {
@@ -1870,7 +1872,7 @@
    "ctx": "Yeah, she got pregnant, we had to get married, you know.",
    "who": "Jesse",
    "ch": 4,
-   "alt": null,
+   "alt": "과거의 의무 '해야만 했다'가 기본이지만, 지난 일을 두고 '그럴 수밖에 없었다'는 필연의 추측으로도 쓴다(It had to be him — 그 사람일 수밖에 없어).",
    "from": "구문"
   },
   "hang on": {
@@ -1880,7 +1882,7 @@
    "ctx": "Hang on, I know, I know, its a totally scattered thought, which is kind of why it makes sense.",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "'잠깐만'(기다려), 전화에서는 '끊지 말고', 물리적으로는 '꽉 붙잡다'. hang out(어울려 놀다), hang up(전화를 끊다)과는 다른 말이다.",
    "from": "구문"
   },
   "hang out": {
@@ -1910,7 +1912,7 @@
    "ctx": "“Hangs up.”) Okay it‘s your turn.",
    "who": "지문",
    "ch": 15,
-   "alt": null,
+   "alt": "전화를 '끊다'가 기본. 옷을 '걸다'도 hang up이고, be hung up on someone은 '~에게 미련이 남아 못 벗어나다'가 된다.",
    "from": "구문"
   },
   "happen to": {
@@ -1920,7 +1922,8 @@
    "ctx": "Well, then I think this is the opportune time to tell you that I happen to be a fantastic swimmer.",
    "who": "Jesse",
    "ch": 5,
-   "from": "내 하이라이트"
+   "from": "내 하이라이트",
+   "alt": "뒤에 동사원형이면 '마침 ~이다'(if you happen to see her), 사람이 오면 '~에게 일어나다'(What happened to you?)."
   },
   "happen to be": {
    "ko": "마침 ~이다",
@@ -1987,7 +1990,8 @@
    "ctx": "Oh, so, you have been on a journey, and you are stranger to this place. You, are on an adventure, you seek. An adventure in your mind. You are interested in the power of the woman, in a woman's deep s",
    "who": "Gypsy",
    "ch": 9,
-   "from": "내 하이라이트"
+   "from": "내 하이라이트",
+   "alt": "have been to는 '갔다가 돌아왔다'(경험), have gone to는 '가서 아직 안 왔다'. 뒤에 기간이 붙으면 '지금까지 죽 ~해 왔다'는 상태 지속이다."
   },
   "have been raised": {
    "ko": "(지금까지) 길러져 왔다, 그렇게 자랐다",
@@ -2015,7 +2019,7 @@
    "ctx": "“I have got to win.”",
    "who": "Jesse",
    "ch": 12,
-   "alt": null,
+   "alt": "사람이 주어면 의무(I've got to go), 사물이 주어면 확신(It's got to be true)이다. gotta로 줄여 말하면 대개 의무 쪽이다.",
    "from": "구문"
   },
   "have never": {
@@ -2054,7 +2058,7 @@
    "ctx": "'cause it would have to play all the time, or else it just wouldn't work.",
    "who": "Jesse",
    "ch": 2,
-   "alt": null,
+   "alt": "사정이 시키는 의무가 기본이지만, 뒤에 be가 오면 강한 확신이 되기도 한다(You have to be kidding — 농담이겠지).",
    "from": "문법"
   },
   "have told somebody": {
@@ -2093,7 +2097,7 @@
    "ctx": "(Finds an album, and shows it to Jesse.) Have you ever heard of this singer?",
    "who": "Céline",
    "ch": 6,
-   "alt": null,
+   "alt": "전치사 하나로 갈린다. hear of는 존재를 들어봤다, hear from은 그 사람에게서 연락이 왔다, hear about은 그 일의 내용을 들었다.",
    "from": "구문"
   },
   "helping out": {
@@ -2191,7 +2195,7 @@
    "ctx": "How about one year?",
    "who": "Céline",
    "ch": 22,
-   "alt": null,
+   "alt": "뒤에 제안이 오면 '~하는 게 어때', 사람이 오면 되묻기 '너는?', 빠뜨린 것을 짚으면 '~는 어쩌고?'라는 항의가 된다.",
    "from": "구문"
   },
   "how about you": {
@@ -2287,7 +2291,7 @@
    "ctx": "I don't think it really matters what generation you are born into.",
    "who": "Céline",
    "ch": 8,
-   "alt": null,
+   "alt": "부정의 자리가 한국어와 다르다. I don't think he's coming은 '그가 안 올 것 같다'이지 '생각하지 않는다'가 아니다. 영어는 부정을 앞으로 당겨 붙인다.",
    "from": "문법"
   },
   "i get it": {
@@ -2357,7 +2361,8 @@
    "ctx": "I mean, getting these tapes from town to town",
    "who": "Jesse",
    "ch": 2,
-   "from": "유닛 어휘"
+   "from": "유닛 어휘",
+   "alt": "방금 한 말을 고쳐 말할 때, 강조할 때, 그냥 말을 고르며 시간을 벌 때 모두 쓴다. 세 번째가 제일 흔하고, 그때는 아예 옮기지 않는 편이 자연스럽다."
   },
   "i see": {
    "ko": "아, 그렇군",
@@ -2366,7 +2371,7 @@
    "ctx": "Oh, I see.",
    "who": "Jesse",
    "ch": 12,
-   "alt": null,
+   "alt": "see가 '보다'가 아니라 '알겠다'인 자리. 시큰둥하게 내뱉으면 '아 그러셔' 하는 미지근한 반응이 되기도 한다.",
    "from": "구문"
   },
   "i thought so": {
@@ -2603,7 +2608,7 @@
    "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
    "who": "Céline",
    "ch": 8,
-   "alt": null,
+   "alt": "최상급을 받치면 '세상에서 가장 ~한'이지만, 의문사 뒤에 붙으면 '도대체'라는 짜증이 된다(What in the world are you doing?).",
    "from": "문법"
   },
   "instead of": {
@@ -2662,7 +2667,7 @@
    "ctx": "I'm just as big a loser as he is, totally unmotivated, totally boring, and, uh, you made the right choice, and you're really happy.",
    "who": "Jesse",
    "ch": 3,
-   "alt": null,
+   "alt": "뒤에 형용사가 오면 '꼭 그만큼 ~한'(just as good), 절이 오면 '바로 그때'(Just as I was leaving)다.",
    "from": "문법"
   },
   "just the opposite": {
@@ -2702,7 +2707,7 @@
    "ctx": "I kind of didn't really like this reaction back at the palm reader.",
    "who": "Céline",
    "ch": 12,
-   "alt": null,
+   "alt": "동사·형용사 앞에 홀로 서면 완충어 '좀'(I kind of like it), what·this·some 같은 한정사 뒤에 붙으면 명사 '종류'(What kind of ideas?)다. 앞에 한정사가 있는지만 보면 된다.",
    "from": "구문"
   },
   "kind of a": {
@@ -2712,7 +2717,7 @@
    "ctx": "I had a thought the other day that was kind of a--qualifies as a problem.",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "뒤에 명사가 오면 관사가 kind of 뒤로 밀린다(kind of a joke). '일종의'와 '좀'의 중간쯤이라, 말을 맺기 전에 머뭇거리는 자리에 자주 온다.",
    "from": "문법"
   },
   "kind of haunts me is": {
@@ -2731,7 +2736,7 @@
    "ctx": "Kind of like I'm in a dress rehearsal for a Junior High play.",
    "who": "Jesse",
    "ch": 11,
-   "alt": null,
+   "alt": "비유의 like가 붙은 형태로 '뭐랄까 ~ 비슷한'. 비유가 정확하지 않다고 미리 물러서는 말이다.",
    "from": "문법"
   },
   "kneel down": {
@@ -2780,7 +2785,7 @@
    "ctx": "And then finally, I let go of the nozzle, you know, and then I dropped the hose, and she disappeared.",
    "who": "Jesse",
    "ch": 2,
-   "alt": null,
+   "alt": "손에 쥔 것이면 '놓다', 마음에 걸린 것이면 '놓아주다'(let go of the past). 회사가 주어인 be let go는 '해고되다'라는 완곡어다.",
    "from": "구문"
   },
   "let me get": {
@@ -2810,7 +2815,7 @@
    "ctx": "Let‘s say that you and I were together all the time, then you'd start to hate a lot of my mannerisms.",
    "who": "Jesse",
    "ch": 19,
-   "alt": null,
+   "alt": "뒤에 상황이 오면 '~라고 쳐 보자'는 가정, 숫자가 오면 '한 열 명쯤'이라는 어림수다.",
    "from": "구문"
   },
   "like a skipping record": {
@@ -2897,7 +2902,7 @@
    "ctx": "I mean the only other way to lose yourself like that is...you know, dancing...or alcohol...or drugs or stuff like that.",
    "who": "Jesse",
    "ch": 19,
-   "alt": null,
+   "alt": "in이 따라오면 '푹 빠져들다'(lose yourself in a book), 관계 이야기에서는 '자기를 잃다'는 경고가 된다. be lost(길을 잃다), lose your temper(화를 내다)와는 다른 말이다.",
    "from": "구문"
   },
   "made eye contact": {
@@ -2927,7 +2932,7 @@
    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "이야기가 목적어면 '지어냈다', with가 따라오면 '화해했다', be made up of면 '~로 이루어져 있다', 얼굴에 쓰면 '화장했다'.",
    "from": "구문"
   },
   "make a deal with you": {
@@ -3007,7 +3012,7 @@
    "ctx": "I always saw the world as this place where I really wasn't meant to be.",
    "who": "Jesse",
    "ch": 8,
-   "alt": null,
+   "alt": "사람 사이에 쓰면 '운명이다'(We're meant to be), 일정에 쓰면 '~하기로 되어 있었다', 평판에 쓰면 '~라고들 한다'(It's meant to be good).",
    "from": "구문"
   },
   "might have": {
@@ -3017,7 +3022,7 @@
    "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
    "who": "Jesse",
    "ch": 3,
-   "alt": null,
+   "alt": "지난 일을 짐작하면 '~했을지도 모른다', 안 한 일을 나무라면 '~해줬어도 좋았잖아'(You might have told me)다.",
    "from": "문법"
   },
   "might have happened": {
@@ -3076,7 +3081,7 @@
    "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
    "who": "Céline",
    "ch": 8,
-   "alt": null,
+   "alt": "수량 앞이면 '~이상', 비교면 '~보다 더', 형용사 앞이면 강조가 된다(more than happy — 아주 기꺼이).",
    "from": "문법"
   },
   "more than anything": {
@@ -3155,7 +3160,7 @@
    "ctx": "Yeah, she was sitting next to this very weird couple who started fighting so she had to move.",
    "who": "Jesse",
    "ch": 15,
-   "alt": null,
+   "alt": "'바로 옆에'가 기본이지만, nothing·impossible 같은 부정어 앞에서는 '거의'가 된다(next to nothing — 거의 아무것도).",
    "from": "문법"
   },
   "no big deal": {
@@ -3205,7 +3210,7 @@
    "ctx": "Ah, no. No, no way, I can't.",
    "who": "Céline",
    "ch": 13,
-   "alt": null,
+   "alt": "믿기지 않으면 '말도 안 돼', 거절이면 '절대 안 해', 뒤에 to부정사가 붙으면 '~할 방법이 없다'는 사실 서술이다.",
    "from": "구문"
   },
   "none of": {
@@ -3273,7 +3278,7 @@
    "ctx": "I'm sorry. I mean, I'm not that sorry. But, uh, tell me about it.",
    "who": "Jesse",
    "ch": 13,
-   "alt": null,
+   "alt": "형용사 앞이면 '그렇게까지 ~하지는 않은'(not that funny), 문장 앞에 홀로 서면 '그렇다고 ~라는 건 아니지만'이라는 발뺌이다(Not that I care).",
    "from": "문법"
   },
   "not that funny": {
@@ -3411,7 +3416,7 @@
    "ctx": "You were visiting friends, or just on your own?",
    "who": "Céline",
    "ch": 2,
-   "alt": null,
+   "alt": "'혼자 있는 상태'와 '남의 도움 없이'가 함께 있다. 뒤에 행동이 붙으면 대개 후자다(You did it on your own — 혼자 힘으로 해냈다).",
    "from": "구문"
   },
   "once or twice": {
@@ -3451,7 +3456,7 @@
    "ctx": "Only if you find peace within yourself, will you find true connection with others.",
    "who": "Gypsy",
    "ch": 9,
-   "alt": null,
+   "alt": "only if는 '오직 ~할 때만'이라는 조건이고, 어순만 뒤집힌 if only는 '~하기만 하면 좋을 텐데'라는 소망이다. 두 단어 순서로 뜻이 완전히 갈린다.",
    "from": "문법"
   },
   "or anything like that": {
@@ -3471,7 +3476,7 @@
    "ctx": "I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
    "who": "Jesse",
    "ch": 2,
-   "alt": null,
+   "alt": "문장 사이에 있으면 '안 그러면'이라는 조건이고, 말끝에 홀로 남으면(\"...or else.\") 뒤를 삼킨 협박이 된다.",
    "from": "구문"
   },
   "or so": {
@@ -3511,7 +3516,7 @@
    "ctx": "So I bought the cheapest flight out of Europe, this one leaving out of Vienna tomorrow, but it didn't leave for a couple of weeks.",
    "who": "Jesse",
    "ch": 13,
-   "alt": null,
+   "alt": "장소면 '~밖으로', 물건이면 '다 떨어진'(out of money), 감정이면 동기 '~때문에'(out of curiosity), 숫자 사이면 비율 '~중에'(three out of five).",
    "from": "문법"
   },
   "out of business": {
@@ -3627,7 +3632,7 @@
    "ctx": "I don't know...I'll probably go pick up my dog.",
    "who": "Jesse",
    "ch": 20,
-   "alt": null,
+   "alt": "사람이면 '데리러 가다', 물건이면 '사 오다·집어 들다', 전화면 '받다', 언어면 '어깨너머로 배우다', 낯선 사람이면 '꼬시다'가 된다.",
    "from": "구문"
   },
   "pick up the phone": {
@@ -3666,7 +3671,7 @@
    "ctx": "you know, that he was really pissed off when he found out that she was pregnant with me",
    "who": "Jesse",
    "ch": 8,
-   "alt": null,
+   "alt": "미국에서는 '몹시 화난'이지만, 영국에서 pissed 혼자면 '술에 취한'이다. Piss off!는 '꺼져'라는 욕이다.",
    "from": "구문"
   },
   "pisses you off": {
@@ -3696,7 +3701,7 @@
    "ctx": "She pretty much managed to avoid being alone with me for the first couple of days we were there",
    "who": "Jesse",
    "ch": 13,
-   "alt": null,
+   "alt": "여기서 pretty는 '예쁜'이 아니라 '꽤'다. pretty much는 '거의 다', pretty good은 '꽤 괜찮은'. 형용사·부사 앞에 붙으면 언제나 정도를 재는 말이다.",
    "from": "구문"
   },
   "pretty neat": {
@@ -3735,7 +3740,7 @@
    "ctx": "(Céline shakes her head) Umm, I dunno...Anybody can produce a show real cheap, and they have to put it on.",
    "who": "Jesse",
    "ch": 2,
-   "alt": null,
+   "alt": "방송·음악이면 '틀다', 옷이면 '입다', 사람 태도면 '없는 척 꾸미다'(He's putting it on).",
    "from": "구문"
   },
   "put out of business": {
@@ -3822,7 +3827,7 @@
    "ctx": "No, not right now.",
    "who": "Céline",
    "ch": 13,
-   "alt": null,
+   "alt": "명령이나 재촉에 붙으면 '지금 당장', 상태를 말하면 '현재로선'이라는 유보가 된다(I'm fine right now — 지금은 괜찮아).",
    "from": "문법"
   },
   "rob someone blind": {
@@ -4017,7 +4022,7 @@
    "ctx": "They should have done it a lot sooner, but they stuck together for a while",
    "who": "Jesse",
    "ch": 8,
-   "alt": null,
+   "alt": "안 한 일을 되짚으면 '~했어야 했는데'(후회·비난), 시간 계산이면 '지금쯤 ~했을 것이다'(He should have arrived by now).",
    "from": "문법"
   },
   "should have told you": {
@@ -4146,7 +4151,8 @@
    "ctx": "I dunno, the key, the key (squints his eyes as if perplexed)...the thing that kind of haunts me is the distribution, you know. I mean, getting these tapes from town to town, city to city, so that the ",
    "who": "Jesse",
    "ch": 2,
-   "from": "내 하이라이트"
+   "from": "내 하이라이트",
+   "alt": "so와 that이 붙어 있으면 목적 '~하도록', 사이에 형용사·부사가 끼면 결과 '너무 ~해서 …하다'(so tired that I fell asleep)."
   },
   "some kind of": {
    "ko": "일종의, 뭔가 ~같은",
@@ -4155,7 +4161,7 @@
    "ctx": "I have no idea what your situation is, but, uh, but I feel like we have some kind of uh, connection.",
    "who": "Jesse",
    "ch": 3,
-   "alt": null,
+   "alt": "뒤에 반드시 명사가 붙어 '일종의, 무슨 ~인가 하는'으로 대상을 흐린다. 완충어 kind of('좀')와 달리 이 자리는 늘 명사 자리다.",
    "from": "구문"
   },
   "somebody else": {
@@ -4214,7 +4220,7 @@
    "ctx": "I guess they sort of nullify each other, or something.",
    "who": "Céline",
    "ch": 1,
-   "alt": null,
+   "alt": "kind of와 똑같이 이중생활을 한다. 동사 앞이면 완충어 '좀', a sort of + 명사면 '일종의'. 영국 쪽이 sort of, 미국 쪽이 kind of를 즐겨 쓸 뿐 쓰임은 같다.",
    "from": "구문"
   },
   "sounds like": {
@@ -4341,7 +4347,7 @@
    "ctx": "Why do you think everybody thinks relationships are supposed to last forever?",
    "who": "Jesse",
    "ch": 17,
-   "alt": null,
+   "alt": "일정이면 '~하기로 되어 있다', 규칙이면 '~해야 한다', 평판이면 '~라던데'(It's supposed to be good). 앞의 두 개는 '그런데 안 했다'는 뉘앙스를 자주 끌고 온다.",
    "from": "구문"
   },
   "supposed to be": {
@@ -4409,7 +4415,7 @@
    "ctx": "C'mon, tell me about it.",
    "who": "Jesse",
    "ch": 13,
-   "alt": null,
+   "alt": "말 그대로 '그 얘기 좀 해봐'일 수도 있지만, 회화에서는 맞장구로 '내 말이 그 말이야'가 더 흔하다. 억양이 내려가면 맞장구다.",
    "from": "구문"
   },
   "than any of": {
@@ -4439,7 +4445,7 @@
    "ctx": "for the well-being of my sister and I, thank you very much.",
    "who": "Jesse",
    "ch": 8,
-   "alt": null,
+   "alt": "평범한 감사이지만, 말끝에 힘을 주어 붙이면 '됐거든요'라는 빈정거림이 된다. 반박 뒤에 따라붙으면 대개 후자다.",
    "from": "문법"
   },
   "that come here": {
@@ -4488,7 +4494,7 @@
    "ctx": "That's funny.",
    "who": "Céline",
    "ch": 7,
-   "alt": null,
+   "alt": "funny는 '웃긴'과 '이상한'을 함께 갖는다. 뭔가 안 맞아떨어질 때 내뱉으면 '묘하네'다. 헷갈릴 때 원어민은 funny ha-ha냐 funny strange냐고 되묻는다.",
    "from": "구문"
   },
   "that's so wild": {
@@ -4597,7 +4603,7 @@
    "ctx": "And I think that really shaped the way I think.",
    "who": "Jesse",
    "ch": 8,
-   "alt": null,
+   "alt": "명사로 '~하는 방식', 접속사처럼 쓰면 '~하는 대로'(the way I see it — 내가 보기엔). by the way는 통째로 '그런데'라 아예 다른 말이다.",
    "from": "문법"
   },
   "these days": {
@@ -4764,7 +4770,7 @@
    "ctx": "And if I turn out to be some kind of psycho, you know, you just get on the next train.",
    "who": "Jesse",
    "ch": 3,
-   "alt": null,
+   "alt": "'알고 보니 ~였다'가 기본. turn out 혼자면 '(사람들이) 나타나다', turn out the light면 '불을 끄다'로 갈린다.",
    "from": "구문"
   },
   "turns into": {
@@ -4804,7 +4810,7 @@
    "ctx": "They get into the bar, Céline goes over to a table, and Jesse goes up to the bar.",
    "who": "지문",
    "ch": 18,
-   "alt": null,
+   "alt": "숫자면 '~까지', 사람이면 '~에게 달렸다'(It's up to you), What are you up to?면 '뭐 하고 있어', not up to it이면 '그럴 상태가 못 된다'.",
    "from": "문법"
   },
   "used to": {
@@ -4814,7 +4820,7 @@
    "ctx": "Only your marriage doesn't have that same energy that it used to have, you know.",
    "who": "Jesse",
    "ch": 3,
-   "alt": null,
+   "alt": "used to + 동사원형은 '예전엔 ~했다', be used to + -ing는 '~에 익숙하다', be used to + 동사원형은 '~하는 데 쓰인다'. be가 있는지, 뒤가 -ing인지를 보면 갈린다.",
    "from": "문법"
   },
   "used to always": {
@@ -4844,7 +4850,7 @@
    "ctx": "Wait a minute.",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "말 그대로 '잠깐 기다려'이기도 하고, 뭔가 이상하다고 느낄 때 '어라, 잠깐만' 하고 스스로 멈추는 말이기도 하다.",
    "from": "구문"
   },
   "waiting on": {
@@ -4854,7 +4860,7 @@
    "ctx": "You got a boyfriend waiting on you back in Paris, or anything like that?",
    "who": "Jesse",
    "ch": 13,
-   "alt": null,
+   "alt": "미국 구어에서는 wait for와 같이 '기다리다'로 쓰지만, 본뜻은 '시중들다'(식당에서 손님을 받다)이다.",
    "from": "구문"
   },
   "walk away": {
@@ -4864,7 +4870,7 @@
    "ctx": "Eventually, they stop, and walk away holding hands.",
    "who": "지문",
    "ch": 20,
-   "alt": null,
+   "alt": "그 자리를 '떠나다'가 기본. 관계·일에 쓰면 '그만두다', 사고에 쓰면 '멀쩡히 걸어 나오다'(walk away from the crash).",
    "from": "구문"
   },
   "walking by": {
@@ -4893,7 +4899,7 @@
    "ctx": "He explained that most of the people are buried here that washed up on the bank of the Danube.",
    "who": "Céline",
    "ch": 7,
-   "alt": null,
+   "alt": "물에 '떠밀려 왔다'가 기본. 사람에게 be washed up이라고 하면 '한물갔다'는 말이 된다. wash up 자체도 영국에서는 설거지, 미국에서는 손 씻기다.",
    "from": "구문"
   },
   "well being": {
@@ -4922,7 +4928,8 @@
    "ctx": "I don't think it really matters what generation you are born into. Look at my parents. They were these angry, young, May '68 people, revolting against everything. You know, the government, their conse",
    "who": "Céline",
    "ch": 8,
-   "from": "내 하이라이트"
+   "from": "내 하이라이트",
+   "alt": "말이면 '계속했다', went on to면 '그 뒤에 ~하게 됐다', 불이 주어면 '켜졌다', What went on?이면 '무슨 일이 있었냐'."
   },
   "went on to become": {
    "ko": "이후 ~이 되었다",
@@ -4970,7 +4977,7 @@
    "ctx": "What about our rational, adult decision?",
    "who": "Céline",
    "ch": 19,
-   "alt": null,
+   "alt": "제안이면 '~는 어때', 빠뜨린 것을 짚으면 '~는 어쩌고?'라는 반박이다. 어조가 결정한다.",
    "from": "문법"
   },
   "what are you talking about": {
@@ -5000,7 +5007,7 @@
    "ctx": "What do you mean?",
    "who": "Céline",
    "ch": 2,
-   "alt": null,
+   "alt": "억양이 올라가면 순수한 설명 요청, 평평하거나 낮으면 '그게 말이 되냐'는 항의가 된다.",
    "from": "구문"
   },
   "what else": {
@@ -5048,7 +5055,7 @@
    "ctx": "Well, what if I asked you about love?",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "걱정이면 '~면 어쩌지', 제안이면 '~하면 어떨까'. 같은 말이 불안도 되고 아이디어도 된다.",
    "from": "구문"
   },
   "what kind of": {
@@ -5087,7 +5094,7 @@
    "ctx": "Hi dude, what's up?",
    "who": "Céline",
    "ch": 15,
-   "alt": null,
+   "alt": "인사로 던지면 '잘 지내?', 상대 표정을 보고 물으면 '무슨 일 있어?'. What's up with him?은 '쟤 왜 저래?'라는 핀잔이다.",
    "from": "구문"
   },
   "where are you headed": {
@@ -5126,7 +5133,7 @@
    "ctx": "Sure, why not?",
    "who": "Jesse",
    "ch": 5,
-   "alt": null,
+   "alt": "되물으면 '왜 안 되는데?', 제안에 대한 답이면 '그러지 뭐'라는 흔쾌한 수락이다.",
    "from": "구문"
   },
   "wish me good luck": {
@@ -5146,7 +5153,27 @@
    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
    "who": "Céline",
    "ch": 5,
-   "alt": null,
+   "alt": "뒤에 과거분사가 오면 가정법 '~했을 텐데'(would have lied), to부정사가 오면 would와 have to가 만난 것이라 '~해야 할 것이다'(would have to play)가 된다.",
+   "from": "문법"
+  },
+  "would have been": {
+   "ko": "~였을 텐데 (실제로는 아니었다)",
+   "en": "would have been (counterfactual)",
+   "nuance": "가정법 과거완료가 be동사를 받은 형태. 실제로는 그렇지 않았다는 사실이 자동으로 깔린다. would have to be(그래야 할 것이다)와는 다른 말이다.",
+   "ctx": "Life with him was fun, but I probably would have been dead in a few weeks.",
+   "who": "Céline",
+   "ch": 3,
+   "alt": "would have been은 '아니었다'는 사실을 깔지만, would have to be는 '그래야 할 것이다'라는 조건부 의무다. been이냐 to be냐로 갈린다.",
+   "from": "문법"
+  },
+  "would have to": {
+   "ko": "~해야 할 것이다 (그런 상황이라면)",
+   "en": "would be obliged to",
+   "nuance": "would have(가정법)가 아니라 would + have to다. 앞의 would는 '그런 조건이라면'이라는 가정을 얹고, 의무를 지우는 쪽은 have to다. 제시의 말은 '테이프가 계속 돌아가려면 늘 틀어 놓아야 할 텐데'라는 조건부 의무다.",
+   "ctx": "'cause it would have to play all the time, or else it just wouldn't work.",
+   "who": "Jesse",
+   "ch": 2,
+   "alt": "would have + 과거분사(would have lied)는 '~했을 텐데'라는 가정법이고, would have + to부정사는 would와 have to가 만난 것이라 '~해야 할 것이다'가 된다. have 뒤에 to가 붙었는지만 보면 갈린다.",
    "from": "문법"
   },
   "would you like to": {
@@ -5159,6 +5186,16 @@
    "alt": null,
    "from": "구문"
   },
+  "wouldn't have to": {
+   "ko": "~할 필요가 없을 텐데",
+   "en": "would not need to",
+   "nuance": "would have to의 부정. '그렇게만 되면 굳이 ~하지 않아도 된다'는 아쉬움 섞인 가정이다. wouldn't have(그러지 않았을 텐데)와 헷갈리기 쉬운데, 여기서도 갈림길은 뒤의 to다.",
+   "ctx": "Well, we could say goodbye now. Then we wouldn't have to worry about it in the morning.",
+   "who": "Jesse",
+   "ch": 17,
+   "alt": "뒤에 to가 있으면 '~할 필요 없을 텐데'(의무의 부정), 과거분사가 오면 '~하지 않았을 텐데'(가정법)다.",
+   "from": "문법"
+  },
   "you know": {
    "ko": "있잖아, 그러니까 (말을 고르며 상대를 붙드는 표지)",
    "en": "used in speech to fill a pause and keep the listener's attention",
@@ -5166,7 +5203,8 @@
    "ctx": "sitting, you know, for weeks on end",
    "who": "Jesse",
    "ch": 2,
-   "from": "유닛 어휘"
+   "from": "유닛 어휘",
+   "alt": "문장 중간에 끼면 말을 고르며 상대를 붙드는 표지라 옮기지 않는 편이 낫고, 힘을 주어 말하면 정말 '너도 알잖아'라는 강조가 된다."
   },
   "you know what": {
    "ko": "있잖아, 그거 알아?",

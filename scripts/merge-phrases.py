@@ -65,7 +65,12 @@ def main():
                 problems.append(f"{tag} '{key}': register '{p.get('register')}' 이상")
 
             if key in table:
-                continue  # 먼저 나온 것을 남긴다
+                # 뜻은 먼저 나온 것을 남기되, 문맥 갈림 설명은 있는 쪽을 채운다.
+                # 같은 표현이 두 파일에 걸쳐 있을 때 나중 파일의 alt까지 통째로
+                # 버리면, 정작 뜻이 갈리는 자리에서 설명이 사라진다.
+                if p.get("alt") and not table[key].get("alt"):
+                    table[key]["alt"] = p["alt"]
+                continue
             table[key] = {
                 "ko": p["ko"],
                 "en": p.get("en"),
@@ -127,6 +132,34 @@ def main():
                 table[bare] = entry
                 aliases += 1
 
+    # ── 문맥 갈림 ────────────────────────────────────────────────────
+    # context-*.json은 뜻을 새로 만들지 않고, 이미 표에 있는 표현에
+    # "이 말은 자리에 따라 뜻이 갈린다"는 설명만 덧입힌다. 출처가
+    # 여럿(구문·문법·내 하이라이트·유닛)이라 원본 파일마다 고쳐 넣을
+    # 수 없어서, 마지막에 한 겹으로 얹는다.
+    #
+    # 표에 없는 표현이 오면 실패로 잡는다 — 조용히 넘어가면 정성껏
+    # 써둔 설명이 어디에도 안 뜨는 채로 남는다.
+    ctx_added = 0
+    for f in sorted(SRC.glob("context-*.json")):
+        try:
+            overlay = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as err:
+            problems.append(f"{f.name}: JSON 파싱 실패 — {err}")
+            continue
+        for i, p in enumerate(overlay):
+            tag = f"{f.name}[{i}]"
+            key = norm_key(p.get("phrase"))
+            alt = str(p.get("alt", "")).strip()
+            if not alt:
+                problems.append(f"{tag} '{key}': alt 비어 있음")
+                continue
+            if key not in table:
+                problems.append(f"{tag} '{key}': 구문 표에 없는 표현")
+                continue
+            table[key]["alt"] = alt
+            ctx_added += 1
+
     if problems:
         print(f"검증 실패 {len(problems)}건:", file=sys.stderr)
         for p in problems[:20]:
@@ -152,6 +185,8 @@ def main():
     print(f"{len(table)}개 구문 → {OUT.relative_to(ROOT)} ({OUT.stat().st_size/1024:.0f}KB)")
     print(f"  출처별: {dict(Counter(v['from'] for v in table.values()))}")
     print(f"  기존 자료에서 끌어온 것 {added}개 · be를 뗀 별칭 {aliases}개")
+    alt_total = sum(1 for v in table.values() if v.get("alt"))
+    print(f"  문맥 갈림 표시 {alt_total}개 (덧입힌 것 {ctx_added}개)")
     if dropped:
         print(f"  길이가 안 맞아 뺀 것 {len(dropped)}개: {', '.join(dropped[:6])}")
 

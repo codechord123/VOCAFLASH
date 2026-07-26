@@ -1,0 +1,35 @@
+[
+ {
+  "phrase": "would have to",
+  "ko": "~해야 할 것이다 (그런 상황이라면)",
+  "en": "would be obliged to",
+  "nuance": "would have(가정법)가 아니라 would + have to다. 앞의 would는 '그런 조건이라면'이라는 가정을 얹고, 의무를 지우는 쪽은 have to다. 제시의 말은 '테이프가 계속 돌아가려면 늘 틀어 놓아야 할 텐데'라는 조건부 의무다.",
+  "register": "neutral",
+  "ctx": "'cause it would have to play all the time, or else it just wouldn't work.",
+  "who": "Jesse",
+  "ch": 2,
+  "alt": "would have + 과거분사(would have lied)는 '~했을 텐데'라는 가정법이고, would have + to부정사는 would와 have to가 만난 것이라 '~해야 할 것이다'가 된다. have 뒤에 to가 붙었는지만 보면 갈린다."
+ },
+ {
+  "phrase": "wouldn't have to",
+  "ko": "~할 필요가 없을 텐데",
+  "en": "would not need to",
+  "nuance": "would have to의 부정. '그렇게만 되면 굳이 ~하지 않아도 된다'는 아쉬움 섞인 가정이다. wouldn't have(그러지 않았을 텐데)와 헷갈리기 쉬운데, 여기서도 갈림길은 뒤의 to다.",
+  "register": "neutral",
+  "ctx": "Well, we could say goodbye now. Then we wouldn't have to worry about it in the morning.",
+  "who": "Jesse",
+  "ch": 17,
+  "alt": "뒤에 to가 있으면 '~할 필요 없을 텐데'(의무의 부정), 과거분사가 오면 '~하지 않았을 텐데'(가정법)다."
+ },
+ {
+  "phrase": "would have been",
+  "ko": "~였을 텐데 (실제로는 아니었다)",
+  "en": "would have been (counterfactual)",
+  "nuance": "가정법 과거완료가 be동사를 받은 형태. 실제로는 그렇지 않았다는 사실이 자동으로 깔린다. would have to be(그래야 할 것이다)와는 다른 말이다.",
+  "register": "neutral",
+  "ctx": "Life with him was fun, but I probably would have been dead in a few weeks.",
+  "who": "Céline",
+  "ch": 3,
+  "alt": "would have been은 '아니었다'는 사실을 깔지만, would have to be는 '그래야 할 것이다'라는 조건부 의무다. been이냐 to be냐로 갈린다."
+ }
+]
