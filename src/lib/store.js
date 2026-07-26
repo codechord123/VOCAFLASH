@@ -8,6 +8,46 @@
 // 선택 기능이 아니라 필수다. exportAll()이 유일한 백업 수단이다.
 
 const KEY = 'script-study.v1'
+// 단어 상태는 words.js가 이 키로 따로 쓴다. 백업에 같이 담아야 해서
+// 여기서도 이름을 안다 — 값을 만지지는 않고 통째로 옮기기만 한다.
+const WORD_KEY = 'script-study.words.v1'
+
+function readWordStatus() {
+  try {
+    return JSON.parse(localStorage.getItem(WORD_KEY) || '{}')
+  } catch {
+    return {}
+  }
+}
+
+/** 단어 상태 병합. 이미 표시해 둔 것을 백업이 덮지 않게 현재를 우선한다. */
+function mergeWordStatus(incoming) {
+  if (!incoming || typeof incoming !== 'object') return 0
+  const mine = readWordStatus()
+  let added = 0
+  for (const [word, status] of Object.entries(incoming)) {
+    if (mine[word] === undefined) {
+      mine[word] = status
+      added += 1
+    }
+  }
+  try {
+    localStorage.setItem(WORD_KEY, JSON.stringify(mine))
+  } catch (err) {
+    console.error('단어 상태 복원 실패', err)
+  }
+  return added
+}
+
+/** 회독 병합. 같은 챕터는 더 많이 읽은 쪽을 남긴다. */
+function mergeReads(mine = {}, incoming = {}) {
+  const out = { ...mine }
+  for (const [key, rec] of Object.entries(incoming)) {
+    const cur = out[key]
+    if (!cur || (rec?.count ?? 0) > (cur.count ?? 0)) out[key] = rec
+  }
+  return out
+}
 
 const DEFAULTS = {
   version: 2,
@@ -114,11 +154,17 @@ export const store = {
     return next
   },
 
-  /** 전체 백업. localStorage가 날아가는 유일한 대비책. */
+  /**
+   * 전체 백업. localStorage가 날아가는 유일한 대비책.
+   *
+   * 단어 상태(아는/모르는 표시)는 다른 키에 따로 저장된다. 그걸 빼놓고
+   * 내보내면, 정작 백업이 필요한 날 읽기 화면의 색이 통째로 사라진다 —
+   * 유일한 대비책이 절반만 대비하고 있었다.
+   */
   exportAll() {
     const state = read()
     return JSON.stringify(
-      { ...state, exportedAt: new Date().toISOString() },
+      { ...state, wordStatus: readWordStatus(), exportedAt: new Date().toISOString() },
       null,
       2
     )
@@ -136,7 +182,9 @@ export const store = {
 
     if (mode === 'replace') {
       const next = { ...structuredClone(DEFAULTS), ...incoming }
+      delete next.wordStatus // 본체 상태가 아니라 따로 저장되는 값이다
       write(next)
+      mergeWordStatus(incoming.wordStatus)
       return { added: incoming.cards.length, kept: 0, replaced: true }
     }
 
@@ -168,10 +216,15 @@ export const store = {
       ...state,
       cards: [...byId.values()],
       progress,
+      // 회독은 진행 기록이라 병합해야 한다. 예전에는 현재 상태를 그대로
+      // 펼치기만 해서, 백업을 불러와도 스무 번 읽은 기록이 통째로
+      // 사라졌다 — 없어진 줄도 모르는 종류의 손실이다.
+      reads: mergeReads(state.reads, incoming.reads),
       reviewLog: [...state.reviewLog, ...(incoming.reviewLog ?? [])],
     }
     write(next)
-    return { added, updated, replaced: false }
+    const words = mergeWordStatus(incoming.wordStatus)
+    return { added, updated, words, replaced: false }
   },
 
   /** 시드를 한 번만 가져오기 위한 표시. */

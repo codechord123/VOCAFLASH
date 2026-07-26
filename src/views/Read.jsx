@@ -321,9 +321,17 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
         onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
       />
 
-      {/* 퀴즈도 회독 표시와 같은 자리다 — 다 읽고 나서 하는 것 */}
+      {/* 퀴즈도 회독 표시와 같은 자리다 — 다 읽고 나서 하는 것.
+          key에 챕터를 넣어야 장을 넘길 때 상태가 따라오지 않는다.
+          안 그러면 4장에서 2/6까지 풀던 화면이 5장에 그대로 남고,
+          문제는 5장 것으로 바뀌어 있어 점수도 진도도 거짓이 된다. */}
       {section === 'script' && (
-        <ChapterQuiz analysis={analysis} levels={wl.levels} phrases={wl.phrases} />
+        <ChapterQuiz
+          key={`quiz-${selected}`}
+          analysis={analysis}
+          levels={wl.levels}
+          phrases={wl.phrases}
+        />
       )}
 
       <ChapterNav

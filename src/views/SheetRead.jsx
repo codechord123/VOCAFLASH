@@ -376,8 +376,14 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
         onUndo={() => commit((s) => undoRead(s, work.id, selected))}
       />
 
+      {/* key에 챕터를 넣어 장을 넘기면 퀴즈가 처음으로 돌아가게 한다 */}
       {section === 'script' && (
-        <ChapterQuiz analysis={chapterAnalysis} levels={wl.levels} phrases={wl.phrases} />
+        <ChapterQuiz
+          key={`quiz-${work.id}-${selected}`}
+          analysis={chapterAnalysis}
+          levels={wl.levels}
+          phrases={wl.phrases}
+        />
       )}
 
       <ChapterNav

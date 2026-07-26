@@ -39,7 +39,9 @@ export default function Settings({ cards, settings, stats, commit, onReload }) {
       onReload()
       setMsg({
         kind: 'ok',
-        text: `불러왔습니다. 새 카드 ${r.added}개, 갱신 ${r.updated ?? 0}개.`,
+        // 단어 표시도 같이 복원된다. 숫자로 보여야 백업이 뭘 담고
+        // 있었는지 알 수 있다.
+        text: `불러왔습니다. 새 카드 ${r.added}개, 갱신 ${r.updated ?? 0}개, 단어 표시 ${r.words ?? 0}개.`,
       })
     } catch (err) {
       setMsg({ kind: 'error', text: `불러오지 못했습니다 — ${err.message}` })

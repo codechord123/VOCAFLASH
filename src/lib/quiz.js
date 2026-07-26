@@ -121,6 +121,9 @@ function blankQuestions(analysis, { levels, phrases }) {
 
     const at = s.en.indexOf(answer)
     if (at < 0) continue
+    // 같은 말이 그 문장에 또 있으면 답이 그대로 보인다.
+    // ("This is ____ weird. Yeah, this is kind of weird isn't it?")
+    if (s.en.indexOf(answer, at + answer.length) >= 0) continue
     out.push({
       kind: 'blank',
       before: s.en.slice(0, at),
