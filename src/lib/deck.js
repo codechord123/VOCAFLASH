@@ -151,7 +151,16 @@ export function cardsFromExpressions(expressions, meanings = {}) {
  * 예전에는 이 54개를 만들려고 1.3MB짜리 문장 파일을 통째로 받아왔다.
  */
 export function cardsFromVocabNotes(notes) {
-  return notes.map((v) =>
+  // 시트 메모에도 같은 단어가 두 번 적힌 것이 하나 있다(filthy).
+  const seen = new Set()
+  return notes
+    .filter((v) => {
+      const key = (v.term ?? '').trim().toLowerCase()
+      if (!key || seen.has(key)) return false
+      seen.add(key)
+      return true
+    })
+    .map((v) =>
     createCard({
       id: `card:${v.id}`,
       type: 'expression',
@@ -180,11 +189,33 @@ export function cardsFromVocabNotes(notes) {
  * 대신 발음기호·예문·유의어·반의어가 갖춰져 있어 카드 뒷면이 풍부하다.
  */
 export function cardsFromB2Words(words) {
-  return words.map((w, i) => {
-    const synonyms = [w.Synonym_1, w.Synonym_2].filter(Boolean)
-    const antonyms = [w.Antonym_1, w.Antonym_2].filter(Boolean)
-    return createCard({
-      id: `card:b2-${String(i + 1).padStart(4, '0')}`,
+  // 원본 899줄에는 같은 단어가 여러 번 들어 있다. 주제별로 따로 만든
+  // 목록을 이어 붙인 자료라, infrastructure는 다섯 주제에 걸쳐 다섯 번
+  // 나오고 automation은 같은 주제 안에서 두 번 나온다(뜻은 같고 예문만
+  // 다르다). 그대로 카드로 만들면 넘기는 동안 같은 단어를 계속 다시 본다.
+  //
+  // 첫 줄만 카드로 만들되 id는 원래 줄 번호를 그대로 쓴다 — id가 밀리면
+  // 이미 쌓인 복습 진행이 엉뚱한 단어에 붙는다. 나머지 줄에서는 주제만
+  // 거둬 topicIds에 모아, 그 단어가 여러 주제에 걸쳐 있다는 사실은 잃지
+  // 않는다.
+  const byWord = new Map()
+
+  words.forEach((w, i) => {
+    const key = (w.word ?? '').trim().toLowerCase()
+    if (!key) return
+    const seen = byWord.get(key)
+    if (seen) {
+      if (w.Topic_ID != null && !seen.topicIds.includes(w.Topic_ID)) {
+        seen.topicIds.push(w.Topic_ID)
+      }
+      return
+    }
+    byWord.set(key, { row: w, index: i, topicIds: w.Topic_ID != null ? [w.Topic_ID] : [] })
+  })
+
+  return [...byWord.values()].map(({ row: w, index, topicIds }) =>
+    createCard({
+      id: `card:b2-${String(index + 1).padStart(4, '0')}`,
       type: 'expression',
       front: w.word,
       back: { meaningKo: w.Meaning_KR, definitionEn: null, nuance: '' },
@@ -196,14 +227,15 @@ export function cardsFromB2Words(words) {
         origin: 'curated',
         phonetics: w.Phonetics ?? null,
         exampleKo: w.Example_KR ?? null,
-        synonyms,
-        antonyms,
+        synonyms: [w.Synonym_1, w.Synonym_2].filter(Boolean),
+        antonyms: [w.Antonym_1, w.Antonym_2].filter(Boolean),
         topicId: w.Topic_ID ?? null,
+        topicIds,
         deck: 'b2',
         priority: DECKS.b2.priority,
       },
     })
-  })
+  )
 }
 
 /**

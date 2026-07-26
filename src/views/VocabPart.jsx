@@ -256,10 +256,18 @@ function TopicPicker({ cards, onStart }) {
     const work = new Map()
 
     for (const c of cards) {
-      if (c.topicId && TOPICS[c.topicId]) {
-        const g = topic.get(c.topicId) ?? []
-        g.push(c)
-        topic.set(c.topicId, g)
+      // 한 단어가 여러 주제에 걸쳐 있으면 그 주제들 모두에 넣는다. 원본
+      // 목록이 주제마다 따로 만들어져서 infrastructure 같은 단어는 기술·
+      // 건축·국제 이슈에 다 나오는데, 그걸 한 주제로만 몰면 나머지 주제가
+      // 빈다. 대신 카드는 하나뿐이라 한 묶음 안에서 두 번 나오지는 않는다.
+      const topicIds = c.topicIds?.length ? c.topicIds : c.topicId ? [c.topicId] : []
+      const known = topicIds.filter((t) => TOPICS[t])
+      if (known.length > 0) {
+        for (const t of known) {
+          const g = topic.get(t) ?? []
+          g.push(c)
+          topic.set(t, g)
+        }
       } else {
         const key = c.source?.work ?? '기타'
         const g = work.get(key) ?? []
