@@ -851,8 +851,23 @@ main {
   user-select: none;
   -webkit-user-select: none;
   will-change: transform;
+  /* 뒷면이 길어도 카드가 화면을 다 먹지 않게. 넘치면 카드 안에서만
+     스크롤한다 — 세로로 끄는 동작은 이미 넘기기로 안 치므로 안전하다. */
+  max-height: 62dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .swipe__card:active { cursor: grabbing; }
+
+/* 판정 버튼은 늘 손 닿는 자리에. 카드가 길어도 화면 아래에 붙어 있다. */
+.swipe__actions {
+  position: sticky;
+  bottom: var(--s3);
+  z-index: 5;
+  padding: var(--s2) 0;
+  background: var(--bg);
+  box-shadow: 0 -14px 18px -14px rgba(0, 0, 0, 0.4);
+}
 
 .swipe__hint {
   position: absolute;

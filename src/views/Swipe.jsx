@@ -391,7 +391,10 @@ export default function Swipe({ cards, settings, commit, onExit }) {
         </article>
       </div>
 
-      <div className="grade-row">
+      {/* 판정 버튼은 화면 아래에 붙어 있는다. 카드 뒷면이 길면(예문·유의어가
+          붙은 단어장 카드) 버튼이 화면 밖으로 밀려서, 넘기려면 스크롤부터
+          해야 했다 — 한 손으로 넘기는 화면에서 그건 치명적이다. */}
+      <div className="grade-row swipe__actions">
         <button className="btn grade grade--again" onClick={() => settle(false)}>
           ← 모름
           <span className="grade__key">왼쪽으로 넘기기</span>
