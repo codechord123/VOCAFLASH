@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
 import { cardFromLine, cardFromSelection, findChunkKo, lineId } from '../lib/lines.js'
@@ -30,6 +30,35 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
   // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
   const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
+  const navRef = useRef(null)
+  const pendingScroll = useRef(false)
+
+  /**
+   * 탭을 누르면 그 탭 바로 아래에서 새 화면이 시작되게 한다.
+   *
+   * 탭이 따라다니게 되면서 원문 한참 아래에서도 누를 수 있게 됐는데,
+   * 그때 스크롤 위치를 그대로 두면 짧은 화면(단어·배경지식)은 이미
+   * 다 지나간 자리에서 열린다 — 눌렀는데 아무 일도 안 일어난 것처럼 보인다.
+   */
+  function openSection(id) {
+    if (id !== section) pendingScroll.current = true
+    setSection(id)
+  }
+
+  // 스크롤은 새 화면이 그려진 뒤에 해야 한다. 누르자마자 옮기면 그 다음
+  // 렌더에서 브라우저의 스크롤 앵커링이 "위쪽 내용이 바뀌었네" 하고
+  // 원래 자리로 되돌려 놓는다.
+  useLayoutEffect(() => {
+    if (!pendingScroll.current) return
+    pendingScroll.current = false
+    const nav = navRef.current
+    const body = nav?.nextElementSibling
+    if (!body) return
+    // 기준은 탭이 아니라 바로 아래 본문이다. 붙어 있는 동안 탭 자신의
+    // 좌표는 offsetTop까지 56으로 밀려 있어 원래 자리를 알 수 없다.
+    const y = body.getBoundingClientRect().top + window.scrollY - 56 - nav.offsetHeight
+    if (window.scrollY > y) window.scrollTo({ top: Math.max(0, y) })
+  }, [section])
 
   const analysisByChapter = useMemo(() => {
     const map = new Map()
@@ -178,7 +207,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
         )}
       </div>
 
-      <nav className="tabs" role="tablist" aria-label="챕터 내 화면">
+      <nav className="tabs tabs--sticky" ref={navRef} role="tablist" aria-label="챕터 내 화면">
         {SECTIONS.map((s) => {
           // 단어는 해설과 별개 자료라 해설이 없어도 열 수 있다.
           const missing =
@@ -191,7 +220,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
               className="tab"
               disabled={missing}
               title={missing ? '아직 생성되지 않았습니다' : undefined}
-              onClick={() => setSection(s.id)}
+              onClick={() => openSection(s.id)}
             >
               {s.label}
             </button>

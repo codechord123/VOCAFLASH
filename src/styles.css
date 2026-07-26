@@ -257,6 +257,25 @@ a:hover { text-decoration: underline; }
   background: var(--surface-2);
 }
 
+/* 챕터 안 탭은 스크롤해도 붙어 있게.
+   원문이 화면 열 개 분량이라 아래로 내려가면 탭이 저 위에 남는다.
+   단어를 보러 가려고 매번 맨 위까지 되돌아가야 하는 것이 실제 불편이었다.
+   위치는 상단 바(56px) 바로 아래. */
+.tabs--sticky {
+  position: sticky;
+  top: 56px;
+  z-index: 15;
+  /* 컨테이너 좌우 여백만큼 밖으로 넓혀, 밑으로 흐르는 본문이
+     바 옆으로 비쳐 보이지 않게 한다 */
+  margin-inline: calc(var(--s4) * -1);
+  padding: var(--s2) var(--s4);
+  /* 상단 바(88%)보다 더 불투명하게 — 이 바 밑으로는 본문이 통째로
+     지나가서, 살짝만 비쳐도 탭 글자가 읽히지 않는다 */
+  background: color-mix(in srgb, var(--bg) 97%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
 .subtabs {
   display: flex;
   gap: var(--s1);

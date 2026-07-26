@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
 import { cardFromLine, cardFromSelection, lineId } from '../lib/lines.js'
 import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
@@ -25,6 +25,25 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
   const [section, setSection] = useState('script')
   const [hideKo, setHideKo] = useState(false)
   const [revealed, setRevealed] = useState(() => new Set())
+  const navRef = useRef(null)
+  const pendingScroll = useRef(false)
+
+  // 탭은 스크롤해도 상단 바 아래에 붙어 있다(.tabs--sticky). 아래쪽에서
+  // 눌렀을 때 새 화면이 탭 바로 밑에서 시작하도록 위치를 되돌려 준다.
+  function openSection(id) {
+    if (id !== section) pendingScroll.current = true
+    setSection(id)
+  }
+
+  useLayoutEffect(() => {
+    if (!pendingScroll.current) return
+    pendingScroll.current = false
+    const nav = navRef.current
+    const body = nav?.nextElementSibling
+    if (!body) return
+    const y = body.getBoundingClientRect().top + window.scrollY - 56 - nav.offsetHeight
+    if (window.scrollY > y) window.scrollTo({ top: Math.max(0, y) })
+  }, [section])
 
   const analysisByChapter = useMemo(() => {
     const map = new Map()
@@ -175,7 +194,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
 
 
       {chapterAnalysis && (
-        <nav className="tabs" role="tablist" aria-label="챕터 내 화면">
+        <nav className="tabs tabs--sticky" ref={navRef} role="tablist" aria-label="챕터 내 화면">
           {/* 시트 작품에는 챕터별 단어 자료가 없어 '단어' 탭은 뺀다 */}
           {SECTIONS.filter((sec) => sec.id !== 'vocab').map((sec) => (
             <button
@@ -183,7 +202,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
               role="tab"
               aria-selected={section === sec.id}
               className="tab"
-              onClick={() => setSection(sec.id)}
+              onClick={() => openSection(sec.id)}
             >
               {sec.label}
             </button>
