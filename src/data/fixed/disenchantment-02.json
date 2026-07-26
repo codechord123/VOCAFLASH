@@ -1,0 +1,607 @@
+{
+  "work": "disenchantment",
+  "number": 2,
+  "title": "2. 평화의 고원",
+  "lines": [
+    {
+      "index": 0,
+      "en": "This is a plateau of peace.",
+      "ko": "여기는 평화의 고원이다."
+    },
+    {
+      "index": 1,
+      "en": "Hey! Death is the easy way out!",
+      "ko": "야! 죽는 건 쉽게 도망치는 거야!"
+    },
+    {
+      "index": 2,
+      "en": "No! Your cruddy life is worth living, Bean.",
+      "ko": "안 돼! 네 그 구질구질한 인생도 살아볼 가치는 있어, 빈."
+    },
+    {
+      "index": 3,
+      "en": "Now, by my reckoning, the bodies should have landed right here.",
+      "ko": "내 계산대로라면 시체들은 바로 여기 떨어졌어야 해."
+    },
+    {
+      "index": 4,
+      "en": "Dear God, you've mangled my exquisite face!",
+      "ko": "맙소사, 내 이 수려한 얼굴을 이렇게 망가뜨려 놓으셨군요!"
+    },
+    {
+      "index": 5,
+      "en": "Your Majesty, it is with much heroism that I now return Princess Bean, along with this priceless sack of elf.",
+      "ko": "폐하, 저는 지극한 영웅적 활약으로 빈 공주님을 되돌려 드립니다. 값을 매길 수 없는 이 엘프 한 자루와 함께요."
+    },
+    {
+      "index": 6,
+      "en": "This cold floor feels good on my concussion.",
+      "ko": "찬 바닥이 뇌진탕에 시원하네."
+    },
+    {
+      "index": 7,
+      "en": "Ah, whatever. I'm gonna go lay down in the window.",
+      "ko": "아, 됐어. 난 창가에 가서 드러누워야지."
+    },
+    {
+      "index": 8,
+      "en": "Cram him in a cage!",
+      "ko": "우리에 처박아 넣어!"
+    },
+    {
+      "index": 9,
+      "en": "Dad, you can't just cage him. Elves are jolly by nature.",
+      "ko": "아빠, 그냥 가둬둘 순 없어요. 엘프는 천성이 명랑하다고요."
+    },
+    {
+      "index": 10,
+      "en": "They need to prance and dance.",
+      "ko": "깡충깡충 뛰고 춤도 춰야 해요."
+    },
+    {
+      "index": 11,
+      "en": "Lucky for you, I'm a patron of the arts.",
+      "ko": "운 좋군. 내가 예술 후원자라서."
+    },
+    {
+      "index": 12,
+      "en": "But all frolicking stays within castle walls.",
+      "ko": "하지만 뛰노는 건 성벽 안에서만이다."
+    },
+    {
+      "index": 13,
+      "en": "Well, get to it!",
+      "ko": "자, 어서 시작해!"
+    },
+    {
+      "index": 14,
+      "en": "Speaking of things getting poked, we've got a wedding to plan.",
+      "ko": "찔러 넣는 얘기가 나왔으니 말인데, 우리 결혼식 준비를 해야지."
+    },
+    {
+      "index": 15,
+      "en": "Ew. Dad, think out the words before they come out. It's--",
+      "ko": "으윽. 아빠, 말이 입에서 나오기 전에 머리로 좀 생각해요. 그건..."
+    },
+    {
+      "index": 16,
+      "en": "We'll scrub you right up, as clean as a child on his funeral day.",
+      "ko": "깨끗하게 씻겨 드릴게요. 장례식 날 아이처럼 말끔하게."
+    },
+    {
+      "index": 17,
+      "en": "I don't mean to be insensitive about your dead whatever.",
+      "ko": "돌아가신 그 누군가 얘기에 무심하게 굴려던 건 아니었어요."
+    },
+    {
+      "index": 18,
+      "en": "We need this marriage to cement our alliance with Bentwood.",
+      "ko": "벤트우드와의 동맹을 굳히려면 이 결혼이 필요합니다."
+    },
+    {
+      "index": 19,
+      "en": "The elf may have value far beyond what we expected.",
+      "ko": "저 엘프는 우리가 기대한 것보다 훨씬 큰 가치가 있을지도 모릅니다."
+    },
+    {
+      "index": 20,
+      "en": "It appears there may be truth to the old legends regarding the elves.",
+      "ko": "엘프에 관한 옛 전설에 진실이 담겨 있는 듯합니다."
+    },
+    {
+      "index": 21,
+      "en": "It seems certain secrets were set down in the ancient writings of Mephismo.",
+      "ko": "메피스모의 고문서에 어떤 비밀들이 적혀 있었던 모양입니다."
+    },
+    {
+      "index": 22,
+      "en": "I should dust in here more often.",
+      "ko": "여기 먼지 좀 자주 털어야겠군."
+    },
+    {
+      "index": 23,
+      "en": "Could this elf's blood be the key to my wildest dream?",
+      "ko": "이 엘프의 피가 내 평생의 꿈을 이룰 열쇠일 수도 있을까?"
+    },
+    {
+      "index": 24,
+      "en": "Might we finally create the Elixir of Life?",
+      "ko": "드디어 불멸의 영약을 만들어낼 수 있을까요?"
+    },
+    {
+      "index": 25,
+      "en": "And after you kill him we can hide the body.",
+      "ko": "그리고 죽인 다음에는 시체를 숨기면 되고요."
+    },
+    {
+      "index": 26,
+      "en": "You're right. I'll go have a few drinks and we'll figure something out.",
+      "ko": "맞는 말이야. 내가 술 몇 잔 하고 오면 뭔가 방법이 나오겠지."
+    },
+    {
+      "index": 27,
+      "en": "And now you're never gonna un-know it.",
+      "ko": "그리고 이제 넌 그걸 다시 모르게 될 수도 없어."
+    },
+    {
+      "index": 28,
+      "en": "I think we need to be a little bit more discreet.",
+      "ko": "우리 좀 더 은밀하게 움직여야 할 것 같아요."
+    },
+    {
+      "index": 29,
+      "en": "This one causes slow, painful death.",
+      "ko": "이건 천천히, 고통스럽게 죽게 만들죠."
+    },
+    {
+      "index": 30,
+      "en": "This one kills you with kindness and some belladonna.",
+      "ko": "이건 친절로 사람을 죽입니다. 벨라도나도 살짝 넣고요."
+    },
+    {
+      "index": 31,
+      "en": "And this one's so poisonous you can't even hold it in a bottle.",
+      "ko": "그리고 이건 독성이 너무 강해서 병에 담아둘 수조차 없어요."
+    },
+    {
+      "index": 32,
+      "en": "Have you folks been helped?",
+      "ko": "손님들, 안내 받으셨어요?"
+    },
+    {
+      "index": 33,
+      "en": "We're still browsing.",
+      "ko": "아직 좀 둘러보는 중이에요."
+    },
+    {
+      "index": 34,
+      "en": "There's got to be another way to get rid of him.",
+      "ko": "저 사람 없앨 다른 방법이 분명 있을 거야."
+    },
+    {
+      "index": 35,
+      "en": "You could just marry him and drive him mad with your indecisiveness.",
+      "ko": "그냥 결혼해서 네 그 우유부단함으로 미쳐버리게 만들어도 되고."
+    },
+    {
+      "index": 36,
+      "en": "What if I rub a sick chicken all over his face and hope for the best?",
+      "ko": "병든 닭을 저 사람 얼굴에 문질러 놓고 잘되기를 빌어보면 어떨까?"
+    },
+    {
+      "index": 37,
+      "en": "Excellent. I've asked the eminent Lord Lingonberry to take part in the experiment.",
+      "ko": "훌륭하군. 저 유명한 링곤베리 경께 실험에 참여해 달라고 부탁드렸다."
+    },
+    {
+      "index": 38,
+      "en": "And may I say what a deep honor it is to assist His Majesty in this most--",
+      "ko": "이토록 지극한 일에 폐하를 보좌하게 되어 얼마나 큰 영광인지 감히 말씀드리자면..."
+    },
+    {
+      "index": 39,
+      "en": "Strap him down!",
+      "ko": "묶어라!"
+    },
+    {
+      "index": 40,
+      "en": "I shall apply a small measure to the scalp to regrow his Lordship's once-lavish hair.",
+      "ko": "두피에 소량을 발라 각하의 한때 풍성하셨던 머리카락을 되살려 보겠습니다."
+    },
+    {
+      "index": 41,
+      "en": "But, ho! Some hair has sprouted in his ear.",
+      "ko": "오, 이런! 귀에서 털이 좀 자랐습니다."
+    },
+    {
+      "index": 42,
+      "en": "It's like he keeps paintbrushes in there.",
+      "ko": "귓속에 붓을 넣어두고 사는 사람 같군."
+    },
+    {
+      "index": 43,
+      "en": "Yes, well, I suppose the life-giving magic may take a while.",
+      "ko": "네, 뭐, 생명을 주는 마법은 시간이 좀 걸리는 모양입니다."
+    },
+    {
+      "index": 44,
+      "en": "Now we hope Merkimer's a big enough idiot to fall for this mermaid plan.",
+      "ko": "이제 머키머가 이 인어 계획에 속아 넘어갈 만큼 충분히 멍청하길 바라야지."
+    },
+    {
+      "index": 45,
+      "en": "and some would say overflowing with revulsion--",
+      "ko": "그리고 어떤 이는 혐오감이 넘쳐흐른다고 말할..."
+    },
+    {
+      "index": 46,
+      "en": "It'll be way out on the open seas where the only law is the law of no laws.",
+      "ko": "저 멀리 공해 한복판이야. 거기선 법이 없다는 법 말고는 아무 법도 없지."
+    },
+    {
+      "index": 47,
+      "en": "and it's charting a course for Mermaid Island.",
+      "ko": "그리고 그 배가 인어섬으로 항로를 잡고 있어."
+    },
+    {
+      "index": 48,
+      "en": "Intriguing. But don't mermaids use their mesmo-songs to lure men to their deaths?",
+      "ko": "흥미롭군. 하지만 인어들은 최면 노래로 남자들을 꾀어서 죽게 만들지 않나?"
+    },
+    {
+      "index": 49,
+      "en": "Ah, only weak-minded men fall for that.",
+      "ko": "아, 그런 건 심지가 약한 남자들만 걸려들죠."
+    },
+    {
+      "index": 50,
+      "en": "What a gullible idiot.",
+      "ko": "저 잘 속아 넘어가는 멍청이 좀 봐."
+    },
+    {
+      "index": 51,
+      "en": "Our first experiment with the elf blood was inconclusive.",
+      "ko": "엘프의 피를 쓴 첫 번째 실험은 결론을 내지 못했습니다."
+    },
+    {
+      "index": 52,
+      "en": "But these new tests shall reveal its restorative powers.",
+      "ko": "하지만 이번 새 실험으로 그 회복의 힘이 드러날 것입니다."
+    },
+    {
+      "index": 53,
+      "en": "If I say no, will I seem less manly?",
+      "ko": "제가 싫다고 하면 덜 남자다워 보일까요?"
+    },
+    {
+      "index": 54,
+      "en": "Why don't you pick on someone your own size? Like a barn!",
+      "ko": "너랑 몸집 비슷한 놈이나 괴롭히지 그래? 헛간 같은 거!"
+    },
+    {
+      "index": 55,
+      "en": "I'm not gonna hurt this little guy. I'm gonna leech the magic out of him.",
+      "ko": "난 이 꼬맹이를 해치지 않아. 그냥 마법만 쪽 빨아낼 거야."
+    },
+    {
+      "index": 56,
+      "en": "and I would never call you that even if you were!",
+      "ko": "그리고 설령 그러시더라도 절대 그렇게 부르지 않을 거예요!"
+    },
+    {
+      "index": 57,
+      "en": "Sire, harnessing the blood's power has proven difficult.",
+      "ko": "폐하, 피의 힘을 끌어내는 일이 어렵다는 것이 드러났습니다."
+    },
+    {
+      "index": 58,
+      "en": "we'll grind him to a paste and see if that works better.",
+      "ko": "저놈을 곱게 갈아서 반죽으로 만들어 보고 그게 더 잘 되나 봅시다."
+    },
+    {
+      "index": 59,
+      "en": "I'm an optimist. I say the flask is half-full.",
+      "ko": "난 낙천주의자야. 플라스크가 반이나 찼다고 보지."
+    },
+    {
+      "index": 60,
+      "en": "-Where there's a will, there's a way. -There's not.",
+      "ko": "-뜻이 있는 곳에 길이 있다. -없어."
+    },
+    {
+      "index": 61,
+      "en": "I must admit, the quantity of blood exceeded my expectations.",
+      "ko": "솔직히 인정합니다. 피의 양이 제 예상을 넘어섰군요."
+    },
+    {
+      "index": 62,
+      "en": "I feel weak and queasy.",
+      "ko": "몸에 힘이 없고 속이 울렁거려."
+    },
+    {
+      "index": 63,
+      "en": "All aboard the party barge! I hope you like fun and soggy pretzels.",
+      "ko": "파티 유람선, 모두 승선하세요! 재미와 축축한 프레첼을 좋아하셨으면 좋겠네요."
+    },
+    {
+      "index": 64,
+      "en": "I hope you like me yelling!",
+      "ko": "제가 소리 지르는 것도 좋아하셨으면 좋겠고요!"
+    },
+    {
+      "index": 65,
+      "en": "A delicate flower like yourself has no place aboard--",
+      "ko": "당신처럼 연약한 꽃이 이 배에 오를 자리는 없..."
+    },
+    {
+      "index": 66,
+      "en": "I'm so glad you're coming along, Bean.",
+      "ko": "같이 가줘서 정말 기뻐, 빈."
+    },
+    {
+      "index": 67,
+      "en": "You'll get to know the crazy, fun me, before spending the rest of your life with the boring, bossy me.",
+      "ko": "지루하고 잔소리 심한 나하고 평생을 보내기 전에, 미친 듯이 재미있는 나를 먼저 알게 될 거야."
+    },
+    {
+      "index": 68,
+      "en": "Now listen up, you landhuggers.",
+      "ko": "자, 잘 들어라, 이 땅에 붙어사는 놈들아."
+    },
+    {
+      "index": 69,
+      "en": "but the dangers of Mermaid Island be all too real.",
+      "ko": "하지만 인어섬의 위험은 너무나도 실제라오."
+    },
+    {
+      "index": 70,
+      "en": "So drink responsibly!",
+      "ko": "그러니 음주는 책임감 있게!"
+    },
+    {
+      "index": 71,
+      "en": "We be sailing now into treacherous waters.",
+      "ko": "우린 이제 험악한 바다로 들어간다."
+    },
+    {
+      "index": 72,
+      "en": "To starboard, man-eating sharks.",
+      "ko": "우현에는 사람 잡아먹는 상어."
+    },
+    {
+      "index": 73,
+      "en": "To port, a sunset so beautiful the rest of your life will seem anticlimactic.",
+      "ko": "좌현에는 너무 아름다워서 남은 평생이 다 시시하게 느껴질 일몰."
+    },
+    {
+      "index": 74,
+      "en": "But the worst lies ahead!",
+      "ko": "하지만 최악은 아직 앞에 있다!"
+    },
+    {
+      "index": 75,
+      "en": "For there lurk the twin shores of Mermaid Island and Walrus Island.",
+      "ko": "저 앞에 인어섬과 바다코끼리섬, 쌍둥이 해안이 도사리고 있으니."
+    },
+    {
+      "index": 76,
+      "en": "And you don't want to mix those up, believe me.",
+      "ko": "그 둘을 헷갈리면 큰일 나. 내 말 믿어."
+    },
+    {
+      "index": 77,
+      "en": "Let's get this underway, shall we?",
+      "ko": "자, 그럼 출발해 볼까요?"
+    },
+    {
+      "index": 78,
+      "en": "Everyone line up single file to get lashed to the masts.",
+      "ko": "모두 한 줄로 서서 돛대에 묶이세요."
+    },
+    {
+      "index": 79,
+      "en": "God forbid you lose control and jump overboard.",
+      "ko": "정신줄 놓고 배 밖으로 뛰어드는 일은 절대 없어야 하니까요."
+    },
+    {
+      "index": 80,
+      "en": "Anyone not tied down better plug your ears.",
+      "ko": "묶이지 않은 사람은 귀를 막는 게 좋을 거야."
+    },
+    {
+      "index": 81,
+      "en": "\"Ear wax\"? Does it mean it's for ears or from ears?",
+      "ko": "'귀 왁스'? 귀에 바르는 거라는 뜻이야, 귀에서 나온 거라는 뜻이야?"
+    },
+    {
+      "index": 82,
+      "en": "Tighter, man, tighter! I have poor impulse control.",
+      "ko": "더 꽉, 더 꽉 조여! 나 충동 조절이 잘 안 돼."
+    },
+    {
+      "index": 83,
+      "en": "You rigged it so he'll break free and leap overboard, right?",
+      "ko": "저 사람이 풀려나서 배 밖으로 뛰어들도록 손봐놓은 거 맞지?"
+    },
+    {
+      "index": 84,
+      "en": "All hands, brace fer mermaids! And their irresistible song.",
+      "ko": "전원, 인어에 대비하라! 그리고 그 거부할 수 없는 노래에도!"
+    },
+    {
+      "index": 85,
+      "en": "I'm Merkimer. I can't wait to meet you. I don't need your names, though.",
+      "ko": "저는 머키머입니다. 만나 뵙는 게 너무 기대되네요. 아, 이름은 안 알려주셔도 됩니다."
+    },
+    {
+      "index": 86,
+      "en": "Ladies, the legends do not do you justice.",
+      "ko": "숙녀분들, 전설은 당신들의 진짜 모습을 담지 못했군요."
+    },
+    {
+      "index": 87,
+      "en": "Not one mention of your fuzzy muzzles. Climb aboard.",
+      "ko": "그 털북숭이 주둥이 얘기는 한 마디도 없었어요. 어서 올라타세요."
+    },
+    {
+      "index": 88,
+      "en": "Merkimer may be gone, but at least he prepaid for the barge.",
+      "ko": "머키머는 갔지만, 적어도 배값은 미리 다 내놨네요."
+    },
+    {
+      "index": 89,
+      "en": "There are plenty of other thick soups. Cream of potato, that's one.",
+      "ko": "걸쭉한 수프야 널렸어요. 감자 크림 수프도 있고요."
+    },
+    {
+      "index": 90,
+      "en": "Look, in the distance! The lights of the kingdom!",
+      "ko": "저기, 저 멀리 봐! 왕국의 불빛이야!"
+    },
+    {
+      "index": 91,
+      "en": "It's a ship of war, flying the dread flag of the Borcs!",
+      "ko": "전함이다. 보르크족의 무시무시한 깃발을 달고 있어!"
+    },
+    {
+      "index": 92,
+      "en": "They must be planning a sneak attack on Dreamland!",
+      "ko": "드림랜드에 기습 공격을 계획하고 있는 게 분명해!"
+    },
+    {
+      "index": 93,
+      "en": "Don't panic. We can slip away unnoticed as long as everyone remains absolutely silent.",
+      "ko": "당황하지 마세요. 모두가 절대적으로 조용히만 있으면 눈에 안 띄게 빠져나갈 수 있어요."
+    },
+    {
+      "index": 94,
+      "en": "They've spotted us. Defend the barge or risk losing your deposit.",
+      "ko": "우릴 발견했어요. 배를 지키세요. 안 그러면 보증금 날립니다."
+    },
+    {
+      "index": 95,
+      "en": "Neither one of you was to blame. It was both of you. You both killed us.",
+      "ko": "둘 중 어느 한 명의 잘못이 아니었어. 둘 다였어. 너희 둘이 우릴 죽인 거야."
+    },
+    {
+      "index": 96,
+      "en": "All the confetti cannons in the world couldn't save us now.",
+      "ko": "세상 모든 색종이 대포를 다 동원해도 이젠 우릴 못 구해."
+    },
+    {
+      "index": 97,
+      "en": "Didn't you always want a husband that screwed 30 walruses?",
+      "ko": "바다코끼리 서른 마리랑 잔 남편, 원래부터 늘 바라던 거 아니었어?"
+    },
+    {
+      "index": 98,
+      "en": "King Zog, you're giving me your daughter, so it's only fair I give you something of equal value.",
+      "ko": "조그 왕이시여, 따님을 제게 주시니, 저도 그에 맞먹는 값어치의 것을 드리는 게 공평하겠지요."
+    },
+    {
+      "index": 99,
+      "en": "The head of the Borc admiral!",
+      "ko": "보르크 제독의 머리입니다!"
+    },
+    {
+      "index": 100,
+      "en": "No wonder all those presents have been washing ashore.",
+      "ko": "그 많은 선물들이 해변으로 떠밀려 온 게 이상한 일도 아니군."
+    },
+    {
+      "index": 101,
+      "en": "I thought when it was my turn to wear it, I'd be as happy as she was.",
+      "ko": "내가 이 드레스를 입을 차례가 되면 나도 엄마처럼 행복할 거라고 생각했어."
+    },
+    {
+      "index": 102,
+      "en": "Somehow, I don't think my portrait's gonna be nearly as happy.",
+      "ko": "왠지 내 초상화는 저만큼 행복해 보이지는 않을 것 같아."
+    },
+    {
+      "index": 103,
+      "en": "So, anyway, here comes the bride.",
+      "ko": "뭐, 아무튼, 신부 입장이요."
+    },
+    {
+      "index": 104,
+      "en": "I can't bear to watch. I'll be in my cage.",
+      "ko": "차마 못 보겠어. 난 우리에 들어가 있을게."
+    },
+    {
+      "index": 105,
+      "en": "I'm feeling a tad nervous, my tiny friend.",
+      "ko": "조금 긴장되는군, 나의 작은 친구."
+    },
+    {
+      "index": 106,
+      "en": "Those mermaids worked me over pretty hard, sexually.",
+      "ko": "그 인어들이 날 아주 심하게 굴렸어. 성적으로."
+    },
+    {
+      "index": 107,
+      "en": "I may not be able to perform tonight on the marital mattress.",
+      "ko": "오늘 밤 부부 침대에서 제구실을 못 할지도 몰라."
+    },
+    {
+      "index": 108,
+      "en": "I mean, I'm drained.",
+      "ko": "말하자면, 다 쏟아버렸다고."
+    },
+    {
+      "index": 109,
+      "en": "Perhaps it could perk up my poor, tuckered dong.",
+      "ko": "혹시 그게 내 이 지치고 불쌍한 자지를 좀 일으켜 줄지도 모르지."
+    },
+    {
+      "index": 110,
+      "en": "Mind if I have a little sip of you juice?",
+      "ko": "네 그 즙 한 모금 마셔도 되겠나?"
+    },
+    {
+      "index": 111,
+      "en": "Enough rigmarole. Bring in the blushing groom.",
+      "ko": "번거로운 절차는 그만. 수줍은 신랑을 들여보내라."
+    },
+    {
+      "index": 112,
+      "en": "I've never felt such vigor.",
+      "ko": "이런 활력은 느껴본 적이 없어."
+    },
+    {
+      "index": 113,
+      "en": "You think this arranged marriage will solve your problems?",
+      "ko": "이 정략결혼이 네 문제를 해결해 줄 거라고 생각해?"
+    },
+    {
+      "index": 114,
+      "en": "Isn't there a point in everyone's life where they need to, like, go and figure out who they are?",
+      "ko": "누구나 인생에서 한 번은, 그러니까, 나가서 자기가 누군지 좀 알아봐야 하는 순간이 있는 거 아닌가요?"
+    },
+    {
+      "index": 115,
+      "en": "Are we standing in that moment right now? Maybe.",
+      "ko": "우리가 지금 딱 그 순간에 서 있는 걸까요? 어쩌면요."
+    },
+    {
+      "index": 116,
+      "en": "and that's I don't want to marry this pig.",
+      "ko": "그건, 저 이 돼지랑 결혼하고 싶지 않다는 거예요."
+    },
+    {
+      "index": 117,
+      "en": "Or that one either.",
+      "ko": "저 돼지도 싫고요."
+    },
+    {
+      "index": 118,
+      "en": "If you're calling off the wedding, I'm calling off the alliance!",
+      "ko": "결혼식을 취소하겠다면, 나도 동맹을 취소하겠소!"
+    },
+    {
+      "index": 119,
+      "en": "Now let's see how fast we can forget it.",
+      "ko": "자, 이제 우리가 이걸 얼마나 빨리 잊을 수 있는지 봅시다."
+    }
+  ]
+}

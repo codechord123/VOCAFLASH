@@ -1,7 +1,13 @@
 // 시드 데이터 → 카드 덱.
 //
-// 카드는 expression 하나다: 영어 표현 → 뜻. 비포 선라이즈에서 본인이
-// 하이라이트한 표현 전량과, 읽다가 직접 저장하는 단어가 여기 담긴다.
+// 카드는 두 종류다. 같은 SRS 엔진을 쓰지만 앞뒷면의 방향이 반대다.
+//
+//   expression : 영어 표현 → 뜻      (본인이 하이라이트한 모르는 표현)
+//   sentence   : 한국어    → 영어    (한영 문장쌍으로 만드는 작문 연습)
+//
+// 카드를 자동으로 전량 넣지 않는다. 1,948문장을 한꺼번에 덱에 부으면
+// 첫날 "복습 1,948개"가 떠서 사람이 도망간다. 표현은 본인이 직접
+// 고른 것이라 전량 넣고, 문장은 사용자가 필요한 만큼만 꺼내 쓴다.
 
 import { createCard } from './srs.js'
 
@@ -21,8 +27,9 @@ export const KIND_LABELS = {
 }
 
 /**
- * 덱 정의. 본인이 노션에서 표시한 것과 앱에서 읽다가 저장한 것을
- * 구분한다. 둘 다 본인이 고른 것이라 기본으로 켠다.
+ * 덱 정의. 카드가 천 개를 넘어가면 "무엇을 복습할지"가 선택 사항이
+ * 되어야 한다. 본인이 표시한 것은 기본으로 켜고, 남이 만든 단어장은
+ * 꺼둔 채 시작한다 — 첫날 1,100개가 밀리면 앱을 안 열게 된다.
  */
 export const DECKS = {
   highlight: {
@@ -35,9 +42,16 @@ export const DECKS = {
   note: {
     id: 'note',
     label: '내 메모',
-    hint: '읽다가 직접 저장한 단어',
+    hint: '시트에 직접 적어둔 어휘 메모',
     defaultOn: true,
     priority: 0,
+  },
+  b2: {
+    id: 'b2',
+    label: 'B2 단어장',
+    hint: '발음기호·예문·유의어가 붙은 일반 어휘',
+    defaultOn: false,
+    priority: 1,
   },
   unit: {
     id: 'unit',
@@ -83,4 +97,130 @@ export function cardsFromExpressions(expressions, meanings = {}) {
       },
     })
   })
+}
+
+/** 시트 어휘 메모(44개) + 채팅블록(10개)을 카드로. 이것도 본인 메모다. */
+export function cardsFromVocabNotes(vocabNotes, chatVocab, sentenceById) {
+  const fromSheet = vocabNotes.map((v, i) => {
+    const s = v.sentenceId ? sentenceById.get(v.sentenceId) : null
+    return createCard({
+      id: `card:sheet-v${String(i + 1).padStart(3, '0')}`,
+      type: 'expression',
+      front: v.term,
+      back: { meaningKo: v.gloss, definitionEn: null, nuance: '' },
+      context: s?.en ?? null,
+      source: { work: v.work === 'disenchantment' ? 'Disenchantment' : 'Before Sunset' },
+      extra: {
+        kind: v.term.trim().includes(' ') ? 'phrase' : 'word',
+        color: null,
+        origin: 'learner-note', // 시트에 직접 쓴 메모
+        possibleTypo: v.possibleTypo ?? false,
+        deck: 'note',
+        priority: DECKS.note.priority,
+      },
+    })
+  })
+
+  const fromChat = chatVocab.map((v, i) =>
+    createCard({
+      id: `card:chat-v${String(i + 1).padStart(3, '0')}`,
+      type: 'expression',
+      front: v.term,
+      back: { meaningKo: v.gloss, definitionEn: null, nuance: '' },
+      context: v.example ?? null,
+      source: { work: 'Disenchantment' },
+      extra: {
+        kind: v.term.trim().includes(' ') ? 'phrase' : 'word',
+        color: null,
+        origin: 'learner-note',
+        synonyms: v.synonyms ?? [],
+        deck: 'note',
+        priority: DECKS.note.priority,
+      },
+    })
+  )
+
+  return [...fromSheet, ...fromChat]
+}
+
+/**
+ * VOCAFLASH에 이미 있던 B2 단어 899개.
+ *
+ * 앞의 두 덱과 성격이 다르다 — 본인이 읽다가 막힌 표현이 아니라
+ * 미리 정리된 일반 어휘다. 그래서 priority를 낮추고 기본은 꺼둔다.
+ * 대신 발음기호·예문·유의어·반의어가 갖춰져 있어 카드 뒷면이 풍부하다.
+ */
+export function cardsFromB2Words(words) {
+  return words.map((w, i) => {
+    const synonyms = [w.Synonym_1, w.Synonym_2].filter(Boolean)
+    const antonyms = [w.Antonym_1, w.Antonym_2].filter(Boolean)
+    return createCard({
+      id: `card:b2-${String(i + 1).padStart(4, '0')}`,
+      type: 'expression',
+      front: w.word,
+      back: { meaningKo: w.Meaning_KR, definitionEn: null, nuance: '' },
+      context: w.Example ?? null,
+      source: { work: 'B2 단어장' },
+      extra: {
+        kind: (w.word ?? '').trim().includes(' ') ? 'phrase' : 'word',
+        color: null,
+        origin: 'curated',
+        phonetics: w.Phonetics ?? null,
+        exampleKo: w.Example_KR ?? null,
+        synonyms,
+        antonyms,
+        topicId: w.Topic_ID ?? null,
+        deck: 'b2',
+        priority: DECKS.b2.priority,
+      },
+    })
+  })
+}
+
+/**
+ * 문장 카드. 한글 → 영어 작문.
+ *
+ * 조각(fragment)은 뺀다. 자막이 중간에서 끊긴 "to be autobiographical?"로
+ * 작문 연습을 시키면 정답이 성립하지 않는다. 26%가 조각이라 이 필터가
+ * 없으면 4문항 중 1개가 불량이다.
+ */
+export function selectDrillSentences(sentences, { work, limit = 20, exclude = new Set() } = {}) {
+  return sentences
+    .filter(
+      (s) =>
+        s.selfContained &&
+        !s.truncated &&
+        !s.koSupersededByNext &&
+        s.ko &&
+        s.ko.trim() &&
+        s.wordCount >= 4 &&
+        (!work || s.work === work) &&
+        !exclude.has(s.id)
+    )
+    .slice(0, limit)
+}
+
+export function cardFromSentence(sentence) {
+  return createCard({
+    id: `card:${sentence.id}`,
+    type: 'sentence',
+    front: sentence.koFluent || sentence.ko,
+    back: { en: sentence.en },
+    context: null,
+    source: {
+      work: sentence.work === 'disenchantment' ? 'Disenchantment' : 'Before Sunset',
+      speaker: sentence.speaker ?? null,
+    },
+    extra: { wordCount: sentence.wordCount, sentenceId: sentence.id },
+  })
+}
+
+/** 무작위 순서. 문장 연습에서 매번 같은 순서가 나오지 않게. */
+export function shuffle(items) {
+  const out = [...items]
+  for (let i = out.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
 }

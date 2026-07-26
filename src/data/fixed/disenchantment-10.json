@@ -1,0 +1,342 @@
+{
+  "work": "disenchantment",
+  "number": 10,
+  "title": "8. 조그와 불멸의 영약 — 3/3",
+  "lines": [
+    {
+      "index": 0,
+      "en": "-Where am I? - In the hold of a cargo ship.",
+      "ko": "- 나 어디 있는 거야? - 화물선 선창 안이야."
+    },
+    {
+      "index": 1,
+      "en": "In the hold of a cargo ship.",
+      "ko": "화물선 선창 안."
+    },
+    {
+      "index": 2,
+      "en": "-I meant, I don't see you. - I'm in a sack.",
+      "ko": "- 그게 아니라, 네가 안 보인다고. - 나 자루 안에 있어."
+    },
+    {
+      "index": 3,
+      "en": "And there's something huge on top of me. Feels like a bear!",
+      "ko": "그리고 뭔가 엄청 큰 게 날 짓누르고 있어. 곰 같은 느낌이야!"
+    },
+    {
+      "index": 4,
+      "en": "Help, it's ripping it open!",
+      "ko": "도와줘, 자루를 찢고 있어!"
+    },
+    {
+      "index": 5,
+      "en": "Oh, I missed you so much!",
+      "ko": "아, 나도 진짜 너무 보고 싶었어!"
+    },
+    {
+      "index": 6,
+      "en": "Porky and Big Jo have a really toxic relationship.",
+      "ko": "포키랑 빅 조는 완전 서로한테 독이 되는 관계야."
+    },
+    {
+      "index": 7,
+      "en": "Behold! The Lost City of Cremorrah!",
+      "ko": "보라! 잃어버린 도시 크레모라다!"
+    },
+    {
+      "index": 8,
+      "en": "Eh, I've beheld better.",
+      "ko": "쳇, 더 볼 만한 것도 봤는데."
+    },
+    {
+      "index": 9,
+      "en": "How are we supposed to find the vial if we can't even find the city?",
+      "ko": "도시조차 못 찾는데 그 병을 어떻게 찾아요?"
+    },
+    {
+      "index": 10,
+      "en": "Legend has it, the Eternity Pendant is awakened by proximity to an elf.",
+      "ko": "전설에 따르면, 영원의 펜던트는 엘프가 가까이 오면 깨어난다."
+    },
+    {
+      "index": 11,
+      "en": "As Elfo nears it, the vial will give off a tone.",
+      "ko": "엘포가 가까워지면 병이 소리를 낼 것이다."
+    },
+    {
+      "index": 12,
+      "en": "You expect me to crawl around this overheated hellscape until I hear a beep?",
+      "ko": "이 뜨겁게 달궈진 지옥 같은 데를 삑 소리 들릴 때까지 기어다니라는 거예요?"
+    },
+    {
+      "index": 13,
+      "en": "No, Mr. Elfo, I expect you to fry.",
+      "ko": "아니다, 엘포 씨. 나는 네가 튀겨지길 기대한다."
+    },
+    {
+      "index": 14,
+      "en": "Now the only pain is humiliation.",
+      "ko": "이제 남은 고통은 굴욕뿐이군."
+    },
+    {
+      "index": 15,
+      "en": "- -I think I found something! It may be...",
+      "ko": "- - 뭔가 찾은 것 같아요! 어쩌면 이건..."
+    },
+    {
+      "index": 16,
+      "en": "A way in.",
+      "ko": "들어가는 길이군."
+    },
+    {
+      "index": 17,
+      "en": "I have no idea what that means. I'm just really short of breath.",
+      "ko": "그게 무슨 뜻인지 전혀 모르겠어. 난 그냥 숨이 너무 차서 그런 거야."
+    },
+    {
+      "index": 18,
+      "en": "Cremorrah was a kingdom of unimaginable wealth... of snakes.",
+      "ko": "크레모라는 상상도 못 할 부를 지닌 왕국이었다... 뱀 부자였지."
+    },
+    {
+      "index": 19,
+      "en": "Their thriving snake-based economy was the envy of the known world.",
+      "ko": "뱀을 기반으로 번영한 그 경제는 온 세상의 부러움을 샀지."
+    },
+    {
+      "index": 20,
+      "en": "People became so wealthy, their pockets were bursting with snakes.",
+      "ko": "사람들이 얼마나 부유해졌는지, 주머니마다 뱀이 터져 나올 지경이었어."
+    },
+    {
+      "index": 21,
+      "en": "The neighboring kingdom of Maru, with its mouse-based economy, was both jealous and in constant peril.",
+      "ko": "이웃 왕국 마루는 쥐 기반 경제였는데, 크레모라를 부러워하는 동시에 늘 위험에 처해 있었지."
+    },
+    {
+      "index": 22,
+      "en": "Maru decided to attack Cremorrah, but, with no army, they were forced to resort to magic.",
+      "ko": "마루는 크레모라를 공격하기로 했지만, 군대가 없어서 마법에 의존할 수밖에 없었어."
+    },
+    {
+      "index": 23,
+      "en": "They made a potion that could vanquish an entire kingdom without a single sword.",
+      "ko": "칼 한 자루 없이도 왕국 하나를 전멸시킬 수 있는 물약을 만들었지."
+    },
+    {
+      "index": 24,
+      "en": "Maru flooded Cremorrah with the potion and the residents were instantly turned to stone.",
+      "ko": "마루가 크레모라에 그 물약을 들이붓자 주민들은 그 즉시 돌로 변했어."
+    },
+    {
+      "index": 25,
+      "en": "But the king wasn't here.",
+      "ko": "하지만 왕은 여기 없었지."
+    },
+    {
+      "index": 26,
+      "en": "Clearly, his people had a wild wingding while he was away.",
+      "ko": "왕이 자리를 비운 사이 백성들이 아주 요란하게 광란의 파티를 벌인 게 분명하군."
+    },
+    {
+      "index": 27,
+      "en": "Can you imagine such disrespect?",
+      "ko": "그런 불경이 상상이나 되느냐?"
+    },
+    {
+      "index": 28,
+      "en": "I cannot imagine. Such disrespect.",
+      "ko": "상상이 안 됩니다. 그런 불경이라니."
+    },
+    {
+      "index": 29,
+      "en": "When the king returned, he found everyone frozen in place.",
+      "ko": "왕이 돌아왔을 때, 모두가 그 자리에 굳어 있는 걸 발견했지."
+    },
+    {
+      "index": 30,
+      "en": "That must be why he sought the powers of the Eternity Pendant.",
+      "ko": "그래서 영원의 펜던트의 힘을 찾아 나섰던 게 분명해."
+    },
+    {
+      "index": 31,
+      "en": "Noice.",
+      "ko": "좋~구만."
+    },
+    {
+      "index": 32,
+      "en": "He didn't have elf's blood, so he, too, was turned to stone.",
+      "ko": "엘프의 피가 없었으니, 왕도 똑같이 돌로 변했지."
+    },
+    {
+      "index": 33,
+      "en": "Still, he was the last to possess it.",
+      "ko": "그래도 그걸 마지막으로 가졌던 사람은 왕이야."
+    },
+    {
+      "index": 34,
+      "en": "Find the king, find the vial.",
+      "ko": "왕을 찾으면, 병을 찾는다."
+    },
+    {
+      "index": 35,
+      "en": "There he is.",
+      "ko": "저기 있군."
+    },
+    {
+      "index": 36,
+      "en": "Remember the solemn moment we first laid eyes on King Doris.",
+      "ko": "우리가 도리스 왕을 처음 두 눈으로 본 이 엄숙한 순간을 기억해두어라."
+    },
+    {
+      "index": 37,
+      "en": "Wow, one day you're an amazing civilization, the next you're a creepy spook-house.",
+      "ko": "와, 어느 날은 굉장한 문명이었다가, 다음 날은 으스스한 귀신의 집이 되네."
+    },
+    {
+      "index": 38,
+      "en": "Forty-five years of necromancing has led me to this moment.",
+      "ko": "45년간 사령술을 갈고닦은 끝에 이 순간에 이르렀다."
+    },
+    {
+      "index": 39,
+      "en": "Porky, quit joking around and search the king.",
+      "ko": "포키, 장난 그만 치고 왕을 뒤져봐."
+    },
+    {
+      "index": 40,
+      "en": "You're not a stone guard guy!",
+      "ko": "너 돌 경비병이 아니잖아!"
+    },
+    {
+      "index": 41,
+      "en": "Who are you?",
+      "ko": "넌 누구냐?"
+    },
+    {
+      "index": 42,
+      "en": "I am an assassin from Maru, in the service of Emperor Cloyd.",
+      "ko": "나는 마루에서 온 암살자다. 클로이드 황제를 섬긴다."
+    },
+    {
+      "index": 43,
+      "en": "And what is your charge?",
+      "ko": "그래서 네가 받은 임무는 무엇이냐?"
+    },
+    {
+      "index": 44,
+      "en": "To protect the Eternity Pendant! And to answer all questions!",
+      "ko": "영원의 펜던트를 지키는 것! 그리고 모든 질문에 답하는 것!"
+    },
+    {
+      "index": 45,
+      "en": "Let's slip out under cover of all the clanking.",
+      "ko": "이 쨍쨍 쇳소리 나는 틈에 몰래 빠져나가자."
+    },
+    {
+      "index": 46,
+      "en": "Bean, wait. If we come home without the vial, your dad will pop a blood vessel. Probably one of yours.",
+      "ko": "빈, 잠깐. 병 없이 집에 돌아가면 너희 아빠 혈관 터질 거야. 아마 네 혈관이 터지겠지."
+    },
+    {
+      "index": 47,
+      "en": "We don't even know where it is. It's not on the frozen king guy.",
+      "ko": "어디 있는지도 모르잖아. 돌로 굳은 저 왕한테도 없고."
+    },
+    {
+      "index": 48,
+      "en": "Looks like a bunch of dead mice and...",
+      "ko": "죽은 쥐가 한 무더기 있고, 그리고..."
+    },
+    {
+      "index": 49,
+      "en": "Ha. Nothing to see here.",
+      "ko": "하. 여긴 볼 것 없네."
+    },
+    {
+      "index": 50,
+      "en": "-Got ya! -No! Let go!",
+      "ko": "- 잡았다! - 안 돼! 놔!"
+    },
+    {
+      "index": 51,
+      "en": "Ha! Because of you, I lost a hand in that volcano.",
+      "ko": "하! 너 때문에 내가 그 화산에서 손 하나를 잃었다."
+    },
+    {
+      "index": 52,
+      "en": "And now you shall lose a foot, as I take this boot and all that's within it.",
+      "ko": "그러니 이제 너는 발 하나를 잃을 것이다. 내가 이 부츠와 그 안에 든 것 전부를 가져가겠다."
+    },
+    {
+      "index": 53,
+      "en": "No wonder Porky hates you.",
+      "ko": "포키가 널 싫어할 만하네."
+    },
+    {
+      "index": 54,
+      "en": "My shiny new arm!",
+      "ko": "내 반짝이는 새 팔!"
+    },
+    {
+      "index": 55,
+      "en": "Weren't you told not to let anyone take it?",
+      "ko": "아무한테도 못 가져가게 하라고 명령받은 거 아니었어?"
+    },
+    {
+      "index": 56,
+      "en": "Not anyone, just you. My job is done.",
+      "ko": "아무나가 아니라 너만. 내 임무는 끝났다."
+    },
+    {
+      "index": 57,
+      "en": "Let's see how you like getting bottled up.",
+      "ko": "너도 병 속에 갇히는 게 어떤 기분인지 한번 겪어봐."
+    },
+    {
+      "index": 58,
+      "en": "You'll never be able to fill this whole room with sand.",
+      "ko": "이 방을 전부 모래로 채우는 건 절대 못 할 거야."
+    },
+    {
+      "index": 59,
+      "en": "Uh, sure we will. There's a whole desert up here.",
+      "ko": "어, 당연히 되지. 여기 위에 사막이 통째로 있는데."
+    },
+    {
+      "index": 60,
+      "en": "Our plan is even closer to fruition.",
+      "ko": "우리 계획이 한층 더 결실에 가까워졌어."
+    },
+    {
+      "index": 61,
+      "en": "To the end of Dreamland.",
+      "ko": "드림랜드의 종말을 위하여."
+    },
+    {
+      "index": 62,
+      "en": "While I question their evil motives, it is nice to see them happy.",
+      "ko": "저분들의 악한 동기에는 의문이 들지만, 행복해 보이시니 보기는 좋군."
+    },
+    {
+      "index": 63,
+      "en": "Immortality is folly.",
+      "ko": "불멸은 어리석은 짓이야."
+    },
+    {
+      "index": 64,
+      "en": "Those who desire it become blind to what is precious and right before them, our daily lives.",
+      "ko": "그것을 탐하는 자들은 눈앞에 있는 소중한 것을 못 보게 되지. 우리의 하루하루 말이야."
+    },
+    {
+      "index": 65,
+      "en": "That we may live each day and say...",
+      "ko": "그리하여 우리가 매일을 살아가며 이렇게 말할 수 있기를..."
+    },
+    {
+      "index": 66,
+      "en": "You know, I'm profoundly lonely, but I think you should leave.",
+      "ko": "그러니까 말이지, 나는 지독하게 외롭다만, 자네는 이제 가는 게 좋겠네."
+    }
+  ]
+}

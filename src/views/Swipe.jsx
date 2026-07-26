@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GRADES, applyGrade } from '../lib/srs.js'
+import { topicIcon, topicLabel } from '../lib/topics.js'
 
 // 스와이프 플래시카드.
 //
@@ -263,7 +264,7 @@ export default function Swipe({ cards, settings, commit, onExit }) {
           <div className="stack" style={{ width: '100%' }}>
             <div className="row" style={{ justifyContent: 'center', gap: 'var(--s2)' }}>
               <span className="chip">
-                ◆ {card.source?.work ?? '기타'}
+                {topicIcon(card)} {topicLabel(card)}
               </span>
               <span className="chip chip--box">박스 {card.box}</span>
             </div>

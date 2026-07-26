@@ -1,0 +1,226 @@
+{
+  "work": "disenchantment",
+  "number": 3,
+  "title": "3. 루시와의 계약",
+  "chunks": [
+    {
+      "en": "Actually, \"well\" is a bit of an overstatement. / \"Acceptable\" is more like it, / if you consider death, disease and rampant poverty acceptable.",
+      "ko": "사실 '평온'은 좀 과장된 표현이죠. '견딜 만함' 정도가 더 맞겠네요. 죽음과 질병과 만연한 빈곤을 견딜 만하다고 치신다면요.",
+      "literal": "사실, '평온'은 약간의 과장입니다 / '받아들일 만함'이 더 그것에 가깝죠 / 만약 당신이 죽음, 질병, 창궐하는 빈곤을 받아들일 만하다고 여긴다면"
+    },
+    {
+      "en": "I drank so much, / I can't even remember if I drank anything. / I might not have.",
+      "ko": "너무 많이 마셔서 내가 뭘 마셨는지도 기억이 안 나. 안 마셨을지도 몰라.",
+      "literal": "나는 너무 많이 마셔서 / 내가 뭐라도 마셨는지조차 기억할 수 없어 / 나는 안 마셨을지도 몰라"
+    },
+    {
+      "en": "May I interest you in a joyride? / Is that like a jolly trolley / or a fun run or a tingle mingle?",
+      "ko": "질주 한 판 어떠십니까? / 그게 유람 마차나 자선 달리기, 아니면 몸 비비기 같은 거야?",
+      "literal": "제가 당신에게 질주에 흥미를 갖게 해드릴까요? / 그건 명랑 전차 같은 거야 / 아니면 재미 달리기나 짜릿 뒤섞기?"
+    },
+    {
+      "en": "We got a 619 in progress. / Suspects headed west on the royal highway.",
+      "ko": "619 발생, 진행 중. 용의자들은 왕실 대로를 따라 서쪽으로 향했다.",
+      "literal": "우리는 진행 중인 619를 잡았다 / 용의자들은 왕실 고속도로에서 서쪽으로 향했다"
+    },
+    {
+      "en": "You know they prey on the weak in prison? / - At least, I intend to.",
+      "ko": "감옥에선 약한 사람을 노린다는 거 알지? / 적어도 난 그럴 작정이야.",
+      "literal": "너 그들이 감옥에서 약한 자들을 먹잇감으로 삼는 걸 알아? / 적어도, 나는 그럴 의도야"
+    },
+    {
+      "en": "Some might say / her cries for help were a cry for help, / but I think she was just being an attention hog.",
+      "ko": "누군가는 그 여자의 도와달라는 비명이 정말 도움을 청하는 신호였다고 하겠지만, 난 그냥 관심에 목말랐던 거라고 봐.",
+      "literal": "어떤 이들은 말할지도 모르지 / 그녀의 도움을 청하는 외침들이 도움을 청하는 외침이었다고 / 하지만 나는 그녀가 그냥 관심 독차지하는 사람으로 굴고 있었다고 생각해"
+    },
+    {
+      "en": "Okay, the trick to not getting swept over the waterfall / is swimming upstream.",
+      "ko": "좋아, 폭포로 휩쓸려 가지 않는 비결은 상류로 헤엄치는 거야.",
+      "literal": "좋아, 폭포 위로 휩쓸려 가지 않는 것의 비결은 / 상류로 헤엄치는 것이다"
+    },
+    {
+      "en": "It was so nice of that swarm of crabs / to drag me ashore.",
+      "ko": "저 게 떼가 날 뭍으로 끌어다 줘서 참 고마웠어.",
+      "literal": "저 게 떼가 참 친절했어 / 나를 물가로 끌어다 준 것이"
+    },
+    {
+      "en": "It's a super-rare fruit / the knights brought back from their crusades.",
+      "ko": "기사들이 성전에서 가져온 초희귀 과일이야.",
+      "literal": "그건 초희귀 과일이야 / 기사들이 자기들의 십자군 원정에서 가져온"
+    },
+    {
+      "en": "Sometimes he just stares at it longingly / while he drinks vodka sodas.",
+      "ko": "가끔 아빠는 보드카 소다를 마시면서 그걸 애타게 바라만 보셔.",
+      "literal": "가끔 그는 그것을 그저 애타게 바라봐 / 그가 보드카 소다를 마시는 동안"
+    },
+    {
+      "en": "Carousing, taking her clothes off / every chance she gets. / Doing God knows what with that elf.",
+      "ko": "술판을 벌이고, 기회만 생기면 옷을 벗어 던지고, 저 엘프와는 뭘 하는지 알 수도 없죠.",
+      "literal": "흥청망청 마시고, 자기 옷을 벗어 던지고 / 그녀가 얻는 모든 기회마다 / 저 엘프와 신만이 아는 무언가를 하고"
+    },
+    {
+      "en": "You use your curtains to escape one time / and your dad's all like, / \"No more curtains.\"",
+      "ko": "탈출하려고 커튼을 딱 한 번 썼더니 아빠가 '커튼은 이제 없다'는 식으로 나오는 거야.",
+      "literal": "너는 탈출하려고 커튼을 한 번 쓰지 / 그러면 네 아빠는 완전 이런 식이야 / '더 이상 커튼은 없다'"
+    },
+    {
+      "en": "Word 'round the gutter is / you're a right proper villain. / Crime is male-dominated, innit?",
+      "ko": "밑바닥에 소문이 돌더라, 네가 제대로 된 악당이라고. 범죄계는 남자들 판이잖아, 안 그래?",
+      "literal": "시궁창 주변의 소문은 / 네가 아주 제대로 된 악당이라는 거야 / 범죄는 남성 지배적이잖아, 그렇지?"
+    },
+    {
+      "en": "So our crime, yeah, is one for the ages. / A real legendary caper. / We could use your help.",
+      "ko": "그래서 우리 범죄는 말이지, 역사에 남을 거야. 진짜 전설이 될 한 건이지. 네 도움이 좀 필요해.",
+      "literal": "그래서 우리 범죄는, 그래, 시대를 위한 것이야 / 진짜 전설적인 한 건 / 우리는 너의 도움을 쓸 수 있겠어"
+    },
+    {
+      "en": "So this is where I'll end up one day. / Buried. Forgotten. Worm food.",
+      "ko": "그러니까 나도 언젠가 여기서 끝나는 거네. 묻히고, 잊히고, 구더기 밥이 되고.",
+      "literal": "그래서 여기가 내가 어느 날 결국 있게 될 곳이구나 / 묻히고. 잊히고. 벌레 먹이"
+    },
+    {
+      "en": "I know I went a tad wild, / but what do you expect from someone / who's got no control over her own destiny?",
+      "ko": "제가 좀 과하게 놀았다는 건 알아요. 하지만 자기 운명을 하나도 스스로 정할 수 없는 사람에게 뭘 기대하시는데요?",
+      "literal": "제가 조금 거칠게 굴었다는 건 알아요 / 하지만 당신은 어떤 사람에게서 무엇을 기대하나요 / 자기 운명에 대한 통제권이 전혀 없는 사람에게서?"
+    },
+    {
+      "en": "She's like a one-man wrecking woman.",
+      "ko": "그 애는 혼자서 다 부수고 다니는 1인 철거반이야.",
+      "literal": "그녀는 1인 파괴 여성 같아"
+    },
+    {
+      "en": "The sheer defiance of reason and decorum / leads me to believe / that Tiabeanie is what they now call a teenager.",
+      "ko": "이성과 예법을 이토록 노골적으로 무시하는 것으로 보아, 티아비니는 요즘 사람들이 '십대'라고 부르는 것이라 판단됩니다.",
+      "literal": "이성과 예법에 대한 순전한 항거가 / 나를 믿게 만듭니다 / 티아비니가 그들이 지금 십대라고 부르는 것이라고"
+    },
+    {
+      "en": "I am acquainted with the world's foremost exorcist. / But I must warn you. / He creeps even me out.",
+      "ko": "저는 세계 최고의 퇴마사와 아는 사이입니다. 다만 경고는 드려야겠습니다. 그자는 저조차 소름 돋게 합니다.",
+      "literal": "저는 세계 최고의 퇴마사와 안면이 있습니다 / 하지만 저는 당신에게 경고해야 합니다 / 그는 저조차도 소름 돋게 합니다"
+    },
+    {
+      "en": "You have been exorcised. / Don't forget to take it easy today / and drink plenty of water.",
+      "ko": "퇴마가 완료되었습니다. 오늘은 무리하지 마시고 물을 충분히 드시는 것을 잊지 마세요.",
+      "literal": "당신은 퇴마되었습니다 / 오늘 무리하지 않는 것을 잊지 마세요 / 그리고 물을 충분히 마시는 것도"
+    },
+    {
+      "en": "The pressure, / it just got to me.",
+      "ko": "그 압박감이 그냥 나를 무너뜨렸어.",
+      "literal": "그 압박감, / 그게 그냥 나에게 와 닿았어"
+    },
+    {
+      "en": "So there I am, possessing the Duchess / and she has the nerve to drop dead.",
+      "ko": "그래서 내가 공작부인한테 들어가 있었는데, 이 여자가 뻔뻔하게 그냥 툭 죽어버린 거야.",
+      "literal": "그래서 거기 내가 있어, 공작부인에게 빙의한 채로 / 그런데 그녀가 뻔뻔하게 툭 죽어버려"
+    },
+    {
+      "en": "Highwaypeople. / We're a gender neutral kleptocracy.",
+      "ko": "노상강도단이라고 해. 우리는 성 중립적 도둑 정치 체제야.",
+      "literal": "노상강도인들 / 우리는 성 중립적인 도둑 지배 체제야"
+    },
+    {
+      "en": "Prepare to be put out of your misery. / You won't be needing him anymore. / Your appeal has been denied!",
+      "ko": "고통에서 벗어날 준비를 하라. 이제 이 녀석은 필요 없을 것이다. 네 항소는 기각되었다!",
+      "literal": "당신의 고통에서 벗어나게 될 준비를 하라 / 당신은 더 이상 그를 필요로 하고 있지 않을 것이다 / 당신의 항소는 기각되었다"
+    },
+    {
+      "en": "She risked her own life to save the demon. / She's come along faster / than we ever dared dream.",
+      "ko": "제 목숨을 걸고 악마를 구했어. 우리가 감히 꿈꿨던 것보다 훨씬 빠르게 자라고 있군.",
+      "literal": "그녀는 그 악마를 구하려고 자기 목숨을 걸었다 / 그녀는 더 빠르게 발전해 왔다 / 우리가 감히 꿈꾸었던 것보다"
+    }
+  ],
+  "grammar": [
+    {
+      "point": "the trick to + 동명사, 그리고 부정·수동이 붙은 동명사",
+      "explanation": "the trick to not getting swept over the waterfall is swimming upstream에서 to는 부정사의 to가 아니라 전치사입니다. the trick to, the key to, the secret to, look forward to 뒤에는 반드시 동명사가 옵니다. 여기서는 그 동명사에 부정어와 수동태가 동시에 붙어 not getting swept라는 3중 구조가 되었습니다. 동명사의 부정은 앞에 not을 놓고, 수동은 getting p.p.로 만드는 것이 구어의 기본 방식입니다(being swept보다 getting swept가 더 회화적입니다). 참고로 이 문장은 조언 형식만 그럴듯하고 실제로는 통하지 않는데, 다음 컷에서 빈이 그대로 폭포에 휩쓸려 떨어지기 때문입니다.",
+      "fromScript": "Okay, the trick to not getting swept over the waterfall is swimming upstream.",
+      "example": "The trick to not losing your temper in class is deciding what you will ignore."
+    },
+    {
+      "point": "It is + 형용사 + of + 사람 + to부정사 (사람에 대한 평가)",
+      "explanation": "It was so nice of that swarm of crabs to drag me ashore에서 of 뒤의 명사는 to부정사의 의미상 주어이면서 nice라는 평가의 대상입니다. 즉 게 떼가 친절했다는 뜻입니다. 형용사가 사람의 성질을 나타내면 of를 쓰고(kind of you, silly of me), 사람이 아니라 상황의 난이도를 나타내면 for를 씁니다(hard for me to say). 이 문장의 웃음은 게 떼가 엘포를 구조하려던 것이 아니라 먹으려고 끌고 갔다는 데 있습니다. 감사의 형식으로 위험을 오해하는 것이 엘포라는 인물의 기본 반응 방식입니다.",
+      "fromScript": "It was so nice of that swarm of crabs to drag me ashore.",
+      "example": "It was thoughtful of my students to leave a note on my desk."
+    },
+    {
+      "point": "인용 표시 be all like — 남의 말투를 흉내 낼 때",
+      "explanation": "your dad's all like, \"No more curtains.\"에서 be all like는 said의 자리를 대신하는 구어 인용 표지입니다. 정확한 인용이 아니라 '이런 식으로 나오더라'는 태도의 재연이므로, 억양과 표정이 함께 따라옵니다. and I'm like…, and she was all like… 형태로 서사 중간에 계속 등장합니다. 또 앞부분 You use your curtains to escape one time에서 you는 상대방이 아니라 '사람이란'을 뜻하는 총칭의 you이고, one time은 '딱 한 번 그랬을 뿐인데'라는 억울함을 담습니다. 두 장치가 합쳐져 '한 번 실수했더니 세상이 과잉 반응한다'는 전형적인 십대 불평 문형이 완성됩니다.",
+      "fromScript": "You use your curtains to escape one time and your dad's all like, \"No more curtains.\"",
+      "example": "You forget one deadline and everyone is all like, \"Can we really trust him?\""
+    },
+    {
+      "point": "격식체 명사구 주어 + lead me to believe — 관료의 문체",
+      "explanation": "The sheer defiance of reason and decorum leads me to believe that…는 추상명사구를 주어로 세우고 lead + 목적어 + to부정사로 결론을 도출하는, 보고서와 법정의 문체입니다. sheer는 '순전한, 완전한'이라는 강조 형용사이고, decorum은 예법을 뜻하는 격식 어휘입니다. 이렇게 무겁게 쌓아 올린 문장이 도달하는 결론이 what they now call a teenager, 즉 '요즘 십대라고 부르는 것'이라는 데 웃음이 있습니다. teenager는 20세기 미국에서 생긴 개념어이므로 중세 왕궁에서 방금 발견한 신종 병명처럼 쓰이는 것이고, what they now call은 '남들이 요즘 그렇게 부르는' 새 용어에 거리를 두는 표현입니다.",
+      "fromScript": "The sheer defiance of reason and decorum leads me to believe that Tiabeanie is what they now call a teenager.",
+      "example": "The sheer number of complaints leads me to believe the new schedule has failed."
+    },
+    {
+      "point": "have the nerve to + 원형 — '뻔뻔하게도 ~하다'",
+      "explanation": "she has the nerve to drop dead에서 have the nerve to는 상대의 행동을 무례하다고 비난할 때 쓰는 관용구입니다(= have the audacity to). 같은 nerve가 4화에서는 drink till you have the nerve to go for it처럼 '용기'라는 긍정적 뜻으로도 쓰이므로 문맥으로 구별해야 합니다. drop dead는 '갑자기 죽다'라는 구어입니다. 웃음은 도덕적 뒤집기에서 나옵니다. 남의 몸에 무단으로 들어가 있던 악마가, 그 몸의 주인이 죽은 것을 자기에 대한 무례로 규탄하는 것입니다. 이어지는 Now where am I gonna live? Rude.도 같은 논리의 연장입니다.",
+      "fromScript": "So there I am, possessing the Duchess and she has the nerve to drop dead.",
+      "example": "He arrived an hour late and then had the nerve to ask why we started without him."
+    },
+    {
+      "point": "좌측 전위(left dislocation) — The pressure, it just got to me",
+      "explanation": "The pressure, it just got to me는 문법적으로는 주어가 중복된 형태입니다. 화제를 먼저 던져 놓고 쉼표 뒤에서 대명사로 다시 받는 구어의 어순으로, My mother, she never learned to drive처럼 흔히 쓰입니다. 문장 앞에 화제를 세우는 방식은 한국어의 '그 압박감 말이야, 그게…'와 거의 같아서 한국인 학습자에게는 오히려 자연스럽게 느껴질 수 있습니다. get to somebody는 '~를 괴롭히다, 신경을 긁다'라는 뜻입니다. 여기서 the pressure의 실체는 데이지 화환을 만들다가 민들레를 잘못 끼워 넣은 것이므로, 거대한 감정 어휘와 사소한 사건의 낙차가 농담입니다.",
+      "fromScript": "The pressure, it just got to me.",
+      "example": "That last week of term, it really got to me."
+    },
+    {
+      "point": "조동사 뒤 대부정사(to)와 부정 축약형 — I intend to / I might not have",
+      "explanation": "At least, I intend to.는 I intend to prey on the weak에서 뒤의 동사구를 지운 대부정사 용법입니다. I'd love to, I'm trying to처럼 to만 남기는 것이 영어의 기본 절약 방식입니다. I might not have.도 같은 원리로, 뒤에 drunk anything이 생략된 형태이며 '안 마셨을 가능성도 있다'는 뜻입니다. 이 두 문장은 모두 앞 문장의 동사구를 알고 있어야 해석되므로, 대화의 앞줄을 놓치면 통째로 이해가 막힙니다. 듣기 훈련에서 특히 중요한 지점이고, 원어민의 실제 대화는 이런 생략으로 촘촘히 짜여 있습니다.",
+      "fromScript": "You know they prey on the weak in prison? -At least, I intend to.",
+      "example": "Nobody wanted to tell her the truth, but I fully intend to."
+    },
+    {
+      "point": "형용사가 명사구 앞에 겹쳐 쓰이는 강조 — a right proper villain, innit",
+      "explanation": "Word 'round the gutter is you're a right proper villain에서 right proper는 영국 노동계급 구어의 이중 강조로, '아주 제대로 된'이라는 뜻입니다. right가 부사로 형용사 proper를 강조하고, 그 proper가 다시 명사 villain을 강조합니다. 문두 Word 'round the gutter is 뒤에는 that이 생략되었고, word is that…은 '소문에 따르면'입니다. 뒤 문장의 innit은 isn't it이 굳어진 만능 부가의문문으로, 주어와 동사가 무엇이든 상관없이 붙습니다. 즉 이 강도단은 런던 코크니 말투로 설정되어 있고, 이것은 문법 오류가 아니라 계급과 지역을 표시하는 장치입니다.",
+      "fromScript": "Word 'round the gutter is you're a right proper villain. Crime is male-dominated, innit?",
+      "example": "That was a right proper mess, and nobody wanted to clean it up, innit?"
+    }
+  ],
+  "background": [
+    {
+      "topic": "미국 경찰 무전 코드의 아나크로니즘 — 619 in progress",
+      "detail": "We got a 619 in progress. Suspects headed west on the royal highway.는 미국 경찰 드라마의 무전 대사를 통째로 옮겨 놓은 것입니다. 실제 미국 경찰은 사건 종류를 숫자 코드로 부르고(예: 187은 살인), in progress는 '현재 진행 중'을 뜻합니다. 중세 기사들이 마차를 추격하면서 이런 말을 쓰는 순간, 마차 추격은 자동차 추격전 장면으로 번역됩니다. 같은 화의 joyride(차를 훔쳐 몰고 다니는 것), careful driver, royal highway도 모두 자동차 문화의 어휘입니다. 이 작품의 아나크로니즘은 소품이 아니라 어휘로 이루어지므로, 단어의 시대를 함께 읽어야 농담이 보입니다."
+    },
+    {
+      "topic": "십자군에서 가져온 초희귀 과일 — 레몬 하나의 무게",
+      "detail": "빈이 보물처럼 소개하는 super-rare fruit는 레몬입니다. crusades(십자군 원정)는 11세기부터 유럽 기사들이 중동으로 향한 대규모 전쟁이었고, 그 부산물로 감귤류, 설탕, 향신료가 유럽에 들어왔습니다. 즉 역사적으로는 정확한 설정입니다. 웃음은 규모의 대비에서 나옵니다. 루시가 Civilizations were decimated. History rewritten. Maps redrawn.이라고 문명의 붕괴를 낭독한 뒤 밝혀지는 결과물이 레몬 한 개이고, 조그는 그것을 먹지도 않고 보드카 소다를 마시며 애타게 바라보기만 합니다. 참고로 vodka soda 역시 20세기 칵테일이므로, 한 문장 안에 십자군과 현대 술이 공존합니다."
+    },
+    {
+      "topic": "퇴마 의식과 그 패러디 — 자철석, 흔들기, 그리고 사후 안내",
+      "detail": "이 화의 후반부는 서양 공포 영화의 퇴마 장면을 차례로 흉내 냅니다. 해부대에 결박하기, 라틴어풍 기도문, 악마의 이름 부르기 같은 절차가 나오는데, 수단만 우스꽝스럽습니다. 자철석으로 악마를 끌어낸다는 magnetraction은 magnet과 traction을 붙여 만든 가짜 학술어이고, 다음 시도는 그냥 몸을 격렬하게 흔드는 것입니다. 결정타는 퇴마 직후의 대사입니다. Don't forget to take it easy today and drink plenty of water는 현대 병원에서 시술 후에 건네는 정형 안내인데, 이것이 붙는 순간 퇴마가 통원 치료 항목이 됩니다. 종교 의식을 의료 서비스의 언어로 번역해 웃기는 방식입니다."
+    },
+    {
+      "topic": "관용구를 성별·정치적 올바름 쪽으로 비틀기 — one-man wrecking woman, Highwaypeople",
+      "detail": "a one-man wrecking crew는 '혼자서 다 부수고 다니는 사람'을 뜻하는 미국 관용구입니다. 조그는 이것을 딸에게 쓰다가 crew를 woman으로 바꾸는데, one-man은 그대로 남겨서 결과적으로 앞뒤가 어긋난 a one-man wrecking woman이 됩니다. 성 중립적으로 고치려다 절반만 고친 상태를 그대로 발화하는 농담입니다. 같은 원리가 강도단의 자기 소개에도 쓰입니다. highwayman(노상강도)을 Highwaypeople로 바꾸고 We're a gender neutral kleptocracy라고 선언하는데, kleptocracy는 원래 '도둑 정치', 즉 지배층이 국고를 훔치는 체제를 뜻하는 정치학 용어입니다. 강도단이 자기 조직을 정치 체제 용어로 소개하면서 성 평등까지 내세우는 이중의 어긋남이 웃음의 핵입니다."
+    },
+    {
+      "topic": "루시가 파견 요원이라는 사실 — 시즌의 숨은 줄기",
+      "detail": "이 화 중간과 끝에 정체불명의 두 인물이 등장해 Seems our little emissary Luci is successfully corrupting Tiabeanie's mind and soul(우리의 작은 밀사 루시가 티아비니의 정신과 영혼을 잘 타락시키고 있군)이라고 보고합니다. emissary는 밀사·특사를 뜻하는 격식 어휘로, 루시가 자발적 악마가 아니라 누군가에게 고용된 하수인임을 알려줍니다. 마지막에 빈이 목숨을 걸어 루시를 구하자 그들은 She's come along faster than we ever dared dream이라며 오히려 만족하는데, 여기서 come along은 '실력이 늘다, 잘 자라다'라는 뜻입니다. 즉 이들이 원하는 것은 단순한 타락이 아니라 빈이 악마를 위해 위험을 감수하는 관계 자체입니다. 코미디 에피소드처럼 보이는 이 화가 시즌 전체의 음모 줄기를 심어 놓는 지점입니다."
+    }
+  ],
+  "comprehension": [
+    {
+      "question": "빈과 루시, 엘포의 밤샘 유흥은 어떤 순서로 범죄가 되어 가는가?",
+      "answer": "처음은 과음입니다. 빈은 자기가 무엇을 마셨는지도 기억하지 못하는 상태이고, 그런데도 밤이 끝나기를 원하지 않습니다. 다음이 마차를 훔쳐 몰고 다니는 joyride이고, 이때 빈은 '취했을 때 오히려 조심해서 운전한다'는 취객의 전형적인 자기 확신을 보입니다. 근위병들이 무전 대사로 추격에 나서고, 루시는 벌써 다음 주에는 방화를 해보자고 예고합니다. 마지막 단계가 왕실 묘지 도굴입니다. 즉 음주에서 절도, 방화 예고, 조상 무덤 도굴로 수위가 계단식으로 올라가고, 각 단계마다 루시가 한 발씩 밀어줍니다."
+    },
+    {
+      "question": "빈이 강도단의 도굴 계획에 가담하게 된 심리적 계기는 무엇이며, 묘지에서 그의 기분은 왜 바뀌는가?",
+      "answer": "빈은 왕실 법정에서 스스로 이유를 밝힙니다. 자기 운명에 대한 통제권이 전혀 없는 사람에게 뭘 기대하느냐는 것입니다(what do you expect from someone who's got no control over her own destiny?). 결혼도 신분도 자기가 정할 수 없으니, 통제할 수 있는 유일한 영역이 자기 파괴적 행동이 됩니다. 게다가 강도단은 그를 '제대로 된 악당'으로 대접하는데, 이것은 궁정에서 한 번도 받지 못한 인정입니다. 그러나 목표가 자기 가족의 묘지라는 것을 알게 되자 흔들립니다. 자기도 언젠가 묻히고 잊히고 구더기 밥이 될 자리를 눈앞에서 본 것이고, 그 순간 술기운이 내려가면서(coming down off of that high) 죽음의 실감이 밀려옵니다."
+    },
+    {
+      "question": "조그는 빈의 일탈을 어떻게 설명하려 하는가? 오드발과 소르세리오가 내놓은 두 가지 진단을 비교해 보라.",
+      "answer": "조그 본인은 어머니의 죽음 이후 딸이 달라졌다고 봅니다(Bean hasn't been the same since she lost her mom). 신하들의 진단은 다릅니다. 오드발은 이성과 예법에 대한 노골적 항거로 보아 티아비니가 '요즘 십대라고 부르는 것'이라고 판정합니다. 즉 병이 아니라 나이라는 설명이며, 십대라는 개념 자체가 중세에 존재하지 않으므로 이것이 아나크로니즘 농담입니다. 소르세리오는 그것을 말도 안 되는 가설로 치부하고 '과학이 더 논리적인 설명을 제시한다'며 악마 빙의를 제안합니다. 십대라는 사회학적 설명과 빙의라는 초자연적 설명을 나란히 놓고, 후자를 '과학'이라고 부르는 데 웃음이 있습니다."
+    },
+    {
+      "question": "퇴마 시도는 몇 단계로 진행되며, 마지막에 등장하는 퇴마사는 왜 위협적인가?",
+      "answer": "먼저 소르세리오가 자철석으로 악마를 끌어당기는 방법을 시도하고, 다음에는 해부대에 묶은 빈을 격렬하게 흔들어 악마를 뱉어내게 하려 합니다. 루시는 그 과정을 오히려 즐기며 더 세게 돌리라고 응원합니다. 실패가 이어지자 오드발이 세계 최고의 퇴마사를 부르는데, 그는 자기조차 소름 돋게 하는 인물이라고 경고합니다(He creeps even me out). 이 인물은 진짜로 위험합니다. 정화의 논리를 극단까지 밀어붙여, 살을 태워 없애면 악마가 드러난다며 빈을 화형시키려 하고, 이어 루시를 처리한 뒤 악마와 어울린 자에게 저주를 선언합니다. 즉 이 화의 가장 큰 폭력은 악마가 아니라 악마를 없애려는 쪽에서 나옵니다."
+    },
+    {
+      "question": "이 화의 결말에서 빈은 무엇을 선택하며, 그 선택은 누구에게 어떤 의미로 해석되는가?",
+      "answer": "빈은 자기 목숨을 걸고 루시를 구합니다. 도덕적으로는 이상한 선택입니다. 루시는 빈을 파괴하려고 파견된 존재이고 빈 자신도 '몇 주만 더 같이 놀았으면 죽었을 것'이라고 인정합니다. 그런데도 자기 약점을 정확히 지적하고 가차 없이 놀리는 그 관계를 그리워합니다. 가족이 자기 친구를 없애는 방식에 대한 반발도 작용합니다. 마지막 장면에서 감시자들은 이 선택을 성공 보고로 처리합니다. 그들이 원한 것은 단순한 타락이 아니라 빈이 악마를 위해 목숨을 거는 유대였고, She's come along faster than we ever dared dream이라는 평가는 빈의 애정이 곧 그들의 계획이 진전된 증거라는 뜻입니다."
+    }
+  ]
+}

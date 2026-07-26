@@ -1,18 +1,23 @@
 import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
+import { isBasicWord } from '../lib/level.js'
 import ChapterNav from './ChapterNav.jsx'
+import unitVocabData from '../data/curriculum/unit-vocab.json'
 
 // 읽기 화면. 원문 + 본인 하이라이트 + 구문 정리를 한 화면에 둔다.
 //
 // 구문 정리를 별도 탭으로 빼지 않은 이유: 청크 분석은 원문과 나란히
 // 봐야 의미가 있다. 떼어놓으면 대조를 못 해서 죽은 자료가 된다.
+//
+// '단어'는 읽기 전 준비 운동이다 — 이 챕터에서 나올 단어를 먼저 훑고
+// 원문으로 들어간다. 이해도 확인은 커리큘럼 퀴즈로 옮겨 가면서 뺐다.
 
 export const SECTIONS = [
   { id: 'script', label: '원문' },
+  { id: 'vocab', label: '단어' },
   { id: 'chunks', label: '구문 정리' },
   { id: 'grammar', label: '문법' },
   { id: 'background', label: '배경지식' },
-  { id: 'quiz', label: '이해도 확인' },
 ]
 
 export default function Read({ chapters, analysis: analysisData, cards, initialChapter = null }) {
@@ -32,6 +37,44 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
     () => new Set(cards.filter((c) => c.type === 'expression').map((c) => c.front)),
     [cards]
   )
+
+  // 이 챕터를 읽기 위한 단어: 본인이 그 챕터에서 하이라이트한 단어·표현
+  // (문장 단위와 기초 단어는 제외) + 커리큘럼 유닛에 배정된 그 챕터 어휘.
+  const chapterVocab = useMemo(() => {
+    if (selected == null) return []
+    const fromHighlights = cards
+      .filter(
+        (c) =>
+          c.type === 'expression' &&
+          (c.deck ?? 'highlight') === 'highlight' &&
+          c.source?.chapter === selected &&
+          c.kind !== 'sentence' &&
+          !isBasicWord(c)
+      )
+      .map((c) => ({
+        term: c.front,
+        meaningKo: c.back?.meaningKo ?? null,
+        nuance: c.back?.nuance ?? '',
+        context: c.context ?? null,
+        origin: '하이라이트',
+      }))
+    const seen = new Set(fromHighlights.map((v) => v.term.toLowerCase()))
+    const fromUnits = unitVocabData.words
+      .filter((w) =>
+        w.sources?.some(
+          (s) => s.work === 'before-sunrise' && s.chapter === selected
+        )
+      )
+      .filter((w) => !seen.has(w.lemma.toLowerCase()))
+      .map((w) => ({
+        term: w.lemma,
+        meaningKo: w.meaningKo,
+        nuance: w.nuance,
+        context: w.sources[0]?.context ?? null,
+        origin: `커리큘럼 ${w.level}`,
+      }))
+    return [...fromHighlights, ...fromUnits]
+  }, [cards, selected])
 
   if (selected == null) {
     return (
@@ -73,7 +116,9 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
 
       <nav className="tabs" role="tablist" aria-label="챕터 내 화면">
         {SECTIONS.map((s) => {
-          const missing = s.id !== 'script' && !analysis
+          // 단어는 해설과 별개 자료라 해설이 없어도 열 수 있다.
+          const missing =
+            s.id !== 'script' && s.id !== 'vocab' && !analysis
           return (
             <button
               key={s.id}
@@ -93,7 +138,8 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
       {section === 'script' && (
         <Script chapter={chapter} cardedTexts={cardedTexts} />
       )}
-      {section !== 'script' &&
+      {section === 'vocab' && <VocabSection items={chapterVocab} />}
+      {section !== 'script' && section !== 'vocab' &&
         (analysis ? (
           <AnalysisSection section={section} analysis={analysis} />
         ) : (
@@ -316,32 +362,101 @@ export function AnalysisSection({ section, analysis }) {
     )
   }
 
-  return <Quiz items={analysis.comprehension} />
+  return null
 }
 
-function Quiz({ items }) {
+/**
+ * 읽기 전 단어 훑기. 단어를 먼저 보고 뜻을 떠올린 다음 탭해서 확인한다 —
+ * 뜻을 처음부터 펼쳐 두면 훑기만 하고 기억에 안 남는다.
+ */
+export function VocabSection({ items }) {
   const [shown, setShown] = useState(() => new Set())
+
+  if (items.length === 0) {
+    return (
+      <div className="empty">
+        <div className="empty__icon">◇</div>
+        <div className="empty__title">이 챕터의 단어 자료가 없습니다</div>
+        <p className="empty__body">
+          하이라이트한 단어나 커리큘럼 배정 어휘가 있는 챕터에서 단어
+          훑기가 나타납니다.
+        </p>
+      </div>
+    )
+  }
+
+  const allShown = shown.size >= items.length
 
   return (
     <div className="stack">
-      {items.map((q, i) => (
-        <div className="panel stack stack--tight" key={i}>
-          <p style={{ fontWeight: 540 }}>
-            {i + 1}. {q.question}
-          </p>
-          {shown.has(i) ? (
-            <p className="ko" style={{ color: 'var(--text)' }}>{q.answer}</p>
-          ) : (
-            <button
-              className="btn btn--sm"
-              style={{ justifySelf: 'start' }}
-              onClick={() => setShown((s) => new Set(s).add(i))}
-            >
-              답 보기
-            </button>
-          )}
-        </div>
-      ))}
+      <div className="row row--between">
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+          읽기 전에 훑는 단어 {items.length}개. 탭해서 뜻을 확인하세요.
+        </p>
+        <button
+          className="btn btn--ghost btn--sm"
+          onClick={() =>
+            setShown(allShown ? new Set() : new Set(items.map((_, i) => i)))
+          }
+        >
+          {allShown ? '모두 가리기' : '모두 보기'}
+        </button>
+      </div>
+
+      {items.map((v, i) => {
+        const open = shown.has(i)
+        return (
+          <button
+            key={i}
+            className="panel"
+            onClick={() =>
+              setShown((s) => {
+                const next = new Set(s)
+                if (next.has(i)) next.delete(i)
+                else next.add(i)
+                return next
+              })
+            }
+            aria-expanded={open}
+            style={{
+              padding: 'var(--s3) var(--s4)',
+              textAlign: 'left',
+              cursor: 'pointer',
+              font: 'inherit',
+              color: 'inherit',
+            }}
+          >
+            <div className="row row--between">
+              <span className="read" style={{ fontSize: 16 }}>
+                {v.term}
+              </span>
+              <span className="row" style={{ gap: 'var(--s2)' }}>
+                <span className="chip" style={{ fontSize: 11 }}>
+                  {v.origin}
+                </span>
+                <span style={{ color: 'var(--text-faint)' }}>
+                  {open ? '−' : '+'}
+                </span>
+              </span>
+            </div>
+            {open && (
+              <div className="stack stack--tight" style={{ marginTop: 'var(--s2)' }}>
+                <div>{v.meaningKo ?? '뜻 미생성'}</div>
+                {v.nuance && (
+                  <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+                    {v.nuance}
+                  </p>
+                )}
+                {v.context && (
+                  <p className="flashcard__context" style={{ margin: 0 }}>
+                    {v.context}
+                  </p>
+                )}
+              </div>
+            )}
+          </button>
+        )
+      })}
     </div>
   )
 }

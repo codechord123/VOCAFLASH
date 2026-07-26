@@ -1,0 +1,437 @@
+{
+  "work": "disenchantment",
+  "number": 6,
+  "title": "6. 수확제와 댕크마이어 대사",
+  "lines": [
+    {
+      "index": 0,
+      "en": "Next to present their bountiful harvest, for His Majesty's blessing and immediate confiscation,",
+      "ko": "다음으로 풍성한 수확물을 진상하여 폐하의 축복과 즉각적인 몰수를 받을 자는,"
+    },
+    {
+      "index": 1,
+      "en": "Ah, I'm just screwing with you, liven things up a little.",
+      "ko": "아, 그냥 장난친 거야. 분위기 좀 띄우려고."
+    },
+    {
+      "index": 2,
+      "en": "Blessings to you, from your greasy hair to your filthy, ripped-up shoes.",
+      "ko": "그대에게 축복을 내리노라. 그 기름진 머리끝부터 더럽고 다 찢어진 신발까지."
+    },
+    {
+      "index": 3,
+      "en": "Plus, there's laces holdin' the skin on.",
+      "ko": "게다가 이 끈이 살까지 붙들어 매주고 있죠."
+    },
+    {
+      "index": 4,
+      "en": "I made you the biggest, itchiest wool sweater I could, but if it's too snug, you can give it to your fat, wimpy son.",
+      "ko": "제가 만들 수 있는 가장 크고 제일 따가운 양털 스웨터입니다. 혹시 너무 끼면 그 뚱뚱하고 나약한 아드님한테 주셔도 되고요."
+    },
+    {
+      "index": 5,
+      "en": "Bean, thank this nice creep so he'll move along.",
+      "ko": "빈, 이 착한 변태한테 고맙다고 해. 그래야 저리 가니까."
+    },
+    {
+      "index": 6,
+      "en": "I only ask that girl to do two things: Sit here and stay sober.",
+      "ko": "내가 저 애한테 부탁하는 건 딱 두 가지야. 여기 앉아 있기, 그리고 맨정신으로 있기."
+    },
+    {
+      "index": 7,
+      "en": "And she never does neither. Gimme my damn scepter.",
+      "ko": "근데 둘 다 하나도 안 해. 내 망할 홀 내놔."
+    },
+    {
+      "index": 8,
+      "en": "The guy with the goofy shoes, reeks of flop sweat and licorice...",
+      "ko": "우스꽝스러운 신발 신고, 긴장해서 흘린 땀 냄새랑 감초 냄새가 진동하는 놈..."
+    },
+    {
+      "index": 9,
+      "en": "Not even close. It's me. I'm Elfo.",
+      "ko": "전혀 아니야. 나잖아. 나 엘포."
+    },
+    {
+      "index": 10,
+      "en": "I'm talking about the hay man for the harvest bonfire.",
+      "ko": "난 수확제 모닥불에 태울 건초 인형 말하는 거다."
+    },
+    {
+      "index": 11,
+      "en": "It's drunk and I'm late. We better sneak in quietly.",
+      "ko": "시간이 취했고 내가 늦었어. 조용히 몰래 들어가는 게 좋겠어."
+    },
+    {
+      "index": 12,
+      "en": "So, now you're telling me your tail has a mind of its own?",
+      "ko": "그래서 지금, 네 꼬리한테 자기 생각이 따로 있다는 거야?"
+    },
+    {
+      "index": 13,
+      "en": "Cause before, you said it was prehensile. So, just saying.",
+      "ko": "왜냐면 아까는 물건 잡을 수 있는 꼬리라고 했잖아. 그냥 짚고 넘어가는 거야."
+    },
+    {
+      "index": 14,
+      "en": "Shh, shh, shh. Shut up. -Bean's getting yelled at by her dad. -Ow!",
+      "ko": "쉿, 쉿, 쉿. 입 다물어. - 빈이 아빠한테 혼나는 중이야. - 아!"
+    },
+    {
+      "index": 15,
+      "en": "You ran off from your royal duties to get drunk.",
+      "ko": "왕실 공무를 내팽개치고 술 마시러 도망갔지."
+    },
+    {
+      "index": 16,
+      "en": "You barely noticed when I traded places with that pauper for a year.",
+      "ko": "저 거지랑 1년이나 자리를 바꿔치기했는데도 아빠는 눈치도 거의 못 챘잖아요."
+    },
+    {
+      "index": 17,
+      "en": "Ah, Beanie, it's so hard to know what to do without yellin'.",
+      "ko": "아, 비니, 소리 안 지르고 뭘 어떻게 해야 할지 도무지 모르겠구나."
+    },
+    {
+      "index": 18,
+      "en": "I don't see problem. Your daughter feel useless because she is useless.",
+      "ko": "난 문제 없어 보여. 당신 딸이 쓸모없다고 느끼는 거, 진짜로 쓸모없어서 그래."
+    },
+    {
+      "index": 19,
+      "en": "Her purpose is to be married off to unite kingdoms, like we do.",
+      "ko": "딸 역할은 왕국들 합치려고 시집가는 것. 우리처럼."
+    },
+    {
+      "index": 20,
+      "en": "Make offspring, like Derek.",
+      "ko": "그리고 새끼 낳기. 데릭처럼."
+    },
+    {
+      "index": 21,
+      "en": "I don't know. I don't want Bean to be unhappy. Can't we throw her a bone?",
+      "ko": "글쎄. 빈이 불행한 건 싫어. 뭐라도 하나 던져주면 안 되나?"
+    },
+    {
+      "index": 22,
+      "en": "Well, sire, we do have the upcoming trip to Dankmire,",
+      "ko": "폐하, 곧 댕크마이어 방문 일정이 있사옵니다만,"
+    },
+    {
+      "index": 23,
+      "en": "Perfect. Give her some phony-baloney job with a fancy title and a sash.",
+      "ko": "완벽해. 그럼 그럴듯한 직함에 어깨띠까지 딸린 엉터리 자리를 하나 줘."
+    },
+    {
+      "index": 24,
+      "en": "Aren't ambassadorships usually just given to rich chumps to make them feel important?",
+      "ko": "대사 자리는 원래 돈 많은 얼간이들 기분 좋게 해주려고 주는 거 아니에요?"
+    },
+    {
+      "index": 25,
+      "en": "I'm so excited, my skin is breaking out in sprinkles.",
+      "ko": "너무 신나서 온몸에 알록달록 설탕 알갱이가 돋아나고 있어."
+    },
+    {
+      "index": 26,
+      "en": "Did you know Dreamland forced Dankmire to build this canal?",
+      "ko": "드림랜드가 댕크마이어한테 이 운하를 억지로 파게 시켰다는 거 알았어?"
+    },
+    {
+      "index": 27,
+      "en": "Then, they fought a 100-year war over who owns the canal,",
+      "ko": "그러고는 운하 주인이 누구냐를 두고 100년 동안 전쟁을 했대,"
+    },
+    {
+      "index": 28,
+      "en": "\"Warm refers to the sweltering temperature, not the notoriously grim locals.\"",
+      "ko": "'여기서 따뜻하다는 것은 푹푹 찌는 기온을 뜻하며, 침울하기로 악명 높은 현지인들을 뜻하는 것이 아니다.'"
+    },
+    {
+      "index": 29,
+      "en": "Hmm, this is where Oona gets her sense of humor.",
+      "ko": "흠, 우나 왕비님 유머 감각이 어디서 왔는지 알겠네."
+    },
+    {
+      "index": 30,
+      "en": "Or is?",
+      "ko": "'아니면, 그런가?'"
+    },
+    {
+      "index": 31,
+      "en": "-\"Dankmirians love protocol.\" -",
+      "ko": "- '댕크마이어인은 격식을 사랑한다.' -"
+    },
+    {
+      "index": 32,
+      "en": "\"They consider it rude to bow without bowing first.\"",
+      "ko": "'먼저 절하지 않고 절하는 것은 무례하다고 여긴다.'"
+    },
+    {
+      "index": 33,
+      "en": "Your Highness, on behalf of all of Dreamland,",
+      "ko": "각하, 드림랜드 전체를 대표하여,"
+    },
+    {
+      "index": 34,
+      "en": "Mr. Chancellor, we are at your disposal and keen to experience more of your local culture. What's next?",
+      "ko": "수상 각하, 저희는 각하의 뜻에 따르겠고, 이곳 문화를 더 체험해보고 싶습니다. 다음은 뭔가요?"
+    },
+    {
+      "index": 35,
+      "en": "It's taken centuries, but our civilization has literally risen out of the muck to have one of the finest community playhouses around.",
+      "ko": "수 세기가 걸렸지만, 우리 문명은 말 그대로 진창에서 기어올라와 이 근방 최고의 주민 극장을 갖게 되었습니다."
+    },
+    {
+      "index": 36,
+      "en": "Oh, uh, that's our way of saying \"hmm.\"",
+      "ko": "아, 어, 그건 우리 식으로 '흠' 하는 소리예요."
+    },
+    {
+      "index": 37,
+      "en": "This thing better not be a musical.",
+      "ko": "이거 뮤지컬이면 진짜 큰일 난다."
+    },
+    {
+      "index": 38,
+      "en": "No, but it is one of those plays where the actors come out into the audience and bother people.",
+      "ko": "아뇨, 그런데 배우들이 객석까지 내려와서 관객을 귀찮게 하는 그런 종류의 연극이죠."
+    },
+    {
+      "index": 39,
+      "en": "Who's that fat kid with the crown supposed to be?",
+      "ko": "왕관 쓴 저 뚱뚱한 애는 누구 역할이야?"
+    },
+    {
+      "index": 40,
+      "en": "As ambassador, I have to remind you to not act like a caveman.",
+      "ko": "대사로서 말씀드리는데, 원시인처럼 굴지 말아 주세요."
+    },
+    {
+      "index": 41,
+      "en": "That husky kid's a real tour de force.",
+      "ko": "그 통통한 아이, 정말 대단한 명연기였습니다."
+    },
+    {
+      "index": 42,
+      "en": "Covering up the indiscretions of those in power is an important part of the job.",
+      "ko": "권력자의 경솔한 처신을 덮어주는 것도 이 일의 중요한 부분이지."
+    },
+    {
+      "index": 43,
+      "en": "I've never written a speech before. I guess I could try.",
+      "ko": "연설문은 써본 적 없는데. 뭐, 한번 해볼 수는 있죠."
+    },
+    {
+      "index": 44,
+      "en": "You'll do great, as long as you remember our entire flimsy alliance depends on it going perfect.",
+      "ko": "잘할 거야. 우리의 이 얄팍한 동맹 전체가 그게 완벽하게 되는 데 달려 있다는 것만 기억하면 돼."
+    },
+    {
+      "index": 45,
+      "en": "\"Wing it\"?",
+      "ko": "'즉흥으로 하라'고요?"
+    },
+    {
+      "index": 46,
+      "en": "Or you want to keep working on that decorative centerpiece?",
+      "ko": "아니면 그 식탁 장식이나 계속 만지작거리시겠어요?"
+    },
+    {
+      "index": 47,
+      "en": "Uh, what's your specialty?",
+      "ko": "어, 여기 잘하는 게 뭐예요?"
+    },
+    {
+      "index": 48,
+      "en": "Passive aggressive sarcasm. Just kidding.",
+      "ko": "수동공격형 빈정거림이요. 농담이고요."
+    },
+    {
+      "index": 49,
+      "en": "You got Chazz'd. I'll bring you what you deserve.",
+      "ko": "채즈당하셨네요. 손님한테 딱 어울리는 걸 가져다드릴게요."
+    },
+    {
+      "index": 50,
+      "en": "When in the course of human events... No, that's stupid, stupid.",
+      "ko": "인류사의 여정에서... 아니야, 이건 멍청해, 멍청하다고."
+    },
+    {
+      "index": 51,
+      "en": "And the one surefire way to unleash your creative juice is with creative juice.",
+      "ko": "그리고 네 창의력을 터뜨릴 확실한 방법은 딱 하나야. 바로 창의력 즙이지."
+    },
+    {
+      "index": 52,
+      "en": "Where the hell is Bean? I got a lot riding on that girl.",
+      "ko": "빈은 대체 어디 있어? 그 애한테 걸어놓은 게 많은데."
+    },
+    {
+      "index": 53,
+      "en": "She's here. Take it away, Bean.",
+      "ko": "왔어요. 시작해, 빈."
+    },
+    {
+      "index": 54,
+      "en": "Her ceremonial robe. It's backwards.",
+      "ko": "예복이. 뒤로 입었잖아."
+    },
+    {
+      "index": 55,
+      "en": "You're in no shape to deliver any speech. -Sit down and shut up. -",
+      "ko": "그런 몸으로 무슨 연설을 해. - 앉아서 입 다물어. -"
+    },
+    {
+      "index": 56,
+      "en": "I'll get Derek to give the speech.",
+      "ko": "연설은 데릭한테 시킬 거다."
+    },
+    {
+      "index": 57,
+      "en": "He's part Dankmirian. At least he appeals to someone.",
+      "ko": "댕크마이어 혼혈이니까. 최소한 누구한테는 먹히겠지."
+    },
+    {
+      "index": 58,
+      "en": "What? You're gonna entrust the future of our kingdom to that twerp?",
+      "ko": "뭐라고요? 우리 왕국의 미래를 저 찌질이한테 맡긴다고요?"
+    },
+    {
+      "index": 59,
+      "en": "Considering that twerp is heir apparent to the throne on whom the future of our kingdom already rests, yeah.",
+      "ko": "그 찌질이가 이미 우리 왕국의 미래를 걸머진 왕위 계승자라는 걸 고려하면, 그래."
+    },
+    {
+      "index": 60,
+      "en": "Let us feast.",
+      "ko": "그럼 만찬을 시작하죠."
+    },
+    {
+      "index": 61,
+      "en": "Unless it's a boiled pear, they're not interested.",
+      "ko": "삶은 배가 아니면 관심도 없죠."
+    },
+    {
+      "index": 62,
+      "en": "Go on now. Down the hatch.",
+      "ko": "자, 어서. 한입에 쭉 넘겨."
+    },
+    {
+      "index": 63,
+      "en": "Just butter 'em up with a nice toast.",
+      "ko": "그냥 건배사로 살살 비위나 맞춰줘."
+    },
+    {
+      "index": 64,
+      "en": "I'm so sorry that we had that long war.",
+      "ko": "우리가 그렇게 긴 전쟁을 한 거, 진짜 미안해요."
+    },
+    {
+      "index": 65,
+      "en": "I mean, that sucked.",
+      "ko": "그거, 진짜 최악이었잖아요."
+    },
+    {
+      "index": 66,
+      "en": "Uh, so, in conclusion, Dreamland never had a better friend than Dankmire,",
+      "ko": "어, 그래서, 결론적으로, 드림랜드에게 댕크마이어보다 좋은 친구는 없었으며,"
+    },
+    {
+      "index": 67,
+      "en": "Pay no attention to the naked ambassador on the chandelier.",
+      "ko": "샹들리에에 매달린 벌거벗은 대사는 신경 쓰지 마세요."
+    },
+    {
+      "index": 68,
+      "en": "-I'm gonna-- -Stop. You're just smearing it around.",
+      "ko": "- 제가 좀... - 그만. 더 문대기만 하잖소."
+    },
+    {
+      "index": 69,
+      "en": "This is an outrage.",
+      "ko": "이건 모욕입니다."
+    },
+    {
+      "index": 70,
+      "en": "By appointing Ambassador Tiabeanie, you've told us everything we need to know about our alliance.",
+      "ko": "티아비니를 대사로 임명한 것으로, 이 동맹에 대해 우리가 알아야 할 건 다 알려주신 겁니다."
+    },
+    {
+      "index": 71,
+      "en": "Just once could we go on a family vacation without having to run away screaming?",
+      "ko": "딱 한 번만이라도 비명 지르며 도망치지 않아도 되는 가족 여행 좀 가볼 수 없어요?"
+    },
+    {
+      "index": 72,
+      "en": "Hold them off while I untie the barge.",
+      "ko": "내가 바지선 줄 푸는 동안 저놈들 좀 막아."
+    },
+    {
+      "index": 73,
+      "en": "I'll stop those jerks dead in their tracks.",
+      "ko": "내가 저 자식들 그 자리에 딱 얼어붙게 만들어 줄게."
+    },
+    {
+      "index": 74,
+      "en": "Here goes nothing.",
+      "ko": "에라, 모르겠다."
+    },
+    {
+      "index": 75,
+      "en": "No need. They're heading deep into muskrat territory.",
+      "ko": "그럴 필요 없어. 사향쥐 영역 깊숙이 들어가고 있어."
+    },
+    {
+      "index": 76,
+      "en": "And as we trudged through the swamp,",
+      "ko": "그리하여 우리가 늪지를 터벅터벅 헤쳐 나아갈 때,"
+    },
+    {
+      "index": 77,
+      "en": "I began to realize my clothes had grown muddy.",
+      "ko": "나는 내 옷이 진흙으로 더러워졌음을 깨닫기 시작했다."
+    },
+    {
+      "index": 78,
+      "en": "Hey! I told you to stop narrating your memoirs.",
+      "ko": "야! 회고록 낭독 좀 그만하라고 했지."
+    },
+    {
+      "index": 79,
+      "en": "Man, I really blew it. I was crazy to think I could be an ambassador.",
+      "ko": "아, 완전 망쳤어. 내가 대사를 할 수 있다고 생각한 게 미친 거지."
+    },
+    {
+      "index": 80,
+      "en": "This is why I always tell you not to try things.",
+      "ko": "그러니까 내가 항상 아무것도 시도하지 말라고 하는 거야."
+    },
+    {
+      "index": 81,
+      "en": "You know what you are? You're bad through and through, from the tip of your pointy tail to the tips of your pointy ears.",
+      "ko": "너 뭔지 알아? 넌 뼛속까지 나쁜 놈이야. 그 뾰족한 꼬리 끝부터 뾰족한 귀 끝까지 전부."
+    },
+    {
+      "index": 82,
+      "en": "Ho, ho! You wanna come at me about some pointy ears?",
+      "ko": "허! 뾰족한 귀 얘기로 나한테 시비를 걸겠다고?"
+    },
+    {
+      "index": 83,
+      "en": "Have you ever seen your reflection?",
+      "ko": "너 물에 비친 네 모습 본 적은 있어?"
+    },
+    {
+      "index": 84,
+      "en": "I'm a freak.",
+      "ko": "난 괴물이야."
+    },
+    {
+      "index": 85,
+      "en": "Oh, this log is hard. I miss my tuffet.",
+      "ko": "아, 이 통나무 딱딱해. 내 푹신한 방석 의자가 그립구나."
+    }
+  ]
+}

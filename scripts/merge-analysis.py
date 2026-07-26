@@ -24,6 +24,13 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "src" / "data" / "analysis"
 OUT = ROOT / "src" / "data" / "analysis.json"
 
+# 작품별 하위 디렉터리 → 작품별 병합 파일.
+# Before Sunrise는 최상위(과거 구조)에 있고 나머지는 하위 폴더에 있다.
+SUBWORKS = {
+    "disenchantment": ("Disenchantment", ROOT / "src" / "data" / "analysis-disenchantment.json"),
+    "before-sunset": ("Before Sunset", ROOT / "src" / "data" / "analysis-before-sunset.json"),
+}
+
 # 대사가 거의 없어 chunks/grammar가 비는 것이 정상인 챕터
 SPARSE_OK = {0, 23}  # Before Sunrise 기준
 
@@ -71,7 +78,64 @@ def check(chapter, problems):
                 problems.append(f"{tag} comprehension[{i}]: {field} 비어 있음")
 
 
+def merge_subwork(work_id, title, out_path):
+    """작품별 하위 디렉터리를 병합한다. 아직 없는 챕터는 그냥 빠진다 —
+    앱은 해설이 없는 챕터를 '아직 생성되지 않았습니다'로 표시한다."""
+    d = SRC / work_id
+    if not d.is_dir():
+        return None
+
+    chapters, problems, seen = [], [], set()
+    for f in sorted(d.glob("chapter-*.json")):
+        try:
+            data = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as err:
+            problems.append(f"{work_id}/{f.name}: JSON 파싱 실패 — {err}")
+            continue
+        if data["number"] in seen:
+            problems.append(f"{work_id}/{f.name}: 챕터 중복")
+            continue
+        seen.add(data["number"])
+        check(data, problems)
+        chapters.append(data)
+
+    if problems:
+        print(f"{work_id} 검증 실패 {len(problems)}건:", file=sys.stderr)
+        for p in problems:
+            print(f"  - {p}", file=sys.stderr)
+        return None
+
+    chapters.sort(key=lambda c: c["number"])
+    out_path.write_text(
+        json.dumps(
+            {
+                "work": work_id,
+                "title": title,
+                "source": "generated",
+                "chapterCount": len(chapters),
+                "chapters": chapters,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    totals = {
+        k: sum(len(c.get(k, [])) for c in chapters)
+        for k in ("chunks", "grammar", "background", "comprehension")
+    }
+    print(
+        f"{title}: {len(chapters)}장 — 구문 {totals['chunks']} · 문법 {totals['grammar']} "
+        f"· 배경 {totals['background']} · 문제 {totals['comprehension']}"
+    )
+    return sorted(seen)
+
+
 def main():
+    for work_id, (title, out_path) in SUBWORKS.items():
+        merge_subwork(work_id, title, out_path)
+
     files = sorted(SRC.glob("chapter-*.json"))
     if not files:
         sys.exit(f"해설 파일이 없습니다: {SRC}")
