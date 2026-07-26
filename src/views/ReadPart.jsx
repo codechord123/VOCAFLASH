@@ -15,6 +15,7 @@ export default function ReadPart({
   sheetWorks,
   sheetAnalysis = {},
   cards,
+  commit,
   initialChapter = null,
 }) {
   // 문법 색인에서 챕터로 건너뛴 경우 바로 Before Sunrise를 연다.
@@ -37,6 +38,7 @@ export default function ReadPart({
           chapters={chapters}
           analysis={analysis}
           cards={cards}
+          commit={commit}
           initialChapter={initialChapter}
         />
       </div>
@@ -49,6 +51,8 @@ export default function ReadPart({
       <SheetRead
         work={sheetWork}
         analysis={sheetAnalysis[sheetWork.id] ?? null}
+        cards={cards}
+        commit={commit}
         onBack={() => setWorkId(null)}
       />
     )

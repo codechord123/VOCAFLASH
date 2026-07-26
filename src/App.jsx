@@ -43,17 +43,21 @@ const loadBulkData = () =>
   ]).then(([s, b]) => ({ sentences: s.default, b2Words: b.default }))
 
 import VocabPart from './views/VocabPart.jsx'
+import LinePart from './views/LinePart.jsx'
 import ReadPart from './views/ReadPart.jsx'
 import Curriculum from './views/Curriculum.jsx'
 import Settings from './views/Settings.jsx'
 
-// 학습 파트 3개. 5개 탭은 모바일에서 라벨이 잘려서 못 쓴다.
-// 설정은 파트가 아니므로 헤더 톱니로 빼고, 문장 연습은 단어 파트가
-// 아니라 구문독해 파트에 속한다 — 문장을 만드는 훈련이니까.
+// 학습 파트 4개. 라벨은 두 글자로 맞춘다 — 모바일 폭에서 긴 라벨이
+// 있으면 탭이 잘린다. 설정은 파트가 아니므로 헤더 톱니로 뺐다.
+//
+// 단어와 문장을 나눈 이유는 외우는 방식이 달라서다. 단어는 1초에
+// 갈리지만 문장은 읽고 떠올리는 데 시간이 걸린다.
 const TABS = [
   { id: 'vocab', label: '단어' },
+  { id: 'line', label: '문장' },
   { id: 'read', label: '읽기' },
-  { id: 'syntax', label: '구문독해' },
+  { id: 'syntax', label: '구문' },
 ]
 
 // 시드를 한 번만 넣기 위한 키. 시드 내용이 바뀌면 버전을 올린다.
@@ -162,6 +166,20 @@ export default function App() {
     [reviewCards, state.settings.dailyLimit, state.settings.hideBasicWords]
   )
 
+  // 문장 파트도 같은 방식으로. 담은 줄과 단어가 아닌 하이라이트가 대상이다.
+  const lineDueCount = useMemo(
+    () =>
+      selectDueCards(
+        reviewCards.filter(
+          (c) =>
+            c.type === 'line' ||
+            (c.type === 'expression' && /\s/.test((c.front ?? '').trim()))
+        ),
+        { limit: state.settings.dailyLimit }
+      ).length,
+    [reviewCards, state.settings.dailyLimit]
+  )
+
   /** 저장과 화면 상태를 함께 갱신한다. 한쪽만 바뀌면 새로고침에 사라진다. */
   function commit(mutator) {
     const next = store.update(mutator)
@@ -190,6 +208,9 @@ export default function App() {
                 {t.id === 'vocab' && dueCount > 0 && (
                   <span className="tab__badge">{dueCount}</span>
                 )}
+                {t.id === 'line' && lineDueCount > 0 && (
+                  <span className="tab__badge">{lineDueCount}</span>
+                )}
               </button>
             ))}
           </nav>
@@ -216,6 +237,15 @@ export default function App() {
             />
           )}
 
+          {tab === 'line' && (
+            <LinePart
+              cards={cards}
+              reviewCards={reviewCards}
+              settings={state.settings}
+              commit={commit}
+            />
+          )}
+
           {tab === 'read' &&
             (reading ? (
               <ReadPart
@@ -224,6 +254,7 @@ export default function App() {
                 sheetWorks={reading.sheetWorks}
                 sheetAnalysis={reading.sheetAnalysis}
                 cards={cards}
+                commit={commit}
               />
             ) : (
               <BulkLoading

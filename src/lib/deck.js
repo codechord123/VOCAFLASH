@@ -53,6 +53,13 @@ export const DECKS = {
     defaultOn: false,
     priority: 1,
   },
+  line: {
+    id: 'line',
+    label: '즐겨찾기 문장',
+    hint: '읽다가 담아 둔 대사·자막',
+    defaultOn: true,
+    priority: 0,
+  },
   unit: {
     id: 'unit',
     label: '커리큘럼 카드',

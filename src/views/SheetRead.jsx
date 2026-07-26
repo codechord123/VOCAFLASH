@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
+import { cardFromLine, lineId } from '../lib/lines.js'
 import ChapterNav from './ChapterNav.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
@@ -14,7 +15,7 @@ import ChapterNav from './ChapterNav.jsx'
 // 아직 생성되지 않은 챕터는 '원문'만 보인다 — 탭을 띄워놓고 빈 화면을
 // 보여주는 것보다 낫다.
 
-export default function SheetRead({ work, analysis, onBack }) {
+export default function SheetRead({ work, analysis, cards, commit, onBack }) {
   const [selected, setSelected] = useState(null)
   const [section, setSection] = useState('script')
   const [hideKo, setHideKo] = useState(false)
@@ -25,6 +26,32 @@ export default function SheetRead({ work, analysis, onBack }) {
     for (const a of analysis?.chapters ?? []) map.set(a.number, a)
     return map
   }, [analysis])
+
+  // 즐겨찾기한 줄. 이 두 작품은 자막이 이미 한 줄씩 나뉘어 있고 번역도
+  // 있어서, 담으면 그대로 한↔영 복습 카드가 된다.
+  const savedLines = useMemo(
+    () => new Set((cards ?? []).filter((c) => c.type === 'line').map((c) => c.id)),
+    [cards]
+  )
+
+  function toggleLine(chapter, index, line) {
+    const id = lineId(work.id, chapter.number, index)
+    if (savedLines.has(id)) {
+      commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
+      return
+    }
+    const card = cardFromLine({
+      work: work.id,
+      workTitle: work.title,
+      chapter: chapter.number,
+      chapterTitle: chapter.title,
+      index,
+      en: line.en,
+      ko: line.ko || line.koFluent || null,
+      speaker: line.speaker,
+    })
+    commit((s) => ({ ...s, cards: [...s.cards, card] }))
+  }
 
   if (selected == null) {
     return (
@@ -158,7 +185,27 @@ export default function SheetRead({ work, analysis, onBack }) {
                 borderBottom: '1px solid var(--border)',
               }}
             >
-              {line.speaker && <div className="speaker">{line.speaker}</div>}
+              <div className="row row--between">
+                {line.speaker ? (
+                  <div className="speaker">{line.speaker}</div>
+                ) : (
+                  <span />
+                )}
+                <button
+                  className={`star${
+                    savedLines.has(lineId(work.id, chapter.number, i)) ? ' is-on' : ''
+                  }`}
+                  onClick={() => toggleLine(chapter, i, line)}
+                  aria-pressed={savedLines.has(lineId(work.id, chapter.number, i))}
+                  title={
+                    savedLines.has(lineId(work.id, chapter.number, i))
+                      ? '즐겨찾기에서 빼기'
+                      : '이 문장 담기'
+                  }
+                >
+                  {savedLines.has(lineId(work.id, chapter.number, i)) ? '★' : '☆'}
+                </button>
+              </div>
 
               <p
                 className={line.lyric ? 'read direction' : 'read'}

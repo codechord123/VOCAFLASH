@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
+import { cardFromLine, findChunkKo, lineId } from '../lib/lines.js'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
@@ -20,7 +21,7 @@ export const SECTIONS = [
   { id: 'background', label: '배경지식' },
 ]
 
-export default function Read({ chapters, analysis: analysisData, cards, initialChapter = null }) {
+export default function Read({ chapters, analysis: analysisData, cards, commit, initialChapter = null }) {
   // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
   const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
@@ -75,6 +76,38 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
       }))
     return [...fromHighlights, ...fromUnits]
   }, [cards, selected])
+
+  // 즐겨찾기한 줄. id는 위치 기반이라 화면에서 바로 대조할 수 있다.
+  const savedLines = useMemo(
+    () => new Set(cards.filter((c) => c.type === 'line').map((c) => c.id)),
+    [cards]
+  )
+
+  /**
+   * 줄 담기/빼기. 이미 담은 줄을 다시 누르면 뺀다 — 잘못 담았을 때
+   * 되돌릴 방법이 없으면 담기를 주저하게 된다.
+   *
+   * 비포 선라이즈는 번역이 없어서, 담을 때 그 챕터 구문 정리에서 같은
+   * 문장을 찾아 번역을 함께 저장한다.
+   */
+  function toggleLine(index, line) {
+    const id = lineId('before-sunrise', selected, index)
+    if (savedLines.has(id)) {
+      commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
+      return
+    }
+    const card = cardFromLine({
+      work: 'before-sunrise',
+      workTitle: 'Before Sunrise',
+      chapter: selected,
+      chapterTitle: chapter?.title ?? null,
+      index,
+      en: line.text,
+      ko: findChunkKo(analysis?.chunks, line.text),
+      speaker: line.speaker,
+    })
+    commit((s) => ({ ...s, cards: [...s.cards, card] }))
+  }
 
   if (selected == null) {
     return (
@@ -136,7 +169,12 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
       </nav>
 
       {section === 'script' && (
-        <Script chapter={chapter} cardedTexts={cardedTexts} />
+        <Script
+          chapter={chapter}
+          cardedTexts={cardedTexts}
+          savedLines={savedLines}
+          onToggleLine={toggleLine}
+        />
       )}
       {section === 'vocab' && <VocabSection items={chapterVocab} />}
       {section !== 'script' && section !== 'vocab' &&
@@ -214,18 +252,29 @@ function ChapterList({ chapters, analysisByChapter, onSelect }) {
   )
 }
 
-function Script({ chapter, cardedTexts }) {
+function Script({ chapter, cardedTexts, savedLines, onToggleLine }) {
   // 같은 대사가 두 번 나오는 챕터가 있다(본인이 만든 청크 학습본).
   // 원문을 먼저 보여주고 학습본은 아래에 따로 묶는다.
-  const main = chapter.lines.filter((l) => !l.studyCopy)
-  const studyCopy = chapter.lines.filter((l) => l.studyCopy)
+  //
+  // 인덱스는 걸러내기 전 원본 위치를 쓴다 — 즐겨찾기 id가 위치 기반이라,
+  // 걸러낸 뒤 번호를 다시 매기면 같은 줄이 다른 카드가 된다.
+  const withIndex = chapter.lines.map((line, i) => ({ line, i }))
+  const main = withIndex.filter(({ line }) => !line.studyCopy)
+  const studyCopy = withIndex.filter(({ line }) => line.studyCopy)
 
   return (
     <div className="stack stack--loose">
       <div className="panel">
         <div className="stack">
-          {main.map((line, i) => (
-            <Line key={i} line={line} highlights={chapter.highlights} cardedTexts={cardedTexts} />
+          {main.map(({ line, i }) => (
+            <Line
+              key={i}
+              line={line}
+              highlights={chapter.highlights}
+              cardedTexts={cardedTexts}
+              saved={savedLines?.has(lineId('before-sunrise', chapter.number, i))}
+              onToggle={onToggleLine ? () => onToggleLine(i, line) : null}
+            />
           ))}
         </div>
       </div>
@@ -235,7 +284,7 @@ function Script({ chapter, cardedTexts }) {
           <div className="section-title">본인이 만든 청크 학습본</div>
           <div className="panel">
             <div className="stack">
-              {studyCopy.map((line, i) => (
+              {studyCopy.map(({ line, i }) => (
                 <Line key={i} line={line} highlights={chapter.highlights} cardedTexts={cardedTexts} />
               ))}
             </div>
@@ -246,14 +295,19 @@ function Script({ chapter, cardedTexts }) {
   )
 }
 
-function Line({ line, highlights, cardedTexts }) {
+function Line({ line, highlights, cardedTexts, saved = false, onToggle = null }) {
   if (line.type === 'direction' || line.type === 'note') {
     return <p className="direction">{line.text}</p>
   }
 
   return (
-    <div>
-      {line.speaker && <div className="speaker">{line.speaker}</div>}
+    <div className="line">
+      {(line.speaker || onToggle) && (
+        <div className="row row--between">
+          {line.speaker ? <div className="speaker">{line.speaker}</div> : <span />}
+          {onToggle && <StarButton saved={saved} onClick={onToggle} />}
+        </div>
+      )}
       {/* 지시문은 대사와 같은 줄에 두지 않는다. 이어붙이면
           "(Still looking in Celine's direction) Do you have any idea…"처럼
           이탤릭과 본문이 한 문장으로 읽혀서 대사 시작점을 못 찾는다. */}
@@ -317,6 +371,25 @@ function Marked({ text, highlights, cardedTexts }) {
   })
   if (cursor < text.length) out.push(text.slice(cursor))
   return out
+}
+
+/**
+ * 줄 담기 버튼.
+ *
+ * 줄 전체를 누르게 하지 않은 이유: 읽는 중에 단어를 짚거나 문장을
+ * 드래그하는 동작과 겹쳐서, 읽다 말고 자꾸 담기게 된다.
+ */
+function StarButton({ saved, onClick }) {
+  return (
+    <button
+      className={`star${saved ? ' is-on' : ''}`}
+      onClick={onClick}
+      aria-pressed={saved}
+      title={saved ? '즐겨찾기에서 빼기' : '이 문장 담기'}
+    >
+      {saved ? '★' : '☆'}
+    </button>
+  )
 }
 
 export function AnalysisSection({ section, analysis }) {

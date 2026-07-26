@@ -419,6 +419,24 @@ main {
 .grade--hard:hover:not(:disabled)  { background: color-mix(in srgb, var(--hard-soft) 60%, var(--hard));  color: var(--text); }
 .grade--good:hover:not(:disabled)  { background: color-mix(in srgb, var(--good-soft) 60%, var(--good));  color: var(--text); }
 
+/* ── 문장 담기(즐겨찾기) ─────────────────────────────────────────── */
+
+/* 읽는 흐름을 방해하지 않도록 평소엔 흐리게, 담은 것만 또렷하게. */
+.star {
+  background: none;
+  border: 0;
+  padding: 2px 6px;
+  font-size: 17px;
+  line-height: 1;
+  color: var(--text-faint);
+  cursor: pointer;
+  border-radius: var(--r1);
+  transition: color var(--fast) var(--ease), background var(--fast) var(--ease);
+}
+.star:hover { color: var(--accent); background: var(--accent-soft); }
+.star.is-on { color: var(--accent); }
+.line { scroll-margin-top: var(--s6); }
+
 /* ── 입력 ────────────────────────────────────────────────────────── */
 
 .field { display: grid; gap: var(--s2); }
