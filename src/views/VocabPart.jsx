@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import Vocab from './Vocab.jsx'
 import Swipe from './Swipe.jsx'
 import LinePart from './LinePart.jsx'
-import { selectDueCards, isDue, deckStats } from '../lib/srs.js'
+import { selectDueCards, deckStats } from '../lib/srs.js'
 import { filterByLevel } from '../lib/level.js'
 import { TOPICS } from '../lib/topics.js'
 
@@ -351,9 +351,12 @@ function TopicPicker({ cards, onStart }) {
 }
 
 function GroupRow({ icon, name, cards, onStart }) {
-  const due = cards.filter((c) => isDue(c)).length
+  // 세 칸이 전체와 맞아떨어져야 한다. 예전에는 '안 본 것'과 '익힘'만
+  // 띄워서, 한 번 봤지만 아직 5번 상자까지 못 올린 것들이 어느 숫자에도
+  // 안 들어갔다 — 561개인데 442 + 0으로 보이니 119개가 사라진 셈이었다.
   const fresh = cards.filter((c) => c.reviewCount === 0).length
   const learned = cards.filter((c) => c.box === 5).length
+  const inProgress = cards.length - fresh - learned
 
   /**
    * 넘길 순서.
@@ -383,8 +386,10 @@ function GroupRow({ icon, name, cards, onStart }) {
             {name}
           </span>
           <span className="list__meta">
-            {cards.length}개 · 안 본 것 {fresh} · 익힘 {learned}
-            {due > 0 && ` · 오늘 ${due}`}
+            {/* '오늘 N개'는 뺐다. 이 탭은 복습 예정일과 상관없이 전부
+                넘기는 곳이라(위 설명), 오늘 볼 수를 같이 띄우면 어느
+                숫자를 믿어야 할지 모르게 된다. */}
+            {cards.length}개 · 안 본 것 {fresh} · 외우는 중 {inProgress} · 익힘 {learned}
           </span>
         </span>
         <button className="btn btn--sm" onClick={() => onStart(toStudy)}>
