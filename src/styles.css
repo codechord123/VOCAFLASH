@@ -445,20 +445,45 @@ main {
 
 /* 선택 영역 아래에 뜨는 작은 막대. 브라우저 기본 메뉴와 겹치지 않게
    아래쪽에 붙이고, 자리가 없으면 위로 올린다. */
+/* 담기 바는 화면 맨 아래에 붙인다.
+   선택 영역 옆에 띄우면 iOS가 그 자리에 자기 메뉴(복사하기·찾아보기)를
+   겹쳐 올려 둘 다 못 읽는다. 아이폰 메뉴는 선택한 글 근처에서만 뜨므로
+   아래 끝은 늘 비어 있고, 서서 볼 때 엄지도 거기까지만 간다. */
 .sel-bar {
   position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 42;
   display: flex;
   align-items: center;
-  gap: var(--s2);
-  padding: var(--s2);
-  border-radius: var(--r3);
-  border: 1px solid var(--border-strong);
-  background: var(--surface);
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  padding-bottom: calc(var(--s3) + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border-strong);
+  background: color-mix(in srgb, var(--surface) 97%, transparent);
+  backdrop-filter: blur(12px);
   box-shadow: var(--shadow-lg);
-  animation: fade var(--fast) var(--ease);
+  animation: rise var(--fast) var(--ease);
 }
-.sel-bar .btn--primary { flex: 1; }
+.sel-bar .btn--primary { flex-shrink: 0; }
+
+/* 무엇을 담는지 보여준다 — 아래에서 확인 없이 누르게 되면 엉뚱한
+   토막이 카드가 된다 */
+.sel-bar__text {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
 
 /* ── 회독 ─────────────────────────────────────────────────────────── */
 

@@ -60,35 +60,23 @@ export function useTextSelection(containerRef) {
 }
 
 /**
- * 선택 영역 아래에 뜨는 담기 버튼.
+ * 화면 아래에 붙는 담기 바.
  *
- * 화면 밖으로 나가지 않게 좌우를 물리고, 선택 아래 자리가 모자라면
- * 위로 올린다 — 마지막 줄을 그었을 때 버튼이 화면 밖에 있으면 없는 것과
- * 같다.
+ * 예전에는 그은 자리 바로 아래에 띄웠는데, 아이폰이 같은 자리에 자기
+ * 메뉴(복사하기·선택 영역 찾기·찾아보기)를 올려서 둘이 겹쳤다. 그 메뉴는
+ * 그은 글 근처에만 뜨므로, 우리 바를 화면 맨 아래로 내리면 자리가 아예
+ * 안 겹친다. 서서 볼 때 엄지가 닿는 곳이기도 하다.
  */
 export default function SelectionSave({ sel, saved, onSave, onClose }) {
   const ref = useRef(null)
   if (!sel) return null
 
-  const width = 220
-  const margin = 8
-  const left = Math.min(
-    Math.max(margin, sel.rect.left + sel.rect.width / 2 - width / 2),
-    window.innerWidth - width - margin
-  )
-  const below = sel.rect.bottom + 52
-  const top = below < window.innerHeight - 60 ? sel.rect.bottom + 44 : sel.rect.top - 52
-
   const words = sel.text.split(' ').length
 
   return (
-    <div
-      ref={ref}
-      className="sel-bar"
-      style={{ left, top, width }}
-      role="dialog"
-      aria-label="선택한 부분 담기"
-    >
+    <div ref={ref} className="sel-bar" role="dialog" aria-label="선택한 부분 담기">
+      {/* 무엇을 담는지 보여준다 — 화면 아래에서는 그은 자리가 안 보일 수 있다 */}
+      <span className="sel-bar__text">{sel.text}</span>
       <button className="btn btn--primary btn--sm" onClick={() => onSave(sel.text)} disabled={saved}>
         {saved ? '이미 담음' : `★ 담기 (${words}단어)`}
       </button>
