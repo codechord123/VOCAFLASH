@@ -1,7 +1,13 @@
 {
-  "unitId": "u-07",
   "count": 20,
-  "types": ["meaning", "blank", "truefalse", "arrange", "koToEn", "anchorRestore"],
+  "types": [
+    "meaning",
+    "blank",
+    "truefalse",
+    "arrange",
+    "koToEn",
+    "anchorRestore"
+  ],
   "quizzes": [
     {
       "quizId": "q-07-001",
@@ -9,7 +15,12 @@
       "type": "meaning",
       "prompt": "refuge — \"a refuge for stray cats\"",
       "wordId": "w-0709",
-      "options": ["보호소, 안식처", "후회, 미련", "증거, 근거", "모험, 도박"],
+      "options": [
+        "보호소, 안식처",
+        "후회, 미련",
+        "증거, 근거",
+        "모험, 도박"
+      ],
       "answerIndex": 0,
       "relatedRuleId": null,
       "srsCardId": "c-07-001"
@@ -20,7 +31,12 @@
       "type": "meaning",
       "prompt": "mundane — \"All those mundane, boring things everybody has to do every day\"",
       "wordId": "w-0713",
-      "options": ["평범하고 따분한", "신성한", "화려하고 사치스러운", "지저분한"],
+      "options": [
+        "평범하고 따분한",
+        "신성한",
+        "화려하고 사치스러운",
+        "지저분한"
+      ],
       "answerIndex": 0,
       "relatedRuleId": null,
       "srsCardId": "c-07-004"
@@ -31,7 +47,12 @@
       "type": "meaning",
       "prompt": "fanciful — \"my fanciful ambition\"",
       "wordId": "w-0721",
-      "options": ["공상적인, 현실성 없는", "화려한", "야심 찬", "까다로운"],
+      "options": [
+        "공상적인, 현실성 없는",
+        "화려한",
+        "야심 찬",
+        "까다로운"
+      ],
       "answerIndex": 0,
       "relatedRuleId": null,
       "srsCardId": "c-07-005"
@@ -42,7 +63,12 @@
       "type": "meaning",
       "prompt": "be dead set on — \"I was dead set on listening to what everybody thought I should be doing... and doing just the opposite\"",
       "wordId": "w-0724",
-      "options": ["~하기로 단단히 마음먹은", "~에 질려 버린", "~에 무관심한", "~을 몹시 두려워하는"],
+      "options": [
+        "~하기로 단단히 마음먹은",
+        "~에 질려 버린",
+        "~에 무관심한",
+        "~을 몹시 두려워하는"
+      ],
       "answerIndex": 0,
       "relatedRuleId": null,
       "srsCardId": "c-07-008"
@@ -68,7 +94,12 @@
       "unitId": "u-07",
       "type": "blank",
       "prompt": "Even as a little girl... I ___ say to my dad, \"I want to be a writer.\"",
-      "options": ["'d", "'ll", "'m", "was"],
+      "options": [
+        "'d",
+        "'ll",
+        "'m",
+        "was"
+      ],
       "answerIndex": 0,
       "relatedRuleId": "r1",
       "srsCardId": null
@@ -78,7 +109,12 @@
       "unitId": "u-07",
       "type": "blank",
       "prompt": "To improve his times, he ___ shave the hair off his legs and arms.",
-      "options": ["would", "will", "is used to", "has"],
+      "options": [
+        "would",
+        "will",
+        "is used to",
+        "has"
+      ],
       "answerIndex": 0,
       "relatedRuleId": "r1",
       "srsCardId": null
@@ -88,7 +124,12 @@
       "unitId": "u-07",
       "type": "blank",
       "prompt": "I ___ in a small town when I was a kid.",
-      "options": ["used to live", "would live", "would have lived", "am living"],
+      "options": [
+        "used to live",
+        "would live",
+        "would have lived",
+        "am living"
+      ],
       "answerIndex": 0,
       "relatedRuleId": "r3",
       "srsCardId": null
@@ -98,7 +139,12 @@
       "unitId": "u-07",
       "type": "blank",
       "prompt": "___ , my mother would read to us before bed.",
-      "options": ["When we were little", "These days", "Tomorrow night", "Right now"],
+      "options": [
+        "When we were little",
+        "These days",
+        "Tomorrow night",
+        "Right now"
+      ],
       "answerIndex": 0,
       "relatedRuleId": "r2",
       "srsCardId": null
@@ -148,8 +194,18 @@
       "unitId": "u-07",
       "type": "arrange",
       "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
-      "chunks": ["and he'd say,", "I'd say to my dad,", "\"journalist.\"", "\"I want to be a writer,\""],
-      "answer": [1, 3, 0, 2],
+      "chunks": [
+        "and he'd say,",
+        "I'd say to my dad,",
+        "\"journalist.\"",
+        "\"I want to be a writer,\""
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
       "altAnswers": [],
       "relatedRuleId": "r1",
       "srsCardId": "c-07-010"
@@ -159,8 +215,18 @@
       "unitId": "u-07",
       "type": "arrange",
       "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 5)",
-      "chunks": ["he'd shave", "To improve his times,", "off his legs and arms.", "the hair"],
-      "answer": [1, 0, 3, 2],
+      "chunks": [
+        "he'd shave",
+        "To improve his times,",
+        "off his legs and arms.",
+        "the hair"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
       "altAnswers": [],
       "relatedRuleId": "r1",
       "srsCardId": null
@@ -178,7 +244,14 @@
         "and the cats",
         "would just walk in."
       ],
-      "answer": [1, 3, 0, 2, 4, 5],
+      "answer": [
+        1,
+        3,
+        0,
+        2,
+        4,
+        5
+      ],
       "altAnswers": [],
       "relatedRuleId": "r1",
       "srsCardId": "c-07-011"
@@ -188,8 +261,20 @@
       "unitId": "u-07",
       "type": "koToEn",
       "prompt": "대학 시절 우리는 밤을 새우며 영화 얘기를 하곤 했다.",
-      "chunks": ["we'd stay up", "Back in college,", "about movies.", "all night", "talking"],
-      "answer": [1, 0, 3, 4, 2],
+      "chunks": [
+        "we'd stay up",
+        "Back in college,",
+        "about movies.",
+        "all night",
+        "talking"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ],
       "altAnswers": [],
       "relatedRuleId": "r1",
       "srsCardId": null
@@ -199,8 +284,18 @@
       "unitId": "u-07",
       "type": "koToEn",
       "prompt": "어릴 때 나는 지도를 그리면서 오후를 통째로 보내곤 했다.",
-      "chunks": ["I'd spend", "As a kid,", "whole afternoons", "drawing maps."],
-      "answer": [1, 0, 2, 3],
+      "chunks": [
+        "I'd spend",
+        "As a kid,",
+        "whole afternoons",
+        "drawing maps."
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        3
+      ],
       "altAnswers": [],
       "relatedRuleId": "r2",
       "srsCardId": null
@@ -210,8 +305,18 @@
       "unitId": "u-07",
       "type": "koToEn",
       "prompt": "예전에는 커피를 안 좋아했다.",
-      "chunks": ["like coffee.", "I", "use to", "didn't"],
-      "answer": [1, 3, 2, 0],
+      "chunks": [
+        "like coffee.",
+        "I",
+        "use to",
+        "didn't"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
       "altAnswers": [],
       "relatedRuleId": "r4",
       "srsCardId": null
@@ -222,7 +327,12 @@
       "type": "anchorRestore",
       "prompt": "앵커 문장을 복원하세요 (빈칸 4개)",
       "text": "I __1__ say to my dad, \"I want to be a writer.\" and __2__ say, \"journalist.\" I'd say I wanted to have a __3__ for stray cats, and he'd say, \"veterinarian.\" It was this constant __4__ of my fanciful ambition into these practical, money-making ventures.",
-      "blanks": ["'d", "he'd", "refuge", "conversion"],
+      "blanks": [
+        "'d",
+        "he'd",
+        "refuge",
+        "conversion"
+      ],
       "relatedRuleId": "r1",
       "srsCardId": "c-07-015"
     }

@@ -1,7 +1,11 @@
 {
-  "unitId": "u-07",
   "count": 27,
-  "levels": { "L1": "생활", "L2": "뉘앙스", "L3": "추상", "L4": "관용" },
+  "levels": {
+    "L1": "생활",
+    "L2": "뉘앙스",
+    "L3": "추상",
+    "L4": "관용"
+  },
   "words": [
     {
       "wordId": "w-0701",
@@ -14,7 +18,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "they wanted me to think of a future career", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "they wanted me to think of a future career",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -28,7 +37,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "these practical, money-making ventures", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "these practical, money-making ventures",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -42,7 +56,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "this constant conversion of my fanciful ambition", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "this constant conversion of my fanciful ambition",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -56,7 +75,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "are basically nice, and supportive", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "are basically nice, and supportive",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -70,7 +94,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "my fanciful ambition", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "my fanciful ambition",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -84,7 +113,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "I know the statistics say na-na-na, it's safer", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I know the statistics say na-na-na, it's safer",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -98,7 +132,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "I can't stop thinking that way. It's exhausting.", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I can't stop thinking that way. It's exhausting.",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -112,7 +151,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "It's just an observation about Europe.", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "It's just an observation about Europe.",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -126,7 +170,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "a refuge for stray cats", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "a refuge for stray cats",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -140,7 +189,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "a refuge for stray cats", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "a refuge for stray cats",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -154,7 +208,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "these practical, money-making ventures", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "these practical, money-making ventures",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -168,7 +227,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "this constant conversion of my fanciful ambition", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "this constant conversion of my fanciful ambition",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -182,7 +246,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "All those mundane, boring things everybody has to do every day", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "All those mundane, boring things everybody has to do every day",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -196,7 +265,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "despite all that kind of bullshit that comes along with it", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "despite all that kind of bullshit that comes along with it",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -210,7 +284,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "the crude, dumb, vulgar American who has no culture", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the crude, dumb, vulgar American who has no culture",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -224,7 +303,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "the crude, dumb, vulgar American who has no culture", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the crude, dumb, vulgar American who has no culture",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -238,7 +322,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "the thing that kind of haunts me is the distribution", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the thing that kind of haunts me is the distribution",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -252,7 +341,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "the thing that kind of haunts me is the distribution", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "the thing that kind of haunts me is the distribution",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -266,7 +360,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "a guy, standing at a bank machine ... looks like a complete moron", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "a guy, standing at a bank machine ... looks like a complete moron",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -280,7 +379,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "those few seconds of consciousness before you're gonna die", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "those few seconds of consciousness before you're gonna die",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -294,7 +398,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "my fanciful ambition", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "my fanciful ambition",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -308,7 +417,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "if your parents never really fully contradict you about anything", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "if your parents never really fully contradict you about anything",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -322,7 +436,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "it just kind of let me know how ambiguous everything was, even death", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "it just kind of let me know how ambiguous everything was, even death",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -336,7 +455,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "I was dead set on listening to what everybody thought I should be doing with my life, and just kind of doing just the opposite", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "I was dead set on listening to what everybody thought I should be doing with my life, and just kind of doing just the opposite",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -350,7 +474,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "it's this passive-aggressive shit", "speaker": "Céline" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "it's this passive-aggressive shit",
+          "speaker": "Céline"
+        }
       ]
     },
     {
@@ -364,7 +493,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "Yeah, what a drag. I wish I had met you earlier", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "Yeah, what a drag. I wish I had met you earlier",
+          "speaker": "Jesse"
+        }
       ]
     },
     {
@@ -378,7 +512,12 @@
       "domain": "general",
       "unitId": "u-07",
       "sources": [
-        { "work": "before-sunrise", "chapter": 2, "context": "sitting, you know, for weeks on end, looking out the window", "speaker": "Jesse" }
+        {
+          "work": "before-sunrise",
+          "chapter": 2,
+          "context": "sitting, you know, for weeks on end, looking out the window",
+          "speaker": "Jesse"
+        }
       ]
     }
   ]

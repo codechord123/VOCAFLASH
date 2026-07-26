@@ -195,6 +195,17 @@ function Review({ dueCards, stats, onStart, onGoTopic }) {
  * 작품별로 묶는다.
  */
 function TopicPicker({ cards, onStart }) {
+  // 스와이프에서 왼쪽(모름)으로 넘긴 카드는 lapseCount가 쌓인다.
+  // "모르는 것만 다시 보고 싶다"는 건 세션 안에서만이 아니라 며칠 뒤에도
+  // 필요한 일이라, 따로 모아 둔다. 자주 틀린 것이 위로 온다.
+  const unknown = useMemo(
+    () =>
+      cards
+        .filter((c) => (c.lapseCount ?? 0) > 0)
+        .sort((a, b) => b.lapseCount - a.lapseCount || a.box - b.box),
+    [cards]
+  )
+
   const groups = useMemo(() => {
     const topic = new Map()
     const work = new Map()
@@ -226,6 +237,33 @@ function TopicPicker({ cards, onStart }) {
         주제를 골라 그 안의 단어만 몰아서 넘깁니다. 복습 예정일과 상관없이
         전부 나오고, 넘긴 결과는 복습 일정에 반영됩니다.
       </p>
+
+      {unknown.length > 0 && (
+        <section className="stack">
+          <div className="section-title">모름으로 넘긴 단어</div>
+          <div
+            className="panel"
+            style={{
+              padding: 'var(--s3) var(--s4)',
+              borderColor: 'var(--accent-border)',
+              background: 'var(--accent-soft)',
+            }}
+          >
+            <div className="row row--between">
+              <span className="list__main">
+                <span className="list__title">← 로 넘긴 것 모아 보기</span>
+                <span className="list__meta">
+                  {unknown.length}개 · 두 번 이상 틀린 것{' '}
+                  {unknown.filter((c) => c.lapseCount >= 2).length}개
+                </span>
+              </span>
+              <button className="btn btn--sm" onClick={() => onStart(unknown)}>
+                넘기기
+              </button>
+            </div>
+          </div>
+        </section>
+      )}
 
       {groups.works.length > 0 && (
         <section className="stack">

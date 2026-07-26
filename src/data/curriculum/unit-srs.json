@@ -1,7 +1,6 @@
 {
-  "unitId": "u-07",
   "count": 15,
-  "note": "퀴즈 완료(screen: done) 후에만 SRS 덱에 투입할 것. anchor 카드는 SRS 박스에 넣지 않고 낭독 트랙(recitations)으로만 카운트.",
+  "note": "퀴즈 완료 후에만 덱에 투입. anchor 카드는 낭독 전용이라 SRS 박스에 넣지 않는다.",
   "cards": [
     {
       "cardId": "c-07-001",

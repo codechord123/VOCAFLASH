@@ -23,6 +23,9 @@ export default function Vocab({ cards, commit }) {
   const [kind, setKind] = useState('all')
   const [sort, setSort] = useState('chapter')
   const [onlyNoMeaning, setOnlyNoMeaning] = useState(false)
+  // 스와이프에서 왼쪽으로 넘긴 것만 보기. 목록에서도 걸러 볼 수 있어야
+  // "모르는 것만 다시"가 한 곳에 갇히지 않는다.
+  const [onlyUnknown, setOnlyUnknown] = useState(false)
 
   const works = useMemo(
     () => [...new Set(all.map((c) => c.source?.work).filter(Boolean))],
@@ -46,6 +49,7 @@ export default function Vocab({ cards, commit }) {
       if (work !== 'all' && c.source?.work !== work) return false
       if (kind !== 'all' && c.kind !== kind) return false
       if (onlyNoMeaning && c.back) return false
+      if (onlyUnknown && (c.lapseCount ?? 0) === 0) return false
       if (!needle) return true
       return (
         c.front.toLowerCase().includes(needle) ||
@@ -65,9 +69,13 @@ export default function Vocab({ cards, commit }) {
       out = out.sort((a, b) => b.lapseCount - a.lapseCount || byChapter(a, b))
 
     return out
-  }, [all, q, work, kind, sort, onlyNoMeaning])
+  }, [all, q, work, kind, sort, onlyNoMeaning, onlyUnknown])
 
   const noMeaningCount = useMemo(() => all.filter((c) => !c.back).length, [all])
+  const unknownCount = useMemo(
+    () => all.filter((c) => (c.lapseCount ?? 0) > 0).length,
+    [all]
+  )
 
   return (
     <div className="stack stack--loose">
@@ -106,6 +114,18 @@ export default function Vocab({ cards, commit }) {
             onChange={(e) => setQ(e.target.value)}
           />
         </div>
+
+        {/* 모름으로 넘긴 것만 추려 보기. 눌러서 켜고 끄는 칩 하나면 된다 */}
+        {unknownCount > 0 && (
+          <button
+            className={`chip${onlyUnknown ? ' chip--accent' : ''}`}
+            style={{ justifySelf: 'start', cursor: 'pointer' }}
+            aria-pressed={onlyUnknown}
+            onClick={() => setOnlyUnknown((v) => !v)}
+          >
+            {onlyUnknown ? '✓ ' : ''}모름으로 넘긴 것 {unknownCount}개
+          </button>
+        )}
         <div className="row">
           <Select label="작품" value={work} onChange={setWork} options={[['all', '전체'], ...works.map((w) => [w, w])]} />
           <Select
