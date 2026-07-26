@@ -23,14 +23,16 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
 
   const hideBasic = settings.hideBasicWords !== false
 
-  // 기초 단어(have, been 같은 조동사 한 개짜리)는 카드에서 뺀다.
-  // 지우지 않고 가리는 것이라 설정에서 되돌릴 수 있다.
+  // 단어 파트에는 단어만 둔다. 구문·문장 하이라이트는 앞면이 한 문단인
+  // 것도 있어서 스와이프로 넘길 물건이 아니다 — 여기서 통째로 뺀다.
+  // 기초 단어(have, been)도 가린다. 둘 다 지우는 게 아니라 가리는 것이라
+  // 데이터는 그대로 있고 설정에서 되돌릴 수 있다.
   const studyCards = useMemo(
-    () => filterByLevel(cards, { hideBasic }),
+    () => filterByLevel(cards, { hideBasic, wordsOnly: true }),
     [cards, hideBasic]
   )
   const studyReviewCards = useMemo(
-    () => filterByLevel(reviewCards, { hideBasic }),
+    () => filterByLevel(reviewCards, { hideBasic, wordsOnly: true }),
     [reviewCards, hideBasic]
   )
 

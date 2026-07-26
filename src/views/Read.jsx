@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
-import { isBasicWord } from '../lib/level.js'
+import { isBasicWord, isSingleWord } from '../lib/level.js'
 import ChapterNav from './ChapterNav.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
@@ -48,7 +48,7 @@ export default function Read({ chapters, analysis: analysisData, cards, initialC
           c.type === 'expression' &&
           (c.deck ?? 'highlight') === 'highlight' &&
           c.source?.chapter === selected &&
-          c.kind !== 'sentence' &&
+          isSingleWord(c) &&
           !isBasicWord(c)
       )
       .map((c) => ({

@@ -1,0 +1,90 @@
+[
+  {
+    "term": "groundskeeper",
+    "meaningKo": "(묘지·공원 등의) 관리인",
+    "definitionEn": "a person employed to look after a cemetery, park, or sports ground",
+    "nuance": "청소부(janitor)나 경비원(guard)이 아니라 부지 전체를 돌보며 그곳에 오래 붙어 있는 사람이다. 이름 없는 무덤들의 사연을 줄줄 꿰고 들려주는 노인이라, 이 단어 하나로 그가 그 묘지를 얼마나 오래 지켜왔는지가 드러난다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h075",
+    "chapter": 7,
+    "speaker": "Céline",
+    "context": "He was the groundskeeper. He explained that most of the people are buried here that washed up on the bank of the Danube."
+  },
+  {
+    "term": "prim",
+    "meaningKo": "점잔 빼는, 새침한",
+    "definitionEn": "stiffly formal and correct in manner, in a way that seems fussy or disapproving",
+    "nuance": "polite와 달리 '지나치게 격식을 차려 답답하다'는 비아냥이 섞여 있다. 제시가 부모의 상류층 말투를 흉내 내며 이혼을 미룬 명분을 조롱하는 대목이라, 이 단어가 목소리 톤 자체를 지시한다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h089",
+    "chapter": 8,
+    "speaker": "Jesse",
+    "context": "They should have done it a lot sooner, but they stuck together for a while (in a prim “high-society” accent) for the well-being of my sister and I, thank you very much."
+  },
+  {
+    "term": "confess",
+    "meaningKo": "(감춰온 것을) 털어놓다, 고백하다",
+    "definitionEn": "to admit something you have kept hidden or feel guilty about",
+    "nuance": "tell이나 admit과 달리 죄처럼 안고 있던 것을 겨우 꺼낸다는 무게가 실린다. 할머니가 평생 다른 남자를 마음에 품고 살았다는 말을 이 동사로 받으면서, 그 사랑이 숨겨야 할 비밀이었다는 사실까지 함께 전해진다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h091",
+    "chapter": 8,
+    "speaker": "Céline",
+    "context": "But she just confessed to me that she spent her whole life dreaming about another man she was always in love with."
+  },
+  {
+    "term": "projection",
+    "meaningKo": "(심리적) 투사, 제멋대로 덧씌우는 환상",
+    "definitionEn": "the act of attributing your own feelings or desires to another person or thing",
+    "nuance": "영사나 추정치라는 뜻도 있지만 여기서는 심리학 용어 '투사'다. 제시가 fantasy나 illusion 대신 이 단어를 고른 덕에, 사랑이 상대를 보는 게 아니라 자기 감정을 상대에게 발라놓는 일이라는 냉소가 더 날카로워진다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h093",
+    "chapter": 8,
+    "speaker": "Jesse",
+    "context": "It's just, people have these romantic projections they put on everything. That's not based on any kind of reality."
+  },
+  {
+    "term": "trip",
+    "meaningKo": "발을 걸어 넘어뜨리다",
+    "definitionEn": "to catch someone's foot so that they stumble or fall",
+    "nuance": "'여행'이라는 명사 뜻에 익숙해서 놓치기 쉬운 타동사 용법이다. stumble이 스스로 비틀거리는 것이라면 여기 trips her는 제시가 장난삼아 셀린의 발을 거는 것이라 행위의 주체가 반대다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h106",
+    "chapter": 10,
+    "speaker": "Céline",
+    "context": "While walking hand-in-hand with Jesse, sees an art exhibition poster when Jesse trips her."
+  },
+  {
+    "term": "transitory",
+    "meaningKo": "덧없는, 잠시 스쳐 지나가는",
+    "definitionEn": "lasting only a short time; not permanent",
+    "nuance": "temporary가 '한시적'이라는 사실 진술에 가깝다면 transitory에는 곧 사라질 것에 대한 애수가 배어 있다. 배경 속으로 녹아드는 그림 속 인물들을 두고 셀린이 고른 문어적 단어라서, 제시가 곧바로 \"Transitory?\" 하고 되묻는다.",
+    "register": "literary",
+    "fromExpressionId": "bsr-h107",
+    "chapter": 10,
+    "speaker": "Céline",
+    "context": "It's like the environments, you know, are stronger than the people. His human figures are always so transitory."
+  },
+  {
+    "term": "dissolve",
+    "meaningKo": "(윤곽이) 녹아들어 사라지다, 흐릿해지다",
+    "definitionEn": "to gradually merge into something else and disappear",
+    "nuance": "설탕이 물에 녹는다는 뜻에서 왔지만 여기서는 인물의 형체가 배경에 스며 사라지는 시각적 비유다. melt가 형태가 무너지는 쪽이라면 dissolve는 경계가 지워져 구분이 안 되는 쪽이라, 사람보다 환경이 강하다는 셀린의 감상과 맞물린다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h107",
+    "chapter": 10,
+    "speaker": "Céline",
+    "context": "I love the way the people seem to be dissolving into the background."
+  },
+  {
+    "term": "cathedral",
+    "meaningKo": "대성당",
+    "definitionEn": "the principal church of a diocese, where the bishop has his seat",
+    "nuance": "동네 church가 아니라 주교좌가 있는 큰 성당이라 규모도 격도 다르다. 두 사람이 종교와 고통을 이야기하기 직전에 다가서는 건물이므로, 이 단어가 장면의 무게를 미리 깔아 준다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h108",
+    "chapter": 11,
+    "speaker": null,
+    "context": "Jesse and Céline approach a cathedral."
+  }
+]

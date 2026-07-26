@@ -94,10 +94,29 @@ export function isBasicWord(card) {
   return BASIC.has(cleaned) || BASIC.has(stripContraction(cleaned))
 }
 
-/** 덱에서 기초 단어를 걸러낸다. */
-export function filterByLevel(cards, { hideBasic = true } = {}) {
-  if (!hideBasic) return cards
-  return cards.filter((c) => !isBasicWord(c))
+/**
+ * 카드 앞면이 단어 한 개인가.
+ *
+ * 단어 파트에는 단어만 둔다. 구문("be dead set on")과 문장("I wish I had
+ * met you earlier")은 외우는 방식이 달라서, 같은 덱에 섞으면 스와이프의
+ * 리듬이 깨진다 — 단어는 1초에 판단하고 문장은 읽어야 한다.
+ */
+export function isSingleWord(card) {
+  const raw = (card.front ?? '').trim()
+  if (!raw) return false
+  return !/\s/.test(raw)
+}
+
+/**
+ * 덱에서 단어 파트에 안 맞는 카드를 걸러낸다.
+ *   wordsOnly  — 구문·문장 카드를 뺀다 (단어 파트 기본)
+ *   hideBasic  — have, been 같은 기초 단어를 뺀다
+ */
+export function filterByLevel(cards, { hideBasic = true, wordsOnly = false } = {}) {
+  let out = cards
+  if (wordsOnly) out = out.filter(isSingleWord)
+  if (hideBasic) out = out.filter((c) => !isBasicWord(c))
+  return out
 }
 
 /** 문자열 토큰 하나가 기초 단어인가. 단어 레이어에서 쓴다. */

@@ -1,0 +1,145 @@
+[
+  {
+    "term": "nozzle",
+    "meaningKo": "(호스·분무기 끝의) 물이 나오는 주둥이, 노즐",
+    "definitionEn": "the narrow end piece of a hose or pipe that controls the spray of liquid",
+    "nuance": "호스 끝에서 물줄기를 만들어 주는 부품을 가리키는 구체적인 단어다. 제시가 nozzle을 놓는 순간 물보라가 끊기고 무지개도 할머니도 사라지는 대목이라, 이 단어 하나가 환영이 끝나는 스위치 역할을 한다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h043",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "And then finally, I let go of the nozzle, you know, and then I dropped the hose, and she disappeared."
+  },
+  {
+    "term": "mist",
+    "meaningKo": "물안개, 뿌옇게 흩날리는 물보라",
+    "definitionEn": "a thin cloud of tiny water droplets in the air",
+    "nuance": "fog가 앞이 안 보일 만큼 짙은 안개라면 mist는 호스로 뿌린 물보라처럼 옅고 반짝인다. 그 사이로 무지개가 생기고 증조할머니가 보였다는 장면이라, 단어 선택 자체가 이 기억을 환상처럼 만들어 준다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h046",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "And so I was doing that, and through the mist, I could see my grandmother."
+  },
+  {
+    "term": "ambiguous",
+    "meaningKo": "어느 쪽이라고 딱 잘라 말할 수 없는, 모호한",
+    "definitionEn": "open to more than one interpretation; not clearly defined",
+    "nuance": "'애매해서 나쁘다'는 비난이 아니라 '단정할 수 없다'는 중립적 판단에 가깝다. 죽은 증조할머니를 봤다는 세 살 때의 경험을 두고, 제시는 죽음조차 확정할 수 없는 것이더라는 결론에 이 단어를 쓴다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h048",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "It just kind of let me know how ambiguous everything was, you know, even death."
+  },
+  {
+    "term": "drag",
+    "meaningKo": "김새는 일, 맥 빠지는 일 (명사)",
+    "definitionEn": "something boring or annoying that spoils the mood",
+    "nuance": "'끌다'라는 동사가 아니라 '흥을 깨는 일'을 뜻하는 속어 명사다. boring이라고 하면 너무 진지해지니까, 이제 헤어져야 한다는 아쉬움을 가벼운 투덜거림으로 포장해 감정을 들키지 않으려는 어투다.",
+    "register": "slang",
+    "fromExpressionId": "bsr-h051",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "Yeah, what a drag. I wish I had met you earlier, you know, I really like talking to you."
+  },
+  {
+    "term": "bleach",
+    "meaningKo": "표백하다, 색을 빼다",
+    "definitionEn": "to make something lighter in color, or to lose color through chemicals or sunlight",
+    "nuance": "미용실에서 일부러 탈색한 게 아니라 수영장 물에 오래 노출돼 저절로 색이 빠졌다는 뜻이다. bleached out이라는 수동 표현 하나로 그 소년이 물에서 살다시피 했다는 사실이 함축된다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h062",
+    "chapter": 5,
+    "speaker": "Céline",
+    "context": "Yeah, he had bleached out chlorine hair and green eyes."
+  },
+  {
+    "term": "chlorine",
+    "meaningKo": "염소 (수영장 소독약 성분)",
+    "definitionEn": "a chemical element used to disinfect swimming pools and drinking water",
+    "nuance": "수영장 물 냄새의 그 염소다. 셀린은 첫사랑을 설명하면서 '수영 선수였다'고 직접 말하는 대신 염소에 바랜 머리색만 던지는데, 그 한 단어로 소년의 생활 전체가 그려진다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h062",
+    "chapter": 5,
+    "speaker": "Céline",
+    "context": "Yeah, he had bleached out chlorine hair and green eyes."
+  },
+  {
+    "term": "opportune",
+    "meaningKo": "때가 딱 알맞은, 시의적절한",
+    "definitionEn": "well timed; suitable for a particular purpose at a particular moment",
+    "nuance": "good time, right time보다 훨씬 격식 있는 단어다. 수영 잘한다는 자랑을 꺼내면서 일부러 거창한 어휘를 골라, 별것 아닌 말을 무슨 공식 발표처럼 만드는 제시식 능청이다.",
+    "register": "formal",
+    "fromExpressionId": "bsr-h063",
+    "chapter": 5,
+    "speaker": "Jesse",
+    "context": "Well, then I think this is the opportune time to tell you that I happen to be a fantastic swimmer."
+  },
+  {
+    "term": "obsessive",
+    "meaningKo": "집착하는, 머릿속에서 떠나지 않는",
+    "definitionEn": "thinking about someone or something constantly, in a way that is hard to control",
+    "nuance": "그냥 좋아하는 정도가 아니라 통제가 안 될 만큼 매달리는 상태다. 잡지 속 모델을 두고 relationship이라 부르면서 앞에 obsessive를 붙여, 사춘기 시절을 스스로 우스꽝스럽게 과장하는 자조 섞인 농담이 된다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h067",
+    "chapter": 5,
+    "speaker": "Jesse",
+    "context": "But as far as sexual feelings go, I'll have you know it started with an obsessive relationship with Miss July 1978."
+  },
+  {
+    "term": "fraction",
+    "meaningKo": "아주 작은 일부, 조각 (수학의 분수)",
+    "definitionEn": "a small part or amount of something larger",
+    "nuance": "only와 함께 쓰이면 '겨우 그것밖에 안 된다'는 실망의 어조가 붙는다. 인구가 폭발한 만큼 영혼이 잘게 쪼개졌을 거라는 제시의 가설이 이 한 단어에 요약되어 있다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h070",
+    "chapter": 5,
+    "speaker": "Jesse",
+    "context": "Are modern souls only a fraction of the original souls?"
+  },
+  {
+    "term": "blip",
+    "meaningKo": "눈 깜짝할 순간, 아주 짧고 하찮은 기간",
+    "definitionEn": "a very brief, insignificant moment or a small dot of light on a radar screen",
+    "nuance": "레이더 화면에 잠깐 찍혔다 사라지는 점에서 온 말이라 '있었는지도 모르게 지나간다'는 이미지가 강하다. 5만 년도 지구의 시간 앞에서는 점 하나라는 대비를 만들어, 영혼이 쪼개진 속도가 얼마나 급격했는지를 강조한다.",
+    "register": "casual",
+    "fromExpressionId": "bsr-h070",
+    "chapter": 5,
+    "speaker": "Jesse",
+    "context": "Because if they are, that represents a five thousand-to-one split of each soul in just the last fifty thousand years, which is like a blip in the earth's time."
+  },
+  {
+    "term": "scattered",
+    "meaningKo": "정신이 산만한, 갈피를 못 잡는 (사방에 흩어진)",
+    "definitionEn": "spread out in different directions; unable to focus or think in an organized way",
+    "nuance": "물건이 여기저기 흩어졌다는 뜻에서 사람의 정신 상태로 확장된 용법이다. 영혼이 수천 조각으로 갈라졌다는 앞의 가설을 그대로 받아, '그래서 우리가 이렇게 마음이 사방으로 흩어져 있는 걸까'로 잇는 연결고리가 된다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h071",
+    "chapter": 5,
+    "speaker": "Jesse",
+    "context": "I mean, is that why we're all so scattered?"
+  },
+  {
+    "term": "booth",
+    "meaningKo": "칸막이로 막힌 좁은 공간, 부스",
+    "definitionEn": "a small enclosed compartment for one or a few people",
+    "nuance": "전화 부스, 식당의 칸막이 자리처럼 '막혀 있는 작은 칸'을 가리킨다. 여기서는 레코드 가게의 음반 시청 부스로, 둘이 좁은 공간에 갇히듯 들어가면서 이 장면의 어색하고 밀폐된 긴장이 시작된다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h072",
+    "chapter": 6,
+    "speaker": "Jesse",
+    "context": "Do you want to go see if that listening booth still works?"
+  },
+  {
+    "term": "glance",
+    "meaningKo": "흘깃 봄, 짧게 스치는 시선",
+    "definitionEn": "a quick, brief look at someone or something",
+    "nuance": "look이 대놓고 보는 것이라면 glance는 순식간에 스쳐 지나가는 눈길이다. steal glances는 들키지 않게 훔쳐본다는 뜻이라, 보고 싶지만 눈이 마주치면 얼른 피하는 두 사람의 상태가 지문 한 줄에 그대로 담긴다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h073",
+    "chapter": 6,
+    "speaker": null,
+    "context": "As they listen to the song, Jesse and Céline nervously steal glances at each other, never once making eye contact for very long."
+  }
+]

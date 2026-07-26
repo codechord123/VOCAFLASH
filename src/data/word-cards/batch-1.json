@@ -1,0 +1,123 @@
+[
+  {
+    "term": "crude",
+    "meaningKo": "무례한, 상스러운, 세련되지 못한",
+    "definitionEn": "rude and offensive in a rough, unrefined way",
+    "nuance": "제시가 셀린의 눈에 자기가 어떻게 보이는지를 대신 말해 주며 쓴 단어. rude가 태도의 무례함이라면 crude는 '다듬어지지 않아서 천박하다'는 쪽이라, 바로 뒤의 has no culture와 짝을 이룬다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h006",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "So I'm the crude, dumb, vulgar American who has no culture, right?"
+  },
+  {
+    "term": "vulgar",
+    "meaningKo": "천박한, 상스러운",
+    "definitionEn": "lacking taste or refinement; coarse and offensive",
+    "nuance": "crude, dumb과 나란히 놓여 '교양 없는 미국인' 스테레오타입을 완성한다. 원래는 '평민의'라는 뜻에서 온 말이라, 계급 냄새가 남아 있는 유럽식 비아냥에 딱 맞는 단어다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h006",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "So I'm the crude, dumb, vulgar American who has no culture, right?"
+  },
+  {
+    "term": "ordinarily",
+    "meaningKo": "평소 같으면, 보통 때는",
+    "definitionEn": "in the way that usually happens; normally",
+    "nuance": "usually와 달리 '특별한 지금과 달리 평소에는'이라는 대조가 깔려 있어서, 조건절 없이도 뒤의 wouldn't have라는 가정법을 성립시킨다. 여행 중이라 평소엔 안 하던 생각이 떠오른다는 제시의 말과 정확히 맞물린다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h019",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "Well, you know, for instance, you have ideas that you ordinarily wouldn't have."
+  },
+  {
+    "term": "moron",
+    "meaningKo": "멍청이, 얼간이",
+    "definitionEn": "a stupid or foolish person",
+    "nuance": "idiot보다 조롱기가 세고 말하는 사람의 짜증이 묻어난다. 여기서는 남을 욕하는 게 아니라 현금인출기 앞에 선 사람의 우스꽝스러움을 과장하려고 일부러 센 단어를 고른 것이고, 앞의 '햇볕에 잠든 개'의 아름다움과 대비를 만든다.",
+    "register": "slang",
+    "fromExpressionId": "bsr-h029",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "But a guy, standing at a bank machine, trying to take some money out, looks like a complete moron?"
+  },
+  {
+    "term": "haunt",
+    "meaningKo": "(생각이) 머릿속을 떠나지 않다, 계속 따라다니며 괴롭히다",
+    "definitionEn": "to keep coming back into someone's mind in a troubling way",
+    "nuance": "유령이 '출몰하다'가 원뜻이라, 사람을 목적어로 쓰면 그 생각이 유령처럼 붙어 다닌다는 그림이 생긴다. bother나 worry보다 훨씬 집요하고 음울한데, 앞에 kind of를 붙여 제시가 그 무게를 슬쩍 덜어내고 있다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h031",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "The thing that kind of haunts me is the distribution, you know."
+  },
+  {
+    "term": "refuge",
+    "meaningKo": "보호소, 안식처, 도피처",
+    "definitionEn": "a place that provides shelter or protection from danger or trouble",
+    "nuance": "shelter가 시설의 이름이라면 refuge에는 '쫓기던 것이 겨우 몸을 누이는 곳'이라는 정서가 있다. 어린 셀린이 상상한 낭만적인 그림이라서, 아버지가 곧바로 veterinarian이라는 직업명으로 바꿔치기하는 순간 대비가 확 산다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h034",
+    "chapter": 2,
+    "speaker": "Céline",
+    "context": "I'd say I wanted to have a refuge for stray cats, and he'd say, \"veterinarian.\""
+  },
+  {
+    "term": "stray",
+    "meaningKo": "(주인 없이) 떠도는, 길 잃은",
+    "definitionEn": "(of an animal) having no home or having wandered away from it",
+    "nuance": "lost가 '길을 잃어버린 상태'라면 stray는 '원래 갈 데가 없어 떠도는' 쪽이라 유기동물에 붙는 말이다. 갈 곳 없는 고양이에게 안식처를 만들어 주고 싶다는 셀린의 상상을 한 단어로 요약해 준다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h034",
+    "chapter": 2,
+    "speaker": "Céline",
+    "context": "I'd say I wanted to have a refuge for stray cats, and he'd say, \"veterinarian.\""
+  },
+  {
+    "term": "fanciful",
+    "meaningKo": "공상적인, 뜬구름 잡는",
+    "definitionEn": "imaginative and unrealistic rather than practical",
+    "nuance": "imaginative가 칭찬이라면 fanciful은 '현실성이 없다'는 핀잔이 섞인다. 셀린이 자기 어린 시절 꿈을 이 단어로 부르는 건 부모의 시선을 그대로 빌려온 것이고, 그래서 바로 뒤의 practical과 정면으로 부딪친다.",
+    "register": "literary",
+    "fromExpressionId": "bsr-h036",
+    "chapter": 2,
+    "speaker": "Céline",
+    "context": "It was this constant conversion of my fanciful ambition into these practical, money-making ventures."
+  },
+  {
+    "term": "venture",
+    "meaningKo": "(돈이 걸린) 사업, 벤처",
+    "definitionEn": "a business project that involves risk and the hope of profit",
+    "nuance": "위험을 무릅쓴 '사업'이라는 경제 용어라, 어린아이의 장래희망에 붙기엔 지나치게 어른스럽고 차갑다. 셀린이 일부러 이 단어를 골라 부모의 어휘를 흉내 냄으로써 꿈이 돈벌이로 환산되던 일을 비꼰다.",
+    "register": "formal",
+    "fromExpressionId": "bsr-h036",
+    "chapter": 2,
+    "speaker": "Céline",
+    "context": "It was this constant conversion of my fanciful ambition into these practical, money-making ventures."
+  },
+  {
+    "term": "nozzle",
+    "meaningKo": "(호스 끝의) 물 분사구",
+    "definitionEn": "the narrow end piece of a hose or pipe that controls the spray of liquid",
+    "nuance": "hose가 호스 전체라면 nozzle은 물줄기가 뿜어져 나오는 끝부분만 가리킨다. 세 살 제시가 이걸 놓는 순간 무지개도 안개도 사라지고 할머니의 환영도 함께 사라지므로, 장면의 스위치 같은 사물이다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h041",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "And then finally, I let go of the nozzle, you know, and then I dropped the hose, and she disappeared."
+  },
+  {
+    "term": "ambiguous",
+    "meaningKo": "이렇게도 저렇게도 해석되는, 모호한",
+    "definitionEn": "open to more than one interpretation; not clearly defined",
+    "nuance": "unclear가 '설명이 부족해 안 보인다'는 뜻이라면 ambiguous는 '해석이 둘 이상 가능해서 하나로 정할 수 없다'는 쪽이다. 할머니의 환영을 본 게 사실인지 상상인지 끝내 정하지 않은 채로 남겨 두는 이 이야기의 결론에 딱 맞는 단어다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h041",
+    "chapter": 2,
+    "speaker": "Jesse",
+    "context": "It just kind of let me know how ambiguous everything was, you know, even death."
+  }
+]

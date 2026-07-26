@@ -29,6 +29,17 @@ export default function Vocab({ cards, commit }) {
     [all]
   )
 
+  // 단어 파트는 단어만 받으므로 '표현·문장' 필터가 늘 0건이 된다.
+  // 실제로 있는 종류만 고르게 한다 — 고를 수 있는데 결과가 없으면
+  // 자료가 없는 건지 필터가 잘못된 건지 알 수 없다.
+  const kinds = useMemo(
+    () =>
+      Object.entries(KIND_LABELS).filter(([id]) =>
+        all.some((c) => c.kind === id)
+      ),
+    [all]
+  )
+
   const rows = useMemo(() => {
     const needle = q.trim().toLowerCase()
     let out = all.filter((c) => {
@@ -101,7 +112,7 @@ export default function Vocab({ cards, commit }) {
             label="종류"
             value={kind}
             onChange={setKind}
-            options={[['all', '전체'], ...Object.entries(KIND_LABELS)]}
+            options={[['all', '전체'], ...kinds]}
           />
           <Select label="정렬" value={sort} onChange={setSort} options={SORTS.map((s) => [s.id, s.label])} />
         </div>
@@ -132,7 +143,9 @@ function Row({ card, commit }) {
 
   return (
     <div className="list__item" style={{ display: 'block' }}>
-      <div className="row" style={{ gap: 'var(--s3)' }}>
+      {/* 단어와 뜻이 먼저, 배지는 그 아래 줄로. 한 줄에 다 넣으면
+          모바일 폭에서 뜻이 서너 글자씩 접혀 읽을 수 없다. */}
+      <div className="row" style={{ gap: 'var(--s3)', alignItems: 'flex-start' }}>
         <button
           className="btn btn--ghost btn--sm"
           aria-expanded={open}
@@ -146,15 +159,15 @@ function Row({ card, commit }) {
           <span className="list__meta">
             {card.back?.meaningKo ?? '뜻 없음'}
           </span>
-        </span>
-        <span className="row" style={{ gap: 'var(--s1)', flexWrap: 'nowrap' }}>
-          {card.origin === 'learner-highlight' && <span className="chip chip--accent">내 표시</span>}
-          {card.origin === 'learner-note' && <span className="chip chip--accent">내 메모</span>}
-          {card.color && COLOR_LABELS[card.color] && (
-            <span className="chip">{COLOR_LABELS[card.color]}</span>
-          )}
-          {due && <span className="chip">복습 예정</span>}
-          <span className="chip chip--box">{card.box}/{MAX_BOX}</span>
+          <span className="row" style={{ gap: 'var(--s1)', flexWrap: 'wrap', marginTop: 'var(--s1)' }}>
+            {card.origin === 'learner-highlight' && <span className="chip chip--accent">내 표시</span>}
+            {card.origin === 'learner-note' && <span className="chip chip--accent">내 메모</span>}
+            {card.color && COLOR_LABELS[card.color] && (
+              <span className="chip">{COLOR_LABELS[card.color]}</span>
+            )}
+            {due && <span className="chip">복습 예정</span>}
+            <span className="chip chip--box">{card.box}/{MAX_BOX}</span>
+          </span>
         </span>
       </div>
 

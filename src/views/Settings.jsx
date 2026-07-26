@@ -135,6 +135,11 @@ export default function Settings({ cards, settings, stats, commit, onReload }) {
             </span>
           </span>
         </label>
+        <p className="hint" style={{ textAlign: 'left' }}>
+          단어 파트에는 단어 한 개짜리 카드만 나옵니다. 노션에서 표시한
+          구문·문장 하이라이트는 자료로 남아 있고 읽기 화면에서 볼 수
+          있습니다 — 단어와는 외우는 방식이 달라 덱을 나눴습니다.
+        </p>
       </section>
 
       <section className="stack">

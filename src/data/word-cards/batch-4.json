@@ -1,0 +1,156 @@
+[
+  {
+    "term": "kneel",
+    "meaningKo": "무릎을 꿇다",
+    "definitionEn": "to go down on one's knees, especially in worship or respect",
+    "nuance": "sit down처럼 그냥 자세를 낮추는 게 아니라 경건함이나 경의가 담긴 동작이다. 제시가 본 퀘이커 결혼식에서 신랑신부가 하객 앞에 무릎을 꿇는 장면이라, 예배·기도·청혼 같은 자리에 주로 쓰인다는 걸 함께 기억해 두면 좋다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h115",
+    "chapter": 11,
+    "speaker": "Jesse",
+    "context": "What they do is the couple comes in and they kneel down in front of the whole congregation, and they just stare at each other, and nobody says a word."
+  },
+  {
+    "term": "atheist",
+    "meaningKo": "무신론자",
+    "definitionEn": "a person who does not believe in the existence of God",
+    "nuance": "신의 존재를 믿지 않는 사람으로, '알 수 없다'는 입장인 agnostic(불가지론자)과는 구분된다. 제시가 친구를 a big atheist라고 소개하는데 big이 '아주 확고한'이라는 뜻을 더해서, 뒤에 이어질 노숙자 상대의 짓궂은 장난을 미리 예고한다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h117",
+    "chapter": 11,
+    "speaker": "Jesse",
+    "context": "Well, I was driving around with this buddy of mine, he was a big atheist, and we came to a stop, next to this homeless guy."
+  },
+  {
+    "term": "rage",
+    "meaningKo": "격노, 폭발한 분노",
+    "definitionEn": "violent, uncontrollable anger",
+    "nuance": "anger보다 훨씬 격하고 스스로 통제가 안 되는 분노다. 제시가 솔직하게 대답하자마자 여자친구가 그대로 폭발해 이별을 통보하는 장면이라, 서서히 쌓인 화가 아니라 순식간에 터진 화라는 점이 핵심이다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h118",
+    "chapter": 12,
+    "speaker": "Jesse",
+    "context": "She flew into a rage, and broke up with me, alright? That's a true story."
+  },
+  {
+    "term": "pissed",
+    "meaningKo": "열받은, 화가 잔뜩 난",
+    "definitionEn": "very annoyed or angry",
+    "nuance": "angry의 거친 속어판으로 보통 pissed off 형태로 쓴다. 제시가 인생이 원래 힘든 거라고 담담히 인정하는 대목에서 굳이 이 험한 말을 고른 것이 그의 체념 섞인 말투를 살린다. 영국 영어에서 pissed는 '술 취한'이라는 전혀 다른 뜻이니 주의.",
+    "register": "slang",
+    "fromExpressionId": "bsr-h120",
+    "chapter": 12,
+    "speaker": "Jesse",
+    "context": "then, I might not get so pissed off about it, and I'd just be glad when something nice happens."
+  },
+  {
+    "term": "intricate",
+    "meaningKo": "치밀한, 복잡하게 얽힌",
+    "definitionEn": "very detailed and complicated in structure or design",
+    "nuance": "detailed가 단순히 '자세한'이라면 intricate는 여러 요소가 정교하게 짜여 있다는 어감이 강하다. 셀린이 쓴 살인 이야기의 '빈틈없는 세부 계획'을 가리키는 말이라, 이 단어 하나 때문에 상담사가 진짜 계획으로 오해했다는 흐름이 설득력을 얻는다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h123",
+    "chapter": 13,
+    "speaker": "Céline",
+    "context": "trying to kill her boyfriend, and how she was gonna do it, you know, with all the intricate details of, you know, how to do it, and not get caught,"
+  },
+  {
+    "term": "shrink",
+    "meaningKo": "정신과 의사, 심리 상담사",
+    "definitionEn": "a psychiatrist or psychotherapist (informal)",
+    "nuance": "'줄어들다'라는 동사와 철자가 같지만 여기서는 명사 속어로, headshrinker(머리를 쪼그라뜨리는 사람)에서 왔다. 셀린이 상담받으러 간 이야기를 농담처럼 꺼내는 자리라 잘 어울리지만, 진료 상황이나 격식 있는 글에서는 psychiatrist를 쓴다.",
+    "register": "slang",
+    "fromExpressionId": "bsr-h124",
+    "chapter": 13,
+    "speaker": "Céline",
+    "context": "And so I went to see this shrink, you know, and it came out that I had written this little stupid story about this woman, trying to kill her boyfriend."
+  },
+  {
+    "term": "obsessed",
+    "meaningKo": "집착하는, 사로잡힌",
+    "definitionEn": "unable to stop thinking about someone or something",
+    "nuance": "한국어 '푹 빠진'보다 훨씬 병적인 어감이라 스스로도 멈출 수 없다는 뜻이 들어 있다. 셀린은 좋아하지도 않는 옛 남자친구가 죽을까 봐 계속 신경 쓰는 자신을 이 단어로 설명하는데, 애정이 아니라 강박이라는 걸 정확히 짚는 표현이다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h126",
+    "chapter": 13,
+    "speaker": "Céline",
+    "context": "But now I'm obsessed that he's gonna die from an accident, or you know, a thousand kilometers away, I'm gonna be the one accused."
+  },
+  {
+    "term": "asinine",
+    "meaningKo": "터무니없이 어리석은, 한심한",
+    "definitionEn": "extremely stupid or foolish",
+    "nuance": "stupid보다 세고 경멸이 짙게 묻어나는 단어로, 라틴어의 '당나귀'에서 왔다. 제시가 전 여자친구가 다니던 미술사 프로그램을 이렇게 부르는 건 프로그램 자체보다 자기를 유럽까지 오게 만든 그 상황 전부에 아직 앙금이 남아 있다는 뜻이다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h128",
+    "chapter": 13,
+    "speaker": "Jesse",
+    "context": "My EX-girlfriend, who has been on this asinine art history program for the last year."
+  },
+  {
+    "term": "labor",
+    "meaningKo": "분만 진통; 노동",
+    "definitionEn": "the process of childbirth, especially the contractions before delivery",
+    "nuance": "'노동'으로만 외우면 in labor를 놓친다. 관사 없이 in labor로 쓰면 '진통 중인'이라는 뜻이다. 셀린이 출산 의식을 설명하는 대목이라 여기서는 분만의 뜻이고, 영국식 표기는 labour다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h131",
+    "chapter": 14,
+    "speaker": "Céline",
+    "context": "The woman in labor enters a tent, and the women of her tribe surround her, and dance, and they encourage the birthing woman to dance with them as...so as to make the birth less painful."
+  },
+  {
+    "term": "revolve",
+    "meaningKo": "(~을 중심으로) 돌아가다, 회전하다",
+    "definitionEn": "to move in a circle around a central point",
+    "nuance": "천체가 도는 물리적 회전에서 왔지만 실제로는 revolve around 형태로 '~을 축으로 삶이 돌아가다'라는 비유로 더 자주 쓴다. 셀린이 자기 인생이 한 남자를 중심으로 도는 것처럼 보일까 봐 경계하는 대목이라, 이 단어가 그리는 '내가 중심이 아니다'라는 그림이 중요하다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h132",
+    "chapter": 14,
+    "speaker": "Céline",
+    "context": "I always feel this pressure of being a strong and independent icon of womanhood, and without making...making it look my...my whole life is revolving around some guy."
+  },
+  {
+    "term": "womanhood",
+    "meaningKo": "여성으로 산다는 것, 여성성",
+    "definitionEn": "the state or condition of being a woman",
+    "nuance": "-hood는 childhood처럼 '~인 상태'를 만드는 접미사다. femininity가 여성스러움이라는 성질에 가깝다면 womanhood는 여성으로 존재하고 살아가는 조건 전체를 가리킨다. 셀린이 icon of womanhood라고 말하는 건 자신에게 지워진 '강인한 여성 대표' 역할의 부담을 뜻한다.",
+    "register": "formal",
+    "fromExpressionId": "bsr-h132",
+    "chapter": 14,
+    "speaker": "Céline",
+    "context": "I always feel this pressure of being a strong and independent icon of womanhood, and without making...making it look my...my whole life is revolving around some guy."
+  },
+  {
+    "term": "excel",
+    "meaningKo": "탁월하다, 남들보다 뛰어나다",
+    "definitionEn": "to be exceptionally good at something",
+    "nuance": "be good at보다 한참 위로, 남들과 비교해 두드러진다는 뜻이 깔려 있다. 제시가 '따뜻한 관계'보다 '무언가에서 정말 뛰어났다는 사실'을 안고 죽고 싶다고 고백하는 문장이라, 이 단어 하나에 그의 야심이 그대로 드러난다. excel at/in 형태로 쓴다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h133",
+    "chapter": 14,
+    "speaker": "Jesse",
+    "context": "I think I'd rather die knowing that I was really good at something, that I had excelled in some way, you know, than that I had just been in a nice, caring relationship."
+  },
+  {
+    "term": "mannerism",
+    "meaningKo": "(무의식적인) 버릇, 말투나 몸짓의 습관",
+    "definitionEn": "a habitual gesture or way of speaking peculiar to a person",
+    "nuance": "habit이 행동 습관 전반이라면 mannerism은 정작 본인은 못 느끼는 말버릇이나 손짓 같은 사소한 특징이고, 대개 남이 지겨워할 때 쓴다. 제시가 '오래 같이 있으면 너도 내 이런 것들이 싫어질걸'이라며 자기혐오를 설명하는 대목이라 부정적인 어감이 살아 있다. 보통 복수형으로 쓴다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h141",
+    "chapter": 19,
+    "speaker": "Jesse",
+    "context": "Let's say that you and I were together all the time, then you'd start to hate a lot of my mannerisms."
+  },
+  {
+    "term": "insecure",
+    "meaningKo": "자신 없는, 속으로 불안한",
+    "definitionEn": "lacking confidence in oneself; anxious about one's own worth",
+    "nuance": "'안전하지 않은'이라는 뜻으로 먼저 외우기 쉽지만 사람에게 쓰면 자존감이 흔들린다는 말이다. 제시가 손님을 부른 자리에서 위축돼 술을 과하게 마신다고 스스로를 까발리는 대목이라, 잠깐 긴장한다는 nervous와 달리 성격의 밑바닥을 가리킨다.",
+    "register": "neutral",
+    "fromExpressionId": "bsr-h141",
+    "chapter": 19,
+    "speaker": "Jesse",
+    "context": "The way...the way every time that we would have people over...I'd be insecure, and I'd get a little too drunk."
+  }
+]

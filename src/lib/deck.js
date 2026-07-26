@@ -63,6 +63,44 @@ export const DECKS = {
 }
 
 /**
+ * 구문·문장 하이라이트에서 단어 단위로 다시 뽑아낸 카드.
+ *
+ * 노션 하이라이트 144개 중 단어 한 개짜리는 28개뿐이었다. 나머지 116개는
+ * 구문·문장이라 단어 덱에 못 넣는데, 그 안에 정작 모르는 단어가 들어
+ * 있었다(a refuge for stray cats의 refuge). 그것만 골라 단어로 세운 것이
+ * 이 덱이고, 출처는 여전히 본인 하이라이트다.
+ */
+export function cardsFromWordCards(words) {
+  return words.map((w) =>
+    createCard({
+      id: `card:${w.id}`,
+      type: 'expression',
+      front: w.term,
+      back: {
+        meaningKo: w.meaningKo,
+        definitionEn: w.definitionEn ?? null,
+        nuance: w.nuance ?? '',
+      },
+      context: w.context ?? null,
+      source: {
+        work: 'Before Sunrise',
+        chapter: w.chapter ?? null,
+        speaker: w.speaker ?? null,
+      },
+      extra: {
+        kind: 'word',
+        color: null,
+        origin: 'learner-highlight',
+        expressionId: w.fromExpressionId ?? null,
+        register: w.register ?? null,
+        deck: 'highlight',
+        priority: DECKS.highlight.priority,
+      },
+    })
+  )
+}
+
+/**
  * 본인 하이라이트를 카드로. 전량 넣는다 — 직접 고른 것이라
  * 걸러낼 이유가 없다.
  *

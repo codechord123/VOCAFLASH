@@ -1,16 +1,19 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { store } from './lib/store.js'
 import { deckStats, selectDueCards } from './lib/srs.js'
+import { filterByLevel } from './lib/level.js'
 import {
   cardsFromExpressions,
   cardsFromVocabNotes,
   cardsFromB2Words,
+  cardsFromWordCards,
 } from './lib/deck.js'
 
 // 앱을 켜자마자 필요한 것만 정적으로 싣는다. 매일 여는 화면은
 // 복습이고, 거기에 필요한 건 카드(localStorage)와 뜻풀이뿐이다.
 import expressionData from './data/expressions.json'
 import meaningData from './data/meanings.json'
+import wordCardData from './data/word-cards.json'
 
 // 원문과 챕터 해설(세 작품)은 읽기 탭에서만 쓴다.
 const loadReadingData = () =>
@@ -54,9 +57,9 @@ const TABS = [
 ]
 
 // 시드를 한 번만 넣기 위한 키. 시드 내용이 바뀌면 버전을 올린다.
-// v4: 시트 메모·B2 단어장 카드 복원. 이미 있는 카드(id 기준)는 진행을
-// 유지하고 없는 것만 추가한다.
-const SEED_ID = 'before-sunrise+sheet-vocab+b2.v4'
+// v5: 구문 하이라이트에서 단어 단위로 재추출한 카드를 더한다. 이미 있는
+// 카드(id 기준)는 진행을 유지하고 없는 것만 추가한다.
+const SEED_ID = 'before-sunrise+word-cards+sheet-vocab+b2.v5'
 
 export default function App() {
   const [tab, setTab] = useState('vocab')
@@ -88,6 +91,7 @@ export default function App() {
         const sentenceById = new Map(sentences.sentences.map((s) => [s.id, s]))
         const seeded = [
           ...cardsFromExpressions(expressionData.expressions, meanings),
+          ...cardsFromWordCards(wordCardData.words),
           ...cardsFromVocabNotes(
             sentences.vocabNotes,
             sentences.chatVocab,
@@ -143,9 +147,19 @@ export default function App() {
   )
 
   const stats = useMemo(() => deckStats(reviewCards), [reviewCards])
+  // 탭 배지는 단어 파트에서 실제로 넘길 카드 수와 같아야 한다. 단어
+  // 파트가 구문·기초 단어를 걸러내므로 배지도 같은 기준으로 센다 —
+  // 20이라 해놓고 열면 12장이 나오면 셈을 못 믿게 된다.
   const dueCount = useMemo(
-    () => selectDueCards(reviewCards, { limit: state.settings.dailyLimit }).length,
-    [reviewCards, state.settings.dailyLimit]
+    () =>
+      selectDueCards(
+        filterByLevel(reviewCards, {
+          hideBasic: state.settings.hideBasicWords !== false,
+          wordsOnly: true,
+        }),
+        { limit: state.settings.dailyLimit }
+      ).length,
+    [reviewCards, state.settings.dailyLimit, state.settings.hideBasicWords]
   )
 
   /** 저장과 화면 상태를 함께 갱신한다. 한쪽만 바뀌면 새로고침에 사라진다. */
