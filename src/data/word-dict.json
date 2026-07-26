@@ -1,6 +1,6 @@
 {
  "note": "읽기 화면 단어 팝업용. ko 뜻 · nuance 뉘앙스 · ctx 대본 문맥 · phr 관련 구문",
- "count": 1234,
+ "count": 1517,
  "words": {
   "ability": {
    "ko": "능력, (할 수 있는) 힘",
@@ -134,6 +134,16 @@
    "ch": 13,
    "from": "대본"
   },
+  "achievements": {
+   "ko": "성과, 이룬 것",
+   "en": "things accomplished",
+   "nuance": "achieve의 명사. 셀린은 큰 성과가 아니라 매일의 작은 일에 진짜 변화가 있다고 말한다.",
+   "ctx": "the true work of improving things",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "acoustic": {
    "ko": "어쿠스틱의, 전자 증폭을 쓰지 않는",
    "en": "(of an instrument) not electrically amplified",
@@ -165,6 +175,26 @@
    "who": "Jesse",
    "ch": 18,
    "from": "대본"
+  },
+  "admire": {
+   "ko": "감탄하다, 우러러보다",
+   "en": "respect greatly",
+   "nuance": "like보다 위를 향한다. admire A for B는 'B 때문에 A를 존경하다'라는 틀이다.",
+   "ctx": "They're trying to make a little bit more cash",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "admit": {
+   "ko": "인정하다, 시인하다",
+   "en": "confess; accept as true",
+   "nuance": "내키지 않는 것을 마지못해 받아들일 때 쓴다. I have to admit은 '솔직히 말하면'으로, 뒤에 자기에게 불리한 말이 온다는 신호다. accept와 달리 체면이 걸려 있다.",
+   "ctx": "when I look at my own life, I have to admit",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "admittedly": {
    "ko": "인정하건대, 나도 알지만",
@@ -201,6 +231,26 @@
    "who": "Gypsy",
    "ch": 9,
    "from": "유닛 9"
+  },
+  "adventurer": {
+   "ko": "모험가",
+   "en": "someone who seeks adventure",
+   "nuance": "adventure에 사람을 뜻하는 -er. 낭만적으로 쓰이지만, 맥락에 따라 '한몫 챙기려 뛰어드는 사람'이라는 부정적 색이 붙기도 한다.",
+   "ctx": "his great dream was to be a lover, an adventurer",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "advertisements": {
+   "ko": "광고",
+   "en": "adverts",
+   "nuance": "줄여서 ads. 영국은 advert도 쓴다. '살 것도 광고도 없었다'는 대사가 이 장면의 핵심이다.",
+   "ctx": "No advertisements anywhere.",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "advocacy": {
    "ko": "옹호, 지지",
@@ -318,6 +368,16 @@
     "dexterity"
    ]
   },
+  "agitates": {
+   "ko": "들쑤신다, 흔들어 놓는다",
+   "en": "stirs up",
+   "nuance": "물을 젓는 동작에서 온 말. 마음에 쓰면 '가라앉아 있던 것을 들쑤신다'는 그림이 살아난다.",
+   "ctx": "it just agitates another",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "aisle": {
    "ko": "(좌석 사이의) 통로",
    "en": "a passage between rows of seats",
@@ -376,6 +436,26 @@
    "who": "Jesse",
    "ch": 1,
    "from": "대본"
+  },
+  "altering": {
+   "ko": "바꾸는",
+   "en": "changing",
+   "nuance": "change보다 '조금 손질해 달라지게 한다'는 쪽이다. 옷을 수선할 때도 alter를 쓴다.",
+   "ctx": "each new sexual experience",
+   "who": "Jesse",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "alternated": {
+   "ko": "번갈아 오갔다",
+   "en": "switched back and forth",
+   "nuance": "alternate between A and B가 굳은 틀이다. 두 생각 사이를 왕복했다는 뜻으로, 하나를 고르지 못한 상태를 그린다.",
+   "ctx": "I actually alternated between thinking that",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "alternative": {
    "ko": "얼터너티브 (음악 장르); 대안의",
@@ -598,6 +678,16 @@
     "suite"
    ]
   },
+  "apocalypse": {
+   "ko": "종말, 대재앙",
+   "en": "the end of the world",
+   "nuance": "성서의 요한계시록에서 온 말. 농담으로 쓰면 '세상이 끝난다면' 같은 과장된 가정이 된다.",
+   "ctx": "What, like, if the apocalypse was coming?",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "apparently": {
    "ko": "보아하니, ~인 듯",
    "en": "based on what seems to be true rather than what is certain",
@@ -606,6 +696,16 @@
    "who": null,
    "ch": 9,
    "from": "대본"
+  },
+  "appear": {
+   "ko": "나타나다 / ~처럼 보이다",
+   "en": "come into view; seem",
+   "nuance": "물리적으로 나타나는 것과 '~해 보인다'(He appears tired)가 같은 단어다. 뒤에 형용사가 오면 후자다.",
+   "ctx": "They don't care if their name ever appear in the press.",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "appeasement": {
    "ko": "유화 정책",
@@ -620,6 +720,26 @@
     "conciliation",
     "pacification"
    ]
+  },
+  "application": {
+   "ko": "신청(서) / 응용",
+   "en": "a formal request; a use",
+   "nuance": "apply의 명사. 서류를 뜻하면 '신청서', 기술에 쓰면 '응용'이다. 요즘은 app(프로그램)의 본말로도 쓰인다.",
+   "ctx": "I called for an application to get a gun",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "appreciate": {
+   "ko": "제대로 알아보다, 고맙게 여기다",
+   "en": "value; be grateful for",
+   "nuance": "'감사하다'로만 외우면 절반이다. 본뜻은 '가치를 알아보다'라서, 나이 들며 무언가를 appreciate하게 된다는 말은 이제야 그 값을 안다는 뜻이다.",
+   "ctx": "I can appreciate things more now",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "apprenticeship": {
    "ko": "견습 기간",
@@ -670,6 +790,16 @@
    "who": "Jesse",
    "ch": 11,
    "from": "대본"
+  },
+  "approve": {
+   "ko": "찬성하다, 승인하다",
+   "en": "agree to or allow",
+   "nuance": "approve of ~는 '~을 좋게 보다', approve ~ (전치사 없이)는 '공식 승인하다'다. 전치사 하나가 격을 바꾼다.",
+   "ctx": "I went to Warsaw when it was still a strict Communist regime",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "arbitration": {
    "ko": "중재",
@@ -831,6 +961,16 @@
     "holding"
    ]
   },
+  "asshole": {
+   "ko": "(욕) 못된 놈",
+   "en": "(vulgar) a nasty person",
+   "nuance": "강한 욕이다. 셀린이 이론을 설명하다가 갑자기 이 말을 던져서 웃음이 나는 자리다. 영국에서는 arsehole.",
+   "ctx": "a petty, miserable asshole",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "assimilation": {
    "ko": "동화, 흡수",
    "en": null,
@@ -844,6 +984,36 @@
     "integration",
     "incorporation"
    ]
+  },
+  "associated": {
+   "ko": "연결된, 연상되는",
+   "en": "linked in the mind",
+   "nuance": "be associated with ~는 '~와 함께 떠오른다'. 기억이 왜 뒤엉키는지 설명하는 자리에 쓰인다.",
+   "ctx": "I had this image in my head that this really happened",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "assumed": {
+   "ko": "그런 줄 알았다, 짐작했다",
+   "en": "believed without proof",
+   "nuance": "확인하지 않고 그렇다고 여긴 것. I always assumed는 '줄곧 그렇게만 알고 있었다'는 뜻으로, 뒤에 사실은 아니었다는 반전이 온다.",
+   "ctx": "I always assumed you had forgotten me.",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "astrology": {
+   "ko": "점성술",
+   "en": "telling fortunes by the stars",
+   "nuance": "astronomy(천문학)와 혼동하기 쉽다. astrology는 별로 운을 보는 것, astronomy는 과학이다.",
+   "ctx": "I don't want to be one of those people that don't believe in any kind of magic",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "astronomy": {
    "ko": "천문학",
@@ -912,6 +1082,16 @@
    "ch": 2,
    "from": "유닛 1"
   },
+  "attuned": {
+   "ko": "민감하게 맞춰진",
+   "en": "sensitive and responsive to",
+   "nuance": "악기 조율(tune)에서 온 말. be attuned to ~는 '~을 잘 알아채다'로, 감각이 그쪽에 맞춰져 있다는 뜻이다.",
+   "ctx": "very attuned to everything",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "audience": {
    "ko": "관객, 청중",
    "en": "the group of people watching or listening to a performance",
@@ -920,6 +1100,16 @@
    "who": "Jesse",
    "ch": 19,
    "from": "유닛 4"
+  },
+  "autobiographical": {
+   "ko": "자전적인, 자기 이야기를 담은",
+   "en": "based on the writer's own life",
+   "nuance": "autobiography(자서전)의 형용사. 소설이 겉으로는 허구여도 작가의 삶이 배어 있을 때 쓴다. 이 영화의 첫 질문이자 마지막까지 남는 질문이다.",
+   "ctx": "Do you consider the book to be autobiographical?",
+   "who": "WOMAN",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "autocracy": {
    "ko": "독재 정치",
@@ -1003,6 +1193,16 @@
    "who": "Gypsy",
    "ch": 9,
    "from": "대본"
+  },
+  "awareness": {
+   "ko": "인식, 알고 있음",
+   "en": "knowing that something exists",
+   "nuance": "aware(알고 있는)의 명사. raise awareness는 '문제를 널리 알리다'로 사회 운동의 상용구다.",
+   "ctx": "there's more awareness out there, right?",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "awful": {
    "ko": "끔찍한, 못 견딜 만큼 나쁜",
@@ -1196,6 +1396,16 @@
     "have been raised"
    ]
   },
+  "behavior": {
+   "ko": "행동, 태도",
+   "en": "the way someone acts",
+   "nuance": "act는 한 번의 행동, behavior는 그 사람의 행동 방식 전체에 가깝다. 영국 철자는 behaviour.",
+   "ctx": "I called the police station and tried to explain",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "behaviorism": {
    "ko": "행동주의",
    "en": null,
@@ -1209,6 +1419,16 @@
     "N/A",
     "N/A"
    ]
+  },
+  "belief": {
+   "ko": "믿음",
+   "en": "something one accepts as true",
+   "nuance": "believe의 명사. faith(종교적 신앙)보다 넓어서 어떤 생각을 참으로 받아들이는 것 전체를 가리킨다.",
+   "ctx": "I was gonna be open to everything",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "belligerent": {
    "ko": "호전적인, 교전 중인",
@@ -1232,6 +1452,16 @@
    "who": null,
    "ch": 14,
    "from": "대본"
+  },
+  "bench": {
+   "ko": "벤치, 긴 의자",
+   "en": "a long seat",
+   "nuance": "공원의 긴 의자. 법정에서는 '판사석'을 뜻해 the bench가 사법부를 가리키기도 한다.",
+   "ctx": "Why not do it right there on a bench?",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "beside": {
    "ko": "~ 옆에, 곁에",
@@ -1403,6 +1633,16 @@
    "ch": 14,
    "from": "대본"
   },
+  "bitch": {
+   "ko": "(욕) 못된 여자",
+   "en": "(offensive) an unpleasant woman",
+   "nuance": "강한 욕이다. 여기서는 셀린이 소설 속 자기 자리를 스스로 비꼬아 부르는 자리라, 화가 아니라 자조에 가깝다.",
+   "ctx": "the French bitch didn't show up",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "blame": {
    "ko": "탓하다, ~의 잘못으로 돌리다",
    "en": "to hold someone responsible for something bad",
@@ -1442,6 +1682,16 @@
    "who": "Céline",
    "ch": 5,
    "from": "하이라이트"
+  },
+  "blew": {
+   "ko": "(blow의 과거) 불었다 / 날려버렸다",
+   "en": "past of blow",
+   "nuance": "blow off는 '약속을 바람 맞히다'. You blew the thing off는 '그 약속을 그냥 날려 버렸다'는 원망이다. blow it은 '망치다'.",
+   "ctx": "You blew the thing off",
+   "who": "Jesse",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "blind": {
    "ko": "(rob ... blind로) 탈탈 털어 가다; 눈먼",
@@ -1541,6 +1791,16 @@
     "security"
    ]
   },
+  "booming": {
+   "ko": "호황인, 급성장하는",
+   "en": "growing fast",
+   "nuance": "boom은 '쿵' 하는 큰 소리. 경제에 쓰면 갑자기 크게 잘된다는 뜻이라, 무기 산업에 붙으면 씁쓸한 비꼼이 된다.",
+   "ctx": "The weapon industry is booming.",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "booth": {
    "ko": "칸막이로 막힌 좁은 공간, 부스",
    "en": "a small enclosed compartment for one or a few people",
@@ -1549,6 +1809,16 @@
    "who": "Jesse",
    "ch": 6,
    "from": "하이라이트"
+  },
+  "boredom": {
+   "ko": "지루함",
+   "en": "the state of being bored",
+   "nuance": "bored(지루한)의 명사. 셀린은 지루함처럼 보였던 것이 실은 평온이었다고 뒤집는다.",
+   "ctx": "it could have seemed like boredom at first",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "boundary": {
    "ko": "경계",
@@ -1590,6 +1860,16 @@
    "who": null,
    "ch": 12,
    "from": "대본"
+  },
+  "brand": {
+   "ko": "상표, 브랜드",
+   "en": "a maker's name",
+   "nuance": "제품의 이름. what brand of ~는 '어느 회사 제품이냐'를 묻는 흔한 틀이다.",
+   "ctx": "I even remember what brand of condom we used",
+   "who": "Jesse",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "branding": {
    "ko": "브랜드화",
@@ -1678,6 +1958,16 @@
     "airing"
    ]
   },
+  "bucks": {
+   "ko": "달러 (구어)",
+   "en": "dollars",
+   "nuance": "미국 구어로 dollar 대신 쓴다. 2000 bucks는 '2천 달러'. 격식 있는 글에는 dollars를 쓴다.",
+   "ctx": "I owed my dad 2000 bucks.",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "buddy": {
    "ko": "친구, 친한 녀석",
    "en": "a friend (informal, chiefly American)",
@@ -1730,6 +2020,36 @@
    "who": "Jesse",
    "ch": 12,
    "from": "유닛 12"
+  },
+  "bummed": {
+   "ko": "속상한, 김빠진",
+   "en": "disappointed",
+   "nuance": "미국 구어. sad보다 가볍고 일시적이라 '아쉬웠다' 정도다. be bummed out으로도 쓴다.",
+   "ctx": "I was definitely bummed",
+   "who": "Céline",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "bumper": {
+   "ko": "(차의) 범퍼",
+   "en": "the bar at a car's end",
+   "nuance": "a bumper sticker는 차 뒤에 붙이는 문구 스티커. '그거 스티커로 만들어도 되겠다'는 말은 '표어처럼 그럴듯하다'는 농담 섞인 반응이다.",
+   "ctx": "Can I put that on a bumper sticker?",
+   "who": "Jesse",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "bunch": {
+   "ko": "다발, 무리, 한 떼",
+   "en": "a group of things or people",
+   "nuance": "a bunch of는 '한 무리의'로 아주 흔한 구어다. 뒤에 셀 수 있는 것이 오면 '여러 개', 사람이 오면 '떼거리' 같은 가벼운 뉘앙스가 붙는다.",
+   "ctx": "I've never been around a bunch of guns, or violence",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "bureaucracy": {
    "ko": "관료제",
@@ -1795,6 +2115,26 @@
     "bit part"
    ]
   },
+  "cancelled": {
+   "ko": "취소했다",
+   "en": "called off",
+   "nuance": "미국은 canceled, 영국은 cancelled로 철자가 갈린다. 뜻과 쓰임은 같다.",
+   "ctx": "So I cancelled my demand for the gun",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "cancer": {
+   "ko": "암",
+   "en": "a malignant disease",
+   "nuance": "그대로 옮기는 말이다. 앞뒤로 suicide와 나란히 놓여, 상대가 갑자기 진지해지자 걱정하는 물음이 된다.",
+   "ctx": "Are you okay? Do you have cancer?",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "canvas": {
    "ko": "캔버스",
    "en": null,
@@ -1831,6 +2171,16 @@
     "funds",
     "money"
    ]
+  },
+  "cappella": {
+   "ko": "아 카펠라 (반주 없이)",
+   "en": "unaccompanied singing",
+   "nuance": "이탈리아어에서 왔고 늘 a cappella로 함께 쓴다. 악기 없이 목소리만으로 부른다는 뜻이다.",
+   "ctx": "No, no, no. A cappella.",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "capture": {
    "ko": "(장면·느낌을) 담아내다; 포획하다",
@@ -1983,6 +2333,16 @@
     "heavenly"
    ]
   },
+  "cell": {
+   "ko": "휴대전화 / 세포 / 감방",
+   "en": "mobile phone; biological cell; prison room",
+   "nuance": "미국 구어에서 cell은 cell phone의 줄임이다. 문맥 없이 보면 세포나 감방으로 읽히니 주변을 봐야 한다.",
+   "ctx": "get your driver Philippe's card so that you can call",
+   "who": "Jesse",
+   "ch": 3,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "cemetery": {
    "ko": "공동묘지",
    "en": "a large burial ground, usually not attached to a church",
@@ -2014,6 +2374,36 @@
    "who": "Céline",
    "ch": 7,
    "from": "유닛 8"
+  },
+  "certain": {
+   "ko": "어떤 / 확실한",
+   "en": "particular; sure",
+   "nuance": "명사 앞이면 '어떤 특정한'(certain things), be certain이면 '확실하다'. 같은 단어가 두 방향으로 쓰인다.",
+   "ctx": "it's less painful to put certain things away",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "chemical": {
+   "ko": "화학의, 화학 물질",
+   "en": "relating to chemistry; a substance",
+   "nuance": "형용사와 명사가 같다. chemical weapons(화학 무기)처럼 붙으면 위험한 쪽을 가리키는 일이 많다.",
+   "ctx": "from clean water to chemical weapons",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "chicks": {
+   "ko": "(속어) 여자애들",
+   "en": "(slang) young women",
+   "nuance": "본뜻은 병아리. 여성을 가리키면 무례하게 들릴 수 있는 속어다. 제시가 아버지 말투를 흉내 내는 자리라 일부러 거칠게 쓴다.",
+   "ctx": "Who had warned me about French chicks",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "childhood": {
    "ko": "어린 시절, 유년기",
@@ -2176,6 +2566,16 @@
     "traditional"
    ]
   },
+  "clay": {
+   "ko": "점토, 진흙",
+   "en": "soft earth used for shaping",
+   "nuance": "빚어서 모양을 만드는 흙. 사람을 clay에 비유하면 '아직 굳지 않은, 만들어지는 중인 것'이 된다.",
+   "ctx": "we are the sum of all the moments of our lives",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "climate": {
    "ko": "기후",
    "en": null,
@@ -2259,6 +2659,16 @@
    "ch": 9,
    "from": "대본"
   },
+  "cock": {
+   "ko": "(속어) 남성 성기 / 수탉",
+   "en": "(vulgar) penis; a rooster",
+   "nuance": "본뜻은 수탉이지만 현대 구어에서는 거의 속어로만 쓰인다. 셀린이 일부러 거칠게 던져 제시를 당황시키는 대목이다.",
+   "ctx": "What do you mean, sucking cock?",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "codependency": {
    "ko": "상호 의존",
    "en": null,
@@ -2272,6 +2682,16 @@
     "interdependence",
     "unhealthy reliance"
    ]
+  },
+  "coffin": {
+   "ko": "관",
+   "en": "a box for burial",
+   "nuance": "미국에서는 casket도 쓴다. 셀린이 할머니의 장례를 말하는 자리라, 이 단어 하나로 장면이 정해진다.",
+   "ctx": "looking at her dead body in the coffin",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "cognition": {
    "ko": "인지",
@@ -2408,6 +2828,16 @@
     "trade-related"
    ]
   },
+  "commit": {
+   "ko": "저지르다 / 헌신하다",
+   "en": "carry out; pledge oneself",
+   "nuance": "commit suicide(자살하다), commit a crime(범죄를 저지르다)처럼 나쁜 일에 붙는가 하면, commit to ~는 '~에 전념하다'로 좋은 뜻이 된다.",
+   "ctx": "Are you gonna commit suicide?",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "commitment": {
    "ko": "(관계·일에 대한) 헌신, 매어 있기로 하는 약속",
    "en": "a promise or decision to be dedicated to something",
@@ -2416,6 +2846,16 @@
    "who": "Jesse",
    "ch": 14,
    "from": "유닛 11"
+  },
+  "communicate": {
+   "ko": "제대로 뜻을 나누다",
+   "en": "share meaning",
+   "nuance": "'말하다'가 아니라 '통하다'다. truly communicate는 이 영화 전체의 주제어라, 대화가 곧 사건인 이 영화의 마지막 장에서 나온다.",
+   "ctx": "to truly communicate with people is very rare",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "communication": {
    "ko": "소통",
@@ -2546,6 +2986,16 @@
    "ch": 19,
    "from": "유닛 4"
   },
+  "composite": {
+   "ko": "여럿을 합친 것, 합성물",
+   "en": "something made of several parts",
+   "nuance": "몽타주(범인 얼굴 합성)에도 쓰는 말. 소설 인물이 a composite of two people이라면 '두 사람을 섞어 만든 인물'이다.",
+   "ctx": "the book's really a composite of the two of you",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "compost": {
    "ko": "퇴비",
    "en": null,
@@ -2583,6 +3033,26 @@
    "ch": 13,
    "from": "대본"
   },
+  "concerned": {
+   "ko": "걱정하는 / 관련된",
+   "en": "worried; involved",
+   "nuance": "be concerned about은 '걱정하다', be concerned with는 '~을 다루다·관련되다'. 전치사 하나로 뜻이 갈린다.",
+   "ctx": "I was so concerned with that",
+   "who": "Jesse",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "concerns": {
+   "ko": "관심사, 걱정거리",
+   "en": "matters one cares about",
+   "nuance": "명사 복수로 쓰면 '무엇을 중요하게 여기는지'다. their concerns were pencils처럼 구체적인 것이 오면 대비가 살아난다.",
+   "ctx": "I was working for this organization that helped villages in Mexico",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "conclude": {
    "ko": "끝내다, 마무리하다",
    "en": null,
@@ -2600,6 +3070,16 @@
    "who": "Jesse",
    "ch": 9,
    "from": "하이라이트"
+  },
+  "condom": {
+   "ko": "콘돔",
+   "en": "a contraceptive sheath",
+   "nuance": "그대로 옮기는 말이다. 이 대사는 두 사람이 그날 밤을 서로 다르게 기억한다는 사실을 드러내는 장치로 쓰인다.",
+   "ctx": "You didn't have a condom",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "condominium": {
    "ko": "콘도미니엄",
@@ -2644,6 +3124,16 @@
    "who": "Céline",
    "ch": 12,
    "from": "유닛 12"
+  },
+  "confused": {
+   "ko": "혼란스러운, 갈피를 못 잡는",
+   "en": "unable to think clearly",
+   "nuance": "'헷갈린다'와 '마음이 뒤엉켜 있다'를 다 덮는다. 여기서는 왜 우는지조차 모르는 상태다.",
+   "ctx": "I was crying, so confused",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "congestion": {
    "ko": "혼잡",
@@ -2791,6 +3281,16 @@
    "ch": 8,
    "from": "유닛 5"
   },
+  "consider": {
+   "ko": "~로 여기다, 고려하다",
+   "en": "regard as; think about",
+   "nuance": "consider A (to be) B는 '판단해서 그렇게 본다'는 뜻이다. think of A as B보다 조금 격식 있고, 인터뷰 질문에 잘 쓰인다. '고려하다'로만 외우면 이 문장이 안 풀린다.",
+   "ctx": "Do you consider the book to be autobiographical?",
+   "who": "WOMAN",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "constant": {
    "ko": "끊임없는, 지겹도록 되풀이되는",
    "en": "happening again and again without stopping",
@@ -2850,6 +3350,16 @@
    "who": null,
    "ch": null,
    "from": "내 메모"
+  },
+  "consuming": {
+   "ko": "소비하는 / 집어삼키는",
+   "en": "using up; overwhelming",
+   "nuance": "consume은 먹고 쓰고 없애는 것. all-consuming처럼 쓰면 '온통 사로잡는'이라는 감정 쪽으로도 간다. 셀린은 뒤에서 consuming frenzy로 다시 꺼낸다.",
+   "ctx": "America's consuming all the world's resources",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "continuous": {
    "ko": "끊기지 않고 이어지는",
@@ -2946,6 +3456,16 @@
     "harmony"
    ]
   },
+  "cop": {
+   "ko": "경찰관 (구어)",
+   "en": "a police officer",
+   "nuance": "cops의 단수. a woman cop처럼 앞에 붙는 말로 성별·소속을 밝힌다.",
+   "ctx": "It was a man and a woman officer",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "coping": {
    "ko": "대처",
    "en": null,
@@ -2959,6 +3479,26 @@
     "handling",
     "managing"
    ]
+  },
+  "cops": {
+   "ko": "경찰 (구어)",
+   "en": "police officers",
+   "nuance": "police officer의 편한 말. 무례하진 않지만 공식 문서에는 쓰지 않는다. 단수는 cop.",
+   "ctx": "I heard some noise on my fire escape, so I called the cops",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "core": {
+   "ko": "핵심, 알맹이",
+   "en": "the central part",
+   "nuance": "과일의 심에서 온 말. at the core는 '근본적으로는'이라는 굳은 표현이다.",
+   "ctx": "the core and the way I was feeling things is exactly the same",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "corporate": {
    "ko": "회사의, 기업의",
@@ -3024,6 +3564,16 @@
     "hut",
     "cabin"
    ]
+  },
+  "cotton": {
+   "ko": "면, 목화",
+   "en": "the plant and its fibre",
+   "nuance": "옷감과 작물을 다 가리킨다. the cotton industry는 물을 많이 쓰는 산업이라 환경 이야기에 자주 등장한다.",
+   "ctx": "the cotton industry there is a major source of pollution",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "couture": {
    "ko": "고급 의상",
@@ -3314,6 +3864,16 @@
     "network protection"
    ]
   },
+  "cynic": {
+   "ko": "냉소적인 사람, 세상을 삐딱하게 보는 사람",
+   "en": "someone who doubts people's motives",
+   "nuance": "romantic의 반대편에 세우는 말. 나쁜 뜻만은 아니고 '사람은 결국 자기 이익대로 움직인다고 보는 쪽'이다. 제시가 자기 소설을 이 둘로 시험한다.",
+   "ctx": "It's a good test, if you're a romantic or a cynic.",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "dainty": {
    "ko": "우아한 까다로운",
    "en": null,
@@ -3352,6 +3912,16 @@
    "phr": [
     "deal with"
    ]
+  },
+  "dealing": {
+   "ko": "다루는, 감당하는",
+   "en": "handling",
+   "nuance": "deal with의 진행형. dealing with life는 '삶을 그럭저럭 헤쳐 가는 것'으로, 잘한다는 뜻은 아니다.",
+   "ctx": "I was dealing with life the same way",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "debt": {
    "ko": "빚",
@@ -3445,6 +4015,16 @@
     "respondent"
    ]
   },
+  "definitely": {
+   "ko": "분명히, 틀림없이",
+   "en": "certainly",
+   "nuance": "확신을 얹는 부사. 대답으로 Definitely!만 던지면 '완전 그렇지'라는 강한 동의가 된다. definitively(결정적으로)와 철자가 비슷해 자주 헷갈린다.",
+   "ctx": "I was definitely bummed",
+   "who": "Céline",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "deforestation": {
    "ko": "삼림 벌채",
    "en": null,
@@ -3467,6 +4047,16 @@
    "who": null,
    "ch": null,
    "from": "내 메모"
+  },
+  "delayed": {
+   "ko": "늦어진, 지연된",
+   "en": "made late",
+   "nuance": "교통편에 가장 많이 쓴다(The flight is delayed). 사람에게 쓰면 '사정이 생겨 늦었다'는 완곡한 설명이 된다.",
+   "ctx": "in case you'd been delayed",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "delegation": {
    "ko": "대표단 사절단",
@@ -3499,6 +4089,16 @@
    "who": "Poet",
    "ch": 12,
    "from": "유닛 12"
+  },
+  "demand": {
+   "ko": "요구 / 수요",
+   "en": "a strong request; market need",
+   "nuance": "요구면 '강하게 청하는 것', 경제에서는 '수요'(supply and demand)다. 셀린은 프랑스어 demande(신청)의 감각으로 '신청'에 가깝게 쓴다.",
+   "ctx": "I cancelled my demand for the gun",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "democracy": {
    "ko": "민주주의",
@@ -3560,6 +4160,26 @@
     "rule-based ethics"
    ]
   },
+  "deported": {
+   "ko": "추방당했다",
+   "en": "sent out of a country",
+   "nuance": "외국인이 강제로 본국으로 돌려보내지는 것. get deported가 흔한 짝이다. 비자 이야기와 늘 붙어 나온다.",
+   "ctx": "he thought you'd get deported?",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "depressed": {
+   "ko": "우울한, 의욕이 꺾인",
+   "en": "very unhappy",
+   "nuance": "sad보다 무겁고 오래간다. 임상 용어이기도 해서 가볍게 쓰면 어색할 때가 있다.",
+   "ctx": "he's totally depressed.",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "depressing": {
    "ko": "우울하게 만드는, 서글픈",
    "en": "making you feel sad and without hope",
@@ -3597,6 +4217,26 @@
     "barren land"
    ]
   },
+  "deserve": {
+   "ko": "받을 만하다",
+   "en": "be worthy of",
+   "nuance": "좋은 것과 나쁜 것 모두에 쓴다(He deserves it은 칭찬도 벌도 된다). 어조가 방향을 정한다.",
+   "ctx": "you feel like you deserve that new pair of shoes",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "designed": {
+   "ko": "설계된, 그렇게 만들어진",
+   "en": "made or intended for a purpose",
+   "nuance": "be designed to ~는 '~하도록 만들어져 있다'. 사람을 두고 쓰면 '타고나기를 그렇게 되어 있다'는 뜻이 되어 체념이 섞인다.",
+   "ctx": "designed to be slightly dissatisfied with everything",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "designer": {
    "ko": "디자이너",
    "en": null,
@@ -3610,6 +4250,26 @@
     "creator",
     "stylist"
    ]
+  },
+  "desire": {
+   "ko": "욕구, 갈망",
+   "en": "a strong wish",
+   "nuance": "want보다 크고 몸에 가깝다. greed와 달리 그 자체로 나쁘지 않아, 두 사람이 이 단어를 두고 다르게 판단한다.",
+   "ctx": "I satisfy one desire, and it just agitates another.",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "desires": {
+   "ko": "욕구들",
+   "en": "wishes",
+   "nuance": "복수로 쓰면 하나가 아니라 계속 생겨나는 여러 욕구를 가리킨다. 제시의 논지가 이 복수형에 담겨 있다.",
+   "ctx": "those ever-renewing desires",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "despite": {
    "ko": "~에도 불구하고",
@@ -3633,6 +4293,16 @@
     "target",
     "goal"
    ]
+  },
+  "detached": {
+   "ko": "거리를 둔, 초연한",
+   "en": "not emotionally involved",
+   "nuance": "붙어 있던 것이 떨어진 상태(detach). 사람에게 쓰면 '감정을 섞지 않는다'는 뜻으로, 칭찬도 비판도 될 수 있다.",
+   "ctx": "you're not detached from life",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "details": {
    "ko": "세부 사항들, 시시콜콜한 속내 (detail의 복수형)",
@@ -3669,6 +4339,16 @@
     "cleanse"
    ]
   },
+  "developing": {
+   "ko": "개발 중인, 발전하는",
+   "en": "growing; not yet industrialised",
+   "nuance": "developing nations는 '개발도상국'으로 굳은 표현이다. underdeveloped보다 정중한 말로 자리 잡았다.",
+   "ctx": "We're moving all our industry to developing nations",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "diagnosis": {
    "ko": "진단",
    "en": null,
@@ -3682,6 +4362,16 @@
     "assessment",
     "identification"
    ]
+  },
+  "dick": {
+   "ko": "(속어) 남성 성기 / 못된 놈",
+   "en": "(vulgar) penis; a jerk",
+   "nuance": "저속한 말이다. 사람을 두고 He's a dick이라 하면 '못된 놈'. 격식 있는 자리에서는 절대 쓰지 않는다.",
+   "ctx": "All right. Yeah, right, officially, yes",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "dickheads": {
    "ko": "이 개자식들아, 좆같은 놈들아 (dickhead의 복수형)",
@@ -3705,6 +4395,16 @@
     "instructive",
     "moralistic"
    ]
+  },
+  "diem": {
+   "ko": "(라틴어) 날",
+   "en": "day (Latin)",
+   "nuance": "per diem은 '하루 경비, 일당'이라는 굳은 표현이다. carpe diem의 그 diem이다. 홀로는 쓰지 않는다.",
+   "ctx": "I got a little per diem going on here",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "digitalization": {
    "ko": "디지털화",
@@ -3836,6 +4536,16 @@
     "sickness"
    ]
   },
+  "diseases": {
+   "ko": "질병",
+   "en": "illnesses",
+   "nuance": "illness는 아픈 상태, disease는 이름 붙은 병에 가깝다. water diseases는 '물로 옮는 병'이다.",
+   "ctx": "preventable water diseases",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "disgusting": {
    "ko": "역겨운, 정떨어지는",
    "en": "extremely unpleasant, causing a feeling of revulsion",
@@ -3844,6 +4554,26 @@
    "who": "Jesse",
    "ch": 5,
    "from": "유닛 4"
+  },
+  "dislike": {
+   "ko": "싫어하다, 싫음",
+   "en": "not like",
+   "nuance": "hate보다 약하고 점잖다. 명사로도 쓴다(likes and dislikes — 좋아하는 것과 싫어하는 것).",
+   "ctx": "what you like and dislike",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "disposition": {
+   "ko": "성향, 타고난 기질",
+   "en": "one's natural temperament",
+   "nuance": "mood(그때의 기분)와 달리 잘 바뀌지 않는 바탕이다. 뒤에 나오는 복권·사고 이야기가 바로 이 말을 증명하려는 예다.",
+   "ctx": "nothing much that happens to us changes our disposition",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "disruptive": {
    "ko": "혁신적인",
@@ -3858,6 +4588,16 @@
     "innovative",
     "groundbreaking"
    ]
+  },
+  "dissatisfied": {
+   "ko": "만족하지 못한",
+   "en": "not satisfied",
+   "nuance": "dis-는 부정. unsatisfied는 '아직 채워지지 않은'에 가깝고, dissatisfied는 '불만이 있는'이라 감정이 더 실린다.",
+   "ctx": "slightly dissatisfied with everything",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "disseminate": {
    "ko": "정보를 퍼뜨리다",
@@ -3890,6 +4630,16 @@
    "who": "Jesse",
    "ch": 2,
    "from": "유닛 7"
+  },
+  "disturbing": {
+   "ko": "불편한, 마음을 어지럽히는",
+   "en": "upsetting",
+   "nuance": "무서운 것이 아니라 '마음이 편치 않게 하는' 것이다. 셀린이 flattering과 나란히 놓아, 좋기도 하고 불편하기도 한 상태를 그린다.",
+   "ctx": "knowing that the character in the story is you",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "diversity": {
    "ko": "다양성",
@@ -3955,6 +4705,26 @@
    "ch": 13,
    "from": "대본"
   },
+  "dork": {
+   "ko": "얼간이, 맹한 사람",
+   "en": "a socially awkward person",
+   "nuance": "idiot보다 훨씬 부드럽고 애정이 섞인다. 자기를 두고 I was a total dork라고 하면 '내가 참 바보 같았다'는 자책 섞인 농담이다.",
+   "ctx": "I was a total dork.",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "downhill": {
+   "ko": "내리막의, 내려가는",
+   "en": "declining",
+   "nuance": "go downhill은 '나빠지다'. 운동에서는 '내리막이라 쉽다'는 좋은 뜻도 되지만, 인생에 쓰면 거의 늘 부정적이다.",
+   "ctx": "time goes faster and faster",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "downstream": {
    "ko": "물길 아래쪽으로, 하류로",
    "en": "in the direction in which a river flows",
@@ -3975,6 +4745,36 @@
    "phr": [
     "what a drag"
    ]
+  },
+  "dramatic": {
+   "ko": "극적인, 과장된",
+   "en": "exaggerated; striking",
+   "nuance": "연극(drama)에서 온 말. That's too dramatic은 '그건 좀 오버다'라는 뜻으로, 상대의 과장을 눌러 주는 말이다.",
+   "ctx": "No, that's too dramatic",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "drawers": {
+   "ko": "서랍",
+   "en": "sliding boxes in furniture",
+   "nuance": "draw(당기다)에서 온 말. 기억을 서랍에 넣어 둔다는 비유가 이 대사의 핵심이다.",
+   "ctx": "Sometime I put things in drawers inside my head",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "drummer": {
+   "ko": "드러머",
+   "en": "one who plays drums",
+   "nuance": "a drummer in a band처럼 in으로 소속을 밝힌다. 제시가 지나간 자기 밴드 이야기를 꺼내는 자리다.",
+   "ctx": "A drummer in a band.",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "drunk": {
    "ko": "술 취한",
@@ -4087,6 +4887,16 @@
     "environmental science"
    ]
   },
+  "economic": {
+   "ko": "경제의",
+   "en": "relating to the economy",
+   "nuance": "economical(절약하는)과 뜻이 다르다. economic interests는 '경제적 이익', economical car는 '기름을 덜 먹는 차'다.",
+   "ctx": "justify their economic interests",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "economy": {
    "ko": "경제",
    "en": null,
@@ -4142,6 +4952,16 @@
     "opinion piece",
     "commentary"
    ]
+  },
+  "educated": {
+   "ko": "교육받은, 배운",
+   "en": "having been taught",
+   "nuance": "학교 교육뿐 아니라 '알 만큼 아는' 상태를 가리킨다. an educated guess는 '근거 있는 짐작'이라는 굳은 짝이다.",
+   "ctx": "the world might be getting better because people like you are educated",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "effect": {
    "ko": "효과, 영향; (sound effect) 음향 효과",
@@ -4220,6 +5040,16 @@
     "vote",
     "ballot"
    ]
+  },
+  "elementary": {
+   "ko": "초등의, 기초의",
+   "en": "basic; primary (school)",
+   "nuance": "미국은 elementary school, 영국은 primary school이다. 기초적이라는 뜻으로도 쓴다(elementary mistake).",
+   "ctx": "She teaches elementary school.",
+   "who": "Jesse",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "eliminate": {
    "ko": "없애다, 제거하다",
@@ -4364,6 +5194,16 @@
     "at-risk"
    ]
   },
+  "endless": {
+   "ko": "끝없는",
+   "en": "having no end",
+   "nuance": "-less는 '없는'. 길이가 아니라 지겨움을 강조할 때 더 많이 쓴다 — endless conversation은 '끝도 없이 되풀이되는 이야기'다.",
+   "ctx": "having this endless conversation with friends",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "endurance": {
    "ko": "지구력",
    "en": null,
@@ -4433,6 +5273,26 @@
     "devotee"
    ]
   },
+  "entire": {
+   "ko": "전체의, 온",
+   "en": "whole",
+   "nuance": "whole과 뜻은 같지만 조금 격식 있다. an entire book은 '책 한 권을 통째로'라는 강조다.",
+   "ctx": "I didn't write an entire book, but I kept a journal",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "entitlement": {
+   "ko": "당연히 받을 자격, 그런 태도",
+   "en": "the belief one deserves something",
+   "nuance": "권리라는 중립적 뜻도 있지만, 요즘은 '자기가 당연히 누려야 한다고 여기는 태도'라는 비판으로 더 많이 쓴다.",
+   "ctx": "whenever you feel like you deserve that new pair of shoes",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "entree": {
    "ko": "메인 요리",
    "en": null,
@@ -4484,6 +5344,16 @@
    "ch": null,
    "from": "내 메모"
   },
+  "environmental": {
+   "ko": "환경의",
+   "en": "relating to the natural world",
+   "nuance": "environment의 형용사. an environmental organization은 '환경 단체'로, 셀린의 직업을 한 단어로 설명한다.",
+   "ctx": "It's an environmental organization.",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "environments": {
    "ko": "환경들 (environment의 복수)",
    "en": "the surroundings or conditions in which people live",
@@ -4529,6 +5399,16 @@
    "who": "Jesse",
    "ch": 2,
    "from": "유닛 10"
+  },
+  "equipped": {
+   "ko": "갖춘, 감당할 준비가 된",
+   "en": "having what is needed",
+   "nuance": "장비를 갖췄다는 본뜻에서 '능력이 되다'로 넘어갔다. be equipped to handle ~는 '~을 감당할 만하다'.",
+   "ctx": "my problems are deeper, but I'm more equipped to handle them",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "equity": {
    "ko": "자기 자본",
@@ -4613,6 +5493,16 @@
    "ch": 5,
    "from": "유닛 4"
   },
+  "eternity": {
+   "ko": "영원",
+   "en": "endless time",
+   "nuance": "eternal(영원한)의 명사. 구어에서는 It took an eternity처럼 '한없이 오래'라는 과장으로도 쓴다.",
+   "ctx": "in eternity or whatever",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "ethics": {
    "ko": "윤리",
    "en": null,
@@ -4655,6 +5545,16 @@
     "protocol"
    ]
   },
+  "euphoric": {
+   "ko": "황홀한, 들뜬",
+   "en": "intensely happy",
+   "nuance": "happy의 최대치로, 약이나 큰 성공 뒤의 들뜬 상태에 쓴다. 오래가지 않는다는 뜻이 은근히 깔린다.",
+   "ctx": "one extreme is gonna make you euphoric",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "eventually": {
    "ko": "결국에는, 시간이 지나면",
    "en": "in the end, especially after a long time",
@@ -4677,6 +5577,26 @@
     "development",
     "progression"
    ]
+  },
+  "evolves": {
+   "ko": "진화한다, 변해간다",
+   "en": "develops gradually",
+   "nuance": "evolve into ~는 '~로 변모하다'. 사람에게 쓰면 나이 들며 달라지는 과정을 가리킨다.",
+   "ctx": "the way a person evolves",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "evolving": {
+   "ko": "진화하는, 서서히 변해가는",
+   "en": "gradually developing",
+   "nuance": "생물의 진화에서 온 말이라 '천천히, 스스로' 변한다는 느낌이 있다. change보다 시간이 길고 방향이 있다.",
+   "ctx": "the world might be evolving the way a person evolves",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "exact": {
    "ko": "정확한, 바로 그",
@@ -4727,6 +5647,26 @@
    "who": null,
    "ch": 4,
    "from": "대본"
+  },
+  "exchanged": {
+   "ko": "주고받았다, 교환했다",
+   "en": "gave and received",
+   "nuance": "exchange phone numbers가 이 영화 전체를 움직이는 짝이다. 그 하나를 안 해서 9년이 지난다.",
+   "ctx": "we hadn't exchanged any phone numbers",
+   "who": "Céline",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "exchanges": {
+   "ko": "주고받는 말, 교류",
+   "en": "brief interactions",
+   "nuance": "명사 복수로 쓰면 '오가는 말'이다. 앞서 나온 exchanged(전화번호를 주고받다)와 같은 단어가 여기서는 대화를 가리킨다.",
+   "ctx": "Most of our day-to-day exchanges--",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "exchanging": {
    "ko": "주고받는 (exchange의 -ing형)",
@@ -4786,6 +5726,26 @@
    "who": "Céline",
    "ch": 4,
    "from": "대본"
+  },
+  "exist": {
+   "ko": "존재하다",
+   "en": "be real; be present",
+   "nuance": "doesn't exist anymore는 '이제는 없다'. 사람에게 쓰면 '살아만 있다'는 서늘한 뜻도 된다(just existing).",
+   "ctx": "band doesn't even exist anymore",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "expect": {
+   "ko": "기대하다, 예상하다",
+   "en": "think something will happen",
+   "nuance": "'바라다'가 아니라 '그렇게 될 줄로 안다'에 가깝다. hope와 달리 근거가 있는 예상이다.",
+   "ctx": "I can't realistically expect",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "expedition": {
    "ko": "탐험",
@@ -4956,6 +5916,26 @@
     "off-world"
    ]
   },
+  "extreme": {
+   "ko": "극단",
+   "en": "the furthest point",
+   "nuance": "명사와 형용사가 같다. one extreme ... the other는 '한쪽 극단과 다른 쪽'이라는 틀을 만든다.",
+   "ctx": "one extreme is gonna make you euphoric",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "extremely": {
+   "ko": "극도로, 무척",
+   "en": "very much",
+   "nuance": "very보다 강하다. 부정적인 것과 잘 붙어(extremely paranoid) 정도를 끝까지 밀어 준다.",
+   "ctx": "I'm extremely paranoid about my health",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "extrovert": {
    "ko": "외향적인 사람",
    "en": null,
@@ -4998,6 +5978,16 @@
     "frontage"
    ]
   },
+  "facial": {
+   "ko": "얼굴의",
+   "en": "of the face",
+   "nuance": "face의 형용사. facial expression(표정)이 가장 흔한 짝이다. 명사로 쓰면 '얼굴 관리(피부 시술)'가 된다.",
+   "ctx": "A facial expression, just like his daughter's",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "fade": {
    "ko": "차츰 사라지다, 잦아들다",
    "en": "to become gradually weaker or less clear",
@@ -5016,6 +6006,16 @@
    "ch": 2,
    "from": "대본"
   },
+  "fairly": {
+   "ko": "꽤 / 공정하게",
+   "en": "quite; justly",
+   "nuance": "정도를 재면 '꽤'(fairly recently — 꽤 최근에), 태도를 말하면 '공정하게'(treat him fairly)다. 같은 철자가 두 방향으로 쓰인다.",
+   "ctx": "until fairly recently",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "fairness": {
    "ko": "공정성",
    "en": null,
@@ -5029,6 +6029,16 @@
     "justice",
     "impartiality"
    ]
+  },
+  "familiar": {
+   "ko": "익숙한, 낯익은",
+   "en": "known from before",
+   "nuance": "familiar with는 '~을 잘 안다', familiar to는 '~에게 낯익다'로 전치사가 방향을 바꾼다. 사람에게 too familiar라고 하면 '지나치게 친한 척한다'는 무례를 뜻하기도 한다.",
+   "ctx": "it sounded vaguely familiar",
+   "who": "Céline",
+   "ch": 3,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "famine": {
    "ko": "기근",
@@ -5124,6 +6134,16 @@
    "ch": 8,
    "from": "유닛 5"
   },
+  "fatty": {
+   "ko": "뚱뚱한 사람 / 지방이 많은",
+   "en": "a fat person; greasy",
+   "nuance": "사람에게 쓰면 놀리는 말이다. 음식에 쓰면 fatty food(지방이 많은 음식)로 중립적이다.",
+   "ctx": "you thought I was a fatty",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "favor": {
    "ko": "호의, 부탁",
    "en": "a kind act that you do for someone",
@@ -5151,6 +6171,26 @@
    "ch": 4,
    "from": "대본"
   },
+  "fiction": {
+   "ko": "허구, 소설",
+   "en": "invented stories",
+   "nuance": "non-fiction의 반대. officially fiction은 '공식적으로는 소설'이라는 말장난으로, 실제로는 자기 이야기라는 뜻이 깔린다.",
+   "ctx": "It's officially fiction, right?",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "fictional": {
+   "ko": "허구의, 지어낸",
+   "en": "invented, not real",
+   "nuance": "fiction의 형용사. 실화 기반이 아니라는 표시로 쓰지만, 이 대화에서는 '어디까지가 허구냐'를 계속 흔든다.",
+   "ctx": "I wrote this whole fictional version",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "fifties": {
    "ko": "50 (여기서는 '50실링') — 집시의 서툰 영어",
    "en": "fifty (broken English for the price)",
@@ -5159,6 +6199,16 @@
    "who": null,
    "ch": null,
    "from": "대본"
+  },
+  "figure": {
+   "ko": "알아내다 / 인물 / 수치",
+   "en": "work out; a person; a number",
+   "nuance": "figure out이 '알아내다'로 가장 흔하다. 명사로는 '인물'(a public figure)이나 '수치'로 갈린다.",
+   "ctx": "it took me a while to figure out why I felt so different",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "figures": {
    "ko": "인물상, 그림 속 사람 형상 (figure의 복수)",
@@ -5195,6 +6245,16 @@
    "who": null,
    "ch": null,
    "from": "대본"
+  },
+  "firearms": {
+   "ko": "총기",
+   "en": "guns",
+   "nuance": "gun보다 격식 있는 법률·행정 용어다. 셀린이 총기 신청서를 쓰며 '총에 관심 없다'고 적는 대목의 아이러니가 이 단어에 걸려 있다.",
+   "ctx": "I have no interest in firearms whatsoever",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "first": {
    "ko": "처음 ~했을 때, 막 ~하자마자",
@@ -5265,6 +6325,26 @@
     "sea loch"
    ]
   },
+  "flattering": {
+   "ko": "기분 좋게 하는, 실제보다 좋게 보이는",
+   "en": "making someone look or feel good",
+   "nuance": "칭찬으로 들리게 하는 것. 사진이 flattering하면 '실물보다 잘 나왔다'는 뜻이라, 마냥 좋은 말만은 아니다.",
+   "ctx": "knowing that the character in the story is you",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "fleas": {
+   "ko": "벼룩",
+   "en": "small biting insects",
+   "nuance": "flea market(벼룩시장)의 그 벼룩. 개·고양이에게 붙는 것이라, 가게에 fleas가 있다는 말은 지저분하다는 농담이다.",
+   "ctx": "There's fleas, but, you know.",
+   "who": "Céline",
+   "ch": 3,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "flew": {
    "ko": "(flew into a rage) 버럭 화를 냈다 — fly의 과거형",
    "en": "past tense of fly; here, suddenly became furious",
@@ -5320,6 +6400,16 @@
    "who": "Céline",
    "ch": 12,
    "from": "대본"
+  },
+  "folding": {
+   "ko": "접히는, 접는",
+   "en": "bending over on itself",
+   "nuance": "fold(접다)의 진행형. 시간이 folding한다고 하면 서로 떨어진 두 순간이 접혀 맞닿는 그림이 된다.",
+   "ctx": "He's there in both moments, simultaneously",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "fool": {
    "ko": "(fool around) 바람피우다, 딴 사람과 놀아나다",
@@ -5392,6 +6482,16 @@
     "premonition",
     "prudence"
    ]
+  },
+  "forgettable": {
+   "ko": "잊을 만한, 인상에 안 남는",
+   "en": "easy to forget",
+   "nuance": "unforgettable(잊을 수 없는)의 반대. 사람에게 쓰면 상당히 서운한 말이라, 여기서도 원망이 실린다.",
+   "ctx": "Is it that forgettable?",
+   "who": "Jesse",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "forgiveness": {
    "ko": "용서",
@@ -5497,6 +6597,16 @@
    "ch": 13,
    "from": "대본"
   },
+  "freaked": {
+   "ko": "질렸다, 놀라 자빠졌다",
+   "en": "was very upset",
+   "nuance": "freak out이 굳은 짝으로 '패닉에 빠지다'. He freaked는 '완전히 당황했다'는 구어다.",
+   "ctx": "she started telling him",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "freedom": {
    "ko": "자유",
    "en": "the state of being able to act without being controlled",
@@ -5546,6 +6656,16 @@
     "goods"
    ]
   },
+  "frenzy": {
+   "ko": "광란, 들끓는 상태",
+   "en": "wild excitement",
+   "nuance": "제정신을 잃은 듯한 격렬함. consuming frenzy는 '끝없이 사들이는 광기'로, 앞서 나온 consuming을 다시 받는다.",
+   "ctx": "free from the \"consuming\" frenzy",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "friars": {
    "ko": "수도사들 (friar의 복수형)",
    "en": "members of a Catholic religious order, especially mendicant ones",
@@ -5554,6 +6674,16 @@
    "who": null,
    "ch": 9,
    "from": "대본"
+  },
+  "fries": {
+   "ko": "감자튀김",
+   "en": "fried potato strips",
+   "nuance": "Freedom fries는 2003년 미국이 프랑스에 반감을 보이며 French fries를 바꿔 부른 일을 가리킨다. 이 농담을 알아야 대사가 풀린다.",
+   "ctx": "one of those \"Freedom fries\" people",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "frighten": {
    "ko": "겁주다, 무섭게 하다",
@@ -5581,6 +6711,16 @@
    "who": null,
    "ch": 19,
    "from": "대본"
+  },
+  "fuel": {
+   "ko": "연료 / 불을 지피다",
+   "en": "energy source; to feed",
+   "nuance": "명사면 연료, 동사면 '~을 부추기다'(fuel a debate). 욕구가 삶의 fuel이라는 말은 그것이 사람을 움직인다는 뜻이다.",
+   "ctx": "desire's the fuel of life",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "fully": {
    "ko": "완전히, 제대로",
@@ -5613,6 +6753,26 @@
     "practical",
     "useful"
    ]
+  },
+  "funeral": {
+   "ko": "장례식",
+   "en": "a ceremony for someone who died",
+   "nuance": "go to a funeral이 굳은 짝이다. 이 대사가 이 영화의 가장 큰 사건을 한 단어로 지나간다 — 셀린이 그날 빈에 오지 못한 이유다.",
+   "ctx": "I had to go to the funeral",
+   "who": "Céline",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "further": {
+   "ko": "더 멀리 / 더 나아가",
+   "en": "at a greater distance; additionally",
+   "nuance": "거리에는 farther, 정도·추상에는 further를 쓰는 것이 원칙이지만 구어에서는 further가 둘 다 덮는다.",
+   "ctx": "There's one a little further... that I like.",
+   "who": "Céline",
+   "ch": 3,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "fusion": {
    "ko": "융합",
@@ -5678,6 +6838,16 @@
     "star system",
     "cosmic cluster"
    ]
+  },
+  "gang": {
+   "ko": "패거리, 갱단",
+   "en": "an organised group of criminals",
+   "nuance": "범죄 조직을 가리키지만, 친구 무리를 두고 the whole gang이라 하면 다정한 말이 된다.",
+   "ctx": "All the violence in the medias, gang murders",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "gastronomy": {
    "ko": "미식학",
@@ -5797,6 +6967,26 @@
    "ch": 9,
    "from": "대본"
   },
+  "ghosts": {
+   "ko": "유령",
+   "en": "spirits of the dead",
+   "nuance": "believe in ghosts처럼 in을 쓴다. 뒤의 spirits·astrology와 함께 '초자연적인 것을 믿느냐'는 화제를 만든다.",
+   "ctx": "Do you believe in, like, uh, ghosts?",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "gig": {
+   "ko": "일거리, 공연 한 건",
+   "en": "a job, especially a short one",
+   "nuance": "본래 음악인의 '공연 한 건'. 지금은 gig economy처럼 단기 일자리 전반을 가리킨다. 여기서는 그 두 뜻이 겹치는 농담이다.",
+   "ctx": "Just a couple hookers looking for a gig",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "gigantic": {
    "ko": "거대한, 어마어마한",
    "en": "extremely large",
@@ -5842,6 +7032,26 @@
     "worldwide integration",
     "internationalization"
    ]
+  },
+  "gloomy": {
+   "ko": "어두운, 침침한",
+   "en": "dark and depressing",
+   "nuance": "빛이 없는 상태와 마음이 가라앉은 상태를 함께 가리킨다. 도시에 쓰면 회색빛 풍경이 그려진다.",
+   "ctx": "The city was quite gloomy and gray",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "glowering": {
+   "ko": "험상궂게 노려보는",
+   "en": "staring angrily",
+   "nuance": "눈살을 찌푸리고 쏘아보는 표정. glow(빛나다)와 철자가 비슷하지만 뜻은 정반대로 어둡다.",
+   "ctx": "I expected them to be all glowering and stern",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "gonna": {
    "ko": "~할 거야 (going to의 구어 축약)",
@@ -5934,6 +7144,26 @@
    "ch": 15,
    "from": "대본"
   },
+  "greed": {
+   "ko": "탐욕",
+   "en": "excessive desire for more",
+   "nuance": "desire와 달리 늘 부정적이다. 뒤에서 이어지는 desire 이야기와 나란히 놓고 보면, 같은 욕구를 두 이름으로 부르는 셈이다.",
+   "ctx": "justify their economic interests",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "greedy": {
+   "ko": "욕심 많은",
+   "en": "wanting too much",
+   "nuance": "greed의 형용사. greedy to be more spiritual은 '더 영적이 되겠다고 욕심을 낸다'는 말장난으로, 스스로를 찌르는 농담이다.",
+   "ctx": "all greedy to be more spiritual",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "grim": {
    "ko": "엄한",
    "en": null,
@@ -5951,6 +7181,16 @@
    "who": "Céline",
    "ch": 7,
    "from": "하이라이트"
+  },
+  "grumpy": {
+   "ko": "심술난, 뿌루퉁한",
+   "en": "bad-tempered",
+   "nuance": "angry보다 가볍고 만성적이다. 아침에 기분이 안 좋은 사람에게 쓰는 정도라, 셀린이 파리 사람을 두고 쓰기에 딱 맞다.",
+   "ctx": "Parisians can be so grumpy, have you noticed?",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "guarantee": {
    "ko": "장담하다, 보장하다",
@@ -5972,6 +7212,26 @@
    "phr": [
     "lost or in pain, guilt, looking for some kind of answers"
    ]
+  },
+  "gulag": {
+   "ko": "굴라크, 강제 수용소",
+   "en": "a Soviet labour camp",
+   "nuance": "소련의 강제 노동 수용소. 농담으로 I'll send you to a gulag라고 하면 '너 혼 좀 나야겠다'는 과장된 협박이다.",
+   "ctx": "I'll send you to a gulag.",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "gunshot": {
+   "ko": "총상, 총소리",
+   "en": "the firing of a gun",
+   "nuance": "a gunshot wound는 '총상'으로 굳은 짝이다. 총소리 자체를 뜻하기도 한다.",
+   "ctx": "What, like a gunshot wound?",
+   "who": "Jesse",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "gypsy": {
    "ko": "집시 (여기서는 손금 봐주는 점쟁이)",
@@ -5995,6 +7255,16 @@
     "environment",
     "dwelling"
    ]
+  },
+  "habits": {
+   "ko": "습관",
+   "en": "regular behaviours",
+   "nuance": "생각 없이 되풀이하는 행동. 셀린은 습관에서 떨어져 있던 2주가 자기를 바꿨다고 말한다.",
+   "ctx": "I had spent the last two weeks away from most of my habits",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "handle": {
    "ko": "감당하다, 잘 받아넘기다",
@@ -6283,6 +7553,16 @@
    "ch": 11,
    "from": "대본"
   },
+  "hookers": {
+   "ko": "매춘부",
+   "en": "prostitutes",
+   "nuance": "비속어다. 중립적으로는 sex worker를 쓴다. 제시는 그날 밤 거리에 남아 있던 사람들을 가볍게 지나가듯 말한다.",
+   "ctx": "Just a couple hookers looking for a gig",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "hooves": {
    "ko": "발굽들 (hoof의 복수형)",
    "en": "the hard feet of animals such as cows and horses (plural of hoof)",
@@ -6291,6 +7571,36 @@
    "who": "Man with tie",
    "ch": 4,
    "from": "대본"
+  },
+  "hopeful": {
+   "ko": "희망적인, 기대를 품은",
+   "en": "having hope",
+   "nuance": "-ful은 '가득한'. make it more hopeful은 '결말을 더 희망적으로 바꿨다'는 뜻으로, 소설과 현실이 갈리는 자리다.",
+   "ctx": "I made it more hopeful.",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "hops": {
+   "ko": "폴짝 뛰다, 뛰어오르다",
+   "en": "jumps lightly",
+   "nuance": "한 발로 가볍게 뛰는 동작. 아이가 hop한다고 하면 무게 없이 통통 튀는 그림이 된다. 큰 도약은 jump나 leap이다.",
+   "ctx": "his little 5-year-old daughter hops up",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "horny": {
+   "ko": "성욕이 오른",
+   "en": "sexually aroused",
+   "nuance": "직설적인 구어다. 프랑스 남자 이야기 중에 나오는 농담이라 가벼운 어조지만, 공식적인 자리에서는 쓰지 않는다.",
+   "ctx": "They're not as horny.",
+   "who": "Jesse",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "horoscope": {
    "ko": "별자리 운세",
@@ -6356,6 +7666,16 @@
     "nexus"
    ]
   },
+  "huckster": {
+   "ko": "떠벌리며 파는 사람, 장사꾼",
+   "en": "a pushy salesman",
+   "nuance": "물건을 억지로 밀어 파는 사람. 제시가 책 홍보 여행을 두고 자기를 그렇게 부르는 자조다.",
+   "ctx": "I'm tired of being a huckster.",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "humanitarian": {
    "ko": "인도주의적인",
    "en": null,
@@ -6387,6 +7707,16 @@
    "who": null,
    "ch": null,
    "from": "내 메모"
+  },
+  "hustle": {
+   "ko": "억지로 밀어붙이다, 등쳐먹다",
+   "en": "pressure or swindle",
+   "nuance": "빨리 움직인다는 뜻도 있지만, 사람을 상대로 쓰면 '수를 써서 뭔가를 얻어내다'다. 앞서 나온 huckster와 같은 결이다.",
+   "ctx": "they weren't trying to hustle anybody",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "hydration": {
    "ko": "수분 공급",
@@ -6495,6 +7825,36 @@
     "primitive self"
    ]
   },
+  "idealist": {
+   "ko": "이상주의자",
+   "en": "one guided by ideals",
+   "nuance": "realist의 반대. 비난도 칭찬도 될 수 있는 말이라, 셀린은 여기서 젊은 시절의 자기를 가리키며 조금 씁쓸하게 쓴다.",
+   "ctx": "come into it with big idealist visions",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "idealized": {
+   "ko": "이상적으로 그렸다, 실제보다 아름답게 만들었다",
+   "en": "made something seem perfect",
+   "nuance": "ideal(이상)의 동사형. 기억을 idealize한다는 말은 '실제보다 좋게 다듬어 기억한다'는 뜻으로, 이 영화 내내 두 사람이 다투는 지점이다.",
+   "ctx": "I thought you idealized the night of it.",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "idealizing": {
+   "ko": "이상적으로 그리는",
+   "en": "making seem perfect",
+   "nuance": "앞에서 나온 idealized의 진행형. 두 사람이 서로를 두고 이 말을 주고받는 것이 이 영화의 다툼이다.",
+   "ctx": "That's what I meant, you idealizing",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "identity": {
    "ko": "정체성",
    "en": null,
@@ -6537,6 +7897,16 @@
     "representation"
    ]
   },
+  "immediate": {
+   "ko": "즉각적인, 바로 눈앞의",
+   "en": "happening at once; nearest",
+   "nuance": "시간에 쓰면 '즉시', 공간에 쓰면 '바로 인접한'(immediate family — 직계 가족). 여기서는 감각이 더 생생하다는 뜻이다.",
+   "ctx": "it feels more immediate",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "imminent": {
    "ko": "임박한",
    "en": null,
@@ -6565,6 +7935,16 @@
     "protection"
    ]
   },
+  "imperialist": {
+   "ko": "제국주의의, 제국주의자",
+   "en": "supporting empire-building",
+   "nuance": "다른 나라를 지배해 이익을 얻으려는 태도. 셀린이 미국을 겨눠 쓰고, 제시가 Frenchie로 되받는 자리다.",
+   "ctx": "Is there any particular imperialist country you have in mind",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "impression": {
    "ko": "(마음에 남는) 인상, 느낌",
    "en": "an effect or feeling that stays in your mind",
@@ -6591,6 +7971,16 @@
    "who": "Céline",
    "ch": 5,
    "from": "유닛 4"
+  },
+  "improving": {
+   "ko": "나아지는",
+   "en": "getting better",
+   "nuance": "Am I improving?는 '나는 나아지고 있나'. 실력·건강·상황 모두에 쓴다. 뒤에 오는 대답이 이 장면의 핵심이다.",
+   "ctx": "Am I improving? I don't know.",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "inaudible": {
    "ko": "들리지 않는, 알아들을 수 없는",
@@ -6679,6 +8069,16 @@
    "ch": 13,
    "from": "대본"
   },
+  "industry": {
+   "ko": "산업, 업계",
+   "en": "a branch of business",
+   "nuance": "the film industry처럼 '~업계'로도 쓴다. 셀 수 없게 쓰면 '근면'이라는 옛 뜻도 있지만 요즘은 드물다.",
+   "ctx": "the cotton industry there is a major source of pollution",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "inequality": {
    "ko": "불평등",
    "en": null,
@@ -6706,6 +8106,16 @@
     "price increase",
     "rising cost"
    ]
+  },
+  "inflict": {
+   "ko": "(고통을) 안기다, 떠안기다",
+   "en": "impose something unwelcome",
+   "nuance": "inflict A on B가 굳은 틀로 'B에게 A를 안기다'. 언제나 원치 않는 것을 준다는 뜻이라, 자기 이야기를 두고 쓰면 겸양이 된다.",
+   "ctx": "I don't want to inflict that on you",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "influencer": {
    "ko": "인플루언서",
@@ -6763,6 +8173,16 @@
     "element"
    ]
   },
+  "innate": {
+   "ko": "타고난",
+   "en": "present from birth",
+   "nuance": "배워서 얻은 것이 아니라 처음부터 가진 것. natural보다 학술적이라, 사람의 성향을 논할 때 쓴다.",
+   "ctx": "we just have an innate disposition",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "innovate": {
    "ko": "혁신하다",
    "en": null,
@@ -6818,6 +8238,16 @@
    "ch": 19,
    "from": "하이라이트"
   },
+  "insecurity": {
+   "ko": "불안, 자신 없음",
+   "en": "lack of confidence",
+   "nuance": "안전(security)의 부정이지만 사람에게 쓰면 '자기 확신이 없는 상태'다. 젊을 때 더 심했다는 제시의 자기 진단이다.",
+   "ctx": "I was wracked with insecurity",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "inspiration": {
    "ko": "영감",
    "en": null,
@@ -6840,6 +8270,16 @@
    "who": "Jesse",
    "ch": 2,
    "from": "대본"
+  },
+  "instant": {
+   "ko": "순간 / 즉석의",
+   "en": "a moment; immediate",
+   "nuance": "명사면 '한순간', 형용사면 '즉석의'(instant coffee). for an instant는 moment보다 더 짧게 느껴진다.",
+   "ctx": "He's there in both moments, simultaneously",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "insulation": {
    "ko": "단열",
@@ -6966,6 +8406,16 @@
    "ch": 13,
    "from": "하이라이트"
   },
+  "intrigue": {
+   "ko": "암투, 음모 / 흥미를 끌다",
+   "en": "secret scheming; (verb) to fascinate",
+   "nuance": "명사면 '뒤에서 벌어지는 권력 다툼', 동사면 '흥미를 끌다'로 뜻이 완전히 갈린다. It intrigues me는 '흥미롭다'이지 음모가 아니다. 앞뒤 자리를 보고 판단해야 한다.",
+   "ctx": "No...political intrigue, or helicopter crash",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "introspection": {
    "ko": "자기 성찰",
    "en": null,
@@ -7026,6 +8476,16 @@
     "funding"
    ]
   },
+  "irrevocably": {
+   "ko": "돌이킬 수 없게",
+   "en": "in a way that cannot be undone",
+   "nuance": "re-voke(불러들이다)에 부정이 붙어 '되돌릴 수 없이'. 법률 문서에 흔한 무거운 부사라, 일상 대화에 쓰면 그만큼 힘이 실린다.",
+   "ctx": "everything is irrevocably screwed",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "issue": {
    "ko": "문제, 사안",
    "en": "an important topic or matter for discussion",
@@ -7034,6 +8494,16 @@
    "who": "Jesse",
    "ch": 5,
    "from": "대본"
+  },
+  "issues": {
+   "ko": "문제, 사안",
+   "en": "problems or topics",
+   "nuance": "problem보다 중립적이라 정책·사회 문제에 잘 쓴다. 사람에게 have issues라고 하면 '문제가 좀 있다'는 완곡한 비판이 된다.",
+   "ctx": "we basically work on different environment issues",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "itinerary": {
    "ko": "여행 일정",
@@ -7090,6 +8560,16 @@
    "ch": null,
    "from": "내 메모"
   },
+  "journal": {
+   "ko": "일기, 기록 / 학술지",
+   "en": "a diary; an academic periodical",
+   "nuance": "diary보다 '생각을 적는 노트'라는 느낌이 강하다. 학문에서는 학술지를 뜻해 뜻이 크게 갈린다.",
+   "ctx": "I was writing a lot more in my journal",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "journalism": {
    "ko": "저널리즘, 언론",
    "en": null,
@@ -7112,6 +8592,16 @@
    "who": "Gypsy",
    "ch": 9,
    "from": "유닛 9"
+  },
+  "jovial": {
+   "ko": "유쾌한, 사람 좋은",
+   "en": "cheerful and friendly",
+   "nuance": "로마 신 Jove(유피테르)에서 온 말. happy보다 사교적이고 웃음이 많은 성격을 가리킨다.",
+   "ctx": "if they were basically an optimistic, jovial person",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "judging": {
    "ko": "재단하는, 함부로 평가하는",
@@ -7158,6 +8648,16 @@
    "who": "Céline",
    "ch": 14,
    "from": "유닛 5"
+  },
+  "keyhole": {
+   "ko": "열쇠 구멍",
+   "en": "the hole in a lock",
+   "nuance": "뜻은 쉬운데 여기서는 비유다. 누구나 자기 몫의 좁은 구멍으로만 세상을 본다는 말. 관찰의 한계를 말할 때 영어가 즐겨 쓰는 그림이다.",
+   "ctx": "we all see the world through our own... tiny keyhole",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "kidding": {
    "ko": "농담하는",
@@ -7303,6 +8803,16 @@
    "who": "Céline",
    "ch": 8,
    "from": "대본"
+  },
+  "latest": {
+   "ko": "가장 늦은 / 최신의",
+   "en": "most recent; furthest in time",
+   "nuance": "at the latest는 '늦어도 ~까지'로 시간 약속에 쓴다. the latest news는 '최신 소식'이라 같은 단어가 두 방향으로 쓰인다.",
+   "ctx": "7:30 at the very latest",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "latitude": {
    "ko": "위도",
@@ -7537,6 +9047,16 @@
    "ch": 4,
    "from": "대본"
   },
+  "liberate": {
+   "ko": "해방시키다",
+   "en": "set free",
+   "nuance": "liberty(자유)에서 왔다. free보다 격식 있고 정치적 색이 있어, 명상 이야기에 쓰면 조금 거창한 어감이 된다.",
+   "ctx": "liberate yourself from desire",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "lie": {
    "ko": "거짓말하다; (명사) 거짓말",
    "en": "to say something untrue; an untrue statement",
@@ -7656,6 +9176,16 @@
     "influence"
    ]
   },
+  "lobster": {
+   "ko": "바닷가재",
+   "en": "a large sea crustacean",
+   "nuance": "서양에서 비싼 음식의 상징이라, 목록에 끼면 '호화로운 삶'을 한 단어로 그리는 장치가 된다.",
+   "ctx": "his great dream was to be a lover, an adventurer",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "locker": {
    "ko": "물품 보관함",
    "en": "a lockable storage compartment in a public place",
@@ -7678,6 +9208,16 @@
     "stay",
     "reside"
    ]
+  },
+  "loft": {
+   "ko": "복층 공간, 로프트",
+   "en": "an open upper floor or apartment",
+   "nuance": "창고를 개조한 천장 높은 집을 가리키기도 한다. 뉴욕·파리 이야기에 나오면 대개 그 뜻이다.",
+   "ctx": "They got a loft upstairs.",
+   "who": "Jesse",
+   "ch": 3,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "logistics": {
    "ko": "물류",
@@ -7716,6 +9256,16 @@
    "ch": 3,
    "from": "유닛 8"
   },
+  "lottery": {
+   "ko": "복권",
+   "en": "a game of chance for money",
+   "nuance": "win the lottery가 굳은 짝이다. '인생이 뒤집히는 사건'의 대표 예로 자주 등장한다.",
+   "ctx": "they followed people who'd won the lottery",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "loudspeaker": {
    "ko": "확성기, (역내) 스피커",
    "en": "a device that makes sound louder for a crowd",
@@ -7745,6 +9295,16 @@
    "phr": [
     "You know, they love me more than anything in the world, and I have been raised with all the freedom they"
    ]
+  },
+  "lover": {
+   "ko": "연인 / (무엇을) 아주 좋아하는 사람",
+   "en": "romantic partner; enthusiast",
+   "nuance": "한국어 '애인'보다 육체적 관계가 더 앞선다. a lover of music처럼 뒤에 of가 붙으면 '애호가'로 뜻이 완전히 달라진다.",
+   "ctx": "his great dream was to be a lover, an adventurer",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "lower": {
    "ko": "더 낮은, 아래쪽의 (low의 비교급)",
@@ -7790,6 +9350,16 @@
     "drive someone mad"
    ]
   },
+  "madness": {
+   "ko": "미친 짓, 광기",
+   "en": "insanity; foolishness",
+   "nuance": "It's madness는 '말도 안 되는 짓이다'. 병리적 의미보다 '제정신이 아닌 계획'이라는 감탄으로 더 자주 쓴다.",
+   "ctx": "It's madness. Let's just go on this garden path.",
+   "who": "Céline",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "magical": {
    "ko": "마법 같은, 홀린 듯 아름다운",
    "en": "wonderful and exciting in a way that seems unreal",
@@ -7812,6 +9382,16 @@
     "popular",
     "conventional"
    ]
+  },
+  "major": {
+   "ko": "주요한, 큰 / 전공",
+   "en": "important; field of study",
+   "nuance": "형용사면 '주요한', 명사면 '전공'(미국 대학). major in ~은 '~을 전공하다'로 동사로도 쓴다.",
+   "ctx": "a major source of pollution",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "managed": {
    "ko": "용케 해냈다, ~하는 데 성공했다",
@@ -7872,6 +9452,16 @@
     "endurance run"
    ]
   },
+  "marble": {
+   "ko": "대리석 / 구슬",
+   "en": "stone used for statues; a glass ball",
+   "nuance": "두 뜻이 같은 철자를 쓴다. 조각·바닥이면 대리석, 아이들 놀이면 구슬이다. lose your marbles는 '정신이 나가다'라는 관용구.",
+   "ctx": "his great dream was to be a lover, an adventurer",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "market": {
    "ko": "시장",
    "en": null,
@@ -7922,6 +9512,16 @@
    "who": "Jesse",
    "ch": 14,
    "from": "유닛 11"
+  },
+  "matter": {
+   "ko": "중요하다 / 문제, 사안",
+   "en": "be important; an issue",
+   "nuance": "동사면 '중요하다'(It doesn't matter — 상관없어), 명사면 '문제·사안'이다. 회화에서는 동사 쪽이 압도적으로 흔하다.",
+   "ctx": "Doesn't matter, because what he wants...",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "matters": {
    "ko": "중요하다 (동사 matter의 3인칭 단수)",
@@ -7989,6 +9589,16 @@
    "who": "Céline",
    "ch": 5,
    "from": "유닛 4"
+  },
+  "medias": {
+   "ko": "매체 (media를 복수처럼 쓴 형태)",
+   "en": "the media",
+   "nuance": "표준 영어에서는 media 자체가 복수라 medias라고 하지 않는다. 프랑스어 화자인 셀린의 말버릇이 드러나는 자리다.",
+   "ctx": "All the violence in the medias",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "mediation": {
    "ko": "중재",
@@ -8105,6 +9715,26 @@
     "acquisition",
     "consolidation"
    ]
+  },
+  "mess": {
+   "ko": "엉망, 난장판",
+   "en": "a disordered state",
+   "nuance": "물리적 어지러움과 상황의 혼란을 다 가리킨다. I'm a mess는 '내가 지금 엉망이다'라는 감정 상태다.",
+   "ctx": "I know your book is selling, which is great",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "messing": {
+   "ko": "장난치는, 놀리는",
+   "en": "joking or interfering",
+   "nuance": "mess with someone은 '놀리다, 건드리다'. You're messing with me는 '지금 나 놀리는 거지'라는 뜻이다.",
+   "ctx": "No, you're messing with me now.",
+   "who": "Jesse",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "metabolism": {
    "ko": "신진대사",
@@ -8263,6 +9893,16 @@
     "uncluttered"
    ]
   },
+  "miserable": {
+   "ko": "비참한, 늘 불행한",
+   "en": "very unhappy",
+   "nuance": "자기 기분이 그렇다는 뜻도 되고, 남을 두고 쓰면 '주변까지 힘들게 하는 사람'이 된다. 여기서는 후자다.",
+   "ctx": "a petty, miserable asshole",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "misinformation": {
    "ko": "잘못된 정보",
    "en": null,
@@ -8318,6 +9958,16 @@
    "ch": 12,
    "from": "대본"
   },
+  "monasteries": {
+   "ko": "수도원",
+   "en": "places where monks live",
+   "nuance": "monk가 사는 곳. 여성 수도원은 convent다. 단수는 monastery.",
+   "ctx": "he went to Asia to visit some of those monasteries",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "monastery": {
    "ko": "수도원",
    "en": "a building where monks live and work",
@@ -8326,6 +9976,26 @@
    "who": "Jesse",
    "ch": 13,
    "from": "대본"
+  },
+  "monk": {
+   "ko": "수도승",
+   "en": "a male religious devotee",
+   "nuance": "monks의 단수. 셀린이 아는 사람 이야기를 꺼내며 앞의 제시 이야기를 받아치는 자리다.",
+   "ctx": "each time he went to one of those monasteries",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "monks": {
+   "ko": "수도승",
+   "en": "male religious devotees",
+   "nuance": "여성은 nun. 절·수도원에서 규율을 지키며 사는 사람이다. 제시가 아시아 여행 이야기를 꺼내는 자리다.",
+   "ctx": "Have you ever spent any time with monks or nuns?",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "monopoly": {
    "ko": "독점",
@@ -8349,6 +10019,16 @@
    "who": null,
    "ch": 23,
    "from": "대본"
+  },
+  "mood": {
+   "ko": "기분, 분위기",
+   "en": "a state of feeling",
+   "nuance": "사람의 기분과 장소의 분위기를 다 가리킨다. be in the mood for ~는 '~할 기분이다'.",
+   "ctx": "the overall good mood people have there",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "morality": {
    "ko": "도덕성",
@@ -8442,6 +10122,56 @@
    "ch": 2,
    "from": "하이라이트"
   },
+  "murders": {
+   "ko": "살인",
+   "en": "killings",
+   "nuance": "kill은 죽이는 행위 전체, murder는 고의로 사람을 죽인 범죄다. 법률에서 정확히 갈라 쓰는 말이다.",
+   "ctx": "gang murders, serial killers",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "mystery": {
+   "ko": "신비, 알 수 없는 것",
+   "en": "something unexplained",
+   "nuance": "추리 소설의 '미스터리'와 같은 말이지만, 여기서는 '설명되지 않는 무엇'이라는 넓은 뜻이다.",
+   "ctx": "If you don't believe in any kind of magic or mystery",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "mystical": {
+   "ko": "신비로운, 영적인",
+   "en": "spiritually mysterious",
+   "nuance": "mystery의 형용사. 종교적·영적 색이 있어, 과학으로 설명되지 않는 느낌을 가리킨다.",
+   "ctx": "I've always felt there was some kind of mystical connection",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "naive": {
+   "ko": "순진한, 세상을 모르는",
+   "en": "innocently trusting",
+   "nuance": "칭찬이 아니라 대개 비판이다. 셀린은 젊었던 자기를 두고 hopeful과 나란히 놓아, 좋기도 하고 어리기도 했다는 두 뜻을 함께 쓴다.",
+   "ctx": "I was much more hopeful and naive",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "naked": {
+   "ko": "벌거벗은",
+   "en": "wearing nothing",
+   "nuance": "nude는 예술적·완곡, naked는 직설적이다. the naked truth처럼 '가리지 않은'이라는 비유로도 쓴다.",
+   "ctx": "I'd have to see you naked.",
+   "who": "Jesse",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "nanotechnology": {
    "ko": "나노 기술",
    "en": null,
@@ -8470,6 +10200,16 @@
     "tale"
    ]
   },
+  "nations": {
+   "ko": "국가, 나라",
+   "en": "countries",
+   "nuance": "country보다 격식 있고, 국민 공동체라는 뜻이 강하다. the United Nations의 그 nation이다.",
+   "ctx": "We're moving all our industry to developing nations",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "navigation": {
    "ko": "항해",
    "en": null,
@@ -8483,6 +10223,16 @@
     "direction",
     "guidance"
    ]
+  },
+  "nearby": {
+   "ko": "가까이에 있는",
+   "en": "close by",
+   "nuance": "near는 전치사로도 쓰지만 nearby는 홀로 서는 형용사·부사다(Is it nearby?).",
+   "ctx": "is that street nearby?",
+   "who": "Jesse",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "neat": {
    "ko": "멋진, 근사한",
@@ -8575,6 +10325,16 @@
     "mingling"
    ]
   },
+  "neurotic": {
+   "ko": "예민한, 신경이 곤두선",
+   "en": "anxious and obsessive",
+   "nuance": "임상 용어에서 왔지만 일상에서는 '사소한 것에 지나치게 예민한' 정도로 가볍게 쓴다. 자기를 두고 쓰면 자조가 된다.",
+   "ctx": "Uh, a little bit neurotic.",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "newscaster": {
    "ko": "뉴스 진행자, 앵커",
    "en": "a person who reads the news on TV or radio",
@@ -8584,6 +10344,16 @@
    "ch": null,
    "from": "대본"
   },
+  "nightmare": {
+   "ko": "악몽",
+   "en": "a bad dream",
+   "nuance": "잠 속의 꿈과 현실의 끔찍한 일을 다 가리킨다. It was a nightmare는 '정말 끔찍했다'.",
+   "ctx": "I was having this awful nightmare that I was 32",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "none": {
    "ko": "아무도 ~않다, 하나도 ~없다",
    "en": "not any; not one",
@@ -8592,6 +10362,16 @@
    "who": "Céline",
    "ch": 7,
    "from": "대본"
+  },
+  "nor": {
+   "ko": "~도 아니다",
+   "en": "and not",
+   "nuance": "neither A nor B가 정식 짝이다. 셀린은 eight nor nine처럼 or 자리에 nor를 넣어 쓰는데, 표준은 아니고 프랑스어 화자의 습관이 드러난 자리다.",
+   "ctx": "When I was eight nor nine",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "norm": {
    "ko": "규범",
@@ -8606,6 +10386,16 @@
     "standard",
     "convention"
    ]
+  },
+  "nosedive": {
+   "ko": "급강하, 곤두박질",
+   "en": "a sharp fall",
+   "nuance": "비행기가 코부터 떨어지는 그림. take a nosedive는 성적·경제·인생이 갑자기 곤두박질쳤다고 할 때 쓴다.",
+   "ctx": "my life's been a big nosedive",
+   "who": "Jesse",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "nostalgic": {
    "ko": "향수를 불러일으키는",
@@ -8671,6 +10461,16 @@
    "ch": 1,
    "from": "하이라이트"
   },
+  "nuns": {
+   "ko": "수녀",
+   "en": "female religious devotees",
+   "nuance": "monk의 여성 쪽. 두 단어를 나란히 쓰면 '종교에 헌신한 사람들'을 통틀어 가리킨다.",
+   "ctx": "any time with monks or nuns?",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "nurture": {
    "ko": "양육하다, 기르다",
    "en": null,
@@ -8727,6 +10527,16 @@
     "healthy"
    ]
   },
+  "nuts": {
+   "ko": "미친 / 견과류",
+   "en": "crazy; nuts",
+   "nuance": "drive someone nuts는 '~를 미치게 하다(짜증나게 하다)'. go nuts는 '흥분하다'로 좋은 쪽으로도 쓴다.",
+   "ctx": "They drive me nuts.",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "observation": {
    "ko": "관찰, (관찰에서 나온) 소견",
    "en": "a remark based on something you have noticed",
@@ -8766,6 +10576,36 @@
    "ch": 5,
    "from": "하이라이트"
   },
+  "obvious": {
+   "ko": "뻔한, 명백한",
+   "en": "easy to see or understand",
+   "nuance": "clear보다 강해서 '누가 봐도 그렇다'는 느낌이다. 상대의 말에 That's obvious라고 하면 핀잔이 될 수 있다.",
+   "ctx": "He's there in both moments, simultaneously",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "obviously": {
+   "ko": "당연히, 보나마나",
+   "en": "clearly",
+   "nuance": "혼자 던지면 '그야 당연하지'. 상대의 말에 대고 쓰면 '그걸 말이라고 하냐'는 핀잔이 될 수 있어 어조가 중요하다.",
+   "ctx": "Well, obviously. I'll get through.",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "occurred": {
+   "ko": "떠올랐다, 일어났다",
+   "en": "happened; came to mind",
+   "nuance": "It occurred to me that ~는 '문득 ~라는 생각이 들었다'는 굳은 틀이다. 사건이 주어면 그냥 '일어났다'.",
+   "ctx": "it occurred to me there",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "oceanography": {
    "ko": "해양학",
    "en": null,
@@ -8788,6 +10628,26 @@
    "who": "Jesse",
    "ch": 18,
    "from": "대본"
+  },
+  "odds": {
+   "ko": "가능성, 확률",
+   "en": "the likelihood of something",
+   "nuance": "늘 복수. the odds are slim은 '가능성이 희박하다'. against all odds는 '온갖 불리함을 뚫고'라는 굳은 표현이다.",
+   "ctx": "It actually crossed my mind that I might run into you",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "offended": {
+   "ko": "기분이 상한, 모욕감을 느낀",
+   "en": "insulted",
+   "nuance": "be offended by ~는 '~에 불쾌해하다'. No offense(기분 상하게 할 뜻은 없다)라는 표현도 같은 뿌리다.",
+   "ctx": "Maybe she shouldn't have waited so long",
+   "who": "Jesse",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "offers": {
    "ko": "내민다, 건넨다 (offer의 3인칭 단수형)",
@@ -8838,6 +10698,16 @@
    "who": "Jesse",
    "ch": 9,
    "from": "유닛 9"
+  },
+  "optimistic": {
+   "ko": "낙관적인",
+   "en": "expecting good things",
+   "nuance": "pessimistic의 반대. 이 대화의 축이 되는 말로, 뒤에 jovial·euphoric과 함께 다시 나온다.",
+   "ctx": "there are things to be optimistic about",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "or": {
    "ko": "그렇지 않으면",
@@ -8907,6 +10777,16 @@
    "ch": 16,
    "from": "유닛 11"
   },
+  "overall": {
+   "ko": "전체적인, 대체로",
+   "en": "in general",
+   "nuance": "부분을 따지지 않고 전체를 볼 때. 문장 앞에 놓으면 '전체적으로 보면'이라는 요약이 된다.",
+   "ctx": "the overall good mood people have there",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "overdue": {
    "ko": "진작 했어야 할, 때가 한참 지난 (long-overdue: 올 것이 늦게야 온)",
    "en": "delayed beyond the time when it should have happened",
@@ -8938,6 +10818,26 @@
     "crowding",
     "overcrowding"
    ]
+  },
+  "owe": {
+   "ko": "빚지다, 갚을 것이 있다",
+   "en": "have to pay",
+   "nuance": "What do we owe?는 식당에서 '얼마예요?'다. owed(과거)와 함께 이 영화에 두 번 나온다.",
+   "ctx": "What do we owe here?",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "owed": {
+   "ko": "빚졌다, 갚을 게 있었다",
+   "en": "had to pay back",
+   "nuance": "owe A B는 'A에게 B를 빚지다'. 돈뿐 아니라 I owe you one(내가 신세 졌다)처럼 마음의 빚에도 쓴다.",
+   "ctx": "I owed my dad 2000 bucks.",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "painful": {
    "ko": "고통스러운, 아픈",
@@ -9045,6 +10945,16 @@
     "stalker"
    ]
   },
+  "paperwork": {
+   "ko": "서류 작업",
+   "en": "documents to fill in",
+   "nuance": "셀 수 없는 명사라 a paperwork라고 하지 않는다. so much paperwork처럼 양으로 표현한다.",
+   "ctx": "It was so much paperwork.",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "parade": {
    "ko": "행진, 퍼레이드",
    "en": "a public procession of people moving through the streets",
@@ -9077,6 +10987,16 @@
    "ch": 14,
    "from": "유닛 5"
   },
+  "paraplegics": {
+   "ko": "하반신 마비인 사람",
+   "en": "people paralysed below the waist",
+   "nuance": "의학 용어다. 복권 당첨자와 나란히 놓아 '가장 좋은 일과 가장 나쁜 일'의 두 극단을 만든다.",
+   "ctx": "people who'd become paraplegics",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "parole": {
    "ko": "가석방",
    "en": null,
@@ -9099,6 +11019,16 @@
    "who": "Céline",
    "ch": 14,
    "from": "대본"
+  },
+  "particular": {
+   "ko": "특정한 / 까다로운",
+   "en": "specific; fussy",
+   "nuance": "any particular ~은 '뭐 특별히 정해 둔 ~라도'. 사람에게 be particular about이라고 하면 '~에 까다롭다'로 뜻이 갈린다.",
+   "ctx": "Is there any particular imperialist country you have in mind",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "passenger": {
    "ko": "승객",
@@ -9242,6 +11172,26 @@
     "instruction"
    ]
   },
+  "pee": {
+   "ko": "오줌 싸다 (아이 말)",
+   "en": "urinate (childish)",
+   "nuance": "piss보다 훨씬 순한 말로, 아이에게 쓰거나 아이가 쓰는 말이다. 어린 시절 이야기라 이 단어가 자연스럽다.",
+   "ctx": "she would always warn me about dirty old men",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "pees": {
+   "ko": "오줌 싼다",
+   "en": "urinates",
+   "nuance": "pee의 3인칭. 명사로 take a pee라고도 쓴다.",
+   "ctx": "dirty old men giving me candies",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "peninsula": {
    "ko": "반도",
    "en": null,
@@ -9269,6 +11219,16 @@
     "retirement fund",
     "annuity"
    ]
+  },
+  "per": {
+   "ko": "~당, ~마다",
+   "en": "for each",
+   "nuance": "per person(1인당), per day(하루당)처럼 단위를 나눈다. 라틴어에서 온 전치사라 짧고 딱딱하다.",
+   "ctx": "I got a little per diem going on here",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "perception": {
    "ko": "지각",
@@ -9302,6 +11262,16 @@
    "ch": 14,
    "from": "대본"
   },
+  "permanent": {
+   "ko": "영구적인, 오래 머무는",
+   "en": "lasting forever",
+   "nuance": "temporary의 반대. a permanent place는 '오래 머물 자리'로, 셀린이 자기 삶의 불안정을 말하는 자리다.",
+   "ctx": "I don't have any permanent place here",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "perplexed": {
    "ko": "당혹스러운, 어리둥절한",
    "en": "confused and unable to understand something",
@@ -9310,6 +11280,36 @@
    "who": "Jesse",
    "ch": 2,
    "from": "대본"
+  },
+  "personality": {
+   "ko": "성격, 인격",
+   "en": "one's character",
+   "nuance": "character와 겹치지만 personality는 남에게 보이는 성격, character는 사람의 됨됨이에 가깝다.",
+   "ctx": "some kind of mystical connection",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "perverts": {
+   "ko": "변태",
+   "en": "people with deviant desires",
+   "nuance": "강한 말이지만 자기들을 두고 웃으며 쓰면 농담이 된다. 9년 만에 이런 말을 주고받게 됐다는 자기 관찰이다.",
+   "ctx": "It's amazing what perverts we've become",
+   "who": "Jesse",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "petty": {
+   "ko": "속 좁은, 사소한 것에 매달리는",
+   "en": "small-minded",
+   "nuance": "작다는 뜻(petty cash — 소액 현금)에서 사람 성격으로 넓어졌다. 사람에게 쓰면 꽤 날카로운 비판이다.",
+   "ctx": "If they're a petty, miserable asshole",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "phobia": {
    "ko": "공포증",
@@ -9369,6 +11369,19 @@
    "syn": [
     "conduit",
     "channel"
+   ]
+  },
+  "piss": {
+   "ko": "오줌 / (구어) 김을 빼다",
+   "en": "urine; (idiom) take the piss out of",
+   "nuance": "본뜻은 저속하지만 take the piss out of ~는 영국 구어로 '~을 놀리다, 맥을 빼놓다'다. 제시는 소설의 결말을 말해 버리면 그 맛이 사라진다는 뜻으로 쓴다.",
+   "ctx": "would take the piss out of the whole thing",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막",
+   "phr": [
+    "piss someone off"
    ]
   },
   "pissed": {
@@ -9522,6 +11535,16 @@
     "strategy"
    ]
   },
+  "political": {
+   "ko": "정치적인",
+   "en": "relating to politics",
+   "nuance": "정당·권력에 관한 것. political intrigue는 '정치적 암투'로 소설의 흔한 소재를 가리킨다.",
+   "ctx": "No...political intrigue, or helicopter crash",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "politicians": {
    "ko": "정치인들 (politician의 복수형)",
    "en": "people who hold or seek political office",
@@ -9544,6 +11567,16 @@
     "contamination",
     "filth"
    ]
+  },
+  "pop": {
+   "ko": "톡 튀다, 불쑥 나타나다",
+   "en": "appear or move suddenly",
+   "nuance": "소리에서 온 말이라 '갑자기, 가볍게'가 늘 붙는다. pop in(잠깐 들르다), pop up(불쑥 뜨다)처럼 뒤의 전치사가 방향을 정한다.",
+   "ctx": "a book that all took place within the space of a pop song",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "port": {
    "ko": "항구",
@@ -9736,6 +11769,16 @@
     "prelude"
    ]
   },
+  "press": {
+   "ko": "언론 / 누르다",
+   "en": "the news media; to push",
+   "nuance": "the press는 신문·기자 전체를 가리키는 집합명사다. 동사 press(누르다)와 철자가 같아 문맥으로 갈린다.",
+   "ctx": "if their name ever appear in the press",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "pressure": {
    "ko": "압박감, 부담",
    "en": "a strong feeling of being forced or expected to do something",
@@ -9744,6 +11787,16 @@
    "who": "Céline",
    "ch": 14,
    "from": "대본"
+  },
+  "pretend": {
+   "ko": "~인 척하다",
+   "en": "act as if",
+   "nuance": "pretend to be / pretend that ~ 둘 다 쓴다. 아이들 놀이(let's pretend)에도, 감정을 숨기는 데도 쓴다.",
+   "ctx": "now we don't have to pretend",
+   "who": "Jesse",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "pretended": {
    "ko": "~인 척했다 (pretend의 과거형)",
@@ -9771,6 +11824,16 @@
    "who": "Jesse",
    "ch": 2,
    "from": "대본"
+  },
+  "preventable": {
+   "ko": "막을 수 있는",
+   "en": "able to be prevented",
+   "nuance": "-able은 '~할 수 있는'. preventable diseases는 '막을 수 있는데도 사람이 죽는 병'이라, 그 자체로 비판이 담긴 말이다.",
+   "ctx": "Five million people die every year from preventable water diseases",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "preventive": {
    "ko": "예방의",
@@ -10072,6 +12135,26 @@
    "ch": 3,
    "from": "유닛 8"
   },
+  "published": {
+   "ko": "출간된",
+   "en": "issued to the public",
+   "nuance": "책이 세상에 나온 상태. 작가에게는 published가 되는 것 자체가 문턱이라, 셀린이 그걸 짚어 준다.",
+   "ctx": "your book has been published",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "publisher": {
+   "ko": "출판사, 출판인",
+   "en": "a company that publishes books",
+   "nuance": "publish(출판하다)에 -er. 사람과 회사를 다 가리킨다. 제시의 처지를 설명하는 자리에 나온다.",
+   "ctx": "I don't even have one publisher in the whole Asian market",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "pumpkins": {
    "ko": "호박들 (pumpkin의 복수형)",
    "en": "large orange gourds; here, the coach that turns back at midnight",
@@ -10122,6 +12205,16 @@
     "search"
    ]
   },
+  "pussy": {
+   "ko": "(속어) 여성 성기 / 고양이",
+   "en": "(vulgar) vulva; cat",
+   "nuance": "본래는 고양이를 부르는 말이지만 현대 구어에서는 거의 속어로 쓰인다. 두 사람이 서로를 시험하듯 던지는 단어다.",
+   "ctx": "What do you feel about the word \"pussy\"?",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "qualifies": {
    "ko": "~에 해당한다, ~라고 할 만하다 (qualify as)",
    "en": "counts as; meets the standard for being called something",
@@ -10144,6 +12237,36 @@
     "discrete amount",
     "portion"
    ]
+  },
+  "questionnaire": {
+   "ko": "설문지",
+   "en": "a list of questions",
+   "nuance": "프랑스어에서 온 말이라 철자가 까다롭다(-nnaire). 셀린이 연애에 설문지를 쓰겠다는 농담을 하는 자리다.",
+   "ctx": "next time she would use a questionnaire",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "quite": {
+   "ko": "꽤, 상당히",
+   "en": "fairly; completely",
+   "nuance": "미국에서는 '꽤', 영국에서는 오히려 '완전히'로 강해지기도 한다. quite a while은 '한참 동안'이라는 굳은 짝이다.",
+   "ctx": "I was in India for quite a while",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "quote": {
+   "ko": "인용문, 인용하다",
+   "en": "a cited passage",
+   "nuance": "명사와 동사가 같다. an Einstein quote는 '아인슈타인이 한 말'. 격식 있게는 quotation을 쓴다.",
+   "ctx": "There's an Einstein quote I really like.",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "rack": {
    "ko": "문맥상 고문 도구",
@@ -10249,6 +12372,16 @@
    "ch": 2,
    "from": "대본"
   },
+  "raped": {
+   "ko": "성폭행당했다",
+   "en": "sexually assaulted",
+   "nuance": "무거운 말이다. 셀린은 경찰이 늦게 온 일을 비꼬느라 이 말을 쓴다 — 실제 사건이 아니라 '그럴 시간이 지나서야 왔다'는 과장이다.",
+   "ctx": "after I'd been raped and killed about three times",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "rapport": {
    "ko": "라포르 (관계, 친밀한 유대)",
    "en": null,
@@ -10316,6 +12449,16 @@
    "who": "Jesse",
    "ch": 2,
    "from": "유닛 2"
+  },
+  "realistically": {
+   "ko": "현실적으로 보면",
+   "en": "in practical terms",
+   "nuance": "문장 앞에 놓아 '기대를 접고 보면'이라는 단서를 단다. 셀린이 스스로 김을 빼며 말을 고르는 자리다.",
+   "ctx": "I can't realistically expect",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "reality": {
    "ko": "현실, 실제 근거",
@@ -10485,6 +12628,16 @@
     "regrowth"
    ]
   },
+  "refreshing": {
+   "ko": "신선한, 숨이 트이는",
+   "en": "pleasantly new",
+   "nuance": "음료가 시원하다는 뜻에서 넓어져, 사람이나 태도에 쓰면 '흔한 것들 사이에서 반갑다'는 칭찬이 된다.",
+   "ctx": "it was just so refreshing to be around",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "refuge": {
    "ko": "보호소, 안식처, 도피처",
    "en": "a place that provides shelter or protection from danger or trouble",
@@ -10507,6 +12660,26 @@
     "displaced person",
     "asylum seeker"
    ]
+  },
+  "regard": {
+   "ko": "점, 면 / 여기다",
+   "en": "respect, aspect; to consider",
+   "nuance": "in that regard는 '그 점에서는'이라는 굳은 짝이다. 동사 regard A as B는 '~로 여기다'로 consider와 같은 자리에 온다.",
+   "ctx": "in that regard, listen to me on this one",
+   "who": "Jesse",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "regime": {
+   "ko": "정권, 체제",
+   "en": "a system of government",
+   "nuance": "government보다 부정적인 색이 있어, 억압적인 정권에 자주 쓴다. 다이어트 계획을 뜻하는 regimen과 다른 말이다.",
+   "ctx": "a strict Communist regime",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "regimen": {
    "ko": "계획적인 식이요법, 운동",
@@ -10544,6 +12717,16 @@
    "who": "Jesse",
    "ch": 11,
    "from": "대본"
+  },
+  "rehearsing": {
+   "ko": "연습하는",
+   "en": "practising for a performance",
+   "nuance": "무대에 올리기 전 연습이 rehearsal. 운동 연습은 practice라 쓰이는 자리가 갈린다.",
+   "ctx": "the shows we did play, even rehearsing",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "reincarnation": {
    "ko": "환생, 윤회",
@@ -10619,6 +12802,16 @@
     "baton race"
    ]
   },
+  "relieved": {
+   "ko": "마음이 놓인, 안심한",
+   "en": "no longer worried",
+   "nuance": "걱정이 걷혔을 때. happy와 달리 '나쁜 줄 알았는데 아니었다'는 앞 사정이 깔려 있다.",
+   "ctx": "I'm really relieved to hear you're not one of those",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "religious": {
    "ko": "종교적인, 종교의",
    "en": "connected with religion or belief in a god",
@@ -10660,6 +12853,16 @@
     "reboot"
    ]
   },
+  "renew": {
+   "ko": "새로 바꾸다, 갱신하다",
+   "en": "make new again",
+   "nuance": "계약·여권을 갱신할 때도, 세포가 새로 나는 데도 쓴다. 여기서는 몸의 시간 감각을 설명하는 자리다.",
+   "ctx": "it's because we don't renew our synapses",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "renewable": {
    "ko": "재생 가능한",
    "en": null,
@@ -10673,6 +12876,16 @@
     "sustainable",
     "replenishable"
    ]
+  },
+  "renewing": {
+   "ko": "계속 새로 생기는",
+   "en": "coming again and again",
+   "nuance": "ever-renewing처럼 ever-와 붙으면 '끊임없이 새로 솟는'이 된다. 앞서 나온 renew의 형용사꼴이다.",
+   "ctx": "I like that we have those ever-renewing desires",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "renovation": {
    "ko": "개조",
@@ -10696,6 +12909,16 @@
    "who": "Jesse",
    "ch": 5,
    "from": "대본"
+  },
+  "resembled": {
+   "ko": "닮았다",
+   "en": "looked like",
+   "nuance": "resemble은 뒤에 전치사를 두지 않는다(resemble her, not resemble to her). 한국어 '~를 닮다'와 구조가 같아 기억하기 쉽다.",
+   "ctx": "nothing in that coffin resembled what I remembered of her",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "residential": {
    "ko": "주거의",
@@ -10764,6 +12987,16 @@
     "asset",
     "supply"
    ]
+  },
+  "resources": {
+   "ko": "자원",
+   "en": "supplies a place can use",
+   "nuance": "natural resources(천연자원), human resources(인사)처럼 앞에 붙는 말로 종류가 갈린다. 늘 복수로 쓴다.",
+   "ctx": "America's consuming all the world's resources",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "responsibility": {
    "ko": "책임",
@@ -10922,6 +13155,16 @@
     "revolt"
    ]
   },
+  "revolutionary": {
+   "ko": "혁명적인, 판을 뒤집는",
+   "en": "bringing radical change",
+   "nuance": "revolution(혁명)의 형용사. 셀린은 큰 변화가 아니라 연필 같은 사소한 것에 진짜 일이 있다고 말하며, 이 단어를 일부러 크게 세웠다가 내려놓는다.",
+   "ctx": "It was not about big, revolutionary ideas.",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "revolve": {
    "ko": "(~을 중심으로) 돌아가다, 회전하다",
    "en": "to move in a circle around a central point",
@@ -10930,6 +13173,16 @@
    "who": "Céline",
    "ch": 14,
    "from": "하이라이트"
+  },
+  "rewards": {
+   "ko": "보상",
+   "en": "things given in return",
+   "nuance": "prize(경쟁의 상)와 달리 노력에 대한 대가다. superficial rewards는 '상 같은 겉치레'를 가리킨다.",
+   "ctx": "any interest in superficial rewards",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "rhythm": {
    "ko": "리듬",
@@ -11125,6 +13378,16 @@
     "mockery"
    ]
   },
+  "satisfy": {
+   "ko": "충족시키다",
+   "en": "fulfil",
+   "nuance": "satisfy a desire는 '욕구를 채우다'. 제시는 하나를 채우면 다른 하나가 들썩인다며 이 단어를 욕구 이야기의 축으로 쓴다.",
+   "ctx": "I satisfy one desire, and it just agitates another.",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "sauté": {
    "ko": "볶다",
    "en": null,
@@ -11193,6 +13456,16 @@
     "tangy"
    ]
   },
+  "scar": {
+   "ko": "흉터",
+   "en": "a mark left by a wound",
+   "nuance": "몸의 흉터와 마음의 상처를 다 가리킨다. leave a scar는 '흉터를 남기다'로 두 뜻에 걸친다.",
+   "ctx": "It's like a scar.",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "scattered": {
    "ko": "정신이 산만한, 갈피를 못 잡는 (사방에 흩어진)",
    "en": "spread out in different directions; unable to focus or think in an organized way",
@@ -11220,6 +13493,16 @@
    "ch": 8,
    "from": "대본"
   },
+  "scenes": {
+   "ko": "장면",
+   "en": "parts of a story",
+   "nuance": "영화·연극의 한 장면. behind the scenes는 '무대 뒤에서'라는 굳은 표현이다.",
+   "ctx": "there'd be no sex scenes",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "scholarship": {
    "ko": "장학금",
    "en": null,
@@ -11233,6 +13516,16 @@
     "grant",
     "fellowship"
    ]
+  },
+  "screwed": {
+   "ko": "망했다, 끝났다",
+   "en": "ruined",
+   "nuance": "We're screwed는 '우린 망했다'. 비속어에 가깝지만 일상에서 아주 흔하다. screw up은 '일을 망치다'로 뜻이 다르다.",
+   "ctx": "everything is irrevocably screwed",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "sculpture": {
    "ko": "조각",
@@ -11355,6 +13648,16 @@
    "ch": 13,
    "from": "대본"
   },
+  "seller": {
+   "ko": "판매자 / 잘 팔리는 물건",
+   "en": "one who sells; an item that sells",
+   "nuance": "best-seller가 굳은 짝이다. 사람이 아니라 '잘 팔리는 것'을 뜻하는 쪽으로 더 자주 쓰인다.",
+   "ctx": "your book is a best-seller in the U.S.",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "seminar": {
    "ko": "세미나",
    "en": null,
@@ -11406,6 +13709,16 @@
     "continuation"
    ]
   },
+  "serial": {
+   "ko": "연속된, 연쇄의",
+   "en": "happening in a series",
+   "nuance": "serial killer(연쇄 살인범), serial number(일련번호)처럼 '줄줄이 이어지는'이 공통이다. cereal(곡물)과 소리가 같다.",
+   "ctx": "gang murders, serial killers",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "service-oriented": {
    "ko": "손님 응대에 신경 쓰는, 서비스 중심의",
    "en": "focused on giving good service to customers",
@@ -11423,6 +13736,16 @@
    "who": "Céline",
    "ch": 13,
    "from": "대본"
+  },
+  "sessions": {
+   "ko": "시간대, 한 차례",
+   "en": "periods of activity",
+   "nuance": "회의·연주·상담 등 '한 차례 이어지는 시간'을 가리킨다. 앞의 therapist 이야기와 같은 계열의 말이다.",
+   "ctx": "A hotel room, in between sessions",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "set": {
    "ko": "(dead set on으로) ~하기로 굳게 작정한",
@@ -11539,6 +13862,16 @@
    "ch": 9,
    "from": "대본"
   },
+  "shitty": {
+   "ko": "형편없는, 엉망인",
+   "en": "very bad",
+   "nuance": "비속어다. shitty student visa는 '허술한 학생 비자'로, 불안한 신분을 거칠게 표현한 것이다.",
+   "ctx": "I got scared with my shitty student visa",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "shrink": {
    "ko": "정신과 의사, 심리 상담사",
    "en": "a psychiatrist or psychotherapist (informal)",
@@ -11628,6 +13961,16 @@
    "who": "Jesse",
    "ch": 14,
    "from": "대본"
+  },
+  "simultaneously": {
+   "ko": "동시에",
+   "en": "at the same time",
+   "nuance": "at the same time과 뜻은 같지만 한 음절이 더 길고 격식 있다. 여기서는 두 시간대에 동시에 존재한다는 이 영화의 핵심 발상을 담는다.",
+   "ctx": "He's there in both moments, simultaneously",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "since": {
    "ko": "그 이후로는, 그 뒤로 지금까지",
@@ -11731,6 +14074,26 @@
     "high-rise"
    ]
   },
+  "slightly": {
+   "ko": "약간, 조금",
+   "en": "a little",
+   "nuance": "a little보다 격식 있고 정확하다. slightly dissatisfied는 '아주 만족스럽진 않은' 정도의 미묘한 상태를 잡아 준다.",
+   "ctx": "slightly dissatisfied with everything",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "slim": {
+   "ko": "희박한 / 날씬한",
+   "en": "very small; thin",
+   "nuance": "사람에게 쓰면 '날씬한', 가능성에 쓰면 '거의 없는'이다. a slim chance는 '아주 적은 가능성'.",
+   "ctx": "the odds were slim",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "slipper": {
    "ko": "(glass slipper로) 유리 구두",
    "en": "a light indoor shoe; here, Cinderella's glass shoe",
@@ -11748,6 +14111,16 @@
    "who": "Céline",
    "ch": 2,
    "from": "대본"
+  },
+  "slut": {
+   "ko": "(욕) 헤픈 여자",
+   "en": "(offensive) a promiscuous woman",
+   "nuance": "bitch보다 더 공격적인 욕이다. 셀린이 자기를 그렇게 부르며 제시의 소설을 비꼬는 자리이므로, 뜻만 보면 오해한다.",
+   "ctx": "So the French slut, right?",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "sobriety": {
    "ko": "금주 명상 절제",
@@ -11826,6 +14199,16 @@
    "ch": 5,
    "from": "대본"
   },
+  "soulful": {
+   "ko": "깊은 감정이 담긴",
+   "en": "full of deep feeling",
+   "nuance": "soul(영혼)에 -ful. 음악·눈빛에 자주 쓰고, 슬픔이 섞인 아름다움을 가리킨다.",
+   "ctx": "it quickly became very soulful",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "souls": {
    "ko": "영혼들 (soul의 복수형)",
    "en": "plural of soul: the spiritual parts of people",
@@ -11848,6 +14231,16 @@
     "score",
     "film music"
    ]
+  },
+  "source": {
+   "ko": "원천, 출처",
+   "en": "where something comes from",
+   "nuance": "물의 발원지부터 정보의 출처까지 다 덮는다. a source of pollution은 '오염을 만드는 곳'이다.",
+   "ctx": "a major source of pollution",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "souvenir": {
    "ko": "기념품",
@@ -11890,6 +14283,16 @@
     "autonomy",
     "independence"
    ]
+  },
+  "spanking": {
+   "ko": "엉덩이 때리기",
+   "en": "slapping the buttocks",
+   "nuance": "아이를 벌주는 행위이기도, 성적 맥락의 말이기도 하다. 여기서는 후자를 두고 농담하는 자리다.",
+   "ctx": "a good spanking once in a while",
+   "who": "Jesse",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "specialized": {
    "ko": "전문화된, 한 분야에만 특화된",
@@ -11954,6 +14357,16 @@
    "who": null,
    "ch": 8,
    "from": "대본"
+  },
+  "spirits": {
+   "ko": "영혼, 정령 / 기분",
+   "en": "souls; mood",
+   "nuance": "복수로 쓰면 영혼이지만, in good spirits는 '기분이 좋은'이다. 독한 술도 spirits라 부른다.",
+   "ctx": "Do you believe in ghosts, spirits?",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "spiritual": {
    "ko": "영적인, 정신적인",
@@ -12143,6 +14556,16 @@
     "cliché"
    ]
   },
+  "stern": {
+   "ko": "엄한, 딱딱한",
+   "en": "serious and severe",
+   "nuance": "표정과 말투가 엄격한 것. strict는 규칙이 엄하다는 뜻이고 stern은 사람의 태도가 굳어 있다는 뜻이다.",
+   "ctx": "all glowering and stern",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "stick": {
    "ko": "막대기, 나뭇가지",
    "en": "a thin piece of wood",
@@ -12155,6 +14578,16 @@
     "stick around",
     "stick together"
    ]
+  },
+  "sticker": {
+   "ko": "스티커",
+   "en": "an adhesive label",
+   "nuance": "stick(붙다)에 -er. bumper sticker 문화는 미국에서 짧은 정치·유머 문구를 다는 관습이라 이 농담의 배경이 된다.",
+   "ctx": "Can I put that on a bumper sticker?",
+   "who": "Jesse",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "still": {
    "ko": "아직(도), 여전히",
@@ -12205,6 +14638,16 @@
    "who": "Céline",
    "ch": 12,
    "from": "대본"
+  },
+  "straw": {
+   "ko": "짚 / 빨대",
+   "en": "dried stalk; drinking straw",
+   "nuance": "the final straw는 '더는 못 버티게 만든 마지막 하나'. 짐을 실은 낙타의 등을 부러뜨린 마지막 짚 한 올이라는 속담에서 왔다.",
+   "ctx": "the final straw was one night I heard some noise",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "stray": {
    "ko": "(주인 없이) 떠도는, 길 잃은",
@@ -12270,6 +14713,16 @@
     "pressure",
     "strain"
    ]
+  },
+  "strict": {
+   "ko": "엄격한",
+   "en": "severe in rules",
+   "nuance": "규칙·부모·정권에 두루 쓴다. a strict Communist regime은 '통제가 심한 공산 정권'이다.",
+   "ctx": "when it was still a strict Communist regime",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "strike": {
    "ko": "(생각이) 문득 떠오르다, 와닿다",
@@ -12433,6 +14886,26 @@
    "ch": 2,
    "from": "유닛 1"
   },
+  "sucked": {
+   "ko": "형편없었다, 망했다",
+   "en": "was terrible",
+   "nuance": "That sucks는 아주 흔한 구어로 '별로다, 엉망이다'. 원뜻(빨다)에서 온 비속어라 격식 있는 자리에서는 피한다.",
+   "ctx": "then that would've sucked",
+   "who": "Jesse",
+   "ch": 4,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "sucking": {
+   "ko": "빠는",
+   "en": "drawing in with the mouth",
+   "nuance": "본뜻은 '빨다'. 여기서는 속어 표현의 일부로 쓰였고, That sucks(형편없다)의 그 suck과 같은 단어다.",
+   "ctx": "What do you mean, sucking cock?",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "sudden": {
    "ko": "(all of a sudden으로) 갑자기, 난데없이",
    "en": "all of a sudden = suddenly, without warning",
@@ -12454,6 +14927,26 @@
     "he was fifty-two and it suddenly struck him that he had never really given anything of himself"
    ]
   },
+  "suffer": {
+   "ko": "고통받다, 겪다",
+   "en": "experience pain",
+   "nuance": "suffer from ~은 병을 앓는다는 뜻, 목적어를 바로 받으면 '~을 겪다'. 여기서는 고통이 배움의 조건이라는 논지에 놓인다.",
+   "ctx": "If we didn't suffer, we wouldn't learn a thing",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "suicidal": {
+   "ko": "자살할 만큼 절망한",
+   "en": "wanting to end one's life",
+   "nuance": "무거운 말이지만 구어에서는 '죽고 싶을 만큼 괴롭다'는 과장으로도 쓴다. 여기서는 euphoric의 반대 극단으로 놓였다.",
+   "ctx": "the other extreme",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "suicide": {
    "ko": "자살; 자살한 사람",
    "en": "the act of killing yourself",
@@ -12471,6 +14964,16 @@
    "who": "Jesse",
    "ch": 14,
    "from": "대본"
+  },
+  "sum": {
+   "ko": "총합, 합계",
+   "en": "the total",
+   "nuance": "the sum of ~는 '~을 다 더한 것'. 숫자 합계가 본뜻이지만 사람에게 쓰면 '그 사람은 곧 그가 살아온 순간들'이라는 정의가 된다. sum up(요약하다)과는 다른 자리다.",
+   "ctx": "we are the sum of all the moments of our lives",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "sunrise": {
    "ko": "일출, 해가 뜨는 시각",
@@ -12494,6 +14997,16 @@
     "conscience",
     "morality"
    ]
+  },
+  "superficial": {
+   "ko": "겉치레의, 피상적인",
+   "en": "shallow",
+   "nuance": "surface(표면)에서 온 말. 사람에게 쓰면 '속이 없다'는 비판이고, 상처에 쓰면 '가벼운 표피 상처'로 중립적이다.",
+   "ctx": "They don't see any interest in superficial rewards.",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "supernova": {
    "ko": "초신성",
@@ -12550,6 +15063,16 @@
    "ch": 1,
    "from": "유닛 1"
   },
+  "surreal": {
+   "ko": "비현실적인, 꿈 같은",
+   "en": "dreamlike, unreal",
+   "nuance": "초현실주의(surrealism)에서 온 말. 실제로 벌어지는데도 믿기지 않을 때 쓴다. 9년 만의 재회에 딱 맞는 단어다.",
+   "ctx": "It's just surreal.",
+   "who": "Céline",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "surround": {
    "ko": "둘러싸다, 에워싸다",
    "en": "to be all around something or someone",
@@ -12558,6 +15081,16 @@
    "who": "Céline",
    "ch": 14,
    "from": "유닛 11"
+  },
+  "survival": {
+   "ko": "생존",
+   "en": "staying alive",
+   "nuance": "survive의 명사. basic survival은 '겨우 살아 있는 것'으로, 그 이상을 원하는 상태와 대비된다.",
+   "ctx": "I feel really alive when I want something more than just basic survival",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "suspiciously": {
    "ko": "의심스러운 눈초리로",
@@ -12613,6 +15146,16 @@
    "who": null,
    "ch": null,
    "from": "대본"
+  },
+  "sweetheart": {
+   "ko": "애인 / (호칭) 여보, 얘야",
+   "en": "beloved; a term of endearment",
+   "nuance": "high-school sweetheart는 '고등학교 때 사귀던 사람'이라는 굳은 표현이다. 호칭으로 쓰면 다정하지만, 어른이 낯선 사람에게 쓰면 무례하게 들릴 수 있다.",
+   "ctx": "his high-school sweetheart is dropping him off at home",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "sweltering": {
    "ko": "무더위",
@@ -12673,6 +15216,16 @@
     "sign",
     "indication"
    ]
+  },
+  "synapses": {
+   "ko": "시냅스 (신경 연결부)",
+   "en": "connections between nerve cells",
+   "nuance": "신경세포가 신호를 주고받는 접점. 나이가 들며 시간이 빨라진다는 이야기를 과학 용어로 받치는 자리다.",
+   "ctx": "we don't renew our synapses",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "syndicate": {
    "ko": "신디케이트에 팔다",
@@ -12992,6 +15545,16 @@
     "restorative"
    ]
   },
+  "therapist": {
+   "ko": "상담 치료사",
+   "en": "a counsellor",
+   "nuance": "심리 상담을 하는 사람. 미국 대화에서 아주 자연스럽게 등장하는 직업이라, 이 대사도 특별한 무게 없이 지나간다.",
+   "ctx": "a therapist would tell you--",
+   "who": "Jesse",
+   "ch": 10,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "therapy": {
    "ko": "치료",
    "en": null,
@@ -13032,6 +15595,16 @@
     "even though"
    ]
   },
+  "threatened": {
+   "ko": "위협을 느낀",
+   "en": "feeling endangered",
+   "nuance": "누가 협박했다는 뜻도 되지만, feel threatened는 '내 자리가 위태롭게 느껴진다'는 심리다. 여기서는 후자다.",
+   "ctx": "he felt all threatened",
+   "who": "Céline",
+   "ch": 13,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "throaty": {
    "ko": "목이 잠긴 듯 걸걸한, 낮고 굵은 (목소리)",
    "en": "(of a voice) deep and husky",
@@ -13067,6 +15640,16 @@
    "who": "Jesse",
    "ch": 7,
    "from": "유닛 8"
+  },
+  "tip": {
+   "ko": "팁 / 끝 / 조언",
+   "en": "gratuity; the end; advice",
+   "nuance": "세 뜻이 다 흔하다. 식당에서는 팁, the tip of ~는 '~의 끝', give a tip은 '조언하다'다.",
+   "ctx": "This good for, like, a tip and everything?",
+   "who": "Jesse",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "told": {
    "ko": "~에 대해 말해주다, 알려주다",
@@ -13242,6 +15825,16 @@
    "who": "Céline",
    "ch": 13,
    "from": "대본"
+  },
+  "treatment": {
+   "ko": "처리 / 치료 / 대우",
+   "en": "process; medical care; how one is treated",
+   "nuance": "water-treatment는 '정수 처리', medical treatment는 '치료', the treatment I got은 '내가 받은 대우'다. 앞에 무엇이 붙는지가 뜻을 정한다.",
+   "ctx": "working on a water-treatment project",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "treaty": {
    "ko": "조약",
@@ -13463,6 +16056,16 @@
    "ch": 5,
    "from": "대본"
   },
+  "universe": {
+   "ko": "우주, 온 세상",
+   "en": "everything that exists",
+   "nuance": "물리적 우주와 '한 사람의 세계'를 다 가리킨다. 영적인 이야기에서는 자주 '섭리' 같은 뜻으로 쓰인다.",
+   "ctx": "some kind of mystical connection",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "unless": {
    "ko": "~하지 않는 한",
    "en": "except if; if not",
@@ -13489,6 +16092,16 @@
    "who": "Jesse",
    "ch": 3,
    "from": "유닛 8"
+  },
+  "unreal": {
+   "ko": "비현실적인, 믿기지 않는",
+   "en": "not seeming real",
+   "nuance": "surreal보다 쉽고 구어적이다. It was unreal은 좋은 일에도 나쁜 일에도 쓰지만, 어느 쪽이든 '실감이 안 났다'는 뜻이다.",
+   "ctx": "It was unreal.",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "unselfish": {
    "ko": "이기적이지 않은, 사심 없는",
@@ -13554,6 +16167,16 @@
     "city growth"
    ]
   },
+  "urge": {
+   "ko": "충동 / 재촉하다",
+   "en": "a strong impulse; to press",
+   "nuance": "명사면 '갑자기 치미는 충동', 동사면 '강하게 권하다'. 명사 쪽이 감정 이야기에 흔하다.",
+   "ctx": "No strange urge to be somewhere else",
+   "who": "Céline",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "utilitarianism": {
    "ko": "공리주의",
    "en": null,
@@ -13581,6 +16204,26 @@
     "paradise",
     "ideal world"
    ]
+  },
+  "vaguely": {
+   "ko": "어렴풋이, 희미하게",
+   "en": "in an unclear way",
+   "nuance": "vague(모호한)의 부사. vaguely familiar는 '어디서 본 듯한데 딱 짚을 수는 없는'이라는, 이 장면에 딱 맞는 상태다.",
+   "ctx": "it sounded vaguely familiar",
+   "who": "Céline",
+   "ch": 3,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "valuable": {
+   "ko": "값진, 소중한",
+   "en": "worth a lot",
+   "nuance": "value(가치)의 형용사. 돈으로 비싼 것도, 경험처럼 값을 못 매기는 것도 다 valuable이다. 여기서는 후자다.",
+   "ctx": "one of the most exciting things that's ever happened to me",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "value": {
    "ko": "가치",
@@ -13683,6 +16326,16 @@
    "ch": 13,
    "from": "대본"
   },
+  "version": {
+   "ko": "판, 버전",
+   "en": "one form of something",
+   "nuance": "같은 이야기를 다르게 만든 것. your version of the story는 '네 쪽에서 본 이야기'라 사실이 아니라 관점을 가리킨다.",
+   "ctx": "I wrote this whole fictional version",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "veterinarian": {
    "ko": "수의사",
    "en": "a doctor who treats animals",
@@ -13743,6 +16396,16 @@
     "classic"
    ]
   },
+  "violence": {
+   "ko": "폭력",
+   "en": "physical force meant to hurt",
+   "nuance": "violent의 명사형. 개인의 주먹질부터 전쟁까지 다 덮는다. 셀린은 뒤에서 media의 violence를 말하며 같은 단어를 다른 크기로 쓴다.",
+   "ctx": "I've never been around a bunch of guns, or violence",
+   "who": "Jesse",
+   "ch": 1,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "violent": {
    "ko": "폭력적인",
    "en": "using physical force to hurt others",
@@ -13765,6 +16428,16 @@
     "widespread",
     "popular"
    ]
+  },
+  "virginity": {
+   "ko": "순결, 처음",
+   "en": "the state of never having had sex",
+   "nuance": "lose one's virginity가 굳은 짝이다. 직역하면 딱딱하지만 영어에서는 담담하게 쓰는 말이다.",
+   "ctx": "they just lost their virginity, and she loves him",
+   "who": "Jesse",
+   "ch": 2,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "virtual": {
    "ko": "가상의",
@@ -13808,6 +16481,16 @@
     "authorization"
    ]
   },
+  "visions": {
+   "ko": "비전, 그려 둔 그림",
+   "en": "imagined futures",
+   "nuance": "시력(vision)과 같은 말이지만 복수로 쓰면 '머릿속에 그린 미래'다. big visions는 흔히 실현되지 않는 쪽으로 이어진다.",
+   "ctx": "big idealist visions of becoming the new leader",
+   "who": "Céline",
+   "ch": 9,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "vitality": {
    "ko": "활력, 생기",
    "en": null,
@@ -13821,6 +16504,16 @@
     "energy",
     "vigor"
    ]
+  },
+  "vocabulary": {
+   "ko": "어휘, 쓰이는 말",
+   "en": "the set of words in use",
+   "nuance": "개인이 아는 단어들이기도 하고, 어떤 시대·집단이 쓰는 말 전체이기도 하다. '그 말이 아직 vocabulary에 없었다'는 것은 개념 자체가 없었다는 뜻이다.",
+   "ctx": "those weren't even in the vocabulary until fairly recently",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "volcanic": {
    "ko": "화산의",
@@ -13904,6 +16597,56 @@
    "ch": 19,
    "from": "유닛 2"
   },
+  "warming": {
+   "ko": "온난화 / 데우기",
+   "en": "getting warmer",
+   "nuance": "global warming이 굳은 짝이다. 이 대사가 나온 2004년에 막 일상어가 된 표현이라, 셀린이 뒤에서 '얼마 전까지 없던 말'이라고 짚는다.",
+   "ctx": "SUVs suck, global warming",
+   "who": "Jesse",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "warmth": {
+   "ko": "따뜻함, 온기",
+   "en": "the quality of being warm",
+   "nuance": "warm의 명사. 온도와 사람의 정을 다 가리켜서, 여기서는 두 뜻이 동시에 걸린다.",
+   "ctx": "All the warmth was gone.",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "warn": {
+   "ko": "경고하다, 미리 일러주다",
+   "en": "tell about danger",
+   "nuance": "warn A about B / warn A not to do가 흔한 틀이다. 어머니가 조심하라고 일렀다는 이야기에 쓰인다.",
+   "ctx": "she would always warn me about dirty old men",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "warned": {
+   "ko": "경고했다, 미리 일러줬다",
+   "en": "told about a danger",
+   "nuance": "warn A about B / warn A to do가 굳은 틀이다. 여기서는 아버지가 프랑스 여자를 조심하라고 했다는 농담이다.",
+   "ctx": "Who had warned me about French chicks",
+   "who": "Jesse",
+   "ch": 5,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "waste": {
+   "ko": "낭비하다 / 쓰레기",
+   "en": "use badly; refuse",
+   "nuance": "waste time이 가장 흔한 짝. 명사로는 '폐기물'이라, 앞서 나온 환경 이야기와 같은 단어다.",
+   "ctx": "why waste time with an hotel room?",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "watershed": {
    "ko": "유역 분지",
    "en": null,
@@ -13917,6 +16660,26 @@
     "drainage basin",
     "catchment area"
    ]
+  },
+  "weapon": {
+   "ko": "무기",
+   "en": "a thing used to harm",
+   "nuance": "단수 weapon은 개별 무기. the weapon industry처럼 앞에 붙으면 '무기 산업'이라는 한 덩어리가 된다.",
+   "ctx": "The weapon industry is booming.",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "weapons": {
+   "ko": "무기",
+   "en": "things used to harm",
+   "nuance": "arms와 비슷하지만 weapon은 개별 물건, arms는 군사 장비 전체에 가깝다. weapons of mass destruction이 이 시기 뉴스의 상용구였다.",
+   "ctx": "from clean water to chemical weapons",
+   "who": "Céline",
+   "ch": 6,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "weird": {
    "ko": "이상한, 묘한",
@@ -13959,6 +16722,16 @@
    "ch": 2,
    "from": "유닛 2"
   },
+  "whatsoever": {
+   "ko": "전혀, 조금도",
+   "en": "at all (emphatic)",
+   "nuance": "부정 뒤에 붙여 힘을 준다. no interest whatsoever는 '관심이라곤 조금도 없다'. 위치가 문장 끝이라는 점을 기억하면 쓰기 쉽다.",
+   "ctx": "no interest in firearms whatsoever",
+   "who": "Céline",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "wheel": {
    "ko": "바퀴; 여기서는 the (Ferris) wheel, 빈의 대관람차",
    "en": "a circular object that turns; here, the Ferris wheel",
@@ -13967,6 +16740,16 @@
    "who": "Céline",
    "ch": 4,
    "from": "대본"
+  },
+  "wheelchair": {
+   "ko": "휠체어",
+   "en": "a chair with wheels",
+   "nuance": "in a wheelchair가 굳은 짝이다. 셀린의 논지가 이 대사에서 완성된다 — 상황이 바뀌어도 사람의 바탕은 그대로라는 것.",
+   "ctx": "an optimistic, jovial person in a wheelchair",
+   "who": "Céline",
+   "ch": 11,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "whine": {
    "ko": "칭얼거리다, 징징대다",
@@ -13994,6 +16777,16 @@
    "who": null,
    "ch": 22,
    "from": "대본"
+  },
+  "wildly": {
+   "ko": "격렬하게, 마구",
+   "en": "in an uncontrolled way",
+   "nuance": "wild의 부사. 정도가 통제를 벗어났다는 뜻으로, wildly popular처럼 좋은 쪽으로도 쓴다.",
+   "ctx": "in between sessions",
+   "who": "Jesse",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "wimpy": {
    "ko": "찌질한, 겁 많고 나약한",
@@ -14066,6 +16859,16 @@
     "training"
    ]
   },
+  "worth": {
+   "ko": "~할 만한 가치가 있는",
+   "en": "deserving of",
+   "nuance": "worth + -ing가 굳은 틀이다(worth trying). It's not worth it은 '그럴 값어치가 없다'로 회화에서 아주 흔하다.",
+   "ctx": "It's almost not worth it.",
+   "who": "Céline",
+   "ch": 12,
+   "work": "before-sunset",
+   "from": "자막"
+  },
   "would": {
    "ko": "~하게 될 것이다 (가상의 계획을 설명하는 조동사)",
    "en": "used to describe how something imaginary or planned will work",
@@ -14089,6 +16892,36 @@
    "phr": [
     "You know, I believe if there's any kind of God, it wouldn't be in any of us. Not you, or me...but just this little space in between. If there's any kind of magic in this world, it must be in the attempt of understanding someone, sharing something"
    ]
+  },
+  "wound": {
+   "ko": "상처",
+   "en": "an injury",
+   "nuance": "injury는 다친 것 전체, wound는 살이 째진 상처다. 발음이 wind(감다)의 과거 wound와 같아 헷갈리기 쉽다.",
+   "ctx": "like a gunshot wound?",
+   "who": "Jesse",
+   "ch": 8,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "wracked": {
+   "ko": "괴로움에 시달린",
+   "en": "tormented",
+   "nuance": "wracked with ~가 굳은 짝으로 '~에 시달리다'. rack(고문대)에서 온 말이라 몸이 비틀리는 그림이 있다. 철자를 racked로도 쓴다.",
+   "ctx": "I was healthier, but I was wracked with insecurity",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
+  },
+  "wrecked": {
+   "ko": "만신창이가 된, 완전히 지친",
+   "en": "exhausted or ruined",
+   "nuance": "난파선(wreck)에서 온 말. I'm wrecked는 몸이 부서질 만큼 지쳤다는 뜻이고, 영국에서는 '몹시 취했다'로도 쓴다.",
+   "ctx": "I'm wrecked. I'm so glad it's over",
+   "who": "Jesse",
+   "ch": 7,
+   "work": "before-sunset",
+   "from": "자막"
   },
   "ya": {
    "ko": "너, 당신 (you의 구어 축약)",

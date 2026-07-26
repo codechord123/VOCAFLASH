@@ -88,6 +88,30 @@ def main():
                     2,
                 )
 
+    # 2b) 비포 선셋 자막에서 새로 생성한 뜻
+    #
+    # 이 작품은 선라이즈와 달리 대본이 없고 자막만 있다. 그래도 색이
+    # 붙는 단어(2등급 이상) 중 뜻이 없어 눌러도 아무것도 안 뜨던 283개를
+    # 채웠다 — 색만 있고 뜻이 없으면 색이 오히려 방해가 된다.
+    bsu_dir = DATA / "word-dict-bsu"
+    if bsu_dir.is_dir():
+        for f in sorted(bsu_dir.glob("batch-*.json")):
+            for w in json.loads(f.read_text(encoding="utf-8")):
+                put(
+                    w["term"],
+                    {
+                        "ko": w["ko"],
+                        "en": w.get("en"),
+                        "nuance": w.get("nuance"),
+                        "ctx": trim(w.get("ctx")),
+                        "who": w.get("who"),
+                        "ch": w.get("ch"),
+                        "work": "before-sunset",
+                        "from": "자막",
+                    },
+                    2,
+                )
+
     # 3) 노션 하이라이트 뜻풀이(단어짜리만)
     expr = {e["id"]: e for e in load("expressions.json")["expressions"]}
     for m in load("meanings.json")["meanings"]:
