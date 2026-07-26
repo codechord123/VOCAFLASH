@@ -1,0 +1,79 @@
+[
+ {
+  "phrase": "what kind of",
+  "ko": "어떤 종류의, 어떤",
+  "en": "what type of",
+  "nuance": "여기서 kind of는 완충어 '좀'이 아니라 명사 kind(종류)다. 앞에 what·this·some 같은 한정사가 붙으면 언제나 '종류' 쪽이고, 'I kind of like it'처럼 동사 앞에 홀로 서면 완충어다. 이 둘을 헷갈리면 문장이 통째로 다르게 읽힌다.",
+  "register": "neutral",
+  "ctx": "What kind of ideas?",
+  "who": "Céline",
+  "ch": 2,
+  "alt": "kind of는 자리에 따라 완전히 갈린다. 앞에 what·this·some 같은 한정사가 있으면 명사 '종류'(What kind of ideas? 어떤 종류의 생각), 동사·형용사 앞에 홀로 서면 완충어 '좀'(I kind of like it 좀 좋아해). 한정사가 있는지만 보면 된다."
+ },
+ {
+  "phrase": "that kind of",
+  "ko": "그런 종류의, 그런",
+  "en": "that type of",
+  "nuance": "kind of가 명사로 쓰인 자리. that kind of thing(그런 것)처럼 앞의 지시어가 종류를 가리킨다. 완충어 kind of와 형태만 같을 뿐 하는 일이 다르다.",
+  "register": "neutral",
+  "ctx": "Well, you know, despite all that kind of bullshit that comes along with it, I remember childhood as this, you know, this magical time.",
+  "who": "Jesse",
+  "ch": 2,
+  "alt": "완충어 kind of와 형태가 같다. 앞에 that이 있으니 여기서는 '그런 종류의'다. 완충어라면 that 없이 동사 앞에 붙는다."
+ },
+ {
+  "phrase": "some kind of",
+  "ko": "일종의, 무슨 ~ 같은",
+  "en": "some type of",
+  "nuance": "정확한 이름을 모르거나 굳이 특정하지 않을 때 쓴다. '무슨 ~인가 하는' 정도의 느낌이라, 말하는 사람이 그 대상을 대충 알고 있다는 신호가 된다.",
+  "register": "casual",
+  "ctx": "I've never been out bowling, if I wasn't there, making some stupid joke.",
+  "who": "Jesse",
+  "ch": 19,
+  "alt": "'일종의'로 대상을 흐리는 말. 완충어 kind of('좀')와 달리 뒤에 반드시 명사가 온다."
+ },
+ {
+  "phrase": "any kind of",
+  "ko": "어떤 종류의 ~라도",
+  "en": "any type of",
+  "nuance": "부정문·의문문에서 '조금도, 하나도'의 힘을 싣는다. not any kind of는 '어떤 ~도 아니다'로 전면 부정이 된다.",
+  "register": "neutral",
+  "ctx": "I don't think it really matters what generation you are born into.",
+  "who": "Céline",
+  "ch": 8,
+  "alt": "부정·의문에서 '어떤 ~도'로 전면 부정을 만든다. 긍정문에 쓰면 '어떤 종류든 상관없다'는 허용이 된다."
+ },
+ {
+  "phrase": "kind of a",
+  "ko": "좀 ~한, 일종의",
+  "en": "somewhat of a",
+  "nuance": "뒤에 명사가 오면 관사 a가 kind of 뒤로 온다(kind of a joke). 구어에서만 쓰고 글로 쓸 때는 somewhat이나 a sort of로 바꾼다.",
+  "register": "casual",
+  "ctx": "Um, no, alright, I had a thought the other day that was kind of a--qualifies as a problem.",
+  "who": "Jesse",
+  "ch": 5,
+  "alt": "뒤에 명사가 오면 관사가 kind of 뒤로 밀린다(kind of a joke). 이때는 '일종의'와 '좀'의 중간쯤이라, 말을 끝맺기 전에 머뭇거리는 자리에 자주 온다."
+ },
+ {
+  "phrase": "kind of like",
+  "ko": "뭐랄까 ~ 비슷한",
+  "en": "sort of like",
+  "nuance": "비유를 꺼내면서 그 비유가 완벽하지 않다고 미리 물러서는 말. 완충어 kind of와 비유의 like가 겹쳐 이중으로 누그러진다.",
+  "register": "casual",
+  "ctx": "So, it‘s like a National Geographic program, but on people?",
+  "who": "Céline",
+  "ch": 2,
+  "alt": "비유의 like가 붙은 형태. '뭐랄까 ~ 비슷한'으로, 비유가 정확하지 않다고 미리 물러선다."
+ },
+ {
+  "phrase": "what do you mean",
+  "ko": "무슨 뜻이야?, 그게 무슨 말이야?",
+  "en": "what are you saying?",
+  "nuance": "설명을 청하는 말이지만 억양에 따라 반박이 되기도 한다. 셀린은 여기서 순수하게 되묻는 쪽이라, 대화를 이어 가려는 신호다. 화가 난 어조로 쓰면 '그게 말이 되냐'는 뜻이 된다.",
+  "register": "neutral",
+  "ctx": "What do you mean?",
+  "who": "Céline",
+  "ch": 2,
+  "alt": "순수한 되물음일 수도, 반박일 수도 있다. 억양이 올라가면 설명 요청, 평평하거나 낮으면 '그게 말이 되냐'는 항의다. 셀린은 여기서 되물음 쪽이다."
+ }
+]

@@ -73,6 +73,10 @@ def main():
                 "ctx": p.get("ctx"),
                 "who": p.get("who"),
                 "ch": p.get("ch"),
+                # 문맥에 따라 뜻이 갈리는 표현은 그 갈림을 같이 담는다.
+                # kind of처럼 자리에 따라 '종류'와 '좀'으로 나뉘는 말은,
+                # 한쪽 뜻만 보여주면 나머지 절반을 틀리게 외우게 된다.
+                "alt": p.get("alt"),
                 "from": source,
             }
 

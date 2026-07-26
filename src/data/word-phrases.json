@@ -1,6 +1,6 @@
 {
  "note": "읽기 화면에서 한 덩어리로 잡는 표현. 키는 정규화한 소문자.",
- "count": 529,
+ "count": 531,
  "phrases": {
   "a bad liar": {
    "ko": "거짓말을 못하는 사람",
@@ -9,6 +9,7 @@
    "ctx": "You know I don't believe you, you're a bad liar.",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "a big crush on": {
@@ -18,6 +19,7 @@
    "ctx": "You know, and I told him, you know, you should date Emma, she has a big crush on you.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "a big deal": {
@@ -27,6 +29,7 @@
    "ctx": "We don't have to have sex. It's not a big deal.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "a bit": {
@@ -36,6 +39,7 @@
    "ctx": "And the cow is a bit weird.",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "a confession to make": {
@@ -45,6 +49,7 @@
    "ctx": "I have a confession to make.",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "a couple of": {
@@ -54,6 +59,7 @@
    "ctx": "So I bought the cheapest flight out of Europe, this one leaving out of Vienna tomorrow, but it didn't leave for a couple of weeks.",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "a female thing": {
@@ -63,6 +69,7 @@
    "ctx": "Maybe it‘s a female thing.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "a few": {
@@ -72,6 +79,7 @@
    "ctx": "I actually saw this one a few years ago in a museum.",
    "who": "Céline",
    "ch": 10,
+   "alt": null,
    "from": "문법"
   },
   "a friend of mine": {
@@ -81,6 +89,7 @@
    "ctx": "A friend of mine told me about her.",
    "who": "Céline",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "a little bit": {
@@ -90,6 +99,7 @@
    "ctx": "Oh, I understand a little bit, but he doesn't, I'm sorry.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "a little while": {
@@ -99,6 +109,7 @@
    "ctx": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "a lot more": {
@@ -108,6 +119,7 @@
    "ctx": "so I was just going to walk around, and it would be a lot more fun if you came with me.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "a lot of": {
@@ -117,6 +129,7 @@
    "ctx": "There's a lot of good things coming out of conflict.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "a lot sooner": {
@@ -126,6 +139,7 @@
    "ctx": "They should have done it a lot sooner, but they stuck together for a while (in a prim “high-society” accent) for the well-being of my sister and I, thank you very much.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "a short while": {
@@ -135,6 +149,7 @@
    "ctx": "I was ready to get off the train with him after talking to him a short while",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "able to": {
@@ -144,6 +159,7 @@
    "ctx": "I don't think I'm gonna be able to make it for lunch today, I'm sorry.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "문법"
   },
   "about to": {
@@ -153,6 +169,7 @@
    "ctx": "I always have this strange feeling that I am this very old woman laying down about to die.",
    "who": "Céline",
    "ch": 11,
+   "alt": null,
    "from": "문법"
   },
   "about to die": {
@@ -162,6 +179,7 @@
    "ctx": "I am this very old woman laying down about to die",
    "who": "Céline",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "about to leave": {
@@ -171,6 +189,7 @@
    "ctx": "Me too. The train is about to leave.",
    "who": "Céline",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "accepted her fate": {
@@ -180,6 +199,7 @@
    "ctx": "She just accepted her fate.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "all i know is": {
@@ -189,6 +209,7 @@
    "ctx": "All I know is I have to catch an Austrian Airlines flight tomorrow morning at nine-thirty",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "all of a sudden": {
@@ -198,6 +219,7 @@
    "ctx": "I could be uh, throwing some darts, or shooting some pool, and all of a sudden, I feel it come over me",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "all over the world": {
@@ -207,6 +229,7 @@
    "ctx": "What you do, is you get three hundred and sixty-four people from cities all over the world, to do these twenty-four hour documents of real time, right, capturing life as it‘s lived.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "all the time": {
@@ -216,6 +239,7 @@
    "ctx": "you and I were together all the time, then you'd start to hate a lot of my mannerisms.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "all the way here": {
@@ -225,6 +249,7 @@
    "ctx": "but I got to fly all the way here.",
    "who": "Jesse",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "all they do is": {
@@ -234,6 +259,7 @@
    "ctx": "I mean, there's these breeds of monkeys, right, and all they do is have sex, like all the time, you know?",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "all those": {
@@ -243,6 +269,7 @@
    "ctx": "I always liked the idea of all those unknown people lost in the world.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "문법"
   },
   "along with": {
@@ -252,6 +279,7 @@
    "ctx": "Well, you know, despite all that kind of bullshit that comes along with it, I remember childhood as this, you know, this magical time.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "an hour or so": {
@@ -261,6 +289,7 @@
    "ctx": "And then, after an hour or so of just uh, staring at each other, they're married.",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "and all": {
@@ -270,6 +299,7 @@
    "ctx": "I mean, that's very nice and all",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "and all that": {
@@ -279,6 +309,7 @@
    "ctx": "Yeah. Good luck with school, and all that.",
    "who": "Jesse",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "and everything": {
@@ -288,6 +319,7 @@
    "ctx": "This friend of mine had a kid, and it was a home birth, so he was there helping out and everything.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "and stuff": {
@@ -297,6 +329,7 @@
    "ctx": "I was born not long after, and then my father went on to become this successful architect, and they began to travel all around the world, where he built bridges, and towers, and stuff.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "and yet": {
@@ -306,6 +339,7 @@
    "ctx": "And yet for me now, it‘s another type of fight.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "any kind of": {
@@ -315,6 +349,7 @@
    "ctx": "You know, I believe if there's any kind of God, it wouldn't be in any of us.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "any more": {
@@ -324,6 +359,7 @@
    "ctx": "But museums are not that funny any more these days, uh...",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "문법"
   },
   "are you with anyone": {
@@ -333,6 +369,7 @@
    "ctx": "Are you with anyone?",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "arguing about": {
@@ -342,6 +379,7 @@
    "ctx": "Do you have any idea what they were arguing about?",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "around each other": {
@@ -351,6 +389,7 @@
    "ctx": "(They walk a bit.) If we were around each other all the time, what do you think would be the first thing about me that would drive you mad?",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "around that age": {
@@ -360,6 +399,7 @@
    "ctx": "That meant something to me, you know, I was around that age when I first saw this.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "as far as": {
@@ -369,6 +409,7 @@
    "ctx": "But as far as sexual feelings go, I'll have you know it started with an obsessive relationship with Miss July 1978.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "as if": {
@@ -378,6 +419,7 @@
    "ctx": "I dunno, the key, the key (squints his eyes as if perplexed)...the thing that kind of haunts me is the distribution, you know.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "as long as": {
@@ -387,6 +429,7 @@
    "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "as much as": {
@@ -396,6 +439,7 @@
    "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "as the night went on": {
@@ -405,6 +449,7 @@
    "ctx": "As the night went on, I began to like him more and more.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "as you see": {
@@ -414,6 +459,7 @@
    "ctx": "And as you see, there is the address.",
    "who": "Man with jacket",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "asked me out": {
@@ -423,6 +469,7 @@
    "ctx": "And then he officially asked me out on a date, and you know I pretended I didn't like him.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "at all": {
@@ -432,6 +479,7 @@
    "ctx": "Nothing, nothing at all.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "at arms length": {
@@ -441,6 +489,7 @@
    "ctx": "I'm gonna take your picture (puts her at arms length, and stares) so I never forget you...or...or all this.",
    "who": "지문",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "at best": {
@@ -450,6 +499,7 @@
    "ctx": "You know, so, at best, we're like these tiny fractions of people, you know, walking...",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "at first": {
@@ -459,6 +509,7 @@
    "ctx": "she didn't like me much at first",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "at least": {
@@ -468,6 +519,7 @@
    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "at long last": {
@@ -477,6 +529,7 @@
    "ctx": "and now we're reunited, at long last",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "at that time": {
@@ -486,6 +539,7 @@
    "ctx": "I think it left a bigger impression on me at that time than any of the museums we went to.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "문법"
   },
   "at the end of": {
@@ -495,6 +549,7 @@
    "ctx": "You know we kind of wrote these little declarations of love to each other at the end of the summer, and you know, promised we would keep writing forever",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "at work here": {
@@ -504,6 +559,7 @@
    "ctx": "But maybe, maybe there's some biological things at work here.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "back there": {
@@ -513,6 +569,7 @@
    "ctx": "So uh, were we having our first fight back there?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "backs away": {
@@ -522,6 +579,7 @@
    "ctx": "Bartender backs away, and looks at him suspiciously.",
    "who": "지문",
    "ch": 18,
+   "alt": null,
    "from": "구문"
   },
   "based on": {
@@ -531,6 +589,7 @@
    "ctx": "That's not based on any kind of reality.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "be dead set on": {
@@ -585,6 +644,7 @@
    "ctx": "Uh, have you ever been in love?",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "begins to roll": {
@@ -594,6 +654,7 @@
    "ctx": "as the closing montage begins to roll",
    "who": "지문",
    "ch": 23,
+   "alt": null,
    "from": "구문"
   },
   "believe in god": {
@@ -603,6 +664,7 @@
    "ctx": "and he says, 'Do you believe in God?'",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "break our vow": {
@@ -612,6 +674,7 @@
    "ctx": "No, I don't want you to break our vow, just so you can get LAID.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "break up with": {
@@ -630,6 +693,7 @@
    "ctx": "If someone throws a stick, she fetches it, and brings it back.",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "broke up with me": {
@@ -639,6 +703,7 @@
    "ctx": "She flew into a rage, and broke up with me, alright?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "buddy of mine": {
@@ -648,6 +713,7 @@
    "ctx": "I was driving around with this buddy of mine, he was a big atheist",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "bugs you": {
@@ -657,6 +723,7 @@
    "ctx": "Something about me bugs you?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "bullshit detector": {
@@ -675,6 +742,7 @@
    "ctx": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "by the time": {
@@ -684,6 +752,7 @@
    "ctx": "By the time I was in high school, I was dead set on listening to what everybody thought I should be doing with my life, and just kind of (shakes head, shrugs shoulders) doing just the opposite.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "by the way": {
@@ -693,6 +762,7 @@
    "ctx": "No...and by the way, she sat next to you, no?",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "came out that": {
@@ -702,6 +772,7 @@
    "ctx": "and it came out that I had written this little stupid story about this woman, trying to kill her boyfriend",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "came to a stop": {
@@ -711,6 +782,7 @@
    "ctx": "and we came to a stop, next to this homeless guy",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "can you believe that": {
@@ -720,6 +792,7 @@
    "ctx": "On my last night in Europe, can you believe that?",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "can't complain about": {
@@ -729,6 +802,7 @@
    "ctx": "I mean, I really can't complain about anything.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "can't help but feeling": {
@@ -738,6 +812,7 @@
    "ctx": "I can't help but feeling for all those people that come here lost or in pain, guilt, looking for some kind of answers.",
    "who": "Céline",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "can't help it": {
@@ -747,6 +822,7 @@
    "ctx": "I know. It's not very adult. Maybe it‘s a female thing. I can't help it.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "can't stand": {
@@ -756,6 +832,7 @@
    "ctx": "I can't stand that, really.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "capable of": {
@@ -765,6 +842,7 @@
    "ctx": "men are destroying women, or are able...capable of destroying women, much more than women",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "check out the town": {
@@ -774,6 +852,7 @@
    "ctx": "You should get off the train with me here in Vienna, and come check out the town.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "check that out": {
@@ -783,6 +862,7 @@
    "ctx": "Check that out.",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "check these guys out": {
@@ -792,6 +872,7 @@
    "ctx": "Hey...check these guys out.",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "close with": {
@@ -801,6 +882,7 @@
    "ctx": "You close with your grandmother?",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "come from": {
@@ -810,6 +892,7 @@
    "ctx": "Now, if we all have our own, like, individual, unique soul, right, where do they all come from?",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "come on": {
@@ -819,6 +902,7 @@
    "ctx": "Come on.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "come over me": {
@@ -828,6 +912,7 @@
    "ctx": "and all of a sudden, I feel it come over me, “I have got to win.”",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "come up with": {
@@ -837,6 +922,7 @@
    "ctx": "And nobody's come up with anything.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "comes along with": {
@@ -846,6 +932,7 @@
    "ctx": "Well, you know, despite all that kind of bullshit that comes along with it, I remember childhood as this, you know, this magical time.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "coming out of": {
@@ -855,6 +942,7 @@
    "ctx": "There's a lot of good things coming out of conflict.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "coming over": {
@@ -864,6 +952,7 @@
    "ctx": "She's not coming over here.",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "could have": {
@@ -873,6 +962,7 @@
    "ctx": "I could have flown to Paris, but I'm too scared.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "couldn't help it": {
@@ -882,6 +972,7 @@
    "ctx": "He was so sweet, I couldn't help it.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "couldn't possibly": {
@@ -891,6 +982,7 @@
    "ctx": "You couldn't possibly know why a night like this is so important to my life right now, but it is...This is a great morning.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "crazy about you": {
@@ -900,6 +992,7 @@
    "ctx": "I don't think he's scared of you. I think he's crazy about you.",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "crying in my coffee": {
@@ -909,6 +1002,7 @@
    "ctx": "reading old magazines, crying in my coffee",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "dance to": {
@@ -918,6 +1012,7 @@
    "ctx": "Can we dance to the harpsichord?",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "day to day": {
@@ -927,6 +1022,7 @@
    "ctx": "I was going to say the poetry of day to day life, but (Celine starts laughing) you know, you say the way you say it, I'll say it the way I say it...",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "day to day life": {
@@ -945,6 +1041,7 @@
    "ctx": "By the time I was in high school, I was dead set on listening to what everybody thought I should be doing with my life, and just kind of (shakes head, shrugs shoulders) doing just the opposite.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "deal with": {
@@ -954,6 +1051,7 @@
    "ctx": "We still have to deal with the same old shit, but we can't really know who, or you know, what the enemy is.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "did it work": {
@@ -963,6 +1061,7 @@
    "ctx": "Yeah, well did it work?",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "dissolving into the background": {
@@ -972,6 +1071,7 @@
    "ctx": "I love the way the people seem to be dissolving into the background.",
    "who": "Céline",
    "ch": 10,
+   "alt": null,
    "from": "구문"
   },
   "don't have to": {
@@ -981,6 +1081,7 @@
    "ctx": "We don't have to have sex. It's not a big deal.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "문법"
   },
   "don't mind": {
@@ -990,6 +1091,7 @@
    "ctx": "I think on some level, women don't mind the idea of destroying a man, you know.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "drive someone mad": {
@@ -1008,6 +1110,7 @@
    "ctx": "what do you think would be the first thing about me that would drive you mad?",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "drives me crazy": {
@@ -1017,6 +1120,7 @@
    "ctx": "You know what drives me crazy?",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "drives you crazy": {
@@ -1026,6 +1130,7 @@
    "ctx": "Tell me something that really pisses you off, really drives you crazy.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "driving around": {
@@ -1035,6 +1140,7 @@
    "ctx": "Well, I was driving around with this buddy of mine, he was a big atheist",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "drove away": {
@@ -1044,6 +1150,7 @@
    "ctx": "and we drove away",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "each other": {
@@ -1053,6 +1160,7 @@
    "ctx": "Have you ever heard that as couples get older, they lose their ability to hear each other?",
    "who": "Céline",
    "ch": 1,
+   "alt": null,
    "from": "문법"
   },
   "each time": {
@@ -1062,6 +1170,7 @@
    "ctx": "Each time I wear black, or like, lose my temper, or say anything about anything, they always go 'oh, it‘s so french, it‘s so cute.' (She mimics vomiting.) I hate that.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "eaten him alive": {
@@ -1071,6 +1180,7 @@
    "ctx": "and no more man, because they would have all gotten together, and eaten him alive",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "end up": {
@@ -1080,6 +1190,7 @@
    "ctx": "People always exchange phone numbers, addresses, they end up writing once, calling each other once or twice...",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "문법"
   },
   "end up writing": {
@@ -1089,6 +1200,7 @@
    "ctx": "People always exchange phone numbers, addresses, they end up writing once, calling each other once or twice...",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "even as": {
@@ -1098,6 +1210,7 @@
    "ctx": "Even as a little girl, they wanted me to think of a future career, as a, you know, as an interior designer, or a lawyer, or something like that.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "even if": {
@@ -1107,6 +1220,7 @@
    "ctx": "Well, even if we were a little bit, you know.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "even though": {
@@ -1125,6 +1239,7 @@
    "ctx": "The way...the way every time that we would have people over...I'd be insecure, and I'd get a little too drunk.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "문법"
   },
   "fall in love": {
@@ -1134,6 +1249,7 @@
    "ctx": "I think I can really fall in love when I know everything about someone.",
    "who": "Céline",
    "ch": 21,
+   "alt": null,
    "from": "구문"
   },
   "falling in love": {
@@ -1143,6 +1259,7 @@
    "ctx": "You know my parents have never really spoken of the possibility of my falling in love, or getting married, or having children.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "feel better about": {
@@ -1152,6 +1269,7 @@
    "ctx": "I hate being told by a strange man, a strange man in the street, you know, like, to smile, like, to make them feel better about their boring life, um, what else?",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "feel good about yourself": {
@@ -1161,6 +1279,7 @@
    "ctx": "you get to hear something that makes you feel good about yourself",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "feel like": {
@@ -1170,6 +1289,7 @@
    "ctx": "then you can pay me whatever you feel like",
    "who": "Poet",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "feel that way about me": {
@@ -1179,6 +1299,7 @@
    "ctx": "I just hope he doesn't feel that way about me",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "fell for him": {
@@ -1188,6 +1309,7 @@
    "ctx": "I think that's when I fell for him.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "find out": {
@@ -1197,6 +1319,7 @@
    "ctx": "(Points at himself.) That's me, you know, so think of this as time travel, from then, to now, uh, to find out what you're missing out on.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "fizzle out": {
@@ -1215,6 +1338,7 @@
    "ctx": "Right. Fizzles out. Yeah, I mean, I don't want that. I hate that.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "flew into a rage": {
@@ -1224,6 +1348,7 @@
    "ctx": "She flew into a rage, and broke up with me, alright?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "fly into a rage": {
@@ -1242,6 +1367,7 @@
    "ctx": "I'm flying out of there tomorrow.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "fool around": {
@@ -1260,6 +1386,7 @@
    "ctx": "so I mean, maybe fooling around is not so bad",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "for a change": {
@@ -1269,6 +1396,7 @@
    "ctx": "Couldn't you speak German for a change?",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "for a lot less": {
@@ -1278,6 +1406,7 @@
    "ctx": "And maybe that's a lot of romantic bullshit...but people have gotten married for a lot less.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "for a while": {
@@ -1287,6 +1416,7 @@
    "ctx": "They stop and stare at each other for a while.",
    "who": "지문",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "for a year straight": {
@@ -1296,6 +1426,7 @@
    "ctx": "And I have this idea for this show that would last twenty-four hours a day for a year straight, right?",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "for instance": {
@@ -1305,6 +1436,7 @@
    "ctx": "Well, you know, for instance, you have ideas that you ordinarily wouldn't have.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "for sure": {
@@ -1314,6 +1446,7 @@
    "ctx": "of those few seconds of consciousness before you're gonna die, you know, when you know for sure you're gonna die.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "for the first time": {
@@ -1323,6 +1456,7 @@
    "ctx": "he was watching this child, experiencing life for the first time",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "for weeks on end": {
@@ -1332,6 +1466,7 @@
    "ctx": "Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "from this point on": {
@@ -1341,6 +1476,7 @@
    "ctx": "They stop, and from this point on their voices are rushed.",
    "who": "지문",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "from town to town": {
@@ -1350,6 +1486,7 @@
    "ctx": "I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "fuck them up": {
@@ -1359,6 +1496,7 @@
    "ctx": "You know, I mean, everybody's parents fuck them up.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "get away from": {
@@ -1368,6 +1506,7 @@
    "ctx": "I know what you mean about wishing somebody wasn't there though, It‘s just, usually, it‘s myself that I wish I could get away from.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "get back to": {
@@ -1377,6 +1516,7 @@
    "ctx": "What's the first thing you'll do when you get back to Paris?",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "get caught": {
@@ -1386,6 +1526,7 @@
    "ctx": "you know, with all the intricate details of, you know, how to do it, and not get caught, And...",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "get laid": {
@@ -1395,6 +1536,7 @@
    "ctx": "I don't want to just get laid.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "get off the train": {
@@ -1404,6 +1546,7 @@
    "ctx": "You should get off the train with me here in Vienna, and come check out the town.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "get on": {
@@ -1413,6 +1556,7 @@
    "ctx": "I should get on this one",
    "who": "Céline",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "get on the next train": {
@@ -1422,6 +1566,7 @@
    "ctx": "And if I turn out to be some kind of psycho, you know, you just get on the next train.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "get to": {
@@ -1431,6 +1576,7 @@
    "ctx": "You pay your money, you get to hear something that makes you feel good about yourself.",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "문법"
   },
   "get to hear": {
@@ -1440,6 +1586,7 @@
    "ctx": "You pay your money, you get to hear something that makes you feel good about yourself.",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "get uptight": {
@@ -1449,6 +1596,7 @@
    "ctx": "I'm not gonna get uptight about this, right?",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "getting tired of": {
@@ -1458,6 +1606,7 @@
    "ctx": "When you talked earlier about after a few years, how a couple begin to hate each other...by anticipating their reactions...or getting tired of their mannerisms.",
    "who": "Céline",
    "ch": 21,
+   "alt": null,
    "from": "구문"
   },
   "give a shit": {
@@ -1467,6 +1616,7 @@
    "ctx": "I hate, I hate that three hundred kilometers from here there's a war going on, you know, people are dying, and nobody knows what to do about it, or they don't give a shit, I don't know.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "giving him a favor": {
@@ -1476,6 +1626,7 @@
    "ctx": "I was kind of giving him a favor, but he left me, saying I loved him too much",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "go blank": {
@@ -1494,6 +1645,7 @@
    "ctx": "Do you want to go see if that listening booth still works?",
    "who": "Jesse",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "goes over to": {
@@ -1503,6 +1655,7 @@
    "ctx": "They get into the bar, Céline goes over to a table, and Jesse goes up to the bar.",
    "who": "지문",
    "ch": 18,
+   "alt": null,
    "from": "구문"
   },
   "goes up to": {
@@ -1512,6 +1665,7 @@
    "ctx": "They get into the bar, Céline goes over to a table, and Jesse goes up to the bar.",
    "who": "지문",
    "ch": 18,
+   "alt": null,
    "from": "구문"
   },
   "going on": {
@@ -1521,6 +1675,7 @@
    "ctx": "I hate, I hate that three hundred kilometers from here there's a war going on, you know, people are dying, and nobody knows what to do about it, or they don't give a shit, I don't know.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "going to": {
@@ -1530,6 +1685,7 @@
    "ctx": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "gone for that": {
@@ -1539,6 +1695,7 @@
    "ctx": "I don't think my mom would've gone for that.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "good luck with": {
@@ -1548,6 +1705,7 @@
    "ctx": "Yeah. Good luck with school, and all that.",
    "who": "Jesse",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "got a good feeling": {
@@ -1557,6 +1715,7 @@
    "ctx": "I mean, I've known you a long time, and I got a good feeling.",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "got into": {
@@ -1566,6 +1725,7 @@
    "ctx": "Well, listen, we just got into Vienna today, and we're looking for something fun to do.",
    "who": "Jesse",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "got off": {
@@ -1575,6 +1735,7 @@
    "ctx": "Actually...I think I decided I wanted to sleep with you when we got off the train.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "got over him": {
@@ -1584,6 +1745,7 @@
    "ctx": "I totally got over him, you know.",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "got pregnant": {
@@ -1593,6 +1755,7 @@
    "ctx": "Yeah, she got pregnant, we had to get married, you know.",
    "who": "Jesse",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "got to know": {
@@ -1602,6 +1765,7 @@
    "ctx": "If she'd ever got to know him, you know, I'm sure he would have disappointed her eventually.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "gotten married": {
@@ -1611,6 +1775,7 @@
    "ctx": "And maybe that's a lot of romantic bullshit...but people have gotten married for a lot less.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "gotten off the train": {
@@ -1620,6 +1785,7 @@
    "ctx": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "gotten together": {
@@ -1629,6 +1795,7 @@
    "ctx": "because they would have all gotten together, and eaten him alive",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "grow old together": {
@@ -1638,6 +1805,7 @@
    "ctx": "Nature's way of allowing couples to grow old together without killing each other.",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "guess what": {
@@ -1647,6 +1815,7 @@
    "ctx": "Hey, guess what?",
    "who": "Jesse",
    "ch": 21,
+   "alt": null,
    "from": "구문"
   },
   "had fought for": {
@@ -1701,6 +1870,7 @@
    "ctx": "Yeah, she got pregnant, we had to get married, you know.",
    "who": "Jesse",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "hang on": {
@@ -1710,6 +1880,7 @@
    "ctx": "Hang on, I know, I know, its a totally scattered thought, which is kind of why it makes sense.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "hang out": {
@@ -1719,6 +1890,7 @@
    "ctx": "I'm gonna go to a Zen monastery and hang out.",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "hanging around": {
@@ -1728,6 +1900,7 @@
    "ctx": "I'd probably be hanging around the airport, reading old magazines",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "hangs up": {
@@ -1737,6 +1910,7 @@
    "ctx": "“Hangs up.”) Okay it‘s your turn.",
    "who": "지문",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "happen to": {
@@ -1755,6 +1929,7 @@
    "ctx": "Well, then I think this is the opportune time to tell you that I happen to be a fantastic swimmer.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "has to": {
@@ -1764,6 +1939,7 @@
    "ctx": "All those mundane, boring things everybody has to do every day of their fucking life?",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "has to say": {
@@ -1773,6 +1949,7 @@
    "ctx": "I don't care what this woman has to say about anything.",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "hate being told": {
@@ -1800,6 +1977,7 @@
    "ctx": "Do you have any idea what they were arguing about?",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "have been": {
@@ -1827,6 +2005,7 @@
    "ctx": "Have fun with everything you're gonna do.",
    "who": "Céline",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "have got to": {
@@ -1836,6 +2015,7 @@
    "ctx": "“I have got to win.”",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "have never": {
@@ -1845,6 +2025,7 @@
    "ctx": "You know my parents have never really spoken of the possibility of my falling in love, or getting married, or having children.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "have never really spoken of": {
@@ -1863,6 +2044,7 @@
    "ctx": "The way...the way every time that we would have people over...I'd be insecure, and I'd get a little too drunk.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "have to": {
@@ -1872,6 +2054,7 @@
    "ctx": "'cause it would have to play all the time, or else it just wouldn't work.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "have told somebody": {
@@ -1890,6 +2073,7 @@
    "ctx": "Have you ever heard that as couples get older, they lose their ability to hear each other?",
    "who": "Céline",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "having a great time": {
@@ -1899,6 +2083,7 @@
    "ctx": "I'm having a great time.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "heard of": {
@@ -1908,6 +2093,7 @@
    "ctx": "(Finds an album, and shows it to Jesse.) Have you ever heard of this singer?",
    "who": "Céline",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "helping out": {
@@ -1917,6 +2103,7 @@
    "ctx": "This friend of mine had a kid, and it was a home birth, so he was there helping out and everything.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "here she is": {
@@ -1926,6 +2113,7 @@
    "ctx": "Here she is.",
    "who": "Céline",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "here you go": {
@@ -1935,6 +2123,7 @@
    "ctx": "Uh here you go, uh",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "here's the deal": {
@@ -1944,6 +2133,7 @@
    "ctx": "(Speaking very quickly.) So listen, so here's the deal.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "here's the plan": {
@@ -1953,6 +2143,7 @@
    "ctx": "Alright, so here's the plan, right. You're gonna grab the glasses, and I'm gonna get the wine.",
    "who": "Jesse",
    "ch": 18,
+   "alt": null,
    "from": "구문"
   },
   "hey there": {
@@ -1962,6 +2153,7 @@
    "ctx": "Hey there, rabbit.",
    "who": "Jesse",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "high pitched": {
@@ -1989,6 +2181,7 @@
    "ctx": "Eventually, they stop, and walk away holding hands.",
    "who": "지문",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "how about": {
@@ -1998,6 +2191,7 @@
    "ctx": "How about one year?",
    "who": "Céline",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "how about you": {
@@ -2025,6 +2219,7 @@
    "ctx": "How bout you?",
    "who": "Céline",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "how to": {
@@ -2034,6 +2229,7 @@
    "ctx": "my sister had just taught me how to take the garden hose",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "how you been": {
@@ -2043,6 +2239,7 @@
    "ctx": "Hey Frank, how you been?",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "i bet": {
@@ -2052,6 +2249,7 @@
    "ctx": "Yeah, I bet.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "i can't help but feeling": {
@@ -2070,6 +2268,7 @@
    "ctx": "I can't help it.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "i don't know": {
@@ -2088,6 +2287,7 @@
    "ctx": "I don't think it really matters what generation you are born into.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "i get it": {
@@ -2097,6 +2297,7 @@
    "ctx": "Yeah, yeah, I get it.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "i guarantee you": {
@@ -2106,6 +2307,7 @@
    "ctx": "I guarantee you, it was better that way.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "i guess": {
@@ -2115,6 +2317,7 @@
    "ctx": "I guess.",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "i guess so": {
@@ -2124,6 +2327,7 @@
    "ctx": "Yeah, I guess so.",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "i have no idea": {
@@ -2133,6 +2337,7 @@
    "ctx": "Uh, I have no idea.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "i know what you mean": {
@@ -2142,6 +2347,7 @@
    "ctx": "Yeah, I know what you mean.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "i mean": {
@@ -2160,6 +2366,7 @@
    "ctx": "Oh, I see.",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "i thought so": {
@@ -2169,6 +2376,7 @@
    "ctx": "Ah, I thought so, yeah.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "i was going to say": {
@@ -2178,6 +2386,7 @@
    "ctx": "I was going to say the poetry of day to day life, but (Celine starts laughing) you know, you say the way you say it, I'll say it the way I say it...",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "i was gonna say": {
@@ -2187,6 +2396,7 @@
    "ctx": "Yeah, I was gonna say “rooster prick,” but great.",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "i was thinking about": {
@@ -2196,6 +2406,7 @@
    "ctx": "Look, I was thinking about going to the lounge car sometime soon.",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "i'd hate to": {
@@ -2205,6 +2416,7 @@
    "ctx": "I mean, I'd hate to make you fly.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "i'd rather die": {
@@ -2214,6 +2426,7 @@
    "ctx": "I think I'd rather die knowing that I was really good at something",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "i'll have you know": {
@@ -2223,6 +2436,7 @@
    "ctx": "But as far as sexual feelings go, I'll have you know it started with an obsessive relationship with Miss July 1978.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "i'll make note of that": {
@@ -2241,6 +2455,7 @@
    "ctx": "Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "i'll tell you why": {
@@ -2250,6 +2465,7 @@
    "ctx": "And I'll tell you why.",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "i'm gonna": {
@@ -2259,6 +2475,7 @@
    "ctx": "I'm gonna take your picture (puts her at arms length, and stares) so I never forget you...or...or all this.",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "문법"
   },
   "i'm telling you": {
@@ -2268,6 +2485,7 @@
    "ctx": "I'm telling you.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "i've just been": {
@@ -2286,6 +2504,7 @@
    "ctx": "I mean, women say they hate it if you‘re all territorial and protective, but if it suits them, then they'll tell you you're being all unmanly, or wimpy, or uh…",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "if you think about it": {
@@ -2295,6 +2514,7 @@
    "ctx": "but if you think about it, you know, there's nothing more selfish",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "in a given situation": {
@@ -2304,6 +2524,7 @@
    "ctx": "The way he's gonna part his hair...which shirt he's gonna wear that day...knowing the exact story he'd tell in a given situation.",
    "who": "Céline",
    "ch": 21,
+   "alt": null,
    "from": "구문"
   },
   "in any way": {
@@ -2313,6 +2534,7 @@
    "ctx": "And if you like it, I mean, if you like my poem, and you feel it adds something to your life in any way, then you can pay me whatever you feel like.",
    "who": "Poet",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "in front of": {
@@ -2322,6 +2544,7 @@
    "ctx": "What they do is the couple comes in and they kneel down in front of the whole congregation, and they just stare at each other",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "문법"
   },
   "in real time": {
@@ -2331,6 +2554,7 @@
    "ctx": "Oh, I don't know. We're back in real time.",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "in some way": {
@@ -2340,6 +2564,7 @@
    "ctx": "I think I'd rather die knowing that I was really good at something, that I had excelled in some way, you know, than that I had just been in a nice, caring relationship.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "in such a way that": {
@@ -2358,6 +2583,7 @@
    "ctx": "Harpsichord music plays in the background.",
    "who": "지문",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "in the same time": {
@@ -2367,6 +2593,7 @@
    "ctx": "And in the same time, I love the idea that she had all those emotions and feelings",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "in the world": {
@@ -2376,6 +2603,7 @@
    "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "instead of": {
@@ -2385,6 +2613,7 @@
    "ctx": "I mean, instead of just asking you for money, I will ask you for a word.",
    "who": "Poet",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "is that all": {
@@ -2394,6 +2623,7 @@
    "ctx": "Is that all?",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "it seems like": {
@@ -2403,6 +2633,7 @@
    "ctx": "It seems like, um, this would be a...",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "it that": {
@@ -2421,6 +2652,7 @@
    "ctx": "Umm-uh, jump ahead, ten, twenty years, okay, and you're married.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "just as": {
@@ -2430,6 +2662,7 @@
    "ctx": "I'm just as big a loser as he is, totally unmotivated, totally boring, and, uh, you made the right choice, and you're really happy.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "문법"
   },
   "just the opposite": {
@@ -2439,6 +2672,7 @@
    "ctx": "By the time I was in high school, I was dead set on listening to what everybody thought I should be doing with my life, and just kind of (shakes head, shrugs shoulders) doing just the opposite.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "keep talking": {
@@ -2448,6 +2682,7 @@
    "ctx": "(Pauses, then sits down.) I want to keep talking to you, you know.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "kick her ass": {
@@ -2457,6 +2692,7 @@
    "ctx": "They're not gonna come over here and kick her ass, you know what I mean?",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "kind of": {
@@ -2466,6 +2702,7 @@
    "ctx": "I kind of didn't really like this reaction back at the palm reader.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "kind of a": {
@@ -2475,6 +2712,7 @@
    "ctx": "I had a thought the other day that was kind of a--qualifies as a problem.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "kind of haunts me is": {
@@ -2493,6 +2731,7 @@
    "ctx": "Kind of like I'm in a dress rehearsal for a Junior High play.",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "문법"
   },
   "kneel down": {
@@ -2502,6 +2741,7 @@
    "ctx": "the couple comes in and they kneel down in front of the whole congregation",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "knew what i'd seen": {
@@ -2520,6 +2760,7 @@
    "ctx": "and leans out the window, and he says, 'Do you believe in God?'",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "left a bigger impression": {
@@ -2529,6 +2770,7 @@
    "ctx": "I think it left a bigger impression on me at that time than any of the museums we went to.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "let go of": {
@@ -2538,6 +2780,7 @@
    "ctx": "And then finally, I let go of the nozzle, you know, and then I dropped the hose, and she disappeared.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "let me get": {
@@ -2547,6 +2790,7 @@
    "ctx": "Let me get my bag.",
    "who": "Céline",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "let's just": {
@@ -2556,6 +2800,7 @@
    "ctx": "Now let's just be rational adults about this.",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "문법"
   },
   "let's say": {
@@ -2565,6 +2810,7 @@
    "ctx": "Let‘s say that you and I were together all the time, then you'd start to hate a lot of my mannerisms.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "like a skipping record": {
@@ -2583,6 +2829,7 @@
    "ctx": "Alright, alright. Think of it like this.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "문법"
   },
   "list a couple": {
@@ -2601,6 +2848,7 @@
    "ctx": "Look at this.",
    "who": "Jesse",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "looking for": {
@@ -2610,6 +2858,7 @@
    "ctx": "Well, listen, we just got into Vienna today, and we're looking for something fun to do.",
    "who": "Jesse",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "looking out the window": {
@@ -2619,6 +2868,7 @@
    "ctx": "Well, I'll tell ya, you know, sitting, you know, for weeks on end, looking out the window has actually been kinda great.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "lose my temper": {
@@ -2628,6 +2878,7 @@
    "ctx": "Each time I wear black, or like, lose my temper, or say anything about anything, they always go 'oh, it‘s so french, it‘s so cute.'",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "lose one's temper": {
@@ -2646,6 +2897,7 @@
    "ctx": "I mean the only other way to lose yourself like that is...you know, dancing...or alcohol...or drugs or stuff like that.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "made eye contact": {
@@ -2655,6 +2907,7 @@
    "ctx": "I just made eye contact.",
    "who": "Céline",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "made the right choice": {
@@ -2664,6 +2917,7 @@
    "ctx": "I'm just as big a loser as he is, totally unmotivated, totally boring, and, uh, you made the right choice, and you're really happy.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "made up": {
@@ -2673,6 +2927,7 @@
    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "make a deal with you": {
@@ -2682,6 +2937,7 @@
    "ctx": "So, I would like to make a deal with you.",
    "who": "Poet",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "make fun of": {
@@ -2691,6 +2947,7 @@
    "ctx": "We always make fun of it and stuff.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "make it for lunch": {
@@ -2700,6 +2957,7 @@
    "ctx": "I don't think I'm gonna be able to make it for lunch today, I'm sorry.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "makes sense": {
@@ -2709,6 +2967,7 @@
    "ctx": "Hang on, I know, I know, its a totally scattered thought, which is kind of why it makes sense.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "managed to avoid": {
@@ -2718,6 +2977,7 @@
    "ctx": "Umm, it‘s funny how we managed to avoid this subject for so long, isn't it?",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "may i": {
@@ -2727,6 +2987,7 @@
    "ctx": "Okay uh, so um, may I ask you a question?",
    "who": "Poet",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "meant something to me": {
@@ -2736,6 +2997,7 @@
    "ctx": "That meant something to me, you know, I was around that age when I first saw this.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "meant to be": {
@@ -2745,6 +3007,7 @@
    "ctx": "I always saw the world as this place where I really wasn't meant to be.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "might have": {
@@ -2754,6 +3017,7 @@
    "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "문법"
   },
   "might have happened": {
@@ -2763,6 +3027,7 @@
    "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "mind goes completely blank": {
@@ -2772,6 +3037,7 @@
    "ctx": "(Laughs) Un billet s'il vous plaît, un billet s'il vous plaît, you know, and I get up there, and, uh, I look at this woman, and my mind goes completely blank.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "miss out on": {
@@ -2790,6 +3056,7 @@
    "ctx": "(Points at himself.) That's me, you know, so think of this as time travel, from then, to now, uh, to find out what you're missing out on.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "more and more": {
@@ -2799,6 +3066,7 @@
    "ctx": "I began to like him more and more.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "more than": {
@@ -2808,6 +3076,7 @@
    "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "more than anything": {
@@ -2817,6 +3086,7 @@
    "ctx": "You know, they love me more than anything in the world, and I have been raised with all the freedom they had fought for.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "most of": {
@@ -2826,6 +3096,7 @@
    "ctx": "He explained that most of the people are buried here that washed up on the bank of the Danube.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "문법"
   },
   "much more": {
@@ -2835,6 +3106,7 @@
    "ctx": "I'm sure even, you know, men are destroying women, or are able...capable of destroying women, much more than women...",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "must have been": {
@@ -2844,6 +3116,7 @@
    "ctx": "Must have been forty-five minutes.",
    "who": "Céline",
    "ch": 10,
+   "alt": null,
    "from": "구문"
   },
   "my mind goes completely blank": {
@@ -2862,6 +3135,7 @@
    "ctx": "You know, like my life was my own doing, or something.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "nature's way of": {
@@ -2871,6 +3145,7 @@
    "ctx": "Nature's way of allowing couples to grow old together without killing each other.",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "next to": {
@@ -2880,6 +3155,7 @@
    "ctx": "Yeah, she was sitting next to this very weird couple who started fighting so she had to move.",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "문법"
   },
   "no big deal": {
@@ -2889,6 +3165,7 @@
    "ctx": "So, I'm like alright, “Hey, no big deal,” I'm not gonna get uptight about this, right?",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "no end to this": {
@@ -2898,6 +3175,7 @@
    "ctx": "You know, men, women you know, it‘s, it‘s...there's no end to this, like, you know...",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "no one": {
@@ -2907,6 +3185,7 @@
    "ctx": "No one was ever mean about it.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "no problem": {
@@ -2916,6 +3195,7 @@
    "ctx": "Yeah, yeah. No problem.",
    "who": "Jesse",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "no way": {
@@ -2925,6 +3205,7 @@
    "ctx": "Ah, no. No, no way, I can't.",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "none of": {
@@ -2934,6 +3215,7 @@
    "ctx": "When I was a little girl, I thought that if none of your family or friends knew you were dead, then it's like not really being dead.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "문법"
   },
   "not enough": {
@@ -2943,6 +3225,7 @@
    "ctx": "You know, rich kids' parents gave them too much, poor kids' not enough.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "not long after": {
@@ -2961,6 +3244,7 @@
    "ctx": "Was it a beautiful thing? Not really, you know.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "not service oriented": {
@@ -2979,6 +3263,7 @@
    "ctx": "I mean, it‘s not so bad if tonight is our only night, right?",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "not that": {
@@ -2988,6 +3273,7 @@
    "ctx": "I'm sorry. I mean, I'm not that sorry. But, uh, tell me about it.",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "문법"
   },
   "not that funny": {
@@ -2997,6 +3283,7 @@
    "ctx": "But museums are not that funny ^ any more these days, uh...",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "not yet": {
@@ -3006,6 +3293,7 @@
    "ctx": "No, not yet. What would you be doing?",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "nothing at all": {
@@ -3015,6 +3303,7 @@
    "ctx": "Nothing, nothing at all.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "now that": {
@@ -3024,6 +3313,7 @@
    "ctx": "But now that we've talked so much, I don't know anymore.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "obsessed with him": {
@@ -3033,6 +3323,7 @@
    "ctx": "and became totally obsessed with him",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "of course": {
@@ -3042,6 +3333,7 @@
    "ctx": "And of course, you don't speak any other language, right?",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "of course not": {
@@ -3051,6 +3343,7 @@
    "ctx": "Of course not.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "on end": {
@@ -3069,6 +3362,7 @@
    "ctx": "You on holiday?",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "on honeymoon": {
@@ -3078,6 +3372,7 @@
    "ctx": "We're on honeymoon.",
    "who": "Céline",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "on one's own": {
@@ -3096,6 +3391,7 @@
    "ctx": "I'm sure she did it on purpose.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "on some level": {
@@ -3105,6 +3401,7 @@
    "ctx": "I think on some level, women don't mind the idea of destroying a man, you know.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "on your own": {
@@ -3114,6 +3411,7 @@
    "ctx": "You were visiting friends, or just on your own?",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "once or twice": {
@@ -3123,6 +3421,7 @@
    "ctx": "People always exchange phone numbers, addresses, they end up writing once, calling each other once or twice...",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "one and only": {
@@ -3132,6 +3431,7 @@
    "ctx": "To our one and only night together, and the hours that remain.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "one of those": {
@@ -3141,6 +3441,7 @@
    "ctx": "Yeah, I got one of those Eurail passes, is what I did.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "only if": {
@@ -3150,6 +3451,7 @@
    "ctx": "Only if you find peace within yourself, will you find true connection with others.",
    "who": "Gypsy",
    "ch": 9,
+   "alt": null,
    "from": "문법"
   },
   "or anything like that": {
@@ -3159,6 +3461,7 @@
    "ctx": "or anything like that?",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "or else": {
@@ -3168,6 +3471,7 @@
    "ctx": "I mean, getting these tapes from town to town, city to city, so that the play is continuous, ‘cause it would have to play all the time, or else it just wouldn't work.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "or so": {
@@ -3177,6 +3481,7 @@
    "ctx": "Around the beginning of the century or so.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "or something": {
@@ -3186,6 +3491,7 @@
    "ctx": "I guess they sort of nullify each other, or something.",
    "who": "Céline",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "or something like that": {
@@ -3195,6 +3501,7 @@
    "ctx": "Even as a little girl, they wanted me to think of a future career, as a, you know, as an interior designer, or a lawyer, or something like that.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "out of": {
@@ -3204,6 +3511,7 @@
    "ctx": "So I bought the cheapest flight out of Europe, this one leaving out of Vienna tomorrow, but it didn't leave for a couple of weeks.",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "문법"
   },
   "out of business": {
@@ -3213,6 +3521,7 @@
    "ctx": "if opportunists like that, ever had to tell the real truth, it would put their ASSES out of business",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "out of her mind": {
@@ -3222,6 +3531,7 @@
    "ctx": "She was totally out of her mind.",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "out of his head": {
@@ -3231,6 +3541,7 @@
    "ctx": "He just couldn't get it out of his head.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "out of there": {
@@ -3249,6 +3560,7 @@
    "ctx": "She's not coming over here.",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "문법"
   },
   "over there": {
@@ -3258,6 +3570,7 @@
    "ctx": "Yeah, there's even a listening booth over there.",
    "who": "Céline",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "palm reader": {
@@ -3276,6 +3589,7 @@
    "ctx": "The way he's gonna part his hair...which shirt he's gonna wear that day...knowing the exact story he'd tell in a given situation.",
    "who": "Céline",
    "ch": 21,
+   "alt": null,
    "from": "구문"
   },
   "passing through": {
@@ -3285,6 +3599,7 @@
    "ctx": "He's passing through here too.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "passive aggressive": {
@@ -3312,6 +3627,7 @@
    "ctx": "I don't know...I'll probably go pick up my dog.",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "pick up the phone": {
@@ -3321,6 +3637,7 @@
    "ctx": "Pick up the phone!",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "picked up with": {
@@ -3330,6 +3647,7 @@
    "ctx": "You start to think about all those guys you've met in your life, and what MIGHT have happened if you'd picked up with one of them, right?",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "piss someone off": {
@@ -3348,6 +3666,7 @@
    "ctx": "you know, that he was really pissed off when he found out that she was pregnant with me",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "pisses you off": {
@@ -3357,6 +3676,7 @@
    "ctx": "Tell me something that really pisses you off, really drives you crazy.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "plugs that word in": {
@@ -3366,6 +3686,7 @@
    "ctx": "but he probably just plugs that word in",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "pretty much": {
@@ -3375,6 +3696,7 @@
    "ctx": "She pretty much managed to avoid being alone with me for the first couple of days we were there",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "pretty neat": {
@@ -3384,6 +3706,7 @@
    "ctx": "This place is pretty neat.",
    "who": "Jesse",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "pseudo intellectual": {
@@ -3402,6 +3725,7 @@
    "ctx": "So who just got pushed to the front line on that one?",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "put it on": {
@@ -3411,6 +3735,7 @@
    "ctx": "(Céline shakes her head) Umm, I dunno...Anybody can produce a show real cheap, and they have to put it on.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "put out of business": {
@@ -3438,6 +3763,7 @@
    "ctx": "but it reminds me of, like this perfect, you know, male argument to justify them fooling around",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "resign oneself to": {
@@ -3456,6 +3782,7 @@
    "ctx": "You need to resign yourself to the awkwardness of life.",
    "who": "Gypsy",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "revolving around": {
@@ -3465,6 +3792,7 @@
    "ctx": "I mean,...I, I always feel this pressure of being a strong and independent icon of womanhood, and without making...making it look my...my whole life is revolving around some guy.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "right away": {
@@ -3474,6 +3802,7 @@
    "ctx": "I couldn't go home right away.",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "right in front of": {
@@ -3483,6 +3812,7 @@
    "ctx": "She told me, right in front of my father",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "right now": {
@@ -3492,6 +3822,7 @@
    "ctx": "No, not right now.",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "문법"
   },
   "rob someone blind": {
@@ -3510,6 +3841,7 @@
    "ctx": "Alright, listen, this woman robs you blind, okay?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "save up": {
@@ -3519,6 +3851,7 @@
    "ctx": "some little old lady, save up all her money, you know, to go to the fortune teller",
    "who": "Jesse",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "say goodbye": {
@@ -3528,6 +3861,7 @@
    "ctx": "Well, we could say goodbye now.",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "says a word": {
@@ -3537,6 +3871,7 @@
    "ctx": "and nobody says a word unless they feel that God moves them to speak",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "scared the hell out of": {
@@ -3546,6 +3881,7 @@
    "ctx": "'cause I have a big crush on you.‘ (Jesse lets his jaw drop.) Yeah, it really scared the hell out of me",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "scared to death": {
@@ -3555,6 +3891,7 @@
    "ctx": "He must be scared to death.",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "see each other again": {
@@ -3564,6 +3901,7 @@
    "ctx": "After tomorrow morning, we're probably never going to see each other again, right?",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "see if it fits": {
@@ -3573,6 +3911,7 @@
    "ctx": "I think you're supposed to produce the glass slipper, and see if it fits.",
    "who": "Céline",
    "ch": 16,
+   "alt": null,
    "from": "구문"
   },
   "see me falling": {
@@ -3591,6 +3930,7 @@
    "ctx": "You see what I'm saying?",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "seem to": {
@@ -3600,6 +3940,7 @@
    "ctx": "I love the way the people seem to be dissolving into the background.",
    "who": "Céline",
    "ch": 10,
+   "alt": null,
    "from": "문법"
   },
   "service oriented": {
@@ -3618,6 +3959,7 @@
    "ctx": "Celine starts to shake her head.",
    "who": "지문",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "shake off": {
@@ -3627,6 +3969,7 @@
    "ctx": "They're trying to shake off their genitals, and become angels.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "shave the hair off": {
@@ -3654,6 +3997,7 @@
    "ctx": "I was blocking his artistic expression, or some shit like that, you know.",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "shooting some pool": {
@@ -3663,6 +4007,7 @@
    "ctx": "...you know, I could be doing the most nothing thing, you know, I could be uh, throwing some darts, or shooting some pool, and all of a sudden, I feel it come over me, “I have got to win.”",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "should have": {
@@ -3672,6 +4017,7 @@
    "ctx": "They should have done it a lot sooner, but they stuck together for a while",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "should have told you": {
@@ -3681,6 +4027,7 @@
    "ctx": "I should have told you this earlier, Céline",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "sick of": {
@@ -3699,6 +4046,7 @@
    "ctx": "So of course I'm sick of myself.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "sick to death of": {
@@ -3708,6 +4056,7 @@
    "ctx": "they are sick to death of being around themselves.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "side by side": {
@@ -3717,6 +4066,7 @@
    "ctx": "Jesse and Céline walk side by side, together holding her bag between them.",
    "who": "지문",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "sink in": {
@@ -3726,6 +4076,7 @@
    "ctx": "just to kind of let it really sink in that she wished I hadn't come",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "sit me down": {
@@ -3735,6 +4086,7 @@
    "ctx": "And they, uh, sit me down give me big rap on how [when people die] you never see them again, and how I'd imagined it.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "sleep together": {
@@ -3744,6 +4096,7 @@
    "ctx": "I don't think we should sleep together.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "small talk": {
@@ -3753,6 +4106,7 @@
    "ctx": "Scene clip: Jesse and Céline stand on the tram, exchanging small talk, and laughing.",
    "who": "지문",
    "ch": 6,
+   "alt": null,
    "from": "구문"
   },
   "so as to": {
@@ -3762,6 +4116,7 @@
    "ctx": "so as to make the birth less painful",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "so many": {
@@ -3771,6 +4126,7 @@
    "ctx": "That's why so many people hate themselves.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "문법"
   },
   "so much": {
@@ -3780,6 +4136,7 @@
    "ctx": "But loving someone, and being loved means so much to me.",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "so that": {
@@ -3798,6 +4155,7 @@
    "ctx": "I have no idea what your situation is, but, uh, but I feel like we have some kind of uh, connection.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "somebody else": {
@@ -3807,6 +4165,7 @@
    "ctx": "But being with you...it's made me feel like I was somebody else.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "문법"
   },
   "someone else": {
@@ -3816,6 +4175,7 @@
    "ctx": "I wished I'd been with someone else.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "문법"
   },
   "something like that": {
@@ -3825,6 +4185,7 @@
    "ctx": "(Back to regular voice.) Something like that.",
    "who": "Jesse",
    "ch": 21,
+   "alt": null,
    "from": "구문"
   },
   "something to that": {
@@ -3834,6 +4195,7 @@
    "ctx": "See...see, I think there's something to that.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "sometime soon": {
@@ -3852,6 +4214,7 @@
    "ctx": "I guess they sort of nullify each other, or something.",
    "who": "Céline",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "sounds like": {
@@ -3861,6 +4224,7 @@
    "ctx": "Sounds like a harpsichord.",
    "who": "Céline",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "spent some time in": {
@@ -3870,6 +4234,7 @@
    "ctx": "Then I spent some time in London.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "stand in line": {
@@ -3888,6 +4253,7 @@
    "ctx": "and they just stare at each other, and nobody says a word",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "staying up all night": {
@@ -3897,6 +4263,7 @@
    "ctx": "So often in my life I've been with people and shared beautiful moments like travelling, or staying up all night and watching the sunrise, and I knew those were special moments.",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "stick around": {
@@ -3924,6 +4291,7 @@
    "ctx": "When I first got to Paris, I stood in line at the metro station.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "stuck around": {
@@ -3933,6 +4301,7 @@
    "ctx": "They either left them, or you know, they stuck around and taught 'em the wrong things.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "stuck together": {
@@ -3942,6 +4311,7 @@
    "ctx": "We've known each other a little while now, we're stuck together, so we're going to ask each other a few uh, direct questions.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "stuff like that": {
@@ -3951,6 +4321,7 @@
    "ctx": "I mean the only other way to lose yourself like that is...you know, dancing...or alcohol...or drugs or stuff like that.",
    "who": "Jesse",
    "ch": 19,
+   "alt": null,
    "from": "구문"
   },
   "suddenly struck him": {
@@ -3960,6 +4331,7 @@
    "ctx": "he was fifty-two and it suddenly struck him that he had never really given anything of himself",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "supposed to": {
@@ -3969,6 +4341,7 @@
    "ctx": "Why do you think everybody thinks relationships are supposed to last forever?",
    "who": "Jesse",
    "ch": 17,
+   "alt": null,
    "from": "구문"
   },
   "supposed to be": {
@@ -3978,6 +4351,7 @@
    "ctx": "if I could just accept the fact that my life was supposed to be difficult",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "sure enough": {
@@ -3987,6 +4361,7 @@
    "ctx": "and one of 'em, sure enough, says",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "take pride in": {
@@ -4014,6 +4389,7 @@
    "ctx": "I'm gonna take your picture (puts her at arms length, and stares) so I never forget you...or...or all this.",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "takes out": {
@@ -4023,6 +4399,7 @@
    "ctx": "And my buddy takes out a hundred dollar bill, and leans out the window",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "tell me about it": {
@@ -4032,6 +4409,7 @@
    "ctx": "C'mon, tell me about it.",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "than any of": {
@@ -4041,6 +4419,7 @@
    "ctx": "I think it left a bigger impression on me at that time than any of the museums we went to.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "문법"
   },
   "than that": {
@@ -4050,6 +4429,7 @@
    "ctx": "I think I'd rather die knowing that I was really good at something, that I had excelled in some way, you know, than that I had just been in a nice, caring relationship.",
    "who": "Jesse",
    "ch": 14,
+   "alt": null,
    "from": "문법"
   },
   "thank you very much": {
@@ -4059,6 +4439,7 @@
    "ctx": "for the well-being of my sister and I, thank you very much.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "that come here": {
@@ -4070,6 +4451,16 @@
    "ch": 11,
    "from": "내 하이라이트"
   },
+  "that kind of": {
+   "ko": "그런 종류의, 그런",
+   "en": "that type of",
+   "nuance": "kind of가 명사로 쓰인 자리. that kind of thing(그런 것)처럼 앞의 지시어가 종류를 가리킨다. 완충어 kind of와 형태만 같을 뿐 하는 일이 다르다.",
+   "ctx": "Well, you know, despite all that kind of bullshit that comes along with it, I remember childhood as this, you know, this magical time.",
+   "who": "Jesse",
+   "ch": 2,
+   "alt": "완충어 kind of와 형태가 같다. 앞에 that이 있으니 여기서는 '그런 종류의'다. 완충어라면 that 없이 동사 앞에 붙는다.",
+   "from": "문법"
+  },
   "that much": {
    "ko": "그렇게까지",
    "en": "to that degree",
@@ -4077,6 +4468,7 @@
    "ctx": "Why do you become obsessed with people you don't really like that much, you know, I mean…",
    "who": "Céline",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "that's all": {
@@ -4086,6 +4478,7 @@
    "ctx": "Maybe a first name, that's all.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "that's funny": {
@@ -4095,6 +4488,7 @@
    "ctx": "That's funny.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "that's so wild": {
@@ -4104,6 +4498,7 @@
    "ctx": "That's so wild.",
    "who": "Jesse",
    "ch": 11,
+   "alt": null,
    "from": "구문"
   },
   "that's too bad": {
@@ -4113,6 +4508,7 @@
    "ctx": "And he turned to me and said, (Making her voice a bit lower.) ‘Well, that's too bad, 'cause I have a big crush on you.‘",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "that's why": {
@@ -4122,6 +4518,7 @@
    "ctx": "I mean, that's why I'm in a train right now.",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "문법"
   },
   "the best and the worst": {
@@ -4131,6 +4528,7 @@
    "ctx": "People can invent the best and the worst for you.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "the first thing": {
@@ -4140,6 +4538,7 @@
    "ctx": "What's the first thing you'll do when you get back to Paris?",
    "who": "Jesse",
    "ch": 20,
+   "alt": null,
    "from": "문법"
   },
   "the most nothing thing": {
@@ -4158,6 +4557,7 @@
    "ctx": "It's the only way, no?",
    "who": "Céline",
    "ch": 17,
+   "alt": null,
    "from": "문법"
   },
   "the other day": {
@@ -4167,6 +4567,7 @@
    "ctx": "Um, no, alright, I had a thought the other day that was kind of a--qualifies as a problem.",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "the rest of my life": {
@@ -4176,6 +4577,7 @@
    "ctx": "Alright, I have an admittedly insane idea, but if I don't ask you this, it‘s just, uh, you know, it‘s gonna haunt me the rest of my life.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "the same old shit": {
@@ -4185,6 +4587,7 @@
    "ctx": "We still have to deal with the same old shit, but we can't really know who, or you know, what the enemy is.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "the way": {
@@ -4194,6 +4597,7 @@
    "ctx": "And I think that really shaped the way I think.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "these days": {
@@ -4203,6 +4607,7 @@
    "ctx": "But museums are not that funny ^ any more these days, uh...",
    "who": "Man with tie",
    "ch": 4,
+   "alt": null,
    "from": "구문"
   },
   "they kneel down": {
@@ -4221,6 +4626,7 @@
    "ctx": "I think some were from accidents, on boats and things like that, but most of them were suicides that jumped in the river.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "think about all those guys": {
@@ -4239,6 +4645,7 @@
    "ctx": "No listen, think about it like this...",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "think of this as": {
@@ -4248,6 +4655,7 @@
    "ctx": "(Points at himself.) That's me, you know, so think of this as time travel, from then, to now, uh, to find out what you're missing out on.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "this fine here": {
@@ -4266,6 +4674,7 @@
    "ctx": "Okay. I guess this is it, no?",
    "who": "Céline",
    "ch": 22,
+   "alt": null,
    "from": "구문"
   },
   "to be expected": {
@@ -4275,6 +4684,7 @@
    "ctx": "that's what's to be expected, then, I might not get so pissed off about it",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "too bad": {
@@ -4284,6 +4694,7 @@
    "ctx": "Oh. Too bad. I told you, no?",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "too much": {
@@ -4293,6 +4704,7 @@
    "ctx": "You know, rich kids' parents gave them too much, poor kids' not enough.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "문법"
   },
   "took pride in": {
@@ -4302,6 +4714,7 @@
    "ctx": "No, I mean, I eventually kind of took pride in it.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "trips over": {
@@ -4311,6 +4724,7 @@
    "ctx": "Jesse walks a bit behind Céline, and moves so that she trips over her foot.",
    "who": "지문",
    "ch": 10,
+   "alt": null,
    "from": "구문"
   },
   "try their best": {
@@ -4320,6 +4734,7 @@
    "ctx": "I mean, my parents are just these two people who didn't like each other very much, who, uh, decided to get married and have a kid, and they try their best to be nice to me.",
    "who": "Jesse",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "trying to say": {
@@ -4329,6 +4744,7 @@
    "ctx": "Are you trying to say you want to kiss me?",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "turn into pumpkins": {
@@ -4338,6 +4754,7 @@
    "ctx": "But then the morning comes, and we turn into pumpkins, right?",
    "who": "Céline",
    "ch": 16,
+   "alt": null,
    "from": "구문"
   },
   "turn out to be": {
@@ -4347,6 +4764,7 @@
    "ctx": "And if I turn out to be some kind of psycho, you know, you just get on the next train.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "turns into": {
@@ -4356,6 +4774,7 @@
    "ctx": "If it just turns into more busy work.",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "unsure of myself": {
@@ -4365,6 +4784,7 @@
    "ctx": "And I was so unsure of myself.",
    "who": "Jesse",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "up there": {
@@ -4374,6 +4794,7 @@
    "ctx": "Then, up there in the Ferris wheel, it was like this very old woman kissing this very young boy, right?",
    "who": "Céline",
    "ch": 11,
+   "alt": null,
    "from": "문법"
   },
   "up to": {
@@ -4383,6 +4804,7 @@
    "ctx": "They get into the bar, Céline goes over to a table, and Jesse goes up to the bar.",
    "who": "지문",
    "ch": 18,
+   "alt": null,
    "from": "문법"
   },
   "used to": {
@@ -4392,6 +4814,7 @@
    "ctx": "Only your marriage doesn't have that same energy that it used to have, you know.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "문법"
   },
   "used to always": {
@@ -4401,6 +4824,7 @@
    "ctx": "I just, I dated this girl once who, who used to always ask me that question, \"What about me bugs you?\" you know.",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "문법"
   },
   "used to have": {
@@ -4410,6 +4834,7 @@
    "ctx": "Only your marriage doesn't have that same energy that it used to have, you know.",
    "who": "Jesse",
    "ch": 3,
+   "alt": null,
    "from": "구문"
   },
   "wait a minute": {
@@ -4419,6 +4844,7 @@
    "ctx": "Wait a minute.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "waiting on": {
@@ -4428,6 +4854,7 @@
    "ctx": "You got a boyfriend waiting on you back in Paris, or anything like that?",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "walk away": {
@@ -4437,6 +4864,7 @@
    "ctx": "Eventually, they stop, and walk away holding hands.",
    "who": "지문",
    "ch": 20,
+   "alt": null,
    "from": "구문"
   },
   "walking by": {
@@ -4446,6 +4874,7 @@
    "ctx": "You were like a little boy walking by an ice cream store, crying because his mother wouldn't buy him a milkshake or something.",
    "who": "Céline",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "wash up": {
@@ -4464,6 +4893,7 @@
    "ctx": "He explained that most of the people are buried here that washed up on the bank of the Danube.",
    "who": "Céline",
    "ch": 7,
+   "alt": null,
    "from": "구문"
   },
   "well being": {
@@ -4482,6 +4912,7 @@
    "ctx": "After I went into such private details about my first sexual feelings.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "went on": {
@@ -4500,6 +4931,7 @@
    "ctx": "I was born not long after, and then my father went on to become this successful architect, and they began to travel all around the world, where he built bridges, and towers, and stuff.",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "went out to dinner": {
@@ -4509,6 +4941,7 @@
    "ctx": "and we went out to dinner, our first night ah, with six of her friends",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "went to see this shrink": {
@@ -4527,6 +4960,7 @@
    "ctx": "Yeah, what a drag.",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "what about": {
@@ -4536,6 +4970,7 @@
    "ctx": "What about our rational, adult decision?",
    "who": "Céline",
    "ch": 19,
+   "alt": null,
    "from": "문법"
   },
   "what are you talking about": {
@@ -4545,6 +4980,7 @@
    "ctx": "You, what are you talking about?",
    "who": "Céline",
    "ch": 9,
+   "alt": null,
    "from": "구문"
   },
   "what can i say": {
@@ -4554,6 +4990,7 @@
    "ctx": "What can I say?",
    "who": "Jesse",
    "ch": 12,
+   "alt": null,
    "from": "구문"
   },
   "what do you mean": {
@@ -4563,6 +5000,7 @@
    "ctx": "What do you mean?",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "what else": {
@@ -4572,6 +5010,7 @@
    "ctx": "I hate being told by a strange man, a strange man in the street, you know, like, to smile, like, to make them feel better about their boring life, um, what else?",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "what good is": {
@@ -4581,6 +5020,7 @@
    "ctx": "But, what good is saved time, if nobody uses it?",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "what good is saved time": {
@@ -4608,7 +5048,18 @@
    "ctx": "Well, what if I asked you about love?",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
+  },
+  "what kind of": {
+   "ko": "어떤 종류의, 어떤",
+   "en": "what type of",
+   "nuance": "여기서 kind of는 완충어 '좀'이 아니라 명사 kind(종류)다. 앞에 what·this·some 같은 한정사가 붙으면 언제나 '종류' 쪽이고, 'I kind of like it'처럼 동사 앞에 홀로 서면 완충어다. 이 둘을 헷갈리면 문장이 통째로 다르게 읽힌다.",
+   "ctx": "What kind of ideas?",
+   "who": "Céline",
+   "ch": 2,
+   "alt": "kind of는 자리에 따라 완전히 갈린다. 앞에 what·this·some 같은 한정사가 있으면 명사 '종류'(What kind of ideas? 어떤 종류의 생각), 동사·형용사 앞에 홀로 서면 완충어 '좀'(I kind of like it 좀 좋아해). 한정사가 있는지만 보면 된다.",
+   "from": "문법"
   },
   "what this really could be": {
    "ko": "이게 사실은 뭐가 될 수 있냐면",
@@ -4626,6 +5077,7 @@
    "ctx": "people are dying, and nobody knows what to do about it, or they don't give a shit",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "what's up": {
@@ -4635,6 +5087,7 @@
    "ctx": "Hi dude, what's up?",
    "who": "Céline",
    "ch": 15,
+   "alt": null,
    "from": "구문"
   },
   "where are you headed": {
@@ -4644,6 +5097,7 @@
    "ctx": "(Pauses and swallows, before breaking the slience) So, where are you headed?",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "where do you go": {
@@ -4662,6 +5116,7 @@
    "ctx": "but...who cares, really?",
    "who": "Céline",
    "ch": 14,
+   "alt": null,
    "from": "구문"
   },
   "why not": {
@@ -4671,6 +5126,7 @@
    "ctx": "Sure, why not?",
    "who": "Jesse",
    "ch": 5,
+   "alt": null,
    "from": "구문"
   },
   "wish me good luck": {
@@ -4680,6 +5136,7 @@
    "ctx": "Wish me good luck.",
    "who": "Jesse",
    "ch": 18,
+   "alt": null,
    "from": "구문"
   },
   "would have": {
@@ -4689,6 +5146,7 @@
    "ctx": "I would have lied, but at least, you know, I would have made up a great story.",
    "who": "Céline",
    "ch": 5,
+   "alt": null,
    "from": "문법"
   },
   "would you like to": {
@@ -4698,6 +5156,7 @@
    "ctx": "Would you like to come with me?",
    "who": "Jesse",
    "ch": 1,
+   "alt": null,
    "from": "구문"
   },
   "you know": {
@@ -4716,6 +5175,7 @@
    "ctx": "But you know what?",
    "who": "Céline",
    "ch": 8,
+   "alt": null,
    "from": "구문"
   },
   "you know what i mean": {
@@ -4725,6 +5185,7 @@
    "ctx": "You know, even when they're wrong, it‘s this, it‘s this passive-aggressive shit, you know what I mean, it‘s...",
    "who": "Céline",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "you want to hear one": {
@@ -4734,6 +5195,7 @@
    "ctx": "You want to hear one?",
    "who": "Jesse",
    "ch": 2,
+   "alt": null,
    "from": "구문"
   },
   "you'd like to think": {
@@ -4743,6 +5205,7 @@
    "ctx": "(Loses ball.) You know, you'd like to think that you're both in all this pain, but really, they're just, “Hey, I'm glad you're gone.“ (They switch.)",
    "who": "Jesse",
    "ch": 13,
+   "alt": null,
    "from": "구문"
   },
   "you're supposed to": {
@@ -4752,6 +5215,7 @@
    "ctx": "But at this time, I think you're supposed to produce the glass slipper, and see if it fits.",
    "who": "Céline",
    "ch": 16,
+   "alt": null,
    "from": "구문"
   },
   "you've met": {

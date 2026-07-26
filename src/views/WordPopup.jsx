@@ -86,6 +86,25 @@ export default function WordPopup({
                 뉘앙스 — {entry.nuance}
               </p>
             )}
+            {/* 자리에 따라 뜻이 갈리는 표현은 그 갈림을 같이 보여준다.
+                한쪽만 보여주면 나머지 절반을 틀리게 외운다. */}
+            {entry.alt && (
+              <div
+                className="panel"
+                style={{
+                  padding: 'var(--s3)',
+                  borderColor: 'var(--accent-border)',
+                  background: 'var(--accent-soft)',
+                }}
+              >
+                <div className="hint" style={{ textAlign: 'left', marginBottom: 4 }}>
+                  문맥에 따라
+                </div>
+                <p style={{ margin: 0, fontSize: 14, color: 'var(--text-dim)' }}>
+                  {entry.alt}
+                </p>
+              </div>
+            )}
             {entry.syn?.length > 0 && (
               <div className="row" style={{ flexWrap: 'wrap' }}>
                 {entry.syn.map((s) => (
