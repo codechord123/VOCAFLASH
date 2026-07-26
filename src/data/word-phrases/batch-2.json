@@ -1,0 +1,1142 @@
+[
+  {
+    "phrase": "check these guys out",
+    "ko": "이 사람들 좀 봐",
+    "en": "take a look at these guys",
+    "nuance": "look at보다 '재밌으니 너도 봐 봐' 하는 구경 권유에 가깝다. 제시가 지나가는 수도사들을 보고 성대모사를 시작하기 직전에 셀린의 주의를 끌려고 던지는 말.",
+    "register": "casual",
+    "ctx": "Hey...check these guys out.",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "a confession to make",
+    "ko": "고백할 게 있다",
+    "en": "something to admit",
+    "nuance": "종교적 고해(confession)를 일상 대화의 '사실 말이야'로 비트는 표현. 수도사 흉내라는 상황과 겹쳐서 농담이 성립한다.",
+    "register": "neutral",
+    "ctx": "I have a confession to make.",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "made eye contact",
+    "ko": "눈이 마주쳤다",
+    "en": "looked directly at each other",
+    "nuance": "'봤다'가 아니라 서로 시선이 걸려서 이제 피할 수 없게 됐다는 뉘앙스. 셀린이 점쟁이에게 걸렸다며 낭패한 톤으로 쓴다.",
+    "register": "neutral",
+    "ctx": "I just made eye contact.",
+    "who": "Céline",
+    "ch": 9
+  },
+  {
+    "phrase": "coming over",
+    "ko": "이쪽으로 오는",
+    "en": "approaching us",
+    "nuance": "come over는 상대가 있는 쪽으로 건너오는 이동. 여기서는 '설마 오겠어'라며 부정하는 제시의 헛된 기대가 담겨 있다.",
+    "register": "casual",
+    "ctx": "She's not coming over here.",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "resign yourself to",
+    "ko": "~을 받아들이고 체념하다",
+    "en": "accept something you cannot change",
+    "nuance": "accept와 달리 '싸우기를 그만두고 순순히 받아들인다'는 포기의 색이 있다. 점쟁이가 인생의 어색함과 화해하라고 권할 때 쓰는 다소 격식 있는 말.",
+    "register": "formal",
+    "ctx": "You need to resign yourself to the awkwardness of life.",
+    "who": "Gypsy",
+    "ch": 9
+  },
+  {
+    "phrase": "and all",
+    "ko": "뭐 그런 거",
+    "en": "and everything, and so on",
+    "nuance": "앞말을 대충 뭉뚱그려 마무리하는 구어 꼬리표로, 보통 뒤에 but이 따라오며 '좋긴 한데'라는 유보를 예고한다. 제시가 점쟁이 말을 깎아내리기 직전의 완충장치.",
+    "register": "casual",
+    "ctx": "I mean, that's very nice and all",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "what are you talking about",
+    "ko": "무슨 소리야",
+    "en": "I don't understand / I disagree",
+    "nuance": "정보를 묻는 질문이 아니라 상대 말이 터무니없다는 반박에 가깝다. 셀린이 제시의 냉소에 발끈하며 되받는 자리라 어조가 세다.",
+    "register": "casual",
+    "ctx": "You, what are you talking about?",
+    "who": "Céline",
+    "ch": 9
+  },
+  {
+    "phrase": "out of business",
+    "ko": "장사를 접게",
+    "en": "no longer able to operate",
+    "nuance": "폐업을 뜻하는 고정 표현으로 put/go와 붙어 쓰인다. 점쟁이가 진실을 말하면 밥벌이가 끝난다는 제시의 비아냥.",
+    "register": "neutral",
+    "ctx": "if opportunists like that, ever had to tell the real truth, it would put their ASSES out of business",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "save up",
+    "ko": "돈을 모으다",
+    "en": "put money aside over time",
+    "nuance": "save가 단순히 아끼는 것이라면 save up은 목표를 두고 조금씩 쌓는 것. 노파가 평생 모은 돈을 점 보는 데 쓴다는 제시의 가상 이야기에서 안쓰러움을 키운다.",
+    "register": "neutral",
+    "ctx": "some little old lady, save up all her money, you know, to go to the fortune teller",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "get to hear",
+    "ko": "듣게 되다(그런 기회를 얻다)",
+    "en": "be allowed or able to hear",
+    "nuance": "get to+동사는 '~할 기회를 얻다'로, 돈 낸 값으로 얻는 특전이라는 냉소가 들어간다. hear과 달리 대가가 전제된 느낌.",
+    "register": "casual",
+    "ctx": "You pay your money, you get to hear something that makes you feel good about yourself.",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "feel good about yourself",
+    "ko": "스스로가 괜찮게 느껴지다",
+    "en": "have a positive self-image",
+    "nuance": "기분이 좋다(feel good)와 달리 '자기 자신에 대한' 만족을 가리킨다. 제시는 이걸 돈 주고 사는 위안이라고 깎아내린다.",
+    "register": "neutral",
+    "ctx": "you get to hear something that makes you feel good about yourself",
+    "who": "Jesse",
+    "ch": 9
+  },
+  {
+    "phrase": "trips over",
+    "ko": "~에 걸려 넘어지다",
+    "en": "stumbles on",
+    "nuance": "fall이 결과라면 trip over는 무언가에 발이 걸리는 순간을 가리킨다. 제시가 일부러 발을 걸어 장난치는 대목.",
+    "register": "neutral",
+    "ctx": "Jesse walks a bit behind Céline, and moves so that she trips over her foot.",
+    "who": "지문",
+    "ch": 10
+  },
+  {
+    "phrase": "must have been",
+    "ko": "~였을 것이다",
+    "en": "was probably",
+    "nuance": "과거에 대한 강한 추측. 주어를 생략하고 바로 던지면 혼잣말처럼 회상하는 느낌이 되는데, 셀린이 그림 앞에 서 있던 시간을 어림잡는 장면이 그렇다.",
+    "register": "neutral",
+    "ctx": "Must have been forty-five minutes.",
+    "who": "Céline",
+    "ch": 10
+  },
+  {
+    "phrase": "dissolving into the background",
+    "ko": "배경 속으로 녹아 사라지는",
+    "en": "blending into and disappearing in the background",
+    "nuance": "형체가 윤곽을 잃고 주변에 흡수된다는 회화적 표현. 쇠라 그림 속 인물이 환경보다 약해 보인다는 셀린의 감상에서 이 영화 전체의 '스쳐 지나감' 주제와 겹친다.",
+    "register": "literary",
+    "ctx": "I love the way the people seem to be dissolving into the background.",
+    "who": "Céline",
+    "ch": 10
+  },
+  {
+    "phrase": "close with",
+    "ko": "~와 친한, 가까운",
+    "en": "emotionally close to",
+    "nuance": "물리적 거리가 아니라 정서적 친밀함. 미국 구어에서는 Are you를 통째로 생략하고 억양만 올려 묻는 일이 흔한데 제시가 딱 그렇게 한다.",
+    "register": "casual",
+    "ctx": "You close with your grandmother?",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "can't help but feeling",
+    "ko": "~하는 마음이 들 수밖에 없다",
+    "en": "cannot stop myself from feeling",
+    "nuance": "표준형은 can't help feeling 또는 can't help but feel인데 셀린은 두 형태를 섞어 쓴다. 종교를 거부하면서도 감정은 통제가 안 된다는 모순을 드러내는 자리.",
+    "register": "neutral",
+    "ctx": "I can't help but feeling for all those people that come here lost or in pain, guilt, looking for some kind of answers.",
+    "who": "Céline",
+    "ch": 11
+  },
+  {
+    "phrase": "some kind of",
+    "ko": "뭔가 어떤 종류의",
+    "en": "a sort of",
+    "nuance": "정체를 특정하지 못할 때 붙이는 완충 표현. 교회에 온 사람들이 무엇을 찾는지조차 모호하다는 점을 그대로 살린다.",
+    "register": "neutral",
+    "ctx": "looking for some kind of answers",
+    "who": "Céline",
+    "ch": 11
+  },
+  {
+    "phrase": "about to die",
+    "ko": "곧 죽으려는 참인",
+    "en": "on the point of dying",
+    "nuance": "be about to는 '막 ~하려는' 임박함을 뜻해 will보다 훨씬 가깝다. 셀린이 자기를 임종 직전 노파로 상상하는 대사에 쓰여 시간 감각을 뒤집는다.",
+    "register": "neutral",
+    "ctx": "I am this very old woman laying down about to die",
+    "who": "Céline",
+    "ch": 11
+  },
+  {
+    "phrase": "kneel down",
+    "ko": "무릎을 꿇다",
+    "en": "get down on one's knees",
+    "nuance": "down이 붙어 자세를 낮추는 동작 전체를 그린다. 퀘이커 결혼식 묘사에서 예식의 경건함을 만드는 동사.",
+    "register": "neutral",
+    "ctx": "the couple comes in and they kneel down in front of the whole congregation",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "stare at each other",
+    "ko": "서로를 응시하다",
+    "en": "look at each other steadily",
+    "nuance": "look과 달리 오래, 눈을 떼지 않고 본다는 뜻이라 어색하거나 강렬한 느낌을 준다. 이 대사 직후 두 사람이 실제로 그렇게 하는 것이 이 장면의 핵심.",
+    "register": "neutral",
+    "ctx": "and they just stare at each other, and nobody says a word",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "says a word",
+    "ko": "한마디 하다",
+    "en": "utters anything",
+    "nuance": "주로 부정문에서 '한마디도 안 한다'로 쓰이는 관용 표현. 침묵이 예식의 형식이라는 점을 강조한다.",
+    "register": "neutral",
+    "ctx": "and nobody says a word unless they feel that God moves them to speak",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "an hour or so",
+    "ko": "한 시간쯤",
+    "en": "about an hour",
+    "nuance": "or so는 숫자 뒤에 붙어 대략을 표시하는 구어 꼬리표로 about보다 가볍다. 정확한 시간이 중요하지 않은 이야기 톤을 만든다.",
+    "register": "casual",
+    "ctx": "And then, after an hour or so of just uh, staring at each other, they're married.",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "driving around",
+    "ko": "차를 타고 돌아다니다",
+    "en": "driving with no particular destination",
+    "nuance": "around이 목적지 없이 어슬렁대는 느낌을 준다. 미국 젊은이들의 심심한 밤 풍경을 한 단어로 세우는 도입부.",
+    "register": "casual",
+    "ctx": "Well, I was driving around with this buddy of mine, he was a big atheist",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "buddy of mine",
+    "ko": "내 친구 하나",
+    "en": "a friend of mine",
+    "nuance": "my buddy가 아니라 this ... of mine 형태를 쓰면 '아는 사람 중 하나'로 거리를 두는 이야기꾼 어투가 된다. 이야기 속 인물을 처음 소개할 때 흔하다.",
+    "register": "casual",
+    "ctx": "I was driving around with this buddy of mine, he was a big atheist",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "came to a stop",
+    "ko": "멈춰 섰다",
+    "en": "stopped moving",
+    "nuance": "stopped보다 서서히 멈추는 과정이 보이는 표현으로 차량에 특히 잘 붙는다. 이야기의 긴장을 한 박자 늦추는 역할.",
+    "register": "neutral",
+    "ctx": "and we came to a stop, next to this homeless guy",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "takes out",
+    "ko": "꺼내다",
+    "en": "pulls out",
+    "nuance": "주머니나 지갑 안에서 밖으로 꺼내는 동작. 돈을 미끼로 쓰는 장난의 시작을 알린다.",
+    "register": "neutral",
+    "ctx": "And my buddy takes out a hundred dollar bill, and leans out the window",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "leans out the window",
+    "ko": "창밖으로 몸을 내밀다",
+    "en": "puts his upper body out of the window",
+    "nuance": "lean out은 상체만 기울여 내미는 동작이라 차 안에 앉은 채라는 그림이 남는다. 우월한 위치에서 던지는 질문이라는 무례함까지 전달된다.",
+    "register": "neutral",
+    "ctx": "and leans out the window, and he says, 'Do you believe in God?'",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "believe in god",
+    "ko": "신의 존재를 믿다",
+    "en": "have faith that God exists",
+    "nuance": "believe God(그 말을 믿다)과 달리 believe in은 존재나 가치를 믿는다는 뜻. 이 전치사 하나가 챕터 전체의 질문이 된다.",
+    "register": "neutral",
+    "ctx": "and he says, 'Do you believe in God?'",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "drove away",
+    "ko": "차를 몰고 가버렸다",
+    "en": "left by car",
+    "nuance": "away가 남겨진 사람 쪽에서 본 이탈을 그린다. 노숙자를 두고 떠나는 무정함이 이 한 단어에 걸린다.",
+    "register": "neutral",
+    "ctx": "and we drove away",
+    "who": "Jesse",
+    "ch": 11
+  },
+  {
+    "phrase": "gotten off the train",
+    "ko": "기차에서 내린",
+    "en": "left the train",
+    "nuance": "get off는 기차·버스처럼 걸어 다닐 수 있는 탈것에서 내릴 때 쓴다(차는 get out of). 이 영화에서는 '함께 내리다'가 곧 관계의 시작이라 반복해서 등장한다.",
+    "register": "neutral",
+    "ctx": "Would you be in Paris by now, if uh, you hadn't gotten off the train with me?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "hanging around",
+    "ko": "빈둥거리며 시간을 보내다",
+    "en": "waiting around doing nothing",
+    "nuance": "hang out이 '놀다'라면 hang around는 목적 없이 머무는 쪽에 가깝다. 공항에서 무료하게 시간을 죽이는 그림을 만든다.",
+    "register": "casual",
+    "ctx": "I'd probably be hanging around the airport, reading old magazines",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "crying in my coffee",
+    "ko": "커피잔 앞에 앉아 청승떨다",
+    "en": "moping self-pityingly",
+    "nuance": "술잔 앞에서 신세 한탄한다는 cry into your beer를 커피로 바꾼 농담. 자기 연민을 스스로 놀리는 제시식 유머다.",
+    "register": "casual",
+    "ctx": "reading old magazines, crying in my coffee",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "having a great time",
+    "ko": "정말 즐겁게 지내고 있다",
+    "en": "enjoying myself a lot",
+    "nuance": "have a good/great time은 여행·데이트 상황의 정형 표현. 셀린이 농담 공방을 끊고 진심을 한 줄 던지는 자리라 무게가 다르다.",
+    "register": "neutral",
+    "ctx": "I'm having a great time.",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "drive you mad",
+    "ko": "너를 미치게 하다(짜증나게 하다)",
+    "en": "annoy you intensely",
+    "nuance": "mad를 쓰는 영국·유럽식 표현으로 미국 구어의 drive you crazy와 같다. 프랑스인 셀린의 영어라는 점이 드러나는 선택.",
+    "register": "casual",
+    "ctx": "what do you think would be the first thing about me that would drive you mad?",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "flew into a rage",
+    "ko": "불같이 화를 냈다",
+    "en": "suddenly became furious",
+    "nuance": "got angry와 달리 순식간에 폭발했다는 급격함이 핵심. 솔직하게 말했다가 봉변당한 제시의 경험담을 과장되게 요약한다.",
+    "register": "neutral",
+    "ctx": "She flew into a rage, and broke up with me, alright?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "broke up with me",
+    "ko": "나와 헤어졌다",
+    "en": "ended the relationship with me",
+    "nuance": "break up with X는 헤어지자고 말한 쪽이 주어가 된다. 즉 차인 쪽이 제시라는 사실이 문장 구조만으로 드러난다.",
+    "register": "casual",
+    "ctx": "She flew into a rage, and broke up with me, alright?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "kind of",
+    "ko": "좀, 약간",
+    "en": "somewhat, sort of",
+    "nuance": "단정을 피해 말을 부드럽게 만드는 완충어. 셀린이 제시를 비판하기 직전에 붙여 공격의 날을 미리 깎아낸다.",
+    "register": "casual",
+    "ctx": "I kind of didn't really like this reaction back at the palm reader.",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "robs you blind",
+    "ko": "눈뜨고 코 베어가듯 뜯어간다",
+    "en": "cheats you out of your money openly",
+    "nuance": "몰래 훔치는 게 아니라 대놓고 털어간다는 과장 표현. 점값을 두고 제시가 자기 분노를 정당화하려 꺼내는 말이다.",
+    "register": "casual",
+    "ctx": "Alright, listen, this woman robs you blind, okay?",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "walking by",
+    "ko": "그 앞을 지나가는",
+    "en": "passing by",
+    "nuance": "by는 목적지 없이 곁을 스쳐 지나감을 뜻한다. 아이스크림 가게 앞을 지나며 떼쓰는 아이라는 비유의 밑그림.",
+    "register": "neutral",
+    "ctx": "You were like a little boy walking by an ice cream store, crying because his mother wouldn't buy him a milkshake or something.",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "make a deal with you",
+    "ko": "당신과 거래를 하나 하고 싶다",
+    "en": "propose an arrangement to you",
+    "nuance": "make a deal은 서로 주고받는 조건을 전제한다. 구걸이 아니라 거래라고 선언함으로써 시인이 자기 자존심을 세우는 장치.",
+    "register": "neutral",
+    "ctx": "So, I would like to make a deal with you.",
+    "who": "Poet",
+    "ch": 12
+  },
+  {
+    "phrase": "feel like",
+    "ko": "마음 내키는 대로",
+    "en": "want to, be inclined to",
+    "nuance": "whatever you feel like처럼 뒤를 비워 두면 '알아서, 내키는 만큼'이 된다. 값을 손님에게 맡기는 시인의 제안 방식.",
+    "register": "casual",
+    "ctx": "then you can pay me whatever you feel like",
+    "who": "Poet",
+    "ch": 12
+  },
+  {
+    "phrase": "coming out of",
+    "ko": "~에서 나오는",
+    "en": "resulting from",
+    "nuance": "물리적으로 나오는 것뿐 아니라 어떤 상황에서 결과로 생겨난다는 뜻으로도 쓴다. 갈등에서도 좋은 게 나온다는 셀린의 논리를 떠받친다.",
+    "register": "neutral",
+    "ctx": "There's a lot of good things coming out of conflict.",
+    "who": "Céline",
+    "ch": 12
+  },
+  {
+    "phrase": "supposed to be",
+    "ko": "원래 ~하기 마련인",
+    "en": "meant to be, expected to be",
+    "nuance": "be supposed to는 규칙·기대·통념이 정해 놓은 상태를 가리킨다. 인생이 원래 힘든 것이라고 미리 인정해 버리자는 제시의 처세술.",
+    "register": "neutral",
+    "ctx": "if I could just accept the fact that my life was supposed to be difficult",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "to be expected",
+    "ko": "당연한 일이다",
+    "en": "normal and unsurprising",
+    "nuance": "예상된다는 뜻이 아니라 '그럴 만하다, 놀랄 일 아니다'로 굳은 표현. 앞의 supposed to be difficult를 한 번 더 못 박는다.",
+    "register": "neutral",
+    "ctx": "that's what's to be expected, then, I might not get so pissed off about it",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "pissed off",
+    "ko": "열받은, 짜증난",
+    "en": "angry, irritated",
+    "nuance": "angry보다 훨씬 격의 없고 다소 거친 구어. 미국 영어에서는 '화난'이지만 영국에서는 '취한'이라는 뜻도 되니 주의.",
+    "register": "slang",
+    "ctx": "I might not get so pissed off about it, and I'd just be glad when something nice happens",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "all of a sudden",
+    "ko": "갑자기",
+    "en": "suddenly",
+    "nuance": "suddenly보다 이야기체에 어울리고, 예고 없이 덮쳐온 느낌을 준다. 승부욕이 불쑥 솟는 순간을 묘사하는 데 쓰인다.",
+    "register": "casual",
+    "ctx": "I could be uh, throwing some darts, or shooting some pool, and all of a sudden, I feel it come over me",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "come over me",
+    "ko": "(감정이) 나를 덮치다",
+    "en": "take hold of me",
+    "nuance": "감정이나 충동이 밖에서 밀려와 나를 장악한다는 그림이라, 내 의지가 아니었다는 변명 톤이 섞인다. 제시가 승부욕을 남 탓하듯 말하는 자리.",
+    "register": "neutral",
+    "ctx": "and all of a sudden, I feel it come over me, “I have got to win.”",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "have got to",
+    "ko": "반드시 ~해야 한다",
+    "en": "must",
+    "nuance": "have to보다 감정이 실린 구어형이고, got을 강하게 눌러 말하면 절박함이 된다. 이겨야만 한다는 강박을 소리 내어 흉내 내는 대목.",
+    "register": "casual",
+    "ctx": "“I have got to win.”",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "here you go",
+    "ko": "자, 여기요",
+    "en": "here it is",
+    "nuance": "물건을 건네는 순간에 쓰는 정형구로 here it is보다 훨씬 자연스럽다. 시인에게 잔돈을 건네는 동작과 한 몸으로 붙어 있다.",
+    "register": "casual",
+    "ctx": "Uh here you go, uh",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "plugs that word in",
+    "ko": "그 단어만 끼워 넣는다",
+    "en": "inserts that word into a ready-made text",
+    "nuance": "plug in은 원래 코드를 꽂는 것이지만 여기서는 빈칸에 단어를 채워 넣는다는 뜻. 목적어가 대명사 성격이라 plug 뒤로 들어가 분리형이 된 점이 포인트.",
+    "register": "casual",
+    "ctx": "but he probably just plugs that word in",
+    "who": "Jesse",
+    "ch": 12
+  },
+  {
+    "phrase": "drives me crazy",
+    "ko": "정말 미치게 한다",
+    "en": "really annoys me",
+    "nuance": "12장의 drive you mad와 같은 뜻이지만 crazy 쪽이 미국 구어의 기본형. You know what drives me crazy?처럼 화제를 여는 도입으로 자주 쓴다.",
+    "register": "casual",
+    "ctx": "You know what drives me crazy?",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "what good is",
+    "ko": "~이 무슨 소용인가",
+    "en": "what is the use of",
+    "nuance": "형식은 의문문이지만 '아무 소용 없다'는 단정에 가깝다. 기술이 아껴준 시간이 무의미하다는 제시의 주장을 압축한다.",
+    "register": "neutral",
+    "ctx": "But, what good is saved time, if nobody uses it?",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "turns into",
+    "ko": "~으로 변해버리다",
+    "en": "changes into",
+    "nuance": "become보다 변신에 가까운 어감이라 원치 않는 변질에 잘 붙는다. 아낀 시간이 결국 잡무로 둔갑한다는 냉소.",
+    "register": "neutral",
+    "ctx": "If it just turns into more busy work.",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "hang out",
+    "ko": "그냥 어울려 놀다",
+    "en": "spend time relaxing",
+    "nuance": "목적 없이 시간을 함께 보내는 것으로, 12장의 hang around보다 사교적이다. 선원에 가서 '그냥 논다'는 조합이 웃음을 만든다.",
+    "register": "casual",
+    "ctx": "I'm gonna go to a Zen monastery and hang out.",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "waiting on",
+    "ko": "기다리고 있는",
+    "en": "waiting for",
+    "nuance": "미국 남부·구어에서 wait for 대신 쓰는 형태로, 제시의 텍사스 출신 말투가 드러난다. 식당에서 '시중들다'라는 다른 뜻과 구별해야 한다.",
+    "register": "casual",
+    "ctx": "You got a boyfriend waiting on you back in Paris, or anything like that?",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "or anything like that",
+    "ko": "뭐 그런 거라도",
+    "en": "or something similar",
+    "nuance": "질문 끝에 붙여 답의 범위를 넓혀주고 캐묻는 인상을 줄인다. 연애 상황을 조심스럽게 떠보는 제시의 전략.",
+    "register": "casual",
+    "ctx": "or anything like that?",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "tell me about it",
+    "ko": "그 얘기 좀 해봐",
+    "en": "give me the details",
+    "nuance": "말투에 따라 '내 말이 그 말이야'라는 맞장구가 되기도 하지만, 여기서는 억양이 올라가는 문자 그대로의 요청이다. 제시가 전 남자친구 이야기를 캐묻는 자리.",
+    "register": "casual",
+    "ctx": "C'mon, tell me about it.",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "no way",
+    "ko": "말도 안 돼, 절대 싫어",
+    "en": "definitely not",
+    "nuance": "거절과 놀람 양쪽에 쓰이는데 여기서는 강한 거부. 곧바로 이야기를 시작해버려서 말과 행동이 어긋나는 게 이 장면의 재미다.",
+    "register": "casual",
+    "ctx": "Ah, no. No, no way, I can't.",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "giving him a favor",
+    "ko": "그에게 은혜를 베푸는",
+    "en": "doing him a favor",
+    "nuance": "영어 정석은 doing a favor이며 giving은 프랑스어 화자인 셀린의 어긋난 동사 선택이다. 뜻은 통하지만 원어민에게는 살짝 어색하게 들린다.",
+    "register": "casual",
+    "ctx": "I was kind of giving him a favor, but he left me, saying I loved him too much",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "shit like that",
+    "ko": "뭐 그딴 소리",
+    "en": "that sort of nonsense",
+    "nuance": "and stuff의 거친 버전으로 앞말을 싸잡아 무시하는 효과가 있다. 전 남자친구의 변명을 인용하며 경멸을 얹는다.",
+    "register": "vulgar",
+    "ctx": "I was blocking his artistic expression, or some shit like that, you know.",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "obsessed with him",
+    "ko": "그에게 집착하게 된",
+    "en": "unable to stop thinking about him",
+    "nuance": "be obsessed with는 좋아함을 넘어 통제 불능의 몰두를 뜻한다. 헤어진 뒤에 오히려 심해졌다는 역설이 이 대사의 핵심.",
+    "register": "neutral",
+    "ctx": "and became totally obsessed with him",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "came out that",
+    "ko": "~라는 사실이 드러났다",
+    "en": "it emerged that",
+    "nuance": "come out은 숨어 있던 사실이 대화 중에 밝혀지는 것. 상담 중에 저절로 튀어나왔다는 뉘앙스라 셀린의 책임이 옅어진다.",
+    "register": "neutral",
+    "ctx": "and it came out that I had written this little stupid story about this woman, trying to kill her boyfriend",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "out of her mind",
+    "ko": "제정신이 아닌",
+    "en": "completely irrational",
+    "nuance": "crazy를 강조한 관용구로 '판단력이 나갔다'는 비난에 가깝다. 경찰을 부르겠다던 상담사를 셀린이 되받아치는 말.",
+    "register": "casual",
+    "ctx": "She was totally out of her mind.",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "got over him",
+    "ko": "그를 잊고 벗어났다",
+    "en": "recovered from him emotionally",
+    "nuance": "get over는 병이나 충격에서 회복하는 것과 같은 그림이라 이별을 상처로 본다. 바로 다음 문장에서 다른 강박이 이어져 회복이 무색해진다.",
+    "register": "casual",
+    "ctx": "I totally got over him, you know.",
+    "who": "Céline",
+    "ch": 13
+  },
+  {
+    "phrase": "if you think about it",
+    "ko": "생각해보면",
+    "en": "when you consider it",
+    "nuance": "상대에게 뻔한 통념을 다시 보게 만드는 도입구. 사랑이 사실 이기적이라는 반전을 꺼내기 전에 놓는 발판이다.",
+    "register": "neutral",
+    "ctx": "but if you think about it, you know, there's nothing more selfish",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "should have told you",
+    "ko": "진작 말했어야 했다",
+    "en": "ought to have told you earlier",
+    "nuance": "should have+과거분사는 하지 않은 일에 대한 후회. 여자친구 이야기를 이제야 꺼내는 제시의 미안함을 문법 자체가 실어 나른다.",
+    "register": "neutral",
+    "ctx": "I should have told you this earlier, Céline",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "at long last",
+    "ko": "마침내, 그토록 기다리던 끝에",
+    "en": "finally, after a long wait",
+    "nuance": "finally보다 극적이고 문어적이라 여기서는 비꼬는 데 쓰인다. 재회가 실제로는 참담했기 때문에 과장이 오히려 씁쓸함을 키운다.",
+    "register": "literary",
+    "ctx": "and now we're reunited, at long last",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "went out to dinner",
+    "ko": "저녁을 먹으러 나갔다",
+    "en": "ate dinner at a restaurant",
+    "nuance": "go out to dinner는 외식 자리를 가리키는 고정 표현. 둘만의 저녁이 아니라 친구 여섯 명이 낀 자리였다는 대비가 곧바로 이어진다.",
+    "register": "neutral",
+    "ctx": "and we went out to dinner, our first night ah, with six of her friends",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "pretty much",
+    "ko": "사실상, 거의",
+    "en": "almost entirely",
+    "nuance": "단정을 살짝 낮추는 완충어이지만 실제로는 '거의 완전히'에 가깝다. 상처를 담담한 척 말하려는 제시의 태도가 묻어난다.",
+    "register": "casual",
+    "ctx": "She pretty much managed to avoid being alone with me for the first couple of days we were there",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "stuck around",
+    "ko": "그냥 얼마간 머물러 있었다",
+    "en": "stayed on for a while",
+    "nuance": "stay와 달리 떠나야 할 상황에서 버티듯 남아 있는 뉘앙스. 환영받지 못하면서도 자리를 뜨지 못한 며칠을 요약한다.",
+    "register": "casual",
+    "ctx": "and I stuck around for a while, just to kind of let it really sink in that she wished I hadn't come",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "sink in",
+    "ko": "(사실이) 서서히 실감나다",
+    "en": "gradually be fully understood",
+    "nuance": "머리로는 알던 사실이 시간이 지나며 마음까지 스며드는 과정. 여기서는 그 고통을 일부러 겪게 두었다는 자학적 뉘앙스가 붙는다.",
+    "register": "neutral",
+    "ctx": "just to kind of let it really sink in that she wished I hadn't come",
+    "who": "Jesse",
+    "ch": 13
+  },
+  {
+    "phrase": "turn out to be",
+    "ko": "알고 보니 ~이더라",
+    "en": "prove to be",
+    "nuance": "예상과 다른 결과가 드러났다는 뜻이라 뒤에 반전이 온다. 성생활이 잦은 원숭이가 가장 평화롭다는 제시의 근거 제시 방식.",
+    "register": "neutral",
+    "ctx": "And uh, they turn out to be, like the least violent, the most peaceful, the most happy",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "fooling around",
+    "ko": "바람 피우는 것, 놀아나는 것",
+    "en": "having casual sex outside a relationship",
+    "nuance": "원래는 '시시덕거리다'지만 남녀 관계 문맥에서는 외도를 완곡하게 가리킨다. 이 이중성 덕분에 원숭이 이야기와 인간 이야기가 자연스럽게 겹친다.",
+    "register": "casual",
+    "ctx": "so I mean, maybe fooling around is not so bad",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "reminds me of",
+    "ko": "~을 떠올리게 한다",
+    "en": "makes me think of",
+    "nuance": "remember는 스스로 기억해내는 것이고 remind는 대상이 나를 떠올리게 만드는 것이라 주어가 다르다. 셀린이 제시 논리를 흔한 남자들 변명에 포개는 순간.",
+    "register": "neutral",
+    "ctx": "but it reminds me of, like this perfect, you know, male argument to justify them fooling around",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "you know what i mean",
+    "ko": "무슨 말인지 알지",
+    "en": "you understand what I'm saying",
+    "nuance": "동의를 구하기보다 말을 이어가려고 붙이는 담화 표지에 가깝다. 이 챕터의 논쟁에서 두 사람 모두 자기 편으로 끌어들이려 반복해 쓴다.",
+    "register": "casual",
+    "ctx": "They're not gonna come over here and kick her ass, you know what I mean?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "gotten together",
+    "ko": "다 같이 뭉쳐서",
+    "en": "joined forces",
+    "nuance": "get together는 보통 '모이다'지만 여기서는 공동 행동을 위한 결속에 가깝다. 뒤의 eaten him alive와 붙어 섬뜩한 농담을 완성한다.",
+    "register": "casual",
+    "ctx": "because they would have all gotten together, and eaten him alive",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "eaten him alive",
+    "ko": "산 채로 잡아먹었을 것이다",
+    "en": "destroyed him completely",
+    "nuance": "보통은 '가차없이 짓밟다'라는 비유지만, 셀린은 문자 그대로의 그림으로 되돌려 농담의 강도를 올린다.",
+    "register": "casual",
+    "ctx": "and no more man, because they would have all gotten together, and eaten him alive",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "on some level",
+    "ko": "어느 정도는, 내심",
+    "en": "in some part of the mind",
+    "nuance": "본인도 의식하지 못하는 층위에서 그렇다는 조심스러운 단서. 위험한 일반화를 하기 전에 방어막을 치는 제시의 화법.",
+    "register": "neutral",
+    "ctx": "I think on some level, women don't mind the idea of destroying a man, you know.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "sure enough",
+    "ko": "아니나 다를까",
+    "en": "as expected",
+    "nuance": "예상대로 일이 벌어졌음을 확인하는 삽입구. 뻔한 시비가 터졌다는 체념 섞인 이야기 리듬을 만든다.",
+    "register": "casual",
+    "ctx": "and one of 'em, sure enough, says",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "no big deal",
+    "ko": "별일 아니야",
+    "en": "not important",
+    "nuance": "상황을 축소해 넘기려는 정형구로, 실제로는 신경 쓰였다는 속내가 자주 비친다. 제시가 시비를 참는 척하는 자리에서 딱 그 역할을 한다.",
+    "register": "casual",
+    "ctx": "So, I'm like alright, “Hey, no big deal,” I'm not gonna get uptight about this, right?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "get uptight",
+    "ko": "예민하게 굴다, 발끈하다",
+    "en": "become tense and irritated",
+    "nuance": "get angry보다 '쓸데없이 긴장한다'는 뉘앙스라 스스로를 낮춰 말할 때 쓴다. 쿨한 척하려는 태도가 그대로 담긴다.",
+    "register": "casual",
+    "ctx": "I'm not gonna get uptight about this, right?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "see what i'm saying",
+    "ko": "내 말 무슨 뜻인지 알겠지",
+    "en": "do you follow my point",
+    "nuance": "you know what I mean보다 논지 확인 쪽에 무게가 있어 설득할 때 쓴다. 제시가 자기 주장을 못 박으려 던지는 마무리.",
+    "register": "casual",
+    "ctx": "You see what I'm saying?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "come up with",
+    "ko": "(생각·답을) 내놓다",
+    "en": "produce an idea or answer",
+    "nuance": "머리를 짜내 새로 만들어낸다는 뜻으로 find와 다르다. 남녀 논쟁에 아무도 답을 못 냈다는 셀린의 마무리에서 허탈함이 묻어난다.",
+    "register": "casual",
+    "ctx": "And nobody's come up with anything.",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "so as to",
+    "ko": "~하기 위해서",
+    "en": "in order to",
+    "nuance": "to부정사보다 목적을 또렷이 드러내는 다소 격식 있는 연결. 출산 춤의 기능을 설명하는 대목이라 어조가 살짝 문어적으로 올라간다.",
+    "register": "formal",
+    "ctx": "so as to make the birth less painful",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "gone for that",
+    "ko": "그런 걸 받아들였을",
+    "en": "would have accepted that",
+    "nuance": "go for는 '좋다고 응하다, 마음에 들어하다'로 쓰이며 부정문에서 자주 나온다. 자기 어머니라면 질색했을 거라는 농담.",
+    "register": "casual",
+    "ctx": "I don't think my mom would've gone for that.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "shake off",
+    "ko": "떨쳐내다",
+    "en": "get rid of by shaking",
+    "nuance": "몸을 흔들어 붙은 것을 떼어낸다는 그림이라 감기나 슬럼프에도 쓴다. 춤을 '육체를 털어내려는 몸짓'으로 본 노인의 비유를 살린다.",
+    "register": "neutral",
+    "ctx": "They're trying to shake off their genitals, and become angels.",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "and stuff",
+    "ko": "뭐 그런 것들",
+    "en": "and things like that",
+    "nuance": "말끝을 흐려 진지함을 덜어내는 구어 습관. 여기서는 진지한 주제를 꺼내면서 민망함을 감추는 완충으로 쓰인다.",
+    "register": "casual",
+    "ctx": "When the women are dancing, and being all spiritual, and stuff, right?",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "make fun of",
+    "ko": "놀리다, 우습게 여기다",
+    "en": "mock, ridicule",
+    "nuance": "웃음거리로 삼는다는 뜻이라 대상에 상처가 될 수 있다. 사랑을 우습게 여기면서도 결국 사랑받고 싶어한다는 셀린의 고백으로 이어진다.",
+    "register": "casual",
+    "ctx": "We always make fun of it and stuff.",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "i'd rather die",
+    "ko": "차라리 죽는 편이 낫겠다",
+    "en": "I would prefer to die",
+    "nuance": "would rather A than B는 둘 중 하나를 고르는 선호 표현이고 뒤에 동사원형이 온다. 제시가 좋은 관계보다 성취를 택하겠다고 잘라 말하는 자리.",
+    "register": "neutral",
+    "ctx": "I think I'd rather die knowing that I was really good at something",
+    "who": "Jesse",
+    "ch": 14
+  },
+  {
+    "phrase": "suddenly struck him",
+    "ko": "문득 깨달았다",
+    "en": "he suddenly realized",
+    "nuance": "strike는 깨달음이 밖에서 때리듯 온다는 그림이라 realize보다 충격이 크다. 쉰둘의 남자가 인생을 되돌아보는 순간의 무게를 만든다.",
+    "register": "literary",
+    "ctx": "he was fifty-two and it suddenly struck him that he had never really given anything of himself",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "who cares",
+    "ko": "그게 뭐 대수인가",
+    "en": "it doesn't matter",
+    "nuance": "무관심이 아니라 '중요한 건 그게 아니다'라며 판을 바꾸는 수사적 질문. 실패해도 시도 자체가 답이라는 셀린의 결론으로 넘어가는 다리다.",
+    "register": "casual",
+    "ctx": "but...who cares, really?",
+    "who": "Céline",
+    "ch": 14
+  },
+  {
+    "phrase": "pick up the phone",
+    "ko": "전화 좀 받아",
+    "en": "answer the phone",
+    "nuance": "수화기를 든다는 동작이 곧 '받다'가 된 표현으로, 전화 자체를 끊는 hang up과 짝을 이룬다. 상상 통화 놀이의 시작 신호.",
+    "register": "casual",
+    "ctx": "Pick up the phone!",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "make it for lunch",
+    "ko": "점심 약속에 못 갈 것 같다",
+    "en": "manage to be there for lunch",
+    "nuance": "make it은 '해내다'보다 '시간 맞춰 가다, 참석하다'로 쓰이는 경우가 많다. 약속을 깨는 말이라 앞에 I don't think를 붙여 부드럽게 만든다.",
+    "register": "casual",
+    "ctx": "I don't think I'm gonna be able to make it for lunch today, I'm sorry.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "passing through",
+    "ko": "잠깐 거쳐 가는 중인",
+    "en": "only briefly in a place",
+    "nuance": "머무는 게 아니라 통과할 뿐이라는 뜻이라, 관계의 시한부 성격을 한마디로 요약한다. 여행자를 설명하는 정형 표현이기도 하다.",
+    "register": "neutral",
+    "ctx": "He's passing through here too.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "a short while",
+    "ko": "잠깐 동안",
+    "en": "a brief period of time",
+    "nuance": "a while(꽤 오래)에 short를 붙여 오히려 짧음을 강조한다. 그 짧은 대화만으로 마음이 정해졌다는 점이 이 문장의 핵심.",
+    "register": "neutral",
+    "ctx": "I was ready to get off the train with him after talking to him a short while",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "couldn't help it",
+    "ko": "어쩔 수 없었다",
+    "en": "could not stop myself",
+    "nuance": "11장의 can't help but feeling과 같은 뿌리이지만, it으로 받아 통째로 마무리하는 더 짧고 구어적인 형태. 책임을 감정 탓으로 돌리는 귀여운 변명이다.",
+    "register": "casual",
+    "ctx": "He was so sweet, I couldn't help it.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "fell for him",
+    "ko": "그에게 반해버렸다",
+    "en": "fell in love with him",
+    "nuance": "fall in love보다 순간적이고 무방비하게 빠졌다는 어감이며, '속아 넘어가다'라는 뜻도 있어 중의적이다. 곧이어 나오는 TRAPPED와 이어지며 그 이중성이 살아난다.",
+    "register": "casual",
+    "ctx": "I think that's when I fell for him.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "as the night went on",
+    "ko": "밤이 깊어가면서",
+    "en": "as the night continued",
+    "nuance": "go on은 시간이 계속 흘러간다는 뜻으로, 사건이 아니라 시간의 경과를 배경처럼 깐다. 하룻밤이라는 이 영화의 시계를 상기시킨다.",
+    "register": "neutral",
+    "ctx": "As the night went on, I began to like him more and more.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "more and more",
+    "ko": "점점 더",
+    "en": "increasingly",
+    "nuance": "비교급 반복으로 변화가 진행 중임을 나타낸다. 감정이 한 번에 생긴 게 아니라 밤새 쌓였다는 점을 형태 자체가 보여준다.",
+    "register": "neutral",
+    "ctx": "I began to like him more and more.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "scared to death",
+    "ko": "겁에 질려 있다",
+    "en": "extremely frightened",
+    "nuance": "to death는 형용사를 극단으로 밀어올리는 과장 장치(bored to death 등). 살인 이야기를 들려준 뒤라 농담이면서도 뜨끔한 표현이 된다.",
+    "register": "casual",
+    "ctx": "He must be scared to death.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "feel that way about me",
+    "ko": "나를 그런 식으로 생각하다",
+    "en": "have that opinion of me",
+    "nuance": "구체적인 말 대신 that way로 뭉뚱그려 앞 문장 전체를 받는다. 직접 묻지 못하는 마음을 가짜 통화에 숨겨 흘리는 장치.",
+    "register": "neutral",
+    "ctx": "I just hope he doesn't feel that way about me",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "crazy about you",
+    "ko": "너한테 푹 빠져 있다",
+    "en": "very much in love with you",
+    "nuance": "be crazy about은 열광적 호감을 뜻하며 be scared of와 대비되어 답으로 놓인다. 친구 역할 뒤에 숨어 자기 마음을 고백하는 제시의 우회로.",
+    "register": "casual",
+    "ctx": "I don't think he's scared of you. I think he's crazy about you.",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "what's up",
+    "ko": "잘 지내? 무슨 일이야?",
+    "en": "how are things",
+    "nuance": "안부 인사와 용건 확인을 겸하는 미국식 인사로, 답을 크게 기대하지 않는다. 셀린이 미국 친구 역할을 연기하며 흉내 내는 말투.",
+    "register": "casual",
+    "ctx": "Hi dude, what's up?",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "how you been",
+    "ko": "그동안 어떻게 지냈어",
+    "en": "how have you been",
+    "nuance": "have를 통째로 생략한 구어체로, 오랜만에 만난 친한 사이에서 쓴다. 제시가 친구에게 전화하는 척하며 자연스럽게 미국식 리듬을 낸다.",
+    "register": "casual",
+    "ctx": "Hey Frank, how you been?",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "too bad",
+    "ko": "안됐네, 아쉽네",
+    "en": "that's unfortunate",
+    "nuance": "That's too bad의 축약형으로 가벼운 위로에 쓰지만, 톤에 따라 '그러게 내가 뭐랬어' 같은 냉담함도 된다. 곧바로 I told you가 붙어 후자로 기운다.",
+    "register": "casual",
+    "ctx": "Oh. Too bad. I told you, no?",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "right away",
+    "ko": "곧바로, 당장",
+    "en": "immediately",
+    "nuance": "immediately의 구어 대체형으로 시간 간격이 전혀 없다는 뜻. 집에 바로 돌아갈 수 없었다는 말이 그가 빈에 있는 이유를 설명한다.",
+    "register": "casual",
+    "ctx": "I couldn't go home right away.",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "can you believe that",
+    "ko": "믿어지니?",
+    "en": "isn't that amazing",
+    "nuance": "사실 확인이 아니라 놀라움을 함께 나누자는 감탄에 가깝다. 유럽에서의 마지막 밤이라는 우연을 강조하는 자리.",
+    "register": "casual",
+    "ctx": "On my last night in Europe, can you believe that?",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "at first",
+    "ko": "처음에는",
+    "en": "in the beginning",
+    "nuance": "뒤에 상황이 바뀌었음을 함축하므로 보통 but이 따라온다. 첫인상이 좋지 않았다는 제시의 회고에 반전을 예고한다.",
+    "register": "neutral",
+    "ctx": "she didn't like me much at first",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "unsure of myself",
+    "ko": "자신이 없는",
+    "en": "lacking confidence",
+    "nuance": "unsure about(무엇에 대한 확신 없음)과 달리 of myself는 자기 자신에 대한 자신감 부족을 가리킨다. 능청스럽던 첫 만남의 이면을 드러낸다.",
+    "register": "neutral",
+    "ctx": "And I was so unsure of myself.",
+    "who": "Jesse",
+    "ch": 15
+  },
+  {
+    "phrase": "by the way",
+    "ko": "그런데 말이야",
+    "en": "incidentally",
+    "nuance": "곁가지 정보를 슬쩍 얹는 척하면서 사실은 하고 싶던 말을 꺼낼 때 쓴다. 셀린이 자기가 먼저 다가갔음을 흘리는 결정적 한마디.",
+    "register": "casual",
+    "ctx": "No...and by the way, she sat next to you, no?",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "on purpose",
+    "ko": "일부러",
+    "en": "intentionally",
+    "nuance": "by accident의 반대말로 의도를 못 박는다. 우연처럼 보였던 첫 만남이 사실 선택이었다고 뒤집는 순간이다.",
+    "register": "neutral",
+    "ctx": "I'm sure she did it on purpose.",
+    "who": "Céline",
+    "ch": 15
+  },
+  {
+    "phrase": "turn into pumpkins",
+    "ko": "호박으로 변해버리다",
+    "en": "have the magic end at midnight",
+    "nuance": "신데렐라의 마차가 자정에 호박으로 돌아가는 데서 온 비유로, 마법 같은 시간이 끝난다는 뜻. 아침이면 헤어져야 한다는 사실을 동화로 감싼다.",
+    "register": "casual",
+    "ctx": "But then the morning comes, and we turn into pumpkins, right?",
+    "who": "Céline",
+    "ch": 16
+  },
+  {
+    "phrase": "you're supposed to",
+    "ko": "이럴 땐 ~해야 하는 거잖아",
+    "en": "the script says you should",
+    "nuance": "규칙이나 각본이 정해 둔 행동을 가리키므로 '원래 그런 거잖아'라는 뉘앙스. 동화의 문법을 빌려 키스를 재촉하는 셀린의 유혹 방식이다.",
+    "register": "casual",
+    "ctx": "But at this time, I think you're supposed to produce the glass slipper, and see if it fits.",
+    "who": "Céline",
+    "ch": 16
+  },
+  {
+    "phrase": "see if it fits",
+    "ko": "맞는지 확인해보다",
+    "en": "check whether it fits",
+    "nuance": "see if는 '~인지 알아보다'로 결과가 열려 있음을 전제한다. 유리 구두가 맞는지 보자는 말이 곧 우리가 맞는 사이인지 보자는 뜻이 된다.",
+    "register": "casual",
+    "ctx": "I think you're supposed to produce the glass slipper, and see if it fits.",
+    "who": "Céline",
+    "ch": 16
+  }
+]

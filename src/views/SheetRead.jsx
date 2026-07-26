@@ -154,11 +154,6 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
         )}
       </div>
 
-      <SheetReadTracker
-        read={readOf(reads, work.id, selected)}
-        onMark={() => commit((s) => markRead(s, work.id, selected))}
-        onUndo={() => commit((s) => undoRead(s, work.id, selected))}
-      />
 
       {chapterAnalysis && (
         <nav className="tabs" role="tablist" aria-label="챕터 내 화면">
@@ -274,6 +269,13 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
           onClose={wl.closeWord}
         />
       )}
+
+      {/* 회독 표시는 본문 아래에 — 다 읽고 누르는 것이다 */}
+      <SheetReadTracker
+        read={readOf(reads, work.id, selected)}
+        onMark={() => commit((s) => markRead(s, work.id, selected))}
+        onUndo={() => commit((s) => undoRead(s, work.id, selected))}
+      />
 
       <ChapterNav
         chapters={work.chapters}

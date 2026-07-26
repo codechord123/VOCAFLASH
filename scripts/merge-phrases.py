@@ -108,6 +108,18 @@ def main():
         }
         added += 1
 
+    # ── 별칭 ────────────────────────────────────────────────────────
+    # 사전에는 be dead set on으로 올라가 있지만 대본에는 "I was dead set
+    # on"으로 나온다. be로 시작하는 표제어는 be를 뗀 형태로도 찾을 수
+    # 있어야 화면에서 걸린다.
+    aliases = 0
+    for key, entry in list(table.items()):
+        if key.startswith("be ") and len(key.split()) > 2:
+            bare = key[3:]
+            if bare not in table:
+                table[bare] = entry
+                aliases += 1
+
     if problems:
         print(f"검증 실패 {len(problems)}건:", file=sys.stderr)
         for p in problems[:20]:
@@ -132,7 +144,7 @@ def main():
 
     print(f"{len(table)}개 구문 → {OUT.relative_to(ROOT)} ({OUT.stat().st_size/1024:.0f}KB)")
     print(f"  출처별: {dict(Counter(v['from'] for v in table.values()))}")
-    print(f"  기존 자료에서 끌어온 것 {added}개")
+    print(f"  기존 자료에서 끌어온 것 {added}개 · be를 뗀 별칭 {aliases}개")
     if dropped:
         print(f"  길이가 안 맞아 뺀 것 {len(dropped)}개: {', '.join(dropped[:6])}")
 

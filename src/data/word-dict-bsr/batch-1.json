@@ -1,0 +1,862 @@
+[
+ {
+  "term": "billet",
+  "ko": "표, 승차권 (프랑스어 billet)",
+  "en": "ticket (French)",
+  "nuance": "제시가 파리 지하철에서 표를 사려 애쓰던 일을 서툰 프랑스어로 재연하는 장면. billet은 남성명사라 un billet이 맞는데 제시는 une를 붙여 틀린다 — 영어 단어가 아니라 대사 속 프랑스어다.",
+  "register": "neutral",
+  "ctx": "Une billet s'il vous plait…” (One ticket please.",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "harpsichord",
+  "ko": "하프시코드, 쳄발로 (건반 악기)",
+  "en": "an early keyboard instrument whose strings are plucked, not struck",
+  "nuance": "새벽 빈 거리에서 지하 창문 너머로 흘러나오는 연주. 피아노는 현을 때리지만 하프시코드는 뜯어서 소리가 얇고 반짝이는데, 두 사람은 그 소리에 맞춰 춤을 춘다.",
+  "register": "neutral",
+  "ctx": "Sounds like a harpsichord.",
+  "who": "Céline",
+  "ch": 20
+ },
+ {
+  "term": "prick",
+  "ko": "재수 없는 놈, 싸가지 (원뜻은 남성 성기)",
+  "en": "an unpleasant, arrogant man (vulgar)",
+  "nuance": "점쟁이 앞에서 삐딱했던 제시를 셀린이 '수탉처럼 우쭐대는 못된 놈'이라고 찌른다. asshole 정도로 센 욕이라 친한 사이 농담이 아니면 위험하고, jerk보다 훨씬 거칠다. rooster prick은 셀린이 즉석에서 만든 조합이라 제시도 어이없어 되묻는다.",
+  "register": "vulgar",
+  "ctx": "You were like this rooster prick.",
+  "who": "Céline",
+  "ch": 12
+ },
+ {
+  "term": "shillings",
+  "ko": "실링 (유로 이전 오스트리아 화폐 Schilling, shilling의 복수형)",
+  "en": "shillings; the pre-euro Austrian currency unit",
+  "nuance": "제시가 점쟁이를 흉내 내며 '내일도 모레도 똑같이 지루할 것'이라는 암울한 예언을 늘어놓고는 끝에 '50실링요'라며 돈부터 챙기는 대목. 점술 장사에 대한 비꼼이 이 한마디에 다 들어 있다. 오스트리아 화폐는 영어로 보통 schilling으로 적고, shilling은 옛 영국 화폐 철자다.",
+  "register": "neutral",
+  "ctx": "Fifty shillings, please.” You know, that I'd like to see.",
+  "who": "Jesse",
+  "ch": 9
+ },
+ {
+  "term": "hooves",
+  "ko": "발굽들 (hoof의 복수형)",
+  "en": "the hard feet of animals such as cows and horses (plural of hoof)",
+  "nuance": "담배 피우는 소가 나온다는 연극을 홍보하는 배우의 대사로, 손짓으로 소가 발굽으로 담배 무는 시늉까지 한다. hoof의 복수는 hooves가 보통이고 hoofs도 가능하다.",
+  "register": "neutral",
+  "ctx": "And she can smoke, with her hooves (motions with his hand, as if smoking with cow’s hooves), and everything.",
+  "who": "Man with tie",
+  "ch": 4
+ },
+ {
+  "term": "albeit",
+  "ko": "비록 ~이긴 하지만",
+  "en": "although; even though (introducing a qualifying phrase)",
+  "nuance": "싸우던 부부가 차로 돌아온다, 다만 훨씬 누그러진 채로 — 앞말을 곧바로 단서로 깎아내리는 자리다. although와 달리 뒤에 절이 아니라 형용사·부사구가 바로 오는 문어체 접속사다(albeit briefly).",
+  "register": "formal",
+  "ctx": "Couple returns to car, still arguing, albeit a lot calmer.",
+  "who": null,
+  "ch": 1
+ },
+ {
+  "term": "atop",
+  "ko": "~의 꼭대기에, 높이 ~위에",
+  "en": "on or at the top of",
+  "nuance": "관람차 칸이 빈의 스카이라인 위에 떠 있는 지문. on top of를 한 단어로 줄인 문어체라 대화보다 지문·기사에서 주로 보인다.",
+  "register": "formal",
+  "ctx": "Céline and Jesse are in the carriage of the ferris wheel, high atop the skyline of Vienna below.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "clasp",
+  "ko": "꽉 맞잡다, 움켜쥐다",
+  "en": "to hold something tightly with your hand",
+  "nuance": "헤어짐을 앞두고 네 손을 하나로 맞잡는 장면. hold보다 힘이 들어간 말이라 '놓기 싫어 꽉 쥔다'는 감정이 동사 하나에 실린다.",
+  "register": "neutral",
+  "ctx": "(They clasp each other's hands, so that all four are clasped together.) Alright.",
+  "who": "Jesse",
+  "ch": 17
+ },
+ {
+  "term": "clasped",
+  "ko": "맞잡힌, 꽉 쥔 (clasp의 과거분사)",
+  "en": "held tightly together (past participle of clasp)",
+  "nuance": "같은 문장 안에 동사 clasp와 상태를 나타내는 clasped가 연달아 나온다 — all four are clasped together는 네 손이 하나로 포개진 결과를 말한다.",
+  "register": "neutral",
+  "ctx": "(They clasp each other's hands, so that all four are clasped together.) Alright.",
+  "who": "Jesse",
+  "ch": 17
+ },
+ {
+  "term": "cobblestone",
+  "ko": "자갈 포장돌, 돌 깔린 (길)",
+  "en": "a small round stone used to pave old streets",
+  "nuance": "빈 구시가지의 돌바닥 길. 유럽 옛 도시 묘사에 거의 관용적으로 붙는 단어라 단어 하나로 '오래된 골목'이라는 분위기를 전달한다.",
+  "register": "neutral",
+  "ctx": "They walk around a vehicle barricade then proceed down a cobblestone walkway lined with trees and vines.",
+  "who": null,
+  "ch": 9
+ },
+ {
+  "term": "dickheads",
+  "ko": "이 개자식들아, 좆같은 놈들아 (dickhead의 복수형)",
+  "en": "stupid, contemptible men (very vulgar)",
+  "nuance": "길에서 시비 건 남자 넷에게 제시의 전 여자친구가 가운뎃손가락을 세우며 내뱉는 말. asshole보다 세고 idiot 같은 순한 말과는 급이 완전히 다르다 — 주로 남성에게 쓰며 실제로 싸움이 붙을 수 있는 수위다.",
+  "register": "vulgar",
+  "ctx": "Yeah, exactly, there's four of them, right, but she turns around and she says, (flips the bird to the air behind him.) “Fuck you, dickheads,” and I'm like, okay, wait a minute, here, right?",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "emphatically",
+  "ko": "힘주어, 오해할 수 없게 분명히",
+  "en": "in a forceful, unmistakable way",
+  "nuance": "관람차에서 소리 대신 입 모양으로 '예스'를 아주 확실하게 만들어 보이는 지문. strongly가 세기를 말한다면 emphatically는 '헷갈릴 여지 없이 분명하게'가 핵심이다.",
+  "register": "neutral",
+  "ctx": "Mouths, emphatically 'yes'.)",
+  "who": "Jesse",
+  "ch": 8
+ },
+ {
+  "term": "fir",
+  "ko": "대본에서 잘린 말 — 도중에 끊긴 first(첫 번째)로 보임. 단어 fir 자체는 '전나무'",
+  "en": "cut off mid-word; here the start of 'first' (fir alone = an evergreen tree)",
+  "nuance": "대본의 “What was the fir--” 는 말이 도중에 잘린 자리라 전나무와는 무관하다. 영화 대본에서 -- 로 끝나는 토막은 대개 상대가 말을 가로챈 지점을 뜻한다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "friars",
+  "ko": "수도사들 (friar의 복수형)",
+  "en": "members of a Catholic religious order, especially mendicant ones",
+  "nuance": "빈 거리를 기도하며 지나가는 두 수도사. monk가 수도원 안에 머무는 수도사라면 friar는 원래 세상 속을 돌아다니며 탁발하는 수사라, 길거리에 등장하는 게 자연스럽다.",
+  "register": "neutral",
+  "ctx": "A pair of friars walk by, apparently in prayer.",
+  "who": null,
+  "ch": 9
+ },
+ {
+  "term": "homicidal",
+  "ko": "살인 충동이 있는",
+  "en": "likely to commit murder",
+  "nuance": "셀린이 시간당 900프랑을 내고 상담사에게서 들은 진단. murderous가 행위나 기세를 말한다면 homicidal은 '사람을 죽일 성향'이라는 임상적 판정 어감이라, 황당한 상담 일화를 더 우스꽝스럽게 만든다.",
+  "register": "neutral",
+  "ctx": "I was paying her nine-hundred francs an hour, to hear that I was a homicidal maniac, and that I could eliminate my obsession if I would concentrate on bright colours.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "inaudible",
+  "ko": "들리지 않는, 알아들을 수 없는",
+  "en": "impossible to hear",
+  "nuance": "역 안내방송이 웅얼거림으로만 들린다는 지문. 소리가 아예 없는 게 아니라 '있는데 못 알아듣는' 상태라, 헤어질 시간은 다가오는데 정작 말은 전해지지 않는 마지막 장의 분위기와 겹친다.",
+  "register": "neutral",
+  "ctx": "Voice over loudspeaker makes an inaudible announcement.",
+  "who": null,
+  "ch": 22
+ },
+ {
+  "term": "monastery",
+  "ko": "수도원",
+  "en": "a building where monks live and work",
+  "nuance": "워드프로세서로 아낀 시간에 선(禪) 수도원 가서 지내겠다는 사람은 없더라는 제시의 농담. 남자 수도원이 monastery, 여자 쪽은 convent다.",
+  "register": "neutral",
+  "ctx": "Right, I mean, you never hear somebody say, \"Well, you know, with uh, the time I've saved by using my word processor, I'm gonna go to a Zen monastery and hang out.\" I mean, you never hear that.",
+  "who": "Jesse",
+  "ch": 13
+ },
+ {
+  "term": "montage",
+  "ko": "몽타주 (여러 장면을 이어붙인 편집)",
+  "en": "a sequence of short shots edited together",
+  "nuance": "바흐가 흐르는 가운데 두 사람이 지나간 장소들을 사람 없이 다시 비추는 마지막 시퀀스를 가리키는 영화 용어. 프랑스어에서 온 말이라 -ge를 /ʒ/로 발음한다.",
+  "register": "neutral",
+  "ctx": "“Andante” From Sonata For Viola Da Gamba In G Major by Bach plays in the background as the closing montage begins to roll",
+  "who": null,
+  "ch": 23
+ },
+ {
+  "term": "percussionist",
+  "ko": "타악기 연주자",
+  "en": "a musician who plays drums or other percussion instruments",
+  "nuance": "길모퉁이에서 벨리댄서가 이 연주에 맞춰 춤춘다. drummer가 드럼 세트 주자를 뜻한다면 percussionist는 북·심벌 등 타악기 전반을 아우르는 좀 더 격식 있는 말이다.",
+  "register": "neutral",
+  "ctx": "The scene cuts to a belly dancer dancing to a percussionist, performing on a street corner as several people watch.",
+  "who": null,
+  "ch": 14
+ },
+ {
+  "term": "plait",
+  "ko": "s'il vous plaît(부탁합니다)의 일부 — 프랑스어 plaît. 영어 단어 plait는 '머리를 땋다, 땋은 머리'로 전혀 다른 말",
+  "en": "part of the French 's'il vous plaît' (please); the English word plait means a braid",
+  "nuance": "대본이 곡절 부호(î)를 빼고 plait로 적어 영어 단어처럼 보이지만 여기서는 프랑스어 '부탁합니다'의 끝부분이다. 영어 plait(주로 영국식, 땋은 머리)와는 철자만 같은 남남이다.",
+  "register": "neutral",
+  "ctx": "Une billet s'il vous plait…” (One ticket please.",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "rapturous",
+  "ko": "황홀한, 넋이 나갈 만큼 기쁜",
+  "en": "feeling or expressing intense joy",
+  "nuance": "전화기를 든 시늉으로 친구에게 '나 지금 황홀해'라고 말하는 장면. happy나 great로는 성에 안 차 일부러 과장된 문어체 단어를 골라 쓴 것이라 들뜸이 우스꽝스럽게 튄다. 보통은 rapturous applause처럼 반응을 꾸미지 사람을 주어로 잘 쓰지 않는다.",
+  "register": "literary",
+  "ctx": "That's the thing, I'm...I'm rapturous.",
+  "who": "Jesse",
+  "ch": 15
+ },
+ {
+  "term": "skids",
+  "ko": "(짐 받치는) 나무 깔판, 팔레트 (skid의 복수형)",
+  "en": "wooden pallets or platforms used for stacking goods",
+  "nuance": "골목에 쌓인 깔판 더미에 걸터앉아 좋은 아버지·남편이 되는 꿈을 이야기한다. 자동차가 미끄러지는 skid와 철자가 같지만 여기서는 물건 받치는 나무틀 쪽이다.",
+  "register": "neutral",
+  "ctx": "Yeah, I don't know (They sit on a pile of skids in an alley they are walking through.) Sometimes I dream about being a good father and a good husband, and sometimes that feels really close.",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "throaty",
+  "ko": "목이 잠긴 듯 걸걸한, 낮고 굵은 (목소리)",
+  "en": "(of a voice) deep and husky",
+  "nuance": "딜런 토머스가 오든의 시를 낭송한 녹음을 흉내 내며 제시가 목을 눌러 내는 소리. hoarse가 '아파서 쉰'이라면 throaty는 낮게 울리는, 매력적으로도 들리는 목소리다.",
+  "register": "neutral",
+  "ctx": "(Starts with throaty voice again.)",
+  "who": "Jesse",
+  "ch": 21
+ },
+ {
+  "term": "thuggy",
+  "ko": "양아치 같은, 험악해 보이는 (thug '폭력배'에서 나온 비표준 형용사)",
+  "en": "thug-like, menacing (nonstandard; the standard form is thuggish)",
+  "nuance": "카마로 옆에 서 있던 남자 넷을 제시가 이렇게 묘사한다. 사전에 실린 형태는 thuggish이고 thuggy는 말하다 즉석에서 만든 구어라 글에는 쓰지 않는 편이 안전하다.",
+  "register": "slang",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "uptight",
+  "ko": "발끈하는, 사소한 일에 예민하게 구는",
+  "en": "tense, easily annoyed or offended",
+  "nuance": "길에서 시비가 붙어도 '별일 아니야, 발끈하지 말자'고 넘기는 대목. angry가 화 자체라면 uptight은 빡빡하게 구는 성격·태도를 놀리는 말이라 get uptight about ~ 형태로 자주 쓴다.",
+  "register": "casual",
+  "ctx": "So, I'm like alright, “Hey, no big deal,” I'm not gonna get uptight about this, right?",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "wacko",
+  "ko": "또라이, 미친 사람",
+  "en": "a crazy or eccentric person (slang)",
+  "nuance": "제시가 엉뚱한 소리를 하자 셀린이 말 대신 손짓으로 '너 완전 돌았어'를 표현하는 지문. 친한 사이에서는 애정 섞인 농담이지만 정색하고 쓰면 상대를 정신적으로 깎아내리는 말이 된다.",
+  "register": "slang",
+  "ctx": "You're so (makes gesture to give impressive of wacko)…",
+  "who": "Céline",
+  "ch": 9
+ },
+ {
+  "term": "whir",
+  "ko": "윙 하고 돌아가다, 기계가 웅 소리를 내다",
+  "en": "to make a low continuous sound of something spinning",
+  "nuance": "제시가 읊는 W. H. 오든의 시에서 도시의 시계들이 '윙 돌다가 종을 친다'는 대목. 종소리(chime) 직전 기계가 감기는 기척이라, 시간이 사람을 덮치기 직전의 긴장으로 읽힌다.",
+  "register": "literary",
+  "ctx": "Began to whir, and chime",
+  "who": null,
+  "ch": 21
+ },
+ {
+  "term": "wimpy",
+  "ko": "찌질한, 겁 많고 나약한",
+  "en": "weak and cowardly (informal)",
+  "nuance": "여자들이 남자더러 territorial하다고 뭐라 했다가, 상황이 바뀌면 unmanly니 wimpy니 한다는 제시의 불평. weak가 중립적 서술이라면 wimpy는 남자다움을 조롱하는 말이라 듣는 쪽은 꽤 기분이 상한다.",
+  "register": "casual",
+  "ctx": "I mean, women say they hate it if you‘re all territorial and protective, but if it suits them, then they'll tell you you're being all unmanly, or wimpy, or uh…",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "lounge",
+  "ko": "라운지 칸, 휴게 칸 (lounge car)",
+  "en": "a lounge car: the train carriage with seats and a bar",
+  "nuance": "셀린을 자연스럽게 데리고 나가려고 제시가 대는 핑계. 여기서는 '느긋하게 앉아 있다'는 동사가 아니라 열차의 휴게·바 칸을 가리키는 명사다.",
+  "register": "neutral",
+  "ctx": "Look, I was thinking about going to the lounge car sometime soon.",
+  "who": "Jesse",
+  "ch": 1
+ },
+ {
+  "term": "rooster",
+  "ko": "수탉",
+  "en": "an adult male chicken",
+  "nuance": "'수탉 같은 재수탱이(rooster prick)'는 가슴 내밀고 뽐내다 관심이 자기에게 안 오자 삐친 태도를 꼬집는 말이다. 미국 영어에서는 cock이 비속어라 수탉을 rooster로 부르는 것이 표준이다.",
+  "register": "neutral",
+  "ctx": "You were like this rooster prick.",
+  "who": "Céline",
+  "ch": 12
+ },
+ {
+  "term": "gravestone",
+  "ko": "묘비",
+  "en": "a stone marking a grave, with the dead person's name on it",
+  "nuance": "어릴 때 마음에 박혔던 열세 살 소녀의 묘비를 셀린이 다시 찾아가는 장면. tombstone과 사실상 같은 말이고, grave(무덤)와 달리 돌 표지 자체를 가리킨다.",
+  "register": "neutral",
+  "ctx": "(She sees a gravestone, and indicates it.) Ah, here she is, I think.",
+  "who": "Céline",
+  "ch": 7
+ },
+ {
+  "term": "gypsy",
+  "ko": "집시 (여기서는 손금 봐주는 점쟁이)",
+  "en": "a Roma person; here, a fortune teller reading palms",
+  "nuance": "손금을 봐 주는 여자를 지문이 이렇게 부른다 — 제시는 사기라 여기고 셀린은 진지하게 받아들이며 둘의 첫 다툼이 시작된다. 오늘날 영어에서 Gypsy는 비하로 여겨져 Roma를 쓰는 게 보통이니 1995년 대본의 표기로만 알아 두는 편이 좋다.",
+  "register": "neutral",
+  "ctx": "They pause, looking in the direction where they hear some laughter, seeing a gypsy as she finishes reading somebody's palm.",
+  "who": null,
+  "ch": 9
+ },
+ {
+  "term": "hose",
+  "ko": "호스 (여기서는 마당 물호스)",
+  "en": "a flexible tube for carrying water",
+  "nuance": "세 살 때 마당 호스로 물을 뿌려 무지개를 만들다 물안개 너머로 죽은 증조할머니를 봤다는 이야기. 같은 문장의 nozzle(분사구)과 짝을 이루고, 호스를 놓는 순간 환영도 사라진다.",
+  "register": "neutral",
+  "ctx": "And then finally, I let go of the nozzle, you know, and then I dropped the hose, and she disappeared.",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "pisses",
+  "ko": "열받게 하다, 짜증나게 하다 (piss off의 3인칭 단수형)",
+  "en": "makes someone very annoyed (piss someone off)",
+  "nuance": "서로를 알아 가는 질문으로 제시가 던지고 셀린이 '다 짜증나'로 받는다. annoy보다 훨씬 구어적이고 살짝 상스러워 격식 자리에서는 피하지만 친구 사이 대화에서는 아주 흔하다. 명령형 Piss off!는 '꺼져'라는 뜻이 되니 구분해야 한다.",
+  "register": "slang",
+  "ctx": "Tell me something that really pisses you off, really drives you crazy.",
+  "who": "Jesse",
+  "ch": 5
+ },
+ {
+  "term": "emphasis",
+  "ko": "강조",
+  "en": "special importance given to something in speech or writing",
+  "nuance": "시인이 단어만 갈아 끼운 것 아니냐며 제시가 손가락으로 짚어 강조하는 지문. for emphasis(강조하려고), with more emphasis(더 힘줘서)처럼 전치사와 붙은 덩어리로 익히는 편이 실전에 낫다.",
+  "register": "neutral",
+  "ctx": "I mean, you know he wrote it, but he probably just plugs that word in (points his finger for emphasis), you know, whatever “milkshake”...",
+  "who": "Jesse",
+  "ch": 12
+ },
+ {
+  "term": "gesture",
+  "ko": "몸짓, 손짓",
+  "en": "a movement of the hand or body that expresses meaning",
+  "nuance": "말로 하기 뭐한 '너 미쳤어'를 셀린이 손짓으로 대신하는 장면. make a gesture가 기본 연어이고, a nice gesture처럼 '호의의 표시'라는 추상적 뜻으로도 자주 쓴다.",
+  "register": "neutral",
+  "ctx": "You're so (makes gesture to give impressive of wacko)…",
+  "who": "Céline",
+  "ch": 9
+ },
+ {
+  "term": "mimics",
+  "ko": "흉내 내다 (3인칭 단수형)",
+  "en": "imitates someone's voice or behavior",
+  "nuance": "'프랑스적이라 귀엽다'는 소리가 지겨워 셀린이 토하는 시늉을 하는 지문. imitate가 중립적인 '따라 하기'라면 mimic은 특징을 과장해 재연하는, 놀림이나 연기에 가까운 말이다.",
+  "register": "neutral",
+  "ctx": "Each time I wear black, or like, lose my temper, or say anything about anything, they always go 'oh, it‘s so french, it‘s so cute.' (She mimics vomiting.) I hate that.",
+  "who": "Céline",
+  "ch": 5
+ },
+ {
+  "term": "motions",
+  "ko": "손짓하다, 몸짓으로 나타내다 (동사 3인칭 단수형)",
+  "en": "makes a movement of the hand to indicate something",
+  "nuance": "소가 발굽으로 담배 무는 시늉을 손으로 해 보이는 지문. 여기서는 명사 '움직임'이 아니라 동사이며, motion to someone은 '오라고/가라고 손짓하다'라는 뜻으로도 흔하다.",
+  "register": "neutral",
+  "ctx": "And she can smoke, with her hooves (motions with his hand, as if smoking with cow’s hooves), and everything.",
+  "who": "Man with tie",
+  "ch": 4
+ },
+ {
+  "term": "pinball",
+  "ko": "핀볼 (구슬 오락기)",
+  "en": "an arcade game where a ball is kept in play with flippers",
+  "nuance": "맥주를 들고 핀볼을 치는 장면. 바로 뒤 제시가 '네 핀볼엔 도움이 안 됐네'라고 놀리듯, 기계 이름이면서 그 판의 실력까지 가리키는 말로 쓰인다.",
+  "register": "neutral",
+  "ctx": "The scene cuts to Jesse and Celine standing, playing pinball, and drinking beer.",
+  "who": null,
+  "ch": 13
+ },
+ {
+  "term": "shrugs",
+  "ko": "어깨를 으쓱하다 (3인칭 단수형)",
+  "en": "raises the shoulders to show indifference or ignorance",
+  "nuance": "'남들이 하라는 것과 정반대로 살았다'는 말에 붙는 어깨짓. 영어권에서 이 동작은 '몰라 / 상관없어'라는 뜻이라, 대본 지문에서 대사의 태도를 보여주는 장치로 자주 쓰인다.",
+  "register": "neutral",
+  "ctx": "By the time I was in high school, I was dead set on listening to what everybody thought I should be doing with my life, and just kind of (shakes head, shrugs shoulders) doing just the opposite.",
+  "who": "Jesse",
+  "ch": 2
+ },
+ {
+  "term": "unselfish",
+  "ko": "이기적이지 않은, 사심 없는",
+  "en": "not selfish; putting others first",
+  "nuance": "'완전히 사심 없이 주기만 하는 사랑이었냐'는 5장의 질문이 13장에서 '사랑만큼 이기적인 것도 없다'는 주장으로 되돌아온다. selfless가 자기를 아예 지운 헌신이라면 unselfish는 '이기적이지 않은' 정도의 일상적인 말이다.",
+  "register": "neutral",
+  "ctx": "Was it totally a totally unselfish, giving love?",
+  "who": "Jesse",
+  "ch": 5
+ },
+ {
+  "term": "acoustic",
+  "ko": "어쿠스틱의, 전자 증폭을 쓰지 않는",
+  "en": "(of an instrument) not electrically amplified",
+  "nuance": "독일어 얼터너티브 곡을 통기타 하나로 연주하는 장면. 원뜻은 '음향의'지만 악기 앞에 붙으면 electric(전기 기타)의 반대말로 굳어진다.",
+  "register": "neutral",
+  "ctx": "Live German alternative music is playing by a single musician with an acoustic guitar.",
+  "who": null,
+  "ch": 13
+ },
+ {
+  "term": "adolescent",
+  "ko": "사춘기 청소년(의), 십대 같은",
+  "en": "a teenager; typical of a teenager",
+  "nuance": "'고등학생처럼 키스한다'는 말이 흉이 아니라 서툴러서 귀엽다는 칭찬으로 쓰였고, 정작 그 상대가 앞에 앉아 듣고 있다. teenager가 중립적인 나이 구분이라면 adolescent는 미성숙함까지 은근히 얹는 말이다.",
+  "register": "neutral",
+  "ctx": "(Pauses, then smiles while Jesse fixes his eyes on her.) He kind of kisses like an adolescent, it‘s so cute.",
+  "who": "Céline",
+  "ch": 15
+ },
+ {
+  "term": "alley",
+  "ko": "골목, 뒷골목",
+  "en": "a narrow street between or behind buildings",
+  "nuance": "깔판 더미에 앉아 좋은 아버지가 되는 꿈을 꺼내는 장소. street과 달리 좁고 건물 뒤편이라 남의 눈에 띄지 않는 곳이어서, 속내를 털어놓는 장면 배경으로 어울린다.",
+  "register": "neutral",
+  "ctx": "Yeah, I don't know (They sit on a pile of skids in an alley they are walking through.) Sometimes I dream about being a good father and a good husband, and sometimes that feels really close.",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "amongst",
+  "ko": "~들 사이에서 (among과 같은 뜻)",
+  "en": "among (chiefly British and more formal variant)",
+  "nuance": "시인이 시를 쓰는 동안 둘이 저희끼리 이야기한다는 지문. among과 의미 차이는 없고 영국식·문어체 느낌만 더해지며, talk amongst themselves는 '자기들끼리 이야기하다'로 굳은 표현이다.",
+  "register": "formal",
+  "ctx": "The poet begins to write in his notebook, while Jesse and Celine turn away to talk amongst themselves.",
+  "who": null,
+  "ch": 12
+ },
+ {
+  "term": "amusement",
+  "ko": "놀이공원 (amusement park); 재미, 즐거움",
+  "en": "amusement park: a place with fairground rides and games",
+  "nuance": "여기서는 amusement park의 일부라 '재미'가 아니라 장소를 가리킨다 — 관람차 장면이 벌어지는 빈의 프라터 유원지다. 단독으로 쓰면 '재미있어함'(a look of amusement)이라는 뜻이 된다.",
+  "register": "neutral",
+  "ctx": "(Still in amusement park, walking around, after dark.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "anticipating",
+  "ko": "미리 짐작하다, 앞질러 예상하다 (anticipate의 -ing형)",
+  "en": "expecting or predicting something before it happens",
+  "nuance": "오래된 커플이 서로의 반응을 미리 다 알아버려서 미워진다는 대목. expect가 단순한 예상이라면 anticipate는 '미리 알고 대비까지 한다'는 뉘앙스여서, 여기서는 그 앎이 애정을 갉아먹는다는 뜻이 된다.",
+  "register": "neutral",
+  "ctx": "(Pauses.) When you talked earlier about after a few years, how a couple begin to hate each other...by anticipating their reactions...or getting tired of their mannerisms.",
+  "who": "Céline",
+  "ch": 21
+ },
+ {
+  "term": "awkward",
+  "ko": "어색한, 민망한",
+  "en": "feeling embarrassed or uncomfortable",
+  "nuance": "기차에서 같이 내리자고 제안하기 직전 제시가 스스로 인정하는 감정. 사람이 주어면 '내가 뻘쭘하다', 상황이 주어면 an awkward silence처럼 '분위기가 어색하다'가 되는데 여기서는 앞쪽이다.",
+  "register": "neutral",
+  "ctx": "I mean, I feel a little awkward.",
+  "who": "Jesse",
+  "ch": 4
+ },
+ {
+  "term": "barricade",
+  "ko": "차단물, 바리케이드",
+  "en": "a barrier put up to block a road or entrance",
+  "nuance": "차량 진입을 막는 구조물을 돌아 걷는 지문. 시위나 전투의 바리케이드로도 쓰이지만 여기서는 그저 차 못 들어오게 세운 물건이라 정치적 함의는 없다.",
+  "register": "neutral",
+  "ctx": "They walk around a vehicle barricade then proceed down a cobblestone walkway lined with trees and vines.",
+  "who": null,
+  "ch": 9
+ },
+ {
+  "term": "birthing",
+  "ko": "출산 중인, 아이를 낳는",
+  "en": "giving birth",
+  "nuance": "부족의 여인들이 산모를 둘러싸고 함께 춤춰 진통을 덜어 준다는 이야기. 명사 birth와 달리 birthing은 '낳는 과정'에 초점을 둔 말이라 birthing woman, birthing centre처럼 앞에 붙여 쓴다.",
+  "register": "neutral",
+  "ctx": "The woman in labor enters a tent, and the women of her tribe surround her, and dance, and they encourage the birthing woman to dance with them as...so as to make the birth less painful.",
+  "who": "Céline",
+  "ch": 14
+ },
+ {
+  "term": "bout",
+  "ko": "about의 구어 축약형('bout). 명사 bout는 '한바탕, (병·활동의) 한 차례'",
+  "en": "colloquial clipping of 'about'; as a noun, a short spell of illness or activity",
+  "nuance": "대본의 “How bout you?”는 How about you?에서 앞 a가 떨어진 발음을 그대로 적은 것이라 명사 bout(a bout of flu)와는 다른 말이다. 말할 때는 아주 흔하지만 글로 적으면 매우 비격식이다.",
+  "register": "casual",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "carousel",
+  "ko": "회전목마",
+  "en": "a merry-go-round; a revolving fairground ride",
+  "nuance": "제시가 훌쩍 올라타 스쳐 지나가며 셀린을 장난스럽게 건드리는 장면. 영국식 merry-go-round와 같은 것이고, 공항에서 짐이 돌아 나오는 컨베이어도 baggage carousel이라 부른다.",
+  "register": "neutral",
+  "ctx": "They approach a carousel, and Jesse jumps on, playfully nudging Céline as he spins past her.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "carriage",
+  "ko": "(관람차의) 탑승칸; 객차",
+  "en": "a compartment or car that carries passengers",
+  "nuance": "빈 시내가 내려다보이는 대관람차 칸. 열차 객차나 마차에도 쓰는 말이고, 미국식으로는 열차 칸을 보통 car라고 한다.",
+  "register": "neutral",
+  "ctx": "Céline and Jesse are in the carriage of the ferris wheel, high atop the skyline of Vienna below.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "chime",
+  "ko": "종소리를 내다, 울리다",
+  "en": "(of a clock or bell) to ring",
+  "nuance": "오든의 시에서 도시의 모든 시계가 윙 돌다가 일제히 종을 치며 '시간은 이길 수 없다'고 말하는 대목. ring이 단순한 울림이라면 chime은 음정이 있는 맑은 종·차임 소리다.",
+  "register": "literary",
+  "ctx": "Began to whir, and chime",
+  "who": null,
+  "ch": 21
+ },
+ {
+  "term": "chirping",
+  "ko": "짹짹 지저귀는",
+  "en": "(of birds) making short high sounds",
+  "nuance": "밤을 새운 두 사람 위로 해가 뜨고 새가 우는 지문 — 남은 시간이 얼마 없다는 신호다. 새는 chirp, 귀뚜라미 소리에도 같은 동사를 쓴다.",
+  "register": "neutral",
+  "ctx": "In park...sun is up, birds are chirping.",
+  "who": null,
+  "ch": 20
+ },
+ {
+  "term": "clumsy",
+  "ko": "덤벙대는, 굼뜬",
+  "en": "awkward in movement; likely to drop or bump into things",
+  "nuance": "제시를 앞에 두고 제3자에게 그를 설명하는 척하는 장면이라, 흉처럼 들리는 말도 애정 어린 관찰로 뒤집힌다. awkward가 마음의 어색함이라면 clumsy는 몸놀림이 서툰 쪽이다.",
+  "register": "neutral",
+  "ctx": "He's kind of tall, and a little clumsy.",
+  "who": "Céline",
+  "ch": 15
+ },
+ {
+  "term": "compartment",
+  "ko": "(유럽 기차의) 객실, 칸막이 방",
+  "en": "a separate closed section of a train carriage",
+  "nuance": "마지막에 셀린이 혼자 들어가는 그 방 — 영화가 시작된 것과 똑같은 형태의 공간으로 되돌아온다는 점이 핵심이다. 문 달린 유럽식 6인실을 뜻해서 트인 좌석칸과는 다르다.",
+  "register": "neutral",
+  "ctx": "We see Celine, alone as she enters a passenger compartment on the train.",
+  "who": null,
+  "ch": 23
+ },
+ {
+  "term": "conquer",
+  "ko": "정복하다, 이겨내다",
+  "en": "to defeat and take control of",
+  "nuance": "'시간을 정복할 수는 없다'는 오든의 시구. 본래 나라나 적을 무력으로 정복한다는 말이라, 시간을 목적어로 놓는 순간 시간이 사람과 겨루는 상대처럼 커진다.",
+  "register": "literary",
+  "ctx": "You cannot conquer time.",
+  "who": null,
+  "ch": 21
+ },
+ {
+  "term": "darts",
+  "ko": "다트 (던지는 작은 화살, dart의 복수형); 다트 게임",
+  "en": "small pointed missiles thrown at a board; the game of darts",
+  "nuance": "'다트를 던지든 당구를 치든 갑자기 이겨야겠다는 마음이 든다'며 승부욕을 고백하는 대목. throw darts, shoot pool처럼 종목마다 붙는 동사가 정해져 있으니 짝으로 외우는 게 좋다.",
+  "register": "neutral",
+  "ctx": "...you know, I could be doing the most nothing thing, you know, I could be uh, throwing some darts, or shooting some pool, and all of a sudden, I feel it come over me, “I have got to win.”",
+  "who": "Jesse",
+  "ch": 12
+ },
+ {
+  "term": "deceive",
+  "ko": "속이다, 착각하게 하다",
+  "en": "to make someone believe something that is not true",
+  "nuance": "'시간이 너를 속이게 두지 마라'는 시구. let not ~ 어순은 요즘 쓰지 않는 옛 문어체 명령형이고, deceive는 lie(거짓말하다)와 달리 말뿐 아니라 상황 전체로 착각시키는 것을 뜻한다.",
+  "register": "literary",
+  "ctx": "Oh, let not time deceive you",
+  "who": null,
+  "ch": 21
+ },
+ {
+  "term": "declarations",
+  "ko": "(사랑의) 고백, 선언 (declaration의 복수형)",
+  "en": "formal statements; here, written declarations of love",
+  "nuance": "여름이 끝날 무렵 서로에게 써 준 사랑의 맹세들. declaration of love는 감정을 공식 선언하듯 적는다는 어감이라, 곧 흐지부지된 결말과 대비되며 어린 진심의 거창함이 드러난다.",
+  "register": "neutral",
+  "ctx": "You know we kind of wrote these little declarations of love to each other at the end of the summer, and you know, promised we would keep writing forever, and I, you know, meet again very soon, and...",
+  "who": "Céline",
+  "ch": 5
+ },
+ {
+  "term": "doorman",
+  "ko": "문지기, 도어맨",
+  "en": "a person employed to stand at the door of a building or club",
+  "nuance": "클럽 문 앞의 직원에게 셀린이 건네는 짧은 인사. 호텔·아파트 입구를 지키는 직원 전반을 가리키고, 요즘은 성중립적으로 door attendant를 쓰기도 한다.",
+  "register": "neutral",
+  "ctx": "(To doorman.) Thank you.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "downstream",
+  "ko": "물길 아래쪽으로, 하류로",
+  "en": "in the direction in which a river flows",
+  "nuance": "거리의 시인이 'milkshake'라는 단어를 받아 즉석에서 지어 준 시에서, 두 사람을 '강물에 떠내려가는 나뭇가지'에 빗대는 구절이다. upstream(상류로)의 반대말이며, 비유로 쓰면 '흐름에 맡겨 실려 간다'는 수동적인 느낌을 준다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "escalator",
+  "ko": "에스컬레이터",
+  "en": "a moving staircase",
+  "nuance": "마지막 몽타주에서 제시가 혼자 역 에스컬레이터를 타는 장면 — 제 발로 걷지 않아도 실려 가는 이동이라 이별 뒤의 무력함과 겹친다. elevator(승강기)와 헷갈리지 않게 구분해 두면 좋다.",
+  "register": "neutral",
+  "ctx": "We see Jesse, alone as he takes the escalator in the train station, then later as he rides the bus to the airport.",
+  "who": null,
+  "ch": 23
+ },
+ {
+  "term": "excelled",
+  "ko": "뛰어났다, 탁월했다 (excel의 과거형)",
+  "en": "was outstandingly good at something (past tense of excel)",
+  "nuance": "'따뜻한 관계 속에 있었다는 것보다, 무언가에 정말 뛰어났다는 걸 알고 죽고 싶다'는 제시의 고백에 나오는 말. be good at보다 격식 있고 '남들보다 앞섰다'는 비교 의식이 들어 있어 야심과 사랑을 저울질하는 이 대목에 딱 맞는다. excel at/in ~ 형태로 쓴다.",
+  "register": "formal",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "exhibition",
+  "ko": "전시(회)",
+  "en": "a public display of art or objects",
+  "nuance": "무례한 남자에게서 벗어난 직후 화제를 돌리며 셀린이 가리키는 것. 영국식은 exhibition, 미국식은 흔히 exhibit이라 하고, 스포츠에서는 '시범 경기'라는 뜻도 있다.",
+  "register": "neutral",
+  "ctx": "(Asshole.) Ah, there's an exhibition.",
+  "who": "Céline",
+  "ch": 10
+ },
+ {
+  "term": "exhibitions",
+  "ko": "전시회들 (exhibition의 복수형)",
+  "en": "public displays of art or objects (plural)",
+  "nuance": "빈에서 뭘 하겠느냐는 흐름에서 '박물관, 전시회 같은 것들'로 예를 늘어놓는 자리라 복수형이 쓰였다. like A, B, things...로 예시를 열거할 때는 이렇게 복수형이 자연스럽다.",
+  "register": "neutral",
+  "ctx": "Like museums, exhibitions, things...",
+  "who": "Céline",
+  "ch": 4
+ },
+ {
+  "term": "fetches",
+  "ko": "가서 물어 오다, 가져오다 (3인칭 단수형)",
+  "en": "goes and brings something back",
+  "nuance": "던진 막대기를 물어 온다는 소 이야기 — 개가 할 짓을 소가 한다는 데서 웃음이 나온다. bring이 '가져오다'만 뜻한다면 fetch는 '가서 가져오다'까지 한 단어에 들어 있다.",
+  "register": "neutral",
+  "ctx": "If someone throws a stick, she fetches it, and brings it back.",
+  "who": "Man with tie",
+  "ch": 4
+ },
+ {
+  "term": "fist",
+  "ko": "주먹",
+  "en": "a tightly closed hand",
+  "nuance": "성 해방 구호를 비꼬면서 셀린이 주먹으로 치는 시늉을 하는 지문 — 말은 자유롭게 자자는 내용인데 몸짓은 폭력이라 냉소가 드러난다. make a fist(주먹을 쥐다)가 기본 연어다.",
+  "register": "neutral",
+  "ctx": "We're all happy and free as long as I can fuck (makes a punching motion with her fist) as much as I want.",
+  "who": "Céline",
+  "ch": 14
+ },
+ {
+  "term": "francs",
+  "ko": "프랑 (유로 이전 프랑스 화폐, franc의 복수형)",
+  "en": "francs, the pre-euro French currency",
+  "nuance": "상담료가 시간당 900프랑 — 1995년 기준으로 만만찮은 돈이라, 그 값을 치르고 들은 말이 고작 '살인 충동이 있다'였다는 게 농담의 핵심이다. 지금은 유로로 바뀌어 쓰이지 않는다.",
+  "register": "neutral",
+  "ctx": "I was paying her nine-hundred francs an hour, to hear that I was a homicidal maniac, and that I could eliminate my obsession if I would concentrate on bright colours.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "gazing",
+  "ko": "가만히 오래 바라보다 (gaze의 -ing형)",
+  "en": "looking steadily at something for a long time",
+  "nuance": "관람차 안에서 둘이 서로 반대쪽 야경을 보며 몇 발짝 떨어져 선 지문. look이 잠깐 보는 것이라면 gaze는 넋 놓고 오래 보는 것이고, 서로가 아니라 각자 딴 데를 본다는 점이 이 순간의 거리감이다.",
+  "register": "neutral",
+  "ctx": "They are each gazing at the scenery below, but looking in opposite directions, and standing a few feet apart.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "genitals",
+  "ko": "성기, 생식기",
+  "en": "the sexual organs",
+  "nuance": "사람들이 성기를 떨쳐 버리고 천사가 되고 싶어 한다는 제시의 말. 의학·중립 용어라 같은 대상을 가리키는 비속어들과 달리 진지한 대화에서 쓸 수 있고, 그래서 이 문장도 저속하게 들리지 않는다.",
+  "register": "neutral",
+  "ctx": "They're trying to shake off their genitals, and become angels.",
+  "who": "Jesse",
+  "ch": 14
+ },
+ {
+  "term": "greasy",
+  "ko": "기름진, 떡진 (머리)",
+  "en": "covered in oil or grease; (of hair) unwashed-looking",
+  "nuance": "파란 눈, 도톰한 입술까지 칭찬하다가 끝에 '기름진 머리'로 슬쩍 찌르는 대목이라 옆에서 듣던 제시가 움츠러든다. 음식에 쓰면 '느끼한'이고 사람에게 쓰면 대개 흉이다.",
+  "register": "casual",
+  "ctx": "He has beautiful blue eyes (Jesse closes his eyes), nice big lips (Jesse sucks in his lips to hide them), greasy hair.",
+  "who": "Céline",
+  "ch": 15
+ },
+ {
+  "term": "honks",
+  "ko": "경적을 울리다 (3인칭 단수형)",
+  "en": "sounds a car horn",
+  "nuance": "길을 건너는 두 사람에게 차가 빵빵대는 지문. 거위 울음소리에도 같은 단어를 쓰고, 명사로 '빵 소리'로도 쓴다.",
+  "register": "neutral",
+  "ctx": "They cross the street to enter, as a car stops and honks at them.",
+  "who": null,
+  "ch": 11
+ },
+ {
+  "term": "hovering",
+  "ko": "바로 위에 떠 있듯 맴돌다 (hover의 -ing형)",
+  "en": "staying in one place just above something",
+  "nuance": "팔꿈치로 몸을 세워 셀린 위로 얼굴을 가까이 둔 자세이고, 곧바로 '결혼하겠다'는 말이 나온다. 새나 헬리콥터가 공중에 정지한 상태를 뜻하는 말이라 사람에게 쓰면 '가까이 붙어 떠나지 않는' 느낌이 산다.",
+  "register": "neutral",
+  "ctx": "(Sits up and leans on his elbow, hovering above her.) If somebody gave me the choice right now, of to never see you again or to marry you, alright, I would marry you, alright?",
+  "who": "Jesse",
+  "ch": 19
+ },
+ {
+  "term": "incline",
+  "ko": "비탈, 경사진 길",
+  "en": "a slope",
+  "nuance": "카메라에 등을 보인 채 비탈을 내려가면서 목소리가 멀어지는 마무리 지문. 명사일 때는 강세가 앞(IN-cline), 동사 '마음이 기울다'일 때는 뒤(in-CLINE)로 간다.",
+  "register": "neutral",
+  "ctx": "Voices fade as they walk down an incline with their backs to the camera.",
+  "who": null,
+  "ch": 14
+ },
+ {
+  "term": "jaw",
+  "ko": "턱 (아래턱, 턱뼈)",
+  "en": "the lower part of the face that moves when you talk",
+  "nuance": "대본에서는 셀린의 이야기에 제시가 '턱을 떨어뜨리는' 지문으로 나온다. one's jaw drops는 '입이 떡 벌어지다', 즉 놀람을 나타내는 굳은 표현이라 통째로 익히는 게 낫고, chin(턱 끝)과 달리 jaw는 턱뼈 전체를 가리킨다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "kissers",
+  "ko": "키스한 당사자들 (kiss + -er, 이 대사에서 만들어 쓴 말)",
+  "en": "the people doing the kissing (a coined agent noun)",
+  "nuance": "'내가 끼지 않은 키스를 해 본 적이 없다', 곧 단 한 번도 자기 자신에게서 벗어나 본 적이 없다는 말이다. 사전에 실린 일반 명사가 아니라 논리를 위해 즉석에서 만든 형태이고, 속어 kisser에는 '입·얼굴'이라는 다른 뜻도 있다.",
+  "register": "casual",
+  "ctx": "I've never had a kiss when I wasn't one of the kissers.",
+  "who": "Jesse",
+  "ch": 19
+ },
+ {
+  "term": "maniac",
+  "ko": "미치광이, 광인",
+  "en": "a person who behaves in a wildly irrational or dangerous way",
+  "nuance": "homicidal maniac이 한 덩어리로 '살인마'라는 진단처럼 쓰였다. 일상에서는 drive like a maniac(미친 듯이 운전하다)처럼 과장 농담으로 더 자주 쓰지만, 여기서는 상담사가 내린 말이라 무게가 다르다.",
+  "register": "casual",
+  "ctx": "I was paying her nine-hundred francs an hour, to hear that I was a homicidal maniac, and that I could eliminate my obsession if I would concentrate on bright colours.",
+  "who": "Céline",
+  "ch": 13
+ },
+ {
+  "term": "mechanism",
+  "ko": "(작동) 장치, 기계 구조",
+  "en": "a system of moving parts that makes something work",
+  "nuance": "자동문 여는 장치를 제시가 툭 치듯 누르는 지문 — 얌전히 버튼을 누르는 게 아니라 '펀치'하는 몸짓에 들뜬 상태가 묻어난다. 추상적으로 '작동 원리·제도적 장치'라는 뜻으로도 널리 쓰인다.",
+  "register": "neutral",
+  "ctx": "Jesse 'punches' the automated door mechanism as they enter the lounge car.",
+  "who": null,
+  "ch": 1
+ },
+ {
+  "term": "meltdown",
+  "ko": "(관계·감정의) 파국, 완전히 무너짐",
+  "en": "a complete collapse or emotional breakdown",
+  "nuance": "마드리드에서 리사와 오래 미뤄 온 파국을 맞았다는 말 — 그가 왜 혼자 기차를 타고 있었는지에 대한 설명이 된다. 원래 원자로 노심 용융을 가리키던 말이라 '되돌릴 수 없이 무너졌다'는 과장이 실려 있다.",
+  "register": "casual",
+  "ctx": "You know, Lisa and I had our long-overdue meltdown.",
+  "who": "Jesse",
+  "ch": 15
+ },
+ {
+  "term": "mimicking",
+  "ko": "흉내 내며 (mimic의 -ing형)",
+  "en": "imitating someone's voice or manner",
+  "nuance": "제시가 셀린의 손을 잡고 목소리까지 점쟁이처럼 바꿔 암울한 예언을 지어내는 지문에서 나온다. imitate와 달리 목소리·몸짓의 특징을 과장해 재연하는 것이라 조롱이나 연기에 가깝고, 철자에 k가 끼어드는 것(mimic → mimicking)에 주의해야 한다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "mock",
+  "ko": "가짜의, ~하는 척하는",
+  "en": "not real; done in imitation or in jest",
+  "nuance": "회전목마 위에서 팔을 치켜드는 '승리 세리머니 흉내'. 여기서는 동사 '조롱하다'가 아니라 명사 앞에 붙어 '진짜가 아닌'을 뜻하는 형용사이고(mock exam 모의고사), 진지한 척하며 웃기려는 태도를 담는다.",
+  "register": "neutral",
+  "ctx": "He raises his arms in mock triumph.",
+  "who": null,
+  "ch": 8
+ },
+ {
+  "term": "momentarily",
+  "ko": "잠깐 동안, 잠시",
+  "en": "for a very short time",
+  "nuance": "'난 네 밋밋한 캔버스를 잠깐 장식해 주는 멍청한 미국인이구나'라며 삐친 척하는 대사. 영국식으로는 이렇게 '잠깐 동안'이지만 미국 구어에서는 '곧, 잠시 후에'(We will be landing momentarily)라는 뜻으로도 쓰여 헷갈리기 쉬운 단어다.",
+  "register": "neutral",
+  "ctx": "So, I'm just that dumb American momentarily decorating your bland canvas.",
+  "who": "Jesse",
+  "ch": 12
+ },
+ {
+  "term": "newscaster",
+  "ko": "뉴스 진행자, 앵커",
+  "en": "a person who reads the news on TV or radio",
+  "nuance": "배우가 되고 싶다는 딸에게 아버지가 'TV 뉴스 앵커를 해라'라고 받아치는 대목으로, 꿈을 돈 되는 직업으로 번역해 버리는 태도를 보여주는 예다. 요즘은 anchor(미국)나 newsreader(영국)를 더 많이 쓴다.",
+  "register": "neutral",
+  "ctx": null,
+  "who": null,
+  "ch": null
+ },
+ {
+  "term": "nudging",
+  "ko": "슬쩍 밀다, 팔꿈치로 툭 건드리다 (nudge의 -ing형)",
+  "en": "pushing someone gently, especially with the elbow",
+  "nuance": "회전목마를 타고 스쳐 지나가며 셀린을 장난스럽게 툭 치는 장면. push가 힘을 주어 미는 것이라면 nudge는 가볍게 건드려 신호를 보내는 정도라, 첫 스킨십으로 자연스럽다.",
+  "register": "neutral",
+  "ctx": "They approach a carousel, and Jesse jumps on, playfully nudging Céline as he spins past her.",
+  "who": null,
+  "ch": 8
+ }
+]

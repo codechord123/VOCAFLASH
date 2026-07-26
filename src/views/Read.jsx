@@ -145,11 +145,6 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
         </span>
       </div>
 
-      <ReadTracker
-        read={readOf(reads, 'before-sunrise', selected)}
-        onMark={() => commit((s) => markRead(s, 'before-sunrise', selected))}
-        onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
-      />
 
       <div>
         <h2>{chapter.title}</h2>
@@ -213,6 +208,14 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
           onClose={wl.closeWord}
         />
       )}
+
+      {/* 회독 표시는 본문 아래에 둔다 — 다 읽고 나서 누르는 것이라,
+          위에 있으면 읽기도 전에 손이 간다. */}
+      <ReadTracker
+        read={readOf(reads, 'before-sunrise', selected)}
+        onMark={() => commit((s) => markRead(s, 'before-sunrise', selected))}
+        onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
+      />
 
       <ChapterNav
         chapters={readable}
