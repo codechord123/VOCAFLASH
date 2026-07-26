@@ -48,6 +48,29 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
   )
   const stats = useMemo(() => deckStats(studyReviewCards), [studyReviewCards])
 
+  /**
+   * 복습 화면의 숫자 묶음. 숫자만 보여주고 마는 것이 아니라, 눌러서
+   * 그 묶음만 바로 넘길 수 있어야 한다 — "아직 안 본 807개"를 보고도
+   * 거기로 갈 방법이 없으면 숫자가 벽이 된다.
+   *
+   * 어느 묶음이든 덜 외운 순서로 준다.
+   */
+  const piles = useMemo(() => {
+    const order = (list) =>
+      [...list].sort(
+        (a, b) => a.box - b.box || a.dueAt - b.dueAt || b.lapseCount - a.lapseCount
+      )
+    return {
+      due: dueCards,
+      unlearned: order(
+        studyReviewCards.filter((c) => (c.lapseCount ?? 0) > 0 && c.box === 1)
+      ),
+      fresh: order(studyReviewCards.filter((c) => c.reviewCount === 0)),
+      learned: order(studyReviewCards.filter((c) => c.box === 5)),
+      all: order(studyReviewCards),
+    }
+  }, [studyReviewCards, dueCards])
+
   // 담은 문장 중 오늘 볼 것. 문장 칸에 숫자를 띄우기 위해서만 쓴다.
   const lineDue = useMemo(
     () =>
@@ -94,8 +117,9 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
       {sub === 'review' && (
         <Review
           dueCards={dueCards}
+          piles={piles}
           stats={stats}
-          onStart={() => setSwiping(dueCards)}
+          onStart={(sel) => setSwiping(sel)}
           onGoTopic={() => setSub('topic')}
         />
       )}
@@ -118,46 +142,59 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
   )
 }
 
-function Review({ dueCards, stats, onStart, onGoTopic }) {
-  if (dueCards.length === 0) {
+function Review({ dueCards, piles, stats, onStart, onGoTopic }) {
+  if (stats.total === 0) {
     return (
       <div className="empty">
-        <div className="empty__icon">✓</div>
-        <div className="empty__title">오늘 볼 카드가 없습니다</div>
-        <p className="empty__body">
-          예정된 복습을 다 끝냈습니다. 더 하고 싶으면 주제를 골라 넘겨
-          보세요 — 복습 예정일과 상관없이 그 주제 전체가 나옵니다.
-        </p>
-        <button className="btn btn--primary" onClick={onGoTopic}>
-          주제 고르기
-        </button>
+        <div className="empty__icon">◆</div>
+        <div className="empty__title">카드가 없습니다</div>
+        <p className="empty__body">설정에서 복습할 덱을 켜 주세요.</p>
       </div>
     )
   }
 
+  // 눌러서 바로 넘길 수 있는 묶음들. 숫자가 곧 입구다.
+  const tiles = [
+    { key: 'due', value: dueCards.length, label: '오늘 볼 카드', cards: piles.due, accent: true },
+    { key: 'unlearned', value: piles.unlearned.length, label: '아직 못 외운 것', cards: piles.unlearned },
+    { key: 'fresh', value: piles.fresh.length, label: '아직 안 본 것', cards: piles.fresh },
+    { key: 'learned', value: piles.learned.length, label: '익힘', cards: piles.learned },
+    { key: 'all', value: stats.total, label: '전체', cards: piles.all },
+  ]
+
   return (
     <div className="stack stack--loose">
-      <button className="btn btn--primary btn--block" onClick={onStart}>
-        스와이프로 {dueCards.length}개 넘기기
-      </button>
+      {dueCards.length > 0 ? (
+        <button className="btn btn--primary btn--block" onClick={() => onStart(dueCards)}>
+          스와이프로 {dueCards.length}개 넘기기
+        </button>
+      ) : (
+        <div className="empty">
+          <div className="empty__icon">✓</div>
+          <div className="empty__title">오늘 볼 카드가 없습니다</div>
+          <p className="empty__body">
+            예정된 복습을 다 끝냈습니다. 아래 숫자를 눌러 그 묶음만 몰아서
+            넘길 수 있습니다.
+          </p>
+          <button className="btn btn--primary" onClick={onGoTopic}>
+            주제 고르기
+          </button>
+        </div>
+      )}
 
       <div className="tiles">
-        <div className="tile tile--accent">
-          <div className="tile__value">{dueCards.length}</div>
-          <div className="tile__label">오늘 볼 카드</div>
-        </div>
-        <div className="tile">
-          <div className="tile__value">{stats.fresh.toLocaleString('ko')}</div>
-          <div className="tile__label">아직 안 본 것</div>
-        </div>
-        <div className="tile">
-          <div className="tile__value">{stats.learned.toLocaleString('ko')}</div>
-          <div className="tile__label">익힘</div>
-        </div>
-        <div className="tile">
-          <div className="tile__value">{stats.total.toLocaleString('ko')}</div>
-          <div className="tile__label">전체</div>
-        </div>
+        {tiles.map((t) => (
+          <button
+            key={t.key}
+            className={`tile tile--action${t.accent ? ' tile--accent' : ''}`}
+            disabled={t.cards.length === 0}
+            onClick={() => onStart(t.cards)}
+            title={t.cards.length > 0 ? `${t.label} ${t.value}개 넘기기` : '넘길 카드가 없습니다'}
+          >
+            <div className="tile__value">{t.value.toLocaleString('ko')}</div>
+            <div className="tile__label">{t.label}</div>
+          </button>
+        ))}
       </div>
 
       <section className="stack stack--tight">
