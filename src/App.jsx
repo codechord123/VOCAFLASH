@@ -221,7 +221,7 @@ export default function App() {
   }
 
   return (
-    <div className="app">
+    <div className={guide ? 'app app--guided' : 'app'}>
       <header className="topbar">
         <div className="container topbar__inner">
           <div className="brand">
@@ -237,9 +237,11 @@ export default function App() {
                 aria-selected={tab === t.id}
                 className="tab"
                 onClick={() => {
-                  if (t.id !== 'read') setReadTarget(null)
-                  if (t.id !== 'syntax' && t.id !== 'grammar') setUnitTarget(null)
-                  setGuide(null) // 직접 움직이면 안내는 접는다
+                  // 직접 움직이면 안내를 통째로 접는다. 목표를 어중간하게
+                  // 남기면 읽기 탭을 그냥 눌러도 예전 안내 챕터가 열린다.
+                  setReadTarget(null)
+                  setUnitTarget(null)
+                  setGuide(null)
                   setTab(t.id)
                 }}
               >
@@ -402,6 +404,8 @@ function GuideBar({ state, dueCount, itemId, onBack, onDismiss }) {
   if (!item) return null
   const ctx = {
     dueCount,
+    reviewLog: state.reviewLog,
+    dailyLimit: state.settings?.dailyLimit ?? 20,
     reads: state.reads,
     quizLog: state.quizLog,
     curriculum: state.curriculum,

@@ -36,6 +36,8 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   const today = dayPlan(plan.day)
   const ctx = {
     dueCount: dueCards.length,
+    reviewLog: state.reviewLog,
+    dailyLimit: settings?.dailyLimit ?? 20,
     reads: state.reads,
     quizLog: state.quizLog,
     curriculum: state.curriculum,
@@ -71,7 +73,9 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
           commit={commit}
           onExit={() => {
             setSwipeCards(null)
-            // 카드를 끝냈으면 바로 다음 칸으로 — 손이 끊기지 않게
+            // 오늘 몫을 채웠을 때만 다음 칸으로 잇는다. 중간에 나간
+            // 것은 그만두겠다는 뜻이지 다음으로 가겠다는 뜻이 아니다.
+            if (!doneMap.word) return
             const next = today.items.find((it) => it.id !== 'word' && !doneMap[it.id])
             if (next) onGuide(next, today)
           }}
@@ -85,9 +89,14 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
       <header className="stack stack--tight">
         <div className="row row--between">
           <h1>{today.day}일차</h1>
-          <span className="chip chip--box">
-            {today.day} / {TOTAL_DAYS}
-          </span>
+          <div className="row" style={{ gap: 'var(--s2)' }}>
+            {/* 지금 어느 장(부)을 지나는지 — 100이라는 숫자만 보이면
+                길이 안 보인다. 이름 붙은 구간이 있어야 지도가 된다. */}
+            <span className="chip chip--accent">{today.phase}</span>
+            <span className="chip chip--box">
+              {today.day} / {TOTAL_DAYS}
+            </span>
+          </div>
         </div>
         <p className="hint">
           {today.unit.kind === 'syntax' ? '구문' : '문법'} {today.unit.no} ·{' '}

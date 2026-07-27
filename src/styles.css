@@ -908,6 +908,12 @@ main {
   text-overflow: ellipsis;
 }
 
+/* 안내 중에는 아래 고정 요소들이 안내 바 위로 올라선다. 안 그러면
+   단어 카드의 앎/모름 버튼이 안내 바에 깔려 못 누른다. */
+.app--guided main { padding-bottom: 72px; }
+.app--guided .swipe__actions { bottom: calc(64px + env(safe-area-inset-bottom)); }
+.app--guided .sel-bar { bottom: calc(56px + env(safe-area-inset-bottom)); }
+
 /* ── 챕터 퀴즈 ───────────────────────────────────────────────────── */
 /* 전부 탭으로 푼다. 서서 보는 공부라 손가락이 닿는 크기가 먼저다. */
 
