@@ -1,0 +1,60 @@
+{
+ "id": "g-11",
+ "order": 11,
+ "title": "동사 뒤에 to를 붙일까 -ing를 붙일까",
+ "goal": "to부정사와 동명사를 가려 쓴다",
+ "why": "한국어로는 둘 다 '~하는 것'이라 구분할 단서가 없다. 앞의 동사가 정하는 자리라, 규칙이 아니라 짝으로 외워야 하는 몇 개가 있다.",
+ "present": {
+  "rule": "앞으로 할 일을 향하면 to, 이미 있는 일·해본 일을 가리키면 -ing인 경우가 많다.",
+  "points": [
+   "want·decide·plan·hope + to — 아직 안 한 일을 향한다",
+   "enjoy·finish·avoid·mind·keep + -ing — 이미 하고 있거나 해본 일이다",
+   "start·like·begin은 둘 다 되고 뜻도 거의 같다",
+   "뜻이 갈리는 짝 — stop to smoke(피우려고 멈추다) / stop smoking(끊다)",
+   "remember to call(잊지 말고 걸어라) / remember calling(건 기억이 난다)",
+   "전치사 뒤에는 늘 -ing — good at cooking / instead of waiting"
+  ],
+  "examples": [
+   {
+    "en": "I have to say something stupid.",
+    "ko": "바보 같은 말 좀 해야겠어요.",
+    "note": "have to 뒤에는 늘 동사원형. to have to saying은 없다.",
+    "from": "Before Sunrise, 19장"
+   },
+   {
+    "en": "I'm tired of being a huckster.",
+    "ko": "장사꾼 노릇 하는 게 지겨워요.",
+    "note": "of가 전치사라 뒤에 -ing가 온다. tired of be는 틀린다.",
+    "from": "Before Sunset, 7장"
+   },
+   {
+    "en": "They weren't trying to hustle anybody.",
+    "ko": "그 사람들은 누굴 등쳐먹으려 하지 않았어요.",
+    "note": "try to는 '~하려고 애쓰다', try -ing는 '시험 삼아 해보다'로 뜻이 갈린다.",
+    "from": "Before Sunset, 9장"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "앞으로 할 일", "sentence": "I decided ___ a year off.", "choices": ["to take", "taking"], "answer": "to take", "why": "decide는 아직 안 한 일을 향하는 동사라 to를 받는다." },
+  { "kind": "choice", "q": "이미 하고 있는 일", "sentence": "I enjoy ___ alone.", "choices": ["traveling", "to travel"], "answer": "traveling", "why": "enjoy는 -ing만 받는다. 이미 해본 일을 가리키기 때문이다." },
+  { "kind": "choice", "q": "전치사 뒤", "sentence": "She's good at ___ people talk.", "choices": ["making", "make"], "answer": "making", "why": "at은 전치사라 뒤에 -ing가 온다." },
+  { "kind": "choice", "q": "뜻이 갈리는 짝", "sentence": "He finally stopped ___ last year.", "choices": ["smoking", "to smoke"], "answer": "smoking", "why": "끊었다는 뜻이면 stop -ing. stop to smoke는 피우려고 하던 일을 멈춘 것이다." },
+  { "kind": "choice", "q": "잊지 말라는 당부", "sentence": "Remember ___ me when you arrive.", "choices": ["to call", "calling"], "answer": "to call", "why": "앞으로 할 일을 당부하면 to. remember calling은 이미 건 기억이 난다는 뜻이다." },
+  { "kind": "order", "q": "두 형태를 한 문장에 배열", "pieces": ["I want to keep", "reading", "before I go to bed"], "answer": ["I want to keep", "reading", "before I go to bed"], "ko": "자기 전에 계속 읽고 싶어.", "why": "want는 to를 받고, keep은 -ing를 받는다. 둘이 이어져도 각자의 규칙을 지킨다." }
+ ],
+ "produce": [
+  {
+   "situation": "요즘 하고 있는 것과 앞으로 하려는 것을 한 번에 말해 보세요.",
+   "chunks": ["I've started", "and I'm planning to", "I really enjoy"],
+   "model": "I've started reading in English every morning, and I'm planning to join a conversation club. I really enjoy learning this way.",
+   "ko": "아침마다 영어로 읽기 시작했고, 회화 모임에도 들어갈 생각이에요. 이렇게 배우는 게 정말 좋아요."
+  },
+  {
+   "situation": "그만둔 습관과 계속하는 습관을 나눠 말해 보세요.",
+   "chunks": ["I stopped", "but I keep", "I'm trying to"],
+   "model": "I stopped checking my phone at night, but I keep waking up early. I'm trying to fix that.",
+   "ko": "밤에 폰 보는 건 끊었는데 계속 일찍 깨요. 그걸 고쳐 보려는 중이에요."
+  }
+ ]
+}

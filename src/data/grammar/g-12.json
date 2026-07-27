@@ -1,0 +1,59 @@
+{
+ "id": "g-12",
+ "order": 12,
+ "title": "in · on · at — 시간과 자리",
+ "goal": "가장 자주 틀리는 전치사 셋을 정리한다",
+ "why": "뜻이 안 통하지는 않아서 아무도 고쳐 주지 않는다. 그래서 십 년을 써도 그대로 남는 자리다.",
+ "present": {
+  "rule": "넓으면 in, 면에 닿으면 on, 점이면 at. 시간에도 장소에도 이 순서가 그대로 적용된다.",
+  "points": [
+   "시간 — in 2004 / in May, on Monday / on my birthday, at seven / at night",
+   "장소 — in Paris / in the room, on the table / on the train, at the station / at the door",
+   "교통수단은 타는 방식으로 갈린다 — on the train·bus(걸어 다닐 수 있다) / in a car·taxi(못 다닌다)",
+   "in the morning이지만 on Monday morning — 요일이 붙으면 on이 이긴다",
+   "at은 '그 지점' — at the office는 일하는 곳으로서, in the office는 그 방 안에"
+  ],
+  "examples": [
+   {
+    "en": "I got one of those Eurail passes.",
+    "ko": "그 유레일패스를 하나 끊었어요.",
+    "note": "기차 안에서 오가는 이야기라 이 장면 전체가 on the train이다. in the train은 '그 차량 내부'라는 물리적 위치가 강조된다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "I stood in line at the metro station.",
+    "ko": "지하철역에서 줄을 섰어요.",
+    "note": "in line은 '줄 안에', at the station은 '역이라는 지점에'. 한 문장에서 in과 at이 각자 다른 크기를 맡는다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "Six months later, on a Thursday afternoon.",
+    "ko": "여섯 달 뒤, 어느 목요일 오후에.",
+    "note": "afternoon만 있으면 in the afternoon인데 요일이 붙으면 on이 된다.",
+    "from": "회화 기본형"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "연도", "sentence": "We met ___ 1995.", "choices": ["in", "on"], "answer": "in", "why": "연도·월·계절처럼 넓은 시간에는 in을 쓴다." },
+  { "kind": "choice", "q": "요일이 붙은 아침", "sentence": "The train leaves ___ Monday morning.", "choices": ["on", "in"], "answer": "on", "why": "in the morning이 기본이지만 요일이 붙으면 on이 이긴다." },
+  { "kind": "choice", "q": "탈것", "sentence": "I read the whole book ___ the train.", "choices": ["on", "in"], "answer": "on", "why": "기차·버스·비행기는 안에서 걸어 다닐 수 있어 on을 쓴다. 택시·승용차는 in이다." },
+  { "kind": "choice", "q": "지점으로서의 장소", "sentence": "I'll wait for you ___ the station.", "choices": ["at", "in"], "answer": "at", "why": "역을 만남의 지점으로 보면 at. in the station은 건물 안이라는 뜻이 강해진다." },
+  { "kind": "choice", "q": "시각", "sentence": "Let's meet ___ seven.", "choices": ["at", "on"], "answer": "at", "why": "시각은 시간의 한 점이라 at이다." },
+  { "kind": "order", "q": "셋을 한 문장에 배열", "pieces": ["I'll be", "at the café", "on Friday", "in the afternoon"], "answer": ["I'll be", "at the café", "on Friday", "in the afternoon"], "ko": "금요일 오후에 그 카페에 있을게요.", "why": "지점(at) · 요일(on) · 넓은 시간대(in)가 각자 제자리를 맡는다." }
+ ],
+ "produce": [
+  {
+   "situation": "약속을 잡아 보세요. 시각·요일·장소를 한 문장에 담아서요.",
+   "chunks": ["Let's meet", "at", "on", "in front of"],
+   "model": "Let's meet at six on Saturday, in front of the station.",
+   "ko": "토요일 여섯 시에 역 앞에서 만나요."
+  },
+  {
+   "situation": "출퇴근길을 설명해 보세요. 어디서 타고 어디서 내리는지까지요.",
+   "chunks": ["I get on", "at", "and I get off", "in"],
+   "model": "I get on the bus at the corner near my house, and I get off in front of the school.",
+   "ko": "집 근처 모퉁이에서 버스를 타고 학교 앞에서 내려요."
+  }
+ ]
+}

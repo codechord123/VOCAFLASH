@@ -1,0 +1,59 @@
+{
+ "id": "g-08",
+ "order": 8,
+ "title": "누가 했는지 말 안 할 때",
+ "goal": "수동태를 쓸 자리와 안 쓸 자리를 가른다",
+ "why": "한국어는 '~됐다'를 쉽게 쓰지만 영어 회화는 능동이 기본이다. 수동을 남발하면 말이 딱딱해지고, 정작 필요한 자리에서는 안 나온다.",
+ "present": {
+  "rule": "be + 과거분사. 누가 했는지 모르거나, 말할 필요가 없거나, 굳이 밝히고 싶지 않을 때 쓴다.",
+  "points": [
+   "My bag was stolen. — 누가 훔쳤는지 모른다",
+   "The book was published last year. — 출판사가 누구인지는 관심 밖이다",
+   "행위자를 밝히려면 by를 붙인다 — written by a French author",
+   "회화에서는 get으로도 만든다 — I got invited / He got fired(더 구어적이다)",
+   "감정을 말할 때 -ed와 -ing를 헷갈리지 말 것 — I'm bored(내가 지루하다) / It's boring(그게 지루하다)"
+  ],
+  "examples": [
+   {
+    "en": "Well, your book has been published.",
+    "ko": "어쨌든 당신 책은 출간됐잖아요.",
+    "note": "누가 냈는지가 아니라 '나왔다'는 사실이 중요한 자리라 수동이 자연스럽다.",
+    "from": "Before Sunset, 9장"
+   },
+   {
+    "en": "I have been raised with all the freedom they had fought for.",
+    "ko": "저는 그분들이 싸워서 얻어낸 자유를 다 누리며 자랐어요.",
+    "note": "자란 것은 내 의지가 아니라 받은 일이라 수동이다. 뒤의 fought for는 능동이라 두 태가 한 문장에 같이 있다.",
+    "from": "Before Sunrise, 하이라이트"
+   },
+   {
+    "en": "Five million people die every year from preventable water diseases.",
+    "ko": "매년 5백만 명이 막을 수 있는 수인성 질병으로 죽습니다.",
+    "note": "die는 수동으로 만들 수 없는 동사다. 목적어를 안 받는 동사(자동사)는 수동태가 없다.",
+    "from": "Before Sunset, 6장"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "행위자를 모를 때", "sentence": "My phone ___ on the train.", "choices": ["was stolen", "stole"], "answer": "was stolen", "why": "누가 훔쳤는지 모르니 수동. stole은 '내 폰이 무언가를 훔쳤다'가 된다." },
+  { "kind": "choice", "q": "자동사", "sentence": "The accident ___ last night.", "choices": ["happened", "was happened"], "answer": "happened", "why": "happen은 목적어를 안 받는 동사라 수동태 자체가 없다. was happened는 늘 틀린다." },
+  { "kind": "choice", "q": "감정을 말할 때", "sentence": "I was really ___ by the ending.", "choices": ["surprised", "surprising"], "answer": "surprised", "why": "내가 놀란 것이면 -ed. -ing는 그것이 남을 놀라게 한다는 뜻이다." },
+  { "kind": "choice", "q": "구어의 수동", "sentence": "He ___ fired last month.", "choices": ["got", "was gotten"], "answer": "got", "why": "get + 과거분사가 회화에서 흔한 수동 형태다." },
+  { "kind": "order", "q": "행위자를 밝히는 수동 배열", "pieces": ["The letter", "was written", "by someone", "I've never met"], "answer": ["The letter", "was written", "by someone", "I've never met"], "ko": "그 편지는 내가 만난 적 없는 사람이 쓴 거였어.", "why": "행위자를 굳이 밝힐 때만 by를 붙인다." },
+  { "kind": "choice", "q": "능동이 자연스러운 자리", "sentence": "Who ___ this?", "choices": ["made", "was made"], "answer": "made", "why": "행위자를 묻는 질문이라 수동으로 만들 이유가 없다." }
+ ],
+ "produce": [
+  {
+   "situation": "여행 중 겪은 곤란한 일을 말해 보세요. 누가 그랬는지는 모릅니다.",
+   "chunks": ["My", "was", "while I was", "so I had to"],
+   "model": "My wallet was taken while I was on the metro, so I had to cancel everything.",
+   "ko": "지하철에서 지갑을 도둑맞아서 다 정지시켜야 했어요."
+  },
+  {
+   "situation": "자기가 자란 환경을 수동으로 말해 보세요.",
+   "chunks": ["I was raised", "by", "and I was taught", "to"],
+   "model": "I was raised by my grandparents, and I was taught to finish what I start.",
+   "ko": "조부모님 손에 자랐고, 시작한 건 끝내라고 배웠어요."
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "id": "g-10",
+ "order": 10,
+ "title": "만약에 — 진짜 가정과 상상",
+ "goal": "if의 세 층을 갈라 쓴다",
+ "why": "'만약'이 하나뿐인 한국어와 달리, 영어는 그 일이 일어날 법한지에 따라 시제를 통째로 바꾼다. 이걸 모르면 상상이 계획처럼 들린다.",
+ "present": {
+  "rule": "일어날 법하면 현재+will, 상상이면 과거+would, 이미 지나간 일이면 과거완료+would have.",
+  "points": [
+   "If it rains, I'll stay home. — 있을 법한 일(if절은 미래여도 현재시제)",
+   "If I had more time, I'd learn the piano. — 지금 그렇지 않다는 상상",
+   "If I had known, I would have called. — 지나간 일에 대한 후회",
+   "상상에서 be동사는 인칭과 무관하게 were를 쓰는 것이 정석이다 — If I were you",
+   "I wish도 같은 규칙 — I wish I had met you earlier(그때 못 만난 것이 아쉽다)"
+  ],
+  "examples": [
+   {
+    "en": "I wish I had met you earlier.",
+    "ko": "더 일찍 만났더라면 좋았을 텐데요.",
+    "note": "이미 지나간 일이라 had p.p. 실제로는 그때 못 만났다는 사실이 자동으로 깔린다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "I would have lied, but at least I would have made up a great story.",
+    "ko": "거짓말을 했을 텐데, 그래도 멋진 이야기 하나는 지어냈을 거예요.",
+    "note": "would have p.p.는 실제로는 안 한 일. 셀린은 '그랬더라면'을 말하고 있다.",
+    "from": "Before Sunrise, 5장"
+   },
+   {
+    "en": "If you don't believe in any kind of magic, you're not really alive.",
+    "ko": "어떤 마법도 믿지 않는다면, 제대로 살아 있는 게 아니죠.",
+    "note": "충분히 있을 법한 조건이라 현재시제 + 현재시제. 일반적인 사실을 말할 때의 틀이다.",
+    "from": "Before Sunset, 12장"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "있을 법한 조건", "sentence": "If it ___ tomorrow, we'll take the train.", "choices": ["snows", "will snow"], "answer": "snows", "why": "if절 안에서는 미래여도 현재시제를 쓴다." },
+  { "kind": "choice", "q": "지금과 다른 상상", "sentence": "If I ___ rich, I'd travel all year.", "choices": ["were", "am"], "answer": "were", "why": "지금 그렇지 않다는 상상이라 과거형, be동사는 were가 정석이다." },
+  { "kind": "choice", "q": "지나간 일의 후회", "sentence": "If I had known, I ___ come.", "choices": ["would have", "will have"], "answer": "would have", "why": "과거완료 + would have p.p.가 이미 지나간 일에 대한 가정이다." },
+  { "kind": "choice", "q": "충고할 때", "sentence": "If I ___ you, I'd talk to her.", "choices": ["were", "am"], "answer": "were", "why": "If I were you는 굳은 표현이다. 내가 네가 아니라는 사실이 전제다." },
+  { "kind": "order", "q": "아쉬움을 배열", "pieces": ["I wish", "I had asked", "for her number"], "answer": ["I wish", "I had asked", "for her number"], "ko": "그때 번호를 물어봤어야 했는데.", "why": "wish 뒤에 had p.p.가 오면 지나간 일에 대한 아쉬움이 된다." },
+  { "kind": "choice", "q": "일반적인 사실", "sentence": "If you heat water to 100 degrees, it ___.", "choices": ["boils", "would boil"], "answer": "boils", "why": "언제나 그런 일에는 현재+현재를 쓴다. 가정이 아니라 사실 서술이다." }
+ ],
+ "produce": [
+  {
+   "situation": "지금 삶에서 하나만 바꿀 수 있다면 무엇을 바꾸겠는지 상상해서 말해 보세요.",
+   "chunks": ["If I had", "I would", "but right now", "so"],
+   "model": "If I had more free time, I would study music, but right now I work every evening, so it's hard.",
+   "ko": "시간이 더 있으면 음악을 배울 텐데, 지금은 저녁마다 일해서 어려워요."
+  },
+  {
+   "situation": "지난 일 중 하나를 두고 '그때 그랬더라면'을 말해 보세요.",
+   "chunks": ["If I had", "I would have", "but I didn't", "back then"],
+   "model": "If I had started earlier, I would have finished by now, but I didn't take it seriously back then.",
+   "ko": "더 일찍 시작했으면 지금쯤 끝냈을 텐데, 그때는 진지하게 안 봤어요."
+  }
+ ]
+}

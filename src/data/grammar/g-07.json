@@ -1,0 +1,59 @@
+{
+ "id": "g-07",
+ "order": 7,
+ "title": "설명을 뒤에 붙이기",
+ "goal": "관계대명사로 명사에 설명을 매단다",
+ "why": "한국어는 설명이 앞에 붙는다('내가 어제 만난 사람'). 영어는 뒤에 붙는다. 이 방향을 못 바꾸면 문장이 짧게 끊기고 말이 자꾸 멈춘다.",
+ "present": {
+  "rule": "명사를 먼저 놓고 who(사람)·that/which(사물)로 설명을 뒤에 잇는다.",
+  "points": [
+   "the man who sat next to me — 사람이면 who",
+   "the book that changed my mind — 사물이면 that이나 which",
+   "설명 안에서 목적어 자리면 통째로 생략할 수 있다 — the man (who) I met yesterday",
+   "주어 자리면 생략 못 한다 — the man who called me(who를 빼면 문장이 무너진다)",
+   "쉼표가 붙으면 덧붙이는 말이 된다 — My sister, who lives in Paris, ...(자매가 한 명뿐이라는 뜻)"
+  ],
+  "examples": [
+   {
+    "en": "So I'm the crude, dumb, vulgar American who has no culture, right?",
+    "ko": "그러니까 저는 교양 없는 무례하고 멍청한 미국인이라는 거죠?",
+    "note": "who 뒤가 주어 자리라 생략할 수 없다. 앞의 명사 덩어리가 길어도 설명은 계속 뒤로 붙는다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "I got one of those Eurail passes.",
+    "ko": "그 유레일패스라는 걸 하나 끊었어요.",
+    "note": "those가 이미 '흔히들 아는 그런'이라는 설명을 대신한다. 관계절을 붙이면 one of those passes that everyone gets가 된다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "The woman I met on the train was a writer.",
+    "ko": "기차에서 만난 그 여자는 작가였어요.",
+    "note": "목적어 자리라 who가 생략됐다. 회화에서는 이 생략형이 훨씬 흔하다.",
+    "from": "회화 기본형"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "사람을 설명할 때", "sentence": "That's the guy ___ helped me yesterday.", "choices": ["who", "which"], "answer": "who", "why": "사람에는 who(또는 that). which는 사물에만 쓴다." },
+  { "kind": "choice", "q": "생략할 수 있는 자리", "sentence": "The film ___ we saw last night was terrible.", "choices": ["that", "who"], "answer": "that", "why": "사물이라 that이고, 목적어 자리라 아예 빼도 된다 — The film we saw..." },
+  { "kind": "choice", "q": "생략하면 안 되는 자리", "sentence": "I know a woman ___ speaks five languages.", "choices": ["who", "-"], "answer": "who", "why": "speaks의 주어 자리라 빼면 문장이 무너진다." },
+  { "kind": "choice", "q": "덧붙이는 설명", "sentence": "My brother, ___ lives in Vienna, is coming.", "choices": ["who", "that"], "answer": "who", "why": "쉼표가 붙은 덧붙임 절에는 that을 쓰지 않는다." },
+  { "kind": "order", "q": "설명을 뒤에 붙여 배열", "pieces": ["I still have", "the letter", "you wrote me"], "answer": ["I still have", "the letter", "you wrote me"], "ko": "네가 써준 그 편지 아직 갖고 있어.", "why": "한국어는 '네가 써준'이 앞에 오지만 영어는 letter를 먼저 놓고 설명을 뒤에 붙인다." },
+  { "kind": "choice", "q": "장소를 설명할 때", "sentence": "This is the café ___ we first met.", "choices": ["where", "which"], "answer": "where", "why": "장소이면서 그 안에서 벌어진 일을 설명하면 where를 쓴다." }
+ ],
+ "produce": [
+  {
+   "situation": "최근에 만난 사람을 한 문장으로 소개해 보세요. 이름 뒤에 설명을 매달아서요.",
+   "chunks": ["I met someone", "who", "and she", "last week"],
+   "model": "Last week I met someone who works at the same school, and she grew up in my hometown.",
+   "ko": "지난주에 같은 학교에서 일하는 사람을 만났는데, 제 고향에서 자랐더라고요."
+  },
+  {
+   "situation": "인상 깊었던 책이나 영화를 설명 절을 붙여 말해 보세요.",
+   "chunks": ["It's a film", "that", "about", "I saw it"],
+   "model": "It's a film that follows two people talking for one night. I saw it years ago and still think about it.",
+   "ko": "하룻밤 동안 두 사람이 대화하는 걸 따라가는 영화예요. 몇 년 전에 봤는데 아직도 생각나요."
+  }
+ ]
+}

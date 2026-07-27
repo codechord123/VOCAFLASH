@@ -1,0 +1,59 @@
+{
+ "id": "g-09",
+ "order": 9,
+ "title": "견주어 말하기",
+ "goal": "비교급·최상급·as ~ as를 자연스럽게 쓴다",
+ "why": "회화의 절반은 비교다 — 전보다 낫다, 생각만큼은 아니다, 그중에 제일이다. 틀은 몇 개 안 되는데 그 몇 개가 안 나오면 말이 뭉툭해진다.",
+ "present": {
+  "rule": "짧은 말은 -er/-est, 긴 말은 more/most. 같음은 as ~ as, 같지 않음은 not as ~ as.",
+  "points": [
+   "cheaper / more expensive — 음절이 하나면 -er, 셋 이상이면 more",
+   "비교 대상 앞에는 than — better than I expected",
+   "as good as는 '못지않게 좋다', not as good as는 '그만은 못하다'",
+   "much·far·a lot으로 차이를 키운다 — much better(훨씬 낫다). very better는 틀린다",
+   "점점 더는 두 번 반복 — better and better / more and more difficult"
+  ],
+  "examples": [
+   {
+    "en": "Time goes faster and faster.",
+    "ko": "시간이 점점 더 빨라져요.",
+    "note": "비교급을 두 번 겹치면 '점점 더'가 된다. 셀린이 나이 드는 감각을 말하는 자리다.",
+    "from": "Before Sunset, 8장"
+   },
+   {
+    "en": "They're not as horny.",
+    "ko": "걔들은 그만큼은 아니에요.",
+    "note": "not as ~ as는 뒤의 as 이하를 생략하기도 한다. 앞에서 이미 무엇과 견주는지 말했기 때문이다.",
+    "from": "Before Sunset, 8장"
+   },
+   {
+    "en": "My problems are deeper, but I'm more equipped to handle them.",
+    "ko": "고민은 더 깊어졌지만, 감당할 힘은 더 생겼어요.",
+    "note": "한 문장에 비교급이 둘. deep은 짧아서 -er, equipped는 길어서 more를 쓴다.",
+    "from": "Before Sunset, 7장"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "긴 형용사", "sentence": "This one is ___ than the other.", "choices": ["more interesting", "interestinger"], "answer": "more interesting", "why": "음절이 셋 이상이면 more를 앞에 붙인다." },
+  { "kind": "choice", "q": "차이를 키우는 말", "sentence": "It's ___ better than I expected.", "choices": ["much", "very"], "answer": "much", "why": "비교급을 강조할 때는 much·far·a lot을 쓴다. very는 비교급과 못 붙는다." },
+  { "kind": "choice", "q": "같음을 말할 때", "sentence": "It's not ___ cold as yesterday.", "choices": ["as", "than"], "answer": "as", "why": "not as ~ as가 '그만큼은 아니다'라는 틀이다." },
+  { "kind": "choice", "q": "불규칙 비교급", "sentence": "My French got ___ after that trip.", "choices": ["better", "gooder"], "answer": "better", "why": "good의 비교급은 better, 최상급은 best로 형태가 아예 다르다." },
+  { "kind": "order", "q": "점점 더를 배열", "pieces": ["The days", "are getting", "shorter and shorter"], "answer": ["The days", "are getting", "shorter and shorter"], "ko": "해가 점점 짧아지고 있어.", "why": "비교급을 두 번 겹쳐 변화가 이어짐을 나타낸다." },
+  { "kind": "choice", "q": "범위 안의 최상", "sentence": "It's the best coffee ___ this street.", "choices": ["on", "than"], "answer": "on", "why": "최상급 뒤에는 in·on·of로 범위를 준다. than은 비교급에만 붙는다." }
+ ],
+ "produce": [
+  {
+   "situation": "지금 사는 도시와 예전에 살던 곳을 견주어 말해 보세요.",
+   "chunks": ["is much", "than", "but it's not as", "as"],
+   "model": "Vienna is much quieter than Seoul, but it's not as convenient as I expected.",
+   "ko": "빈은 서울보다 훨씬 조용한데, 생각만큼 편하지는 않아요."
+  },
+  {
+   "situation": "영어 실력이 예전과 어떻게 달라졌는지 말해 보세요.",
+   "chunks": ["My English is", "than it was", "I'm getting", "and"],
+   "model": "My English is better than it was last year, and I'm getting more comfortable speaking.",
+   "ko": "작년보다는 영어가 나아졌고, 말하는 것도 점점 편해지고 있어요."
+  }
+ ]
+}
