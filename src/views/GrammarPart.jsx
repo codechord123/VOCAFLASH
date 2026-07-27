@@ -237,20 +237,47 @@ function Present({ unit, onNext }) {
 
 /** 2단계 — 탭으로 푸는 통제 연습. 틀리면 그 자리에서 이유를 준다. */
 function Practice({ unit, onDone, onNext }) {
+  const [round, setRound] = useState(0) // 다시 풀 때마다 순서를 새로 섞는다
   const [at, setAt] = useState(0)
   const [picked, setPicked] = useState([])
   const [checked, setChecked] = useState(null)
   const [score, setScore] = useState(0)
+  const [wrongIdx, setWrongIdx] = useState([])
   const [saved, setSaved] = useState(false)
+  // 다시 풀 때 틀린 것만 모아 풀 수 있게 한다
+  const [subset, setSubset] = useState(null)
 
-  const items = unit.practice
+  // 순서를 섞는다. 늘 같은 순서로 나오면 두 번째부터는 규칙이 아니라
+  // 자리를 외우게 된다.
+  const items = useMemo(() => {
+    const base = subset ? subset.map((i) => unit.practice[i]) : [...unit.practice]
+    for (let i = base.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[base[i], base[j]] = [base[j], base[i]]
+    }
+    return base
+  }, [unit, round, subset])
+
   const q = items[at]
   const done = at >= items.length
+
+  function restart(onlyWrong = false) {
+    setSubset(onlyWrong ? [...wrongIdx] : null)
+    setRound((r) => r + 1)
+    setAt(0)
+    setPicked([])
+    setChecked(null)
+    setScore(0)
+    setWrongIdx([])
+    setSaved(false)
+  }
 
   if (done) {
     if (!saved) {
       setSaved(true)
-      onDone?.(score)
+      // 기록은 전체 풀이만 남긴다. 틀린 것만 다시 푼 점수를 적으면
+      // 2문항 만점이 6문항 만점처럼 보인다.
+      if (!subset) onDone?.(score)
     }
     return (
       <div className="panel stack">
@@ -265,6 +292,17 @@ function Practice({ unit, onDone, onNext }) {
             ? '규칙이 손에 붙었습니다. 이제 직접 만들어 말해 보세요.'
             : '틀린 자리는 설명 화면에 그대로 있습니다.'}
         </p>
+        <div className="row" style={{ gap: 'var(--s2)' }}>
+          {/* 틀린 것을 그 자리에서 다시 잡는 것이 제일 싸게 먹히는 복습이다 */}
+          {wrongIdx.length > 0 && !subset && (
+            <button className="btn btn--sm" onClick={() => restart(true)}>
+              틀린 {wrongIdx.length}개만 다시
+            </button>
+          )}
+          <button className="btn btn--ghost btn--sm" onClick={() => restart(false)}>
+            처음부터 다시
+          </button>
+        </div>
         <button className="btn btn--primary btn--block" onClick={onNext}>
           말하기로 — {unit.produce.length}과제
         </button>
@@ -275,6 +313,8 @@ function Practice({ unit, onDone, onNext }) {
   function grade(correct) {
     setChecked({ correct })
     if (correct) setScore((s) => s + 1)
+    // 틀린 문항의 원본 위치를 기억해 둔다 — '틀린 것만 다시'가 이걸 쓴다
+    else setWrongIdx((w) => [...w, unit.practice.indexOf(q)])
   }
 
   return (

@@ -808,8 +808,11 @@ main {
 .list__title {
   font-weight: 540;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* 챕터 제목은 내용이다 — "what are you reading? -the t…"처럼 중간에서
+     끊기면 무슨 장인지 못 알아본다. 두 줄까지 펼치고 그 다음에 자른다. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .list__meta {
   font-size: 12px;
@@ -990,6 +993,9 @@ main {
   .brand { font-size: 14px; }
   .panel { padding: var(--s4); }
   .brand__sub { display: none; }
+  /* 탭이 넷이 되면서 좁은 화면에서는 이름이 "Script Stu"로 잘렸다.
+     잘린 이름은 이름이 아니다 — 표식(◆)만 남기고 자리를 탭에 준다. */
+  .brand__name { display: none; }
   /* 뒷면이 다 펼쳐진 카드(유의어·예문까지 붙는 단어장)가 한 화면에
      들어가야 한다. 넘치면 넘기기 전에 스크롤부터 해야 한다. */
   .flashcard { min-height: 200px; padding: var(--s4); }

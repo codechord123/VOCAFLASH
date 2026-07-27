@@ -212,7 +212,7 @@ export default function App() {
         <div className="container topbar__inner">
           <div className="brand">
             <span className="brand__mark">◆</span>
-            <span>Script Study</span>
+            <span className="brand__name">Script Study</span>
             <span className="brand__sub">Before 시리즈 · Disenchantment</span>
           </div>
           <nav className="tabs" role="tablist" aria-label="화면 전환">
