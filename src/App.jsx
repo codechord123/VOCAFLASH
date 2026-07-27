@@ -231,7 +231,10 @@ export default function App() {
           </nav>
           <button
             className="tab tab--icon"
-            onClick={() => setShowSettings((v) => !v)}
+            onClick={() => {
+              setShowSettings((v) => !v)
+              window.scrollTo({ top: 0 })
+            }}
             aria-pressed={showSettings}
             aria-label="설정"
             title="설정"
@@ -243,8 +246,28 @@ export default function App() {
 
       <main>
         <div className="container">
-          <BackupNotice state={state} onOpenSettings={() => setShowSettings(true)} />
+          <BackupNotice
+            state={state}
+            onOpenSettings={() => {
+              setShowSettings(true)
+              window.scrollTo({ top: 0 })
+            }}
+          />
 
+          {/* 설정은 본문 아래에 덧붙이지 않고 본문 대신 뜬다. 예전에는
+              아래에 붙어서, 유닛처럼 긴 화면에서 내보내기를 누르면 화면
+              밖에서 열렸다 — 눌러도 아무 일도 안 일어난 것처럼 보였다. */}
+          {showSettings ? (
+            <Settings
+              cards={cards}
+              settings={state.settings}
+              stats={stats}
+              commit={commit}
+              onReload={() => setState({ ...store.load() })}
+              onClose={() => setShowSettings(false)}
+            />
+          ) : (
+          <>
           {tab === 'vocab' && (
             <VocabPart
               cards={cards}
@@ -290,14 +313,7 @@ export default function App() {
             </Suspense>
           )}
 
-          {showSettings && (
-            <Settings
-              cards={cards}
-              settings={state.settings}
-              stats={stats}
-              commit={commit}
-              onReload={() => setState({ ...store.load() })}
-            />
+          </>
           )}
         </div>
       </main>

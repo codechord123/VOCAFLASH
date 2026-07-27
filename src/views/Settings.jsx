@@ -7,7 +7,7 @@ import { DECKS } from '../lib/deck.js'
 // 지우면 날아가고, 그러면 복습 이력 전체가 사라진다. 유일한 백업 수단이라
 // 화면 위쪽에 둔다.
 
-export default function Settings({ cards, settings, stats, commit, onReload }) {
+export default function Settings({ cards, settings, stats, commit, onReload, onClose }) {
   const [msg, setMsg] = useState(null)
   const fileRef = useRef(null)
 
@@ -50,7 +50,14 @@ export default function Settings({ cards, settings, stats, commit, onReload }) {
 
   return (
     <div className="stack stack--loose">
-      <h1>설정</h1>
+      <div className="row row--between">
+        <h1>설정</h1>
+        {onClose && (
+          <button className="btn btn--ghost btn--sm" onClick={onClose}>
+            ← 돌아가기
+          </button>
+        )}
+      </div>
 
       {msg && (
         <div className={`notice ${msg.kind === 'error' ? 'notice--error' : ''}`}>
