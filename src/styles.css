@@ -1126,3 +1126,45 @@ main {
 .swipe__hint.is-on { opacity: 1; }
 .swipe__hint--left.is-on { transform: rotate(-12deg) scale(1.12); }
 .swipe__hint--right.is-on { transform: rotate(12deg) scale(1.12); }
+
+/* ── 성장 화면 ──────────────────────────────────────────────────── */
+/* 유닛 지도 — 25칸의 색이 곧 진행이다. 단계 색은 복습 평가 3색을
+   이어받는다: 새싹은 아직 흔들리고(앰버), 뿌리·내 것은 안정(초록). */
+.umap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--s2);
+}
+.umap__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--s2) var(--s1);
+  border: 1px solid var(--border);
+  border-radius: var(--r1);
+  background: var(--surface);
+  color: var(--text-faint);
+}
+.umap__no { font-family: var(--font-mono); font-size: 12px; }
+.umap__stage { font-size: 11px; }
+.umap__cell.is-learning { border-color: var(--accent-border); color: var(--text-dim); }
+.umap__cell.is-sprout { background: var(--hard-soft); border-color: var(--hard); color: var(--text); }
+.umap__cell.is-grow { background: var(--accent-soft); border-color: var(--accent-border); color: var(--text); }
+.umap__cell.is-root { background: var(--good-soft); border-color: var(--good); color: var(--text); }
+.umap__cell.is-mine { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+
+/* 출석 히트맵 — 최근 70일. 도장이 찍힌 날만 밝다. */
+.heat {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 3px;
+}
+.heat__cell {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.heat__cell.is-done { background: var(--accent); border-color: var(--accent); }
+.heat__cell.is-today { outline: 1px solid var(--text-dim); outline-offset: 1px; }

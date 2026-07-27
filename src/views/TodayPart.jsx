@@ -1,5 +1,6 @@
 import { Suspense, lazy, useState } from 'react'
 import Swipe from './Swipe.jsx'
+import GrowthPart from './GrowthPart.jsx'
 import { DAY_KIND_LABELS, PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
 import { pauseSession, startSession } from '../lib/session.js'
 import { dueReviewUnits, ensureUnitSrs } from '../lib/unitSrs.js'
@@ -25,16 +26,27 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   // 시작할 때의 묶음을 붙잡아 둔다. 살아 있는 목록을 그대로 넘기면
   // 채점된 카드가 넘어가는 애니메이션 중에 목록에서 빠져 화면이 죽는다.
   const [swipeCards, setSwipeCards] = useState(null)
+  // 성장 화면 — 지도·관문·히트맵·can-do. 오늘 화면 안의 다른 방이다.
+  const [showGrowth, setShowGrowth] = useState(false)
+
+  if (showGrowth) {
+    return <GrowthPart state={state} onBack={() => setShowGrowth(false)} />
+  }
 
   if (finished) {
     return (
-      <div className="empty">
-        <div className="empty__icon">◆</div>
-        <div className="empty__title">100일을 마쳤습니다</div>
-        <p className="empty__body">
-          유닛 25개와 회독 {Object.keys(plan.history).length}일 치가 쌓였습니다.
-          이제부터는 복습과 회독이 이 앱의 본편입니다.
-        </p>
+      <div className="stack stack--loose">
+        <div className="empty">
+          <div className="empty__icon">◆</div>
+          <div className="empty__title">100일을 마쳤습니다</div>
+          <p className="empty__body">
+            유닛 25개와 회독 {Object.keys(plan.history).length}일 치가 쌓였습니다.
+            이제부터는 복습과 회독이 이 앱의 본편입니다.
+          </p>
+        </div>
+        <button className="btn btn--block" onClick={() => setShowGrowth(true)}>
+          성장 기록 보기
+        </button>
       </div>
     )
   }
@@ -124,9 +136,14 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
             {/* 지금 어느 장(부)을 지나는지 — 100이라는 숫자만 보이면
                 길이 안 보인다. 이름 붙은 구간이 있어야 지도가 된다. */}
             <span className="chip chip--accent">{today.phase}</span>
-            <span className="chip chip--box">
-              {today.day} / {TOTAL_DAYS}
-            </span>
+            <button
+              className="chip chip--box"
+              style={{ cursor: 'pointer' }}
+              onClick={() => setShowGrowth(true)}
+              title="성장 기록"
+            >
+              {today.day} / {TOTAL_DAYS} ↗
+            </button>
           </div>
         </div>
         <p className="hint">
