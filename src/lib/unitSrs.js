@@ -73,7 +73,7 @@ export function dueReviewUnits(unitSrs, day) {
 }
 
 /** 결정론적 문항 추출 — 같은 날은 항상 같은 문항이라 이어하기가 성립한다. */
-function pickItems(pool, day, unitKey, n) {
+export function pickItems(pool, day, unitKey, n) {
   const idx = pool.map((_, i) => i)
   let s = day * 31 + unitKey * 7
   for (let i = idx.length - 1; i > 0; i -= 1) {

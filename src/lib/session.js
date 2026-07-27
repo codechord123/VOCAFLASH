@@ -13,7 +13,7 @@
 // 저장본에 남아 중간에 닫아도 그 자리에서 이어진다.
 
 import { PLAN_DAYS, dayPlan } from './plan.js'
-import { ensureUnitSrs } from './unitSrs.js'
+import { ensureUnitSrs, pickItems } from './unitSrs.js'
 
 /** 결정적 셔플. 같은 날 안에서는 순서가 유지되어야 이어하기가 성립한다. */
 function seededShuffle(items, seed) {
@@ -35,20 +35,24 @@ function seededShuffle(items, seed) {
  * @param quizzes    구문 유닛의 퀴즈 문항 (문법이면 [])
  * @param mistakeDue 오늘 due인 오답 카드
  * @param review     누적 복습 몫 — unitSrs.buildReview의 결과
+ * @param cycleData  사이클 날(test·fluency·produce·milestone)의 재료
+ *                   {cycleUnits, pastUnits, weakUnits} — 각각 {id, kind, src, pool}
  */
-export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [] }) {
+export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [], cycleData = null }) {
   const today = dayPlan(day)
-  const { unit, step, chapter } = today
+  const { unit, step, chapter, kind } = today
   const atoms = []
 
   // 1) 회수 — 어제까지 틀린 것을 먼저 되잡는다. 새것보다 먼저다.
-  for (const card of mistakeDue.slice(0, 4)) {
+  //    마일스톤 날은 되잡기가 본업이라 몫이 크다.
+  for (const card of mistakeDue.slice(0, kind === 'milestone' ? 6 : 4)) {
     atoms.push({ type: 'warmup', card })
   }
 
   // 2) 누적 복습 — 끝낸 유닛이 간격을 두고 돌아온다. 전부 맞히면
   //    승급(간격이 넓어짐), 틀리면 강등(내일 다시). 새것보다 먼저다.
-  if (review.length > 0) {
+  //    관문 시험 날은 시험 자체가 이 역할이라 슬롯을 쉰다.
+  if (kind !== 'test' && review.length > 0) {
     atoms.push({ type: 'review-head', review })
     for (const r of review) {
       for (const q of r.items) {
@@ -58,10 +62,20 @@ export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], r
     }
   }
 
-  if (unit.kind === 'grammar' && unitData) {
-    compileGrammar(atoms, unitData, step, day)
-  } else if (unit.kind === 'syntax' && unitData) {
-    compileSyntax(atoms, unitData, quizzes, step, day)
+  if (kind === 'learn') {
+    if (unit?.kind === 'grammar' && unitData) {
+      compileGrammar(atoms, unitData, step, day)
+    } else if (unit?.kind === 'syntax' && unitData) {
+      compileSyntax(atoms, unitData, quizzes, step, day)
+    }
+  } else if (kind === 'test') {
+    compileTest(atoms, today, cycleData, day)
+  } else if (kind === 'fluency') {
+    compileFluency(atoms, cycleData, day)
+  } else if (kind === 'produce') {
+    compileProduce(atoms, cycleData, day)
+  } else if (kind === 'milestone') {
+    compileMilestone(atoms, today, cycleData, day)
   }
 
   // 간격 복습 — 단어. 카드 목록은 러너가 그 시점의 due로 채운다.
@@ -71,11 +85,76 @@ export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], r
   atoms.push({
     type: 'read',
     chapter,
-    deep: step === 4, // 정리 날은 챕터 퀴즈까지
+    reread: kind === 'fluency', // 유창성 날은 이미 읽은 챕터를 빠르게 다시
+    deep: kind === 'milestone', // 마일스톤 날은 챕터 퀴즈까지
   })
 
   atoms.push({ type: 'recap' })
   return { today, atoms }
+}
+
+/** 유닛에서 오늘 몫의 시험 문항을 뽑아 원자로 만든다. */
+function unitQuizAtoms(u, day, n, extraSeed = 0) {
+  const items = pickItems(u.pool, day + extraSeed, (Number(u.id.replace(/\D/g, '')) || 1) * 7, n)
+  return items.map((q) => ({
+    ...(u.kind === 'grammar' ? practiceAtom(u.src, q) : syntaxAtom({ unitId: u.id }, q)),
+    reviewUnit: u.id, // 시험·약점 문항도 유닛 SRS 판정에 실린다
+  }))
+}
+
+/**
+ * 관문 시험 — 이번 사이클 유닛 2문항씩 + 지난 유닛에서 채워 12문항.
+ * 교차 출제라 '어느 문법을 쓸지 고르는 판별' 자체가 훈련된다.
+ */
+function compileTest(atoms, today, cycleData, day) {
+  const { cycleUnits = [], pastUnits = [] } = cycleData ?? {}
+  const picks = cycleUnits.map((u) => ({ u, n: 2 }))
+  const room = Math.max(0, 12 - picks.length * 2)
+  for (const u of seededShuffle(pastUnits, day).slice(0, Math.ceil(room / 2))) {
+    picks.push({ u, n: 2 })
+  }
+  atoms.push({
+    type: 'test-head',
+    cycle: today.cycle,
+    count: picks.reduce((s, p) => s + Math.min(p.n, p.u.pool.length), 0),
+    unitIds: picks.map((p) => p.u.id),
+  })
+  for (const { u, n } of picks) atoms.push(...unitQuizAtoms(u, day, n))
+}
+
+/** 유창성 — 새것 없음. 사이클의 앵커를 암송하고 재독으로 이어진다. */
+function compileFluency(atoms, cycleData, day) {
+  const anchors = []
+  for (const u of cycleData?.cycleUnits ?? []) {
+    if (u.kind === 'syntax') anchors.push(...(u.src?.anchors ?? []))
+  }
+  atoms.push({ type: 'fluency-head' })
+  for (const a of seededShuffle(anchors, day).slice(0, 4)) {
+    atoms.push({ type: 'recite', anchor: a })
+  }
+}
+
+/** 산출 — 사이클의 문법 과제와 구문 앵커를 입으로. */
+function compileProduce(atoms, cycleData, day) {
+  atoms.push({ type: 'produce-head' })
+  for (const u of cycleData?.cycleUnits ?? []) {
+    if (u.kind === 'grammar') {
+      for (const t of seededShuffle(u.src?.produce ?? [], day).slice(0, 2)) {
+        atoms.push({ type: 'produce', task: t })
+      }
+    } else {
+      for (const a of seededShuffle(u.src?.anchors ?? [], day).slice(0, 2)) {
+        atoms.push({ type: 'recite', anchor: a })
+      }
+    }
+  }
+}
+
+/** 마일스톤 — 새싹으로 남은 유닛을 다진다. 문항은 SRS 판정에 실린다. */
+function compileMilestone(atoms, today, cycleData, day) {
+  const weak = cycleData?.weakUnits ?? []
+  atoms.push({ type: 'milestone-head', cycle: today.cycle, weakIds: weak.map((u) => u.id) })
+  for (const u of weak) atoms.push(...unitQuizAtoms(u, day, 2, 3))
 }
 
 /** 문법 유닛의 4일 리듬. */

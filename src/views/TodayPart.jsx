@@ -1,6 +1,6 @@
 import { Suspense, lazy, useState } from 'react'
 import Swipe from './Swipe.jsx'
-import { PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
+import { DAY_KIND_LABELS, PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
 import { pauseSession, startSession } from '../lib/session.js'
 import { dueReviewUnits, ensureUnitSrs } from '../lib/unitSrs.js'
 
@@ -69,10 +69,14 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   const doneMap = Object.fromEntries(today.items.map((it) => [it.id, itemDone(it, plan, ctx)]))
   // 오늘 카드에 섞인 오답 카드 수
   const mistakeDue = dueCards.filter((c) => c.deck === 'mistake').length
-  // 오늘 수업에 돌아올 복습 유닛 — 실제 세션이 뽑는 것과 같은 상위 2개
-  const dueReview = dueReviewUnits(ensureUnitSrs(plan, PLAN_DAYS).unitSrs, plan.day)
-    .filter((u) => u.id !== today.unit.id)
-    .slice(0, 2)
+  // 오늘 수업에 돌아올 복습 유닛 — 실제 세션이 뽑는 것과 같은 상위 2개.
+  // 관문 시험 날은 시험이 복습이라 예고하지 않는다.
+  const dueReview =
+    today.kind === 'test'
+      ? []
+      : dueReviewUnits(ensureUnitSrs(plan, PLAN_DAYS).unitSrs, plan.day)
+          .filter((u) => u.id !== today.unit?.id)
+          .slice(0, 2)
   const doneCount = Object.values(doneMap).filter(Boolean).length
   const allDone = doneCount === today.items.length
   const firstOpen = today.items.find((it) => !doneMap[it.id]) ?? null
@@ -126,9 +130,10 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
           </div>
         </div>
         <p className="hint">
-          {today.unit.kind === 'syntax' ? '구문' : '문법'} {today.unit.no} ·{' '}
-          {today.unit.title} — {['배우기', '되짚기', '내 것으로', '정리'][today.step - 1]} (
-          {today.step}/4일)
+          {today.kind === 'learn'
+            ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title} — ${['배우기', '되짚기', '내 것으로'][today.step - 1]}`
+            : DAY_KIND_LABELS[today.kind]}{' '}
+          ({today.cycle}사이클 {today.dayInCycle}/10일)
         </p>
         {dueReview.length > 0 && (
           <p className="hint">

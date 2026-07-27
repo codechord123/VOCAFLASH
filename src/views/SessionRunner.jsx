@@ -4,7 +4,7 @@ import grammarCourse from '../data/grammar-course.json'
 import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
 import { applyGrade } from '../lib/srs.js'
-import { chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
+import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong } from '../lib/mistakes.js'
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
@@ -17,6 +17,51 @@ import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../li
 // 진행 위치는 저장본에 있다(plan.session.idx). 지하철에서 닫아도
 // 다시 열면 그 원자에서 이어진다.
 
+function toCycleUnit(ref) {
+  const src =
+    ref.kind === 'grammar'
+      ? grammarCourse.units.find((x) => x.id === ref.id)
+      : unitData.units.find((x) => x.unitId === ref.id)
+  const pool =
+    ref.kind === 'grammar'
+      ? src?.practice ?? []
+      : unitQuizData.quizzes.filter((q) => q.unitId === ref.id)
+  return { id: ref.id, kind: ref.kind, src, pool }
+}
+
+/** 사이클 날(시험·유창성·산출·마일스톤)의 재료 — 표에서 유닛을 모은다. */
+function buildCycleData(today, day, unitSrs, review) {
+  if (today.kind === 'learn') return null
+  const firstSeen = {}
+  for (const r of PLAN_DAYS) {
+    if (r.kind === 'learn' && r.unit && !(r.unit.id in firstSeen)) {
+      firstSeen[r.unit.id] = { day: r.day, cycle: r.cycle, ref: r.unit }
+    }
+  }
+  const cycleRefs = []
+  const pastRefs = []
+  for (const info of Object.values(firstSeen)) {
+    if (info.day > day) continue // 아직 안 배운 유닛은 시험 범위 밖
+    if (info.cycle === today.cycle) cycleRefs.push(info.ref)
+    else pastRefs.push(info.ref)
+  }
+  // 마일스톤의 약점 몫 — 아직 새싹(srs 2)인 유닛. 오늘 복습 슬롯과 겹치지 않게.
+  const reviewIds = new Set(review.map((r) => r.unitId))
+  const weakRefs =
+    today.kind === 'milestone'
+      ? Object.entries(unitSrs ?? {})
+          .filter(([id, s]) => s.srs === 2 && !reviewIds.has(id) && firstSeen[id])
+          .slice(0, 3)
+          .map(([id]) => firstSeen[id].ref)
+      : []
+  const hasPool = (x) => x.src && x.pool.length > 0
+  return {
+    cycleUnits: cycleRefs.map(toCycleUnit).filter((x) => x.src),
+    pastUnits: pastRefs.map(toCycleUnit).filter(hasPool),
+    weakUnits: weakRefs.map(toCycleUnit).filter(hasPool),
+  }
+}
+
 export default function SessionRunner({ state, dueCards, settings, commit, onGuide }) {
   const session = state.plan?.session
   const day = session?.day ?? state.plan?.day ?? 1
@@ -26,25 +71,30 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
   const compiled = useMemo(() => {
     const today = compileSession(day, { unitData: null, mistakeDue: [] }).today
     const u = today.unit
-    const source =
-      u.kind === 'grammar'
+    const source = u
+      ? u.kind === 'grammar'
         ? grammarCourse.units.find((x) => x.id === u.id)
         : unitData.units.find((x) => x.unitId === u.id)
+      : null
     // 누적 복습 — 끝낸 유닛 중 오늘 due인 것에서 문항을 뽑는다.
     // 세션 중에는 unitSrs가 변하지 않으므로(반영은 정리에서 한 번)
     // day 고정 메모 안에서 읽어도 이어하기가 안전하다.
-    const review = buildReview({
-      unitSrs: state.plan?.unitSrs,
-      day,
-      excludeUnitId: u.id,
-      grammarUnits: grammarCourse.units,
-      quizzes: unitQuizData.quizzes,
-    })
+    const review =
+      today.kind === 'test'
+        ? [] // 시험 날은 시험이 복습이다
+        : buildReview({
+            unitSrs: state.plan?.unitSrs,
+            day,
+            excludeUnitId: u?.id ?? null,
+            grammarUnits: grammarCourse.units,
+            quizzes: unitQuizData.quizzes,
+          })
     return compileSession(day, {
       unitData: source,
       quizzes: unitQuizData.quizzes,
       mistakeDue: dueCards.filter((c) => c.deck === 'mistake'),
       review,
+      cycleData: buildCycleData(today, day, state.plan?.unitSrs, review),
     })
     // day가 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -115,6 +165,22 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
       for (const [unitId, items] of sWrongByUnit) {
         next = addMistakeCards(next, cardsFromQuizWrong(items, { work: unitLabel(unitId) }))
       }
+      // 관문 시험 날은 성적을 관문 기록에 남긴다 — 성장 그래프의 재료다
+      if (today.kind === 'test') {
+        const rv = Object.values(sess?.review ?? {})
+        const right = rv.reduce((n, r) => n + r.right, 0)
+        const total = rv.reduce((n, r) => n + r.total, 0)
+        next = {
+          ...next,
+          plan: {
+            ...next.plan,
+            gates: {
+              ...(next.plan?.gates ?? {}),
+              [String(day)]: { day, cycle: today.cycle, right, total, at: Date.now() },
+            },
+          },
+        }
+      }
       // 복습 유닛 판정 — 전부 맞으면 간격이 넓어지고, 틀리면 내일 다시
       next = {
         ...next,
@@ -172,6 +238,14 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
       return <Warmup card={atom.card} onGrade={onGrade} onNext={onNext} />
     case 'review-head':
       return <ReviewHead review={atom.review} unitSrs={state.plan?.unitSrs} onNext={onNext} />
+    case 'test-head':
+      return <TestHead atom={atom} onNext={onNext} />
+    case 'fluency-head':
+      return <FluencyHead today={today} onNext={onNext} />
+    case 'produce-head':
+      return <ProduceHead onNext={onNext} />
+    case 'milestone-head':
+      return <MilestoneHead atom={atom} onNext={onNext} />
     case 'anchor':
       return <Anchor anchor={atom.anchor} onNext={onNext} />
     case 'rule':
@@ -260,6 +334,79 @@ function ReviewHead({ review, unitSrs, onNext }) {
             </div>
           )
         })}
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>시작</button>
+    </div>
+  )
+}
+
+/** 관문 시험 안내 — 범위와 규칙을 밝히고 시작한다. */
+function TestHead({ atom, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">관문 시험 — {atom.cycle}사이클</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          지금까지 배운 전 범위에서 <b>{atom.count}문항</b>이 섞여 나옵니다.
+          어느 유닛의 문제인지 미리 알려 주지 않습니다 — 어떤 문법을 쓸지
+          고르는 일 자체가 훈련입니다.
+        </p>
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+          결과는 유닛별 복습 간격에 반영됩니다. 틀린 것은 오답 카드로 돌아옵니다.
+        </p>
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>시험 시작</button>
+    </div>
+  )
+}
+
+/** 유창성 날 안내 — 새것 없음이 핵심이다. */
+function FluencyHead({ today, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">유창성 날</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          오늘은 새것이 없습니다. 아는 것을 <b>빠르고 매끄럽게</b> 만드는
+          날입니다 — 앵커 암송을 하고, 이미 읽은 {chapterLabel(today.chapter)}장을
+          사전 없이 속도를 올려 다시 읽습니다.
+        </p>
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>시작</button>
+    </div>
+  )
+}
+
+function ProduceHead({ onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">말하기 날</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          이번 사이클에서 배운 것을 <b>입으로</b> 꺼내는 날입니다. 화면을
+          보기 전에 반드시 소리 내어 말해 보세요 — 답을 보고 나서 말하는
+          것은 연습이 아닙니다.
+        </p>
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>시작</button>
+    </div>
+  )
+}
+
+function MilestoneHead({ atom, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">{atom.cycle}사이클 마무리</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          사이클의 마지막 날 — 틀린 것을 되잡고, 아직 새싹으로 남은 유닛을
+          다집니다. 마지막에는 오늘 챕터를 퀴즈까지 깊게 읽습니다.
+        </p>
+        {atom.weakIds.length > 0 && (
+          <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+            오늘 다지는 유닛: {atom.weakIds.map((id) => unitLabel(id)).join(' · ')}
+          </p>
+        )}
       </div>
       <button className="btn btn--primary btn--block" onClick={() => onNext()}>시작</button>
     </div>
@@ -569,12 +716,16 @@ function ReadAtom({ atom, today, state, onGuide, onNext }) {
 
   return (
     <div className="stack">
-      <div className="section-title">원문 적용 — {chapterLabel(atom.chapter)}장</div>
+      <div className="section-title">
+        {atom.reread ? '재독' : '원문 적용'} — {chapterLabel(atom.chapter)}장
+      </div>
       <div className="panel stack stack--tight">
         <p style={{ margin: 0 }}>
-          방금 배운 것을 원문에서 다시 만납니다. 다 읽고 <b>읽음</b>을 누르면 이
-          화면이 알아챕니다.
-          {atom.deep && ' 오늘은 정리 날 — 맨 아래 챕터 퀴즈까지 풀어 주세요.'}
+          {atom.reread
+            ? '이미 읽은 챕터입니다. 사전 없이, 지난번보다 빠르게 — 속도가 유창성입니다. 다 읽고 '
+            : '방금 배운 것을 원문에서 다시 만납니다. 다 읽고 '}
+          <b>읽음</b>을 누르면 이 화면이 알아챕니다.
+          {atom.deep && ' 오늘은 마무리 날 — 맨 아래 챕터 퀴즈까지 풀어 주세요.'}
         </p>
         <div className="row" style={{ gap: 'var(--s2)' }}>
           <span className={`chip${readDone ? ' chip--accent' : ''}`}>{readDone ? '✓ 읽음' : '읽기 전'}</span>
@@ -610,8 +761,10 @@ function Recap({ today, session, unitSrs, onFinish }) {
       <div className="section-title">오늘 정리</div>
       <div className="panel stack stack--tight">
         <h4 style={{ margin: 0 }}>
-          {today.day}일차 — {today.unit.kind === 'syntax' ? '구문' : '문법'} {today.unit.no} ·{' '}
-          {today.unit.title}
+          {today.day}일차 —{' '}
+          {today.kind === 'learn'
+            ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title}`
+            : `${today.cycle}사이클 · ${DAY_KIND_LABELS[today.kind]}`}
         </h4>
         {acc !== null && (
           <p style={{ margin: 0 }}>
@@ -621,7 +774,10 @@ function Recap({ today, session, unitSrs, onFinish }) {
           </p>
         )}
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
-          {today.phase} · {['배우기', '되짚기', '내 것으로', '정리'][today.step - 1]}까지 마쳤습니다.
+          {today.phase} ·{' '}
+          {today.kind === 'learn'
+            ? `${['배우기', '되짚기', '내 것으로'][today.step - 1]}까지 마쳤습니다.`
+            : `${today.cycle}사이클 ${today.dayInCycle}/10일을 마쳤습니다.`}
         </p>
       </div>
       {reviewed.length > 0 && (

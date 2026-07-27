@@ -29,49 +29,93 @@ export function unitLabel(id) {
   return `${u.kind === 'syntax' ? '구문' : '문법'} ${u.no} · ${u.title}`
 }
 
+/** 사이클 날의 이름 — 표의 kind를 사람이 읽는 말로. */
+export const DAY_KIND_LABELS = {
+  learn: '배움',
+  test: '관문 시험',
+  fluency: '유창성',
+  produce: '말하기',
+  milestone: '마일스톤',
+}
+
 /**
  * N일차의 구성. 저작된 표에서 그날의 행을 읽어 세 칸을 만든다.
+ * v2 표는 10일 사이클이다 — 앞 6일 신규(learn), 뒤 4일은
+ * 관문 시험·유창성·산출·마일스톤.
  */
 export function dayPlan(day) {
   const d = Math.min(Math.max(1, day), TOTAL_DAYS)
   const row = planData.days[d - 1]
-  const { unit, chapter, step, block, phase } = row
-  const isSyntax = unit.kind === 'syntax'
+  const { unit = null, chapter, step = null, cycle, dayInCycle, phase } = row
+  const kind = row.kind ?? 'learn'
+  const isSyntax = unit?.kind === 'syntax'
 
-  const kindLabel = isSyntax ? '구문' : '문법'
-  const unitName = `${kindLabel} ${unit.no} · ${unit.title}`
-
-  const MAIN = {
-    1: {
-      label: `${unitName} — 배우기`,
-      hint: isSyntax ? '앵커 장면부터 퀴즈까지 한 번에' : '설명을 읽고 연습 6문항',
-      tab: unit.kind,
-      auto: 'unit-progress', // 유닛 진행이 기록되면 자동으로 체크된다
-    },
-    2: {
-      label: `${unitName} — 되짚기`,
-      hint: isSyntax ? '퀴즈를 다시 — 틀렸던 자리 위주로' : "연습에서 '틀린 것만 다시'",
-      tab: unit.kind,
-      auto: null, // 다시 푼 것은 밖에서 알 수 없다 — 직접 체크
-    },
-    3: isSyntax
-      ? { label: `${unitName} — 카드 복습`, hint: '유닛 카드가 복습 덱에 들어와 있다', tab: 'vocab', auto: null }
-      : { label: `${unitName} — 말하기`, hint: '과제 2개를 소리 내어, 그다음 모범과 대조', tab: 'grammar', auto: null },
-    4: {
-      label: `오늘의 챕터 깊게 — 퀴즈까지`,
-      hint: '회독으로 읽고, 맨 아래 챕터 퀴즈로 확인',
-      tab: 'read',
-      auto: 'chapter-quiz', // 오늘 그 챕터 퀴즈를 풀면 체크된다
-    },
+  let main
+  if (kind === 'learn') {
+    const kindLabel = isSyntax ? '구문' : '문법'
+    const unitName = `${kindLabel} ${unit.no} · ${unit.title}`
+    const MAIN = {
+      1: {
+        label: `${unitName} — 배우기`,
+        hint: isSyntax ? '앵커 장면부터 퀴즈까지 한 번에' : '설명을 읽고 연습 문항까지',
+        tab: unit.kind,
+        auto: 'unit-progress', // 유닛 진행이 기록되면 자동으로 체크된다
+      },
+      2: {
+        label: `${unitName} — 되짚기`,
+        hint: isSyntax ? '나머지 문항 + 어제 것 섞어서' : '연습을 섞어서 전량 다시',
+        tab: unit.kind,
+        auto: null,
+      },
+      3: {
+        label: `${unitName} — 내 것으로`,
+        hint: isSyntax ? '앵커 암송 — 번역만 보고 원문을' : '말하기 과제를 소리 내어',
+        tab: unit.kind,
+        auto: null,
+      },
+    }
+    main = MAIN[step]
+  } else if (kind === 'test') {
+    main = {
+      label: `관문 시험 — 지금까지 전 범위`,
+      hint: '교차 출제 · 힌트 없음. 결과가 복습 간격을 조정합니다',
+      tab: 'today',
+      auto: null,
+    }
+  } else if (kind === 'fluency') {
+    main = {
+      label: '유창성 — 암송과 재독',
+      hint: '새것 없음. 아는 것을 빠르고 매끄럽게',
+      tab: 'today',
+      auto: null,
+    }
+  } else if (kind === 'produce') {
+    main = {
+      label: '말하기 — 이번 사이클을 입으로',
+      hint: '문법 과제와 앵커 암송을 소리 내어',
+      tab: 'today',
+      auto: null,
+    }
+  } else {
+    main = {
+      label: `${cycle}사이클 마무리 — 약점 되잡기`,
+      hint: '새싹으로 남은 유닛을 다지고, 챕터 퀴즈로 닫습니다',
+      tab: 'today',
+      auto: null,
+    }
   }
 
   // 배우는 날은 회독이 유닛의 앵커 챕터다 — 방금 배운 규칙을 그날
   // 원문에서 다시 만나야 유닛과 읽기가 한 덩어리가 된다.
-  const aligned = step <= 2 && isSyntax
+  const aligned = kind === 'learn' && step <= 2 && isSyntax
+  const reread = kind === 'fluency'
 
   return {
     day: d,
-    block,
+    kind,
+    cycle,
+    dayInCycle,
+    block: cycle,
     step,
     phase,
     unit,
@@ -84,13 +128,15 @@ export function dayPlan(day) {
         tab: 'vocab',
         auto: 'due-zero',
       },
-      { id: 'main', ...MAIN[step] },
+      { id: 'main', ...main },
       {
         id: 'read',
-        label: `${chapterLabel(chapter)}장 회독`,
+        label: reread ? `${chapterLabel(chapter)}장 재독 — 빠르게` : `${chapterLabel(chapter)}장 회독`,
         hint: aligned
           ? '오늘 유닛의 앵커 장면이 이 챕터에 있습니다'
-          : '다 읽고 읽음을 누르면 체크됩니다',
+          : reread
+            ? '이미 읽은 챕터 — 사전 없이 속도를 올려서'
+            : '다 읽고 읽음을 누르면 체크됩니다',
         tab: 'read',
         chapter,
         auto: 'read-today',
@@ -160,9 +206,9 @@ export function completeDay(state) {
   // 세션은 하루와 함께 닫히고, 그 밖의 계획 필드(unitSrs 등)는 살아남는다
   const { session, ...keep } = plan
   const row = planData.days[plan.day - 1]
-  // 블록 마지막 날을 마치면 그 유닛이 복습 궤도(3→7→21일)에 오른다
+  // 유닛의 마지막 배움 날을 마치면 복습 궤도(3→7→21일)에 오른다
   const unitSrs =
-    row && row.step === 4 && row.unit
+    row && row.graduates && row.unit
       ? graduateUnit(plan.unitSrs, row.unit.id, plan.day)
       : plan.unitSrs
   return {
