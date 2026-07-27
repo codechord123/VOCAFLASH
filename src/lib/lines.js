@@ -20,6 +20,23 @@ export function lineId(work, chapter, index) {
 }
 
 /**
+ * 화면의 챕터·위치를 id용 챕터·위치로 옮긴다.
+ *
+ * 긴 챕터를 장면이 바뀌는 자리에서 둘로 나눌 때(2장), 뒤쪽 줄은 새
+ * 챕터의 0번부터 다시 세어진다. 그대로 두면 이미 담아 둔 문장이 전부
+ * 길을 잃는다 — 카드는 남아 있는데 원문에서는 ☆가 꺼져 보이고, 다시
+ * 누르면 같은 문장이 두 장이 된다.
+ *
+ * 나뉜 챕터는 idBase에 원래 자리를 적어 두고, id는 그것으로 만든다.
+ */
+export function idPosition(chapter, index) {
+  const base = chapter?.idBase
+  return base
+    ? { chapter: base.chapter, index: (base.offset ?? 0) + index }
+    : { chapter: chapter?.number, index }
+}
+
+/**
  * 비포 선라이즈 대사의 번역을 구문 정리에서 찾아본다.
  *
  * 이 작품은 원문만 있고 번역이 없다. 다만 챕터 해설의 구문 정리(chunks)가

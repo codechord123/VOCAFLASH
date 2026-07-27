@@ -1,7 +1,7 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
-import { cardFromLine, cardFromSelection, findChunkKo, lineId } from '../lib/lines.js'
+import { cardFromLine, cardFromSelection, findChunkKo, idPosition, lineId } from '../lib/lines.js'
 import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
 import { useWordLayer } from '../lib/useWordLayer.js'
 import { WordText } from './WordText.jsx'
@@ -173,7 +173,9 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
   }
 
   function toggleLine(index, line) {
-    const id = lineId('before-sunrise', selected, index)
+    // 나뉜 챕터에서는 원래 자리로 id를 만든다(lib/lines.js의 idPosition)
+    const pos = idPosition(chapter, index)
+    const id = lineId('before-sunrise', pos.chapter, pos.index)
     if (savedLines.has(id)) {
       commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
       return
@@ -181,9 +183,9 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
     const card = cardFromLine({
       work: 'before-sunrise',
       workTitle: 'Before Sunrise',
-      chapter: selected,
+      chapter: pos.chapter,
       chapterTitle: chapter?.title ?? null,
-      index,
+      index: pos.index,
       en: line.text,
       ko: findChunkKo(analysis?.chunks, line.text),
       speaker: line.speaker,
@@ -234,8 +236,13 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
       <nav className="tabs tabs--sticky" ref={navRef} role="tablist" aria-label="챕터 내 화면">
         {SECTIONS.map((s) => {
           // 단어는 해설과 별개 자료라 해설이 없어도 열 수 있다.
+          // 2장처럼 나뉜 챕터는 어느 한쪽에만 있는 칸이 생긴다(배경지식은
+          // 앞부분에 남는다). 비어 있는 칸도 없는 것으로 본다 — 눌러서
+          // 빈 화면을 보는 것보다 못 누르게 하는 편이 낫다.
+          const empty =
+            analysis && s.id !== 'script' && s.id !== 'vocab' && !analysis[s.id]?.length
           const missing =
-            s.id !== 'script' && s.id !== 'vocab' && !analysis
+            s.id !== 'script' && s.id !== 'vocab' && (!analysis || empty)
           return (
             <button
               key={s.id}
@@ -379,7 +386,8 @@ function ChapterList({ chapters, analysisByChapter, reads, onSelect }) {
               style={{ background: 'none', border: 0, borderBottom: '1px solid var(--border)', textAlign: 'left', font: 'inherit', color: 'inherit', cursor: 'pointer', width: '100%' }}
               onClick={() => onSelect(c.number)}
             >
-              <span className="chip chip--box">{c.number}</span>
+              {/* 나뉜 챕터는 2.5가 아니라 2b로 보여준다 — 번호는 저장 키일 뿐이다 */}
+              <span className="chip chip--box">{c.label ?? c.number}</span>
               <span className="list__main">
                 <span className="list__title">{stripNumber(c.title)}</span>
                 <span className="list__meta">
@@ -432,7 +440,12 @@ function Script({ chapter, cardedTexts, savedLines, onToggleLine, onExplain, not
               line={line}
               highlights={chapter.highlights}
               cardedTexts={cardedTexts}
-              saved={savedLines?.has(lineId('before-sunrise', chapter.number, i))}
+              saved={savedLines?.has(
+                (() => {
+                  const pos = idPosition(chapter, i)
+                  return lineId('before-sunrise', pos.chapter, pos.index)
+                })()
+              )}
               onToggle={onToggleLine ? () => onToggleLine(i, line) : null}
               onExplain={noted?.has(i) && onExplain ? () => onExplain(line.text) : null}
               wl={wl}
