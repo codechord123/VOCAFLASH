@@ -1,6 +1,11 @@
-import { useState } from 'react'
+import { Suspense, lazy, useState } from 'react'
 import Swipe from './Swipe.jsx'
 import { TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck } from '../lib/plan.js'
+import { pauseSession, startSession } from '../lib/session.js'
+
+// 수업 진행기는 유닛 원자료(구문 211KB + 문법 55KB)를 통째로 들고
+// 있어서 수업을 시작할 때 받는다.
+const SessionRunner = lazy(() => import('./SessionRunner.jsx'))
 
 // 오늘의 공부 — 100일 커리큘럼의 오늘 치.
 //
@@ -30,6 +35,21 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
           이제부터는 복습과 회독이 이 앱의 본편입니다.
         </p>
       </div>
+    )
+  }
+
+  // 진행 중인 수업이 있으면 그 자리에서 이어간다 — 이 화면의 본편이다.
+  if (plan.session && plan.session.day === plan.day && !plan.session.paused) {
+    return (
+      <Suspense fallback={<p className="hint">수업을 불러오는 중…</p>}>
+        <SessionRunner
+          state={state}
+          dueCards={dueCards}
+          settings={settings}
+          commit={commit}
+          onGuide={onGuide}
+        />
+      </Suspense>
     )
   }
 
@@ -113,10 +133,19 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
         </div>
       </header>
 
-      {/* 시작 버튼이 이 화면의 본체다. 목록은 어디까지 왔는지 보는 용도. */}
+      {/* 수업이 이 화면의 본체다. 아래 목록은 지도이지 문이 아니다. */}
       {!allDone && (
-        <button className="btn btn--primary btn--block" onClick={() => goNext()}>
-          {doneCount === 0 ? '오늘 시작하기' : `이어서 하기 (${doneCount}/3)`}
+        <button
+          className="btn btn--primary btn--block"
+          onClick={() =>
+            commit((s) =>
+              s.plan?.session?.day === s.plan?.day
+                ? pauseSession(s, false) // 멈춰 둔 수업 — 그 원자에서 이어간다
+                : startSession(s)
+            )
+          }
+        >
+          {plan.session?.day === plan.day ? '수업 이어서 하기' : `${today.day}일차 수업 시작`}
         </button>
       )}
 

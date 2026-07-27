@@ -1,0 +1,567 @@
+import { useMemo, useState } from 'react'
+import Swipe from './Swipe.jsx'
+import grammarCourse from '../data/grammar-course.json'
+import unitData from '../data/curriculum/units.json'
+import unitQuizData from '../data/curriculum/unit-quiz.json'
+import { applyGrade } from '../lib/srs.js'
+import { chapterLabel, completeDay, itemDone, sameDay } from '../lib/plan.js'
+import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
+import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong } from '../lib/mistakes.js'
+
+// 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
+//
+// 학습자가 하는 일은 답하고 다음을 누르는 것뿐이다. 무엇을 볼지,
+// 어떤 순서로 볼지는 세션이 정한다 — 길 안내가 아니라 수업이다.
+//
+// 진행 위치는 저장본에 있다(plan.session.idx). 지하철에서 닫아도
+// 다시 열면 그 원자에서 이어진다.
+
+export default function SessionRunner({ state, dueCards, settings, commit, onGuide }) {
+  const session = state.plan?.session
+  const day = session?.day ?? state.plan?.day ?? 1
+
+  // 오답 워밍업 카드는 세션이 시작된 시점의 due에서 뽑되, 매 렌더마다
+  // 다시 뽑으면 채점 순간 목록이 흔들린다 — 컴파일 결과를 고정한다.
+  const compiled = useMemo(() => {
+    const today = compileSession(day, { unitData: null, mistakeDue: [] }).today
+    const u = today.unit
+    const source =
+      u.kind === 'grammar'
+        ? grammarCourse.units.find((x) => x.id === u.id)
+        : unitData.units.find((x) => x.unitId === u.id)
+    return compileSession(day, {
+      unitData: source,
+      quizzes: unitQuizData.quizzes,
+      mistakeDue: dueCards.filter((c) => c.deck === 'mistake'),
+    })
+    // day가 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [day])
+
+  const { today, atoms } = compiled
+  const idx = Math.min(session?.idx ?? 0, atoms.length - 1)
+  const atom = atoms[idx]
+  const progress = ((idx + 1) / atoms.length) * 100
+
+  function next(opts) {
+    commit((s) => advanceSession(s, opts))
+    window.scrollTo({ top: 0 })
+  }
+
+  /** 워밍업 카드 채점 — 스와이프와 같은 규칙으로 진짜 SRS에 반영한다. */
+  function gradeWarmup(card, grade) {
+    commit((s) => ({
+      ...s,
+      progress: {
+        ...s.progress,
+        [card.id]: (({ box, dueAt, reviewCount, lapseCount, lastReviewedAt }) => ({
+          box, dueAt, reviewCount, lapseCount, lastReviewedAt,
+        }))(applyGrade(card, grade)),
+      },
+      reviewLog: [
+        ...s.reviewLog,
+        { at: Date.now(), cardId: card.id, grade, round: 1, via: 'session-warmup' },
+      ],
+    }))
+  }
+
+  /** 정리 — 이번 세션의 오답을 카드로 회수하고 하루를 닫는다. */
+  function finishDay() {
+    commit((s) => {
+      const wrong = s.plan?.session?.wrong ?? []
+      const gWrong = wrong
+        .filter((w) => w.source === 'grammar')
+        .map((w) => {
+          const u = grammarCourse.units.find((x) => x.id === w.unitId)
+          return u && { u, q: u.practice[w.qIndex] }
+        })
+        .filter(Boolean)
+      const sWrong = wrong
+        .filter((w) => w.source === 'syntax')
+        .map((w) => {
+          const q = unitQuizData.quizzes.find((x) => x.quizId === w.quizId)
+          if (!q) return null
+          // 유형마다 카드가 되는 모양이 다르다 — 틀린 그 일을 그대로
+          // 다시 시키는 형태로 앞뒷면을 고른다.
+          if (q.type === 'truefalse') {
+            return { kind: 'blank', en: q.prompt, answer: q.isCorrect ? '맞다' : '아니다', ko: q.explanation ?? '' }
+          }
+          if (q.type === 'arrange' || q.type === 'koToEn') {
+            return { kind: 'order', en: q.answer.map((i) => q.chunks[i]).join(' '), ko: q.prompt }
+          }
+          if (q.type === 'anchorRestore') {
+            return { kind: 'order', en: q.blanks.join(' · '), ko: q.text }
+          }
+          return { kind: 'blank', en: q.prompt, answer: q.options[q.answerIndex], ko: q.explanation ?? '' }
+        })
+        .filter(Boolean)
+
+      let next = s
+      for (const { u, q } of gWrong) next = addMistakeCards(next, cardsFromGrammarWrong(u, [q]))
+      if (sWrong.length) {
+        next = addMistakeCards(
+          next,
+          cardsFromQuizWrong(sWrong, { work: `구문 ${today.unit.no} · ${today.unit.title}` })
+        )
+      }
+      return completeDay(endSession(next))
+    })
+    window.scrollTo({ top: 0 })
+  }
+
+  return (
+    <div className="stack stack--loose">
+      <header className="stack stack--tight">
+        <div className="row row--between">
+          <span className="hint">
+            {today.day}일차 수업 · {idx + 1}/{atoms.length}
+          </span>
+          <button
+            className="btn btn--ghost btn--sm"
+            onClick={() => commit((s) => pauseSession(s))}
+            title="진행은 저장됩니다"
+          >
+            잠시 멈춤
+          </button>
+        </div>
+        <div className="progress">
+          <div className="progress__bar" style={{ width: `${progress}%` }} />
+        </div>
+      </header>
+
+      <Atom
+        key={idx}
+        atom={atom}
+        today={today}
+        state={state}
+        dueCards={dueCards}
+        settings={settings}
+        commit={commit}
+        onGuide={onGuide}
+        onNext={next}
+        onGrade={gradeWarmup}
+        onFinish={finishDay}
+        session={session}
+      />
+    </div>
+  )
+}
+
+function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext, onGrade, onFinish, session }) {
+  switch (atom.type) {
+    case 'warmup':
+      return <Warmup card={atom.card} onGrade={onGrade} onNext={onNext} />
+    case 'anchor':
+      return <Anchor anchor={atom.anchor} onNext={onNext} />
+    case 'rule':
+      return <Rule atom={atom} onNext={onNext} />
+    case 'points':
+      return <Points points={atom.points} onNext={onNext} />
+    case 'example':
+      return <Example example={atom.example} onNext={onNext} />
+    case 'quiz-choice':
+      return <QuizChoice atom={atom} onNext={onNext} />
+    case 'quiz-order':
+      return <QuizOrder atom={atom} onNext={onNext} />
+    case 'produce':
+      return <Produce task={atom.task} onNext={onNext} />
+    case 'recite':
+      return <Recite anchor={atom.anchor} onNext={onNext} />
+    case 'swipe':
+      return <SwipeAtom dueCards={dueCards} settings={settings} commit={commit} state={state} onNext={onNext} />
+    case 'read':
+      return <ReadAtom atom={atom} today={today} state={state} onGuide={onGuide} onNext={onNext} />
+    case 'recap':
+      return <Recap today={today} session={session} onFinish={onFinish} />
+    default:
+      return null
+  }
+}
+
+/** 오답 되잡기 — 어제 틀린 것을 오늘의 첫 화면에서 다시 만난다. */
+function Warmup({ card, onGrade, onNext }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="stack">
+      <div className="section-title">오답 되잡기</div>
+      <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
+        <p className="read" style={{ margin: 0, fontSize: 20 }}>{card.front}</p>
+        {open && (
+          <>
+            <div className="flashcard__divider" />
+            <div className="read" style={{ fontSize: 18 }}>{card.back?.meaningKo}</div>
+            {card.back?.nuance && (
+              <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{card.back.nuance}</p>
+            )}
+          </>
+        )}
+      </div>
+      {open ? (
+        <div className="grade-row">
+          <button
+            className="btn grade-row__again"
+            onClick={() => { onGrade(card, 'AGAIN'); onNext({ correct: false }) }}
+          >
+            아직 헷갈림
+          </button>
+          <button
+            className="btn grade-row__good"
+            onClick={() => { onGrade(card, 'GOOD'); onNext({ correct: true }) }}
+          >
+            이제 알겠음
+          </button>
+        </div>
+      ) : (
+        <button className="btn btn--primary btn--block" onClick={() => setOpen(true)}>
+          생각했어요 — 답 보기
+        </button>
+      )}
+    </div>
+  )
+}
+
+function Anchor({ anchor, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">앵커 장면</div>
+      <div className="panel stack stack--tight">
+        <p className="read" style={{ margin: 0, fontSize: 20 }}>{anchor.en}</p>
+        <div className="ko">{anchor.ko}</div>
+        {anchor.sceneNote && (
+          <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{anchor.sceneNote}</p>
+        )}
+        {anchor.speaker && (
+          <span className="chip">{anchor.speaker}{anchor.chapter ? ` · Ch ${anchor.chapter}` : ''}</span>
+        )}
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+    </div>
+  )
+}
+
+function Rule({ atom, onNext }) {
+  return (
+    <div className="stack">
+      <div
+        className="panel stack stack--tight"
+        style={atom.accent ? { borderColor: 'var(--accent-border)', background: 'var(--accent-soft)' } : undefined}
+      >
+        <div className="section-title">{atom.trap ? '⚠ 함정' : atom.title}</div>
+        {atom.trap && <h4 style={{ margin: 0 }}>{atom.title}</h4>}
+        <p style={{ margin: 0 }}>{atom.body}</p>
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+    </div>
+  )
+}
+
+function Points({ points, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">갈라 보기</div>
+      {points.map((p, i) => (
+        <div className="panel" key={i} style={{ padding: 'var(--s3) var(--s4)' }}>{p}</div>
+      ))}
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+    </div>
+  )
+}
+
+function Example({ example, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">실제로 쓰인 자리</div>
+      <div className="panel stack stack--tight">
+        <p className="read" style={{ margin: 0, fontSize: 18 }}>{example.en}</p>
+        <div className="ko">{example.ko}</div>
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{example.note}</p>
+        {example.from && <span className="chip">{example.from}</span>}
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+    </div>
+  )
+}
+
+/** 문항 — 즉시 채점, 틀리면 왜 그런지, 결과는 세션에 실린다. */
+function QuizChoice({ atom, onNext }) {
+  const { q } = atom
+  const [picked, setPicked] = useState(null)
+  const correct = picked !== null && picked === q.answer
+
+  const wrongRef =
+    atom.source === 'grammar'
+      ? { source: 'grammar', unitId: atom.unit.id, qIndex: atom.unit.practice.indexOf(q) }
+      : { source: 'syntax', quizId: q.quizId }
+
+  return (
+    <div className="stack">
+      {q.q && <div className="section-title">{q.q}</div>}
+      <p className="read" style={{ margin: 0, fontSize: 17 }}>
+        {q.sentence.includes('___')
+          ? (<>
+              {q.sentence.split('___')[0]}
+              <span className="quiz__blank">{picked ?? '______'}</span>
+              {q.sentence.split('___')[1]}
+            </>)
+          : q.sentence}
+      </p>
+      <div className="quiz__bank">
+        {q.choices.map((c) => {
+          const stateCls = picked === null ? '' : c === q.answer ? ' is-right' : c === picked ? ' is-wrong' : ''
+          return (
+            <button
+              key={c}
+              className={`quiz__piece${stateCls}`}
+              disabled={picked !== null}
+              onClick={() => setPicked(c)}
+            >
+              {c === '-' ? '(아무것도 안 붙임)' : c}
+            </button>
+          )
+        })}
+      </div>
+      {picked !== null && (
+        <div className="stack stack--tight">
+          <div className={correct ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
+            {correct ? '맞았습니다' : `정답 — ${q.answer}`}
+          </div>
+          {q.why && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.why}</p>}
+          <button
+            className="btn btn--primary btn--block"
+            onClick={() => onNext({ correct, wrongRef: correct ? null : wrongRef })}
+          >
+            다음
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function QuizOrder({ atom, onNext }) {
+  const { q } = atom
+  const [picked, setPicked] = useState([])
+  const [checked, setChecked] = useState(null)
+  const shuffled = useMemo(() => {
+    const out = [...q.pieces]
+    for (let i = out.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[out[i], out[j]] = [out[j], out[i]]
+    }
+    return out
+  }, [q])
+  const remaining = [...shuffled]
+  for (const p of picked) {
+    const i = remaining.indexOf(p)
+    if (i >= 0) remaining.splice(i, 1)
+  }
+  const wrongRef =
+    atom.source === 'grammar'
+      ? { source: 'grammar', unitId: atom.unit.id, qIndex: atom.unit.practice.indexOf(q) }
+      : { source: 'syntax', quizId: q.quizId }
+
+  return (
+    <div className="stack">
+      <div className="section-title">{q.q}</div>
+      <div className="ko" style={{ color: 'var(--text)' }}>{q.ko}</div>
+      <div className="quiz__slot">
+        {picked.length === 0 ? (
+          <span className="hint">아래에서 순서대로 누르세요</span>
+        ) : (
+          picked.map((p, i) => (
+            <button key={`${p}-${i}`} className="quiz__piece is-picked" disabled={Boolean(checked)}
+              onClick={() => setPicked(picked.filter((_, j) => j !== i))}>{p}</button>
+          ))
+        )}
+      </div>
+      {remaining.length > 0 && (
+        <div className="quiz__bank">
+          {remaining.map((p, i) => (
+            <button key={`${p}-${i}`} className="quiz__piece" disabled={Boolean(checked)}
+              onClick={() => setPicked([...picked, p])}>{p}</button>
+          ))}
+        </div>
+      )}
+      {!checked ? (
+        <button className="btn btn--primary btn--block" disabled={picked.length !== q.answer.length}
+          onClick={() => setChecked({ correct: picked.every((p, i) => p === q.answer[i]) })}>
+          확인
+        </button>
+      ) : (
+        <div className="stack stack--tight">
+          <div className={checked.correct ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
+            {checked.correct ? '맞았습니다' : `정답 — ${q.answer.join(' ')}`}
+          </div>
+          {q.why && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.why}</p>}
+          <button className="btn btn--primary btn--block"
+            onClick={() => onNext({ correct: checked.correct, wrongRef: checked.correct ? null : wrongRef })}>
+            다음
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function Produce({ task, onNext }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="stack">
+      <div className="section-title">말하기</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>{task.situation}</p>
+        <div className="quiz__bank">
+          {task.chunks.map((c) => (
+            <span className="quiz__piece" key={c} style={{ cursor: 'default' }}>{c}</span>
+          ))}
+        </div>
+        {open && (
+          <div className="stack stack--tight">
+            <p className="read" style={{ margin: 0, fontSize: 16 }}>{task.model}</p>
+            <div className="ko">{task.ko}</div>
+          </div>
+        )}
+      </div>
+      {open ? (
+        <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+      ) : (
+        <button className="btn btn--block" onClick={() => setOpen(true)}>
+          소리 내어 말했어요 — 모범 보기
+        </button>
+      )}
+    </div>
+  )
+}
+
+/** 암송 — 번역을 보고 원문을 입으로 되살린 뒤 대조한다. */
+function Recite({ anchor, onNext }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="stack">
+      <div className="section-title">앵커 암송</div>
+      <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
+        <div className="ko" style={{ color: 'var(--text)', fontSize: 17 }}>{anchor.ko}</div>
+        {open && (
+          <>
+            <div className="flashcard__divider" />
+            <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>
+          </>
+        )}
+      </div>
+      {open ? (
+        <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+      ) : (
+        <button className="btn btn--block" onClick={() => setOpen(true)}>
+          영어로 말해 봤어요 — 원문 보기
+        </button>
+      )}
+    </div>
+  )
+}
+
+/** 단어 — 기존 스와이프를 세션 안에 그대로 얹는다. */
+function SwipeAtom({ dueCards, settings, commit, state, onNext }) {
+  // 이 원자에 들어선 순간의 묶음으로 고정한다
+  const [cards] = useState(() => dueCards)
+  const gradedToday = state.reviewLog.filter((r) => sameDay(r.at)).length
+  const quota = settings?.dailyLimit ?? 20
+
+  if (cards.length === 0 || gradedToday >= quota) {
+    return (
+      <div className="stack">
+        <div className="empty">
+          <div className="empty__icon">✓</div>
+          <div className="empty__title">오늘 단어 몫은 끝났습니다</div>
+          <p className="empty__body">오늘 {gradedToday}장을 넘겼습니다.</p>
+        </div>
+        <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+      </div>
+    )
+  }
+
+  return (
+    <div className="stack">
+      <div className="section-title">단어 — 오늘 {cards.length}장</div>
+      <Swipe
+        cards={cards}
+        settings={settings}
+        commit={commit}
+        onExit={() => onNext()}
+      />
+    </div>
+  )
+}
+
+/** 읽기 — 세션에서 유일하게 밖으로 나가는 원자. 리더가 읽기의 집이다. */
+function ReadAtom({ atom, today, state, onGuide, onNext }) {
+  const readDone = itemDone(
+    { auto: 'read-today', chapter: atom.chapter },
+    state.plan,
+    { reads: state.reads }
+  )
+  const quizDone =
+    !atom.deep ||
+    itemDone({ auto: 'chapter-quiz' }, state.plan, { quizLog: state.quizLog, chapter: atom.chapter })
+
+  return (
+    <div className="stack">
+      <div className="section-title">원문 적용 — {chapterLabel(atom.chapter)}장</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          방금 배운 것을 원문에서 다시 만납니다. 다 읽고 <b>읽음</b>을 누르면 이
+          화면이 알아챕니다.
+          {atom.deep && ' 오늘은 정리 날 — 맨 아래 챕터 퀴즈까지 풀어 주세요.'}
+        </p>
+        <div className="row" style={{ gap: 'var(--s2)' }}>
+          <span className={`chip${readDone ? ' chip--accent' : ''}`}>{readDone ? '✓ 읽음' : '읽기 전'}</span>
+          {atom.deep && (
+            <span className={`chip${quizDone ? ' chip--accent' : ''}`}>{quizDone ? '✓ 퀴즈' : '퀴즈 전'}</span>
+          )}
+        </div>
+      </div>
+      {readDone && quizDone ? (
+        <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+      ) : (
+        <button
+          className="btn btn--primary btn--block"
+          onClick={() =>
+            onGuide(
+              { id: 'read', tab: 'read', chapter: atom.chapter },
+              today
+            )
+          }
+        >
+          {chapterLabel(atom.chapter)}장 읽으러 가기
+        </button>
+      )}
+    </div>
+  )
+}
+
+function Recap({ today, session, onFinish }) {
+  const acc = session?.total ? Math.round((session.right / session.total) * 100) : null
+  return (
+    <div className="stack">
+      <div className="section-title">오늘 정리</div>
+      <div className="panel stack stack--tight">
+        <h4 style={{ margin: 0 }}>
+          {today.day}일차 — {today.unit.kind === 'syntax' ? '구문' : '문법'} {today.unit.no} ·{' '}
+          {today.unit.title}
+        </h4>
+        {acc !== null && (
+          <p style={{ margin: 0 }}>
+            문항 {session.total}개 중 {session.right}개 ({acc}%)
+            {session.wrong.length > 0 &&
+              ` — 틀린 ${session.wrong.length}개는 카드가 되어 내일 아침에 돌아옵니다.`}
+          </p>
+        )}
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+          {today.phase} · {['배우기', '되짚기', '내 것으로', '정리'][today.step - 1]}까지 마쳤습니다.
+        </p>
+      </div>
+      <button className="btn btn--primary btn--block" onClick={onFinish}>
+        {today.day}일차 마치기 → 다음 날
+      </button>
+    </div>
+  )
+}
