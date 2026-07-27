@@ -6,7 +6,7 @@ import unitQuizData from '../data/curriculum/unit-quiz.json'
 import { applyGrade } from '../lib/srs.js'
 import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
-import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong } from '../lib/mistakes.js'
+import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
 
 // 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
@@ -165,6 +165,16 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
       for (const [unitId, items] of sWrongByUnit) {
         next = addMistakeCards(next, cardsFromQuizWrong(items, { work: unitLabel(unitId) }))
       }
+      // 말하기 자평 — 🔴는 카드가 되어 돌아오고, 전부 기록으로 남는다
+      const speak = sess?.speak ?? []
+      if (speak.length) {
+        next = addMistakeCards(
+          next,
+          cardsFromSpeakWrong(speak.filter((x) => x.grade === 'red'))
+        )
+        const stamped = speak.map((x) => ({ ...x, day, at: Date.now() }))
+        next = { ...next, speakLog: [...(next.speakLog ?? []), ...stamped].slice(-300) }
+      }
       // 관문 시험 날은 성적을 관문 기록에 남긴다 — 성장 그래프의 재료다
       if (today.kind === 'test') {
         const rv = Object.values(sess?.review ?? {})
@@ -262,6 +272,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
       return <Produce task={atom.task} onNext={onNext} />
     case 'recite':
       return <Recite anchor={atom.anchor} onNext={onNext} />
+    case 'shadow':
+      return <Shadow anchor={atom.anchor} onNext={onNext} />
     case 'swipe':
       return <SwipeAtom dueCards={dueCards} settings={settings} commit={commit} state={state} onNext={onNext} />
     case 'read':
@@ -614,6 +626,29 @@ function QuizOrder({ atom, onNext }) {
   )
 }
 
+/**
+ * 신호등 자평 — 마이크 없이 발화를 책임화하는 최소 장치.
+ * 모범과 대조한 뒤 스스로 세 단계로 판정한다. 🔴는 카드가 되어 돌아온다.
+ */
+function TrafficLight({ onPick }) {
+  return (
+    <div className="stack stack--tight">
+      <p className="hint" style={{ margin: 0 }}>모범과 비교해서 — 솔직하게. 🔴는 카드가 되어 돌아옵니다.</p>
+      <div className="grade-row">
+        <button className="btn grade-row__again" onClick={() => onPick('red')}>
+          🔴 못 했다
+        </button>
+        <button className="btn" onClick={() => onPick('yellow')}>
+          🟡 버벅였다
+        </button>
+        <button className="btn grade-row__good" onClick={() => onPick('green')}>
+          🟢 막힘없이
+        </button>
+      </div>
+    </div>
+  )
+}
+
 function Produce({ task, onNext }) {
   const [open, setOpen] = useState(false)
   return (
@@ -634,7 +669,11 @@ function Produce({ task, onNext }) {
         )}
       </div>
       {open ? (
-        <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+        <TrafficLight
+          onPick={(grade) =>
+            onNext({ speak: { kind: 'produce', en: task.model, ko: task.ko ?? task.situation, grade } })
+          }
+        />
       ) : (
         <button className="btn btn--block" onClick={() => setOpen(true)}>
           소리 내어 말했어요 — 모범 보기
@@ -660,11 +699,75 @@ function Recite({ anchor, onNext }) {
         )}
       </div>
       {open ? (
-        <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+        <TrafficLight
+          onPick={(grade) =>
+            onNext({ speak: { kind: 'recite', en: anchor.en, ko: anchor.ko, grade } })
+          }
+        />
       ) : (
         <button className="btn btn--block" onClick={() => setOpen(true)}>
           영어로 말해 봤어요 — 원문 보기
         </button>
+      )}
+    </div>
+  )
+}
+
+/** 단어의 첫 글자만 남기고 가린다 — 섀도잉 2단계의 힌트. */
+function firstLetters(en) {
+  return en
+    .split(' ')
+    .map((w) => {
+      const m = w.match(/[A-Za-z]/)
+      if (!m) return w
+      const i = w.indexOf(m[0])
+      return w.slice(0, i + 1) + w.slice(i + 1).replace(/[A-Za-z]/g, '_')
+    })
+    .join(' ')
+}
+
+/**
+ * 섀도잉 3단 은폐 — 같은 문장을 ①전문 보며 낭송 → ②첫 글자만 보고
+ * → ③한국어만 보고 재현한다. 은폐가 깊어질수록 인출이 깊어진다.
+ */
+function Shadow({ anchor, onNext }) {
+  const [stage, setStage] = useState(0)
+  const STAGES = ['① 보면서 소리 내어', '② 첫 글자만 보고', '③ 한국어만 보고']
+  return (
+    <div className="stack">
+      <div className="section-title">섀도잉 — {STAGES[Math.min(stage, 2)]}</div>
+      <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
+        {stage === 0 && <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>}
+        {stage === 1 && (
+          <p className="read" style={{ margin: 0, fontSize: 19, letterSpacing: '0.06em' }}>
+            {firstLetters(anchor.en)}
+          </p>
+        )}
+        {stage >= 2 && <div className="ko" style={{ color: 'var(--text)', fontSize: 17 }}>{anchor.ko}</div>}
+        {stage === 3 && (
+          <>
+            <div className="flashcard__divider" />
+            <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>
+          </>
+        )}
+        {stage < 2 && <div className="ko">{anchor.ko}</div>}
+      </div>
+      {stage < 2 && (
+        <button className="btn btn--primary btn--block" onClick={() => setStage(stage + 1)}>
+          소리 내어 읽었어요 — 다음 단계
+        </button>
+      )}
+      {stage === 2 && (
+        <button className="btn btn--primary btn--block" onClick={() => setStage(3)}>
+          영어로 재현했어요 — 원문 대조
+        </button>
+      )}
+      {stage === 3 && (
+        <TrafficLight
+          onPick={(grade) =>
+            onNext({ speak: { kind: 'shadow', en: anchor.en, ko: anchor.ko, grade } })
+          }
+        />
       )}
     </div>
   )
@@ -771,6 +874,15 @@ function Recap({ today, session, unitSrs, onFinish }) {
             문항 {session.total}개 중 {session.right}개 ({acc}%)
             {session.wrong.length > 0 &&
               ` — 틀린 ${session.wrong.length}개는 카드가 되어 내일 아침에 돌아옵니다.`}
+          </p>
+        )}
+        {(session?.speak?.length ?? 0) > 0 && (
+          <p style={{ margin: 0 }}>
+            말하기 {session.speak.length}개 — 🟢
+            {session.speak.filter((x) => x.grade === 'green').length} · 🟡
+            {session.speak.filter((x) => x.grade === 'yellow').length} · 🔴
+            {session.speak.filter((x) => x.grade === 'red').length}
+            {session.speak.some((x) => x.grade === 'red') && ' (🔴는 카드로 돌아옵니다)'}
           </p>
         )}
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>

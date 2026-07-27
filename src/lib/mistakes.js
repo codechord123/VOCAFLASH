@@ -91,6 +91,24 @@ export function cardsFromGrammarWrong(unit, questions = []) {
     .filter(Boolean)
 }
 
+/**
+ * 말하기에서 🔴(못 했다)로 자평한 것 → 카드.
+ * 앞면은 한국어(다시 입으로 만들게), 뒷면은 모범 문장이다.
+ */
+export function cardsFromSpeakWrong(items = []) {
+  return items
+    .map((it) => {
+      if (!it.en || !it.ko) return null
+      return mistakeCard({
+        id: `card:miss-speak-${slug(it.en)}`,
+        front: it.ko,
+        back: { meaningKo: it.en, definitionEn: null, nuance: it.note ?? '' },
+        source: { work: it.label ?? '말하기', chapter: null, speaker: null },
+      })
+    })
+    .filter(Boolean)
+}
+
 /** 상태에 오답 카드를 넣는다. 이미 있는 id는 건드리지 않는다 —
     복습 진행이 그 id에 붙어 있다. */
 export function addMistakeCards(state, cards) {

@@ -122,15 +122,15 @@ function compileTest(atoms, today, cycleData, day) {
   for (const { u, n } of picks) atoms.push(...unitQuizAtoms(u, day, n))
 }
 
-/** 유창성 — 새것 없음. 사이클의 앵커를 암송하고 재독으로 이어진다. */
+/** 유창성 — 새것 없음. 앵커를 3단 은폐 섀도잉으로 몸에 붙인다. */
 function compileFluency(atoms, cycleData, day) {
   const anchors = []
   for (const u of cycleData?.cycleUnits ?? []) {
     if (u.kind === 'syntax') anchors.push(...(u.src?.anchors ?? []))
   }
   atoms.push({ type: 'fluency-head' })
-  for (const a of seededShuffle(anchors, day).slice(0, 4)) {
-    atoms.push({ type: 'recite', anchor: a })
+  for (const a of seededShuffle(anchors, day).slice(0, 3)) {
+    atoms.push({ type: 'shadow', anchor: a })
   }
 }
 
@@ -268,13 +268,13 @@ export function startSession(state) {
     ...state,
     plan: {
       ...plan,
-      session: { day: plan.day, idx: 0, right: 0, total: 0, wrong: [], review: {} },
+      session: { day: plan.day, idx: 0, right: 0, total: 0, wrong: [], review: {}, speak: [] },
     },
   }
 }
 
 /** 원자 하나를 마치고 다음으로. 채점이 있었으면 결과를 싣는다. */
-export function advanceSession(state, { correct = null, wrongRef = null, reviewUnit = null } = {}) {
+export function advanceSession(state, { correct = null, wrongRef = null, reviewUnit = null, speak = null } = {}) {
   const s = state.plan?.session
   if (!s) return state
   // 복습 문항이면 유닛별 성적을 따로 모은다 — 승급·강등의 판정 재료다
@@ -300,6 +300,8 @@ export function advanceSession(state, { correct = null, wrongRef = null, reviewU
         // 오답 참조만 저장한다. 카드는 정리 화면에서 한 번에 만든다.
         wrong: wrongRef ? [...s.wrong, wrongRef] : s.wrong,
         review,
+        // 말하기 자평(신호등)은 따로 싣는다 — 🔴는 정리에서 카드가 된다
+        speak: speak ? [...(s.speak ?? []), speak] : s.speak ?? [],
       },
     },
   }

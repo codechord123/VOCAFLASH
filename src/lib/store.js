@@ -76,7 +76,10 @@ const DEFAULTS = {
   // 회독. { 'before-sunrise-c2': { count, lastAt } } — 목표 20회독
   reads: {},
   // 100일 커리큘럼. day는 끝내야 올라간다 — 달력에 묶지 않는다.
+  // unitSrs(유닛 복습 궤도)·gates(관문 성적)·session(진행 중 수업)도 여기 산다.
   plan: { day: 1, checks: {}, history: {} },
+  // 말하기 자평 기록. { kind, en, ko, grade, day, at } — 최근 300개
+  speakLog: [],
   // 회화 문법 진행. { unitProgress: { 'g-01': { score, total, at } } }
   grammar: { unitProgress: {} },
   // 챕터 퀴즈 기록. { 'before-sunrise-c4': { attempts, best, last, wrong } }
@@ -239,11 +242,18 @@ export const store = {
       // 사라졌다 — 없어진 줄도 모르는 종류의 손실이다.
       reads: mergeReads(state.reads, incoming.reads),
       // 커리큘럼 일차는 더 멀리 간 쪽을 남긴다. 이력은 합친다.
+      // 유닛 복습 궤도와 관문 성적도 병합해야 한다 — 예전에는 day만 남기고
+      // 통째로 새로 지어서, 백업을 불러오면 궤도가 사라졌다.
       plan: {
+        ...(incoming.plan ?? {}),
+        ...(state.plan ?? {}),
         day: Math.max(state.plan?.day ?? 1, incoming.plan?.day ?? 1),
         checks: state.plan?.checks ?? {},
         history: { ...(incoming.plan?.history ?? {}), ...(state.plan?.history ?? {}) },
+        unitSrs: { ...(incoming.plan?.unitSrs ?? {}), ...(state.plan?.unitSrs ?? {}) },
+        gates: { ...(incoming.plan?.gates ?? {}), ...(state.plan?.gates ?? {}) },
       },
+      speakLog: [...(state.speakLog ?? []), ...(incoming.speakLog ?? [])].slice(-300),
       reviewLog: [...state.reviewLog, ...(incoming.reviewLog ?? [])],
     }
     write(next)
