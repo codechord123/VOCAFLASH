@@ -110,12 +110,31 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [day])
 
-  const { today, atoms } = compiled
+  const { today } = compiled
+  // 틀린 문항은 단어(스와이프) 직전에 다시 나온다 — 재도전 목록은 세션에
+  // 저장되므로 중간에 닫아도 같은 자리로 복원된다.
+  const base = compiled.atoms
+  const swipeIdx = base.findIndex((a) => a.type === 'swipe')
+  const atoms = [
+    ...base.slice(0, swipeIdx),
+    ...(session?.retries ?? []).map((i) => ({ ...base[i], retry: true, baseIdx: i })),
+    ...base.slice(swipeIdx),
+  ]
   const idx = Math.min(session?.idx ?? 0, atoms.length - 1)
   const atom = atoms[idx]
   const progress = ((idx + 1) / atoms.length) * 100
 
-  function next(opts) {
+  function next(opts = {}) {
+    // 문항을 틀리면 그 문항이 뒤에 다시 줄을 선다. 재도전에서 또 틀려도
+    // 다시 줄을 선다 — 맞혀야 하루가 닫힌다.
+    const isQuiz = atom.type === 'quiz-choice' || atom.type === 'quiz-order'
+    if (opts.correct === false && isQuiz) {
+      const baseIdx = atom.retry ? atom.baseIdx : idx < swipeIdx ? idx : null
+      if (baseIdx != null) opts = { ...opts, retryIdx: baseIdx }
+    }
+    // 재도전 회차는 통계·오답 카드·유닛 판정에 다시 싣지 않는다 —
+    // 첫 시도의 판정이 이미 실렸다.
+    if (atom.retry) opts = { ...opts, wrongRef: null, reviewUnit: null }
     commit((s) => advanceSession(s, opts))
     window.scrollTo({ top: 0 })
   }
@@ -537,10 +556,18 @@ function QuizChoice({ atom, combo = 0, onNext }) {
   const wrongRef =
     atom.source === 'grammar'
       ? { source: 'grammar', unitId: atom.unit.id, qIndex: atom.unit.practice.indexOf(q) }
-      : { source: 'syntax', quizId: q.quizId }
+      : atom.source === 'syntax'
+        ? { source: 'syntax', quizId: q.quizId }
+        : null // 발견 문답은 카드가 되지 않는다 — 재도전으로만 돌아온다
 
   return (
     <div className="stack">
+      {atom.retry && (
+        <span className="chip" style={{ alignSelf: 'flex-start' }}>다시 — 아까 틀린 것</span>
+      )}
+      {atom.source === 'discover' && !atom.retry && (
+        <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>먼저 맞혀 보기</span>
+      )}
       {atom.reviewUnit && (
         <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>
           복습 — {unitLabel(atom.reviewUnit)}
@@ -612,10 +639,15 @@ function QuizOrder({ atom, combo = 0, onNext }) {
   const wrongRef =
     atom.source === 'grammar'
       ? { source: 'grammar', unitId: atom.unit.id, qIndex: atom.unit.practice.indexOf(q) }
-      : { source: 'syntax', quizId: q.quizId }
+      : atom.source === 'syntax'
+        ? { source: 'syntax', quizId: q.quizId }
+        : null
 
   return (
     <div className="stack">
+      {atom.retry && (
+        <span className="chip" style={{ alignSelf: 'flex-start' }}>다시 — 아까 틀린 것</span>
+      )}
       {atom.reviewUnit && (
         <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>
           복습 — {unitLabel(atom.reviewUnit)}
@@ -692,35 +724,85 @@ function TrafficLight({ onPick }) {
   )
 }
 
+/**
+ * 말하기 — 3단 사다리. ①뜻만 보고 입으로 시도 → ②모범을 청크로 조립
+ * → ③모범 대조 후 가리고 한 번 더, 신호등 자평.
+ * 규칙 읽기에서 자유 발화로 바로 점프하던 자리에 계단을 놓는다.
+ */
 function Produce({ task, onNext }) {
-  const [open, setOpen] = useState(false)
+  const [stage, setStage] = useState(0)
+  const [picked, setPicked] = useState([])
+  const shuffled = useMemo(() => {
+    const out = [...task.chunks]
+    for (let i = out.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[out[i], out[j]] = [out[j], out[i]]
+    }
+    return out
+  }, [task])
+  const remaining = shuffled.filter((c) => !picked.includes(c))
+  const assembled = picked.length === task.chunks.length
+  const assembledRight = assembled && picked.every((c, i) => c === task.chunks[i])
+
   return (
     <div className="stack">
-      <div className="section-title">말하기</div>
+      <div className="section-title">
+        말하기 — {['① 뜻만 보고 시도', '② 뼈대 조립', '③ 대조하고 한 번 더'][stage]}
+      </div>
       <div className="panel stack stack--tight">
         <p style={{ margin: 0 }}>{task.situation}</p>
-        <div className="quiz__bank">
-          {task.chunks.map((c) => (
-            <span className="quiz__piece" key={c} style={{ cursor: 'default' }}>{c}</span>
-          ))}
-        </div>
-        {open && (
+        {task.ko && <div className="ko" style={{ color: 'var(--text)' }}>{task.ko}</div>}
+
+        {stage === 1 && (
+          <>
+            <div className="quiz__slot">
+              {picked.length === 0 ? (
+                <span className="hint">문장의 뼈대를 순서대로 누르세요</span>
+              ) : (
+                picked.map((c, i) => (
+                  <button key={c} className="quiz__piece is-picked"
+                    onClick={() => setPicked(picked.filter((_, j) => j !== i))}>{c}</button>
+                ))
+              )}
+            </div>
+            {remaining.length > 0 && (
+              <div className="quiz__bank">
+                {remaining.map((c) => (
+                  <button key={c} className="quiz__piece" onClick={() => setPicked([...picked, c])}>{c}</button>
+                ))}
+              </div>
+            )}
+            {assembled && (
+              <div className={assembledRight ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
+                {assembledRight ? '뼈대가 맞습니다' : `순서 — ${task.chunks.join(' / ')}`}
+              </div>
+            )}
+          </>
+        )}
+
+        {stage === 2 && (
           <div className="stack stack--tight">
             <p className="read" style={{ margin: 0, fontSize: 16 }}>{task.model}</p>
-            <div className="ko">{task.ko}</div>
           </div>
         )}
       </div>
-      {open ? (
+
+      {stage === 0 && (
+        <button className="btn btn--primary btn--block" onClick={() => setStage(1)}>
+          소리 내어 시도했어요 — 뼈대 맞추기
+        </button>
+      )}
+      {stage === 1 && (
+        <button className="btn btn--primary btn--block" disabled={!assembled} onClick={() => setStage(2)}>
+          모범 문장 보기
+        </button>
+      )}
+      {stage === 2 && (
         <TrafficLight
           onPick={(grade) =>
             onNext({ speak: { kind: 'produce', en: task.model, ko: task.ko ?? task.situation, grade } })
           }
         />
-      ) : (
-        <button className="btn btn--block" onClick={() => setOpen(true)}>
-          소리 내어 말했어요 — 모범 보기
-        </button>
       )}
     </div>
   )

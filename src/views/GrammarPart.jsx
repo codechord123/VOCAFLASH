@@ -335,9 +335,16 @@ function Practice({ unit, onDone, onNext }) {
       {q.kind === 'choice' ? (
         <>
           <p className="read" style={{ margin: 0, fontSize: 17 }}>
-            {q.sentence.split('___')[0]}
-            <span className="quiz__blank">{checked ? picked[0] : '______'}</span>
-            {q.sentence.split('___')[1]}
+            {q.sentence.includes('___') ? (
+              <>
+                {q.sentence.split('___')[0]}
+                <span className="quiz__blank">{checked ? picked[0] : '______'}</span>
+                {q.sentence.split('___')[1]}
+              </>
+            ) : (
+              // 빈칸 없는 문항 — 오류 찾기, 뜻 대조. 문장을 그대로 보여 준다.
+              q.sentence
+            )}
           </p>
           <div className="quiz__bank">
             {q.choices.map((c) => {

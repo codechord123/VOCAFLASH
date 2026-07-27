@@ -161,11 +161,28 @@ function compileMilestone(atoms, today, cycleData, day) {
   for (const u of weak) atoms.push(...unitQuizAtoms(u, day, 2, 3))
 }
 
-/** 문법 유닛의 4일 리듬. */
+/** 발견 문답 — 규칙을 읽기 전에 먼저 맞혀 본다. 예측이 앞서야 설명이 박힌다. */
+function discoverAtom(u, d) {
+  return {
+    type: 'quiz-choice',
+    source: 'discover',
+    unit: u,
+    q: {
+      q: d.q ?? '어느 쪽일까?',
+      sentence: d.prompt,
+      choices: d.options,
+      answer: d.options[d.answerIndex],
+      why: d.why ?? null,
+    },
+  }
+}
+
+/** 문법 유닛의 리듬. */
 function compileGrammar(atoms, u, step, day) {
   if (step === 1) {
-    // 배우기: 왜 → 규칙 → 갈라 보기 → 예문 → 연습 전량
+    // 배우기: 왜 → 발견 문답(먼저 맞혀 보기) → 규칙 → 갈라 보기 → 예문 → 연습 전량
     atoms.push({ type: 'rule', title: '왜 헷갈리는가', body: u.why })
+    for (const d of u.discover ?? []) atoms.push(discoverAtom(u, d))
     atoms.push({ type: 'rule', title: '규칙', body: u.present.rule, accent: true })
     atoms.push({ type: 'points', points: u.present.points })
     for (const e of u.present.examples) atoms.push({ type: 'example', example: e })
@@ -182,17 +199,59 @@ function compileGrammar(atoms, u, step, day) {
   // step 4(정리)는 유닛 원자 없음 — 회수·단어·깊은 읽기로 하루를 채운다
 }
 
-/** 구문 유닛의 4일 리듬. */
+/**
+ * 구문 1일차의 문항 선정 — 규칙마다 그 규칙에 붙은 문항 3개까지, 남는
+ * 자리는 나머지에서 12개까지. 2일차가 여집합을 계산할 수 있게 분리했다.
+ */
+function syntaxDay1Ids(u, items) {
+  const used = new Set()
+  let count = 0
+  for (const r of u.rules ?? []) {
+    for (const q of items.filter((x) => x.relatedRuleId === r.id && !used.has(x.quizId)).slice(0, 3)) {
+      used.add(q.quizId)
+      count += 1
+    }
+  }
+  for (const q of items) {
+    if (count >= 12) break
+    if (used.has(q.quizId)) continue
+    used.add(q.quizId)
+    count += 1
+  }
+  return used
+}
+
+/** 구문 유닛의 리듬. */
 function compileSyntax(atoms, u, quizzes, step, day) {
   const items = quizzes.filter((q) => q.unitId === u.unitId)
   if (step === 1) {
-    // 배우기: 앵커 장면 → 규칙 → 문항 앞 절반
+    // 배우기: 앵커 장면 → 규칙 하나 → 바로 그 규칙의 문항 → 다음 규칙…
+    // 규칙을 다 읽고 문항을 몰아서 푸는 게 아니라, 배운 자리에서 바로 쓴다.
     for (const a of (u.anchors ?? []).slice(0, 3)) atoms.push({ type: 'anchor', anchor: a })
-    for (const r of u.rules ?? []) atoms.push({ type: 'rule', title: r.title, body: r.body, trap: r.isTrap })
-    for (const q of items.slice(0, 10)) atoms.push(syntaxAtom(u, q))
+    const used = new Set()
+    let count = 0
+    for (const r of u.rules ?? []) {
+      atoms.push({ type: 'rule', title: r.title, body: r.body, trap: r.isTrap })
+      for (const q of items.filter((x) => x.relatedRuleId === r.id && !used.has(x.quizId)).slice(0, 3)) {
+        used.add(q.quizId)
+        count += 1
+        atoms.push(syntaxAtom(u, q))
+      }
+    }
+    for (const q of items) {
+      if (count >= 12) break
+      if (used.has(q.quizId)) continue
+      used.add(q.quizId)
+      count += 1
+      atoms.push(syntaxAtom(u, q))
+    }
   } else if (step === 2) {
-    // 되짚기: 문항 뒤 절반 + 앞 절반에서 섞어 몇 개
-    const pool = [...items.slice(10), ...seededShuffle(items.slice(0, 10), day).slice(0, 4)]
+    // 되짚기: 1일차에 안 본 문항 전부 + 1일차 것 몇 개 섞어서
+    const day1 = syntaxDay1Ids(u, items)
+    const pool = [
+      ...items.filter((q) => !day1.has(q.quizId)),
+      ...seededShuffle(items.filter((q) => day1.has(q.quizId)), day).slice(0, 4),
+    ]
     for (const q of pool) atoms.push(syntaxAtom(u, q))
   } else if (step === 3) {
     // 내 것으로: 앵커 암송 — 번역을 보고 원문을 떠올린다
@@ -274,14 +333,14 @@ export function startSession(state) {
       ...plan,
       session: {
         day: plan.day, idx: 0, right: 0, total: 0, wrong: [], review: {}, speak: [],
-        combo: 0, bestCombo: 0,
+        combo: 0, bestCombo: 0, retries: [],
       },
     },
   }
 }
 
 /** 원자 하나를 마치고 다음으로. 채점이 있었으면 결과를 싣는다. */
-export function advanceSession(state, { correct = null, wrongRef = null, reviewUnit = null, speak = null } = {}) {
+export function advanceSession(state, { correct = null, wrongRef = null, reviewUnit = null, speak = null, retryIdx = null } = {}) {
   const s = state.plan?.session
   if (!s) return state
   // 복습 문항이면 유닛별 성적을 따로 모은다 — 승급·강등의 판정 재료다
@@ -313,6 +372,11 @@ export function advanceSession(state, { correct = null, wrongRef = null, reviewU
         review,
         // 말하기 자평(신호등)은 따로 싣는다 — 🔴는 정리에서 카드가 된다
         speak: speak ? [...(s.speak ?? []), speak] : s.speak ?? [],
+        // 틀린 문항은 수업 끝(단어 전)에 다시 나온다 — 맞혀야 하루가 닫힌다
+        retries:
+          retryIdx != null && (s.retries?.length ?? 0) < 12
+            ? [...(s.retries ?? []), retryIdx]
+            : s.retries ?? [],
       },
     },
   }

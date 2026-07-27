@@ -68,14 +68,27 @@ def main():
                     problems.append(f"{tag} 연습[{i}]: 보기가 2개 미만")
                 if q.get("answer") not in ch:
                     problems.append(f"{tag} 연습[{i}]: 정답이 보기에 없음")
-                if "___" not in (q.get("sentence") or ""):
-                    problems.append(f"{tag} 연습[{i}]: 문장에 빈칸(___)이 없음")
+                # 빈칸 없는 choice도 있다 — 오류 찾기, 뜻 대조. 문장만 있으면 된다.
+                if not str(q.get("sentence", "")).strip():
+                    problems.append(f"{tag} 연습[{i}]: sentence 비어 있음")
             else:
                 pieces, answer = q.get("pieces") or [], q.get("answer") or []
                 if sorted(pieces) != sorted(answer):
                     problems.append(f"{tag} 연습[{i}]: 조각과 정답이 다름")
                 if len(pieces) < 2:
                     problems.append(f"{tag} 연습[{i}]: 조각이 2개 미만")
+
+        # 발견 문답(선택) — 있으면 모양은 갖춰야 한다
+        for i, d in enumerate(u.get("discover") or []):
+            if not str(d.get("prompt", "")).strip():
+                problems.append(f"{tag} 발견[{i}]: prompt 비어 있음")
+            opts = d.get("options") or []
+            if len(opts) < 2:
+                problems.append(f"{tag} 발견[{i}]: 보기가 2개 미만")
+            if not (0 <= d.get("answerIndex", -1) < len(opts)):
+                problems.append(f"{tag} 발견[{i}]: answerIndex 이상")
+            if not str(d.get("why", "")).strip():
+                problems.append(f"{tag} 발견[{i}]: why 비어 있음")
 
         produce = u.get("produce") or []
         if len(produce) < 2:

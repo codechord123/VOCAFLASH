@@ -108,6 +108,128 @@
      ],
      "answer": "walks",
      "why": "every day가 있으면 늘 그런 일이다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 늘 그런 일",
+     "sentence": "She ___ coffee every morning.",
+     "choices": [
+      "drinks",
+      "is drinking"
+     ],
+     "answer": "drinks",
+     "why": "every morning이 '늘 그런 일'의 신호다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 지금 이 순간",
+     "sentence": "Look — it ___ outside.",
+     "choices": [
+      "is snowing",
+      "snows"
+     ],
+     "answer": "is snowing",
+     "why": "Look이 지금 이 순간을 가리킨다. 눈은 지금 내리는 중."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 요즘 한동안",
+     "sentence": "I ___ a lot of Korean dramas these days.",
+     "choices": [
+      "am watching",
+      "watch"
+     ],
+     "answer": "am watching",
+     "why": "these days는 '요즘 한동안' — 임시 습관은 진행형으로 말한다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 상태 동사",
+     "sentence": "I ___ what you mean.",
+     "choices": [
+      "know",
+      "am knowing"
+     ],
+     "answer": "know",
+     "why": "know·want·believe 같은 상태 동사는 -ing를 안 쓴다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I am wanting to visit Paris someday.",
+     "choices": [
+      "am wanting",
+      "to visit",
+      "someday"
+     ],
+     "answer": "am wanting",
+     "why": "want는 상태 동사 — I want to visit이 맞다. -ing로 만들 수 없는 동사들이 있다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "She is usually taking the subway to work.",
+     "choices": [
+      "is usually taking",
+      "the subway",
+      "to work"
+     ],
+     "answer": "is usually taking",
+     "why": "usually는 '늘 그런 일'의 신호 — She usually takes가 맞다. 빈도 부사와 진행형은 (불평이 아니면) 어울리지 않는다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I work in Vienna.",
+     "sentence": "이 문장에 깔린 뜻은?",
+     "choices": [
+      "빈이 내 직장이다 (늘 그렇다)",
+      "지금 잠깐 빈에서 일하는 중이다"
+     ],
+     "answer": "빈이 내 직장이다 (늘 그렇다)",
+     "why": "현재시제는 '원래 그렇다'는 말. 잠깐이라면 I'm working in Vienna (this month)."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — You're being rude.",
+     "sentence": "be에 -ing를 붙이면?",
+     "choices": [
+      "지금 이 순간 무례하게 굴고 있다",
+      "원래 무례한 사람이다"
+     ],
+     "answer": "지금 이 순간 무례하게 굴고 있다",
+     "why": "You're rude는 성격을, You're being rude는 지금의 행동을 겨눈다. 싸울 때 이 차이가 크다."
+    },
+    {
+     "kind": "order",
+     "q": "요즘 근황으로 배열하기",
+     "pieces": [
+      "I'm taking",
+      "a pottery class",
+      "these days"
+     ],
+     "answer": [
+      "I'm taking",
+      "a pottery class",
+      "these days"
+     ],
+     "ko": "나 요즘 도자기 수업 들어.",
+     "why": "요즘 한동안의 일 → 진행형이 자연스럽다."
+    },
+    {
+     "kind": "order",
+     "q": "불평으로 배열하기",
+     "pieces": [
+      "She's always",
+      "canceling plans",
+      "at the last minute"
+     ],
+     "answer": [
+      "She's always",
+      "canceling plans",
+      "at the last minute"
+     ],
+     "ko": "걔는 맨날 막판에 약속을 취소해.",
+     "why": "always + 진행형 = 불평. 담담한 사실이면 She always cancels."
     }
    ],
    "produce": [
@@ -132,6 +254,38 @@
      ],
      "model": "I teach elementary school, and at the moment I'm working on a new project.",
      "ko": "초등학교에서 가르치고, 지금은 새 프로젝트를 하나 맡고 있어요."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 기차에서 옆자리 사람에게 직업을 묻는다",
+     "prompt": "뭐라고 물을까?",
+     "options": [
+      "What do you do?",
+      "What are you doing?"
+     ],
+     "answerIndex": 0,
+     "why": "직업은 '늘 하는 일'이라 현재시제. What are you doing?은 '지금 이 순간 뭐 하는 거예요?'라서, 낯선 사람에게 쓰면 따지는 말로 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 원래 집은 서울, 요즘은 빈에서 지낸다",
+     "prompt": "'나 요즘 빈에서 지내'는?",
+     "options": [
+      "I'm living in Vienna.",
+      "I live in Vienna."
+     ],
+     "answerIndex": 0,
+     "why": "-ing에는 '한동안, 임시로'라는 뜻이 깔린다. I live in Vienna는 빈이 집이라는 말이 된다."
+    },
+    {
+     "q": "먼저 감으로 — 친구가 또 열쇠를 잃어버렸다. '쟤는 맨날 저래!'",
+     "prompt": "불평의 말투는?",
+     "options": [
+      "He's always losing his keys.",
+      "He always loses his keys."
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 문법은 맞다. 하지만 always + 진행형은 사실 전달이 아니라 불평이다 — '맨날 잃어버린다니까!'의 짜증이 -ing에 실린다."
     }
    ]
   },
