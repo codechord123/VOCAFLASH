@@ -855,6 +855,31 @@ main {
 }
 .chip--tap:hover { background: var(--accent-border); }
 
+/* ── 오늘 (100일 커리큘럼) ───────────────────────────────────────── */
+
+/* 체크 동그라미. 앱이 스스로 채우기도 하고 손으로 누르기도 한다 —
+   손가락 크기(44px 근처)를 지키면서 줄 높이를 안 키우는 선. */
+.today__check {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: border-color var(--fast) var(--ease), background var(--fast) var(--ease);
+}
+.today__check[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
 /* ── 챕터 퀴즈 ───────────────────────────────────────────────────── */
 /* 전부 탭으로 푼다. 서서 보는 공부라 손가락이 닿는 크기가 먼저다. */
 

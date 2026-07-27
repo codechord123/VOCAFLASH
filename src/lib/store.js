@@ -75,6 +75,8 @@ const DEFAULTS = {
   curriculum: { unitProgress: {} },
   // 회독. { 'before-sunrise-c2': { count, lastAt } } — 목표 20회독
   reads: {},
+  // 100일 커리큘럼. day는 끝내야 올라간다 — 달력에 묶지 않는다.
+  plan: { day: 1, checks: {}, history: {} },
   // 회화 문법 진행. { unitProgress: { 'g-01': { score, total, at } } }
   grammar: { unitProgress: {} },
   // 챕터 퀴즈 기록. { 'before-sunrise-c4': { attempts, best, last, wrong } }
@@ -236,6 +238,12 @@ export const store = {
       // 펼치기만 해서, 백업을 불러와도 스무 번 읽은 기록이 통째로
       // 사라졌다 — 없어진 줄도 모르는 종류의 손실이다.
       reads: mergeReads(state.reads, incoming.reads),
+      // 커리큘럼 일차는 더 멀리 간 쪽을 남긴다. 이력은 합친다.
+      plan: {
+        day: Math.max(state.plan?.day ?? 1, incoming.plan?.day ?? 1),
+        checks: state.plan?.checks ?? {},
+        history: { ...(incoming.plan?.history ?? {}), ...(state.plan?.history ?? {}) },
+      },
       reviewLog: [...state.reviewLog, ...(incoming.reviewLog ?? [])],
     }
     write(next)

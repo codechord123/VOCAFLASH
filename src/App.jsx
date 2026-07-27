@@ -73,6 +73,7 @@ function recoverFromStaleChunk(err) {
 }
 
 import VocabPart from './views/VocabPart.jsx'
+import TodayPart from './views/TodayPart.jsx'
 // 읽기와 구문독해는 탭을 눌렀을 때 받는다.
 //
 // 커리큘럼 자료(유닛·어휘·퀴즈·SRS) 520KB와 유닛 어휘 224KB가 첫
@@ -87,7 +88,10 @@ import Settings from './views/Settings.jsx'
 // 학습 파트 3개. 라벨은 두 글자로 맞춘다 — 모바일 폭에서 긴 라벨이
 // 있으면 탭이 잘린다. 설정은 파트가 아니므로 헤더 톱니로 뺐다.
 // 담은 문장은 단어 파트 안의 한 칸이다.
+// '오늘'이 첫 탭이자 기본이다 — 열자마자 무엇을 할지 정해져 있어야
+// 고르는 데 힘을 안 쓴다.
 const TABS = [
+  { id: 'today', label: '오늘' },
   { id: 'vocab', label: '단어' },
   { id: 'read', label: '읽기' },
   { id: 'syntax', label: '구문' },
@@ -95,7 +99,9 @@ const TABS = [
 ]
 
 export default function App() {
-  const [tab, setTab] = useState('vocab')
+  const [tab, setTab] = useState('today')
+  // 오늘 화면에서 회독으로 보낼 때 열어 줄 챕터
+  const [readTarget, setReadTarget] = useState(null)
   const [state, setState] = useState(() => store.load())
   const [b2Words, setB2Words] = useState(null)
   const [reading, setReading] = useState(null)
@@ -222,7 +228,10 @@ export default function App() {
                 role="tab"
                 aria-selected={tab === t.id}
                 className="tab"
-                onClick={() => setTab(t.id)}
+                onClick={() => {
+                  if (t.id !== 'read') setReadTarget(null)
+                  setTab(t.id)
+                }}
               >
                 {t.label}
                 {t.id === 'vocab' && dueCount > 0 && (
@@ -270,6 +279,19 @@ export default function App() {
             />
           ) : (
           <>
+          {tab === 'today' && (
+            <TodayPart
+              state={state}
+              dueCount={dueCount}
+              commit={commit}
+              onGo={(t, chapter) => {
+                if (chapter != null) setReadTarget(chapter)
+                setTab(t)
+                window.scrollTo({ top: 0 })
+              }}
+            />
+          )}
+
           {tab === 'vocab' && (
             <VocabPart
               cards={cards}
@@ -294,6 +316,7 @@ export default function App() {
                 quizLog={state.quizLog}
                 cards={cards}
                 commit={commit}
+                initialChapter={readTarget}
               />
               </Suspense>
             ) : (
