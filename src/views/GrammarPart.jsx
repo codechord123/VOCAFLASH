@@ -17,8 +17,9 @@ import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 
 const WORK = 'grammar' // 회독 저장 키의 작품 자리
 
-export default function GrammarPart({ reads, grammar, commit }) {
-  const [openId, setOpenId] = useState(null)
+export default function GrammarPart({ reads, grammar, commit, initialUnitId = null }) {
+  // 오늘 화면에서 넘어오면 그날의 유닛이 바로 열린다
+  const [openId, setOpenId] = useState(initialUnitId)
   const units = course.units
 
   const unit = units.find((u) => u.id === openId) ?? null

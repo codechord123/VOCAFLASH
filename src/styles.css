@@ -880,6 +880,34 @@ main {
   background: var(--accent-soft);
 }
 
+/* 안내 바 — 오늘 화면이 보낸 자리를 따라다닌다. 담기 바(.sel-bar)와
+   같은 자리지만 z를 한 칸 낮춰, 글을 그으면 담기 바가 위에 뜬다. */
+.guide-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 41;
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  padding-bottom: calc(var(--s3) + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border-strong);
+  background: color-mix(in srgb, var(--surface) 97%, transparent);
+  backdrop-filter: blur(12px);
+  animation: rise var(--fast) var(--ease);
+}
+.guide-bar__text {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* ── 챕터 퀴즈 ───────────────────────────────────────────────────── */
 /* 전부 탭으로 푼다. 서서 보는 공부라 손가락이 닿는 크기가 먼저다. */
 

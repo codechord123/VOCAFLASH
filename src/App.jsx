@@ -72,6 +72,7 @@ function recoverFromStaleChunk(err) {
   return true
 }
 
+import { dayPlan, itemDone } from './lib/plan.js'
 import VocabPart from './views/VocabPart.jsx'
 import TodayPart from './views/TodayPart.jsx'
 // 읽기와 구문독해는 탭을 눌렀을 때 받는다.
@@ -102,6 +103,10 @@ export default function App() {
   const [tab, setTab] = useState('today')
   // 오늘 화면에서 회독으로 보낼 때 열어 줄 챕터
   const [readTarget, setReadTarget] = useState(null)
+  // 오늘 화면에서 과업으로 보낼 때 열어 줄 유닛
+  const [unitTarget, setUnitTarget] = useState(null)
+  // 안내 중인 오늘 항목. 다른 탭 아래에 '오늘로 돌아가기' 바가 따라간다.
+  const [guide, setGuide] = useState(null) // { itemId }
   const [state, setState] = useState(() => store.load())
   const [b2Words, setB2Words] = useState(null)
   const [reading, setReading] = useState(null)
@@ -194,7 +199,9 @@ export default function App() {
   // 탭 배지는 단어 파트에서 실제로 넘길 카드 수와 같아야 한다. 단어
   // 파트가 구문·기초 단어를 걸러내므로 배지도 같은 기준으로 센다 —
   // 20이라 해놓고 열면 12장이 나오면 셈을 못 믿게 된다.
-  const dueCount = useMemo(
+  // 배지와 오늘 화면이 같은 카드 뭉치를 쓴다 — 숫자 따로 카드 따로면
+  // 오늘 화면에서 '20개'를 보고 눌렀는데 18장이 나오는 일이 생긴다.
+  const dueStudyCards = useMemo(
     () =>
       selectDueCards(
         filterByLevel(reviewCards, {
@@ -202,9 +209,10 @@ export default function App() {
           wordsOnly: true,
         }),
         { limit: state.settings.dailyLimit }
-      ).length,
+      ),
     [reviewCards, state.settings.dailyLimit, state.settings.hideBasicWords]
   )
+  const dueCount = dueStudyCards.length
 
   /** 저장과 화면 상태를 함께 갱신한다. 한쪽만 바뀌면 새로고침에 사라진다. */
   function commit(mutator) {
@@ -230,6 +238,8 @@ export default function App() {
                 className="tab"
                 onClick={() => {
                   if (t.id !== 'read') setReadTarget(null)
+                  if (t.id !== 'syntax' && t.id !== 'grammar') setUnitTarget(null)
+                  setGuide(null) // 직접 움직이면 안내는 접는다
                   setTab(t.id)
                 }}
               >
@@ -282,11 +292,18 @@ export default function App() {
           {tab === 'today' && (
             <TodayPart
               state={state}
-              dueCount={dueCount}
+              dueCards={dueStudyCards}
+              settings={state.settings}
               commit={commit}
-              onGo={(t, chapter) => {
-                if (chapter != null) setReadTarget(chapter)
-                setTab(t)
+              onGuide={(item, today) => {
+                // 그날의 유닛·챕터를 열어 준 채 보낸다. 목록에서 다시
+                // 찾게 하면 안내가 아니다.
+                if (item.tab === 'syntax' || item.tab === 'grammar') {
+                  setUnitTarget(today.unit.id)
+                }
+                if (item.tab === 'read') setReadTarget(item.chapter ?? today.chapter)
+                setGuide({ itemId: item.id })
+                setTab(item.tab)
                 window.scrollTo({ top: 0 })
               }}
             />
@@ -333,6 +350,7 @@ export default function App() {
                 reads={state.reads}
                 grammar={state.grammar}
                 commit={commit}
+                initialUnitId={unitTarget?.startsWith('g-') ? unitTarget : null}
               />
             </Suspense>
           )}
@@ -344,6 +362,7 @@ export default function App() {
                 commit={commit}
                 curriculum={state.curriculum}
                 reads={state.reads}
+                initialUnitId={unitTarget?.startsWith('u-') ? unitTarget : null}
               />
             </Suspense>
           )}
@@ -352,6 +371,58 @@ export default function App() {
           )}
         </div>
       </main>
+
+      {guide && tab !== 'today' && (
+        <GuideBar
+          state={state}
+          dueCount={dueCount}
+          itemId={guide.itemId}
+          onBack={() => {
+            setGuide(null)
+            setReadTarget(null)
+            setUnitTarget(null)
+            setTab('today')
+            window.scrollTo({ top: 0 })
+          }}
+          onDismiss={() => setGuide(null)}
+        />
+      )}
+    </div>
+  )
+}
+
+/**
+ * 안내 바. 오늘 화면에서 보낸 자리를 따라다니며 "몇 번째 일인지"와
+ * 돌아갈 길을 붙잡아 둔다. 앱이 완료를 알아채면 버튼이 진해진다 —
+ * 끝났는데도 돌아갈 길을 못 찾는 것이 따라 하기의 가장 흔한 이탈이다.
+ */
+function GuideBar({ state, dueCount, itemId, onBack, onDismiss }) {
+  const today = dayPlan(state.plan?.day ?? 1)
+  const item = today.items.find((i) => i.id === itemId)
+  if (!item) return null
+  const ctx = {
+    dueCount,
+    reads: state.reads,
+    quizLog: state.quizLog,
+    curriculum: state.curriculum,
+    grammar: state.grammar,
+    unit: today.unit,
+    chapter: today.chapter,
+  }
+  const done = itemDone(item, state.plan, ctx)
+  const stepNo = today.items.findIndex((i) => i.id === itemId) + 1
+
+  return (
+    <div className="guide-bar">
+      <span className="guide-bar__text">
+        오늘 {stepNo}/3 · {item.label}
+      </span>
+      <button className={`btn btn--sm${done ? ' btn--primary' : ''}`} onClick={onBack}>
+        {done ? '끝 — 오늘로 ✓' : '오늘로'}
+      </button>
+      <button className="btn btn--ghost btn--sm" onClick={onDismiss} aria-label="안내 접기">
+        ✕
+      </button>
     </div>
   )
 }

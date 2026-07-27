@@ -1,16 +1,24 @@
-import { TOTAL_DAYS, chapterLabel, completeDay, dayPlan, itemDone, toggleCheck } from '../lib/plan.js'
+import { useState } from 'react'
+import Swipe from './Swipe.jsx'
+import { TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck } from '../lib/plan.js'
 
 // 오늘의 공부 — 100일 커리큘럼의 오늘 치.
 //
-// 앱을 열면 제일 먼저 보는 화면이다. 탭마다 흩어진 숫자를 모으는 것이
-// 아니라 "오늘은 이 셋"으로 좁혀 준다. 고르는 데 쓰는 힘이 제일 아깝다.
+// 버튼 하나로 시작하면 앱이 순서대로 끌고 간다: 단어는 이 화면에서 바로
+// 넘기고, 과업과 회독은 그날의 유닛·챕터를 열어 준 채 아래에 안내 바가
+// 따라간다. 따라 하는 사람이 할 일은 넘기고, 풀고, 읽는 것뿐이다 —
+// 무엇을 열지 고르는 일은 계획이 한다.
 //
 // 달력이 아니라 진도다. N일차를 끝내야 N+1일차가 열리고, 하루를 걸러도
-// 계획은 그 자리에 있다 — 밀린 날짜가 쌓여 보이기 시작하면 앱을 접는다.
+// 계획은 그 자리에 있다.
 
-export default function TodayPart({ state, dueCount, commit, onGo }) {
+export default function TodayPart({ state, dueCards, settings, commit, onGuide }) {
   const plan = state.plan ?? { day: 1, checks: {}, history: {} }
   const finished = plan.day > TOTAL_DAYS
+  // 단어 단계는 이 화면 안에서 바로 넘긴다 — 탭을 오가는 것부터가 일이다.
+  // 시작할 때의 묶음을 붙잡아 둔다. 살아 있는 목록을 그대로 넘기면
+  // 채점된 카드가 넘어가는 애니메이션 중에 목록에서 빠져 화면이 죽는다.
+  const [swipeCards, setSwipeCards] = useState(null)
 
   if (finished) {
     return (
@@ -27,7 +35,7 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
 
   const today = dayPlan(plan.day)
   const ctx = {
-    dueCount,
+    dueCount: dueCards.length,
     reads: state.reads,
     quizLog: state.quizLog,
     curriculum: state.curriculum,
@@ -38,6 +46,39 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
   const doneMap = Object.fromEntries(today.items.map((it) => [it.id, itemDone(it, plan, ctx)]))
   const doneCount = Object.values(doneMap).filter(Boolean).length
   const allDone = doneCount === today.items.length
+  const firstOpen = today.items.find((it) => !doneMap[it.id]) ?? null
+
+  /** 다음 할 일로 끌고 간다. 단어면 여기서 카드를 펴고, 아니면 그 자리를 연다. */
+  function goNext(from = firstOpen) {
+    if (!from) return
+    if (from.id === 'word' && dueCards.length > 0) {
+      setSwipeCards(dueCards)
+      return
+    }
+    onGuide(from, today)
+  }
+
+  // 단어를 넘기는 중 — 오늘 화면이 그대로 카드 화면이 된다
+  if (swipeCards) {
+    return (
+      <div className="stack stack--loose">
+        <p className="hint" style={{ textAlign: 'left' }}>
+          오늘 1/3 · 단어 — 다 넘기면 다음으로 이어집니다
+        </p>
+        <Swipe
+          cards={swipeCards}
+          settings={settings}
+          commit={commit}
+          onExit={() => {
+            setSwipeCards(null)
+            // 카드를 끝냈으면 바로 다음 칸으로 — 손이 끊기지 않게
+            const next = today.items.find((it) => it.id !== 'word' && !doneMap[it.id])
+            if (next) onGuide(next, today)
+          }}
+        />
+      </div>
+    )
+  }
 
   return (
     <div className="stack stack--loose">
@@ -61,9 +102,17 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
         </div>
       </header>
 
+      {/* 시작 버튼이 이 화면의 본체다. 목록은 어디까지 왔는지 보는 용도. */}
+      {!allDone && (
+        <button className="btn btn--primary btn--block" onClick={() => goNext()}>
+          {doneCount === 0 ? '오늘 시작하기' : `이어서 하기 (${doneCount}/3)`}
+        </button>
+      )}
+
       <section className="stack stack--tight">
-        {today.items.map((it) => {
+        {today.items.map((it, i) => {
           const done = doneMap[it.id]
+          const current = firstOpen?.id === it.id
           return (
             <div
               className="panel row row--between"
@@ -71,7 +120,7 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
               style={{
                 padding: 'var(--s3) var(--s4)',
                 gap: 'var(--s3)',
-                borderColor: done ? 'var(--accent-border)' : undefined,
+                borderColor: done ? 'var(--accent-border)' : current ? 'var(--border-strong)' : undefined,
                 background: done ? 'var(--accent-soft)' : undefined,
               }}
             >
@@ -82,7 +131,7 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
                 onClick={() => commit((s) => toggleCheck(s, it.id))}
                 title={done ? '완료' : '직접 체크'}
               >
-                {done ? '✓' : ''}
+                {done ? '✓' : i + 1}
               </button>
               <span className="list__main" style={{ flex: 1 }}>
                 <span
@@ -93,8 +142,8 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
                 </span>
                 <span className="list__meta">{it.hint}</span>
               </span>
-              {!done && (
-                <button className="btn btn--sm" onClick={() => onGo(it.tab, it.chapter ?? null)}>
+              {!done && !current && (
+                <button className="btn btn--ghost btn--sm" onClick={() => goNext(it)}>
                   가기
                 </button>
               )}
@@ -103,17 +152,13 @@ export default function TodayPart({ state, dueCount, commit, onGo }) {
         })}
       </section>
 
-      {allDone ? (
+      {allDone && (
         <button
           className="btn btn--primary btn--block"
           onClick={() => commit((s) => completeDay(s))}
         >
           {today.day}일차 마치기 → 다음 날
         </button>
-      ) : (
-        <p className="hint">
-          {doneCount}/{today.items.length} — 셋을 채우면 다음 날이 열립니다.
-        </p>
       )}
 
       <RecentDays history={plan.history} currentDay={today.day} />

@@ -68,13 +68,15 @@ function cardFromUnitSrs(c) {
   })
 }
 
-export default function Curriculum({ cards, commit, curriculum, reads }) {
+export default function Curriculum({ cards, commit, curriculum, reads, initialUnitId = null }) {
   // 유닛도 회독으로 센다. 읽기와 같은 저장소를 쓰되 작품 자리에
   // 'curriculum'을 넣어 챕터와 섞이지 않게 한다.
   const READ_WORK = 'curriculum'
   // 'list' | 'study' | 'quiz'
-  const [screen, setScreen] = useState('list')
-  const [openUnitId, setOpenUnitId] = useState(null)
+  // 오늘(100일 커리큘럼)에서 넘어오면 그날의 유닛이 바로 열린다 —
+  // 따라 하는 사람이 목록에서 다시 찾게 하면 안내가 아니다.
+  const [screen, setScreen] = useState(initialUnitId ? 'study' : 'list')
+  const [openUnitId, setOpenUnitId] = useState(initialUnitId)
 
   const units = unitData.units
   const unit = units.find((u) => u.unitId === openUnitId) ?? null
