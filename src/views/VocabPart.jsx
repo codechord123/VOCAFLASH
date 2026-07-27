@@ -71,11 +71,15 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
     }
   }, [studyReviewCards, dueCards])
 
-  // 담은 문장 중 오늘 볼 것. 문장 칸에 숫자를 띄우기 위해서만 쓴다.
+  // 담은 것 중 오늘 볼 것. 문장 칸에 숫자를 띄우기 위해서만 쓴다.
+  // 문장뿐 아니라 읽다가 담은 구문도 그 칸에 모이므로 같이 센다 —
+  // 숫자와 화면 내용이 다르면 셈을 못 믿게 된다.
   const lineDue = useMemo(
     () =>
       selectDueCards(
-        reviewCards.filter((c) => c.type === 'line'),
+        reviewCards.filter(
+          (c) => c.type === 'line' || (c.kind === 'phrase' && c.origin === 'reader-bookmark')
+        ),
         { limit: settings.dailyLimit }
       ).length,
     [reviewCards, settings.dailyLimit]

@@ -4,18 +4,26 @@ import { selectDueCards, isDue } from '../lib/srs.js'
 
 // 문장 화면 — 단어 파트 안의 한 칸.
 //
-// 담은 것만 보여준다. 읽다가 ☆로 담은 대사·자막이 전부이고, 담지 않은
-// 것은 여기 들어오지 않는다 — 즐겨찾기는 '내가 고른 것만 있는 곳'이어야
-// 다시 열어 볼 마음이 생긴다.
+// 담은 것만 보여준다. 읽다가 ☆로 담은 대사·자막, 그어서 담은 토막,
+// 그리고 구문 팝업에서 담은 표현이 전부다. 담지 않은 것은 여기 들어오지
+// 않는다 — 즐겨찾기는 '내가 고른 것만 있는 곳'이어야 다시 열어 볼
+// 마음이 생긴다.
+//
+// 구문(for weeks on end)까지 여기로 모으는 이유: 단어 파트는 한 단어만
+// 남기도록 걸러서, 담은 구문이 거기서도 여기서도 안 보이는 자리가
+// 있었다. 담았는데 어디에도 없으면 담기를 그만두게 된다.
+
+/** 여기 들어올 카드인가. 담은 문장이거나, 읽다가 담은 여러 단어짜리 표현. */
+function isSavedPiece(c) {
+  if (c.type === 'line') return true
+  return c.kind === 'phrase' && c.origin === 'reader-bookmark'
+}
 
 export default function LinePart({ cards, reviewCards, settings, commit }) {
   const [swiping, setSwiping] = useState(null)
 
-  const saved = useMemo(() => cards.filter((c) => c.type === 'line'), [cards])
-  const reviewable = useMemo(
-    () => reviewCards.filter((c) => c.type === 'line'),
-    [reviewCards]
-  )
+  const saved = useMemo(() => cards.filter(isSavedPiece), [cards])
+  const reviewable = useMemo(() => reviewCards.filter(isSavedPiece), [reviewCards])
 
   const dueCards = useMemo(
     () => selectDueCards(reviewable, { limit: settings.dailyLimit }),
@@ -70,7 +78,7 @@ function Review({ dueCards, saved, onStart }) {
         </button>
       ) : (
         <button className="btn btn--block" onClick={() => onStart(saved)}>
-          오늘 볼 문장 없음 — 담은 {saved.length}개 전부 넘기기
+          오늘 볼 것 없음 — 담은 {saved.length}개 전부 넘기기
         </button>
       )}
 
@@ -81,7 +89,7 @@ function Review({ dueCards, saved, onStart }) {
         </div>
         <div className="tile">
           <div className="tile__value">{saved.length}</div>
-          <div className="tile__label">담은 문장</div>
+          <div className="tile__label">담은 문장·구문</div>
         </div>
         <div className="tile">
           <div className="tile__value">{learned}</div>
@@ -97,7 +105,10 @@ function SavedList({ saved, commit }) {
   const groups = useMemo(() => {
     const map = new Map()
     for (const c of saved) {
-      const key = `${c.source?.work ?? '기타'} · ${c.source?.chapter ?? '?'}장`
+      // 구문 팝업에서 담은 것은 챕터가 없다. '?장'을 붙이면 없는 정보를
+      // 있는 척하게 되므로 작품 이름만 쓴다.
+      const work = c.source?.work ?? '기타'
+      const key = c.source?.chapter != null ? `${work} · ${c.source.chapter}장` : work
       const g = map.get(key) ?? []
       g.push(c)
       map.set(key, g)
@@ -115,7 +126,7 @@ function SavedList({ saved, commit }) {
   return (
     <div className="stack stack--loose">
       <p className="hint" style={{ textAlign: 'left' }}>
-        담은 문장 {saved.length}개. ★를 다시 누르면 뺍니다.
+        담은 문장·구문 {saved.length}개. ★를 다시 누르면 뺍니다.
       </p>
 
       {groups.map((g) => (
@@ -125,7 +136,7 @@ function SavedList({ saved, commit }) {
             <article className="panel stack stack--tight" key={c.id}>
               <div className="row row--between">
                 <span className="chip">
-                  {c.source?.speaker ?? '자막'}
+                  {c.source?.speaker ?? (c.kind === 'phrase' ? '구문' : '자막')}
                   {isDue(c) ? ' · 복습 예정' : ''}
                 </span>
                 <button

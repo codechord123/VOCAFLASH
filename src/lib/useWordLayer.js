@@ -61,7 +61,10 @@ export function useWordLayer({ levels, dict, phrases, cards, commit }) {
         type: 'expression',
         source: { work: '읽다가 담음' },
         extra: {
-          kind: 'word',
+          // 구문은 단어와 구분해 둔다. 예전에는 무엇을 담든 'word'라고
+          // 적어서, 담은 구문이 단어 파트에서는 걸러지고(거기는 한 단어만
+          // 남긴다) 문장 칸에도 안 들어가 어디에서도 안 보였다.
+          kind: fields.front.includes(' ') ? 'phrase' : 'word',
           origin: 'reader-bookmark',
           deck: 'note',
           priority: DECKS.note.priority,
