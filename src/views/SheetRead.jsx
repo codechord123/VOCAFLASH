@@ -10,6 +10,7 @@ import ExplainSheet from './ExplainSheet.jsx'
 import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import { quizRecord, recordQuiz } from '../lib/quizlog.js'
+import { addMistakeCards, cardsFromQuizWrong } from '../lib/mistakes.js'
 import ChapterNav from './ChapterNav.jsx'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 
@@ -386,7 +387,14 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
           levels={wl.levels}
           phrases={wl.phrases}
           record={quizRecord(quizLog, work.id, selected)}
-          onFinish={(r) => commit((s) => recordQuiz(s, work.id, selected, r))}
+          onFinish={(r) =>
+            commit((s) =>
+              addMistakeCards(
+                recordQuiz(s, work.id, selected, r),
+                cardsFromQuizWrong(r.wrong, { work: work.title, chapter: selected })
+              )
+            )
+          }
         />
       )}
 

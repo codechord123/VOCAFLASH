@@ -46,6 +46,8 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
     chapter: today.chapter,
   }
   const doneMap = Object.fromEntries(today.items.map((it) => [it.id, itemDone(it, plan, ctx)]))
+  // 오늘 카드에 섞인 오답 카드 수
+  const mistakeDue = dueCards.filter((c) => c.deck === 'mistake').length
   const doneCount = Object.values(doneMap).filter(Boolean).length
   const allDone = doneCount === today.items.length
   const firstOpen = today.items.find((it) => !doneMap[it.id]) ?? null
@@ -149,7 +151,12 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
                 >
                   {it.label}
                 </span>
-                <span className="list__meta">{it.hint}</span>
+                <span className="list__meta">
+                  {it.hint}
+                  {/* 어제 틀린 것이 오늘 카드에 섞여 있으면 그 사실이 보여야
+                      한다 — 오답이 돌아온다는 걸 알아야 퀴즈를 대충 안 푼다 */}
+                  {it.id === 'word' && mistakeDue > 0 && ` · 틀렸던 것 ${mistakeDue}개 포함`}
+                </span>
               </span>
               {!done && !current && (
                 <button className="btn btn--ghost btn--sm" onClick={() => goNext(it)}>

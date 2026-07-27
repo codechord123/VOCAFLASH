@@ -262,8 +262,15 @@ function TopicPicker({ cards, onStart }) {
     // 작품에서 나온 표현만 작품별로 남긴다.
     const work = new Map()
     const topical = []
+    const mistakes = []
 
     for (const c of cards) {
+      // 오답 카드는 출처(문법 1, 4장 퀴즈...)가 제각각이라 작품별로 두면
+      // 목록이 갈래갈래 쪼개진다. 한 묶음으로 모아야 몰아서 되잡는다.
+      if (c.deck === 'mistake') {
+        mistakes.push(c)
+        continue
+      }
       const topicIds = c.topicIds?.length ? c.topicIds : c.topicId ? [c.topicId] : []
       if (topicIds.some((t) => TOPICS[t])) {
         topical.push(c)
@@ -277,6 +284,7 @@ function TopicPicker({ cards, onStart }) {
 
     return {
       topical,
+      mistakes,
       works: [...work.entries()].map(([name, list]) => ({ name, cards: list })),
     }
   }, [cards])
@@ -327,6 +335,13 @@ function TopicPicker({ cards, onStart }) {
               />
             </div>
           </div>
+        </section>
+      )}
+
+      {groups.mistakes.length > 0 && (
+        <section className="stack">
+          <div className="section-title">내가 틀린 것</div>
+          <GroupRow icon="✗" name="퀴즈·연습 오답" cards={groups.mistakes} onStart={onStart} />
         </section>
       )}
 

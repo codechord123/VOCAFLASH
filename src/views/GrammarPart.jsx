@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import course from '../data/grammar-course.json'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
+import { addMistakeCards, cardsFromGrammarWrong } from '../lib/mistakes.js'
 
 // 회화를 위한 기본 문법. 유닛 하나가 PPP 세 화면으로 되어 있다.
 //
@@ -34,17 +35,24 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
         progress={progressOf(unit.id)}
         onMarkRead={() => commit((s) => markRead(s, WORK, unit.id))}
         onUndoRead={() => commit((s) => undoRead(s, WORK, unit.id))}
-        onFinish={(score) =>
-          commit((s) => ({
-            ...s,
-            grammar: {
-              ...(s.grammar ?? {}),
-              unitProgress: {
-                ...(s.grammar?.unitProgress ?? {}),
-                [unit.id]: { score, total: unit.practice.length, at: Date.now() },
+        onFinish={(score, wrong = []) =>
+          // 점수와 함께 틀린 문항을 오답 은행으로 보낸다. 결과 화면에서
+          // 사라지는 오답은 배움이 아니라 채점일 뿐이다.
+          commit((s) =>
+            addMistakeCards(
+              {
+                ...s,
+                grammar: {
+                  ...(s.grammar ?? {}),
+                  unitProgress: {
+                    ...(s.grammar?.unitProgress ?? {}),
+                    [unit.id]: { score, total: unit.practice.length, at: Date.now() },
+                  },
+                },
               },
-            },
-          }))
+              cardsFromGrammarWrong(unit, wrong)
+            )
+          )
         }
         onBack={() => {
           setOpenId(null)
@@ -278,7 +286,7 @@ function Practice({ unit, onDone, onNext }) {
       setSaved(true)
       // 기록은 전체 풀이만 남긴다. 틀린 것만 다시 푼 점수를 적으면
       // 2문항 만점이 6문항 만점처럼 보인다.
-      if (!subset) onDone?.(score)
+      if (!subset) onDone?.(score, wrongIdx.map((i) => unit.practice[i]).filter(Boolean))
     }
     return (
       <div className="panel stack">

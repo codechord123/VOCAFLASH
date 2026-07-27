@@ -11,6 +11,7 @@ import ExplainSheet from './ExplainSheet.jsx'
 import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import { quizRecord, recordQuiz } from '../lib/quizlog.js'
+import { addMistakeCards, cardsFromQuizWrong } from '../lib/mistakes.js'
 import ChapterNav from './ChapterNav.jsx'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
@@ -341,7 +342,14 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
           levels={wl.levels}
           phrases={wl.phrases}
           record={quizRecord(quizLog, 'before-sunrise', selected)}
-          onFinish={(r) => commit((s) => recordQuiz(s, 'before-sunrise', selected, r))}
+          onFinish={(r) =>
+            commit((s) =>
+              addMistakeCards(
+                recordQuiz(s, 'before-sunrise', selected, r),
+                cardsFromQuizWrong(r.wrong, { work: 'Before Sunrise', chapter: selected })
+              )
+            )
+          }
         />
       )}
 

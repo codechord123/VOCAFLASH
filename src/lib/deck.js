@@ -60,6 +60,15 @@ export const DECKS = {
     defaultOn: true,
     priority: 0,
   },
+  mistake: {
+    id: 'mistake',
+    label: '내가 틀린 것',
+    hint: '퀴즈·문법 연습에서 틀린 문항이 카드로 돌아옵니다',
+    defaultOn: true,
+    // 무엇보다 먼저. 밀린 새 카드가 수십 장이어도 틀린 것이 줄 앞에
+    // 서야 한다 — 어제 틀린 걸 오늘 만나는 것이 이 덱의 존재 이유다.
+    priority: -1,
+  },
   unit: {
     id: 'unit',
     label: '커리큘럼 카드',
