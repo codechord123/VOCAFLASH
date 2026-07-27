@@ -4,9 +4,10 @@ import grammarCourse from '../data/grammar-course.json'
 import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
 import { applyGrade } from '../lib/srs.js'
-import { chapterLabel, completeDay, itemDone, sameDay } from '../lib/plan.js'
+import { chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong } from '../lib/mistakes.js'
+import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
 
 // 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
 //
@@ -29,10 +30,21 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
       u.kind === 'grammar'
         ? grammarCourse.units.find((x) => x.id === u.id)
         : unitData.units.find((x) => x.unitId === u.id)
+    // 누적 복습 — 끝낸 유닛 중 오늘 due인 것에서 문항을 뽑는다.
+    // 세션 중에는 unitSrs가 변하지 않으므로(반영은 정리에서 한 번)
+    // day 고정 메모 안에서 읽어도 이어하기가 안전하다.
+    const review = buildReview({
+      unitSrs: state.plan?.unitSrs,
+      day,
+      excludeUnitId: u.id,
+      grammarUnits: grammarCourse.units,
+      quizzes: unitQuizData.quizzes,
+    })
     return compileSession(day, {
       unitData: source,
       quizzes: unitQuizData.quizzes,
       mistakeDue: dueCards.filter((c) => c.deck === 'mistake'),
+      review,
     })
     // day가 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -65,10 +77,11 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
     }))
   }
 
-  /** 정리 — 이번 세션의 오답을 카드로 회수하고 하루를 닫는다. */
+  /** 정리 — 오답을 카드로 회수하고, 복습 유닛의 승급·강등을 반영하고, 하루를 닫는다. */
   function finishDay() {
     commit((s) => {
-      const wrong = s.plan?.session?.wrong ?? []
+      const sess = s.plan?.session
+      const wrong = sess?.wrong ?? []
       const gWrong = wrong
         .filter((w) => w.source === 'grammar')
         .map((w) => {
@@ -76,33 +89,39 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
           return u && { u, q: u.practice[w.qIndex] }
         })
         .filter(Boolean)
-      const sWrong = wrong
-        .filter((w) => w.source === 'syntax')
-        .map((w) => {
-          const q = unitQuizData.quizzes.find((x) => x.quizId === w.quizId)
-          if (!q) return null
-          // 유형마다 카드가 되는 모양이 다르다 — 틀린 그 일을 그대로
-          // 다시 시키는 형태로 앞뒷면을 고른다.
-          if (q.type === 'truefalse') {
-            return { kind: 'blank', en: q.prompt, answer: q.isCorrect ? '맞다' : '아니다', ko: q.explanation ?? '' }
-          }
-          if (q.type === 'arrange' || q.type === 'koToEn') {
-            return { kind: 'order', en: q.answer.map((i) => q.chunks[i]).join(' '), ko: q.prompt }
-          }
-          if (q.type === 'anchorRestore') {
-            return { kind: 'order', en: q.blanks.join(' · '), ko: q.text }
-          }
-          return { kind: 'blank', en: q.prompt, answer: q.options[q.answerIndex], ko: q.explanation ?? '' }
-        })
-        .filter(Boolean)
+      // 구문 오답은 유닛별로 묶는다 — 복습 문항은 오늘 유닛이 아닐 수 있다
+      const sWrongByUnit = new Map()
+      for (const w of wrong.filter((x) => x.source === 'syntax')) {
+        const q = unitQuizData.quizzes.find((x) => x.quizId === w.quizId)
+        if (!q) continue
+        // 유형마다 카드가 되는 모양이 다르다 — 틀린 그 일을 그대로
+        // 다시 시키는 형태로 앞뒷면을 고른다.
+        let item
+        if (q.type === 'truefalse') {
+          item = { kind: 'blank', en: q.prompt, answer: q.isCorrect ? '맞다' : '아니다', ko: q.explanation ?? '' }
+        } else if (q.type === 'arrange' || q.type === 'koToEn') {
+          item = { kind: 'order', en: q.answer.map((i) => q.chunks[i]).join(' '), ko: q.prompt }
+        } else if (q.type === 'anchorRestore') {
+          item = { kind: 'order', en: q.blanks.join(' · '), ko: q.text }
+        } else {
+          item = { kind: 'blank', en: q.prompt, answer: q.options[q.answerIndex], ko: q.explanation ?? '' }
+        }
+        if (!sWrongByUnit.has(q.unitId)) sWrongByUnit.set(q.unitId, [])
+        sWrongByUnit.get(q.unitId).push(item)
+      }
 
       let next = s
       for (const { u, q } of gWrong) next = addMistakeCards(next, cardsFromGrammarWrong(u, [q]))
-      if (sWrong.length) {
-        next = addMistakeCards(
-          next,
-          cardsFromQuizWrong(sWrong, { work: `구문 ${today.unit.no} · ${today.unit.title}` })
-        )
+      for (const [unitId, items] of sWrongByUnit) {
+        next = addMistakeCards(next, cardsFromQuizWrong(items, { work: unitLabel(unitId) }))
+      }
+      // 복습 유닛 판정 — 전부 맞으면 간격이 넓어지고, 틀리면 내일 다시
+      next = {
+        ...next,
+        plan: {
+          ...next.plan,
+          unitSrs: applyUnitReview(next.plan?.unitSrs, sess?.review, day),
+        },
       }
       return completeDay(endSession(next))
     })
@@ -151,6 +170,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
   switch (atom.type) {
     case 'warmup':
       return <Warmup card={atom.card} onGrade={onGrade} onNext={onNext} />
+    case 'review-head':
+      return <ReviewHead review={atom.review} unitSrs={state.plan?.unitSrs} onNext={onNext} />
     case 'anchor':
       return <Anchor anchor={atom.anchor} onNext={onNext} />
     case 'rule':
@@ -172,7 +193,7 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
     case 'read':
       return <ReadAtom atom={atom} today={today} state={state} onGuide={onGuide} onNext={onNext} />
     case 'recap':
-      return <Recap today={today} session={session} onFinish={onFinish} />
+      return <Recap today={today} session={session} unitSrs={state.plan?.unitSrs} onFinish={onFinish} />
     default:
       return null
   }
@@ -216,6 +237,31 @@ function Warmup({ card, onGrade, onNext }) {
           생각했어요 — 답 보기
         </button>
       )}
+    </div>
+  )
+}
+
+/** 누적 복습 안내 — 어떤 유닛이 왜 돌아왔는지 한 장으로 보여 준다. */
+function ReviewHead({ review, unitSrs, onNext }) {
+  return (
+    <div className="stack">
+      <div className="section-title">돌아온 유닛</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          끝낸 유닛은 사라지지 않고 간격을 두고 돌아옵니다. 오늘 문항을{' '}
+          <b>전부 맞히면</b> 다음 등판이 멀어지고, 틀리면 내일 바로 다시 만납니다.
+        </p>
+        {review.map((r) => {
+          const s = unitSrs?.[r.unitId]
+          return (
+            <div className="row" key={r.unitId} style={{ gap: 'var(--s2)' }}>
+              <span className="chip chip--accent">{UNIT_STAGES[s?.srs ?? 2]}</span>
+              <span>{unitLabel(r.unitId)} — {r.items.length}문항</span>
+            </div>
+          )
+        })}
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>시작</button>
     </div>
   )
 }
@@ -295,6 +341,11 @@ function QuizChoice({ atom, onNext }) {
 
   return (
     <div className="stack">
+      {atom.reviewUnit && (
+        <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>
+          복습 — {unitLabel(atom.reviewUnit)}
+        </span>
+      )}
       {q.q && <div className="section-title">{q.q}</div>}
       <p className="read" style={{ margin: 0, fontSize: 17 }}>
         {q.sentence.includes('___')
@@ -328,7 +379,9 @@ function QuizChoice({ atom, onNext }) {
           {q.why && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.why}</p>}
           <button
             className="btn btn--primary btn--block"
-            onClick={() => onNext({ correct, wrongRef: correct ? null : wrongRef })}
+            onClick={() =>
+              onNext({ correct, wrongRef: correct ? null : wrongRef, reviewUnit: atom.reviewUnit ?? null })
+            }
           >
             다음
           </button>
@@ -362,6 +415,11 @@ function QuizOrder({ atom, onNext }) {
 
   return (
     <div className="stack">
+      {atom.reviewUnit && (
+        <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>
+          복습 — {unitLabel(atom.reviewUnit)}
+        </span>
+      )}
       <div className="section-title">{q.q}</div>
       <div className="ko" style={{ color: 'var(--text)' }}>{q.ko}</div>
       <div className="quiz__slot">
@@ -394,7 +452,13 @@ function QuizOrder({ atom, onNext }) {
           </div>
           {q.why && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.why}</p>}
           <button className="btn btn--primary btn--block"
-            onClick={() => onNext({ correct: checked.correct, wrongRef: checked.correct ? null : wrongRef })}>
+            onClick={() =>
+              onNext({
+                correct: checked.correct,
+                wrongRef: checked.correct ? null : wrongRef,
+                reviewUnit: atom.reviewUnit ?? null,
+              })
+            }>
             다음
           </button>
         </div>
@@ -538,8 +602,9 @@ function ReadAtom({ atom, today, state, onGuide, onNext }) {
   )
 }
 
-function Recap({ today, session, onFinish }) {
+function Recap({ today, session, unitSrs, onFinish }) {
   const acc = session?.total ? Math.round((session.right / session.total) * 100) : null
+  const reviewed = Object.entries(session?.review ?? {})
   return (
     <div className="stack">
       <div className="section-title">오늘 정리</div>
@@ -559,6 +624,24 @@ function Recap({ today, session, onFinish }) {
           {today.phase} · {['배우기', '되짚기', '내 것으로', '정리'][today.step - 1]}까지 마쳤습니다.
         </p>
       </div>
+      {reviewed.length > 0 && (
+        <div className="panel stack stack--tight">
+          <div className="section-title">돌아온 유닛 판정</div>
+          {reviewed.map(([id, r]) => {
+            const ok = r.right === r.total
+            const cur = unitSrs?.[id]?.srs ?? 2
+            const nextStage = ok ? Math.min(cur + 1, 5) : Math.max(cur - 1, 2)
+            return (
+              <p key={id} style={{ margin: 0 }}>
+                {unitLabel(id)} — {r.right}/{r.total}{' '}
+                {ok
+                  ? `✓ ${UNIT_STAGES[nextStage]}(으)로 승급, ${UNIT_INTERVALS[nextStage]}일 뒤에 다시`
+                  : '✗ 내일 바로 다시 돌아옵니다'}
+              </p>
+            )
+          })}
+        </div>
+      )}
       <button className="btn btn--primary btn--block" onClick={onFinish}>
         {today.day}일차 마치기 → 다음 날
       </button>

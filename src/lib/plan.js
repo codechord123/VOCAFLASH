@@ -15,8 +15,19 @@
 // 계획은 그 자리에서 기다린다.
 
 import planData from '../data/plan-100.json'
+import { graduateUnit, unitInfoMap } from './unitSrs.js'
 
 export const TOTAL_DAYS = 100
+export const PLAN_DAYS = planData.days
+
+const UNIT_INFO = unitInfoMap(planData.days)
+
+/** 유닛 id를 사람이 읽는 이름으로. 표에 있는 유닛만 안다. */
+export function unitLabel(id) {
+  const u = UNIT_INFO[id]
+  if (!u) return id
+  return `${u.kind === 'syntax' ? '구문' : '문법'} ${u.no} · ${u.title}`
+}
 
 /**
  * N일차의 구성. 저작된 표에서 그날의 행을 읽어 세 칸을 만든다.
@@ -146,12 +157,22 @@ export function itemDone(item, plan, ctx) {
 /** N일차를 마치고 다음 날로. 이력을 남겨야 달력 없이도 흐름이 보인다. */
 export function completeDay(state) {
   const plan = state.plan ?? { day: 1, checks: {}, history: {} }
+  // 세션은 하루와 함께 닫히고, 그 밖의 계획 필드(unitSrs 등)는 살아남는다
+  const { session, ...keep } = plan
+  const row = planData.days[plan.day - 1]
+  // 블록 마지막 날을 마치면 그 유닛이 복습 궤도(3→7→21일)에 오른다
+  const unitSrs =
+    row && row.step === 4 && row.unit
+      ? graduateUnit(plan.unitSrs, row.unit.id, plan.day)
+      : plan.unitSrs
   return {
     ...state,
     plan: {
+      ...keep,
       day: Math.min(plan.day + 1, TOTAL_DAYS + 1),
       checks: {},
       history: { ...plan.history, [plan.day]: Date.now() },
+      ...(unitSrs ? { unitSrs } : {}),
     },
   }
 }

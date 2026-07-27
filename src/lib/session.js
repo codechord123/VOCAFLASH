@@ -12,7 +12,8 @@
 // 원자는 데이터일 뿐이다. 렌더링은 SessionRunner가 하고, 진행 위치는
 // 저장본에 남아 중간에 닫아도 그 자리에서 이어진다.
 
-import { dayPlan } from './plan.js'
+import { PLAN_DAYS, dayPlan } from './plan.js'
+import { ensureUnitSrs } from './unitSrs.js'
 
 /** 결정적 셔플. 같은 날 안에서는 순서가 유지되어야 이어하기가 성립한다. */
 function seededShuffle(items, seed) {
@@ -33,8 +34,9 @@ function seededShuffle(items, seed) {
  * @param unitData   그날 유닛의 원자료 (문법: course 유닛 / 구문: units.json 유닛)
  * @param quizzes    구문 유닛의 퀴즈 문항 (문법이면 [])
  * @param mistakeDue 오늘 due인 오답 카드
+ * @param review     누적 복습 몫 — unitSrs.buildReview의 결과
  */
-export function compileSession(day, { unitData, quizzes = [], mistakeDue = [] }) {
+export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [] }) {
   const today = dayPlan(day)
   const { unit, step, chapter } = today
   const atoms = []
@@ -42,6 +44,18 @@ export function compileSession(day, { unitData, quizzes = [], mistakeDue = [] })
   // 1) 회수 — 어제까지 틀린 것을 먼저 되잡는다. 새것보다 먼저다.
   for (const card of mistakeDue.slice(0, 4)) {
     atoms.push({ type: 'warmup', card })
+  }
+
+  // 2) 누적 복습 — 끝낸 유닛이 간격을 두고 돌아온다. 전부 맞히면
+  //    승급(간격이 넓어짐), 틀리면 강등(내일 다시). 새것보다 먼저다.
+  if (review.length > 0) {
+    atoms.push({ type: 'review-head', review })
+    for (const r of review) {
+      for (const q of r.items) {
+        const atom = r.kind === 'grammar' ? practiceAtom(r.src, q) : syntaxAtom(r.src, q)
+        atoms.push({ ...atom, reviewUnit: r.unitId })
+      }
+    }
   }
 
   if (unit.kind === 'grammar' && unitData) {
@@ -169,20 +183,32 @@ function syntaxAtom(u, q) {
 // ── 세션 상태 (저장본의 plan.session) ────────────────────────────────
 
 export function startSession(state) {
-  const plan = state.plan ?? { day: 1, checks: {}, history: {} }
+  // 예전 저장본에는 유닛 SRS가 없다 — 이미 블록을 마친 유닛을 궤도에 올린다
+  const plan = ensureUnitSrs(state.plan ?? { day: 1, checks: {}, history: {} }, PLAN_DAYS)
   return {
     ...state,
     plan: {
       ...plan,
-      session: { day: plan.day, idx: 0, right: 0, total: 0, wrong: [] },
+      session: { day: plan.day, idx: 0, right: 0, total: 0, wrong: [], review: {} },
     },
   }
 }
 
 /** 원자 하나를 마치고 다음으로. 채점이 있었으면 결과를 싣는다. */
-export function advanceSession(state, { correct = null, wrongRef = null } = {}) {
+export function advanceSession(state, { correct = null, wrongRef = null, reviewUnit = null } = {}) {
   const s = state.plan?.session
   if (!s) return state
+  // 복습 문항이면 유닛별 성적을 따로 모은다 — 승급·강등의 판정 재료다
+  const review =
+    reviewUnit && correct !== null
+      ? {
+          ...(s.review ?? {}),
+          [reviewUnit]: {
+            right: (s.review?.[reviewUnit]?.right ?? 0) + (correct ? 1 : 0),
+            total: (s.review?.[reviewUnit]?.total ?? 0) + 1,
+          },
+        }
+      : s.review ?? {}
   return {
     ...state,
     plan: {
@@ -194,6 +220,7 @@ export function advanceSession(state, { correct = null, wrongRef = null } = {}) 
         total: s.total + (correct === null ? 0 : 1),
         // 오답 참조만 저장한다. 카드는 정리 화면에서 한 번에 만든다.
         wrong: wrongRef ? [...s.wrong, wrongRef] : s.wrong,
+        review,
       },
     },
   }

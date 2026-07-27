@@ -1,7 +1,8 @@
 import { Suspense, lazy, useState } from 'react'
 import Swipe from './Swipe.jsx'
-import { TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck } from '../lib/plan.js'
+import { PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
 import { pauseSession, startSession } from '../lib/session.js'
+import { dueReviewUnits, ensureUnitSrs } from '../lib/unitSrs.js'
 
 // 수업 진행기는 유닛 원자료(구문 211KB + 문법 55KB)를 통째로 들고
 // 있어서 수업을 시작할 때 받는다.
@@ -68,6 +69,10 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   const doneMap = Object.fromEntries(today.items.map((it) => [it.id, itemDone(it, plan, ctx)]))
   // 오늘 카드에 섞인 오답 카드 수
   const mistakeDue = dueCards.filter((c) => c.deck === 'mistake').length
+  // 오늘 수업에 돌아올 복습 유닛 — 실제 세션이 뽑는 것과 같은 상위 2개
+  const dueReview = dueReviewUnits(ensureUnitSrs(plan, PLAN_DAYS).unitSrs, plan.day)
+    .filter((u) => u.id !== today.unit.id)
+    .slice(0, 2)
   const doneCount = Object.values(doneMap).filter(Boolean).length
   const allDone = doneCount === today.items.length
   const firstOpen = today.items.find((it) => !doneMap[it.id]) ?? null
@@ -125,6 +130,11 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
           {today.unit.title} — {['배우기', '되짚기', '내 것으로', '정리'][today.step - 1]} (
           {today.step}/4일)
         </p>
+        {dueReview.length > 0 && (
+          <p className="hint">
+            돌아오는 복습: {dueReview.map((u) => unitLabel(u.id)).join(' · ')}
+          </p>
+        )}
         <div className="progress">
           <div
             className="progress__bar"
