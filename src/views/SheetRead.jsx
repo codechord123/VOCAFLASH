@@ -11,6 +11,7 @@ import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import { quizRecord, recordQuiz } from '../lib/quizlog.js'
 import ChapterNav from './ChapterNav.jsx'
+import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 
 // 시트에서 온 작품(Disenchantment, Before Sunset)의 읽기 화면.
 //
@@ -162,7 +163,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
                 <span className="list__main">
                   <span className="list__title">{c.title}</span>
                   <span className="list__meta">{c.lineCount}줄</span>
-                  <SheetReadMeter read={readOf(reads, work.id, c.number)} />
+                  <ReadMeter read={readOf(reads, work.id, c.number)} />
                 </span>
                 {analysisByChapter.has(c.number) && (
                   <span className="chip chip--accent">해설</span>
@@ -371,7 +372,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
       )}
 
       {/* 회독 표시는 본문 아래에 — 다 읽고 누르는 것이다 */}
-      <SheetReadTracker
+      <ReadTracker
         read={readOf(reads, work.id, selected)}
         onMark={() => commit((s) => markRead(s, work.id, selected))}
         onUndo={() => commit((s) => undoRead(s, work.id, selected))}
@@ -407,62 +408,3 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
 }
 
 /** 챕터 목록의 회독 한 줄. Read.jsx와 같은 규칙으로 그린다. */
-function SheetReadMeter({ read }) {
-  if (!read.count) return null
-  const label = lastReadLabel(read.lastAt)
-  return (
-    <span className="read-meter">
-      <span className="read-meter__bar">
-        <span
-          className="read-meter__fill"
-          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
-        />
-      </span>
-      <span className="read-meter__text">
-        {read.count}/{READ_GOAL}회독{label ? ` · ${label}` : ''}
-      </span>
-    </span>
-  )
-}
-
-function SheetReadTracker({ read, onMark, onUndo }) {
-  const label = lastReadLabel(read.lastAt)
-  const done = read.count >= READ_GOAL
-  return (
-    <div
-      className="panel"
-      style={{
-        padding: 'var(--s3) var(--s4)',
-        borderColor: done ? 'var(--accent-border)' : undefined,
-        background: done ? 'var(--accent-soft)' : undefined,
-      }}
-    >
-      <div className="row row--between">
-        <span className="list__main">
-          <span className="list__title">
-            {read.count}/{READ_GOAL}회독{done ? ' — 목표 달성' : ''}
-          </span>
-          <span className="list__meta">
-            {label ? `마지막으로 읽은 날 · ${label}` : '아직 읽음 표시를 하지 않았습니다'}
-          </span>
-        </span>
-        <div className="row" style={{ gap: 'var(--s1)' }}>
-          {read.count > 0 && (
-            <button className="btn btn--ghost btn--sm" onClick={onUndo} title="잘못 눌렀을 때">
-              −1
-            </button>
-          )}
-          <button className="btn btn--sm" onClick={onMark}>
-            읽음
-          </button>
-        </div>
-      </div>
-      <div className="progress" style={{ marginTop: 'var(--s2)' }}>
-        <div
-          className="progress__bar"
-          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
-        />
-      </div>
-    </div>
-  )
-}

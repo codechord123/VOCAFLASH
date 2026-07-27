@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react'
 import UnitStudy from './UnitStudy.jsx'
 import UnitQuiz from './UnitQuiz.jsx'
 import { createCard } from '../lib/srs.js'
+import { markRead, readOf, undoRead } from '../lib/reads.js'
+import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 import { DECKS } from '../lib/deck.js'
 
 // 구문독해 파트 = 4막 13유닛 커리큘럼.
@@ -66,7 +68,10 @@ function cardFromUnitSrs(c) {
   })
 }
 
-export default function Curriculum({ cards, commit, curriculum }) {
+export default function Curriculum({ cards, commit, curriculum, reads }) {
+  // 유닛도 회독으로 센다. 읽기와 같은 저장소를 쓰되 작품 자리에
+  // 'curriculum'을 넣어 챕터와 섞이지 않게 한다.
+  const READ_WORK = 'curriculum'
   // 'list' | 'study' | 'quiz'
   const [screen, setScreen] = useState('list')
   const [openUnitId, setOpenUnitId] = useState(null)
@@ -144,6 +149,9 @@ export default function Curriculum({ cards, commit, curriculum }) {
         unit={unit}
         vocabById={vocabById}
         progress={progress}
+        read={readOf(reads, READ_WORK, unit.unitId)}
+        onMarkRead={() => commit((s) => markRead(s, READ_WORK, unit.unitId))}
+        onUndoRead={() => commit((s) => undoRead(s, READ_WORK, unit.unitId))}
         onBack={() => {
           setScreen('list')
           window.scrollTo({ top: 0 })
@@ -237,6 +245,7 @@ export default function Curriculum({ cards, commit, curriculum }) {
                       Unit {u.order} · {u.title}
                     </span>
                     <span className="list__meta">{u.tagline}</span>
+                    <ReadMeter read={readOf(reads, READ_WORK, u.unitId)} />
                   </span>
                   <span className={`chip${done ? ' chip--accent' : ''}`}>
                     {done ? `${p.quizScore}/20` : '학습하기'}

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { ReadTracker } from './ReadMeter.jsx'
 
 // 유닛 학습지(커리큘럼 화면).
 //
@@ -65,7 +66,7 @@ function AnchorText({ text, unitId }) {
 
 const LEVEL_ORDER = ['L1', 'L2', 'L3', 'L4']
 
-export default function UnitStudy({ unit, vocabById, progress, onBack, onStartQuiz }) {
+export default function UnitStudy({ unit, vocabById, progress, read, onMarkRead, onUndoRead, onBack, onStartQuiz }) {
   const done = progress?.screen === 'done'
 
   const vocabByLevel = useMemo(() => {
@@ -175,6 +176,13 @@ export default function UnitStudy({ unit, vocabById, progress, onBack, onStartQu
       <button className="btn btn--primary btn--block" onClick={onStartQuiz}>
         {done ? '퀴즈 다시 풀기 (20문항)' : '퀴즈 풀기 — 20문항'}
       </button>
+
+      {/* 회독은 퀴즈 아래에 둔다 — 읽기 화면과 같은 자리, 같은 규칙이다.
+          유닛 하나를 스무 번 되짚는 것이 목표이므로 자동으로 세지 않고
+          다 보고 직접 누른 것만 센다. */}
+      {onMarkRead && (
+        <ReadTracker read={read} onMark={onMarkRead} onUndo={onUndoRead} verb="공부함" />
+      )}
     </div>
   )
 }

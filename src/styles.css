@@ -700,11 +700,19 @@ main {
 }
 
 .flashcard__front { font-family: var(--font-read); font-size: 30px; line-height: 1.4; }
+
+/* 뜻은 단어에 붙여 둔다. 이 둘이 카드의 본체이고, 나머지(유의어·예문)는
+   덤이다. stack의 기본 간격(16px)까지 걷어내 한눈에 짝으로 읽히게 한다. */
+.flashcard__meaning {
+  font-size: 20px;
+  margin-top: calc(var(--s3) * -1);
+}
+
 .flashcard__divider {
   width: 40px;
   height: 1px;
   background: var(--border-strong);
-  margin: var(--s5) auto;
+  margin: var(--s2) auto;
 }
 .flashcard__back { animation: reveal var(--base) var(--ease); }
 @keyframes reveal {
@@ -982,7 +990,9 @@ main {
   .brand { font-size: 14px; }
   .panel { padding: var(--s4); }
   .brand__sub { display: none; }
-  .flashcard { min-height: 220px; padding: var(--s5) var(--s4); }
+  /* 뒷면이 다 펼쳐진 카드(유의어·예문까지 붙는 단어장)가 한 화면에
+     들어가야 한다. 넘치면 넘기기 전에 스크롤부터 해야 한다. */
+  .flashcard { min-height: 200px; padding: var(--s4); }
   .flashcard__front { font-size: 24px; }
   .read--xl { font-size: 24px; }
 }

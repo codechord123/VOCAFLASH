@@ -354,10 +354,19 @@ export default function Swipe({ cards, settings, commit, onExit }) {
 
             {flipped ? (
               <div className="flashcard__back stack">
-                <div className="flashcard__divider" />
-                <div className="read" style={{ fontSize: 20 }}>
-                  {card.back?.meaningKo}
-                </div>
+                {/* 뜻은 단어 바로 밑에 붙인다.
+                    예전에는 사이에 구분선을 두고 위아래로 24px씩 띄웠는데,
+                    유의어·예문까지 붙는 단어장 카드에서는 단어와 뜻이
+                    화면 반쪽만큼 벌어져 스크롤해야 짝이 보였다. 짝지어
+                    읽는 두 줄을 떼어 놓을 이유가 없다. */}
+                <div className="read flashcard__meaning">{card.back?.meaningKo}</div>
+                {/* 구분선은 이제 '핵심'과 '더 볼 것' 사이에 선다 */}
+                {(card.back?.definitionEn ||
+                  card.back?.nuance ||
+                  card.synonyms?.length > 0 ||
+                  card.antonyms?.length > 0 ||
+                  card.context ||
+                  card.exampleKo) && <div className="flashcard__divider" />}
                 {card.back?.definitionEn && (
                   <p className="hint">{card.back.definitionEn}</p>
                 )}

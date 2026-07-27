@@ -12,6 +12,7 @@ import ChapterQuiz from './ChapterQuiz.jsx'
 import { explainFor, linesWithExplanation, shortLabel } from '../lib/explain.js'
 import { quizRecord, recordQuiz } from '../lib/quizlog.js'
 import ChapterNav from './ChapterNav.jsx'
+import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 import unitVocabData from '../data/curriculum/unit-vocab.json'
 
 // 읽기 화면. 원문 + 본인 하이라이트 + 구문 정리를 한 화면에 둔다.
@@ -411,68 +412,6 @@ function ChapterList({ chapters, analysisByChapter, reads, onSelect }) {
  * 같이 보여준다. 한 번도 안 읽은 챕터는 아무것도 그리지 않는다 —
  * 목록 전체가 빈 막대로 얼룩지면 어디까지 왔는지가 오히려 안 보인다.
  */
-function ReadMeter({ read }) {
-  if (!read.count) return null
-  const label = lastReadLabel(read.lastAt)
-  return (
-    <span className="read-meter">
-      <span className="read-meter__bar">
-        <span
-          className="read-meter__fill"
-          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
-        />
-      </span>
-      <span className="read-meter__text">
-        {read.count}/{READ_GOAL}회독{label ? ` · ${label}` : ''}
-      </span>
-    </span>
-  )
-}
-
-/** 챕터 안에서 회독을 세는 자리. 다 읽고 직접 누른 것만 센다. */
-function ReadTracker({ read, onMark, onUndo }) {
-  const label = lastReadLabel(read.lastAt)
-  const done = read.count >= READ_GOAL
-
-  return (
-    <div
-      className="panel"
-      style={{
-        padding: 'var(--s3) var(--s4)',
-        borderColor: done ? 'var(--accent-border)' : undefined,
-        background: done ? 'var(--accent-soft)' : undefined,
-      }}
-    >
-      <div className="row row--between">
-        <span className="list__main">
-          <span className="list__title">
-            {read.count}/{READ_GOAL}회독{done ? ' — 목표 달성' : ''}
-          </span>
-          <span className="list__meta">
-            {label ? `마지막으로 읽은 날 · ${label}` : '아직 읽음 표시를 하지 않았습니다'}
-          </span>
-        </span>
-        <div className="row" style={{ gap: 'var(--s1)' }}>
-          {read.count > 0 && (
-            <button className="btn btn--ghost btn--sm" onClick={onUndo} title="잘못 눌렀을 때">
-              −1
-            </button>
-          )}
-          <button className="btn btn--sm" onClick={onMark}>
-            읽음
-          </button>
-        </div>
-      </div>
-      <div className="progress" style={{ marginTop: 'var(--s2)' }}>
-        <div
-          className="progress__bar"
-          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
-        />
-      </div>
-    </div>
-  )
-}
-
 function Script({ chapter, cardedTexts, savedLines, onToggleLine, onExplain, noted, wl }) {
   // 같은 대사가 두 번 나오는 챕터가 있다(본인이 만든 청크 학습본).
   // 원문을 먼저 보여주고 학습본은 아래에 따로 묶는다.

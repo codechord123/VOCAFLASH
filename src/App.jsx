@@ -285,6 +285,7 @@ export default function App() {
                 cards={cards}
                 commit={commit}
                 curriculum={state.curriculum}
+                reads={state.reads}
               />
             </Suspense>
           )}
