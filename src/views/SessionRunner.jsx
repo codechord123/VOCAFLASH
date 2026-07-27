@@ -8,6 +8,7 @@ import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDa
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
+import { NIGHT_STOPS, sessionGrade } from '../lib/journey.js'
 
 // 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
 //
@@ -89,12 +90,21 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
             grammarUnits: grammarCourse.units,
             quizzes: unitQuizData.quizzes,
           })
+    // 콜드 오픈 — 오늘 챕터의 앵커 대사 하나. 수업의 첫 화면은 영화다.
+    const chapterAnchors = unitData.units
+      .flatMap((x) => x.anchors ?? [])
+      .filter((a) => a.chapter === Math.floor(today.chapter))
+    const scene =
+      chapterAnchors.length > 0
+        ? chapterAnchors[(day * 13 + 7) % chapterAnchors.length]
+        : null
     return compileSession(day, {
       unitData: source,
       quizzes: unitQuizData.quizzes,
       mistakeDue: dueCards.filter((c) => c.deck === 'mistake'),
       review,
       cycleData: buildCycleData(today, day, state.plan?.unitSrs, review),
+      scene,
     })
     // day가 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -244,6 +254,8 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
 
 function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext, onGrade, onFinish, session }) {
   switch (atom.type) {
+    case 'scene-open':
+      return <SceneOpen atom={atom} today={today} onNext={onNext} />
     case 'warmup':
       return <Warmup card={atom.card} onGrade={onGrade} onNext={onNext} />
     case 'review-head':
@@ -265,9 +277,9 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
     case 'example':
       return <Example example={atom.example} onNext={onNext} />
     case 'quiz-choice':
-      return <QuizChoice atom={atom} onNext={onNext} />
+      return <QuizChoice atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
     case 'quiz-order':
-      return <QuizOrder atom={atom} onNext={onNext} />
+      return <QuizOrder atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
     case 'produce':
       return <Produce task={atom.task} onNext={onNext} />
     case 'recite':
@@ -283,6 +295,27 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
     default:
       return null
   }
+}
+
+/** 콜드 오픈 — 오늘 챕터의 대사 한 줄. 수업의 첫 화면은 영화다. */
+function SceneOpen({ atom, today, onNext }) {
+  const { scene } = atom
+  const stop = NIGHT_STOPS.find((s) => s.cycle === today.cycle)
+  return (
+    <div className="stack">
+      <div className="scene">
+        <div className="scene__meta">
+          Day {today.day} · {stop ? stop.place : `${chapterLabel(atom.chapter)}장`}
+        </div>
+        <p className="scene__line">“{scene.en}”</p>
+        <div className="scene__ko">{scene.ko}</div>
+        {scene.speaker && <div className="scene__speaker">— {scene.speaker}</div>}
+      </div>
+      <button className="btn btn--primary btn--block" onClick={() => onNext()}>
+        오늘의 밤을 시작
+      </button>
+    </div>
+  )
 }
 
 /** 오답 되잡기 — 어제 틀린 것을 오늘의 첫 화면에서 다시 만난다. */
@@ -487,8 +520,16 @@ function Example({ example, onNext }) {
   )
 }
 
+/** 연속 정답의 맛 — 3연속부터 보인다. 끊기면 조용히 사라진다. */
+function ComboTag({ combo, correct }) {
+  if (!correct) return null
+  const n = combo + 1 // 이 문항까지의 연속
+  if (n < 3) return null
+  return <span className="combo-pop">🔥 {n}연속</span>
+}
+
 /** 문항 — 즉시 채점, 틀리면 왜 그런지, 결과는 세션에 실린다. */
-function QuizChoice({ atom, onNext }) {
+function QuizChoice({ atom, combo = 0, onNext }) {
   const { q } = atom
   const [picked, setPicked] = useState(null)
   const correct = picked !== null && picked === q.answer
@@ -534,6 +575,7 @@ function QuizChoice({ atom, onNext }) {
         <div className="stack stack--tight">
           <div className={correct ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
             {correct ? '맞았습니다' : `정답 — ${q.answer}`}
+            <ComboTag combo={combo} correct={correct} />
           </div>
           {q.why && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.why}</p>}
           <button
@@ -550,7 +592,7 @@ function QuizChoice({ atom, onNext }) {
   )
 }
 
-function QuizOrder({ atom, onNext }) {
+function QuizOrder({ atom, combo = 0, onNext }) {
   const { q } = atom
   const [picked, setPicked] = useState([])
   const [checked, setChecked] = useState(null)
@@ -608,6 +650,7 @@ function QuizOrder({ atom, onNext }) {
         <div className="stack stack--tight">
           <div className={checked.correct ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
             {checked.correct ? '맞았습니다' : `정답 — ${q.answer.join(' ')}`}
+            <ComboTag combo={combo} correct={checked.correct} />
           </div>
           {q.why && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.why}</p>}
           <button className="btn btn--primary btn--block"
@@ -859,9 +902,20 @@ function ReadAtom({ atom, today, state, onGuide, onNext }) {
 function Recap({ today, session, unitSrs, onFinish }) {
   const acc = session?.total ? Math.round((session.right / session.total) * 100) : null
   const reviewed = Object.entries(session?.review ?? {})
+  const grade = sessionGrade(acc, session?.bestCombo ?? 0)
   return (
     <div className="stack">
       <div className="section-title">오늘 정리</div>
+      {grade && (
+        <div className="scene scene--grade">
+          <div className="scene__meta">Day {today.day}</div>
+          <p className="scene__line" style={{ fontSize: 22 }}>{grade.title}</p>
+          <div className="scene__ko">{grade.line}</div>
+          {(session?.bestCombo ?? 0) >= 3 && (
+            <div className="scene__speaker">🔥 최고 {session.bestCombo}연속 정답</div>
+          )}
+        </div>
+      )}
       <div className="panel stack stack--tight">
         <h4 style={{ margin: 0 }}>
           {today.day}일차 —{' '}

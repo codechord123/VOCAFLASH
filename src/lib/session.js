@@ -37,11 +37,15 @@ function seededShuffle(items, seed) {
  * @param review     누적 복습 몫 — unitSrs.buildReview의 결과
  * @param cycleData  사이클 날(test·fluency·produce·milestone)의 재료
  *                   {cycleUnits, pastUnits, weakUnits} — 각각 {id, kind, src, pool}
+ * @param scene      콜드 오픈 대사 {en, ko, speaker} — 오늘 챕터의 명장면
  */
-export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [], cycleData = null }) {
+export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [], cycleData = null, scene = null }) {
   const today = dayPlan(day)
   const { unit, step, chapter, kind } = today
   const atoms = []
+
+  // 0) 콜드 오픈 — 오늘 만날 장면의 한 줄. 수업은 영화의 밤에서 시작한다.
+  if (scene) atoms.push({ type: 'scene-open', scene, chapter })
 
   // 1) 회수 — 어제까지 틀린 것을 먼저 되잡는다. 새것보다 먼저다.
   //    마일스톤 날은 되잡기가 본업이라 몫이 크다.
@@ -268,7 +272,10 @@ export function startSession(state) {
     ...state,
     plan: {
       ...plan,
-      session: { day: plan.day, idx: 0, right: 0, total: 0, wrong: [], review: {}, speak: [] },
+      session: {
+        day: plan.day, idx: 0, right: 0, total: 0, wrong: [], review: {}, speak: [],
+        combo: 0, bestCombo: 0,
+      },
     },
   }
 }
@@ -288,6 +295,8 @@ export function advanceSession(state, { correct = null, wrongRef = null, reviewU
           },
         }
       : s.review ?? {}
+  // 콤보 — 연속 정답. 틀리면 끊긴다. 채점 없는 원자는 이어 간다.
+  const combo = correct === true ? (s.combo ?? 0) + 1 : correct === false ? 0 : s.combo ?? 0
   return {
     ...state,
     plan: {
@@ -297,6 +306,8 @@ export function advanceSession(state, { correct = null, wrongRef = null, reviewU
         idx: s.idx + 1,
         right: s.right + (correct === true ? 1 : 0),
         total: s.total + (correct === null ? 0 : 1),
+        combo,
+        bestCombo: Math.max(s.bestCombo ?? 0, combo),
         // 오답 참조만 저장한다. 카드는 정리 화면에서 한 번에 만든다.
         wrong: wrongRef ? [...s.wrong, wrongRef] : s.wrong,
         review,

@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { PLAN_DAYS, TOTAL_DAYS } from '../lib/plan.js'
 import { UNIT_STAGES, ensureUnitSrs } from '../lib/unitSrs.js'
 import { CAN_DO } from '../lib/cando.js'
+import { NIGHT_STOPS } from '../lib/journey.js'
 
 // 성장 화면 — 100일이 쌓이고 있다는 것을 눈으로 보는 곳.
 //
@@ -95,6 +96,31 @@ export default function GrowthPart({ state, onBack }) {
           ))}
         </div>
       </div>
+
+      <section className="stack stack--tight">
+        <div className="section-title">비엔나의 밤 — 지금 어디를 걷고 있나</div>
+        <div className="stack stack--tight">
+          {NIGHT_STOPS.map((s) => {
+            const start = (s.cycle - 1) * 10 + 1
+            const passed = day > s.cycle * 10
+            const current = !passed && day >= start
+            return (
+              <div
+                className="night-stop"
+                key={s.cycle}
+                style={{ opacity: passed || current ? 1 : 0.45 }}
+              >
+                <span className={`night-stop__dot${passed ? ' is-passed' : ''}${current ? ' is-current' : ''}`} />
+                <span className="night-stop__place">
+                  {s.place}
+                  {current && <span className="chip chip--accent" style={{ marginLeft: 8 }}>지금 여기</span>}
+                </span>
+                <span className="hint">{passed ? '✓' : current ? s.note : `${start}일~`}</span>
+              </div>
+            )
+          })}
+        </div>
+      </section>
 
       <section className="stack stack--tight">
         <div className="section-title">유닛 지도 — 색이 채워지는 것이 실력이다</div>

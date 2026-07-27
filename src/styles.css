@@ -1168,3 +1168,69 @@ main {
 }
 .heat__cell.is-done { background: var(--accent); border-color: var(--accent); }
 .heat__cell.is-today { outline: 1px solid var(--text-dim); outline-offset: 1px; }
+
+/* ── 영화의 밤 — 콜드 오픈과 등급 ─────────────────────────────────── */
+/* 수업의 첫 화면과 끝 화면은 UI가 아니라 장면이다. 세리프, 넉넉한 여백,
+   필름 프레임처럼 어두운 배경 위 한 줄. */
+.scene {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  padding: var(--s6) var(--s5);
+  border-radius: var(--r3);
+  background: linear-gradient(160deg, #14161c 0%, #1d1a14 100%);
+  border: 1px solid var(--accent-border);
+  text-align: center;
+}
+.scene__meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.scene__line {
+  margin: 0;
+  font-family: var(--font-read);
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f2ede2;
+}
+.scene__ko { font-size: 14px; color: #b9b4a6; }
+.scene__speaker { font-size: 13px; color: #8f8a7c; font-style: italic; }
+
+/* 콤보 — 연속 정답의 맛. 짧게 튀고 자리를 지킨다. */
+.combo-pop {
+  display: inline-block;
+  margin-left: var(--s2);
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .combo-pop { animation: combo-in 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  @keyframes combo-in {
+    from { transform: scale(0.4); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+}
+
+/* 밤의 정거장 — 성장 화면의 여정 */
+.night-stop {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+}
+.night-stop__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-strong);
+  flex: none;
+}
+.night-stop__dot.is-passed { background: var(--accent); border-color: var(--accent); }
+.night-stop__dot.is-current {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.night-stop__place { flex: 1; font-size: 14px; }
