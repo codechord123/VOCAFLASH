@@ -1,0 +1,59 @@
+{
+ "id": "g-06",
+ "order": 6,
+ "title": "a · the · 아무것도 안 붙이기",
+ "goal": "관사를 고르는 기준을 잡는다",
+ "why": "한국어에는 없는 자리라 끝까지 남는 실수다. 뜻이 크게 안 바뀌어 고쳐 주는 사람도 없어서, 스스로 기준을 세우지 않으면 굳는다.",
+ "present": {
+  "rule": "듣는 사람이 무엇인지 아느냐로 고른다. 모르면 a, 서로 알면 the, 종류 전체나 셀 수 없는 것이면 아무것도 안 붙인다.",
+  "points": [
+   "I met a writer. → The writer told me… — 처음 꺼낼 때 a, 다시 가리킬 때 the",
+   "세상에 하나뿐인 것에는 the — the sun, the world, the train(우리가 탄 그 기차)",
+   "셀 수 없는 것과 종류 전체는 무관사 — I like music / Water is cheap",
+   "직업을 말할 때는 a가 필요하다 — I'm a teacher(I'm teacher는 틀린다)",
+   "장소가 본래 기능으로 쓰이면 무관사 — go to school(공부하러), go to the school(건물로)"
+  ],
+  "examples": [
+   {
+    "en": "I got one of those Eurail passes.",
+    "ko": "그 유레일패스라는 걸 하나 끊었어요.",
+    "note": "one of those ~는 '흔히들 아는 그런 것 중 하나'. 상대도 아는 종류라 those로 가리킨다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "She teaches elementary school.",
+    "ko": "초등학교에서 가르쳐요.",
+    "note": "학교가 건물이 아니라 '가르치는 일'이라는 기능으로 쓰여 관사가 없다.",
+    "from": "Before Sunset, 13장"
+   },
+   {
+    "en": "The camera begins to pan out.",
+    "ko": "카메라가 서서히 빠지기 시작한다.",
+    "note": "그 장면의 카메라는 하나뿐이고 서로 아는 대상이라 the가 붙는다.",
+    "from": "Before Sunrise, 2장"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "처음 꺼내는 대상", "sentence": "I read ___ book about it last year.", "choices": ["a", "the"], "answer": "a", "why": "듣는 사람이 어떤 책인지 모르니 a로 시작한다." },
+  { "kind": "choice", "q": "직업을 말할 때", "sentence": "She's ___ teacher.", "choices": ["a", "-"], "answer": "a", "why": "영어는 직업 앞에 관사를 반드시 붙인다. She's teacher는 틀린 문장이다." },
+  { "kind": "choice", "q": "종류 전체", "sentence": "___ music helps me sleep.", "choices": ["-", "The"], "answer": "-", "why": "음악 전반을 뜻하면 무관사다. The music은 '아까 그 음악'이 된다." },
+  { "kind": "choice", "q": "서로 아는 하나뿐인 것", "sentence": "Can you close ___ window?", "choices": ["the", "a"], "answer": "the", "why": "이 방의 그 창문이라 서로 안다. a window는 '아무 창문이나'가 된다." },
+  { "kind": "choice", "q": "기능으로서의 장소", "sentence": "He goes to ___ school by bus.", "choices": ["-", "the"], "answer": "-", "why": "공부하러 다니는 것이면 무관사. the school은 건물을 가리킨다." },
+  { "kind": "order", "q": "처음 꺼내고 다시 가리키기", "pieces": ["I met a writer", "on the train", "and the writer", "gave me his book"], "answer": ["I met a writer", "on the train", "and the writer", "gave me his book"], "ko": "기차에서 작가를 한 명 만났는데, 그 작가가 자기 책을 줬어요.", "why": "처음에는 a, 다시 가리킬 때는 the로 바뀐다." }
+ ],
+ "produce": [
+  {
+   "situation": "오늘 있었던 일을 한 문장으로 말해 보세요. 사람이나 물건을 처음 꺼낸 뒤 다시 한 번 가리켜 보세요.",
+   "chunks": ["I met a", "at the", "and the", "told me"],
+   "model": "I met a woman at the café, and the woman told me about a new bookstore.",
+   "ko": "카페에서 어떤 여자분을 만났는데, 그분이 새로 생긴 서점 얘기를 해줬어요."
+  },
+  {
+   "situation": "자기 직업과 좋아하는 것을 한 번에 말해 보세요. 관사가 필요한 자리와 아닌 자리를 나눠서요.",
+   "chunks": ["I'm a", "and I love", "especially"],
+   "model": "I'm a teacher, and I love music — especially jazz.",
+   "ko": "저는 교사이고 음악을 좋아해요, 특히 재즈요."
+  }
+ ]
+}

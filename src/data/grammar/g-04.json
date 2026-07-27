@@ -1,0 +1,59 @@
+{
+ "id": "g-04",
+ "order": 4,
+ "title": "부탁할 때 세기 조절하기",
+ "goal": "can · could · would · might로 말의 세기를 고른다",
+ "why": "영어는 존댓말이 따로 없다. 대신 조동사를 한 칸 뒤로 물려서 공손해진다 — 이걸 모르면 늘 무뚝뚝하게 들린다.",
+ "present": {
+  "rule": "과거형 조동사(could·would)를 쓰면 지금 일이라도 한 발 물러선 말이 되고, 그만큼 공손해진다.",
+  "points": [
+   "Can you help me? → Could you help me? — 뜻은 같고 세기만 낮아진다",
+   "Do you want to? → Would you like to? — 권유의 정중한 형태",
+   "부탁을 길게 만들수록 공손해진다 — Could you possibly ~? / I was wondering if you could ~",
+   "Do you mind ~ing?에 대한 승낙은 No다. '싫으냐'는 물음이라 아니라고 답해야 괜찮다는 뜻이 된다.",
+   "might는 가능성이 낮을 때, may는 조금 더 격식 있는 허락"
+  ],
+  "examples": [
+   {
+    "en": "Would you like to get off the train with me here in Vienna?",
+    "ko": "저랑 여기 빈에서 내리실래요?",
+    "note": "Do you want to보다 한 겹 물러선 권유. 거절할 여지를 남겨 두는 어법이라 이 장면에 꼭 맞는다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "Could I ask you something?",
+    "ko": "뭐 하나 여쭤봐도 될까요?",
+    "note": "Can I보다 조심스럽다. 처음 만난 사이거나 부탁이 클 때 could로 물러선다.",
+    "from": "회화 기본형"
+   },
+   {
+    "en": "I was wondering if you could give me a hand.",
+    "ko": "혹시 좀 도와주실 수 있을까 해서요.",
+    "note": "가장 정중한 부탁 틀. 과거진행 + if절로 두 겹을 물러선다. 길수록 공손하다는 원리가 그대로 보인다.",
+    "from": "회화 기본형"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "처음 보는 사람에게", "sentence": "___ you tell me how to get to the station?", "choices": ["Could", "Can"], "answer": "Could", "why": "둘 다 통하지만 could가 한 발 물러선 말이라 낯선 사람에게 어울린다." },
+  { "kind": "choice", "q": "정중한 권유", "sentence": "___ you like some coffee?", "choices": ["Would", "Do"], "answer": "Would", "why": "Would you like ~?가 권유의 정중한 형태다. Do you like는 취향을 묻는 다른 말이 된다." },
+  { "kind": "choice", "q": "Do you mind에 대한 승낙", "sentence": "\"Do you mind if I sit here?\" — \"___\"", "choices": ["Not at all.", "Yes, of course."], "answer": "Not at all.", "why": "'꺼리세요?'라는 물음이라 아니라고 답해야 앉아도 된다는 뜻이 된다." },
+  { "kind": "choice", "q": "가능성이 낮을 때", "sentence": "I ___ be late — the traffic looks bad.", "choices": ["might", "will"], "answer": "might", "why": "확실하지 않은 일에는 might. will은 단정에 가깝다." },
+  { "kind": "order", "q": "가장 정중한 부탁 배열", "pieces": ["I was wondering", "if you could", "take a look at this"], "answer": ["I was wondering", "if you could", "take a look at this"], "ko": "혹시 이것 좀 봐주실 수 있을까 해서요.", "why": "과거진행과 if절로 두 겹 물러서면 부담을 가장 덜 준다." },
+  { "kind": "choice", "q": "허락을 구할 때", "sentence": "___ I use your phone for a second?", "choices": ["May", "Will"], "answer": "May", "why": "허락은 may/can/could로 구한다. will은 의지를 묻는 말이라 어색하다." }
+ ],
+ "produce": [
+  {
+   "situation": "카페에서 옆자리 사람에게 자리를 좀 좁혀 달라고 부탁해 보세요. 처음 보는 사이입니다.",
+   "chunks": ["Excuse me", "would you mind", "moving over", "a little"],
+   "model": "Excuse me — would you mind moving over a little?",
+   "ko": "실례합니다, 조금만 옆으로 가주실 수 있을까요?"
+  },
+  {
+   "situation": "부탁을 들어주기 어렵다. 거절하되 미안한 마음이 남게 말해 보세요.",
+   "chunks": ["I'd love to, but", "I'm afraid", "Could we", "instead"],
+   "model": "I'd love to, but I'm afraid I can't today. Could we do it tomorrow instead?",
+   "ko": "그러고 싶은데 오늘은 어려울 것 같아요. 대신 내일 하면 어떨까요?"
+  }
+ ]
+}

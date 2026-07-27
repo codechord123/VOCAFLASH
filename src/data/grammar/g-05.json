@@ -1,0 +1,59 @@
+{
+ "id": "g-05",
+ "order": 5,
+ "title": "물어보기 — 뒤집기와 안 뒤집기",
+ "goal": "직접의문문·간접의문문·부가의문문을 가려 쓴다",
+ "why": "질문을 못 만들면 대화가 한쪽으로만 흐른다. 특히 간접의문문에서 어순을 다시 뒤집는 실수가 굳어지기 쉽다.",
+ "present": {
+  "rule": "질문은 주어와 조동사를 뒤집는다. 다만 질문이 다른 문장 안으로 들어가면 다시 평서문 어순으로 돌아온다.",
+  "points": [
+   "Where does she live? — 직접 물으면 뒤집는다",
+   "I don't know where she lives. — 문장 안에 들어가면 안 뒤집는다(lives, not does she live)",
+   "Do you know if he's coming? — yes/no 질문이 안으로 들어가면 if나 whether로 잇는다",
+   "부가의문문은 앞이 긍정이면 뒤가 부정 — You're American, aren't you?",
+   "구어에서는 앞머리를 통째로 지우기도 한다 — (Are) You on holiday?"
+  ],
+  "examples": [
+   {
+    "en": "You're American? Are you sure?",
+    "ko": "미국인이죠? 확실해요?",
+    "note": "앞 문장은 형태가 평서문인데 끝을 올려 질문이 됐다. 놀람이나 확인에 쓰는 구어 어법이다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "I don't really know what I'm on.",
+    "ko": "제가 뭘 타고 가는 건지도 잘 모르겠어요.",
+    "note": "what절이 문장 안으로 들어갔으니 어순을 뒤집지 않는다. what am I on이 아니다.",
+    "from": "Before Sunrise, 2장"
+   },
+   {
+    "en": "Where are you headed?",
+    "ko": "어디까지 가세요?",
+    "note": "be headed는 '~로 향하다'. 직접 묻는 자리라 주어와 be를 뒤집는다.",
+    "from": "Before Sunrise, 2장"
+   }
+  ]
+ },
+ "practice": [
+  { "kind": "choice", "q": "문장 안에 들어간 질문", "sentence": "Do you know where the station ___?", "choices": ["is", "is it"], "answer": "is", "why": "간접의문문은 평서문 어순이다. where is it처럼 뒤집으면 안 된다." },
+  { "kind": "choice", "q": "yes/no 질문을 안에 넣기", "sentence": "I wonder ___ he's coming tonight.", "choices": ["if", "does"], "answer": "if", "why": "yes/no 질문이 안으로 들어가면 if나 whether로 잇는다." },
+  { "kind": "choice", "q": "부가의문문", "sentence": "You've been here before, ___?", "choices": ["haven't you", "don't you"], "answer": "haven't you", "why": "앞에 쓰인 조동사(have)를 그대로 받아 부정으로 되묻는다." },
+  { "kind": "choice", "q": "일반동사 의문문", "sentence": "___ she live near here?", "choices": ["Does", "Is"], "answer": "Does", "why": "일반동사 질문에는 do/does가 앞에 선다. 이때 본동사는 원형으로 돌아간다." },
+  { "kind": "order", "q": "간접의문문 배열", "pieces": ["Could you tell me", "what time", "the train leaves"], "answer": ["Could you tell me", "what time", "the train leaves"], "ko": "기차가 몇 시에 출발하는지 알려주실 수 있어요?", "why": "안에 들어간 절은 leaves로 평서문 어순을 지킨다." },
+  { "kind": "choice", "q": "주어를 묻는 질문", "sentence": "___ told you that?", "choices": ["Who", "Who did"], "answer": "Who", "why": "who가 주어 자리면 do를 넣지 않는다. Who did는 목적어를 물을 때다." }
+ ],
+ "produce": [
+  {
+   "situation": "옆자리 사람에게 말을 걸어 보세요. 짧은 질문 하나로 시작해, 되묻는 말까지 이어 보세요.",
+   "chunks": ["Are you", "How about you", "aren't you", "So you're"],
+   "model": "Are you getting off in Vienna? So you're on holiday, aren't you?",
+   "ko": "빈에서 내리세요? 그럼 휴가 중이신 거죠?"
+  },
+  {
+   "situation": "길을 모른다. 지나가는 사람에게 정중하게, 문장 안에 질문을 넣어 물어보세요.",
+   "chunks": ["Excuse me", "do you know", "where", "is"],
+   "model": "Excuse me, do you know where the nearest station is?",
+   "ko": "실례합니다, 가장 가까운 역이 어디인지 아세요?"
+  }
+ ]
+}

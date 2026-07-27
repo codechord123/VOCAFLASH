@@ -75,6 +75,8 @@ const DEFAULTS = {
   curriculum: { unitProgress: {} },
   // 회독. { 'before-sunrise-c2': { count, lastAt } } — 목표 20회독
   reads: {},
+  // 회화 문법 진행. { unitProgress: { 'g-01': { score, total, at } } }
+  grammar: { unitProgress: {} },
   // 챕터 퀴즈 기록. { 'before-sunrise-c4': { attempts, best, last, wrong } }
   // 그때뿐인 점수는 약한 자리를 알려주지 못한다. 어디서 틀렸는지 남긴다.
   quizLog: {},

@@ -81,6 +81,7 @@ import VocabPart from './views/VocabPart.jsx'
 // 기다림이 된다. 지금은 그 탭을 누른 사람만 받는다.
 const ReadPart = lazy(() => import('./views/ReadPart.jsx'))
 const Curriculum = lazy(() => import('./views/Curriculum.jsx'))
+const GrammarPart = lazy(() => import('./views/GrammarPart.jsx'))
 import Settings from './views/Settings.jsx'
 
 // 학습 파트 3개. 라벨은 두 글자로 맞춘다 — 모바일 폭에서 긴 라벨이
@@ -90,6 +91,7 @@ const TABS = [
   { id: 'vocab', label: '단어' },
   { id: 'read', label: '읽기' },
   { id: 'syntax', label: '구문' },
+  { id: 'grammar', label: '문법' },
 ]
 
 export default function App() {
@@ -301,6 +303,16 @@ export default function App() {
                 onRetry={() => ensureReading().catch(() => {})}
               />
             ))}
+
+          {tab === 'grammar' && (
+            <Suspense fallback={<BulkLoading label="문법 자료를 불러오는 중" />}>
+              <GrammarPart
+                reads={state.reads}
+                grammar={state.grammar}
+                commit={commit}
+              />
+            </Suspense>
+          )}
 
           {tab === 'syntax' && (
             <Suspense fallback={<BulkLoading label="구문독해 자료를 불러오는 중" />}>
