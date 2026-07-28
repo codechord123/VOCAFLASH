@@ -35,25 +35,275 @@
   ]
  },
  "practice": [
-  { "kind": "choice", "q": "지금 막 정한 일", "sentence": "That's the phone. I ___ get it.", "choices": ["'ll", "'m going to"], "answer": "'ll", "why": "전화벨을 듣고 그 자리에서 정한 일이라 will이다." },
-  { "kind": "choice", "q": "전부터 마음먹은 일", "sentence": "I ___ quit smoking next month.", "choices": ["am going to", "will"], "answer": "am going to", "why": "next month라는 계획이 이미 서 있으니 be going to." },
-  { "kind": "choice", "q": "약속이 잡힌 일", "sentence": "I ___ my parents this weekend.", "choices": ["am seeing", "will see"], "answer": "am seeing", "why": "만나기로 이미 정해진 약속에는 현재진행을 쓴다." },
-  { "kind": "choice", "q": "눈앞의 증거로 하는 예측", "sentence": "Watch out — you ___ drop it!", "choices": ["are going to", "will"], "answer": "are going to", "why": "지금 미끄러지는 게 보이니 be going to. will은 근거 없는 짐작 쪽이다." },
-  { "kind": "choice", "q": "때를 나타내는 절", "sentence": "Call me when you ___ home.", "choices": ["get", "will get"], "answer": "get", "why": "when·if가 이끄는 절에서는 미래여도 현재시제를 쓴다." },
-  { "kind": "order", "q": "약속을 알리는 문장 배열", "pieces": ["I'm having", "dinner with them", "on Friday"], "answer": ["I'm having", "dinner with them", "on Friday"], "ko": "금요일에 그 사람들이랑 저녁 먹기로 했어.", "why": "요일까지 잡힌 약속이라 현재진행이 자연스럽다." }
+  {
+   "kind": "choice",
+   "q": "지금 막 정한 일",
+   "sentence": "That's the phone. I ___ get it.",
+   "choices": [
+    "'ll",
+    "'m going to"
+   ],
+   "answer": "'ll",
+   "why": "전화벨을 듣고 그 자리에서 정한 일이라 will이다."
+  },
+  {
+   "kind": "choice",
+   "q": "전부터 마음먹은 일",
+   "sentence": "I ___ quit smoking next month.",
+   "choices": [
+    "am going to",
+    "will"
+   ],
+   "answer": "am going to",
+   "why": "next month라는 계획이 이미 서 있으니 be going to."
+  },
+  {
+   "kind": "choice",
+   "q": "약속이 잡힌 일",
+   "sentence": "I ___ my parents this weekend.",
+   "choices": [
+    "am seeing",
+    "will see"
+   ],
+   "answer": "am seeing",
+   "why": "만나기로 이미 정해진 약속에는 현재진행을 쓴다."
+  },
+  {
+   "kind": "choice",
+   "q": "눈앞의 증거로 하는 예측",
+   "sentence": "Watch out — you ___ drop it!",
+   "choices": [
+    "are going to",
+    "will"
+   ],
+   "answer": "are going to",
+   "why": "지금 미끄러지는 게 보이니 be going to. will은 근거 없는 짐작 쪽이다."
+  },
+  {
+   "kind": "choice",
+   "q": "때를 나타내는 절",
+   "sentence": "Call me when you ___ home.",
+   "choices": [
+    "get",
+    "will get"
+   ],
+   "answer": "get",
+   "why": "when·if가 이끄는 절에서는 미래여도 현재시제를 쓴다."
+  },
+  {
+   "kind": "order",
+   "q": "약속을 알리는 문장 배열",
+   "pieces": [
+    "I'm having",
+    "dinner with them",
+    "on Friday"
+   ],
+   "answer": [
+    "I'm having",
+    "dinner with them",
+    "on Friday"
+   ],
+   "ko": "금요일에 그 사람들이랑 저녁 먹기로 했어.",
+   "why": "요일까지 잡힌 약속이라 현재진행이 자연스럽다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 지금 느끼고 지금 정한 일",
+   "sentence": "It's cold in here. I ___ close the window.",
+   "choices": [
+    "'ll",
+    "'m going to"
+   ],
+   "answer": "'ll",
+   "why": "추운 걸 지금 느끼고 그 자리에서 정했다 — 즉석 결정은 will."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 시간표로 정해진 일",
+   "sentence": "The train ___ at 9:30.",
+   "choices": [
+    "leaves",
+    "will leave"
+   ],
+   "answer": "leaves",
+   "why": "기차 시간표는 내 의지가 아니라 이미 짜인 일정 — 미래여도 현재시제로 말한다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 이미 움직이기 시작한 계획",
+   "sentence": "We ___ sell the car — we've already put up the ad.",
+   "choices": [
+    "are going to",
+    "will"
+   ],
+   "answer": "are going to",
+   "why": "광고까지 냈다는 건 전부터 정해 둔 일이라는 뜻 — be going to."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — if절 안에서는",
+   "sentence": "If it ___ tomorrow, we'll stay home.",
+   "choices": [
+    "rains",
+    "will rain"
+   ],
+   "answer": "rains",
+   "why": "if·when이 이끄는 절 안에서는 미래 일도 현재시제로 쓴다. will은 바깥 문장 몫이다."
+  },
+  {
+   "kind": "choice",
+   "q": "틀린 곳 하나를 고르세요",
+   "sentence": "I'll call you when I will arrive in Vienna.",
+   "choices": [
+    "I'll call you",
+    "when I will arrive",
+    "in Vienna"
+   ],
+   "answer": "when I will arrive",
+   "why": "when절 안에서는 when I arrive가 맞다. 시간 부사절에서는 미래에도 현재시제 — will은 앞 문장에 이미 있다."
+  },
+  {
+   "kind": "choice",
+   "q": "틀린 곳 하나를 고르세요",
+   "sentence": "Look at those clouds — it will rain any minute.",
+   "choices": [
+    "Look at those clouds",
+    "it will rain",
+    "any minute"
+   ],
+   "answer": "it will rain",
+   "why": "구름이라는 증거가 눈앞에 있으니 it's going to rain이 맞다. will은 증거 없는 짐작 쪽이다."
+  },
+  {
+   "kind": "choice",
+   "q": "뜻 대조 — I'm seeing the dentist tomorrow.",
+   "sentence": "이 문장에 깔린 뜻은?",
+   "choices": [
+    "예약이 이미 잡혀 있다",
+    "내일 가야겠다고 지금 마음먹었다"
+   ],
+   "answer": "예약이 이미 잡혀 있다",
+   "why": "현재진행으로 말하는 미래는 잡혀 있는 약속이다. 지금 정한 거라면 I'll see the dentist tomorrow."
+  },
+  {
+   "kind": "choice",
+   "q": "뜻 대조 — I'll help you tomorrow.",
+   "sentence": "이 문장에 깔린 뜻은?",
+   "choices": [
+    "지금 이 자리에서 돕겠다고 정했다",
+    "전부터 도울 계획이 서 있었다"
+   ],
+   "answer": "지금 이 자리에서 돕겠다고 정했다",
+   "why": "will은 말하는 순간의 결정이자 약속이다. 미리 세운 계획이었다면 I'm going to help you tomorrow."
+  },
+  {
+   "kind": "order",
+   "q": "마음먹은 계획으로 배열하기",
+   "pieces": [
+    "I'm going to",
+    "look for a new job",
+    "next year"
+   ],
+   "answer": [
+    "I'm going to",
+    "look for a new job",
+    "next year"
+   ],
+   "ko": "내년엔 새 직장을 알아볼 생각이야.",
+   "why": "전부터 마음먹어 온 계획 → be going to가 자연스럽다."
+  },
+  {
+   "kind": "order",
+   "q": "그 자리에서 하는 약속으로 배열하기",
+   "pieces": [
+    "Don't worry",
+    "I'll text you",
+    "when I get there"
+   ],
+   "answer": [
+    "Don't worry",
+    "I'll text you",
+    "when I get there"
+   ],
+   "ko": "걱정 마, 도착하면 문자할게.",
+   "why": "지금 하는 약속은 will, when절 안은 현재시제(get) — 한 문장에 두 규칙이 같이 산다."
+  }
  ],
  "produce": [
   {
    "situation": "이번 주말 계획을 물어봤다. 이미 잡힌 약속 하나와 아직 마음만 먹은 것 하나를 같이 말해 보세요.",
-   "chunks": ["On Saturday I'm", "and I'm going to", "if I have time"],
+   "chunks": [
+    "On Saturday I'm",
+    "and I'm going to",
+    "if I have time"
+   ],
    "model": "On Saturday I'm meeting a friend for lunch, and I'm going to finish that book if I have time.",
    "ko": "토요일엔 친구랑 점심 먹기로 했고, 시간 되면 그 책을 끝낼 생각이에요."
   },
   {
    "situation": "상대가 무거운 짐을 들고 있다. 지금 이 자리에서 도와주겠다고 말해 보세요.",
-   "chunks": ["Here", "I'll", "for you", "Don't worry"],
+   "chunks": [
+    "Here",
+    "I'll",
+    "for you",
+    "Don't worry"
+   ],
    "model": "Here, I'll carry that for you. Don't worry about it.",
    "ko": "이리 주세요, 제가 들어 드릴게요. 신경 쓰지 마시고요."
+  },
+  {
+   "situation": "기차가 곧 도착한다. 옆자리 사람에게 내려서 뭘 할 계획인지 말해 보세요 — 정해 둔 것 하나, 될지 모르는 것 하나.",
+   "chunks": [
+    "When we get there",
+    "I'm going to",
+    "and then maybe",
+    "I'll"
+   ],
+   "model": "When we get there, I'm going to drop off my bag at the hostel, and then maybe I'll walk around for a while.",
+   "ko": "도착하면 호스텔에 짐부터 맡길 거예요. 그다음엔 좀 걸어 다닐까 해요."
+  },
+  {
+   "situation": "친구가 다음 주에 시간 되냐고 물었다. 이미 잡힌 약속을 말하고, 그 자리에서 다른 날을 비워 두겠다고 해 보세요.",
+   "chunks": [
+    "I'm having dinner with",
+    "on Tuesday",
+    "but I'll",
+    "if you want"
+   ],
+   "model": "I'm having dinner with my sister on Tuesday, but I'll keep Thursday open if you want.",
+   "ko": "화요일엔 언니랑 저녁 약속이 있는데, 원하면 목요일은 비워 둘게."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 친구가 지갑을 안 가져왔다. 그 자리에서 '내가 낼게'",
+   "prompt": "뭐라고 할까?",
+   "options": [
+    "I'll pay.",
+    "I'm going to pay."
+   ],
+   "answerIndex": 0,
+   "why": "지금 이 자리에서 정한 일은 will. I'm going to pay라고 하면 오기 전부터 낼 작정이었다는 말로 들린다."
+  },
+  {
+   "q": "먼저 감으로 — 주말 계획을 물어봤다. 친구와 7시에 만나기로 이미 잡아 뒀다",
+   "prompt": "뭐라고 답할까?",
+   "options": [
+    "I'm meeting a friend at seven.",
+    "I'll meet a friend at seven."
+   ],
+   "answerIndex": 0,
+   "why": "시간까지 잡힌 약속은 현재진행으로 말한다. will을 쓰면 지금 막 정하는 것처럼 들려서 '약속이 있다'는 느낌이 사라진다."
+  },
+  {
+   "q": "먼저 감으로 — 하늘이 새까맣다. 곧 비가 오겠다",
+   "prompt": "뭐라고 할까?",
+   "options": [
+    "It's going to rain.",
+    "It will rain."
+   ],
+   "answerIndex": 0,
+   "why": "눈앞의 증거(먹구름)를 보고 하는 예측은 be going to. It will rain은 증거 없이 점치는 말투라 이 장면에 안 맞는다."
   }
  ]
 }

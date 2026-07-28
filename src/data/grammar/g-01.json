@@ -250,6 +250,26 @@
    ],
    "model": "I teach elementary school, and at the moment I'm working on a new project.",
    "ko": "초등학교에서 가르치고, 지금은 새 프로젝트를 하나 맡고 있어요."
+  },
+  {
+   "situation": "카페에서 새로 사귄 친구가 요즘 뭐 하고 지내냐고 물었다. 요즘 한동안 하고 있는 일을 말해 보세요.",
+   "chunks": [
+    "These days",
+    "I'm learning",
+    "English with a movie"
+   ],
+   "model": "These days I'm learning English with a movie.",
+   "ko": "요즘은 영화로 영어를 공부하고 있어요."
+  },
+  {
+   "situation": "룸메이트가 또 설거지를 안 했다. 웃으면서 불평해 보세요.",
+   "chunks": [
+    "You're always",
+    "leaving the dishes",
+    "in the sink"
+   ],
+   "model": "You're always leaving the dishes in the sink!",
+   "ko": "너 맨날 설거지 싱크대에 쌓아 두더라!"
   }
  ],
  "discover": [

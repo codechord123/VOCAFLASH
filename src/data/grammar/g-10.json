@@ -40,7 +40,17 @@
   { "kind": "choice", "q": "지나간 일의 후회", "sentence": "If I had known, I ___ come.", "choices": ["would have", "will have"], "answer": "would have", "why": "과거완료 + would have p.p.가 이미 지나간 일에 대한 가정이다." },
   { "kind": "choice", "q": "충고할 때", "sentence": "If I ___ you, I'd talk to her.", "choices": ["were", "am"], "answer": "were", "why": "If I were you는 굳은 표현이다. 내가 네가 아니라는 사실이 전제다." },
   { "kind": "order", "q": "아쉬움을 배열", "pieces": ["I wish", "I had asked", "for her number"], "answer": ["I wish", "I had asked", "for her number"], "ko": "그때 번호를 물어봤어야 했는데.", "why": "wish 뒤에 had p.p.가 오면 지나간 일에 대한 아쉬움이 된다." },
-  { "kind": "choice", "q": "일반적인 사실", "sentence": "If you heat water to 100 degrees, it ___.", "choices": ["boils", "would boil"], "answer": "boils", "why": "언제나 그런 일에는 현재+현재를 쓴다. 가정이 아니라 사실 서술이다." }
+  { "kind": "choice", "q": "일반적인 사실", "sentence": "If you heat water to 100 degrees, it ___.", "choices": ["boils", "would boil"], "answer": "boils", "why": "언제나 그런 일에는 현재+현재를 쓴다. 가정이 아니라 사실 서술이다." },
+  { "kind": "choice", "q": "치환 — 있을 법한 조건", "sentence": "If we ___ the last train, we'll just walk.", "choices": ["miss", "missed"], "answer": "miss", "why": "막차를 놓치는 건 오늘 밤 실제로 벌어질 수 있는 일 — 현재 + will. missed로 바꾸는 순간 상상 놀이가 된다." },
+  { "kind": "choice", "q": "치환 — 지금과 다른 상상", "sentence": "If I ___ in Paris, I'd walk by the river every night.", "choices": ["lived", "live"], "answer": "lived", "why": "실제로는 파리에 안 산다. 과거형이 '현실이 아니다'라는 표시등이다." },
+  { "kind": "choice", "q": "치환 — 그때 그랬더라면", "sentence": "If we ___ in Vienna, everything would have been different.", "choices": ["had stayed", "stayed"], "answer": "had stayed", "why": "이미 지나간 그날 밤 이야기 — had p.p.로 한 칸 더 밀어야 '그때'가 된다. stayed면 지금의 상상으로 들린다." },
+  { "kind": "choice", "q": "치환 — would의 짝", "sentence": "If I knew her name, I ___ tell you.", "choices": ["would", "will"], "answer": "would", "why": "if절이 과거형(상상)이면 뒤는 would. will을 붙이면 두 절의 층이 어긋난다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "If it will rain tomorrow, I'll stay home.", "choices": ["If it will rain", "tomorrow", "I'll stay home"], "answer": "If it will rain", "why": "if절 안에는 will을 안 넣는다 — If it rains. 미래라는 표시는 뒤쪽 절의 will이 이미 맡고 있다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "I wish I have more time to travel.", "choices": ["I wish", "I have", "to travel"], "answer": "I have", "why": "wish 뒤는 한 칸 뒤로 — I wish I had more time. 현재형 그대로면 소망이 아니라 사실 서술처럼 들린다." },
+  { "kind": "choice", "q": "뜻 대조 — If I had time, I would help you.", "sentence": "이 말의 속뜻은?", "choices": ["지금 시간이 없어서 못 돕는다", "시간이 나면 도울 계획이다"], "answer": "지금 시간이 없어서 못 돕는다", "why": "과거형 had는 '지금 없다'는 고백이다. 정말 도울 생각이면 If I have time, I'll help you." },
+  { "kind": "choice", "q": "뜻 대조 — I would have called you.", "sentence": "실제로는 어떻게 됐나?", "choices": ["전화하지 않았다", "전화했다"], "answer": "전화하지 않았다", "why": "would have p.p.는 '그랬을 텐데 안 그랬다' — 일어나지 않은 과거가 자동으로 깔린다." },
+  { "kind": "order", "q": "충고를 배열", "pieces": ["If I were you,", "I'd get off", "at the next stop"], "answer": ["If I were you,", "I'd get off", "at the next stop"], "ko": "내가 너라면 다음 역에서 내리겠어.", "why": "If I were you는 충고의 굳은 틀 — 내가 네가 아니라는 전제 위에서 하는 상상이다." },
+  { "kind": "order", "q": "지나간 만남의 가정을 배열", "pieces": ["If we had met", "ten years earlier,", "things might have been", "different"], "answer": ["If we had met", "ten years earlier,", "things might have been", "different"], "ko": "우리가 10년만 일찍 만났더라면, 달라졌을지도 몰라.", "why": "had met + might have been — 지나간 만남에 대한 가정. would 대신 might를 쓰면 '어쩌면'의 여지가 남는다." }
  ],
  "produce": [
   {
@@ -54,6 +64,41 @@
    "chunks": ["If I had", "I would have", "but I didn't", "back then"],
    "model": "If I had started earlier, I would have finished by now, but I didn't take it seriously back then.",
    "ko": "더 일찍 시작했으면 지금쯤 끝냈을 텐데, 그때는 진지하게 안 봤어요."
+  },
+  {
+   "situation": "기차에서 내릴 역이 다가온다. 대화가 즐거웠던 상대에게 있을 법한 제안을 해 보세요.",
+   "chunks": ["If you're free", "tomorrow", "we could meet", "at"],
+   "model": "If you're free tomorrow, we could meet at the same café.",
+   "ko": "내일 시간 되면, 같은 카페에서 또 만나도 좋고요."
+  },
+  {
+   "situation": "여행에서 돌아와, 그때 하지 못한 일 하나를 두고 '그랬더라면'을 말해 보세요.",
+   "chunks": ["If I had stayed", "one more day", "I would have", "and maybe"],
+   "model": "If I had stayed one more day, I would have seen her again, and maybe everything would be different now.",
+   "ko": "하루만 더 있었더라면 그 사람을 다시 만났을 테고, 어쩌면 지금 모든 게 달라져 있었겠죠."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 같이 걷던 사람이 '내일 비 오면 어쩌지'라고 걱정한다",
+   "prompt": "있을 법한 일의 말투는?",
+   "options": ["If it rains, we'll find a café.", "If it rained, we would find a café."],
+   "answerIndex": 0,
+   "why": "내일 비는 충분히 있을 법한 일 — 현재 + will. 과거형으로 바꾸는 순간 '올 리 없지만 만약에'라는 상상이 돼 버린다."
+  },
+  {
+   "q": "먼저 감으로 — 복권은 안 샀지만 '당첨되면 뭐 할래?' 상상 놀이 중",
+   "prompt": "상상의 말투는?",
+   "options": ["If I won the lottery, I'd quit my job.", "If I win the lottery, I'll quit my job."],
+   "answerIndex": 0,
+   "why": "둘 다 문법은 맞다. 하지만 won + would가 '그럴 리 없지만'의 거리감을 만든다. win + will이면 정말 당첨을 계획 중인 사람처럼 들린다."
+  },
+  {
+   "q": "먼저 감으로 — 그날 그 사람의 번호를 못 물어봤다. 두고두고 아쉽다",
+   "prompt": "후회의 말은?",
+   "options": ["I wish I had asked for her number.", "I wish I asked for her number."],
+   "answerIndex": 0,
+   "why": "지나간 일의 아쉬움은 had p.p. — 시제를 한 칸 더 밀어 '이미 끝난 일'임을 표시한다. Before Sunrise 전체가 이 문형 위에 서 있다."
   }
  ]
 }

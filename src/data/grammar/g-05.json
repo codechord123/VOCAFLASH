@@ -34,13 +34,55 @@
    }
   ]
  },
+ "discover": [
+  {
+   "q": "먼저 감으로 — 길에서 낯선 사람에게 역이 어디인지 정중히 묻는다",
+   "prompt": "Do you know 뒤에 뭐가 올까?",
+   "options": [
+    "Do you know where the station is?",
+    "Do you know where is the station?"
+   ],
+   "answerIndex": 0,
+   "why": "뒤집기는 문장 맨 앞의 Do you know에서 이미 끝났다. 안으로 들어간 질문은 평서문 어순으로 돌아온다 — 한 문장에서 두 번 뒤집으면 어색하게 들린다."
+  },
+  {
+   "q": "먼저 감으로 — 말투를 들어 보니 상대가 미국인인 게 거의 확실하다. 확인만 하고 싶다",
+   "prompt": "'미국인이시죠?'는?",
+   "options": [
+    "You're American, aren't you?",
+    "Are you American?"
+   ],
+   "answerIndex": 0,
+   "why": "둘 다 맞는 문장이다. 하지만 Are you American?은 정말 몰라서 묻는 말이고, 부가의문문은 '맞죠?' — 거의 확신하면서 동의를 구하는 말투다."
+  },
+  {
+   "q": "먼저 감으로 — 이 케이크를 누가 만들었는지 궁금하다",
+   "prompt": "뭐라고 물을까?",
+   "options": [
+    "Who made this cake?",
+    "Who did make this cake?"
+   ],
+   "answerIndex": 0,
+   "why": "who가 스스로 주어면 do를 부르지 않는다. 뒤집을 주어가 따로 없기 때문이다. Who did you meet?처럼 목적어를 물을 때만 did가 낀다."
+  }
+ ],
  "practice": [
   { "kind": "choice", "q": "문장 안에 들어간 질문", "sentence": "Do you know where the station ___?", "choices": ["is", "is it"], "answer": "is", "why": "간접의문문은 평서문 어순이다. where is it처럼 뒤집으면 안 된다." },
   { "kind": "choice", "q": "yes/no 질문을 안에 넣기", "sentence": "I wonder ___ he's coming tonight.", "choices": ["if", "does"], "answer": "if", "why": "yes/no 질문이 안으로 들어가면 if나 whether로 잇는다." },
   { "kind": "choice", "q": "부가의문문", "sentence": "You've been here before, ___?", "choices": ["haven't you", "don't you"], "answer": "haven't you", "why": "앞에 쓰인 조동사(have)를 그대로 받아 부정으로 되묻는다." },
   { "kind": "choice", "q": "일반동사 의문문", "sentence": "___ she live near here?", "choices": ["Does", "Is"], "answer": "Does", "why": "일반동사 질문에는 do/does가 앞에 선다. 이때 본동사는 원형으로 돌아간다." },
   { "kind": "order", "q": "간접의문문 배열", "pieces": ["Could you tell me", "what time", "the train leaves"], "answer": ["Could you tell me", "what time", "the train leaves"], "ko": "기차가 몇 시에 출발하는지 알려주실 수 있어요?", "why": "안에 들어간 절은 leaves로 평서문 어순을 지킨다." },
-  { "kind": "choice", "q": "주어를 묻는 질문", "sentence": "___ told you that?", "choices": ["Who", "Who did"], "answer": "Who", "why": "who가 주어 자리면 do를 넣지 않는다. Who did는 목적어를 물을 때다." }
+  { "kind": "choice", "q": "주어를 묻는 질문", "sentence": "___ told you that?", "choices": ["Who", "Who did"], "answer": "Who", "why": "who가 주어 자리면 do를 넣지 않는다. Who did는 목적어를 물을 때다." },
+  { "kind": "choice", "q": "치환 — 문장 안의 질문", "sentence": "I'm not sure what time the café ___.", "choices": ["opens", "does it open"], "answer": "opens", "why": "I'm not sure 안으로 들어간 질문은 평서문 어순 — 주어 다음에 동사가 그대로 온다." },
+  { "kind": "choice", "q": "치환 — yes/no를 안에 넣기", "sentence": "Could you tell me ___ this seat is taken?", "choices": ["if", "is"], "answer": "if", "why": "의문사가 없는 질문이 안으로 들어가면 if가 잇는다. is를 또 앞에 세우면 뒤집기를 두 번 하는 셈이다." },
+  { "kind": "choice", "q": "치환 — 부가의문문", "sentence": "It's a beautiful night, ___?", "choices": ["isn't it", "is it"], "answer": "isn't it", "why": "앞이 긍정이면 뒤는 부정으로 되받는다. is it?으로 받으면 정말 몰라서 묻는 말이 된다." },
+  { "kind": "choice", "q": "치환 — 직접 물을 때", "sentence": "___ you take this train often?", "choices": ["Do", "Are"], "answer": "Do", "why": "take는 일반동사 — be가 아니라 do가 앞에 선다. Are you take는 만들 수 없는 문장이다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "Do you know where is the exit?", "choices": ["Do you know", "where is", "the exit"], "answer": "where is", "why": "안에 들어간 질문은 where the exit is. 뒤집기는 문장 맨 앞에서 이미 끝났다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "She speaks French, doesn't it?", "choices": ["She speaks", "French", "doesn't it"], "answer": "doesn't it", "why": "부가의문문은 앞 문장의 주어를 그대로 되받는다 — doesn't she. 되묻는 대상은 French가 아니라 she다." },
+  { "kind": "choice", "q": "뜻 대조 — You're not coming, are you?", "sentence": "이 말에 깔린 기대는?", "choices": ["안 올 거라고 거의 확신하며 확인한다", "올 거라고 믿고 되묻는다"], "answer": "안 올 거라고 거의 확신하며 확인한다", "why": "부가의문문의 앞 문장이 화자의 짐작이다. 부정으로 시작했으면 '안 오지?' 쪽으로 이미 기울어 있다." },
+  { "kind": "choice", "q": "뜻 대조 — You're American?", "sentence": "끝만 올려 물으면?", "choices": ["방금 안 사실이 놀라워 확인한다", "국적을 처음으로 묻는다"], "answer": "방금 안 사실이 놀라워 확인한다", "why": "평서문에 올린 억양은 '정말요?'의 놀람·확인이다. 처음 묻는 질문이면 Are you American?으로 뒤집는다." },
+  { "kind": "order", "q": "궁금함을 혼잣말로 배열하기", "pieces": ["I wonder", "why", "she said that"], "answer": ["I wonder", "why", "she said that"], "ko": "걔가 왜 그런 말을 했는지 궁금하네.", "why": "wonder 안의 why절도 평서문 어순 — why did she say가 아니다." },
+  { "kind": "order", "q": "정중한 질문으로 배열하기", "pieces": ["Do you know", "if", "this train", "stops in Vienna"], "answer": ["Do you know", "if", "this train", "stops in Vienna"], "ko": "이 기차가 빈에 서는지 아세요?", "why": "yes/no 질문이 안으로 들어가면 if가 잇고, 그 뒤는 this train stops로 평서문 어순이다." }
  ],
  "produce": [
   {
@@ -54,6 +96,18 @@
    "chunks": ["Excuse me", "do you know", "where", "is"],
    "model": "Excuse me, do you know where the nearest station is?",
    "ko": "실례합니다, 가장 가까운 역이 어디인지 아세요?"
+  },
+  {
+   "situation": "카페에서 주문하기 전에, 화장실이 있는지 점원에게 정중히 물어보세요. yes/no 질문을 문장 안에 넣어서요.",
+   "chunks": ["Excuse me", "could you tell me", "if", "a restroom"],
+   "model": "Excuse me, could you tell me if there's a restroom here?",
+   "ko": "실례지만, 여기 화장실이 있는지 알려주실 수 있어요?"
+  },
+  {
+   "situation": "기차에서 옆자리 사람이 읽는 책이 궁금하다. 직접 물은 뒤, 어디서 샀는지는 문장 안에 넣어 물어보세요.",
+   "chunks": ["What are you", "Can I ask", "where you", "got it"],
+   "model": "What are you reading? Can I ask where you got it?",
+   "ko": "뭐 읽으세요? 어디서 사셨는지 여쭤봐도 돼요?"
   }
  ]
 }

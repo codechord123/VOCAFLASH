@@ -34,13 +34,55 @@
    }
   ]
  },
+ "discover": [
+  {
+   "q": "먼저 감으로 — 기차에서 처음 만난 사람에게 직업을 말한다",
+   "prompt": "'저 교사예요'는?",
+   "options": [
+    "I'm a teacher.",
+    "I'm teacher."
+   ],
+   "answerIndex": 0,
+   "why": "한국어에는 없는 자리지만 영어는 직업 앞에 a가 반드시 붙는다. '교사라는 사람들 중 하나'로 세는 것이다. a가 빠지면 문장이 덜 끝난 것처럼 들린다."
+  },
+  {
+   "q": "먼저 감으로 — 카페 창가 자리가 춥다. 점원에게 저 창문을 닫아 달라고 한다",
+   "prompt": "뭐라고 부탁할까?",
+   "options": [
+    "Could you close the window?",
+    "Could you close a window?"
+   ],
+   "answerIndex": 0,
+   "why": "지금 열려 있는 그 창문 — 나도 알고 점원도 아는 대상이라 the. a window는 '아무 창문이나 하나 닫아 주세요'가 되어 이상하게 들린다."
+  },
+  {
+   "q": "먼저 감으로 — 취미를 묻길래 음악을 좋아한다고 답하려 한다",
+   "prompt": "'음악 좋아해요'는?",
+   "options": [
+    "I love music.",
+    "I love the music."
+   ],
+   "answerIndex": 0,
+   "why": "둘 다 맞는 문장이지만 뜻이 다르다. 음악 전반이면 아무것도 안 붙인다. the music은 '지금 나오는 이 음악'을 가리키는 말이 된다."
+  }
+ ],
  "practice": [
   { "kind": "choice", "q": "처음 꺼내는 대상", "sentence": "I read ___ book about it last year.", "choices": ["a", "the"], "answer": "a", "why": "듣는 사람이 어떤 책인지 모르니 a로 시작한다." },
   { "kind": "choice", "q": "직업을 말할 때", "sentence": "She's ___ teacher.", "choices": ["a", "-"], "answer": "a", "why": "영어는 직업 앞에 관사를 반드시 붙인다. She's teacher는 틀린 문장이다." },
   { "kind": "choice", "q": "종류 전체", "sentence": "___ music helps me sleep.", "choices": ["-", "The"], "answer": "-", "why": "음악 전반을 뜻하면 무관사다. The music은 '아까 그 음악'이 된다." },
   { "kind": "choice", "q": "서로 아는 하나뿐인 것", "sentence": "Can you close ___ window?", "choices": ["the", "a"], "answer": "the", "why": "이 방의 그 창문이라 서로 안다. a window는 '아무 창문이나'가 된다." },
   { "kind": "choice", "q": "기능으로서의 장소", "sentence": "He goes to ___ school by bus.", "choices": ["-", "the"], "answer": "-", "why": "공부하러 다니는 것이면 무관사. the school은 건물을 가리킨다." },
-  { "kind": "order", "q": "처음 꺼내고 다시 가리키기", "pieces": ["I met a writer", "on the train", "and the writer", "gave me his book"], "answer": ["I met a writer", "on the train", "and the writer", "gave me his book"], "ko": "기차에서 작가를 한 명 만났는데, 그 작가가 자기 책을 줬어요.", "why": "처음에는 a, 다시 가리킬 때는 the로 바뀐다." }
+  { "kind": "order", "q": "처음 꺼내고 다시 가리키기", "pieces": ["I met a writer", "on the train", "and the writer", "gave me his book"], "answer": ["I met a writer", "on the train", "and the writer", "gave me his book"], "ko": "기차에서 작가를 한 명 만났는데, 그 작가가 자기 책을 줬어요.", "why": "처음에는 a, 다시 가리킬 때는 the로 바뀐다." },
+  { "kind": "choice", "q": "치환 — 처음 꺼낼 때", "sentence": "We stayed at ___ small hotel near the station.", "choices": ["a", "the"], "answer": "a", "why": "듣는 사람이 처음 듣는 호텔이다. 처음 꺼낼 때는 a — the로 시작하면 상대가 '어느 호텔?' 하고 멈칫한다." },
+  { "kind": "choice", "q": "치환 — 다시 가리킬 때", "sentence": "I bought a sandwich and a coffee, but I dropped ___ coffee.", "choices": ["the", "a"], "answer": "the", "why": "방금 말한 그 커피다. 두 번째부터는 the로 받는다 — a coffee면 또 다른 커피가 등장한 셈이 된다." },
+  { "kind": "choice", "q": "치환 — 하나뿐인 것", "sentence": "Look at ___ moon tonight.", "choices": ["the", "a"], "answer": "the", "why": "달은 하나뿐이라 말 안 해도 서로 무엇인지 안다. sun·sky·world도 같은 무리다." },
+  { "kind": "choice", "q": "치환 — 종류 전체", "sentence": "___ coffee keeps me awake at night.", "choices": ["-", "A"], "answer": "-", "why": "커피라는 것 전반을 말하면 무관사. A coffee는 '커피 한 잔'이라 주문할 때의 말이 된다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "My sister is nurse at a big hospital.", "choices": ["My sister is", "nurse", "at a big hospital"], "answer": "nurse", "why": "직업 앞에는 a — is a nurse. 영어는 직업을 '그런 사람들 중 하나'로 세기 때문에 관사 없이는 못 쓴다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "I usually go to the bed before midnight.", "choices": ["I usually", "go to the bed", "before midnight"], "answer": "go to the bed", "why": "자러 가는 것이면 go to bed — 기능으로 쓰인 자리는 무관사다. the bed라고 하면 침대라는 가구 쪽으로 걸어가는 그림이 된다." },
+  { "kind": "choice", "q": "뜻 대조 — I need a phone.", "sentence": "이 말의 뜻은?", "choices": ["아무 전화기든 하나 필요하다", "서로 아는 그 전화기가 필요하다"], "answer": "아무 전화기든 하나 필요하다", "why": "a는 '어느 것이든 하나'. 특정한 그것이면 the phone — '내 폰 어디 갔지'의 상황이 된다." },
+  { "kind": "choice", "q": "뜻 대조 — She went to the school.", "sentence": "the가 붙으면?", "choices": ["학교 건물에 볼일 보러 갔다", "학생으로 공부하러 다닌다"], "answer": "학교 건물에 볼일 보러 갔다", "why": "the school은 건물을 가리킨다. 학생으로 다니는 것이면 무관사 — go to school. bed·church·prison도 같은 식으로 갈린다." },
+  { "kind": "order", "q": "이야기 순서로 배열하기", "pieces": ["I saw a dog", "in the park", "and the dog", "followed me home"], "answer": ["I saw a dog", "in the park", "and the dog", "followed me home"], "ko": "공원에서 개 한 마리를 봤는데, 그 개가 집까지 따라왔어요.", "why": "처음엔 a dog, 다시 가리킬 땐 the dog — 이야기는 이 a→the 교대로 굴러간다." },
+  { "kind": "order", "q": "여행자의 말로 배열하기", "pieces": ["Life is short", "and", "the world", "is big"], "answer": ["Life is short", "and", "the world", "is big"], "ko": "인생은 짧고 세상은 넓다.", "why": "life 전반은 무관사, world는 하나뿐이라 the. 같은 문장 안에서도 기준은 각각 따진다." }
  ],
  "produce": [
   {
@@ -54,6 +96,18 @@
    "chunks": ["I'm a", "and I love", "especially"],
    "model": "I'm a teacher, and I love music — especially jazz.",
    "ko": "저는 교사이고 음악을 좋아해요, 특히 재즈요."
+  },
+  {
+   "situation": "여행지에서 만난 사람에게 어제 발견한 식당을 추천해 보세요. 처음 꺼낼 때와 다시 가리킬 때를 나눠서요.",
+   "chunks": ["I found a", "near the", "and the food", "was amazing"],
+   "model": "I found a little restaurant near the river, and the food was amazing.",
+   "ko": "강 근처에서 작은 식당을 하나 발견했는데, 음식이 정말 훌륭했어요."
+  },
+  {
+   "situation": "기차에서 옆자리 사람에게 하루 습관을 말해 보세요. 관사를 안 붙이는 자리가 두 번 나오게요.",
+   "chunks": ["I usually have", "before work", "and I go to bed", "around midnight"],
+   "model": "I usually have coffee before work, and I go to bed around midnight.",
+   "ko": "보통 출근 전에 커피를 마시고, 자정쯤 자요."
   }
  ]
 }

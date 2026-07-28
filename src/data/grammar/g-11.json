@@ -41,7 +41,17 @@
   { "kind": "choice", "q": "전치사 뒤", "sentence": "She's good at ___ people talk.", "choices": ["making", "make"], "answer": "making", "why": "at은 전치사라 뒤에 -ing가 온다." },
   { "kind": "choice", "q": "뜻이 갈리는 짝", "sentence": "He finally stopped ___ last year.", "choices": ["smoking", "to smoke"], "answer": "smoking", "why": "끊었다는 뜻이면 stop -ing. stop to smoke는 피우려고 하던 일을 멈춘 것이다." },
   { "kind": "choice", "q": "잊지 말라는 당부", "sentence": "Remember ___ me when you arrive.", "choices": ["to call", "calling"], "answer": "to call", "why": "앞으로 할 일을 당부하면 to. remember calling은 이미 건 기억이 난다는 뜻이다." },
-  { "kind": "order", "q": "두 형태를 한 문장에 배열", "pieces": ["I want to keep", "reading", "before I go to bed"], "answer": ["I want to keep", "reading", "before I go to bed"], "ko": "자기 전에 계속 읽고 싶어.", "why": "want는 to를 받고, keep은 -ing를 받는다. 둘이 이어져도 각자의 규칙을 지킨다." }
+  { "kind": "order", "q": "두 형태를 한 문장에 배열", "pieces": ["I want to keep", "reading", "before I go to bed"], "answer": ["I want to keep", "reading", "before I go to bed"], "ko": "자기 전에 계속 읽고 싶어.", "why": "want는 to를 받고, keep은 -ing를 받는다. 둘이 이어져도 각자의 규칙을 지킨다." },
+  { "kind": "choice", "q": "치환 — 앞으로 할 일", "sentence": "I hope ___ you again soon.", "choices": ["to see", "seeing"], "answer": "to see", "why": "hope는 아직 안 일어난 일을 향한다. want·plan·decide와 같은 무리다." },
+  { "kind": "choice", "q": "치환 — -ing만 받는 동사", "sentence": "Would you mind ___ the window?", "choices": ["opening", "to open"], "answer": "opening", "why": "mind는 -ing만 받는다. enjoy·finish·avoid와 같은 무리 — 부탁할 때 통째로 Would you mind -ing로 나온다." },
+  { "kind": "choice", "q": "치환 — 전치사 뒤", "sentence": "Thanks for ___ me around the city.", "choices": ["showing", "to show"], "answer": "showing", "why": "for는 전치사 — 전치사 뒤는 무조건 -ing다. Thanks for to show는 없다." },
+  { "kind": "choice", "q": "치환 — 피하는 일", "sentence": "I avoid ___ the subway at rush hour.", "choices": ["taking", "to take"], "answer": "taking", "why": "avoid는 -ing만 받는다. 피한다는 건 이미 있는 일에서 몸을 빼는 것이라 -ing 쪽이다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "I finished to pack my bag an hour ago.", "choices": ["finished to pack", "my bag", "an hour ago"], "answer": "finished to pack", "why": "finish는 -ing만 받는다 — finished packing. 끝낸 일은 이미 한 일이라 앞을 향하는 to가 올 자리가 없다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "She avoided to answer my question.", "choices": ["She avoided", "to answer", "my question"], "answer": "to answer", "why": "avoid 뒤에는 -ing — avoided answering이 맞다. enjoy·mind·keep도 같은 무리라 통째로 외워 둔다." },
+  { "kind": "choice", "q": "뜻 대조 — I remember locking the door.", "sentence": "이 문장의 뜻은?", "choices": ["문을 잠근 기억이 난다", "잊지 말고 문을 잠가야 한다"], "answer": "문을 잠근 기억이 난다", "why": "remember -ing는 이미 한 일의 기억. 앞으로 할 일을 챙기는 말이면 remember to lock — to는 늘 앞을 본다." },
+  { "kind": "choice", "q": "뜻 대조 — He stopped to buy coffee.", "sentence": "이 문장의 뜻은?", "choices": ["커피를 사려고 가던 길을 멈췄다", "커피 사는 습관을 끊었다"], "answer": "커피를 사려고 가던 길을 멈췄다", "why": "stop to는 '~하려고 멈추다'. 끊었다는 말이면 stopped buying coffee — to냐 -ing냐로 정반대 이야기가 된다." },
+  { "kind": "order", "q": "깜빡한 일로 배열하기", "pieces": ["I forgot", "to bring", "my passport"], "answer": ["I forgot", "to bring", "my passport"], "ko": "여권 챙기는 걸 깜빡했어요.", "why": "forget to는 해야 할 일을 안 한 것. forgot bringing이면 '가져온 기억이 없다'는 다른 말이 된다." },
+  { "kind": "order", "q": "이어진 일로 배열하기", "pieces": ["She kept", "talking", "for an hour"], "answer": ["She kept", "talking", "for an hour"], "ko": "걔는 한 시간 동안 계속 얘기했어.", "why": "keep은 -ing를 받는다 — 이미 벌어지고 있는 일을 이어 가는 동사라서다." }
  ],
  "produce": [
   {
@@ -55,6 +65,41 @@
    "chunks": ["I stopped", "but I keep", "I'm trying to"],
    "model": "I stopped checking my phone at night, but I keep waking up early. I'm trying to fix that.",
    "ko": "밤에 폰 보는 건 끊었는데 계속 일찍 깨요. 그걸 고쳐 보려는 중이에요."
+  },
+  {
+   "situation": "기차에서 옆자리 여행자와 이야기 중이다. 다음 여행 계획과, 이런 여행에서 좋아하는 것을 말해 보세요.",
+   "chunks": ["I'm hoping to visit", "and I love", "meeting new people"],
+   "model": "I'm hoping to visit Prague next, and I love meeting new people on the train.",
+   "ko": "다음엔 프라하에 가 보고 싶어요. 그리고 기차에서 새로운 사람 만나는 게 정말 좋아요."
+  },
+  {
+   "situation": "여행지에서 친해진 사람과 헤어지는 길이다. 도착하면 잊지 말고 연락하라고 당부하며, 즐거웠다는 말도 해 보세요.",
+   "chunks": ["Don't forget to text me", "when you get to", "I really enjoyed"],
+   "model": "Don't forget to text me when you get to Vienna — I really enjoyed talking with you.",
+   "ko": "빈에 도착하면 잊지 말고 문자해요 — 얘기 나눠서 정말 즐거웠어요."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 몇 년 피우던 담배를 작년에 끊었다",
+   "prompt": "'나 담배 끊었어'는?",
+   "options": ["I stopped smoking.", "I stopped to smoke."],
+   "answerIndex": 0,
+   "why": "둘 다 문법은 맞다. 하지만 stop to smoke는 '피우려고 (하던 일을) 멈췄다'는 정반대 그림이다. -ing는 하고 있던 일, to는 이제 하려는 일을 가리킨다."
+  },
+  {
+   "q": "먼저 감으로 — 나가는 친구에게 '잊지 말고 문 잠가'라고 당부한다",
+   "prompt": "뭐라고 말할까?",
+   "options": ["Remember to lock the door.", "Remember locking the door."],
+   "answerIndex": 0,
+   "why": "앞으로 할 일을 챙기는 당부는 to. remember locking은 '문을 잠근 기억이 난다'라서, 당부가 아니라 회상이 된다."
+  },
+  {
+   "q": "먼저 감으로 — 혼자 하는 여행이 즐겁다고 말하고 싶다",
+   "prompt": "'혼자 여행하는 게 좋아요'는?",
+   "options": ["I enjoy traveling alone.", "I enjoy to travel alone."],
+   "answerIndex": 0,
+   "why": "enjoy는 -ing만 받는다. 즐긴다는 건 이미 해본 일에 대한 말이라 앞을 향하는 to와는 어울리지 않는다."
   }
  ]
 }

@@ -76,6 +76,13 @@ export const DECKS = {
     defaultOn: true,
     priority: 0,
   },
+  midexp: {
+    id: 'midexp',
+    label: '영화 표현',
+    hint: '영화·드라마에 자주 나오는 회화 표현 505개 (장르별)',
+    defaultOn: false, // B2와 같은 이유 — 한꺼번에 505개가 밀리면 도망간다
+    priority: 1,
+  },
 }
 
 /**
@@ -242,6 +249,35 @@ export function cardsFromB2Words(words) {
         topicIds,
         deck: 'b2',
         priority: DECKS.b2.priority,
+      },
+    })
+  )
+}
+
+/**
+ * 영화 표현 모음집(사용자 업로드). 장르별 ~100개, 총 505개.
+ *
+ * 앞면은 표현, 뒷면은 뜻과 쓰는 상황. 예문은 문맥 칸에 싣는다 —
+ * B2 단어장과 같은 결로, 미리 정리된 자료라 기본은 꺼두고 주제별
+ * 화면에서는 항상 보인다.
+ */
+export function cardsFromMidExpressions(items) {
+  return items.map((e) =>
+    createCard({
+      id: `card:${e.id}`,
+      type: 'expression',
+      front: e.phrase,
+      back: { meaningKo: e.meaning, definitionEn: null, nuance: e.situation ?? '' },
+      context: e.example ?? null,
+      source: { work: `영화 표현 · ${e.genre}` },
+      extra: {
+        kind: e.phrase.trim().includes(' ') ? 'phrase' : 'word',
+        color: null,
+        origin: 'curated',
+        exampleKo: e.translation ?? null,
+        genres: e.genres ?? [e.genre],
+        deck: 'midexp',
+        priority: DECKS.midexp.priority,
       },
     })
   )

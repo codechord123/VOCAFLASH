@@ -40,7 +40,17 @@
   { "kind": "choice", "q": "같음을 말할 때", "sentence": "It's not ___ cold as yesterday.", "choices": ["as", "than"], "answer": "as", "why": "not as ~ as가 '그만큼은 아니다'라는 틀이다." },
   { "kind": "choice", "q": "불규칙 비교급", "sentence": "My French got ___ after that trip.", "choices": ["better", "gooder"], "answer": "better", "why": "good의 비교급은 better, 최상급은 best로 형태가 아예 다르다." },
   { "kind": "order", "q": "점점 더를 배열", "pieces": ["The days", "are getting", "shorter and shorter"], "answer": ["The days", "are getting", "shorter and shorter"], "ko": "해가 점점 짧아지고 있어.", "why": "비교급을 두 번 겹쳐 변화가 이어짐을 나타낸다." },
-  { "kind": "choice", "q": "범위 안의 최상", "sentence": "It's the best coffee ___ this street.", "choices": ["on", "than"], "answer": "on", "why": "최상급 뒤에는 in·on·of로 범위를 준다. than은 비교급에만 붙는다." }
+  { "kind": "choice", "q": "범위 안의 최상", "sentence": "It's the best coffee ___ this street.", "choices": ["on", "than"], "answer": "on", "why": "최상급 뒤에는 in·on·of로 범위를 준다. than은 비교급에만 붙는다." },
+  { "kind": "choice", "q": "치환 — 짧은 형용사", "sentence": "Today is a lot ___ than yesterday.", "choices": ["warmer", "more warm"], "answer": "warmer", "why": "음절 하나짜리는 -er. more warm은 규칙을 거꾸로 탄 말이라 어색하게 들린다." },
+  { "kind": "choice", "q": "치환 — 불규칙 최상급", "sentence": "That was the ___ meal of the whole trip.", "choices": ["best", "most good"], "answer": "best", "why": "good–better–best. 형태가 통째로 바뀌는 불규칙은 몇 개 안 된다 — bad–worse–worst도 같은 무리." },
+  { "kind": "choice", "q": "치환 — 딱 그만큼", "sentence": "The subway is just ___ fast as a taxi here.", "choices": ["as", "more"], "answer": "as", "why": "'~만큼'의 틀은 as ~ as. just를 앞에 붙이면 '딱 그만큼'이 된다." },
+  { "kind": "choice", "q": "치환 — -er의 짝", "sentence": "This café is quieter ___ the one downstairs.", "choices": ["than", "as"], "answer": "than", "why": "-er가 나왔으면 짝은 than. as는 as ~ as로 둘이 세트일 때만 쓴다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "This hotel is more cheaper than the last one.", "choices": ["more cheaper", "than", "the last one"], "answer": "more cheaper", "why": "cheap은 -er로 끝. more와 -er를 겹치면 비교를 두 번 하는 셈이다 — cheaper 하나면 된다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "Seoul is the biggest city of Korea.", "choices": ["the biggest", "city", "of Korea"], "answer": "of Korea", "why": "최상급의 범위는 in — the biggest city in Korea. of는 of the year처럼 기간이나 무리에 쓴다." },
+  { "kind": "choice", "q": "뜻 대조 — She's not as tall as her sister.", "sentence": "이 말의 뜻은?", "choices": ["그녀는 언니보다 작다", "그녀는 언니와 키가 같다"], "answer": "그녀는 언니보다 작다", "why": "not as ~ as는 '그만큼은 안 된다' — 같은 게 아니라 미치지 못한다는 말이다." },
+  { "kind": "choice", "q": "뜻 대조 — The test was easier than I thought.", "sentence": "이 말에 깔린 속뜻은?", "choices": ["어려울 줄 알았는데 그 정도는 아니었다", "시험이 아주 쉬웠다"], "answer": "어려울 줄 알았는데 그 정도는 아니었다", "why": "than I thought는 예상과의 비교다. 절대적으로 쉬웠다는 말이 아니라, 예상보다 나았다는 말." },
+  { "kind": "order", "q": "지금까지 중 최고를 배열", "pieces": ["This is", "the best coffee", "I've ever had"], "answer": ["This is", "the best coffee", "I've ever had"], "ko": "이건 내가 마셔 본 최고의 커피야.", "why": "최상급 + I've ever p.p.는 붙어 다니는 틀이다 — '지금까지 겪은 것 중 최고'." },
+  { "kind": "order", "q": "점점 더 붐빔을 배열", "pieces": ["The city gets", "more and more crowded", "every summer"], "answer": ["The city gets", "more and more crowded", "every summer"], "ko": "이 도시는 여름마다 점점 더 붐벼.", "why": "긴 형용사의 '점점 더'는 more and more + 형용사. 짧은 말이면 -er and -er." }
  ],
  "produce": [
   {
@@ -54,6 +64,41 @@
    "chunks": ["My English is", "than it was", "I'm getting", "and"],
    "model": "My English is better than it was last year, and I'm getting more comfortable speaking.",
    "ko": "작년보다는 영어가 나아졌고, 말하는 것도 점점 편해지고 있어요."
+  },
+  {
+   "situation": "기차에서 만난 사람이 서울과 부산 중 어디가 좋냐고 묻는다. 견주어 답해 보세요.",
+   "chunks": ["Busan is more", "than Seoul", "but Seoul has", "the best"],
+   "model": "Busan is more relaxed than Seoul, but Seoul has the best food, honestly.",
+   "ko": "부산이 서울보다 여유로운데, 음식은 솔직히 서울이 최고예요."
+  },
+  {
+   "situation": "카페에서 이번 여행이 기대만 했는지 묻는 질문에 답해 보세요.",
+   "chunks": ["It wasn't as", "as I expected", "but it was way better", "than"],
+   "model": "It wasn't as sunny as I expected, but it was way better than staying home.",
+   "ko": "기대만큼 화창하진 않았지만, 집에 있는 것보단 훨씬 나았어요."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 커피가 기대보다 훨씬 좋았다",
+   "prompt": "'훨씬 낫다'는?",
+   "options": ["much better", "very better"],
+   "answerIndex": 0,
+   "why": "very는 비교급 앞에 못 온다. 차이를 키우고 싶으면 much·far·a lot — '훨씬'의 자리는 따로 있다."
+  },
+  {
+   "q": "먼저 감으로 — 빈의 겨울이 생각만큼 춥지는 않다",
+   "prompt": "자연스러운 말은?",
+   "options": ["It's not as cold as I expected.", "It's not cold than I expected."],
+   "answerIndex": 0,
+   "why": "'~만큼'은 as ~ as가 한 세트다. than은 -er나 more가 앞에 있을 때만 나온다 — colder than이면 몰라도 cold than은 없다."
+  },
+  {
+   "q": "먼저 감으로 — 시간이 갈수록 영어가 는다",
+   "prompt": "'점점 더 나아진다'는?",
+   "options": ["It's getting better and better.", "It's getting more and more better."],
+   "answerIndex": 0,
+   "why": "better는 이미 비교급이라 more를 또 얹지 않는다. 짧은 말은 -er and -er, 긴 말만 more and more."
   }
  ]
 }

@@ -35,25 +35,276 @@
   ]
  },
  "practice": [
-  { "kind": "choice", "q": "처음 보는 사람에게", "sentence": "___ you tell me how to get to the station?", "choices": ["Could", "Can"], "answer": "Could", "why": "둘 다 통하지만 could가 한 발 물러선 말이라 낯선 사람에게 어울린다." },
-  { "kind": "choice", "q": "정중한 권유", "sentence": "___ you like some coffee?", "choices": ["Would", "Do"], "answer": "Would", "why": "Would you like ~?가 권유의 정중한 형태다. Do you like는 취향을 묻는 다른 말이 된다." },
-  { "kind": "choice", "q": "Do you mind에 대한 승낙", "sentence": "\"Do you mind if I sit here?\" — \"___\"", "choices": ["Not at all.", "Yes, of course."], "answer": "Not at all.", "why": "'꺼리세요?'라는 물음이라 아니라고 답해야 앉아도 된다는 뜻이 된다." },
-  { "kind": "choice", "q": "가능성이 낮을 때", "sentence": "I ___ be late — the traffic looks bad.", "choices": ["might", "will"], "answer": "might", "why": "확실하지 않은 일에는 might. will은 단정에 가깝다." },
-  { "kind": "order", "q": "가장 정중한 부탁 배열", "pieces": ["I was wondering", "if you could", "take a look at this"], "answer": ["I was wondering", "if you could", "take a look at this"], "ko": "혹시 이것 좀 봐주실 수 있을까 해서요.", "why": "과거진행과 if절로 두 겹 물러서면 부담을 가장 덜 준다." },
-  { "kind": "choice", "q": "허락을 구할 때", "sentence": "___ I use your phone for a second?", "choices": ["May", "Will"], "answer": "May", "why": "허락은 may/can/could로 구한다. will은 의지를 묻는 말이라 어색하다." }
+  {
+   "kind": "choice",
+   "q": "처음 보는 사람에게",
+   "sentence": "___ you tell me how to get to the station?",
+   "choices": [
+    "Could",
+    "Can"
+   ],
+   "answer": "Could",
+   "why": "둘 다 통하지만 could가 한 발 물러선 말이라 낯선 사람에게 어울린다."
+  },
+  {
+   "kind": "choice",
+   "q": "정중한 권유",
+   "sentence": "___ you like some coffee?",
+   "choices": [
+    "Would",
+    "Do"
+   ],
+   "answer": "Would",
+   "why": "Would you like ~?가 권유의 정중한 형태다. Do you like는 취향을 묻는 다른 말이 된다."
+  },
+  {
+   "kind": "choice",
+   "q": "Do you mind에 대한 승낙",
+   "sentence": "\"Do you mind if I sit here?\" — \"___\"",
+   "choices": [
+    "Not at all.",
+    "Yes, of course."
+   ],
+   "answer": "Not at all.",
+   "why": "'꺼리세요?'라는 물음이라 아니라고 답해야 앉아도 된다는 뜻이 된다."
+  },
+  {
+   "kind": "choice",
+   "q": "가능성이 낮을 때",
+   "sentence": "I ___ be late — the traffic looks bad.",
+   "choices": [
+    "might",
+    "will"
+   ],
+   "answer": "might",
+   "why": "확실하지 않은 일에는 might. will은 단정에 가깝다."
+  },
+  {
+   "kind": "order",
+   "q": "가장 정중한 부탁 배열",
+   "pieces": [
+    "I was wondering",
+    "if you could",
+    "take a look at this"
+   ],
+   "answer": [
+    "I was wondering",
+    "if you could",
+    "take a look at this"
+   ],
+   "ko": "혹시 이것 좀 봐주실 수 있을까 해서요.",
+   "why": "과거진행과 if절로 두 겹 물러서면 부담을 가장 덜 준다."
+  },
+  {
+   "kind": "choice",
+   "q": "허락을 구할 때",
+   "sentence": "___ I use your phone for a second?",
+   "choices": [
+    "May",
+    "Will"
+   ],
+   "answer": "May",
+   "why": "허락은 may/can/could로 구한다. will은 의지를 묻는 말이라 어색하다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 부탁이 클수록 물러서기",
+   "sentence": "___ you possibly lend me your charger?",
+   "choices": [
+    "Could",
+    "Will"
+   ],
+   "answer": "Could",
+   "why": "possibly와 짝을 이루는 건 could다. 부탁이 무거울수록 조동사를 뒤로 물리고 말을 늘린다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — mind 뒤의 모양",
+   "sentence": "Would you mind ___ the door?",
+   "choices": [
+    "closing",
+    "to close"
+   ],
+   "answer": "closing",
+   "why": "mind 뒤에는 -ing만 온다. mind to close라는 말은 없다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 정중한 권유의 틀",
+   "sentence": "___ you like to join us for dinner?",
+   "choices": [
+    "Would",
+    "Will"
+   ],
+   "answer": "Would",
+   "why": "권유는 Would you like to가 기본 틀이다. Will you는 의지를 묻는 직설이라 부담을 준다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 확신이 없을 때",
+   "sentence": "Take an umbrella — it ___ rain later.",
+   "choices": [
+    "might",
+    "must"
+   ],
+   "answer": "might",
+   "why": "올지 안 올지 모르면 might. must는 '틀림없이 온다'는 단정이다."
+  },
+  {
+   "kind": "choice",
+   "q": "틀린 곳 하나를 고르세요",
+   "sentence": "Would you mind to open the window a little?",
+   "choices": [
+    "Would you mind",
+    "to open",
+    "a little"
+   ],
+   "answer": "to open",
+   "why": "mind 뒤에는 -ing — opening the window가 맞다. 틀 자체는 정중해도 모양이 어긋나면 바로 티가 난다."
+  },
+  {
+   "kind": "choice",
+   "q": "틀린 곳 하나를 고르세요",
+   "sentence": "Do you like some water? You look thirsty.",
+   "choices": [
+    "Do you like",
+    "some water",
+    "look thirsty"
+   ],
+   "answer": "Do you like",
+   "why": "지금 권하는 말은 Would you like some water?가 맞다. Do you like는 평소 취향을 묻는 다른 질문이다."
+  },
+  {
+   "kind": "choice",
+   "q": "뜻 대조 — \"Would you mind waiting a moment?\" — \"Not at all.\"",
+   "sentence": "이 대답의 뜻은?",
+   "choices": [
+    "기다려 주겠다는 뜻",
+    "못 기다린다는 뜻"
+   ],
+   "answer": "기다려 주겠다는 뜻",
+   "why": "'기다리는 게 꺼려지세요?'에 '전혀요'라고 답한 것 — 승낙이다. mind 질문은 No 쪽이 좋다는 대답이다."
+  },
+  {
+   "kind": "choice",
+   "q": "뜻 대조 — You might want to check the schedule.",
+   "sentence": "이 문장에 깔린 뜻은?",
+   "choices": [
+    "시간표를 확인해 보라는 부드러운 조언",
+    "확인하고 싶어질 수도 있다는 단순한 추측"
+   ],
+   "answer": "시간표를 확인해 보라는 부드러운 조언",
+   "why": "might want to는 조언을 한 겹 감싸는 틀이다. You should check보다 훨씬 덜 찌른다."
+  },
+  {
+   "kind": "order",
+   "q": "낯선 사람에게 길 묻기 배열",
+   "pieces": [
+    "Excuse me",
+    "could you tell me",
+    "where the platform is"
+   ],
+   "answer": [
+    "Excuse me",
+    "could you tell me",
+    "where the platform is"
+   ],
+   "ko": "실례지만 승강장이 어디인지 알려 주실 수 있나요?",
+   "why": "could + 간접의문문이 낯선 사람에게 묻는 기본 틀. 끝은 where is the platform이 아니라 where the platform is — 평서문 어순이다."
+  },
+  {
+   "kind": "order",
+   "q": "사진 부탁 배열",
+   "pieces": [
+    "Would you mind",
+    "taking a picture",
+    "of us"
+   ],
+   "answer": [
+    "Would you mind",
+    "taking a picture",
+    "of us"
+   ],
+   "ko": "저희 사진 좀 찍어 주실 수 있을까요?",
+   "why": "Would you mind + -ing — 상대에게 부담을 가장 덜 주는 부탁 틀이다."
+  }
  ],
  "produce": [
   {
    "situation": "카페에서 옆자리 사람에게 자리를 좀 좁혀 달라고 부탁해 보세요. 처음 보는 사이입니다.",
-   "chunks": ["Excuse me", "would you mind", "moving over", "a little"],
+   "chunks": [
+    "Excuse me",
+    "would you mind",
+    "moving over",
+    "a little"
+   ],
    "model": "Excuse me — would you mind moving over a little?",
    "ko": "실례합니다, 조금만 옆으로 가주실 수 있을까요?"
   },
   {
    "situation": "부탁을 들어주기 어렵다. 거절하되 미안한 마음이 남게 말해 보세요.",
-   "chunks": ["I'd love to, but", "I'm afraid", "Could we", "instead"],
+   "chunks": [
+    "I'd love to, but",
+    "I'm afraid",
+    "Could we",
+    "instead"
+   ],
    "model": "I'd love to, but I'm afraid I can't today. Could we do it tomorrow instead?",
    "ko": "그러고 싶은데 오늘은 어려울 것 같아요. 대신 내일 하면 어떨까요?"
+  },
+  {
+   "situation": "여행지에서 지나가는 사람에게 분수 앞에서 사진을 찍어 달라고 부탁해 보세요.",
+   "chunks": [
+    "Excuse me",
+    "would you mind",
+    "taking a photo of me",
+    "in front of"
+   ],
+   "model": "Excuse me — would you mind taking a photo of me in front of the fountain?",
+   "ko": "실례합니다, 분수 앞에서 사진 한 장만 찍어 주실 수 있을까요?"
+  },
+  {
+   "situation": "기차에서 옆자리 승객에게 무거운 가방을 선반에 올리는 걸 도와달라고 조심스럽게 부탁해 보세요.",
+   "chunks": [
+    "Sorry to bother you",
+    "but could you",
+    "help me with",
+    "this bag"
+   ],
+   "model": "Sorry to bother you, but could you help me with this bag? It's a little heavy.",
+   "ko": "귀찮게 해서 죄송한데, 이 가방 좀 도와주실 수 있을까요? 좀 무거워서요."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 기차에서 처음 본 사람에게 창문을 좀 열어 달라고 한다",
+   "prompt": "어느 쪽이 안전할까?",
+   "options": [
+    "Could you open the window?",
+    "Can you open the window?"
+   ],
+   "answerIndex": 0,
+   "why": "둘 다 통하지만 could가 한 발 물러선 말이다. 낯선 사람에게 Can you는 자칫 시키는 말투로 들린다 — 물러선 쪽이 늘 안전하다."
+  },
+  {
+   "q": "먼저 감으로 — \"Do you mind if I sit here?\"라고 물었더니 상대가 \"No, not at all.\"",
+   "prompt": "앉아도 될까?",
+   "options": [
+    "앉아도 된다",
+    "앉으면 안 된다"
+   ],
+   "answerIndex": 0,
+   "why": "mind는 '꺼리다'라는 뜻 — '아니요, 전혀 안 꺼려요'니까 승낙이다. 거꾸로 Yes라고 답하면 '꺼린다', 즉 거절이 된다."
+  },
+  {
+   "q": "먼저 감으로 — 카페에서 상대에게 커피를 권하려 한다",
+   "prompt": "뭐라고 할까?",
+   "options": [
+    "Would you like some coffee?",
+    "Do you like coffee?"
+   ],
+   "answerIndex": 0,
+   "why": "Would you like는 '지금 드릴까요?'라는 권유, Do you like는 평소 취향을 묻는 말이다. 카페에서 Do you like coffee?라고 하면 설문조사처럼 들린다."
   }
  ]
 }

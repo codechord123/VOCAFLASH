@@ -40,7 +40,17 @@
   { "kind": "choice", "q": "감정을 말할 때", "sentence": "I was really ___ by the ending.", "choices": ["surprised", "surprising"], "answer": "surprised", "why": "내가 놀란 것이면 -ed. -ing는 그것이 남을 놀라게 한다는 뜻이다." },
   { "kind": "choice", "q": "구어의 수동", "sentence": "He ___ fired last month.", "choices": ["got", "was gotten"], "answer": "got", "why": "get + 과거분사가 회화에서 흔한 수동 형태다." },
   { "kind": "order", "q": "행위자를 밝히는 수동 배열", "pieces": ["The letter", "was written", "by someone", "I've never met"], "answer": ["The letter", "was written", "by someone", "I've never met"], "ko": "그 편지는 내가 만난 적 없는 사람이 쓴 거였어.", "why": "행위자를 굳이 밝힐 때만 by를 붙인다." },
-  { "kind": "choice", "q": "능동이 자연스러운 자리", "sentence": "Who ___ this?", "choices": ["made", "was made"], "answer": "made", "why": "행위자를 묻는 질문이라 수동으로 만들 이유가 없다." }
+  { "kind": "choice", "q": "능동이 자연스러운 자리", "sentence": "Who ___ this?", "choices": ["made", "was made"], "answer": "made", "why": "행위자를 묻는 질문이라 수동으로 만들 이유가 없다." },
+  { "kind": "choice", "q": "치환 — 지어진 쪽", "sentence": "This bridge ___ over a hundred years ago.", "choices": ["was built", "built"], "answer": "was built", "why": "다리는 지어진 쪽이다. built만 쓰면 다리가 무언가를 지었다는 말이 된다." },
+  { "kind": "choice", "q": "치환 — 구어의 get", "sentence": "She ___ invited to the wedding at the last minute.", "choices": ["got", "was gotten"], "answer": "got", "why": "get + p.p.가 회화의 수동이다. was gotten이라는 형태는 없다." },
+  { "kind": "choice", "q": "치환 — 감정의 -ed", "sentence": "The movie was three hours long — I was so ___.", "choices": ["bored", "boring"], "answer": "bored", "why": "지루함을 받은 쪽은 -ed. boring이면 내가 남들을 지루하게 만들었다는 말이 된다." },
+  { "kind": "choice", "q": "치환 — 수동이 없는 동사", "sentence": "What ___ to your hand?", "choices": ["happened", "was happened"], "answer": "happened", "why": "happen·die·arrive처럼 목적어가 없는 동사는 수동을 못 만든다. 당할 대상이 애초에 없기 때문이다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "My grandfather was died in the war.", "choices": ["My grandfather", "was died", "in the war"], "answer": "was died", "why": "die는 자동사 — died 한 단어면 끝난다. '돌아가셨다'의 '~셨다'를 be로 옮기려다 생기는 오류다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "This song was written from a famous poet.", "choices": ["was written", "from", "a famous poet"], "answer": "from", "why": "행위자는 by로 밝힌다 — written by a famous poet. from은 '어디에서 왔나'라는 출처의 말이다." },
+  { "kind": "choice", "q": "뜻 대조 — The door was closed.", "sentence": "이 말에서 확실한 것은?", "choices": ["문이 닫혀 있었다는 사실뿐, 누가 닫았는지는 모른다", "말하는 사람이 문을 닫았다"], "answer": "문이 닫혀 있었다는 사실뿐, 누가 닫았는지는 모른다", "why": "수동태는 행위자를 지운다. 내가 닫았다고 말하려면 I closed the door — 능동으로 돌아가야 한다." },
+  { "kind": "choice", "q": "뜻 대조 — He got fired.", "sentence": "이 문장의 속뜻은?", "choices": ["회사가 그를 내보냈다 — 그는 당한 쪽", "그가 스스로 그만뒀다"], "answer": "회사가 그를 내보냈다 — 그는 당한 쪽", "why": "fired는 당하는 일이라 수동. 스스로 나온 것이면 He quit — 태가 바뀌면 누가 결정했는지가 바뀐다." },
+  { "kind": "order", "q": "결항 소식을 배열하기", "pieces": ["My flight", "was canceled", "because of the storm"], "answer": ["My flight", "was canceled", "because of the storm"], "ko": "폭풍 때문에 내 비행기가 결항됐어.", "why": "항공사가 누구인지가 아니라 '결항됐다'는 사실이 중요한 자리 — 수동이 자연스럽다." },
+  { "kind": "order", "q": "사진 이야기를 배열하기", "pieces": ["This photo", "was taken", "on our last day", "in Vienna"], "answer": ["This photo", "was taken", "on our last day", "in Vienna"], "ko": "이 사진은 빈에서의 마지막 날 찍힌 거야.", "why": "누가 찍었는지보다 언제 찍혔는지가 중요하다. 사진 이야기의 기본틀은 was taken." }
  ],
  "produce": [
   {
@@ -54,6 +64,41 @@
    "chunks": ["I was raised", "by", "and I was taught", "to"],
    "model": "I was raised by my grandparents, and I was taught to finish what I start.",
    "ko": "조부모님 손에 자랐고, 시작한 건 끝내라고 배웠어요."
+  },
+  {
+   "situation": "카페에서 주문한 음식이 한참 안 나온다. 직원에게 정중히 말해 보세요.",
+   "chunks": ["Excuse me —", "my order was taken", "but nothing has come out", "yet"],
+   "model": "Excuse me — my order was taken twenty minutes ago, but nothing has come out yet.",
+   "ko": "저기요, 주문 받아 가신 지 20분 됐는데 아직 아무것도 안 나왔어요."
+  },
+  {
+   "situation": "낯선 사람과 걷다가 오래된 성당 앞을 지난다. 언제 지어졌는지 아는 대로 말해 보세요.",
+   "chunks": ["This church was built", "in the", "and it was named", "after"],
+   "model": "This church was built in the 1300s, and it was named after a saint, I think.",
+   "ko": "이 성당은 1300년대에 지어졌고, 어떤 성인의 이름을 딴 거래요, 아마."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 세 시간짜리 영화가 너무 지루했다",
+   "prompt": "'나 지루했어'는?",
+   "options": ["I was bored.", "I was boring."],
+   "answerIndex": 0,
+   "why": "-ed는 내가 받은 감정, -ing는 내가 남에게 주는 감정. I was boring은 '내가 지루한 사람이었다'는 고백이 된다."
+  },
+  {
+   "q": "먼저 감으로 — 기차에서 폰이 사라졌다. 누가 가져갔는지 모른다",
+   "prompt": "자연스러운 말은?",
+   "options": ["My phone was stolen on the train.", "My phone stole on the train."],
+   "answerIndex": 0,
+   "why": "폰은 당한 쪽이니 be + 과거분사. be를 빼먹으면 폰이 도둑이 된다 — 한국어 '~됐다'에는 be가 안 보여서 자주 빠지는 자리다."
+  },
+  {
+   "q": "먼저 감으로 — 어젯밤 근처에서 사고가 났다고 전하려 한다",
+   "prompt": "맞는 쪽은?",
+   "options": ["The accident happened last night.", "The accident was happened last night."],
+   "answerIndex": 0,
+   "why": "happen은 당하는 대상이 없는 동사라 수동태 자체가 없다. '사고가 났다 = 됐다'로 옮기면 이렇게 틀린다."
   }
  ]
 }

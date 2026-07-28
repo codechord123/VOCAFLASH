@@ -40,7 +40,17 @@
   { "kind": "choice", "q": "탈것", "sentence": "I read the whole book ___ the train.", "choices": ["on", "in"], "answer": "on", "why": "기차·버스·비행기는 안에서 걸어 다닐 수 있어 on을 쓴다. 택시·승용차는 in이다." },
   { "kind": "choice", "q": "지점으로서의 장소", "sentence": "I'll wait for you ___ the station.", "choices": ["at", "in"], "answer": "at", "why": "역을 만남의 지점으로 보면 at. in the station은 건물 안이라는 뜻이 강해진다." },
   { "kind": "choice", "q": "시각", "sentence": "Let's meet ___ seven.", "choices": ["at", "on"], "answer": "at", "why": "시각은 시간의 한 점이라 at이다." },
-  { "kind": "order", "q": "셋을 한 문장에 배열", "pieces": ["I'll be", "at the café", "on Friday", "in the afternoon"], "answer": ["I'll be", "at the café", "on Friday", "in the afternoon"], "ko": "금요일 오후에 그 카페에 있을게요.", "why": "지점(at) · 요일(on) · 넓은 시간대(in)가 각자 제자리를 맡는다." }
+  { "kind": "order", "q": "셋을 한 문장에 배열", "pieces": ["I'll be", "at the café", "on Friday", "in the afternoon"], "answer": ["I'll be", "at the café", "on Friday", "in the afternoon"], "ko": "금요일 오후에 그 카페에 있을게요.", "why": "지점(at) · 요일(on) · 넓은 시간대(in)가 각자 제자리를 맡는다." },
+  { "kind": "choice", "q": "치환 — 넓은 시간", "sentence": "I was born ___ May.", "choices": ["in", "on"], "answer": "in", "why": "월은 넓은 시간이라 in. 날짜가 붙어 좁아지면 on May 2nd로 바뀐다." },
+  { "kind": "choice", "q": "치환 — 특별한 하루", "sentence": "We're having dinner together ___ my birthday.", "choices": ["on", "in"], "answer": "on", "why": "요일·날짜·기념일처럼 달력의 한 칸을 차지하는 하루는 on이다." },
+  { "kind": "choice", "q": "치환 — 택시 안", "sentence": "I left my phone ___ the taxi.", "choices": ["in", "on"], "answer": "in", "why": "택시·승용차는 안에서 걸어 다닐 수 없어 in. 기차·버스였다면 on이다." },
+  { "kind": "choice", "q": "치환 — 도시", "sentence": "She's staying with a friend ___ Paris.", "choices": ["in", "at"], "answer": "in", "why": "도시·나라처럼 넓은 곳은 in. at Paris는 도시를 지도 위 한 점으로 만들어 어색해진다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "I'll call you in Friday evening.", "choices": ["I'll call you", "in", "Friday evening"], "answer": "in", "why": "요일이 붙으면 on이 이긴다 — on Friday evening. in the evening은 요일 없이 말할 때다." },
+  { "kind": "choice", "q": "틀린 곳 하나를 고르세요", "sentence": "She's waiting for you on the front door.", "choices": ["She's waiting", "for you", "on the front door"], "answer": "on the front door", "why": "문 앞이라는 지점은 at the front door. on the door라고 하면 문짝 표면에 붙어 있는 그림이 된다." },
+  { "kind": "choice", "q": "뜻 대조 — She's in the hospital.", "sentence": "이 문장이 그리는 상황은?", "choices": ["입원해 있다", "문병하러 잠깐 가 있다"], "answer": "입원해 있다", "why": "미국 영어에서 in the hospital은 환자로 들어가 있다는 말. 문병·볼일이면 at the hospital — 지점으로만 짚는다." },
+  { "kind": "choice", "q": "뜻 대조 — The café is on the corner.", "sentence": "이 카페는 어디에 있나?", "choices": ["길모퉁이에 있다", "방 안 구석에 있다"], "answer": "길모퉁이에 있다", "why": "거리의 모퉁이는 그 위에 서는 면이라 on the corner. 방 안 구석은 in the corner — 안이냐 밖이냐가 전치사로 갈린다." },
+  { "kind": "order", "q": "영화의 첫 장면으로 배열하기", "pieces": ["I met her", "on a train", "in Europe"], "answer": ["I met her", "on a train", "in Europe"], "ko": "유럽에서, 기차에서 그녀를 만났어요.", "why": "탈것은 on, 넓은 지역은 in. 좁은 자리에서 넓은 자리 순서로 붙는다." },
+  { "kind": "order", "q": "약속 시간으로 배열하기", "pieces": ["Let's meet", "at noon", "on Sunday"], "answer": ["Let's meet", "at noon", "on Sunday"], "ko": "일요일 정오에 만나요.", "why": "시각의 한 점은 at, 요일은 on — 시간 표현도 보통 좁은 것부터 말한다." }
  ],
  "produce": [
   {
@@ -54,6 +64,41 @@
    "chunks": ["I get on", "at", "and I get off", "in"],
    "model": "I get on the bus at the corner near my house, and I get off in front of the school.",
    "ko": "집 근처 모퉁이에서 버스를 타고 학교 앞에서 내려요."
+  },
+  {
+   "situation": "여행지에서 만난 사람이 어디에 묵느냐고 물었다. 숙소 위치를 설명해 보세요.",
+   "chunks": ["I'm staying at", "on a small street", "near the river"],
+   "model": "I'm staying at a little hotel on a small street near the river.",
+   "ko": "강 근처 작은 골목에 있는 조그만 호텔에 묵고 있어요."
+  },
+  {
+   "situation": "기차에서 옆자리 승객과 도착 시간 이야기를 한다. 늦게 도착해서 걱정이라는 말을 해 보세요.",
+   "chunks": ["The train gets to Vienna", "at nine", "so I'll have to find my hotel", "at night"],
+   "model": "The train gets to Vienna at nine, so I'll have to find my hotel at night.",
+   "ko": "기차가 아홉 시에 빈에 도착해서, 밤에 호텔을 찾아가야 해요."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 기차에서 만난 사람에게 '오는 길에 기차에서 책 한 권을 다 읽었다'고 말한다",
+   "prompt": "어느 쪽이 자연스러울까?",
+   "options": ["I read a whole book on the train.", "I read a whole book in the train."],
+   "answerIndex": 0,
+   "why": "기차·버스·비행기처럼 안에서 걸어 다닐 수 있는 탈것은 on. in the train도 틀리진 않지만 '그 차량 내부에'라는 물리적 위치가 강조돼 어색하게 들린다."
+  },
+  {
+   "q": "먼저 감으로 — 친구와 역에서 만나기로 했다",
+   "prompt": "'역에서 기다릴게'는?",
+   "options": ["I'll wait for you at the station.", "I'll wait for you in the station."],
+   "answerIndex": 0,
+   "why": "둘 다 문법은 맞다. at은 역을 만남의 '지점'으로 짚는 말이고, in은 '건물 안에 들어가 있겠다'는 말이 된다. 약속 장소는 지점 — at."
+  },
+  {
+   "q": "먼저 감으로 — 요즘 밤에 잠이 안 온다고 말하고 싶다",
+   "prompt": "'밤에'는 어느 쪽?",
+   "options": ["I can't sleep at night.", "I can't sleep in the night."],
+   "answerIndex": 0,
+   "why": "in the morning·in the afternoon인데 밤만 at night다. 규칙보다 굳은 표현 — 밤 전체를 하나의 점처럼 다룬다고 기억해 두면 된다."
   }
  ]
 }

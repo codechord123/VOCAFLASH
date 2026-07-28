@@ -3,9 +3,11 @@ import { store } from './lib/store.js'
 import { deckStats, selectDueCards, withProgress } from './lib/srs.js'
 import { filterByLevel } from './lib/level.js'
 import {
+  DECKS,
   cardsFromExpressions,
   cardsFromVocabNotes,
   cardsFromB2Words,
+  cardsFromMidExpressions,
   cardsFromWordCards,
 } from './lib/deck.js'
 
@@ -45,6 +47,8 @@ const loadReadingData = () =>
 // B2 단어장 899개는 300KB쯤 된다. 기본으로 꺼져 있는 덱이라 첫 화면을
 // 막을 이유가 없어서 뒤늦게 싣는다.
 const loadB2 = () => import('./data/b2-words.json').then((m) => m.default)
+// 영화 표현 505개도 같은 이유로 뒤늦게 싣는다.
+const loadMidExp = () => import('./data/midexp.json').then((m) => m.default.expressions)
 
 /**
  * 새 배포 뒤 옛 화면이 없는 파일을 부르는 문제.
@@ -109,6 +113,7 @@ export default function App() {
   const [guide, setGuide] = useState(null) // { itemId }
   const [state, setState] = useState(() => store.load())
   const [b2Words, setB2Words] = useState(null)
+  const [midExp, setMidExp] = useState(null)
   const [reading, setReading] = useState(null)
   const [readingError, setReadingError] = useState(null)
   const [showSettings, setShowSettings] = useState(false)
@@ -133,6 +138,12 @@ export default function App() {
         if (recoverFromStaleChunk(err)) return
         console.error('B2 단어장을 불러오지 못했습니다', err)
       })
+    loadMidExp()
+      .then((w) => !cancelled && setMidExp(w))
+      .catch((err) => {
+        if (recoverFromStaleChunk(err)) return
+        console.error('영화 표현을 불러오지 못했습니다', err)
+      })
     return () => {
       cancelled = true
     }
@@ -146,8 +157,9 @@ export default function App() {
       ...cardsFromWordCards(wordCardData.words),
       ...cardsFromVocabNotes(vocabNoteData.notes),
       ...(b2Words ? cardsFromB2Words(b2Words) : []),
+      ...(midExp ? cardsFromMidExpressions(midExp) : []),
     ],
-    [meanings, b2Words]
+    [meanings, b2Words, midExp]
   )
 
   // 화면이 쓰는 카드 = 고정 자료 + 사용자가 만든 것, 각각에 진행을 입힌 것.
@@ -190,8 +202,15 @@ export default function App() {
 
   // 복습 큐는 켜진 덱만. 단어장 탭은 꺼진 덱까지 전부 보여준다 —
   // 꺼둔 것도 검색은 되어야 한다.
+  // 설정에 기록이 없는 덱은 덱 정의의 기본값을 따른다 — 나중에 추가된
+  // 덱(영화 표현)이 예전 저장본에서 저절로 켜져 505개가 쏟아지면 안 된다.
   const reviewCards = useMemo(
-    () => cards.filter((c) => activeDecks[c.deck ?? 'highlight'] !== false),
+    () =>
+      cards.filter((c) => {
+        const deck = c.deck ?? 'highlight'
+        const on = activeDecks[deck]
+        return on !== undefined ? on !== false : DECKS[deck]?.defaultOn !== false
+      }),
     [cards, activeDecks]
   )
 

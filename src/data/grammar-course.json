@@ -254,6 +254,26 @@
      ],
      "model": "I teach elementary school, and at the moment I'm working on a new project.",
      "ko": "초등학교에서 가르치고, 지금은 새 프로젝트를 하나 맡고 있어요."
+    },
+    {
+     "situation": "카페에서 새로 사귄 친구가 요즘 뭐 하고 지내냐고 물었다. 요즘 한동안 하고 있는 일을 말해 보세요.",
+     "chunks": [
+      "These days",
+      "I'm learning",
+      "English with a movie"
+     ],
+     "model": "These days I'm learning English with a movie.",
+     "ko": "요즘은 영화로 영어를 공부하고 있어요."
+    },
+    {
+     "situation": "룸메이트가 또 설거지를 안 했다. 웃으면서 불평해 보세요.",
+     "chunks": [
+      "You're always",
+      "leaving the dishes",
+      "in the sink"
+     ],
+     "model": "You're always leaving the dishes in the sink!",
+     "ko": "너 맨날 설거지 싱크대에 쌓아 두더라!"
     }
    ],
    "discover": [
@@ -396,6 +416,128 @@
      ],
      "answer": "have",
      "why": "just·already·yet은 현재완료와 짝을 이룬다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — ago가 보이면",
+     "sentence": "We ___ in Paris two years ago.",
+     "choices": [
+      "met",
+      "have met"
+     ],
+     "answer": "met",
+     "why": "ago는 '그때'를 못 박는 말이다. 시점이 박히면 과거시제."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 아직 못 한 일",
+     "sentence": "I ___ finished packing yet.",
+     "choices": [
+      "haven't",
+      "didn't"
+     ],
+     "answer": "haven't",
+     "why": "yet은 '지금까지도 아직'이라는 말 — 지금 상태를 겨누니 현재완료다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — since가 보이면",
+     "sentence": "He ___ here since March.",
+     "choices": [
+      "has lived",
+      "lived"
+     ],
+     "answer": "has lived",
+     "why": "since는 시작점 — 3월부터 지금까지 이어지는 일이라 현재완료다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 결과가 지금까지 남았다면",
+     "sentence": "I ___ my keys! I can't get in.",
+     "choices": [
+      "'ve lost",
+      "lost"
+     ],
+     "answer": "'ve lost",
+     "why": "지금 못 들어가고 있다 — 잃어버린 결과가 지금까지 이어지면 현재완료. I lost my keys는 지난 일 얘기로 들린다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I have visited my grandmother last weekend.",
+     "choices": [
+      "have visited",
+      "my grandmother",
+      "last weekend"
+     ],
+     "answer": "have visited",
+     "why": "last weekend라는 시점이 있으니 I visited가 맞다. 시점과 현재완료는 한 문장에 못 산다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "She has gone to London three times.",
+     "choices": [
+      "has gone",
+      "to London",
+      "three times"
+     ],
+     "answer": "has gone",
+     "why": "세 번이라는 건 갔다 '왔다'는 경험 — has been to London이 맞다. has gone은 가서 아직 안 온 것이라 횟수와 안 맞는다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I've lost my passport.",
+     "sentence": "이 문장에 깔린 뜻은?",
+     "choices": [
+      "잃어버려서 지금도 여권이 없다",
+      "예전에 잃어버린 적이 있다 (지금은 찾았을 수도)"
+     ],
+     "answer": "잃어버려서 지금도 여권이 없다",
+     "why": "현재완료는 지금 상태까지 끌고 온다 — 지금 여권이 없어서 곤란하다는 말. 찾았다면 I lost my passport, but I found it."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I've lived here for ten years.",
+     "sentence": "이 문장에 깔린 뜻은?",
+     "choices": [
+      "10년째 살고 있고 지금도 산다",
+      "10년 살았고 지금은 떠났다"
+     ],
+     "answer": "10년째 살고 있고 지금도 산다",
+     "why": "현재완료 + for는 지금까지 이어진 시간이다. 떠났다면 I lived here for ten years — 과거시제가 끝났음을 알린다."
+    },
+    {
+     "kind": "order",
+     "q": "언제부터 알았는지 배열하기",
+     "pieces": [
+      "I've known her",
+      "since",
+      "we were in college"
+     ],
+     "answer": [
+      "I've known her",
+      "since",
+      "we were in college"
+     ],
+     "ko": "대학 때부터 걔를 알고 지냈어.",
+     "why": "since 뒤에 시작점을 놓고, 그때부터 지금까지 이어지니 앞은 현재완료다."
+    },
+    {
+     "kind": "order",
+     "q": "경험을 묻는 말로 배열하기",
+     "pieces": [
+      "Have you",
+      "seen this movie",
+      "before"
+     ],
+     "answer": [
+      "Have you",
+      "seen this movie",
+      "before"
+     ],
+     "ko": "이 영화 전에 본 적 있어?",
+     "why": "before를 끝에 붙이면 '언제인지는 몰라도 한 번이라도'를 묻는 경험 질문이 된다."
     }
    ],
    "produce": [
@@ -421,6 +563,60 @@
      ],
      "model": "Since I last saw you, I've changed jobs, and I moved to a new place last year.",
      "ko": "너 마지막으로 본 뒤로 직장을 옮겼고, 작년엔 이사도 했어."
+    },
+    {
+     "situation": "기차에서 옆자리 승객이 유럽은 처음이냐고 물었다. 처음이지만 늘 와 보고 싶었다고 말해 보세요.",
+     "chunks": [
+      "This is my first time",
+      "in Europe",
+      "but I've always",
+      "wanted to come"
+     ],
+     "model": "This is my first time in Europe, but I've always wanted to come.",
+     "ko": "유럽은 처음인데, 늘 와 보고 싶었어요."
+    },
+    {
+     "situation": "카페에서 늦게 온 친구에게, 얼마나 기다렸는지와 몇 시에 도착했는지를 같이 말해 보세요.",
+     "chunks": [
+      "I've been waiting",
+      "for twenty minutes",
+      "I got here",
+      "at two"
+     ],
+     "model": "I've been waiting for twenty minutes — I got here at two.",
+     "ko": "20분째 기다리는 중이야 — 두 시에 왔거든."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 기차에서 여행 얘기가 나왔다. 빈에 '가 본 적 있다'고만 말하고 싶다",
+     "prompt": "뭐라고 할까?",
+     "options": [
+      "I've been to Vienna.",
+      "I went to Vienna."
+     ],
+     "answerIndex": 0,
+     "why": "언제 갔는지는 관심 밖이고 '가 봤다'는 경험만 말하는 자리라 현재완료. I went to Vienna라고 하면 듣는 사람은 '언제? 무슨 일로?'를 기다리게 된다."
+    },
+    {
+     "q": "먼저 감으로 — 이번엔 '작년에 갔다'고 시점을 밝히려 한다",
+     "prompt": "맞는 쪽은?",
+     "options": [
+      "I went there last year.",
+      "I've been there last year."
+     ],
+     "answerIndex": 0,
+     "why": "last year라고 시점을 말하는 순간 현재완료는 못 쓴다. '언제'가 나오면 무조건 과거시제다."
+    },
+    {
+     "q": "먼저 감으로 — 동료가 자리에 없다. 은행에 가서 아직 안 돌아왔다",
+     "prompt": "뭐라고 전할까?",
+     "options": [
+      "She's gone to the bank.",
+      "She's been to the bank."
+     ],
+     "answerIndex": 0,
+     "why": "has gone to는 '가서 아직 거기 있다', has been to는 '갔다 왔다'. 자리에 없으니 gone이다."
     }
    ]
   },
@@ -531,6 +727,128 @@
      ],
      "ko": "금요일에 그 사람들이랑 저녁 먹기로 했어.",
      "why": "요일까지 잡힌 약속이라 현재진행이 자연스럽다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 지금 느끼고 지금 정한 일",
+     "sentence": "It's cold in here. I ___ close the window.",
+     "choices": [
+      "'ll",
+      "'m going to"
+     ],
+     "answer": "'ll",
+     "why": "추운 걸 지금 느끼고 그 자리에서 정했다 — 즉석 결정은 will."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 시간표로 정해진 일",
+     "sentence": "The train ___ at 9:30.",
+     "choices": [
+      "leaves",
+      "will leave"
+     ],
+     "answer": "leaves",
+     "why": "기차 시간표는 내 의지가 아니라 이미 짜인 일정 — 미래여도 현재시제로 말한다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 이미 움직이기 시작한 계획",
+     "sentence": "We ___ sell the car — we've already put up the ad.",
+     "choices": [
+      "are going to",
+      "will"
+     ],
+     "answer": "are going to",
+     "why": "광고까지 냈다는 건 전부터 정해 둔 일이라는 뜻 — be going to."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — if절 안에서는",
+     "sentence": "If it ___ tomorrow, we'll stay home.",
+     "choices": [
+      "rains",
+      "will rain"
+     ],
+     "answer": "rains",
+     "why": "if·when이 이끄는 절 안에서는 미래 일도 현재시제로 쓴다. will은 바깥 문장 몫이다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I'll call you when I will arrive in Vienna.",
+     "choices": [
+      "I'll call you",
+      "when I will arrive",
+      "in Vienna"
+     ],
+     "answer": "when I will arrive",
+     "why": "when절 안에서는 when I arrive가 맞다. 시간 부사절에서는 미래에도 현재시제 — will은 앞 문장에 이미 있다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "Look at those clouds — it will rain any minute.",
+     "choices": [
+      "Look at those clouds",
+      "it will rain",
+      "any minute"
+     ],
+     "answer": "it will rain",
+     "why": "구름이라는 증거가 눈앞에 있으니 it's going to rain이 맞다. will은 증거 없는 짐작 쪽이다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I'm seeing the dentist tomorrow.",
+     "sentence": "이 문장에 깔린 뜻은?",
+     "choices": [
+      "예약이 이미 잡혀 있다",
+      "내일 가야겠다고 지금 마음먹었다"
+     ],
+     "answer": "예약이 이미 잡혀 있다",
+     "why": "현재진행으로 말하는 미래는 잡혀 있는 약속이다. 지금 정한 거라면 I'll see the dentist tomorrow."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I'll help you tomorrow.",
+     "sentence": "이 문장에 깔린 뜻은?",
+     "choices": [
+      "지금 이 자리에서 돕겠다고 정했다",
+      "전부터 도울 계획이 서 있었다"
+     ],
+     "answer": "지금 이 자리에서 돕겠다고 정했다",
+     "why": "will은 말하는 순간의 결정이자 약속이다. 미리 세운 계획이었다면 I'm going to help you tomorrow."
+    },
+    {
+     "kind": "order",
+     "q": "마음먹은 계획으로 배열하기",
+     "pieces": [
+      "I'm going to",
+      "look for a new job",
+      "next year"
+     ],
+     "answer": [
+      "I'm going to",
+      "look for a new job",
+      "next year"
+     ],
+     "ko": "내년엔 새 직장을 알아볼 생각이야.",
+     "why": "전부터 마음먹어 온 계획 → be going to가 자연스럽다."
+    },
+    {
+     "kind": "order",
+     "q": "그 자리에서 하는 약속으로 배열하기",
+     "pieces": [
+      "Don't worry",
+      "I'll text you",
+      "when I get there"
+     ],
+     "answer": [
+      "Don't worry",
+      "I'll text you",
+      "when I get there"
+     ],
+     "ko": "걱정 마, 도착하면 문자할게.",
+     "why": "지금 하는 약속은 will, when절 안은 현재시제(get) — 한 문장에 두 규칙이 같이 산다."
     }
    ],
    "produce": [
@@ -554,6 +872,60 @@
      ],
      "model": "Here, I'll carry that for you. Don't worry about it.",
      "ko": "이리 주세요, 제가 들어 드릴게요. 신경 쓰지 마시고요."
+    },
+    {
+     "situation": "기차가 곧 도착한다. 옆자리 사람에게 내려서 뭘 할 계획인지 말해 보세요 — 정해 둔 것 하나, 될지 모르는 것 하나.",
+     "chunks": [
+      "When we get there",
+      "I'm going to",
+      "and then maybe",
+      "I'll"
+     ],
+     "model": "When we get there, I'm going to drop off my bag at the hostel, and then maybe I'll walk around for a while.",
+     "ko": "도착하면 호스텔에 짐부터 맡길 거예요. 그다음엔 좀 걸어 다닐까 해요."
+    },
+    {
+     "situation": "친구가 다음 주에 시간 되냐고 물었다. 이미 잡힌 약속을 말하고, 그 자리에서 다른 날을 비워 두겠다고 해 보세요.",
+     "chunks": [
+      "I'm having dinner with",
+      "on Tuesday",
+      "but I'll",
+      "if you want"
+     ],
+     "model": "I'm having dinner with my sister on Tuesday, but I'll keep Thursday open if you want.",
+     "ko": "화요일엔 언니랑 저녁 약속이 있는데, 원하면 목요일은 비워 둘게."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 친구가 지갑을 안 가져왔다. 그 자리에서 '내가 낼게'",
+     "prompt": "뭐라고 할까?",
+     "options": [
+      "I'll pay.",
+      "I'm going to pay."
+     ],
+     "answerIndex": 0,
+     "why": "지금 이 자리에서 정한 일은 will. I'm going to pay라고 하면 오기 전부터 낼 작정이었다는 말로 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 주말 계획을 물어봤다. 친구와 7시에 만나기로 이미 잡아 뒀다",
+     "prompt": "뭐라고 답할까?",
+     "options": [
+      "I'm meeting a friend at seven.",
+      "I'll meet a friend at seven."
+     ],
+     "answerIndex": 0,
+     "why": "시간까지 잡힌 약속은 현재진행으로 말한다. will을 쓰면 지금 막 정하는 것처럼 들려서 '약속이 있다'는 느낌이 사라진다."
+    },
+    {
+     "q": "먼저 감으로 — 하늘이 새까맣다. 곧 비가 오겠다",
+     "prompt": "뭐라고 할까?",
+     "options": [
+      "It's going to rain.",
+      "It will rain."
+     ],
+     "answerIndex": 0,
+     "why": "눈앞의 증거(먹구름)를 보고 하는 예측은 be going to. It will rain은 증거 없이 점치는 말투라 이 장면에 안 맞는다."
     }
    ]
   },
@@ -664,6 +1036,128 @@
      ],
      "answer": "May",
      "why": "허락은 may/can/could로 구한다. will은 의지를 묻는 말이라 어색하다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 부탁이 클수록 물러서기",
+     "sentence": "___ you possibly lend me your charger?",
+     "choices": [
+      "Could",
+      "Will"
+     ],
+     "answer": "Could",
+     "why": "possibly와 짝을 이루는 건 could다. 부탁이 무거울수록 조동사를 뒤로 물리고 말을 늘린다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — mind 뒤의 모양",
+     "sentence": "Would you mind ___ the door?",
+     "choices": [
+      "closing",
+      "to close"
+     ],
+     "answer": "closing",
+     "why": "mind 뒤에는 -ing만 온다. mind to close라는 말은 없다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 정중한 권유의 틀",
+     "sentence": "___ you like to join us for dinner?",
+     "choices": [
+      "Would",
+      "Will"
+     ],
+     "answer": "Would",
+     "why": "권유는 Would you like to가 기본 틀이다. Will you는 의지를 묻는 직설이라 부담을 준다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 확신이 없을 때",
+     "sentence": "Take an umbrella — it ___ rain later.",
+     "choices": [
+      "might",
+      "must"
+     ],
+     "answer": "might",
+     "why": "올지 안 올지 모르면 might. must는 '틀림없이 온다'는 단정이다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "Would you mind to open the window a little?",
+     "choices": [
+      "Would you mind",
+      "to open",
+      "a little"
+     ],
+     "answer": "to open",
+     "why": "mind 뒤에는 -ing — opening the window가 맞다. 틀 자체는 정중해도 모양이 어긋나면 바로 티가 난다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "Do you like some water? You look thirsty.",
+     "choices": [
+      "Do you like",
+      "some water",
+      "look thirsty"
+     ],
+     "answer": "Do you like",
+     "why": "지금 권하는 말은 Would you like some water?가 맞다. Do you like는 평소 취향을 묻는 다른 질문이다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — \"Would you mind waiting a moment?\" — \"Not at all.\"",
+     "sentence": "이 대답의 뜻은?",
+     "choices": [
+      "기다려 주겠다는 뜻",
+      "못 기다린다는 뜻"
+     ],
+     "answer": "기다려 주겠다는 뜻",
+     "why": "'기다리는 게 꺼려지세요?'에 '전혀요'라고 답한 것 — 승낙이다. mind 질문은 No 쪽이 좋다는 대답이다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — You might want to check the schedule.",
+     "sentence": "이 문장에 깔린 뜻은?",
+     "choices": [
+      "시간표를 확인해 보라는 부드러운 조언",
+      "확인하고 싶어질 수도 있다는 단순한 추측"
+     ],
+     "answer": "시간표를 확인해 보라는 부드러운 조언",
+     "why": "might want to는 조언을 한 겹 감싸는 틀이다. You should check보다 훨씬 덜 찌른다."
+    },
+    {
+     "kind": "order",
+     "q": "낯선 사람에게 길 묻기 배열",
+     "pieces": [
+      "Excuse me",
+      "could you tell me",
+      "where the platform is"
+     ],
+     "answer": [
+      "Excuse me",
+      "could you tell me",
+      "where the platform is"
+     ],
+     "ko": "실례지만 승강장이 어디인지 알려 주실 수 있나요?",
+     "why": "could + 간접의문문이 낯선 사람에게 묻는 기본 틀. 끝은 where is the platform이 아니라 where the platform is — 평서문 어순이다."
+    },
+    {
+     "kind": "order",
+     "q": "사진 부탁 배열",
+     "pieces": [
+      "Would you mind",
+      "taking a picture",
+      "of us"
+     ],
+     "answer": [
+      "Would you mind",
+      "taking a picture",
+      "of us"
+     ],
+     "ko": "저희 사진 좀 찍어 주실 수 있을까요?",
+     "why": "Would you mind + -ing — 상대에게 부담을 가장 덜 주는 부탁 틀이다."
     }
    ],
    "produce": [
@@ -688,6 +1182,60 @@
      ],
      "model": "I'd love to, but I'm afraid I can't today. Could we do it tomorrow instead?",
      "ko": "그러고 싶은데 오늘은 어려울 것 같아요. 대신 내일 하면 어떨까요?"
+    },
+    {
+     "situation": "여행지에서 지나가는 사람에게 분수 앞에서 사진을 찍어 달라고 부탁해 보세요.",
+     "chunks": [
+      "Excuse me",
+      "would you mind",
+      "taking a photo of me",
+      "in front of"
+     ],
+     "model": "Excuse me — would you mind taking a photo of me in front of the fountain?",
+     "ko": "실례합니다, 분수 앞에서 사진 한 장만 찍어 주실 수 있을까요?"
+    },
+    {
+     "situation": "기차에서 옆자리 승객에게 무거운 가방을 선반에 올리는 걸 도와달라고 조심스럽게 부탁해 보세요.",
+     "chunks": [
+      "Sorry to bother you",
+      "but could you",
+      "help me with",
+      "this bag"
+     ],
+     "model": "Sorry to bother you, but could you help me with this bag? It's a little heavy.",
+     "ko": "귀찮게 해서 죄송한데, 이 가방 좀 도와주실 수 있을까요? 좀 무거워서요."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 기차에서 처음 본 사람에게 창문을 좀 열어 달라고 한다",
+     "prompt": "어느 쪽이 안전할까?",
+     "options": [
+      "Could you open the window?",
+      "Can you open the window?"
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 통하지만 could가 한 발 물러선 말이다. 낯선 사람에게 Can you는 자칫 시키는 말투로 들린다 — 물러선 쪽이 늘 안전하다."
+    },
+    {
+     "q": "먼저 감으로 — \"Do you mind if I sit here?\"라고 물었더니 상대가 \"No, not at all.\"",
+     "prompt": "앉아도 될까?",
+     "options": [
+      "앉아도 된다",
+      "앉으면 안 된다"
+     ],
+     "answerIndex": 0,
+     "why": "mind는 '꺼리다'라는 뜻 — '아니요, 전혀 안 꺼려요'니까 승낙이다. 거꾸로 Yes라고 답하면 '꺼린다', 즉 거절이 된다."
+    },
+    {
+     "q": "먼저 감으로 — 카페에서 상대에게 커피를 권하려 한다",
+     "prompt": "뭐라고 할까?",
+     "options": [
+      "Would you like some coffee?",
+      "Do you like coffee?"
+     ],
+     "answerIndex": 0,
+     "why": "Would you like는 '지금 드릴까요?'라는 권유, Do you like는 평소 취향을 묻는 말이다. 카페에서 Do you like coffee?라고 하면 설문조사처럼 들린다."
     }
    ]
   },
@@ -727,6 +1275,38 @@
      }
     ]
    },
+   "discover": [
+    {
+     "q": "먼저 감으로 — 길에서 낯선 사람에게 역이 어디인지 정중히 묻는다",
+     "prompt": "Do you know 뒤에 뭐가 올까?",
+     "options": [
+      "Do you know where the station is?",
+      "Do you know where is the station?"
+     ],
+     "answerIndex": 0,
+     "why": "뒤집기는 문장 맨 앞의 Do you know에서 이미 끝났다. 안으로 들어간 질문은 평서문 어순으로 돌아온다 — 한 문장에서 두 번 뒤집으면 어색하게 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 말투를 들어 보니 상대가 미국인인 게 거의 확실하다. 확인만 하고 싶다",
+     "prompt": "'미국인이시죠?'는?",
+     "options": [
+      "You're American, aren't you?",
+      "Are you American?"
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 맞는 문장이다. 하지만 Are you American?은 정말 몰라서 묻는 말이고, 부가의문문은 '맞죠?' — 거의 확신하면서 동의를 구하는 말투다."
+    },
+    {
+     "q": "먼저 감으로 — 이 케이크를 누가 만들었는지 궁금하다",
+     "prompt": "뭐라고 물을까?",
+     "options": [
+      "Who made this cake?",
+      "Who did make this cake?"
+     ],
+     "answerIndex": 0,
+     "why": "who가 스스로 주어면 do를 부르지 않는다. 뒤집을 주어가 따로 없기 때문이다. Who did you meet?처럼 목적어를 물을 때만 did가 낀다."
+    }
+   ],
    "practice": [
     {
      "kind": "choice",
@@ -798,6 +1378,130 @@
      ],
      "answer": "Who",
      "why": "who가 주어 자리면 do를 넣지 않는다. Who did는 목적어를 물을 때다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 문장 안의 질문",
+     "sentence": "I'm not sure what time the café ___.",
+     "choices": [
+      "opens",
+      "does it open"
+     ],
+     "answer": "opens",
+     "why": "I'm not sure 안으로 들어간 질문은 평서문 어순 — 주어 다음에 동사가 그대로 온다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — yes/no를 안에 넣기",
+     "sentence": "Could you tell me ___ this seat is taken?",
+     "choices": [
+      "if",
+      "is"
+     ],
+     "answer": "if",
+     "why": "의문사가 없는 질문이 안으로 들어가면 if가 잇는다. is를 또 앞에 세우면 뒤집기를 두 번 하는 셈이다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 부가의문문",
+     "sentence": "It's a beautiful night, ___?",
+     "choices": [
+      "isn't it",
+      "is it"
+     ],
+     "answer": "isn't it",
+     "why": "앞이 긍정이면 뒤는 부정으로 되받는다. is it?으로 받으면 정말 몰라서 묻는 말이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 직접 물을 때",
+     "sentence": "___ you take this train often?",
+     "choices": [
+      "Do",
+      "Are"
+     ],
+     "answer": "Do",
+     "why": "take는 일반동사 — be가 아니라 do가 앞에 선다. Are you take는 만들 수 없는 문장이다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "Do you know where is the exit?",
+     "choices": [
+      "Do you know",
+      "where is",
+      "the exit"
+     ],
+     "answer": "where is",
+     "why": "안에 들어간 질문은 where the exit is. 뒤집기는 문장 맨 앞에서 이미 끝났다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "She speaks French, doesn't it?",
+     "choices": [
+      "She speaks",
+      "French",
+      "doesn't it"
+     ],
+     "answer": "doesn't it",
+     "why": "부가의문문은 앞 문장의 주어를 그대로 되받는다 — doesn't she. 되묻는 대상은 French가 아니라 she다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — You're not coming, are you?",
+     "sentence": "이 말에 깔린 기대는?",
+     "choices": [
+      "안 올 거라고 거의 확신하며 확인한다",
+      "올 거라고 믿고 되묻는다"
+     ],
+     "answer": "안 올 거라고 거의 확신하며 확인한다",
+     "why": "부가의문문의 앞 문장이 화자의 짐작이다. 부정으로 시작했으면 '안 오지?' 쪽으로 이미 기울어 있다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — You're American?",
+     "sentence": "끝만 올려 물으면?",
+     "choices": [
+      "방금 안 사실이 놀라워 확인한다",
+      "국적을 처음으로 묻는다"
+     ],
+     "answer": "방금 안 사실이 놀라워 확인한다",
+     "why": "평서문에 올린 억양은 '정말요?'의 놀람·확인이다. 처음 묻는 질문이면 Are you American?으로 뒤집는다."
+    },
+    {
+     "kind": "order",
+     "q": "궁금함을 혼잣말로 배열하기",
+     "pieces": [
+      "I wonder",
+      "why",
+      "she said that"
+     ],
+     "answer": [
+      "I wonder",
+      "why",
+      "she said that"
+     ],
+     "ko": "걔가 왜 그런 말을 했는지 궁금하네.",
+     "why": "wonder 안의 why절도 평서문 어순 — why did she say가 아니다."
+    },
+    {
+     "kind": "order",
+     "q": "정중한 질문으로 배열하기",
+     "pieces": [
+      "Do you know",
+      "if",
+      "this train",
+      "stops in Vienna"
+     ],
+     "answer": [
+      "Do you know",
+      "if",
+      "this train",
+      "stops in Vienna"
+     ],
+     "ko": "이 기차가 빈에 서는지 아세요?",
+     "why": "yes/no 질문이 안으로 들어가면 if가 잇고, 그 뒤는 this train stops로 평서문 어순이다."
     }
    ],
    "produce": [
@@ -822,6 +1526,28 @@
      ],
      "model": "Excuse me, do you know where the nearest station is?",
      "ko": "실례합니다, 가장 가까운 역이 어디인지 아세요?"
+    },
+    {
+     "situation": "카페에서 주문하기 전에, 화장실이 있는지 점원에게 정중히 물어보세요. yes/no 질문을 문장 안에 넣어서요.",
+     "chunks": [
+      "Excuse me",
+      "could you tell me",
+      "if",
+      "a restroom"
+     ],
+     "model": "Excuse me, could you tell me if there's a restroom here?",
+     "ko": "실례지만, 여기 화장실이 있는지 알려주실 수 있어요?"
+    },
+    {
+     "situation": "기차에서 옆자리 사람이 읽는 책이 궁금하다. 직접 물은 뒤, 어디서 샀는지는 문장 안에 넣어 물어보세요.",
+     "chunks": [
+      "What are you",
+      "Can I ask",
+      "where you",
+      "got it"
+     ],
+     "model": "What are you reading? Can I ask where you got it?",
+     "ko": "뭐 읽으세요? 어디서 사셨는지 여쭤봐도 돼요?"
     }
    ]
   },
@@ -861,6 +1587,38 @@
      }
     ]
    },
+   "discover": [
+    {
+     "q": "먼저 감으로 — 기차에서 처음 만난 사람에게 직업을 말한다",
+     "prompt": "'저 교사예요'는?",
+     "options": [
+      "I'm a teacher.",
+      "I'm teacher."
+     ],
+     "answerIndex": 0,
+     "why": "한국어에는 없는 자리지만 영어는 직업 앞에 a가 반드시 붙는다. '교사라는 사람들 중 하나'로 세는 것이다. a가 빠지면 문장이 덜 끝난 것처럼 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 카페 창가 자리가 춥다. 점원에게 저 창문을 닫아 달라고 한다",
+     "prompt": "뭐라고 부탁할까?",
+     "options": [
+      "Could you close the window?",
+      "Could you close a window?"
+     ],
+     "answerIndex": 0,
+     "why": "지금 열려 있는 그 창문 — 나도 알고 점원도 아는 대상이라 the. a window는 '아무 창문이나 하나 닫아 주세요'가 되어 이상하게 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 취미를 묻길래 음악을 좋아한다고 답하려 한다",
+     "prompt": "'음악 좋아해요'는?",
+     "options": [
+      "I love music.",
+      "I love the music."
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 맞는 문장이지만 뜻이 다르다. 음악 전반이면 아무것도 안 붙인다. the music은 '지금 나오는 이 음악'을 가리키는 말이 된다."
+    }
+   ],
    "practice": [
     {
      "kind": "choice",
@@ -934,6 +1692,132 @@
      ],
      "ko": "기차에서 작가를 한 명 만났는데, 그 작가가 자기 책을 줬어요.",
      "why": "처음에는 a, 다시 가리킬 때는 the로 바뀐다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 처음 꺼낼 때",
+     "sentence": "We stayed at ___ small hotel near the station.",
+     "choices": [
+      "a",
+      "the"
+     ],
+     "answer": "a",
+     "why": "듣는 사람이 처음 듣는 호텔이다. 처음 꺼낼 때는 a — the로 시작하면 상대가 '어느 호텔?' 하고 멈칫한다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 다시 가리킬 때",
+     "sentence": "I bought a sandwich and a coffee, but I dropped ___ coffee.",
+     "choices": [
+      "the",
+      "a"
+     ],
+     "answer": "the",
+     "why": "방금 말한 그 커피다. 두 번째부터는 the로 받는다 — a coffee면 또 다른 커피가 등장한 셈이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 하나뿐인 것",
+     "sentence": "Look at ___ moon tonight.",
+     "choices": [
+      "the",
+      "a"
+     ],
+     "answer": "the",
+     "why": "달은 하나뿐이라 말 안 해도 서로 무엇인지 안다. sun·sky·world도 같은 무리다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 종류 전체",
+     "sentence": "___ coffee keeps me awake at night.",
+     "choices": [
+      "-",
+      "A"
+     ],
+     "answer": "-",
+     "why": "커피라는 것 전반을 말하면 무관사. A coffee는 '커피 한 잔'이라 주문할 때의 말이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "My sister is nurse at a big hospital.",
+     "choices": [
+      "My sister is",
+      "nurse",
+      "at a big hospital"
+     ],
+     "answer": "nurse",
+     "why": "직업 앞에는 a — is a nurse. 영어는 직업을 '그런 사람들 중 하나'로 세기 때문에 관사 없이는 못 쓴다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I usually go to the bed before midnight.",
+     "choices": [
+      "I usually",
+      "go to the bed",
+      "before midnight"
+     ],
+     "answer": "go to the bed",
+     "why": "자러 가는 것이면 go to bed — 기능으로 쓰인 자리는 무관사다. the bed라고 하면 침대라는 가구 쪽으로 걸어가는 그림이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I need a phone.",
+     "sentence": "이 말의 뜻은?",
+     "choices": [
+      "아무 전화기든 하나 필요하다",
+      "서로 아는 그 전화기가 필요하다"
+     ],
+     "answer": "아무 전화기든 하나 필요하다",
+     "why": "a는 '어느 것이든 하나'. 특정한 그것이면 the phone — '내 폰 어디 갔지'의 상황이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — She went to the school.",
+     "sentence": "the가 붙으면?",
+     "choices": [
+      "학교 건물에 볼일 보러 갔다",
+      "학생으로 공부하러 다닌다"
+     ],
+     "answer": "학교 건물에 볼일 보러 갔다",
+     "why": "the school은 건물을 가리킨다. 학생으로 다니는 것이면 무관사 — go to school. bed·church·prison도 같은 식으로 갈린다."
+    },
+    {
+     "kind": "order",
+     "q": "이야기 순서로 배열하기",
+     "pieces": [
+      "I saw a dog",
+      "in the park",
+      "and the dog",
+      "followed me home"
+     ],
+     "answer": [
+      "I saw a dog",
+      "in the park",
+      "and the dog",
+      "followed me home"
+     ],
+     "ko": "공원에서 개 한 마리를 봤는데, 그 개가 집까지 따라왔어요.",
+     "why": "처음엔 a dog, 다시 가리킬 땐 the dog — 이야기는 이 a→the 교대로 굴러간다."
+    },
+    {
+     "kind": "order",
+     "q": "여행자의 말로 배열하기",
+     "pieces": [
+      "Life is short",
+      "and",
+      "the world",
+      "is big"
+     ],
+     "answer": [
+      "Life is short",
+      "and",
+      "the world",
+      "is big"
+     ],
+     "ko": "인생은 짧고 세상은 넓다.",
+     "why": "life 전반은 무관사, world는 하나뿐이라 the. 같은 문장 안에서도 기준은 각각 따진다."
     }
    ],
    "produce": [
@@ -957,6 +1841,28 @@
      ],
      "model": "I'm a teacher, and I love music — especially jazz.",
      "ko": "저는 교사이고 음악을 좋아해요, 특히 재즈요."
+    },
+    {
+     "situation": "여행지에서 만난 사람에게 어제 발견한 식당을 추천해 보세요. 처음 꺼낼 때와 다시 가리킬 때를 나눠서요.",
+     "chunks": [
+      "I found a",
+      "near the",
+      "and the food",
+      "was amazing"
+     ],
+     "model": "I found a little restaurant near the river, and the food was amazing.",
+     "ko": "강 근처에서 작은 식당을 하나 발견했는데, 음식이 정말 훌륭했어요."
+    },
+    {
+     "situation": "기차에서 옆자리 사람에게 하루 습관을 말해 보세요. 관사를 안 붙이는 자리가 두 번 나오게요.",
+     "chunks": [
+      "I usually have",
+      "before work",
+      "and I go to bed",
+      "around midnight"
+     ],
+     "model": "I usually have coffee before work, and I go to bed around midnight.",
+     "ko": "보통 출근 전에 커피를 마시고, 자정쯤 자요."
     }
    ]
   },
@@ -996,6 +1902,38 @@
      }
     ]
    },
+   "discover": [
+    {
+     "q": "먼저 감으로 — 어제 만난 남자 얘기를 꺼내려 한다",
+     "prompt": "'내가 어제 만난 남자'는?",
+     "options": [
+      "the man I met yesterday",
+      "I met yesterday the man"
+     ],
+     "answerIndex": 0,
+     "why": "한국어는 '내가 어제 만난'이 앞에 붙지만, 영어는 명사를 먼저 놓고 설명을 뒤에 매단다. 회화에서는 이렇게 who 없이 바로 붙이는 형태가 기본이다."
+    },
+    {
+     "q": "먼저 감으로 — '나한테 전화한 그 남자'를 말하고 싶다",
+     "prompt": "어느 쪽일까?",
+     "options": [
+      "the man who called me",
+      "the man called me"
+     ],
+     "answerIndex": 0,
+     "why": "called의 주어 자리라 who를 뺄 수 없다. 빼면 '그 남자가 나한테 전화했다'라는 완전히 다른 문장이 된다 — 명사 덩어리가 아니라 사건 보고가 돼 버린다."
+    },
+    {
+     "q": "먼저 감으로 — 언니는 한 명뿐이고, 파리에 산다는 말을 곁들이고 싶다",
+     "prompt": "어느 쪽이 그 뜻일까?",
+     "options": [
+      "My sister, who lives in Paris, is visiting.",
+      "My sister who lives in Paris is visiting."
+     ],
+     "answerIndex": 0,
+     "why": "쉼표 없는 who절은 여러 언니 중 '파리 사는 언니'를 골라내는 말이 된다. 한 명뿐이면 쉼표로 감싸 덧붙인다 — 쉼표 하나로 언니 숫자가 달라진다."
+    }
+   ],
    "practice": [
     {
      "kind": "choice",
@@ -1067,6 +2005,130 @@
      ],
      "answer": "where",
      "why": "장소이면서 그 안에서 벌어진 일을 설명하면 where를 쓴다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 사물의 주어 자리",
+     "sentence": "That's the song ___ was playing when we met.",
+     "choices": [
+      "that",
+      "who"
+     ],
+     "answer": "that",
+     "why": "사물이라 that(또는 which). was playing의 주어 자리라 생략도 못 한다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — everything 뒤",
+     "sentence": "Everything ___ you said last night was true.",
+     "choices": [
+      "that",
+      "what"
+     ],
+     "answer": "that",
+     "why": "what은 앞의 명사를 받지 못한다. everything이 이미 있으니 that — 회화에서는 아예 빼고 Everything you said가 더 흔하다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 장소 설명",
+     "sentence": "That's the town ___ she grew up.",
+     "choices": [
+      "where",
+      "which"
+     ],
+     "answer": "where",
+     "why": "그 안에서 벌어진 일을 설명하면 where. which를 쓰려면 grew up in의 in까지 챙겨야 한다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 목적어 자리 생략",
+     "sentence": "The guy ___ I told you about is over there.",
+     "choices": [
+      "-",
+      "which"
+     ],
+     "answer": "-",
+     "why": "told의 목적어 자리라 통째로 빼도 된다(who를 써도 된다). which는 사람에 못 쓴다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "The woman which lives next door has two dogs.",
+     "choices": [
+      "The woman which",
+      "lives next door",
+      "has two dogs"
+     ],
+     "answer": "The woman which",
+     "why": "사람에는 who — the woman who. which는 사물 전용이라 사람에 붙이면 물건 취급하는 느낌이 든다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "The book that I lost it was a gift.",
+     "choices": [
+      "The book",
+      "that I lost it",
+      "was a gift"
+     ],
+     "answer": "that I lost it",
+     "why": "that이 이미 book을 받았으니 it을 또 쓰면 같은 것을 두 번 가리킨다 — that I lost로 끝낸다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — My brother who lives in Vienna is a cook.",
+     "sentence": "쉼표가 없으면?",
+     "choices": [
+      "형제가 여럿이고, 그중 빈에 사는 형제 얘기다",
+      "형제가 한 명뿐이고, 빈에 산다는 덧붙임이다"
+     ],
+     "answer": "형제가 여럿이고, 그중 빈에 사는 형제 얘기다",
+     "why": "쉼표 없는 who절은 여럿 중 하나를 골라내는 말이다. 한 명뿐이면 쉼표로 감싼다 — My brother, who lives in Vienna, ..."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — The passengers, who were tired, got off.",
+     "sentence": "쉼표가 있으면?",
+     "choices": [
+      "승객 전원이 피곤했고, 다들 내렸다",
+      "피곤한 승객들만 골라서 내렸다"
+     ],
+     "answer": "승객 전원이 피곤했고, 다들 내렸다",
+     "why": "쉼표 덧붙임은 전원에 대한 설명이다. 쉼표를 빼면 피곤한 승객만 골라내는 말이 된다."
+    },
+    {
+     "kind": "order",
+     "q": "추억을 물으며 배열하기",
+     "pieces": [
+      "Do you remember",
+      "the café",
+      "we went to",
+      "last summer"
+     ],
+     "answer": [
+      "Do you remember",
+      "the café",
+      "we went to",
+      "last summer"
+     ],
+     "ko": "우리가 지난여름에 갔던 그 카페 기억나?",
+     "why": "café를 먼저 놓고 설명이 뒤에 붙는다 — that 없이 바로 붙는 이 형태가 회화의 기본형이다."
+    },
+    {
+     "kind": "order",
+     "q": "사람 소개로 배열하기",
+     "pieces": [
+      "She's the kind of person",
+      "who says",
+      "exactly what she thinks"
+     ],
+     "answer": [
+      "She's the kind of person",
+      "who says",
+      "exactly what she thinks"
+     ],
+     "ko": "걔는 자기 생각을 그대로 말하는 타입이야.",
+     "why": "한국어는 '자기 생각을 그대로 말하는'이 앞에 오지만, 영어는 person을 먼저 놓고 who로 설명을 잇는다."
     }
    ],
    "produce": [
@@ -1091,6 +2153,28 @@
      ],
      "model": "It's a film that follows two people talking for one night. I saw it years ago and still think about it.",
      "ko": "하룻밤 동안 두 사람이 대화하는 걸 따라가는 영화예요. 몇 년 전에 봤는데 아직도 생각나요."
+    },
+    {
+     "situation": "여행 중 만난 사람이 서울에 가 보고 싶다고 한다. 명사 뒤에 설명을 붙여 한 곳을 추천해 보세요.",
+     "chunks": [
+      "There's a place",
+      "in Seoul",
+      "that",
+      "at night"
+     ],
+     "model": "There's a place in Seoul that looks completely different at night — you should see it.",
+     "ko": "서울에 밤이 되면 완전히 달라 보이는 곳이 있어요 — 꼭 가 보세요."
+    },
+    {
+     "situation": "카페에 스카프를 두고 나왔다. 다시 가서 직원에게 찾는 물건을 설명해 보세요. who/that 없이 설명을 바로 붙여서요.",
+     "chunks": [
+      "I'm looking for",
+      "a scarf",
+      "I left here",
+      "this morning"
+     ],
+     "model": "I'm looking for a scarf I left here this morning.",
+     "ko": "오늘 아침에 여기 두고 간 스카프를 찾고 있어요."
     }
    ]
   },
@@ -1203,6 +2287,130 @@
      ],
      "answer": "made",
      "why": "행위자를 묻는 질문이라 수동으로 만들 이유가 없다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 지어진 쪽",
+     "sentence": "This bridge ___ over a hundred years ago.",
+     "choices": [
+      "was built",
+      "built"
+     ],
+     "answer": "was built",
+     "why": "다리는 지어진 쪽이다. built만 쓰면 다리가 무언가를 지었다는 말이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 구어의 get",
+     "sentence": "She ___ invited to the wedding at the last minute.",
+     "choices": [
+      "got",
+      "was gotten"
+     ],
+     "answer": "got",
+     "why": "get + p.p.가 회화의 수동이다. was gotten이라는 형태는 없다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 감정의 -ed",
+     "sentence": "The movie was three hours long — I was so ___.",
+     "choices": [
+      "bored",
+      "boring"
+     ],
+     "answer": "bored",
+     "why": "지루함을 받은 쪽은 -ed. boring이면 내가 남들을 지루하게 만들었다는 말이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 수동이 없는 동사",
+     "sentence": "What ___ to your hand?",
+     "choices": [
+      "happened",
+      "was happened"
+     ],
+     "answer": "happened",
+     "why": "happen·die·arrive처럼 목적어가 없는 동사는 수동을 못 만든다. 당할 대상이 애초에 없기 때문이다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "My grandfather was died in the war.",
+     "choices": [
+      "My grandfather",
+      "was died",
+      "in the war"
+     ],
+     "answer": "was died",
+     "why": "die는 자동사 — died 한 단어면 끝난다. '돌아가셨다'의 '~셨다'를 be로 옮기려다 생기는 오류다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "This song was written from a famous poet.",
+     "choices": [
+      "was written",
+      "from",
+      "a famous poet"
+     ],
+     "answer": "from",
+     "why": "행위자는 by로 밝힌다 — written by a famous poet. from은 '어디에서 왔나'라는 출처의 말이다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — The door was closed.",
+     "sentence": "이 말에서 확실한 것은?",
+     "choices": [
+      "문이 닫혀 있었다는 사실뿐, 누가 닫았는지는 모른다",
+      "말하는 사람이 문을 닫았다"
+     ],
+     "answer": "문이 닫혀 있었다는 사실뿐, 누가 닫았는지는 모른다",
+     "why": "수동태는 행위자를 지운다. 내가 닫았다고 말하려면 I closed the door — 능동으로 돌아가야 한다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — He got fired.",
+     "sentence": "이 문장의 속뜻은?",
+     "choices": [
+      "회사가 그를 내보냈다 — 그는 당한 쪽",
+      "그가 스스로 그만뒀다"
+     ],
+     "answer": "회사가 그를 내보냈다 — 그는 당한 쪽",
+     "why": "fired는 당하는 일이라 수동. 스스로 나온 것이면 He quit — 태가 바뀌면 누가 결정했는지가 바뀐다."
+    },
+    {
+     "kind": "order",
+     "q": "결항 소식을 배열하기",
+     "pieces": [
+      "My flight",
+      "was canceled",
+      "because of the storm"
+     ],
+     "answer": [
+      "My flight",
+      "was canceled",
+      "because of the storm"
+     ],
+     "ko": "폭풍 때문에 내 비행기가 결항됐어.",
+     "why": "항공사가 누구인지가 아니라 '결항됐다'는 사실이 중요한 자리 — 수동이 자연스럽다."
+    },
+    {
+     "kind": "order",
+     "q": "사진 이야기를 배열하기",
+     "pieces": [
+      "This photo",
+      "was taken",
+      "on our last day",
+      "in Vienna"
+     ],
+     "answer": [
+      "This photo",
+      "was taken",
+      "on our last day",
+      "in Vienna"
+     ],
+     "ko": "이 사진은 빈에서의 마지막 날 찍힌 거야.",
+     "why": "누가 찍었는지보다 언제 찍혔는지가 중요하다. 사진 이야기의 기본틀은 was taken."
     }
    ],
    "produce": [
@@ -1227,6 +2435,60 @@
      ],
      "model": "I was raised by my grandparents, and I was taught to finish what I start.",
      "ko": "조부모님 손에 자랐고, 시작한 건 끝내라고 배웠어요."
+    },
+    {
+     "situation": "카페에서 주문한 음식이 한참 안 나온다. 직원에게 정중히 말해 보세요.",
+     "chunks": [
+      "Excuse me —",
+      "my order was taken",
+      "but nothing has come out",
+      "yet"
+     ],
+     "model": "Excuse me — my order was taken twenty minutes ago, but nothing has come out yet.",
+     "ko": "저기요, 주문 받아 가신 지 20분 됐는데 아직 아무것도 안 나왔어요."
+    },
+    {
+     "situation": "낯선 사람과 걷다가 오래된 성당 앞을 지난다. 언제 지어졌는지 아는 대로 말해 보세요.",
+     "chunks": [
+      "This church was built",
+      "in the",
+      "and it was named",
+      "after"
+     ],
+     "model": "This church was built in the 1300s, and it was named after a saint, I think.",
+     "ko": "이 성당은 1300년대에 지어졌고, 어떤 성인의 이름을 딴 거래요, 아마."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 세 시간짜리 영화가 너무 지루했다",
+     "prompt": "'나 지루했어'는?",
+     "options": [
+      "I was bored.",
+      "I was boring."
+     ],
+     "answerIndex": 0,
+     "why": "-ed는 내가 받은 감정, -ing는 내가 남에게 주는 감정. I was boring은 '내가 지루한 사람이었다'는 고백이 된다."
+    },
+    {
+     "q": "먼저 감으로 — 기차에서 폰이 사라졌다. 누가 가져갔는지 모른다",
+     "prompt": "자연스러운 말은?",
+     "options": [
+      "My phone was stolen on the train.",
+      "My phone stole on the train."
+     ],
+     "answerIndex": 0,
+     "why": "폰은 당한 쪽이니 be + 과거분사. be를 빼먹으면 폰이 도둑이 된다 — 한국어 '~됐다'에는 be가 안 보여서 자주 빠지는 자리다."
+    },
+    {
+     "q": "먼저 감으로 — 어젯밤 근처에서 사고가 났다고 전하려 한다",
+     "prompt": "맞는 쪽은?",
+     "options": [
+      "The accident happened last night.",
+      "The accident was happened last night."
+     ],
+     "answerIndex": 0,
+     "why": "happen은 당하는 대상이 없는 동사라 수동태 자체가 없다. '사고가 났다 = 됐다'로 옮기면 이렇게 틀린다."
     }
    ]
   },
@@ -1337,6 +2599,128 @@
      ],
      "answer": "on",
      "why": "최상급 뒤에는 in·on·of로 범위를 준다. than은 비교급에만 붙는다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 짧은 형용사",
+     "sentence": "Today is a lot ___ than yesterday.",
+     "choices": [
+      "warmer",
+      "more warm"
+     ],
+     "answer": "warmer",
+     "why": "음절 하나짜리는 -er. more warm은 규칙을 거꾸로 탄 말이라 어색하게 들린다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 불규칙 최상급",
+     "sentence": "That was the ___ meal of the whole trip.",
+     "choices": [
+      "best",
+      "most good"
+     ],
+     "answer": "best",
+     "why": "good–better–best. 형태가 통째로 바뀌는 불규칙은 몇 개 안 된다 — bad–worse–worst도 같은 무리."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 딱 그만큼",
+     "sentence": "The subway is just ___ fast as a taxi here.",
+     "choices": [
+      "as",
+      "more"
+     ],
+     "answer": "as",
+     "why": "'~만큼'의 틀은 as ~ as. just를 앞에 붙이면 '딱 그만큼'이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — -er의 짝",
+     "sentence": "This café is quieter ___ the one downstairs.",
+     "choices": [
+      "than",
+      "as"
+     ],
+     "answer": "than",
+     "why": "-er가 나왔으면 짝은 than. as는 as ~ as로 둘이 세트일 때만 쓴다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "This hotel is more cheaper than the last one.",
+     "choices": [
+      "more cheaper",
+      "than",
+      "the last one"
+     ],
+     "answer": "more cheaper",
+     "why": "cheap은 -er로 끝. more와 -er를 겹치면 비교를 두 번 하는 셈이다 — cheaper 하나면 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "Seoul is the biggest city of Korea.",
+     "choices": [
+      "the biggest",
+      "city",
+      "of Korea"
+     ],
+     "answer": "of Korea",
+     "why": "최상급의 범위는 in — the biggest city in Korea. of는 of the year처럼 기간이나 무리에 쓴다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — She's not as tall as her sister.",
+     "sentence": "이 말의 뜻은?",
+     "choices": [
+      "그녀는 언니보다 작다",
+      "그녀는 언니와 키가 같다"
+     ],
+     "answer": "그녀는 언니보다 작다",
+     "why": "not as ~ as는 '그만큼은 안 된다' — 같은 게 아니라 미치지 못한다는 말이다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — The test was easier than I thought.",
+     "sentence": "이 말에 깔린 속뜻은?",
+     "choices": [
+      "어려울 줄 알았는데 그 정도는 아니었다",
+      "시험이 아주 쉬웠다"
+     ],
+     "answer": "어려울 줄 알았는데 그 정도는 아니었다",
+     "why": "than I thought는 예상과의 비교다. 절대적으로 쉬웠다는 말이 아니라, 예상보다 나았다는 말."
+    },
+    {
+     "kind": "order",
+     "q": "지금까지 중 최고를 배열",
+     "pieces": [
+      "This is",
+      "the best coffee",
+      "I've ever had"
+     ],
+     "answer": [
+      "This is",
+      "the best coffee",
+      "I've ever had"
+     ],
+     "ko": "이건 내가 마셔 본 최고의 커피야.",
+     "why": "최상급 + I've ever p.p.는 붙어 다니는 틀이다 — '지금까지 겪은 것 중 최고'."
+    },
+    {
+     "kind": "order",
+     "q": "점점 더 붐빔을 배열",
+     "pieces": [
+      "The city gets",
+      "more and more crowded",
+      "every summer"
+     ],
+     "answer": [
+      "The city gets",
+      "more and more crowded",
+      "every summer"
+     ],
+     "ko": "이 도시는 여름마다 점점 더 붐벼.",
+     "why": "긴 형용사의 '점점 더'는 more and more + 형용사. 짧은 말이면 -er and -er."
     }
    ],
    "produce": [
@@ -1361,6 +2745,60 @@
      ],
      "model": "My English is better than it was last year, and I'm getting more comfortable speaking.",
      "ko": "작년보다는 영어가 나아졌고, 말하는 것도 점점 편해지고 있어요."
+    },
+    {
+     "situation": "기차에서 만난 사람이 서울과 부산 중 어디가 좋냐고 묻는다. 견주어 답해 보세요.",
+     "chunks": [
+      "Busan is more",
+      "than Seoul",
+      "but Seoul has",
+      "the best"
+     ],
+     "model": "Busan is more relaxed than Seoul, but Seoul has the best food, honestly.",
+     "ko": "부산이 서울보다 여유로운데, 음식은 솔직히 서울이 최고예요."
+    },
+    {
+     "situation": "카페에서 이번 여행이 기대만 했는지 묻는 질문에 답해 보세요.",
+     "chunks": [
+      "It wasn't as",
+      "as I expected",
+      "but it was way better",
+      "than"
+     ],
+     "model": "It wasn't as sunny as I expected, but it was way better than staying home.",
+     "ko": "기대만큼 화창하진 않았지만, 집에 있는 것보단 훨씬 나았어요."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 커피가 기대보다 훨씬 좋았다",
+     "prompt": "'훨씬 낫다'는?",
+     "options": [
+      "much better",
+      "very better"
+     ],
+     "answerIndex": 0,
+     "why": "very는 비교급 앞에 못 온다. 차이를 키우고 싶으면 much·far·a lot — '훨씬'의 자리는 따로 있다."
+    },
+    {
+     "q": "먼저 감으로 — 빈의 겨울이 생각만큼 춥지는 않다",
+     "prompt": "자연스러운 말은?",
+     "options": [
+      "It's not as cold as I expected.",
+      "It's not cold than I expected."
+     ],
+     "answerIndex": 0,
+     "why": "'~만큼'은 as ~ as가 한 세트다. than은 -er나 more가 앞에 있을 때만 나온다 — colder than이면 몰라도 cold than은 없다."
+    },
+    {
+     "q": "먼저 감으로 — 시간이 갈수록 영어가 는다",
+     "prompt": "'점점 더 나아진다'는?",
+     "options": [
+      "It's getting better and better.",
+      "It's getting more and more better."
+     ],
+     "answerIndex": 0,
+     "why": "better는 이미 비교급이라 more를 또 얹지 않는다. 짧은 말은 -er and -er, 긴 말만 more and more."
     }
    ]
   },
@@ -1471,6 +2909,130 @@
      ],
      "answer": "boils",
      "why": "언제나 그런 일에는 현재+현재를 쓴다. 가정이 아니라 사실 서술이다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 있을 법한 조건",
+     "sentence": "If we ___ the last train, we'll just walk.",
+     "choices": [
+      "miss",
+      "missed"
+     ],
+     "answer": "miss",
+     "why": "막차를 놓치는 건 오늘 밤 실제로 벌어질 수 있는 일 — 현재 + will. missed로 바꾸는 순간 상상 놀이가 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 지금과 다른 상상",
+     "sentence": "If I ___ in Paris, I'd walk by the river every night.",
+     "choices": [
+      "lived",
+      "live"
+     ],
+     "answer": "lived",
+     "why": "실제로는 파리에 안 산다. 과거형이 '현실이 아니다'라는 표시등이다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 그때 그랬더라면",
+     "sentence": "If we ___ in Vienna, everything would have been different.",
+     "choices": [
+      "had stayed",
+      "stayed"
+     ],
+     "answer": "had stayed",
+     "why": "이미 지나간 그날 밤 이야기 — had p.p.로 한 칸 더 밀어야 '그때'가 된다. stayed면 지금의 상상으로 들린다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — would의 짝",
+     "sentence": "If I knew her name, I ___ tell you.",
+     "choices": [
+      "would",
+      "will"
+     ],
+     "answer": "would",
+     "why": "if절이 과거형(상상)이면 뒤는 would. will을 붙이면 두 절의 층이 어긋난다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "If it will rain tomorrow, I'll stay home.",
+     "choices": [
+      "If it will rain",
+      "tomorrow",
+      "I'll stay home"
+     ],
+     "answer": "If it will rain",
+     "why": "if절 안에는 will을 안 넣는다 — If it rains. 미래라는 표시는 뒤쪽 절의 will이 이미 맡고 있다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I wish I have more time to travel.",
+     "choices": [
+      "I wish",
+      "I have",
+      "to travel"
+     ],
+     "answer": "I have",
+     "why": "wish 뒤는 한 칸 뒤로 — I wish I had more time. 현재형 그대로면 소망이 아니라 사실 서술처럼 들린다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — If I had time, I would help you.",
+     "sentence": "이 말의 속뜻은?",
+     "choices": [
+      "지금 시간이 없어서 못 돕는다",
+      "시간이 나면 도울 계획이다"
+     ],
+     "answer": "지금 시간이 없어서 못 돕는다",
+     "why": "과거형 had는 '지금 없다'는 고백이다. 정말 도울 생각이면 If I have time, I'll help you."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I would have called you.",
+     "sentence": "실제로는 어떻게 됐나?",
+     "choices": [
+      "전화하지 않았다",
+      "전화했다"
+     ],
+     "answer": "전화하지 않았다",
+     "why": "would have p.p.는 '그랬을 텐데 안 그랬다' — 일어나지 않은 과거가 자동으로 깔린다."
+    },
+    {
+     "kind": "order",
+     "q": "충고를 배열",
+     "pieces": [
+      "If I were you,",
+      "I'd get off",
+      "at the next stop"
+     ],
+     "answer": [
+      "If I were you,",
+      "I'd get off",
+      "at the next stop"
+     ],
+     "ko": "내가 너라면 다음 역에서 내리겠어.",
+     "why": "If I were you는 충고의 굳은 틀 — 내가 네가 아니라는 전제 위에서 하는 상상이다."
+    },
+    {
+     "kind": "order",
+     "q": "지나간 만남의 가정을 배열",
+     "pieces": [
+      "If we had met",
+      "ten years earlier,",
+      "things might have been",
+      "different"
+     ],
+     "answer": [
+      "If we had met",
+      "ten years earlier,",
+      "things might have been",
+      "different"
+     ],
+     "ko": "우리가 10년만 일찍 만났더라면, 달라졌을지도 몰라.",
+     "why": "had met + might have been — 지나간 만남에 대한 가정. would 대신 might를 쓰면 '어쩌면'의 여지가 남는다."
     }
    ],
    "produce": [
@@ -1495,6 +3057,60 @@
      ],
      "model": "If I had started earlier, I would have finished by now, but I didn't take it seriously back then.",
      "ko": "더 일찍 시작했으면 지금쯤 끝냈을 텐데, 그때는 진지하게 안 봤어요."
+    },
+    {
+     "situation": "기차에서 내릴 역이 다가온다. 대화가 즐거웠던 상대에게 있을 법한 제안을 해 보세요.",
+     "chunks": [
+      "If you're free",
+      "tomorrow",
+      "we could meet",
+      "at"
+     ],
+     "model": "If you're free tomorrow, we could meet at the same café.",
+     "ko": "내일 시간 되면, 같은 카페에서 또 만나도 좋고요."
+    },
+    {
+     "situation": "여행에서 돌아와, 그때 하지 못한 일 하나를 두고 '그랬더라면'을 말해 보세요.",
+     "chunks": [
+      "If I had stayed",
+      "one more day",
+      "I would have",
+      "and maybe"
+     ],
+     "model": "If I had stayed one more day, I would have seen her again, and maybe everything would be different now.",
+     "ko": "하루만 더 있었더라면 그 사람을 다시 만났을 테고, 어쩌면 지금 모든 게 달라져 있었겠죠."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 같이 걷던 사람이 '내일 비 오면 어쩌지'라고 걱정한다",
+     "prompt": "있을 법한 일의 말투는?",
+     "options": [
+      "If it rains, we'll find a café.",
+      "If it rained, we would find a café."
+     ],
+     "answerIndex": 0,
+     "why": "내일 비는 충분히 있을 법한 일 — 현재 + will. 과거형으로 바꾸는 순간 '올 리 없지만 만약에'라는 상상이 돼 버린다."
+    },
+    {
+     "q": "먼저 감으로 — 복권은 안 샀지만 '당첨되면 뭐 할래?' 상상 놀이 중",
+     "prompt": "상상의 말투는?",
+     "options": [
+      "If I won the lottery, I'd quit my job.",
+      "If I win the lottery, I'll quit my job."
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 문법은 맞다. 하지만 won + would가 '그럴 리 없지만'의 거리감을 만든다. win + will이면 정말 당첨을 계획 중인 사람처럼 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 그날 그 사람의 번호를 못 물어봤다. 두고두고 아쉽다",
+     "prompt": "후회의 말은?",
+     "options": [
+      "I wish I had asked for her number.",
+      "I wish I asked for her number."
+     ],
+     "answerIndex": 0,
+     "why": "지나간 일의 아쉬움은 had p.p. — 시제를 한 칸 더 밀어 '이미 끝난 일'임을 표시한다. Before Sunrise 전체가 이 문형 위에 서 있다."
     }
    ]
   },
@@ -1606,6 +3222,128 @@
      ],
      "ko": "자기 전에 계속 읽고 싶어.",
      "why": "want는 to를 받고, keep은 -ing를 받는다. 둘이 이어져도 각자의 규칙을 지킨다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 앞으로 할 일",
+     "sentence": "I hope ___ you again soon.",
+     "choices": [
+      "to see",
+      "seeing"
+     ],
+     "answer": "to see",
+     "why": "hope는 아직 안 일어난 일을 향한다. want·plan·decide와 같은 무리다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — -ing만 받는 동사",
+     "sentence": "Would you mind ___ the window?",
+     "choices": [
+      "opening",
+      "to open"
+     ],
+     "answer": "opening",
+     "why": "mind는 -ing만 받는다. enjoy·finish·avoid와 같은 무리 — 부탁할 때 통째로 Would you mind -ing로 나온다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 전치사 뒤",
+     "sentence": "Thanks for ___ me around the city.",
+     "choices": [
+      "showing",
+      "to show"
+     ],
+     "answer": "showing",
+     "why": "for는 전치사 — 전치사 뒤는 무조건 -ing다. Thanks for to show는 없다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 피하는 일",
+     "sentence": "I avoid ___ the subway at rush hour.",
+     "choices": [
+      "taking",
+      "to take"
+     ],
+     "answer": "taking",
+     "why": "avoid는 -ing만 받는다. 피한다는 건 이미 있는 일에서 몸을 빼는 것이라 -ing 쪽이다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I finished to pack my bag an hour ago.",
+     "choices": [
+      "finished to pack",
+      "my bag",
+      "an hour ago"
+     ],
+     "answer": "finished to pack",
+     "why": "finish는 -ing만 받는다 — finished packing. 끝낸 일은 이미 한 일이라 앞을 향하는 to가 올 자리가 없다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "She avoided to answer my question.",
+     "choices": [
+      "She avoided",
+      "to answer",
+      "my question"
+     ],
+     "answer": "to answer",
+     "why": "avoid 뒤에는 -ing — avoided answering이 맞다. enjoy·mind·keep도 같은 무리라 통째로 외워 둔다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — I remember locking the door.",
+     "sentence": "이 문장의 뜻은?",
+     "choices": [
+      "문을 잠근 기억이 난다",
+      "잊지 말고 문을 잠가야 한다"
+     ],
+     "answer": "문을 잠근 기억이 난다",
+     "why": "remember -ing는 이미 한 일의 기억. 앞으로 할 일을 챙기는 말이면 remember to lock — to는 늘 앞을 본다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — He stopped to buy coffee.",
+     "sentence": "이 문장의 뜻은?",
+     "choices": [
+      "커피를 사려고 가던 길을 멈췄다",
+      "커피 사는 습관을 끊었다"
+     ],
+     "answer": "커피를 사려고 가던 길을 멈췄다",
+     "why": "stop to는 '~하려고 멈추다'. 끊었다는 말이면 stopped buying coffee — to냐 -ing냐로 정반대 이야기가 된다."
+    },
+    {
+     "kind": "order",
+     "q": "깜빡한 일로 배열하기",
+     "pieces": [
+      "I forgot",
+      "to bring",
+      "my passport"
+     ],
+     "answer": [
+      "I forgot",
+      "to bring",
+      "my passport"
+     ],
+     "ko": "여권 챙기는 걸 깜빡했어요.",
+     "why": "forget to는 해야 할 일을 안 한 것. forgot bringing이면 '가져온 기억이 없다'는 다른 말이 된다."
+    },
+    {
+     "kind": "order",
+     "q": "이어진 일로 배열하기",
+     "pieces": [
+      "She kept",
+      "talking",
+      "for an hour"
+     ],
+     "answer": [
+      "She kept",
+      "talking",
+      "for an hour"
+     ],
+     "ko": "걔는 한 시간 동안 계속 얘기했어.",
+     "why": "keep은 -ing를 받는다 — 이미 벌어지고 있는 일을 이어 가는 동사라서다."
     }
    ],
    "produce": [
@@ -1628,6 +3366,58 @@
      ],
      "model": "I stopped checking my phone at night, but I keep waking up early. I'm trying to fix that.",
      "ko": "밤에 폰 보는 건 끊었는데 계속 일찍 깨요. 그걸 고쳐 보려는 중이에요."
+    },
+    {
+     "situation": "기차에서 옆자리 여행자와 이야기 중이다. 다음 여행 계획과, 이런 여행에서 좋아하는 것을 말해 보세요.",
+     "chunks": [
+      "I'm hoping to visit",
+      "and I love",
+      "meeting new people"
+     ],
+     "model": "I'm hoping to visit Prague next, and I love meeting new people on the train.",
+     "ko": "다음엔 프라하에 가 보고 싶어요. 그리고 기차에서 새로운 사람 만나는 게 정말 좋아요."
+    },
+    {
+     "situation": "여행지에서 친해진 사람과 헤어지는 길이다. 도착하면 잊지 말고 연락하라고 당부하며, 즐거웠다는 말도 해 보세요.",
+     "chunks": [
+      "Don't forget to text me",
+      "when you get to",
+      "I really enjoyed"
+     ],
+     "model": "Don't forget to text me when you get to Vienna — I really enjoyed talking with you.",
+     "ko": "빈에 도착하면 잊지 말고 문자해요 — 얘기 나눠서 정말 즐거웠어요."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 몇 년 피우던 담배를 작년에 끊었다",
+     "prompt": "'나 담배 끊었어'는?",
+     "options": [
+      "I stopped smoking.",
+      "I stopped to smoke."
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 문법은 맞다. 하지만 stop to smoke는 '피우려고 (하던 일을) 멈췄다'는 정반대 그림이다. -ing는 하고 있던 일, to는 이제 하려는 일을 가리킨다."
+    },
+    {
+     "q": "먼저 감으로 — 나가는 친구에게 '잊지 말고 문 잠가'라고 당부한다",
+     "prompt": "뭐라고 말할까?",
+     "options": [
+      "Remember to lock the door.",
+      "Remember locking the door."
+     ],
+     "answerIndex": 0,
+     "why": "앞으로 할 일을 챙기는 당부는 to. remember locking은 '문을 잠근 기억이 난다'라서, 당부가 아니라 회상이 된다."
+    },
+    {
+     "q": "먼저 감으로 — 혼자 하는 여행이 즐겁다고 말하고 싶다",
+     "prompt": "'혼자 여행하는 게 좋아요'는?",
+     "options": [
+      "I enjoy traveling alone.",
+      "I enjoy to travel alone."
+     ],
+     "answerIndex": 0,
+     "why": "enjoy는 -ing만 받는다. 즐긴다는 건 이미 해본 일에 대한 말이라 앞을 향하는 to와는 어울리지 않는다."
     }
    ]
   },
@@ -1740,6 +3530,128 @@
      ],
      "ko": "금요일 오후에 그 카페에 있을게요.",
      "why": "지점(at) · 요일(on) · 넓은 시간대(in)가 각자 제자리를 맡는다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 넓은 시간",
+     "sentence": "I was born ___ May.",
+     "choices": [
+      "in",
+      "on"
+     ],
+     "answer": "in",
+     "why": "월은 넓은 시간이라 in. 날짜가 붙어 좁아지면 on May 2nd로 바뀐다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 특별한 하루",
+     "sentence": "We're having dinner together ___ my birthday.",
+     "choices": [
+      "on",
+      "in"
+     ],
+     "answer": "on",
+     "why": "요일·날짜·기념일처럼 달력의 한 칸을 차지하는 하루는 on이다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 택시 안",
+     "sentence": "I left my phone ___ the taxi.",
+     "choices": [
+      "in",
+      "on"
+     ],
+     "answer": "in",
+     "why": "택시·승용차는 안에서 걸어 다닐 수 없어 in. 기차·버스였다면 on이다."
+    },
+    {
+     "kind": "choice",
+     "q": "치환 — 도시",
+     "sentence": "She's staying with a friend ___ Paris.",
+     "choices": [
+      "in",
+      "at"
+     ],
+     "answer": "in",
+     "why": "도시·나라처럼 넓은 곳은 in. at Paris는 도시를 지도 위 한 점으로 만들어 어색해진다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "I'll call you in Friday evening.",
+     "choices": [
+      "I'll call you",
+      "in",
+      "Friday evening"
+     ],
+     "answer": "in",
+     "why": "요일이 붙으면 on이 이긴다 — on Friday evening. in the evening은 요일 없이 말할 때다."
+    },
+    {
+     "kind": "choice",
+     "q": "틀린 곳 하나를 고르세요",
+     "sentence": "She's waiting for you on the front door.",
+     "choices": [
+      "She's waiting",
+      "for you",
+      "on the front door"
+     ],
+     "answer": "on the front door",
+     "why": "문 앞이라는 지점은 at the front door. on the door라고 하면 문짝 표면에 붙어 있는 그림이 된다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — She's in the hospital.",
+     "sentence": "이 문장이 그리는 상황은?",
+     "choices": [
+      "입원해 있다",
+      "문병하러 잠깐 가 있다"
+     ],
+     "answer": "입원해 있다",
+     "why": "미국 영어에서 in the hospital은 환자로 들어가 있다는 말. 문병·볼일이면 at the hospital — 지점으로만 짚는다."
+    },
+    {
+     "kind": "choice",
+     "q": "뜻 대조 — The café is on the corner.",
+     "sentence": "이 카페는 어디에 있나?",
+     "choices": [
+      "길모퉁이에 있다",
+      "방 안 구석에 있다"
+     ],
+     "answer": "길모퉁이에 있다",
+     "why": "거리의 모퉁이는 그 위에 서는 면이라 on the corner. 방 안 구석은 in the corner — 안이냐 밖이냐가 전치사로 갈린다."
+    },
+    {
+     "kind": "order",
+     "q": "영화의 첫 장면으로 배열하기",
+     "pieces": [
+      "I met her",
+      "on a train",
+      "in Europe"
+     ],
+     "answer": [
+      "I met her",
+      "on a train",
+      "in Europe"
+     ],
+     "ko": "유럽에서, 기차에서 그녀를 만났어요.",
+     "why": "탈것은 on, 넓은 지역은 in. 좁은 자리에서 넓은 자리 순서로 붙는다."
+    },
+    {
+     "kind": "order",
+     "q": "약속 시간으로 배열하기",
+     "pieces": [
+      "Let's meet",
+      "at noon",
+      "on Sunday"
+     ],
+     "answer": [
+      "Let's meet",
+      "at noon",
+      "on Sunday"
+     ],
+     "ko": "일요일 정오에 만나요.",
+     "why": "시각의 한 점은 at, 요일은 on — 시간 표현도 보통 좁은 것부터 말한다."
     }
    ],
    "produce": [
@@ -1764,6 +3676,59 @@
      ],
      "model": "I get on the bus at the corner near my house, and I get off in front of the school.",
      "ko": "집 근처 모퉁이에서 버스를 타고 학교 앞에서 내려요."
+    },
+    {
+     "situation": "여행지에서 만난 사람이 어디에 묵느냐고 물었다. 숙소 위치를 설명해 보세요.",
+     "chunks": [
+      "I'm staying at",
+      "on a small street",
+      "near the river"
+     ],
+     "model": "I'm staying at a little hotel on a small street near the river.",
+     "ko": "강 근처 작은 골목에 있는 조그만 호텔에 묵고 있어요."
+    },
+    {
+     "situation": "기차에서 옆자리 승객과 도착 시간 이야기를 한다. 늦게 도착해서 걱정이라는 말을 해 보세요.",
+     "chunks": [
+      "The train gets to Vienna",
+      "at nine",
+      "so I'll have to find my hotel",
+      "at night"
+     ],
+     "model": "The train gets to Vienna at nine, so I'll have to find my hotel at night.",
+     "ko": "기차가 아홉 시에 빈에 도착해서, 밤에 호텔을 찾아가야 해요."
+    }
+   ],
+   "discover": [
+    {
+     "q": "먼저 감으로 — 기차에서 만난 사람에게 '오는 길에 기차에서 책 한 권을 다 읽었다'고 말한다",
+     "prompt": "어느 쪽이 자연스러울까?",
+     "options": [
+      "I read a whole book on the train.",
+      "I read a whole book in the train."
+     ],
+     "answerIndex": 0,
+     "why": "기차·버스·비행기처럼 안에서 걸어 다닐 수 있는 탈것은 on. in the train도 틀리진 않지만 '그 차량 내부에'라는 물리적 위치가 강조돼 어색하게 들린다."
+    },
+    {
+     "q": "먼저 감으로 — 친구와 역에서 만나기로 했다",
+     "prompt": "'역에서 기다릴게'는?",
+     "options": [
+      "I'll wait for you at the station.",
+      "I'll wait for you in the station."
+     ],
+     "answerIndex": 0,
+     "why": "둘 다 문법은 맞다. at은 역을 만남의 '지점'으로 짚는 말이고, in은 '건물 안에 들어가 있겠다'는 말이 된다. 약속 장소는 지점 — at."
+    },
+    {
+     "q": "먼저 감으로 — 요즘 밤에 잠이 안 온다고 말하고 싶다",
+     "prompt": "'밤에'는 어느 쪽?",
+     "options": [
+      "I can't sleep at night.",
+      "I can't sleep in the night."
+     ],
+     "answerIndex": 0,
+     "why": "in the morning·in the afternoon인데 밤만 at night다. 규칙보다 굳은 표현 — 밤 전체를 하나의 점처럼 다룬다고 기억해 두면 된다."
     }
    ]
   }

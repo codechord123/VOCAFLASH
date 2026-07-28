@@ -35,25 +35,277 @@
   ]
  },
  "practice": [
-  { "kind": "choice", "q": "시점이 있는 문장", "sentence": "I ___ her in 2019.", "choices": ["met", "have met"], "answer": "met", "why": "in 2019처럼 시점이 나오면 현재완료를 쓸 수 없다." },
-  { "kind": "choice", "q": "경험을 묻는 말", "sentence": "___ you ever been to Paris?", "choices": ["Have", "Did"], "answer": "Have", "why": "ever와 짝을 이루는 것은 현재완료다. Did를 쓰면 특정한 그때를 묻는 말이 된다." },
-  { "kind": "choice", "q": "지금까지 이어지는 상태", "sentence": "We ___ each other for nine years.", "choices": ["haven't seen", "didn't see"], "answer": "haven't seen", "why": "for + 기간은 지금까지 이어진 시간을 뜻해 현재완료와 붙는다." },
-  { "kind": "choice", "q": "갔다가 돌아왔다면", "sentence": "She ___ to Vienna twice.", "choices": ["has been", "has gone"], "answer": "has been", "why": "has gone to는 가서 아직 거기 있다는 뜻이라 '두 번'과 안 맞는다." },
-  { "kind": "order", "q": "경험을 묻는 문장 배열", "pieces": ["Have you", "ever thought", "about moving abroad"], "answer": ["Have you", "ever thought", "about moving abroad"], "ko": "외국에 나가 살 생각 해본 적 있어요?", "why": "Have + 주어 + ever + p.p.가 경험을 묻는 기본 틀이다." },
-  { "kind": "choice", "q": "방금 끝난 일", "sentence": "I ___ just finished the book.", "choices": ["have", "did"], "answer": "have", "why": "just·already·yet은 현재완료와 짝을 이룬다." }
+  {
+   "kind": "choice",
+   "q": "시점이 있는 문장",
+   "sentence": "I ___ her in 2019.",
+   "choices": [
+    "met",
+    "have met"
+   ],
+   "answer": "met",
+   "why": "in 2019처럼 시점이 나오면 현재완료를 쓸 수 없다."
+  },
+  {
+   "kind": "choice",
+   "q": "경험을 묻는 말",
+   "sentence": "___ you ever been to Paris?",
+   "choices": [
+    "Have",
+    "Did"
+   ],
+   "answer": "Have",
+   "why": "ever와 짝을 이루는 것은 현재완료다. Did를 쓰면 특정한 그때를 묻는 말이 된다."
+  },
+  {
+   "kind": "choice",
+   "q": "지금까지 이어지는 상태",
+   "sentence": "We ___ each other for nine years.",
+   "choices": [
+    "haven't seen",
+    "didn't see"
+   ],
+   "answer": "haven't seen",
+   "why": "for + 기간은 지금까지 이어진 시간을 뜻해 현재완료와 붙는다."
+  },
+  {
+   "kind": "choice",
+   "q": "갔다가 돌아왔다면",
+   "sentence": "She ___ to Vienna twice.",
+   "choices": [
+    "has been",
+    "has gone"
+   ],
+   "answer": "has been",
+   "why": "has gone to는 가서 아직 거기 있다는 뜻이라 '두 번'과 안 맞는다."
+  },
+  {
+   "kind": "order",
+   "q": "경험을 묻는 문장 배열",
+   "pieces": [
+    "Have you",
+    "ever thought",
+    "about moving abroad"
+   ],
+   "answer": [
+    "Have you",
+    "ever thought",
+    "about moving abroad"
+   ],
+   "ko": "외국에 나가 살 생각 해본 적 있어요?",
+   "why": "Have + 주어 + ever + p.p.가 경험을 묻는 기본 틀이다."
+  },
+  {
+   "kind": "choice",
+   "q": "방금 끝난 일",
+   "sentence": "I ___ just finished the book.",
+   "choices": [
+    "have",
+    "did"
+   ],
+   "answer": "have",
+   "why": "just·already·yet은 현재완료와 짝을 이룬다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — ago가 보이면",
+   "sentence": "We ___ in Paris two years ago.",
+   "choices": [
+    "met",
+    "have met"
+   ],
+   "answer": "met",
+   "why": "ago는 '그때'를 못 박는 말이다. 시점이 박히면 과거시제."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 아직 못 한 일",
+   "sentence": "I ___ finished packing yet.",
+   "choices": [
+    "haven't",
+    "didn't"
+   ],
+   "answer": "haven't",
+   "why": "yet은 '지금까지도 아직'이라는 말 — 지금 상태를 겨누니 현재완료다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — since가 보이면",
+   "sentence": "He ___ here since March.",
+   "choices": [
+    "has lived",
+    "lived"
+   ],
+   "answer": "has lived",
+   "why": "since는 시작점 — 3월부터 지금까지 이어지는 일이라 현재완료다."
+  },
+  {
+   "kind": "choice",
+   "q": "치환 — 결과가 지금까지 남았다면",
+   "sentence": "I ___ my keys! I can't get in.",
+   "choices": [
+    "'ve lost",
+    "lost"
+   ],
+   "answer": "'ve lost",
+   "why": "지금 못 들어가고 있다 — 잃어버린 결과가 지금까지 이어지면 현재완료. I lost my keys는 지난 일 얘기로 들린다."
+  },
+  {
+   "kind": "choice",
+   "q": "틀린 곳 하나를 고르세요",
+   "sentence": "I have visited my grandmother last weekend.",
+   "choices": [
+    "have visited",
+    "my grandmother",
+    "last weekend"
+   ],
+   "answer": "have visited",
+   "why": "last weekend라는 시점이 있으니 I visited가 맞다. 시점과 현재완료는 한 문장에 못 산다."
+  },
+  {
+   "kind": "choice",
+   "q": "틀린 곳 하나를 고르세요",
+   "sentence": "She has gone to London three times.",
+   "choices": [
+    "has gone",
+    "to London",
+    "three times"
+   ],
+   "answer": "has gone",
+   "why": "세 번이라는 건 갔다 '왔다'는 경험 — has been to London이 맞다. has gone은 가서 아직 안 온 것이라 횟수와 안 맞는다."
+  },
+  {
+   "kind": "choice",
+   "q": "뜻 대조 — I've lost my passport.",
+   "sentence": "이 문장에 깔린 뜻은?",
+   "choices": [
+    "잃어버려서 지금도 여권이 없다",
+    "예전에 잃어버린 적이 있다 (지금은 찾았을 수도)"
+   ],
+   "answer": "잃어버려서 지금도 여권이 없다",
+   "why": "현재완료는 지금 상태까지 끌고 온다 — 지금 여권이 없어서 곤란하다는 말. 찾았다면 I lost my passport, but I found it."
+  },
+  {
+   "kind": "choice",
+   "q": "뜻 대조 — I've lived here for ten years.",
+   "sentence": "이 문장에 깔린 뜻은?",
+   "choices": [
+    "10년째 살고 있고 지금도 산다",
+    "10년 살았고 지금은 떠났다"
+   ],
+   "answer": "10년째 살고 있고 지금도 산다",
+   "why": "현재완료 + for는 지금까지 이어진 시간이다. 떠났다면 I lived here for ten years — 과거시제가 끝났음을 알린다."
+  },
+  {
+   "kind": "order",
+   "q": "언제부터 알았는지 배열하기",
+   "pieces": [
+    "I've known her",
+    "since",
+    "we were in college"
+   ],
+   "answer": [
+    "I've known her",
+    "since",
+    "we were in college"
+   ],
+   "ko": "대학 때부터 걔를 알고 지냈어.",
+   "why": "since 뒤에 시작점을 놓고, 그때부터 지금까지 이어지니 앞은 현재완료다."
+  },
+  {
+   "kind": "order",
+   "q": "경험을 묻는 말로 배열하기",
+   "pieces": [
+    "Have you",
+    "seen this movie",
+    "before"
+   ],
+   "answer": [
+    "Have you",
+    "seen this movie",
+    "before"
+   ],
+   "ko": "이 영화 전에 본 적 있어?",
+   "why": "before를 끝에 붙이면 '언제인지는 몰라도 한 번이라도'를 묻는 경험 질문이 된다."
+  }
  ],
  "produce": [
   {
    "situation": "처음 만난 사람에게 이 도시에 얼마나 있었는지, 무엇을 해봤는지 말해 보세요.",
-   "chunks": ["I've been here", "for about", "I've already", "but I haven't", "yet"],
+   "chunks": [
+    "I've been here",
+    "for about",
+    "I've already",
+    "but I haven't",
+    "yet"
+   ],
    "model": "I've been here for about a week. I've already seen the old town, but I haven't been to the museum yet.",
    "ko": "여기 온 지 일주일쯤 됐어요. 구시가지는 벌써 봤는데 박물관은 아직이에요."
   },
   {
    "situation": "오래 못 본 친구를 만났다. 마지막으로 본 뒤로 무엇이 달라졌는지 말해 보세요.",
-   "chunks": ["Since I last saw you", "I've", "and I", "last year"],
+   "chunks": [
+    "Since I last saw you",
+    "I've",
+    "and I",
+    "last year"
+   ],
    "model": "Since I last saw you, I've changed jobs, and I moved to a new place last year.",
    "ko": "너 마지막으로 본 뒤로 직장을 옮겼고, 작년엔 이사도 했어."
+  },
+  {
+   "situation": "기차에서 옆자리 승객이 유럽은 처음이냐고 물었다. 처음이지만 늘 와 보고 싶었다고 말해 보세요.",
+   "chunks": [
+    "This is my first time",
+    "in Europe",
+    "but I've always",
+    "wanted to come"
+   ],
+   "model": "This is my first time in Europe, but I've always wanted to come.",
+   "ko": "유럽은 처음인데, 늘 와 보고 싶었어요."
+  },
+  {
+   "situation": "카페에서 늦게 온 친구에게, 얼마나 기다렸는지와 몇 시에 도착했는지를 같이 말해 보세요.",
+   "chunks": [
+    "I've been waiting",
+    "for twenty minutes",
+    "I got here",
+    "at two"
+   ],
+   "model": "I've been waiting for twenty minutes — I got here at two.",
+   "ko": "20분째 기다리는 중이야 — 두 시에 왔거든."
+  }
+ ],
+ "discover": [
+  {
+   "q": "먼저 감으로 — 기차에서 여행 얘기가 나왔다. 빈에 '가 본 적 있다'고만 말하고 싶다",
+   "prompt": "뭐라고 할까?",
+   "options": [
+    "I've been to Vienna.",
+    "I went to Vienna."
+   ],
+   "answerIndex": 0,
+   "why": "언제 갔는지는 관심 밖이고 '가 봤다'는 경험만 말하는 자리라 현재완료. I went to Vienna라고 하면 듣는 사람은 '언제? 무슨 일로?'를 기다리게 된다."
+  },
+  {
+   "q": "먼저 감으로 — 이번엔 '작년에 갔다'고 시점을 밝히려 한다",
+   "prompt": "맞는 쪽은?",
+   "options": [
+    "I went there last year.",
+    "I've been there last year."
+   ],
+   "answerIndex": 0,
+   "why": "last year라고 시점을 말하는 순간 현재완료는 못 쓴다. '언제'가 나오면 무조건 과거시제다."
+  },
+  {
+   "q": "먼저 감으로 — 동료가 자리에 없다. 은행에 가서 아직 안 돌아왔다",
+   "prompt": "뭐라고 전할까?",
+   "options": [
+    "She's gone to the bank.",
+    "She's been to the bank."
+   ],
+   "answerIndex": 0,
+   "why": "has gone to는 '가서 아직 거기 있다', has been to는 '갔다 왔다'. 자리에 없으니 gone이다."
   }
  ]
 }
