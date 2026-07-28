@@ -1234,3 +1234,57 @@ main {
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 .night-stop__place { flex: 1; font-size: 14px; }
+
+/* ── 걷는 진행바 · 정답의 손맛 · 대사 수집첩 ─────────────────────── */
+.progress--walk { overflow: visible; position: relative; }
+.progress__walker {
+  position: absolute;
+  top: -15px;
+  font-size: 13px;
+  line-height: 1;
+  transition: left 0.35s ease;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* 정답 보기가 살짝 튄다 — 손끝에 돌아오는 맛 */
+  .quiz__piece.is-right { animation: pop-right 0.32s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  @keyframes pop-right {
+    35% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+  }
+  /* 판정·해설은 아래서 떠오른다 */
+  .quiz__verdict { animation: rise-in 0.22s ease-out; }
+  @keyframes rise-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* 대사 수집첩 — 가로로 넘기는 필름 스트립 */
+.quotes {
+  display: flex;
+  gap: var(--s3);
+  overflow-x: auto;
+  padding-bottom: var(--s2);
+  scroll-snap-type: x mandatory;
+}
+.quote-card {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  padding: var(--s4);
+  border-radius: var(--r2);
+  background: linear-gradient(160deg, #14161c 0%, #1d1a14 100%);
+  border: 1px solid var(--accent-border);
+}
+.quote-card__en {
+  margin: 0;
+  font-family: var(--font-read);
+  font-size: 15px;
+  line-height: 1.5;
+  color: #f2ede2;
+}
+.quote-card__ko { font-size: 12px; color: #b9b4a6; }

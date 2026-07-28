@@ -174,6 +174,22 @@ export default function GrowthPart({ state, onBack }) {
         )}
       </section>
 
+      {(plan.quotes?.length ?? 0) > 0 && (
+        <section className="stack stack--tight">
+          <div className="section-title">모은 대사 — 하루에 한 줄씩</div>
+          <div className="quotes">
+            {[...plan.quotes].reverse().map((q) => (
+              <div className="quote-card" key={q.day}>
+                <div className="scene__meta">Day {q.day}</div>
+                <p className="quote-card__en">“{q.en}”</p>
+                <div className="quote-card__ko">{q.ko}</div>
+                {q.speaker && <div className="scene__speaker">— {q.speaker}</div>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="stack stack--tight">
         <div className="section-title">최근 10주</div>
         <div className="heat">

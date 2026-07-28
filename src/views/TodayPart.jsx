@@ -4,6 +4,7 @@ import GrowthPart from './GrowthPart.jsx'
 import { DAY_KIND_LABELS, PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
 import { pauseSession, startSession } from '../lib/session.js'
 import { dueReviewUnits, ensureUnitSrs } from '../lib/unitSrs.js'
+import { nightTint } from '../lib/journey.js'
 
 // 수업 진행기는 유닛 원자료(구문 211KB + 문법 55KB)를 통째로 들고
 // 있어서 수업을 시작할 때 받는다.
@@ -28,9 +29,16 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   const [swipeCards, setSwipeCards] = useState(null)
   // 성장 화면 — 지도·관문·히트맵·can-do. 오늘 화면 안의 다른 방이다.
   const [showGrowth, setShowGrowth] = useState(false)
+  // 사이클의 빛 — 정거장이 바뀌면 오늘 탭의 강조색이 함께 흐른다.
+  // 기차의 앰버에서 노을, 밤, 새벽까지. 질리지 않는 건 변주다.
+  const tint = nightTint(Math.min(Math.ceil(plan.day / 10), 10))
 
   if (showGrowth) {
-    return <GrowthPart state={state} onBack={() => setShowGrowth(false)} />
+    return (
+      <div style={tint}>
+        <GrowthPart state={state} onBack={() => setShowGrowth(false)} />
+      </div>
+    )
   }
 
   if (finished) {
@@ -54,15 +62,17 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   // 진행 중인 수업이 있으면 그 자리에서 이어간다 — 이 화면의 본편이다.
   if (plan.session && plan.session.day === plan.day && !plan.session.paused) {
     return (
-      <Suspense fallback={<p className="hint">수업을 불러오는 중…</p>}>
-        <SessionRunner
-          state={state}
-          dueCards={dueCards}
-          settings={settings}
-          commit={commit}
-          onGuide={onGuide}
-        />
-      </Suspense>
+      <div style={tint}>
+        <Suspense fallback={<p className="hint">수업을 불러오는 중…</p>}>
+          <SessionRunner
+            state={state}
+            dueCards={dueCards}
+            settings={settings}
+            commit={commit}
+            onGuide={onGuide}
+          />
+        </Suspense>
+      </div>
     )
   }
 
@@ -106,7 +116,7 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   // 단어를 넘기는 중 — 오늘 화면이 그대로 카드 화면이 된다
   if (swipeCards) {
     return (
-      <div className="stack stack--loose">
+      <div className="stack stack--loose" style={tint}>
         <p className="hint" style={{ textAlign: 'left' }}>
           오늘 1/3 · 단어 — 다 넘기면 다음으로 이어집니다
         </p>
@@ -128,7 +138,7 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
   }
 
   return (
-    <div className="stack stack--loose">
+    <div className="stack stack--loose" style={tint}>
       <header className="stack stack--tight">
         <div className="row row--between">
           <h1>{today.day}일차</h1>

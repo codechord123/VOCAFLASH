@@ -204,6 +204,18 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
         const stamped = speak.map((x) => ({ ...x, day, at: Date.now() }))
         next = { ...next, speakLog: [...(next.speakLog ?? []), ...stamped].slice(-300) }
       }
+      // 오늘의 콜드 오픈 대사를 수집첩에 넣는다 — 100일이면 100줄의 필름
+      const sceneAtom = compiled.atoms.find((a) => a.type === 'scene-open')
+      if (sceneAtom) {
+        const q = { day, en: sceneAtom.scene.en, ko: sceneAtom.scene.ko, speaker: sceneAtom.scene.speaker ?? null }
+        next = {
+          ...next,
+          plan: {
+            ...next.plan,
+            quotes: [...(next.plan?.quotes ?? []).filter((x) => x.day !== day), q].slice(-100),
+          },
+        }
+      }
       // 관문 시험 날은 성적을 관문 기록에 남긴다 — 성장 그래프의 재료다
       if (today.kind === 'test') {
         const rv = Object.values(sess?.review ?? {})
@@ -248,8 +260,12 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
             잠시 멈춤
           </button>
         </div>
-        <div className="progress">
+        {/* 진행바 위를 걷는 사람 — 비엔나의 밤을 한 원자씩 걸어간다 */}
+        <div className="progress progress--walk">
           <div className="progress__bar" style={{ width: `${progress}%` }} />
+          <span className="progress__walker" style={{ left: `calc(${progress}% - 9px)` }}>
+            {progress >= 100 ? '🌅' : '🚶'}
+          </span>
         </div>
       </header>
 
