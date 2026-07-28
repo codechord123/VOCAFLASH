@@ -327,8 +327,9 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
           위에 있으면 읽기도 전에 손이 간다. */}
       <ReadTracker
         read={readOf(reads, 'before-sunrise', selected)}
-        onMark={() => commit((s) => markRead(s, 'before-sunrise', selected))}
+        onMark={(secs) => commit((s) => markRead(s, 'before-sunrise', selected, secs))}
         onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
+        timerKey={selected}
       />
 
       {/* 퀴즈도 회독 표시와 같은 자리다 — 다 읽고 나서 하는 것.

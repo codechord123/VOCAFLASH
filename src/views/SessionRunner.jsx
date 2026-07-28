@@ -3,6 +3,10 @@ import Swipe from './Swipe.jsx'
 import grammarCourse from '../data/grammar-course.json'
 import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
+import gateData from '../data/gate-quiz.json'
+
+// 구문 관문 문항을 quizId로 바로 찾기 위한 평탄 목록
+const GATE_SYNTAX_ALL = Object.values(gateData.syntax).flat()
 import { applyGrade } from '../lib/srs.js'
 import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
@@ -27,7 +31,10 @@ function toCycleUnit(ref) {
     ref.kind === 'grammar'
       ? src?.practice ?? []
       : unitQuizData.quizzes.filter((q) => q.unitId === ref.id)
-  return { id: ref.id, kind: ref.kind, src, pool }
+  // 관문 전용 풀 — 학습 흐름에 한 번도 나오지 않는, 처음 보는 문항
+  const gate =
+    (ref.kind === 'grammar' ? gateData.grammar[ref.id] : gateData.syntax[ref.id]) ?? []
+  return { id: ref.id, kind: ref.kind, src, pool, gate }
 }
 
 /** 사이클 날(시험·유창성·산출·마일스톤)의 재료 — 표에서 유닛을 모은다. */
@@ -165,13 +172,21 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
         .filter((w) => w.source === 'grammar')
         .map((w) => {
           const u = grammarCourse.units.find((x) => x.id === w.unitId)
-          return u && { u, q: u.practice[w.qIndex] }
+          if (!u) return null
+          // 관문 문항은 연습 목록에 없다 — 전용 풀에서 id로 찾는다
+          const q =
+            w.qIndex >= 0
+              ? u.practice[w.qIndex]
+              : gateData.grammar[w.unitId]?.find((x) => x.id === w.gateId)
+          return q ? { u, q } : null
         })
         .filter(Boolean)
       // 구문 오답은 유닛별로 묶는다 — 복습 문항은 오늘 유닛이 아닐 수 있다
       const sWrongByUnit = new Map()
       for (const w of wrong.filter((x) => x.source === 'syntax')) {
-        const q = unitQuizData.quizzes.find((x) => x.quizId === w.quizId)
+        const q =
+          unitQuizData.quizzes.find((x) => x.quizId === w.quizId) ??
+          GATE_SYNTAX_ALL.find((x) => x.quizId === w.quizId)
         if (!q) continue
         // 유형마다 카드가 되는 모양이 다르다 — 틀린 그 일을 그대로
         // 다시 시키는 형태로 앞뒷면을 고른다.
@@ -325,6 +340,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
       return <SwipeAtom dueCards={dueCards} settings={settings} commit={commit} state={state} onNext={onNext} />
     case 'read':
       return <ReadAtom atom={atom} today={today} state={state} onGuide={onGuide} onNext={onNext} />
+    case 'cando':
+      return <CandoCheck atom={atom} state={state} commit={commit} onNext={onNext} />
     case 'recap':
       return <Recap today={today} session={session} unitSrs={state.plan?.unitSrs} onFinish={onFinish} />
     default:
@@ -571,7 +588,12 @@ function QuizChoice({ atom, combo = 0, onNext }) {
 
   const wrongRef =
     atom.source === 'grammar'
-      ? { source: 'grammar', unitId: atom.unit.id, qIndex: atom.unit.practice.indexOf(q) }
+      ? {
+          source: 'grammar',
+          unitId: atom.unit.id,
+          qIndex: atom.unit.practice.indexOf(q),
+          gateId: q.id ?? null, // 관문 문항은 연습 목록 밖에 있다
+        }
       : atom.source === 'syntax'
         ? { source: 'syntax', quizId: q.quizId }
         : null // 발견 문답은 카드가 되지 않는다 — 재도전으로만 돌아온다
@@ -654,7 +676,12 @@ function QuizOrder({ atom, combo = 0, onNext }) {
   }
   const wrongRef =
     atom.source === 'grammar'
-      ? { source: 'grammar', unitId: atom.unit.id, qIndex: atom.unit.practice.indexOf(q) }
+      ? {
+          source: 'grammar',
+          unitId: atom.unit.id,
+          qIndex: atom.unit.practice.indexOf(q),
+          gateId: q.id ?? null,
+        }
       : atom.source === 'syntax'
         ? { source: 'syntax', quizId: q.quizId }
         : null
@@ -971,6 +998,18 @@ function ReadAtom({ atom, today, state, onGuide, onNext }) {
           <b>읽음</b>을 누르면 이 화면이 알아챕니다.
           {atom.deep && ' 오늘은 마무리 날 — 맨 아래 챕터 퀴즈까지 풀어 주세요.'}
         </p>
+        {atom.reread &&
+          (() => {
+            const last = state.reads?.[`before-sunrise-c${atom.chapter}`]?.lastSecs
+            if (!last) return null
+            const m = Math.floor(last / 60)
+            return (
+              <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+                지난 기록 {m > 0 ? `${m}분 ${Math.round(last % 60)}초` : `${last}초`} —
+                오늘은 그보다 빠르게.
+              </p>
+            )
+          })()}
         <div className="row" style={{ gap: 'var(--s2)' }}>
           <span className={`chip${readDone ? ' chip--accent' : ''}`}>{readDone ? '✓ 읽음' : '읽기 전'}</span>
           {atom.deep && (
@@ -993,6 +1032,65 @@ function ReadAtom({ atom, today, state, onGuide, onNext }) {
           {chapterLabel(atom.chapter)}장 읽으러 가기
         </button>
       )}
+    </div>
+  )
+}
+
+/**
+ * can-do 자가 점검 — 부(部)가 끝나는 날, 성장을 수행의 언어로 묻는다.
+ * 정직하게 고르는 것이 목적이라 전부 체크할 필요가 없다. '아직'도 기록이다.
+ */
+function CandoCheck({ atom, state, commit, onNext }) {
+  const { cando } = atom
+  const saved = state.plan?.cando?.[cando.day]?.checks
+  const [checks, setChecks] = useState(() => saved ?? cando.items.map(() => null))
+  const answered = checks.every((c) => c !== null)
+
+  function save() {
+    commit((s) => ({
+      ...s,
+      plan: {
+        ...s.plan,
+        cando: {
+          ...(s.plan?.cando ?? {}),
+          [cando.day]: { checks, at: Date.now() },
+        },
+      },
+    }))
+    onNext()
+  }
+
+  return (
+    <div className="stack">
+      <div className="section-title">can-do 점검 — {cando.phase}</div>
+      <div className="panel stack stack--tight">
+        <p style={{ margin: 0 }}>
+          여기까지 왔다면 할 수 있어야 하는 것들입니다. <b>정직하게</b> 고르세요 —
+          '아직'이라고 답한 것이 다음 복습의 재료가 됩니다.
+        </p>
+      </div>
+      {cando.items.map((it, i) => (
+        <div className="panel stack stack--tight" key={i} style={{ padding: 'var(--s3) var(--s4)' }}>
+          <p style={{ margin: 0, fontSize: 14 }}>{it}</p>
+          <div className="row" style={{ gap: 'var(--s2)' }}>
+            <button
+              className={`btn btn--sm${checks[i] === true ? ' btn--primary' : ''}`}
+              onClick={() => setChecks(checks.map((c, j) => (j === i ? true : c)))}
+            >
+              할 수 있다
+            </button>
+            <button
+              className={`btn btn--sm${checks[i] === false ? ' btn--primary' : ''}`}
+              onClick={() => setChecks(checks.map((c, j) => (j === i ? false : c)))}
+            >
+              아직
+            </button>
+          </div>
+        </div>
+      ))}
+      <button className="btn btn--primary btn--block" disabled={!answered} onClick={save}>
+        기록하고 다음
+      </button>
     </div>
   )
 }

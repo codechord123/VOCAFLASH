@@ -1,4 +1,5 @@
-import { READ_GOAL, lastReadLabel } from '../lib/reads.js'
+import { useEffect, useRef } from 'react'
+import { READ_GOAL, lastReadLabel, secsLabel } from '../lib/reads.js'
 
 // 회독 표시. 목록의 한 줄짜리와, 다 보고 나서 누르는 칸.
 //
@@ -32,10 +33,17 @@ export function ReadMeter({ read }) {
  *
  * @param unit  '회독' 대신 다른 말을 쓰고 싶을 때(구문독해는 '회차')
  */
-export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽음' }) {
+export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽음', timerKey = null }) {
   const label = lastReadLabel(read?.lastAt)
   const count = read?.count ?? 0
   const done = count >= READ_GOAL
+  // 읽기 속도 — 챕터를 연 시점부터 읽음을 누를 때까지. timerKey(챕터)가
+  // 바뀌면 다시 잰다. 속도는 유창성의 지표라 기록으로 남긴다.
+  const startRef = useRef(Date.now())
+  useEffect(() => {
+    startRef.current = Date.now()
+  }, [timerKey])
+  const lastSpeed = secsLabel(read?.lastSecs)
 
   return (
     <div
@@ -55,6 +63,7 @@ export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽
           </span>
           <span className="list__meta">
             {label ? `마지막으로 공부한 날 · ${label}` : `아직 ${verb} 표시를 하지 않았습니다`}
+            {lastSpeed ? ` · 지난 속도 ${lastSpeed}` : ''}
           </span>
         </span>
         <div className="row" style={{ gap: 'var(--s1)' }}>
@@ -63,7 +72,12 @@ export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽
               −1
             </button>
           )}
-          <button className="btn btn--sm" onClick={onMark}>
+          <button
+            className="btn btn--sm"
+            onClick={() =>
+              onMark(timerKey != null ? Math.round((Date.now() - startRef.current) / 1000) : null)
+            }
+          >
             {verb}
           </button>
         </div>

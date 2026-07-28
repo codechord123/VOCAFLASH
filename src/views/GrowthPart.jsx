@@ -12,6 +12,48 @@ import { NIGHT_STOPS } from '../lib/journey.js'
 
 const STAGE_CLASS = { 2: 'is-sprout', 3: 'is-grow', 4: 'is-root', 5: 'is-mine' }
 
+/**
+ * 말하기 추이 — 신호등 자평의 🟢 비율이 사이클마다 오르고 있는가.
+ * 산출은 이해와 달라서, 이 그래프가 오르는 것이 '사용 어휘'가 늘어난다는
+ * 증거다. 기록이 5개 미만인 사이클은 표본이 없어 잿빛으로 둔다.
+ */
+function SpeakTrend({ speakLog }) {
+  const buckets = new Map()
+  for (const e of speakLog ?? []) {
+    const c = Math.min(Math.max(1, Math.ceil((e.day ?? 1) / 10)), 10)
+    const b = buckets.get(c) ?? { green: 0, yellow: 0, red: 0, total: 0 }
+    if (b[e.grade] !== undefined) b[e.grade] += 1
+    b.total += 1
+    buckets.set(c, b)
+  }
+  const rows = [...buckets.entries()].sort((a, b) => a[0] - b[0])
+  if (rows.length === 0) return null
+  return (
+    <section className="stack stack--tight">
+      <div className="section-title">말하기 — 🟢 비율이 오르는가</div>
+      {rows.map(([c, b], i) => {
+        const pct = Math.round((b.green / b.total) * 100)
+        const prev = i > 0 ? Math.round((rows[i - 1][1].green / rows[i - 1][1].total) * 100) : null
+        const thin = b.total < 5
+        return (
+          <div className="row" key={c} style={{ gap: 'var(--s3)', alignItems: 'center' }}>
+            <span className="chip chip--box">{c}주기</span>
+            <div className="progress" style={{ flex: 1 }}>
+              <div
+                className="progress__bar"
+                style={{ width: `${pct}%`, background: thin ? 'var(--border-strong)' : pct >= 60 ? 'var(--good)' : undefined }}
+              />
+            </div>
+            <span className="hint" style={{ minWidth: 88, textAlign: 'right' }}>
+              🟢 {pct}% ({b.total}개){prev !== null && !thin ? (pct > prev ? ' ↑' : pct < prev ? ' ↓' : '') : ''}
+            </span>
+          </div>
+        )
+      })}
+    </section>
+  )
+}
+
 export default function GrowthPart({ state, onBack }) {
   const plan = ensureUnitSrs(state.plan ?? { day: 1, checks: {}, history: {} }, PLAN_DAYS)
   const day = plan.day
@@ -174,6 +216,8 @@ export default function GrowthPart({ state, onBack }) {
         )}
       </section>
 
+      <SpeakTrend speakLog={state.speakLog} />
+
       {(plan.quotes?.length ?? 0) > 0 && (
         <section className="stack stack--tight">
           <div className="section-title">모은 대사 — 하루에 한 줄씩</div>
@@ -208,6 +252,9 @@ export default function GrowthPart({ state, onBack }) {
         {CAN_DO.map((c) => {
           const reached = day > c.day
           const current = !reached && CAN_DO.find((x) => day <= x.day) === c
+          // 마일스톤 날의 자가 점검 기록 — 있으면 항목마다 ✓/아직이 붙는다
+          const rec = plan.cando?.[c.day]?.checks ?? null
+          const canCount = rec ? rec.filter(Boolean).length : null
           return (
             <div
               className="panel stack stack--tight"
@@ -220,11 +267,18 @@ export default function GrowthPart({ state, onBack }) {
               <div className="row row--between">
                 <b>{c.phase}</b>
                 <span className={`chip${reached ? ' chip--accent' : ''}`}>
-                  {reached ? '✓ 지나옴' : `${c.day}일차까지`}
+                  {rec
+                    ? `자가 점검 ${canCount}/${rec.length}`
+                    : reached
+                      ? '✓ 지나옴'
+                      : `${c.day}일차까지`}
                 </span>
               </div>
-              {c.items.map((it) => (
-                <p key={it} style={{ margin: 0, fontSize: 14 }}>· {it}</p>
+              {c.items.map((it, i) => (
+                <p key={it} style={{ margin: 0, fontSize: 14 }}>
+                  {rec ? (rec[i] ? '✓ ' : '◦ 아직 — ') : '· '}
+                  {it}
+                </p>
               ))}
             </div>
           )

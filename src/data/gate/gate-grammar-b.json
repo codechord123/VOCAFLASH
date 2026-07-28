@@ -1,0 +1,414 @@
+{
+ "units": {
+  "g-07": [
+   {
+    "id": "gt-g07-1",
+    "kind": "choice",
+    "q": "사람에 설명 붙이기",
+    "sentence": "Do you know anyone ___ can fix laptops?",
+    "choices": [
+     "who",
+     "which"
+    ],
+    "answer": "who",
+    "why": "사람에는 who(또는 that). which를 붙이면 사람을 물건 취급하는 느낌이 든다."
+   },
+   {
+    "id": "gt-g07-2",
+    "kind": "choice",
+    "q": "장소에 설명 붙이기",
+    "sentence": "That's the hotel ___ we stayed on our honeymoon.",
+    "choices": [
+     "where",
+     "which"
+    ],
+    "answer": "where",
+    "why": "그 안에서 벌어진 일을 설명하면 where. which를 쓰려면 stayed at의 at까지 챙겨야 한다."
+   },
+   {
+    "id": "gt-g07-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "The apartment that we rented it had no hot water.",
+    "choices": [
+     "The apartment",
+     "that we rented it",
+     "had no hot water"
+    ],
+    "answer": "that we rented it",
+    "why": "that이 이미 apartment를 받았으니 it을 또 쓰면 같은 것을 두 번 가리킨다 — that we rented로 끝낸다."
+   },
+   {
+    "id": "gt-g07-4",
+    "kind": "choice",
+    "q": "뜻 대조 — My uncle who lives in Texas called me last night.",
+    "sentence": "쉼표가 없으면?",
+    "choices": [
+     "삼촌이 여럿이고, 그중 텍사스 사는 삼촌 얘기다",
+     "삼촌이 한 명뿐이고, 텍사스에 산다는 덧붙임이다"
+    ],
+    "answer": "삼촌이 여럿이고, 그중 텍사스 사는 삼촌 얘기다",
+    "why": "쉼표 없는 who절은 여럿 중 하나를 골라내는 말이다. 한 명뿐이면 My uncle, who lives in Texas, ...로 쉼표에 감싼다."
+   },
+   {
+    "id": "gt-g07-5",
+    "kind": "order",
+    "q": "설명을 뒤에 붙여 배열하기",
+    "pieces": [
+     "Is this",
+     "the bag",
+     "you were looking for"
+    ],
+    "answer": [
+     "Is this",
+     "the bag",
+     "you were looking for"
+    ],
+    "ko": "이게 네가 찾던 그 가방이야?",
+    "why": "한국어는 '네가 찾던'이 앞에 오지만, 영어는 bag을 먼저 놓고 설명을 뒤에 붙인다 — 목적어 자리라 that 없이 바로 잇는다."
+   }
+  ],
+  "g-08": [
+   {
+    "id": "gt-g08-1",
+    "kind": "choice",
+    "q": "만들어지는 쪽",
+    "sentence": "This cheese ___ in a small village in France.",
+    "choices": [
+     "is made",
+     "makes"
+    ],
+    "answer": "is made",
+    "why": "치즈는 만들어지는 쪽이다. makes만 쓰면 치즈가 무언가를 만든다는 말이 된다."
+   },
+   {
+    "id": "gt-g08-2",
+    "kind": "choice",
+    "q": "구어의 수동",
+    "sentence": "She ___ promoted twice in one year.",
+    "choices": [
+     "got",
+     "was gotten"
+    ],
+    "answer": "got",
+    "why": "get + 과거분사가 회화의 수동이다. was gotten이라는 형태는 없다."
+   },
+   {
+    "id": "gt-g08-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "The package was arrived this morning.",
+    "choices": [
+     "The package",
+     "was arrived",
+     "this morning"
+    ],
+    "answer": "was arrived",
+    "why": "arrive는 목적어를 안 받는 자동사 — arrived 한 단어면 끝난다. 당할 대상이 없는 동사는 수동태를 못 만든다."
+   },
+   {
+    "id": "gt-g08-4",
+    "kind": "choice",
+    "q": "뜻 대조 — His directions were confusing.",
+    "sentence": "이 문장의 뜻은?",
+    "choices": [
+     "그의 길 설명이 사람을 헷갈리게 했다",
+     "그가 길을 몰라 헷갈려 했다"
+    ],
+    "answer": "그의 길 설명이 사람을 헷갈리게 했다",
+    "why": "-ing는 남에게 감정을 주는 쪽, -ed는 받는 쪽. 그가 헷갈렸다면 He was confused."
+   },
+   {
+    "id": "gt-g08-5",
+    "kind": "order",
+    "q": "배송 사고를 배열하기",
+    "pieces": [
+     "My package",
+     "was delivered",
+     "to the wrong address"
+    ],
+    "answer": [
+     "My package",
+     "was delivered",
+     "to the wrong address"
+    ],
+    "ko": "내 택배가 엉뚱한 주소로 배송됐어.",
+    "why": "누가 배송했는지가 아니라 잘못 갔다는 사실이 중요한 자리 — 수동이 자연스럽다."
+   }
+  ],
+  "g-09": [
+   {
+    "id": "gt-g09-1",
+    "kind": "choice",
+    "q": "짧은 형용사의 비교",
+    "sentence": "This backpack is much ___ than it looks.",
+    "choices": [
+     "lighter",
+     "more light"
+    ],
+    "answer": "lighter",
+    "why": "음절 하나짜리는 -er. much가 앞에서 '훨씬'으로 차이를 키운다."
+   },
+   {
+    "id": "gt-g09-2",
+    "kind": "choice",
+    "q": "as ~ as 사이의 모양",
+    "sentence": "The food here is just as ___ as at that famous place.",
+    "choices": [
+     "good",
+     "better"
+    ],
+    "answer": "good",
+    "why": "as ~ as 사이에는 원급이 온다. better를 넣으면 '같음'과 '더함'이 한 자리에서 부딪힌다."
+   },
+   {
+    "id": "gt-g09-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "That was the most worst flight of my life.",
+    "choices": [
+     "the most worst",
+     "flight",
+     "of my life"
+    ],
+    "answer": "the most worst",
+    "why": "bad–worse–worst로 형태가 통째로 바뀐다. worst가 이미 최상급이라 most를 얹으면 최상을 두 번 하는 셈이다."
+   },
+   {
+    "id": "gt-g09-4",
+    "kind": "choice",
+    "q": "뜻 대조 — The hotel wasn't as nice as the photos.",
+    "sentence": "이 말의 뜻은?",
+    "choices": [
+     "사진만큼은 못했다 — 실물이 기대 이하였다",
+     "사진과 똑같이 좋았다"
+    ],
+    "answer": "사진만큼은 못했다 — 실물이 기대 이하였다",
+    "why": "not as ~ as는 '그만큼은 안 된다' — 같다는 말이 아니라 미치지 못한다는 말이다."
+   },
+   {
+    "id": "gt-g09-5",
+    "kind": "order",
+    "q": "점점 심해짐을 배열하기",
+    "pieces": [
+     "My headache",
+     "is getting",
+     "worse and worse"
+    ],
+    "answer": [
+     "My headache",
+     "is getting",
+     "worse and worse"
+    ],
+    "ko": "두통이 점점 심해지고 있어.",
+    "why": "비교급을 두 번 겹치면 '점점 더'. worse는 이미 비교급이라 more를 또 얹지 않는다."
+   }
+  ],
+  "g-10": [
+   {
+    "id": "gt-g10-1",
+    "kind": "choice",
+    "q": "있을 법한 조건",
+    "sentence": "If you ___ now, you'll catch the last bus.",
+    "choices": [
+     "leave",
+     "will leave"
+    ],
+    "answer": "leave",
+    "why": "if절 안에는 will을 안 넣는다. 미래라는 표시는 뒤쪽 절의 will이 이미 맡고 있다."
+   },
+   {
+    "id": "gt-g10-2",
+    "kind": "choice",
+    "q": "지금과 다른 상상",
+    "sentence": "If I spoke German, I ___ apply for that job.",
+    "choices": [
+     "would",
+     "will"
+    ],
+    "answer": "would",
+    "why": "spoke라는 과거형이 '실제로는 못한다'는 표시등이다. 상상의 짝은 would — will이면 층이 어긋난다."
+   },
+   {
+    "id": "gt-g10-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "If she had left earlier, she will have caught her flight.",
+    "choices": [
+     "If she had left earlier",
+     "she will have caught",
+     "her flight"
+    ],
+    "answer": "she will have caught",
+    "why": "had p.p.로 시작한 지나간 가정의 짝은 would have caught. will은 아직 올 수 있는 미래에만 쓴다 — 비행기는 이미 놓쳤다."
+   },
+   {
+    "id": "gt-g10-4",
+    "kind": "choice",
+    "q": "뜻 대조 — If I lived closer, I'd visit you every week.",
+    "sentence": "이 말의 속뜻은?",
+    "choices": [
+     "실제로는 멀리 살아서 자주 못 간다",
+     "곧 가까이 이사 가서 매주 갈 계획이다"
+    ],
+    "answer": "실제로는 멀리 살아서 자주 못 간다",
+    "why": "과거형 lived는 '지금 그렇지 않다'는 고백이다. 진짜 계획이면 If I move closer, I'll visit you."
+   },
+   {
+    "id": "gt-g10-5",
+    "kind": "order",
+    "q": "지나간 아쉬움을 배열하기",
+    "pieces": [
+     "I wish",
+     "I had taken",
+     "more photos",
+     "on that trip"
+    ],
+    "answer": [
+     "I wish",
+     "I had taken",
+     "more photos",
+     "on that trip"
+    ],
+    "ko": "그 여행에서 사진을 더 찍어 둘걸.",
+    "why": "wish + had p.p.는 이미 끝난 일에 대한 아쉬움 — 시제를 한 칸 더 밀어 '그때'임을 표시한다."
+   }
+  ],
+  "g-11": [
+   {
+    "id": "gt-g11-1",
+    "kind": "choice",
+    "q": "앞으로 할 일",
+    "sentence": "We're planning ___ a small party for her.",
+    "choices": [
+     "to throw",
+     "throwing"
+    ],
+    "answer": "to throw",
+    "why": "plan은 아직 안 한 일을 향하는 동사 — want·decide·hope와 같은 무리라 to를 받는다."
+   },
+   {
+    "id": "gt-g11-2",
+    "kind": "choice",
+    "q": "끝낸 일",
+    "sentence": "I finally finished ___ the report at midnight.",
+    "choices": [
+     "writing",
+     "to write"
+    ],
+    "answer": "writing",
+    "why": "finish는 -ing만 받는다. 끝낸 일은 이미 하던 일이라 앞을 향하는 to가 올 자리가 없다."
+   },
+   {
+    "id": "gt-g11-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "I'm looking forward to see you next month.",
+    "choices": [
+     "looking forward",
+     "to see",
+     "next month"
+    ],
+    "answer": "to see",
+    "why": "여기 to는 부정사가 아니라 전치사 — to seeing you가 맞다. 전치사 뒤는 무조건 -ing다."
+   },
+   {
+    "id": "gt-g11-4",
+    "kind": "choice",
+    "q": "뜻 대조 — Try restarting your phone.",
+    "sentence": "이 말의 뜻은?",
+    "choices": [
+     "시험 삼아 한번 재부팅해 보라는 말",
+     "재부팅하려고 애쓰라는 말"
+    ],
+    "answer": "시험 삼아 한번 재부팅해 보라는 말",
+    "why": "try -ing는 '시험 삼아 해보다', try to는 '~하려고 애쓰다'. 고장 해결 팁은 -ing 쪽이다."
+   },
+   {
+    "id": "gt-g11-5",
+    "kind": "order",
+    "q": "끊은 습관으로 배열하기",
+    "pieces": [
+     "I stopped",
+     "eating meat",
+     "a few years ago"
+    ],
+    "answer": [
+     "I stopped",
+     "eating meat",
+     "a few years ago"
+    ],
+    "ko": "몇 년 전에 고기를 끊었어.",
+    "why": "stop -ing는 하던 일을 끊는 것. stopped to eat이면 '먹으려고 멈췄다'는 정반대 그림이 된다."
+   }
+  ],
+  "g-12": [
+   {
+    "id": "gt-g12-1",
+    "kind": "choice",
+    "q": "날짜",
+    "sentence": "Her flight arrives ___ July 3rd.",
+    "choices": [
+     "on",
+     "in"
+    ],
+    "answer": "on",
+    "why": "날짜는 달력의 한 칸을 차지하는 하루라 on. 월만 말하면 in July로 넓어진다."
+   },
+   {
+    "id": "gt-g12-2",
+    "kind": "choice",
+    "q": "탈것",
+    "sentence": "I left my umbrella ___ the bus.",
+    "choices": [
+     "on",
+     "in"
+    ],
+    "answer": "on",
+    "why": "버스·기차·비행기는 안에서 걸어 다닐 수 있어 on. 택시·승용차였다면 in이다."
+   },
+   {
+    "id": "gt-g12-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "He starts his new job at Monday.",
+    "choices": [
+     "He starts",
+     "his new job",
+     "at Monday"
+    ],
+    "answer": "at Monday",
+    "why": "요일은 on Monday. at은 at nine처럼 시각의 한 점에 쓴다."
+   },
+   {
+    "id": "gt-g12-4",
+    "kind": "choice",
+    "q": "뜻 대조 — My son is still in school.",
+    "sentence": "이 문장이 그리는 상황은?",
+    "choices": [
+     "아직 학생이다 — 재학 중이라는 신분",
+     "지금 학교 건물 안에 남아 있다"
+    ],
+    "answer": "아직 학생이다 — 재학 중이라는 신분",
+    "why": "미국 영어에서 in school은 학생 신분을 말한다. 지금 학교에 가 있다는 위치라면 at school."
+   },
+   {
+    "id": "gt-g12-5",
+    "kind": "order",
+    "q": "출근 시간으로 배열하기",
+    "pieces": [
+     "I start work",
+     "at eight",
+     "in the morning"
+    ],
+    "answer": [
+     "I start work",
+     "at eight",
+     "in the morning"
+    ],
+    "ko": "나는 아침 여덟 시에 일을 시작해.",
+    "why": "시각의 한 점은 at, 넓은 시간대는 in — 좁은 것부터 놓는 at eight in the morning이 굳은 순서다."
+   }
+  ]
+ }
+}

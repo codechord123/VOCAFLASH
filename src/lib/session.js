@@ -14,6 +14,7 @@
 
 import { PLAN_DAYS, dayPlan } from './plan.js'
 import { ensureUnitSrs, pickItems } from './unitSrs.js'
+import { CAN_DO } from './cando.js'
 
 /** 결정적 셔플. 같은 날 안에서는 순서가 유지되어야 이어하기가 성립한다. */
 function seededShuffle(items, seed) {
@@ -97,9 +98,21 @@ export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], r
   return { today, atoms }
 }
 
-/** 유닛에서 오늘 몫의 시험 문항을 뽑아 원자로 만든다. */
-function unitQuizAtoms(u, day, n, extraSeed = 0) {
-  const items = pickItems(u.pool, day + extraSeed, (Number(u.id.replace(/\D/g, '')) || 1) * 7, n)
+/** 유닛에서 오늘 몫의 시험 문항을 뽑아 원자로 만든다.
+ *
+ * preferGate면 관문 전용 풀(학습 흐름에 한 번도 안 나온 문항)에서 먼저
+ * 뽑는다 — 전이 측정은 처음 보는 문장이어야 한다. 모자라면 일반 풀로
+ * 채운다.
+ */
+function unitQuizAtoms(u, day, n, extraSeed = 0, preferGate = false) {
+  const key = (Number(u.id.replace(/\D/g, '')) || 1) * 7
+  let items = []
+  if (preferGate && (u.gate?.length ?? 0) > 0) {
+    items = pickItems(u.gate, day + extraSeed, key + 3, n)
+  }
+  if (items.length < n) {
+    items = [...items, ...pickItems(u.pool, day + extraSeed, key, n - items.length)]
+  }
   return items.map((q) => ({
     ...(u.kind === 'grammar' ? practiceAtom(u.src, q) : syntaxAtom({ unitId: u.id }, q)),
     reviewUnit: u.id, // 시험·약점 문항도 유닛 SRS 판정에 실린다
@@ -120,10 +133,11 @@ function compileTest(atoms, today, cycleData, day) {
   atoms.push({
     type: 'test-head',
     cycle: today.cycle,
-    count: picks.reduce((s, p) => s + Math.min(p.n, p.u.pool.length), 0),
+    count: picks.reduce((s, p) => s + Math.min(p.n, (p.u.gate?.length ?? 0) + p.u.pool.length), 0),
     unitIds: picks.map((p) => p.u.id),
   })
-  for (const { u, n } of picks) atoms.push(...unitQuizAtoms(u, day, n))
+  // 관문은 전용 풀 우선 — 배웠던 그 문제가 아니라 처음 보는 문장으로 잰다
+  for (const { u, n } of picks) atoms.push(...unitQuizAtoms(u, day, n, 0, true))
 }
 
 /** 유창성 — 새것 없음. 앵커를 3단 은폐 섀도잉으로 몸에 붙인다. */
@@ -159,6 +173,9 @@ function compileMilestone(atoms, today, cycleData, day) {
   const weak = cycleData?.weakUnits ?? []
   atoms.push({ type: 'milestone-head', cycle: today.cycle, weakIds: weak.map((u) => u.id) })
   for (const u of weak) atoms.push(...unitQuizAtoms(u, day, 2, 3))
+  // 부(部)가 끝나는 날은 can-do 자가 점검 — 성장을 수행의 언어로 묻는다
+  const cd = CAN_DO.find((c) => c.day === today.day)
+  if (cd) atoms.push({ type: 'cando', cando: cd })
 }
 
 /** 발견 문답 — 규칙을 읽기 전에 먼저 맞혀 본다. 예측이 앞서야 설명이 박힌다. */

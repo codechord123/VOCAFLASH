@@ -375,8 +375,9 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
       {/* 회독 표시는 본문 아래에 — 다 읽고 누르는 것이다 */}
       <ReadTracker
         read={readOf(reads, work.id, selected)}
-        onMark={() => commit((s) => markRead(s, work.id, selected))}
+        onMark={(secs) => commit((s) => markRead(s, work.id, selected, secs))}
         onUndo={() => commit((s) => undoRead(s, work.id, selected))}
+        timerKey={`${work.id}-${selected}`}
       />
 
       {/* key에 챕터를 넣어 장을 넘기면 퀴즈가 처음으로 돌아가게 한다 */}

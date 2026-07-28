@@ -1,0 +1,263 @@
+{
+  "units": {
+    "u-01": [
+      {
+        "quizId": "gq-u01-1",
+        "unitId": "u-01",
+        "type": "truefalse",
+        "prompt": "'You like spicy food, isn't it?'은 자연스러운 부가의문문이다.",
+        "isCorrect": false,
+        "explanation": "부가의문문은 앞 문장의 주어·동사를 되받는다. 주어 you, 일반동사 like이므로 don't you?가 맞다. isn't it?은 앞 주어가 it일 때만 쓴다."
+      },
+      {
+        "quizId": "gq-u01-2",
+        "unitId": "u-01",
+        "type": "blank",
+        "prompt": "카페에서 일어서는 친구에게 던진 생략 의문문 'You leaving already?'를 완전한 문장으로 되살리면: ___ you leaving already?",
+        "options": ["Do", "Are", "Is", "Have"],
+        "answerIndex": 1,
+        "explanation": "you + -ing가 남았으면 지워진 것은 Are다. 생략은 언제나 문장 맨 앞에서 일어나므로 남은 조각으로 원형을 복원할 수 있다."
+      },
+      {
+        "quizId": "gq-u01-3",
+        "unitId": "u-01",
+        "type": "koToEn",
+        "prompt": "여기 자리 있는 사람 있나요? (옆에 앉기 전에 살짝 묻는 구어 생략형)",
+        "chunks": ["sitting", "here?", "Anybody"],
+        "answer": [2, 0, 1],
+        "explanation": "Is anybody sitting here?에서 문두의 Is가 통째로 사라진 생략 의문문이다. 의문의 표시는 어순 대신 끝올림 억양이 맡는다."
+      },
+      {
+        "quizId": "gq-u01-4",
+        "unitId": "u-01",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 너 이 근처에서 일하지, 그렇지?",
+        "chunks": ["don't you?", "You", "work", "around here,"],
+        "answer": [1, 2, 3, 0],
+        "explanation": "일반동사 work를 되받으므로 부가는 don't you?다. no?나 isn't it?을 붙이면 원어민 영어가 아니다."
+      }
+    ],
+    "u-02": [
+      {
+        "quizId": "gq-u02-1",
+        "unitId": "u-02",
+        "type": "truefalse",
+        "prompt": "회사 보고 이메일에 'I'm gonna send the file tomorrow.'라고 써도 격식에 문제가 없다.",
+        "isCorrect": false,
+        "explanation": "gonna는 발음을 받아 적은 형태라 말과 사적인 메시지 전용이다. 문어에서는 I'm going to send the file tomorrow.로 써야 격이 유지된다."
+      },
+      {
+        "quizId": "gq-u02-2",
+        "unitId": "u-02",
+        "type": "blank",
+        "prompt": "새로 이사한 집을 설명하며 — The new place is kind of far. ___ , it takes almost an hour by bus.",
+        "options": ["I mean", "You know", "I know", "Anyway"],
+        "answerIndex": 0,
+        "explanation": "방금 한 말(kind of far)을 자기 말로 다시 풀어 주는 자리다. 자기 말 쪽을 향하는 표지는 I mean이고, you know는 상대 쪽을 본다."
+      },
+      {
+        "quizId": "gq-u02-3",
+        "unitId": "u-02",
+        "type": "koToEn",
+        "prompt": "몰라, 나 아마 안 갈 것 같아, 좀 피곤하거든.",
+        "chunks": ["not gonna go,", "I'm kinda tired.", "I dunno,", "I'm probably"],
+        "answer": [2, 3, 0, 1],
+        "explanation": "dunno·gonna·kinda는 구어 축약이다. gonna는 be동사 없이 못 서므로 I'm probably not gonna go가 된다."
+      },
+      {
+        "quizId": "gq-u02-4",
+        "unitId": "u-02",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 글쎄, 내 말은, 걔 말이 틀린 건 아닌데 — 그냥 좀 복잡해.",
+        "chunks": ["kind of complicated.", "Well, I mean,", "it's just", "she's not wrong —"],
+        "answer": [1, 3, 2, 0],
+        "explanation": "Well이 완충으로 문두에 오고, I mean이 고쳐 말하기를 연다. kind of는 형용사 complicated 앞에서 단정을 깎는다."
+      }
+    ],
+    "u-03": [
+      {
+        "quizId": "gq-u03-1",
+        "unitId": "u-03",
+        "type": "truefalse",
+        "prompt": "'그 영화 별로인 것 같아'를 옮길 때 I think the movie is not that good.이 I don't think the movie is that good.보다 자연스럽다.",
+        "isCorrect": false,
+        "explanation": "영어는 부정을 주절로 끌어올린다. I don't think ~가 표준이고, I think ~ not은 문법은 되지만 단정으로 들려 완충 효과가 사라진다."
+      },
+      {
+        "quizId": "gq-u03-2",
+        "unitId": "u-03",
+        "type": "blank",
+        "prompt": "여행 계획을 조심스럽게 제안하며 — I ___ we could take the earlier bus, or something.",
+        "options": ["guess", "know", "must", "sure"],
+        "answerIndex": 0,
+        "explanation": "문두 I guess가 단정을 피하는 완충어다. 문미 or something과 짝을 이뤄 문장의 세기만 낮추고 뜻은 바꾸지 않는다."
+      },
+      {
+        "quizId": "gq-u03-3",
+        "unitId": "u-03",
+        "type": "koToEn",
+        "prompt": "걔 좀 긴장한 것 같았어, 뭐 그런 거.",
+        "chunks": ["or something.", "nervous,", "He seemed", "sort of"],
+        "answer": [2, 3, 1, 0],
+        "explanation": "sort of는 꾸밀 말 nervous 앞에 고정이고, or something은 항상 문장 맨 끝에 온다. 자리를 바꾸면 문장이 무너진다."
+      },
+      {
+        "quizId": "gq-u03-4",
+        "unitId": "u-03",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 이번 주말엔 아마 그냥 집에 있을 것 같아.",
+        "chunks": ["just stay home", "this weekend.", "I'll", "probably"],
+        "answer": [2, 3, 0, 1],
+        "explanation": "probably는 조동사 뒤·일반동사 앞이 제자리다. I'll probably ~가 자연스럽고, probably를 문두로 빼면 어색해진다."
+      }
+    ],
+    "u-04": [
+      {
+        "quizId": "gq-u04-1",
+        "unitId": "u-04",
+        "type": "truefalse",
+        "prompt": "'When have you tried Thai food?'는 경험을 물을 때 쓸 수 있는 올바른 질문이다.",
+        "isCorrect": false,
+        "explanation": "현재완료는 특정 과거 시점을 묻는 when과 함께 못 쓴다. '언제?'가 나오는 순간 단순과거 — When did you try Thai food?가 맞다."
+      },
+      {
+        "quizId": "gq-u04-2",
+        "unitId": "u-04",
+        "type": "blank",
+        "prompt": "출장에서 만난 동료에게 — I've worked at this company ___ almost ten years.",
+        "options": ["since", "for", "from", "during"],
+        "answerIndex": 1,
+        "explanation": "for 뒤에는 기간, since 뒤에는 출발 시점이 온다. almost ten years는 기간이므로 for다."
+      },
+      {
+        "quizId": "gq-u04-3",
+        "unitId": "u-04",
+        "type": "koToEn",
+        "prompt": "발리에 가 본 적 있어?",
+        "chunks": ["been", "to Bali?", "Have you", "ever"],
+        "answer": [2, 3, 0, 1],
+        "explanation": "경험을 묻는 현재완료 의문문이다. ever가 '살면서 한 번이라도'를 열고, 경험은 have gone이 아니라 have been to로 센다."
+      },
+      {
+        "quizId": "gq-u04-4",
+        "unitId": "u-04",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 그는 은행에 가 버려서 지금 자리에 없어요.",
+        "chunks": ["so he's not", "He's gone", "at his desk.", "to the bank,"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "has gone to는 '가 버려서 지금 여기 없다'는 결과다. 갔다 온 경험이라면 has been to를 쓴다 — 둘을 바꾸면 뜻이 정반대가 된다."
+      }
+    ],
+    "u-05": [
+      {
+        "quizId": "gq-u05-1",
+        "unitId": "u-05",
+        "type": "truefalse",
+        "prompt": "'그 팟캐스트 듣는 중이야(아직 다 못 들었어)'는 I've listened to that podcast.보다 I've been listening to that podcast.가 맞다.",
+        "isCorrect": true,
+        "explanation": "현재완료진행은 아직 안 끝난 '과정'을 그린다. I've listened는 다 들었다는 '결과'라 뜻이 뒤집힌다."
+      },
+      {
+        "quizId": "gq-u05-2",
+        "unitId": "u-05",
+        "type": "blank",
+        "prompt": "단골 카페에서 — I ___ this barista since the shop opened.",
+        "options": ["'ve been knowing", "'ve known", "'m knowing", "knew"],
+        "answerIndex": 1,
+        "explanation": "know는 상태동사라 진행형을 못 받는다. 계속의 뜻은 현재완료 I've known + since로 표현한다."
+      },
+      {
+        "quizId": "gq-u05-3",
+        "unitId": "u-05",
+        "type": "koToEn",
+        "prompt": "우리 아침부터 계속 짐 싸고 있어.",
+        "chunks": ["since", "We've been", "this morning.", "packing"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "아침에 시작해 지금도 안 끝난 동작이므로 have been -ing다. 출발 시점 this morning 앞에는 since가 온다."
+      },
+      {
+        "quizId": "gq-u05-4",
+        "unitId": "u-05",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 요즘 계속 야근하고 있어.",
+        "chunks": ["a lot", "lately.", "I've been", "working late"],
+        "answer": [2, 3, 0, 1],
+        "explanation": "lately와 붙은 현재완료진행은 '요즘 계속 ~하고 있다'가 된다. 단순과거로 바꾸면 한 번 스친 일이 되어 버린다."
+      }
+    ],
+    "u-06": [
+      {
+        "quizId": "gq-u06-1",
+        "unitId": "u-06",
+        "type": "truefalse",
+        "prompt": "'공항에 도착했을 때 비행기는 이미 떠났다'를 When I got to the airport, the plane had already left.라고 하면 시간 순서가 정확히 전달된다.",
+        "isCorrect": true,
+        "explanation": "기준 시점(도착)보다 앞선 일에 had + p.p.를 박아야 순서가 산다. 둘 다 과거형으로 쓰면 도착 후에 떠난 것처럼 들린다. already는 had와 과거분사 사이가 제자리다."
+      },
+      {
+        "quizId": "gq-u06-2",
+        "unitId": "u-06",
+        "type": "blank",
+        "prompt": "식당에 늦게 도착한 날 — When we got there, they ___ closed the kitchen.",
+        "options": ["already had", "had already", "have already", "already"],
+        "answerIndex": 1,
+        "explanation": "도착이라는 과거 기준 시점보다 앞선 일이므로 과거완료다. 부사 already는 had 뒤, 과거분사 앞에 낀다."
+      },
+      {
+        "quizId": "gq-u06-3",
+        "unitId": "u-06",
+        "type": "koToEn",
+        "prompt": "집에 와서야 지갑을 카페에 두고 온 걸 알았다.",
+        "chunks": ["my wallet", "When I got home,", "at the cafe.", "I'd left", "I realized"],
+        "answer": [1, 4, 3, 0, 2],
+        "explanation": "안 것은 그때, 두고 온 것은 그보다 앞 — 그래서 left가 아니라 I'd left(= I had left)다. 뒤에 과거분사가 오면 'd는 had다."
+      },
+      {
+        "quizId": "gq-u06-4",
+        "unitId": "u-06",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 그가 추천해 준 식당은 내가 전에 가 봤던 곳이었다.",
+        "chunks": ["was one", "I'd been to before.", "The restaurant", "he recommended"],
+        "answer": [2, 3, 0, 1],
+        "explanation": "관계절 속 과거완료다. 추천받은 과거 시점보다 가 본 일이 더 앞이므로 I'd been to(= I had been to)가 된다."
+      }
+    ],
+    "u-07": [
+      {
+        "quizId": "gq-u07-1",
+        "unitId": "u-07",
+        "type": "truefalse",
+        "prompt": "'나는 예전에 부산에 살았었다'를 I would live in Busan.이라고 표현할 수 있다.",
+        "isCorrect": false,
+        "explanation": "live는 상태동사라 would 반복 용법을 못 받는다. I used to live in Busan.으로 쓴다. would는 반복되는 '동작'에만 붙는다."
+      },
+      {
+        "quizId": "gq-u07-2",
+        "unitId": "u-07",
+        "type": "blank",
+        "prompt": "어린 시절 회상 — When I was a kid, my dad ___ make pancakes every Sunday morning.",
+        "options": ["would", "will", "used", "should"],
+        "answerIndex": 0,
+        "explanation": "When I was a kid로 과거 시점이 깔린 뒤의 반복 동작이므로 would + 동사원형이다. used라면 used to make여야 한다."
+      },
+      {
+        "quizId": "gq-u07-3",
+        "unitId": "u-07",
+        "type": "koToEn",
+        "prompt": "퇴근하고 나면 우리는 그 작은 식당에 들르곤 했다.",
+        "chunks": ["stop by", "After work,", "that little diner.", "we'd"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "과거의 반복 동작은 would로 그리고, 구어에서는 거의 항상 we'd로 축약된다. 이 'd를 못 들으면 시제를 통째로 놓친다."
+      },
+      {
+        "quizId": "gq-u07-4",
+        "unitId": "u-07",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 시험 기간마다 그녀는 도서관에서 밤을 새우곤 했다.",
+        "chunks": ["at the library.", "she would", "During exams,", "stay up all night"],
+        "answer": [2, 1, 3, 0],
+        "explanation": "During exams가 과거의 반복 배경을 깔고, would + stay up이 '~하곤 했다'를 만든다. 시점 없이 would만 쓰면 가정으로 들린다."
+      }
+    ]
+  }
+}

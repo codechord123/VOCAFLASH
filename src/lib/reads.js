@@ -20,16 +20,25 @@ export function readOf(reads, work, chapter) {
   return reads?.[readKey(work, chapter)] ?? { count: 0, lastAt: null }
 }
 
-/** 한 번 더 읽었다고 기록한다. */
-export function markRead(state, work, chapter) {
+/**
+ * 한 번 더 읽었다고 기록한다.
+ *
+ * secs는 챕터를 연 뒤 읽음을 누르기까지 걸린 시간 — 재독 속도가 곧
+ * 유창성의 지표라 함께 남긴다. 잠깐 열었거나(15초 미만) 켜 두고 딴 일을
+ * 한 것(1시간 초과)은 속도가 아니므로 버린다.
+ */
+export function markRead(state, work, chapter, secs = null) {
   const key = readKey(work, chapter)
   const prev = state.reads?.[key] ?? { count: 0, lastAt: null }
+  const valid = typeof secs === 'number' && secs >= 15 && secs <= 3600
+  const rec = { ...prev, count: prev.count + 1, lastAt: Date.now() }
+  if (valid) {
+    rec.lastSecs = secs
+    rec.secsLog = [...(prev.secsLog ?? []), { at: Date.now(), secs }].slice(-6)
+  }
   return {
     ...state,
-    reads: {
-      ...(state.reads ?? {}),
-      [key]: { count: prev.count + 1, lastAt: Date.now() },
-    },
+    reads: { ...(state.reads ?? {}), [key]: rec },
   }
 }
 
@@ -40,8 +49,16 @@ export function undoRead(state, work, chapter) {
   if (!prev || prev.count <= 0) return state
   const next = { ...(state.reads ?? {}) }
   if (prev.count === 1) delete next[key]
-  else next[key] = { count: prev.count - 1, lastAt: prev.lastAt }
+  else next[key] = { ...prev, count: prev.count - 1 }
   return { ...state, reads: next }
+}
+
+/** 초 → '5분 12초'. 재독 속도 표시에 쓴다. */
+export function secsLabel(secs) {
+  if (typeof secs !== 'number') return null
+  const m = Math.floor(secs / 60)
+  const s = Math.round(secs % 60)
+  return m > 0 ? `${m}분 ${s}초` : `${s}초`
 }
 
 /**

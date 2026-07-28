@@ -1,0 +1,415 @@
+{
+ "units": {
+  "g-01": [
+   {
+    "id": "gt-g01-1",
+    "kind": "choice",
+    "q": "한동안만 그런 일",
+    "sentence": "I ___ my brother's car while mine is in the shop.",
+    "choices": [
+     "am using",
+     "use"
+    ],
+    "answer": "am using",
+    "why": "내 차가 수리에서 나올 때까지만 — 임시는 진행형이다. use라고 하면 원래 형 차를 타고 다니는 사람이 된다."
+   },
+   {
+    "id": "gt-g01-2",
+    "kind": "choice",
+    "q": "-ing를 못 붙이는 동사",
+    "sentence": "I ___ a bigger suitcase for this trip.",
+    "choices": [
+     "need",
+     "am needing"
+    ],
+    "answer": "need",
+    "why": "need는 마음·상태의 동사라 -ing를 안 쓴다. know·want·believe와 같은 무리다."
+   },
+   {
+    "id": "gt-g01-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "My boss is speaking three languages.",
+    "choices": [
+     "My boss",
+     "is speaking",
+     "three languages"
+    ],
+    "answer": "is speaking",
+    "why": "3개 국어를 한다는 건 능력, 즉 늘 그런 사실이다 — My boss speaks가 맞다. is speaking은 지금 이 순간 말하는 중이라는 뜻."
+   },
+   {
+    "id": "gt-g01-4",
+    "kind": "choice",
+    "q": "뜻 대조 — He's being very quiet today.",
+    "sentence": "이 문장에 깔린 뜻은?",
+    "choices": [
+     "오늘따라 평소와 다르게 조용하다",
+     "원래 말수가 적은 사람이다"
+    ],
+    "answer": "오늘따라 평소와 다르게 조용하다",
+    "why": "be에 -ing가 붙으면 지금 이 순간의 행동이다. 원래 성격이라면 He's very quiet — today가 붙은 것도 '오늘만'이라는 신호다."
+   },
+   {
+    "id": "gt-g01-5",
+    "kind": "order",
+    "q": "불평하는 말로 배열하기",
+    "pieces": [
+     "My coworker is always",
+     "taking credit",
+     "for my ideas"
+    ],
+    "answer": [
+     "My coworker is always",
+     "taking credit",
+     "for my ideas"
+    ],
+    "ko": "내 동료는 맨날 내 아이디어를 자기 공으로 돌린다니까.",
+    "why": "always + 진행형은 사실 전달이 아니라 불평이다. 담담하게 말하려면 My coworker always takes credit."
+   }
+  ],
+  "g-02": [
+   {
+    "id": "gt-g02-1",
+    "kind": "choice",
+    "q": "since가 보이면",
+    "sentence": "She ___ in three different countries since college.",
+    "choices": [
+     "has worked",
+     "worked"
+    ],
+    "answer": "has worked",
+    "why": "since는 시작점 — 대학 이후 지금까지 이어지는 이력이라 현재완료다."
+   },
+   {
+    "id": "gt-g02-2",
+    "kind": "choice",
+    "q": "시점이 박힌 문장",
+    "sentence": "They ___ out of that apartment a month ago.",
+    "choices": [
+     "moved",
+     "have moved"
+    ],
+    "answer": "moved",
+    "why": "ago는 '그때'를 못 박는 말이다. 시점이 나오면 현재완료는 못 쓴다."
+   },
+   {
+    "id": "gt-g02-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "Have you seen the game last night?",
+    "choices": [
+     "Have you seen",
+     "the game",
+     "last night"
+    ],
+    "answer": "Have you seen",
+    "why": "last night이라는 시점이 있으니 Did you see가 맞다. 시점과 현재완료는 한 문장에 못 산다."
+   },
+   {
+    "id": "gt-g02-4",
+    "kind": "choice",
+    "q": "뜻 대조 — Marta has gone to lunch.",
+    "sentence": "이 문장에 깔린 뜻은?",
+    "choices": [
+     "점심 먹으러 나가서 아직 안 돌아왔다",
+     "점심을 먹고 이미 돌아와 있다"
+    ],
+    "answer": "점심 먹으러 나가서 아직 안 돌아왔다",
+    "why": "has gone to는 '가서 아직 거기 있다'. 갔다 왔다면 has been to lunch — gone과 been이 자리에 있는지 없는지를 가른다."
+   },
+   {
+    "id": "gt-g02-5",
+    "kind": "order",
+    "q": "몇 달째 이어진 마음으로 배열하기",
+    "pieces": [
+     "I've wanted",
+     "to try this restaurant",
+     "for months"
+    ],
+    "answer": [
+     "I've wanted",
+     "to try this restaurant",
+     "for months"
+    ],
+    "ko": "몇 달째 이 식당에 와 보고 싶었어.",
+    "why": "for + 기간은 지금까지 이어진 시간 — 그 마음이 아직 유효하니 현재완료다."
+   }
+  ],
+  "g-03": [
+   {
+    "id": "gt-g03-1",
+    "kind": "choice",
+    "q": "그 자리에서 내린 결정",
+    "sentence": "You look tired — I ___ drive the rest of the way.",
+    "choices": [
+     "'ll",
+     "'m going to"
+    ],
+    "answer": "'ll",
+    "why": "피곤해 보이는 걸 지금 보고 그 자리에서 정했다 — 즉석 결정은 will. going to면 출발 전부터 정해 둔 말이 된다."
+   },
+   {
+    "id": "gt-g03-2",
+    "kind": "choice",
+    "q": "이미 잡아 둔 약속",
+    "sentence": "I can't do Friday — I ___ my landlord that afternoon.",
+    "choices": [
+     "'m meeting",
+     "'ll meet"
+    ],
+    "answer": "'m meeting",
+    "why": "시간까지 잡힌 약속이라 거절의 근거가 된다 — 현재진행. will을 쓰면 지금 막 정하는 말처럼 들려 핑계가 약해진다."
+   },
+   {
+    "id": "gt-g03-3",
+    "kind": "choice",
+    "q": "증거가 보이는 예측",
+    "sentence": "Slow down — we ___ miss the exit!",
+    "choices": [
+     "'re going to",
+     "will"
+    ],
+    "answer": "'re going to",
+    "why": "출구가 눈앞에 보이는데 이 속도면 지나친다 — 증거가 보이는 예측은 be going to."
+   },
+   {
+    "id": "gt-g03-4",
+    "kind": "choice",
+    "q": "뜻 대조 — I'm going to talk to my manager about a raise.",
+    "sentence": "이 문장에 깔린 뜻은?",
+    "choices": [
+     "전부터 말하기로 마음먹어 둔 일이다",
+     "지금 이 자리에서 막 결심했다"
+    ],
+    "answer": "전부터 말하기로 마음먹어 둔 일이다",
+    "why": "be going to는 미리 세워 둔 작정이다. 지금 막 정했다면 I'll talk to my manager — 결심의 시점이 형태를 가른다."
+   },
+   {
+    "id": "gt-g03-5",
+    "kind": "order",
+    "q": "그 자리에서 하는 약속으로 배열하기",
+    "pieces": [
+     "I'll text you",
+     "the address",
+     "when I leave work"
+    ],
+    "answer": [
+     "I'll text you",
+     "the address",
+     "when I leave work"
+    ],
+    "ko": "퇴근하면 주소 문자로 보낼게.",
+    "why": "지금 하는 약속은 will, when절 안은 미래여도 현재시제(leave) — 한 문장에 두 규칙이 같이 산다."
+   }
+  ],
+  "g-04": [
+   {
+    "id": "gt-g04-1",
+    "kind": "choice",
+    "q": "이웃에게 조심스럽게",
+    "sentence": "___ you mind turning down the music a bit?",
+    "choices": [
+     "Would",
+     "Will"
+    ],
+    "answer": "Would",
+    "why": "Would you mind + -ing가 부담을 가장 덜 주는 부탁 틀이다. Will you mind라는 말은 없다."
+   },
+   {
+    "id": "gt-g04-2",
+    "kind": "choice",
+    "q": "낯선 사람에게 빌릴 때",
+    "sentence": "Excuse me, ___ I borrow your pen for a second?",
+    "choices": [
+     "could",
+     "will"
+    ],
+    "answer": "could",
+    "why": "허락은 could/can/may로 구한다. will은 상대의 의지를 묻는 말이라 이 자리에 안 맞는다."
+   },
+   {
+    "id": "gt-g04-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "I was wondering if you could to check my essay.",
+    "choices": [
+     "I was wondering",
+     "if you could",
+     "to check"
+    ],
+    "answer": "to check",
+    "why": "could 뒤에는 동사원형 — if you could check이 맞다. 틀이 아무리 정중해도 조동사 뒤에 to가 끼면 무너진다."
+   },
+   {
+    "id": "gt-g04-4",
+    "kind": "choice",
+    "q": "뜻 대조 — \"Would you mind if I opened the window?\" — \"Actually, I'd rather you didn't.\"",
+    "sentence": "이 대답의 뜻은?",
+    "choices": [
+     "열지 말았으면 한다는 부드러운 거절",
+     "열어도 된다는 승낙"
+    ],
+    "answer": "열지 말았으면 한다는 부드러운 거절",
+    "why": "I'd rather you didn't는 '안 그래 주면 좋겠다' — 정중하지만 분명한 거절이다. 승낙이면 Not at all이나 Go ahead."
+   },
+   {
+    "id": "gt-g04-5",
+    "kind": "order",
+    "q": "카페에서 부탁하는 말로 배열하기",
+    "pieces": [
+     "Excuse me",
+     "would you mind",
+     "watching my bag",
+     "for a minute"
+    ],
+    "answer": [
+     "Excuse me",
+     "would you mind",
+     "watching my bag",
+     "for a minute"
+    ],
+    "ko": "실례지만 잠깐 제 가방 좀 봐주실 수 있을까요?",
+    "why": "Would you mind 뒤에는 -ing(watching)가 온다. for a minute로 부담까지 줄이면 낯선 사람에게도 안전한 부탁이 된다."
+   }
+  ],
+  "g-05": [
+   {
+    "id": "gt-g05-1",
+    "kind": "choice",
+    "q": "질문을 문장 안에 넣기",
+    "sentence": "Can you tell me how much a ticket ___?",
+    "choices": [
+     "costs",
+     "does it cost"
+    ],
+    "answer": "costs",
+    "why": "뒤집기는 Can you tell me에서 이미 끝났다. 안에 들어간 질문은 평서문 어순 — a ticket costs."
+   },
+   {
+    "id": "gt-g05-2",
+    "kind": "choice",
+    "q": "의문사 없는 질문 넣기",
+    "sentence": "Do you know ___ the museum is open on Mondays?",
+    "choices": [
+     "if",
+     "is"
+    ],
+    "answer": "if",
+    "why": "의문사 없는 질문이 문장 안으로 들어가면 if나 whether가 잇는다. is를 또 앞세우면 뒤집기를 두 번 하는 셈."
+   },
+   {
+    "id": "gt-g05-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "Could you tell me when does the tour start?",
+    "choices": [
+     "Could you tell me",
+     "when does",
+     "the tour start"
+    ],
+    "answer": "when does",
+    "why": "안에 들어간 질문은 when the tour starts — does가 낄 자리가 없다. 뒤집기는 문장 맨 앞에서 이미 끝났다."
+   },
+   {
+    "id": "gt-g05-4",
+    "kind": "choice",
+    "q": "뜻 대조 — He works from home, doesn't he?",
+    "sentence": "이 말에 깔린 태도는?",
+    "choices": [
+     "거의 확신하면서 '맞죠?' 하고 확인한다",
+     "전혀 몰라서 처음으로 묻는다"
+    ],
+    "answer": "거의 확신하면서 '맞죠?' 하고 확인한다",
+    "why": "부가의문문은 동의를 구하는 말투다. 정말 몰라서 묻는 거라면 Does he work from home?으로 뒤집는다."
+   },
+   {
+    "id": "gt-g05-5",
+    "kind": "order",
+    "q": "궁금함을 문장 안에 넣어 배열하기",
+    "pieces": [
+     "I'm not sure",
+     "if",
+     "the pharmacy",
+     "is still open"
+    ],
+    "answer": [
+     "I'm not sure",
+     "if",
+     "the pharmacy",
+     "is still open"
+    ],
+    "ko": "약국이 아직 열려 있는지 잘 모르겠어.",
+    "why": "yes/no 질문이 안으로 들어가면 if가 잇고, 그 뒤는 the pharmacy is로 평서문 어순을 지킨다."
+   }
+  ],
+  "g-06": [
+   {
+    "id": "gt-g06-1",
+    "kind": "choice",
+    "q": "상대가 모르는 첫 등장",
+    "sentence": "We hired ___ designer for the new logo.",
+    "choices": [
+     "a",
+     "the"
+    ],
+    "answer": "a",
+    "why": "듣는 사람이 처음 듣는 사람이니 a로 시작한다. the designer면 상대가 '어느 디자이너?' 하고 멈칫한다."
+   },
+   {
+    "id": "gt-g06-2",
+    "kind": "choice",
+    "q": "전체를 말하는 무관사",
+    "sentence": "He doesn't eat ___ meat.",
+    "choices": [
+     "-",
+     "the"
+    ],
+    "answer": "-",
+    "why": "고기라는 것 전반을 말하면 무관사. the meat이면 '식탁 위의 그 고기'를 안 먹는다는 말이 된다."
+   },
+   {
+    "id": "gt-g06-3",
+    "kind": "choice",
+    "q": "틀린 곳 하나를 고르세요",
+    "sentence": "My cousin works as engineer in Berlin.",
+    "choices": [
+     "My cousin works",
+     "as engineer",
+     "in Berlin"
+    ],
+    "answer": "as engineer",
+    "why": "직업 앞에는 a — as an engineer가 맞다. 영어는 직업을 '그런 사람들 중 하나'로 세기 때문에 관사 없이는 못 쓴다."
+   },
+   {
+    "id": "gt-g06-4",
+    "kind": "choice",
+    "q": "뜻 대조 — I'm going to the church to take photos.",
+    "sentence": "the가 붙으면?",
+    "choices": [
+     "성당 건물에 사진 찍으러 간다",
+     "신자로서 예배를 드리러 다닌다"
+    ],
+    "answer": "성당 건물에 사진 찍으러 간다",
+    "why": "the church는 건물을 가리킨다. 예배라는 본래 기능이면 무관사 — go to church. school·bed·prison도 같은 식으로 갈린다."
+   },
+   {
+    "id": "gt-g06-5",
+    "kind": "order",
+    "q": "a에서 the로 이어지게 배열하기",
+    "pieces": [
+     "We ordered a pizza at noon",
+     "but the pizza",
+     "never arrived"
+    ],
+    "answer": [
+     "We ordered a pizza at noon",
+     "but the pizza",
+     "never arrived"
+    ],
+    "ko": "정오에 피자를 시켰는데, 그 피자가 끝내 안 왔어.",
+    "why": "처음 꺼낼 때는 a pizza, 다시 가리킬 때는 the pizza — 이야기는 이 a→the 교대로 굴러간다."
+   }
+  ]
+ }
+}

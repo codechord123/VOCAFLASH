@@ -1,0 +1,226 @@
+{
+  "units": {
+    "u-08": [
+      {
+        "quizId": "gq-u08-1",
+        "unitId": "u-08",
+        "type": "truefalse",
+        "prompt": "친구의 카페를 칭찬하며 \"This espresso is very better than the one I make at home.\"이라고 말하는 것은 자연스럽다.",
+        "isCorrect": false,
+        "explanation": "very는 원급 전용이다(very good). 비교급은 much / far / a lot / even으로 강조한다 — much better, a lot better. 차이의 크기를 숫자로 말할 때도 자리는 같다: two dollars cheaper."
+      },
+      {
+        "quizId": "gq-u08-2",
+        "unitId": "u-08",
+        "type": "blank",
+        "prompt": "실수한 동료를 감싸며: \"Honestly, mine was just ___ mistake as yours.\" (솔직히 내 실수도 네 실수만큼 컸어)",
+        "options": ["as big a", "as a big", "a as big", "big as a"],
+        "answerIndex": 0,
+        "explanation": "as ~ as 사이에 명사까지 넣으면 어순이 「as + 형용사 + a/an + 명사」로 뒤집힌다. ❌ as a big mistake as. so, too, how 뒤에서도 같은 뒤집힘이 일어난다 — too big a risk."
+      },
+      {
+        "quizId": "gq-u08-3",
+        "unitId": "u-08",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 여행을 많이 다닐수록 짐을 가볍게 싸게 된다.",
+        "chunks": ["the lighter", "The more", "I pack.", "I travel,"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "「The 비교급 ~, the 비교급 ~」 틀이다. 두 변화가 맞물려 움직일 때 각 절의 맨 앞에 the + 비교급을 세우고, 나머지는 평서문 어순으로 이어 간다."
+      },
+      {
+        "quizId": "gq-u08-4",
+        "unitId": "u-08",
+        "type": "koToEn",
+        "prompt": "이 카페가 시내 다른 어떤 카페보다 조용해.",
+        "chunks": ["than any other", "This cafe is", "cafe downtown.", "quieter"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "비교급 + than any other + 단수명사로 최상급의 뜻을 만든다. 이 카페도 시내 카페 집단에 속하므로 other가 필요하고, other 뒤는 단수다 — ❌ than any other cafes."
+      }
+    ],
+    "u-09": [
+      {
+        "quizId": "gq-u09-1",
+        "unitId": "u-09",
+        "type": "truefalse",
+        "prompt": "\"Never have I waited this long for a bus.\"는 조동사 have가 주어 앞에 있으므로 물음표를 붙여 의문문으로 써야 한다.",
+        "isCorrect": false,
+        "explanation": "부정어 Never가 문두에 와서 생긴 도치일 뿐 의문문이 아니다. 뜻은 질문이 아니라 단언이고 마침표로 끝난다. 문두의 부정어와 문장 끝 부호로 판단한다."
+      },
+      {
+        "quizId": "gq-u09-2",
+        "unitId": "u-09",
+        "type": "blank",
+        "prompt": "\"Not until I got to the airport ___ I realize my passport was still at home.\" (공항에 도착해서야 여권을 집에 두고 온 걸 알았다)",
+        "options": ["did", "do", "had", "that"],
+        "answerIndex": 0,
+        "explanation": "Not until ~이 문두에 오면 뒤의 주절이 도치된다. 일반동사 realize뿐이므로 did를 새로 꺼내고 본동사는 원형으로 남긴다. 도치는 종속절이 아니라 주절에서 일어난다."
+      },
+      {
+        "quizId": "gq-u09-3",
+        "unitId": "u-09",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 회의가 끝난 뒤에야 그녀는 휴대폰을 확인했다.",
+        "chunks": ["did she", "Only after", "check her phone.", "the meeting"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "Only 덩어리가 문두에 서면 주절의 조동사가 주어 앞으로 나온다. Only after the meeting까지는 어순이 멀쩡하고, 뒤집히는 것은 그다음 did she check뿐이다."
+      },
+      {
+        "quizId": "gq-u09-4",
+        "unitId": "u-09",
+        "type": "koToEn",
+        "prompt": "내가 그리운 건 다름 아닌 그 동네 빵집이다.",
+        "chunks": ["that I miss.", "It's", "that little bakery"],
+        "answer": [1, 2, 0],
+        "explanation": "It is ~ that 강조구문이다. It's와 that을 지우면 I miss that little bakery가 온전히 복원된다 — 복원되면 강조구문, 파편만 남으면 가주어다."
+      }
+    ],
+    "u-10": [
+      {
+        "quizId": "gq-u10-1",
+        "unitId": "u-10",
+        "type": "truefalse",
+        "prompt": "길을 헤매다 하는 말 \"I don't know where is the subway station.\"은 의문사절의 올바른 어순이다.",
+        "isCorrect": false,
+        "explanation": "의문사절은 평서문 어순이다 — where the subway station is. 학교에서 배운 의문문 어순이 튀어나와 주어와 동사를 뒤집는 것이 이 유닛의 최다 실수다."
+      },
+      {
+        "quizId": "gq-u10-2",
+        "unitId": "u-10",
+        "type": "blank",
+        "prompt": "회의 후 동료에게: \"I really liked ___ you said about the new schedule.\" (일정에 대해 네가 한 말이 정말 좋았어)",
+        "options": ["what", "that", "which", "it"],
+        "answerIndex": 0,
+        "explanation": "what = the thing(s) which. '것'을 안에 품고 있어 앞에 명사가 없어도 된다. that을 쓰면 '네가 말했다는 것을 좋아했다'가 되어 뜻 자체가 달라진다."
+      },
+      {
+        "quizId": "gq-u10-3",
+        "unitId": "u-10",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 네가 지난주에 빌려준 책 정말 좋았어.",
+        "chunks": ["was amazing.", "The book", "you lent me", "last week"],
+        "answer": [1, 2, 3, 0],
+        "explanation": "목적격 관계대명사가 생략된 접촉절이다. The book (that) you lent me — 명사 뒤에 주어+동사가 바로 붙어 뒤에서 꾸민다. 꾸미는 덩어리가 끝난 뒤에야 본동사 was가 온다."
+      },
+      {
+        "quizId": "gq-u10-4",
+        "unitId": "u-10",
+        "type": "koToEn",
+        "prompt": "그 식당 별로 안 비싼 것 같아.",
+        "chunks": ["is expensive.", "I don't think", "the restaurant"],
+        "answer": [1, 2, 0],
+        "explanation": "영어는 think 뒤의 부정을 주절로 끌어올린다 — ⭕ I don't think ~ is / ❌ I think ~ isn't. 한국어 '비싸지 않은 것 같아'를 그대로 옮기면 유난히 딱딱하고 강한 부정으로 들린다."
+      }
+    ],
+    "u-11": [
+      {
+        "quizId": "gq-u11-1",
+        "unitId": "u-11",
+        "type": "truefalse",
+        "prompt": "\"I saw my coworker to leave the office early.\"는 지각동사 구문으로 올바른 문장이다.",
+        "isCorrect": false,
+        "explanation": "지각동사 뒤 목적격보어에 to부정사는 절대 오지 않는다. -ing나 원형만 온다 — I saw her leave / leaving. 한국어 '~하는 것을 봤다'의 '것'이 to를 부르는 착각을 일으킨다."
+      },
+      {
+        "quizId": "gq-u11-2",
+        "unitId": "u-11",
+        "type": "blank",
+        "prompt": "공항 게이트에서: \"I heard someone ___ my name behind me.\" (누가 뒤에서 내 이름을 부르고 있는 걸 들었다)",
+        "options": ["calling", "to call", "called", "calls"],
+        "answerIndex": 0,
+        "explanation": "지각동사 + 목적어 + -ing는 '부르고 있는 중'인 한 토막을 들은 것이다. to call은 지각동사 뒤에 올 수 없고, calls는 목적격보어 자리에 성립하지 않는다."
+      },
+      {
+        "quizId": "gq-u11-3",
+        "unitId": "u-11",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 역에 들어서며 기차가 속도를 늦추는 게 느껴졌다.",
+        "chunks": ["slowing down", "I felt", "as we pulled in.", "the train"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "feel + 목적어 + -ing 어순이다. 감속이 끝난 결과가 아니라 '늦춰지는 중'인 한 토막을 몸으로 느낀 것이라 -ing가 어울린다."
+      },
+      {
+        "quizId": "gq-u11-4",
+        "unitId": "u-11",
+        "type": "koToEn",
+        "prompt": "공원에서 애들이 축구 하고 있는 걸 봤어.",
+        "chunks": ["at the park.", "I watched", "playing soccer", "some kids"],
+        "answer": [1, 3, 2, 0],
+        "explanation": "watch + 목적어 + -ing. 경기의 처음부터 끝까지가 아니라 '하고 있는 중'인 장면을 본 것이므로 -ing를 쓴다. ❌ watched some kids to play."
+      }
+    ],
+    "u-12": [
+      {
+        "quizId": "gq-u12-1",
+        "unitId": "u-12",
+        "type": "truefalse",
+        "prompt": "\"If I would have taken that job, I would be in Tokyo now.\"의 if절은 올바른 가정법이다.",
+        "isCorrect": false,
+        "explanation": "if절에는 would를 쓰지 않는다. would는 주절 담당이다 — If I had taken that job, I would be in Tokyo now. 한국어 '~한다면 ~겠다'의 '겠'이 if절로 새어 들어간 최다 실수다."
+      },
+      {
+        "quizId": "gq-u12-2",
+        "unitId": "u-12",
+        "type": "blank",
+        "prompt": "동창 모임에서: \"If I hadn't moved to Seoul back then, we ___ still be neighbors now.\" (그때 서울로 이사 안 갔으면 우린 지금도 이웃이었을 텐데)",
+        "options": ["would", "would have", "will", "had"],
+        "answerIndex": 0,
+        "explanation": "혼합 가정법이다. 조건은 과거(hadn't moved), 결과는 지금(now) — 주절은 would have been이 아니라 would + 동사원형이다. now, still, by now 같은 현재 표지가 붙으면 혼합을 의심한다."
+      },
+      {
+        "quizId": "gq-u12-3",
+        "unitId": "u-12",
+        "type": "koToEn",
+        "prompt": "그날 그 카페에 안 들어갔더라면, 우린 영영 못 만났을 거야.",
+        "chunks": ["we would never", "If I hadn't", "have met.", "walked into that cafe,"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "가정법 과거완료 — 이미 끝난 과거를 통째로 뒤집는다. if절은 had p.p., 주절은 would have p.p.로 두 절 모두 한 칸씩 뒤로 밀린다. never는 would 바로 뒤에 선다."
+      },
+      {
+        "quizId": "gq-u12-4",
+        "unitId": "u-12",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 우리가 조금만 더 일찍 나섰더라면, 그 노을을 봤을 텐데.",
+        "chunks": ["we would have", "If we had left", "caught the sunset.", "a little earlier,"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "가정법 과거완료의 기본 틀 — If + had p.p. ~, would have p.p. 노을은 이미 놓쳤고 되돌릴 수 없으므로 양쪽 다 한 칸 뒤로 민다."
+      }
+    ],
+    "u-13": [
+      {
+        "quizId": "gq-u13-1",
+        "unitId": "u-13",
+        "type": "truefalse",
+        "prompt": "휴가를 떠나는 동료에게 \"I wish you have a great trip!\"이라고 인사하는 것이 자연스럽다.",
+        "isCorrect": false,
+        "explanation": "wish는 '사실이 아니다'를 전제해서, 이렇게 말하면 '못 갈 것 같아 안됐다'는 결이 된다. 가능성이 열린 기원은 hope다 — I hope you have a great trip. 단, I wish you luck처럼 명사 두 개를 주는 관용구는 예외다."
+      },
+      {
+        "quizId": "gq-u13-2",
+        "unitId": "u-13",
+        "type": "blank",
+        "prompt": "이사 간 친구를 떠올리며: \"I wish I ___ for your new address before you left.\" (떠나기 전에 새 주소를 물어봤더라면)",
+        "options": ["had asked", "asked", "ask", "would ask"],
+        "answerIndex": 0,
+        "explanation": "이미 끝난 과거에 대한 아쉬움은 wish + had p.p.다. 아쉬워하는 시점은 지금이고, 아쉬워하는 대상만 과거다. ❌ I wish I asked는 한 칸이 모자라고, wish + would는 남의 습관에 대한 불평이라 여기 못 온다."
+      },
+      {
+        "quizId": "gq-u13-3",
+        "unitId": "u-13",
+        "type": "arrange",
+        "prompt": "조각을 순서대로 배열하세요 — 그날 밤 우리가 조금만 더 있었더라면.",
+        "chunks": ["a little longer", "If only", "that night.", "we had stayed"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "if only는 wish보다 감정이 센 아쉬움이다. 되돌릴 수 없는 과거이므로 had p.p.로 한 칸 뒤로 민다 — If only we had stayed."
+      },
+      {
+        "quizId": "gq-u13-4",
+        "unitId": "u-13",
+        "type": "koToEn",
+        "prompt": "그 콘서트 표를 샀어야 했는데. (결국 안 샀다)",
+        "chunks": ["tickets", "I should have", "for that concert.", "bought"],
+        "answer": [1, 3, 0, 2],
+        "explanation": "should have p.p.는 '~했어야 했는데 안 했다'는 후회와 자책이다. would have p.p.(가정의 결과)와 형태가 비슷하지만, should have에는 if가 아니라 자책이 딸려 있다."
+      }
+    ]
+  }
+}
