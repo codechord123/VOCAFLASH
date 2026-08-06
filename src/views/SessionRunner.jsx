@@ -13,6 +13,7 @@ import { advanceSession, compileSession, endSession, pauseSession } from '../lib
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
 import { NIGHT_STOPS, sessionGrade } from '../lib/journey.js'
+import { firstLetters, koToEnClue } from '../lib/clue.js'
 
 // 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
 //
@@ -378,6 +379,12 @@ function Warmup({ card, onGrade, onNext }) {
       <div className="section-title">오답 되잡기</div>
       <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
         <p className="read" style={{ margin: 0, fontSize: 20 }}>{card.front}</p>
+        {/* 한→영 문장 카드는 뼈대 힌트로 단서 회상을 시킨다 */}
+        {!open && koToEnClue(card) && (
+          <p className="hint" style={{ fontFamily: 'var(--font-read)', letterSpacing: '0.05em', margin: 0 }}>
+            {koToEnClue(card)}
+          </p>
+        )}
         {open && (
           <>
             <div className="flashcard__divider" />
@@ -879,19 +886,6 @@ function Recite({ anchor, onNext }) {
       )}
     </div>
   )
-}
-
-/** 단어의 첫 글자만 남기고 가린다 — 섀도잉 2단계의 힌트. */
-function firstLetters(en) {
-  return en
-    .split(' ')
-    .map((w) => {
-      const m = w.match(/[A-Za-z]/)
-      if (!m) return w
-      const i = w.indexOf(m[0])
-      return w.slice(0, i + 1) + w.slice(i + 1).replace(/[A-Za-z]/g, '_')
-    })
-    .join(' ')
 }
 
 /**

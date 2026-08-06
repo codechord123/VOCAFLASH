@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GRADES, applyGrade, progressOf } from '../lib/srs.js'
 import { topicIcon, topicLabel } from '../lib/topics.js'
+import { koToEnClue } from '../lib/clue.js'
 
 // 스와이프 플래시카드.
 //
@@ -350,6 +351,16 @@ export default function Swipe({ cards, settings, commit, onExit }) {
               <div className="hint" style={{ fontFamily: 'var(--font-mono)' }}>
                 {card.phonetics}
               </div>
+            )}
+            {/* 한→영 문장 카드는 백지 번역이 아니라 뼈대 채우기로 —
+                첫 글자 힌트가 있어야 몇 초 안에 입이 움직인다 */}
+            {!flipped && koToEnClue(card) && (
+              <p
+                className="hint"
+                style={{ fontFamily: 'var(--font-read)', letterSpacing: '0.05em' }}
+              >
+                {koToEnClue(card)}
+              </p>
             )}
 
             {flipped ? (
