@@ -40,7 +40,7 @@ function seededShuffle(items, seed) {
  *                   {cycleUnits, pastUnits, weakUnits} — 각각 {id, kind, src, pool}
  * @param scene      콜드 오픈 대사 {en, ko, speaker} — 오늘 챕터의 명장면
  */
-export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [], cycleData = null, scene = null }) {
+export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], review = [], cycleData = null, scene = null, exprs = [] }) {
   const today = dayPlan(day)
   const { unit, step, chapter, kind } = today
   const atoms = []
@@ -82,6 +82,10 @@ export function compileSession(day, { unitData, quizzes = [], mistakeDue = [], r
   } else if (kind === 'milestone') {
     compileMilestone(atoms, today, cycleData, day)
   }
+
+  // 새 표현 — 영화·드라마 회화 표현 하루 5개. 소개된 것은 카드가 되어
+  // 다음부터 아래 단어 복습이 데려온다.
+  exprs.forEach((expr, i) => atoms.push({ type: 'expr', expr, n: i + 1, of: exprs.length }))
 
   // 간격 복습 — 단어. 카드 목록은 러너가 그 시점의 due로 채운다.
   atoms.push({ type: 'swipe' })

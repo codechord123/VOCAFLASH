@@ -15,6 +15,19 @@
 import { store } from './store.js'
 
 const CONFIG_KEY = 'script-study.firebase'
+
+// 주인의 Firebase 프로젝트(to-do-cal — 앱 세 개가 함께 쓴다). 웹 설정은
+// 공개 값이라 앱에 넣어 둔다: 기기마다 붙여 넣을 필요 없이 로그인만 하면
+// 된다. 이 앱의 데이터는 users/{uid}/vocaflash/ 아래에만 쓴다 — 같은
+// 프로젝트의 다른 앱(to-do-cal, Spider20) 경로와 겹치지 않는다.
+const BUILT_IN = {
+  apiKey: 'AIzaSyCRajHXD9_KlfvJQb-GtUr8NSk7ce0uad0',
+  authDomain: 'to-do-cal-6e835.firebaseapp.com',
+  projectId: 'to-do-cal-6e835',
+  storageBucket: 'to-do-cal-6e835.firebasestorage.app',
+  messagingSenderId: '460218654402',
+  appId: '1:460218654402:web:bcb143e419ad0722bee55b',
+}
 const FIELDS = ['apiKey', 'authDomain', 'projectId', 'storageBucket', 'messagingSenderId', 'appId']
 // Firestore 문서 한도는 1MiB. 여유를 두고 자른다.
 const DOC_LIMIT = 900_000
@@ -44,10 +57,11 @@ export function readConfig() {
   }
   try {
     const saved = JSON.parse(localStorage.getItem(CONFIG_KEY) || 'null')
-    return saved?.apiKey ? saved : null
+    if (saved?.apiKey) return saved
   } catch {
-    return null
+    /* 붙여 넣은 설정이 깨졌으면 내장 설정으로 */
   }
+  return { ...BUILT_IN, builtIn: true }
 }
 
 export function saveConfig(cfg) {
@@ -97,7 +111,7 @@ async function boot() {
     import('firebase/auth'),
     import('firebase/firestore'),
   ])
-  const { fromEnv, ...config } = cfg
+  const { fromEnv, builtIn, ...config } = cfg
   const app = appMod.getApps().length ? appMod.getApp() : appMod.initializeApp(config)
   const auth = authMod.getAuth(app)
   const db = fsMod.getFirestore(app)
@@ -247,7 +261,7 @@ function friendly(err) {
   if (code.includes('unauthorized-domain'))
     return '이 주소가 Firebase에 등록되어 있지 않습니다 — Authentication → 설정 → 승인된 도메인에 이 사이트 주소를 추가하세요.'
   if (code.includes('permission-denied'))
-    return 'Firestore 보안 규칙이 막고 있습니다 — 안내 문서의 규칙을 붙여 넣었는지 확인하세요.'
+    return 'Firestore 규칙이 막고 있습니다 — 설정 화면의 [vocaflash] 블록을 규칙에 추가하고 게시했는지 확인하세요.'
   if (code.includes('api-key') || code.includes('invalid-api-key'))
     return 'Firebase 설정의 apiKey가 맞지 않습니다 — 설정을 다시 붙여 넣으세요.'
   if (code.includes('operation-not-allowed'))

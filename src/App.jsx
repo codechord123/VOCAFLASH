@@ -177,7 +177,11 @@ export default function App() {
     for (const c of [...staticCards, ...state.cards]) {
       if (seen.has(c.id)) continue // 사용자 카드가 고정 자료와 겹칠 때
       seen.add(c.id)
-      out.push(withProgress(c, progress[c.id]))
+      const w = withProgress(c, progress[c.id])
+      // 수업이 소개한 영화 표현은 본인 카드와 같은 줄에 선다. 덱 우선순위(1)
+      // 그대로면 한 번도 안 본 하이라이트 수백 장 뒤로 밀려, 몰랐던 표현이
+      // 다음 날 돌아오지 못한다.
+      out.push(w.deck === 'midexp' && (w.reviewCount ?? 0) > 0 ? { ...w, priority: 0 } : w)
     }
     return out
   }, [staticCards, state.cards, state.progress])
@@ -215,6 +219,9 @@ export default function App() {
     () =>
       cards.filter((c) => {
         const deck = c.deck ?? 'highlight'
+        // 수업이 소개한 영화 표현은 덱이 꺼져 있어도 복습에 오른다 —
+        // 하루 5개씩 들인 것이 다음 날부터 돌아오지 않으면 소개가 아니다
+        if (deck === 'midexp' && (c.reviewCount ?? 0) > 0) return true
         const on = activeDecks[deck]
         return on !== undefined ? on !== false : DECKS[deck]?.defaultOn !== false
       }),

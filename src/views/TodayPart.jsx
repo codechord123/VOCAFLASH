@@ -1,9 +1,8 @@
 import { Suspense, lazy, useState } from 'react'
-import Swipe from './Swipe.jsx'
 import GrowthPart from './GrowthPart.jsx'
 import CurriculumMap from './CurriculumMap.jsx'
 import MistakeNote from './MistakeNote.jsx'
-import { DAY_KIND_LABELS, PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
+import { DAY_KIND_LABELS, PLAN_DAYS, TOTAL_DAYS, chapterLabel, dayPlan, unitLabel } from '../lib/plan.js'
 import { pauseSession, startSession } from '../lib/session.js'
 import { dueReviewUnits, ensureUnitSrs } from '../lib/unitSrs.js'
 import { nightTint } from '../lib/journey.js'
@@ -14,10 +13,9 @@ const SessionRunner = lazy(() => import('./SessionRunner.jsx'))
 
 // 오늘의 공부 — 100일 커리큘럼의 오늘 치.
 //
-// 버튼 하나로 시작하면 앱이 순서대로 끌고 간다: 단어는 이 화면에서 바로
-// 넘기고, 과업과 회독은 그날의 유닛·챕터를 열어 준 채 아래에 안내 바가
-// 따라간다. 따라 하는 사람이 할 일은 넘기고, 풀고, 읽는 것뿐이다 —
-// 무엇을 열지 고르는 일은 계획이 한다.
+// 버튼 하나로 시작하면 수업이 순서대로 끌고 간다(SessionRunner). 이
+// 화면은 그 수업의 차례표와 시작 버튼, 그리고 세 방(전체 커리큘럼 ·
+// 오답 노트 · 성장 기록)의 입구다. 무엇을 열지 고르는 일은 계획이 한다.
 //
 // 달력이 아니라 진도다. N일차를 끝내야 N+1일차가 열리고, 하루를 걸러도
 // 계획은 그 자리에 있다.
@@ -25,10 +23,6 @@ const SessionRunner = lazy(() => import('./SessionRunner.jsx'))
 export default function TodayPart({ state, cards, dueCards, settings, commit, onGuide }) {
   const plan = state.plan ?? { day: 1, checks: {}, history: {} }
   const finished = plan.day > TOTAL_DAYS
-  // 단어 단계는 이 화면 안에서 바로 넘긴다 — 탭을 오가는 것부터가 일이다.
-  // 시작할 때의 묶음을 붙잡아 둔다. 살아 있는 목록을 그대로 넘기면
-  // 채점된 카드가 넘어가는 애니메이션 중에 목록에서 빠져 화면이 죽는다.
-  const [swipeCards, setSwipeCards] = useState(null)
   // 오늘 화면 안의 다른 방들 — 전체 커리큘럼, 오답 노트, 성장 기록.
   // 탭을 늘리지 않는다. 오늘에서 들어가고 오늘로 돌아온다.
   const [room, setRoom] = useState(null) // null | 'map' | 'mistakes' | 'growth'
@@ -113,19 +107,7 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
   }
 
   const today = dayPlan(plan.day)
-  const ctx = {
-    dueCount: dueCards.length,
-    reviewLog: state.reviewLog,
-    dailyLimit: settings?.dailyLimit ?? 20,
-    reads: state.reads,
-    quizLog: state.quizLog,
-    curriculum: state.curriculum,
-    grammar: state.grammar,
-    unit: today.unit,
-    chapter: today.chapter,
-  }
-  const doneMap = Object.fromEntries(today.items.map((it) => [it.id, itemDone(it, plan, ctx)]))
-  // 오늘 카드에 섞인 오답 카드 수
+  // 오늘 카드에 섞인 오답 카드 수 — 수업 첫머리 되잡기에 쓰인다
   const mistakeDue = dueCards.filter((c) => c.deck === 'mistake').length
   // 오늘 수업에 돌아올 복습 유닛 — 실제 세션이 뽑는 것과 같은 상위 2개.
   // 관문 시험 날은 시험이 복습이라 예고하지 않는다.
@@ -135,43 +117,30 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
       : dueReviewUnits(ensureUnitSrs(plan, PLAN_DAYS).unitSrs, plan.day)
           .filter((u) => u.id !== today.unit?.id)
           .slice(0, 2)
-  const doneCount = Object.values(doneMap).filter(Boolean).length
-  const allDone = doneCount === today.items.length
-  const firstOpen = today.items.find((it) => !doneMap[it.id]) ?? null
+  const resuming = plan.session?.day === plan.day
+  const wordCount = Math.min(dueCards.length, settings?.dailyLimit ?? 20)
 
-  /** 다음 할 일로 끌고 간다. 단어면 여기서 카드를 펴고, 아니면 그 자리를 연다. */
-  function goNext(from = firstOpen) {
-    if (!from) return
-    if (from.id === 'word' && dueCards.length > 0) {
-      setSwipeCards(dueCards)
-      return
-    }
-    onGuide(from, today)
-  }
-
-  // 단어를 넘기는 중 — 오늘 화면이 그대로 카드 화면이 된다
-  if (swipeCards) {
-    return (
-      <div className="stack stack--loose" style={tint}>
-        <p className="hint" style={{ textAlign: 'left' }}>
-          오늘 1/3 · 단어 — 다 넘기면 다음으로 이어집니다
-        </p>
-        <Swipe
-          cards={swipeCards}
-          settings={settings}
-          commit={commit}
-          onExit={() => {
-            setSwipeCards(null)
-            // 오늘 몫을 채웠을 때만 다음 칸으로 잇는다. 중간에 나간
-            // 것은 그만두겠다는 뜻이지 다음으로 가겠다는 뜻이 아니다.
-            if (!doneMap.word) return
-            const next = today.items.find((it) => it.id !== 'word' && !doneMap[it.id])
-            if (next) onGuide(next, today)
-          }}
-        />
-      </div>
-    )
-  }
+  // 오늘 수업의 차례. 예전에는 단어·과업·회독 세 칸을 체크리스트로 두고
+  // 칸마다 '가기'가 있었는데, 수업 하나가 이미 전부를 순서대로 끌고 가서
+  // 같은 일을 두 번 말하고 있었다. 이제 이것은 문이 아니라 차례표다.
+  const mainLine =
+    today.kind === 'learn'
+      ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title} — ${['배우기', '되짚기', '내 것으로'][today.step - 1]}`
+      : today.items.find((it) => it.id === 'main')?.label ?? DAY_KIND_LABELS[today.kind]
+  const steps = [
+    mistakeDue > 0 && { icon: '↺', text: `틀렸던 것 되잡기 ${Math.min(mistakeDue, today.kind === 'milestone' ? 6 : 4)}개` },
+    dueReview.length > 0 && {
+      icon: '⟲',
+      text: `돌아온 유닛 — ${dueReview.map((u) => unitLabel(u.id)).join(' · ')}`,
+    },
+    { icon: '◆', text: mainLine, main: true },
+    { icon: '✦', text: `오늘의 영화 표현 ${today.day === TOTAL_DAYS ? 10 : 5}개` },
+    wordCount > 0 && { icon: '▤', text: `단어 카드 ${wordCount}장` },
+    {
+      icon: '❡',
+      text: `${chapterLabel(today.chapter)}장 ${today.kind === 'fluency' ? '재독 — 빠르게' : '회독'}${today.kind === 'milestone' ? ' + 챕터 퀴즈' : ''}`,
+    },
+  ].filter(Boolean)
 
   return (
     <div className="stack stack--loose" style={tint}>
@@ -193,16 +162,8 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
           </div>
         </div>
         <p className="hint">
-          {today.kind === 'learn'
-            ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title} — ${['배우기', '되짚기', '내 것으로'][today.step - 1]}`
-            : DAY_KIND_LABELS[today.kind]}{' '}
-          ({today.cycle}사이클 {today.dayInCycle}/10일)
+          {today.cycle}사이클 {today.dayInCycle}/10일 · {DAY_KIND_LABELS[today.kind]}
         </p>
-        {dueReview.length > 0 && (
-          <p className="hint">
-            돌아오는 복습: {dueReview.map((u) => unitLabel(u.id)).join(' · ')}
-          </p>
-        )}
         <div className="progress">
           <div
             className="progress__bar"
@@ -211,78 +172,30 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
         </div>
       </header>
 
-      {/* 수업이 이 화면의 본체다. 아래 목록은 지도이지 문이 아니다. */}
-      {!allDone && (
-        <button
-          className="btn btn--primary btn--block"
-          onClick={() =>
-            commit((s) =>
-              s.plan?.session?.day === s.plan?.day
-                ? pauseSession(s, false) // 멈춰 둔 수업 — 그 원자에서 이어간다
-                : startSession(s)
-            )
-          }
-        >
-          {plan.session?.day === plan.day ? '수업 이어서 하기' : `${today.day}일차 수업 시작`}
-        </button>
-      )}
-
-      <section className="stack stack--tight">
-        {today.items.map((it, i) => {
-          const done = doneMap[it.id]
-          const current = firstOpen?.id === it.id
-          return (
-            <div
-              className="panel row row--between"
-              key={it.id}
-              style={{
-                padding: 'var(--s3) var(--s4)',
-                gap: 'var(--s3)',
-                borderColor: done ? 'var(--accent-border)' : current ? 'var(--border-strong)' : undefined,
-                background: done ? 'var(--accent-soft)' : undefined,
-              }}
-            >
-              {/* 체크는 손으로도 된다 — 앱이 못 보는 일(소리 내어 말하기)이 있다 */}
-              <button
-                className="today__check"
-                aria-pressed={done}
-                onClick={() => commit((s) => toggleCheck(s, it.id))}
-                title={done ? '완료' : '직접 체크'}
-              >
-                {done ? '✓' : i + 1}
-              </button>
-              <span className="list__main" style={{ flex: 1 }}>
-                <span
-                  className="list__title"
-                  style={done ? { textDecoration: 'line-through', color: 'var(--text-dim)' } : undefined}
-                >
-                  {it.label}
-                </span>
-                <span className="list__meta">
-                  {it.hint}
-                  {/* 어제 틀린 것이 오늘 카드에 섞여 있으면 그 사실이 보여야
-                      한다 — 오답이 돌아온다는 걸 알아야 퀴즈를 대충 안 푼다 */}
-                  {it.id === 'word' && mistakeDue > 0 && ` · 틀렸던 것 ${mistakeDue}개 포함`}
-                </span>
-              </span>
-              {!done && !current && (
-                <button className="btn btn--ghost btn--sm" onClick={() => goNext(it)}>
-                  가기
-                </button>
-              )}
-            </div>
-          )
-        })}
+      <section className="panel stack stack--tight">
+        <div className="section-title">오늘 수업의 차례</div>
+        <ol className="today-steps">
+          {steps.map((st, i) => (
+            <li key={i} className={st.main ? 'is-main' : undefined}>
+              <span className="today-steps__icon">{st.icon}</span>
+              <span>{st.text}</span>
+            </li>
+          ))}
+        </ol>
       </section>
 
-      {allDone && (
-        <button
-          className="btn btn--primary btn--block"
-          onClick={() => commit((s) => completeDay(s))}
-        >
-          {today.day}일차 마치기 → 다음 날
-        </button>
-      )}
+      <button
+        className="btn btn--primary btn--block"
+        onClick={() =>
+          commit((s) =>
+            s.plan?.session?.day === s.plan?.day
+              ? pauseSession(s, false) // 멈춰 둔 수업 — 그 원자에서 이어간다
+              : startSession(s)
+          )
+        }
+      >
+        {resuming ? '수업 이어서 하기' : `${today.day}일차 수업 시작`}
+      </button>
 
       {rooms}
 

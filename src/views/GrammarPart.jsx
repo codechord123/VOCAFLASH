@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react'
 import course from '../data/grammar-course.json'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
-import { addMistakeCards, cardsFromGrammarWrong } from '../lib/mistakes.js'
+import { ProduceLadder } from './Speak.jsx'
+import { addMistakeCards, cardsFromGrammarWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 
 // 회화를 위한 기본 문법. 유닛 하나가 PPP 세 화면으로 되어 있다.
 //
@@ -53,6 +54,25 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
               cardsFromGrammarWrong(unit, wrong)
             )
           )
+        }
+        onSpeak={(task, grade) =>
+          // 문법 탭의 말하기도 수업과 같은 기록에 실린다 — 성장 화면의
+          // 🟢 비율과 오답 노트가 어디서 말했든 같은 장부를 본다
+          commit((s) => {
+            const entry = {
+              kind: 'produce',
+              en: task.model,
+              ko: task.ko ?? task.situation,
+              grade,
+              day: s.plan?.day ?? 1,
+              at: Date.now(),
+              via: 'grammar-tab',
+            }
+            const next = { ...s, speakLog: [...(s.speakLog ?? []), entry].slice(-300) }
+            return grade === 'red'
+              ? addMistakeCards(next, cardsFromSpeakWrong([{ ...entry, label: `문법 ${unit.order} · 말하기` }]))
+              : next
+          })
         }
         onBack={() => {
           setOpenId(null)
@@ -135,13 +155,17 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
 }
 
 const STAGES = [
+  { id: 'discover', label: '맞혀 보기' },
   { id: 'present', label: '설명' },
   { id: 'practice', label: '연습' },
   { id: 'produce', label: '말하기' },
 ]
 
-function UnitPPP({ unit, read, progress, onMarkRead, onUndoRead, onFinish, onBack }) {
-  const [stage, setStage] = useState('present')
+function UnitPPP({ unit, read, progress, onMarkRead, onUndoRead, onFinish, onSpeak, onBack }) {
+  // 발견 문답이 있는 유닛은 규칙을 읽기 전에 먼저 맞혀 본다
+  const hasDiscover = (unit.discover?.length ?? 0) > 0
+  const stages = hasDiscover ? STAGES : STAGES.filter((s) => s.id !== 'discover')
+  const [stage, setStage] = useState(hasDiscover ? 'discover' : 'present')
 
   return (
     <div className="stack stack--loose">
@@ -168,7 +192,7 @@ function UnitPPP({ unit, read, progress, onMarkRead, onUndoRead, onFinish, onBac
       {/* 세 단계를 탭으로 오갈 수 있게 둔다. 순서대로 하는 것이 기본이지만,
           이미 아는 규칙이면 연습부터 눌러도 막지 않는다. */}
       <nav className="subtabs" role="tablist" aria-label="학습 단계">
-        {STAGES.map((s) => (
+        {stages.map((s) => (
           <button
             key={s.id}
             role="tab"
@@ -184,13 +208,98 @@ function UnitPPP({ unit, read, progress, onMarkRead, onUndoRead, onFinish, onBac
         ))}
       </nav>
 
+      {stage === 'discover' && (
+        <Discover
+          unit={unit}
+          onNext={() => {
+            setStage('present')
+            window.scrollTo({ top: 0 })
+          }}
+        />
+      )}
       {stage === 'present' && <Present unit={unit} onNext={() => setStage('practice')} />}
       {stage === 'practice' && (
         <Practice unit={unit} onDone={onFinish} onNext={() => setStage('produce')} />
       )}
-      {stage === 'produce' && <Produce unit={unit} />}
+      {stage === 'produce' && <Produce unit={unit} onSpeak={onSpeak} />}
 
       <ReadTracker read={read} onMark={onMarkRead} onUndo={onUndoRead} verb="공부함" />
+    </div>
+  )
+}
+
+/**
+ * 0단계 — 먼저 맞혀 보기. 규칙을 읽기 전에 감으로 고른다.
+ * 예측이 앞서야 설명이 박힌다. 맞든 틀리든 이유는 바로 보여 준다.
+ */
+function Discover({ unit, onNext }) {
+  const [at, setAt] = useState(0)
+  const [picked, setPicked] = useState(null)
+  const [right, setRight] = useState(0)
+  const items = unit.discover
+  const d = items[at]
+
+  if (!d) {
+    return (
+      <div className="panel stack">
+        <h4 style={{ margin: 0 }}>
+          감으로 {items.length}개 중 {right}개
+        </h4>
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+          {right === items.length
+            ? '감이 이미 맞습니다. 설명에서 그 감에 이름을 붙여 봅니다.'
+            : '헷갈린 자리가 바로 이 유닛이 다루는 자리입니다. 설명에서 갈라 봅니다.'}
+        </p>
+        <button className="btn btn--primary btn--block" onClick={onNext}>
+          설명으로
+        </button>
+      </div>
+    )
+  }
+
+  const answer = d.options[d.answerIndex]
+  return (
+    <div className="panel stack">
+      <span className="hint">
+        먼저 맞혀 보기 {at + 1} / {items.length}
+      </span>
+      <div className="section-title">{d.q}</div>
+      <p style={{ margin: 0 }}>{d.prompt}</p>
+      <div className="quiz__bank">
+        {d.options.map((o) => {
+          const cls = picked === null ? '' : o === answer ? ' is-right' : o === picked ? ' is-wrong' : ''
+          return (
+            <button
+              key={o}
+              className={`quiz__piece${cls}`}
+              disabled={picked !== null}
+              onClick={() => {
+                setPicked(o)
+                if (o === answer) setRight((n) => n + 1)
+              }}
+            >
+              {o}
+            </button>
+          )
+        })}
+      </div>
+      {picked !== null && (
+        <div className="stack stack--tight">
+          <div className={picked === answer ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
+            {picked === answer ? '감이 맞았습니다' : `이쪽 — ${answer}`}
+          </div>
+          <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{d.why}</p>
+          <button
+            className="btn btn--primary btn--block"
+            onClick={() => {
+              setAt(at + 1)
+              setPicked(null)
+            }}
+          >
+            {at + 1 === items.length ? '결과 보기' : '다음'}
+          </button>
+        </div>
+      )}
     </div>
   )
 }
@@ -466,55 +575,58 @@ function OrderItem({ q, picked, setPicked, checked, onCheck }) {
 }
 
 /**
- * 3단계 — 자기 문장 만들기.
- *
- * 답을 바로 보여주지 않는다. 상황과 발판 조각만 주고, 입으로 말해 본
- * 다음에 눌러서 대조한다. 먼저 보면 읽고 넘어가게 되고, 그러면 이
- * 화면은 예문 목록이 된다.
+ * 3단계 — 자기 문장 만들기. 수업과 같은 3단 사다리로 한 과제씩:
+ * 뜻만 보고 입으로 → 뼈대 조립 → 대조하고 한 번 더 + 신호등 자평.
+ * 예전에는 조각을 다 보여 주고 '말해 봤어요'로 넘겨서, 사실상 예문
+ * 목록이었다.
  */
-function Produce({ unit }) {
-  const [open, setOpen] = useState(() => new Set())
+function Produce({ unit, onSpeak }) {
+  const [at, setAt] = useState(0)
+  const [grades, setGrades] = useState([])
+  const task = unit.produce[at]
+
+  if (!task) {
+    const n = (g) => grades.filter((x) => x === g).length
+    return (
+      <div className="panel stack">
+        <h4 style={{ margin: 0 }}>말하기 {grades.length}개</h4>
+        <p style={{ margin: 0 }}>
+          🟢 {n('green')} · 🟡 {n('yellow')} · 🔴 {n('red')}
+        </p>
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+          {n('red') > 0
+            ? '🔴는 오답 노트에 들어가 카드로 돌아옵니다.'
+            : '자평은 성장 기록의 말하기 추이에 쌓입니다.'}
+        </p>
+        <button
+          className="btn btn--ghost btn--sm"
+          onClick={() => {
+            setAt(0)
+            setGrades([])
+          }}
+        >
+          처음부터 다시 말하기
+        </button>
+      </div>
+    )
+  }
 
   return (
-    <div className="stack stack--loose">
-      <p className="hint" style={{ textAlign: 'left' }}>
-        조각을 보고 소리 내어 말해 본 다음에 모범을 펼치세요. 먼저 보면 읽고
-        넘어가게 됩니다.
-      </p>
-
-      {unit.produce.map((p, i) => {
-        const shown = open.has(i)
-        return (
-          <div className="panel stack stack--tight" key={i}>
-            <div className="section-title">과제 {i + 1}</div>
-            <p style={{ margin: 0 }}>{p.situation}</p>
-
-            <div className="quiz__bank">
-              {p.chunks.map((c) => (
-                <span className="quiz__piece" key={c} style={{ cursor: 'default' }}>
-                  {c}
-                </span>
-              ))}
-            </div>
-
-            {shown ? (
-              <div className="stack stack--tight">
-                <p className="read" style={{ margin: 0, fontSize: 16 }}>
-                  {p.model}
-                </p>
-                <div className="ko">{p.ko}</div>
-              </div>
-            ) : (
-              <button
-                className="btn btn--sm"
-                onClick={() => setOpen(new Set([...open, i]))}
-              >
-                말해 봤어요 — 모범 보기
-              </button>
-            )}
-          </div>
-        )
-      })}
+    <div className="stack">
+      <span className="hint">
+        과제 {at + 1} / {unit.produce.length}
+      </span>
+      <ProduceLadder
+        key={at}
+        task={task}
+        label={`과제 ${at + 1}`}
+        onGraded={(grade) => {
+          onSpeak?.(task, grade)
+          setGrades([...grades, grade])
+          setAt(at + 1)
+          window.scrollTo({ top: 0 })
+        }}
+      />
     </div>
   )
 }

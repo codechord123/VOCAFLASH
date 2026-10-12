@@ -4,15 +4,16 @@ import { MAX_BOX, BOX_INTERVALS } from '../lib/srs.js'
 import { DECKS } from '../lib/deck.js'
 import { parseConfig, readConfig, resetCloud, saveConfig, signIn, signOut, syncNow } from '../lib/cloud.js'
 
-const RULES = `rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /users/{uid}/{document=**} {
+// 이 앱의 블록 하나만 '추가'한다. 같은 프로젝트를 쓰는 다른 앱의 규칙은
+// 건드리지 않는다 — 경로가 users/{uid}/vocaflash/ 로 좁아서 겹치지 않는다.
+const RULES = `    // ───────────────────────────────────────────────
+    // [vocaflash] 영어 공부 앱 — 본인 문서만, Google 로그인만
+    // ───────────────────────────────────────────────
+    match /users/{uid}/vocaflash/{docId} {
       allow read, write: if request.auth != null
-                         && request.auth.uid == uid;
-    }
-  }
-}`
+        && request.auth.token.firebase.sign_in_provider == 'google.com'
+        && request.auth.uid == uid;
+    }`
 
 function agoLabel(at) {
   if (!at) return null
@@ -21,6 +22,39 @@ function agoLabel(at) {
   if (s < 3600) return `${Math.floor(s / 60)}분 전`
   if (s < 86400) return `${Math.floor(s / 3600)}시간 전`
   return `${Math.floor(s / 86400)}일 전`
+}
+
+/** 처음 한 번 — Firestore 규칙에 추가할 블록과 복사 버튼 */
+function RulesBlock() {
+  const [copied, setCopied] = useState(false)
+  return (
+    <details className="cloud-steps">
+      <summary>처음 한 번 — Firestore 규칙에 이 블록 추가</summary>
+      <p className="hint" style={{ textAlign: 'left' }}>
+        Firebase 콘솔 → Firestore Database → 규칙. <b>기존 규칙은 그대로 두고</b>, 맨 끝의
+        닫는 괄호 두 개 바로 위에 붙여 넣은 뒤 게시하세요. 같은 프로젝트를 쓰는 다른 앱에는
+        영향이 없습니다.
+      </p>
+      <div className="row row--between">
+        <span className="label">추가할 블록</span>
+        <button
+          className="btn btn--sm"
+          onClick={async () => {
+            try {
+              await navigator.clipboard.writeText(RULES)
+              setCopied(true)
+              setTimeout(() => setCopied(false), 1500)
+            } catch {
+              /* 복사가 막힌 브라우저 — 아래 글을 길게 눌러 복사 */
+            }
+          }}
+        >
+          {copied ? '복사됨' : '복사'}
+        </button>
+      </div>
+      <pre className="cloud-rules">{RULES}</pre>
+    </details>
+  )
 }
 
 /**
@@ -76,8 +110,8 @@ function CloudSection({ cloud }) {
               설정 탭의 <b>승인된 도메인</b>에 이 사이트 주소(<code>{location.hostname}</code>) 추가
             </li>
             <li>
-              <b>Firestore Database</b> → 데이터베이스 만들기 (위치: <code>asia-northeast3 (서울)</code>,
-              프로덕션 모드) → <b>규칙</b> 탭에 아래 규칙을 붙여 넣고 게시
+              <b>Firestore Database</b> → <b>규칙</b> 탭 → 기존 규칙은 그대로 두고, 마지막 닫는
+              괄호 두 개(<code>{'}'}</code> <code>{'}'}</code>) 바로 위에 아래 블록만 추가하고 게시
             </li>
             <li>
               프로젝트 설정(⚙) → 내 앱 → <b>웹 앱(&lt;/&gt;) 추가</b> → 나오는{' '}
@@ -87,7 +121,7 @@ function CloudSection({ cloud }) {
           </ol>
           <div className="stack stack--tight">
             <div className="row row--between">
-              <span className="label">Firestore 보안 규칙 — 본인만 읽고 쓰기</span>
+              <span className="label">추가할 규칙 블록 — 본인만 읽고 쓰기</span>
               <button className="btn btn--sm" onClick={copyRules}>
                 {copied ? '복사됨' : '복사'}
               </button>
@@ -167,12 +201,13 @@ function CloudSection({ cloud }) {
             </>
           )}
         </div>
+        {!cloud.lastSyncAt && <RulesBlock />}
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
           공부하는 동안 몇 초마다, 그리고 앱을 열고 닫을 때 자동으로 맞춥니다.
           두 기기에서 번갈아 공부해도 덮어쓰지 않고 합칩니다 — 더 많이 진행된 쪽이 남습니다.
         </p>
       </div>
-      {!cfg.fromEnv && (
+      {!cfg.fromEnv && !cfg.builtIn && (
         <button
           className="btn btn--ghost btn--sm"
           style={{ alignSelf: 'flex-start' }}

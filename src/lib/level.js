@@ -117,8 +117,10 @@ export function filterByLevel(cards, { hideBasic = true, wordsOnly = false } = {
   // 오답 카드는 문장꼴이라도 거르지 않는다. wordsOnly는 앞면이 문단인
   // 하이라이트를 빼려던 장치인데, 오답은 정확히 다시 만나야 하는 것이라
   // 여기서 걸리면 오답 은행이 통째로 복습에서 사라진다.
-  if (wordsOnly) out = out.filter((c) => c.deck === 'mistake' || isSingleWord(c))
-  if (hideBasic) out = out.filter((c) => c.deck === 'mistake' || !isBasicWord(c))
+  // 영화 표현도 같다 — 처음부터 플래시카드로 만든 구(句)라서 걸러낼 이유가 없다.
+  const keep = (c) => c.deck === 'mistake' || c.deck === 'midexp'
+  if (wordsOnly) out = out.filter((c) => keep(c) || isSingleWord(c))
+  if (hideBasic) out = out.filter((c) => keep(c) || !isBasicWord(c))
   return out
 }
 

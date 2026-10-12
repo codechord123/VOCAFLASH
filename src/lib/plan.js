@@ -177,7 +177,8 @@ export function itemDone(item, plan, ctx) {
       if (ctx.dueCount === 0) return true
       const limit = ctx.dailyLimit ?? 20
       const today = (ctx.reviewLog ?? []).reduce(
-        (n, r) => n + (sameDay(r.at) ? 1 : 0),
+        // 영화 표현 소개는 단어 몫과 따로 센다 — 5개가 단어 20장을 갉아먹지 않게
+        (n, r) => n + (sameDay(r.at) && r.via !== 'session-expr' ? 1 : 0),
         0
       )
       return today >= limit

@@ -1510,3 +1510,27 @@ main {
   overflow-x: auto;
   white-space: pre;
 }
+
+/* ── 오늘 수업의 차례 — 체크리스트 대신 차례표 ─────────────────────── */
+.today-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+.today-steps li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s3);
+  font-size: 14px;
+  color: var(--text-dim);
+}
+.today-steps li.is-main { color: var(--text); font-weight: 600; }
+.today-steps__icon {
+  width: 16px;
+  flex: none;
+  text-align: center;
+  color: var(--accent);
+}

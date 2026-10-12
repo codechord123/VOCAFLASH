@@ -1,13 +1,17 @@
 import { useMemo, useState } from 'react'
 import Swipe from './Swipe.jsx'
+import { ProduceLadder, TrafficLight } from './Speak.jsx'
 import grammarCourse from '../data/grammar-course.json'
 import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
 import gateData from '../data/gate-quiz.json'
+import midexpData from '../data/midexp.json'
 
 // 구문 관문 문항을 quizId로 바로 찾기 위한 평탄 목록
 const GATE_SYNTAX_ALL = Object.values(gateData.syntax).flat()
-import { applyGrade } from '../lib/srs.js'
+import { applyGrade, withProgress } from '../lib/srs.js'
+import { cardsFromMidExpressions } from '../lib/deck.js'
+import { exprsForDay } from '../lib/midexpPlan.js'
 import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
@@ -112,6 +116,7 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
       mistakeDue: dueCards.filter((c) => c.deck === 'mistake'),
       review,
       cycleData: buildCycleData(today, day, state.plan?.unitSrs, review),
+      exprs: exprsForDay(midexpData.expressions, day),
       scene,
     })
     // day가 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
@@ -148,7 +153,7 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
   }
 
   /** 워밍업 카드 채점 — 스와이프와 같은 규칙으로 진짜 SRS에 반영한다. */
-  function gradeWarmup(card, grade) {
+  function gradeWarmup(card, grade, via = 'session-warmup') {
     commit((s) => ({
       ...s,
       progress: {
@@ -159,7 +164,7 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
       },
       reviewLog: [
         ...s.reviewLog,
-        { at: Date.now(), cardId: card.id, grade, round: 1, via: 'session-warmup' },
+        { at: Date.now(), cardId: card.id, grade, round: 1, via },
       ],
     }))
   }
@@ -307,6 +312,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
   switch (atom.type) {
     case 'scene-open':
       return <SceneOpen atom={atom} today={today} onNext={onNext} />
+    case 'expr':
+      return <ExprAtom atom={atom} progress={state.progress} onGrade={onGrade} onNext={onNext} />
     case 'warmup':
       return <Warmup card={atom.card} onGrade={onGrade} onNext={onNext} />
     case 'review-head':
@@ -367,6 +374,63 @@ function SceneOpen({ atom, today, onNext }) {
       <button className="btn btn--primary btn--block" onClick={() => onNext()}>
         오늘의 밤을 시작
       </button>
+    </div>
+  )
+}
+
+/**
+ * 오늘의 영화 표현 — 하루 5개를 새로 들인다.
+ * 상황을 보고 뜻을 먼저 떠올린 뒤 펼친다(인출 먼저). 알았음/몰랐음이
+ * 그대로 SRS 첫 판정이 되어, 몰랐던 것은 내일, 알았던 것은 사흘 뒤
+ * 단어 복습에 돌아온다. 처음 보는 것을 몰랐다고 틀린 것은 아니라
+ * 정답률·콤보에는 넣지 않는다.
+ */
+function ExprAtom({ atom, progress, onGrade, onNext }) {
+  const { expr, n, of } = atom
+  const [open, setOpen] = useState(false)
+  const card = useMemo(() => {
+    const c = cardsFromMidExpressions([expr])[0]
+    return withProgress(c, progress?.[c.id])
+    // 이 원자에 들어선 순간의 진행으로 고정한다
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [expr])
+  const seen = (card.reviewCount ?? 0) > 0
+  return (
+    <div className="stack">
+      <div className="section-title">
+        오늘의 영화 표현 {n}/{of} · {expr.genre}
+      </div>
+      <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
+        <p className="read" style={{ margin: 0, fontSize: 22 }}>{expr.phrase}</p>
+        {expr.situation && <p className="hint" style={{ margin: 0 }}>{expr.situation}</p>}
+        {open && (
+          <>
+            <div className="flashcard__divider" />
+            <div className="read" style={{ fontSize: 18, color: 'var(--accent)' }}>{expr.meaning}</div>
+            {expr.example && (
+              <p className="read" style={{ margin: 0, fontSize: 15, textAlign: 'left' }}>{expr.example}</p>
+            )}
+            {expr.translation && <div className="ko" style={{ textAlign: 'left' }}>{expr.translation}</div>}
+          </>
+        )}
+      </div>
+      {seen && !open && (
+        <p className="hint" style={{ margin: 0 }}>이미 넘겨 본 표현 — 판정은 복습 일정에 반영됩니다</p>
+      )}
+      {open ? (
+        <div className="grade-row">
+          <button className="btn grade-row__again" onClick={() => { onGrade(card, 'AGAIN', 'session-expr'); onNext() }}>
+            몰랐음
+          </button>
+          <button className="btn grade-row__good" onClick={() => { onGrade(card, 'GOOD', 'session-expr'); onNext() }}>
+            알았음
+          </button>
+        </div>
+      ) : (
+        <button className="btn btn--primary btn--block" onClick={() => setOpen(true)}>
+          뜻을 떠올렸어요 — 펼치기
+        </button>
+      )}
     </div>
   )
 }
@@ -751,110 +815,15 @@ function QuizOrder({ atom, combo = 0, onNext }) {
   )
 }
 
-/**
- * 신호등 자평 — 마이크 없이 발화를 책임화하는 최소 장치.
- * 모범과 대조한 뒤 스스로 세 단계로 판정한다. 🔴는 카드가 되어 돌아온다.
- */
-function TrafficLight({ onPick }) {
-  return (
-    <div className="stack stack--tight">
-      <p className="hint" style={{ margin: 0 }}>모범과 비교해서 — 솔직하게. 🔴는 카드가 되어 돌아옵니다.</p>
-      <div className="grade-row">
-        <button className="btn grade-row__again" onClick={() => onPick('red')}>
-          🔴 못 했다
-        </button>
-        <button className="btn" onClick={() => onPick('yellow')}>
-          🟡 버벅였다
-        </button>
-        <button className="btn grade-row__good" onClick={() => onPick('green')}>
-          🟢 막힘없이
-        </button>
-      </div>
-    </div>
-  )
-}
-
-/**
- * 말하기 — 3단 사다리. ①뜻만 보고 입으로 시도 → ②모범을 청크로 조립
- * → ③모범 대조 후 가리고 한 번 더, 신호등 자평.
- * 규칙 읽기에서 자유 발화로 바로 점프하던 자리에 계단을 놓는다.
- */
+/** 말하기 — 3단 사다리(문법 탭과 같은 것). 자평은 세션에 실려 정리에서 기록된다. */
 function Produce({ task, onNext }) {
-  const [stage, setStage] = useState(0)
-  const [picked, setPicked] = useState([])
-  const shuffled = useMemo(() => {
-    const out = [...task.chunks]
-    for (let i = out.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[out[i], out[j]] = [out[j], out[i]]
-    }
-    return out
-  }, [task])
-  const remaining = shuffled.filter((c) => !picked.includes(c))
-  const assembled = picked.length === task.chunks.length
-  const assembledRight = assembled && picked.every((c, i) => c === task.chunks[i])
-
   return (
-    <div className="stack">
-      <div className="section-title">
-        말하기 — {['① 뜻만 보고 시도', '② 뼈대 조립', '③ 대조하고 한 번 더'][stage]}
-      </div>
-      <div className="panel stack stack--tight">
-        <p style={{ margin: 0 }}>{task.situation}</p>
-        {task.ko && <div className="ko" style={{ color: 'var(--text)' }}>{task.ko}</div>}
-
-        {stage === 1 && (
-          <>
-            <div className="quiz__slot">
-              {picked.length === 0 ? (
-                <span className="hint">문장의 뼈대를 순서대로 누르세요</span>
-              ) : (
-                picked.map((c, i) => (
-                  <button key={c} className="quiz__piece is-picked"
-                    onClick={() => setPicked(picked.filter((_, j) => j !== i))}>{c}</button>
-                ))
-              )}
-            </div>
-            {remaining.length > 0 && (
-              <div className="quiz__bank">
-                {remaining.map((c) => (
-                  <button key={c} className="quiz__piece" onClick={() => setPicked([...picked, c])}>{c}</button>
-                ))}
-              </div>
-            )}
-            {assembled && (
-              <div className={assembledRight ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
-                {assembledRight ? '뼈대가 맞습니다' : `순서 — ${task.chunks.join(' / ')}`}
-              </div>
-            )}
-          </>
-        )}
-
-        {stage === 2 && (
-          <div className="stack stack--tight">
-            <p className="read" style={{ margin: 0, fontSize: 16 }}>{task.model}</p>
-          </div>
-        )}
-      </div>
-
-      {stage === 0 && (
-        <button className="btn btn--primary btn--block" onClick={() => setStage(1)}>
-          소리 내어 시도했어요 — 뼈대 맞추기
-        </button>
-      )}
-      {stage === 1 && (
-        <button className="btn btn--primary btn--block" disabled={!assembled} onClick={() => setStage(2)}>
-          모범 문장 보기
-        </button>
-      )}
-      {stage === 2 && (
-        <TrafficLight
-          onPick={(grade) =>
-            onNext({ speak: { kind: 'produce', en: task.model, ko: task.ko ?? task.situation, grade } })
-          }
-        />
-      )}
-    </div>
+    <ProduceLadder
+      task={task}
+      onGraded={(grade) =>
+        onNext({ speak: { kind: 'produce', en: task.model, ko: task.ko ?? task.situation, grade } })
+      }
+    />
   )
 }
 
@@ -939,7 +908,7 @@ function Shadow({ anchor, onNext }) {
 function SwipeAtom({ dueCards, settings, commit, state, onNext }) {
   // 이 원자에 들어선 순간의 묶음으로 고정한다
   const [cards] = useState(() => dueCards)
-  const gradedToday = state.reviewLog.filter((r) => sameDay(r.at)).length
+  const gradedToday = state.reviewLog.filter((r) => sameDay(r.at) && r.via !== 'session-expr').length
   const quota = settings?.dailyLimit ?? 20
 
   if (cards.length === 0 || gradedToday >= quota) {
