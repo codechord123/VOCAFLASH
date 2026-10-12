@@ -1,6 +1,8 @@
 import { Suspense, lazy, useState } from 'react'
 import Swipe from './Swipe.jsx'
 import GrowthPart from './GrowthPart.jsx'
+import CurriculumMap from './CurriculumMap.jsx'
+import MistakeNote from './MistakeNote.jsx'
 import { DAY_KIND_LABELS, PLAN_DAYS, TOTAL_DAYS, completeDay, dayPlan, itemDone, toggleCheck, unitLabel } from '../lib/plan.js'
 import { pauseSession, startSession } from '../lib/session.js'
 import { dueReviewUnits, ensureUnitSrs } from '../lib/unitSrs.js'
@@ -20,26 +22,62 @@ const SessionRunner = lazy(() => import('./SessionRunner.jsx'))
 // 달력이 아니라 진도다. N일차를 끝내야 N+1일차가 열리고, 하루를 걸러도
 // 계획은 그 자리에 있다.
 
-export default function TodayPart({ state, dueCards, settings, commit, onGuide }) {
+export default function TodayPart({ state, cards, dueCards, settings, commit, onGuide }) {
   const plan = state.plan ?? { day: 1, checks: {}, history: {} }
   const finished = plan.day > TOTAL_DAYS
   // 단어 단계는 이 화면 안에서 바로 넘긴다 — 탭을 오가는 것부터가 일이다.
   // 시작할 때의 묶음을 붙잡아 둔다. 살아 있는 목록을 그대로 넘기면
   // 채점된 카드가 넘어가는 애니메이션 중에 목록에서 빠져 화면이 죽는다.
   const [swipeCards, setSwipeCards] = useState(null)
-  // 성장 화면 — 지도·관문·히트맵·can-do. 오늘 화면 안의 다른 방이다.
-  const [showGrowth, setShowGrowth] = useState(false)
+  // 오늘 화면 안의 다른 방들 — 전체 커리큘럼, 오답 노트, 성장 기록.
+  // 탭을 늘리지 않는다. 오늘에서 들어가고 오늘로 돌아온다.
+  const [room, setRoom] = useState(null) // null | 'map' | 'mistakes' | 'growth'
   // 사이클의 빛 — 정거장이 바뀌면 오늘 탭의 강조색이 함께 흐른다.
   // 기차의 앰버에서 노을, 밤, 새벽까지. 질리지 않는 건 변주다.
   const tint = nightTint(Math.min(Math.ceil(plan.day / 10), 10))
+  const back = () => {
+    setRoom(null)
+    window.scrollTo({ top: 0 })
+  }
 
-  if (showGrowth) {
+  if (room === 'growth') {
     return (
       <div style={tint}>
-        <GrowthPart state={state} onBack={() => setShowGrowth(false)} />
+        <GrowthPart state={state} onBack={back} />
       </div>
     )
   }
+  if (room === 'map') {
+    return (
+      <div style={tint}>
+        <CurriculumMap plan={plan} onBack={back} />
+      </div>
+    )
+  }
+  if (room === 'mistakes') {
+    return (
+      <div style={tint}>
+        <MistakeNote cards={cards ?? []} settings={settings} commit={commit} onBack={back} />
+      </div>
+    )
+  }
+
+  const rooms = (
+    <div className="today-rooms">
+      <button className="today-room" onClick={() => setRoom('map')}>
+        <span className="today-room__icon">▦</span>
+        <span>전체 커리큘럼</span>
+      </button>
+      <button className="today-room" onClick={() => setRoom('mistakes')}>
+        <span className="today-room__icon">✎</span>
+        <span>오답 노트</span>
+      </button>
+      <button className="today-room" onClick={() => setRoom('growth')}>
+        <span className="today-room__icon">↗</span>
+        <span>성장 기록</span>
+      </button>
+    </div>
+  )
 
   if (finished) {
     return (
@@ -52,9 +90,7 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
             이제부터는 복습과 회독이 이 앱의 본편입니다.
           </p>
         </div>
-        <button className="btn btn--block" onClick={() => setShowGrowth(true)}>
-          성장 기록 보기
-        </button>
+        {rooms}
       </div>
     )
   }
@@ -149,8 +185,8 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
             <button
               className="chip chip--box"
               style={{ cursor: 'pointer' }}
-              onClick={() => setShowGrowth(true)}
-              title="성장 기록"
+              onClick={() => setRoom('map')}
+              title="전체 커리큘럼"
             >
               {today.day} / {TOTAL_DAYS} ↗
             </button>
@@ -247,6 +283,8 @@ export default function TodayPart({ state, dueCards, settings, commit, onGuide }
           {today.day}일차 마치기 → 다음 날
         </button>
       )}
+
+      {rooms}
 
       <RecentDays history={plan.history} currentDay={today.day} />
     </div>

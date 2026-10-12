@@ -313,6 +313,7 @@ export default function App() {
           {tab === 'today' && (
             <TodayPart
               state={state}
+              cards={cards}
               dueCards={dueStudyCards}
               settings={state.settings}
               commit={commit}

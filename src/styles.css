@@ -1288,3 +1288,175 @@ main {
   color: #f2ede2;
 }
 .quote-card__ko { font-size: 12px; color: #b9b4a6; }
+
+/* ── 오늘 화면의 세 방 — 커리큘럼 · 오답 노트 · 성장 ─────────────── */
+.today-rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s2);
+}
+.today-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s1);
+  padding: var(--s3) var(--s2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.today-room:hover { background: var(--surface-hover); }
+.today-room:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.today-room__icon { font-size: 18px; color: var(--accent); line-height: 1; }
+
+/* ── 전체 커리큘럼 지도 ──────────────────────────────────────────── */
+.cmap__cycle { padding: var(--s3) var(--s4); }
+.cmap__head {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.cmap__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cycle-tint, var(--accent));
+  flex: none;
+}
+.cmap__days {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid var(--border);
+  padding-top: var(--s2);
+}
+.cmap__day {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s2) 0;
+}
+.cmap__day.is-ahead { opacity: 0.6; }
+.cmap__day.is-today {
+  margin: 0 calc(-1 * var(--s2));
+  padding: var(--s2);
+  border-radius: var(--r1);
+  background: var(--accent-soft);
+  opacity: 1;
+}
+.cmap__num {
+  width: 28px;
+  flex: none;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-dim);
+}
+.cmap__day.is-done .cmap__num { color: var(--good); }
+.cmap__title { font-size: 14px; color: var(--text); }
+.cmap__kind {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: var(--cycle-tint, var(--accent));
+  border: 1px solid currentColor;
+  vertical-align: 1px;
+}
+
+/* ── 오답 노트 ────────────────────────────────────────────────────── */
+.mnote__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s2);
+  text-align: center;
+}
+.mnote__stat { display: flex; flex-direction: column; gap: 2px; }
+.mnote__stat b {
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+}
+.mnote__stat span { font-size: 12px; color: var(--text-dim); }
+.mnote__stat.is-weak b { color: var(--again); }
+.mnote__stat.is-mid b { color: var(--hard); }
+.mnote__stat.is-done b { color: var(--good); }
+
+.mnote__ghead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.mnote__list {
+  list-style: none;
+  margin: 0;
+  padding: var(--s2) 0 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+.mnote__row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+}
+.mnote__q {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.mnote__front { font-family: var(--font-read); font-size: 15px; line-height: 1.45; }
+.mnote__clue { font-family: var(--font-read); letter-spacing: 0.04em; text-align: left; }
+.mnote__back {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+  color: var(--accent);
+}
+.mnote__back .hint { text-align: left; }
+.mnote__badge {
+  flex: none;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.mnote__badge.is-weak { color: var(--again); background: var(--again-soft); }
+.mnote__badge.is-mid { color: var(--hard); background: var(--hard-soft); }
+.mnote__badge.is-done { color: var(--good); background: var(--good-soft); }

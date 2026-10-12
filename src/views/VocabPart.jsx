@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import Vocab from './Vocab.jsx'
 import Swipe from './Swipe.jsx'
 import LinePart from './LinePart.jsx'
+import MistakeNote from './MistakeNote.jsx'
 import { selectDueCards, deckStats } from '../lib/srs.js'
 import { filterByLevel } from '../lib/level.js'
 import { TOPICS } from '../lib/topics.js'
@@ -20,6 +21,7 @@ const SUB = [
   { id: 'review', label: '복습' },
   { id: 'topic', label: '주제별' },
   { id: 'line', label: '문장' },
+  { id: 'mistakes', label: '오답' },
   { id: 'list', label: '목록' },
 ]
 
@@ -139,6 +141,10 @@ export default function VocabPart({ cards, reviewCards, settings, commit }) {
           settings={settings}
           commit={commit}
         />
+      )}
+
+      {sub === 'mistakes' && (
+        <MistakeNote cards={cards} settings={settings} commit={commit} />
       )}
 
       {sub === 'list' && <Vocab cards={studyCards} commit={commit} />}
