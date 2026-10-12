@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { store } from '../lib/store.js'
 import { MAX_BOX, BOX_INTERVALS } from '../lib/srs.js'
 import { DECKS } from '../lib/deck.js'
+import { RATES, canSpeak, getRate, setRate, speak } from '../lib/tts.js'
 import { parseConfig, readConfig, resetCloud, saveConfig, signIn, signOut, syncNow } from '../lib/cloud.js'
 
 // 이 앱의 블록 하나만 '추가'한다. 같은 프로젝트를 쓰는 다른 앱의 규칙은
@@ -22,6 +23,47 @@ function agoLabel(at) {
   if (s < 3600) return `${Math.floor(s / 60)}분 전`
   if (s < 86400) return `${Math.floor(s / 3600)}시간 전`
   return `${Math.floor(s / 86400)}일 전`
+}
+
+/** 듣기 — 기기의 영어 음성으로 읽는 속도. 기기마다 음성이 달라 기기에 둔다. */
+function ListenSettings() {
+  const [rate, setRateState] = useState(getRate())
+  if (!canSpeak()) {
+    return (
+      <section className="stack">
+        <div className="section-title">듣기</div>
+        <p className="hint" style={{ textAlign: 'left' }}>
+          이 브라우저는 음성 읽기를 지원하지 않습니다. 사파리나 크롬에서 열어 주세요.
+        </p>
+      </section>
+    )
+  }
+  return (
+    <section className="stack">
+      <div className="section-title">듣기</div>
+      <p className="hint" style={{ textAlign: 'left' }}>
+        대사·예문·표현을 이 기기의 영어 음성으로 읽어 줍니다. 인터넷 없이도 됩니다.
+        아이폰은 설정 → 손쉬운 사용 → 읽기 및 말하기 → 음성에서 영어(미국) 음성을
+        '향상된' 것으로 받아 두면 더 자연스럽습니다.
+      </p>
+      <div className="row" style={{ gap: 'var(--s2)', flexWrap: 'wrap' }}>
+        {RATES.map((r) => (
+          <button
+            key={r.id}
+            className={`btn btn--sm${rate === r.id ? ' btn--primary' : ''}`}
+            aria-pressed={rate === r.id}
+            onClick={() => {
+              setRate(r.id)
+              setRateState(r.id)
+              speak('I think I will take a long walk around the city tonight.', { rate: r.id })
+            }}
+          >
+            {r.label}
+          </button>
+        ))}
+      </div>
+    </section>
+  )
 }
 
 /** 처음 한 번 — Firestore 규칙에 추가할 블록과 복사 버튼 */
@@ -324,6 +366,8 @@ export default function Settings({ cards, settings, stats, commit, onReload, onC
           진행된 쪽을 남깁니다.
         </p>
       </section>
+
+      <ListenSettings />
 
       <section className="stack">
         <div className="section-title">복습할 덱</div>

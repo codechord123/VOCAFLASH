@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import ListenButton from './Listen.jsx'
 import { removeCard } from '../lib/store.js'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
 import { cardFromLine, cardFromSelection, lineId } from '../lib/lines.js'
@@ -265,7 +266,8 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
                 ) : (
                   <span />
                 )}
-                <div className="row" style={{ gap: 'var(--s2)' }}>
+                <div className="row line__tools">
+                <ListenButton text={line.en} compact label="이 대사 듣기" />
                 {notedLines.has(i) && (
                   <button
                     className="chip chip--accent chip--tap"

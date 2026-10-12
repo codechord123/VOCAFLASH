@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import Swipe from './Swipe.jsx'
 import { ProduceLadder, TrafficLight } from './Speak.jsx'
+import ListenButton from './Listen.jsx'
+import Icon from './Icon.jsx'
 import grammarCourse from '../data/grammar-course.json'
 import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
@@ -161,7 +163,7 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
   function next(opts = {}) {
     // 문항을 틀리면 그 문항이 뒤에 다시 줄을 선다. 재도전에서 또 틀려도
     // 다시 줄을 선다 — 맞혀야 하루가 닫힌다.
-    const isQuiz = atom.type === 'quiz-choice' || atom.type === 'quiz-order'
+    const isQuiz = atom.type === 'quiz-choice' || atom.type === 'quiz-order' || atom.type === 'quiz-listen'
     if (opts.correct === false && isQuiz) {
       const baseIdx = atom.retry ? atom.baseIdx : idx < swipeIdx ? idx : null
       if (baseIdx != null) opts = { ...opts, retryIdx: baseIdx }
@@ -368,6 +370,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
       return <Example example={atom.example} onNext={onNext} />
     case 'quiz-choice':
       return <QuizChoice atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
+    case 'quiz-listen':
+      return <ListenQuiz atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
     case 'quiz-order':
       return <QuizOrder atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
     case 'produce':
@@ -402,6 +406,9 @@ function SceneOpen({ atom, today, onNext }) {
         <p className="scene__line">“{scene.en}”</p>
         <div className="scene__ko">{scene.ko}</div>
         {scene.speaker && <div className="scene__speaker">— {scene.speaker}</div>}
+        <div className="row" style={{ justifyContent: 'center' }}>
+          <ListenButton text={scene.en} label="대사 듣기" />
+        </div>
       </div>
       <button className="btn btn--primary btn--block" onClick={() => onNext()}>
         오늘의 밤을 시작
@@ -434,13 +441,19 @@ function ExprAtom({ atom, progress, onGrade, onNext }) {
       </div>
       <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
         <p className="read" style={{ margin: 0, fontSize: 22 }}>{expr.phrase}</p>
+        <div className="row" style={{ justifyContent: 'center' }}>
+          <ListenButton text={expr.phrase} compact />
+        </div>
         {expr.situation && <p className="hint" style={{ margin: 0 }}>{expr.situation}</p>}
         {open && (
           <>
             <div className="flashcard__divider" />
-            <div className="read" style={{ fontSize: 18, color: 'var(--accent)' }}>{expr.meaning}</div>
+            <div className="read" style={{ fontSize: 18, color: 'var(--accent-text)' }}>{expr.meaning}</div>
             {expr.example && (
-              <p className="read" style={{ margin: 0, fontSize: 15, textAlign: 'left' }}>{expr.example}</p>
+              <div className="row" style={{ gap: 'var(--s2)', alignItems: 'flex-start', flexWrap: 'nowrap' }}>
+                <p className="read" style={{ margin: 0, fontSize: 15, textAlign: 'left', flex: 1 }}>{expr.example}</p>
+                <ListenButton text={expr.example} compact />
+              </div>
             )}
             {expr.translation && <div className="ko" style={{ textAlign: 'left' }}>{expr.translation}</div>}
           </>
@@ -620,6 +633,7 @@ function Anchor({ anchor, onNext }) {
       <div className="panel stack stack--tight">
         <p className="read" style={{ margin: 0, fontSize: 20 }}>{anchor.en}</p>
         <div className="ko">{anchor.ko}</div>
+        <div><ListenButton text={anchor.en} /></div>
         {anchor.sceneNote && (
           <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{anchor.sceneNote}</p>
         )}
@@ -667,10 +681,60 @@ function Example({ example, onNext }) {
       <div className="panel stack stack--tight">
         <p className="read" style={{ margin: 0, fontSize: 18 }}>{example.en}</p>
         <div className="ko">{example.ko}</div>
+        <div><ListenButton text={example.en} /></div>
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{example.note}</p>
         {example.from && <span className="chip">{example.from}</span>}
       </div>
       <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+    </div>
+  )
+}
+
+/**
+ * 듣고 고르기 — 화면에 문장은 없고 소리만. 들어간 순간 한 번 읽어 주고,
+ * 몇 번이든 다시 들을 수 있다. 고르고 나면 무슨 뜻이었는지 보여 준다.
+ */
+function ListenQuiz({ atom, combo = 0, onNext }) {
+  const { q } = atom
+  const [picked, setPicked] = useState(null)
+  const correct = picked !== null && picked === q.answer
+  return (
+    <div className="stack">
+      {atom.retry && (
+        <span className="chip" style={{ alignSelf: 'flex-start' }}>다시 — 아까 틀린 것</span>
+      )}
+      <div className="section-title">듣고 고르기</div>
+      <div className="panel stack stack--tight" style={{ alignItems: 'center', textAlign: 'center' }}>
+        <p className="hint" style={{ margin: 0 }}>들리는 문장을 고르세요</p>
+        <ListenButton text={q.en} autoPlay label="다시 듣기" />
+      </div>
+      <div className="stack stack--tight">
+        {q.choices.map((c) => {
+          const cls = picked === null ? '' : c === q.answer ? ' is-right' : c === picked ? ' is-wrong' : ''
+          return (
+            <button
+              key={c}
+              className={`quiz__piece quiz__piece--line${cls}`}
+              disabled={picked !== null}
+              onClick={() => setPicked(c)}
+            >
+              {c}
+            </button>
+          )
+        })}
+      </div>
+      {picked !== null && (
+        <div className="stack stack--tight">
+          <div className={correct ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
+            {correct ? '알아들었습니다' : '이 문장이었습니다'}
+            <ComboTag combo={combo} correct={correct} />
+          </div>
+          {q.ko && <p className="hint" style={{ textAlign: 'left', margin: 0 }}>{q.ko}</p>}
+          <button className="btn btn--primary btn--block" onClick={() => onNext({ correct })}>
+            다음
+          </button>
+        </div>
+      )}
     </div>
   )
 }
@@ -680,7 +744,11 @@ function ComboTag({ combo, correct }) {
   if (!correct) return null
   const n = combo + 1 // 이 문항까지의 연속
   if (n < 3) return null
-  return <span className="combo-pop">🔥 {n}연속</span>
+  return (
+    <span className="combo-pop">
+      <Icon name="flame" size={14} filled /> {n}연속
+    </span>
+  )
 }
 
 /** 문항 — 즉시 채점, 틀리면 왜 그런지, 결과는 세션에 실린다. */
@@ -871,6 +939,9 @@ function Recite({ anchor, onNext }) {
           <>
             <div className="flashcard__divider" />
             <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>
+            <div className="row" style={{ justifyContent: 'center' }}>
+              <ListenButton text={anchor.en} autoPlay label="다시 듣기" />
+            </div>
           </>
         )}
       </div>
@@ -895,12 +966,20 @@ function Recite({ anchor, onNext }) {
  */
 function Shadow({ anchor, onNext }) {
   const [stage, setStage] = useState(0)
-  const STAGES = ['① 보면서 소리 내어', '② 첫 글자만 보고', '③ 한국어만 보고']
+  const STAGES = ['① 듣고 따라 말하기', '② 첫 글자만 보고', '③ 한국어만 보고']
   return (
     <div className="stack">
       <div className="section-title">섀도잉 — {STAGES[Math.min(stage, 2)]}</div>
       <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
-        {stage === 0 && <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>}
+        {stage === 0 && (
+          <>
+            <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>
+            {/* 섀도잉은 원래 소리를 그림자처럼 따라가는 것 — 듣는 소리가 먼저다 */}
+            <div className="row" style={{ justifyContent: 'center' }}>
+              <ListenButton text={anchor.en} autoPlay label="다시 듣기" />
+            </div>
+          </>
+        )}
         {stage === 1 && (
           <p className="read" style={{ margin: 0, fontSize: 19, letterSpacing: '0.06em' }}>
             {firstLetters(anchor.en)}
@@ -911,13 +990,16 @@ function Shadow({ anchor, onNext }) {
           <>
             <div className="flashcard__divider" />
             <p className="read" style={{ margin: 0, fontSize: 19 }}>{anchor.en}</p>
+            <div className="row" style={{ justifyContent: 'center' }}>
+              <ListenButton text={anchor.en} autoPlay label="원어민처럼 들어 보기" />
+            </div>
           </>
         )}
         {stage < 2 && <div className="ko">{anchor.ko}</div>}
       </div>
       {stage < 2 && (
         <button className="btn btn--primary btn--block" onClick={() => setStage(stage + 1)}>
-          소리 내어 읽었어요 — 다음 단계
+          {stage === 0 ? '따라 말했어요 — 다음 단계' : '소리 내어 읽었어요 — 다음 단계'}
         </button>
       )}
       {stage === 2 && (

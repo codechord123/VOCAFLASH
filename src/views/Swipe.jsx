@@ -2,6 +2,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GRADES, applyGrade, progressOf, withProgress } from '../lib/srs.js'
 import { topicIcon, topicLabel } from '../lib/topics.js'
 import { koToEnClue } from '../lib/clue.js'
+import ListenButton from './Listen.jsx'
+
+const HANGUL = /[가-힣]/
 
 // 스와이프 플래시카드.
 //
@@ -357,6 +360,15 @@ export default function Swipe({ cards, settings, commit, onExit }) {
             </div>
 
             <div className="flashcard__front">{card.front}</div>
+            {/* 영어 쪽을 들려준다 — 앞면이 영어면 앞면, 한→영 카드면 뒤집은 뒤 정답 */}
+            {(!HANGUL.test(card.front ?? '') || flipped) && (
+              <div className="row" style={{ justifyContent: 'center' }}>
+                <ListenButton
+                  text={!HANGUL.test(card.front ?? '') ? card.front : card.back?.meaningKo && !HANGUL.test(card.back.meaningKo) ? card.back.meaningKo : null}
+                  compact
+                />
+              </div>
+            )}
             {card.phonetics && (
               <div className="hint" style={{ fontFamily: 'var(--font-mono)' }}>
                 {card.phonetics}

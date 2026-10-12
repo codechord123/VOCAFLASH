@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import ListenButton from './Listen.jsx'
 import { removeCard } from '../lib/store.js'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
@@ -498,7 +499,8 @@ function Line({
       {(line.speaker || onToggle || onExplain) && (
         <div className="row row--between">
           {line.speaker ? <div className="speaker">{line.speaker}</div> : <span />}
-          <div className="row" style={{ gap: 'var(--s2)' }}>
+          <div className="row line__tools">
+            <ListenButton text={line.text} compact label="이 대사 듣기" />
             {/* 준비된 해설이 있는 줄에만 붙는다. 어디에 설명이 있는지
                 보여야 그 줄에서 한 번 더 멈춘다. */}
             {onExplain && (

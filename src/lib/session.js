@@ -151,6 +151,14 @@ function compileFluency(atoms, cycleData, day) {
     if (u.kind === 'syntax') anchors.push(...(u.src?.anchors ?? []))
   }
   atoms.push({ type: 'fluency-head' })
+  // 유창성은 귀부터 — 듣고 알아듣기 3개, 그다음 같은 결의 문장을 섀도잉.
+  // 앵커가 짧은 사이클(1사이클의 'This fine here?')은 보기를 못 만들어서
+  // 같은 사이클 문법 유닛의 예문까지 듣기 재료로 쓴다.
+  const heard = [...anchors]
+  for (const u of cycleData?.cycleUnits ?? []) {
+    if (u.kind === 'grammar') heard.push(...(u.src?.present?.examples ?? []))
+  }
+  atoms.push(...listenAtoms(heard, day + 3, 3))
   for (const a of seededShuffle(anchors, day).slice(0, 3)) {
     atoms.push({ type: 'shadow', anchor: a })
   }
@@ -198,6 +206,33 @@ function discoverAtom(u, d) {
   }
 }
 
+const GRAMMAR_DAY1 = 10
+
+/**
+ * 듣고 고르기 — 소리만 듣고 어떤 문장이었는지 고른다. 보기는 같은 묶음의
+ * 다른 문장 둘. 결정적 셔플이라 이어하기에도 같은 문항·같은 보기 순서다.
+ * 오답 카드는 만들지 않는다(재도전으로만 돌아온다) — 틀린 것은 문장이
+ * 아니라 귀라서, 카드로 외울 것이 아니다.
+ */
+function listenAtoms(pool, day, n) {
+  const usable = pool.filter((x) => x?.en && x.en.split(/\s+/).length >= 4)
+  if (usable.length < 3) return []
+  return seededShuffle(usable, day * 17 + 5)
+    .slice(0, n)
+    .map((target, i) => {
+      const others = seededShuffle(usable.filter((x) => x !== target), day + i * 11).slice(0, 2)
+      return {
+        type: 'quiz-listen',
+        q: {
+          en: target.en,
+          ko: target.ko ?? '',
+          choices: seededShuffle([target.en, ...others.map((o) => o.en)], day + i * 3 + 1),
+          answer: target.en,
+        },
+      }
+    })
+}
+
 /** 문법 유닛의 리듬. */
 function compileGrammar(atoms, u, step, day) {
   if (step === 1) {
@@ -207,11 +242,16 @@ function compileGrammar(atoms, u, step, day) {
     atoms.push({ type: 'rule', title: '규칙', body: u.present.rule, accent: true })
     atoms.push({ type: 'points', points: u.present.points })
     for (const e of u.present.examples) atoms.push({ type: 'example', example: e })
-    for (const q of u.practice) atoms.push(practiceAtom(u, q))
+    // 연습은 첫날 앞 10문항만. 16문항을 다 넣으면 배우는 날이 38단계(30분
+    // 넘게)가 되어, 시험·유창성 날(15~20단계)의 두 배였다. 나머지는 다음 날.
+    for (const q of u.practice.slice(0, GRAMMAR_DAY1)) atoms.push(practiceAtom(u, q))
   } else if (step === 2) {
-    // 되짚기: 규칙 한 장 다시, 연습을 섞어서 전량
+    // 되짚기: 규칙 한 장 다시 → 귀로 확인 → 어제 못 본 연습 + 어제 것 섞어서
     atoms.push({ type: 'rule', title: '규칙 — 다시 한 번', body: u.present.rule, accent: true })
-    for (const q of seededShuffle(u.practice, day)) atoms.push(practiceAtom(u, q))
+    atoms.push(...listenAtoms(u.present.examples, day, 2))
+    const fresh = u.practice.slice(GRAMMAR_DAY1)
+    const again = seededShuffle(u.practice.slice(0, GRAMMAR_DAY1), day).slice(0, 6)
+    for (const q of seededShuffle([...fresh, ...again], day + 1)) atoms.push(practiceAtom(u, q))
   } else if (step === 3) {
     // 내 것으로: 말하기 과제
     atoms.push({ type: 'rule', title: '규칙', body: u.present.rule, accent: true })
@@ -273,6 +313,8 @@ function compileSyntax(atoms, u, quizzes, step, day) {
       ...items.filter((q) => !day1.has(q.quizId)),
       ...seededShuffle(items.filter((q) => day1.has(q.quizId)), day).slice(0, 4),
     ]
+    // 앵커 대사를 귀로 먼저 — 어제 눈으로 본 문장을 소리로 알아듣는가
+    atoms.push(...listenAtoms(u.anchors ?? [], day, 2))
     for (const q of pool) atoms.push(syntaxAtom(u, q))
   } else if (step === 3) {
     // 내 것으로: 앵커 암송 — 번역을 보고 원문을 떠올린다
