@@ -442,44 +442,6 @@ export default function Settings({ cards, settings, stats, commit, onReload, onC
       </section>
 
       <section className="stack">
-        <div className="section-title">Claude API (선택)</div>
-        <p className="hint">
-          해설과 뜻풀이는 이미 만들어져 앱에 들어 있습니다. 이 앱은 평소
-          API가 필요 없습니다. 앱 안에서 즉석으로 질문하고 싶을 때만 키를
-          넣으세요.
-        </p>
-        <div className="notice notice--warn">
-          <span className="notice__icon">!</span>
-          <span>
-            키를 넣으면 이 브라우저에 저장됩니다. 공용 PC에서는 넣지 마세요.
-          </span>
-        </div>
-        <label className="field">
-          <span className="label">API 키</span>
-          <input
-            className="input input--mono"
-            type="password"
-            autoComplete="off"
-            placeholder="sk-ant-... (비워두면 사용하지 않음)"
-            value={settings.apiKey}
-            onChange={(e) => set('apiKey', e.target.value.trim())}
-          />
-        </label>
-        <label className="field">
-          <span className="label">모델</span>
-          <select
-            className="select"
-            value={settings.model}
-            onChange={(e) => set('model', e.target.value)}
-          >
-            <option value="claude-sonnet-5">Claude Sonnet 5 (권장)</option>
-            <option value="claude-opus-5">Claude Opus 5</option>
-            <option value="claude-haiku-4-5">Claude Haiku 4.5 (저렴)</option>
-          </select>
-        </label>
-      </section>
-
-      <section className="stack">
         <div className="section-title">데이터 출처</div>
         <div className="panel stack stack--tight">
           <p className="hint">

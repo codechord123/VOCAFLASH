@@ -272,6 +272,8 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
         <div className="row row--between">
           <span className="hint">
             {today.day}일차 수업 · {idx + 1}/{atoms.length}
+            {/* 틀린 문항이 뒤에 줄을 서면 전체 수가 늘어난다 — 왜 늘었는지 보여 준다 */}
+            {(session?.retries?.length ?? 0) > 0 && ` · 다시 ${session.retries.length}`}
           </span>
           <button
             className="btn btn--ghost btn--sm"
