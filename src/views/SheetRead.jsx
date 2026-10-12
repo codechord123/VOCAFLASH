@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { removeCard } from '../lib/store.js'
 import { SECTIONS, AnalysisSection, NotGenerated } from './Read.jsx'
 import { cardFromLine, cardFromSelection, lineId } from '../lib/lines.js'
 import { READ_GOAL, lastReadLabel, markRead, readOf, undoRead } from '../lib/reads.js'
@@ -108,7 +109,7 @@ export default function SheetRead({ work, analysis, levels, dict, phrases, reads
   function toggleLine(chapter, index, line) {
     const id = lineId(work.id, chapter.number, index)
     if (savedLines.has(id)) {
-      commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
+      commit((s) => removeCard(s, id))
       return
     }
     const card = cardFromLine({

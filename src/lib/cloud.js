@@ -125,6 +125,52 @@ function docRef() {
   return fb.fsMod.doc(fb.db, 'users', uid, 'vocaflash', 'state')
 }
 
+// 이 기기에서 로그인한 적이 있는가. 없으면 앱을 켤 때 Firebase(약 700KB)를
+// 받지 않는다 — 로그인 버튼을 누를 때 받는다. 지하철 약한 신호에서 첫
+// 화면을 막지 않으려는 것.
+const USED_KEY = 'script-study.cloud.used'
+function markUsed(on) {
+  try {
+    if (on) localStorage.setItem(USED_KEY, '1')
+    else localStorage.removeItem(USED_KEY)
+  } catch {
+    /* 표시를 못 남기면 다음에 로그인 버튼을 한 번 더 누르면 된다 */
+  }
+}
+function wasUsed() {
+  try {
+    return localStorage.getItem(USED_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
+let attached = null
+
+/** Firebase를 받고 로그인 상태를 구독한다. 한 번만. */
+function attach() {
+  if (attached) return attached
+  attached = (async () => {
+    const { auth, authMod } = await boot()
+    // 리디렉트 로그인(팝업이 막힌 기기)에서 돌아온 경우 결과를 받는다
+    authMod.getRedirectResult(auth).catch(() => {})
+    authMod.onAuthStateChanged(auth, (u) => {
+      if (u) {
+        markUsed(true)
+        set({ user: { email: u.email, uid: u.uid }, error: null })
+        syncNow()
+      } else {
+        set({ phase: 'signed-out', user: null })
+      }
+    })
+    return fb
+  })()
+  attached.catch(() => {
+    attached = null
+  })
+  return attached
+}
+
 /**
  * 앱이 켜질 때 한 번. 로그인 상태는 Firebase가 기억하므로, 이미 로그인한
  * 기기에서는 화면을 열기만 해도 동기화가 시작된다.
@@ -137,22 +183,18 @@ export async function startCloud(merged) {
   onMerged = merged ?? (() => {})
   if (started) return
   started = true
-  if (!readConfig()) {
+  const cfg = readConfig()
+  if (!cfg) {
     set({ phase: 'off' })
     return
   }
+  // 내장 설정이고 이 기기에서 로그인한 적이 없으면 받지 않고 기다린다
+  if (cfg.builtIn && !wasUsed()) {
+    set({ phase: 'signed-out' })
+    return
+  }
   try {
-    const { auth, authMod } = await boot()
-    // 리디렉트 로그인(팝업이 막힌 기기)에서 돌아온 경우 결과를 받는다
-    authMod.getRedirectResult(auth).catch(() => {})
-    authMod.onAuthStateChanged(auth, (u) => {
-      if (u) {
-        set({ user: { email: u.email, uid: u.uid }, error: null })
-        syncNow()
-      } else {
-        set({ phase: 'signed-out', user: null })
-      }
-    })
+    await attach()
   } catch (err) {
     set({ phase: 'error', error: friendly(err) })
   }
@@ -160,14 +202,19 @@ export async function startCloud(merged) {
 
 export async function signIn() {
   try {
-    const { auth, authMod } = await boot()
+    set({ phase: 'starting', error: null })
+    const { auth, authMod } = await attach()
     const provider = new authMod.GoogleAuthProvider()
     try {
       await authMod.signInWithPopup(auth, provider)
     } catch (err) {
       // 홈 화면에 추가한 앱 등 팝업이 막히는 곳에서는 리디렉트로
       if (/popup-blocked|operation-not-supported|popup-closed-by-user/.test(err?.code ?? '')) {
-        if (err.code === 'auth/popup-closed-by-user') return
+        if (err.code === 'auth/popup-closed-by-user') {
+          set({ phase: 'signed-out' })
+          return
+        }
+        markUsed(true)
         await authMod.signInWithRedirect(auth, provider)
         return
       }
@@ -179,6 +226,7 @@ export async function signIn() {
 }
 
 export async function signOut() {
+  markUsed(false)
   if (!fb) return
   await fb.authMod.signOut(fb.auth)
 }
@@ -209,14 +257,16 @@ export function syncNow() {
       const snap = await fsMod.getDoc(ref)
       let remote = null
       let remoteWords = null
+      let remoteWordsAt = null
       if (snap.exists()) {
         const d = snap.data()
         remote = d.state ? JSON.parse(d.state) : null
         remoteWords = d.words ? JSON.parse(d.words) : null
+        remoteWordsAt = d.wordsAt ? JSON.parse(d.wordsAt) : null
       }
-      const { state, words, changed } = store.mergeRemote(remote, remoteWords)
+      const { state, words, wordsAt, changed } = store.mergeRemote(remote, remoteWords, remoteWordsAt)
       if (changed) onMerged(state)
-      await fsMod.setDoc(ref, packDoc(state, words))
+      await fsMod.setDoc(ref, packDoc(state, words, wordsAt))
       set({ phase: 'synced', lastSyncAt: Date.now(), error: null })
     } catch (err) {
       set({ phase: 'error', error: friendly(err) })
@@ -238,18 +288,46 @@ export function scheduleSync(ms = 4000) {
   timer = setTimeout(syncNow, ms)
 }
 
-/** 문서 한 장에 담는다. 넘치면 오래된 복습 기록부터 덜어 낸다. */
-function packDoc(state, words) {
-  let s = state
-  let body = JSON.stringify(s)
+const enc = new TextEncoder()
+const bytes = (str) => enc.encode(str).length
+
+/**
+ * 문서 한 장에 담는다. 넘치면 클라우드 사본에서만 오래된 기록부터 덜어 낸다.
+ *
+ * 한도는 UTF-8 바이트다 — 한글은 글자당 3바이트라 글자 수로 재면 한도를
+ * 넘긴 문서를 올리려다 매번 거절당한다. API 키처럼 기기에만 있어야 하는
+ * 값은 빼고 올린다.
+ */
+export function packDoc(state, words, wordsAt) {
+  const { apiKey: _key, ...settings } = state.settings ?? {}
+  let s = { ...state, settings }
   const w = JSON.stringify(words ?? {})
-  while (body.length + w.length > DOC_LIMIT && (s.reviewLog?.length ?? 0) > 200) {
+  const wa = JSON.stringify(wordsAt ?? {})
+  let body = JSON.stringify(s)
+  const size = () => bytes(body) + bytes(w) + bytes(wa)
+  // 1) 복습 기록을 1/4씩, 최근 200개까지
+  while (size() > DOC_LIMIT && (s.reviewLog?.length ?? 0) > 200) {
     s = { ...s, reviewLog: s.reviewLog.slice(Math.floor(s.reviewLog.length / 4)) }
     body = JSON.stringify(s)
+  }
+  // 2) 그래도 넘치면 말하기 기록, 대사 수집첩 순으로
+  if (size() > DOC_LIMIT) {
+    s = { ...s, speakLog: (s.speakLog ?? []).slice(-50) }
+    body = JSON.stringify(s)
+  }
+  if (size() > DOC_LIMIT && s.plan?.quotes) {
+    s = { ...s, plan: { ...s.plan, quotes: s.plan.quotes.slice(-20) } }
+    body = JSON.stringify(s)
+  }
+  if (size() > DOC_LIMIT) {
+    throw new Error(
+      `기록이 커서 클라우드 문서 한 장(1MB)에 담기지 않습니다 (${Math.round(size() / 1024)}KB). 설정에서 내보내기로 백업해 두세요.`
+    )
   }
   return {
     state: body,
     words: w,
+    wordsAt: wa,
     updatedAt: s.updatedAt ?? Date.now(),
     syncedAt: Date.now(),
     device: (navigator.userAgent.match(/\(([^)]+)\)/)?.[1] ?? 'unknown').slice(0, 80),

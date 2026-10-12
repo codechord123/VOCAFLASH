@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { GRADES, applyGrade, progressOf } from '../lib/srs.js'
+import { GRADES, applyGrade, progressOf, withProgress } from '../lib/srs.js'
 import { topicIcon, topicLabel } from '../lib/topics.js'
 import { koToEnClue } from '../lib/clue.js'
 
@@ -60,9 +60,15 @@ export default function Swipe({ cards, settings, commit, onExit }) {
    * 것은 '한 번 틀린 뒤 맞힌 것'이라 HARD로 기록한다. 한 번에 맞힌 것과
    * 같이 취급하면 간격이 너무 빨리 벌어진다.
    */
+  // 날아가는 중인 카드는 다시 판정하지 않는다. 180ms 안에 두 번 누르면
+  // 같은 카드가 두 번 채점되고, 두 번째 타이머가 다음 카드를 채점 없이
+  // 큐에서 빼 버렸다. 상태(leaving)는 다음 렌더까지 안 바뀌므로 ref로 막는다.
+  const busy = useRef(false)
+
   const settle = useCallback(
     (known) => {
-      if (!card) return
+      if (!card || busy.current) return
+      busy.current = true
       setAuto(false) // 손으로 판정하는 순간 자동은 멈춘다
       const grade = known
         ? round === 1
@@ -72,11 +78,14 @@ export default function Swipe({ cards, settings, commit, onExit }) {
 
       // 진행만 저장한다. 카드 내용은 앱이 갖고 있으므로 다시 쓸 이유가 없고,
       // 내용까지 통째로 저장하면 자료를 손볼 때 진행이 함께 흔들린다.
+      // 채점은 저장본의 최신 진행에 대고 한다. 화면의 카드 목록은 이
+      // 화면을 연 순간의 사본이라, 2회차에서 그 사본으로 채점하면 1회차의
+      // '모름'(박스 1)이 지워지고 박스 4·2주 뒤로 되돌아갔다.
       commit((s) => ({
         ...s,
         progress: {
           ...s.progress,
-          [card.id]: progressOf(applyGrade(card, grade)),
+          [card.id]: progressOf(applyGrade(withProgress(card, s.progress?.[card.id]), grade)),
         },
         reviewLog: [
           ...s.reviewLog,
@@ -101,6 +110,7 @@ export default function Swipe({ cards, settings, commit, onExit }) {
         setFlipped(false)
         setDrag(0)
         setLeaving(null)
+        busy.current = false
       }, 180)
     },
     [card, round, commit]

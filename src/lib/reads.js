@@ -31,7 +31,7 @@ export function markRead(state, work, chapter, secs = null) {
   const key = readKey(work, chapter)
   const prev = state.reads?.[key] ?? { count: 0, lastAt: null }
   const valid = typeof secs === 'number' && secs >= 15 && secs <= 3600
-  const rec = { ...prev, count: prev.count + 1, lastAt: Date.now() }
+  const rec = { ...prev, count: prev.count + 1, lastAt: Date.now(), updatedAt: Date.now() }
   if (valid) {
     rec.lastSecs = secs
     rec.secsLog = [...(prev.secsLog ?? []), { at: Date.now(), secs }].slice(-6)
@@ -48,8 +48,12 @@ export function undoRead(state, work, chapter) {
   const prev = state.reads?.[key]
   if (!prev || prev.count <= 0) return state
   const next = { ...(state.reads ?? {}) }
-  if (prev.count === 1) delete next[key]
-  else next[key] = { ...prev, count: prev.count - 1 }
+  // 0회가 되어도 기록은 지우지 않는다 — 지우면 동기화가 다른 쪽의 1회를
+  // 되살린다. 마지막으로 손댄 시각이 남아 있어야 병합이 이쪽을 고른다.
+  next[key] =
+    prev.count === 1
+      ? { ...prev, count: 0, lastAt: null, updatedAt: Date.now() }
+      : { ...prev, count: prev.count - 1, updatedAt: Date.now() }
   return { ...state, reads: next }
 }
 

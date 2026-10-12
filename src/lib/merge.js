@@ -40,11 +40,20 @@ function pickProgress(a, b) {
   return (b?.lastReviewedAt ?? 0) > (a?.lastReviewedAt ?? 0) ? b : a
 }
 
-/** 회독 — 더 많이 읽은 쪽, 같으면 최근. 속도 기록은 합친다 */
+/**
+ * 회독 — 마지막으로 손댄 쪽(읽음·−1 모두 시각을 남긴다). 시각이 없는 예전
+ * 기록끼리는 더 많이 읽은 쪽. 예전에는 '많은 쪽'만 봐서, −1로 되돌린
+ * 회독이 동기화 4초 뒤 클라우드에서 되살아났다. 속도 기록은 합친다.
+ */
 function pickRead(a, b) {
+  const ua = a?.updatedAt ?? 0
+  const ub = b?.updatedAt ?? 0
   const ca = a?.count ?? 0
   const cb = b?.count ?? 0
-  const base = cb !== ca ? (cb > ca ? b : a) : (b?.lastAt ?? 0) > (a?.lastAt ?? 0) ? b : a
+  const base =
+    ua || ub
+      ? ub > ua ? b : a
+      : cb !== ca ? (cb > ca ? b : a) : (b?.lastAt ?? 0) > (a?.lastAt ?? 0) ? b : a
   const secsLog = unionBy(a?.secsLog, b?.secsLog, (x) => x.at)
     .sort((x, y) => x.at - y.at)
     .slice(-6)
@@ -73,8 +82,12 @@ function mergePlan(a = {}, b = {}) {
     other = a
   }
   const sameDay = da === db
+  // 진행 중 수업은 앞선 쪽 것만, 그것도 오늘 날짜일 때만. 뒤처진 기기의
+  // 지난 수업이 {...other}로 따라 들어와 남아 있던 것을 걷는다.
+  const { session: _drop, ...otherRest } = other
+  const session = lead.session && lead.session.day === Math.max(da, db) ? lead.session : null
   return {
-    ...other,
+    ...otherRest,
     ...lead,
     day: Math.max(da, db),
     checks: sameDay ? { ...(other.checks ?? {}), ...(lead.checks ?? {}) } : lead.checks ?? {},
@@ -86,7 +99,7 @@ function mergePlan(a = {}, b = {}) {
     quotes: unionBy(other.quotes, lead.quotes, (q) => q.day, (_, y) => y)
       .sort((x, y) => x.day - y.day)
       .slice(-100),
-    ...(lead.session ? { session: lead.session } : {}),
+    session: session ?? undefined,
   }
 }
 
@@ -98,13 +111,18 @@ export function mergeStates(a, b) {
   if (!b) return a
   if (!a) return b
   const newer = newerOf(a, b)
+  // 지운 카드의 묘비 — 지운 시각보다 먼저 만들어진 사본은 되살리지 않는다.
+  // 같은 카드를 나중에 다시 담으면 만든 시각이 더 늦어서 살아남는다.
+  const deleted = mergeMap(a.deleted, b.deleted, (x, y) => Math.max(x, y))
+  const alive = (c) => !deleted[c.id] || (c.createdAt ?? 0) > deleted[c.id]
   return {
     ...a,
     ...b,
     version: Math.max(a.version ?? 2, b.version ?? 2),
     updatedAt: Math.max(a.updatedAt ?? 0, b.updatedAt ?? 0),
     // 사용자가 만든 카드 — 합집합. 같은 id는 내용이 같다(내용에서 id를 만든다)
-    cards: unionBy(a.cards, b.cards, (c) => c.id),
+    cards: unionBy(a.cards, b.cards, (c) => c.id).filter(alive),
+    deleted,
     progress: mergeMap(a.progress, b.progress, pickProgress),
     reads: mergeMap(a.reads, b.reads, pickRead),
     quizLog: mergeMap(a.quizLog, b.quizLog, pickQuiz),
@@ -157,6 +175,23 @@ function canonical(v) {
  * 단어 상태(아는/모르는 표시) 병합. 표시마다 시각이 없으므로 저장본
  * 전체가 더 최근인 쪽의 표시를 따르되, 한쪽에만 있는 표시는 살린다.
  */
-export function mergeWords(mine = {}, theirs = {}, theirsNewer = false) {
-  return theirsNewer ? { ...mine, ...theirs } : { ...theirs, ...mine }
+export function mergeWords(mine = {}, mineAt = {}, theirs = {}, theirsAt = {}, theirsNewer = false) {
+  // 단어마다 마지막으로 바꾼 시각이 있으면 그것으로 고른다. 지운 표시도
+  // 시각은 남아 있어서(묘비) 다른 쪽의 옛 표시가 되살아나지 않는다.
+  // 시각이 없는 예전 표시끼리는 저장본 전체가 더 최근인 쪽을 따른다.
+  const keys = new Set([
+    ...Object.keys(mine), ...Object.keys(theirs), ...Object.keys(mineAt), ...Object.keys(theirsAt),
+  ])
+  const words = {}
+  const at = {}
+  for (const k of keys) {
+    const ta = mineAt[k] ?? 0
+    const tb = theirsAt[k] ?? 0
+    const useTheirs = ta || tb ? tb > ta : theirsNewer ? k in theirs : !(k in mine)
+    const v = useTheirs ? theirs[k] : mine[k]
+    const t = useTheirs ? tb : ta
+    if (v != null) words[k] = v
+    if (t) at[k] = t
+  }
+  return { words, at }
 }

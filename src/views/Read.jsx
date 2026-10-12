@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { removeCard } from '../lib/store.js'
 import { COLOR_LABELS } from '../lib/deck.js'
 import { isBasicWord, isSingleWord } from '../lib/level.js'
 import { cardFromLine, cardFromSelection, findChunkKo, idPosition, lineId } from '../lib/lines.js'
@@ -178,7 +179,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
     const pos = idPosition(chapter, index)
     const id = lineId('before-sunrise', pos.chapter, pos.index)
     if (savedLines.has(id)) {
-      commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
+      commit((s) => removeCard(s, id))
       return
     }
     const card = cardFromLine({

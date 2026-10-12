@@ -13,6 +13,15 @@ const KEY = 'script-study.v1'
 // 단어 상태는 words.js가 이 키로 따로 쓴다. 백업에 같이 담아야 해서
 // 여기서도 이름을 안다 — 값을 만지지는 않고 통째로 옮기기만 한다.
 const WORD_KEY = 'script-study.words.v1'
+const WORD_AT_KEY = 'script-study.words.at.v1'
+
+function readWordStamps() {
+  try {
+    return JSON.parse(localStorage.getItem(WORD_AT_KEY) || '{}')
+  } catch {
+    return {}
+  }
+}
 
 function readWordStatus() {
   try {
@@ -145,6 +154,22 @@ function write(state) {
   }
 }
 
+/**
+ * 카드를 지운다. 지운 시각을 묘비로 남겨야 동기화가 다른 기기(클라우드)의
+ * 사본으로 되살리지 않는다. 묘비는 반년 지나면 걷는다.
+ */
+export function removeCard(state, id) {
+  const now = Date.now()
+  const keep = Object.fromEntries(
+    Object.entries(state.deleted ?? {}).filter(([, at]) => now - at < 180 * 86400000)
+  )
+  return {
+    ...state,
+    cards: state.cards.filter((c) => c.id !== id),
+    deleted: { ...keep, [id]: now },
+  }
+}
+
 export const store = {
   load: read,
 
@@ -164,9 +189,11 @@ export const store = {
 
   /** 단어 상태(별도 키) — 동기화가 통째로 옮긴다 */
   readWords: readWordStatus,
-  writeWords(words) {
+  readWordStamps,
+  writeWords(words, at) {
     try {
       localStorage.setItem(WORD_KEY, JSON.stringify(words ?? {}))
+      if (at) localStorage.setItem(WORD_AT_KEY, JSON.stringify(at))
     } catch (err) {
       console.error('단어 상태 저장 실패', err)
     }
@@ -235,18 +262,23 @@ export const store = {
    * 클라우드에서 받은 저장본을 지금 것과 병합해 저장한다.
    * 바뀐 것이 있으면 병합본을, 없으면 null을 돌려준다.
    */
-  mergeRemote(remote, remoteWords) {
+  mergeRemote(remote, remoteWords, remoteWordsAt) {
     const state = read()
     const remoteState = remote ? { ...structuredClone(DEFAULTS), ...migrate(remote) } : null
     const next = remoteState ? mergeStates(state, remoteState) : state
     const remoteNewer = (remote?.updatedAt ?? 0) > (state.updatedAt ?? 0)
-    const words = mergeWords(readWordStatus(), remoteWords ?? {}, remoteNewer)
-    const changed = !sameState(next, state) || !sameState(words, readWordStatus())
-    if (changed) {
-      write(next)
-      store.writeWords(words)
+    const mine = readWordStatus()
+    const mineAt = readWordStamps()
+    const { words, at } = mergeWords(mine, mineAt, remoteWords ?? {}, remoteWordsAt ?? {}, remoteNewer)
+    const stateChanged = !sameState(next, state)
+    const wordsChanged = !sameState(words, mine) || !sameState(at, mineAt)
+    if (stateChanged) write(next)
+    if (wordsChanged) {
+      store.writeWords(words, at)
+      // 리더가 들고 있는 단어 색을 새로 읽게 한다
+      if (typeof window !== 'undefined') window.dispatchEvent(new Event('vocaflash:words-merged'))
     }
-    return { state: next, words, changed }
+    return { state: next, words, wordsAt: at, changed: stateChanged }
   },
 
   /** 시드를 한 번만 가져오기 위한 표시. */

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { removeCard } from '../lib/store.js'
 import Swipe from './Swipe.jsx'
 import { selectDueCards, isDue } from '../lib/srs.js'
 
@@ -120,7 +121,7 @@ function SavedList({ saved, commit }) {
   }, [saved])
 
   function remove(id) {
-    commit((s) => ({ ...s, cards: s.cards.filter((c) => c.id !== id) }))
+    commit((s) => removeCard(s, id))
   }
 
   return (

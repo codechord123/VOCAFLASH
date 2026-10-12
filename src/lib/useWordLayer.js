@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { normalize, wordStore } from './words.js'
 import { createCard } from './srs.js'
 import { DECKS } from './deck.js'
@@ -12,6 +12,12 @@ import { cardFieldsFor } from '../views/WordPopup.jsx'
 
 export function useWordLayer({ levels, dict, phrases, cards, commit }) {
   const [statusMap, setStatusMap] = useState(() => wordStore.all())
+  // 동기화가 다른 기기의 표시를 합쳐 넣으면 색을 다시 읽는다
+  useEffect(() => {
+    const reload = () => setStatusMap(wordStore.all())
+    window.addEventListener('vocaflash:words-merged', reload)
+    return () => window.removeEventListener('vocaflash:words-merged', reload)
+  }, [])
   // { word, context, entry, isPhrase } — 단어든 구문이든 같은 시트로 연다
   const [selected, setSelected] = useState(null)
 

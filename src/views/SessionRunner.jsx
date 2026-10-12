@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Swipe from './Swipe.jsx'
 import { ProduceLadder, TrafficLight } from './Speak.jsx'
 import grammarCourse from '../data/grammar-course.json'
@@ -79,8 +79,14 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
   const session = state.plan?.session
   const day = session?.day ?? state.plan?.day ?? 1
 
-  // 오답 워밍업 카드는 세션이 시작된 시점의 due에서 뽑되, 매 렌더마다
-  // 다시 뽑으면 채점 순간 목록이 흔들린다 — 컴파일 결과를 고정한다.
+  // 오답 워밍업 카드는 수업을 시작한 순간의 due에서 뽑고, 그 id를 세션에
+  // 저장한다. 이 화면은 잠시 멈춤·설정·읽기 왕복·새로고침마다 새로 열리는데,
+  // 그때마다 due에서 다시 뽑으면 이미 채점한 카드가 빠져 목록이 짧아지고,
+  // 저장된 위치(idx)가 문항 몇 개를 소리 없이 건너뛰었다. 자정을 넘기면
+  // 반대로 목록이 길어져 푼 문항을 또 풀었다.
+  const savedWarmups = session?.warmupIds ?? null
+  const warmupKey = savedWarmups ? savedWarmups.join('|') : ''
+
   const compiled = useMemo(() => {
     const today = compileSession(day, { unitData: null, mistakeDue: [] }).today
     const u = today.unit
@@ -113,15 +119,29 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
     return compileSession(day, {
       unitData: source,
       quizzes: unitQuizData.quizzes,
-      mistakeDue: dueCards.filter((c) => c.deck === 'mistake'),
+      mistakeDue: savedWarmups
+        ? savedWarmups.map((id) => state.cards.find((c) => c.id === id)).filter(Boolean)
+        : dueCards.filter((c) => c.deck === 'mistake'),
       review,
       cycleData: buildCycleData(today, day, state.plan?.unitSrs, review),
       exprs: exprsForDay(midexpData.expressions, day),
       scene,
     })
-    // day가 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
+    // 날과 워밍업 목록이 같으면 다시 컴파일하지 않는다 — 이어하기의 전제다
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [day])
+  }, [day, warmupKey])
+
+  // 처음 연 수업이면 워밍업 목록을 세션에 고정한다
+  useEffect(() => {
+    if (!session || session.warmupIds) return
+    const ids = compiled.atoms.filter((a) => a.type === 'warmup').map((a) => a.card.id)
+    commit((s) =>
+      s.plan?.session && !s.plan.session.warmupIds
+        ? { ...s, plan: { ...s.plan, session: { ...s.plan.session, warmupIds: ids } } }
+        : s
+    )
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session?.warmupIds, compiled])
 
   const { today } = compiled
   // 틀린 문항은 단어(스와이프) 직전에 다시 나온다 — 재도전 목록은 세션에
@@ -145,9 +165,10 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
       const baseIdx = atom.retry ? atom.baseIdx : idx < swipeIdx ? idx : null
       if (baseIdx != null) opts = { ...opts, retryIdx: baseIdx }
     }
-    // 재도전 회차는 통계·오답 카드·유닛 판정에 다시 싣지 않는다 —
-    // 첫 시도의 판정이 이미 실렸다.
-    if (atom.retry) opts = { ...opts, wrongRef: null, reviewUnit: null }
+    // 재도전 회차는 정답률·콤보·오답 카드·유닛 판정에 다시 싣지 않는다 —
+    // 첫 시도의 판정이 이미 실렸다. 틀린 뒤 맞힌 것이 1/2로 잡히면
+    // 정리 화면의 밤의 등급이 실제보다 낮게 나왔다.
+    if (atom.retry) opts = { ...opts, correct: null, wrongRef: null, reviewUnit: null }
     commit((s) => advanceSession(s, opts))
     window.scrollTo({ top: 0 })
   }
@@ -160,7 +181,7 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
         ...s.progress,
         [card.id]: (({ box, dueAt, reviewCount, lapseCount, lastReviewedAt }) => ({
           box, dueAt, reviewCount, lapseCount, lastReviewedAt,
-        }))(applyGrade(card, grade)),
+        }))(applyGrade(withProgress(card, s.progress?.[card.id]), grade)),
       },
       reviewLog: [
         ...s.reviewLog,
@@ -465,13 +486,13 @@ function Warmup({ card, onGrade, onNext }) {
         <div className="grade-row">
           <button
             className="btn grade-row__again"
-            onClick={() => { onGrade(card, 'AGAIN'); onNext({ correct: false }) }}
+            onClick={() => { onGrade(card, 'AGAIN'); onNext() }}
           >
             아직 헷갈림
           </button>
           <button
             className="btn grade-row__good"
-            onClick={() => { onGrade(card, 'GOOD'); onNext({ correct: true }) }}
+            onClick={() => { onGrade(card, 'GOOD'); onNext() }}
           >
             이제 알겠음
           </button>
@@ -909,9 +930,12 @@ function Shadow({ anchor, onNext }) {
 /** 단어 — 기존 스와이프를 세션 안에 그대로 얹는다. */
 function SwipeAtom({ dueCards, settings, commit, state, onNext }) {
   // 이 원자에 들어선 순간의 묶음으로 고정한다
-  const [cards] = useState(() => dueCards)
-  const gradedToday = state.reviewLog.filter((r) => sameDay(r.at) && r.via !== 'session-expr').length
+  const gradedToday = state.reviewLog.filter(
+    (r) => sameDay(r.at) && r.via !== 'session-expr' && r.via !== 'session-warmup'
+  ).length
   const quota = settings?.dailyLimit ?? 20
+  // 오늘 이미 넘긴 만큼은 빼고 남은 몫만 — 하루 상한을 넘기지 않는다
+  const [cards] = useState(() => dueCards.slice(0, Math.max(0, quota - gradedToday)))
 
   if (cards.length === 0 || gradedToday >= quota) {
     return (

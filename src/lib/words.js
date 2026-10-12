@@ -11,6 +11,8 @@
 // 탭했을 때 정직하게 없다고 말하고 사전 링크와 담기를 준다.
 
 const WORD_KEY = 'script-study.words.v1'
+// 단어마다 마지막으로 바꾼 시각 — 동기화가 기기 사이에서 표시를 고르는 근거
+const WORD_AT_KEY = 'script-study.words.at.v1'
 
 export const STATUS = {
   LEARNING: 'learning', // 모르는 단어로 표시 — 앰버로 도드라진다
@@ -38,9 +40,14 @@ export const wordStore = {
     else map[key] = status
     try {
       localStorage.setItem(WORD_KEY, JSON.stringify(map))
+      const at = JSON.parse(localStorage.getItem(WORD_AT_KEY) || '{}')
+      at[key] = Date.now()
+      localStorage.setItem(WORD_AT_KEY, JSON.stringify(at))
     } catch (err) {
       console.error('단어 상태 저장 실패', err)
     }
+    // 앱 상태 밖의 저장이라 동기화가 알아채지 못한다 — 알린다
+    if (typeof window !== 'undefined') window.dispatchEvent(new Event('vocaflash:words-changed'))
     return map
   },
 }

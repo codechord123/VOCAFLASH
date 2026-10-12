@@ -262,10 +262,14 @@ export default function App() {
     const off = subscribeCloud(setCloud)
     startCloud((merged) => setState({ ...merged }))
     const onVis = () => syncNow()
+    // 단어 표시는 앱 상태 밖에 저장된다 — 바뀌면 따로 알려 온다
+    const onWords = () => scheduleSync()
     document.addEventListener('visibilitychange', onVis)
+    window.addEventListener('vocaflash:words-changed', onWords)
     return () => {
       off()
       document.removeEventListener('visibilitychange', onVis)
+      window.removeEventListener('vocaflash:words-changed', onWords)
     }
   }, [])
   useEffect(() => {
