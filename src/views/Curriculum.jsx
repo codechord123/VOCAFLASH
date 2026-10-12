@@ -1,10 +1,9 @@
 import { useMemo, useState } from 'react'
 import UnitStudy from './UnitStudy.jsx'
 import UnitQuiz from './UnitQuiz.jsx'
-import { createCard } from '../lib/srs.js'
+import { addUnitCards, unitCardCount } from '../lib/unitCards.js'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
-import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
-import { DECKS } from '../lib/deck.js'
+import { ReadMeter } from './ReadMeter.jsx'
 import { unitCourseStatus } from '../lib/plan.js'
 
 // 구문독해 파트 = 4막 13유닛 커리큘럼.
@@ -16,7 +15,6 @@ import { unitCourseStatus } from '../lib/plan.js'
 import unitData from '../data/curriculum/units.json'
 import vocabData from '../data/curriculum/unit-vocab.json'
 import quizData from '../data/curriculum/unit-quiz.json'
-import srsData from '../data/curriculum/unit-srs.json'
 
 // 막 이름. 유닛 자체는 데이터에서 읽고, 여기서는 묶음의 이름과 장면만 준다.
 const ACTS = {
@@ -24,49 +22,6 @@ const ACTS = {
   2: { title: '2막 — 이야기하기', scene: '도착·다리·전차·레코드점·묘지 · Ch 3–7' },
   3: { title: '3막 — 생각 펼치기', scene: '관람차·카페·교회·시인 · Ch 8–12' },
   4: { title: '4막 — 붙잡기', scene: '오페라·배·와인바·공원·이별 · Ch 16–23' },
-}
-
-/** 유닛 SRS 카드 → 기존 카드 스키마. 종류마다 뒷면 재료가 다르다. */
-function cardFromUnitSrs(c) {
-  const base = {
-    id: `card:${c.cardId}`,
-    type: 'expression',
-    source: { work: 'Before Sunrise', unitId: c.unitId },
-    extra: {
-      kind: c.kind,
-      origin: 'unit-srs',
-      unitId: c.unitId,
-      deck: 'unit',
-      priority: DECKS.unit.priority,
-    },
-  }
-  if (c.kind === 'vocab') {
-    return createCard({
-      ...base,
-      front: c.front,
-      back: { meaningKo: c.back.meaningKo, definitionEn: null, nuance: c.back.nuance },
-      context: c.back.context ?? null,
-    })
-  }
-  if (c.kind === 'pattern') {
-    return createCard({
-      ...base,
-      front: c.front,
-      back: { meaningKo: c.back.pattern, definitionEn: null, nuance: c.back.explanation },
-      context: c.back.anchor ?? null,
-    })
-  }
-  // trap — "맞나?" 판정 카드
-  return createCard({
-    ...base,
-    front: c.front,
-    back: {
-      meaningKo: c.back.verdict === false ? '✗ 틀린 문장' : '⭕ 맞는 문장',
-      definitionEn: null,
-      nuance: c.back.reason,
-    },
-    context: null,
-  })
 }
 
 export default function Curriculum({ cards, commit, curriculum, reads, plan, initialUnitId = null }) {
@@ -100,16 +55,6 @@ export default function Curriculum({ cards, commit, curriculum, reads, plan, ini
     return map
   }, [])
 
-  const cardsOf = useMemo(() => {
-    const map = new Map()
-    for (const c of srsData.cards) {
-      const list = map.get(c.unitId) ?? []
-      list.push(c)
-      map.set(c.unitId, list)
-    }
-    return map
-  }, [])
-
   /**
    * 퀴즈 완료: 진행을 저장하고 그 유닛의 SRS 카드를 복습 덱에 넣는다.
    * 카드 투입은 반드시 여기서만 — 퀴즈 전에 열면 안 배운 카드가 복습에
@@ -121,19 +66,12 @@ export default function Curriculum({ cards, commit, curriculum, reads, plan, ini
     // 하이라이트 카드로 갖고 있는 것도 있다. 앞면이 같은 카드가 덱에 두
     // 장 있으면 복습이 겹쳐서 시간만 먹는다 — 학습지에는 그대로 두되
     // 카드로는 한 번만 넣는다.
-    const norm = (t) => (t ?? '').trim().toLowerCase()
-    const already = new Set(cards.map((c) => norm(c.front)))
+    const already = new Set(cards.map((c) => (c.front ?? '').trim().toLowerCase()))
 
-    commit((s) => {
-      const existing = new Set(s.cards.map((c) => c.id))
-      const fresh = (cardsOf.get(unitId) ?? [])
-        .filter((c) => !c.recitationOnly)
-        .map(cardFromUnitSrs)
-        .filter((c) => !existing.has(c.id))
-        .filter((c) => c.kind !== 'vocab' || !already.has(norm(c.front)))
+    commit((s0) => {
+      const s = addUnitCards(s0, unitId, already)
       return {
         ...s,
-        cards: [...s.cards, ...fresh],
         curriculum: {
           ...(s.curriculum ?? {}),
           unitProgress: {
@@ -172,7 +110,7 @@ export default function Curriculum({ cards, commit, curriculum, reads, plan, ini
       <UnitQuiz
         unit={unit}
         quizzes={quizzesOf.get(unit.unitId) ?? []}
-        cardCount={(cardsOf.get(unit.unitId) ?? []).filter((c) => !c.recitationOnly).length}
+        cardCount={unitCardCount(unit.unitId)}
         alreadyDone={progress?.screen === 'done'}
         onExit={() => setScreen('study')}
         onDone={finishQuiz}

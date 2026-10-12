@@ -12,6 +12,7 @@ const GATE_SYNTAX_ALL = Object.values(gateData.syntax).flat()
 import { applyGrade, withProgress } from '../lib/srs.js'
 import { cardsFromMidExpressions } from '../lib/deck.js'
 import { exprsForDay } from '../lib/midexpPlan.js'
+import { addUnitCards } from '../lib/unitCards.js'
 import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
 import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
@@ -75,7 +76,7 @@ function buildCycleData(today, day, unitSrs, review) {
   }
 }
 
-export default function SessionRunner({ state, dueCards, settings, commit, onGuide }) {
+export default function SessionRunner({ state, cards = [], dueCards, settings, commit, onGuide }) {
   const session = state.plan?.session
   const day = session?.day ?? state.plan?.day ?? 1
 
@@ -281,6 +282,14 @@ export default function SessionRunner({ state, dueCards, settings, commit, onGui
           ...next.plan,
           unitSrs: applyUnitReview(next.plan?.unitSrs, sess?.review, day),
         },
+      }
+      // 구문 유닛을 졸업하는 날이면 그 유닛의 복습 카드(어휘·패턴·함정)를
+      // 넣는다. 예전에는 구문 탭 퀴즈에서만 들어와서, 수업만 따라가면
+      // 유닛을 끝내도 카드가 한 장도 생기지 않았다.
+      const row = PLAN_DAYS[day - 1]
+      if (row?.graduates && row.unit?.kind === 'syntax') {
+        const fronts = new Set(cards.map((c) => (c.front ?? '').trim().toLowerCase()))
+        next = addUnitCards(next, row.unit.id, fronts)
       }
       return completeDay(endSession(next))
     })
@@ -1019,6 +1028,13 @@ function ReadAtom({ atom, today, state, onGuide, onNext }) {
           }
         >
           {chapterLabel(atom.chapter)}장 읽으러 가기
+        </button>
+      )}
+      {/* 읽기 자료는 1MB쯤이라 지하철 약한 신호에서 못 받을 수 있다. 그때
+          하루가 여기서 멈추면 안 된다 — 오늘은 넘기고, 회독은 기록하지 않는다. */}
+      {!(readDone && quizDone) && (
+        <button className="btn btn--ghost btn--block" onClick={() => onNext()}>
+          오늘은 못 읽음 — 넘기기
         </button>
       )}
     </div>

@@ -1,4 +1,4 @@
-import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
+import { Component, Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import { store } from './lib/store.js'
 import { deckStats, selectDueCards, withProgress } from './lib/srs.js'
 import { filterByLevel } from './lib/level.js'
@@ -252,7 +252,9 @@ export default function App() {
   function commit(mutator) {
     const next = store.update(mutator)
     setState({ ...next })
+    setSaveError(store.lastWriteError)
   }
+  const [saveError, setSaveError] = useState(null)
 
   // 개인 클라우드(Firebase). 설정이 없으면 아무것도 받지 않는다.
   // 켜 두면: 열 때 받아서 병합, 공부하는 동안 몇 초씩 몰아 올리고,
@@ -328,6 +330,16 @@ export default function App() {
 
       <main>
         <div className="container">
+          {saveError && (
+            <div className="notice notice--error" style={{ marginBottom: 'var(--s4)' }}>
+              <span className="notice__icon">!</span>
+              <span>
+                {saveError} Google 로그인으로 클라우드에 백업한 뒤, 브라우저의 이 사이트
+                데이터를 정리하면 다시 저장됩니다.
+              </span>
+            </div>
+          )}
+          <ErrorBoundary key={tab}>
           {tab === 'today' && !showSettings && <BackupNotice
             state={state}
             cloud={cloud}
@@ -435,6 +447,7 @@ export default function App() {
 
           </>
           )}
+          </ErrorBoundary>
         </div>
       </main>
 
@@ -478,21 +491,61 @@ function GuideBar({ state, dueCount, itemId, onBack, onDismiss }) {
     chapter: today.chapter,
   }
   const done = itemDone(item, state.plan, ctx)
-  const stepNo = today.items.findIndex((i) => i.id === itemId) + 1
 
+  // 수업의 읽기 단계에서 리더로 나왔을 때 따라오는 바. 예전 체크리스트의
+  // '오늘 3/3' 번호는 이제 없는 칸을 가리켰다.
   return (
     <div className="guide-bar">
       <span className="guide-bar__text">
-        오늘 {stepNo}/3 · {item.label}
+        수업 중 · {item.label}
       </span>
       <button className={`btn btn--sm${done ? ' btn--primary' : ''}`} onClick={onBack}>
-        {done ? '끝 — 오늘로 ✓' : '오늘로'}
+        {done ? '읽음 ✓ 수업으로' : '수업으로'}
       </button>
       <button className="btn btn--ghost btn--sm" onClick={onDismiss} aria-label="안내 접기">
         ✕
       </button>
     </div>
   )
+}
+
+/**
+ * 화면 하나가 그리다 깨져도 앱 전체가 흰 화면이 되지 않게 한다.
+ * 기록은 저장소에 있으니 안전하다는 것을 먼저 말하고, 다시 그리기와
+ * 새로고침을 준다. 탭을 바꾸면 경계가 새로 시작된다(key={tab}).
+ */
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { error: null }
+  }
+  static getDerivedStateFromError(error) {
+    return { error }
+  }
+  componentDidCatch(error, info) {
+    console.error('화면을 그리다 멈췄습니다', error, info?.componentStack)
+  }
+  render() {
+    if (!this.state.error) return this.props.children
+    return (
+      <div className="empty">
+        <div className="empty__icon">!</div>
+        <div className="empty__title">이 화면을 그리다 멈췄습니다</div>
+        <p className="empty__body">
+          공부한 기록은 저장되어 있습니다. 다시 그려 보고, 그래도 안 되면 새로고침하세요.
+        </p>
+        <p className="hint">{String(this.state.error?.message ?? this.state.error).slice(0, 160)}</p>
+        <div className="row" style={{ justifyContent: 'center' }}>
+          <button className="btn btn--primary" onClick={() => this.setState({ error: null })}>
+            다시 그리기
+          </button>
+          <button className="btn" onClick={() => window.location.reload()}>
+            새로고침
+          </button>
+        </div>
+      </div>
+    )
+  }
 }
 
 /**

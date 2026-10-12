@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import course from '../data/grammar-course.json'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
@@ -381,6 +381,17 @@ function Practice({ unit, onDone, onNext }) {
   const q = items[at]
   const done = at >= items.length
 
+  // 결과 화면에 닿으면 한 번 기록한다. 그리는 도중에 저장하면 React가
+  // 다른 컴포넌트를 갱신한다고 경고하고, 개발 모드에서는 두 번 쌓인다.
+  useEffect(() => {
+    if (!done || saved) return
+    setSaved(true)
+    // 기록은 전체 풀이만 남긴다. 틀린 것만 다시 푼 점수를 적으면
+    // 2문항 만점이 6문항 만점처럼 보인다.
+    if (!subset) onDone?.(score, wrongIdx.map((i) => unit.practice[i]).filter(Boolean))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [done, saved])
+
   function restart(onlyWrong = false) {
     setSubset(onlyWrong ? [...wrongIdx] : null)
     setRound((r) => r + 1)
@@ -393,12 +404,6 @@ function Practice({ unit, onDone, onNext }) {
   }
 
   if (done) {
-    if (!saved) {
-      setSaved(true)
-      // 기록은 전체 풀이만 남긴다. 틀린 것만 다시 푼 점수를 적으면
-      // 2문항 만점이 6문항 만점처럼 보인다.
-      if (!subset) onDone?.(score, wrongIdx.map((i) => unit.practice[i]).filter(Boolean))
-    }
     return (
       <div className="panel stack">
         <div className="row row--between">

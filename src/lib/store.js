@@ -138,6 +138,14 @@ function read() {
     }
   } catch (err) {
     console.error('저장본을 읽지 못했습니다. 기본값으로 시작합니다.', err)
+    // 깨진 저장본을 기본값으로 덮기 전에 따로 떠 둔다 — 다음 변경이
+    // 원본을 덮어쓰면 복구할 길이 없다
+    try {
+      const raw = localStorage.getItem(KEY)
+      if (raw) localStorage.setItem(`${KEY}.broken-${Date.now()}`, raw)
+    } catch {
+      /* 공간이 없으면 뜰 수도 없다 */
+    }
     return structuredClone(DEFAULTS)
   }
 }
@@ -183,9 +191,13 @@ export const store = {
     // 언제 바뀌었는지 — 동기화가 설정처럼 '진행'으로 비교할 수 없는 값을
     // 고를 때 이 시각을 본다
     if (next !== state) next.updatedAt = Date.now()
-    write(next)
+    // 저장에 실패하면(공간 가득 참) 화면은 진도를 보여 주는데 실제로는
+    // 남지 않는다. 실패를 기억해 두고 화면이 알리게 한다.
+    store.lastWriteError = write(next).ok ? null : '저장 공간이 가득 차 방금 한 공부가 저장되지 않았습니다.'
     return next
   },
+
+  lastWriteError: null,
 
   /** 단어 상태(별도 키) — 동기화가 통째로 옮긴다 */
   readWords: readWordStatus,

@@ -96,6 +96,7 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
         <Suspense fallback={<p className="hint">수업을 불러오는 중…</p>}>
           <SessionRunner
             state={state}
+            cards={cards ?? []}
             dueCards={dueCards}
             settings={settings}
             commit={commit}

@@ -231,6 +231,7 @@ function CloudSection({ cloud }) {
 export default function Settings({ cards, settings, stats, commit, onReload, onClose, cloud }) {
   const [msg, setMsg] = useState(null)
   const fileRef = useRef(null)
+  const [limitDraft, setLimitDraft] = useState(String(settings.dailyLimit ?? 20))
 
   function set(key, value) {
     commit((s) => ({ ...s, settings: { ...s.settings, [key]: value } }))
@@ -250,6 +251,7 @@ export default function Settings({ cards, settings, stats, commit, onReload, onC
     a.download = `script-study-backup-${stamp}.json`
     a.click()
     URL.revokeObjectURL(url)
+    onReload()
     setMsg({ kind: 'ok', text: '백업 파일을 저장했습니다.' })
   }
 
@@ -385,11 +387,18 @@ export default function Settings({ cards, settings, stats, commit, onReload, onC
           <input
             className="input"
             type="number"
+            inputMode="numeric"
             min="5"
             max="200"
             step="5"
-            value={settings.dailyLimit}
-            onChange={(e) => set('dailyLimit', Number(e.target.value) || 20)}
+            value={limitDraft}
+            onChange={(e) => setLimitDraft(e.target.value)}
+            onBlur={() => {
+              const n = Math.round(Number(limitDraft))
+              const v = Number.isFinite(n) && n > 0 ? Math.min(200, Math.max(5, n)) : settings.dailyLimit
+              setLimitDraft(String(v))
+              if (v !== settings.dailyLimit) set('dailyLimit', v)
+            }}
           />
           <span className="hint">
             카드가 쌓이면 "오늘 300개"가 떠서 오히려 안 하게 됩니다. 낮은

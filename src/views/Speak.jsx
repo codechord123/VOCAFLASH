@@ -33,7 +33,9 @@ export function TrafficLight({ onPick }) {
  */
 export function ProduceLadder({ task, onGraded, label = '말하기' }) {
   const [stage, setStage] = useState(0)
-  const [picked, setPicked] = useState([])
+  // 고른 것은 섞인 목록의 자리(index)로 기억한다. 글자로 기억하면 같은
+  // 조각이 두 개인 과제에서 하나를 고를 때 둘 다 빠져 조립이 끝나지 않는다.
+  const [pickedIdx, setPickedIdx] = useState([])
   const shuffled = useMemo(() => {
     const out = [...task.chunks]
     for (let i = out.length - 1; i > 0; i -= 1) {
@@ -42,7 +44,8 @@ export function ProduceLadder({ task, onGraded, label = '말하기' }) {
     }
     return out
   }, [task])
-  const remaining = shuffled.filter((c) => !picked.includes(c))
+  const picked = pickedIdx.map((i) => shuffled[i])
+  const remaining = shuffled.map((c, i) => ({ c, i })).filter(({ i }) => !pickedIdx.includes(i))
   const assembled = picked.length === task.chunks.length
   const assembledRight = assembled && picked.every((c, i) => c === task.chunks[i])
 
@@ -62,15 +65,15 @@ export function ProduceLadder({ task, onGraded, label = '말하기' }) {
                 <span className="hint">문장의 뼈대를 순서대로 누르세요</span>
               ) : (
                 picked.map((c, i) => (
-                  <button key={c} className="quiz__piece is-picked"
-                    onClick={() => setPicked(picked.filter((_, j) => j !== i))}>{c}</button>
+                  <button key={pickedIdx[i]} className="quiz__piece is-picked"
+                    onClick={() => setPickedIdx(pickedIdx.filter((_, j) => j !== i))}>{c}</button>
                 ))
               )}
             </div>
             {remaining.length > 0 && (
               <div className="quiz__bank">
-                {remaining.map((c) => (
-                  <button key={c} className="quiz__piece" onClick={() => setPicked([...picked, c])}>{c}</button>
+                {remaining.map(({ c, i }) => (
+                  <button key={i} className="quiz__piece" onClick={() => setPickedIdx([...pickedIdx, i])}>{c}</button>
                 ))}
               </div>
             )}

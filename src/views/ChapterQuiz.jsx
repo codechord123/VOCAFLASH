@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { buildQuiz, orderIsCorrect } from '../lib/quiz.js'
 import { quizLabel } from '../lib/quizlog.js'
 
@@ -26,6 +26,16 @@ export default function ChapterQuiz({ analysis, levels, phrases, record = null, 
     () => (open ? buildQuiz(analysis, { levels, phrases }) : []),
     [open, round, analysis, levels, phrases]
   )
+
+  // 기록은 결과 화면에 닿았을 때 한 번만 — 그리는 도중이 아니라 그린 뒤에.
+  // 아래의 조건부 return들보다 위에 있어야 한다(훅 순서).
+  const finished = open && quiz.length > 0 && at >= quiz.length
+  useEffect(() => {
+    if (!finished || saved) return
+    setSaved(true)
+    onFinish?.({ right: score.right, total: quiz.length, wrong })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished, saved])
 
   if (!analysis) return null
 
@@ -62,6 +72,7 @@ export default function ChapterQuiz({ analysis, levels, phrases, record = null, 
   }
 
   const done = at >= quiz.length
+
   const q = quiz[at]
 
   function reset(nextRound = false) {
@@ -97,12 +108,6 @@ export default function ChapterQuiz({ analysis, levels, phrases, record = null, 
   }
 
   if (done) {
-    // 기록은 결과 화면에 닿았을 때 한 번만 남긴다. 렌더마다 저장하면
-    // 같은 회차가 여러 번 쌓인다.
-    if (!saved) {
-      setSaved(true)
-      onFinish?.({ right: score.right, total: quiz.length, wrong })
-    }
     return (
       <div className="panel stack">
         <div className="row row--between">
