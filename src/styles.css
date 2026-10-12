@@ -21,6 +21,7 @@
 
   /* 액센트 = 노션 오렌지 하이라이트의 후신 */
   --accent: #e8a33d;
+  --accent-text: var(--accent);
   --accent-soft: rgba(232, 163, 61, 0.14);
   --accent-border: rgba(232, 163, 61, 0.35);
   /* 중급 단어의 글자색. 앰버와 구별되되 본문보다 튀지 않는 파랑 */
@@ -81,6 +82,8 @@
     --text-dim: #5f5b55;
     --text-faint: #8d8880;
     --accent: #b3701a;
+    /* 글씨로 쓰는 강조색 — 밝은 바탕에서 #b3701a는 3.8:1이라 작은 글씨에 모자란다 */
+    --accent-text: #6b4310;
     --lv-mid: #3d6d99;
     --accent-soft: rgba(179, 112, 26, 0.1);
     --accent-border: rgba(179, 112, 26, 0.3);
@@ -138,7 +141,7 @@ p { margin: 0 0 var(--s3); }
 p:last-child { margin-bottom: 0; }
 
 a {
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
 }
 a:hover { text-decoration: underline; }
@@ -215,9 +218,9 @@ a:hover { text-decoration: underline; }
   text-overflow: ellipsis;
   flex-shrink: 1;
 }
-.brand__mark { color: var(--accent); }
+.brand__mark { color: var(--accent-text); }
 .brand__sub {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 480;
   color: var(--text-faint);
 }
@@ -299,7 +302,7 @@ a:hover { text-decoration: underline; }
 
 .tab__count {
   margin-left: var(--s2);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;
@@ -313,7 +316,7 @@ a:hover { text-decoration: underline; }
   border-radius: 9px;
   background: var(--accent);
   color: #1a1206;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
@@ -355,7 +358,7 @@ main {
   display: flex;
   align-items: center;
   gap: var(--s3);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 640;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -427,7 +430,7 @@ main {
 }
 .grade__key {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   opacity: 0.6;
   /* 한국어는 어절 단위로만 꺾는다. 안 그러면 '넘기 기'가 된다 */
@@ -503,7 +506,7 @@ main {
   overflow: hidden;
 }
 .read-meter__fill { display: block; height: 100%; background: var(--accent); }
-.read-meter__text { font-size: 11px; color: var(--text-faint); white-space: nowrap; }
+.read-meter__text { font-size: 12px; color: var(--text-faint); white-space: nowrap; }
 
 /* 구문은 한 덩어리라는 것이 보여야 한다. 밑줄이 그 표시다. */
 .ph {
@@ -580,10 +583,10 @@ main {
 }
 .w:hover { background: var(--accent-soft); }
 .w--mid { color: var(--lv-mid); }
-.w--hard { color: var(--accent); }
+.w--hard { color: var(--accent-text); }
 /* 본인 표시가 등급을 이긴다. 읽을수록 화면이 조용해져야 한다. */
 .w--learning {
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 600;
   border-bottom: 1px solid var(--accent-border);
 }
@@ -603,15 +606,15 @@ main {
   border-radius: var(--r1);
   transition: color var(--fast) var(--ease), background var(--fast) var(--ease);
 }
-.star:hover { color: var(--accent); background: var(--accent-soft); }
-.star.is-on { color: var(--accent); }
+.star:hover { color: var(--accent-text); background: var(--accent-soft); }
+.star.is-on { color: var(--accent-text); }
 .line { scroll-margin-top: var(--s6); }
 
 /* ── 입력 ────────────────────────────────────────────────────────── */
 
 .field { display: grid; gap: var(--s2); }
 .label { font-size: 13px; font-weight: 560; color: var(--text-dim); }
-.hint { font-size: 12px; color: var(--text-faint); line-height: 1.5; }
+.hint { font-size: 13px; color: var(--text-faint); line-height: 1.5; }
 
 .input,
 .textarea,
@@ -668,7 +671,7 @@ main {
   font-family: var(--font-ui);
   font-size: 13px;
   font-weight: 660;
-  color: var(--accent);
+  color: var(--accent-text);
   letter-spacing: 0.01em;
 }
 .direction {
@@ -750,7 +753,7 @@ main {
 .meter-row__label {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-faint);
 }
 
@@ -774,8 +777,8 @@ main {
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
 }
-.tile__label { font-size: 12px; color: var(--text-faint); margin-top: var(--s1); }
-.tile--accent .tile__value { color: var(--accent); }
+.tile__label { font-size: 13px; color: var(--text-faint); margin-top: var(--s1); }
+.tile--accent .tile__value { color: var(--accent-text); }
 
 /* 눌러서 그 묶음으로 들어가는 타일. 숫자가 입구라는 게 보여야 한다. */
 .tile--action {
@@ -815,7 +818,7 @@ main {
   -webkit-box-orient: vertical;
 }
 .list__meta {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-faint);
   /* 뜻이 두 줄을 넘으면 목록이 세로로 늘어져 훑기 어렵다 */
   display: -webkit-box;
@@ -832,7 +835,7 @@ main {
   border-radius: var(--r1);
   background: var(--surface-2);
   border: 1px solid var(--border);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 560;
   color: var(--text-dim);
   white-space: nowrap;
@@ -840,7 +843,7 @@ main {
 .chip--accent {
   background: var(--accent-soft);
   border-color: var(--accent-border);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .chip--box { font-family: var(--font-mono); }
 
@@ -866,7 +869,7 @@ main {
   border-radius: 50%;
   border: 2px solid var(--border-strong);
   background: var(--surface);
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 17px;
   font-weight: 700;
   line-height: 1;
@@ -961,7 +964,7 @@ main {
   padding: 0 var(--s2);
   border-bottom: 2px solid var(--accent);
   text-align: center;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .quiz__verdict { font-size: 14px; font-weight: 600; }
@@ -1146,8 +1149,8 @@ main {
   background: var(--surface);
   color: var(--text-faint);
 }
-.umap__no { font-family: var(--font-mono); font-size: 12px; }
-.umap__stage { font-size: 11px; }
+.umap__no { font-family: var(--font-mono); font-size: 13px; }
+.umap__stage { font-size: 12px; }
 .umap__cell.is-learning { border-color: var(--accent-border); color: var(--text-dim); }
 .umap__cell.is-sprout { background: var(--hard-soft); border-color: var(--hard); color: var(--text); }
 .umap__cell.is-grow { background: var(--accent-soft); border-color: var(--accent-border); color: var(--text); }
@@ -1184,10 +1187,10 @@ main {
 }
 .scene__meta {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .scene__line {
   margin: 0;
@@ -1204,7 +1207,7 @@ main {
   display: inline-block;
   margin-left: var(--s2);
   font-size: 13px;
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 700;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -1287,7 +1290,7 @@ main {
   line-height: 1.5;
   color: #f2ede2;
 }
-.quote-card__ko { font-size: 12px; color: #b9b4a6; }
+.quote-card__ko { font-size: 13px; color: #b9b4a6; }
 
 /* ── 오늘 화면의 세 방 — 커리큘럼 · 오답 노트 · 성장 ─────────────── */
 .today-rooms {
@@ -1311,7 +1314,7 @@ main {
 }
 .today-room:hover { background: var(--surface-hover); }
 .today-room:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.today-room__icon { font-size: 18px; color: var(--accent); line-height: 1; }
+.today-room__icon { font-size: 18px; color: var(--accent-text); line-height: 1; }
 
 /* ── 전체 커리큘럼 지도 ──────────────────────────────────────────── */
 .cmap__cycle { padding: var(--s3) var(--s4); }
@@ -1363,7 +1366,7 @@ main {
   flex: none;
   text-align: center;
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
   color: var(--text-dim);
 }
@@ -1374,7 +1377,7 @@ main {
   margin-right: 6px;
   padding: 0 6px;
   border-radius: 4px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--cycle-tint, var(--accent));
   border: 1px solid currentColor;
   vertical-align: 1px;
@@ -1392,7 +1395,7 @@ main {
   font-size: 22px;
   font-variant-numeric: tabular-nums;
 }
-.mnote__stat span { font-size: 12px; color: var(--text-dim); }
+.mnote__stat span { font-size: 13px; color: var(--text-dim); }
 .mnote__stat.is-weak b { color: var(--again); }
 .mnote__stat.is-mid b { color: var(--hard); }
 .mnote__stat.is-done b { color: var(--good); }
@@ -1447,12 +1450,12 @@ main {
   flex-direction: column;
   gap: 2px;
   font-size: 14px;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .mnote__back .hint { text-align: left; }
 .mnote__badge {
   flex: none;
-  font-size: 11px;
+  font-size: 12px;
   padding: 2px 6px;
   border-radius: 4px;
   white-space: nowrap;
@@ -1494,7 +1497,7 @@ main {
 }
 .cloud-steps code {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   padding: 1px 4px;
   border-radius: 4px;
   background: var(--surface-2);
@@ -1505,7 +1508,7 @@ main {
   border-radius: var(--r1);
   background: var(--surface-2);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   overflow-x: auto;
   white-space: pre;
@@ -1532,7 +1535,7 @@ main {
   width: 16px;
   flex: none;
   text-align: center;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* 백업 권유 — 오늘 화면 위 한 줄 */
@@ -1553,7 +1556,7 @@ main {
 /* 유닛 목록의 수업 진도 칩 — SRS 단계는 성장 화면의 유닛 지도와 같은 색 */
 .course-chip { white-space: nowrap; }
 .course-chip.is-stage { color: var(--good); border-color: var(--good); background: var(--good-soft); }
-.course-chip.is-learning { color: var(--accent); border-color: var(--accent-border); background: var(--accent-soft); }
+.course-chip.is-learning { color: var(--accent-text); border-color: var(--accent-border); background: var(--accent-soft); }
 .course-chip.is-ahead { color: var(--text-faint); }
 
 /* ── 아이콘 · 듣기 ───────────────────────────────────────────────── */
@@ -1629,3 +1632,11 @@ main {
   height: 28px;
 }
 .star { font-size: 20px; padding: 2px 4px; }
+
+/* 선 아이콘으로 바뀐 자리들의 정렬 */
+.progress__walker { top: -19px; color: var(--accent-text); display: inline-flex; }
+.today-steps li { align-items: flex-start; }
+.today-steps__icon { margin-top: 2px; }
+.today-room__icon { color: var(--accent-text); }
+.combo-pop .icon,
+.scene__speaker .icon { vertical-align: -0.15em; color: var(--accent); }

@@ -32,14 +32,10 @@ export default function ReadPart({
   if (workId === 'before-sunrise') {
     return (
       <div className="stack">
-        <button
-          className="btn btn--ghost btn--sm"
-          style={{ alignSelf: 'flex-start' }}
-          onClick={() => setWorkId(null)}
-        >
-          ← 작품 목록
-        </button>
+        {/* '작품 목록'은 Read가 챕터 목록 위에만 놓는다 — 챕터 안에서는
+            '챕터 목록' 하나만. 두 줄이 쌓여 본문이 첫 화면 아래로 밀렸다. */}
         <Read
+          onBackToWorks={() => setWorkId(null)}
           chapters={chapters}
           analysis={analysis}
           levels={levels}

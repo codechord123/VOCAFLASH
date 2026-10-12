@@ -1,4 +1,5 @@
 import { Suspense, lazy, useState } from 'react'
+import Icon from './Icon.jsx'
 import GrowthPart from './GrowthPart.jsx'
 import CurriculumMap from './CurriculumMap.jsx'
 import MistakeNote from './MistakeNote.jsx'
@@ -59,15 +60,15 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
   const rooms = (
     <div className="today-rooms">
       <button className="today-room" onClick={() => setRoom('map')}>
-        <span className="today-room__icon">▦</span>
+        <Icon name="map" size={22} className="today-room__icon" />
         <span>전체 커리큘럼</span>
       </button>
       <button className="today-room" onClick={() => setRoom('mistakes')}>
-        <span className="today-room__icon">✎</span>
+        <Icon name="note" size={22} className="today-room__icon" />
         <span>오답 노트</span>
       </button>
       <button className="today-room" onClick={() => setRoom('growth')}>
-        <span className="today-room__icon">↗</span>
+        <Icon name="trend" size={22} className="today-room__icon" />
         <span>성장 기록</span>
       </button>
     </div>
@@ -129,16 +130,16 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
       ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title} — ${['배우기', '되짚기', '내 것으로'][today.step - 1]}`
       : today.items.find((it) => it.id === 'main')?.label ?? DAY_KIND_LABELS[today.kind]
   const steps = [
-    mistakeDue > 0 && { icon: '↺', text: `틀렸던 것 되잡기 ${Math.min(mistakeDue, today.kind === 'milestone' ? 6 : 4)}개` },
+    mistakeDue > 0 && { icon: 'rotate', text: `틀렸던 것 되잡기 ${Math.min(mistakeDue, today.kind === 'milestone' ? 6 : 4)}개` },
     dueReview.length > 0 && {
-      icon: '⟲',
+      icon: 'rotate',
       text: `돌아온 유닛 — ${dueReview.map((u) => unitLabel(u.id)).join(' · ')}`,
     },
-    { icon: '◆', text: mainLine, main: true },
-    { icon: '✦', text: `오늘의 영화 표현 ${today.day === TOTAL_DAYS ? 10 : 5}개` },
-    wordCount > 0 && { icon: '▤', text: `단어 카드 ${wordCount}장` },
+    { icon: 'diamond', text: mainLine, main: true },
+    { icon: 'sparkle', text: `오늘의 영화 표현 ${today.day === TOTAL_DAYS ? 10 : 5}개` },
+    wordCount > 0 && { icon: 'cards', text: `단어 카드 ${wordCount}장` },
     {
-      icon: '❡',
+      icon: 'book',
       text: `${chapterLabel(today.chapter)}장 ${today.kind === 'fluency' ? '재독 — 빠르게' : '회독'}${today.kind === 'milestone' ? ' + 챕터 퀴즈' : ''}`,
     },
   ].filter(Boolean)
@@ -158,7 +159,7 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
               onClick={() => setRoom('map')}
               title="전체 커리큘럼"
             >
-              {today.day} / {TOTAL_DAYS} ↗
+              {today.day} / {TOTAL_DAYS}
             </button>
           </div>
         </div>
@@ -178,7 +179,7 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
         <ol className="today-steps">
           {steps.map((st, i) => (
             <li key={i} className={st.main ? 'is-main' : undefined}>
-              <span className="today-steps__icon">{st.icon}</span>
+              <Icon name={st.icon} size={16} className="today-steps__icon" />
               <span>{st.text}</span>
             </li>
           ))}

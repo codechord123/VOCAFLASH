@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Swipe from './Swipe.jsx'
 import { ProduceLadder, TrafficLight } from './Speak.jsx'
 import ListenButton from './Listen.jsx'
-import Icon from './Icon.jsx'
+import Icon, { Dot } from './Icon.jsx'
 import grammarCourse from '../data/grammar-course.json'
 import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
@@ -330,7 +330,7 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
         <div className="progress progress--walk">
           <div className="progress__bar" style={{ width: `${progress}%` }} />
           <span className="progress__walker" style={{ left: `calc(${progress}% - 9px)` }}>
-            {progress >= 100 ? '🌅' : '🚶'}
+            <Icon name={progress >= 100 ? 'sunrise' : 'walker'} size={16} />
           </span>
         </div>
       </header>
@@ -1206,7 +1206,7 @@ function Recap({ today, session, unitSrs, onFinish }) {
           <p className="scene__line" style={{ fontSize: 22 }}>{grade.title}</p>
           <div className="scene__ko">{grade.line}</div>
           {(session?.bestCombo ?? 0) >= 3 && (
-            <div className="scene__speaker">🔥 최고 {session.bestCombo}연속 정답</div>
+            <div className="scene__speaker"><Icon name="flame" size={14} filled /> 최고 {session.bestCombo}연속 정답</div>
           )}
         </div>
       )}
@@ -1226,11 +1226,11 @@ function Recap({ today, session, unitSrs, onFinish }) {
         )}
         {(session?.speak?.length ?? 0) > 0 && (
           <p style={{ margin: 0 }}>
-            말하기 {session.speak.length}개 — 🟢
-            {session.speak.filter((x) => x.grade === 'green').length} · 🟡
-            {session.speak.filter((x) => x.grade === 'yellow').length} · 🔴
+            말하기 {session.speak.length}개 — <Dot tone="green" />{' '}
+            {session.speak.filter((x) => x.grade === 'green').length} · <Dot tone="yellow" />{' '}
+            {session.speak.filter((x) => x.grade === 'yellow').length} · <Dot tone="red" />{' '}
             {session.speak.filter((x) => x.grade === 'red').length}
-            {session.speak.some((x) => x.grade === 'red') && ' (🔴는 카드로 돌아옵니다)'}
+            {session.speak.some((x) => x.grade === 'red') && " ('못 했다'는 카드로 돌아옵니다)"}
           </p>
         )}
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>

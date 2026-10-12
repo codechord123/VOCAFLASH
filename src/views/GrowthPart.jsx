@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { Dot } from './Icon.jsx'
 import { PLAN_DAYS, TOTAL_DAYS } from '../lib/plan.js'
 import { UNIT_STAGES, ensureUnitSrs } from '../lib/unitSrs.js'
 import { CAN_DO } from '../lib/cando.js'
@@ -30,7 +31,7 @@ function SpeakTrend({ speakLog }) {
   if (rows.length === 0) return null
   return (
     <section className="stack stack--tight">
-      <div className="section-title">말하기 — 🟢 비율이 오르는가</div>
+      <div className="section-title">말하기 — '막힘없이' 비율이 오르는가</div>
       {rows.map(([c, b], i) => {
         const pct = Math.round((b.green / b.total) * 100)
         const prev = i > 0 ? Math.round((rows[i - 1][1].green / rows[i - 1][1].total) * 100) : null
@@ -45,7 +46,7 @@ function SpeakTrend({ speakLog }) {
               />
             </div>
             <span className="hint" style={{ minWidth: 88, textAlign: 'right' }}>
-              🟢 {pct}% ({b.total}개){prev !== null && !thin ? (pct > prev ? ' ↑' : pct < prev ? ' ↓' : '') : ''}
+              <Dot tone="green" /> {pct}% ({b.total}개){prev !== null && !thin ? (pct > prev ? ' ↑' : pct < prev ? ' ↓' : '') : ''}
             </span>
           </div>
         )

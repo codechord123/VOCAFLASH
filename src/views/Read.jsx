@@ -35,7 +35,7 @@ export const SECTIONS = [
   { id: 'background', label: '배경지식' },
 ]
 
-export default function Read({ chapters, analysis: analysisData, levels, dict, phrases, reads, quizLog, cards, commit, initialChapter = null }) {
+export default function Read({ chapters, analysis: analysisData, levels, dict, phrases, reads, quizLog, cards, commit, initialChapter = null, onBackToWorks = null }) {
   // 문법 색인에서 '8장' 칩을 누르면 그 챕터가 바로 열린다.
   const [selected, setSelected] = useState(initialChapter)
   const [section, setSection] = useState('script')
@@ -199,6 +199,12 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
 
   if (selected == null) {
     return (
+      <div className="stack">
+      {onBackToWorks && (
+        <button className="btn btn--ghost btn--sm" style={{ alignSelf: 'flex-start' }} onClick={onBackToWorks}>
+          ← 작품 목록
+        </button>
+      )}
       <ChapterList
         chapters={chapters}
         analysisByChapter={analysisByChapter}
@@ -208,6 +214,7 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
           setSection('script')
         }}
       />
+      </div>
     )
   }
 
@@ -727,7 +734,7 @@ export function VocabSection({ items }) {
                 {v.term}
               </span>
               <span className="row" style={{ gap: 'var(--s2)' }}>
-                <span className="chip" style={{ fontSize: 11 }}>
+                <span className="chip" style={{ fontSize: 12 }}>
                   {v.origin}
                 </span>
                 <span style={{ color: 'var(--text-faint)' }}>

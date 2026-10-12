@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Dot } from './Icon.jsx'
 import course from '../data/grammar-course.json'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
@@ -598,11 +599,11 @@ function Produce({ unit, onSpeak }) {
       <div className="panel stack">
         <h4 style={{ margin: 0 }}>말하기 {grades.length}개</h4>
         <p style={{ margin: 0 }}>
-          🟢 {n('green')} · 🟡 {n('yellow')} · 🔴 {n('red')}
+          <Dot tone="green" /> {n('green')} · <Dot tone="yellow" /> {n('yellow')} · <Dot tone="red" /> {n('red')}
         </p>
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
           {n('red') > 0
-            ? '🔴는 오답 노트에 들어가 카드로 돌아옵니다.'
+            ? "'못 했다'는 오답 노트에 들어가 카드로 돌아옵니다."
             : '자평은 성장 기록의 말하기 추이에 쌓입니다.'}
         </p>
         <button

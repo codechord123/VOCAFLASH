@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Dot } from './Icon.jsx'
 
 // 말하기 부품 — 수업(세션)과 문법 탭이 같은 것을 쓴다.
 // 두 곳이 따로 놀면 한쪽만 좋아지고 다른 쪽은 '봤어요' 버튼으로 남는다.
@@ -10,16 +11,16 @@ import { useMemo, useState } from 'react'
 export function TrafficLight({ onPick }) {
   return (
     <div className="stack stack--tight">
-      <p className="hint" style={{ margin: 0 }}>모범과 비교해서 — 솔직하게. 🔴는 카드가 되어 돌아옵니다.</p>
+      <p className="hint" style={{ margin: 0 }}>모범과 비교해서 — 솔직하게. '못 했다'는 카드가 되어 돌아옵니다.</p>
       <div className="grade-row">
         <button className="btn grade-row__again" onClick={() => onPick('red')}>
-          🔴 못 했다
+          <Dot tone="red" /> 못 했다
         </button>
         <button className="btn" onClick={() => onPick('yellow')}>
-          🟡 버벅였다
+          <Dot tone="yellow" /> 버벅였다
         </button>
         <button className="btn grade-row__good" onClick={() => onPick('green')}>
-          🟢 막힘없이
+          <Dot tone="green" /> 막힘없이
         </button>
       </div>
     </div>

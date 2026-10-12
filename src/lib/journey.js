@@ -24,8 +24,14 @@ export const NIGHT_STOPS = [
 export function nightTint(cycle) {
   const hex = NIGHT_STOPS[cycle - 1]?.tint ?? NIGHT_STOPS[0].tint
   const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16))
+  // 글씨로 쓰는 강조색. 밝은 바탕에서 사이클 색 그대로는 2.0~3.0:1이라
+  // 작은 글씨(4.5:1 필요)가 흐렸다. 밝은 테마에서는 0.6배로 어둡게(5.2:1 이상).
+  const light =
+    typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: light)').matches
+  const dark = (c) => Math.round(c * 0.6).toString(16).padStart(2, '0')
   return {
     '--accent': hex,
+    '--accent-text': light ? `#${dark(r)}${dark(g)}${dark(b)}` : hex,
     '--accent-soft': `rgba(${r}, ${g}, ${b}, 0.14)`,
     '--accent-border': `rgba(${r}, ${g}, ${b}, 0.4)`,
   }
