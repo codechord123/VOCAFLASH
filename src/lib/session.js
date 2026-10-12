@@ -214,38 +214,84 @@ const GRAMMAR_DAY1 = 10
 const PRODUCE_DAY2 = 2
 
 /**
- * 틀린 곳 찾기 — 어제 푼 빈칸 문항에 보기 하나를 끼워 완성된 문장으로
- * 보이고 맞는지 판단하게 한다. 보기가 눈앞에 없으니 규칙을 스스로
- * 꺼내야 한다. 같은 내용, 한 계단 높은 일. 틀리면 원래 빈칸 문항이
- * 오답 카드가 된다(orig).
+ * 틀린 곳 찾기 — 어제 푼 빈칸 문항을 완성된 문장으로 보이고, 틀린
+ * 단어가 있으면 그 단어를 누르게 한다(없으면 '틀린 곳 없음'). 맞다/
+ * 아니다 둘 중 하나였을 때는 찍어도 반은 맞았고, 문항 위의 꼬리표
+ * ('상태를 말하는 동사' 같은)가 답을 알려 줬다. 이제 꼬리표는 답한
+ * 뒤에만 보이고, 어디가 틀렸는지까지 짚어야 맞는다. 틀리면 원래
+ * 빈칸 문항이 오답 카드가 된다(orig).
  */
+// 다른 보기를 끼워도 영어로 틀린 문장이 아닌 문항 — 덜 공손하거나
+// 덜 자연스러울 뿐이다(Can you tell me…? / I'll wait in the station).
+// 이런 문항을 '틀렸다'고 가르치면 거짓을 가르치게 되므로, 틀린 곳
+// 찾기에서는 언제나 맞는 문장으로만 낸다. 키는 '유닛:연습 번호'.
+const SPOT_SOFT = new Set([
+  'g-01:0', 'g-01:3', 'g-01:5', 'g-01:6', 'g-01:8',
+  'g-02:2', 'g-02:9',
+  'g-03:0', 'g-03:1', 'g-03:2', 'g-03:3', 'g-03:6', 'g-03:7', 'g-03:8',
+  'g-04:0', 'g-04:3', 'g-04:6',
+  'g-05:8', // It's a beautiful night, is it? — 놀람을 담은 같은 극성 꼬리도 있다
+  'g-06:0', 'g-06:2', 'g-06:3', 'g-06:4', 'g-06:6', 'g-06:7', 'g-06:9',
+  'g-10:5', 'g-11:3', 'g-12:2', 'g-12:3',
+])
+
+/** 빈칸에 보기를 끼운 문장과, 끼운 자리에 걸친 낱말 번호들. */
+export function fillBlank(sentence, fill) {
+  const [pre, post = ''] = sentence.split('___')
+  // '-'는 아무것도 안 붙이는 보기, 'll·'ve 같은 줄임은 앞 낱말에 붙인다
+  const word = fill === '-' ? '' : fill
+  const head = !word || word.startsWith("'") ? pre.replace(/\s+$/, '') : pre
+  const raw = head + word + post
+  const lead = raw.length - raw.trimStart().length
+  const trimmed = raw.trim()
+  // 문장 첫머리를 비웠으면 다음 낱말이 첫 글자가 된다
+  const text = trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
+  const from = head.length - lead
+  const to = from + word.length
+  const tokens = []
+  const re = /\S+/g
+  let m
+  while ((m = re.exec(text))) tokens.push({ t: m[0], a: m.index, b: m.index + m[0].length })
+  const span = []
+  tokens.forEach((k, i) => {
+    // 낱말을 끼웠으면 그 자리에 걸친 낱말, 아무것도 안 붙였으면 빈 자리의 양옆
+    const hit = word ? k.a < to && k.b > from : k.b === from || k.a === from || k.a === from + 1
+    if (hit) span.push(i)
+  })
+  return { text, tokens: tokens.map((k) => k.t), span }
+}
+
 function spotAtoms(u, day, n) {
+  const seen = new Set()
   const pool = u.practice
     .slice(0, GRAMMAR_DAY1)
-    .filter((q) => q.kind === 'choice' && q.sentence?.includes('___') && q.choices?.length >= 2)
+    .map((q, i) => ({ q, key: `${u.id}:${i}` }))
+    .filter(({ q }) => q.kind === 'choice' && q.sentence?.includes('___') && q.choices?.length >= 2)
+    // 같은 문장이 두 번 실린 유닛이 있다(치환 문항) — 한 번만
+    .filter(({ q }) => !seen.has(q.sentence) && seen.add(q.sentence))
   return seededShuffle(pool, day + 5)
     .slice(0, n)
-    .map((q, i) => {
-      // 다섯 중 셋쯤은 틀린 문장 — 다 맞는 문장이면 '맞다'만 누르게 된다
+    .map(({ q, key }, i) => {
       const wrongs = q.choices.filter((c) => c !== q.answer)
-      const isRight = (day + i * 7) % 5 >= 3 || wrongs.length === 0
+      // 다섯 중 셋쯤은 틀린 문장 — 다 맞는 문장이면 '틀린 곳 없음'만 누르게 된다
+      const isRight = SPOT_SOFT.has(key) || wrongs.length === 0 || (day + i * 7) % 5 >= 3
       const fill = isRight ? q.answer : wrongs[(day + i) % wrongs.length]
-      const shown = (fill === '-' ? '' : fill)
-      const sentence = q.sentence.replace('___', shown).replace(/\s{2,}/g, ' ').replace(/\s+([.,?!])/g, '$1')
-      const show = (c) => (c === '-' ? '(아무것도 안 붙임)' : `'${c}'`)
+      const shown = fillBlank(q.sentence, fill)
+      const fixed = fillBlank(q.sentence, q.answer)
       return {
-        type: 'quiz-choice',
+        type: 'quiz-spot',
         source: 'grammar',
-        spot: true,
         unit: u,
         orig: q,
         q: {
-          q: q.q ? `${q.q} — 이 문장, 맞을까?` : '이 문장, 맞을까?',
-          sentence,
-          choices: ['맞다', '아니다'],
-          answer: isRight ? '맞다' : '아니다',
-          // 조사(가/이)가 영어 단어 끝소리에 따라 갈려서 화살표로 쓴다
-          why: isRight ? `맞는 문장이다. ${q.why ?? ''}` : `틀린 자리 — ${show(fill)} → ${show(q.answer)}. ${q.why ?? ''}`,
+          text: shown.text,
+          tokens: shown.tokens,
+          span: isRight ? [] : shown.span,
+          fixed: fixed.text,
+          fixedSpan: fixed.span,
+          isRight,
+          label: q.q ?? null,
+          why: q.why ?? '',
         },
       }
     })
@@ -519,7 +565,7 @@ export const REWINDABLE = new Set([
 // 원자별 대략의 소요(초) — 남은 시간 어림에 쓴다. 지하철에서 '다음 역까지
 // 끝낼 수 있나'를 가늠하는 용도라 정밀할 필요는 없다.
 const ATOM_SECS = {
-  'scene-open': 20, expr: 20, warmup: 25,
+  'scene-open': 20, expr: 20, warmup: 25, 'quiz-spot': 35,
   'review-head': 10, 'test-head': 10, 'fluency-head': 10, 'produce-head': 10, 'milestone-head': 10,
   anchor: 30, rule: 30, points: 40, example: 25, recall: 40,
   'quiz-choice': 25, 'quiz-listen': 25, 'quiz-order': 35,

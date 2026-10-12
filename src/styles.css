@@ -1640,3 +1640,33 @@ main {
 .today-room__icon { color: var(--accent-text); }
 .combo-pop .icon,
 .scene__speaker .icon { vertical-align: -0.15em; color: var(--accent); }
+
+/* 틀린 곳 찾기 — 문장의 낱말 하나하나가 누를 수 있는 자리다.
+   글줄로 읽혀야 해서 버튼 테두리는 숨기고, 누를 수 있다는 건 옅은
+   밑줄로만 알린다. 손가락이 닿는 높이는 44px을 지킨다. */
+.spot__line {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2px;
+  row-gap: 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+.spot__word {
+  font: inherit;
+  color: var(--text);
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  min-height: 44px;
+  padding: 0 4px;
+  text-decoration: underline dotted var(--border-strong, var(--border));
+  text-underline-offset: 6px;
+  cursor: pointer;
+}
+.spot__word:hover:not(:disabled) { background: var(--accent-soft); }
+.spot__word:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.spot__word:disabled { cursor: default; text-decoration: none; }
+.spot__word.is-wrong-word { background: var(--again-soft); color: var(--again); text-decoration: line-through; }
+.spot__word.is-picked-miss { outline: 2px dashed var(--border-strong, var(--border)); }
+.spot__fix { color: var(--accent-text); }

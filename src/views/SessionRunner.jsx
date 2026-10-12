@@ -183,7 +183,8 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
   function next(opts = {}) {
     // 문항을 틀리면 그 문항이 뒤에 다시 줄을 선다. 재도전에서 또 틀려도
     // 다시 줄을 선다 — 맞혀야 하루가 닫힌다.
-    const isQuiz = atom.type === 'quiz-choice' || atom.type === 'quiz-order' || atom.type === 'quiz-listen'
+    const isQuiz =
+      atom.type === 'quiz-choice' || atom.type === 'quiz-order' || atom.type === 'quiz-listen' || atom.type === 'quiz-spot'
     if (opts.correct === false && isQuiz) {
       const baseIdx = atom.retry ? atom.baseIdx : idx < swipeIdx ? idx : null
       if (baseIdx != null) opts = { ...opts, retryIdx: baseIdx }
@@ -408,6 +409,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
       return <Example example={atom.example} onNext={onNext} />
     case 'quiz-choice':
       return <QuizChoice atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
+    case 'quiz-spot':
+      return <SpotQuiz atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
     case 'quiz-listen':
       return <ListenQuiz atom={atom} combo={session?.combo ?? 0} onNext={onNext} />
     case 'quiz-order':
@@ -793,6 +796,91 @@ function Example({ example, onNext }) {
         {example.from && <span className="chip">{example.from}</span>}
       </div>
       <button className="btn btn--primary btn--block" onClick={() => onNext()}>다음</button>
+    </div>
+  )
+}
+
+/**
+ * 틀린 곳 찾기 — 문장 속 틀린 낱말을 누르거나, 없으면 '틀린 곳 없음'.
+ * 어디가 틀렸는지까지 짚어야 맞는다. 답한 뒤에 고친 문장과 이 문항의
+ * 꼬리표(상황·규칙 이름)를 보여 준다 — 먼저 보이면 답을 알려 주는 셈이다.
+ */
+function SpotQuiz({ atom, combo = 0, onNext }) {
+  const { q } = atom
+  const [picked, setPicked] = useState(null) // 낱말 번호 | 'none'
+  const done = picked !== null
+  const correct = done && (q.isRight ? picked === 'none' : picked !== 'none' && q.span.includes(picked))
+  const wrongRef = {
+    source: 'grammar',
+    unitId: atom.unit.id,
+    qIndex: atom.unit.practice.indexOf(atom.orig),
+    gateId: null,
+  }
+  const fixedWords = q.fixed.split(' ')
+  return (
+    <div className="stack">
+      {atom.retry ? (
+        <span className="chip" style={{ alignSelf: 'flex-start' }}>다시 — 아까 틀린 것</span>
+      ) : (
+        <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>틀린 곳 찾기</span>
+      )}
+      <div className="section-title">틀린 낱말이 있으면 누르세요</div>
+      <div className="panel">
+        <p className="read spot__line" style={{ margin: 0 }}>
+          {q.tokens.map((t, i) => {
+            const cls = !done
+              ? ''
+              : q.span.includes(i)
+                ? ' is-wrong-word'
+                : picked === i
+                  ? ' is-picked-miss'
+                  : ''
+            return (
+              <button
+                key={i}
+                className={`spot__word${cls}`}
+                disabled={done}
+                onClick={() => setPicked(i)}
+              >
+                {t}
+              </button>
+            )
+          })}
+        </p>
+      </div>
+      {!done && (
+        <button className="btn btn--block" onClick={() => setPicked('none')}>
+          틀린 곳 없음
+        </button>
+      )}
+      {done && (
+        <div className="stack stack--tight">
+          <div className={correct ? 'quiz__verdict is-right' : 'quiz__verdict is-wrong'}>
+            {correct ? (q.isRight ? '맞습니다 — 틀린 곳 없는 문장' : '맞습니다 — 거기가 틀렸습니다') : q.isRight ? '이 문장은 맞는 문장입니다' : '틀린 곳은 표시한 자리입니다'}
+            <ComboTag combo={combo} correct={correct} />
+          </div>
+          {!q.isRight && (
+            <p className="read" style={{ margin: 0, fontSize: 16 }}>
+              {fixedWords.map((w, i) => (
+                <span key={i}>
+                  {i > 0 && ' '}
+                  {q.fixedSpan.includes(i) ? <b className="spot__fix">{w}</b> : w}
+                </span>
+              ))}
+            </p>
+          )}
+          <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+            {q.label && <b>{q.label.replace(/^치환 — /, '')} · </b>}
+            {q.why}
+          </p>
+          <button
+            className="btn btn--primary btn--block"
+            onClick={() => onNext({ correct, wrongRef: correct ? null : wrongRef })}
+          >
+            다음
+          </button>
+        </div>
+      )}
     </div>
   )
 }
