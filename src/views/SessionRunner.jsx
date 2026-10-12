@@ -22,6 +22,7 @@ import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSp
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
 import { NIGHT_STOPS, sessionGrade } from '../lib/journey.js'
 import { exprFlip, firstLetters, koToEnClue } from '../lib/clue.js'
+import { candoEvidence } from '../lib/cando.js'
 
 // 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
 //
@@ -320,14 +321,15 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
   return (
     <div className="stack stack--loose">
       <header className="stack stack--tight">
-        <div className="row row--between">
-          <span className="hint">
-            {today.day}일차 수업 · {idx + 1}/{atoms.length}
+        <div className="row row--between" style={{ flexWrap: 'nowrap' }}>
+          <span className="hint" style={{ flex: 1, minWidth: 0, textAlign: 'left' }}>
+            {today.day}일차 · {idx + 1}/{atoms.length}
             {/* 틀린 문항이 뒤에 줄을 서면 전체 수가 늘어난다 — 왜 늘었는지 보여 준다 */}
             {(session?.retries?.length ?? 0) > 0 && ` · 다시 ${session.retries.length}`}
-            {` · 남은 약 ${minsLeft}분`}
+            {' · '}
+            <span style={{ whiteSpace: 'nowrap' }}>약 {minsLeft}분 남음</span>
           </span>
-          <div className="row" style={{ gap: 'var(--s1)' }}>
+          <div className="row" style={{ gap: 'var(--s1)', flexWrap: 'nowrap', flexShrink: 0 }}>
             {canRewind && (
               <button
                 className="btn btn--ghost btn--sm"
@@ -1189,6 +1191,12 @@ function CandoCheck({ atom, state, commit, onNext }) {
   const saved = state.plan?.cando?.[cando.day]?.checks
   const [checks, setChecks] = useState(() => saved ?? cando.items.map(() => null))
   const answered = checks.every((c) => c !== null)
+  const ev = candoEvidence(
+    { plan: state.plan, speakLog: state.speakLog ?? [], sessionSpeak: state.plan?.session?.speak ?? [] },
+    cando.day
+  )
+  // 기록이 약한데 전부 '할 수 있다'면 한 번 더 생각해 보라고만 말한다
+  const weak = (ev.gate && ev.gate.pct < 70) || (ev.speak && ev.speak.pct < 40)
 
   function save() {
     commit((s) => ({
@@ -1213,6 +1221,32 @@ function CandoCheck({ atom, state, commit, onNext }) {
           '아직'이라고 답한 것이 다음 복습의 재료가 됩니다.
         </p>
       </div>
+      {(ev.gate || ev.speak) && (
+        <div className="panel stack stack--tight">
+          <div className="section-title" style={{ margin: 0 }}>
+            고르기 전에 — {ev.from}~{cando.day}일차의 기록
+          </div>
+          <div className="mnote__stats">
+            {ev.gate && (
+              <div className={`mnote__stat ${ev.gate.pct >= 80 ? 'is-done' : ev.gate.pct >= 60 ? 'is-mid' : 'is-weak'}`}>
+                <b>{ev.gate.pct}%</b>
+                <span>관문 시험 {ev.gate.count}회</span>
+              </div>
+            )}
+            {ev.speak && (
+              <div className={`mnote__stat ${ev.speak.pct >= 60 ? 'is-done' : ev.speak.pct >= 40 ? 'is-mid' : 'is-weak'}`}>
+                <b>{ev.speak.pct}%</b>
+                <span>말하기 막힘없이 ({ev.speak.count}개 중)</span>
+              </div>
+            )}
+          </div>
+          {weak && checks.every((c) => c === true) && (
+            <p className="hint" style={{ margin: 0, textAlign: 'left' }}>
+              기록은 아직 흔들린다고 말합니다. 그래도 할 수 있다면 그대로 두세요 — 판정은 본인 몫입니다.
+            </p>
+          )}
+        </div>
+      )}
       {cando.items.map((it, i) => (
         <div className="panel stack stack--tight" key={i} style={{ padding: 'var(--s3) var(--s4)' }}>
           <p style={{ margin: 0, fontSize: 14 }}>{it}</p>

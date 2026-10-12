@@ -42,3 +42,26 @@ export const CAN_DO = [
     ],
   },
 ]
+
+/**
+ * can-do 점검의 근거 — 그 부(部) 동안 쌓인 기록.
+ *
+ * 자기 판단만으로 '할 수 있다'를 고르면 기분이 기록된다. 옆에 관문 성적과
+ * 말하기 '막힘없이' 비율을 같이 놓으면, 판단이 기록과 어긋날 때 스스로
+ * 알아챈다. 판정은 여전히 본인이 한다 — 근거는 거울이지 채점관이 아니다.
+ */
+export function candoEvidence({ plan, speakLog = [], sessionSpeak = [] }, day) {
+  const i = CAN_DO.findIndex((c) => c.day === day)
+  const from = i > 0 ? CAN_DO[i - 1].day : 0
+  const inPhase = (d) => d > from && d <= day
+  const gates = Object.values(plan?.gates ?? {}).filter((g) => inPhase(g.day))
+  const gRight = gates.reduce((n, g) => n + g.right, 0)
+  const gTotal = gates.reduce((n, g) => n + g.total, 0)
+  const speak = [...speakLog.filter((x) => inPhase(x.day)), ...sessionSpeak]
+  const green = speak.filter((x) => x.grade === 'green').length
+  return {
+    from: from + 1,
+    gate: gTotal ? { pct: Math.round((gRight / gTotal) * 100), count: gates.length } : null,
+    speak: speak.length ? { pct: Math.round((green / speak.length) * 100), count: speak.length } : null,
+  }
+}
