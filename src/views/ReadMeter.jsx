@@ -10,7 +10,7 @@ import { READ_GOAL, lastReadLabel, secsLabel } from '../lib/reads.js'
 // 거짓이 되고, 거짓인 숫자는 아무도 안 본다.
 
 /** 목록 한 줄에 들어가는 막대. 아직 한 번도 안 봤으면 아무것도 안 그린다. */
-export function ReadMeter({ read }) {
+export function ReadMeter({ read, goal = READ_GOAL }) {
   if (!read?.count) return null
   const label = lastReadLabel(read.lastAt)
   return (
@@ -18,11 +18,11 @@ export function ReadMeter({ read }) {
       <span className="read-meter__bar">
         <span
           className="read-meter__fill"
-          style={{ width: `${Math.min(100, (read.count / READ_GOAL) * 100)}%` }}
+          style={{ width: `${Math.min(100, (read.count / goal) * 100)}%` }}
         />
       </span>
       <span className="read-meter__text">
-        {read.count}/{READ_GOAL}회독{label ? ` · ${label}` : ''}
+        {read.count}/{goal}회독{label ? ` · ${label}` : ''}
       </span>
     </span>
   )
@@ -33,10 +33,10 @@ export function ReadMeter({ read }) {
  *
  * @param unit  '회독' 대신 다른 말을 쓰고 싶을 때(구문독해는 '회차')
  */
-export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽음', timerKey = null }) {
+export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽음', timerKey = null, goal = READ_GOAL, goalNote = null }) {
   const label = lastReadLabel(read?.lastAt)
   const count = read?.count ?? 0
-  const done = count >= READ_GOAL
+  const done = count >= goal
   // 읽기 속도 — 챕터를 연 시점부터 읽음을 누를 때까지. timerKey(챕터)가
   // 바뀌면 다시 잰다. 속도는 유창성의 지표라 기록으로 남긴다.
   const startRef = useRef(Date.now())
@@ -57,11 +57,12 @@ export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽
       <div className="row row--between">
         <span className="list__main">
           <span className="list__title">
-            {count}/{READ_GOAL}
+            {count}/{goal}
             {unit}
             {done ? ' — 목표 달성' : ''}
           </span>
           <span className="list__meta">
+            {goalNote ? `${goalNote} · ` : ''}
             {label ? `마지막으로 공부한 날 · ${label}` : `아직 ${verb} 표시를 하지 않았습니다`}
             {lastSpeed ? ` · 지난 속도 ${lastSpeed}` : ''}
           </span>
@@ -85,7 +86,7 @@ export function ReadTracker({ read, onMark, onUndo, unit = '회독', verb = '읽
       <div className="progress" style={{ marginTop: 'var(--s2)' }}>
         <div
           className="progress__bar"
-          style={{ width: `${Math.min(100, (count / READ_GOAL) * 100)}%` }}
+          style={{ width: `${Math.min(100, (count / goal) * 100)}%` }}
         />
       </div>
     </div>

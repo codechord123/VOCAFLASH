@@ -8,6 +8,7 @@ import unitData from '../data/curriculum/units.json'
 import unitQuizData from '../data/curriculum/unit-quiz.json'
 import gateData from '../data/gate-quiz.json'
 import midexpData from '../data/midexp.json'
+import sceneLines from '../data/scene-lines.json'
 
 // 구문 관문 문항을 quizId로 바로 찾기 위한 평탄 목록
 const GATE_SYNTAX_ALL = Object.values(gateData.syntax).flat()
@@ -115,10 +116,20 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
     const chapterAnchors = unitData.units
       .flatMap((x) => x.anchors ?? [])
       .filter((a) => a.chapter === Math.floor(today.chapter))
-    const scene =
-      chapterAnchors.length > 0
-        ? chapterAnchors[(day * 13 + 7) % chapterAnchors.length]
-        : null
+    // 그 챕터에 앵커 대사가 없으면 해설 자료에서 뽑아 둔 후보로, 그것도
+    // 없으면 오늘 유닛(없으면 전체)의 대사로 — 첫 화면이 비는 날이 없게.
+    // 예전에는 100일 중 40일이 장면 없이 시작했다.
+    const fallback = sceneLines[String(Math.floor(today.chapter))] ?? []
+    const unitAnchors =
+      u?.kind === 'syntax' ? unitData.units.find((x) => x.unitId === u.id)?.anchors ?? [] : []
+    const pool = chapterAnchors.length
+      ? chapterAnchors
+      : fallback.length
+        ? fallback
+        : unitAnchors.length
+          ? unitAnchors
+          : unitData.units.flatMap((x) => x.anchors ?? [])
+    const scene = pool.length ? pool[(day * 13 + 7) % pool.length] : null
     return compileSession(day, {
       unitData: source,
       quizzes: unitQuizData.quizzes,

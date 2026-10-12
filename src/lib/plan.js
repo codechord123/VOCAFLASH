@@ -42,6 +42,17 @@ export function unitCourseStatus(plan, unitId) {
   return { tone: 'ahead', label: `${first}일차`, day: first }
 }
 
+/**
+ * 100일 계획에서 그 챕터를 읽게 되는 횟수. 회독 목표로 쓴다 — 예전에는
+ * 챕터마다 '20회독'을 보였는데 계획상으로는 3~7번이라, 100일을 다 마쳐도
+ * 막대가 20%대에 머물렀다.
+ */
+const PLANNED_READS = {}
+for (const r of planData.days) PLANNED_READS[r.chapter] = (PLANNED_READS[r.chapter] ?? 0) + 1
+export function plannedReads(chapter) {
+  return PLANNED_READS[Number(chapter)] ?? PLANNED_READS[chapter] ?? 0
+}
+
 /** 유닛 id를 사람이 읽는 이름으로. 표에 있는 유닛만 안다. */
 export function unitLabel(id) {
   const u = UNIT_INFO[id]

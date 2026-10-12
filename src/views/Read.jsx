@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { plannedReads } from '../lib/plan.js'
 import ListenButton from './Listen.jsx'
 import { removeCard } from '../lib/store.js'
 import { COLOR_LABELS } from '../lib/deck.js'
@@ -332,6 +333,8 @@ export default function Read({ chapters, analysis: analysisData, levels, dict, p
         onMark={(secs) => commit((s) => markRead(s, 'before-sunrise', selected, secs))}
         onUndo={() => commit((s) => undoRead(s, 'before-sunrise', selected))}
         timerKey={selected}
+        goal={plannedReads(selected) || READ_GOAL}
+        goalNote={plannedReads(selected) ? `100일 계획 ${plannedReads(selected)}회` : null}
       />
 
       {/* 퀴즈도 회독 표시와 같은 자리다 — 다 읽고 나서 하는 것.
@@ -405,7 +408,7 @@ function ChapterList({ chapters, analysisByChapter, reads, onSelect }) {
                   {c.lines.length}줄 · 하이라이트 {c.highlights.length}개
                   {analysisByChapter.has(c.number) ? ' · 구문 정리 있음' : ''}
                 </span>
-                <ReadMeter read={readOf(reads, 'before-sunrise', c.number)} />
+                <ReadMeter read={readOf(reads, 'before-sunrise', c.number)} goal={plannedReads(c.number) || READ_GOAL} />
               </span>
               <span style={{ color: 'var(--text-faint)' }}>→</span>
             </button>
