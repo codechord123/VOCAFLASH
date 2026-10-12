@@ -7,6 +7,8 @@
 // localStorage는 브라우저를 지우면 날아간다. 그래서 내보내기/불러오기가
 // 선택 기능이 아니라 필수다. exportAll()이 유일한 백업 수단이다.
 
+import { mergeStates, mergeWords, sameState } from './merge.js'
+
 const KEY = 'script-study.v1'
 // 단어 상태는 words.js가 이 키로 따로 쓴다. 백업에 같이 담아야 해서
 // 여기서도 이름을 안다 — 값을 만지지는 않고 통째로 옮기기만 한다.
@@ -37,16 +39,6 @@ function mergeWordStatus(incoming) {
     console.error('단어 상태 복원 실패', err)
   }
   return added
-}
-
-/** 회독 병합. 같은 챕터는 더 많이 읽은 쪽을 남긴다. */
-function mergeReads(mine = {}, incoming = {}) {
-  const out = { ...mine }
-  for (const [key, rec] of Object.entries(incoming)) {
-    const cur = out[key]
-    if (!cur || (rec?.count ?? 0) > (cur.count ?? 0)) out[key] = rec
-  }
-  return out
 }
 
 const DEFAULTS = {
@@ -163,8 +155,21 @@ export const store = {
   update(mutator) {
     const state = read()
     const next = mutator(state) ?? state
+    // 언제 바뀌었는지 — 동기화가 설정처럼 '진행'으로 비교할 수 없는 값을
+    // 고를 때 이 시각을 본다
+    if (next !== state) next.updatedAt = Date.now()
     write(next)
     return next
+  },
+
+  /** 단어 상태(별도 키) — 동기화가 통째로 옮긴다 */
+  readWords: readWordStatus,
+  writeWords(words) {
+    try {
+      localStorage.setItem(WORD_KEY, JSON.stringify(words ?? {}))
+    } catch (err) {
+      console.error('단어 상태 저장 실패', err)
+    }
   },
 
   /**
@@ -209,56 +214,39 @@ export const store = {
       return { added: incoming.cards.length, kept: 0, replaced: true }
     }
 
+    // 병합은 동기화와 같은 함수를 쓴다(merge.js). 예전에는 여기서 로그를
+    // 그냥 이어 붙여서, 같은 백업을 두 번 불러오면 복습 기록이 두 배가 됐다.
     const state = read()
-    const incomingState = migrate(incoming)
-    const byId = new Map(state.cards.map((c) => [c.id, c]))
-    let added = 0
-
-    for (const card of incomingState.cards) {
-      if (!byId.has(card.id)) {
-        byId.set(card.id, card)
-        added += 1
-      }
-    }
-
-    // 진행은 더 많이 진행된 쪽을 남긴다. 백업을 불러왔다고 오늘까지
-    // 쌓은 복습이 뒤로 밀리면 안 된다.
-    const progress = { ...state.progress }
-    let updated = 0
-    for (const [id, p] of Object.entries(incomingState.progress ?? {})) {
-      const mine = progress[id]
-      if (!mine || (p.reviewCount ?? 0) > (mine.reviewCount ?? 0)) {
-        progress[id] = p
-        updated += 1
-      }
-    }
-
-    const next = {
-      ...state,
-      cards: [...byId.values()],
-      progress,
-      // 회독은 진행 기록이라 병합해야 한다. 예전에는 현재 상태를 그대로
-      // 펼치기만 해서, 백업을 불러와도 스무 번 읽은 기록이 통째로
-      // 사라졌다 — 없어진 줄도 모르는 종류의 손실이다.
-      reads: mergeReads(state.reads, incoming.reads),
-      // 커리큘럼 일차는 더 멀리 간 쪽을 남긴다. 이력은 합친다.
-      // 유닛 복습 궤도와 관문 성적도 병합해야 한다 — 예전에는 day만 남기고
-      // 통째로 새로 지어서, 백업을 불러오면 궤도가 사라졌다.
-      plan: {
-        ...(incoming.plan ?? {}),
-        ...(state.plan ?? {}),
-        day: Math.max(state.plan?.day ?? 1, incoming.plan?.day ?? 1),
-        checks: state.plan?.checks ?? {},
-        history: { ...(incoming.plan?.history ?? {}), ...(state.plan?.history ?? {}) },
-        unitSrs: { ...(incoming.plan?.unitSrs ?? {}), ...(state.plan?.unitSrs ?? {}) },
-        gates: { ...(incoming.plan?.gates ?? {}), ...(state.plan?.gates ?? {}) },
-      },
-      speakLog: [...(state.speakLog ?? []), ...(incoming.speakLog ?? [])].slice(-300),
-      reviewLog: [...state.reviewLog, ...(incoming.reviewLog ?? [])],
-    }
+    const incomingState = { ...structuredClone(DEFAULTS), ...migrate(incoming) }
+    delete incomingState.wordStatus
+    delete incomingState.exportedAt
+    const before = new Set(state.cards.map((c) => c.id))
+    const next = mergeStates(state, incomingState)
     write(next)
+    const added = next.cards.filter((c) => !before.has(c.id)).length
+    const updated = Object.entries(next.progress).filter(
+      ([id, p]) => p !== state.progress?.[id]
+    ).length
     const words = mergeWordStatus(incoming.wordStatus)
     return { added, updated, words, replaced: false }
+  },
+
+  /**
+   * 클라우드에서 받은 저장본을 지금 것과 병합해 저장한다.
+   * 바뀐 것이 있으면 병합본을, 없으면 null을 돌려준다.
+   */
+  mergeRemote(remote, remoteWords) {
+    const state = read()
+    const remoteState = remote ? { ...structuredClone(DEFAULTS), ...migrate(remote) } : null
+    const next = remoteState ? mergeStates(state, remoteState) : state
+    const remoteNewer = (remote?.updatedAt ?? 0) > (state.updatedAt ?? 0)
+    const words = mergeWords(readWordStatus(), remoteWords ?? {}, remoteNewer)
+    const changed = !sameState(next, state) || !sameState(words, readWordStatus())
+    if (changed) {
+      write(next)
+      store.writeWords(words)
+    }
+    return { state: next, words, changed }
   },
 
   /** 시드를 한 번만 가져오기 위한 표시. */

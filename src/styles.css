@@ -1460,3 +1460,53 @@ main {
 .mnote__badge.is-weak { color: var(--again); background: var(--again-soft); }
 .mnote__badge.is-mid { color: var(--hard); background: var(--hard-soft); }
 .mnote__badge.is-done { color: var(--good); background: var(--good-soft); }
+
+/* ── 클라우드 동기화 ──────────────────────────────────────────────── */
+.tab--icon { position: relative; }
+.cloud-dot {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-faint);
+}
+.cloud-dot--lg { position: static; width: 10px; height: 10px; flex: none; }
+.cloud-dot.is-synced { background: var(--good); }
+.cloud-dot.is-syncing,
+.cloud-dot.is-starting { background: var(--hard); }
+.cloud-dot.is-error,
+.cloud-dot.is-signed-out { background: var(--again); }
+@media (prefers-reduced-motion: no-preference) {
+  .cloud-dot.is-syncing { animation: cloud-pulse 1s ease-in-out infinite; }
+  @keyframes cloud-pulse { 50% { opacity: 0.35; } }
+}
+.cloud-steps summary { cursor: pointer; font-weight: 600; }
+.cloud-steps ol {
+  margin: var(--s2) 0 0;
+  padding-left: 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.cloud-steps code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: var(--surface-2);
+}
+.cloud-rules {
+  margin: 0;
+  padding: var(--s3);
+  border-radius: var(--r1);
+  background: var(--surface-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+}

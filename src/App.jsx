@@ -77,6 +77,13 @@ function recoverFromStaleChunk(err) {
 }
 
 import { dayPlan, itemDone } from './lib/plan.js'
+import {
+  getStatus as getCloudStatus,
+  scheduleSync,
+  startCloud,
+  subscribe as subscribeCloud,
+  syncNow,
+} from './lib/cloud.js'
 import VocabPart from './views/VocabPart.jsx'
 import TodayPart from './views/TodayPart.jsx'
 // 읽기와 구문독해는 탭을 눌렀을 때 받는다.
@@ -239,6 +246,24 @@ export default function App() {
     setState({ ...next })
   }
 
+  // 개인 클라우드(Firebase). 설정이 없으면 아무것도 받지 않는다.
+  // 켜 두면: 열 때 받아서 병합, 공부하는 동안 몇 초씩 몰아 올리고,
+  // 앱을 내리거나(지하철에서 화면을 끄거나) 다시 열 때 한 번 더 맞춘다.
+  const [cloud, setCloud] = useState(getCloudStatus)
+  useEffect(() => {
+    const off = subscribeCloud(setCloud)
+    startCloud((merged) => setState({ ...merged }))
+    const onVis = () => syncNow()
+    document.addEventListener('visibilitychange', onVis)
+    return () => {
+      off()
+      document.removeEventListener('visibilitychange', onVis)
+    }
+  }, [])
+  useEffect(() => {
+    scheduleSync()
+  }, [state])
+
   return (
     <div className={guide ? 'app app--guided' : 'app'}>
       <header className="topbar">
@@ -279,9 +304,12 @@ export default function App() {
             }}
             aria-pressed={showSettings}
             aria-label="설정"
-            title="설정"
+            title={cloud.phase === 'off' ? '설정' : `설정 · 클라우드 ${CLOUD_LABEL[cloud.phase] ?? ''}`}
           >
             ⚙
+            {cloud.phase !== 'off' && (
+              <span className={`cloud-dot is-${cloud.phase}`} aria-hidden="true" />
+            )}
           </button>
         </div>
       </header>
@@ -290,6 +318,7 @@ export default function App() {
         <div className="container">
           <BackupNotice
             state={state}
+            cloud={cloud}
             onOpenSettings={() => {
               setShowSettings(true)
               window.scrollTo({ top: 0 })
@@ -307,6 +336,7 @@ export default function App() {
               commit={commit}
               onReload={() => setState({ ...store.load() })}
               onClose={() => setShowSettings(false)}
+              cloud={cloud}
             />
           ) : (
           <>
@@ -463,11 +493,21 @@ function GuideBar({ state, dueCount, itemId, onBack, onDismiss }) {
  */
 const BACKUP_STALE_DAYS = 14
 
-function BackupNotice({ state, onOpenSettings }) {
+const CLOUD_LABEL = {
+  starting: '연결 중',
+  'signed-out': '로그인 필요',
+  syncing: '맞추는 중',
+  synced: '동기화됨',
+  error: '오류',
+}
+
+function BackupNotice({ state, cloud, onOpenSettings }) {
   const [hidden, setHidden] = useState(
     () => sessionStorage.getItem('backup-notice-hidden') === '1'
   )
   if (hidden) return null
+  // 클라우드에 맞춰져 있으면 그게 백업이다 — 내보내기를 재촉할 이유가 없다
+  if (cloud?.user && cloud.lastSyncAt) return null
 
   const madeCards = state.cards?.length ?? 0
   const graded = Object.keys(state.progress ?? {}).length

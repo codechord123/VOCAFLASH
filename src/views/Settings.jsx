@@ -2,12 +2,198 @@ import { useRef, useState } from 'react'
 import { store } from '../lib/store.js'
 import { MAX_BOX, BOX_INTERVALS } from '../lib/srs.js'
 import { DECKS } from '../lib/deck.js'
+import { parseConfig, readConfig, resetCloud, saveConfig, signIn, signOut, syncNow } from '../lib/cloud.js'
+
+const RULES = `rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/{document=**} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == uid;
+    }
+  }
+}`
+
+function agoLabel(at) {
+  if (!at) return null
+  const s = Math.round((Date.now() - at) / 1000)
+  if (s < 60) return '방금'
+  if (s < 3600) return `${Math.floor(s / 60)}분 전`
+  if (s < 86400) return `${Math.floor(s / 3600)}시간 전`
+  return `${Math.floor(s / 86400)}일 전`
+}
+
+/**
+ * 개인 클라우드. 설정 전에는 붙여 넣는 칸과 안내를, 설정 뒤에는 로그인과
+ * 동기화 상태를 보여준다. 한 사람이 한 번만 거치는 화면이라 안내를
+ * 화면 안에 다 둔다 — 문서를 따로 찾게 하면 그 자리에서 접는다.
+ */
+function CloudSection({ cloud }) {
+  const cfg = readConfig()
+  const [text, setText] = useState('')
+  const [err, setErr] = useState(null)
+  const [copied, setCopied] = useState(false)
+
+  function saveAndConnect() {
+    const parsed = parseConfig(text)
+    if (!parsed) {
+      setErr('apiKey · projectId · appId를 찾지 못했습니다. firebaseConfig 블록 전체를 붙여 넣으세요.')
+      return
+    }
+    saveConfig(parsed)
+    resetCloud()
+  }
+
+  async function copyRules() {
+    try {
+      await navigator.clipboard.writeText(RULES)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1500)
+    } catch {
+      /* 복사가 막힌 브라우저 — 아래 글을 길게 눌러 복사하면 된다 */
+    }
+  }
+
+  if (!cfg) {
+    return (
+      <section className="stack">
+        <div className="section-title">클라우드 동기화 (Firebase)</div>
+        <p className="hint" style={{ textAlign: 'left' }}>
+          내 Firebase 프로젝트에 진도를 저장합니다. 브라우저를 지워도, 폰과 노트북을
+          오가도 기록이 이어집니다. 한 번만 설정하면 됩니다.
+        </p>
+        <details className="panel stack stack--tight cloud-steps">
+          <summary>설정 방법 (5단계, 약 5분)</summary>
+          <ol>
+            <li>
+              <a href="https://console.firebase.google.com" target="_blank" rel="noreferrer">
+                console.firebase.google.com
+              </a>
+              에서 <b>프로젝트 추가</b> (이름 아무거나, 애널리틱스는 꺼도 됨)
+            </li>
+            <li>
+              <b>Authentication</b> → 시작하기 → 로그인 방법에서 <b>Google</b> 사용 설정 →
+              설정 탭의 <b>승인된 도메인</b>에 이 사이트 주소(<code>{location.hostname}</code>) 추가
+            </li>
+            <li>
+              <b>Firestore Database</b> → 데이터베이스 만들기 (위치: <code>asia-northeast3 (서울)</code>,
+              프로덕션 모드) → <b>규칙</b> 탭에 아래 규칙을 붙여 넣고 게시
+            </li>
+            <li>
+              프로젝트 설정(⚙) → 내 앱 → <b>웹 앱(&lt;/&gt;) 추가</b> → 나오는{' '}
+              <code>firebaseConfig</code> 블록 전체를 복사
+            </li>
+            <li>아래 칸에 붙여 넣고 <b>저장하고 연결</b> → Google로 로그인</li>
+          </ol>
+          <div className="stack stack--tight">
+            <div className="row row--between">
+              <span className="label">Firestore 보안 규칙 — 본인만 읽고 쓰기</span>
+              <button className="btn btn--sm" onClick={copyRules}>
+                {copied ? '복사됨' : '복사'}
+              </button>
+            </div>
+            <pre className="cloud-rules">{RULES}</pre>
+          </div>
+        </details>
+        <label className="field">
+          <span className="label">firebaseConfig 붙여넣기</span>
+          <textarea
+            className="input input--mono"
+            rows={6}
+            spellCheck={false}
+            placeholder={'const firebaseConfig = {\n  apiKey: "...",\n  authDomain: "...",\n  projectId: "...",\n  ...\n};'}
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value)
+              setErr(null)
+            }}
+          />
+        </label>
+        {err && (
+          <div className="notice notice--error">
+            <span className="notice__icon">✕</span>
+            <span>{err}</span>
+          </div>
+        )}
+        <button className="btn btn--primary" disabled={!text.trim()} onClick={saveAndConnect}>
+          저장하고 연결
+        </button>
+      </section>
+    )
+  }
+
+  const ago = agoLabel(cloud.lastSyncAt)
+  return (
+    <section className="stack">
+      <div className="section-title">클라우드 동기화 (Firebase)</div>
+      <div className="panel stack stack--tight">
+        <div className="row row--between">
+          <span className="list__main">
+            <span className="list__title">
+              {cloud.user
+                ? cloud.user.email
+                : cloud.phase === 'starting'
+                  ? '연결하는 중…'
+                  : '로그인이 필요합니다'}
+            </span>
+            <span className="list__meta">
+              프로젝트 {cfg.projectId}
+              {cloud.phase === 'syncing' && ' · 맞추는 중…'}
+              {cloud.phase === 'synced' && ago && ` · 마지막 동기화 ${ago}`}
+            </span>
+          </span>
+          <span className={`cloud-dot cloud-dot--lg is-${cloud.phase}`} aria-hidden="true" />
+        </div>
+        {cloud.error && (
+          <div className="notice notice--error">
+            <span className="notice__icon">✕</span>
+            <span>{cloud.error}</span>
+          </div>
+        )}
+        <div className="row" style={{ gap: 'var(--s2)', flexWrap: 'wrap' }}>
+          {!cloud.user && cloud.phase !== 'starting' && (
+            <button className="btn btn--primary" onClick={signIn}>
+              Google로 로그인
+            </button>
+          )}
+          {cloud.user && (
+            <>
+              <button className="btn" onClick={() => syncNow()} disabled={cloud.phase === 'syncing'}>
+                지금 동기화
+              </button>
+              <button className="btn btn--ghost" onClick={signOut}>
+                로그아웃
+              </button>
+            </>
+          )}
+        </div>
+        <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
+          공부하는 동안 몇 초마다, 그리고 앱을 열고 닫을 때 자동으로 맞춥니다.
+          두 기기에서 번갈아 공부해도 덮어쓰지 않고 합칩니다 — 더 많이 진행된 쪽이 남습니다.
+        </p>
+      </div>
+      {!cfg.fromEnv && (
+        <button
+          className="btn btn--ghost btn--sm"
+          style={{ alignSelf: 'flex-start' }}
+          onClick={() => {
+            if (!window.confirm('이 기기에서 Firebase 설정을 지울까요? (클라우드의 기록은 그대로 남습니다)')) return
+            saveConfig(null)
+            resetCloud()
+          }}
+        >
+          Firebase 설정 지우기
+        </button>
+      )}
+    </section>
+  )
+}
 
 // 설정. 여기서 가장 중요한 건 내보내기다 — localStorage는 브라우저를
 // 지우면 날아가고, 그러면 복습 이력 전체가 사라진다. 유일한 백업 수단이라
 // 화면 위쪽에 둔다.
 
-export default function Settings({ cards, settings, stats, commit, onReload, onClose }) {
+export default function Settings({ cards, settings, stats, commit, onReload, onClose, cloud }) {
   const [msg, setMsg] = useState(null)
   const fileRef = useRef(null)
 
@@ -66,6 +252,8 @@ export default function Settings({ cards, settings, stats, commit, onReload, onC
         </div>
       )}
 
+      <CloudSection cloud={cloud ?? { phase: 'off' }} />
+
       <section className="stack">
         <div className="section-title">백업</div>
         <div className="notice notice--warn">
@@ -107,7 +295,11 @@ export default function Settings({ cards, settings, stats, commit, onReload, onC
         </p>
         {Object.values(DECKS).map((d) => {
           const n = cards.filter((c) => (c.deck ?? 'highlight') === d.id).length
-          const on = activeDecks[d.id] !== false
+          // 손댄 적 없는 덱은 덱의 기본값을 따른다 — 복습 큐(App)와 같은
+          // 규칙이어야 한다. 예전에는 꺼진 덱(영화 표현)이 여기서만 켜진
+          // 것처럼 보였다.
+          const on =
+            activeDecks[d.id] !== undefined ? activeDecks[d.id] !== false : d.defaultOn !== false
           return (
             <label className="list__item" key={d.id} style={{ cursor: 'pointer' }}>
               <input
