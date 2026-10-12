@@ -445,6 +445,43 @@ export function advanceSession(state, { correct = null, wrongRef = null, reviewU
   }
 }
 
+/**
+ * 한 칸 뒤로 — 채점이 없는 원자(규칙·예문·장면 같은 읽을거리)로만
+ * 돌아간다. 채점이 실린 원자로 돌아가면 같은 문항이 두 번 실리므로
+ * 화면 쪽에서 앞 원자가 읽을거리일 때만 버튼을 보인다.
+ */
+export function rewindSession(state) {
+  const s = state.plan?.session
+  if (!s || s.idx <= 0) return state
+  return { ...state, plan: { ...state.plan, session: { ...s, idx: s.idx - 1 } } }
+}
+
+/** 채점 없이 읽고 넘기는 원자 — 되돌아가도 기록이 겹치지 않는다. */
+export const REWINDABLE = new Set([
+  'scene-open', 'rule', 'points', 'example', 'anchor',
+  'review-head', 'test-head', 'fluency-head', 'produce-head', 'milestone-head',
+])
+
+// 원자별 대략의 소요(초) — 남은 시간 어림에 쓴다. 지하철에서 '다음 역까지
+// 끝낼 수 있나'를 가늠하는 용도라 정밀할 필요는 없다.
+const ATOM_SECS = {
+  'scene-open': 20, expr: 20, warmup: 25,
+  'review-head': 10, 'test-head': 10, 'fluency-head': 10, 'produce-head': 10, 'milestone-head': 10,
+  anchor: 30, rule: 30, points: 40, example: 25,
+  'quiz-choice': 25, 'quiz-listen': 25, 'quiz-order': 35,
+  produce: 90, recite: 45, shadow: 70, cando: 40, recap: 20,
+  read: 360,
+}
+
+/** 남은 원자들의 어림 시간(초). 단어 스와이프는 카드 수에 비례한다. */
+export function remainingSecs(atoms, idx, { swipeCards = 0 } = {}) {
+  let secs = 0
+  for (const a of atoms.slice(idx)) {
+    secs += a.type === 'swipe' ? swipeCards * 7 : ATOM_SECS[a.type] ?? 30
+  }
+  return secs
+}
+
 /** 잠시 멈춤 — 진행(idx)은 그대로 두고 개요 화면으로 돌아간다. */
 export function pauseSession(state, paused = true) {
   const s = state.plan?.session

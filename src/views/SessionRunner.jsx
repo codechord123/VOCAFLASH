@@ -17,7 +17,7 @@ import { cardsFromMidExpressions } from '../lib/deck.js'
 import { exprsForDay } from '../lib/midexpPlan.js'
 import { addUnitCards } from '../lib/unitCards.js'
 import { DAY_KIND_LABELS, PLAN_DAYS, chapterLabel, completeDay, itemDone, sameDay, unitLabel } from '../lib/plan.js'
-import { advanceSession, compileSession, endSession, pauseSession } from '../lib/session.js'
+import { REWINDABLE, advanceSession, compileSession, endSession, pauseSession, remainingSecs, rewindSession } from '../lib/session.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
 import { NIGHT_STOPS, sessionGrade } from '../lib/journey.js'
@@ -170,6 +170,14 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
   const idx = Math.min(session?.idx ?? 0, atoms.length - 1)
   const atom = atoms[idx]
   const progress = ((idx + 1) / atoms.length) * 100
+  // 앞 원자가 읽을거리일 때만 뒤로 갈 수 있다 — 문항으로 돌아가면 채점이 겹친다
+  const canRewind = idx > 0 && REWINDABLE.has(atoms[idx - 1]?.type) && !atoms[idx - 1]?.retry
+  // 남은 시간 어림 — 단어 몫은 오늘 이미 넘긴 장수를 빼고 센다
+  const gradedToday = state.reviewLog.filter(
+    (r) => sameDay(r.at) && r.via !== 'session-expr' && r.via !== 'session-warmup'
+  ).length
+  const swipeCards = Math.min(dueCards.length, Math.max(0, (settings?.dailyLimit ?? 20) - gradedToday))
+  const minsLeft = Math.max(1, Math.round(remainingSecs(atoms, idx, { swipeCards }) / 60))
 
   function next(opts = {}) {
     // 문항을 틀리면 그 문항이 뒤에 다시 줄을 선다. 재도전에서 또 틀려도
@@ -317,14 +325,29 @@ export default function SessionRunner({ state, cards = [], dueCards, settings, c
             {today.day}일차 수업 · {idx + 1}/{atoms.length}
             {/* 틀린 문항이 뒤에 줄을 서면 전체 수가 늘어난다 — 왜 늘었는지 보여 준다 */}
             {(session?.retries?.length ?? 0) > 0 && ` · 다시 ${session.retries.length}`}
+            {` · 남은 약 ${minsLeft}분`}
           </span>
-          <button
-            className="btn btn--ghost btn--sm"
-            onClick={() => commit((s) => pauseSession(s))}
-            title="진행은 저장됩니다"
-          >
-            잠시 멈춤
-          </button>
+          <div className="row" style={{ gap: 'var(--s1)' }}>
+            {canRewind && (
+              <button
+                className="btn btn--ghost btn--sm"
+                onClick={() => {
+                  commit((s) => rewindSession(s))
+                  window.scrollTo({ top: 0 })
+                }}
+                title="앞 화면 다시 보기"
+              >
+                ← 이전
+              </button>
+            )}
+            <button
+              className="btn btn--ghost btn--sm"
+              onClick={() => commit((s) => pauseSession(s))}
+              title="진행은 저장됩니다"
+            >
+              잠시 멈춤
+            </button>
+          </div>
         </div>
         {/* 진행바 위를 걷는 사람 — 비엔나의 밤을 한 원자씩 걸어간다 */}
         <div className="progress progress--walk">
