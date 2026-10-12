@@ -93,8 +93,8 @@ export function dayPlan(day) {
         auto: 'unit-progress', // 유닛 진행이 기록되면 자동으로 체크된다
       },
       2: {
-        label: `${unitName} — 되짚기`,
-        hint: isSyntax ? '나머지 문항 + 어제 것 섞어서' : '연습을 섞어서 전량 다시',
+        label: `${unitName} — 써먹기`,
+        hint: isSyntax ? '대사 듣기·암송 + 나머지 문항' : '떠올리기 · 틀린 곳 찾기 · 말하기',
         tab: unit.kind,
         auto: null,
       },

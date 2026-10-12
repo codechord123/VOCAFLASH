@@ -400,6 +400,8 @@ function Atom({ atom, today, state, dueCards, settings, commit, onGuide, onNext,
       return <Anchor anchor={atom.anchor} onNext={onNext} />
     case 'rule':
       return <Rule atom={atom} onNext={onNext} />
+    case 'recall':
+      return <Recall atom={atom} onNext={onNext} />
     case 'points':
       return <Points points={atom.points} onNext={onNext} />
     case 'example':
@@ -721,6 +723,52 @@ function Rule({ atom, onNext }) {
   )
 }
 
+/**
+ * 규칙 떠올리기 — 2일차의 첫 화면. 어제 규칙을 다시 읽혀 주지 않고
+ * 먼저 스스로 꺼내게 한다. 꺼내 본 뒤에 펼쳐서 맞춰 본다.
+ */
+function Recall({ atom, onNext }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="stack">
+      <div className="section-title">어제 규칙 떠올리기</div>
+      <div className="panel stack stack--tight">
+        <h3 style={{ margin: 0 }}>{atom.title}</h3>
+        <p className="hint" style={{ margin: 0, textAlign: 'left' }}>{atom.goal}</p>
+        {!open && (
+          <p style={{ margin: 0 }}>
+            펼치기 전에 — 둘을 <b>어떻게 갈라 쓰는지</b> 한 문장으로 소리 내어 말해 보세요.
+            예문 하나까지 떠올리면 더 좋습니다.
+          </p>
+        )}
+      </div>
+      {open && (
+        <>
+          <div
+            className="panel stack stack--tight"
+            style={{ borderColor: 'var(--accent-border)', background: 'var(--accent-soft)' }}
+          >
+            <div className="section-title" style={{ margin: 0 }}>규칙</div>
+            <p style={{ margin: 0 }}>{atom.rule}</p>
+          </div>
+          {(atom.points ?? []).map((p, i) => (
+            <div className="panel" key={i} style={{ padding: 'var(--s3) var(--s4)' }}>{p}</div>
+          ))}
+        </>
+      )}
+      {open ? (
+        <button className="btn btn--primary btn--block" onClick={() => onNext()}>
+          맞춰 봤어요 — 오늘은 써먹기
+        </button>
+      ) : (
+        <button className="btn btn--primary btn--block" onClick={() => setOpen(true)}>
+          떠올려 봤어요 — 펼치기
+        </button>
+      )}
+    </div>
+  )
+}
+
 function Points({ points, onNext }) {
   return (
     <div className="stack">
@@ -821,7 +869,8 @@ function QuizChoice({ atom, combo = 0, onNext }) {
       ? {
           source: 'grammar',
           unitId: atom.unit.id,
-          qIndex: atom.unit.practice.indexOf(q),
+          // 틀린 곳 찾기는 원래 빈칸 문항을 카드로 만든다
+          qIndex: atom.unit.practice.indexOf(atom.orig ?? q),
           gateId: q.id ?? null, // 관문 문항은 연습 목록 밖에 있다
         }
       : atom.source === 'syntax'
@@ -835,6 +884,9 @@ function QuizChoice({ atom, combo = 0, onNext }) {
       )}
       {atom.source === 'discover' && !atom.retry && (
         <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>먼저 맞혀 보기</span>
+      )}
+      {atom.spot && !atom.retry && (
+        <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>틀린 곳 찾기 — 보기 없이 판단</span>
       )}
       {atom.reviewUnit && (
         <span className="chip chip--accent" style={{ alignSelf: 'flex-start' }}>
@@ -909,7 +961,8 @@ function QuizOrder({ atom, combo = 0, onNext }) {
       ? {
           source: 'grammar',
           unitId: atom.unit.id,
-          qIndex: atom.unit.practice.indexOf(q),
+          // 틀린 곳 찾기는 원래 빈칸 문항을 카드로 만든다
+          qIndex: atom.unit.practice.indexOf(atom.orig ?? q),
           gateId: q.id ?? null,
         }
       : atom.source === 'syntax'
@@ -1316,7 +1369,7 @@ function Recap({ today, session, unitSrs, onFinish }) {
         <p className="hint" style={{ textAlign: 'left', margin: 0 }}>
           {today.phase} ·{' '}
           {today.kind === 'learn'
-            ? `${['배우기', '되짚기', '내 것으로'][today.step - 1]}까지 마쳤습니다.`
+            ? `${['배우기', '써먹기', '내 것으로'][today.step - 1]}까지 마쳤습니다.`
             : `${today.cycle}사이클 ${today.dayInCycle}/10일을 마쳤습니다.`}
         </p>
       </div>

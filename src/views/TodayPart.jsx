@@ -127,7 +127,7 @@ export default function TodayPart({ state, cards, dueCards, settings, commit, on
   // 같은 일을 두 번 말하고 있었다. 이제 이것은 문이 아니라 차례표다.
   const mainLine =
     today.kind === 'learn'
-      ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title} — ${['배우기', '되짚기', '내 것으로'][today.step - 1]}`
+      ? `${today.unit.kind === 'syntax' ? '구문' : '문법'} ${today.unit.no} · ${today.unit.title} — ${['배우기', '써먹기', '내 것으로'][today.step - 1]}`
       : today.items.find((it) => it.id === 'main')?.label ?? DAY_KIND_LABELS[today.kind]
   const steps = [
     mistakeDue > 0 && { icon: 'rotate', text: `틀렸던 것 되잡기 ${Math.min(mistakeDue, today.kind === 'milestone' ? 6 : 4)}개` },

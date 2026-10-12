@@ -169,7 +169,10 @@ function compileProduce(atoms, cycleData, day) {
   atoms.push({ type: 'produce-head' })
   for (const u of cycleData?.cycleUnits ?? []) {
     if (u.kind === 'grammar') {
-      for (const t of seededShuffle(u.src?.produce ?? [], day).slice(0, 2)) {
+      // 2일차에 쓴 과제는 뒤로 — 같은 상황을 두 번 말하지 않게
+      const tasks = u.src?.produce ?? []
+      const order = [...seededShuffle(tasks.slice(PRODUCE_DAY2), day), ...tasks.slice(0, PRODUCE_DAY2)]
+      for (const t of order.slice(0, 2)) {
         atoms.push({ type: 'produce', task: t })
       }
     } else {
@@ -207,6 +210,46 @@ function discoverAtom(u, d) {
 }
 
 const GRAMMAR_DAY1 = 10
+// 문법 2일차에 쓰는 말하기 과제 수. 산출 날은 나머지부터 쓴다.
+const PRODUCE_DAY2 = 2
+
+/**
+ * 틀린 곳 찾기 — 어제 푼 빈칸 문항에 보기 하나를 끼워 완성된 문장으로
+ * 보이고 맞는지 판단하게 한다. 보기가 눈앞에 없으니 규칙을 스스로
+ * 꺼내야 한다. 같은 내용, 한 계단 높은 일. 틀리면 원래 빈칸 문항이
+ * 오답 카드가 된다(orig).
+ */
+function spotAtoms(u, day, n) {
+  const pool = u.practice
+    .slice(0, GRAMMAR_DAY1)
+    .filter((q) => q.kind === 'choice' && q.sentence?.includes('___') && q.choices?.length >= 2)
+  return seededShuffle(pool, day + 5)
+    .slice(0, n)
+    .map((q, i) => {
+      // 다섯 중 셋쯤은 틀린 문장 — 다 맞는 문장이면 '맞다'만 누르게 된다
+      const wrongs = q.choices.filter((c) => c !== q.answer)
+      const isRight = (day + i * 7) % 5 >= 3 || wrongs.length === 0
+      const fill = isRight ? q.answer : wrongs[(day + i) % wrongs.length]
+      const shown = (fill === '-' ? '' : fill)
+      const sentence = q.sentence.replace('___', shown).replace(/\s{2,}/g, ' ').replace(/\s+([.,?!])/g, '$1')
+      const show = (c) => (c === '-' ? '(아무것도 안 붙임)' : `'${c}'`)
+      return {
+        type: 'quiz-choice',
+        source: 'grammar',
+        spot: true,
+        unit: u,
+        orig: q,
+        q: {
+          q: q.q ? `${q.q} — 이 문장, 맞을까?` : '이 문장, 맞을까?',
+          sentence,
+          choices: ['맞다', '아니다'],
+          answer: isRight ? '맞다' : '아니다',
+          // 조사(가/이)가 영어 단어 끝소리에 따라 갈려서 화살표로 쓴다
+          why: isRight ? `맞는 문장이다. ${q.why ?? ''}` : `틀린 자리 — ${show(fill)} → ${show(q.answer)}. ${q.why ?? ''}`,
+        },
+      }
+    })
+}
 
 /**
  * 듣고 고르기 — 소리만 듣고 어떤 문장이었는지 고른다. 보기는 같은 묶음의
@@ -246,12 +289,18 @@ function compileGrammar(atoms, u, step, day) {
     // 넘게)가 되어, 시험·유창성 날(15~20단계)의 두 배였다. 나머지는 다음 날.
     for (const q of u.practice.slice(0, GRAMMAR_DAY1)) atoms.push(practiceAtom(u, q))
   } else if (step === 2) {
-    // 되짚기: 규칙 한 장 다시 → 귀로 확인 → 어제 못 본 연습 + 어제 것 섞어서
-    atoms.push({ type: 'rule', title: '규칙 — 다시 한 번', body: u.present.rule, accent: true })
+    // 써먹기: 같은 유닛을 다른 머리로. 예전 2일차는 규칙을 다시 읽히고
+    // 어제 문항 6개를 그대로 다시 풀게 해서, 문항만 바뀐 1일차였다.
+    // 이제는 한 계단씩 올라간다 — 떠올리기(읽기 아님) → 귀 → 보기 없이
+    // 판단 → 새 문항(고르기 → 배열) → 입으로.
+    atoms.push({ type: 'recall', title: u.title, goal: u.goal, rule: u.present.rule, points: u.present.points })
     atoms.push(...listenAtoms(u.present.examples, day, 2))
+    atoms.push(...spotAtoms(u, day, 5))
     const fresh = u.practice.slice(GRAMMAR_DAY1)
-    const again = seededShuffle(u.practice.slice(0, GRAMMAR_DAY1), day).slice(0, 6)
-    for (const q of seededShuffle([...fresh, ...again], day + 1)) atoms.push(practiceAtom(u, q))
+    for (const q of seededShuffle(fresh.filter((q) => q.kind !== 'order'), day + 1)) atoms.push(practiceAtom(u, q))
+    for (const q of fresh.filter((q) => q.kind === 'order')) atoms.push(practiceAtom(u, q))
+    // 말하기는 예전엔 9일차 산출 날에야 처음 나왔다 — 배운 다음 날 입을 연다
+    for (const t of (u.produce ?? []).slice(0, PRODUCE_DAY2)) atoms.push({ type: 'produce', task: t })
   } else if (step === 3) {
     // 내 것으로: 말하기 과제
     atoms.push({ type: 'rule', title: '규칙', body: u.present.rule, accent: true })
@@ -315,7 +364,12 @@ function compileSyntax(atoms, u, quizzes, step, day) {
     ]
     // 앵커 대사를 귀로 먼저 — 어제 눈으로 본 문장을 소리로 알아듣는가
     atoms.push(...listenAtoms(u.anchors ?? [], day, 2))
-    for (const q of pool) atoms.push(syntaxAtom(u, q))
+    // 그리고 입으로 — 번역만 보고 어제의 대사를 떠올린다. 예전 2일차는
+    // 문항만 열한 개라 1일차의 문항 부분만 떼어 온 날이었다.
+    for (const a of (u.anchors ?? []).slice(0, 2)) atoms.push({ type: 'recite', anchor: a })
+    // 알아보기(고르기·참거짓) → 만들기(배열·복원) 순으로 계단을 올린다
+    const makes = (q) => q.type === 'arrange' || q.type === 'koToEn' || q.type === 'anchorRestore'
+    for (const q of [...pool.filter((q) => !makes(q)), ...pool.filter(makes)]) atoms.push(syntaxAtom(u, q))
   } else if (step === 3) {
     // 내 것으로: 앵커 암송 — 번역을 보고 원문을 떠올린다
     for (const a of (u.anchors ?? []).slice(0, 4)) atoms.push({ type: 'recite', anchor: a })
@@ -458,7 +512,7 @@ export function rewindSession(state) {
 
 /** 채점 없이 읽고 넘기는 원자 — 되돌아가도 기록이 겹치지 않는다. */
 export const REWINDABLE = new Set([
-  'scene-open', 'rule', 'points', 'example', 'anchor',
+  'scene-open', 'rule', 'points', 'example', 'anchor', 'recall',
   'review-head', 'test-head', 'fluency-head', 'produce-head', 'milestone-head',
 ])
 
@@ -467,7 +521,7 @@ export const REWINDABLE = new Set([
 const ATOM_SECS = {
   'scene-open': 20, expr: 20, warmup: 25,
   'review-head': 10, 'test-head': 10, 'fluency-head': 10, 'produce-head': 10, 'milestone-head': 10,
-  anchor: 30, rule: 30, points: 40, example: 25,
+  anchor: 30, rule: 30, points: 40, example: 25, recall: 40,
   'quiz-choice': 25, 'quiz-listen': 25, 'quiz-order': 35,
   produce: 90, recite: 45, shadow: 70, cando: 40, recap: 20,
   read: 360,

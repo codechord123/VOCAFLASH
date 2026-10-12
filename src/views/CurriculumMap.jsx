@@ -9,7 +9,7 @@ import { NIGHT_STOPS } from '../lib/journey.js'
 // 남았는지'가 안 보였다. 여기서는 10사이클을 밤의 정거장으로 펼치고,
 // 사이클마다 열흘을 한 줄씩 보여준다. 지금 사이클은 펼쳐 둔 채로 연다.
 
-const STEP_NAMES = ['배우기', '되짚기', '내 것으로']
+const STEP_NAMES = ['배우기', '써먹기', '내 것으로']
 const KIND_MARK = { learn: '', test: '관문', fluency: '유창성', produce: '말하기', milestone: '마무리' }
 
 function rowTitle(r) {
