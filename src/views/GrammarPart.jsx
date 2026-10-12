@@ -3,6 +3,7 @@ import course from '../data/grammar-course.json'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 import { ProduceLadder } from './Speak.jsx'
+import { unitCourseStatus } from '../lib/plan.js'
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 
 // 회화를 위한 기본 문법. 유닛 하나가 PPP 세 화면으로 되어 있다.
@@ -19,7 +20,7 @@ import { addMistakeCards, cardsFromGrammarWrong, cardsFromSpeakWrong } from '../
 
 const WORK = 'grammar' // 회독 저장 키의 작품 자리
 
-export default function GrammarPart({ reads, grammar, commit, initialUnitId = null }) {
+export default function GrammarPart({ reads, grammar, plan, commit, initialUnitId = null }) {
   // 오늘 화면에서 넘어오면 그날의 유닛이 바로 열린다
   const [openId, setOpenId] = useState(initialUnitId)
   const units = course.units
@@ -82,7 +83,6 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
     )
   }
 
-  const done = units.filter((u) => progressOf(u.id)).length
 
   return (
     <div className="stack stack--loose">
@@ -98,9 +98,9 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
       <div className="tiles">
         <div className="tile tile--accent">
           <div className="tile__value">
-            {done}/{units.length}
+            {units.filter((u) => unitCourseStatus(plan, u.id)?.tone !== 'ahead').length}/{units.length}
           </div>
-          <div className="tile__label">푼 유닛</div>
+          <div className="tile__label">수업에서 만난 유닛</div>
         </div>
         <div className="tile">
           <div className="tile__value">
@@ -118,6 +118,7 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
 
       {units.map((u) => {
         const p = progressOf(u.id)
+        const course = unitCourseStatus(plan, u.id)
         return (
           <button
             className="panel"
@@ -143,8 +144,9 @@ export default function GrammarPart({ reads, grammar, commit, initialUnitId = nu
                 <span className="list__meta">{u.goal}</span>
                 <ReadMeter read={readOf(reads, WORK, u.id)} />
               </span>
-              <span className={`chip${p ? ' chip--accent' : ''}`}>
-                {p ? `${p.score}/${p.total}` : '시작'}
+              <span className="stack stack--tight" style={{ alignItems: 'flex-end' }}>
+                {course && <span className={`chip course-chip is-${course.tone}`}>{course.label}</span>}
+                {p && <span className="chip">연습 {p.score}/{p.total}</span>}
               </span>
             </div>
           </button>

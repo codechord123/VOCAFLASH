@@ -15,12 +15,32 @@
 // 계획은 그 자리에서 기다린다.
 
 import planData from '../data/plan-100.json'
-import { graduateUnit, unitInfoMap } from './unitSrs.js'
+import { UNIT_STAGES, graduateUnit, unitInfoMap } from './unitSrs.js'
 
 export const TOTAL_DAYS = 100
 export const PLAN_DAYS = planData.days
 
 const UNIT_INFO = unitInfoMap(planData.days)
+
+const FIRST_LEARN_DAY = {}
+for (const r of planData.days) {
+  if (r.kind === 'learn' && r.unit && !(r.unit.id in FIRST_LEARN_DAY)) FIRST_LEARN_DAY[r.unit.id] = r.day
+}
+
+/**
+ * 유닛이 100일 수업 안에서 지금 어디쯤인가 — 구문·문법 탭의 목록이 쓴다.
+ * 예전에는 탭이 자기 퀴즈 기록만 봐서, 수업으로 23일을 왔는데도
+ * '마친 유닛 0/13'이었다.
+ *   { tone: 'stage'|'learning'|'ahead', label }
+ */
+export function unitCourseStatus(plan, unitId) {
+  const s = plan?.unitSrs?.[unitId]
+  if (s) return { tone: 'stage', label: UNIT_STAGES[s.srs], srs: s.srs }
+  const first = FIRST_LEARN_DAY[unitId]
+  if (first == null) return null
+  if (first <= (plan?.day ?? 1)) return { tone: 'learning', label: '배우는 중' }
+  return { tone: 'ahead', label: `${first}일차`, day: first }
+}
 
 /** 유닛 id를 사람이 읽는 이름으로. 표에 있는 유닛만 안다. */
 export function unitLabel(id) {

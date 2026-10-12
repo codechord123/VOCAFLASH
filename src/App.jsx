@@ -81,6 +81,7 @@ import {
   getStatus as getCloudStatus,
   scheduleSync,
   startCloud,
+  signIn,
   subscribe as subscribeCloud,
   syncNow,
 } from './lib/cloud.js'
@@ -323,14 +324,14 @@ export default function App() {
 
       <main>
         <div className="container">
-          <BackupNotice
+          {tab === 'today' && !showSettings && <BackupNotice
             state={state}
             cloud={cloud}
             onOpenSettings={() => {
               setShowSettings(true)
               window.scrollTo({ top: 0 })
             }}
-          />
+          />}
 
           {/* 설정은 본문 아래에 덧붙이지 않고 본문 대신 뜬다. 예전에는
               아래에 붙어서, 유닛처럼 긴 화면에서 내보내기를 누르면 화면
@@ -408,6 +409,7 @@ export default function App() {
               <GrammarPart
                 reads={state.reads}
                 grammar={state.grammar}
+                plan={state.plan}
                 commit={commit}
                 initialUnitId={unitTarget?.startsWith('g-') ? unitTarget : null}
               />
@@ -421,6 +423,7 @@ export default function App() {
                 commit={commit}
                 curriculum={state.curriculum}
                 reads={state.reads}
+                plan={state.plan}
                 initialUnitId={unitTarget?.startsWith('u-') ? unitTarget : null}
               />
             </Suspense>
@@ -493,12 +496,12 @@ function GuideBar({ state, dueCount, itemId, onBack, onDismiss }) {
  *
  * 저장은 브라우저 안에만 있다. 사파리는 한동안 안 쓴 사이트의 저장
  * 공간을 조용히 비우기도 하고, 방문 기록을 지우면 같이 날아간다.
- * 내보내기가 유일한 대비책인데, 눌러야 한다는 걸 잊으면 없는 것과 같다.
+ * Google 로그인 한 번이면 클라우드가 그 대비책이 된다.
  *
- * 잃을 것이 있을 때만 뜨고, 이번 실행에서 닫으면 다시 안 뜬다 — 매번
- * 같은 자리에 있는 경고는 며칠 만에 배경이 된다.
+ * 잃을 것이 있고 로그인 전일 때만, 오늘 화면에만 한 줄로 뜬다. 이번
+ * 실행에서 닫으면 다시 안 뜬다 — 매번 같은 자리에 있는 경고는 며칠
+ * 만에 배경이 된다.
  */
-const BACKUP_STALE_DAYS = 14
 
 const CLOUD_LABEL = {
   starting: '연결 중',
@@ -513,51 +516,35 @@ function BackupNotice({ state, cloud, onOpenSettings }) {
     () => sessionStorage.getItem('backup-notice-hidden') === '1'
   )
   if (hidden) return null
-  // 클라우드에 맞춰져 있으면 그게 백업이다 — 내보내기를 재촉할 이유가 없다
-  if (cloud?.user && cloud.lastSyncAt) return null
+  // 클라우드에 맞춰져 있으면 그게 백업이다 — 재촉할 이유가 없다
+  if (cloud?.user) return null
+  if (cloud?.phase === 'starting' || cloud?.phase === 'syncing') return null
 
   const madeCards = state.cards?.length ?? 0
   const graded = Object.keys(state.progress ?? {}).length
   const read = Object.keys(state.reads ?? {}).length
-  if (madeCards + graded + read === 0) return null // 아직 잃을 것이 없다
+  const days = Object.keys(state.plan?.history ?? {}).length
+  if (madeCards + graded + read + days === 0) return null // 아직 잃을 것이 없다
 
-  const last = state.lastBackupAt ?? null
-  const days = last == null ? null : Math.floor((Date.now() - last) / 86400000)
-  if (days != null && days < BACKUP_STALE_DAYS) return null
-
+  // 한 줄짜리. 예전에는 모든 탭 맨 위에 두 줄짜리 상자가 떠서, 읽기·구문
+  // 화면에서도 첫 화면의 8분의 1을 차지했다. 이제 오늘 화면에만, 로그인
+  // 한 번으로 끝나는 해결책과 함께.
   return (
-    <div
-      className="panel row row--between"
-      style={{
-        marginBottom: 'var(--s4)',
-        borderColor: 'var(--accent-border)',
-        background: 'var(--accent-soft)',
-        gap: 'var(--s3)',
-      }}
-    >
-      <span className="list__main">
-        <span className="list__title">
-          {last == null ? '아직 백업한 적이 없습니다' : `백업이 ${days}일 지났습니다`}
-        </span>
-        <span className="list__meta">
-          진도는 이 브라우저 안에만 있습니다. 기록을 지우면 함께 사라집니다.
-        </span>
-      </span>
-      <div className="row" style={{ gap: 'var(--s2)' }}>
-        <button className="btn btn--sm" onClick={onOpenSettings}>
-          내보내기
-        </button>
-        <button
-          className="btn btn--ghost btn--sm"
-          onClick={() => {
-            sessionStorage.setItem('backup-notice-hidden', '1')
-            setHidden(true)
-          }}
-          aria-label="닫기"
-        >
-          ✕
-        </button>
-      </div>
+    <div className="cloud-nudge">
+      <span>진도가 이 브라우저에만 있습니다</span>
+      <button className="btn btn--sm btn--primary" onClick={() => signIn()}>
+        Google로 자동 백업
+      </button>
+      <button
+        className="btn btn--ghost btn--sm"
+        onClick={() => {
+          sessionStorage.setItem('backup-notice-hidden', '1')
+          setHidden(true)
+        }}
+        aria-label="닫기"
+      >
+        ✕
+      </button>
     </div>
   )
 }

@@ -567,10 +567,10 @@
       "prompt": "조각을 순서대로 배열하세요 (Céline, Ch 2)",
       "chunks": [
         "You know, even when they're wrong,",
-        "it‘s this, it‘s this passive-aggressive shit,",
+        "it’s this, it’s this passive-aggressive shit,",
         "It makes it even harder to officially complain.",
         "you know what I mean,",
-        "it‘s... I hate it, I really hate it."
+        "it’s... I hate it, I really hate it."
       ],
       "answer": [
         2,
@@ -2820,8 +2820,8 @@
       "type": "arrange",
       "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
       "chunks": [
-        "it‘s myself",
-        "It‘s just, usually,",
+        "it’s myself",
+        "It’s just, usually,",
         "that I wish",
         "I could get away from."
       ],

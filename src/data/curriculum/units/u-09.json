@@ -15,7 +15,7 @@
         "sceneNote": "클라인스 카페 테라스. 손금을 봐 준 집시가 셀린에게 남기는 마지막 처방이다. 삶의 껄끄러움을 받아들이라고 한 뒤 Only를 앞세워 조건을 못 박는데, 그 순간 you will find가 will you find로 뒤집히며 문장이 예언처럼 굳는다. 앞자리를 내준 대가로 어순이 흔들리는, 도치의 가장 선명한 표본."
       },
       {
-        "en": "It‘s just, usually, it‘s myself that I wish I could get away from.",
+        "en": "It’s just, usually, it’s myself that I wish I could get away from.",
         "ko": "그냥, 보통은 말이야, 내가 벗어나고 싶은 건 다름 아닌 나 자신이야.",
         "source": "before-sunrise",
         "chapter": 19,
@@ -586,7 +586,7 @@
         {
           "work": "before-sunrise",
           "chapter": 19,
-          "context": "it‘s myself that I wish I could get away from.",
+          "context": "it’s myself that I wish I could get away from.",
           "speaker": "Jesse"
         }
       ]
@@ -838,8 +838,8 @@
       "type": "arrange",
       "prompt": "조각을 순서대로 배열하세요 (Jesse, Ch 19)",
       "chunks": [
-        "it‘s myself",
-        "It‘s just, usually,",
+        "it’s myself",
+        "It’s just, usually,",
         "that I wish",
         "I could get away from."
       ],
@@ -1059,7 +1059,7 @@
       "back": {
         "meaningKo": "~에게서 벗어나다, ~을 떠나다",
         "nuance": "get away from it all이 '다 잊고 떠나다'인데, 제시는 그 대상을 자기 자신으로 뒤집는다.",
-        "context": "it‘s myself that I wish I could get away from. — Jesse, Ch 19"
+        "context": "it’s myself that I wish I could get away from. — Jesse, Ch 19"
       }
     },
     {
@@ -1081,7 +1081,7 @@
       "back": {
         "pattern": "It is + 강조할 말 + that + 나머지",
         "explanation": "It is와 that을 지웠을 때 원래 문장이 온전히 복원되면 강조구문이다. 부서지면 가주어.",
-        "anchor": "It‘s just, usually, it‘s myself that I wish I could get away from. — Jesse, Ch 19"
+        "anchor": "It’s just, usually, it’s myself that I wish I could get away from. — Jesse, Ch 19"
       }
     },
     {

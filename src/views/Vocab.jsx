@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { MAX_BOX, isDue } from '../lib/srs.js'
 import { COLOR_LABELS, KIND_LABELS } from '../lib/deck.js'
 
@@ -26,6 +26,10 @@ export default function Vocab({ cards, commit }) {
   // 스와이프에서 왼쪽으로 넘긴 것만 보기. 목록에서도 걸러 볼 수 있어야
   // "모르는 것만 다시"가 한 곳에 갇히지 않는다.
   const [onlyUnknown, setOnlyUnknown] = useState(false)
+  // 한 번에 그리는 줄 수. 수천 장을 통째로 그리면 화면이 세로 12만
+  // 픽셀이 되고 폰에서 탭 전환마다 멈칫한다. 50줄씩 더 펼친다.
+  const PAGE = 50
+  const [shown, setShown] = useState(PAGE)
 
   const works = useMemo(
     () => [...new Set(all.map((c) => c.source?.work).filter(Boolean))],
@@ -70,6 +74,8 @@ export default function Vocab({ cards, commit }) {
 
     return out
   }, [all, q, work, kind, sort, onlyNoMeaning, onlyUnknown])
+
+  useEffect(() => setShown(PAGE), [q, work, kind, sort, onlyNoMeaning, onlyUnknown])
 
   const noMeaningCount = useMemo(() => all.filter((c) => !c.back).length, [all])
   const unknownCount = useMemo(
@@ -147,10 +153,18 @@ export default function Vocab({ cards, commit }) {
       ) : (
         <div className="panel panel--flush">
           <div className="list">
-            {rows.map((c) => (
+            {rows.slice(0, shown).map((c) => (
               <Row key={c.id} card={c} commit={commit} />
             ))}
           </div>
+          {rows.length > shown && (
+            <button
+              className="btn btn--ghost btn--block"
+              onClick={() => setShown((n) => n + PAGE)}
+            >
+              {Math.min(PAGE, rows.length - shown)}개 더 보기 · 남은 {rows.length - shown}개
+            </button>
+          )}
         </div>
       )}
     </div>

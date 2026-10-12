@@ -5,6 +5,7 @@ import { createCard } from '../lib/srs.js'
 import { markRead, readOf, undoRead } from '../lib/reads.js'
 import { ReadMeter, ReadTracker } from './ReadMeter.jsx'
 import { DECKS } from '../lib/deck.js'
+import { unitCourseStatus } from '../lib/plan.js'
 
 // 구문독해 파트 = 4막 13유닛 커리큘럼.
 //
@@ -68,7 +69,7 @@ function cardFromUnitSrs(c) {
   })
 }
 
-export default function Curriculum({ cards, commit, curriculum, reads, initialUnitId = null }) {
+export default function Curriculum({ cards, commit, curriculum, reads, plan, initialUnitId = null }) {
   // 유닛도 회독으로 센다. 읽기와 같은 저장소를 쓰되 작품 자리에
   // 'curriculum'을 넣어 챕터와 섞이지 않게 한다.
   const READ_WORK = 'curriculum'
@@ -179,7 +180,6 @@ export default function Curriculum({ cards, commit, curriculum, reads, initialUn
     )
   }
 
-  const doneCount = units.filter((u) => progressOf(u.unitId)?.screen === 'done').length
   const byAct = [1, 2, 3, 4].map((act) => ({
     act,
     ...ACTS[act],
@@ -200,9 +200,9 @@ export default function Curriculum({ cards, commit, curriculum, reads, initialUn
       <div className="tiles">
         <div className="tile tile--accent">
           <div className="tile__value">
-            {doneCount}/{units.length}
+            {units.filter((u) => unitCourseStatus(plan, u.unitId)?.tone !== 'ahead').length}/{units.length}
           </div>
-          <div className="tile__label">마친 유닛</div>
+          <div className="tile__label">수업에서 만난 유닛</div>
         </div>
         <div className="tile">
           <div className="tile__value">{vocabData.words.length}</div>
@@ -223,6 +223,7 @@ export default function Curriculum({ cards, commit, curriculum, reads, initialUn
           {a.units.map((u) => {
             const p = progressOf(u.unitId)
             const done = p?.screen === 'done'
+            const course = unitCourseStatus(plan, u.unitId)
             return (
               <button
                 className="panel"
@@ -249,8 +250,9 @@ export default function Curriculum({ cards, commit, curriculum, reads, initialUn
                     <span className="list__meta">{u.tagline}</span>
                     <ReadMeter read={readOf(reads, READ_WORK, u.unitId)} />
                   </span>
-                  <span className={`chip${done ? ' chip--accent' : ''}`}>
-                    {done ? `${p.quizScore}/20` : '학습하기'}
+                  <span className="stack stack--tight" style={{ alignItems: 'flex-end' }}>
+                    {course && <span className={`chip course-chip is-${course.tone}`}>{course.label}</span>}
+                    {done && <span className="chip">퀴즈 {p.quizScore}/20</span>}
                   </span>
                 </div>
               </button>
