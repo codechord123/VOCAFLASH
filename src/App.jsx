@@ -103,16 +103,29 @@ import Settings from './views/Settings.jsx'
 // 담은 문장은 단어 파트 안의 한 칸이다.
 // '오늘'이 첫 탭이자 기본이다 — 열자마자 무엇을 할지 정해져 있어야
 // 고르는 데 힘을 안 쓴다.
+//
+// 구문과 문법은 '자료실' 한 탭 아래 두 칸이다. 매일의 공부는 오늘 수업이
+// 끌고 가고, 이 둘은 수업이 쓰는 원자료를 찾아보고 더 연습하는 곳이라
+// 맨 위에 나란히 둘 무게가 아니었다. 탭이 다섯이면 폭도 모자랐다.
 const TABS = [
   { id: 'today', label: '오늘' },
   { id: 'vocab', label: '단어' },
   { id: 'read', label: '읽기' },
-  { id: 'syntax', label: '구문' },
+  { id: 'library', label: '자료실' },
+]
+const LIB = [
+  { id: 'syntax', label: '구문독해' },
   { id: 'grammar', label: '문법' },
 ]
+const isLib = (t) => t === 'syntax' || t === 'grammar'
 
 export default function App() {
   const [tab, setTab] = useState('today')
+  // 자료실을 다시 열면 마지막에 보던 칸으로
+  const [lastLib, setLastLib] = useState('syntax')
+  useEffect(() => {
+    if (isLib(tab)) setLastLib(tab)
+  }, [tab])
   // 오늘 화면에서 회독으로 보낼 때 열어 줄 챕터
   const [readTarget, setReadTarget] = useState(null)
   // 오늘 화면에서 과업으로 보낼 때 열어 줄 유닛
@@ -292,7 +305,7 @@ export default function App() {
               <button
                 key={t.id}
                 role="tab"
-                aria-selected={tab === t.id}
+                aria-selected={t.id === 'library' ? isLib(tab) : tab === t.id}
                 className="tab"
                 onClick={() => {
                   // 직접 움직이면 안내를 통째로 접는다. 목표를 어중간하게
@@ -300,7 +313,7 @@ export default function App() {
                   setReadTarget(null)
                   setUnitTarget(null)
                   setGuide(null)
-                  setTab(t.id)
+                  setTab(t.id === 'library' ? lastLib : t.id)
                 }}
               >
                 {t.label}
@@ -419,6 +432,25 @@ export default function App() {
                 onRetry={() => ensureReading().catch(() => {})}
               />
             ))}
+
+          {isLib(tab) && (
+            <nav className="subtabs" role="tablist" aria-label="자료실" style={{ marginBottom: 'var(--s5)' }}>
+              {LIB.map((l) => (
+                <button
+                  key={l.id}
+                  role="tab"
+                  aria-selected={tab === l.id}
+                  className="tab"
+                  onClick={() => {
+                    setUnitTarget(null)
+                    setTab(l.id)
+                  }}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </nav>
+          )}
 
           {tab === 'grammar' && (
             <Suspense fallback={<BulkLoading label="문법 자료를 불러오는 중" />}>
