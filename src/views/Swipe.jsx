@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GRADES, applyGrade, progressOf, withProgress } from '../lib/srs.js'
 import { topicIcon, topicLabel } from '../lib/topics.js'
-import { koToEnClue } from '../lib/clue.js'
+import { exprFlip, koToEnClue } from '../lib/clue.js'
 import ListenButton from './Listen.jsx'
 
 const HANGUL = /[가-힣]/
@@ -47,6 +47,8 @@ export default function Swipe({ cards, settings, commit, onExit }) {
 
   const byId = useMemo(() => new Map(cards.map((c) => [c.id, c])), [cards])
   const card = queue.length > 0 ? byId.get(queue[0]) : null
+  // 익숙해진 영화 표현은 뜻 → 표현 방향으로 묻는다
+  const flip = exprFlip(card)
 
   const startX = useRef(null)
   const startY = useRef(null)
@@ -359,24 +361,42 @@ export default function Swipe({ cards, settings, commit, onExit }) {
               <span className="chip chip--box">박스 {card.box}</span>
             </div>
 
-            <div className="flashcard__front">{card.front}</div>
-            {/* 영어 쪽을 들려준다 — 앞면이 영어면 앞면, 한→영 카드면 뒤집은 뒤 정답 */}
-            {(!HANGUL.test(card.front ?? '') || flipped) && (
-              <div className="row" style={{ justifyContent: 'center' }}>
-                <ListenButton
-                  text={!HANGUL.test(card.front ?? '') ? card.front : card.back?.meaningKo && !HANGUL.test(card.back.meaningKo) ? card.back.meaningKo : null}
-                  compact
-                />
-              </div>
+            <div className="flashcard__front">{flip ? flip.front : card.front}</div>
+            {/* 뒤집힌 표현 카드 — 뜻을 보고 영어로 꺼낸다. 첫 글자 뼈대가 단서다 */}
+            {flip && !flipped && (
+              <>
+                <p
+                  className="hint"
+                  style={{ fontFamily: 'var(--font-read)', letterSpacing: '0.05em', margin: 0 }}
+                >
+                  {flip.clue}
+                </p>
+                <p className="hint" style={{ margin: 0 }}>익숙해진 표현 — 이제 뜻을 보고 영어로 말해 보세요</p>
+              </>
             )}
-            {card.phonetics && (
+            {/* 영어 쪽을 들려준다 — 앞면이 영어면 앞면, 한→영 카드면 뒤집은 뒤 정답 */}
+            {flip
+              ? flipped && (
+                  <div className="row" style={{ justifyContent: 'center' }}>
+                    <ListenButton text={flip.answer} compact />
+                  </div>
+                )
+              : (!HANGUL.test(card.front ?? '') || flipped) && (
+                  <div className="row" style={{ justifyContent: 'center' }}>
+                    <ListenButton
+                      text={!HANGUL.test(card.front ?? '') ? card.front : card.back?.meaningKo && !HANGUL.test(card.back.meaningKo) ? card.back.meaningKo : null}
+                      compact
+                    />
+                  </div>
+                )}
+            {card.phonetics && !flip && (
               <div className="hint" style={{ fontFamily: 'var(--font-mono)' }}>
                 {card.phonetics}
               </div>
             )}
             {/* 한→영 문장 카드는 백지 번역이 아니라 뼈대 채우기로 —
                 첫 글자 힌트가 있어야 몇 초 안에 입이 움직인다 */}
-            {!flipped && koToEnClue(card) && (
+            {!flipped && !flip && koToEnClue(card) && (
               <p
                 className="hint"
                 style={{ fontFamily: 'var(--font-read)', letterSpacing: '0.05em' }}
@@ -392,7 +412,7 @@ export default function Swipe({ cards, settings, commit, onExit }) {
                     유의어·예문까지 붙는 단어장 카드에서는 단어와 뜻이
                     화면 반쪽만큼 벌어져 스크롤해야 짝이 보였다. 짝지어
                     읽는 두 줄을 떼어 놓을 이유가 없다. */}
-                <div className="read flashcard__meaning">{card.back?.meaningKo}</div>
+                <div className="read flashcard__meaning">{flip ? flip.answer : card.back?.meaningKo}</div>
                 {/* 구분선은 이제 '핵심'과 '더 볼 것' 사이에 선다 */}
                 {(card.back?.definitionEn ||
                   card.back?.nuance ||
@@ -427,7 +447,7 @@ export default function Swipe({ cards, settings, commit, onExit }) {
                 {card.exampleKo && <p className="ko">{card.exampleKo}</p>}
               </div>
             ) : (
-              <p className="hint">눌러서 뜻 보기</p>
+              <p className="hint">{flip ? '눌러서 표현 보기' : '눌러서 뜻 보기'}</p>
             )}
           </div>
         </article>
@@ -442,7 +462,7 @@ export default function Swipe({ cards, settings, commit, onExit }) {
           <span className="grade__key">왼쪽으로 넘기기</span>
         </button>
         <button className="btn grade" onClick={() => setFlipped((v) => !v)}>
-          {flipped ? '앞면' : '뜻 보기'}
+          {flipped ? '앞면' : flip ? '표현 보기' : '뜻 보기'}
           <span className="grade__key">스페이스</span>
         </button>
         <button className="btn grade grade--good" onClick={() => settle(true)}>

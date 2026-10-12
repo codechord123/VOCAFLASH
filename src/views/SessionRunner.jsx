@@ -21,7 +21,7 @@ import { REWINDABLE, advanceSession, compileSession, endSession, pauseSession, r
 import { addMistakeCards, cardsFromGrammarWrong, cardsFromQuizWrong, cardsFromSpeakWrong } from '../lib/mistakes.js'
 import { UNIT_INTERVALS, UNIT_STAGES, applyUnitReview, buildReview } from '../lib/unitSrs.js'
 import { NIGHT_STOPS, sessionGrade } from '../lib/journey.js'
-import { firstLetters, koToEnClue } from '../lib/clue.js'
+import { exprFlip, firstLetters, koToEnClue } from '../lib/clue.js'
 
 // 수업 진행기. 컴파일된 원자 수열을 한 화면씩 통과시킨다.
 //
@@ -468,21 +468,44 @@ function ExprAtom({ atom, progress, onGrade, onNext }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [expr])
   const seen = (card.reviewCount ?? 0) > 0
+  // 익숙해진 표현(박스 3 이상)은 뜻을 먼저 보이고 영어를 꺼내게 한다
+  const flip = exprFlip(card)
   return (
     <div className="stack">
       <div className="section-title">
         오늘의 영화 표현 {n}/{of} · {expr.genre}
+        {flip && ' · 뜻 보고 말하기'}
       </div>
       <div className="panel stack stack--tight" style={{ textAlign: 'center' }}>
-        <p className="read" style={{ margin: 0, fontSize: 22 }}>{expr.phrase}</p>
-        <div className="row" style={{ justifyContent: 'center' }}>
-          <ListenButton text={expr.phrase} compact />
-        </div>
+        {flip ? (
+          <>
+            <p className="read" style={{ margin: 0, fontSize: 20 }}>{expr.meaning}</p>
+            {!open && (
+              <p className="hint" style={{ fontFamily: 'var(--font-read)', letterSpacing: '0.05em', margin: 0 }}>
+                {flip.clue}
+              </p>
+            )}
+          </>
+        ) : (
+          <>
+            <p className="read" style={{ margin: 0, fontSize: 22 }}>{expr.phrase}</p>
+            <div className="row" style={{ justifyContent: 'center' }}>
+              <ListenButton text={expr.phrase} compact />
+            </div>
+          </>
+        )}
         {expr.situation && <p className="hint" style={{ margin: 0 }}>{expr.situation}</p>}
         {open && (
           <>
             <div className="flashcard__divider" />
-            <div className="read" style={{ fontSize: 18, color: 'var(--accent-text)' }}>{expr.meaning}</div>
+            {flip ? (
+              <div className="row" style={{ justifyContent: 'center', gap: 'var(--s2)' }}>
+                <div className="read" style={{ fontSize: 20, color: 'var(--accent-text)' }}>{expr.phrase}</div>
+                <ListenButton text={expr.phrase} compact autoPlay />
+              </div>
+            ) : (
+              <div className="read" style={{ fontSize: 18, color: 'var(--accent-text)' }}>{expr.meaning}</div>
+            )}
             {expr.example && (
               <div className="row" style={{ gap: 'var(--s2)', alignItems: 'flex-start', flexWrap: 'nowrap' }}>
                 <p className="read" style={{ margin: 0, fontSize: 15, textAlign: 'left', flex: 1 }}>{expr.example}</p>
@@ -507,7 +530,7 @@ function ExprAtom({ atom, progress, onGrade, onNext }) {
         </div>
       ) : (
         <button className="btn btn--primary btn--block" onClick={() => setOpen(true)}>
-          뜻을 떠올렸어요 — 펼치기
+          {flip ? '소리 내어 말해 봤어요 — 펼치기' : '뜻을 떠올렸어요 — 펼치기'}
         </button>
       )}
     </div>

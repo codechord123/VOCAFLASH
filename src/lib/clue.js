@@ -33,3 +33,16 @@ export function koToEnClue(card) {
   if (en.trim().split(/\s+/).length < 3) return null
   return firstLetters(en)
 }
+
+// 영화 표현 카드는 처음엔 영어 → 뜻(알아보기)으로 시작한다. 그런데 몇 번
+// 맞히고 나면 '보면 안다'는 금방 되고, 대화에서 필요한 건 '뜻이 떠오를 때
+// 표현을 꺼내는 것'이다. 그래서 박스 3부터는 방향을 뒤집는다 — 앞면에
+// 뜻과 첫 글자 뼈대, 뒷면에 영어 표현.
+export const FLIP_BOX = 3
+
+/** 뒤집힌 영화 표현 카드면 앞면·뼈대·정답을 돌려준다. 아니면 null. */
+export function exprFlip(card) {
+  if (card?.deck !== 'midexp' || (card.box ?? 1) < FLIP_BOX) return null
+  if (!card.back?.meaningKo || !card.front) return null
+  return { front: card.back.meaningKo, clue: firstLetters(card.front), answer: card.front }
+}
